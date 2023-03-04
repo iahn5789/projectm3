@@ -7,4 +7,9 @@
 텍스트 변동 테스트 7882[p]
 [_tb_end_text]
 
+[tb_start_text mode=1 ]
+뭐하니[p]
+[_tb_end_text]
+
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [s  ]
