@@ -4,7 +4,7 @@
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_School_Front.jfif"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-SCENE 1[p]
+TEST 1[p]
 [_tb_end_text]
 
 [chara_show  name="ayana"  time="1000"  wait="true"  left="580"  top="219"  width=""  height=""  reflect="false"  ]
