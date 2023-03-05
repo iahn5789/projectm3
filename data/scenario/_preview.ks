@@ -3,16 +3,18 @@
 [mask time=10]
 [mask_off time=10]
 [cm  ]
-[bg  storage="rouka.jpg"  time="1000"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_School_Front.jfif"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-텍스트 변동 테스트 7882[p]
+SCENE 1[p]
 [_tb_end_text]
 
+[chara_show  name="ayana"  time="1000"  wait="true"  left="580"  top="219"  width=""  height=""  reflect="false"  ]
 [tb_start_text mode=1 ]
-뭐하니[p]
+#아야나
+" 슬슬 날씨도 추워지고 모텔로 돌아갈까? "[p]
 [_tb_end_text]
 
-[glink  color="black"  storage="scene2.ks"  size="20"  text="1&nbsp;가"  ]
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_hide_message_window  ]
+[glink  color="btn_05_black"  storage="scene2.ks"  size="20"  text="나는&nbsp;니가&nbsp;좋아"  target="*123"  x="571"  y="622"  width="700"  height="100"  _clickable_img=""  ]
 [s  ]
