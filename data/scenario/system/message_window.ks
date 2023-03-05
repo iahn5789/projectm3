@@ -4,7 +4,7 @@
 
 
 		
-			[position page=fore margint=45 marginl=10 marginr=20 marginb=10 vertical=false opacity="180" radius="0" color="0x000000" ]
+			[position page=fore frame="gui/textbox.png" margint=45 marginl=10 marginr=20 marginb=10 vertical=false ]
 		
 
 		[ptext name="chara_name_area" layer="message0" color=0xFFFFFF size=26 x=61 y=710 bold="bold" edge="undefined" shadow="undefined"]
