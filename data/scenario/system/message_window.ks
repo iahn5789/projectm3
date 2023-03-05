@@ -1,10 +1,10 @@
 ;メッセージレイヤの定義
 
-		[position width=1800 height=300 top=700 left=47 ]
+		[position width=1800 height=300 top=700 left=350 ]
 
 
 		
-			[position page=fore frame="gui/textbox.png" margint=45 marginl=10 marginr=20 marginb=10 vertical=false ]
+			[position page=fore frame="gui/textbox.png" margint=45 marginl=80 marginr=20 marginb=30 vertical=false ]
 		
 
 		[ptext name="chara_name_area" layer="message0" color=0xFFFFFF size=26 x=61 y=710 bold="bold" edge="undefined" shadow="undefined"]
@@ -28,7 +28,7 @@
 		;[position layer="message1" left=160 top=500 width=1000 height=200 radius=15 page=fore visible=true color="white" opacity=255 border_size="3" border_color="black" ]
 		;[position layer="message1" page=fore margint="15" marginl="20" marginr="20" marginb="20"]
 
-		[position layer="message1" width=1800 height=300 top=700 left=47 ]
+		[position layer="message1" width=1800 height=300 top=700 left=350 ]
 		[position layer="message1" page=fore margint=5 marginl=10 marginr=10 marginb=10 vertical=false opacity="180" radius="0" color="0x000000" ]
 
 		
