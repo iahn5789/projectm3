@@ -2,26 +2,31 @@
 
 [mask time=10]
 [mask_off time=10]
+[hidemenubutton]
+
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_01.wav"  fadein="true"  loop="true"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#...
-아무 생각이 들지 않는다.[l][r] 아무 생각을 하고 싶지 않은 것이겠지.[p]
+#관객들
+" 와아아아아앙-! "[p]
+#???
+" 우리가 잘 해낼 수 있을까? "[p]
+" 긴장할 것 없어 "[r] " 그동안 잘 해왔었잖아! "[p]
+" 마..맞아!! "[p]
+" 그래도 떨리는데..... "[p]
+#관객들
+" 꺄아아아-!! " [r][p]
 [_tb_end_text]
 
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_01.wav"  clear="false"  ]
 [tb_start_text mode=1 ]
-#...
-마음 깊은 곳에서 무언가 꿈틀대는 것이 느껴진다.[p]
+#사회자
+" 자! 다음을 소개하도록 하겠습니다!! "[p]
+" 이번 순서는! ----------------!!! "[p]
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
-#...
-기분이 썩 좋지만은 않다.[p]
-[_tb_end_text]
-
-[bg  time="3000"  method="fadeIn"  storage="BGI/Common_Intro.jpg"  ]
-[tb_start_text mode=1 ]
-#...
-
-[_tb_end_text]
-
+[playbgm  volume="50"  time="1000"  loop="false"  storage="Common_Logo_BGM_01.wav"  fadein="true"  ]
+[bg  time="3000"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
+[tb_hide_message_window  ]
+[stopse  time="5000"  buf="0"  fadeout="true"  ]
