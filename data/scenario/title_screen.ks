@@ -6,8 +6,8 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_hide_message_window  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="ex.mp3"  ]
-[bg  storage="title.jpg"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
+[bg  storage="BGI/Common_Title_Screen.jpg"  ]
 *title
 
 [glink  color="black"  text="New&nbsp;Game"  x="75"  y="370"  size="20"  target="*start"  ]

@@ -2,7 +2,7 @@
 
 [stopbgm  time="7000"  fadeout="true"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
-[playbgm  volume="90"  time="1000"  loop="true"  storage="1111.mp3"  fadein="false"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
 [cm  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
