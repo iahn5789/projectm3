@@ -20,6 +20,8 @@
 
 [cm  ]
 [tb_keyconfig  flag="1"  ]
+[stopbgm  time="5000"  fadeout="true"  ]
+[tb_hide_message_window  ]
 [jump  storage="Scene_Dream_01.ks"  target=""  ]
 [s  ]
 *LOAD

@@ -2,34 +2,26 @@
 
 [mask time=10]
 [mask_off time=10]
-[hidemenubutton]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
+#...
+아무 생각이 들지 않는다.[l][r] 아무 생각을 하고 싶지 않은 것이겠지.[p]
+[_tb_end_text]
 
-[tb_clear_images]
+[tb_start_text mode=1 ]
+#...
+마음 깊은 곳에서 무언가 꿈틀대는 것이 느껴진다.[p]
+[_tb_end_text]
 
-[tb_keyconfig  flag="0"  ]
-[tb_hide_message_window  ]
-[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
-[bg  storage="BGI/Common_Title_Screen.jpg"  ]
-*title
+[tb_start_text mode=1 ]
+#...
+기분이 썩 좋지만은 않다.[p]
+[_tb_end_text]
 
-[glink  color="btn_30_purple"  text="START"  x="910"  y="395"  size="30"  target="*START"  width="300"  height="80"  _clickable_img=""  ]
-[glink  color="btn_30_purple"  text="LOAD"  x="910"  y="495"  size="30"  target="*LOAD"  width="300"  height="80"  _clickable_img=""  ]
-[glink  color="btn_30_purple"  storage="title_screen.ks"  size="30"  target="*title"  text="EXIT"  x="910"  y="595"  width="300"  height="80"  _clickable_img=""  ]
-[s  ]
-*START
+[bg  time="3000"  method="fadeIn"  storage="BGI/Common_Intro.jpg"  ]
+[tb_start_text mode=1 ]
+#...
 
-[showmenubutton]
+[_tb_end_text]
 
-[cm  ]
-[tb_keyconfig  flag="1"  ]
-[jump  storage="Scene_Dream_01.ks"  target=""  ]
-[s  ]
-*LOAD
-
-[cm  ]
-[showload]
-
-[jump  target="*title"  storage=""  ]
-*EXIT
-
-[s  ]
