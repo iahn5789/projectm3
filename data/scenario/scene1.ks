@@ -1,6 +1,5 @@
 [_tb_system_call storage=system/_scene1.ks]
 
-[wbgm  ]
 [stopbgm  time="7000"  fadeout="true"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [playbgm  volume="90"  time="1000"  loop="true"  storage="1111.mp3"  fadein="false"  ]
