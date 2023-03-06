@@ -6,26 +6,28 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_hide_message_window  ]
-[playbgm  volume="2"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
+[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [bg  storage="BGI/Common_Title_Screen.jpg"  ]
 *title
 
-[glink  color="black"  text="New&nbsp;Game"  x="75"  y="370"  size="20"  target="*start"  ]
-[glink  color="black"  text="Load&nbsp;Game"  x="75"  y="470"  size="20"  target="*load"  ]
-[glink  color="black"  storage="title_screen.ks"  size="20"  target="*title"  text="title"  ]
+[glink  color="btn_30_purple"  text="START"  x="910"  y="395"  size="30"  target="*START"  width="300"  height="80"  _clickable_img=""  ]
+[glink  color="btn_30_purple"  text="LOAD"  x="910"  y="495"  size="30"  target="*LOAD"  width="300"  height="80"  _clickable_img=""  ]
+[glink  color="btn_30_purple"  storage="title_screen.ks"  size="30"  target="*title"  text="EXIT"  x="910"  y="595"  width="300"  height="80"  _clickable_img=""  ]
 [s  ]
-*start
+*START
 
 [showmenubutton]
 
 [cm  ]
 [tb_keyconfig  flag="1"  ]
-[jump  storage="scene1.ks"  target=""  ]
+[jump  storage="Scene_Dream_01.ks"  target=""  ]
 [s  ]
-*load
+*LOAD
 
 [cm  ]
 [showload]
 
 [jump  target="*title"  storage=""  ]
+*EXIT
+
 [s  ]

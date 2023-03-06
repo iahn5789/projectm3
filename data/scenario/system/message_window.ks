@@ -20,54 +20,6 @@
 
 		
 
-            
-            [button role="quicksave" graphic="button/quicksave.png" x="197" y="204" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="quickload" graphic="button/quickload.png" x="282" y="201" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="save" graphic="button/save.png" x="368" y="201" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="load" graphic="button/load.png" x="459" y="200" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="title" graphic="button/title.png" x="549" y="199" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="menu" graphic="button/menu.png" x="635" y="201" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="window" graphic="button/window.png" x="722" y="202" width="70" height="25" visible="false" ]
-            
-
-        
-
-            
-            [button role="backlog" graphic="button/backlog.png" x="823" y="209" width="70" height="25" visible="false" ]
-            
-
-        
-
 		;CG・回想用の共通項目
 		[eval exp="sf._tb_cg_noimage='noimage.png'" ]
 		[eval exp="sf._tb_replay_noimage='noimage.png'" ]
