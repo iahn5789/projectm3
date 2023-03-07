@@ -19,7 +19,8 @@
 [bg  time="150"  method="puffIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="150"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="3000"  method="fadeIn"  storage="rouka.jpg"  ]
+[playbgm  volume="20"  time="1000"  loop="true"  storage="Common_Home_01.mp3"  fadein="true"  ]
+[bg  time="3000"  method="fadeIn"  storage="BGI/Common_home_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 " .... "[p]
@@ -32,13 +33,15 @@
 [quake  time="300"  count="3"  hmax="5"  wait="true"  ]
 [tb_start_text mode=1 ]
 #엄마
-" 아들!! " [r] " 빨리 내려와서 밥 먹어라! "[p]
+" 아들!! " [l][r] " 빨리 내려와서 밥 먹어라! "[p]
 #주인공
 " 네 금방 가요 "[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="1000"  method="crossfade"  storage="room.jpg"  ]
+[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
+[bg  time="500"  method="fadeIn"  storage="BGI/Common_home_02.png"  ]
+[mask_off  time="500"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
@@ -67,7 +70,7 @@
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
-[bg  time="3000"  method="fadeIn"  storage="rouka.jpg"  cross="false"  ]
+[bg  time="3000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -90,7 +93,7 @@
 [bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="100"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="1500"  method="fadeIn"  storage="rouka.jpg"  cross="false"  ]
+[bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -120,7 +123,7 @@
 재미있고 정보가 많지만..."[p]
 [_tb_end_text]
 
-[bg  time="1500"  method="fadeIn"  storage="rouka.jpg"  cross="false"  ]
+[bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [tb_start_text mode=1 ]
 #주인공
 " ...변태다... "[p]
@@ -129,7 +132,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[glink  color="btn_18_red"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="243"  width="800"  height="90"  text="응? 그게 무슨 말이야?"  _clickable_img=""  target="*L_no"  ]
+[glink  color="btn_18_red"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="243"  width="800"  height="90"  text="응?&nbsp;그게&nbsp;무슨&nbsp;말이야?"  _clickable_img=""  target="*L_no"  ]
 [glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="392"  width="800"  height="90"  text="알아보긴&nbsp;했는데..."  _clickable_img=""  target="*L_yes"  ]
 [s  ]
 *L_no

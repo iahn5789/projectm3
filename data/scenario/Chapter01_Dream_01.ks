@@ -2,22 +2,24 @@
 
 [hidemenubutton]
 
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
+[playbgm  volume="60"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_01.wav"  fadein="true"  loop="true"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #관객들
-" 와아아아아앙-! "[p]
+" 와아아아아아-! "[p]
 #???
 " 우리가 잘 해낼 수 있을까? "[p]
-" 긴장할 것 없어 "[r] " 그동안 잘 해왔었잖아! "[p]
+" 긴장할 것 없어 [l][r]그동안 잘 해왔었잖아! "[p]
 " 마..맞아!! "[p]
 " 그래도 떨리는데..... "[p]
 #관객들
-" 꺄아아아-!! " [r][p]
+" 꺄아아아-!! "[p]
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_01.wav"  clear="false"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
 [tb_start_text mode=1 ]
 #사회자
 " 자! 다음을 소개하도록 하겠습니다!! "[p]
