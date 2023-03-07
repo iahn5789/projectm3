@@ -29,6 +29,6 @@
 		;[position layer="message1" page=fore margint="15" marginl="20" marginr="20" marginb="20"]
 
 		[position layer="message1" width=1800 height=300 top=700 left=300 ]
-		[position layer="message1" page=fore margint=5 marginl=10 marginr=10 marginb=10 vertical=false opacity="180" radius="0" color="0x000000" ]
+		[position layer="message1" page=fore margint=5 marginl=10 marginr=10 marginb=10 vertical=false opacity="0" radius="0" color="0x000000" ]
 
 		

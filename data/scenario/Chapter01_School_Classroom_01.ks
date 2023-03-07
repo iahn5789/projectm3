@@ -5,7 +5,7 @@
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Classroom_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-373"  top="154"  ]
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  left="0"  top="145"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
@@ -19,7 +19,6 @@
 " 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하....  "[p]
 [_tb_end_text]
 
-[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_start_text mode=1 ]
 #???
 " 응? "[p]
@@ -33,7 +32,7 @@
 #전대용
 [_tb_end_text]
 
-[chara_show  name="KangYeoJin"  time="500"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
+[chara_show  name="KangYeoJin"  time="500"  wait="true"  storage="chara/3/KangYeoJin.png"  width="691"  height="1384"  left="651"  top="6"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 너희 아직 동아리에 들어가지 않은거야? "[p]
@@ -42,7 +41,10 @@
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="2"  wait="true"  ]
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-373"  top="154"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  ]
+[chara_hide  name="JeonDayeong"  time="10"  wait="true"  pos_mode="true"  ]
+[chara_move  name="KangYeoJin"  anim="true"  time="300"  effect="linear"  wait="true"  left="1051"  top="6"  width="691"  height="1384"  ]
+[chara_move  name="JeonDayeong"  anim="true"  time="300"  effect="linear"  wait="true"  left="-800"  top="145"  width="2270"  height="1280"  ]
+[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-800"  top="145"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 나는 서예부에 들어가있는데?! "[p]
@@ -84,13 +86,13 @@
 [tb_hide_message_window  ]
 [chara_hide  name="JeonDayeong"  time="10"  wait="false"  pos_mode="true"  ]
 [chara_hide  name="KangYeoJin"  time="10"  wait="false"  pos_mode="true"  ]
-[glink  color="btn_18_red"  storage="Chapter01_School_Classroom_01.ks"  size="30"  target="*l_yes_01"  x="240"  y="240"  width="800"  height="90"  text="알긴&nbsp;하는데...."  _clickable_img=""  ]
-[glink  color="btn_18_blue"  storage="Chapter01_School_Classroom_01.ks"  size="30"  target="*l_no_01"  x="240"  y="440"  width="800"  height="90"  text="동아리..방?"  _clickable_img=""  ]
+[glink  color="btn_18_red"  storage="Chapter01_School_Classroom_01.ks"  size="50"  target="*l_yes_01"  x="466"  y="282"  width="1000"  height="150"  text="알긴&nbsp;하는데...."  _clickable_img=""  ]
+[glink  color="btn_18_blue"  storage="Chapter01_School_Classroom_01.ks"  size="50"  target="*l_no_01"  x="466"  y="582"  width="1000"  height="150"  text="동아리..방?"  _clickable_img=""  ]
 [s  ]
 *l_yes_01
 
-[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-373"  top="154"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  ]
-[chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
+[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-800"  top="145"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  ]
+[chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="691"  height="1384"  left="1051"  top="6"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -101,8 +103,8 @@
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_no_01
 
-[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-373"  top="154"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  ]
-[chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
+[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-800"  top="145"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  ]
+[chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="691"  height="1384"  left="1051"  top="6"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #주인공
@@ -116,6 +118,7 @@
 *l_01
 
 [chara_hide  name="KangYeoJin"  time="500"  wait="false"  pos_mode="false"  ]
+[chara_move  name="JeonDayeong"  anim="true"  time="300"  effect="linear"  wait="true"  left="-200"  top="145"  width="2270"  height="1280"  ]
 [tb_start_text mode=1 ]
 #주인공
 " .......  "[p]
@@ -158,7 +161,7 @@
 #주인공
 " 시끄러워! 난 그런거 관심없어.... "[p]
 #전대용
-" 녀석 입으로는 그렇게 말해도 속으로는 [r]강여진을 생각하고 있는거 아니야?? "[p]
+" 녀석 입으로는 그렇게 말해도 속으로는 강여진을 생각하고 있는거 아니야?? "[p]
 #주인공
 " 아 쫌! "[p]
 #전대용

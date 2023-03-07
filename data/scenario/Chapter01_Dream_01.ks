@@ -19,11 +19,12 @@
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_01.wav"  clear="false"  ]
+[stopse  time="7000"  buf="0"  fadeout="true"  ]
 [stopbgm  time="1000"  fadeout="true"  ]
 [tb_start_text mode=1 ]
 #사회자
-" 자! 다음을 소개하도록 하겠습니다!! "[p]
-" 이번 순서는! ----------------!!! "[p]
+" 자! 다음을 소개하도록 하겠습니다!! " [p]
+" 이번 순서는! ----------------!!! " [p]
 [_tb_end_text]
 
 [playbgm  volume="50"  time="1000"  loop="false"  storage="Common_Logo_BGM_01.wav"  fadein="true"  ]
