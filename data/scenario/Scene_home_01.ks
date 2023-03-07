@@ -2,17 +2,21 @@
 
 [hidemenubutton]
 
+[mask  time="1"  effect="fadeIn"  color="0x000000"  ]
 [stopbgm  time="1000"  ]
 [bg  time="10"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
+[wait  time="1500"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
+#
 띠리리리- 띠리리리-[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="300"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="150"  method="puffIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="150"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[bg  time="300"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="150"  method="puffIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="150"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="3000"  method="fadeIn"  storage="rouka.jpg"  ]
