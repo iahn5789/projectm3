@@ -10,9 +10,9 @@
 [bg  storage="BGI/Common_Title_Screen.jpg"  ]
 *title
 
-[glink  color="btn_30_purple"  text="START"  x="910"  y="395"  size="30"  target="*START"  width="300"  height="80"  _clickable_img=""  ]
-[glink  color="btn_30_purple"  text="LOAD"  x="910"  y="495"  size="30"  target="*LOAD"  width="300"  height="80"  _clickable_img=""  ]
-[glink  color="btn_30_purple"  storage="title_screen.ks"  size="30"  target="*title"  text="EXIT"  x="910"  y="595"  width="300"  height="80"  _clickable_img=""  ]
+[glink  color="btn_30_purple"  text="START"  x="1404"  y="597"  size="35"  target="*START"  width="400"  height="100"  _clickable_img=""  ]
+[glink  color="btn_30_purple"  text="LOAD"  x="1404"  y="717"  size="35"  target="*LOAD"  width="400"  height="100"  _clickable_img=""  ]
+[glink  color="btn_30_purple"  storage="title_screen.ks"  size="35"  target="*title"  text="EXIT"  x="1404"  y="837"  width="400"  height="100"  _clickable_img=""  ]
 [s  ]
 *START
 
