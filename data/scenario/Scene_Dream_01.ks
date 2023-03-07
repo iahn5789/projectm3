@@ -29,3 +29,5 @@
 [bg  time="3000"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
 [bg  time="5000"  method="puffIn"  storage="BGI/Common_Maple_01.png"  ]
 [stopse  time="5000"  buf="0"  fadeout="true"  ]
+[wait  time="6000"  ]
+[jump  storage="Scene_home_01.ks"  target=""  ]

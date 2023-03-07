@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/BGI/Common_Black.jpg"  ]
+[preload  storage="./data/bgimage/BGI/Common_White_01.png"  ]
+[preload  storage="./data/bgimage/rouka.jpg"  ]
+[preload  storage="./data/bgimage/room.jpg"  ]
+[return]
