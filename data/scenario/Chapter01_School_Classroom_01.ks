@@ -2,9 +2,10 @@
 
 [hidemenubutton]
 
-[bg  time="1000"  method="crossfade"  storage="room.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_Classroom_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-373"  top="154"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
@@ -18,6 +19,7 @@
 " 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하....  "[p]
 [_tb_end_text]
 
+[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_start_text mode=1 ]
 #???
 " 응? "[p]
@@ -27,14 +29,20 @@
 
 [tb_start_text mode=1 ]
 #강여진
+" 후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나? "[p]
+#전대용
+[_tb_end_text]
+
+[chara_show  name="KangYeoJin"  time="500"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
+[tb_start_text mode=1 ]
+#강여진
 " 너네들 동아리에 아직도 안 들어갔던거야? "[p]
 #주인공, 전대용
 " ??????????! "[p]
-#강여진
-" 후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나? "[p]
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="2"  wait="true"  ]
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-373"  top="154"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 나는 서예부에 들어가있는데?! "[p]
@@ -74,11 +82,15 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[chara_hide  name="JeonDayeong"  time="10"  wait="false"  pos_mode="true"  ]
+[chara_hide  name="KangYeoJin"  time="10"  wait="false"  pos_mode="true"  ]
 [glink  color="btn_18_red"  storage="Chapter01_School_Classroom_01.ks"  size="30"  target="*l_yes_01"  x="240"  y="240"  width="800"  height="90"  text="알긴&nbsp;하는데...."  _clickable_img=""  ]
 [glink  color="btn_18_blue"  storage="Chapter01_School_Classroom_01.ks"  size="30"  target="*l_no_01"  x="240"  y="440"  width="800"  height="90"  text="동아리..방?"  _clickable_img=""  ]
 [s  ]
 *l_yes_01
 
+[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-373"  top="154"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  ]
+[chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -89,6 +101,8 @@
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_no_01
 
+[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-373"  top="154"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  ]
+[chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #주인공
@@ -101,6 +115,7 @@
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_01
 
+[chara_hide  name="KangYeoJin"  time="500"  wait="false"  pos_mode="false"  ]
 [tb_start_text mode=1 ]
 #주인공
 " .......  "[p]
@@ -152,6 +167,7 @@
 
 [tb_hide_message_window  ]
 [tb_show_message_window  ]
+[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_start_text mode=1 ]
 #
 하...밴드 동아리라....[p]

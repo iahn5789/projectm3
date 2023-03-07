@@ -78,6 +78,11 @@
 " 아효.. 우리 엄마는 화가 많다니깐..? "[p]
 #전대용
 " 어이 '주인공' ~ 좋은 아침이지 않냐? "[p]
+[_tb_end_text]
+
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-373"  top="154"  width="1440"  height="810"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[tb_start_text mode=1 ]
+#전대용
 " 내가 오늘 엄청 좋은 꿈을 꿨는데 말이지. [l][r] 쭉쭉빵빵 누님이 나를...... "[p]
 [_tb_end_text]
 
@@ -87,6 +92,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [bg  time="300"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="150"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="400"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
@@ -94,6 +100,7 @@
 [bg  time="100"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-373"  top="154"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -116,27 +123,36 @@
 " 아 알겠어 알겠어~ "[p]
 [_tb_end_text]
 
+[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-170"  top="29"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #
 전대용.[l][r] 전학오자마자 친해지게 된 친구다. [p]
 재미있고 정보가 많지만..."[p]
 [_tb_end_text]
 
+[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [tb_start_text mode=1 ]
 #주인공
 " ...변태다... "[p]
+[_tb_end_text]
+
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-373"  top="154"  reflect="false"  ]
+[tb_start_text mode=1 ]
 #전대용
 " 응? [l]그나저나 너 동아리는 좀 알아봤어? "[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[chara_hide  name="JeonDayeong"  time="10"  wait="true"  pos_mode="true"  ]
 [glink  color="btn_18_red"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="243"  width="800"  height="90"  text="응?&nbsp;그게&nbsp;무슨&nbsp;말이야?"  _clickable_img=""  target="*L_no"  ]
 [glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="392"  width="800"  height="90"  text="알아보긴&nbsp;했는데..."  _clickable_img=""  target="*L_yes"  ]
 [s  ]
 *L_no
 
+[chara_show  name="JeonDayeong"  time="500"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-373"  top="154"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -159,6 +175,7 @@
 [jump  storage="Chapter01_home_01.ks"  target="*L_yes"  ]
 *L_yes
 
+[chara_show  name="JeonDayeong"  time="500"  wait="true"  storage="chara/2/JeonDayeong.png"  width="1440"  height="810"  left="-373"  top="154"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #주인공
@@ -182,6 +199,7 @@
 " 야 !! 같이 가 !! "[p]
 [_tb_end_text]
 
+[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
 [jump  storage="Chapter01_School_Classroom_01.ks"  target=""  ]
