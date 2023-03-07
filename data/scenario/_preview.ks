@@ -1,35 +1,23 @@
 [_tb_system_call storage=system/_preview.ks ]
 
 [mask time=10]
-[bg  time="10"  method="fadeIn"  storage="rouka.jpg"  cross="false"  ]
-[tb_show_message_window] 
 [mask_off time=10]
+[stopbgm  time="7000"  fadeout="true"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
+[cm  ]
+[font  size="30"  color="0x000000"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
-" 뭐? 그게 정말이야?! "[p]
-#전대용
-" 그래 ! 전교생이 동아리에 참여한다고 ! "[p]
-" 그 말은 전교생 중 동아리를 가입하지 않는 사람은.....[l][r]너 하나 뿐이 겠네"[p]
-#주인공
-" 글쎄.. 나는 딱히 취미도 없고...[l][r]하고 싶은 것도 별로 없는 걸.... "[p]
-#전대용
-" 그러면 서예부는 어때? "[p]
-#주인공
-" 갑자기 분위기 서예부? "[p]
-#전대용
-" 서예가 얼마나 재밌는데![l][r]게다가 거기 부장 누나가 가슴이 아주 그냥....흐흐... "[p]
+TEST 1[p]
 [_tb_end_text]
 
-[quake  time="200"  count="2"  hmax="3"  wait="true"  ]
+[chara_show  name="ayana"  time="1000"  wait="true"  left="284"  top="109"  width=""  height=""  reflect="false"  ]
 [tb_start_text mode=1 ]
-#주인공
-" 경찰아저씨! 여기에요! "[p]
+#아야나
+" 여긴 어디야? "[p]
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
-#전대용
-" 야 !! 같이 가 !![p]
-[_tb_end_text]
-
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
+[glink  color="btn_05_black"  storage="scene2.ks"  size="20"  text="나는&nbsp;니가&nbsp;좋아"  target="*123"  x="278"  y="494"  width="700"  height="100"  _clickable_img=""  ]
+[s  ]
