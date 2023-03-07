@@ -29,7 +29,7 @@
 [playbgm  volume="50"  time="1000"  loop="false"  storage="Common_Logo_BGM_01.wav"  fadein="true"  ]
 [tb_hide_message_window  ]
 [bg  time="3000"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
-[bg  time="5000"  method="puffIn"  storage="BGI/Common_Maple_01.png"  ]
+[bg  time="5000"  method="puffIn"  storage="BGI/Common_Projectm3_Logo.png"  ]
 [stopse  time="5000"  buf="0"  fadeout="true"  ]
 [wait  time="6000"  ]
 [jump  storage="Chapter01_home_01.ks"  target=""  ]
