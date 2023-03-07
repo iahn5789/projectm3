@@ -1,4 +1,4 @@
-[_tb_system_call storage=system/_Scene_home_01.ks]
+[_tb_system_call storage=system/_Chapter01_home_01.ks]
 
 [hidemenubutton]
 
@@ -67,8 +67,8 @@
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
-[mask_off  time="2000"  effect="fadeOut"  ]
 [bg  time="3000"  method="fadeIn"  storage="rouka.jpg"  cross="false"  ]
+[mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #주인공
@@ -126,8 +126,16 @@
 " ...변태다... "[p]
 #전대용
 " 응? [l]그나저나 너 동아리는 좀 알아봤어? "[p]
-#주인공
-" 그게 무슨말이야? "[p]
+[_tb_end_text]
+
+[tb_hide_message_window  ]
+[glink  color="btn_18_red"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="243"  width="800"  height="90"  text="응? 그게 무슨 말이야?"  _clickable_img=""  target="*L_no"  ]
+[glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="30"  x="238"  y="392"  width="800"  height="90"  text="알아보긴&nbsp;했는데..."  _clickable_img=""  target="*L_yes"  ]
+[s  ]
+*L_no
+
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
 #전대용
 " 너도 전학 온 지 일주일이나 지났잖아?[l][r]이제 동아리에 들어가야지! "[p]
 #주인공
@@ -142,7 +150,14 @@
 " 뭐? 그게 정말이야?! "[p]
 #전대용
 " 그래 ! 전교생이 동아리에 참여한다고 ! "[p]
-" 그 말은 전교생 중 동아리를 가입하지 않는 사람은.....[l][r]너 하나 뿐이 겠네"[p]
+" 그 말은 전교생 중 동아리를 가입하지 않는 사람은.....[l][r]너 하나 뿐이겠네"[p]
+[_tb_end_text]
+
+[jump  storage="Chapter01_home_01.ks"  target="*L_yes"  ]
+*L_yes
+
+[tb_show_message_window  ]
+[tb_start_text mode=1 ]
 #주인공
 " 글쎄.. 나는 딱히 취미도 없고...[l][r]하고 싶은 것도 별로 없는 걸.... "[p]
 #전대용
@@ -166,3 +181,5 @@
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
+[jump  storage="Chapter01_School_Classroom_01.ks"  target=""  ]
+[s  ]

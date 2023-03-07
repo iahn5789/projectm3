@@ -1,4 +1,4 @@
-[_tb_system_call storage=system/_Scene_Dream_01.ks]
+[_tb_system_call storage=system/_Chapter01_Dream_01.ks]
 
 [hidemenubutton]
 
@@ -30,4 +30,5 @@
 [bg  time="5000"  method="puffIn"  storage="BGI/Common_Maple_01.png"  ]
 [stopse  time="5000"  buf="0"  fadeout="true"  ]
 [wait  time="6000"  ]
-[jump  storage="Scene_home_01.ks"  target=""  ]
+[jump  storage="Chapter01_home_01.ks"  target=""  ]
+[s  ]
