@@ -4,6 +4,7 @@
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
 [cm  ]
+[font  size="30"  color="0x000000"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 TEST 1[p]

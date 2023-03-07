@@ -174,3 +174,7 @@
 동아리 같은 건 관심이 없지만 [r]초대받았으니 한번 가볼까.... [p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[jump  storage="Chapter01_Lobby_01.ks"  target=""  ]
+[s  ]
