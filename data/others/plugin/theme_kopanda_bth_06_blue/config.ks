@@ -53,15 +53,15 @@
 	tf.btn_path_on  = tf.img_path + 'set.png';
 
 	// ボタン画像の幅と高さ（※未読スキップ、ミュート除く）
-	tf.btn_width  = 68; // 幅
-	tf.btn_height = 20; // 高さ
+	tf.btn_width  = 102; // 幅
+	tf.btn_height = 30; // 高さ
 
 	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x       = [1136, 383, 455, 527, 599, 671, 743, 815, 887, 959, 1031]; // X座標（共通）
-	tf.config_y_bgm   = 234; // BGMのY座標
-	tf.config_y_se    = 294; // SEのY座標
-	tf.config_y_ch    = 354; // テキスト速度のY座標
-	tf.config_y_auto  = 414; // オート速度のY座標
+	tf.config_x       = [1704, 574, 682, 790, 898, 1006, 1114, 1222, 1330, 1438, 1546]; // X座標（共通）
+	tf.config_y_bgm   = 351; // BGMのY座標
+	tf.config_y_se    = 441; // SEのY座標
+	tf.config_y_ch    = 531; // テキスト速度のY座標
+	tf.config_y_auto  = 621; // オート速度のY座標
 
 	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
 	tf.config_num_bgm;  // BGM
@@ -176,7 +176,7 @@
 	[button name="bgmvol,bgmvol_100" fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'gauge_hover.png'" width="&tf.btn_width" height="&tf.btn_height" x="&tf.config_x[10]" y="&tf.config_y_bgm" exp="tf.current_bgm_vol = 100; tf.config_num_bgm = 10"]
 
 ;	BGMミュート
-	[button name="bgmvol,bgmvol_0"   fix="true" target="*vol_bgm_mute" graphic="&tf.btn_path_off" width="20" height="20" x="&tf.config_x[0]" y="&tf.config_y_bgm"]
+	[button name="bgmvol,bgmvol_0"   fix="true" target="*vol_bgm_mute" graphic="&tf.btn_path_off" width="30" height="30" x="&tf.config_x[0]" y="&tf.config_y_bgm"]
 
 ;------------------------------------------------------------------------------------------------------
 ; SE音量
@@ -193,7 +193,7 @@
 	[button name="sevol,sevol_100" fix="true" target="*vol_se_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'gauge_hover.png'" width="&tf.btn_width" height="&tf.btn_height" x="&tf.config_x[10]" y="&tf.config_y_se" exp="tf.current_se_vol = 100; tf.config_num_se = 10"]
 
 ;	SEミュート
-	[button name="sevol,sevol_0"   fix="true" target="*vol_se_mute" graphic="&tf.btn_path_off" width="20" height="20" x="&tf.config_x[0]" y="&tf.config_y_se"]
+	[button name="sevol,sevol_0"   fix="true" target="*vol_se_mute" graphic="&tf.btn_path_off" width="30" height="30" x="&tf.config_x[0]" y="&tf.config_y_se"]
 
 ;------------------------------------------------------------------------------------------------------
 ; テキスト速度
@@ -227,10 +227,10 @@
 ; 未読スキップ
 ;------------------------------------------------------------------------------------------------------
 ;	未読スキップ-ON
-	[button name="unread_on"  fix="true" target="*skip_on"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="124" height="44" x="383" y="474"]
+	[button name="unread_on"  fix="true" target="*skip_on"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="574.5" y="711"]
 
 ;	未読スキップ-OFF
-	[button name="unread_off" fix="true" target="*skip_off" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="124" height="44" x="524" y="474"]
+	[button name="unread_off" fix="true" target="*skip_off" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="786" y="711"]
 
 ;------------------------------------------------------------------------------------------------------
 ; コンフィグ起動時の画面更新
@@ -367,7 +367,7 @@
 ;-------------------------------------------------------------------------------
 *skip_on
 [free layer="0" name="unread_off" time="10"]
-[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="383" y="474"]
+[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="574.5" y="711"]
 [config_record_label skip="true"]
 
 [return]
@@ -377,7 +377,7 @@
 ;-------------------------------------------------------------------------------
 *skip_off
 [free layer="0" name="unread_on" time="10"]
-[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="524" y="474"]
+[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="786" y="711"]
 [config_record_label skip="false"]
 
 [return]
@@ -489,9 +489,9 @@
 
 *load_skip_img
 [if exp="tf.text_skip == 'ON'"]
-	[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="383" y="474"]
+	[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="574.5" y="711"]
 [else]
-	[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="524" y="474"]
+	[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="786" y="711"]
 [endif]
 
 [return]

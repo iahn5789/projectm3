@@ -22,11 +22,11 @@ if(TG.config.alreadyReadTextColor != "default"){
 [free name="chara_name_area" layer="message0"]
 
 ; メッセージウィンドウの設定
-[position layer="message0" width="1280" height="248" top="472" left="0"]
-[position layer="message0" frame="../others/plugin/theme_kopanda_bth_06_blue/image/frame_message.png" margint="60" marginl="160" marginr="180" marginb="50" opacity="&mp.frame_opacity" page="fore"]
+[position layer="message0" width="1920" height="372" top="684" left="0"]
+[position layer="message0" frame="../others/plugin/theme_kopanda_bth_06_blue/image/frame_message.png" margint="90" marginl="180" marginr="270" marginb="75" opacity="&mp.frame_opacity" page="fore"]
 
 ; 名前枠の設定
-[ptext name="chara_name_area" layer="message0" color="&mp.name_color" size="26" bold="bold" x="90" y="480" width="520"]
+[ptext name="chara_name_area" layer="message0" color="&mp.name_color" size="42" bold="bold" x="90" y="690" width="300"]
 [chara_config ptext="chara_name_area"]
 
 ; デフォルトのフォントカラー指定
@@ -50,40 +50,40 @@ if(TG.config.alreadyReadTextColor != "default"){
 [hidemenubutton]
 
 ; Q.Save
-[button name="role_button" role="quicksave" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/qsave.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/qsave2.png" x="97" y="690"]
+[button name="role_button" role="quicksave" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/qsave.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/qsave2.png" x="169" y="1020"]
 
 ; Q.Load
-[button name="role_button" role="quickload" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/qload.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/qload2.png" x="197" y="690"]
+[button name="role_button" role="quickload" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/qload.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/qload2.png" x="319" y="1020"]
 
 ; Save
-[button name="role_button" role="save" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/save.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/save2.png" x="297" y="690"]
+[button name="role_button" role="save" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/save.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/save2.png" x="469" y="1020"]
 
 ; Load
-[button name="role_button" role="load" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/load.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/load2.png" x="397" y="690"]
+[button name="role_button" role="load" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/load.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/load2.png" x="619" y="1020"]
 
 ; Auto
-[button name="role_button" role="auto" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto2.png" x="497" y="690"]
+[button name="role_button" role="auto" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto2.png" x="769" y="1020"]
 
 ; Skip
-[button name="role_button" role="skip" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/skip.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/skip2.png" x="597" y="690"]
+[button name="role_button" role="skip" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/skip.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/skip2.png" x="919" y="1020"]
 
 ; Backlog
-[button name="role_button" role="backlog" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/log.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/log2.png" x="697" y="690"]
+[button name="role_button" role="backlog" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/log.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/log2.png" x="1069" y="1020"]
 
 ; Screen
-[button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="797" y="690"]
+[button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="1219" y="1020"]
 
 ; Config（※sleepgame を使用して config.ks を呼び出しています）
-[button name="role_button" role="sleepgame" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep2.png" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="897" y="690"]
+[button name="role_button" role="sleepgame" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep2.png" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="1369" y="1020"]
 
 ; Menu（※ロールボタンを使うなら不要）
-[button name="role_button" role="menu" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/menu.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/menu2.png" x="997" y="690"]
+[button name="role_button" role="menu" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/menu.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/menu2.png" x="1519" y="1020"]
 
 ; Title
-[button name="role_button" role="title" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/title.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/title2.png" x="1097" y="690"]
+[button name="role_button" role="title" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/title.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/title2.png" x="1669" y="1020"]
 
 ; Close
-[button name="role_button" role="window" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/close.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/close2.png" x="1195" y="535"]
+;[button name="role_button" role="window" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/close.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/close2.png" x="1195" y="535"]
 
 [endmacro]
 
