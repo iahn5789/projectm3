@@ -36,7 +36,7 @@
 [chara_show  name="KangYeoJin"  time="500"  wait="true"  storage="chara/3/KangYeoJin.png"  width="422"  height="844"  left="728"  top="0"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #강여진
-" 너네들 동아리에 아직도 안 들어갔던거야? "[p]
+" 너희 아직 동아리에 들어가지 않은거야? "[p]
 #주인공, 전대용
 " ??????????! "[p]
 [_tb_end_text]
