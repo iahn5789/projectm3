@@ -18,8 +18,8 @@
 " 꺄아아아-!! "[p]
 [_tb_end_text]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_01.wav"  clear="false"  ]
-[stopse  time="7000"  buf="0"  fadeout="true"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_01.wav"  ]
+[stopse  time="5000"  buf="0"  fadeout="true"  ]
 [stopbgm  time="1000"  fadeout="true"  ]
 [tb_start_text mode=1 ]
 #사회자
@@ -27,11 +27,10 @@
 " 이번 순서는! ----------------!!! " [p]
 [_tb_end_text]
 
-[playbgm  volume="50"  time="1000"  loop="false"  storage="Common_Logo_BGM_01.wav"  fadein="true"  ]
 [tb_hide_message_window  ]
-[bg  time="3000"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
+[bg  time="2000"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Opening_Logo_BGM.wav"  fadein="false"  ]
 [bg  time="5000"  method="puffIn"  storage="BGI/Common_Projectm3_Logo.png"  ]
-[stopse  time="5000"  buf="0"  fadeout="true"  ]
 [wait  time="6000"  ]
 [jump  storage="Chapter01_home_01.ks"  target=""  ]
 [s  ]

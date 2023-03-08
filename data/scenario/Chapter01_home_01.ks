@@ -5,11 +5,20 @@
 [mask  time="1"  effect="fadeIn"  color="0x000000"  ]
 [stopbgm  time="1000"  ]
 [bg  time="10"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[playse  volume="50"  time="1000"  buf="0"  storage="SFX/Common_Alarm_Clock_01.wav"  loop="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
 띠리리리- 띠리리리-[p]
+[_tb_end_text]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Alarm_Clock_off_01.mp3"  ]
+[tb_start_text mode=1 ]
+탁-[p]
+" 으으...시끄러워...! "[p]
+
+
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -38,6 +47,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="500"  method="fadeIn"  storage="BGI/Common_home_02.png"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
@@ -61,6 +71,7 @@
 
 [font  size="40"  color="0x000000"  face="SBB"  bold="false"  ]
 [quake  time="300"  count="3"  hmax="5"  wait="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [tb_start_text mode=1 ]
 #엄마
 " 싸우지 말고 어서 준비해 늦겠다! "[p]
