@@ -6,7 +6,6 @@
 [stopbgm  time="1000"  ]
 [bg  time="10"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
-[wait  time="1500"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
