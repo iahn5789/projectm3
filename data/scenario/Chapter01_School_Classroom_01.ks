@@ -9,7 +9,6 @@
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
-[position_filter blur="5"][p]
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
@@ -33,7 +32,8 @@
 #전대용
 [_tb_end_text]
 
-[chara_show  name="KangYeoJin"  time="500"  wait="true"  storage="chara/3/KangYeoJin.png"  width="691"  height="1384"  left="651"  top="6"  reflect="false"  ]
+[chara_hide  name="JeonDayeong"  time="300"  wait="true"  pos_mode="true"  ]
+[chara_show  name="KangYeoJin"  time="300"  wait="true"  storage="chara/3/KangYeoJin.png"  width="691"  height="1384"  left="651"  top="6"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 너희 아직 동아리에 들어가지 않은거야? "[p]
@@ -42,10 +42,9 @@
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="2"  wait="true"  ]
-[chara_hide  name="JeonDayeong"  time="10"  wait="true"  pos_mode="true"  ]
 [chara_move  name="KangYeoJin"  anim="true"  time="300"  effect="linear"  wait="true"  left="1051"  top="6"  width="691"  height="1384"  ]
 [chara_move  name="JeonDayeong"  anim="true"  time="300"  effect="linear"  wait="true"  left="-800"  top="145"  width="2270"  height="1280"  ]
-[chara_show  name="JeonDayeong"  time="50"  wait="true"  left="-800"  top="145"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  ]
+[chara_show  name="JeonDayeong"  time="300"  wait="true"  left="-800"  top="145"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 나는 서예부에 들어가있는데?! "[p]
@@ -141,18 +140,25 @@
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="2"  wait="true"  ]
+[font  size="40"  color="0x000000"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #전대용
-" 도내 최고 쿨 뷰티 미녀! "[p]
+" 도내 최상위 S랭크급 쿨뷰티초미녀 ! "[p]
+[_tb_end_text]
+
+[resetfont  ]
+[tb_start_text mode=1 ]
 #주인공
 " 으응...? "[p]
 [_tb_end_text]
 
+[font  size="40"  color="0x000000"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "[p]
 [_tb_end_text]
 
+[resetfont  ]
 [quake  time="200"  count="2"  hmax="2"  wait="true"  vmax="3"  ]
 [tb_start_text mode=1 ]
 #주인공
