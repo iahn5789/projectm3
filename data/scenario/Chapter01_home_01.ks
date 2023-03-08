@@ -60,10 +60,15 @@
 " 너는 좀 조용히 할 필요가 있을 것 같아.[r] 눈에 넣으면 너무 아픈 내 동생아..? "[p]
 [_tb_end_text]
 
+[font  size="40"  color="0x000000"  face="SBB"  bold="false"  ]
 [quake  time="300"  count="3"  hmax="5"  wait="true"  ]
 [tb_start_text mode=1 ]
 #엄마
 " 싸우지 말고 어서 준비해 늦겠다! "[p]
+[_tb_end_text]
+
+[resetfont  ]
+[tb_start_text mode=1 ]
 #주인공, 여동생
 " 네.... "[p]
 [_tb_end_text]
@@ -80,7 +85,7 @@
 " 어이 '주인공' ~ 좋은 아침이지 않냐? "[p]
 [_tb_end_text]
 
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-373"  top="154"  width="1440"  height="810"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 내가 오늘 엄청 좋은 꿈을 꿨는데 말이지. [l][r] 쭉쭉빵빵 누님이 나를...... "[p]

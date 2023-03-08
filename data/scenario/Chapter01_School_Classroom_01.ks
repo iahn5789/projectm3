@@ -9,6 +9,7 @@
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
+[position_filter blur="5"][p]
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
