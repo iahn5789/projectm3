@@ -33,7 +33,7 @@
 [tb_start_text mode=1 ]
 " .... "[p]
 " ....................... "[p]
-#&[sf.name]
+#주인공
 " 후..." [p]
 " 이상한 꿈이네.... "[p]
 [_tb_end_text]
@@ -61,11 +61,11 @@
 [tb_start_text mode=1 ]
 #엄마
 " 준비는 다 했어?[l] 오늘도 지각하면 이번 달 용돈은 없을 줄 알아 "[p]
-#주인공
+#&[sf.name]
 " 제가 알아서 할게요 걱정마세요... "[p]
 #여동생
 " 니가 무슨? 퍽이나 하겠다 [l] 할 줄 아는 것이라곤 밥 먹고 싸고 자는 것 밖에 없잖아! "[p]
-#주인공
+#&[sf.name]
 " 너는 좀 조용히 할 필요가 있을 것 같아. 눈에 넣으면 너무 아픈 내 동생아..? "[p]
 [_tb_end_text]
 
@@ -79,7 +79,7 @@
 
 [resetfont  ]
 [tb_start_text mode=1 ]
-#주인공, 여동생
+#&[sf.name] , 여동생
 " 네.... "[p]
 [_tb_end_text]
 
@@ -89,10 +89,10 @@
 [mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 아효.. 우리 엄마는 화가 많다니깐..? "[p]
 #전대용
-" 어이 '주인공' ~ 좋은 아침이지 않냐? "[p]
+" 어이 [emb exp="sf.name"] ~ 좋은 아침이지 않냐? "[p]
 [_tb_end_text]
 
 [chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
@@ -102,7 +102,7 @@
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 꿈? 어라, 나도 분명... "[p]
 [_tb_end_text]
 
@@ -119,7 +119,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
-" 야! 야! 주인공! "[p]
+" 야! 야! [emb exp="sf.name"]! "[p]
 #
 " .......... "[p]
 #전대용
