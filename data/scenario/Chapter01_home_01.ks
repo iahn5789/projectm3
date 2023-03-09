@@ -133,7 +133,7 @@
 #전대용
 " 하여간 너 놀릴 때가 제일 재밌어 "[p]
 #주인공
-" 한번만 더 농담 했다간 경찰에게 잡혀가도 모른다? "[p]
+" 한번만 더 농담 했다간 경찰 아저씨가 잡아가도 모른다? "[p]
 #전대용
 " 아 알겠어 알겠어~ "[p]
 [_tb_end_text]
@@ -186,7 +186,7 @@
 " 뭐? 그게 정말이야?! "[p]
 #전대용
 " 그래 ! 전교생이 동아리에 참여한다고 ! "[p]
-" 그 말은 전교생 중 동아리를 가입하지 않는 사람은.....[l][r]너 하나 뿐이겠네"[p]
+" 그 말은 즉, 전교생 중 동아리를 가입하지 않는 사람이.....[l][r]너 하나 뿐이겠네"[p]
 [_tb_end_text]
 
 [jump  storage="Chapter01_home_01.ks"  target="*L_yes"  ]
@@ -217,7 +217,7 @@
 [_tb_end_text]
 
 [chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [jump  storage="Chapter01_School_Classroom_01.ks"  target=""  ]
 [s  ]

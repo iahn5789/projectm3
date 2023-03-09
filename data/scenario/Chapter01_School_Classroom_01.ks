@@ -2,6 +2,8 @@
 
 [hidemenubutton]
 
+[stopbgm  time="1000"  ]
+[playbgm  volume="40"  time="1000"  loop="true"  storage="Common_School_Classroom_01.mp3"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Classroom_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -29,7 +31,6 @@
 [tb_start_text mode=1 ]
 #강여진
 " 후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나? "[p]
-#전대용
 [_tb_end_text]
 
 [chara_hide  name="JeonDayeong"  time="300"  wait="true"  pos_mode="true"  ]
@@ -155,7 +156,7 @@
 [font  size="40"  color="0x000000"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #전대용
-" 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "[p]
+" 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "[s][p]
 [_tb_end_text]
 
 [resetfont  ]

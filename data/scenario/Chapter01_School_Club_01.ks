@@ -35,7 +35,7 @@
 #강여진
 " 그만! 내가 불러서 온 친구란 말이야! "[p]
 #???
-" 이해할 수 없어! 왜 우리 대화를 엿듣고 있던건데!?[l][r][p]
+" 이해할 수 없어! 왜 우리 대화를 엿듣고 있던건데!?[p]
 [_tb_end_text]
 
 [font  size="40"  color="0x000000"  face="SBB"  ]
@@ -270,7 +270,9 @@
 " 에...????? "[p]
 [_tb_end_text]
 
-[bg  time="2000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
+[tb_hide_message_window  ]
+[bg  time="1000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
 손.....손을 잡았어..... [p]
@@ -278,7 +280,9 @@
 부...부드러워..... [p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="room.jpg"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #주인공
 " 나는.....나는..........나는....... "[p]
