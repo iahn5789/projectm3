@@ -22,7 +22,7 @@
 [tb_keyconfig  flag="1"  ]
 [stopbgm  time="2000"  fadeout="true"  ]
 [tb_hide_message_window  ]
-[jump  storage="Chapter01_Dream_01.ks"  target=""  ]
+[jump  storage="input_name_scene_01.ks"  target="*l_jump_1"  ]
 [s  ]
 *LOAD
 

@@ -1,6 +1,8 @@
 [_tb_system_call storage=system/_Chapter01_School_Club_01.ks]
 
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
+[stopbgm  time="1000"  ]
+[playbgm  volume="30"  time="1000"  loop="true"  storage="Common_Embarrass_01.mp3"  ]
 [tb_start_text mode=1 ]
 #???
 " 꺄악-!!!!!!! "[p]
@@ -108,6 +110,8 @@
 [s  ]
 *l_yes_01
 
+[stopbgm  time="1000"  ]
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Chapter01_ED_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -195,6 +199,8 @@
 [s  ]
 *l_yes_02
 
+[stopbgm  time="1000"  ]
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Chapter01_ED_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -303,6 +309,8 @@
 [s  ]
 *l_yes_03
 
+[stopbgm  time="1000"  ]
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Chapter01_ED_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
