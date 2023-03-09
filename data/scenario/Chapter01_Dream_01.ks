@@ -1,7 +1,10 @@
 [_tb_system_call storage=system/_Chapter01_Dream_01.ks]
 
+*L_input_name
+
 [hidemenubutton]
 
+[cm  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
@@ -11,8 +14,8 @@
 [tb_start_text mode=1 ]
 #관객들
 " 와아아아아아-! "[p]
-#???
-" 우리가 잘 해낼 수 있을까? "[p]
+#&[sf.name]
+" 우리가 [emb exp="sf.name"] 잘 해낼 수 있을까? "[p]
 " 긴장할 것 없어 [l][r]그동안 잘 해왔었잖아! "[p]
 " 마..맞아!! "[p]
 " 그래도 떨리는데..... "[p]

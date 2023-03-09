@@ -1,13 +1,11 @@
-[_tb_system_call storage=system/_preview.ks ]
+[_tb_system_call storage=system/_input_name_scene_01.ks]
 
-[mask time=10]
-[mask_off time=10]
 [hidemenubutton]
 
 [bg  storage="BGI/Common_Black.jpg"  method="puffIn"  time="1"  ]
 [tb_hide_message_window  ]
 [edit  left="760"  top="445"  width="400"  height="130"  size="60"  maxchars="80"  reflect="false"  name="sf.name"  ]
-[button  storage="input_name_scene_01.ks"  target="*L_name_"  graphic="frame.png"  width="936"  height="411"  x="1188"  y="515"  _clickable_img=""  name="img_4"  ]
+[button  storage="input_name_scene_01.ks"  target="*L_name_"  graphic="button/save2.png"  width="70"  height="25"  x="1188"  y="515"  _clickable_img=""  name="img_4"  ]
 [glink  color="btn_32_red"  storage="input_name_scene_01.ks"  size="20"  x="1426"  y="566"  width=""  height=""  text="확인"  _clickable_img=""  target="*L_name_"  ]
 [s  ]
 *L_name_
