@@ -1,7 +1,6 @@
 [_tb_system_call storage=system/_Chapter01_School_Club_01.ks]
 
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
-[stopbgm  time="1000"  ]
 [playbgm  volume="30"  time="1000"  loop="true"  storage="Common_Embarrass_01.mp3"  ]
 [tb_start_text mode=1 ]
 #???
@@ -12,7 +11,7 @@
 [bg  time="1000"  method="crossfade"  storage="room.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 ( 헉-!! 큰일났... )[p]
 [_tb_end_text]
 
@@ -22,7 +21,7 @@
 " 와줬구나! 어서 와! "[p]
 #???
 " 뭐야! [l]변태같이 다 엿듣고 있던거야?! "[p]
-#주인공
+#&[sf.name]
 " 아니 나는....... "[p]
 [_tb_end_text]
 
@@ -77,14 +76,14 @@
 #진다영
 " 그..그렇지만..."[p]
 " ...하! 거기 너! "[p]
-#주인공
+#&[sf.name]
 " 저..저요..? "[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #진다영
 " 그래 ! [l]변태 같이 엿 듣는 것 말고 할 줄 아는게 있긴 해? "[p]
-#주인공
+#&[sf.name]
 " 나...나는... "[p]
 [_tb_end_text]
 
@@ -111,7 +110,7 @@
 *l_yes_01
 
 [stopbgm  time="1000"  ]
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Chapter01_ED_01.mp3"  ]
+[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -129,18 +128,18 @@
 
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 잠깐....뭐라고...? "[p]
 #강여진
 " 맞아! 하마터면 폐부될 뻔 했다구 [l][r]네가 와줘서 정말 다행이야! "[p]
-#주인공
+#&[sf.name]
 " 잠깐! 그런 말은 없었잖아 나는.... "[p]
 #강여진
 " 그러니까.. 할거지?? "[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " ... ... "[p]
 " ......... "[p]
 " 으...응... "[p]
@@ -154,7 +153,7 @@
 
 [resetfont  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 아니! 그런게 아니라! "[p]
 #강여진
 " 아싸! "[p]
@@ -179,17 +178,17 @@
 
 [quake  time="300"  count="2"  hmax="3"  wait="true"  vmax="3"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 잠깐! 세상이 멸망할 것 같은 이 분위기 뭔데!  "[p]
 " 나 한명쯤 안한다고 이렇게까지?? "[p]
 #설나희
 " ...동아리는 일정 정원을 채우지 못하면 강제적으로 폐부되거든... "[p]
 " ...내일까지 4명이 모이지 않는다면... "[p]
-#주인공
+#&[sf.name]
 " ........... "[p]
 #강여진
 " 그러지 말고 같이 하자! 응? [l][r]우리는 네가 필요하단 말이야.. "[p]
-#주인공
+#&[sf.name]
 " 나는... "[p]
 [_tb_end_text]
 
@@ -200,7 +199,7 @@
 *l_yes_02
 
 [stopbgm  time="1000"  ]
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Chapter01_ED_01.mp3"  ]
+[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -270,7 +269,7 @@
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 ' ............어?? '[p]
 [_tb_end_text]
 
@@ -299,7 +298,7 @@
 [chara_show  name="SulNaHee"  time="300"  wait="false"  storage="chara/5/SulNaHee.png"  width="593"  height="964"  left="1343"  top="298"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 나는.....나는..........나는....... "[p]
 [_tb_end_text]
 
@@ -310,7 +309,7 @@
 *l_yes_03
 
 [stopbgm  time="1000"  ]
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Chapter01_ED_01.mp3"  ]
+[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진

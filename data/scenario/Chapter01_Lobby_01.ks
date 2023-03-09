@@ -9,7 +9,7 @@
 ( 어디보자...Love Sound Syndrome? )[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_Intro.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 아니야! 진짜로 올거야! 약속까지 했다구! "[p]
@@ -40,4 +40,5 @@
 " 문 앞? "[p]
 [_tb_end_text]
 
+[stopbgm  time="2000"  fadeout="true"  ]
 [jump  storage="Chapter01_School_Club_01.ks"  target=""  ]

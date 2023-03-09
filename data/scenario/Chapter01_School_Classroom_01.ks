@@ -2,8 +2,7 @@
 
 [hidemenubutton]
 
-[stopbgm  time="1000"  ]
-[playbgm  volume="40"  time="1000"  loop="true"  storage="Common_School_Classroom_01.mp3"  ]
+[playbgm  volume="20"  time="1000"  loop="true"  storage="Common_School_Classroom_01.mp3"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Classroom_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -15,7 +14,7 @@
 
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 아 좀! [l] 나는 서예 같은 거는 관심이 없어! "[p]
 #전대용
 " 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하....  "[p]
@@ -38,7 +37,7 @@
 [tb_start_text mode=1 ]
 #강여진
 " 너희 아직 동아리에 들어가지 않은거야? "[p]
-#주인공, 전대용
+#
 " ??????????! "[p]
 [_tb_end_text]
 
@@ -74,11 +73,11 @@
 " 칫.....너무해.... "[p]
 " ............ "[p]
 " 너는 어때? 분명 재미있을거야! "[p]
-#주인공
+#&[sf.name]
 " 어? 나?  "[p]
 #강여진
 " 혹시 다룰 수 있는 악기가 있어? "[p]
-#주인공
+#&[sf.name]
 " 나.....나는... "[p]
 #강여진
 " 아! 그럼 수업이 끝나고 우리 동아리 방으로 찾아와! [l][r]어디인지 알고있어?? "[p]
@@ -108,7 +107,7 @@
 [chara_show  name="KangYeoJin"  time="50"  wait="true"  storage="chara/3/KangYeoJin.png"  width="691"  height="1384"  left="1051"  top="6"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 아..아니..? "[p]
 #강여진
 " 4층 복도 왼쪽 과학실 바로 옆에 있어! "[l][r]" 이름을 붙혀놓았으니까 어디인지 바로 알거야! "[p]
@@ -121,7 +120,7 @@
 [chara_hide  name="KangYeoJin"  time="500"  wait="false"  pos_mode="false"  ]
 [chara_move  name="JeonDayeong"  anim="true"  time="300"  effect="linear"  wait="true"  left="-200"  top="145"  width="2270"  height="1280"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " .......  "[p]
 " 거절할 새도 없이 그냥 가버렸어.... "[p]
 [_tb_end_text]
@@ -129,7 +128,7 @@
 [tb_start_text mode=1 ]
 #전대용
 " 오....강여진..... "[p]
-#주인공
+#&[sf.name]
 " 왜? 누군지 알아? "[p]
 
 [_tb_end_text]
@@ -149,28 +148,28 @@
 
 [resetfont  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 으응...? "[p]
 [_tb_end_text]
 
 [font  size="40"  color="0x000000"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #전대용
-" 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "[s][p]
+" 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "[p]
 [_tb_end_text]
 
 [resetfont  ]
 [quake  time="200"  count="2"  hmax="2"  wait="true"  vmax="3"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 그만! 거기까지! "[p]
 #전대용
 " 엣헴....아무튼 그런 사람이 너랑 말을 하게 될줄이야...[l][r] 이 자식 대단한걸? "[p]
-#주인공
+#&[sf.name]
 " 시끄러워! 난 그런거 관심없어.... "[p]
 #전대용
 " 녀석 입으로는 그렇게 말해도 속으로는 강여진을 생각하고 있는거 아니야?? "[p]
-#주인공
+#&[sf.name]
 " 아 쫌! "[p]
 #전대용
 " 후후.. 잘 해보라고! [l][r]그럼 난 이만. "[p]

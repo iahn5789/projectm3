@@ -33,7 +33,7 @@
 [tb_start_text mode=1 ]
 " .... "[p]
 " ....................... "[p]
-#주인공
+#&[sf.name]
 " 후..." [p]
 " 이상한 꿈이네.... "[p]
 [_tb_end_text]
@@ -42,7 +42,7 @@
 [tb_start_text mode=1 ]
 #엄마
 " 아들!! " [l][r] " 빨리 내려와서 밥 먹어라! "[p]
-#주인공
+#&[sf.name]
 " 네 금방 가요 "[p]
 [_tb_end_text]
 
@@ -79,7 +79,7 @@
 
 [resetfont  ]
 [tb_start_text mode=1 ]
-#&[sf.name] , 여동생
+#&[sf.name]
 " 네.... "[p]
 [_tb_end_text]
 
@@ -128,19 +128,21 @@
 
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 아니야 이 변태야!  [l][r] 아무튼 너는 입이 문제라니깐? "[p]
 #전대용
 " 하여간 너 놀릴 때가 제일 재밌어 "[p]
-#주인공
+#&[sf.name]
 " 한번만 더 농담 했다간 경찰 아저씨가 잡아가도 모른다? "[p]
 #전대용
 " 아 알겠어 알겠어~ "[p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
 [chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
 전대용.[l][r] 전학오자마자 친해지게 된 친구다. [p]
@@ -148,15 +150,19 @@
 [_tb_end_text]
 
 [chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
+[tb_hide_message_window  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [font  size="40"  color="0x000000"  face="SBB"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " ...변태다... "[p]
 [_tb_end_text]
 
+[tb_hide_message_window  ]
 [resetfont  ]
 [chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
 " 응? [l]그나저나 너 동아리는 좀 알아봤어? "[p]
@@ -174,7 +180,7 @@
 [tb_start_text mode=1 ]
 #전대용
 " 너도 전학 온 지 일주일이나 지났잖아?[l][r]이제 동아리에 들어가야지! "[p]
-#주인공
+#&[sf.name]
 " 동아리에? 왜? "[p]
 #전대용
 " 나 참..진짜 모르는거야?[l][r]우리학교는 동아리가 선택이 아니고 필수 참여잖아! "[p]
@@ -182,7 +188,7 @@
 
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 뭐? 그게 정말이야?! "[p]
 #전대용
 " 그래 ! 전교생이 동아리에 참여한다고 ! "[p]
@@ -195,7 +201,7 @@
 [chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 글쎄.. 나는 딱히 취미도 없고...[l][r]하고 싶은 것도 별로 없는 걸.... "[p]
 #전대용
 " 그러면 서예부는 어때? "[p]
@@ -207,7 +213,7 @@
 
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
 [tb_start_text mode=1 ]
-#주인공
+#&[sf.name]
 " 경찰아저씨! 여기에요! "[p]
 [_tb_end_text]
 
@@ -216,6 +222,7 @@
 " 야 !! 같이 가 !! "[p]
 [_tb_end_text]
 
+[stopbgm  time="2000"  fadeout="true"  ]
 [chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
