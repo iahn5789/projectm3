@@ -186,5 +186,5 @@
 
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[jump  storage="Chapter01_Lobby_01.ks"  target=""  ]
+[jump  storage="Input_Game01_Scene_01.ks"  target=""  ]
 [s  ]
