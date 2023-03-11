@@ -8,7 +8,7 @@
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [playbgm  volume="60"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_01.wav"  fadein="true"  loop="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Amb_Crowd_Loop_01.wav"  loop="true"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #관객들
