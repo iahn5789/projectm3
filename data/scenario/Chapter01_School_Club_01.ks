@@ -8,7 +8,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="1000"  method="crossfade"  storage="room.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_03.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -66,6 +66,14 @@
 [_tb_end_text]
 
 [chara_show  name="SulNaHee"  time="1000"  wait="true"  storage="chara/5/SulNaHee.png"  width="593"  height="964"  left="1343"  top="298"  reflect="false"  ]
+[tb_start_tyrano_code]
+[chara_config talk_focus="none"]
+[chara_config talk_focus="brightness"]
+[filter layer="0" name="KangYeoJin" brightness=100] (bright)
+[filter layer="0" name=JinDaYoung" brightness=50] (dim)
+[filter layer="0" name="SulNaHee" brightness=50] (dim)
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #설나희
 " 나는 좋다고 생각해.... "[p]

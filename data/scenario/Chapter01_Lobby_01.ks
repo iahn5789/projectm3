@@ -1,6 +1,6 @@
 [_tb_system_call storage=system/_Chapter01_Lobby_01.ks]
 
-[bg  time="1000"  method="crossfade"  storage="rouka.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI02/Common_Fence_Day_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -9,7 +9,7 @@
 ( 어디보자...Love Sound Syndrome? )[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI02/Common_Door_Day_01.png"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 아니야! 진짜로 올거야! 약속까지 했다구! "[p]

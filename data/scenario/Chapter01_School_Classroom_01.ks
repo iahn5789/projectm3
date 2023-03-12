@@ -3,7 +3,7 @@
 [hidemenubutton]
 
 [playbgm  volume="20"  time="1000"  loop="true"  storage="Common_School_Classroom_01.mp3"  ]
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_Classroom_01.png"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_02.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  left="0"  top="145"  ]
@@ -186,5 +186,5 @@
 
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[jump  storage="Input_Game01_Scene_01.ks"  target=""  ]
+[jump  storage="Chapter01_Lobby_01.ks"  target=""  ]
 [s  ]
