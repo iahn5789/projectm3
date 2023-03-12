@@ -69,7 +69,7 @@
 " 너는 좀 조용히 할 필요가 있을 것 같아. 눈에 넣으면 너무 아픈 내 동생아..? "[p]
 [_tb_end_text]
 
-[font  size="40"  color="0x000000"  face="SBB"  bold="false"  ]
+[font  size="40"  color="0xff0000"  face="SBB"  bold="false"  ]
 [quake  time="300"  count="3"  hmax="5"  wait="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [tb_start_text mode=1 ]
@@ -96,6 +96,7 @@
 [_tb_end_text]
 
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 내가 오늘 엄청 좋은 꿈을 꿨는데 말이지. [l][r] 쭉쭉빵빵 누님이 나를...... "[p]
@@ -107,7 +108,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[chara_hide  name="전대용"  time="1000"  wait="true"  pos_mode="true"  ]
+[chara_hide  name="전대용"  time="100"  wait="false"  pos_mode="false"  ]
 [bg  time="300"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="150"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="400"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
@@ -116,6 +117,7 @@
 [bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -139,7 +141,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[chara_hide  name="전대용"  time="1000"  wait="false"  pos_mode="false"  ]
+[chara_hide  name="전대용"  time="100"  wait="false"  pos_mode="false"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_show_message_window  ]
@@ -149,10 +151,10 @@
 재미있고 정보가 많지만..."[p]
 [_tb_end_text]
 
-[chara_hide  name="전대용"  time="1000"  wait="false"  pos_mode="false"  ]
+[chara_hide  name="전대용"  time="100"  wait="false"  pos_mode="false"  ]
 [tb_hide_message_window  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
-[font  size="40"  color="0x000000"  face="SBB"  ]
+[font  size="40"  color="0xff8f8f"  face="SBB"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -162,6 +164,7 @@
 [tb_hide_message_window  ]
 [resetfont  ]
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -176,6 +179,7 @@
 *L_no
 
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -199,6 +203,7 @@
 *L_yes
 
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -223,7 +228,7 @@
 [_tb_end_text]
 
 [stopbgm  time="2000"  fadeout="true"  ]
-[chara_hide  name="전대용"  time="1000"  wait="false"  pos_mode="false"  ]
+[chara_hide  name="전대용"  time="100"  wait="false"  pos_mode="false"  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [jump  storage="Chapter01_School_Classroom_01.ks"  target=""  ]

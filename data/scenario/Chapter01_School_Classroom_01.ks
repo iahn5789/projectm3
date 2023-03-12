@@ -7,6 +7,7 @@
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
@@ -20,6 +21,7 @@
 " 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하....  "[p]
 [_tb_end_text]
 
+[chara_hide  name="전대용"  time="300"  wait="true"  pos_mode="false"  ]
 [tb_start_text mode=1 ]
 #???
 " 응? "[p]
@@ -32,7 +34,6 @@
 " 후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나? "[p]
 [_tb_end_text]
 
-[chara_hide  name="전대용"  time="300"  wait="false"  pos_mode="false"  ]
 [chara_show  name="강여진"  time="500"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -41,32 +42,45 @@
 " ??????????! "[p]
 [_tb_end_text]
 
-[quake  time="200"  count="2"  hmax="2"  wait="true"  ]
+[quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
 [chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 나는 서예부에 들어가있는데?! "[p]
 [_tb_end_text]
 
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Out_Jeondaeyong_01"  ]
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_In_Kangyeojin_01"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 아아! 그러지 말고 너네도 밴드부에 들어와! [l][r]재미있단 말이야! "[p]
 [_tb_end_text]
 
-[quake  time="200"  count="2"  hmax="2"  wait="true"  ]
+[quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Out_Kangyeojin_01"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_In_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 아쉽게도 난 다룰 수 있는 악기가 없는걸? "[p]
 [_tb_end_text]
 
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Out_Jeondaeyong_01"  ]
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_In_Kangyeojin_01"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 내가 다 알려줄 수 있어! 그러지 말고 같이하자! "[p]
 [_tb_end_text]
 
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Out_Kangyeojin_01"  ]
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_In_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 응.안.해 "[p]
+[_tb_end_text]
+
+[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Out_Jeondaeyong_01"  ]
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_In_Kangyeojin_01"  ]
+[tb_start_text mode=1 ]
 #강여진
 " 칫.....너무해.... "[p]
 " ............ "[p]
@@ -90,7 +104,8 @@
 *l_yes_01
 
 [chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
-[chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
+[chara_show  name="전대용"  time="300"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Keep_Kangyeojin_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -102,7 +117,8 @@
 *l_no_01
 
 [chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
-[chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
+[chara_show  name="전대용"  time="300"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
+[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Keep_Kangyeojin_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
