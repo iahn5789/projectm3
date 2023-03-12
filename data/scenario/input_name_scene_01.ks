@@ -11,7 +11,7 @@
 [tb_ptext_show  x="715"  y="408"  size="48"  color="0xffffff"  time="1000"  text="너의&nbsp;이름을&nbsp;알려줘"  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [html]
-<input required autofocus class="text_box form event-setting-element" name="sf.name" type="text" value="" placeholder="현수" data-event-tag="edit" data-event-pm="{"name":"sf.name","color":"black","left":"714","top":"483","size":"60","face":"TheJamsil5Bold","width":"480","autocomplete":"false","height":"80","maxchars":"5","reflect":"false","_tag":"edit"}" maxlength="5" autocomplete="off" style="border-radius:16px; padding-left: 8px; color: rgb(0, 0, 0); left: 714px; top: 483px; width: 400px; height: 80px; font-size: 32px; font-family: TheJamsil5Bold; position: absolute;">
+<input required autofocus class="text_box form event-setting-element" name="sf.name" type="text" value="현수" placeholder="이름" data-event-tag="edit" data-event-pm="{"name":"sf.name","color":"black","left":"714","top":"483","size":"60","face":"TheJamsil5Bold","width":"480","autocomplete":"false","height":"80","maxchars":"5","reflect":"false","_tag":"edit"}" maxlength="5" autocomplete="off" style="border-radius:16px; padding-left: 8px; color: rgb(0, 0, 0); left: 714px; top: 483px; width: 400px; height: 80px; font-size: 32px; font-family: TheJamsil5Bold; position: absolute;">
 [endhtml]
 [_tb_end_tyrano_code]
 
