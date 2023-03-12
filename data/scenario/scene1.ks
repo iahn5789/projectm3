@@ -38,7 +38,8 @@ TEST 1[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_config name="yuko" talk_anim=zoom]
+;[chara_move name="yuko" time=100 left=20 top=100 talk_anim="easeInBounce"]
+
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]

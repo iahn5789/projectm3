@@ -10,7 +10,7 @@
 		[ptext name="chara_name_area" layer="message0" color=0x000000 size=30 x=324 y=705 bold="bold" edge="undefined" shadow="undefined"]
 
 		;キャラクターの表示モードに関する定義
-		[chara_config ptext="chara_name_area" pos_mode=true time="600" memory="false" anim="true" effect="easeInExpo" pos_change_time="600" ]
+		[chara_config ptext="chara_name_area" pos_mode=true time="600" memory="false" anim="true" effect="linear" pos_change_time="600" ]
 
 		;キャラクターフォーカスなど
 		[chara_config  talk_focus="brightness" ]

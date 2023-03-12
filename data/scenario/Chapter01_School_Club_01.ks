@@ -15,7 +15,7 @@
 ( 헉-!! 큰일났... )[p]
 [_tb_end_text]
 
-[chara_show  name="KangYeoJin"  time="300"  wait="true"  storage="chara/3/KangYeoJin.png"  width="534"  height="1072"  left="728"  top="192"  reflect="false"  ]
+[chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 와줬구나! 어서 와! "[p]
@@ -53,7 +53,7 @@
 [_tb_end_text]
 
 [resetfont  ]
-[chara_show  name="JinDaYoung"  time="1000"  wait="true"  storage="chara/4/JinDaYoung.png"  width="620"  height="1007"  left="-1"  top="254"  reflect="false"  ]
+[chara_show  name="진다영"  time="1000"  wait="false"  storage="chara/9/진다영.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #진다영
 " 왜! [l]왜 소리를 질러! "[p]
@@ -65,15 +65,7 @@
 " 저기..... "[p]
 [_tb_end_text]
 
-[chara_show  name="SulNaHee"  time="1000"  wait="true"  storage="chara/5/SulNaHee.png"  width="593"  height="964"  left="1343"  top="298"  reflect="false"  ]
-[tb_start_tyrano_code]
-[chara_config talk_focus="none"]
-[chara_config talk_focus="brightness"]
-[filter layer="0" name="KangYeoJin" brightness=100] (bright)
-[filter layer="0" name=JinDaYoung" brightness=50] (dim)
-[filter layer="0" name="SulNaHee" brightness=50] (dim)
-[_tb_end_tyrano_code]
-
+[chara_show  name="설나희"  time="1000"  wait="false"  storage="chara/10/설나희.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
 [tb_start_text mode=1 ]
 #설나희
 " 나는 좋다고 생각해.... "[p]
@@ -286,9 +278,9 @@
 " 에...????? "[p]
 [_tb_end_text]
 
-[chara_hide  name="SulNaHee"  time="400"  wait="false"  pos_mode="true"  ]
-[chara_hide  name="KangYeoJin"  time="400"  wait="false"  pos_mode="true"  ]
-[chara_hide  name="JinDaYoung"  time="400"  wait="false"  pos_mode="true"  ]
+[chara_hide  name="설나희"  time="400"  wait="false"  pos_mode="false"  ]
+[chara_hide  name="강여진"  time="400"  wait="false"  pos_mode="false"  ]
+[chara_hide  name="진다영"  time="400"  wait="false"  pos_mode="false"  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [tb_show_message_window  ]
@@ -300,10 +292,10 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="10"  method="crossfade"  storage="room.jpg"  ]
-[chara_show  name="KangYeoJin"  time="300"  wait="false"  storage="chara/3/KangYeoJin.png"  width="534"  height="1072"  left="728"  top="192"  reflect="false"  ]
-[chara_show  name="JinDaYoung"  time="300"  wait="false"  storage="chara/4/JinDaYoung.png"  width="620"  height="1007"  left="-1"  top="254"  reflect="false"  ]
-[chara_show  name="SulNaHee"  time="300"  wait="false"  storage="chara/5/SulNaHee.png"  width="593"  height="964"  left="1343"  top="298"  reflect="false"  ]
+[bg  time="10"  method="crossfade"  storage="BGI02/Common_Classroom_Day_03.png"  ]
+[chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
+[chara_show  name="진다영"  time="1000"  wait="false"  storage="chara/9/진다영.png"  width="512"  height="832"  left="0"  top="0"  reflect="false"  ]
+[chara_show  name="설나희"  time="1000"  wait="false"  storage="chara/10/설나희.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]

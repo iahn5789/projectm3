@@ -95,7 +95,7 @@
 " 어이 [emb exp="sf.name"] ~ 좋은 아침이지 않냐? "[p]
 [_tb_end_text]
 
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 내가 오늘 엄청 좋은 꿈을 꿨는데 말이지. [l][r] 쭉쭉빵빵 누님이 나를...... "[p]
@@ -107,7 +107,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
+[chara_hide  name="전대용"  time="1000"  wait="true"  pos_mode="true"  ]
 [bg  time="300"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="150"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="400"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
@@ -115,7 +115,7 @@
 [bg  time="100"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -139,9 +139,9 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
+[chara_hide  name="전대용"  time="1000"  wait="false"  pos_mode="false"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
@@ -149,7 +149,7 @@
 재미있고 정보가 많지만..."[p]
 [_tb_end_text]
 
-[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
+[chara_hide  name="전대용"  time="1000"  wait="false"  pos_mode="false"  ]
 [tb_hide_message_window  ]
 [bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [font  size="40"  color="0x000000"  face="SBB"  ]
@@ -161,7 +161,7 @@
 
 [tb_hide_message_window  ]
 [resetfont  ]
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -169,13 +169,13 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[chara_hide  name="JeonDayeong"  time="10"  wait="true"  pos_mode="true"  ]
+[chara_hide  name="전대용"  time="10"  wait="true"  pos_mode="true"  ]
 [glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="45"  x="466"  y="282"  width="1000"  height="150"  text="응?&nbsp;그게&nbsp;무슨&nbsp;말이야?"  _clickable_img=""  target="*L_no"  ]
 [glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="45"  x="466"  y="582"  width="1000"  height="150"  text="알아보긴&nbsp;했는데..."  _clickable_img=""  target="*L_yes"  ]
 [s  ]
 *L_no
 
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -198,7 +198,7 @@
 [jump  storage="Chapter01_home_01.ks"  target="*L_yes"  ]
 *L_yes
 
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  left="-144"  top="211"  width="2169"  height="1220"  reflect="false"  storage="chara/2/JeonDayeong.png"  ]
+[chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -223,7 +223,7 @@
 [_tb_end_text]
 
 [stopbgm  time="2000"  fadeout="true"  ]
-[chara_hide  name="JeonDayeong"  time="1000"  wait="true"  pos_mode="true"  ]
+[chara_hide  name="전대용"  time="1000"  wait="false"  pos_mode="false"  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [jump  storage="Chapter01_School_Classroom_01.ks"  target=""  ]
