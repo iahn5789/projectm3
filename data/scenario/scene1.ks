@@ -9,7 +9,6 @@
 [tb_start_tyrano_code]
 ; 캐릭터 등장
 [chara_new name="yuko" storage="chara/yuko/hair_back/Long.png" jname="yuko" ]
-
 [chara_layer name="yuko" part="body_back" id="1" storage="chara/yuko/body_back/bodyback.png" zindex=1 ]
 [chara_layer name="yuko" part="body_back" id="2" storage="chara/yuko/body_back/bodyback2.png" zindex=1 ]
 
@@ -32,25 +31,33 @@
 
 [_tb_end_tyrano_code]
 
+[call  storage="input_zoom_in_out.ks"  target="*L_zoomin_yoko"  ]
 [tb_start_text mode=1 ]
 #yuko
 TEST 1[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-;[chara_move name="yuko" time=100 left=20 top=100 talk_anim="easeInBounce"]
 
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+;[chara_move name="yuko" time=100 left="-=30" top="-=80" width=360 height=480 anim="true" effect="jswing" wait="false"]
+;512 832
 [chara_part name="yuko" hair_front="2" face="2" eye="2" body_back="2" body_front="2"]
 [_tb_end_tyrano_code]
 
+[call  storage="input_zoom_in_out.ks"  target="*L_zoomout_yoko"  ]
 [tb_start_text mode=1 ]
 #ayana
 TEST 2[p]
 [_tb_end_text]
 
+[tb_start_tyrano_code]
+;[chara_move name="yuko" time=100 left="+=30" top="+=80" width=300 height=400 anim="true" effect="jswing" wait="false"]
+[_tb_end_tyrano_code]
+
+[call  storage="input_zoom_in_out.ks"  target="*L_zoomin_yoko"  ]
 [tb_start_text mode=1 ]
 #yuko
 TEST 3[p]

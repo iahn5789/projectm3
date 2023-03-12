@@ -15,4 +15,5 @@
 
 ;=========変数宣言部分 
 [iscript] 
+f['null']=''; 
 [endscript] 
