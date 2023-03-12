@@ -6,7 +6,7 @@
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_02.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
-[chara_show  name="JeonDayeong"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  left="0"  top="145"  ]
+[chara_show  name="전대용"  time="1000"  wait="true"  storage="chara/2/JeonDayeong.png"  width="2270"  height="1280"  left="0"  top="145"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
