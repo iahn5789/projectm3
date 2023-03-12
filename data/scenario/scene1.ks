@@ -6,8 +6,35 @@
 [cm  ]
 [font  size="30"  color="0x000000"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
 [tb_show_message_window  ]
+[tb_start_tyrano_code]
+;キャラクターを登録
+[chara_new name="yuko" storage="chara/yuko/hair_back/Long.png" jname="yuko" ]
+
+[chara_layer name="yuko" part="body_back" id="breza" storage="chara/yuko/body_back/bodyback.png" zindex=1 ]
+[chara_layer name="yuko" part="body_front" id="breza" storage="chara/yuko/body_front/Body_Front.png" zindex=10 ]
+[chara_layer name="yuko" part="eye" id="1" storage="chara/yuko/eye/eye.png" zindex=20 ]
+[chara_layer name="yuko" part="hair_front" id="ナチュラル" storage="chara/yuko/hair_front/hair_front.png" zindex=40 ]
+[chara_layer name="yuko" part="head" id="1" storage="chara/yuko/head/head.png" zindex=11]
+[chara_layer name="yuko" part="face" id="1" storage="chara/yuko/face_front/face_front.png" zindex=20 ]
+
+[chara_show name="yuko"]
+
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 TEST 1[p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
+TEST 2[p]
+[_tb_end_text]
+
+[tb_start_text mode=1 ]
+TEST 3[p]
 [_tb_end_text]
 
 [chara_show  name="ayana"  time="1000"  wait="true"  left="284"  top="109"  width=""  height=""  reflect="false"  ]
