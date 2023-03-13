@@ -92,9 +92,11 @@
 --------------------------------------*/
 .area_save_list {
 	display: block;
-	width: 1000px;
-	height: 440px;
-	margin-top: 190px;
+	
+	width: 900px;
+	height: 1000px;
+	margin-top: 250px;
+	margin-left: 566px;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transform: translateZ(0);
@@ -103,7 +105,7 @@
 
 /* スクロールバー */
 .area_save_list::-webkit-scrollbar {
-	width:12px;
+	width:0px;
 }
 
 .area_save_list::-webkit-scrollbar-thumb {
@@ -119,23 +121,23 @@
 .save_list {
 	display: table;
 	table-layout: fixed;
-	width: 800px;
-	height: 124px;
+	width: 900px;
+	height: 163px;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	font-weight: normal;
 	border: none;
 	border-collapse: separate;
-	border-spacing: 0 12px;
+	border-spacing: 0px;
 	box-sizing: border-box;
 }
 
 /* セーブデータの設定 */
 .save_list_item {
 	display:table-row;
-	width: 800px;
-	height: 124px;
+	width: 900px;
+	height: 163px;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -143,42 +145,28 @@
 	cursor: pointer;
 }
 
-.save_list_item:hover > .save_list_item_thumb{
-	background: url('image/system/saveslot2.png');
-	background-repeat: y-repeat;
-	background-position: left top;
-	background-color: none;
-}
-
-.save_list_item:hover > .save_list_item_area{
-	background: url('image/system/saveslot2.png');
-	background-repeat: y-repeat;
-	background-position: right top;
-	background-color: none;
-}
-
 .save_list_item:hover {
-	background: none;
+background-color: transparent;
 }
+
+
+
 
 /* セーブデータのサムネイル部分の設定 */
 .save_list_item_thumb {
 	display: table-cell;
-	width: 200px;
-	height: 124px;
+	width: 0px;
+	height: 0px;
 	margin: 0;
 	padding: 0;
-	background: url('image/system/saveslot.png');
-	background-repeat: y-repeat;
-	background-position: left top;
-	box-sizing: border-box;
+	
 }
 
 
 /* サムネイル画像の設定 */
 .save_list_item_thumb img {
-	width: 160px;
-	height: 90px;
+	width: 0px;
+	height: 0px;
 	margin: 15px 0 0 19px;
 	padding: 0;
 }
@@ -186,23 +174,38 @@
 /* セーブデータのテキスト部文の設定 */
 .save_list_item_area {
 	display: table-cell;
-	width: 600px;
+font-size: 20px;
+	width: 864px;
 	height: 124px;
-	padding: 15px 10px 0 15px;
+	padding: 24px 64px;
 	border:none;
 	border-radius: 0;
-	background: url('image/system/saveslot.png');
-	background-repeat: y-repeat;
+	background: url('../../../image/New_GUI/Save_Button_Slot_01.png');
+	background-repeat: no-repeat;
 	background-position: right top;
 	text-align: left;
 	vertical-align: top;
 	box-sizing: border-box;
 }
 
+.save_list_item_area:hover {
+background-color: transparent;
+background-repeat: no-repeat;
+	background-position: left top;
+background: url('../../../image/New_GUI/Save_Button_Slot_02.png');
+}
+
+.save_list_item:hover > .save_list_item_area {
+	
+font-size: 24px;
+
+}
+
+
 /* セーブデータの日付の設定 */
 .save_list_item_date {
 	display: block;
-	height: 30px;
+	height: 24px;
 	margin: 0;
 	padding: 0;
 	line-height: 1;
@@ -216,7 +219,7 @@
 	display: block;
 	height: 60px;
 	margin: 0;
-	padding: 10px 0 0 0;
+	padding: 4px 0 0 0;
 	line-height: 1.5;
 	color: #666666;
 	overflow: hidden;
@@ -228,6 +231,7 @@
 --------------------------------------------- */
 
 /* 通常 */
+
 .bth06 {
 	display: inline-block;
 	position: relative;
@@ -244,7 +248,7 @@
 
 /* ホバー */
 .bth06:hover {
-	background : #73E5E5;
+	background : none;
 	background : -moz-linear-gradient(50% 0% -90deg,rgba(115, 229, 229, 1) 0%,rgba(59, 178, 206, 1) 100%);
 	background : -webkit-linear-gradient(-90deg, rgba(115, 229, 229, 1) 0%, rgba(59, 178, 206, 1) 100%);
 	background : linear-gradient(180deg, rgba(115, 229, 229, 1) 0%, rgba(59, 178, 206, 1) 100%);
