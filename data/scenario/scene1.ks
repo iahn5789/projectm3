@@ -3,8 +3,13 @@
 [stopbgm  time="7000"  fadeout="true"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
+[tb_start_tyrano_code]
+
+[_tb_end_tyrano_code]
+
+[s  ]
 [cm  ]
-[font  size="30"  color="0x000000"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
+[font  size="30"  color="0xffffff"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 ; 캐릭터 등장
@@ -35,10 +40,14 @@
 [tb_start_text mode=1 ]
 #yuko
 TEST 1[p]
+TEST 2[p]
+
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-
+#yuko
+TEST3                                                                        [er]
+TEST4[p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]

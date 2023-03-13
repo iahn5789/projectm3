@@ -154,7 +154,7 @@
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="2"  wait="true"  ]
-[font  size="40"  color="0x000000"  face="SBB"  ]
+[font  size="40"  color="0xffffff"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 도내 최상위 S랭크급 쿨뷰티초미녀 ! "[p]
@@ -166,11 +166,11 @@
 " 으응...? "[p]
 [_tb_end_text]
 
-[font  size="40"  color="0x000000"  face="SBB"  ]
-[tb_start_text mode=1 ]
+[font  size="40"  color="0xffffff"  face="SBB"  ]
+[tb_start_tyrano_code]
 #전대용
-" 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "[p]
-[_tb_end_text]
+" 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "          [er]
+[_tb_end_tyrano_code]
 
 [resetfont  ]
 [quake  time="200"  count="2"  hmax="2"  wait="true"  vmax="3"  ]
