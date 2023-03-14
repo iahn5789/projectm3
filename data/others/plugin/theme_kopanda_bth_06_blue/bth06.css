@@ -95,8 +95,8 @@
 	
 	width: 900px;
 	height: 1000px;
-	margin-top: 250px;
-	margin-left: 566px;
+	margin-top: 230px;
+	margin-left: 568px;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	-webkit-transform: translateZ(0);
@@ -137,7 +137,7 @@
 .save_list_item {
 	display:table-row;
 	width: 900px;
-	height: 163px;
+	height: 174px;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -145,8 +145,22 @@
 	cursor: pointer;
 }
 
+.save_list_item:hover > .save_list_item_thumb{
+	background: url('../../../image/New_GUI/Save_Button_Slot_02.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: none;
+}
+
+.save_list_item:hover > .save_list_item_area{
+	background: url('../../../image/New_GUI/Save_Button_Slot_02.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-color: none;
+}
+
 .save_list_item:hover {
-background-color: transparent;
+	background: none;
 }
 
 
@@ -155,33 +169,35 @@ background-color: transparent;
 /* セーブデータのサムネイル部分の設定 */
 .save_list_item_thumb {
 	position: relative;
-	display: table-cell;
+	border: white 1px solid;
+	border-radius: 8px;
 	width: 0px;
 	height: 0px;
 	margin: 0;
 	padding: 0;
-	
 }
 
 
 /* サムネイル画像の設定 */
 .save_list_item_thumb img {
-position: absolute;
-top:16px; left:48px;
+	position: absolute;
+	top:16px; left:33px;
 	border: white 1px solid;
 	border-radius: 8px;
-	width: 192px;
-	height: 108px;
-	margin: 15px 15px 0 19px;
+	width: 249.6px;
+	height: 140.4px;
+	margin: 0;
 	padding: 0;
+	z-index:1;
 }
 
 /* セーブデータのテキスト部文の設定 */
 .save_list_item_area {
 	display: table-cell;
 	position: relative;
-font-size: 20px;
-	width: 864px;
+	font-size: 20px;
+	left:-99px;
+	width: 1000px;
 	height: 124px;
 	padding: 24px 64px;
 	border:none;
@@ -194,33 +210,27 @@ font-size: 20px;
 	box-sizing: border-box;
 }
 
+/*
 .save_list_item_area:hover {
 background-color: transparent;
 background-repeat: no-repeat;
 	background-position: left top;
-background: url('../../../image/New_GUI/Save_Button_Slot_02.png');
+background: url('../../../image/New_GUI/Save_Button_Slot_01.png');
 }
-
-.save_list_item:hover > .save_list_item_area{
-	
-font-size: 24px;
- 
-}
-
-.save_list_item:hover >.save_list_item_thumb img{
-margin: 15px 5px 0 19px;
-}
+*/
 
 
 /* セーブデータの日付の設定 */
 .save_list_item_date {
 	display: block;
 	height: 24px;
-	margin: 0;
 	padding: 0;
+	position : absolute; 
+	left:800px; top:125px;
 	line-height: 1;
-	color: #C87137;
+	color: #FFF;
 	font-weight: bold;
+	font-size:16px;
 	box-sizing: border-box;
 }
 
@@ -238,6 +248,9 @@ margin: 15px 5px 0 19px;
 	color: #666666;
 	overflow: hidden;
 	box-sizing: border-box;
+	position: absolute;
+	left:400px;
+	top:40px;
 }
 
 
