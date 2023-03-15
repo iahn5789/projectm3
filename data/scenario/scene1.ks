@@ -7,10 +7,14 @@
 
 [_tb_end_tyrano_code]
 
-[s  ]
 [cm  ]
 [font  size="30"  color="0xffffff"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
 [tb_show_message_window  ]
+[tb_ptext_show  x="758"  y="89"  size="30"  color="0xffffff"  time="1000"  text="Day-"  anim="false"  face="serif"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="847"  y="89"  size="30"  color="0xffffff"  time="1000"  anim="false"  face="serif"  text="&[f.Day]"  edge="undefined"  shadow="undefined"  ]
+[wait  time="3000"  ]
+[tb_ptext_hide  time="2000"  ]
+[s  ]
 [tb_start_tyrano_code]
 ; 캐릭터 등장
 [chara_new name="yuko" storage="chara/yuko/hair_back/Long.png" jname="yuko" ]
