@@ -22,11 +22,11 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="150"  method="puffIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="150"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[bg  time="150"  method="puffIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="150"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="300"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="350"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
+[bg  time="450"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="600"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
+[bg  time="1000"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
 [playbgm  volume="20"  time="1000"  loop="true"  storage="Common_Home_01.mp3"  fadein="true"  ]
 [bg  time="3000"  method="fadeIn"  storage="BGI/Common_home_01.png"  ]
 [tb_show_message_window  ]
@@ -48,6 +48,7 @@
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
+[playse  volume="25"  time="1000"  buf="1"  storage="SFX/Amb_Kitchen_01.wav"  fadein="true"  loop="true"  ]
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="500"  method="fadeIn"  storage="BGI/Common_home_02.png"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
@@ -58,6 +59,7 @@
 마치 내가 직접 겪은 일처럼..[p]
 [_tb_end_text]
 
+[playse  volume="25"  time="1000"  buf="2"  storage="SFX/Kitchen_Cook_01.wav"  ]
 [tb_start_text mode=1 ]
 #엄마
 " 준비는 다 했어?[l] 오늘도 지각하면 이번 달 용돈은 없을 줄 알아 "[p]
@@ -83,9 +85,12 @@
 " 네.... "[p]
 [_tb_end_text]
 
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
+[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [bg  time="3000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -107,15 +112,56 @@
 " 꿈? 어라, 나도 분명... "[p]
 [_tb_end_text]
 
+[playbgm  volume="100"  time="2000"  loop="true"  storage="Common_Backstage_cutoff_01.mp3"  fadein="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_cutoff_01.wav"  loop="true"  fadein="true"  ]
 [tb_hide_message_window  ]
 [chara_hide  name="전대용"  time="100"  wait="false"  pos_mode="false"  ]
-[bg  time="300"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[bg  time="150"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="400"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="100"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
-[bg  time="80"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[bg  time="1000"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#???
+" 우리가 잘 해낼 수 있을까? "                  [er]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[bg  time="500"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#???
+" 긴장할 것 없어 "                  [er]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[bg  time="500"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#???
+" 그동안 잘 해왔었잖아! "                 [er]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[bg  time="500"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_cutoff_01.wav"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#사회자
+" 자! 다음을 소개하도록 하겠습니다~!! "    [er]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#사회자
+" 이번 순서는! ----------------!!! "             [er]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[playbgm  volume="20"  time="2500"  loop="true"  storage="Common_Home_01.mp3"  fadein="true"  ]
+[bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
+[bg  time="1000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
 [call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_show_message_window  ]
@@ -123,7 +169,7 @@
 #전대용
 " 야! 야! [emb exp="sf.name"]! "[p]
 #
-" .......... "[p]
+" ... ... ...... "[p]
 #전대용
 " 표정이 왜 그래? [l][r]아! 설마 너도.... "[p]
 [_tb_end_text]
@@ -173,6 +219,7 @@
 
 [tb_hide_message_window  ]
 [chara_hide  name="전대용"  time="10"  wait="true"  pos_mode="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="45"  x="466"  y="282"  width="1000"  height="150"  text="응?&nbsp;그게&nbsp;무슨&nbsp;말이야?"  _clickable_img=""  target="*L_no"  ]
 [glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="45"  x="466"  y="582"  width="1000"  height="150"  text="알아보긴&nbsp;했는데..."  _clickable_img=""  target="*L_yes"  ]
 [s  ]
@@ -222,6 +269,7 @@
 " 경찰아저씨! 여기에요! "[p]
 [_tb_end_text]
 
+[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_ctr_run_01.wav"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 야 !! 같이 가 !! "[p]

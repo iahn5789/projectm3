@@ -3,6 +3,7 @@
 [hidemenubutton]
 
 [playbgm  volume="20"  time="1000"  loop="true"  storage="Common_School_Classroom_01.mp3"  ]
+[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Common_Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_02.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -25,9 +26,13 @@
 [tb_start_text mode=1 ]
 #???
 " 응? "[p]
-#
-드르륵 -[p]
 [_tb_end_text]
+
+[playse  volume="130"  time="1000"  buf="1"  storage="SFX/fixed_Sliding_door_open.wav"  ]
+[tb_start_tyrano_code]
+#
+드르륵 -                           쿵                                 [er]
+[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
@@ -83,14 +88,24 @@
 [tb_start_text mode=1 ]
 #강여진
 " 칫.....너무해.... "[p]
+[_tb_end_text]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_start_text mode=1 ]
+#
 " ............ "[p]
+
+[_tb_end_text]
+
+[tb_start_text mode=1 ]
+#강여진
 " 너는 어때? 분명 재미있을거야! "[p]
 #&[sf.name]
 " 어? 나?  "[p]
 #강여진
 " 혹시 다룰 수 있는 악기가 있어? "[p]
 #&[sf.name]
-" 나.....나는... "[p]
+" 나....나는... "[p]
 #강여진
 " 아! 그럼 수업이 끝나고 우리 동아리 방으로 찾아와! [l][r]어디인지 알고있어?? "[p]
 [_tb_end_text]
@@ -98,6 +113,7 @@
 [tb_hide_message_window  ]
 [chara_hide  name="전대용"  time="10"  wait="false"  pos_mode="true"  ]
 [chara_hide  name="강여진"  time="10"  wait="false"  pos_mode="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [glink  color="btn_18_red"  storage="Chapter01_School_Classroom_01.ks"  size="50"  target="*l_yes_01"  x="466"  y="282"  width="1000"  height="150"  text="알긴&nbsp;하는데...."  _clickable_img=""  ]
 [glink  color="btn_18_blue"  storage="Chapter01_School_Classroom_01.ks"  size="50"  target="*l_no_01"  x="466"  y="582"  width="1000"  height="150"  text="동아리..방?"  _clickable_img=""  ]
 [s  ]
@@ -110,8 +126,15 @@
 [tb_start_text mode=1 ]
 #강여진
 " 잘 됐네! [l][r]이름을 붙혀놓았으니까 어디인지 바로 알거야! "[p]
-" 기다리고 있을게 꼭 와야돼! 있다봐! "[p]
+
 [_tb_end_text]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/fixed_Sliding_door_open_short.wav"  ]
+[playse  volume="50"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
+[tb_start_tyrano_code]
+#강여진
+" 기다리고 있을게 꼭 와야돼! 있다봐! "                   [er]
+[_tb_end_tyrano_code]
 
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_no_01
@@ -125,8 +148,15 @@
 " 아..아니..? "[p]
 #강여진
 " 4층 복도 왼쪽 과학실 바로 옆에 있어! "[l][r]" 이름을 붙혀놓았으니까 어디인지 바로 알거야! "[p]
-" 기다리고 있을게 꼭 와야 돼! 있다봐! "[p]
+
 [_tb_end_text]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/fixed_Sliding_door_open_short.wav"  ]
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
+[tb_start_tyrano_code]
+#강여진
+" 기다리고 있을게 꼭 와야 돼! 있다봐! "                [er]
+[_tb_end_tyrano_code]
 
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_01
@@ -155,6 +185,7 @@
 
 [quake  time="200"  count="2"  hmax="2"  wait="true"  ]
 [font  size="40"  color="0xffffff"  face="SBB"  ]
+[playse  volume="65"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 도내 최상위 S랭크급 쿨뷰티초미녀 ! "[p]
@@ -167,11 +198,13 @@
 [_tb_end_text]
 
 [font  size="40"  color="0xffffff"  face="SBB"  ]
+[playse  volume="70"  time="1000"  buf="1"  storage="SFX/Typing_Fast_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #전대용
 " 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4...... "          [er]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="1"  fadeout="false"  ]
 [resetfont  ]
 [quake  time="200"  count="2"  hmax="2"  wait="true"  vmax="3"  ]
 [tb_start_text mode=1 ]
