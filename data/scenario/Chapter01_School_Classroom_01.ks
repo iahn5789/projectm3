@@ -232,6 +232,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [jump  storage="Chapter01_Lobby_01.ks"  target=""  ]
 [s  ]

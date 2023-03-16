@@ -10,6 +10,7 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_03.png"  ]
 [tb_show_message_window  ]
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Body_Fall_01.wav"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
 ( 헉-!! 큰일났... )[p]
@@ -25,13 +26,15 @@
 " 아니 나는....... "[p]
 [_tb_end_text]
 
-[quake  time="300"  count="3"  hmax="10"  wait="true"  ]
-[font  size="40"  color="0x000000"  face="SBB"  ]
+[quake  time="800"  count="10"  hmax="8"  wait="false"  vmax="6"  ]
+[font  size="40"  color="0xff0000"  face="SBB"  ]
+[playse  volume="50"  time="1000"  buf="0"  storage="SFX/Emotion_Anoying_Dog_growl_01.wav"  ]
 [tb_start_text mode=1 ]
 #???
-" 시끄러! [l]변태! [l]호색한! [l]대머리! "[p]
+" 시끄러! 변태!!! 호색한!!! 대머리!!!!!!!!!!!!!!! "[p]
 [_tb_end_text]
 
+[stopse  time="500"  buf="0"  fadeout="true"  ]
 [resetfont  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -40,13 +43,13 @@
 " 이해할 수 없어! 왜 우리 대화를 엿듣고 있던건데!?[p]
 [_tb_end_text]
 
-[font  size="40"  color="0x000000"  face="SBB"  ]
+[font  size="60"  color="0xe62525"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #???
-찐따! 찌질이! [l]버러지! 거지! "[l][p]
+찐따! 찌질이! 버러지! 거지!!!!!!! "[l][p]
 [_tb_end_text]
 
-[quake  time="300"  count="3"  hmax="10"  wait="true"  ]
+[quake  time="300"  count="3"  hmax="10"  wait="false"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 진다영! "[p]
@@ -104,6 +107,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_01"  x="466"  y="282"  width="1000"  height="150"  text="까짓것&nbsp;한번&nbsp;해보지&nbsp;뭐!"  _clickable_img=""  ]
 [glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_no_01"  x="466"  y="582"  width="1000"  height="150"  text="역시..못&nbsp;하겠어"  _clickable_img=""  ]
 [s  ]
@@ -168,12 +172,21 @@
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 *l_no_01
 
+[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Amb_raining_01.wav"  loop="true"  fadein="true"  ]
+[stopbgm  time="1000"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Home_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
 " 에...그치만.... "[p]
 #진다영
-" 거봐! 결국 안하게 될거라니깐?! [l][r]조금이라도 기대한 내가 바보지 "[p]
+" 거봐! 결국 안하게 될거라니깐?! "[p]
+[_tb_end_text]
+
+[playse  volume="40"  time="1000"  buf="1"  storage="SFX/Lightning_designed_01.wav"  ]
+[tb_start_text mode=1 ]
+#진다영
+"조금이라도 기대한 내가 바보지 "[p]
 [_tb_end_text]
 
 [quake  time="300"  count="2"  hmax="3"  wait="true"  vmax="3"  ]
@@ -193,6 +206,8 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[stopse  time="1000"  buf="0"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_02"  x="466"  y="282"  width="1000"  height="150"  text="그래&nbsp;한번&nbsp;해보지&nbsp;뭐!"  _clickable_img=""  ]
 [glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_no_02"  x="466"  y="582"  width="1000"  height="150"  text="아직&nbsp;마음의&nbsp;준비가.."  _clickable_img=""  ]
 [s  ]
@@ -235,6 +250,8 @@
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 *l_no_02
 
+[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Amb_raining_01.wav"  loop="true"  ]
+[playse  volume="30"  time="1000"  buf="1"  storage="SFX/Amb_Warning_Siren_01.wav"  loop="true"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #진다영
@@ -243,6 +260,7 @@
 [_tb_end_text]
 
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Lightning_designed_01.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 아냐! 네가 계속 소리를 지르니까 그러는거 아니야! "[p]
@@ -254,6 +272,7 @@
 " 부탁이야! 우리는 네가 정말 필요해 [l][r]너를 보는 순간부터 같이 하고싶었단 말이야 응? "[p]
 [_tb_end_text]
 
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
 [tb_start_text mode=1 ]
 #진다영
 " 우리가 아니고 네가 필요한거겠지!! "[p]
@@ -278,6 +297,7 @@
 " 에...????? "[p]
 [_tb_end_text]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [chara_hide  name="설나희"  time="400"  wait="false"  pos_mode="false"  ]
 [chara_hide  name="강여진"  time="400"  wait="false"  pos_mode="false"  ]
 [chara_hide  name="진다영"  time="400"  wait="false"  pos_mode="false"  ]

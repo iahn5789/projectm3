@@ -1,6 +1,7 @@
 [_tb_system_call storage=system/_Chapter01_Lobby_01.ks]
 
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Fence_Day_01.png"  ]
+[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -9,6 +10,7 @@
 ( 어디보자...Love Sound Syndrome? )[p]
 [_tb_end_text]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/fixed_Sliding_door_open_short.wav"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Door_Day_01.png"  ]
 [tb_start_text mode=1 ]
 #강여진
