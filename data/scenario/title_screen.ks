@@ -6,17 +6,26 @@
 
 [tb_keyconfig  flag="0"  ]
 [tb_hide_message_window  ]
-[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
+[mask  time="100"  effect="fadeIn"  color="0x000000"  ]
+[playbgm  volume="0"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [bg  storage="BGI/Common_Title_Screen.jpg"  ]
 *title
 
 [tb_start_tyrano_code]
-[button name="Start" target=*START graphic="Title_Start_Bt_01.png" enter="Title_Start_Bt_01.png" x=1050 y=230]
+[button name="start" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1310" y="305"]
+[button name="load" storage="title_screen.ks" target="LOAD" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1336" y="458"]
+[button name="gallery" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1362" y="610"]
+[button name="config" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1385" y="763"]
+[button name="exit" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1411" y="916"]
 [_tb_end_tyrano_code]
 
-[glink  color="btn_30_purple"  text="START"  x="1404"  y="597"  size="35"  target="*START"  width="400"  height="100"  _clickable_img=""  ]
-[glink  color="btn_30_purple"  text="LOAD"  x="1404"  y="717"  size="35"  target="*LOAD"  width="400"  height="100"  _clickable_img=""  ]
-[glink  color="btn_30_purple"  storage="title_screen.ks"  size="35"  target="*title"  text="EXIT"  x="1404"  y="837"  width="400"  height="100"  _clickable_img=""  ]
+[tb_start_tyrano_code]
+[html]
+<link href="title.css" type="text/css" rel="stylesheet">
+[endhtml]
+[_tb_end_tyrano_code]
+
+[mask_off  time="500"  effect="fadeOut"  ]
 [s  ]
 *START
 
