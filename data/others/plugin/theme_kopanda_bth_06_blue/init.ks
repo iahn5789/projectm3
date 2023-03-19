@@ -50,16 +50,16 @@ if(TG.config.alreadyReadTextColor != "default"){
 [hidemenubutton]
 
 ; Menu（※ロールボタンを使うなら不要）
-[button name="role_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1710" y="985" ]
+[button name="menu_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1710" y="985" ]
 
 ; Save
-[button name="role_button" role="save" graphic="../image/New_GUI/Save_Button_01.png" enterimg="../image/New_GUI/Save_Button_02.png" x="1710" y="835"]
+[button name="menu_button" role="save" graphic="../image/New_GUI/Save_Button_01.png" enterimg="../image/New_GUI/Save_Button_02.png" x="1710" y="835"]
 
 ; Load
-[button name="role_button" role="load" graphic="../image/New_GUI/Load_Button_01.png" enterimg="../image/New_GUI/Load_Button_02.png" x="1710" y="885"]
+[button name="menu_button" role="load" graphic="../image/New_GUI/Load_Button_01.png" enterimg="../image/New_GUI/Load_Button_02.png" x="1710" y="885"]
 
 ; Skip
-[button name="role_button" role="skip" graphic="../image/New_GUI/Skip_Button_01.png" enterimg="../image/New_GUI/Skip_Button_02.png" x="1710" y="935"]
+[button name="menu_button" role="skip" graphic="../image/New_GUI/Skip_Button_01.png" enterimg="../image/New_GUI/Skip_Button_02.png" x="1710" y="935"]
 
 ; Auto
 ;[button name="role_button" role="auto" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto2.png" x="769" y="1050"]
