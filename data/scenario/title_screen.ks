@@ -14,7 +14,7 @@
 [tb_start_tyrano_code]
 [button name="start" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1310" y="305"]
 [button name="load" storage="title_screen.ks" target="LOAD" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1336" y="458"]
-[button name="gallery" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1362" y="610"]
+[button name="gallery" storage="title_screen.ks" target="gallery" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1362" y="610"]
 [button name="config" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1385" y="763"]
 [button name="exit" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/button_transparent.png" width="446" height="116" x="1411" y="916"]
 [_tb_end_tyrano_code]
@@ -43,6 +43,11 @@
 [showload]
 
 [jump  target="*title"  storage=""  ]
+*gallery
+
+[jump  storage="Gallery_Screen_01.ks"  target="*gallery"  ]
+[showgallery]
+
 *EXIT
 
 [s  ]
