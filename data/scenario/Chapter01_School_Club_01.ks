@@ -18,7 +18,7 @@
 
 [chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
 [tb_start_text mode=1 ]
-#강여진
+#<font color="red">강여진</font>
 " 와줬구나! 어서 와! "[p]
 #???
 " 뭐야! [l]변태같이 다 엿듣고 있던거야?! "[p]
@@ -108,10 +108,18 @@
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
+[tb_start_tyrano_code]
+[filter layer=all  blur=5 ]
+[_tb_end_tyrano_code]
+
 [glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_01"  x="466"  y="282"  width="1000"  height="150"  text="까짓것&nbsp;한번&nbsp;해보지&nbsp;뭐!"  _clickable_img=""  ]
 [glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_no_01"  x="466"  y="582"  width="1000"  height="150"  text="역시..못&nbsp;하겠어"  _clickable_img=""  ]
 [s  ]
 *l_yes_01
+
+[tb_start_tyrano_code]
+[filter layer=all  blur=0 ]
+[_tb_end_tyrano_code]
 
 [stopbgm  time="1000"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]

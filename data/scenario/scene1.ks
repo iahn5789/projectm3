@@ -60,6 +60,11 @@ TEST4[p]
 [chara_part name="yuko" hair_front="2" face="2" eye="2" body_back="2" body_front="2"]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+test blur
+filter layer=all  blur=5 ]
+[_tb_end_tyrano_code]
+
 [call  storage="input_zoom_in_out.ks"  target="*L_zoomout_yoko"  ]
 [tb_start_text mode=1 ]
 #ayana

@@ -16,5 +16,4 @@
 ;=========変数宣言部分 
 [iscript] 
 f['null']=''; 
-f['Day']=0; 
 [endscript] 
