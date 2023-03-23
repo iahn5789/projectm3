@@ -5,6 +5,7 @@
 
 [iscript]
 
+
 mp.font_color    = mp.font_color    || "0x222222";
 mp.name_color    = mp.name_color    || "0x222222";
 mp.frame_opacity = mp.frame_opacity || "255";
@@ -49,9 +50,6 @@ if(TG.config.alreadyReadTextColor != "default"){
 ; 歯車ボタン（メニューボタン）非表示
 [hidemenubutton]
 
-; Menu（※ロールボタンを使うなら不要）
-[button name="menu_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1710" y="985" ]
-
 ; Save
 [button name="menu_button" role="save" graphic="../image/New_GUI/Save_Button_01.png" enterimg="../image/New_GUI/Save_Button_02.png" x="1710" y="835"]
 
@@ -60,6 +58,9 @@ if(TG.config.alreadyReadTextColor != "default"){
 
 ; Skip
 [button name="menu_button" role="skip" graphic="../image/New_GUI/Skip_Button_01.png" enterimg="../image/New_GUI/Skip_Button_02.png" x="1710" y="935"]
+
+; Menu（※ロールボタンを使うなら不要）
+[button name="menu_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1710" y="985" ]
 
 ; Auto
 ;[button name="role_button" role="auto" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/auto2.png" x="769" y="1050"]

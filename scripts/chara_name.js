@@ -2,7 +2,6 @@ window.addEventListener('load', function() {
 
   const observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
-    console.log("@@@@@@@");
     if (mutation.target.innerText === '전대용') {
       mutation.target.style.color = 'gray';
     } else if (mutation.target.innerText === '강여진') {
@@ -17,7 +16,6 @@ window.addEventListener('load', function() {
   });
 });
 setTimeout(()=>{const chara_name = document.querySelector('.chara_name_area');
-console.log('!!!!', chara_name);
 
 observer.observe(chara_name, { childList: true, subtree: true  });
 
@@ -25,3 +23,91 @@ observer.observe(chara_name, { childList: true, subtree: true  });
 
 });
 
+
+
+window.addEventListener("load", function() {
+
+
+
+  setTimeout(()=>{
+
+      // Get the Save button element by its name attribute
+  const menuButtons = document.getElementsByClassName("menu_button");
+  const layerMenu = document.getElementsByClassName("layer_menu")[0];
+  const gameLayer = document.getElementsByClassName("root_layer_game")[0];
+  const message_inner = document.getElementsByClassName("message_inner")[0];
+  const message_outer = document.getElementsByClassName("message_outer")[0];
+  const chara_name_area = document.getElementsByClassName("chara_name_area")[0];
+  // Add a click event listener to the Save button
+
+  for(let i = 0 ; i< menuButtons.length; i++){
+if(i !== 2){
+    menuButtons[i].addEventListener("click", function() {
+      // Get the root_layer_game element by its class name
+    
+
+      // Add the "filter: blur(5px)" style to the game layer
+      gameLayer.style.filter = "blur(5px)";
+      message_inner.style.filter = "blur(5px)";
+      message_outer.style.filter = "blur(5px)";
+      chara_name_area.style.filter = "blur(5px)";
+
+
+      for(let j = 0 ; j < menuButtons.length; j++){
+
+        menuButtons[j].style.filter = "blur(5px)";
+
+
+      }
+
+
+
+    });
+  }
+}
+
+layerMenu.addEventListener("click",  function(event) {
+
+    // 클릭 이벤트를 발생시킨 요소가 menu_close 버튼인지 체크합니다.
+    if (event.target.src && event.target.src.includes('UI_Close_Bt_02.png')) {
+      gameLayer.style.filter = "";
+      message_inner.style.filter = "";
+      message_outer.style.filter = "";
+      chara_name_area.style.filter = "";
+
+
+      for(let j = 0 ; j < menuButtons.length; j++){
+
+        menuButtons[j].style.filter = "";
+
+
+      }
+
+    }
+    // else if (event.target.src && event.target.src.includes('UI_Close_Bt_02.png')) { 
+    //   gameLayer.style.filter = "";
+    //   message_inner.style.filter = "";
+    //   message_outer.style.filter = "";
+    //   chara_name_area.style.filter = "";
+    
+    
+    //   for(let j = 0 ; j < menuButtons.length; j++){
+    
+    //     menuButtons[j].style.filter = "";
+    
+    
+    //   }
+    
+    
+    // } 
+    
+
+
+})
+
+
+
+
+  }, 1000)
+
+});
