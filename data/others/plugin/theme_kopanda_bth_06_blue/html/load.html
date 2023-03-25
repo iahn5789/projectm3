@@ -13,7 +13,6 @@
 		<ul class='load_list'>
 			{{for array_save}}
 				<li class='load_display_area load_list_item' data-num='{{:num}}'>
-
 					<span class='load_list_item_thumb'>
 					{{if img_data != ""}}
 						<img src="{{:img_data}}">
@@ -23,20 +22,21 @@
 					<span class='load_list_item_area'>
 						<span class='load_list_item_date'>{{:save_date}}</span>
 						<span class='load_list_item_text'>{{:title}}</span>
+						<span class='load_list_item_delete'></span>
 					</span>
 				</li>
 			{{/for}}
 		</ul>
 	</div>
 
-<img src='data/image/New_GUI/Load_UI/Load_Bgi_01.png' style='z-index:-1;left: 252px; top: 153px; width:1492px;height:824px;position:absolute;'>
+	<img src='data/image/New_GUI/Load_UI/Load_Bgi_01.png' style='z-index:-1;left: 252px; top: 153px; width:1492px;height:824px;position:absolute;'>
 
 <script class="menu_close">
 	var tmp_src = "";
 
 	$(".menu_item").hover(function(){
 		tmp_src = $(this).find("img").attr("src");
-		var img_src = tmp_src.replace("1.png","2.png");
+		var img_src = tmp_src.replace("1.gif","2.gif").replace("1.png","2.png");
 		$(this).find("img").attr("src",img_src);
 	},
 	function(){

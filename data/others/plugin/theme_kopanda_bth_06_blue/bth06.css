@@ -187,7 +187,6 @@ animation-iteration-count: 1;
 /* セーブデータのサムネイル部分の設定 */
 .save_list_item_thumb {
 	position: absolute;
-	border: white 1px solid;
 	border-radius: 8px;
 	width: 0px;
 	height: 0px;
@@ -199,7 +198,7 @@ animation-iteration-count: 1;
 /* サムネイル画像の設定 */
 .save_list_item_thumb img {
 	position: absolute;
-	top:-1px; left:2px;
+	top:33px; left:3px;
 	/* border: white 1px solid; */
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -216,6 +215,7 @@ animation-iteration-count: 1;
 	position: absolute;
 	font-size: 20px;
 	left: 0x;
+	top:33px;
 	width: 312px;
 	height: 276px;
 	padding: 0;
@@ -242,21 +242,21 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 
 .save_list_item_date {
 	display: block;
-	padding: 0 0 0 110px;
+	padding: 0 0 0 75px;
 	position : absolute;
-	top: 330px;
+	top: 236px;
 	line-height: 1;
 	color: #FFF;
 	font-weight: normal;
-	font-size:16px;
-	font-family: The jamsil3Regular;
+	font-size:17px;
+	font-family: TheJamsil1Thin;
 	box-sizing: border-box;
 }
 
 /* セーブデータのテキストの設定 */
 .save_list_item_text {
 	display: block;
-	width: 300px;
+	width: 236px;
 	 text-overflow: ellipsis;
     	white-space: nowrap;
      	overflow: hidden;
@@ -266,13 +266,13 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 	line-height: 1.5;
 	color: #ffffff;
 	font-weight: normal;
-	font-family: The jamsil3Regular;
+	font-family: TheJamsil1Thin;
 	font-size:24px;
 	overflow: hidden;
 	box-sizing: border-box;
 	position: absolute;
-	left: 0px;
-	top:290px;
+	left: 64px;
+	top:179px;
 }
 /* ロード画面
 --------------------------------------*/
@@ -368,13 +368,9 @@ animation-iteration-count: 1;
 }
 
 
-
-
 /* セーブデータのサムネイル部分の設定 */
 .load_list_item_thumb {
 	position: absolute;
-	border: white 1px solid;
-	left:54px;
 	border-radius: 8px;
 	width: 0px;
 	height: 0px;
@@ -386,7 +382,7 @@ animation-iteration-count: 1;
 /* サムネイル画像の設定 */
 .load_list_item_thumb img {
 	position: absolute;
-	top:-1px; left:0px;
+	top:34px; left:-166px;
 	/* border: white 1px solid; */
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -403,6 +399,7 @@ animation-iteration-count: 1;
 	position: absolute;
 	font-size: 20px;
 	left: 0x;
+	top:33px;
 	width: 312px;
 	height: 276px;
 	padding: 0;
@@ -429,21 +426,34 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 
 .load_list_item_date {
 	display: block;
-	padding: 0 0 0 110px;
+	padding: 0 0 0 60px;
 	position : absolute;
-	top: 330px;
+	top: 234px;
 	line-height: 1;
 	color: #FFF;
 	font-weight: normal;
 	font-size:16px;
-	font-family: The jamsil3Regular;
+	font-family: TheJamsil1Thin;
 	box-sizing: border-box;
+}
+
+.load_list_item_delete {
+	display: block;
+	position : absolute;
+	width:66px;
+	height:103px;
+	background: url('../../../image/New_GUI/Load_UI/Load_Delete_01.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 100;
+	top:173px;
+	left:247px;
 }
 
 /* セーブデータのテキストの設定 */
 .load_list_item_text {
 	display: block;
-	width: 300px;
+	width: 230px;
 	 text-overflow: ellipsis;
     	white-space: nowrap;
      	overflow: hidden;
@@ -453,13 +463,13 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 	line-height: 1.5;
 	color: #ffffff;
 	font-weight: normal;
-	font-family: The jamsil3Regular;
+	font-family: TheJamsil1Thin;
 	font-size:24px;
 	overflow: hidden;
 	box-sizing: border-box;
 	position: absolute;
-	left: 0px;
-	top:290px;
+	left: 9px;
+	top:181px;
 }
 
 
