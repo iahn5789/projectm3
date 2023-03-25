@@ -9,20 +9,20 @@
 	<img class="button_smart button_arrow_up" src='data/others/plugin/theme_kopanda_bth_06_blue/image/system/arrow_up.png' style='cursor:pointer;left:540px;top:100px;position:absolute;'>
 	<img class="button_smart button_arrow_down" src='data/others/plugin/theme_kopanda_bth_06_blue/image/system/arrow_down.png' style='cursor:pointer;left:680px;top:100px;position:absolute;'>
 
-	<div class="area_save_list">
-		<ul class='save_list'>
+	<div class="area_load_list">
+		<ul class='load_list'>
 			{{for array_save}}
-				<li class='save_display_area save_list_item' data-num='{{:num}}'>
+				<li class='load_display_area load_list_item' data-num='{{:num}}'>
 
-					<span class='save_list_item_thumb'>
+					<span class='load_list_item_thumb'>
 					{{if img_data != ""}}
 						<img src="{{:img_data}}">
 					{{/if}}
 					</span>
 
-					<span class='save_list_item_area'>
-						<span class='save_list_item_date'>{{:save_date}}</span>
-						<span class='save_list_item_text'>{{:title}}</span>
+					<span class='load_list_item_area'>
+						<span class='load_list_item_date'>{{:save_date}}</span>
+						<span class='load_list_item_text'>{{:title}}</span>
 					</span>
 				</li>
 			{{/for}}
