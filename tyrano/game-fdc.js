@@ -1,53 +1,3 @@
-[_tb_system_call storage=system/_preview.ks ]
-
-[mask time=10]
-[mask_off time=10]
-[mask_off  time="1"  effect="fadeOut"  ]
-[bg  time="1"  method="crossfade"  storage="Common_Black.jpg"  ]
-[tb_start_tyrano_code]
-[html]
-    <link rel="stylesheet" href="./css/common/styles.css">
-    <link rel="stylesheet" href="./css/game-fdc.css">
-<div id="container" class="no-drag">
-<div class="board">
-<header class="menu">
-<nav class="menu__nav">
-<div class="menu__nav-time">
-<strong id="player-time" aria-label="남은 시간"></strong>
-</div>
-<div class="menu__nav-stage">
-STAGE<strong id="player-stage" aria-label="스테이지"></strong>
-</div>
-<div class="menu__nav-home">
-<a href="./index.html#find-different-color" class="menu__nav-home--button" id="home-button">
-<span class="sr-only">메인 페이지로 이동</span>
-</a>
-</div>
-</nav>
-</header>
-
-<main class="game">
-<div class="palette">
-</div>
-</main>
-</div>
-</div>
-
-<div class="modal modal-layer">
-<div class="modal__content">
-<div class="modal__content-title">
-</div>
-
-<button class="white-button modal__content-close-button" type="button">
-닫기
-</button>
-</div>
-</div>
-
-[endhtml]
-[_tb_end_tyrano_code]
-
-[iscript]
 "use strict";
 
 // 게임 상태 관리에 필요한 변수 초기화
@@ -288,5 +238,3 @@ window.onload = function() {
 
     startGame();
 }
-[endscript]
-

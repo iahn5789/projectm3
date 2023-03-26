@@ -1,7 +1,7 @@
 [_tb_system_call storage=system/_Input_Game01_Scene_01.ks]
 
-[mask_off  time="1000"  effect="fadeOut"  ]
-[bg  time="1000"  method="crossfade"  storage="123.png"  ]
+[mask_off  time="1"  effect="fadeOut"  ]
+[bg  time="1"  method="crossfade"  storage="123.png"  ]
 [tb_start_tyrano_code]
 [html]
 <div id="box" style="position:absolute; top: 200px; left: 400px; width: 200px; height: 50px; background-color: blue;">

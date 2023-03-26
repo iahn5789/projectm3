@@ -1,7 +1,5 @@
-[_tb_system_call storage=system/_preview.ks ]
+[_tb_system_call storage=system/_Input_Game02_Scene_01.ks]
 
-[mask time=10]
-[mask_off time=10]
 [mask_off  time="1"  effect="fadeOut"  ]
 [bg  time="1"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_start_tyrano_code]
