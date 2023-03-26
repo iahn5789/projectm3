@@ -59,20 +59,20 @@ if(TG.config.alreadyReadTextColor != "default"){
 ; Backlog
 [button name="menu_button" role="backlog" graphic="../image/New_GUI/Log_Button_01.png" enterimg="../image/New_GUI/Log_Button_02.png" x="1791" y="896"]
 
-; Menu（※ロールボタンを使うなら不要）
-[button name="menu_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1791" y="1010" ]
-
 ; Auto
 [button name="role_button" role="auto" graphic="../image/New_GUI/Auto_Button_01.png" enterimg="../image/New_GUI/Auto_Button_02.png" x="1791" y="934"]
 
 ; Skip
 [button name="role_button" role="skip" graphic="../image/New_GUI/Skip_Button_01.png" enterimg="../image/New_GUI/Skip_Button_02.png" x="1791" y="972"]
 
+; Config（※sleepgame を使用して config.ks を呼び出しています）
+[button name="role_button" role="sleepgame" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1791" y="1010" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="1791" y="1010"]
+
+; Menu（※ロールボタンを使うなら不要）
+;[button name="menu_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1791" y="1010" ]
+
 ; Screen
 [button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="1860" y="20"]
-
-; Config（※sleepgame を使用して config.ks を呼び出しています）
-;[button name="role_button" role="sleepgame" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep2.png" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="1369" y="1020"]
 
 ; Title
 ;[button name="role_button" role="title" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/title.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/title2.png" x="1669" y="1020"]

@@ -108,6 +108,6 @@ layerMenu.addEventListener("click",  function(event) {
 
 
 
-  }, 1000)
+  }, 2000)
 
 });
