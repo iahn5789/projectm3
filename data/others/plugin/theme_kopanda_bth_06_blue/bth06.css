@@ -57,17 +57,19 @@
 /* バックログ画面
 --------------------------------------*/
 .log_body {
-	width: 1320px;
-	height: 580px;
-	margin: 315px 0 0 150px;
-	padding: 45px 180px 75px 60px;
-	color: #666;
+	width: 1293px;
+	height: 494px;
+	margin: 355px 78px 0 150px;
+	padding: 10px 0px 0px 10px;
+	color: #fff;
 	background: none;
 	font-weight: normal;
 	text-align: left;
 	line-height: 1.6em;
 	border: none;
 	overflow-y: scroll;
+	font-size:30px;
+	font-family: 'TheJamsil1Thin' !important;	
 	-webkit-overflow-scrolling: touch;
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
@@ -80,11 +82,15 @@
 }
 
 .log_body::-webkit-scrollbar-thumb {
-	background: #999;
+	border-top: 10px solid #ffe17e;
+	border-bottom: 10px solid #ffe17e;
+	border-left: 2px solid #ffe17e;
+	border-right: 2px solid #ffe17e;
+	background-color: #F7C04A;
 }
 
 .log_body::-webkit-scrollbar-track{
-	background: rgba(255, 255, 255, 0.5);
+	background: hsl(53, 47%, 81%);
 }
 
 
@@ -123,8 +129,8 @@ animation-iteration-count: 1;
 }
 
 .area_save_list::-webkit-scrollbar-thumb {
-	border-left: 10px solid #fffd7e;
-	border-right: 10px solid #fffd7e;
+	border-left: 10px solid #ffe17e;
+	border-right: 10px solid #ffe17e;
 	background: #F7C04A;
 }
 
@@ -309,8 +315,8 @@ animation-iteration-count: 1;
 }
 
 .area_load_list::-webkit-scrollbar-thumb {
-	border-left: 10px solid #fffd7e;
-	border-right: 10px solid #fffd7e;
+	border-left: 10px solid #ffe17e;
+	border-right: 10px solid #ffe17e;
 	background: #F7C04A;
 }
 
