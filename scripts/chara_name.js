@@ -33,6 +33,10 @@ window.addEventListener("load", function() {
 
       // Get the Save button element by its name attribute
   const menuButtons = document.getElementsByClassName("menu_button");
+  const roleButtons = document.getElementsByClassName("rol_button");
+  // const button1 = roleButtons[0];
+  // const button2 = roleButtons[1];
+  // const button3 = roleButtons[2];
   const layerMenu = document.getElementsByClassName("layer_menu")[0];
   const gameLayer = document.getElementsByClassName("root_layer_game")[0];
   const message_inner = document.getElementsByClassName("message_inner")[0];
@@ -41,7 +45,8 @@ window.addEventListener("load", function() {
   // Add a click event listener to the Save button
 
   for(let i = 0 ; i< menuButtons.length; i++){
-if(i !== 2){
+    
+if(i !== 5){
     menuButtons[i].addEventListener("click", function() {
       // Get the root_layer_game element by its class name
     
@@ -51,20 +56,28 @@ if(i !== 2){
       message_inner.style.filter = "blur(5px)";
       message_outer.style.filter = "blur(5px)";
       chara_name_area.style.filter = "blur(5px)";
-
+      roleButtons.style.filter = "blur(5px)";
 
       for(let j = 0 ; j < menuButtons.length; j++){
 
         menuButtons[j].style.filter = "blur(5px)";
-
-
+        
       }
-
-
 
     });
   }
 }
+
+const roleButtonsArray = Array.from(document.querySelectorAll(".rol_button"));
+
+// Apply a click event listener to each button
+roleButtonsArray.forEach(function (button, index) {
+  button.addEventListener("click", function () {
+    console.log("Button " + index + " was clicked");
+    // Add your code to handle the button click event here
+  });
+});
+
 
 layerMenu.addEventListener("click",  function(event) {
 
@@ -74,7 +87,7 @@ layerMenu.addEventListener("click",  function(event) {
       message_inner.style.filter = "";
       message_outer.style.filter = "";
       chara_name_area.style.filter = "";
-
+      roleButtons.style.filter = "";
 
       for(let j = 0 ; j < menuButtons.length; j++){
 
