@@ -1,5 +1,11 @@
 [_tb_system_call storage=system/_Test_Scene_01.ks]
 
+[tb_start_tyrano_code]
+[screen_full]
+[_tb_end_tyrano_code]
+
+[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
+[tb_hide_message_window  ]
 [bg  time="1"  method="crossfade"  storage="BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [ptext layer=2 page=fore text="&[f.money]" size=30 x=160 y=226 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
@@ -9,5 +15,16 @@
 [ptext layer=2 page=fore text="&[f.Day]" size=29 x=168 y=134 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
 [ptext layer=2 page=fore text="&[f.score]" size=49 x=1290 y=55 width=150 color="0xffffff" align="center" vertical=false face="YeonSung-Regular" ]
 [_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="gift" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="383" height="185" x="21" y="891"]
+[button name="teststart" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="612" height="96" x="731" y="969"]
+[button name="msgkang" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="311" height="174" x="566" y="701"]
+[button name="msgjin" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="311" height="174" x="888" y="701"]
+[button name="msgsul" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="310" height="174" x="1210" y="701"]
+[_tb_end_tyrano_code]
+
+[mask_off  time="500"  effect="fadeOut"  ]
+*gift
 
 [s  ]
