@@ -6,6 +6,12 @@
 
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
+[tb_image_hide  time="0"  ]
+*testscene
+
+[hidemenubutton]
+
+[cm  ]
 [bg  time="1"  method="crossfade"  storage="BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [ptext layer=2 page=fore text="&[f.money]" size=30 x=160 y=226 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
@@ -17,7 +23,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="gift" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="383" height="185" x="21" y="891"]
+[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="383" height="185" x="21" y="891"]
 [button name="teststart" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="612" height="96" x="731" y="969"]
 [button name="msgkang" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="311" height="174" x="566" y="701"]
 [button name="msgjin" storage="title_screen.ks" target="gift" graphic="../image/New_GUI/button_transparent.png" width="311" height="174" x="888" y="701"]
@@ -25,6 +31,18 @@
 [_tb_end_tyrano_code]
 
 [mask_off  time="500"  effect="fadeOut"  ]
+[s  ]
 *gift
+
+[cm  ]
+[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang"  ]
+[s  ]
+*teststart
+
+*msgkang
+
+*msgjin
+
+*msgsul
 
 [s  ]

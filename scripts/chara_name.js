@@ -34,9 +34,6 @@ window.addEventListener("load", function() {
       // Get the Save button element by its name attribute
   const menuButtons = document.getElementsByClassName("menu_button");
   const roleButtons = document.getElementsByClassName("rol_button");
-  // const button1 = roleButtons[0];
-  // const button2 = roleButtons[1];
-  // const button3 = roleButtons[2];
   const layerMenu = document.getElementsByClassName("layer_menu")[0];
   const gameLayer = document.getElementsByClassName("root_layer_game")[0];
   const message_inner = document.getElementsByClassName("message_inner")[0];
@@ -68,15 +65,15 @@ if(i !== 5){
   }
 }
 
-const roleButtonsArray = Array.from(document.querySelectorAll(".rol_button"));
+// const roleButtonsArray = Array.from(document.querySelectorAll(".rol_button"));
 
-// Apply a click event listener to each button
-roleButtonsArray.forEach(function (button, index) {
-  button.addEventListener("click", function () {
-    console.log("Button " + index + " was clicked");
-    // Add your code to handle the button click event here
-  });
-});
+// // Apply a click event listener to each button
+// roleButtonsArray.forEach(function (button, index) {
+//   button.addEventListener("click", function () {
+//     console.log("Button " + index + " was clicked");
+//     // Add your code to handle the button click event here
+//   });
+// });
 
 
 layerMenu.addEventListener("click",  function(event) {
@@ -92,7 +89,6 @@ layerMenu.addEventListener("click",  function(event) {
       for(let j = 0 ; j < menuButtons.length; j++){
 
         menuButtons[j].style.filter = "";
-
 
       }
 
