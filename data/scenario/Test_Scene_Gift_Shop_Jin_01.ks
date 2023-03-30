@@ -69,12 +69,7 @@
 *jin_gift_bt_01
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_01"  ]
 [s  ]
 *jin_back_bt_01
 
@@ -111,12 +106,7 @@
 *jin_gift_bt_02
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_02"  ]
 [s  ]
 *jin_back_bt_02
 
@@ -153,12 +143,7 @@
 *jin_gift_bt_03
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_03"  ]
 [s  ]
 *jin_back_bt_03
 
@@ -195,12 +180,7 @@
 *jin_gift_bt_04
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_04"  ]
 [s  ]
 *jin_back_bt_04
 
