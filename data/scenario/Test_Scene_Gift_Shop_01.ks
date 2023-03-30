@@ -69,12 +69,7 @@
 *kang_gift_bt_01
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_01"  ]
 [s  ]
 *kang_back_bt_01
 
@@ -111,12 +106,7 @@
 *kang_gift_bt_02
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_02"  ]
 [s  ]
 *kang_back_bt_02
 
@@ -153,12 +143,7 @@
 *kang_gift_bt_03
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_03"  ]
 [s  ]
 *kang_back_bt_03
 
@@ -195,12 +180,7 @@
 *kang_gift_bt_04
 
 [cm  ]
-[tb_start_tyrano_code]
-[cm]
-[filter layer=all blur=0 opacity=100]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang_back"  ]
+[jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_04"  ]
 [s  ]
 *kang_back_bt_04
 
