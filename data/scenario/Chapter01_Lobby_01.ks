@@ -1,5 +1,6 @@
 [_tb_system_call storage=system/_Chapter01_Lobby_01.ks]
 
+[stopbgm  time="1000"  fadeout="true"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Fence_Day_01.png"  ]
 [playse  volume="40"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]

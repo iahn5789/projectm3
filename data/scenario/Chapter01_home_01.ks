@@ -27,7 +27,7 @@
 [bg  time="450"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="600"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
-[playbgm  volume="20"  time="1000"  loop="true"  storage="Common_Home_01.mp3"  fadein="true"  ]
+[playbgm  volume="40"  time="2000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [bg  time="3000"  method="fadeIn"  storage="BGI/Common_home_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -159,7 +159,7 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[playbgm  volume="20"  time="2500"  loop="true"  storage="Common_Home_01.mp3"  fadein="true"  ]
+[playbgm  volume="40"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]

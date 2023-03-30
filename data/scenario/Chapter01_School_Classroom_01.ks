@@ -2,7 +2,7 @@
 
 [hidemenubutton]
 
-[playbgm  volume="20"  time="1000"  loop="true"  storage="Common_School_Classroom_01.mp3"  ]
+[playbgm  volume="40"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="true"  ]
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Common_Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_02.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
