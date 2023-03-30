@@ -12,7 +12,7 @@
 [hidemenubutton]
 
 [cm  ]
-[bg  time="1"  method="crossfade"  storage="BGI/Test_Bgi_01.png"  ]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [ptext layer=2 page=fore text="&[f.money]" size=30 x=160 y=226 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
 [ptext layer=2 page=fore text="&[f.klove]" size=30 x=190 y=495 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
@@ -38,7 +38,7 @@
 [hidemenubutton]
 
 [cm  ]
-[bg  time="1"  method="crossfade"  storage="BGI/Test_Bgi_01.png"  ]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [ptext layer=2 page=fore text="&[f.money]" size=30 x=160 y=226 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
 [ptext layer=2 page=fore text="&[f.klove]" size=30 x=190 y=495 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
@@ -67,6 +67,7 @@
 
 *msgkang
 
+[bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
 [tb_start_tyrano_code]
 [cm]
 [filter layer=all blur=5 opacity=40]
@@ -75,14 +76,15 @@
 [tb_start_tyrano_code]
 [html]
 <div>
-<img src='data/image/New_GUI/Secret_Msg_UI/Secret_Msg_Kang_01.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<img src='data/image/New_GUI/Test_UI/Secret_Msg_Kang_01.png' style='z-index:-1; left:630px; top:302px; width:668px; height:485px; position:absolute;'>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="kang_secret_bt_01" storage="Test_Scene_01.ks" target="kang_secret_bt_01" graphic="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Buy_Bt_01.png" enterimg="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Buy_Bt_02.png" width="241" height="69" x="876" y="640"]
-[button name="kang_secret_bt_02" storage="Test_Scene_01.ks" target="kang_secret_bt_02" graphic="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Back_Bt_01.png" enterimg="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Back_Bt_02.png" width="241" height="69" x="1145" y="640"]
+[button name="kang_secret_bt_01" storage="Test_Scene_01.ks" target="kang_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="142" height="106" x="1289" y="349" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
+[button name="kang_secret_bt_02" storage="Test_Scene_01.ks" target="kang_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="142" height="106" x="1289" y="638" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -108,6 +110,7 @@
 [s  ]
 *msgjin
 
+[bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
 [tb_start_tyrano_code]
 [cm]
 [filter layer=all blur=5 opacity=40]
@@ -116,14 +119,15 @@
 [tb_start_tyrano_code]
 [html]
 <div>
-<img src='data/image/New_GUI/Secret_Msg_UI/Secret_Msg_Jin_01.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<img src='data/image/New_GUI/Test_UI/Secret_Msg_Jin_01.png' style='z-index:-1; left:630px; top:302px; width:668px; height:485px; position:absolute;'>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="jin_secret_bt_01" storage="Test_Scene_01.ks" target="jin_secret_bt_01" graphic="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Buy_Bt_01.png" enterimg="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Buy_Bt_02.png" width="241" height="69" x="876" y="640"]
-[button name="jin_secret_bt_02" storage="Test_Scene_01.ks" target="jin_secret_bt_02" graphic="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Back_Bt_01.png" enterimg="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Back_Bt_02.png" width="241" height="69" x="1145" y="640"]
+[button name="jin_secret_bt_01" storage="Test_Scene_01.ks" target="jin_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="142" height="106" x="1289" y="349" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
+[button name="jin_secret_bt_02" storage="Test_Scene_01.ks" target="jin_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="142" height="106" x="1289" y="638" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -149,6 +153,7 @@
 [s  ]
 *msgsul
 
+[bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
 [tb_start_tyrano_code]
 [cm]
 [filter layer=all blur=5 opacity=40]
@@ -157,14 +162,15 @@
 [tb_start_tyrano_code]
 [html]
 <div>
-<img src='data/image/New_GUI/Secret_Msg_UI/Secret_Msg_Sul_01.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<img src='data/image/New_GUI/Test_UI/Secret_Msg_Sul_01.png' style='z-index:-1; left:630px; top:302px; width:668px; height:485px; position:absolute;'>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Buy_Bt_01.png" enterimg="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Buy_Bt_02.png" width="241" height="69" x="876" y="640"]
-[button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Back_Bt_01.png" enterimg="../image/New_GUI/Secret_Msg_UI/Secret_Msg_Back_Bt_02.png" width="241" height="69" x="1145" y="640"]
+[button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="142" height="106" x="1289" y="349" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
+[button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="142" height="106" x="1289" y="638" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+
 [_tb_end_tyrano_code]
 
 [s  ]
