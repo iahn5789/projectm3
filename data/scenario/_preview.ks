@@ -2,291 +2,99 @@
 
 [mask time=10]
 [mask_off time=10]
-[mask_off  time="1"  effect="fadeOut"  ]
-[bg  time="1"  method="crossfade"  storage="Common_Black.jpg"  ]
+[stopbgm  time="7000"  fadeout="true"  ]
+[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
+[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
 [tb_start_tyrano_code]
-[html]
-    <link rel="stylesheet" href="./css/common/styles.css">
-    <link rel="stylesheet" href="./css/game-fdc.css">
-<div id="container" class="no-drag">
-<div class="board">
-<header class="menu">
-<nav class="menu__nav">
-<div class="menu__nav-time">
-<strong id="player-time" aria-label="남은 시간"></strong>
-</div>
-<div class="menu__nav-stage">
-STAGE<strong id="player-stage" aria-label="스테이지"></strong>
-</div>
-<div class="menu__nav-home">
-<a href="./index.html#find-different-color" class="menu__nav-home--button" id="home-button">
-<span class="sr-only">메인 페이지로 이동</span>
-</a>
-</div>
-</nav>
-</header>
 
-<main class="game">
-<div class="palette">
-</div>
-</main>
-</div>
-</div>
-
-<div class="modal modal-layer">
-<div class="modal__content">
-<div class="modal__content-title">
-</div>
-
-<button class="white-button modal__content-close-button" type="button">
-닫기
-</button>
-</div>
-</div>
-
-[endhtml]
 [_tb_end_tyrano_code]
 
-[iscript]
-"use strict";
+[cm  ]
+[font  size="30"  color="0xffffff"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
+[tb_start_tyrano_code]
+;[macro name="end"]
+;[chara_mod name="yuko" storage="yuko_idle.png"]
+;[endmacro]
+[_tb_end_tyrano_code]
 
-// 게임 상태 관리에 필요한 변수 초기화
-let stage = 1; // 게임 스테이지
-let time = 15; // 남은 시간
-let paletteRow = 2; // 팔레트 행
-let paletteSize = paletteRow ** 2; // 팔레트 아이템 전체 갯수 (행의 제곱)
-let targetIndex = 0;
-let targetOpacity = 0.4; // 타겟 아이템 opacity
-let color = {}; // 팔레트 아이템 색상 (red, green, blue 값을 저장하는 object)
+[tb_show_message_window  ]
+[tb_ptext_show  x="758"  y="89"  size="30"  color="0xffffff"  time="1000"  text="Day-"  anim="false"  face="serif"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="847"  y="89"  size="30"  color="0xffffff"  time="1000"  anim="false"  face="serif"  text="&[f.Day]"  edge="undefined"  shadow="undefined"  ]
+[wait  time="3000"  ]
+[tb_ptext_hide  time="2000"  ]
+[tb_start_tyrano_code]
+; 캐릭터 등장
+[chara_new name="yuko" storage="chara/yuko/hair_back/Long.png" jname="yuko" ]
+[chara_layer name="yuko" part="body_back" id="1" storage="chara/yuko/body_back/bodyback.png" zindex=1 ]
+[chara_layer name="yuko" part="body_back" id="2" storage="chara/yuko/body_back/bodyback2.png" zindex=1 ]
 
-let timer = 0; // 타이머
+[chara_layer name="yuko" part="body_front" id="1" storage="chara/yuko/body_front/Body_Front.png" zindex=10 ]
+[chara_layer name="yuko" part="body_front" id="2" storage="chara/yuko/body_front/bodyfront2.png" zindex=10 ]
 
-// 게임 시작
-const modal = document.getElementsByClassName("modal")[0];
+[chara_layer name="yuko" part="eye" id="1" storage="chara/yuko/eye/eye.png" zindex=20 ]
+[chara_layer name="yuko" part="eye" id="2" storage="chara/yuko/eye/eye2.png" zindex=20 ]
 
-function startGame() {
-    createPlatteItem();
+[chara_layer name="yuko" part="hair_front" id="1" storage="chara/yuko/hair_front/hair_front.png" zindex=40 ]
+[chara_layer name="yuko" part="hair_front" id="2" storage="chara/yuko/hair_front/hair_front_2.png" zindex=40 ]
 
-    timer = setInterval(() => {
-        playerTime.innerHTML = --time;
+[chara_layer name="yuko" part="head" id="1" storage="chara/yuko/head/head.png" zindex=11]
 
-        // 시간 초과
-        if (time <= 0) {
-            playerTime.innerHTML = 0;
+[chara_layer name="yuko" part="face" id="1" storage="chara/yuko/face_front/face_front.png" zindex=20 ]
+[chara_layer name="yuko" part="face" id="2" storage="chara/yuko/face_front/face_front_2.png" zindex=20 ]
 
-            // 타이머 종료
-            clearInterval(timer);
 
-            // 결과 모달 출력
-            showGameResult();
+[chara_show name="yuko" top="300"]
 
-            // 게임 설정 값 초기화
-            initGame();
-        }
-    }, 1000);
-}
+[_tb_end_tyrano_code]
 
-// 팔레트 아이템 생성
-function createPlatteItem() {
-    // 랜덤으로 타겟 아이템 생성
-    targetIndex = createTargetItem(paletteSize);
-    // 팔레트 아이템 세팅
-    settingPlatteItem();
-}
+[call  storage="input_zoom_in_out.ks"  target="*L_zoomin_yoko"  ]
+[tb_start_text mode=1 ]
+#yuko
+TEST 1[p]
+TEST 2[p]
 
-// 타겟 생성
-function createTargetItem(paletteSize) {
-    return Math.floor(Math.random() * paletteSize);
-}
+[_tb_end_text]
 
-// 팔레트 아이템 세팅
-const palette = document.getElementsByClassName("palette")[0];
-const paletteItem = document.getElementsByClassName("palette-item");
+[tb_start_tyrano_code]
+#yuko
+TEST3                                                                        [er]
+TEST4[p]
+[_tb_end_tyrano_code]
 
-function settingPlatteItem() {
-    // html 추가
-    for (let i = 0; i < paletteSize; i++) {
-        if (i === targetIndex) {
-            palette.innerHTML = palette.innerHTML +
-            `
-                <div class="palette-item" id="target"></div>
-            `;
-        } else {
-            palette.innerHTML = palette.innerHTML +
-            `
-                <div class="palette-item"></div>
-            `;
-        }
-    }
+[tb_start_tyrano_code]
+;[chara_move name="yuko" time=100 left="-=30" top="-=80" width=360 height=480 anim="true" effect="jswing" wait="false"]
+;512 832
+[chara_part name="yuko" hair_front="2" face="2" eye="2" body_back="2" body_front="2"]
+[_tb_end_tyrano_code]
 
-    // 아이템 크기 세팅
-    let itemSize = 100 / paletteRow;
+[tb_start_tyrano_code]
+test blur
+filter layer=all  blur=5 ]
+[_tb_end_tyrano_code]
 
-    // 랜덤 색상 생성
-    color = createColor(color);
+[call  storage="input_zoom_in_out.ks"  target="*L_zoomout_yoko"  ]
+[tb_start_text mode=1 ]
+#ayana
+TEST 2[p]
+[_tb_end_text]
 
-    // 아이템 크기, 색상 적용
-    for (let i = 0; i < paletteItem.length; i++) {
-        // 크기 적용
-        paletteItem[i].style.width = `${itemSize}%`;
-        paletteItem[i].style.height = `${itemSize}%`;
+[tb_start_tyrano_code]
+;[chara_move name="yuko" time=100 left="+=30" top="+=80" width=300 height=400 anim="true" effect="jswing" wait="false"]
+[_tb_end_tyrano_code]
 
-        // 색상 적용
-        let opacity = 1;
+[call  storage="input_zoom_in_out.ks"  target="*L_zoomin_yoko"  ]
+[tb_start_text mode=1 ]
+#yuko
+TEST 3[p]
+[_tb_end_text]
 
-        if (paletteItem[i].id === "target") {
-            opacity = targetOpacity;
-        }
+[chara_show  name="ayana"  time="1000"  wait="true"  left="284"  top="109"  width=""  height=""  reflect="false"  ]
+[tb_start_text mode=1 ]
+#아야나
+" 여긴 어디야? "[p]
+[_tb_end_text]
 
-        paletteItem[i].style.backgroundColor = `rgba(${color.red}, ${color.green}, ${color.blue}, ${opacity}`;
-    }
-}
-
-// 랜덤 색상 생성
-function createColor(color) {
-    // 너무 어둡거나 너무 밝은 색이 나오지 않도록 범위를 100 ~ 200으로 지정
-    color.red = Math.floor(Math.random() * 101) + 100;
-    color.green = Math.floor(Math.random() * 101) + 100;
-    color.blue = Math.floor(Math.random() * 101) + 100;
-
-    return color;
-}
-
-// 아이템 클릭 이벤트
-palette.addEventListener("click", function(e) {
-    if (e.target.className === "palette-item") {
-        if (e.target.id === "target") {
-            selectTargetItem();
-        } else {
-            selectWrongItem();
-        }
-    }
-});
-
-// 정답 처리
-function selectTargetItem() {
-    updateSettings();
-    createPlatteItem();
-}
-
-// 사용자가 정답을 맞춘 경우 설정 값 변경
-function updateSettings() {
-    // 화면 초기화
-    palette.innerHTML = '';
-    
-    // targetIndex, color는 팔레트 아이템 생성 시 랜덤 값으로 재생성되기 때문에 따로 리셋 처리 하지 않음
-    stage++;
-    time = 15;
-    
-    // stage가 2씩 올라갈 때마다 팔레트 사이즈 증가
-    if (stage % 2 === 1) {
-        paletteRow++;
-        paletteSize = paletteRow ** 2;
-    }
-
-    // opacity 값 0.02씩 증가 (0.94 이상으로는 증가하지 않음)
-    if (targetOpacity <= 0.92) {
-        // 2진수로 실수 계산 시 오차가 생기기 때문에 소수점 셋째자리에서 반올림하도록 처리
-        targetOpacity = +(targetOpacity + 0.02).toFixed(2);
-    }
-
-    // 화면 갱신
-    playerTime.innerHTML = time;
-    playerStage.innerHTML = stage;
-}
-
-// 오답 처리
-function selectWrongItem() {
-    // 3초를 뺀 값이 0보다 작은 경우에도 0으로 고정
-    if (time - 3 < 0) {
-        time = 0;
-    } else {
-        time = time - 3;
-    }
-
-    // 오답 선택 시 애니메이션
-    palette.classList.add("vibration");
-
-    setTimeout(function() {
-        palette.classList.remove("vibration");
-    }, 400);
-
-    // 화면 갱신
-    playerTime.innerHTML = time;
-}
-
-// 설정 값 초기화
-function initGame() {
-    stage = 1;
-    time = 15;
-    paletteRow = 2;
-    paletteSize = paletteRow ** 2;
-    targetIndex = 0;
-    targetOpacity = 0.4;
-    color = {};
-}
-
-// 게임 종료 시 출력 문구
-function showGameResult() {
-    let resultText = "";
-
-    if (stage > 0 && stage <= 5) {
-        resultText = "한 번 더 해볼까요?"
-    } else if (stage > 5 && stage <= 10) {
-        resultText = "조금만 더 해봐요!"
-    } else if (stage > 10 && stage <= 15) {
-        resultText = "색깔 찾기 능력이 대단해요!"
-    } else if (stage > 15 && stage <= 20) {
-        resultText = "엄청난 눈을 가지셨네요!"
-    } else if (stage > 20 && stage <= 25) {
-        resultText = "다른 색깔 찾기의<br/>달인이시군요!"
-    } else if (stage > 26 && stage <= 30) {
-        resultText = "여기까지 온 당신,<br/>혹시 '절대색감'이신가요?"
-    } else if (stage > 30) {
-        resultText = "탈인간의 능력을 가지셨습니다!!! 🙀"
-    }
-
-    modalTitle.innerHTML = `
-    <h1 class="modal__content-title--result color-red">
-        게임 종료!
-    </h1>
-    <span class="modal__content-title--stage">
-        기록 : <strong>STAGE ${stage}</strong>
-    </span>
-    <p class="modal__content-title--desc">
-        ${resultText}
-    </p>
-    `;
-
-    modal.classList.add("show");
-}
-
-// 모달 창 닫기
-const modalTitle = document.getElementsByClassName("modal__content-title")[0];
-const modalCloseButton = document.getElementsByClassName("modal__content-close-button")[0];
-
-modal.addEventListener('click', function(e) {
-    if (e.target === modal || e.target === modalCloseButton) {
-        modal.classList.remove("show");
-
-        // 모달창 닫으면 화면 초기화 후 게임 재시작
-        palette.innerHTML = '';
-        playerTime.innerHTML = time;
-        playerStage.innerHTML = stage;
-        
-        startGame();
-    }
-});
-
-// 기본 값 세팅 및 다른 색깔 찾기 게임 자동 시작
-const playerTime = document.getElementById("player-time");
-const playerStage = document.getElementById("player-stage");
-
-window.onload = function() {
-    playerTime.innerHTML = time;
-    playerStage.innerHTML = stage;
-
-    startGame();
-}
-[endscript]
-
+[tb_hide_message_window  ]
+[s  ]
+[glink  color="btn_05_black"  storage="scene2.ks"  size="20"  text="나는&nbsp;니가&nbsp;좋아"  target="*123"  x="278"  y="494"  width="700"  height="100"  _clickable_img=""  ]
+[s  ]

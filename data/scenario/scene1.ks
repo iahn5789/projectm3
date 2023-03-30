@@ -9,12 +9,17 @@
 
 [cm  ]
 [font  size="30"  color="0xffffff"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
+[tb_start_tyrano_code]
+;[macro name="end"]
+;[chara_mod name="yuko" storage="yuko_idle.png"]
+;[endmacro]
+[_tb_end_tyrano_code]
+
 [tb_show_message_window  ]
 [tb_ptext_show  x="758"  y="89"  size="30"  color="0xffffff"  time="1000"  text="Day-"  anim="false"  face="serif"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="847"  y="89"  size="30"  color="0xffffff"  time="1000"  anim="false"  face="serif"  text="&[f.Day]"  edge="undefined"  shadow="undefined"  ]
 [wait  time="3000"  ]
 [tb_ptext_hide  time="2000"  ]
-[s  ]
 [tb_start_tyrano_code]
 ; 캐릭터 등장
 [chara_new name="yuko" storage="chara/yuko/hair_back/Long.png" jname="yuko" ]
@@ -88,5 +93,6 @@ TEST 3[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[s  ]
 [glink  color="btn_05_black"  storage="scene2.ks"  size="20"  text="나는&nbsp;니가&nbsp;좋아"  target="*123"  x="278"  y="494"  width="700"  height="100"  _clickable_img=""  ]
 [s  ]
