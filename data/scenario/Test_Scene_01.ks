@@ -92,7 +92,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="test_start_bt_01" storage="Test_Scene_01.ks" target="test_start_bt_01" graphic="../image/New_GUI/Test_UI/Test_Start_Bt_01.png" width="241" height="69" x="660" y="754" enterimg="../image/New_GUI/Test_UI/Test_Start_Bt_02.png"]
+[button name="test_start_bt_01" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_Bt_01.png" width="241" height="69" x="660" y="754" enterimg="../image/New_GUI/Test_UI/Test_Start_Bt_02.png"]
 [button name="test_back_bt_01" storage="Test_Scene_01.ks" target="test_back_bt_01" graphic="../image/New_GUI/Test_UI/Test_Back_Bt_01.png" width="241" height="69" x="1022" y="754" enterimg="../image/New_GUI/Test_UI/Test_Back_Bt_02.png"]
 [_tb_end_tyrano_code]
 
