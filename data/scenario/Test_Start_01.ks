@@ -2,7 +2,7 @@
 
 *teststart
 
-[tb_eval  exp="f.circle='false'"  name="circle"  cmd="="  op="t"  val="false"  val_2="undefined"  ]
+[tb_keyconfig  flag="0"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_start_tyrano_code]

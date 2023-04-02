@@ -25,6 +25,5 @@ f['story']='';
 f['answer']=''; 
 f['score']=100; 
 f['gift_line']=''; 
-f['circle']=0; 
 f['select']=0; 
 [endscript] 
