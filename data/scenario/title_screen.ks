@@ -12,7 +12,7 @@
 [button name="start" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/Title_Start_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Start_Bt_02.png" width="446" height="116" x="1310" y="305"]
 [button name="load" storage="title_screen.ks" target="LOAD" graphic="../image/New_GUI/Title_Bt/Title_Load_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Load_Bt_02.png" width="446" height="116" x="1336" y="458"]
 [button name="gallery" storage="title_screen.ks" target="GALLERY" graphic="../image/New_GUI/Title_Bt/Title_Gallery_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Gallery_Bt_02.png" width="446" height="116" x="1362" y="610"]
-[button name="config" storage="config.ks" target="null" graphic="../image/New_GUI/Title_Bt/Title_Config_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Config_Bt_02.png" width="446" height="116" x="1385" y="763"]
+[button name="config" storage="config.ks" graphic="../image/New_GUI/Title_Bt/Title_Config_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Config_Bt_02.png" width="446" height="116" x="1385" y="763"]
 [button name="exit" storage="title_screen.ks" target="EXIT" graphic="../image/New_GUI/Title_Bt/Title_Exit_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Exit_Bt_02.png" width="446" height="116" x="1411" y="916"]
 [_tb_end_tyrano_code]
 
@@ -38,6 +38,11 @@
 
 [jump  storage="Gallery_Screen_01.ks"  target="*gallery"  ]
 [showgallery]
+
+[s  ]
+*CONFIG
+
+[showconfig]
 
 [s  ]
 *EXIT
