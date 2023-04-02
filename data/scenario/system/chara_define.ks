@@ -24,4 +24,5 @@ f['Day']=1;
 f['story']=''; 
 f['answer']=''; 
 f['score']=100; 
+f['gift_line']=''; 
 [endscript] 

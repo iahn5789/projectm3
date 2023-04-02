@@ -2,99 +2,135 @@
 
 [mask time=10]
 [mask_off time=10]
-[stopbgm  time="7000"  fadeout="true"  ]
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
-[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
-[tb_start_tyrano_code]
+*back
 
+[tb_start_tyrano_code]
+[filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
+
+[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang_back"  ]
+*popupkang_01
 
 [cm  ]
-[font  size="30"  color="0xffffff"  face="The&nbsp;Jamsil&nbsp;5&nbsp;Bold"  ]
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[tb_eval  exp="f.money-=500"  name="money"  cmd="-="  op="t"  val="500"  val_2="undefined"  ]
+[tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.kline=Math.floor(Math.random()*(2-0+1)+0)"  name="kline"  cmd="="  op="r"  val="0"  val_2="2"  ]
+[call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
-;[macro name="end"]
-;[chara_mod name="yuko" storage="yuko_idle.png"]
-;[endmacro]
-[_tb_end_tyrano_code]
-
-[tb_show_message_window  ]
-[tb_ptext_show  x="758"  y="89"  size="30"  color="0xffffff"  time="1000"  text="Day-"  anim="false"  face="serif"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="847"  y="89"  size="30"  color="0xffffff"  time="1000"  anim="false"  face="serif"  text="&[f.Day]"  edge="undefined"  shadow="undefined"  ]
-[wait  time="3000"  ]
-[tb_ptext_hide  time="2000"  ]
-[tb_start_tyrano_code]
-; 캐릭터 등장
-[chara_new name="yuko" storage="chara/yuko/hair_back/Long.png" jname="yuko" ]
-[chara_layer name="yuko" part="body_back" id="1" storage="chara/yuko/body_back/bodyback.png" zindex=1 ]
-[chara_layer name="yuko" part="body_back" id="2" storage="chara/yuko/body_back/bodyback2.png" zindex=1 ]
-
-[chara_layer name="yuko" part="body_front" id="1" storage="chara/yuko/body_front/Body_Front.png" zindex=10 ]
-[chara_layer name="yuko" part="body_front" id="2" storage="chara/yuko/body_front/bodyfront2.png" zindex=10 ]
-
-[chara_layer name="yuko" part="eye" id="1" storage="chara/yuko/eye/eye.png" zindex=20 ]
-[chara_layer name="yuko" part="eye" id="2" storage="chara/yuko/eye/eye2.png" zindex=20 ]
-
-[chara_layer name="yuko" part="hair_front" id="1" storage="chara/yuko/hair_front/hair_front.png" zindex=40 ]
-[chara_layer name="yuko" part="hair_front" id="2" storage="chara/yuko/hair_front/hair_front_2.png" zindex=40 ]
-
-[chara_layer name="yuko" part="head" id="1" storage="chara/yuko/head/head.png" zindex=11]
-
-[chara_layer name="yuko" part="face" id="1" storage="chara/yuko/face_front/face_front.png" zindex=20 ]
-[chara_layer name="yuko" part="face" id="2" storage="chara/yuko/face_front/face_front_2.png" zindex=20 ]
-
-
-[chara_show name="yuko" top="300"]
+[html]
+<div>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_01.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
+<p id='gift_line_form' style='z-index:2; left:620px; top:800px; width:700px; height:100px; color:white; position:absolute;font-size: 30px;'>
+</p>
+</img>
+</div>
+<script>
+let myVariable = f.gift_line;
+document.getElementById("gift_line_form").innerHTML = myVariable;
+</script>
+[endhtml]
+[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="Day" layer=2 ]
+[free name="score" layer=2 ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
 
 [_tb_end_tyrano_code]
 
-[call  storage="input_zoom_in_out.ks"  target="*L_zoomin_yoko"  ]
-[tb_start_text mode=1 ]
-#yuko
-TEST 1[p]
-TEST 2[p]
-
-[_tb_end_text]
-
 [tb_start_tyrano_code]
-#yuko
-TEST3                                                                        [er]
-TEST4[p]
+[button name="Back" storage="Test_Scene_Gift_Shop_Kang_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
 [_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
-;[chara_move name="yuko" time=100 left="-=30" top="-=80" width=360 height=480 anim="true" effect="jswing" wait="false"]
-;512 832
-[chara_part name="yuko" hair_front="2" face="2" eye="2" body_back="2" body_front="2"]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-test blur
-filter layer=all  blur=5 ]
-[_tb_end_tyrano_code]
-
-[call  storage="input_zoom_in_out.ks"  target="*L_zoomout_yoko"  ]
-[tb_start_text mode=1 ]
-#ayana
-TEST 2[p]
-[_tb_end_text]
-
-[tb_start_tyrano_code]
-;[chara_move name="yuko" time=100 left="+=30" top="+=80" width=300 height=400 anim="true" effect="jswing" wait="false"]
-[_tb_end_tyrano_code]
-
-[call  storage="input_zoom_in_out.ks"  target="*L_zoomin_yoko"  ]
-[tb_start_text mode=1 ]
-#yuko
-TEST 3[p]
-[_tb_end_text]
-
-[chara_show  name="ayana"  time="1000"  wait="true"  left="284"  top="109"  width=""  height=""  reflect="false"  ]
-[tb_start_text mode=1 ]
-#아야나
-" 여긴 어디야? "[p]
-[_tb_end_text]
-
-[tb_hide_message_window  ]
 [s  ]
-[glink  color="btn_05_black"  storage="scene2.ks"  size="20"  text="나는&nbsp;니가&nbsp;좋아"  target="*123"  x="278"  y="494"  width="700"  height="100"  _clickable_img=""  ]
+*popupkang_02
+
+[cm  ]
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[tb_eval  exp="f.money-=900"  name="money"  cmd="-="  op="t"  val="900"  val_2="undefined"  ]
+[tb_eval  exp="f.klove+=2"  name="klove"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
+[tb_start_tyrano_code]
+[html]
+<div>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_02.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
+</div>
+[endhtml]
+[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="Day" layer=2 ]
+[free name="score" layer=2 ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="Back" storage="Test_Scene_Gift_Shop_Kang_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[_tb_end_tyrano_code]
+
+[s  ]
+*popupkang_03
+
+[cm  ]
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[tb_eval  exp="f.money-=1700"  name="money"  cmd="-="  op="t"  val="1700"  val_2="undefined"  ]
+[tb_eval  exp="f.klove+=4"  name="klove"  cmd="+="  op="t"  val="4"  val_2="undefined"  ]
+[tb_start_tyrano_code]
+[html]
+<div>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_03.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
+</div>
+[endhtml]
+[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="Day" layer=2 ]
+[free name="score" layer=2 ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="Back" storage="Test_Scene_Gift_Shop_Kang_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[_tb_end_tyrano_code]
+
+[s  ]
+*popupkang_04
+
+[cm  ]
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[tb_eval  exp="f.money-=2500"  name="money"  cmd="-="  op="t"  val="2500"  val_2="undefined"  ]
+[tb_eval  exp="f.klove+=6"  name="klove"  cmd="+="  op="t"  val="6"  val_2="undefined"  ]
+[tb_start_tyrano_code]
+[html]
+<div>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_04.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
+</div>
+[endhtml]
+[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="Day" layer=2 ]
+[free name="score" layer=2 ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="Back" storage="Test_Scene_Gift_Shop_Kang_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[_tb_end_tyrano_code]
+
 [s  ]
