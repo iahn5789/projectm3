@@ -1,25 +1,22 @@
 [_tb_system_call storage=system/_Test_Scene_01.ks]
 
-[tb_start_tyrano_code]
-[screen_full]
-[_tb_end_tyrano_code]
-
-[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
-[tb_hide_message_window  ]
-[tb_image_hide  time="0"  ]
 *testscene
 
-[cm  ]
+[tb_keyconfig  flag="0"  ]
 [hidemenubutton]
 
-[bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" ]
+[_tb_end_tyrano_code]
+
+[cm  ]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
 [free name="jlove" layer=2 ]
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
-[free name="score" layer=2 ]
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=160 y=226 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=190 y=495 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=190 y=627 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
@@ -36,12 +33,17 @@
 [button name="msgsul" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="310" height="174" x="1210" y="701"]
 [_tb_end_tyrano_code]
 
-[mask_off  time="0"  effect="fadeOut"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
 [s  ]
 *close_back
 
+[tb_keyconfig  flag="0"  ]
 [mask  time="300"  effect="rotateInUpRight"  color="0x000000"  ]
 [hidemenubutton]
+
+[tb_start_tyrano_code]
+[freeimage layer="2" ]
+[_tb_end_tyrano_code]
 
 [cm  ]
 [bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]

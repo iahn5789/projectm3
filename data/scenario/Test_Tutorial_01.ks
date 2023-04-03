@@ -1,0 +1,65 @@
+[_tb_system_call storage=system/_Test_Tutorial_01.ks]
+
+*tutorial
+
+[tb_keyconfig  flag="0"  ]
+[cm  ]
+[tb_hide_message_window  ]
+[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
+[mask_off  time="500"  effect="fadeOut"  ]
+[tb_start_tyrano_code]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Guide_01.png page=fore visible=true time=3000ms wait=true]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[freeimage layer="2" time=3000ms wait=true]
+[_tb_end_tyrano_code]
+
+[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
+[mask_off  time="500"  effect="fadeOut"  ]
+[bg  time="1000"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
+[tb_start_tyrano_code]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Week_01.png page=fore visible=true time=500ms wait=true]
+[cm]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" time=100ms wait=true]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Money_01.png page=fore visible=true time=500ms wait=true]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" time=100ms wait=true]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Love_01.png page=fore visible=true time=500ms wait=true]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" time=100ms wait=true]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Giftshop_01.png page=fore visible=true time=500ms wait=true]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" time=100ms wait=true]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Testscore_01.png page=fore visible=true time=500ms wait=true]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" time=100ms wait=true]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Secret_01.png page=fore visible=true time=500ms wait=true]
+[_tb_end_tyrano_code]
+
+[l  ]
+[tb_start_tyrano_code]
+[freeimage layer="2" time=100ms wait=true]
+[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Start_01.png page=fore visible=true time=500ms wait=true]
+[_tb_end_tyrano_code]
+
+[l  ]
+[mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
+[s  ]
