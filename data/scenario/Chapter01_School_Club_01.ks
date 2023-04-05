@@ -116,6 +116,7 @@
 [stopbgm  time="1000"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Crowd_Cheer_01.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 좋아! 잘 생각했어! "[p]
@@ -172,9 +173,6 @@
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 *l_no_01
 
-[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Amb_raining_01.wav"  loop="true"  fadein="true"  ]
-[stopbgm  time="1000"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Home_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -183,7 +181,6 @@
 " 거봐! 결국 안하게 될거라니깐?! "[p]
 [_tb_end_text]
 
-[playse  volume="40"  time="1000"  buf="1"  storage="SFX/Lightning_designed_01.wav"  ]
 [tb_start_text mode=1 ]
 #진다영
 "조금이라도 기대한 내가 바보지 "[p]
@@ -241,6 +238,7 @@
 
 [font  size="40"  color="0x000000"  face="SBB"  ]
 [quake  time="1000"  count="5"  hmax="4"  wait="false"  vmax="4"  ]
+[playse  volume="15"  time="1000"  buf="0"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
 [tb_start_text mode=1 ]
 #진다영
 " 내 이야기 아직 안끝났어어어어!!! "[p]
@@ -250,8 +248,6 @@
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 *l_no_02
 
-[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Amb_raining_01.wav"  loop="true"  ]
-[playse  volume="30"  time="1000"  buf="1"  storage="SFX/Amb_Warning_Siren_01.wav"  loop="true"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #진다영
@@ -282,6 +278,8 @@
 " 할거지!!? "[p]
 [_tb_end_text]
 
+[stopbgm  time="1000"  fadeout="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Cloth_movement_02.wav"  ]
 [tb_start_text mode=1 ]
 #
 덥썩-[p]
@@ -304,10 +302,16 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [tb_show_message_window  ]
+[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  ]
 [tb_start_text mode=1 ]
 #
 손.....손을 잡았어..... [p]
 여자 손을 잡아보는건....처음이야..... [p]
+[_tb_end_text]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  ]
+[tb_start_text mode=1 ]
+#
 부...부드러워..... [p]
 [_tb_end_text]
 
@@ -323,6 +327,8 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[stopse  time="1000"  buf="0"  ]
+[stopse  time="1000"  buf="1"  ]
 [glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_03"  x="466"  y="282"  width="1000"  height="150"  text="무슨&nbsp;노래든&nbsp;맡겨만&nbsp;줘!"  _clickable_img=""  ]
 [glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_03"  x="466"  y="582"  width="1000"  height="150"  text="무조건!&nbsp;무조건&nbsp;할게!"  _clickable_img=""  ]
 [s  ]
@@ -331,6 +337,7 @@
 [stopbgm  time="1000"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
+[playse  volume="20"  time="1000"  buf="0"  storage="SFX/Crowd_Cheer_01.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 역시! 그럴 줄 알았어!! "[p]
@@ -347,7 +354,7 @@
 [_tb_end_text]
 
 [quake  time="500"  count="3"  hmax="2"  wait="false"  vmax="3"  ]
-[font  size="40"  color="0x000000"  face="SBB"  ]
+[font  size="40"  color="0xff4747"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #진다영
 " 설나희.....! 너까지! "[p]
