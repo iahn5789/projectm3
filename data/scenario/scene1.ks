@@ -4,6 +4,14 @@
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
 [tb_start_tyrano_code]
+[glink color="btn_13_red" target="help" text="장범준" face="The Jamsil5Bold" width="446" height="116" x="1310" y="305" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+
+[_tb_end_tyrano_code]
+
+[s  ]
+*help
+
+[tb_start_tyrano_code]
 
 [_tb_end_tyrano_code]
 
