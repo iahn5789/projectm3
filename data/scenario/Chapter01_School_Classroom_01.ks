@@ -114,8 +114,11 @@
 [chara_hide  name="전대용"  time="10"  wait="false"  pos_mode="true"  ]
 [chara_hide  name="강여진"  time="10"  wait="false"  pos_mode="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
-[glink  color="btn_18_red"  storage="Chapter01_School_Classroom_01.ks"  size="50"  target="*l_yes_01"  x="466"  y="282"  width="1000"  height="150"  text="알긴&nbsp;하는데...."  _clickable_img=""  ]
-[glink  color="btn_18_blue"  storage="Chapter01_School_Classroom_01.ks"  size="50"  target="*l_no_01"  x="466"  y="582"  width="1000"  height="150"  text="동아리..방?"  _clickable_img=""  ]
+[tb_start_tyrano_code]
+[glink color="btn_21_yellow" target="l_yes_01" text="알긴 하는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_01" text="동아리..방..?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[_tb_end_tyrano_code]
+
 [s  ]
 *l_yes_01
 

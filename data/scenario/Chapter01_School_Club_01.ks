@@ -108,8 +108,11 @@
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
-[glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_01"  x="466"  y="282"  width="1000"  height="150"  text="까짓것&nbsp;한번&nbsp;해보지&nbsp;뭐!"  _clickable_img=""  ]
-[glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_no_01"  x="466"  y="582"  width="1000"  height="150"  text="역시..못&nbsp;하겠어"  _clickable_img=""  ]
+[tb_start_tyrano_code]
+[glink color="btn_21_yellow" target="l_yes_01" text="까짓것&nbsp;한번&nbsp;해보지&nbsp;뭐!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_01" text="역시..못&nbsp;하겠어" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[_tb_end_tyrano_code]
+
 [s  ]
 *l_yes_01
 
@@ -205,8 +208,11 @@
 [tb_hide_message_window  ]
 [stopse  time="1000"  buf="0"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
-[glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_02"  x="466"  y="282"  width="1000"  height="150"  text="그래&nbsp;한번&nbsp;해보지&nbsp;뭐!"  _clickable_img=""  ]
-[glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_no_02"  x="466"  y="582"  width="1000"  height="150"  text="아직&nbsp;마음의&nbsp;준비가.."  _clickable_img=""  ]
+[tb_start_tyrano_code]
+[glink color="btn_21_yellow" target="l_yes_02" text="그래&nbsp;한번&nbsp;해보지&nbsp;뭐!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_02" text="아직&nbsp;마음의&nbsp;준비가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[_tb_end_tyrano_code]
+
 [s  ]
 *l_yes_02
 
@@ -328,9 +334,12 @@
 
 [tb_hide_message_window  ]
 [stopse  time="1000"  buf="0"  ]
-[stopse  time="1000"  buf="1"  ]
-[glink  color="btn_18_red"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_03"  x="466"  y="282"  width="1000"  height="150"  text="무슨&nbsp;노래든&nbsp;맡겨만&nbsp;줘!"  _clickable_img=""  ]
-[glink  color="btn_18_blue"  storage="Chapter01_School_Club_01.ks"  size="50"  target="*l_yes_03"  x="466"  y="582"  width="1000"  height="150"  text="무조건!&nbsp;무조건&nbsp;할게!"  _clickable_img=""  ]
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
+[tb_start_tyrano_code]
+[glink color="btn_21_red" target="l_yes_03" text="무슨&nbsp;노래든&nbsp;맡겨만&nbsp;줘!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_red" target="l_yes_03" text="무조건!&nbsp;무조건&nbsp;할게..!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[_tb_end_tyrano_code]
+
 [s  ]
 *l_yes_03
 

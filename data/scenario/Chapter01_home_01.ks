@@ -220,8 +220,11 @@
 [tb_hide_message_window  ]
 [chara_hide  name="전대용"  time="10"  wait="true"  pos_mode="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
-[glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="45"  x="466"  y="282"  width="1000"  height="150"  text="응?&nbsp;그게&nbsp;무슨&nbsp;말이야?"  _clickable_img=""  target="*L_no"  ]
-[glink  color="btn_18_blue"  storage="Chapter01_home_01.ks"  size="45"  x="466"  y="582"  width="1000"  height="150"  text="알아보긴&nbsp;했는데..."  _clickable_img=""  target="*L_yes"  ]
+[tb_start_tyrano_code]
+[glink color="btn_21_yellow" target="L_yes" text="알아보긴 했는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="L_no" text="응? 그게 무슨 말이야?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[_tb_end_tyrano_code]
+
 [s  ]
 *L_no
 
