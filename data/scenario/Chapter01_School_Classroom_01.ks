@@ -4,7 +4,7 @@
 
 [playbgm  volume="40"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="true"  ]
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Common_Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
-[bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_02.png"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
