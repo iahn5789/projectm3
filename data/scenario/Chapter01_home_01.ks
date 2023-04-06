@@ -221,8 +221,8 @@
 [chara_hide  name="전대용"  time="10"  wait="true"  pos_mode="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="L_yes" text="알아보긴 했는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
-[glink color="btn_21_yellow" target="L_no" text="응? 그게 무슨 말이야?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="L_yes" text="알아보긴 했는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="L_no" text="응? 그게 무슨 말이야?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]

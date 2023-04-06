@@ -109,8 +109,8 @@
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_yes_01" text="까짓것&nbsp;한번&nbsp;해보지&nbsp;뭐!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_no_01" text="역시..못&nbsp;하겠어" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_yes_01" text="까짓것 한번 해보지 뭐!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_01" text="역시..못 하겠어" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -119,7 +119,6 @@
 [stopbgm  time="1000"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Crowd_Cheer_01.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 좋아! 잘 생각했어! "[p]
@@ -209,8 +208,8 @@
 [stopse  time="1000"  buf="0"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_yes_02" text="그래&nbsp;한번&nbsp;해보지&nbsp;뭐!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_no_02" text="아직&nbsp;마음의&nbsp;준비가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_yes_02" text="그래 한번 해보지 뭐!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_02" text="아직 마음의 준비가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -308,7 +307,7 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [tb_show_message_window  ]
-[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  ]
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  ]
 [tb_start_text mode=1 ]
 #
 손.....손을 잡았어..... [p]
@@ -336,8 +335,8 @@
 [stopse  time="1000"  buf="0"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_red" target="l_yes_03" text="무슨&nbsp;노래든&nbsp;맡겨만&nbsp;줘!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
-[glink color="btn_21_red" target="l_yes_03" text="무조건!&nbsp;무조건&nbsp;할게..!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[glink color="btn_21_red" target="l_yes_03" text="무슨 노래든 맡겨만 줘!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_red" target="l_yes_03" text="무조건! 무조건 할게..!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -346,7 +345,6 @@
 [stopbgm  time="1000"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
-[playse  volume="20"  time="1000"  buf="0"  storage="SFX/Crowd_Cheer_01.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 역시! 그럴 줄 알았어!! "[p]
