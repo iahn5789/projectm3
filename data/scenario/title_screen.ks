@@ -9,7 +9,7 @@
 *title
 
 [tb_start_tyrano_code]
-[button name="start" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/Title_Start_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Start_Bt_02.png" width="446" height="116" x="1310" y="305" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
+[button name="start" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/Title_Start_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Start_Bt_02.png" width="446" height="116" x="1310" y="305" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Game_Start_01.wav"]
 [button name="load" storage="title_screen.ks" target="LOAD" graphic="../image/New_GUI/Title_Bt/Title_Load_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Load_Bt_02.png" width="446" height="116" x="1336" y="458" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
 [button name="gallery" storage="title_screen.ks" target="GALLERY" graphic="../image/New_GUI/Title_Bt/Title_Gallery_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Gallery_Bt_02.png" width="446" height="116" x="1362" y="610" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
 [button name="config" storage="config.ks" graphic="../image/New_GUI/Title_Bt/Title_Config_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Config_Bt_02.png" width="446" height="116" x="1385" y="763" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
@@ -24,7 +24,7 @@
 
 [cm  ]
 [tb_keyconfig  flag="1"  ]
-[stopbgm  time="2000"  fadeout="true"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [jump  storage="input_name_scene_01.ks"  target="*l_jump_1"  ]
 [s  ]

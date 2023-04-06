@@ -2,11 +2,11 @@
 
 *l_jump_1
 
-[mask  time="700"  effect="fadeIn"  color="0x000000"  ]
+[mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [hidemenubutton]
 
 [bg  storage="BGI/Common_Black.jpg"  method="puffIn"  time="1"  ]
-[mask_off  time="2000"  effect="fadeOut"  ]
+[mask_off  time="3000"  effect="fadeOut"  ]
 [tb_hide_message_window  ]
 [tb_ptext_show  x="715"  y="408"  size="48"  color="0xffffff"  time="1000"  text="너의&nbsp;이름을&nbsp;알려줘"  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
