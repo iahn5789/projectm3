@@ -3,7 +3,7 @@
 [hidemenubutton]
 
 [playbgm  volume="40"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="true"  ]
-[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Common_Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
+[playse  volume="40"  time="1000"  buf="0"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -28,7 +28,7 @@
 " 응? "[p]
 [_tb_end_text]
 
-[playse  volume="130"  time="1000"  buf="1"  storage="SFX/fixed_Sliding_door_open.wav"  ]
+[playse  volume="130"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open.wav"  ]
 [tb_start_tyrano_code]
 #
 드르륵 -                           쿵                                 [er]
@@ -113,10 +113,10 @@
 [tb_hide_message_window  ]
 [chara_hide  name="전대용"  time="10"  wait="false"  pos_mode="true"  ]
 [chara_hide  name="강여진"  time="10"  wait="false"  pos_mode="true"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_yes_01" text="알긴 하는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_no_01" text="동아리..방..?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_yes_01" text="알긴 하는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_01" text="동아리..방..?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -132,7 +132,7 @@
 
 [_tb_end_text]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/fixed_Sliding_door_open_short.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진
@@ -154,7 +154,7 @@
 
 [_tb_end_text]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/fixed_Sliding_door_open_short.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
 [playse  volume="70"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진

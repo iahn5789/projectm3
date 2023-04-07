@@ -7,8 +7,8 @@
 [cm  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
-[playbgm  volume="60"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Amb_Crowd_Loop_01.wav"  loop="true"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #관객들
@@ -33,7 +33,7 @@
 
 [tb_hide_message_window  ]
 [bg  time="2000"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Opening_Logo_BGM.wav"  fadein="false"  ]
+[playbgm  volume="70"  time="1000"  loop="true"  storage="Common_Opening_Logo_BGM.wav"  fadein="false"  ]
 [bg  time="5000"  method="puffIn"  storage="BGI/Common_Projectm3_Logo.png"  ]
 [wait  time="6000"  ]
 [jump  storage="Chapter01_home_01.ks"  target=""  ]

@@ -28,7 +28,7 @@
 
 [quake  time="800"  count="10"  hmax="8"  wait="false"  vmax="6"  ]
 [font  size="40"  color="0xff0000"  face="SBB"  ]
-[playse  volume="50"  time="1000"  buf="0"  storage="SFX/Emotion_Anoying_Dog_growl_01.wav"  ]
+[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Emotion_Anoying_Dog_growl_01.wav"  ]
 [tb_start_text mode=1 ]
 #???
 " 시끄러! 변태!!! 호색한!!! 대머리!!!!!!!!!!!!!!! "[p]
@@ -107,10 +107,10 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_yes_01" text="까짓것 한번 해보지 뭐!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_no_01" text="역시..못 하겠어" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_yes_01" text="까짓것 한번 해보지 뭐!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_01" text="역시..못 하겠어" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -206,10 +206,10 @@
 
 [tb_hide_message_window  ]
 [stopse  time="1000"  buf="0"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_yes_02" text="그래 한번 해보지 뭐!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_no_02" text="아직 마음의 준비가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_yes_02" text="그래 한번 해보지 뭐!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_no_02" text="아직 마음의 준비가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -243,7 +243,7 @@
 
 [font  size="40"  color="0x000000"  face="SBB"  ]
 [quake  time="1000"  count="5"  hmax="4"  wait="false"  vmax="4"  ]
-[playse  volume="15"  time="1000"  buf="0"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
+[playse  volume="20"  time="1000"  buf="0"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
 [tb_start_text mode=1 ]
 #진다영
 " 내 이야기 아직 안끝났어어어어!!! "[p]
@@ -261,7 +261,7 @@
 [_tb_end_text]
 
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Lightning_designed_01.wav"  ]
+[playse  volume="70"  time="1000"  buf="2"  storage="SFX/Lightning_designed_01.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 아냐! 네가 계속 소리를 지르니까 그러는거 아니야! "[p]
@@ -332,11 +332,12 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[playse  volume="100"  time="1000"  buf="2"  storage="UI/Common_UI_whoosh_01.wav"  ]
 [stopse  time="1000"  buf="0"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_red" target="l_yes_03" text="무슨 노래든 맡겨만 줘!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
-[glink color="btn_21_red" target="l_yes_03" text="무조건! 무조건 할게..!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_red" target="l_yes_03" text="무슨 노래든 맡겨만 줘!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_red" target="l_yes_03" text="무조건! 무조건 할게..!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]

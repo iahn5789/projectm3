@@ -48,7 +48,7 @@
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
-[playse  volume="25"  time="1000"  buf="1"  storage="SFX/Amb_Kitchen_01.wav"  fadein="true"  loop="true"  ]
+[playse  volume="60"  time="1000"  buf="1"  storage="Amb/Amb_Kitchen_01.wav"  fadein="true"  ]
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="500"  method="fadeIn"  storage="BGI/Common_home_02.png"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
@@ -89,6 +89,7 @@
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
+[playse  volume="50"  time="1000"  buf="1"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="3000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [mask_off  time="2000"  effect="fadeOut"  ]
@@ -112,6 +113,7 @@
 " 꿈? 어라, 나도 분명... "[p]
 [_tb_end_text]
 
+[stopse  time="1000"  buf="1"  ]
 [playbgm  volume="100"  time="2000"  loop="true"  storage="Common_Backstage_cutoff_01.mp3"  fadein="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_cutoff_01.wav"  loop="true"  fadein="true"  ]
 [tb_hide_message_window  ]
@@ -159,7 +161,8 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[playbgm  volume="40"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Road_01.wav"  fadein="true"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [chara_show  name="전대용"  time="1000"  wait="false"  left="700"  top="250"  width="512"  height="832"  reflect="false"  storage="chara/7/전대용.png"  ]
@@ -219,10 +222,10 @@
 
 [tb_hide_message_window  ]
 [chara_hide  name="전대용"  time="10"  wait="true"  pos_mode="true"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_UI_whoosh_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_UI_whoosh_01.wav"  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="L_yes" text="알아보긴 했는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
-[glink color="btn_21_yellow" target="L_no" text="응? 그게 무슨 말이야?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="SFX/Common_Branch_Hover_01.wav" leavese="SFX/Common_Branch_Hover_Leave_01.wav" clickse="SFX/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="L_yes" text="알아보긴 했는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="L_no" text="응? 그게 무슨 말이야?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]

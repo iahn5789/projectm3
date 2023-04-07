@@ -11,7 +11,7 @@
 ( 어디보자...Love Sound Syndrome? )[p]
 [_tb_end_text]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/fixed_Sliding_door_open_short.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI02/Common_Door_Day_01.png"  ]
 [tb_start_text mode=1 ]
 #강여진
