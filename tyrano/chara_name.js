@@ -50,7 +50,7 @@ window.addEventListener("load", function() {
             fixLayers[i].style.transform = 'translateX(0)';
           } else {
             fixLayers[i].classList.add('hidden');
-            fixLayers[i].style.transform = 'translateX(200%)';
+            fixLayers[i].style.transform = 'translateX(250%)';
           }
         }
       }
@@ -60,18 +60,14 @@ window.addEventListener("load", function() {
 document.addEventListener('click', function(event) {
   if (!event.target.closest('.fixlayer') && !event.target.classList.contains('fixlayer')) {
     for (let i = 0; i < fixLayers.length; i++) {
-      if (!fixLayers[i].classList.contains('hidden') && !fixLayers[i].src.includes('New_GUI/Config_UI/UI_Close_Bt_01.png')) {
-
+      if (!fixLayers[i].classList.contains('hidden') && !fixLayers[i].src.includes('New_GUI/Config_UI/UI_Close_Bt_01.png') && !fixLayers[i].src.includes('New_GUI/Config_UI/c_btn.gif')) {
         fixLayers[i].classList.add('hidden');
         fixLayers[i].style.display = 'block';
-        fixLayers[i].style.transform = 'translateX(200%)';
+        fixLayers[i].style.transform = 'translateX(250%)';
       }
     }
   }
 });
-
-
-
 
     // // esc 버튼 기능 여기까지
 
