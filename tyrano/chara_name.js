@@ -25,11 +25,57 @@ observer.observe(chara_name, { childList: true, subtree: true  });
 
 
 
+
+
 window.addEventListener("load", function() {
 
 
 
   setTimeout(()=>{
+
+
+
+    // // esc 버튼 누르면 오른쪽아래 메뉴 사라졌다 나타나는 기능 
+    const fixLayers = document.getElementsByClassName('fixlayer');
+    for (let i = 0; i < fixLayers.length; i++) {
+   
+      fixLayers[i].style.transition = 'transform 0.3s ease-in-out';
+    }
+    
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        for (let i = 0; i < fixLayers.length; i++) {
+          if (fixLayers[i].classList.contains('hidden')) {
+            fixLayers[i].classList.remove('hidden');
+            fixLayers[i].style.transform = 'translateX(0)';
+          } else {
+            fixLayers[i].classList.add('hidden');
+            fixLayers[i].style.transform = 'translateX(200%)';
+          }
+        }
+      }
+    });
+
+// Add click event listeners to hide the fixLayers again when clicking outside of them
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('.fixlayer') && !event.target.classList.contains('fixlayer')) {
+    for (let i = 0; i < fixLayers.length; i++) {
+      if (!fixLayers[i].classList.contains('hidden') && !fixLayers[i].src.includes('New_GUI/Config_UI/UI_Close_Bt_01.png')) {
+
+        fixLayers[i].classList.add('hidden');
+        fixLayers[i].style.display = 'block';
+        fixLayers[i].style.transform = 'translateX(200%)';
+      }
+    }
+  }
+});
+
+
+
+
+    // // esc 버튼 기능 여기까지
+
+
 
       // Get the Save button element by its name attribute
   const menuButtons = document.getElementsByClassName("menu_button");
@@ -53,11 +99,19 @@ if(i !== 5){
       message_inner.style.filter = "blur(5px)";
       message_outer.style.filter = "blur(5px)";
       chara_name_area.style.filter = "blur(5px)";
-      roleButtons.style.filter = "blur(5px)";
+      // roleButtons.style.filter = "blur(5px)";
+
 
       for(let j = 0 ; j < menuButtons.length; j++){
 
         menuButtons[j].style.filter = "blur(5px)";
+        
+      }
+
+      
+      for(let k = 0 ; k < roleButtons.length; k++){
+
+        roleButtons[k].style.filter = "blur(5px)";
         
       }
 
@@ -84,13 +138,20 @@ layerMenu.addEventListener("click",  function(event) {
       message_inner.style.filter = "";
       message_outer.style.filter = "";
       chara_name_area.style.filter = "";
-      roleButtons.style.filter = "";
 
       for(let j = 0 ; j < menuButtons.length; j++){
 
         menuButtons[j].style.filter = "";
 
       }
+
+      for(let k = 0 ; k < roleButtons.length; k++){
+
+        roleButtons[k].style.filter = "";
+        
+      }
+
+      
 
     }
     // else if (event.target.src && event.target.src.includes('UI_Close_Bt_02.png')) { 
