@@ -16,7 +16,7 @@
 ;=========変数宣言部分 
 [iscript] 
 f['null']=''; 
-f['money']=1000; 
+f['money']=1000000; 
 f['klove']=20; 
 f['jlove']=20; 
 f['slove']=20; 
@@ -26,4 +26,11 @@ f['answer']='';
 f['score']=100; 
 f['gift_line']=''; 
 f['select']=0; 
+f['collect']=0; 
+f['Test_Item01']=0; 
+f['Test_Item02']=0; 
+f['Test_Item03']=0; 
+f['Test_Item04']=0; 
+f['Test_Item05']=0; 
+f['select_answer']='false'; 
 [endscript] 

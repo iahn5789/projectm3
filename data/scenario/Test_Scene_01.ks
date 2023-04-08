@@ -89,7 +89,28 @@
 [html]
 <div>
 <img src='data/image/New_GUI/Test_UI/Test_In_Msg_01.png' style='z-index:-1; left:500px; top:216px; width:927px; height:656px; position:absolute;'>
+<p  style='z-index:2; left:1000px; top:480px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
+<span id="score_form"></span>
+</p>
+<p  style='z-index:2; left:1000px; top:595px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
+<span id="money_form"></span>
+</p>
 </div>
+
+<script>
+function setScore() {
+let giftLineElem = document.getElementById("score_form");
+giftLineElem.innerHTML = "";
+giftLineElem.innerHTML = window.TYRANO.kag.stat.f.score;
+}
+function setMoney() {
+let giftLineElem = document.getElementById("money_form");
+giftLineElem.innerHTML = "";
+giftLineElem.innerHTML = window.TYRANO.kag.stat.f.money;
+}
+setMoney();
+setScore();
+</script>
 [endhtml]
 [_tb_end_tyrano_code]
 

@@ -19,12 +19,15 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
+[tb_ptext_show  x="630"  y="410"  size="30"  color="0x000000"  time="1"  text="&sf.name"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=329 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
+
 [_tb_end_tyrano_code]
 
 [mask_off  time="2000"  effect="fadeOut"  ]
 [l  ]
+[tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 [anim name=testpaper top="-=900" time=1000  ]
 [_tb_end_tyrano_code]
@@ -52,20 +55,10 @@
 
 *quiz_back_01
 
-[tb_start_tyrano_code]
-[cm]
-[button name="01_01_01" storage="Test_Start_01.ks" target="01_01_01" graphic="../image/New_GUI/Test_In_UI/Week_01/1_1_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/1_1_2.png" width="208" height="62" x="488" y="604" ]
-[button name="01_01_02" storage="Test_Start_01.ks" target="01_01_02" graphic="../image/New_GUI/Test_In_UI/Week_01/1_2_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/1_2_2.png" width="208" height="62" x="856" y="604"]
-[button name="01_01_03" storage="Test_Start_01.ks" target="01_01_03" graphic="../image/New_GUI/Test_In_UI/Week_01/1_3_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/1_3_2.png" width="208" height="62" x="1224" y="604"]
-[button name="01_01_04" storage="Test_Start_01.ks" target="01_01_04" graphic="../image/New_GUI/Test_In_UI/Week_01/1_4_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/1_4_2.png" width="208" height="62" x="488" y="736"]
-[button name="01_01_05" storage="Test_Start_01.ks" target="01_01_05" graphic="../image/New_GUI/Test_In_UI/Week_01/1_5_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/1_5_2.png" width="208" height="62" x="856" y="736"]
-[button name="correct_01" storage="Test_Start_01.ks" target="correct_01" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="379" height="91" x="774" y="931"]
-[_tb_end_tyrano_code]
-
+[call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
 *01_01_01
 
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [image layer="2" page="fore" visible="true" top="607" left="493"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
