@@ -23,11 +23,11 @@ if(TG.config.alreadyReadTextColor != "default"){
 [free name="chara_name_area" layer="message0"]
 
 ; メッセージウィンドウの設定
-[position layer="message0" width="1920" height="372" top="750" left="0"]
-[position layer="message0" frame="../image/New_GUI/Text_Box_01.png" margint="99" marginl="478" marginr="270" marginb="75" opacity="200" page="fore"]
+[position layer="message0" width="1920" height="372" top="750" left="190"]
+[position layer="message0" frame="../image/New_GUI/Text_Box_01.png" margint="90" marginl="380" marginr="270" marginb="75" opacity="200" page="fore"]
 
 ; 名前枠の設定
-[ptext name="chara_name_area" layer="message0" color="&mp.name_color" size="52" bold="bold" x="232" y="860" width="300" color="green" ]
+[ptext name="chara_name_area" layer="message0" color="&mp.name_color" align="center" size="52" face="TheJamsil5Bold" x="230" y="850" width="300" color="green" ]
 [chara_config ptext="chara_name_area"]
 
 ; デフォルトのフォントカラー指定
@@ -51,31 +51,34 @@ if(TG.config.alreadyReadTextColor != "default"){
 [hidemenubutton]
 
 ; Save
-[button name="menu_button" role="save" graphic="../image/New_GUI/Save_Button_01.png" enterimg="../image/New_GUI/Save_Button_02.png" x="1791" y="820" ]
+[button name="menu_button" role="save" graphic="../image/New_GUI/Save_Button_01.png" enterimg="../image/New_GUI/Save_Button_02.png" x="1743" y="520" ]
 
 ; Load
-[button name="menu_button" role="load" graphic="../image/New_GUI/Load_Button_01.png" enterimg="../image/New_GUI/Load_Button_02.png" x="1791" y="858" ]
+[button name="menu_button" role="load" graphic="../image/New_GUI/Load_Button_01.png" enterimg="../image/New_GUI/Load_Button_02.png" x="1743" y="600" ]
 
 ; Backlog
-[button name="menu_button" role="backlog" graphic="../image/New_GUI/Log_Button_01.png" enterimg="../image/New_GUI/Log_Button_02.png" x="1791" y="896"]
+[button name="menu_button" role="backlog" graphic="../image/New_GUI/Log_Button_01.png" enterimg="../image/New_GUI/Log_Button_02.png" x="1743" y="680"]
 
 ; Auto
-[button name="rol_button" role="auto" graphic="../image/New_GUI/Auto_Button_01.png" enterimg="../image/New_GUI/Auto_Button_02.png" x="1791" y="934"]
+[button name="rol_button" role="auto" graphic="../image/New_GUI/Auto_Button_01.png" enterimg="../image/New_GUI/Auto_Button_02.png" x="1743" y="760"]
 
 ; Skip
-[button name="rol_button" role="skip" graphic="../image/New_GUI/Skip_Button_01.png" enterimg="../image/New_GUI/Skip_Button_02.png" x="1791" y="972"]
+[button name="rol_button" role="skip" graphic="../image/New_GUI/Skip_Button_01.png" enterimg="../image/New_GUI/Skip_Button_02.png" x="1743" y="840"]
 
 ; Config（※sleepgame を使用して config.ks を呼び出しています）
-[button name="rol_button" role="sleepgame" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1791" y="1010" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="1791" y="1010"]
+[button name="rol_button" role="sleepgame" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1743" y="930" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="1743" y="920"]
+
+; Title
+[button name="rol_button" role="title" graphic="../image/New_GUI/Title_Button_01.png" enterimg="../image/New_GUI/Title_Button_02.png" x="1743" y="1000"]
+
+; Menu_Hide
+;[button name='rol_button" role="" graphic="../image/New_GUI/Hide_Button_01.png" x="1743" y="37" ]
 
 ; Menu（※ロールボタンを使うなら不要）
-;[button name="menu_button" role="menu" graphic="../image/New_GUI/Setting_Button_01.png" enterimg="../image/New_GUI/Setting_Button_02.png"  x="1791" y="1010" ]
+;[button name="menu_button" role="menu" graphic="../image/New_GUI/Title_Button_01.png" enterimg="../image/New_GUI/Title_Button_02.png" x="1743" y="802"]
 
 ; Screen
 [button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="1860" y="20"]
-
-; Title
-;[button name="role_button" role="title" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/title.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/title2.png" x="1669" y="1020"]
 
 ; Close
 ;[button name="role_button" role="window" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/close.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/close2.png" x="1195" y="535"]
