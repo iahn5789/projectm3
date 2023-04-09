@@ -40,9 +40,23 @@
 
 [tb_start_tyrano_code]
 ; 캐릭터 등장
-[chara_new name="Kang" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=1 jname="Kang" width="668" height="2517" ]
-[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Sc_01.png" zindex=20 ]
-[chara_show name="Kang" time="100" top="150" left="626" ]
+[chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="1169" height="2735" ]
+
+[chara_layer name="Kang" part="body" id="1" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="2" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+
+[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="2" storage="chara/Kang_SC/Kang_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="3" storage="chara/Kang_SC/Kang_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="4" storage="chara/Kang_SC/Kang_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="5" storage="chara/Kang_SC/Kang_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="6" storage="chara/Kang_SC/Kang_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
+
+[chara_show name="Kang" time="100" top="0" left="375" ]
+[chara_part name="Kang" body="1" face="1" ]
 
 [_tb_end_tyrano_code]
 
@@ -54,7 +68,7 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_move name="Kang" time=100 width="464" height="1750" left="+=400" ]
+[chara_move name="Kang" time=100 width="813" height="1903" left="900" ]
 [_tb_end_tyrano_code]
 
 [quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
@@ -62,6 +76,10 @@
 #전대용
 아니! 나는 서예부에 들어가있는데?![p]
 [_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Kang" body="2" face="2" ]
+[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
@@ -74,6 +92,10 @@
 아니! 아쉽게도 난 다룰 수 있는 악기가 없는걸?[p]
 [_tb_end_text]
 
+[tb_start_tyrano_code]
+[chara_part name="Kang" face="1 ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #강여진
 내가 다 알려줄 수 있어! 그러지 말고 같이하자![p]
@@ -83,6 +105,10 @@
 #전대용
 응.안.해[p]
 [_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Kang" body="1" face="4" ]
+[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
@@ -95,6 +121,10 @@
 ............[p]
 
 [_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Kang" body="3" face="1" ]
+[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
@@ -128,10 +158,13 @@
 [_tb_end_tyrano_code]
 
 [tb_show_message_window  ]
+[tb_start_tyrano_code]
+[chara_part name="Kang" body="3" face="2" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #강여진
 잘 됐네! [l][r]이름을 붙혀놓았으니까 어디인지 바로 알거야![p]
-
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
@@ -150,12 +183,15 @@
 
 [chara_show  name="전대용"  time="300"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
 [tb_show_message_window  ]
+[tb_start_tyrano_code]
+[chara_part name="Kang" body="3" face="2" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #&[sf.name]
 아..아니..?[p]
 #강여진
-4층 복도 왼쪽 과학실 바로 옆에 있어! "[l][r]" 이름을 붙혀놓았으니까 어디인지 바로 알거야![p]
-
+4층 복도 왼쪽 과학실 바로 옆에 있어![l][r]이름을 붙혀놓았으니까 어디인지 바로 알거야![p]
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
@@ -175,7 +211,7 @@
 
 [tb_start_text mode=1 ]
 #&[sf.name]
- .......[p]
+.......[p]
 거절할 새도 없이 그냥 가버렸어....[p]
 [_tb_end_text]
 
