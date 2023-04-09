@@ -8,7 +8,6 @@
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
-[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Keep_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 그래서 너도 나랑 같은 서예부로 가는 걸로........ "[p]
@@ -39,7 +38,14 @@
 " 후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나? "[p]
 [_tb_end_text]
 
-[chara_show  name="강여진"  time="500"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
+[tb_start_tyrano_code]
+; 캐릭터 등장
+[chara_new name="Kang" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=1 jname="Kang" width="668" height="2517" ]
+[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Sc_01.png" zindex=20 ]
+[chara_show name="Kang" time="100" top="150" left="626" ]
+
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #강여진
 " 너희 아직 동아리에 들어가지 않은거야? "[p]
@@ -47,44 +53,37 @@
 " ??????????! "[p]
 [_tb_end_text]
 
+[tb_start_tyrano_code]
+[chara_move name="Kang" time=100 width="464" height="1750" left="+=400" ]
+[_tb_end_tyrano_code]
+
 [quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
-[chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 나는 서예부에 들어가있는데?! "[p]
 [_tb_end_text]
 
-[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Out_Jeondaeyong_01"  ]
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_In_Kangyeojin_01"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 아아! 그러지 말고 너네도 밴드부에 들어와! [l][r]재미있단 말이야! "[p]
 [_tb_end_text]
 
 [quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Out_Kangyeojin_01"  ]
-[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_In_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 아니! 아쉽게도 난 다룰 수 있는 악기가 없는걸? "[p]
 [_tb_end_text]
 
-[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Out_Jeondaeyong_01"  ]
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_In_Kangyeojin_01"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 내가 다 알려줄 수 있어! 그러지 말고 같이하자! "[p]
 [_tb_end_text]
 
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Out_Kangyeojin_01"  ]
-[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_In_Jeondaeyong_01"  ]
 [tb_start_text mode=1 ]
 #전대용
 " 응.안.해 "[p]
 [_tb_end_text]
 
-[call  storage="Zoom_Chara_Jeondaeyong_01.ks"  target="*L_Zoom_Out_Jeondaeyong_01"  ]
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_In_Kangyeojin_01"  ]
 [tb_start_text mode=1 ]
 #강여진
 " 칫.....너무해.... "[p]
@@ -111,9 +110,11 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[chara_hide  name="전대용"  time="10"  wait="false"  pos_mode="true"  ]
-[chara_hide  name="강여진"  time="10"  wait="false"  pos_mode="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_UI_whoosh_01.wav"  ]
+[tb_start_tyrano_code]
+[filter layer=all blur=5]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [glink color="btn_21_yellow" target="l_yes_01" text="알긴 하는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [glink color="btn_21_yellow" target="l_no_01" text="동아리..방..?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
@@ -122,9 +123,10 @@
 [s  ]
 *l_yes_01
 
-[chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
-[chara_show  name="전대용"  time="300"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Keep_Kangyeojin_01"  ]
+[tb_start_tyrano_code]
+[filter layer=all blur=0]
+[_tb_end_tyrano_code]
+
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
@@ -142,9 +144,11 @@
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_no_01
 
-[chara_show  name="강여진"  time="300"  wait="false"  storage="chara/8/강여진.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
+[tb_start_tyrano_code]
+[filter layer=all blur=0]
+[_tb_end_tyrano_code]
+
 [chara_show  name="전대용"  time="300"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
-[call  storage="Zoom_Chara_Kangyeojin_01.ks"  target="*L_Zoom_Keep_Kangyeojin_01"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -164,8 +168,11 @@
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_01
 
-[chara_hide  name="강여진"  time="500"  wait="true"  pos_mode="false"  ]
-[chara_move  name="전대용"  anim="true"  time="300"  effect="linear"  wait="true"  left="700"  top="250"  width="512"  height="832"  ]
+[tb_start_tyrano_code]
+[chara_hide name="Kang" time="100" ]
+
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #&[sf.name]
 " .......  "[p]

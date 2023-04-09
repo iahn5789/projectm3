@@ -56,7 +56,13 @@
 [_tb_end_text]
 
 [resetfont  ]
-[chara_show  name="진다영"  time="1000"  wait="false"  storage="chara/9/진다영.png"  width="512"  height="832"  left="0"  top="250"  reflect="false"  ]
+[tb_start_tyrano_code]
+; 캐릭터 등장
+[chara_new name="Jin" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=1 jname="Jin" width="668" height="2517" ]
+[chara_layer name="Jin" part="face" id="1" storage="chara/Jin_SC/Jin_Face_Sc_01.png" zindex=20 ]
+[chara_show name="Jin" time="100" top="150" left="626" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #진다영
 " 왜! [l]왜 소리를 질러! "[p]
