@@ -36,7 +36,11 @@ window.addEventListener("load", function() {
 
 
     // // esc 버튼 누르면 오른쪽아래 메뉴 사라졌다 나타나는 기능 
-    const fixLayers = document.getElementsByClassName('fixlayer');
+    const allfixLayers = document.getElementsByClassName('fixlayer');
+    const fixLayers = Array.from(allfixLayers).filter(element => element.getAttribute('src').includes('Menu_UI'));
+
+
+    
     for (let i = 0; i < fixLayers.length; i++) {
    
       fixLayers[i].style.transition = 'transform 0.3s ease-in-out';
@@ -60,7 +64,7 @@ window.addEventListener("load", function() {
 document.addEventListener('click', function(event) {
   if (!event.target.closest('.fixlayer') && !event.target.classList.contains('fixlayer')) {
     for (let i = 0; i < fixLayers.length; i++) {
-      if (!fixLayers[i].classList.contains('hidden') && !fixLayers[i].src.includes('New_GUI/Config_UI/UI_Close_Bt_01.png') && !fixLayers[i].src.includes('New_GUI/Config_UI/c_btn.gif')) {
+      if (!fixLayers[i].classList.contains('hidden') && fixLayers[i].src.includes('Menu_UI')) {
         fixLayers[i].classList.add('hidden');
         fixLayers[i].style.display = 'block';
         fixLayers[i].style.transform = 'translateX(250%)';
