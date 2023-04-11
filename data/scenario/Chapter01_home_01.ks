@@ -1,5 +1,7 @@
 [_tb_system_call storage=system/_Chapter01_home_01.ks]
 
+*home
+
 [hidemenubutton]
 
 [mask  time="1"  effect="fadeIn"  color="0x000000"  ]
@@ -31,68 +33,42 @@
 [bg  time="3000"  method="fadeIn"  storage="BGI/Common_home_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
+#&[sf.name]
 ....[p]
 .......................[p]
-#&[sf.name]
 후...[p]
-" 이상한 꿈이네.... "[p]
+( 이상한 꿈이네... )[p]
 [_tb_end_text]
 
-[quake  time="300"  count="3"  hmax="5"  wait="true"  ]
+[quake  time="300"  count="3"  hmax="5"  wait="false"  ]
 [tb_start_text mode=1 ]
 #엄마
-아들!! " [l][r] " 빨리 내려와서 밥 먹어라![p]
+아들![p]
+일어난거니!?[p]
 #&[sf.name]
-네 금방 가요[p]
-[_tb_end_text]
-
-[tb_hide_message_window  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
-[playse  volume="60"  time="1000"  buf="1"  storage="Amb/Amb_Kitchen_01.wav"  fadein="true"  ]
-[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
-[bg  time="500"  method="fadeIn"  storage="BGI/Common_home_02.png"  ]
-[mask_off  time="500"  effect="fadeOut"  ]
-[tb_show_message_window  ]
-[tb_start_text mode=1 ]
-#
-정말 생생한 꿈이다.[p]
-마치 내가 직접 겪은 일처럼..[p]
-[_tb_end_text]
-
-[playse  volume="25"  time="1000"  buf="2"  storage="SFX/Kitchen_Cook_01.wav"  ]
-[tb_start_text mode=1 ]
-#엄마
-준비는 다 했어?[l] 오늘도 지각하면 이번 달 용돈은 없을 줄 알아[p]
-#&[sf.name
-제가 알아서 할게요 걱정마세요...[p]
-#여동생
-니가 무슨? 퍽이나 하겠다 [l] 할 줄 아는 것이라곤 밥 먹고 싸고 자는 것 밖에 없잖아![p]
-#&[sf.name]
-너는 좀 조용히 할 필요가 있을 것 같아. 눈에 넣으면 너무 아픈 내 동생아..?[p]
+네에... 일어났어요...[p]
+( 꿈이라기엔 너무 생생해... )[p]
+( 지금도 꿈을 꾸고 있는건가? ) [p]
+( 마치 현실 같이... )[p]
 [_tb_end_text]
 
 [font  size="40"  color="0xff0000"  face="SBB"  bold="false"  ]
-[quake  time="300"  count="3"  hmax="5"  wait="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
+[quake  time="300"  count="3"  hmax="5"  wait="false"  ]
 [tb_start_text mode=1 ]
 #엄마
-싸우지 말고 어서 준비해 늦겠다![p]
+아! 들! 늦는다니까!!!!!!!!!!!!![p]
 [_tb_end_text]
 
-[resetfont  ]
-[tb_start_text mode=1 ]
-#&[sf.name]
-네....[p]
-[_tb_end_text]
-
-[stopse  time="1000"  buf="1"  fadeout="true"  ]
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_hide_message_window  ]
+[mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[bg  time="100"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
+[wait  time="2000"  ]
+[mask_off  time="500"  effect="fadeOut"  ]
+[resetfont  ]
 [playse  volume="50"  time="1000"  buf="1"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
-[bg  time="3000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
-[mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -121,7 +97,7 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #???
-우리가 잘 해낼 수 있을까?                  [er]
+잘 해낼%있@까?               [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -130,7 +106,7 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #???
-긴장할 것 없어                  [er]
+너무 긴장하@#마! 원래 하던 %@#로만 하면 되!%>거야!              [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -138,8 +114,8 @@
 [bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-#???
-그동안 잘 해왔었잖아!                 [er]
+#
+네가 선택한 길이니까!                 [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -151,12 +127,12 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #사회자
-자! 다음을 소개하도록 하겠습니다~!!    [er]
+자! 다$을 소개하도@ 하겠습#다~!!    [er]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 #사회자
-이번 순서는! ----------------!!!             [er]
+이번 순!#는! ----------------!!!             [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
