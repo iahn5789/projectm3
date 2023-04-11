@@ -8,7 +8,7 @@
 [tb_start_text mode=1 ]
 #
 ( 4층... 과학실 옆이라고 했었나? )[p]
-( 어디보자...Love Sound Syndrome? )[p]
+( 어디보자...리듬 오브 레전드?? 뭐야 이거? )[p]
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
