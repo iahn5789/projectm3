@@ -2,9 +2,8 @@
 
 *L_input_name
 
-[hidemenubutton]
-
 [cm  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  ]
 [tb_start_text mode=1 ]
@@ -12,7 +11,6 @@
 .....어?[p]
 [_tb_end_text]
 
-[mask_off  time="1000"  effect="fadeOut"  ]
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
 [playbgm  volume="100"  time="1500"  loop="true"  storage="Common_Backstage_01.wav"  fadein="true"  ]
