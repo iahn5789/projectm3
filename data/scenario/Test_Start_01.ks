@@ -19,7 +19,8 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="630"  y="410"  size="30"  color="0x000000"  time="1"  text="&sf.name"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="424"  y="47"  size="45"  color="0x000000"  time="1"  face="The&nbsp;Jamsil3Regular"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="630"  y="410"  size="30"  color="0x000000"  time="1"  text="&sf.name"  anim="false"  face="The&nbsp;Jamsil3Regular"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=329 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
 
@@ -53,6 +54,8 @@
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_01.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
+[tb_ptext_show  x="240"  y="62"  size="33"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1638"  y="59"  size="35"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_01
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
@@ -108,7 +111,7 @@
 [s  ]
 *correct_01
 
-[jump  storage="Test_Start_01.ks"  target="*o_01"  cond="f.select=='true'"  ]
+[jump  storage="Test_Start_01.ks"  target="*o_01"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_01"  cond=""  ]
 [s  ]
 *o_01
