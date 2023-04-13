@@ -8,7 +8,7 @@
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-.....어?[p]
+( .....어? )[p]
 [_tb_end_text]
 
 [bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
@@ -23,7 +23,7 @@
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Heart_Beat_Fast_02.wav"  loop="true"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-....어어어?!?[p]
+( ...어어어?! )[p]
 [_tb_end_text]
 
 [tb_show_message_window  ]
@@ -32,7 +32,6 @@
 괜찮아? 안색이 좀 안 좋아 보이는데?[p]
 이제와서 긴장한거야? 하! 바보같긴..![p]
 사람이 정말 많은 것 같아...[p]
-#???
 너무 긴장하지마! 원래 하던 대로만 하면 되는거야![p]
 ...시작한다...[p]
 [_tb_end_text]

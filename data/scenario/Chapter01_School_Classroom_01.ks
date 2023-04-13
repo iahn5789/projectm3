@@ -16,7 +16,7 @@
 [quake  time="200"  count="2"  hmax="3"  wait="true"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-아 좀! [l] 나는 서예 같은 거는 관심이 없어![p]
+아 좀! [l] 나는 서예 같은 건 관심이 없어![p]
 #전대용
 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하.... [p]
 [_tb_end_text]
@@ -32,11 +32,6 @@
 #
 드르륵 -                           쿵                                 [er]
 [_tb_end_tyrano_code]
-
-[tb_start_text mode=1 ]
-#강여진
-후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나?[p]
-[_tb_end_text]
 
 [tb_start_tyrano_code]
 ; 캐릭터 등장
@@ -67,6 +62,11 @@
 ??????????![p]
 [_tb_end_text]
 
+[tb_start_text mode=1 ]
+#강여진
+후후후...[l]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나?[p]
+[_tb_end_text]
+
 [tb_start_tyrano_code]
 [chara_move name="Kang" time=100 width="813" height="1903" left="900" ]
 [_tb_end_tyrano_code]
@@ -74,7 +74,7 @@
 [quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_text mode=1 ]
 #전대용
-아니! 나는 서예부에 들어가있는데?![p]
+아니! 나는 서예부에 들어가 있는데?![p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -103,7 +103,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-응.안.해[p]
+응. 안. 해.[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -112,7 +112,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-칫.....너무해....[p]
+칫...너무해...[p]
 [_tb_end_text]
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
@@ -136,7 +136,7 @@
 #&[sf.name]
 나....나는...[p]
 #강여진
-아! 그럼 수업이 끝나고 우리 동아리 방으로 찾아와! [l][r]어디인지 알고있어??[p]
+아! 그럼 수업이 끝나고 우리 동아리 방으로 찾아와! [l][r]어디인지 알고있어?[p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -234,7 +234,7 @@
 [playse  volume="65"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  ]
 [tb_start_text mode=1 ]
 #전대용
-도내 최상위 S랭크급 쿨뷰티초미녀 ![p]
+도내 최상위 S랭크급 쿨뷰티초미녀![p]
 [_tb_end_text]
 
 [resetfont  ]
@@ -259,11 +259,11 @@
 #전대용
 엣헴....아무튼 그런 사람이 너랑 말을 하게 될줄이야...[l][r] 이 자식 대단한걸?[p]
 #&[sf.name]
-시끄러워! 난 그런거 관심없어....[p]
+시끄러워! 난 그런 거 관심없어....[p]
 #전대용
-녀석 입으로는 그렇게 말해도 속으로는 강여진을 생각하고 있는거 아니야??[p]
+녀석 입으로는 그렇게 말해도 속으로는 강여진을 생각하고 있는거 아니야?[p]
 #&[sf.name]
-아 쫌![p]
+아 좀![p]
 #전대용
 후후.. 잘 해보라고! [l][r]그럼 난 이만.[p]
 [_tb_end_text]
@@ -274,7 +274,7 @@
 [tb_start_text mode=1 ]
 #
 하...밴드 동아리라....[p]
-동아리 같은 건 관심이 없지만 [r]초대받았으니 한번 가볼까.... [p]
+그런거엔 관심이 없는데... [r]그래도 초대받았으니 한번 가볼까.... [p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
