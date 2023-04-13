@@ -26,5 +26,5 @@ f['story']='';
 f['answer']=''; 
 f['score']=100; 
 f['gift_line']=''; 
-f['select']=0; 
+f['select']='FALSE'; 
 [endscript] 
