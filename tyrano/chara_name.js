@@ -71,8 +71,33 @@ function b () {window.addEventListener("load", function() {
 
 
 
-  setTimeout(()=>{
 
+
+
+  setTimeout(()=>{
+  
+    let is_msg_visible;
+    
+    var hideBtn = document.createElement("img");
+    hideBtn.classList.add("fixlayer", "hide_btn");
+    hideBtn.src = "data/image/New_GUI/Menu_UI/Hide_Button_01.png"
+    hideBtn.style.width = "176px";
+    hideBtn.style.height = "54px";
+    hideBtn.style.position = "absolute";
+    if(document.querySelector(".layer.message0_fore.layer_fore").getAttribute("l_visible") === 'true')
+    {
+      hideBtn.classList.add("fixlayer", "hide_btn");
+    }
+    else
+    {
+    hideBtn.classList.add("fixlayer", "hide_btn","hidden");
+    hideBtn.style.display = "none";
+    }
+    hideBtn.style.top = "100px";
+    hideBtn.style.zIndex = "9999";
+    hideBtn.style.left = "1600px";
+    // 동그라미 div를 body 요소에 추가합니다.
+    document.body.appendChild(hideBtn);
 
 
     // // esc 버튼 누르면 오른쪽아래 메뉴 사라졌다 나타나는 기능 
@@ -88,13 +113,17 @@ function b () {window.addEventListener("load", function() {
     
     document.addEventListener('keydown', function(event) {
       if (event.key === 'Escape') {
-        for (let i = 0; i < fixLayers.length; i++) {
-          if (fixLayers[i].classList.contains('hidden')) {
-            fixLayers[i].classList.remove('hidden');
-            fixLayers[i].style.transform = 'translateX(0)';
-          } else {
-            fixLayers[i].classList.add('hidden');
-            fixLayers[i].style.transform = 'translateX(250%)';
+        is_msg_visible = document.querySelector(".layer.message0_fore.layer_fore").getAttribute("l_visible");
+        if (is_msg_visible==='true'){
+
+          for (let i = 0; i < fixLayers.length; i++) {
+            if (fixLayers[i].classList.contains('hidden')) {
+              fixLayers[i].classList.remove('hidden');
+              fixLayers[i].style.transform = 'translateX(0)';
+            } else {
+              fixLayers[i].classList.add('hidden');
+              fixLayers[i].style.transform = 'translateX(250%)';
+            }  
           }
         }
       }
@@ -121,6 +150,7 @@ document.addEventListener('click', function(event) {
   const menuButtons = document.getElementsByClassName("menu_button");
   const roleButtons = document.getElementsByClassName("rol_button");
   const layerMenu = document.getElementsByClassName("layer_menu")[0];
+  const hideButton = document.getElementsByClassName("hide_btn")[0];
   const gameLayer = document.getElementsByClassName("root_layer_game")[0];
   const message_inner = document.getElementsByClassName("message_inner")[0];
   const message_outer = document.getElementsByClassName("message_outer")[0];
@@ -139,6 +169,7 @@ if(i !== 5){
       message_inner.style.filter = "blur(5px)";
       message_outer.style.filter = "blur(5px)";
       chara_name_area.style.filter = "blur(5px)";
+      hideButton.style.filter = "blur(5px)";
       // roleButtons.style.filter = "blur(5px)";
 
 
@@ -178,6 +209,8 @@ layerMenu.addEventListener("click",  function(event) {
       message_inner.style.filter = "";
       message_outer.style.filter = "";
       chara_name_area.style.filter = "";
+      hideButton.style.filter = "";
+
 
       for(let j = 0 ; j < menuButtons.length; j++){
 
