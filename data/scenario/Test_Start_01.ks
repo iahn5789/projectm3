@@ -43,6 +43,7 @@
 [s  ]
 *quiz_01
 
+[tb_eval  exp="f.question=1"  name="question"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [freeimage layer="0"]
@@ -62,6 +63,7 @@
 [s  ]
 *01_01_01
 
+[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [image layer="2" page="fore" visible="true" top="607" left="493"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
@@ -146,6 +148,7 @@
 [s  ]
 *quiz_02
 
+[tb_eval  exp="f.question=2"  name="question"  cmd="="  op="t"  val="2"  val_2="undefined"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
@@ -158,16 +161,7 @@
 
 *quiz_back_02
 
-[tb_start_tyrano_code]
-[cm]
-[button name="01_02_01" storage="Test_Start_01.ks" target="01_02_01" graphic="../image/New_GUI/Test_In_UI/Week_01/2_1_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/2_1_2.png" width="208" height="62" x="488" y="604" ]
-[button name="01_02_02" storage="Test_Start_01.ks" target="01_02_02" graphic="../image/New_GUI/Test_In_UI/Week_01/2_2_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/2_2_2.png" width="208" height="62" x="856" y="604"]
-[button name="01_02_03" storage="Test_Start_01.ks" target="01_02_03" graphic="../image/New_GUI/Test_In_UI/Week_01/2_3_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/2_3_2.png" width="208" height="62" x="1224" y="604"]
-[button name="01_02_04" storage="Test_Start_01.ks" target="01_02_04" graphic="../image/New_GUI/Test_In_UI/Week_01/2_4_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/2_4_2.png" width="208" height="62" x="488" y="736"]
-[button name="01_02_05" storage="Test_Start_01.ks" target="01_02_05" graphic="../image/New_GUI/Test_In_UI/Week_01/2_5_1.png" enterimg="../image/New_GUI/Test_In_UI/Week_01/2_5_2.png" width="208" height="62" x="856" y="736"]
-[button name="correct_02" storage="Test_Start_01.ks" target="correct_02" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="379" height="91" x="774" y="931"]
-[_tb_end_tyrano_code]
-
+[call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
 *01_02_01
 
