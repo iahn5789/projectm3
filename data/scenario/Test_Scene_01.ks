@@ -2,10 +2,7 @@
 
 *testscene
 
-[tb_start_tyrano_code]
-
-[_tb_end_tyrano_code]
-
+[tb_hide_message_window  ]
 [tb_keyconfig  flag="0"  ]
 [hidemenubutton]
 
@@ -26,7 +23,7 @@
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=190 y=627 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
 [ptext layer=2 name="slove" page=fore text="&[f.slove]" size=30 x=190 y=756 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=168 y=134 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
-[ptext layer=2 name="score" page=fore text="&[f.score]" size=49 x=1290 y=55 width=150 color="0xffffff" align="center" vertical=false face="YeonSung-Regular" ]
+[ptext layer=2 name="score" page=fore text="&[f.score]" size=49 x=1370 y=64 width=150 color="0xffffff" align="center" vertical=false face="YeonSung-Regular" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]

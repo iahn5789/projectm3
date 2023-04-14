@@ -27,5 +27,6 @@ f['answer']='';
 f['score']=100; 
 f['gift_line']=''; 
 f['select']='FALSE'; 
-f['question']=1; 
+f['question']=''; 
+f['collect']=0; 
 [endscript] 

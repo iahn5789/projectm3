@@ -61,63 +61,14 @@
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
-*01_01_01
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  val_2="undefined"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="607" left="493"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_01"  ]
-[s  ]
-*01_01_02
-
-[tb_eval  exp="f.select='true'"  name="select"  cmd="="  op="t"  val="true"  val_2="undefined"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="607" left="862"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_01"  ]
-[s  ]
-*01_01_03
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  val_2="undefined"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="607" left="1230"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_01"  ]
-[s  ]
-*01_01_04
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="739" left="493"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_01"  ]
-[s  ]
-*01_01_05
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="739" left="861"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_01"  ]
-[s  ]
-*correct_01
+*quiz_01_scoring
 
 [jump  storage="Test_Start_01.ks"  target="*o_01"  cond="f.select=='TRUE'"  ]
-[jump  storage="Test_Start_01.ks"  target="*x_01"  cond=""  ]
+[jump  storage="Test_Start_01.ks"  target="*x_01"  ]
 [s  ]
 *o_01
 
+[tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [cm]
@@ -155,71 +106,27 @@
 [freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
 [filter layer=all blur=0 opacity=100]
-[layopt layer=0 visible=true]
-[image layer=0 left=0 top=0 time=1300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[layopt layer=0 visible=true]
+[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper ]
+[_tb_end_tyrano_code]
+
+[tb_ptext_show  x="240"  y="54"  size="33"  color="0x000000"  time="0"  face="null"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1637"  y="48"  size="35"  color="0x000000"  time="0"  face="null"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_02
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
-*01_02_01
+*quiz_02_scoring
 
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="607" left="493"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_02"  ]
-[s  ]
-*01_02_02
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  val_2="undefined"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="607" left="862"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_02"  ]
-[s  ]
-*01_02_03
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="607" left="1230"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_02"  ]
-[s  ]
-*01_02_04
-
-[tb_eval  exp="f.select='true'"  name="select"  cmd="="  op="t"  val="true"  val_2="undefined"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="739" left="493"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_02"  ]
-[s  ]
-*01_02_05
-
-[tb_eval  exp="f.select='false'"  name="select"  cmd="="  op="t"  val="false"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2"]
-[image layer="2" page="fore" visible="true" top="739" left="861"  storage=" ../image/New_GUI/Test_In_UI/Circle_Bt_01.png"]
-[_tb_end_tyrano_code]
-
-[jump  storage="Test_Start_01.ks"  target="*quiz_back_02"  ]
-[s  ]
-*correct_02
-
-[jump  storage="Test_Start_01.ks"  target="*o_02"  cond="f.select=='true'"  ]
+[jump  storage="Test_Start_01.ks"  target="*o_02"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_02"  cond=""  ]
 [s  ]
 *o_02
 
+[tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [cm]
@@ -230,7 +137,8 @@
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Correct_UI_01.png"]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Start_01.ks"  target="*teststart"  ]
+[wait  time="1000"  ]
+[jump  storage="Test_Start_01.ks"  target="*quiz_03"  ]
 [s  ]
 *x_02
 
@@ -242,6 +150,77 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Wrong_UI_01.png"]
+[_tb_end_tyrano_code]
+
+[wait  time="1000"  ]
+[jump  storage="Test_Start_01.ks"  target="*quiz_03"  ]
+[s  ]
+*quiz_03
+
+[tb_eval  exp="f.question=3"  name="question"  cmd="="  op="t"  val="3"  val_2="undefined"  ]
+[cm  ]
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="1" time="100"]
+[freeimage layer="0" time="100"]
+[filter layer=all blur=0 opacity=100]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[layopt layer=0 visible=true]
+[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_03.png page=fore visible=true name=testpaper ]
+[_tb_end_tyrano_code]
+
+[tb_ptext_show  x="240"  y="54"  size="33"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1638"  y="48"  size="35"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
+[s  ]
+*quiz_03_scoring
+
+[jump  storage="Test_Start_01.ks"  target="*o_03"  cond="f.select=='TRUE'"  ]
+[jump  storage="Test_Start_01.ks"  target="*x_03"  cond=""  ]
+[s  ]
+*o_03
+
+[tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
+[tb_start_tyrano_code]
+[freeimage layer="2"]
+[cm]
+[filter layer=0 blur=10 opacity=80]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Correct_UI_01.png"]
+[_tb_end_tyrano_code]
+
+[wait  time="1000"  ]
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="1" time="100"]
+[freeimage layer="0" time="100"]
+[filter layer=all blur=0 opacity=100]
+[_tb_end_tyrano_code]
+
+[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
+[s  ]
+*x_03
+
+[tb_start_tyrano_code]
+[freeimage layer="2"]
+[cm]
+[filter layer=0 blur=10 opacity=80]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Wrong_UI_01.png"]
+[_tb_end_tyrano_code]
+
+[wait  time="1000"  ]
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="1" time="100"]
+[freeimage layer="0" time="100"]
+[filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
 [jump  storage="Test_Start_01.ks"  target="*teststart"  ]
