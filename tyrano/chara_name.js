@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+function a () {window.addEventListener('load', function() {
 
   const observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
@@ -15,19 +15,59 @@ window.addEventListener('load', function() {
     } 
   });
 });
-setTimeout(()=>{const chara_name = document.querySelector('.chara_name_area');
 
-observer.observe(chara_name, { childList: true, subtree: true  });
 
-  }, 2000)
-
+// MutationObserver를 생성합니다.
+const config_observer = new MutationObserver(mutations => {
+  mutations.forEach(mutation => {
+    if (mutation.type === "attributes" && mutation.attributeName === "style") {
+      // 배경 이미지를 가진 div를 선택합니다.
+      const backgroundDiv = document.querySelector('div.layer.base_fore.layer_fore.layer_camera[style*="background-image"][style*="./data/bgimage/BGI/Common_Title_Screen.jpg"]');
+      
+      // 버튼 이미지를 선택합니다.
+      const buttonImg = document.querySelector('img.fixlayer.config.event-setting-element');
+      
+      // buttonImg가 존재할 경우에만 처리합니다.
+      if (buttonImg) {
+        if (backgroundDiv) {
+          // 배경 이미지가 있을 경우 버튼을 보이도록 합니다.
+          buttonImg.style.visibility = "visible";
+        } else {
+          // 배경 이미지가 없을 경우 버튼을 숨깁니다.
+          buttonImg.style.visibility = "hidden";
+        }
+      }
+    }
+  });
 });
 
 
 
 
 
-window.addEventListener("load", function() {
+
+
+
+setTimeout(()=>{const chara_name = document.querySelector('.chara_name_area');
+
+observer.observe(chara_name, { childList: true, subtree: true  });
+
+config_observer.observe(document, {
+  attributes: true,
+  childList: true,
+  subtree: true
+});
+
+
+  }, 2000)
+
+})};
+
+
+
+
+
+function b () {window.addEventListener("load", function() {
 
 
 
@@ -180,4 +220,10 @@ layerMenu.addEventListener("click",  function(event) {
 
   }, 2000)
 
-});
+})};
+
+
+
+a();
+
+b();

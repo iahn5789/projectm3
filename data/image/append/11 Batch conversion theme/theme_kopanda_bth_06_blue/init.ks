@@ -73,7 +73,7 @@ if(TG.config.alreadyReadTextColor != "default"){
 [button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="797" y="690"]
 
 ; Config（※sleepgame を使用して config.ks を呼び出しています）
-[button name="role_button" role="sleepgame" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep2.png" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="897" y="690"]
+;[button name="role_button" role="sleepgame" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/sleep2.png" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="897" y="690"]
 
 ; Menu（※ロールボタンを使うなら不要）
 [button name="role_button" role="menu" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/menu.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/menu2.png" x="997" y="690"]
