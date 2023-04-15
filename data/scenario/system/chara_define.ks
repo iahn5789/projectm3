@@ -27,6 +27,7 @@ f['answer']='';
 f['score']=100; 
 f['gift_line']=''; 
 f['select']='FALSE'; 
-f['question']=''; 
-f['collect']=0; 
+f['question']=1; 
+f['testScene']='FALSE'; 
+f['window_b']='FALSE'; 
 [endscript] 

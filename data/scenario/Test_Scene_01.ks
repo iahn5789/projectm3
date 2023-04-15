@@ -35,11 +35,13 @@
 [_tb_end_tyrano_code]
 
 [mask_off  time="1000"  effect="fadeOut"  ]
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [s  ]
 *close_back
 
 [tb_keyconfig  flag="0"  ]
 [mask  time="300"  effect="rotateInUpRight"  color="0x000000"  ]
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [hidemenubutton]
 
 [tb_start_tyrano_code]
@@ -59,35 +61,38 @@
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=190 y=627 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
 [ptext layer=2 name="slove" page=fore text="&[f.slove]" size=30 x=190 y=756 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=168 y=134 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
-[ptext layer=2 name="score" page=fore text="&[f.score]" size=49 x=1290 y=55 width=150 color="0xffffff" align="center" vertical=false face="YeonSung-Regular" ]
+[ptext layer=2 name="score" page=fore text="&[f.score]" size=49 x=1370 y=64 width=150 color="0xffffff" align="center" vertical=false face="YeonSung-Regular" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="383" height="185" x="21" y="891"]
-[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="612" height="96" x="731" y="969"]
-[button name="msgkang" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="311" height="174" x="566" y="701"]
-[button name="msgjin" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="311" height="174" x="888" y="701"]
-[button name="msgsul" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="310" height="174" x="1210" y="701"]
+[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="612" height="96" x="823" y="969"]
+[button name="msgkang" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="311" height="174" x="646" y="707" ]
+[button name="msgjin" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="311" height="174" x="969" y="707"]
+[button name="msgsul" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="310" height="174" x="1292" y="707"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="300"  effect="rotateOutUpRight"  ]
 [s  ]
 *gift
 
-[cm  ]
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang"  ]
+[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang"  cond="f.testScene=='FALSE'"  ]
 [s  ]
 *teststart
 
+[jump  storage="Test_Scene_01.ks"  target="*teststart_02"  cond="f.testScene=='FALSE'"  ]
+[s  ]
+*teststart_02
+
+[tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
-[cm]
+
 [filter layer=all blur=5 opacity=40]
-[button name="msgkang" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="311" height="174" x="566" y="701" ]
-[button name="msgjin" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="311" height="174" x="888" y="701"]
-[button name="msgsul" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="310" height="174" x="1210" y="701"]
 [anim name=msgkang time=1 opacity=50]
 [anim name=msgjin time=1 opacity=50]
 [anim name=msgsul time=1 opacity=50]
+[anim name=teststart time=1 opacity=50]
+[anim name=gift time=1 opacity=50]
 
 [_tb_end_tyrano_code]
 
@@ -128,9 +133,8 @@ setScore();
 [s  ]
 *test_back_bt_01
 
-[cm  ]
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
-[cm]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
@@ -138,10 +142,20 @@ setScore();
 [s  ]
 *msgkang
 
-[bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
+[jump  storage="Test_Scene_01.ks"  target="*msgkang_02"  cond="f.testScene=='FALSE'"  ]
+[s  ]
+*msgkang_02
+
+[tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
-[cm]
+
 [filter layer=all blur=5 opacity=40]
+[anim name=msgkang time=1 opacity=50]
+[anim name=msgjin time=1 opacity=50]
+[anim name=msgsul time=1 opacity=50]
+[anim name=teststart time=1 opacity=50]
+[anim name=gift time=1 opacity=50]
+
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -161,7 +175,6 @@ setScore();
 [s  ]
 *kang_secret_bt_01
 
-[cm  ]
 [jump  storage="Test_Scene_01.ks"  target="*kang_secret_buy_01"  cond="f.money>300"  ]
 [jump  storage="Test_Scene_01.ks"  target="*secret_buy_fail_01"  ]
 [s  ]
@@ -198,10 +211,20 @@ setScore();
 [bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
 *msgjin
 
-[bg  time="0"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
+[jump  storage="Test_Scene_01.ks"  target="*msgjin_02"  cond="f.testScene=='FALSE'"  ]
+[s  ]
+*msgjin_02
+
+[tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
-[cm]
+
 [filter layer=all blur=5 opacity=40]
+[anim name=msgkang time=1 opacity=50]
+[anim name=msgjin time=1 opacity=50]
+[anim name=msgsul time=1 opacity=50]
+[anim name=teststart time=1 opacity=50]
+[anim name=gift time=1 opacity=50]
+
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -248,9 +271,20 @@ setScore();
 [s  ]
 *msgsul
 
+[jump  storage="Test_Scene_01.ks"  target="*msgsul_02"  cond="f.testScene=='FALSE'"  ]
+[s  ]
+*msgsul_02
+
+[tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
-[cm]
+
 [filter layer=all blur=5 opacity=40]
+[anim name=msgkang time=1 opacity=50]
+[anim name=msgjin time=1 opacity=50]
+[anim name=msgsul time=1 opacity=50]
+[anim name=teststart time=1 opacity=50]
+[anim name=gift time=1 opacity=50]
+
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
