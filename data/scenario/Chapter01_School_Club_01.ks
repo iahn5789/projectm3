@@ -84,14 +84,10 @@
 진다영![p]
 [_tb_end_text]
 
-[tb_start_tyrano_code]
-[chara_move name="Kang" time="0" width="813" height="1903" left="900" ]
-[_tb_end_tyrano_code]
-
 [resetfont  ]
 [tb_start_tyrano_code]
 ; 진다영 등장
-[chara_new name="Jin" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
+[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
 
 [chara_layer name="Jin" part="body" id="1" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=20 ]
 [chara_layer name="Jin" part="body" id="2" storage="chara/Jin_SC/Jin_Body_Sc_02.png" zindex=20 ]
@@ -104,12 +100,12 @@
 [chara_layer name="Jin" part="face" id="6" storage="chara/Jin_SC/Jin_Face_Surprise_Sc_01.png" zindex=20 ]
 [chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
 
-
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[chara_part name="Jin" body="1" face="2" ]
-[chara_show name="Jin"  time="100" top="0" left="146" ]
+[chara_part name="Jin" body="1" face="4" wait=false]
+[chara_show name="Jin"  time="100" top="0" left="146" wait=false ]
+[chara_move name="Kang" time="0" width="813" height="1903" left="900" wait=false]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -139,12 +135,13 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-; 진다영 등장
-[chara_new name="Sul" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
+; 설나희 등장
+[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
 
 [chara_layer name="Sul" part="body" id="1" storage="chara/Sul_SC/Sul_Body_Sc_01.png" zindex=20 ]
 [chara_layer name="Sul" part="body" id="2" storage="chara/Sul_SC/Sul_Body_Sc_02.png" zindex=20 ]
 [chara_layer name="Sul" part="body" id="3" storage="chara/Sul_SC/Sul_Body_Sc_03.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="4" storage="chara/Sul_SC/Sul_Body_Sc_04.png" zindex=20 ]
 
 [chara_layer name="Sul" part="face" id="1" storage="chara/Sul_SC/Sul_Face_Base_Sc_01.png" zindex=20 ]
 [chara_layer name="Sul" part="face" id="2" storage="chara/Sul_SC/Sul_Face_Smile_Sc_01.png" zindex=20 ]
@@ -153,14 +150,16 @@
 [chara_layer name="Sul" part="face" id="5" storage="chara/Sul_SC/Sul_Face_Angry_Sc_02.png" zindex=20 ]
 [chara_layer name="Sul" part="face" id="7" storage="chara/Sul_SC/Sul_Face_Worry_Sc_01.png" zindex=20 ]
 [chara_layer name="Sul" part="face" id="8" storage="chara/Sul_SC/Sul_Face_Embarrass_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="9" storage="chara/Sul_SC/Sul_Face_Aversion_Sc_01.png" zindex=20 ]
 
 
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[chara_move name="Kang" time="50" left="553" ]
-[chara_move name="Jin" time="50" left="0" ]
-[chara_show name="Sul"  time="50" top="0" left="1106" ]
+[chara_part name="Sul" body="1" face="1"]
+[chara_show name="Sul"  time="50" top="0" left="1106" wait="false" ]
+[chara_hide name="Kang" wait="false" ]
+[chara_hide name="Jin"wait="false" ]
 
 [_tb_end_tyrano_code]
 
