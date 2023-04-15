@@ -7,27 +7,55 @@
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
-[chara_show  name="전대용"  time="500"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
+[tb_start_tyrano_code]
+; 캐릭터 등장
+[chara_new name="Jeon" storage="chara/Jeon_Sc/bin.png" zindex=1 jname="Jeon" width="1444" height="2735" ]
+
+[chara_layer name="Jeon" part="body" id="1" storage="chara/Jeon_SC/Jeon_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Jeon" part="body" id="2" storage="chara/Jeon_SC/Jeon_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Jeon" part="body" id="3" storage="chara/Jeon_SC/Jeon_Body_Sc_03.png" zindex=20 ]
+[chara_layer name="Jeon" part="body" id="4" storage="chara/Jeon_SC/Jeon_Body_Sc_04.png" zindex=20 ]
+
+[chara_layer name="Jeon" part="face" id="1" storage="chara/Jeon_SC/Jeon_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Jeon" part="face" id="2" storage="chara/Jeon_SC/Jeon_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Jeon" part="face" id="4" storage="chara/Jeon_SC/Jeon_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Jeon" part="face" id="6" storage="chara/Jeon_SC/Jeon_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Jeon" part="face" id="8" storage="chara/Jeon_SC/Jeon_Face_Embarrass_Sc_01.png" zindex=20 ]
+
+[chara_part name="Jeon" body="1" face="1" ]
+[chara_show name="Jeon" time="100" top="0" left="100" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #전대용
 그래서 너도 나랑 같은 서예부로 가는 걸로........[p]
 [_tb_end_text]
 
-[quake  time="200"  count="2"  hmax="3"  wait="true"  ]
+[quake  time="200"  count="2"  hmax="3"  wait="false"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
 아 좀! [l] 나는 서예 같은 건 관심이 없어![p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="1" face="2" ]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
 #전대용
 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하.... [p]
 [_tb_end_text]
 
-[chara_hide  name="전대용"  time="300"  wait="true"  pos_mode="false"  ]
 [tb_start_text mode=1 ]
 #???
 응?[p]
 [_tb_end_text]
 
 [playse  volume="130"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open.wav"  ]
+[tb_start_tyrano_code]
+[chara_hide name="Jeon" time=100]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 #
 드르륵 -                           쿵                                 [er]
@@ -52,7 +80,6 @@
 
 [chara_show name="Kang" time="100" top="0" left="375" ]
 [chara_part name="Kang" body="1" face="1" ]
-
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -68,7 +95,12 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_move name="Kang" time=100 width="813" height="1903" left="900" ]
+[chara_part name="Jeon" body="4" face="6" ]
+[chara_show name="Jeon" time="1" top="0" left="-45" width="1004" height="1903" ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_move name="Kang" time=1 width="813" height="1903" left="900" ]
 [_tb_end_tyrano_code]
 
 [quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
@@ -79,6 +111,7 @@
 
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="2" ]
+[chara_part name="Jeon" body="4" face="1" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -87,19 +120,28 @@
 [_tb_end_text]
 
 [quake  time="200"  count="4"  hmax="3"  wait="false"  vmax="3"  ]
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="6" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #전대용
 아니! 아쉽게도 난 다룰 수 있는 악기가 없는걸?[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_part name="Kang" face="1 ]
+[chara_part name="Kang" face="1" ]
+[chara_part name="Jeon" body="4" face="1" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
 내가 다 알려줄 수 있어! 그러지 말고 같이하자![p]
 [_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="4" ]
+[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #전대용
@@ -108,6 +150,7 @@
 
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="4" ]
+[chara_hide name="Jeon" time=1000 wait="false"]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -124,6 +167,7 @@
 
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="3" face="1" ]
+[chara_move name="Kang" time=100 width="1169" height="2735" left="375" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -181,10 +225,9 @@
 [filter layer=all blur=0]
 [_tb_end_tyrano_code]
 
-[chara_show  name="전대용"  time="300"  wait="false"  storage="chara/7/전대용.png"  width="512"  height="832"  left="0"  top="250"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-[chara_part name="Kang" body="3" face="2" ]
+[chara_part name="Kang" body="3" face="1" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -215,21 +258,30 @@
 거절할 새도 없이 그냥 가버렸어....[p]
 [_tb_end_text]
 
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="1" face="2" ]
+[chara_show name="Jeon" time=100 top="0" left="362" width="1004" height="1903" wait="false" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #전대용
 오....강여진..... [p]
 #&[sf.name]
 왜? 누군지 알아?[p]
-
 [_tb_end_text]
 
-[quake  time="200"  count="2"  hmax="2"  wait="true"  ]
+[quake  time="400"  count="5"  hmax="5"  wait="false"  ]
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="4" ]
+[chara_move name="Jeon" time=1 top=0 left=100 width=1444 height=2735 wait=false ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #전대용
 알지![p]
 [_tb_end_text]
 
-[quake  time="200"  count="2"  hmax="2"  wait="true"  ]
+[quake  time="400"  count="5"  hmax="5"  wait="true"  ]
 [font  size="40"  color="0xffffff"  face="SBB"  ]
 [playse  volume="65"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  ]
 [tb_start_text mode=1 ]
@@ -253,13 +305,31 @@
 [stopse  time="1000"  buf="1"  fadeout="false"  ]
 [resetfont  ]
 [quake  time="200"  count="2"  hmax="2"  wait="true"  vmax="3"  ]
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="8" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #&[sf.name]
 그만! 거기까지![p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="1" ]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
 #전대용
 엣헴....아무튼 그런 사람이 너랑 말을 하게 될줄이야...[l][r] 이 자식 대단한걸?[p]
 #&[sf.name]
 시끄러워! 난 그런 거 관심없어....[p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="2" ]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
 #전대용
 녀석 입으로는 그렇게 말해도 속으로는 강여진을 생각하고 있는거 아니야?[p]
 #&[sf.name]
@@ -268,9 +338,12 @@
 후후.. 잘 해보라고! [l][r]그럼 난 이만.[p]
 [_tb_end_text]
 
+[tb_start_tyrano_code]
+[chara_hide name="Jeon" time=100 wait=false]
+[_tb_end_tyrano_code]
+
 [tb_hide_message_window  ]
 [tb_show_message_window  ]
-[chara_hide  name="전대용"  time="1000"  wait="true"  pos_mode="true"  ]
 [tb_start_text mode=1 ]
 #
 하...밴드 동아리라....[p]
