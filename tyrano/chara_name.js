@@ -93,9 +93,9 @@ function b () {window.addEventListener("load", function() {
     hideBtn.classList.add("fixlayer", "hide_btn","hidden");
     hideBtn.style.display = "none";
     }
-    hideBtn.style.top = "100px";
+    hideBtn.style.top = "15px";
     hideBtn.style.zIndex = "9999";
-    hideBtn.style.left = "1600px";
+    hideBtn.style.left = "1725px";
     // 동그라미 div를 body 요소에 추가합니다.
     document.body.appendChild(hideBtn);
 
