@@ -87,7 +87,7 @@
 [resetfont  ]
 [tb_start_tyrano_code]
 ; 진다영 등장
-[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
+[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="1169" height="2735" ]
 
 [chara_layer name="Jin" part="body" id="1" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=20 ]
 [chara_layer name="Jin" part="body" id="2" storage="chara/Jin_SC/Jin_Body_Sc_02.png" zindex=20 ]
@@ -104,8 +104,8 @@
 
 [tb_start_tyrano_code]
 [chara_part name="Jin" body="1" face="4" wait=false]
-[chara_show name="Jin"  time="100" top="0" left="146" wait=false ]
-[chara_move name="Kang" time="0" width="813" height="1903" left="900" wait=false]
+[chara_show name="Jin"  time="100" top="0" left="375" wait=false ]
+[chara_hide name="Kang" time="0" wait=false]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -116,18 +116,13 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_part name="Jin" body="3" face="2" ]
+[chara_part name="Jin" body="3" face="4" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #진다영
 싫어! 나는 이런 변태랑은 밴드부 절대 못 해! 안 해![p]
 [_tb_end_text]
-
-[tb_start_tyrano_code]
-[chara_part name="Kang" body="1" face="4" ]
-[chara_part name="Jin" body="3" face="2" ]
-[_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #???
@@ -136,7 +131,7 @@
 
 [tb_start_tyrano_code]
 ; 설나희 등장
-[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
+[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="1169" height="2735" ]
 
 [chara_layer name="Sul" part="body" id="1" storage="chara/Sul_SC/Sul_Body_Sc_01.png" zindex=20 ]
 [chara_layer name="Sul" part="body" id="2" storage="chara/Sul_SC/Sul_Body_Sc_02.png" zindex=20 ]
@@ -158,8 +153,7 @@
 [tb_start_tyrano_code]
 [chara_part name="Sul" body="1" face="1"]
 [chara_show name="Sul"  time="50" top="0" left="1106" wait="false" ]
-[chara_hide name="Kang" wait="false" ]
-[chara_hide name="Jin"wait="false" ]
+[chara_hide name="Jin" time="0" wait=false]
 
 [_tb_end_tyrano_code]
 
@@ -169,10 +163,6 @@
 
 [_tb_end_text]
 
-[tb_start_tyrano_code]
-[chara_part name="Jin" body="1" ]
-[_tb_end_tyrano_code]
-
 [tb_start_text mode=1 ]
 #진다영
 뭐어? 진심으로 하는말이야?![p]
@@ -181,7 +171,10 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_part name="Jin" face="8" ]
+[chara_move name="Sul" time=50 width=813 height=1903 left=960 wait="false" ]
+[chara_part name="Jin" body="1" face="8"]
+[chara_show name="Jin"  time="50" top="0" left="146" width="813" height="1903" wait="false" ]
+
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -190,7 +183,7 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_part name="Jin" body="3" face="2" ]
+[chara_part name="Jin" body="3" face="4" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -200,6 +193,10 @@
 저...저요...?[p]
 [_tb_end_text]
 
+[tb_start_tyrano_code]
+[chara_part name="Jin" body="3" face="4" ]
+[_tb_end_tyrano_code]
+
 [tb_start_text mode=1 ]
 #진다영
 그래! [l]변태같이 엿듣는 것 말고 할 줄 아는 게 있긴 해?[p]
@@ -207,9 +204,13 @@
 나...나는...[p]
 [_tb_end_text]
 
-[quake  time="300"  count="3"  hmax="10"  wait="true"  ]
+[quake  time="300"  count="3"  hmax="10"  wait="false"  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="1" ]
+[chara_show name="Kang"  time="50" top="0" left="553" width="813" height="1903" wait="false" ]
+[chara_move name="Sul" time=50 width=813 height=1903 left=1106 wait="false" ]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_move name="Jin" time=50 width=813 height=1903 left=0 wait="false" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -249,16 +250,13 @@
 
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="1" ]
+[chara_part name="Jin" face="4" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
 네 생각은 어때? 같이 할거지?[p]
 [_tb_end_text]
-
-[tb_start_tyrano_code]
-[chara_part name="Jin" face="1" ]
-[_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_UI_whoosh_01.wav"  ]
@@ -336,9 +334,9 @@
 으...응...[p]
 [_tb_end_text]
 
-[font  size="40"  color="0x000000"  face="SBB"  ]
+[font  size="40"  color="0xffffff"  face="SBB"  ]
 [tb_start_tyrano_code]
-[chara_part name="Jin" body="1" face="1" ]
+[chara_part name="Jin" body="3" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -418,7 +416,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_yes_02" text="그래 한번 해보지 뭐!!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_yes_02" text="그래 한번 해보지 뭐!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [glink color="btn_21_yellow" target="l_no_02" text="아직 마음의 준비가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
@@ -443,7 +441,7 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_part name="Jin" body="3" face="1" ]
+[chara_part name="Jin" body="3" face="4" ]
 
 [_tb_end_tyrano_code]
 
@@ -507,7 +505,7 @@
 
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-[chara_part name="Jin" body="1" face="1"]
+[chara_part name="Jin" body="1" face="4"]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -519,7 +517,7 @@
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [playse  volume="70"  time="1000"  buf="2"  storage="SFX/Lightning_designed_01.wav"  ]
 [tb_start_tyrano_code]
-[chara_part name="Kang" body="3" face="5"]
+[chara_part name="Kang" body="1" face="5"]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -547,7 +545,7 @@
 
 [tb_start_tyrano_code]
 [chara_part name="Sul" body="1" face="1"]
-[chara_part name="Jin" body="1" face="1"]
+[chara_part name="Jin" body="1" face="4"]
 [chara_part name="Kang" body="2" face="8"]
 [_tb_end_tyrano_code]
 
@@ -623,7 +621,7 @@
 [chara_show name="Kang" time="0" top="0" left="553" width="813" height="1903" ]
 [chara_show name="Sul"  time="0" top="0" left="1106" width="813" height="1903" ]
 [chara_show name="Jin" time="0" top="1" left="1" width="813" height="1903" ]
-[chara_part name="Jin" body="3" face="8"]
+[chara_part name="Jin" body="1" face="8"]
 [_tb_end_tyrano_code]
 
 [tb_show_message_window  ]
@@ -657,12 +655,19 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="2"]
-[chara_part name="Jin" body="3" face="8"]
+[chara_part name="Jin" body="1" face="8"]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
 역시! 그럴 줄 알았어![p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Jin" body="3" face="8"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
 #진다영
 에? 너 방금...손...![p]
 #강여진
@@ -671,6 +676,13 @@
 아니...손...[p]
 #강여진
 앞으로 잘 부탁해! 우리 보컬![p]
+[_tb_end_text]
+
+[tb_start_tyrano_code]
+[chara_part name="Sul" body="2" face="2"]
+[_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
 #설나희
 난...좋다고 생각해...[p]
 [_tb_end_text]
