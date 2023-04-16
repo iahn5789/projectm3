@@ -91,8 +91,8 @@
 #강여진
 응? [p]
 #강여진
-[chara_part name="Kang" body="3" face="8" ]
-아하하... 별일 없을 거야 너무 걱정하지마![p]
+[chara_part name="Kang" body="3" face="1" ]
+별일 없을 거야 너무 걱정하지마![p]
 #&[sf.name]
 ( 별일이 있는 것 같은 분위기였는데...  )[p]
 [chara_part name="Kang" body="2" face="2" ]
@@ -106,5 +106,5 @@
 [chara_hide name="Kang" time=1 wait=false]
 [_tb_end_tyrano_code]
 
-[jump  storage="Chapter02_Office_01.ks"  target=""  ]
+[jump  storage="Chapter02_School_Club_01.ks"  target="*l_in"  ]
 [s  ]
