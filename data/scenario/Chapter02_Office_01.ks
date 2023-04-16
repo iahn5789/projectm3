@@ -1,9 +1,11 @@
 [_tb_system_call storage=system/_Chapter02_Office_01.ks]
 
-*undefined
+*office_01
 
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="943a383299379145946725d58025e83f.jpg"  ]
 [tb_start_tyrano_code]
 #한갑수
 안 돼![p]
