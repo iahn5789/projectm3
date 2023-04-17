@@ -365,6 +365,12 @@
 
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=1 wait=false]
+[_tb_end_tyrano_code]
+
+[jump  storage="Chapter02_Office_01.ks"  target="*office_01"  ]
+[s  ]
 *l_no_01
 
 [tb_start_tyrano_code]
@@ -497,6 +503,12 @@
 [resetfont  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=1 wait=false]
+[_tb_end_tyrano_code]
+
+[jump  storage="Chapter02_Office_01.ks"  target="*office_01"  ]
+[s  ]
 *l_no_02
 
 [tb_start_tyrano_code]
@@ -703,3 +715,9 @@
 [resetfont  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=1 wait=false]
+[_tb_end_tyrano_code]
+
+[jump  storage="Chapter02_Office_01.ks"  target="*office_01"  ]
+[s  ]

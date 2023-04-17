@@ -2,9 +2,6 @@
 
 *office_01
 
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[mask_off  time="1000"  effect="fadeOut"  ]
-[tb_show_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="943a383299379145946725d58025e83f.jpg"  ]
 [tb_start_tyrano_code]
 ; 강여진 등장
@@ -25,9 +22,11 @@
 
 [_tb_end_tyrano_code]
 
+[mask_off  time="3000"  effect="fadeOut"  ]
+[tb_show_message_window  ]
 [tb_start_tyrano_code]
-[chara_show name="Kang" time="100" top="0" left="375" ]
 [chara_part name="Kang" body="1" face="4" ]
+[chara_show name="Kang" time="100" top="0" left="375" ]
 #한갑수
 안 돼![p]
 [chara_part name="Kang" body="1" face="5" ]
