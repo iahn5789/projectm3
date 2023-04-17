@@ -148,10 +148,16 @@
 [_tb_end_tyrano_code]
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=9 wait=false]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
 [jump  storage="Chapter02_School_Club_02.ks"  target="*l_in_02"  ]
 [s  ]
 *l_in_02
 
+[tb_show_message_window  ]
 [tb_start_tyrano_code]
 ; 진다영 등장
 [chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
