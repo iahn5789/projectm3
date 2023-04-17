@@ -9,7 +9,7 @@
 
 [chara_layer name="Kang" part="body" id="1" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=20 ]
 [chara_layer name="Kang" part="body" id="2" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
-[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_03.png" zindex=20 ]
 
 [chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Base_Sc_01.png" zindex=20 ]
 [chara_layer name="Kang" part="face" id="2" storage="chara/Kang_SC/Kang_Face_Smile_Sc_01.png" zindex=20 ]
@@ -45,7 +45,6 @@
 [chara_part name="Sul" body="3" face="1" ]
 [chara_show name="Kang" top="0" left="960" time=100 wait=false ]
 [chara_show name="Sul" top="0" left="146" time=100 wait=false  ]
-
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -64,13 +63,12 @@
 [chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
 [_tb_end_tyrano_code]
 
-[mask_off  time="1000"  effect="fadeOut"  ]
+[mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #강여진
 아! 나희 언니 있었네?[p]
 언제왔어?[p]
-[chara_part name="Sul" body="3" face="1" ]
 #설나희
 방금...[p]
 #강여진
@@ -241,6 +239,8 @@
 기분 나빠...[p]
 #&[sf.name]
 ( 응? 어쩐지 오한이... )[p]
+[chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
+[jump  storage="Chapter02_School_Club_02.ks"  target="*l_in"  ]
 [s  ]
