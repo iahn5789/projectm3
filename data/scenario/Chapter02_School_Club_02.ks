@@ -346,4 +346,129 @@
 에헴![p]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+#강여진
+아! 선생님 안녕하세요![p]
+#한갑수
+여진이가 성실하고 착한 친구라고 해서[r] 동아리에 입부시키긴 했지만 나는 아직 믿지 못한다![p]
+#한갑수
+준비는 잘 되어가고 있나?[p]
+#강여진
+네...실은 [emb exp="sf.name"]에게 랩을 부탁할까 고민하고 있었어요![p]
+#합갑수
+뭐어? 랩?[p]
+#강여진
+네! 그러니까 힙합을...[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#한갑수
+너희가 힙합을 아느냐!!!![p]
+#강여진
+...네?[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#한갑수
+너희가 힙합에 대해서 제대로 아느냔 말이다!![p]
+#한갑수
+단순히 비트 위에 빠르게 말하는 것은 힙합이 아니란말이다아아아!!!!![p]
+#한갑수
+힙합이란 1970년대 후반 뉴욕 브롱크스 남쪽 빈민가에 거주하는 미국 흑인과
+남미 히스패닉계 청소년들에 의해 형성된 새로운 문화운동 전반을 가르치는 말이며 이에 힙합을  미국에서 독자적으로 만들어진 유일한 문화........[er]
+#&[sf.name]
+......[p]
+#한갑수
+옛 헴![p]
+#한갑수
+내가 말한 것들을 제대로 이해하지 못했다면[r]앞으로 힙합은 입에도 올리지 말거라![p]
+#강여진
+으으...네...[p]
+#한갑수
+그리고! 오디션을 보는 것도 맞지만[r] 오디션만 보는 게 아니다![p]
+#강여진
+네? 그럼 오디션 말고 다른 것도 본다는 말씀이신가요??[p]
+#한갑수
+그럼! 성실하다고 말했으니 성실성을 확인을 해봐야지![p]
+#한갑수
+오디션 말고 쪽지 시험도 따로 준비하도록 하거라! [p]
+동아리도 좋지만 학생의 본분에 충실해야지[p]
+#강여진
+아! 네 그건 걱정하지 않으셔도 돼요![p]
+#한갑수
+그래 알면 됐다! 그럼, 이만 가보마![p]
+#한갑수
+옛 헴![p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Jin" body="2" face="8" ]
+[chara_show name="Jin" top="0" left="375" time=200 width="1169" height="2735" wait=false ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#진다영
+우와... 저 꼰대...[p]
+#강여진
+진다영! 그런 말 하면 못써![p]
+#진다영
+그래도 20분 동안 혼자서 저렇게 연설을 할 줄이야...[p]
+#강여진
+확실히 그건 예상 밖이었지만 말이야,,,[p]
+[chara_part name="Jin" body="1" face="4" ]
+#진다영
+이제 어쩔거야... [p]
+저 변태가 오디션 말고 쪽지 시험도 준비해야 하는 거잖아[p]
+#&[sf.name]
+( 변태는 빼주면 안 될까... )[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Kang" body="3" face="1" ]
+[chara_show name="Kang" top="0" left="375" time=200 width="1169" height="2735" wait=false ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#강여진
+음... 우리 신입 부원이 공부도 잘하길 기도하는 수밖에?[p]
+#&[sf.name]
+그건 걱정하지 마. 그래도 중간은 하니까...[p]
+[chara_part name="Kang" body="2" face="2" ]
+#강여진
+그럼 다행이네![p]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Sul" body="3" face="1" ]
+[chara_show name="Sul" top="0" left="375" time=200 width="1169" height="2735" wait=false ]
+#설나희
+그래 쪽지 시험에 집중하자...[p]
+#설나희
+힙합을 하겠다는 전략은 못 쓸 것 같으니까...[p]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Kang" body="1" face="1" ]
+[chara_show name="Kang" top="0" left="375" time=200 width="1169" height="2735" wait=false ]
+#강여진
+자! 그럼 너는 어떤 걸 하고 싶어??[p]
+#&[sf.name]
+( 나는...역시 잘 모르겠다 )[p]
+#강여진
+역시 잘 모르겠다고 생각했지?[p]
+[chara_part name="Kang" body="3" face="7" ]
+#강여진
+음... 당장 오디션 준비를 하긴 어려우니까...[p]
+[chara_part name="Kang" body="3" face="2" ]
+#강여진
+일단 교실로 가면서 쪽지 시험이 어떻게 나오는지 알려줄게![p]
+[_tb_end_tyrano_code]
+
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Kang" body="3" face="1" ]
+[chara_show name="Kang" top="0" left="375" time=200 width="1169" height="2735" wait=false ]
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[jump  storage="Chapter02_School_Club_02.ks"  target=""  ]
 [s  ]
