@@ -147,4 +147,166 @@
 그... 그래도 한번 들어볼 수 있을까..?[p]
 [_tb_end_tyrano_code]
 
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[jump  storage="Chapter02_School_Club_02.ks"  target="*l_in_02"  ]
+[s  ]
+*l_in_02
+
+[tb_start_tyrano_code]
+; 진다영 등장
+[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
+
+[chara_layer name="Jin" part="body" id="1" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="body" id="2" storage="chara/Jin_SC/Jin_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Jin" part="body" id="3" storage="chara/Jin_SC/Jin_Body_Sc_03.png" zindex=20 ]
+
+[chara_layer name="Jin" part="face" id="1" storage="chara/Jin_SC/Jin_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="2" storage="chara/Jin_SC/Jin_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="3" storage="chara/Jin_SC/Jin_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="4" storage="chara/Jin_SC/Jin_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="6" storage="chara/Jin_SC/Jin_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+; 강여진 등장
+[chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="813" height="1903" ]
+
+[chara_layer name="Kang" part="body" id="1" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="2" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_03.png" zindex=20 ]
+
+[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="2" storage="chara/Kang_SC/Kang_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="3" storage="chara/Kang_SC/Kang_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="4" storage="chara/Kang_SC/Kang_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="5" storage="chara/Kang_SC/Kang_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="6" storage="chara/Kang_SC/Kang_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_part name="Jin" body="1" face="8" ]
+[chara_part name="Kang" body="3" face="8" ]
+[chara_show name="Jin" top="0" left="146" time=10 wait=false ]
+[chara_show name="Kang" top="0" left="960" time=10 wait=false ]
+[_tb_end_tyrano_code]
+
+[mask_off  time="1000"  effect="fadeOut"  ]
+[tb_start_tyrano_code]
+#강여진
+아...[p]
+[chara_part name="Jin" body="3" face="2" ]
+#진다영
+아하하하하하 그게 노래냐?![p]
+#강여진
+하하하하...아하하..[r]평소에 좋아하는 노래는 잘 부를 수 있을 거야 [p]
+그렇지...?[p]
+#&[sf.name]
+아니...[p]
+#설나희
+그래도 일주일 뒤가 오디션이니 그때까지 준비한다면 어쩌면...[p]
+[chara_part name="Jin" body="3" face="4" ]
+[chara_part name="Kang" body="1" face="4" ]
+#진다영
+틀렸어! [r]이 실력으로는 그 깐깐한 도덕 선생을 납득시킬 수 없단 말이야!![p]
+할 줄 아는 게 뭐야!! 바보!! 죽어!! 죽어!![p]
+[chara_part name="Jin" body="1" face="4" ]
+#&[sf.name]
+( 크흑… 아무리 그래도 눈 앞에서 대놓고… )[p]
+[chara_part name="Kang" body="1" face="5" ]
+
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[tb_start_tyrano_code]
+#강여진
+진다영! 너 진짜![p]
+[chara_part name="Kang" body="1" face="4" ]
+#진다영
+왜! 사실이잖아! [r]지금 이 실력으로는 쓸모없는 건 분명하다고![p]
+[chara_part name="Kang" body="1" face="5" ]
+#강여진
+아직 시간은 일주일이나 남았어! 일주일이면 충분해![p]
+[chara_part name="Jin" body="2" face="2" ]
+[chara_part name="Kang" body="1" face="4" ]
+#진다영
+헤~? 정말로 할 수 있다고 생각해?[p]
+[chara_part name="Kang" body="1" face="5" ]
+#강여진
+그럼! 내가 데려온 사람이니까 책임지고 가르치면 돼![p]
+그리고... 우리가 앞에 있어서 긴장한 걸 수도 있잖아![p]
+#진다영
+그래 열~심히 해봐~ 달라지는 건 없겠지만~[p]
+[chara_part name="Kang" body="1" face="4" ]
+#&[sf.name]
+( 아무리 봐도…비웃는 거로 밖에 안 보이는군…)[p]
+[chara_part name="Kang" body="1" face="5" ]
+#강여진
+두고봐 선생님 마음에 쏙 들 거야![p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+; 설나희 등장
+[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
+
+[chara_layer name="Sul" part="body" id="1" storage="chara/Sul_SC/Sul_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="2" storage="chara/Sul_SC/Sul_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="3" storage="chara/Sul_SC/Sul_Body_Sc_03.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="4" storage="chara/Sul_SC/Sul_Body_Sc_04.png" zindex=20 ]
+
+[chara_layer name="Sul" part="face" id="1" storage="chara/Sul_SC/Sul_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="2" storage="chara/Sul_SC/Sul_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="3" storage="chara/Sul_SC/Sul_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="4" storage="chara/Sul_SC/Sul_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="5" storage="chara/Sul_SC/Sul_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="7" storage="chara/Sul_SC/Sul_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="8" storage="chara/Sul_SC/Sul_Face_Embarrass_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="9" storage="chara/Sul_SC/Sul_Face_Aversion_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Sul" body="3" face="1" ]
+[chara_show name="Sul" top="0" left="553" time=200 wait=false ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#설나희
+...[p]
+한 가지...[p]
+한 가지 방법이 있어...[p]
+#강여진
+무슨 방법이야?[p]
+#설나희
+고문 선생님은 힙합을 좋아해...[p]
+[chara_hide_all time=1 wait=false]
+[chara_part name="Kang" body="1" face="6" ]
+[chara_show name="Kang" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
+
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
+[tb_start_tyrano_code]
+#강여진
+으잉?               [er]
+[chara_hide_all time=1 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
+[tb_start_tyrano_code]
+#진다영
+뭐?               [er]
+#&[sf.name]
+( 응...? )               [er]wk
+[chara_hide_all time=1 wait=false]
+[chara_part name="Sul" body="1" face="2" ]
+[chara_show name="Sul" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
+#설나희
+말 그대로...힙합을 좋아해...[p]
+[_tb_end_tyrano_code]
+
 [s  ]
