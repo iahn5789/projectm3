@@ -301,12 +301,49 @@
 #진다영
 뭐?               [er]
 #&[sf.name]
-( 응...? )               [er]wk
+( 응...? )               [er]
 [chara_hide_all time=1 wait=false]
 [chara_part name="Sul" body="1" face="2" ]
 [chara_show name="Sul" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
 #설나희
 말 그대로...힙합을 좋아해...[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_part name="Kang" body="2" face="8" ]
+[chara_show name="Jin" top="0" left="146" width="813" height="1903" time=10 wait=false ]
+[chara_show name="Kang" top="0" left="960" width="813" height="1903" time=10 wait=false ]
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#진다영
+그러니까...변태에게 힙합...[r]즉…랩을 시킨다는 거야…?[p]
+#강여진
+래...랩을 한다고...?[p]
+[chara_part name="Jin" body="3" face="2" ]
+#진다영
+하하하하하하하!! [r]노래도 못하는데 랩을 할 수 있을 거로 생각해???[p]
+[chara_part name="Kang" body="3" face="7" ]
+#강여진
+아니.... 잠깐. [p]
+어쩌면...![p]
+[chara_part name="Jin" body="1" face="4" ]
+#진다영
+뭐? 진심이야?[p]
+#강여진
+음치인거지...박치인 건 아니잖아...![p]
+[chara_part name="Kang" body="1" face="1" ]
+#강여진
+시도해 볼 가치는 있어...[p]
+[chara_part name="Jin" body="1" face="8" ]
+#진다영
+으으...이…[p]
+[chara_hide_all time=100 wait=false]
+#한갑수
+에헴![p]
 [_tb_end_tyrano_code]
 
 [s  ]
