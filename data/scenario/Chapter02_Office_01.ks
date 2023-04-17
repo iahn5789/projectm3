@@ -74,7 +74,7 @@
 [chara_hide name="Kang" time=1 wait=false]
 [_tb_end_tyrano_code]
 
-[bg  time="100"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
+[bg  time="100"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_02.png"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
