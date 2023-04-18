@@ -199,7 +199,7 @@ if(i !== 5){
 layerMenu.addEventListener("click",  function(event) {
 
     // 클릭 이벤트를 발생시킨 요소가 menu_close 버튼인지 체크합니다.
-    if (event.target.src && event.target.src.includes('UI_Close_Bt_02.png')) {
+    if (event.target.src && event.target.src.includes('UI_Close_Bt_02.png','Load_Bt_01')) {
       gameLayer.style.filter = "";
       message_inner.style.filter = "";
       message_outer.style.filter = "";
