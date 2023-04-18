@@ -99,12 +99,15 @@
 --------------------------------------*/
 .area_save_list {
     display: block;
-    width: 1412px;
-    height: 428px;
-    margin-top: 420px;
+	position: absolute;
+    width: 781px;
+    height: 655px;
+	left: 37px;
+	top: 250px;
+    /* margin-top: 420px;
     margin-left: 58px;
-    padding-left: 52px;
-    overflow-y: scroll;
+    padding-left: 52px; */
+    overflow-y: auto;
     transform: translateZ(0);
 animation-name: move;
 animation-duration: 1s;
@@ -126,17 +129,18 @@ animation-iteration-count: 1;
 
 /* スクロールバー */
 .area_save_list::-webkit-scrollbar {
-	width:0px;
+	width: 15px;
 }
 
 .area_save_list::-webkit-scrollbar-thumb {
-	border-left: 10px solid #ffe17e;
-	border-right: 10px solid #ffe17e;
-	background: #F7C04A;
+	background: #000000;
+	border-radius: 10px;
 }
 
 .area_save_list::-webkit-scrollbar-track {
-	background: hsl(53, 47%, 81%);
+	background: #E3E3E3;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 	
 }
 
@@ -144,10 +148,9 @@ animation-iteration-count: 1;
 /* セーブデータリスト全体の設定 */
 .save_list {
 	display: flex;
-	justify-content: space-between;
-	table-layout: fixed;
-	width: 4010px;
-	height: 163px;
+	flex-wrap: wrap;
+	width: 764px;
+	height: 659px;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
@@ -160,10 +163,11 @@ animation-iteration-count: 1;
 
 /* セーブデータの設定 */
 .save_list_item {
-	display:table-cell;
-	width: 900px;
-	height: 174px;
-	margin: 0;
+	position: relative;
+	display:inline-block;
+	width: calc(50% - 10px);
+	height: 314px;
+	margin: 0.5;
 	padding: 0;
 	border: none;
 	background-color: none;
@@ -205,11 +209,10 @@ animation-iteration-count: 1;
 /* サムネイル画像の設定 */
 .save_list_item_thumb img {
 	position: absolute;
-	top:33px; left:3px;
+	top:45px; left:59px;
 	/* border: white 1px solid; */
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	width: 306px;
+	border-radius: 20px;
+	width: 305.78px;
 	height: 172px;
 	margin: 0;
 	padding: 0;
@@ -223,9 +226,9 @@ animation-iteration-count: 1;
 	font-size: 20px;
 	left: 0x;
 	top:33px;
-	width: 312px;
-	height: 276px;
-	padding: 0;
+	width: 332px;
+	height: 285px;
+	margin: 0 0 0 45px;
 	border:none;
 	border-radius: 0;
 	background: url('../../../image/New_GUI/Save_UI/Save_Bt_01.png');
@@ -249,13 +252,13 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 
 .save_list_item_date {
 	display: block;
-	padding: 0 0 0 75px;
+	padding: 0 0 0 57px;
 	position : absolute;
-	top: 236px;
+	top: 250px;
 	line-height: 1;
-	color: #FFF;
+	color: #000000;
 	font-weight: normal;
-	font-size:17px;
+	font-size:20px;
 	font-family: TheJamsil1Thin;
 	box-sizing: border-box;
 }
@@ -263,7 +266,7 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 /* セーブデータのテキストの設定 */
 .save_list_item_text {
 	display: block;
-	width: 236px;
+	width: 150px;
 	 text-overflow: ellipsis;
     	white-space: nowrap;
      	overflow: hidden;
@@ -271,15 +274,15 @@ background: url('/New_GUI/New_GUI/Save_UI/Save_Bt_01.png');
 	margin: 0;
 	padding: 0 0 0 5px;
 	line-height: 1.5;
-	color: #ffffff;
+	color: #000000;
 	font-weight: normal;
 	font-family: TheJamsil1Thin;
 	font-size:24px;
 	overflow: hidden;
 	box-sizing: border-box;
 	position: absolute;
-	left: 64px;
-	top:179px;
+	left: 92px;
+	top:77px;
 }
 /* ロード画面
 --------------------------------------*/
@@ -385,7 +388,6 @@ animation-iteration-count: 1;
 	padding: 0;
 }
 
-
 /* サムネイル画像の設定 */
 .load_list_item_thumb img {
 	position: absolute;
@@ -403,7 +405,7 @@ animation-iteration-count: 1;
 /* セーブデータのテキスト部文の設定 */
 .load_list_item_area {
 	display: table-cell;
-	position: absolute;
+	position: relative;
 	font-size: 20px;
 	left: 0x;
 	top:33px;
