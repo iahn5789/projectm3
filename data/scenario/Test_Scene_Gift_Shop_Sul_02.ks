@@ -9,7 +9,6 @@
 [jump  storage="Test_Scene_Gift_Shop_Sul_01.ks"  target="*gift_sul_back"  ]
 *popupsul_01
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=500"  name="money"  cmd="-="  op="t"  val="500"  val_2="undefined"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
@@ -55,7 +54,6 @@ setGiftLine();
 [s  ]
 *popupsul_02
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=900"  name="money"  cmd="-="  op="t"  val="900"  val_2="undefined"  ]
 [tb_eval  exp="f.slove+=2"  name="slove"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
@@ -101,7 +99,6 @@ setGiftLine();
 [s  ]
 *popupsul_03
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=1700"  name="money"  cmd="-="  op="t"  val="1700"  val_2="undefined"  ]
 [tb_eval  exp="f.slove+=4"  name="slove"  cmd="+="  op="t"  val="4"  val_2="undefined"  ]
@@ -147,7 +144,6 @@ setGiftLine();
 [s  ]
 *popupsul_04
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=2500"  name="money"  cmd="-="  op="t"  val="2500"  val_2="undefined"  ]
 [tb_eval  exp="f.slove+=6"  name="slove"  cmd="+="  op="t"  val="6"  val_2="undefined"  ]
