@@ -430,9 +430,6 @@ fixボタンをクリア
 
 	TG.config.autoRecordLabel = "true"; // ラベル通過記録を有効に
 
-	tf.current_bgm_vol = parseInt(TG.config.defaultBgmVolume); // BGM音量
-	tf.current_se_vol = parseInt(TG.config.defaultSeVolume); // SE音量
-
 	tf.current_ch_speed = parseInt(TG.config.chSpeed); // テキスト表示速度
 	tf.current_auto_speed = parseInt(TG.config.autoSpeed); // オート時のテキスト表示速度
 
@@ -451,72 +448,31 @@ fixボタンをクリア
 	/* 画像類のパス（ボタン） */
 	tf.btn_path_off = tf.img_path + 'c_btn.gif';
 	tf.btl_path_off = tf.img_path + 'c_btn.gif';
-	tf.btn_path_on  = tf.img_path + 'Config_Bt_01.png';
+	tf.btn_path_on_1  = tf.img_path + 'Config_Bt_Yellow_01.png';
+	tf.btn_path_on_2  = tf.img_path + 'Config_Bt_Pink_01.png';
 
 	// ボタン画像の幅と高さ（※未読スキップ、ミュート除く）
-	tf.btn_width  = 67; // 幅
-	tf.btl_width  = 94; // 幅
-	tf.btn_height = 67; // 高さ
-	tf.btl_height  = 91; // 幅
+	tf.btn_width  = 54; // 幅
+	tf.btl_width  = 67; // 幅
+	tf.btn_height = 54; // 高さ
+	tf.btl_height  = 67; // 幅
 		
 	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x      = [1539, 549, 648, 747, 846, 945, 1044, 1143, 1242, 1341, 1440]; // X座標（共通）
-	tf.config_y_bgm   = 333; // BGMのY座標
-	tf.config_y_se    = 433; // SEのY座標
-	tf.config_y_ch    = 540; // テキスト速度のY座標
-	tf.config_y_auto  = 647; // オート速度のY座標
+	tf.config_x      = [1802, 1081, 1160, 1237, 1315, 1393, 1471, 1549, 1627, 1705, 1783]; // X座標（共通）
+	tf.config_y_ch    = 374; // テキスト速度のY座標
+	tf.config_y_auto  = 527; // オート速度のY座標
 
 	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x_1       = [1526, 536, 635, 734, 833, 932, 1031, 1130, 1229, 1328, 1427]; // X座標（共通）
-	tf.config_y_1_bgm   = 321; // BGMのY座標
-	tf.config_y_1_se    = 421; // SEのY座標
-	tf.config_y_1_ch    = 528; // テキスト速度のY座標
-	tf.config_y_1_auto  = 635; // オート速度のY座標
+	tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
+	tf.config_y_1_ch    = 368; // テキスト速度のY座標
+	tf.config_y_1_auto  = 521; // オート速度のY座標
 
 	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
-	tf.config_num_bgm;  // BGM
-	tf.config_num_se;   // SE
 	tf.config_num_ch;   // テキスト速度
 	tf.config_num_auto; // オート速度
 
 	// 既読スキップの画像ファイル名を格納しておく変数
 ;	tf.img_unread_skip;
-
-	// BGMの音量チェック
-	switch(tf.current_bgm_vol){
-		case   0: tf.config_num_bgm =  0; break;
-		case  10: tf.config_num_bgm =  1; break;
-		case  20: tf.config_num_bgm =  2; break;
-		case  30: tf.config_num_bgm =  3; break;
-		case  40: tf.config_num_bgm =  4; break;
-		case  50: tf.config_num_bgm =  5; break;
-		case  60: tf.config_num_bgm =  6; break;
-		case  70: tf.config_num_bgm =  7; break;
-		case  80: tf.config_num_bgm =  8; break;
-		case  90: tf.config_num_bgm =  9; break;
-		case 100: tf.config_num_bgm = 10; break;
-
-		default: break;
-	};
-
-
-	// SEの音量チェック
-	switch(tf.current_se_vol){
-		case   0: tf.config_num_se =  0; break;
-		case  10: tf.config_num_se =  1; break;
-		case  20: tf.config_num_se =  2; break;
-		case  30: tf.config_num_se =  3; break;
-		case  40: tf.config_num_se =  4; break;
-		case  50: tf.config_num_se =  5; break;
-		case  60: tf.config_num_se =  6; break;
-		case  70: tf.config_num_se =  7; break;
-		case  80: tf.config_num_se =  8; break;
-		case  90: tf.config_num_se =  9; break;
-		case 100: tf.config_num_se = 10; break;
-
-		default: break;
-	};
-
 
 	// テキスト速度のチェック
 	switch(tf.current_ch_speed){
@@ -560,10 +516,10 @@ fixボタンをクリア
 
 [cm]
 
-	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_01.png'" time="100" ]
+	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_Text_01.png'" time="100" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="1564" y="123"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="33" y="965"]
 
 [jump target="*config_page2"]
 
@@ -599,8 +555,8 @@ fixボタンをクリア
 ;------------------------------------------------------------------------------------------------------
 ; 테스트용 버튼 이미지 테스트 민아럼ㄴㅇ러
 ;------------------------------------------------------------------------------------------------------
-   [button name="sound" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_02.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
-   [button name="text" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
+   [button name="sound" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
+   [button name="text" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_02.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
    [button name="system" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
    
 ;	未読スキップ-ON
@@ -782,28 +738,28 @@ fixボタンをクリア
 	[layopt layer="0" visible="true"]
 
 ;	テキスト速度
-	[image layer="0" name="ch_img_1"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[1]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_2"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[2]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_3"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[3]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_4"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[4]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_5"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[5]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_6"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[6]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_7"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[7]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_8"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[8]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_9"  storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[9]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_10" storage="&tf.img_path + 'Config_Bt_01.png'" x="&tf.config_x[10]" y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_1"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[1]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_2"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[2]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_3"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[3]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_4"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[4]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_5"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[5]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_6"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[6]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_7"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[7]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_8"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[8]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_9"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[9]"  y="&tf.config_y_ch"]
+	[image layer="0" name="ch_img_10" storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[10]" y="&tf.config_y_ch"]
 
 ;	オート速度
-	[image layer="0" name="auto_img_1"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[1]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_2"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[2]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_3"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[3]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_4"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[4]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_5"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[5]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_6"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[6]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_7"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[7]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_8"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[8]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_9"  storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[9]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_10" storage="&tf.img_path + 'Config_Bt_01.png'"  x="&tf.config_x[10]" y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_1"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[1]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_2"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[2]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_3"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[3]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_4"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[4]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_5"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[5]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_6"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[6]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_7"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[7]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_8"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[8]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_9"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[9]"  y="&tf.config_y_auto"]
+	[image layer="0" name="auto_img_10" storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[10]" y="&tf.config_y_auto"]
 
 [return]
 [s]
