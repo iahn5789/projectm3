@@ -58,10 +58,9 @@
 
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin"  cond="f.giftScene=='FALSE'"  ]
 [s  ]
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target=""  ]
-[jump  storage="Test_Scene_Gift_Shop_Sul_01.ks"  target="*gift_sul"  cond="f.giftScene=='FALSE'"  ]
 *gift_sul_change
 
+[jump  storage="Test_Scene_Gift_Shop_Sul_01.ks"  target="*gift_sul"  cond="f.giftScene=='FALSE'"  ]
 [s  ]
 *buy_kang_01
 
@@ -96,6 +95,28 @@
 
 [s  ]
 *kang_gift_bt_01
+
+[tb_start_tyrano_code]
+[cm]
+[filter layer=all blur=5 opacity=40]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Save_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Save_UI/UI_Close_Bt_02.png" width="83" height="87" x="1763" y="60"]
+[button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="230" height="283" x="38" y="767"]
+[button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="230" height="283" x="287" y="767"]
+[button name="buy_kang_01" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="620" y="958"]
+[button name="buy_kang_02" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="940" y="958"]
+[button name="buy_kang_03" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1260" y="958"]
+[button name="buy_kang_04" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1580" y="958"]
+[anim name=close time=1 opacity=50]
+[anim name=jin time=1 opacity=50]
+[anim name=sul time=1 opacity=50]
+[anim name=buy_kang_01 time=1 opacity=50]
+[anim name=buy_kang_02 time=1 opacity=50]
+[anim name=buy_kang_03 time=1 opacity=50]
+[anim name=buy_kang_04 time=1 opacity=50]
+[_tb_end_tyrano_code]
 
 [jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_01"  cond="f.money>499"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
@@ -144,6 +165,28 @@
 [s  ]
 *kang_gift_bt_02
 
+[tb_start_tyrano_code]
+[cm]
+[filter layer=all blur=5 opacity=40]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Save_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Save_UI/UI_Close_Bt_02.png" width="83" height="87" x="1763" y="60"]
+[button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="230" height="283" x="38" y="767"]
+[button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="230" height="283" x="287" y="767"]
+[button name="buy_kang_01" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="620" y="958"]
+[button name="buy_kang_02" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="940" y="958"]
+[button name="buy_kang_03" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1260" y="958"]
+[button name="buy_kang_04" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1580" y="958"]
+[anim name=close time=1 opacity=50]
+[anim name=jin time=1 opacity=50]
+[anim name=sul time=1 opacity=50]
+[anim name=buy_kang_01 time=1 opacity=50]
+[anim name=buy_kang_02 time=1 opacity=50]
+[anim name=buy_kang_03 time=1 opacity=50]
+[anim name=buy_kang_04 time=1 opacity=50]
+[_tb_end_tyrano_code]
+
 [jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_02"  cond="f.money>899"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*buy_kang_02"  ]
@@ -191,7 +234,28 @@
 [s  ]
 *kang_gift_bt_03
 
-[cm  ]
+[tb_start_tyrano_code]
+[cm]
+[filter layer=all blur=5 opacity=40]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Save_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Save_UI/UI_Close_Bt_02.png" width="83" height="87" x="1763" y="60"]
+[button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="230" height="283" x="38" y="767"]
+[button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="230" height="283" x="287" y="767"]
+[button name="buy_kang_01" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="620" y="958"]
+[button name="buy_kang_02" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="940" y="958"]
+[button name="buy_kang_03" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1260" y="958"]
+[button name="buy_kang_04" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1580" y="958"]
+[anim name=close time=1 opacity=50]
+[anim name=jin time=1 opacity=50]
+[anim name=sul time=1 opacity=50]
+[anim name=buy_kang_01 time=1 opacity=50]
+[anim name=buy_kang_02 time=1 opacity=50]
+[anim name=buy_kang_03 time=1 opacity=50]
+[anim name=buy_kang_04 time=1 opacity=50]
+[_tb_end_tyrano_code]
+
 [jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_03"  cond="f.money>1699"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*buy_kang_03"  ]
@@ -199,7 +263,6 @@
 *kang_back_bt_03
 
 [tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
-[cm  ]
 [tb_start_tyrano_code]
 [cm]
 [filter layer=all blur=0 opacity=100]
@@ -241,7 +304,28 @@
 [s  ]
 *kang_gift_bt_04
 
-[cm  ]
+[tb_start_tyrano_code]
+[cm]
+[filter layer=all blur=5 opacity=40]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=90 y=76 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil5Bold" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=410 y=600 width=150 color="0xffffff" align="center" vertical=false face="The Jamsil3Regular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=29 x=380 y=78 width=60 color="0xffffff" align="right" vertical=false face="The Jamsil5Bold" ]
+[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Save_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Save_UI/UI_Close_Bt_02.png" width="83" height="87" x="1763" y="60"]
+[button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="230" height="283" x="38" y="767"]
+[button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="230" height="283" x="287" y="767"]
+[button name="buy_kang_01" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="620" y="958"]
+[button name="buy_kang_02" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="940" y="958"]
+[button name="buy_kang_03" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1260" y="958"]
+[button name="buy_kang_04" storage="Test_Scene_Gift_Shop_01.ks" target="buy_kang_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Buy_Bt_02.png" width="243" height="71" x="1580" y="958"]
+[anim name=close time=1 opacity=50]
+[anim name=jin time=1 opacity=50]
+[anim name=sul time=1 opacity=50]
+[anim name=buy_kang_01 time=1 opacity=50]
+[anim name=buy_kang_02 time=1 opacity=50]
+[anim name=buy_kang_03 time=1 opacity=50]
+[anim name=buy_kang_04 time=1 opacity=50]
+[_tb_end_tyrano_code]
+
 [jump  storage="Test_Scene_Gift_Shop_Kang_02.ks"  target="*popupkang_04"  cond="f.money>2499"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*buy_kang_04"  ]
@@ -249,7 +333,6 @@
 *kang_back_bt_04
 
 [tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
-[cm  ]
 [tb_start_tyrano_code]
 [cm]
 [filter layer=all blur=0 opacity=100]
