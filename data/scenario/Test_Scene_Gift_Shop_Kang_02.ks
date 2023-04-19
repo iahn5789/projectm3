@@ -9,13 +9,13 @@
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang_back"  ]
 *popupkang_01
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=500"  name="money"  cmd="-="  op="t"  val="500"  val_2="undefined"  ]
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.gift_line=Math.floor(Math.random()*(2-0+1)+0)"  name="gift_line"  cmd="="  op="r"  val="0"  val_2="2"  ]
 [call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
+[anim name=Back time=1 opacity=50]
 [html]
 <div>
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_01.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
@@ -55,7 +55,6 @@ setGiftLine();
 [s  ]
 *popupkang_02
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=900"  name="money"  cmd="-="  op="t"  val="900"  val_2="undefined"  ]
 [tb_eval  exp="f.klove+=2"  name="klove"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
@@ -100,7 +99,6 @@ setGiftLine();
 [s  ]
 *popupkang_03
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=1700"  name="money"  cmd="-="  op="t"  val="1700"  val_2="undefined"  ]
 [tb_eval  exp="f.klove+=4"  name="klove"  cmd="+="  op="t"  val="4"  val_2="undefined"  ]
@@ -145,7 +143,6 @@ setGiftLine();
 [s  ]
 *popupkang_04
 
-[cm  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_eval  exp="f.money-=2500"  name="money"  cmd="-="  op="t"  val="2500"  val_2="undefined"  ]
 [tb_eval  exp="f.klove+=6"  name="klove"  cmd="+="  op="t"  val="6"  val_2="undefined"  ]
