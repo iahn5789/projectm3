@@ -791,13 +791,13 @@ fixボタンをクリア
 
 	TG.config.autoRecordLabel = "true"; // ラベル通過記録を有効に
 
-	tf.current_ch_speed = parseInt(TG.config.chSpeed); // テキスト表示速度
-	tf.current_auto_speed = parseInt(TG.config.autoSpeed); // オート時のテキスト表示速度
+	; tf.current_ch_speed = parseInt(TG.config.chSpeed); // テキスト表示速度
+	; tf.current_auto_speed = parseInt(TG.config.autoSpeed); // オート時のテキスト表示速度
 
-	tf.text_skip ="ON"; // 未読スキップ
-	if(TG.config.unReadTextSkip != "true"){
-		tf.text_skip ="OFF";
-	}
+	; tf.text_skip ="ON"; // 未読スキップ
+	; if(TG.config.unReadTextSkip != "true"){
+	; 	tf.text_skip ="OFF";
+	; }
 
 	tf.fullscreen_mode = "ON"; // 전체화면 모드
 	if(TG.config.fullscreen != "true"){
@@ -819,69 +819,68 @@ fixボタンをクリア
 	/* 画像類のパス（ボタン） */
 	tf.btn_path_off = tf.img_path + 'c_btn.gif';
 	tf.btl_path_off = tf.img_path + 'c_btn.gif';
-	tf.btn_path_on_1  = tf.img_path + 'Config_Bt_Yellow_01.png';
-	tf.btn_path_on_2  = tf.img_path + 'Config_Bt_Pink_01.png';
+	; tf.btn_path_on_1  = tf.img_path + 'Config_Bt_Yellow_01.png';
+	; tf.btn_path_on_2  = tf.img_path + 'Config_Bt_Pink_01.png';
 
 	// ボタン画像の幅と高さ（※未読スキップ、ミュート除く）
-	tf.btn_width  = 54; // 幅
-	tf.btl_width  = 67; // 幅
-	tf.btn_height = 54; // 高さ
-	tf.btl_height  = 67; // 幅
+	; tf.btn_width  = 54; // 幅
+	; tf.btl_width  = 67; // 幅
+	; tf.btn_height = 54; // 高さ
+	; tf.btl_height  = 67; // 幅
 		
 	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x      = [1802, 1081, 1160, 1237, 1315, 1393, 1471, 1549, 1627, 1705, 1783]; // X座標（共通）
-	tf.config_y_ch    = 374; // テキスト速度のY座標
-	tf.config_y_auto  = 527; // オート速度のY座標
+	; tf.config_x      = [1802, 1081, 1160, 1237, 1315, 1393, 1471, 1549, 1627, 1705, 1783]; // X座標（共通）
+	; tf.config_y_ch    = 374; // テキスト速度のY座標
+	; tf.config_y_auto  = 527; // オート速度のY座標
 
-	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
-	tf.config_y_1_ch    = 368; // テキスト速度のY座標
-	tf.config_y_1_auto  = 521; // オート速度のY座標
+	; // ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
+	; tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
+	; tf.config_y_1_ch    = 368; // テキスト速度のY座標
+	; tf.config_y_1_auto  = 521; // オート速度のY座標
 
 	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
-	tf.config_num_ch;   // テキスト速度
-	tf.config_num_auto; // オート速度
+	; tf.config_num_ch;   // テキスト速度
+	; tf.config_num_auto; // オート速度
 
 	// 既読スキップの画像ファイル名を格納しておく変数
-;	tf.img_unread_skip;
+	; tf.img_unread_skip;
 
 	// テキスト速度のチェック
-	switch(tf.current_ch_speed){
-		case 100: tf.config_num_ch =  0; break;
-		case  80: tf.config_num_ch =  1; break;
-		case  50: tf.config_num_ch =  2; break;
-		case  40: tf.config_num_ch =  3; break;
-		case  30: tf.config_num_ch =  4; break;
-		case  25: tf.config_num_ch =  5; break;
-		case  20: tf.config_num_ch =  6; break;
-		case  11: tf.config_num_ch =  7; break;
-		case   8: tf.config_num_ch =  8; break;
-		case   5: tf.config_num_ch =  9; break;
+	; switch(tf.current_ch_speed){
+	; 	case 100: tf.config_num_ch =  0; break;
+	; 	case  80: tf.config_num_ch =  1; break;
+	; 	case  50: tf.config_num_ch =  2; break;
+	; 	case  40: tf.config_num_ch =  3; break;
+	; 	case  30: tf.config_num_ch =  4; break;
+	; 	case  25: tf.config_num_ch =  5; break;
+	; 	case  20: tf.config_num_ch =  6; break;
+	; 	case  11: tf.config_num_ch =  7; break;
+	; 	case   8: tf.config_num_ch =  8; break;
+	; 	case   5: tf.config_num_ch =  9; break;
 
-		default: break;
-	};
+	; 	default: break;
+	; };
 
+	; // オート時のテキスト速度のチェック
+	; switch(tf.current_auto_speed){
+	; 	case 5000: tf.config_num_auto =  0; break;
+	; 	case 4500: tf.config_num_auto =  1; break;
+	; 	case 4000: tf.config_num_auto =  2; break;
+	; 	case 3500: tf.config_num_auto =  3; break;
+	; 	case 3000: tf.config_num_auto =  4; break;
+	; 	case 2500: tf.config_num_auto =  5; break;
+	; 	case 2000: tf.config_num_auto =  6; break;
+	; 	case 1300: tf.config_num_auto =  7; break;
+	; 	case  800: tf.config_num_auto =  8; break;
+	; 	case  500: tf.config_num_auto =  9; break;
 
-	// オート時のテキスト速度のチェック
-	switch(tf.current_auto_speed){
-		case 5000: tf.config_num_auto =  0; break;
-		case 4500: tf.config_num_auto =  1; break;
-		case 4000: tf.config_num_auto =  2; break;
-		case 3500: tf.config_num_auto =  3; break;
-		case 3000: tf.config_num_auto =  4; break;
-		case 2500: tf.config_num_auto =  5; break;
-		case 2000: tf.config_num_auto =  6; break;
-		case 1300: tf.config_num_auto =  7; break;
-		case  800: tf.config_num_auto =  8; break;
-		case  500: tf.config_num_auto =  9; break;
-
-		default: break;
-	};
+	; 	default: break;
+	; };
 
 	// ミュート用のBGM、SE音量管理
-	if( typeof f.prev_vol_list === 'undefined'){
-		f.prev_vol_list = [tf.current_bgm_vol, tf.config_num_bgm, tf.current_se_vol, tf.config_num_se];
-	}
+	; if( typeof f.prev_vol_list === 'undefined'){
+	; 	f.prev_vol_list = [tf.current_bgm_vol, tf.config_num_bgm, tf.current_se_vol, tf.config_num_se];
+	; }
 
 	[endscript]
 
@@ -945,7 +944,6 @@ fixボタンをクリア
 ;------------------------------------------------------------------------------------------------------
 ; コンフィグ起動時の画面更新
 ;------------------------------------------------------------------------------------------------------
-
 
 	[call target="*load_skip_img3"]
 	[call target="*screen_mode"]
@@ -1014,8 +1012,8 @@ fixボタンをクリア
 
 
 ;-------------------------------------------------------------------------------
-; スキップ処理-ON
-;-------------------------------------------------------------------------------
+スキップ処理-ON
+-------------------------------------------------------------------------------
 *skip_on3
 [free layer="0" name="unread_off" time="10"]
 [image layer="0" name="unread_on" storage="../image/New_GUI/Config_UI/skip_on_03.png" x="1208" y="504"]
@@ -1038,6 +1036,7 @@ fixボタンをクリア
 [free layer="0" name="winscreen" time="10"]
 [image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
 [config_record_label skip="true"]
+[screen_full ]
 
 [return]
 ; 창화면
@@ -1045,6 +1044,7 @@ fixボタンをクリア
 [free layer="0" name="fullscreen" time="10"]
 [image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
 [config_record_label skip="true"]
+[screen_full ]
 
 [return]
 
