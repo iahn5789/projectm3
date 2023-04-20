@@ -11,13 +11,13 @@
     if (mutation.target.innerText === '전대용') {
       mutation.target.style.color = 'gray';
     } else if (mutation.target.innerText === '강여진') {
-      mutation.target.style.color = 'yellow';
+      mutation.target.style.color = '#FFA800';
     } else if (mutation.target.innerText === '진다영') {
-      mutation.target.style.color = 'pink';
+      mutation.target.style.color = '#FF8EE9';
     } else if (mutation.target.innerText === '설나희') {
-      mutation.target.style.color = 'blue';
+      mutation.target.style.color = '#4B7EFF';
     }else {
-      mutation.target.style.color = "white"
+      mutation.target.style.color = 'white';
     } 
   });
 });

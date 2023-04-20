@@ -16,7 +16,7 @@
 		[chara_config  talk_focus="none" ]
 
 		;クリック待ちボタンについて
-		[glyph fix="false" left="0" top="0" ]
+		[glyph fix="true" left="1533" top="935" ]
 
 		
 

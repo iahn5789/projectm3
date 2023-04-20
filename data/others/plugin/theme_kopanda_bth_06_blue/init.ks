@@ -23,16 +23,16 @@ if(TG.config.alreadyReadTextColor != "default"){
 [free name="chara_name_area" layer="message0"]
 
 ; メッセージウィンドウの設定
-[position layer="message0" width="1450" height="372" top="790" left="240"]
-[position layer="message0" frame="../image/New_GUI/Text_Box_01.png" face="The Jamsil3Regular" margint="50" marginl="300" marginr="130" marginb="75" opacity="200" page="fore"]
+[position layer="message0" width="1920" height="363" top="718" left="0"]
+[position layer="message0" frame="../image/New_GUI/Text_Box_01.png" face="NanumGothicRegular" margint="90" marginl="533" marginr="387" marginb="74" opacity="100%" page="fore"]
 
 ; 名前枠の設定
-[ptext name="chara_name_area" layer="message0" color="&mp.name_color" align="center" size="52" face="TheJamsil5Bold" x="250" y="850" width="300" color="green" ]
+[ptext name="chara_name_area" layer="message0" color="&mp.name_color" align="center" size="64" face="PyeongChangPeaceLight" x="202" y="857" width="242" color="white" ]
 [chara_config ptext="chara_name_area"]
 
 ; デフォルトのフォントカラー指定
-[font color="white"]
-[deffont color="white"]
+[font color="black"]
+[deffont color="black"]
 
 ; クリック待ちグリフの設定（on設定時のみ有効）
 [if exp="mp.glyph == 'on'"]
