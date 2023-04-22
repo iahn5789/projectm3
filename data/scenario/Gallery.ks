@@ -4,13 +4,13 @@
 
 [tb_clear_images]
 
-[mask  time="200"  ]
+[mask  time="200"  effect="slideInRight"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [freeimage layer="0"]
-[image layer=0 left=0 top=0 page=fore visible=true name=galleryt storage = ../image/New_GUI/CG_UI/CG_Bgi_01.png ]
+[image layer=0 left=0 top=0 page=fore visible=true name=gallery storage = ../image/New_GUI/CG_UI/CG_Bgi_01.png ]
+
 [_tb_end_tyrano_code]
 
-[mask_off  time="200"  ]
 [tb_cg  id="base01"  ]
 [tb_cg  id="base07"  ]
 [tb_cg  id="kang06"  ]
@@ -34,6 +34,7 @@
 [button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
 [_tb_end_tyrano_code]
 
+[mask_off  time="200"  effect="slideOutRight"  ]
 *base_01
 
 [tb_ptext_hide  time="0"  ]
@@ -71,8 +72,12 @@
 [button name="pageback" storage="Gallery.ks" target="base_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="base_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
-
-
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="7"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="8"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="9"]
+[tb_ptext_show x="1023" y="594" size="17" color="0xFFFFFF" time="0" text="10"]
+[tb_ptext_show x="1418" y="594" size="17" color="0xFFFFFF" time="0" text="11"]
+[tb_ptext_show x="1823" y="594" size="17" color="0xFFFFFF" time="0" text="12"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="../bgimage/CG/IU2.jpg"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="base07"  ]
@@ -110,7 +115,12 @@
 [button name="pageback" storage="Gallery.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
-
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="1"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="2"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="3"]
+[tb_ptext_show x="1025" y="594" size="17" color="0xFFFFFF" time="0" text="4"]
+[tb_ptext_show x="1420" y="594" size="17" color="0xFFFFFF" time="0" text="5"]
+[tb_ptext_show x="1825" y="594" size="17" color="0xFFFFFF" time="0" text="6"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="kang01"  ]
@@ -134,6 +144,12 @@
 [button name="pageback" storage="Gallery.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="kang_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="7"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="8"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="9"]
+[tb_ptext_show x="1023" y="594" size="17" color="0xFFFFFF" time="0" text="10"]
+[tb_ptext_show x="1418" y="594" size="17" color="0xFFFFFF" time="0" text="11"]
+[tb_ptext_show x="1823" y="594" size="17" color="0xFFFFFF" time="0" text="12"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="kang07"  ]
@@ -171,7 +187,12 @@
 [button name="pageback" storage="Gallery.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
-
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="1"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="2"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="3"]
+[tb_ptext_show x="1025" y="594" size="17" color="0xFFFFFF" time="0" text="4"]
+[tb_ptext_show x="1420" y="594" size="17" color="0xFFFFFF" time="0" text="5"]
+[tb_ptext_show x="1825" y="594" size="17" color="0xFFFFFF" time="0" text="6"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="jin01"  ]
@@ -195,6 +216,12 @@
 [button name="pageback" storage="Gallery.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="jin_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="7"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="8"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="9"]
+[tb_ptext_show x="1023" y="594" size="17" color="0xFFFFFF" time="0" text="10"]
+[tb_ptext_show x="1418" y="594" size="17" color="0xFFFFFF" time="0" text="11"]
+[tb_ptext_show x="1823" y="594" size="17" color="0xFFFFFF" time="0" text="12"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="jin07"  ]
@@ -232,7 +259,12 @@
 [button name="pageback" storage="Gallery.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
-
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="1"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="2"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="3"]
+[tb_ptext_show x="1025" y="594" size="17" color="0xFFFFFF" time="0" text="4"]
+[tb_ptext_show x="1420" y="594" size="17" color="0xFFFFFF" time="0" text="5"]
+[tb_ptext_show x="1825" y="594" size="17" color="0xFFFFFF" time="0" text="6"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="sul01"  ]
@@ -256,6 +288,12 @@
 [button name="pageback" storage="Gallery.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="sul_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
+[tb_ptext_show x="1025" y="312" size="17" color="0xFFFFFF" time="0" text="7"]
+[tb_ptext_show x="1420" y="312" size="17" color="0xFFFFFF" time="0" text="8"]
+[tb_ptext_show x="1825" y="312" size="17" color="0xFFFFFF" time="0" text="9"]
+[tb_ptext_show x="1023" y="594" size="17" color="0xFFFFFF" time="0" text="10"]
+[tb_ptext_show x="1418" y="594" size="17" color="0xFFFFFF" time="0" text="11"]
+[tb_ptext_show x="1823" y="594" size="17" color="0xFFFFFF" time="0" text="12"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="sul07"  ]
