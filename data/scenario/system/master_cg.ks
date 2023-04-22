@@ -1,5 +1,6 @@
 *base01 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
 [image  name="cg_image"  layer="1"  zindex="10"  time="100"  storage="CG/IU.jpg"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
 [l] 
 [awakegame] 
@@ -20,6 +21,7 @@
 [awakegame] 
 *base07 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
 [image  name="cg_image"  layer="1"  zindex="10"  time="100"  storage="CG/IU2.jpg"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
 [l] 
 [awakegame] 
@@ -46,6 +48,7 @@
 [awakegame] 
 *kang06 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
 [image  name="cg_image"  layer="1"  zindex="10"  time="100"  storage="CG/IU5.jpg"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
 [l] 
 [awakegame] 
@@ -57,6 +60,7 @@
 [awakegame] 
 *kang09 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
 [image  name="cg_image"  layer="1"  zindex="10"  time="100"  storage="CG/IU6.jpg"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
 [l] 
 [awakegame] 
@@ -83,6 +87,7 @@
 [awakegame] 
 *jin08 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
 [image  name="cg_image"  layer="1"  zindex="10"  time="100"  storage="CG/IU4.jpg"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
 [l] 
 [awakegame] 
@@ -103,6 +108,7 @@
 [awakegame] 
 *sul05 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
 [image  name="cg_image"  layer="1"  zindex="10"  time="100"  storage="CG/IU3.jpg"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
 [l] 
 [awakegame] 
