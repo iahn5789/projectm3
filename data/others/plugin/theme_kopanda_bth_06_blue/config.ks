@@ -3,6 +3,7 @@
 ;=========================================
 
 ;	メッセージレイヤ0を不可視に
+[mask  time="200"  effect="slideInRight"  color="0x000000"  ]
 
 *sound
 	[layopt layer="message0" visible="false"]
@@ -170,7 +171,7 @@
    [button name="text" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
    [button name="system" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
    
-
+[mask_off  time="200"  effect="slideOutRight"  ]
 ;	未読スキップ-ON
 ;	[button name="unread_on"  fix="true" target="*skip_on"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="574.5" y="711"]
 
