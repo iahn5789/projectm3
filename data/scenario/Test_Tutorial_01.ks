@@ -5,6 +5,8 @@
 [tb_keyconfig  flag="0"  ]
 [cm  ]
 [tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
 [tb_start_tyrano_code]

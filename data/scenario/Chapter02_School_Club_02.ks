@@ -476,5 +476,5 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[jump  storage="Chapter02_School_Club_02.ks"  target=""  ]
+[jump  storage="Test_Tutorial_01.ks"  target="*tutorial"  ]
 [s  ]
