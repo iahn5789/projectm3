@@ -1,11 +1,9 @@
-;=========================================
-; コンフィグ モード　画面作成
-;=========================================
-
 ;	メッセージレイヤ0を不可視に
 [mask  time="200"  effect="slideInRight"  color="0x000000"  ]
 
 *sound
+	[mask  time="100"  effect="slideInRight"  color="0xffffff"  ]
+
 	[layopt layer="message0" visible="false"]
 
 ;	fixボタンをクリア
@@ -15,10 +13,10 @@
 	[stop_keyconfig]
 
 ;	レイヤーモードの解放
-	[free_layermode time="100" wait="true"]
+	[free_layermode time="100" wait="false"]
 
 ;	カメラのリセット
-	[reset_camera time="100" wait="true"]
+	[reset_camera time="100" wait="false"]
 
 ;	前景レイヤの中身をすべて空に
 	[iscript]
@@ -106,27 +104,20 @@
 
 		default: break;
 	};
-
 	// ミュート用のBGM、SE音量管理
 	if( typeof f.prev_vol_list === 'undefined'){
 		f.prev_vol_list = [tf.current_bgm_vol, tf.config_num_bgm, tf.current_se_vol, tf.config_num_se];
 	}
-
 	[endscript]
-
 [cm]
-
 ;------------------------------------------------------------------------------------------------------
-
 ;	コンフィグ用の背景を読み込んでトランジション
-	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_01.png'" time="100" ]
+	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_01.png'" time="1" ]
 
 ;	戻るボタン
 	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle" x="33" y="965"]
 
 [jump target="*config_page"]
-
-
 
 *config_page
 [clearstack]
@@ -167,17 +158,11 @@
 ;------------------------------------------------------------------------------------------------------
 ; 테스트용 버튼 이미지 테스트 민아럼ㄴㅇ러
 ;------------------------------------------------------------------------------------------------------
-   [button name="sound" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_02.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
-   [button name="text" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
-   [button name="system" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
+   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_02.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
+   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
+   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
    
-[mask_off  time="200"  effect="slideOutRight"  ]
-;	未読スキップ-ON
-;	[button name="unread_on"  fix="true" target="*skip_on"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="574.5" y="711"]
-
-;	未読スキップ-OFF
-;	[button name="unread_off" fix="true" target="*skip_off" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="786" y="711"]
-
+[mask_off  time="100"  effect="slideOutLeft"  ]
 ;------------------------------------------------------------------------------------------------------
 ; コンフィグ起動時の画面更新
 ;------------------------------------------------------------------------------------------------------
@@ -190,7 +175,6 @@
 	; [test_message_start]
 
 [s]
-
 ;--------------------------------------------------------------------------------
 ; コンフィグモードの終了
 ;--------------------------------------------------------------------------------
@@ -211,12 +195,6 @@
 
 ;	ゲーム復帰
 	[awakegame]
-
-;================================================================================
-
-; ボタンクリック時の処理
-
-;================================================================================
 ;--------------------------------------------------------------------------------
 ; BGM音量
 ;--------------------------------------------------------------------------------
@@ -236,20 +214,15 @@
 		tf.config_num_bgm  = f.prev_vol_list[1];
 	}
 [endscript]
-
 *vol_bgm_change
-
 	[free layer="0" name="bgmvol" time="0" wait="true"]
 	[call target="*icon_bgm"]
 	[bgmopt volume="&tf.current_bgm_vol"]
-
 [return]
-
 ;--------------------------------------------------------------------------------
 ; SE音量
 ;--------------------------------------------------------------------------------
 *vol_se_mute
-
 [iscript]
 	// ミュート
 	if( tf.current_se_vol != 0 ){
@@ -273,46 +246,9 @@
 
 [return]
 
-;---------------------------------------------------------------------------------
-
-
-
-;-------------------------------------------------------------------------------
-; スキップ処理-ON
-;-------------------------------------------------------------------------------
-;*skip_on
-;[free layer="0" name="unread_off" time="10"]
-;[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="574.5" y="711"]
-;[config_record_label skip="true"]
-
-[return]
-
-;-------------------------------------------------------------------------------
-; スキップ処理-OFF
-;-------------------------------------------------------------------------------
-;*skip_off
-;[free layer="0" name="unread_on" time="10"]
-;[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="786" y="711"]
-;[config_record_label skip="false"]
-
-[return]
-
-;================================================================================
-
-; サブルーチン
-
-;================================================================================
-;--------------------------------------------------------------------------------
-
-; BGM更新
-
-;--------------------------------------------------------------------------------
 *icon_bgm
-
 	[iscript]
-
 	// 設定した音量によって色付き画像の表示・非表示を切替える
-
 	$( ".bgm_img_0").css( "visibility", tf.config_num_bgm == 0 ? 'visible' : 'hidden' );
 	$( ".bgm_img_1").css( "visibility", tf.config_num_bgm >  0 ? 'visible' : 'hidden' );
 	$( ".bgm_img_2").css( "visibility", tf.config_num_bgm >  1 ? 'visible' : 'hidden' );
@@ -324,20 +260,13 @@
 	$( ".bgm_img_8").css( "visibility", tf.config_num_bgm >  7 ? 'visible' : 'hidden' );
 	$( ".bgm_img_9").css( "visibility", tf.config_num_bgm >  8 ? 'visible' : 'hidden' );
 	$(".bgm_img_10").css( "visibility", tf.config_num_bgm >  9 ? 'visible' : 'hidden' );
-
 	[endscript]
-
 [return]
-
 ;--------------------------------------------------------------------------------
-
 ; SE更新
-
 ;--------------------------------------------------------------------------------
 *icon_se
-
 	[iscript]
-
 	$(".se_img_0").css( "visibility", tf.config_num_se == 0 ? 'visible' : 'hidden');
 	$(".se_img_1").css( "visibility", tf.config_num_se >  0 ? 'visible' : 'hidden');
 	$(".se_img_2").css( "visibility", tf.config_num_se >  1 ? 'visible' : 'hidden');
@@ -349,31 +278,13 @@
 	$(".se_img_8").css( "visibility", tf.config_num_se >  7 ? 'visible' : 'hidden');
 	$(".se_img_9").css( "visibility", tf.config_num_se >  8 ? 'visible' : 'hidden');
 	$(".se_img_10").css("visibility", tf.config_num_se >  9 ? 'visible' : 'hidden');
-
 	[endscript]
-
 [return]
-
-;--------------------------------------------------------------------------------
-
-;*load_skip_img
-;[if exp="tf.text_skip == 'ON'"]
-;	[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="574.5" y="711"]
-;[else]
-;	[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="786" y="711"]
-;[endif]
-
-[return]
-
 ;================================================================================
-
 ; 画像の読み込み（コンフィグ画面の起動時のみコール）
-
 ;================================================================================
 *load_img
-
 	[layopt layer="0" visible="true"]
-
 ;	BGM
 	[image layer="0" name="bgm_img_0"  storage="&tf.img_path + 'Config_Mute_02.png'"  x="1802"  y="338" ]
 	[image layer="0" name="bgm_img_1"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'"  x="&tf.config_x[1]"  y="&tf.config_y_bgm"]
@@ -402,781 +313,4 @@
 
 [return]
 
-[s]
-
-*text
-
-fixボタンをクリア
-	[clearfix]
-
-;	キーコンフィグの無効化
-	[stop_keyconfig]
-
-;	レイヤーモードの解放
-	[free_layermode time="100" wait="true"]
-
-;	カメラのリセット
-	[reset_camera time="100" wait="true"]
-
-;	前景レイヤの中身をすべて空に
-	[iscript]
-		$(".layer_camera").empty();
-		$("#bgmovie").remove();
-	[endscript]
-
-;	メニューボタン非表示
-	[hidemenubutton]
-
-	[iscript]
-
-	TG.config.autoRecordLabel = "true"; // ラベル通過記録を有効に
-
-	tf.current_ch_speed = parseInt(TG.config.chSpeed); // テキスト表示速度
-	tf.current_auto_speed = parseInt(TG.config.autoSpeed); // オート時のテキスト表示速度
-
-	tf.text_skip ="ON"; // 未読スキップ
-	if(TG.config.unReadTextSkip != "true"){
-		tf.text_skip ="OFF";
-	}
-
-	[endscript]
-
-	[iscript]
-
-	/* 画像類のパス */
-	tf.img_path = '../image/New_GUI/Config_UI/';
-
-	/* 画像類のパス（ボタン） */
-	tf.btn_path_off = tf.img_path + 'c_btn.gif';
-	tf.btl_path_off = tf.img_path + 'c_btn.gif';
-	tf.btn_path_on_1  = tf.img_path + 'Config_Bt_Yellow_01.png';
-	tf.btn_path_on_2  = tf.img_path + 'Config_Bt_Pink_01.png';
-
-	// ボタン画像の幅と高さ（※未読スキップ、ミュート除く）
-	tf.btn_width  = 54; // 幅
-	tf.btl_width  = 67; // 幅
-	tf.btn_height = 54; // 高さ
-	tf.btl_height  = 67; // 幅
-		
-	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x      = [1802, 1081, 1160, 1237, 1315, 1393, 1471, 1549, 1627, 1705, 1783]; // X座標（共通）
-	tf.config_y_ch    = 374; // テキスト速度のY座標
-	tf.config_y_auto  = 527; // オート速度のY座標
-
-	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
-	tf.config_y_1_ch    = 368; // テキスト速度のY座標
-	tf.config_y_1_auto  = 521; // オート速度のY座標
-
-	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
-	tf.config_num_ch;   // テキスト速度
-	tf.config_num_auto; // オート速度
-
-	// 既読スキップの画像ファイル名を格納しておく変数
-;	tf.img_unread_skip;
-
-	// テキスト速度のチェック
-	switch(tf.current_ch_speed){
-		case 100: tf.config_num_ch =  0; break;
-		case  80: tf.config_num_ch =  1; break;
-		case  50: tf.config_num_ch =  2; break;
-		case  40: tf.config_num_ch =  3; break;
-		case  30: tf.config_num_ch =  4; break;
-		case  25: tf.config_num_ch =  5; break;
-		case  20: tf.config_num_ch =  6; break;
-		case  11: tf.config_num_ch =  7; break;
-		case   8: tf.config_num_ch =  8; break;
-		case   5: tf.config_num_ch =  9; break;
-
-		default: break;
-	};
-
-
-	// オート時のテキスト速度のチェック
-	switch(tf.current_auto_speed){
-		case 5000: tf.config_num_auto =  0; break;
-		case 4500: tf.config_num_auto =  1; break;
-		case 4000: tf.config_num_auto =  2; break;
-		case 3500: tf.config_num_auto =  3; break;
-		case 3000: tf.config_num_auto =  4; break;
-		case 2500: tf.config_num_auto =  5; break;
-		case 2000: tf.config_num_auto =  6; break;
-		case 1300: tf.config_num_auto =  7; break;
-		case  800: tf.config_num_auto =  8; break;
-		case  500: tf.config_num_auto =  9; break;
-
-		default: break;
-	};
-
-	// ミュート用のBGM、SE音量管理
-	if( typeof f.prev_vol_list === 'undefined'){
-		f.prev_vol_list = [tf.current_bgm_vol, tf.config_num_bgm, tf.current_se_vol, tf.config_num_se];
-	}
-
-	[endscript]
-
-[cm]
-
-	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_Text_01.png'" time="100" ]
-
-;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="33" y="965"]
-
-[jump target="*config_page2"]
-
-*config_page2
-[clearstack]
-;------------------------------------------------------------------------------------------------------
-; テキスト速度
-;------------------------------------------------------------------------------------------------------
-	[button name="ch,ch_100" fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[1]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed =100; tf.config_num_ch = 0"]
-	[button name="ch,ch_80"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[2]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 80; tf.config_num_ch = 1"]
-	[button name="ch,ch_50"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[3]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 50; tf.config_num_ch = 2"]
-	[button name="ch,ch_40"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[4]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 40; tf.config_num_ch = 3"]
-	[button name="ch,ch_30"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[5]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 30; tf.config_num_ch = 4"]
-	[button name="ch,ch_25"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[6]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 25; tf.config_num_ch = 5"]
-	[button name="ch,ch_20"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[7]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 20; tf.config_num_ch = 6"]
-	[button name="ch,ch_11"  fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[8]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 11; tf.config_num_ch = 7"]
-	[button name="ch,ch_8"   fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[9]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed =  8; tf.config_num_ch = 8"]
-	[button name="ch,ch_5"   fix="true" target="*ch_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_ch" exp="tf.set_ch_speed =  5; tf.config_num_ch = 9"]
-
-;------------------------------------------------------------------------------------------------------
-; オート速度
-;------------------------------------------------------------------------------------------------------
-	[button name="auto,auto_5000" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[1]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 5000; tf.config_num_auto = 0"]
-	[button name="auto,auto_4500" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[2]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 4500; tf.config_num_auto = 1"]
-	[button name="auto,auto_4000" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[3]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 4000; tf.config_num_auto = 2"]
-	[button name="auto,auto_3500" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[4]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 3500; tf.config_num_auto = 3"]
-	[button name="auto,auto_3000" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[5]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 3000; tf.config_num_auto = 4"]
-	[button name="auto,auto_2500" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[6]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 2500; tf.config_num_auto = 5"]
-	[button name="auto,auto_2000" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[7]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 2000; tf.config_num_auto = 6"]
-	[button name="auto,auto_1300" fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[8]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 1300; tf.config_num_auto = 7"]
-	[button name="auto,auto_800"  fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[9]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed =  800; tf.config_num_auto = 8"]
-	[button name="auto,auto_500"  fix="true" target="*auto_speed_change2" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_auto" exp="tf.set_auto_speed =  500; tf.config_num_auto = 9"]
-;------------------------------------------------------------------------------------------------------
-; 테스트용 버튼 이미지 테스트 민아럼ㄴㅇ러
-;------------------------------------------------------------------------------------------------------
-   [button name="sound" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
-   [button name="text" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_02.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
-   [button name="system" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
-   
-;	未読スキップ-ON
-;	[button name="unread_on"  fix="true" target="*skip_on"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="574.5" y="711"]
-
-;	未読スキップ-OFF
-;	[button name="unread_off" fix="true" target="*skip_off" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'skip_hover.png'" width="186" height="66" x="786" y="711"]
-
-;------------------------------------------------------------------------------------------------------
-; コンフィグ起動時の画面更新
-;------------------------------------------------------------------------------------------------------
-
-	[call target="*load_img2"]
-	[call target="*icon_ch2"]
-	[call target="*icon_auto2"]
-;	[call target="*load_skip_img"]
-
-	[test_message_start]
-
-[s]
-
-;--------------------------------------------------------------------------------
-; コンフィグモードの終了
-;--------------------------------------------------------------------------------
-*backtitle2
-[cm]
-
-;	テキスト速度のサンプル表示に使用していたメッセージレイヤを非表示に
-	[layopt layer="message1" visible="false"]
-
-;	fixボタンをクリア
-	[clearfix]
-
-;	キーコンフィグの有効化
-	[start_keyconfig]
-
-;	コールスタックのクリア
-	[clearstack]
-
-;	ゲーム復帰
-	[awakegame]
-
-;================================================================================
-
-; ボタンクリック時の処理
-
-;================================================================================
-;--------------------------------------------------------------------------------
-
-
-;---------------------------------------------------------------------------------
-; テキスト速度
-;--------------------------------------------------------------------------------
-*ch_speed_change2
-
-	[iscript]
-	tf.current_ch_speed = tf.set_ch_speed;
-	[endscript]
-
-	[free layer="0" name="ch" time="0" wait="true"]
-	[call target="*icon_ch2"]
-	[configdelay speed="&tf.set_ch_speed"]
-
-	[test_message_reset]
-
-[return]
-
-;--------------------------------------------------------------------------------
-; オート速度
-;--------------------------------------------------------------------------------
-*auto_speed_change2
-
-	[iscript]
-	tf.current_auto_speed = tf.set_auto_speed;
-	[endscript]
-
-	[free layer="0" name="auto" time="0" wait="true"]
-	[call target="*icon_auto2"]
-	[autoconfig speed="&tf.set_auto_speed"]
-
-[return]
-
-
-;-------------------------------------------------------------------------------
-; スキップ処理-ON
-;-------------------------------------------------------------------------------
-;*skip_on
-;[free layer="0" name="unread_off" time="10"]
-;[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="574.5" y="711"]
-;[config_record_label skip="true"]
-
-[return]
-
-;-------------------------------------------------------------------------------
-; スキップ処理-OFF
-;-------------------------------------------------------------------------------
-;*skip_off
-;[free layer="0" name="unread_on" time="10"]
-;[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="786" y="711"]
-;[config_record_label skip="false"]
-
-[return]
-
-;================================================================================
-
-; サブルーチン
-
-;================================================================================
-;--------------------------------------------------------------------------------
-
-; BGM更新
-
-;--------------------------------------------------------------------------------
-
-;--------------------------------------------------------------------------------
-
-; テキスト速度更新
-
-;--------------------------------------------------------------------------------
-*icon_ch2
-
-	[iscript]
-
-	$(".ch_img_1").css( "visibility", tf.config_num_ch >= 0 ? 'visible' : 'hidden');
-	$(".ch_img_2").css( "visibility", tf.config_num_ch >  0 ? 'visible' : 'hidden');
-	$(".ch_img_3").css( "visibility", tf.config_num_ch >  1 ? 'visible' : 'hidden');
-	$(".ch_img_4").css( "visibility", tf.config_num_ch >  2 ? 'visible' : 'hidden');
-	$(".ch_img_5").css( "visibility", tf.config_num_ch >  3 ? 'visible' : 'hidden');
-	$(".ch_img_6").css( "visibility", tf.config_num_ch >  4 ? 'visible' : 'hidden');
-	$(".ch_img_7").css( "visibility", tf.config_num_ch >  5 ? 'visible' : 'hidden');
-	$(".ch_img_8").css( "visibility", tf.config_num_ch >  6 ? 'visible' : 'hidden');
-	$(".ch_img_9").css( "visibility", tf.config_num_ch >  7 ? 'visible' : 'hidden');
-	$(".ch_img_10").css("visibility", tf.config_num_ch >  8 ? 'visible' : 'hidden');
-
-	[endscript]
-
-[return]
-
-;--------------------------------------------------------------------------------
-
-; オート速度更新
-
-;--------------------------------------------------------------------------------
-*icon_auto2
-
-	[iscript]
-
-	$(".auto_img_1").css( "visibility", tf.config_num_auto >= 0 ? 'visible' : 'hidden');
-	$(".auto_img_2").css( "visibility", tf.config_num_auto >  0 ? 'visible' : 'hidden');
-	$(".auto_img_3").css( "visibility", tf.config_num_auto >  1 ? 'visible' : 'hidden');
-	$(".auto_img_4").css( "visibility", tf.config_num_auto >  2 ? 'visible' : 'hidden');
-	$(".auto_img_5").css( "visibility", tf.config_num_auto >  3 ? 'visible' : 'hidden');
-	$(".auto_img_6").css( "visibility", tf.config_num_auto >  4 ? 'visible' : 'hidden');
-	$(".auto_img_7").css( "visibility", tf.config_num_auto >  5 ? 'visible' : 'hidden');
-	$(".auto_img_8").css( "visibility", tf.config_num_auto >  6 ? 'visible' : 'hidden');
-	$(".auto_img_9").css( "visibility", tf.config_num_auto >  7 ? 'visible' : 'hidden');
-	$(".auto_img_10").css("visibility", tf.config_num_auto >  8 ? 'visible' : 'hidden');
-
-	[endscript]
-
-[return]
-
-;*load_skip_img
-;[if exp="tf.text_skip == 'ON'"]
-;	[image layer="0" name="unread_on" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_on.png" x="574.5" y="711"]
-;[else]
-;	[image layer="0" name="unread_off" storage="../others/plugin/theme_kopanda_bth_06_blue/image/config/skip_off.png" x="786" y="711"]
-;[endif]
-
-[return]
-
-;================================================================================
-
-; 画像の読み込み（コンフィグ画面の起動時のみコール）
-
-;================================================================================
-*load_img2
-
-	[layopt layer="0" visible="true"]
-
-;	テキスト速度
-	[image layer="0" name="ch_img_1"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[1]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_2"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[2]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_3"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[3]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_4"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[4]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_5"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[5]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_6"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[6]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_7"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[7]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_8"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[8]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_9"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[9]"  y="&tf.config_y_ch"]
-	[image layer="0" name="ch_img_10" storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[10]" y="&tf.config_y_ch"]
-
-;	オート速度
-	[image layer="0" name="auto_img_1"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[1]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_2"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[2]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_3"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[3]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_4"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[4]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_5"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[5]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_6"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[6]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_7"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[7]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_8"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[8]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_9"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[9]"  y="&tf.config_y_auto"]
-	[image layer="0" name="auto_img_10" storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[10]" y="&tf.config_y_auto"]
-
-[return]
-[s]
-
-*system
-
-fixボタンをクリア
-	[clearfix]
-
-;	キーコンフィグの無効化
-	[stop_keyconfig]
-
-;	レイヤーモードの解放
-	[free_layermode time="100" wait="true"]
-
-;	カメラのリセット
-	[reset_camera time="100" wait="true"]
-
-;	前景レイヤの中身をすべて空に
-	[iscript]
-		$(".layer_camera").empty();
-		$("#bgmovie").remove();
-	[endscript]
-
-;	メニューボタン非表示
-	[hidemenubutton]
-
-	[iscript]
-
-	TG.config.autoRecordLabel = "true"; // ラベル通過記録を有効に
-
-	; tf.current_ch_speed = parseInt(TG.config.chSpeed); // テキスト表示速度
-	; tf.current_auto_speed = parseInt(TG.config.autoSpeed); // オート時のテキスト表示速度
-
-	; tf.text_skip ="ON"; // 未読スキップ
-	; if(TG.config.unReadTextSkip != "true"){
-	; 	tf.text_skip ="OFF";
-	; }
-
-	tf.fullscreen_mode = "ON"; // 전체화면 모드
-	if(TG.config.fullscreen != "true"){
-    tf.fullscreen_mode = "OFF";
-	}
-
-	tf.window_mode = "ON"; // 창 모드
-	if(TG.config.windowMode != "true"){
-    tf.window_mode = "OFF";
-	}
-
-	[endscript]
-
-	[iscript]
-
-	/* 画像類のパス */
-	tf.img_path = '../image/New_GUI/Config_UI/';
-
-	/* 画像類のパス（ボタン） */
-	tf.btn_path_off = tf.img_path + 'c_btn.gif';
-	tf.btl_path_off = tf.img_path + 'c_btn.gif';
-	; tf.btn_path_on_1  = tf.img_path + 'Config_Bt_Yellow_01.png';
-	; tf.btn_path_on_2  = tf.img_path + 'Config_Bt_Pink_01.png';
-
-	// ボタン画像の幅と高さ（※未読スキップ、ミュート除く）
-	; tf.btn_width  = 54; // 幅
-	; tf.btl_width  = 67; // 幅
-	; tf.btn_height = 54; // 高さ
-	; tf.btl_height  = 67; // 幅
-		
-	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	; tf.config_x      = [1802, 1081, 1160, 1237, 1315, 1393, 1471, 1549, 1627, 1705, 1783]; // X座標（共通）
-	; tf.config_y_ch    = 374; // テキスト速度のY座標
-	; tf.config_y_auto  = 527; // オート速度のY座標
-
-	; // ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	; tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
-	; tf.config_y_1_ch    = 368; // テキスト速度のY座標
-	; tf.config_y_1_auto  = 521; // オート速度のY座標
-
-	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
-	; tf.config_num_ch;   // テキスト速度
-	; tf.config_num_auto; // オート速度
-
-	// 既読スキップの画像ファイル名を格納しておく変数
-	; tf.img_unread_skip;
-
-	// テキスト速度のチェック
-	; switch(tf.current_ch_speed){
-	; 	case 100: tf.config_num_ch =  0; break;
-	; 	case  80: tf.config_num_ch =  1; break;
-	; 	case  50: tf.config_num_ch =  2; break;
-	; 	case  40: tf.config_num_ch =  3; break;
-	; 	case  30: tf.config_num_ch =  4; break;
-	; 	case  25: tf.config_num_ch =  5; break;
-	; 	case  20: tf.config_num_ch =  6; break;
-	; 	case  11: tf.config_num_ch =  7; break;
-	; 	case   8: tf.config_num_ch =  8; break;
-	; 	case   5: tf.config_num_ch =  9; break;
-
-	; 	default: break;
-	; };
-
-	; // オート時のテキスト速度のチェック
-	; switch(tf.current_auto_speed){
-	; 	case 5000: tf.config_num_auto =  0; break;
-	; 	case 4500: tf.config_num_auto =  1; break;
-	; 	case 4000: tf.config_num_auto =  2; break;
-	; 	case 3500: tf.config_num_auto =  3; break;
-	; 	case 3000: tf.config_num_auto =  4; break;
-	; 	case 2500: tf.config_num_auto =  5; break;
-	; 	case 2000: tf.config_num_auto =  6; break;
-	; 	case 1300: tf.config_num_auto =  7; break;
-	; 	case  800: tf.config_num_auto =  8; break;
-	; 	case  500: tf.config_num_auto =  9; break;
-
-	; 	default: break;
-	; };
-
-	// ミュート用のBGM、SE音量管理
-	; if( typeof f.prev_vol_list === 'undefined'){
-	; 	f.prev_vol_list = [tf.current_bgm_vol, tf.config_num_bgm, tf.current_se_vol, tf.config_num_se];
-	; }
-
-	[endscript]
-
-[cm]
-
-	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_System_01.png'" time="100" ]
-
-;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle3" x="33" y="965"]
-
-[jump target="*config_page3"]
-
-*config_page3
-[clearstack]
-;------------------------------------------------------------------------------------------------------
-; ; テキスト速度
-; ;------------------------------------------------------------------------------------------------------
-; 	[button name="ch,ch_100" fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[1]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed =100; tf.config_num_ch = 0"]
-; 	[button name="ch,ch_80"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[2]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 80; tf.config_num_ch = 1"]
-; 	[button name="ch,ch_50"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[3]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 50; tf.config_num_ch = 2"]
-; 	[button name="ch,ch_40"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[4]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 40; tf.config_num_ch = 3"]
-; 	[button name="ch,ch_30"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[5]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 30; tf.config_num_ch = 4"]
-; 	[button name="ch,ch_25"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[6]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 25; tf.config_num_ch = 5"]
-; 	[button name="ch,ch_20"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[7]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 20; tf.config_num_ch = 6"]
-; 	[button name="ch,ch_11"  fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[8]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed = 11; tf.config_num_ch = 7"]
-; 	[button name="ch,ch_8"   fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[9]"  y="&tf.config_y_1_ch" exp="tf.set_ch_speed =  8; tf.config_num_ch = 8"]
-; 	[button name="ch,ch_5"   fix="true" target="*ch_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_ch" exp="tf.set_ch_speed =  5; tf.config_num_ch = 9"]
-
-; ;------------------------------------------------------------------------------------------------------
-; ; オート速度
-; ;------------------------------------------------------------------------------------------------------
-; 	[button name="auto,auto_5000" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[1]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 5000; tf.config_num_auto = 0"]
-; 	[button name="auto,auto_4500" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[2]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 4500; tf.config_num_auto = 1"]
-; 	[button name="auto,auto_4000" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[3]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 4000; tf.config_num_auto = 2"]
-; 	[button name="auto,auto_3500" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[4]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 3500; tf.config_num_auto = 3"]
-; 	[button name="auto,auto_3000" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[5]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 3000; tf.config_num_auto = 4"]
-; 	[button name="auto,auto_2500" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[6]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 2500; tf.config_num_auto = 5"]
-; 	[button name="auto,auto_2000" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[7]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 2000; tf.config_num_auto = 6"]
-; 	[button name="auto,auto_1300" fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[8]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed = 1300; tf.config_num_auto = 7"]
-; 	[button name="auto,auto_800"  fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[9]"  y="&tf.config_y_1_auto" exp="tf.set_auto_speed =  800; tf.config_num_auto = 8"]
-; 	[button name="auto,auto_500"  fix="true" target="*auto_speed_change3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_auto" exp="tf.set_auto_speed =  500; tf.config_num_auto = 9"]
-; ;------------------------------------------------------------------------------------------------------
-; 테스트용 버튼 이미지 테스트 민아럼ㄴㅇ러
-;------------------------------------------------------------------------------------------------------
-   [button name="sound" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
-   [button name="text" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
-   [button name="system" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_02.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
-   
-	未読スキップ-ON
-	[button name="unread_on"  fix="true" target="*skip_on3"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_On_02.png'" width="259" height="60" x="1208" y="504"]
-
-	未読スキップ-OFF
-	[button name="unread_off" fix="true" target="*skip_off3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_Off_02.png'" width="259" height="60" x="1530" y="504"]
-
-	; 전체화면
-	[button name="fullscreen"  fix="true" target="*fullscreen"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Fullscreen_02.png'" width="259" height="60" x="1208" y="357"]
-
-	; 창화면
-	[button name="winscreen" fix="true" target="*winscreen" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Winscreen_02.png'" width="259" height="60" x="1530" y="357"]
-
-;------------------------------------------------------------------------------------------------------
-; コンフィグ起動時の画面更新
-;------------------------------------------------------------------------------------------------------
-
-	[call target="*load_skip_img3"]
-	[call target="*screen_mode"]
-[s]
-
-;--------------------------------------------------------------------------------
-; コンフィグモードの終了
-;--------------------------------------------------------------------------------
-*backtitle3
-[cm]
-
-;	テキスト速度のサンプル表示に使用していたメッセージレイヤを非表示に
-	[layopt layer="message1" visible="false"]
-
-;	fixボタンをクリア
-	[clearfix]
-
-;	キーコンフィグの有効化
-	[start_keyconfig]
-
-;	コールスタックのクリア
-	[clearstack]
-
-;	ゲーム復帰
-	[awakegame]
-
-;================================================================================
-
-; ボタンクリック時の処理
-
-;================================================================================
-;--------------------------------------------------------------------------------
-
-
-;---------------------------------------------------------------------------------
-; テキスト速度
-;--------------------------------------------------------------------------------
-; *ch_speed_change3
-
-; 	[iscript]
-; 	tf.current_ch_speed = tf.set_ch_speed;
-; 	[endscript]
-
-; 	[free layer="0" name="ch" time="0" wait="true"]
-; 	[call target="*icon_ch3"]
-; 	[configdelay speed="&tf.set_ch_speed"]
-
-; 	[test_message_reset]
-
-; [return]
-
-; ;--------------------------------------------------------------------------------
-; ; オート速度
-; ;--------------------------------------------------------------------------------
-; *auto_speed_change3
-
-; 	[iscript]
-; 	tf.current_auto_speed = tf.set_auto_speed;
-; 	[endscript]
-
-; 	[free layer="0" name="auto" time="0" wait="true"]
-; 	[call target="*icon_auto3"]
-; 	[autoconfig speed="&tf.set_auto_speed"]
-
-; [return]
-
-
-;-------------------------------------------------------------------------------
-スキップ処理-ON
--------------------------------------------------------------------------------
-*skip_on3
-[free layer="0" name="unread_off" time="10"]
-[image layer="0" name="unread_on" storage="../image/New_GUI/Config_UI/skip_on_03.png" x="1208" y="504"]
-[config_record_label skip="true"]
-
-[return]
-
-;-------------------------------------------------------------------------------
-; スキップ処理-OFF
-;-------------------------------------------------------------------------------
-*skip_off3
-[free layer="0" name="unread_on" time="10"]
-[image layer="0" name="unread_off" storage="../image/New_GUI/Config_UI/skip_off_03.png" x="1530" y="504"]
-[config_record_label skip="false"]
-
-[return]
-
-; 전체화면
-*fullscreen
-[free layer="0" name="winscreen" time="10"]
-[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
-[config_record_label skip="true"]
-[screen_full ]
-
-[return]
-; 창화면
-*winscreen
-[free layer="0" name="fullscreen" time="10"]
-[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
-[config_record_label skip="true"]
-[screen_full ]
-
-[return]
-
-;================================================================================
-
-; サブルーチン
-
-;================================================================================
-;--------------------------------------------------------------------------------
-
-; BGM更新
-
-;--------------------------------------------------------------------------------
-
-;--------------------------------------------------------------------------------
-
-; テキスト速度更新
-
-;--------------------------------------------------------------------------------
-; *icon_ch3
-
-; 	[iscript]
-
-; 	$(".ch_img_1").css( "visibility", tf.config_num_ch >= 0 ? 'visible' : 'hidden');
-; 	$(".ch_img_2").css( "visibility", tf.config_num_ch >  0 ? 'visible' : 'hidden');
-; 	$(".ch_img_3").css( "visibility", tf.config_num_ch >  1 ? 'visible' : 'hidden');
-; 	$(".ch_img_4").css( "visibility", tf.config_num_ch >  2 ? 'visible' : 'hidden');
-; 	$(".ch_img_5").css( "visibility", tf.config_num_ch >  3 ? 'visible' : 'hidden');
-; 	$(".ch_img_6").css( "visibility", tf.config_num_ch >  4 ? 'visible' : 'hidden');
-; 	$(".ch_img_7").css( "visibility", tf.config_num_ch >  5 ? 'visible' : 'hidden');
-; 	$(".ch_img_8").css( "visibility", tf.config_num_ch >  6 ? 'visible' : 'hidden');
-; 	$(".ch_img_9").css( "visibility", tf.config_num_ch >  7 ? 'visible' : 'hidden');
-; 	$(".ch_img_10").css("visibility", tf.config_num_ch >  8 ? 'visible' : 'hidden');
-
-; 	[endscript]
-
-; [return]
-
-; ;--------------------------------------------------------------------------------
-
-; ; オート速度更新
-
-; ;--------------------------------------------------------------------------------
-; *icon_auto3
-
-; 	[iscript]
-
-; 	$(".auto_img_1").css( "visibility", tf.config_num_auto >= 0 ? 'visible' : 'hidden');
-; 	$(".auto_img_2").css( "visibility", tf.config_num_auto >  0 ? 'visible' : 'hidden');
-; 	$(".auto_img_3").css( "visibility", tf.config_num_auto >  1 ? 'visible' : 'hidden');
-; 	$(".auto_img_4").css( "visibility", tf.config_num_auto >  2 ? 'visible' : 'hidden');
-; 	$(".auto_img_5").css( "visibility", tf.config_num_auto >  3 ? 'visible' : 'hidden');
-; 	$(".auto_img_6").css( "visibility", tf.config_num_auto >  4 ? 'visible' : 'hidden');
-; 	$(".auto_img_7").css( "visibility", tf.config_num_auto >  5 ? 'visible' : 'hidden');
-; 	$(".auto_img_8").css( "visibility", tf.config_num_auto >  6 ? 'visible' : 'hidden');
-; 	$(".auto_img_9").css( "visibility", tf.config_num_auto >  7 ? 'visible' : 'hidden');
-; 	$(".auto_img_10").css("visibility", tf.config_num_auto >  8 ? 'visible' : 'hidden');
-
-; 	[endscript]
-
-; [return]
-
-*load_skip_img3
-[if exp="tf.text_skip == 'ON'"]
-	[image layer="0" name="unread_on" storage="../image/New_GUI/Config_UI/Skip_On_03.png" x="1208" y="504"]
-[else]
-	[image layer="0" name="unread_off" storage="../image/New_GUI/Config_UI/Skip_Off_03.png" x="1530" y="504"]
-[endif]
-
-[return]
-
-; ; *screen_mode
-; ; [if exp="tf.fullscreen_mode == 'ON'"]
-; ; 	[image layer="0" name="unread_on" storage="../image/New_GUI/Config_UI/Skip_On_03.png" x="1208" y="504"]
-; ; [else]
-; ; 	[image layer="0" name="unread_off" storage="../image/New_GUI/Config_UI/Skip_Off_03.png" x="1530" y="504"]
-; ; [endif]
-
-; [return]
-*screen_mode
-[if exp="tf.fullscreen_mode == 'ON'"]
-	[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
-[else]
-	[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
-[endif]
-
-
-[return]
-
-; *screen_mode_window
-; [if exp="tf.window_mode == 'ON'"]
-; 	[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
-; [else]
-; 	[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
-; [endif]
-
-
-[return]
-
-;================================================================================
-
-; 画像の読み込み（コンフィグ画面の起動時のみコール）
-
-;================================================================================
-; *load_img3
-
-; 	[layopt layer="0" visible="true"]
-
-; ;	テキスト速度
-; 	[image layer="0" name="ch_img_1"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[1]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_2"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[2]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_3"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[3]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_4"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[4]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_5"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[5]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_6"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[6]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_7"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[7]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_8"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[8]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_9"  storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[9]"  y="&tf.config_y_ch"]
-; 	[image layer="0" name="ch_img_10" storage="&tf.img_path + 'Config_Bt_Yellow_01.png'" x="&tf.config_x[10]" y="&tf.config_y_ch"]
-
-; ;	オート速度
-; 	[image layer="0" name="auto_img_1"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[1]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_2"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[2]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_3"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[3]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_4"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[4]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_5"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[5]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_6"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[6]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_7"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[7]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_8"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[8]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_9"  storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[9]"  y="&tf.config_y_auto"]
-; 	[image layer="0" name="auto_img_10" storage="&tf.img_path + 'Config_Bt_Pink_01.png'"  x="&tf.config_x[10]" y="&tf.config_y_auto"]
-
-; [return]
 [s]
