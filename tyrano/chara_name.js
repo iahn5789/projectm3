@@ -3,7 +3,7 @@ function a () {window.addEventListener('load', function() {
   const observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
     if (mutation.target.innerText === '전대용') {
-      mutation.target.style.color = '9F9F9F';
+      mutation.target.style.color = '#9F9F9F';
     } else if (mutation.target.innerText === '강여진') {
       mutation.target.style.color = '#FFA800';
     } else if (mutation.target.innerText === '진다영') {
@@ -78,26 +78,26 @@ function b () {window.addEventListener("load", function() {
   
     let is_msg_visible;
     
-    var hideBtn = document.createElement("img");
-    hideBtn.classList.add("fixlayer", "hide_btn");
-    hideBtn.src = "data/image/New_GUI/Menu_UI/Hide_Button_01.png"
-    hideBtn.style.width = "176px";
-    hideBtn.style.height = "54px";
-    hideBtn.style.position = "absolute";
-    if(document.querySelector(".layer.message0_fore.layer_fore").getAttribute("l_visible") === 'true')
-    {
-      hideBtn.classList.add("fixlayer", "hide_btn");
-    }
-    else
-    {
-    hideBtn.classList.add("fixlayer", "hide_btn","hidden");
-    hideBtn.style.display = "none";
-    }
-    hideBtn.style.top = "15px";
-    hideBtn.style.zIndex = "9999";
-    hideBtn.style.left = "1725px";
+    // var hideBtn = document.createElement("img");
+    // hideBtn.classList.add("fixlayer", "hide_btn");
+    // hideBtn.src = "data/image/New_GUI/Menu_UI/Hide_Button_01.png"
+    // hideBtn.style.width = "176px";
+    // hideBtn.style.height = "54px";
+    // hideBtn.style.position = "absolute";
+    // if(document.querySelector(".layer.message0_fore.layer_fore").getAttribute("l_visible") === 'true')
+    // {
+    //   hideBtn.classList.add("fixlayer", "hide_btn");
+    // }
+    // else
+    // {
+    // hideBtn.classList.add("fixlayer", "hide_btn","hidden");
+    // hideBtn.style.display = "none";
+    // }
+    // hideBtn.style.top = "15px";
+    // hideBtn.style.zIndex = "9999";
+    // hideBtn.style.left = "1725px";
     // 동그라미 div를 body 요소에 추가합니다.
-    document.body.appendChild(hideBtn);
+    // document.body.appendChild(hideBtn);
 
 
     // // esc 버튼 누르면 오른쪽아래 메뉴 사라졌다 나타나는 기능 
@@ -146,7 +146,7 @@ document.addEventListener('click', function(event) {
 
 
 
-//       // Get the Save button element by its name attribute
+      // Get the Save button element by its name attribute
 //   const menuButtons = document.getElementsByClassName("menu_button");
 //   const roleButtons = document.getElementsByClassName("rol_button");
 //   const layerMenu = document.getElementsByClassName("layer_menu")[0];
