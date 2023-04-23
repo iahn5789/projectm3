@@ -8,7 +8,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="1000"  method="crossfade"  storage="BGI02/Common_Classroom_Day_03.png"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [playse  volume="60"  time="1000"  buf="0"  storage="SFX/Body_Fall_01.wav"  ]
 [tb_start_text mode=1 ]
@@ -628,7 +628,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[bg  time="10"  method="crossfade"  storage="BGI02/Common_Classroom_Day_03.png"  ]
+[bg  time="10"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [chara_show name="Kang" time="0" top="0" left="553" width="813" height="1903" ]
 [chara_show name="Sul"  time="0" top="0" left="1106" width="813" height="1903" ]

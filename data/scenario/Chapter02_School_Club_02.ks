@@ -2,7 +2,7 @@
 
 *l_in
 
-[bg  time="1"  method="crossfade"  storage="57387fa831415154b4b2a90a.jpg"  ]
+[bg  time="1"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #강여진

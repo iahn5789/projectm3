@@ -2,7 +2,7 @@
 
 *l_in
 
-[bg  time="1000"  method="crossfade"  storage="57387fa831415154b4b2a90a.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 ; 강여진 등장
 [chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="813" height="1903" ]
