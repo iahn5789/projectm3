@@ -3,7 +3,7 @@ function a () {window.addEventListener('load', function() {
   const observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
     if (mutation.target.innerText === '전대용') {
-      mutation.target.style.color = 'gray';
+      mutation.target.style.color = '9F9F9F';
     } else if (mutation.target.innerText === '강여진') {
       mutation.target.style.color = '#FFA800';
     } else if (mutation.target.innerText === '진다영') {
