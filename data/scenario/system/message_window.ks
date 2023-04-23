@@ -22,7 +22,7 @@
 
 		;CG・回想用の共通項目
 		[eval exp="sf._tb_cg_noimage='New_GUI/Scene_Bt_Off_01.png'" ]
-		[eval exp="sf._tb_replay_noimage='noimage.png'" ]
+		[eval exp="sf._tb_replay_noimage='New_GUI/Scene_Bt_Off_02.png'" ]
 
 		;ふきだし用の設定（message1）
 		;[position layer="message1" left=160 top=500 width=1000 height=200 radius=15 page=fore visible=true color="white" opacity=255 border_size="3" border_color="black" ]

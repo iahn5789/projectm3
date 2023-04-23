@@ -168,7 +168,7 @@ tf.swing_2 = mp.swing*2*-1;
 	
 	;渡された値を元に、CG状態を確認していく
 	[if exp="tf.is_replay_open==true"]
-		[button name="_tb_system" graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height storage=&mp.storage target=&mp.target exp="tf._tb_is_replay=true;" role="sleepgame" ]
+		[button name="_tb_system" graphic=&mp.graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height storage="system/master_replay.ks" target=&mp.target exp="tf._tb_is_replay=true;" role="sleepgame" ]
 	[else]
 		[image name="_tb_system" storage=&mp.no_graphic x=&mp.x y=&mp.y width=&mp.width height=&mp.height layer="1" visible="true" folder="image" ]
 	[endif]

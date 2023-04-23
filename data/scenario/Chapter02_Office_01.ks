@@ -2,6 +2,7 @@
 
 *office_01
 
+[tb_replay_start  ]
 [bg  time="1000"  method="crossfade"  storage="943a383299379145946725d58025e83f.jpg"  ]
 [tb_start_tyrano_code]
 ; 강여진 등장
@@ -68,6 +69,7 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
+[tb_replay  id="kang01"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [chara_hide name="Kang" time=1 wait=false]

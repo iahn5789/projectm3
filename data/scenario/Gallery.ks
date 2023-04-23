@@ -309,7 +309,6 @@
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="1469"  y="566"  _tb_parts_type="cg_image_button"  id="sul12"  ]
 
 [s  ]
-[jump  storage="Gallery.ks"  target=""  ]
 *back
 
 [tb_clear_images]
