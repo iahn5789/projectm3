@@ -57,6 +57,9 @@
 [awakegame] 
 *sul01 
 [cm][clearfix] 
+[freeimage layer="0"]
+[tb_ptext_hide time="1"]
+[call storage="Chapter02_School_Club_01.ks" target="sul01" ]
 [awakegame] 
 *sul02 
 [cm][clearfix] 

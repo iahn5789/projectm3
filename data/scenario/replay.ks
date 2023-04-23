@@ -158,7 +158,7 @@
 
 [_tb_end_tyrano_code]
 
-[tb_replay_image_button  graphic="../image/New_GUI/Replay_UI/Scene_Bt_On_01.png" storage="system/master_replay.ks" role="sleepgame"  no_graphic="&sf._tb_replay_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="replay_image_button"  id="sul01"  ]
+[tb_replay_image_button  graphic="../image/New_GUI/Replay_UI/Scene_Bt_On_01.png" storage="system/master_replay.ks" role="sleepgame"  no_graphic="&sf._tb_replay_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="replay_image_button"  id="sul01" target="sul01"  ]
 
 [tb_replay_image_button  graphic="../image/New_GUI/Replay_UI/Scene_Bt_On_01.png" storage="system/master_replay.ks" role="sleepgame"  no_graphic="&sf._tb_replay_noimage"  time="1"  width="344"  height="194"  x="1063"  y="284"  _tb_parts_type="replay_image_button"  id="sul02"  ]
 

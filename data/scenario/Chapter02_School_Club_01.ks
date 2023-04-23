@@ -156,6 +156,9 @@
 드르륵-[p]
 [_tb_end_tyrano_code]
 
+*sul01
+
+[tb_replay_start  ]
 [tb_start_tyrano_code]
 ; 전대용 등장
 [chara_new name="Jeon" storage="chara/Jeon_Sc/bin.png" zindex=1 jname="Jeon" width="1004" height="1903" ]
@@ -242,5 +245,6 @@
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
+[tb_replay  id="sul01"  ]
 [jump  storage="Chapter02_School_Club_02.ks"  target="*l_in"  ]
 [s  ]
