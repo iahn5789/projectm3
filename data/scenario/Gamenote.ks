@@ -6,7 +6,6 @@
 
 [tb_start_tyrano_code]
 [freeimage layer="0"]
-[clearfix]
 [_tb_end_tyrano_code]
 
 [cm  ]

@@ -10,7 +10,6 @@
 
 [tb_start_tyrano_code]
 [cm]
-[clearfix]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -57,10 +56,6 @@
 [anim name="gamenote" top=1300 time=100 effect=easeInQuad]
 [anim name="exit" top=1300 time=100 effect=easeInQuad]
 [wa]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-[clearfix]
 [_tb_end_tyrano_code]
 
 [cm  ]
