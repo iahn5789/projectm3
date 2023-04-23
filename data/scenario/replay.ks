@@ -29,7 +29,7 @@
 
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="replay.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="replay.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
@@ -53,7 +53,7 @@
 
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="replay.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="replay.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
@@ -90,7 +90,7 @@
 
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="replay.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="replay.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
@@ -114,7 +114,7 @@
 
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="replay.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="replay.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
@@ -151,7 +151,7 @@
 
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="replay.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="replay.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
@@ -175,7 +175,7 @@
 
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="replay.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="replay.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
@@ -200,7 +200,6 @@
 
 [tb_start_tyrano_code]
 [cm]
-[clearfix]
 [freeimage layer="0"]
 [freeimage layer=1]
 [wait_cancel]

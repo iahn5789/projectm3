@@ -31,6 +31,10 @@
 *START
 
 [tb_start_tyrano_code]
+[clearfix name="config"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [anim name="start" top=1300 time=100 effect=easeInQuad]
 [anim name="load" top=1300 time=100 effect=easeInQuad]
 [anim name="config" top=1300 time=100 effect=easeInQuad]
@@ -48,6 +52,10 @@
 [jump  storage="input_name_scene_01.ks"  target="*l_jump_1"  ]
 [s  ]
 *LOAD
+
+[tb_start_tyrano_code]
+[clearfix name="config"]
+[_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [anim name="start" top=1300 time=100 effect=easeInQuad]

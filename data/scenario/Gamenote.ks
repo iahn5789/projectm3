@@ -5,6 +5,10 @@
 [tb_clear_images]
 
 [tb_start_tyrano_code]
+[clearfix name="config"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [freeimage layer="0"]
 [_tb_end_tyrano_code]
 

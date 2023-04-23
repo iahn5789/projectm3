@@ -60,7 +60,6 @@
 
 [tb_start_tyrano_code]
 [cm]
-[clearfix]
 [freeimage layer="0"]
 [freeimage layer=1]
 [wait_cancel]

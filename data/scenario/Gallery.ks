@@ -67,7 +67,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="base_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="base_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
@@ -110,7 +110,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
@@ -139,7 +139,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="kang_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
@@ -182,7 +182,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
@@ -211,7 +211,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="jin_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
@@ -254,7 +254,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
@@ -283,7 +283,7 @@
 
 [tb_ptext_hide  time="0"  ]
 [tb_start_tyrano_code]
-[clearfix]
+
 [button name="pageback" storage="Gallery.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="sul_03" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
