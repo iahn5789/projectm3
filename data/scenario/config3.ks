@@ -194,19 +194,30 @@
 
 ; 전체화면
 *fullscreen
-[free layer="0" name="winscreen" time="1"]
-[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
-[config_record_label skip="true"]
-[screen_full ]
+[if exp="tf.fullscreen_mode == 'OFF'"]
+	[free layer="0" name="winscreen" time="1"]
+	[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
+	[config_record_label skip="true"]
+	[screen_full ]
+	[iscript]
+	tf.fullscreen_mode = "ON"
+	[endscript]
+	
+[endif]
 
 [return]
 ; 창화면
 *winscreen
-[free layer="0" name="fullscreen" time="1"]
-[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
-[config_record_label skip="true"]
-[screen_full ]
-
+[if exp="tf.fullscreen_mode == 'ON'"]
+	[free layer="0" name="fullscreen" time="1"]
+	[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
+	[config_record_label skip="true"]
+	[screen_full ]
+	[iscript]
+	tf.fullscreen_mode = "OFF"
+	[endscript]
+	
+[endif]
 [return]
 
 *load_skip_img3
