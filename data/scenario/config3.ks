@@ -28,20 +28,13 @@
 	; tf.current_ch_speed = parseInt(TG.config.chSpeed); // テキスト表示速度
 	; tf.current_auto_speed = parseInt(TG.config.autoSpeed); // オート時のテキスト表示速度
 
-	; tf.text_skip ="ON"; // 未読スキップ
-	; if(TG.config.unReadTextSkip != "true"){
-	; 	tf.text_skip ="OFF";
-	; }
+	 tf.text_skip ="ON"; // 未読スキップ
+	 if(TG.config.unReadTextSkip != "true"){
+	 	tf.text_skip ="OFF";
+	 }
 
-	tf.fullscreen_mode = "ON"; // 전체화면 모드
-	if(TG.config.fullscreen != "true"){
-    tf.fullscreen_mode = "OFF";
-	}
 
-	tf.window_mode = "ON"; // 창 모드
-	if(TG.config.windowMode != "true"){
-    tf.window_mode = "OFF";
-	}
+
 
 	[endscript]
 
@@ -194,13 +187,13 @@
 
 ; 전체화면
 *fullscreen
-[if exp="tf.fullscreen_mode == 'OFF'"]
+[if exp="f.fullscreen_mode == 'OFF'"]
 	[free layer="0" name="winscreen" time="1"]
 	[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
 	[config_record_label skip="true"]
 	[screen_full ]
 	[iscript]
-	tf.fullscreen_mode = "ON"
+	f.fullscreen_mode = "ON"
 	[endscript]
 	
 [endif]
@@ -208,13 +201,13 @@
 [return]
 ; 창화면
 *winscreen
-[if exp="tf.fullscreen_mode == 'ON'"]
+[if exp="f.fullscreen_mode == 'ON'"]
 	[free layer="0" name="fullscreen" time="1"]
 	[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
 	[config_record_label skip="true"]
 	[screen_full ]
 	[iscript]
-	tf.fullscreen_mode = "OFF"
+	f.fullscreen_mode = "OFF"
 	[endscript]
 	
 [endif]
@@ -230,7 +223,7 @@
 [return]
 
 *screen_mode
-[if exp="tf.fullscreen_mode == 'ON'"]
+[if exp="f.fullscreen_mode == 'ON'"]
 	[image layer="0" name="fullscreen" storage="../image/New_GUI/Config_UI/Fullscreen_03.png" x="1208" y="357"]
 [else]
 	[image layer="0" name="winscreen" storage="../image/New_GUI/Config_UI/Winscreen_03.png" x="1530" y="357"]
