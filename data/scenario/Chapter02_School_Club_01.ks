@@ -88,6 +88,7 @@
 [_tb_end_tyrano_code]
 
 [quake  time="300"  count="3"  hmax="10"  wait="false"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Close_Sliding_Door_01.wav"  ]
 [tb_start_tyrano_code]
 #진다영
 설나희! 죽을래![p]
@@ -101,6 +102,10 @@
 [chara_part name="Jin" body="3" face="6" ]
 #진다영
 시끄러워! 꺼져어ㅓㅓㅓㅓㅓㅓㅓ![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Run_01.wav"  ]
+[tb_start_tyrano_code]
 [chara_hide name="Jin" time=500 wait=false]
 [_tb_end_tyrano_code]
 
@@ -111,12 +116,18 @@
 [chara_show name="Kang" top="0" left="375" width="1169" height="2735" time=100 wait=false ]
 #강여진
 다영이가 많이 화났나봐...[p]
+#강여진
 조금 달래주고 올게 잠깐만~[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
+[tb_start_tyrano_code]
 [chara_hide_all time=500 wait=true]
 [chara_part name="Sul" body="3" face="1" ]
 [chara_show name="Sul" top="0" left="553" time=300 wait=false ]
 [_tb_end_tyrano_code]
 
+[stopse  time="2000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 ( 음...)[p]
@@ -152,6 +163,10 @@
 ( 틀렸어.. 대화가 두 마디 이상 진행되질 않아…!)[p]
 ( 누구라도 좋으니까 도와줘...! )[p]
 [chara_hide_all time=500 wait=false]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
+[tb_start_tyrano_code]
 #
 드르륵-[p]
 [_tb_end_tyrano_code]
@@ -202,6 +217,10 @@
 [chara_part name="Jeon" body="4" face="1" ]
 #전대용
 그럼, 수고![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open.wav"  ]
+[tb_start_tyrano_code]
 [chara_hide name="Jeon" time=500 wait=true]
 [_tb_end_tyrano_code]
 

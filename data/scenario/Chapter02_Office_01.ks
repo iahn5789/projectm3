@@ -1,5 +1,6 @@
 [_tb_system_call storage=system/_Chapter02_Office_01.ks]
 
+[playbgm  volume="70"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
 *office_01
 
 [tb_replay_start  ]
@@ -84,6 +85,10 @@
 ( 무슨 문제라도 있나? )[p]
 [chara_part name="Kang" body="1" face="4" ]
 [chara_show name="Kang" time="500" top="0" left="553" width="815" height="1903" wait=false ]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 ( 앗 여진이 나왔다 )[p]
 ...어떻게 됐어?[p]
@@ -101,6 +106,7 @@
 일단 부실로 돌아가자![p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
