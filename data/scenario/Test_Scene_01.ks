@@ -442,7 +442,6 @@ $('.msgopen03jin').fadeOut(300);
 [tb_start_tyrano_code]
 [button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
 [button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
-
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
