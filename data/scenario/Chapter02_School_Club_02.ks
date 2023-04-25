@@ -376,6 +376,7 @@
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Lightning_One_Shot_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Slam_01.wav"  ]
+[quake  time="200"  count="3"  hmax="5"  wait="true"  ]
 [tb_start_tyrano_code]
 #한갑수
 너희가 힙합을 아느냐!!!![p]
@@ -386,6 +387,7 @@
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Door_Slam_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="2"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
+[quake  time="500"  count="6"  hmax="20"  wait="true"  vmax="10"  ]
 [tb_start_tyrano_code]
 #한갑수
 너희가 힙합에 대해서 제대로 아느냔 말이다!![p]
