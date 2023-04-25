@@ -193,8 +193,8 @@ setScore();
 [tb_start_tyrano_code]
 [anim name="teststart" top=1100 time=300 effect=easeInQuad]
 [anim name="msgshow" top=1100 time=300 effect=easeInQuad]
-[anim name="test_start_bt_01" top=912 time=1000 effect=easeInQuad]
-[anim name="test_back_bt_01" top=912 time=1000 effect=easeInQuad]
+[anim name="test_start_bt_01" top=912 time=800 effect=easeInQuad]
+[anim name="test_back_bt_01" top=912 time=800 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -238,21 +238,23 @@ setScore();
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Test_UI/Secret_Msg_Kang_01.png' style='z-index:9999999999; left:568px; top:41px; width:844px; height:904px; position:absolute;'>
+<div class="msgkang">
+<div style="position: absolute; left:366px; top:31px; z-index: 99999999;">
+<img src=data/image/New_GUI/Test_UI/Secret_Msg_Kang_01.png>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="kang_secret_bt_01" storage="Test_Scene_01.ks" target="kang_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="180" height="55" x="751" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
-[button name="kang_secret_bt_02" storage="Test_Scene_01.ks" target="kang_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="180" height="55" x="1022" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="kang_secret_bt_01" storage="Test_Scene_01.ks" target="kang_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
+[button name="kang_secret_bt_02" storage="Test_Scene_01.ks" target="kang_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
 
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[anim name="kang_secret_bt_01" top=960 time=300 effect=easeInQuad]
-[anim name="kang_secret_bt_02" top=960 time=300 effect=easeInQuad]
+[anim name="kang_secret_bt_01" top=920 time=300 effect=easeInQuad]
+[anim name="kang_secret_bt_02" top=920 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -275,7 +277,7 @@ setScore();
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Kang_01"  ]
 [tb_start_tyrano_code]
-[button name="msg_close_01" storage="Test_Scene_01.ks" target="msg_close_01" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="180" height="55" x="870" y="938" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="msg_close_01" storage="Test_Scene_01.ks" target="msg_close_01" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
 
 [_tb_end_tyrano_code]
 
@@ -337,21 +339,23 @@ $('.msgopen03').fadeOut(300);
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Test_UI/Secret_Msg_Jin_01.png' style='z-index:9999999999; left:568px; top:41px; width:844px; height:904px; position:absolute;'>
+<div class="msgjin">
+<div style="position: absolute; left:366px; top:31px; z-index: 99999999;">
+<img src=data/image/New_GUI/Test_UI/Secret_Msg_Jin_01.png>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="jin_secret_bt_01" storage="Test_Scene_01.ks" target="jin_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="180" height="55" x="751" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
-[button name="jin_secret_bt_02" storage="Test_Scene_01.ks" target="jin_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="180" height="55" x="1022" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="jin_secret_bt_01" storage="Test_Scene_01.ks" target="jin_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
+[button name="jin_secret_bt_02" storage="Test_Scene_01.ks" target="jin_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
 
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[anim name="jin_secret_bt_01" top=960 time=300 effect=easeInQuad]
-[anim name="jin_secret_bt_02" top=960 time=300 effect=easeInQuad]
+[anim name="jin_secret_bt_01" top=920 time=300 effect=easeInQuad]
+[anim name="jin_secret_bt_02" top=920 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -375,7 +379,7 @@ $('.msgopen03').fadeOut(300);
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Jin_01"  ]
 [tb_start_tyrano_code]
-[button name="msg_close_02" storage="Test_Scene_01.ks" target="msg_close_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="180" height="55" x="870" y="938" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="msg_close_02" storage="Test_Scene_01.ks" target="msg_close_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
 
 [_tb_end_tyrano_code]
 
@@ -427,21 +431,23 @@ $('.msgopen03jin').fadeOut(300);
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Test_UI/Secret_Msg_Sul_01.png' style='z-index:9999999999; left:568px; top:41px; width:844px; height:904px; position:absolute;'>
+<div class="msgsul">
+<div style="position: absolute; left:366px; top:31px; z-index: 99999999;">
+<img src=data/image/New_GUI/Test_UI/Secret_Msg_Sul_01.png>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="180" height="55" x="751" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
-[button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="180" height="55" x="1022" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
+[button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
 
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[anim name="sul_secret_bt_01" top=960 time=300 effect=easeInQuad]
-[anim name="sul_secret_bt_02" top=960 time=300 effect=easeInQuad]
+[anim name="sul_secret_bt_01" top=920 time=300 effect=easeInQuad]
+[anim name="sul_secret_bt_02" top=920 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -465,7 +471,7 @@ $('.msgopen03jin').fadeOut(300);
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Sul_01"  ]
 [tb_start_tyrano_code]
-[button name="msg_close_03" storage="Test_Scene_01.ks" target="msg_close_03" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="180" height="55" x="870" y="938" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="msg_close_03" storage="Test_Scene_01.ks" target="msg_close_03" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
 
 [_tb_end_tyrano_code]
 
