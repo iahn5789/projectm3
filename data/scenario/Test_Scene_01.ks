@@ -3,15 +3,11 @@
 *testscene
 
 [tb_hide_message_window  ]
+[bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_keyconfig  flag="0"  ]
 [hidemenubutton]
 
-[tb_start_tyrano_code]
-[freeimage layer="2" ]
-[_tb_end_tyrano_code]
-
 [cm  ]
-[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -27,11 +23,17 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="383" height="185" x="21" y="891"]
-[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="612" height="96" x="823" y="969"]
-[button name="msgkang" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="311" height="174" x="646" y="707" ]
-[button name="msgjin" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="311" height="174" x="969" y="707"]
-[button name="msgsul" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="310" height="174" x="1292" y="707"]
+[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841"]
+[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100"]
+[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100"]
+[button name="lootkang" storage="Test_Scene_01.ks" target="lootkang" graphic="../image/New_GUI/Test_UI/Loot_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Kang_02.png" width="274" height="410" x="614" y="105" ]
+[button name="lootjin" storage="Test_Scene_01.ks" target="lootjin" graphic="../image/New_GUI/Test_UI/Loot_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Jin_02.png" width="274" height="410" x="927" y="105"]
+[button name="lootsul" storage="Test_Scene_01.ks" target="lootsul" graphic="../image/New_GUI/Test_UI/Loot_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Sul_02.png" width="274" height="410" x="1241" y="105"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[anim name="teststart" top=912 time=300 effect=easeInQuad]
+[anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [mask_off  time="1000"  effect="fadeOut"  ]
@@ -44,12 +46,8 @@
 [tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [hidemenubutton]
 
-[tb_start_tyrano_code]
-[freeimage layer="2" ]
-[_tb_end_tyrano_code]
-
 [cm  ]
-[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
+[bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -65,14 +63,64 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="383" height="185" x="21" y="891"]
-[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="612" height="96" x="823" y="969"]
-[button name="msgkang" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="311" height="174" x="646" y="707" ]
-[button name="msgjin" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="311" height="174" x="969" y="707"]
-[button name="msgsul" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="310" height="174" x="1292" y="707"]
+[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841"]
+[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100"]
+[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100"]
+[button name="lootkang" storage="Test_Scene_01.ks" target="lootkang" graphic="../image/New_GUI/Test_UI/Loot_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Kang_02.png" width="274" height="410" x="614" y="105" ]
+[button name="lootjin" storage="Test_Scene_01.ks" target="lootjin" graphic="../image/New_GUI/Test_UI/Loot_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Jin_02.png" width="274" height="410" x="927" y="105"]
+[button name="lootsul" storage="Test_Scene_01.ks" target="lootsul" graphic="../image/New_GUI/Test_UI/Loot_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Sul_02.png" width="274" height="410" x="1241" y="105"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[anim name="teststart" top=912 time=300 effect=easeInQuad]
+[anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [mask_off  time="300"  effect="rotateOutUpRight"  ]
+[s  ]
+*msgshow
+
+[tb_start_tyrano_code]
+[anim name="teststart" top=1100 time=200 effect=easeInQuad]
+[anim name="msgshow" top=1100 time=200 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer=1 width=736 height=419 left=696 top=1100 page=fore visible=true name=testscene storage = ../image/New_GUI/Test_UI/Desk_01.png ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="msgkangbt" storage="Test_Scene_01.ks" target="msgkangbt" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="231" height="229" x="946" y="1100"]
+[button name="msgjinbt" storage="Test_Scene_01.ks" target="msgjinbt" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="240" height="241" x="730" y="1100"]
+[button name="msgsulbt" storage="Test_Scene_01.ks" target="msgsulbt" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="256" height="256" x="1131" y="1100"]
+[button name="msgclosebt" storage="Test_Scene_01.ks" target="msgclosebt" graphic="../image/New_GUI/Test_UI/Msg_Close_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Close_Bt_02.png" width="100" height="104" x="1430" y="1100"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[anim name="msgkangbt" top=720 time=300 effect=easeInQuad]
+[anim name="msgjinbt" top=770 time=300 effect=easeInQuad]
+[anim name="msgsulbt" top=750 time=300 effect=easeInQuad]
+[anim name="testscene" top=671 time=300 effect=easeInQuad]
+[anim name="msgclosebt" top=922 time=300 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[s  ]
+*msgclosebt
+
+[tb_start_tyrano_code]
+[anim name="msgkangbt" top=1100 time=300 effect=easeInQuad]
+[anim name="msgjinbt" top=1100 time=300 effect=easeInQuad]
+[anim name="msgsulbt" top=1100 time=300 effect=easeInQuad]
+[anim name="testscene" top=1100 time=300 effect=easeInQuad]
+[anim name="msgclosebt" top=1100 time=300 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[wait  time="300"  ]
+[tb_start_tyrano_code]
+[freeimage layer="1" time=200 wait=false ]
+[_tb_end_tyrano_code]
+
+[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *gift
 
