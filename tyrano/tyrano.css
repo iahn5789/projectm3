@@ -457,6 +457,20 @@ body{
   content: "";
   display: block;
 }
-
-
-
+/* 시험대기창 질문 */
+.testscenefadein img{
+  width:1920px;
+  height: 1080px;
+  display: inline-block;
+  padding: 0px;
+  z-index: 999999999;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

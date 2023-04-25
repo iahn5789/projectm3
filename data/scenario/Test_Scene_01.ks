@@ -36,6 +36,8 @@
 [anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_02" top=1100 time=300 effect=easeInQuad]
+[anim name="test_start_bt_01" top=1100 time=1000 effect=easeInQuad]
+[anim name="test_back_bt_01" top=1100 time=1000 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [mask_off  time="1000"  effect="fadeOut"  ]
@@ -136,20 +138,28 @@
 
 [tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
-
-[filter layer=all blur=5 opacity=40]
+[filter layer=all blur=0 opacity=100]
 [anim name=msgkang time=1 opacity=50]
-[anim name=msgjin time=1 opacity=50]
-[anim name=msgsul time=1 opacity=50]
-[anim name=teststart time=1 opacity=50]
+[anim name=lootkang time=1 opacity=50]
+[anim name=lootjin time=1 opacity=50]
+[anim name=lootsul time=1 opacity=50]
 [anim name=gift time=1 opacity=50]
 
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [html]
+<div class="testscenefadein">
+<div style="position: absolute;top: 0px;left: 0px;z-index: 99999999;">
+<img src=data/image/New_GUI/Test_UI/Test_In_Msg_01.png>
+</div>
+</div>
+[endhtml]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[html]
 <div>
-<img src='data/image/New_GUI/Test_UI/Test_In_Msg_01.png' style='z-index:-1; left:500px; top:216px; width:927px; height:656px; position:absolute;'>
 <p  style='z-index:2; left:1000px; top:480px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
 <span id="score_form"></span>
 </p>
@@ -176,10 +186,25 @@ setScore();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="test_start_bt_01" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_Bt_01.png" width="241" height="69" x="660" y="754" enterimg="../image/New_GUI/Test_UI/Test_Start_Bt_02.png"]
-[button name="test_back_bt_01" storage="Test_Scene_01.ks" target="test_back_bt_01" graphic="../image/New_GUI/Test_UI/Test_Back_Bt_01.png" width="241" height="69" x="1022" y="754" enterimg="../image/New_GUI/Test_UI/Test_Back_Bt_02.png"]
+[button name="test_start_bt_01" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png"]
+[button name="test_back_bt_01" storage="Test_Scene_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Test_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Test_Close_02.png"]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[anim name="teststart" top=1100 time=300 effect=easeInQuad]
+[anim name="msgshow" top=1100 time=300 effect=easeInQuad]
+[anim name="test_start_bt_01" top=912 time=1000 effect=easeInQuad]
+[anim name="test_back_bt_01" top=912 time=1000 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[s  ]
+*testback
+
+[tb_start_tyrano_code]
+[freeimage layer="1" time=500 wait=false ]
+[_tb_end_tyrano_code]
+
+[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *test_back_bt_01
 
