@@ -4,6 +4,12 @@
 
 [bg  time="1"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open.wav"  ]
+[tb_start_tyrano_code]
+#
+드르르륵-             쿵 [p]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 #강여진
 무슨 이야기 하고 있었어? 나도 끼워줘![p]
@@ -294,6 +300,7 @@
 [_tb_end_tyrano_code]
 
 [quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Whistle_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진
 으잉?               [er]
@@ -367,6 +374,9 @@
 네! 그러니까 힙합을...[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Lightning_One_Shot_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Slam_01.wav"  ]
+[quake  time="200"  count="3"  hmax="5"  wait="true"  ]
 [tb_start_tyrano_code]
 #한갑수
 너희가 힙합을 아느냐!!!![p]
@@ -374,14 +384,27 @@
 ...네?[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Door_Slam_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
+[quake  time="500"  count="6"  hmax="20"  wait="true"  vmax="10"  ]
 [tb_start_tyrano_code]
 #한갑수
 너희가 힙합에 대해서 제대로 아느냔 말이다!![p]
 #한갑수
 단순히 비트 위에 빠르게 말하는 것은 힙합이 아니란말이다아아아!!!!![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  loop="true"  ]
+[tb_start_tyrano_code]
 #한갑수
 힙합이란 1970년대 후반 뉴욕 브롱크스 남쪽 빈민가에 거주하는 미국 흑인과
 남미 히스패닉계 청소년들에 의해 형성된 새로운 문화운동 전반을 가르치는 말이며 이에 힙합을  미국에서 독자적으로 만들어진 유일한 문화........[er]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="false"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 ......[p]
 #한갑수
@@ -401,12 +424,21 @@
 동아리도 좋지만 학생의 본분에 충실해야지[p]
 #강여진
 아! 네 그건 걱정하지 않으셔도 돼요![p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #한갑수
 그래 알면 됐다! 그럼, 이만 가보마![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
+[tb_start_tyrano_code]
 #한갑수
 옛 헴![p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_02.wav"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=100 wait=false]
 [chara_part name="Jin" body="2" face="8" ]
@@ -468,6 +500,7 @@
 일단 교실로 가면서 쪽지 시험이 어떻게 나오는지 알려줄게![p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=100 wait=false]

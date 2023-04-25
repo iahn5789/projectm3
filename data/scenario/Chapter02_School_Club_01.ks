@@ -1,5 +1,6 @@
 [_tb_system_call storage=system/_Chapter02_School_Club_01.ks]
 
+[playse  volume="25"  time="1000"  buf="5"  storage="Amb/Amb_Kitchen_01.wav"  loop="true"  ]
 *l_in
 
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
@@ -84,12 +85,14 @@
 [tb_start_tyrano_code]
 [chara_part name="Jin" body="1" face="4" ]
 [chara_hide_all time=100 wait=false]
-[chara_show name="Jin" top="0" left="375" time=100 wait=false]
 [_tb_end_tyrano_code]
 
 [quake  time="300"  count="3"  hmax="10"  wait="false"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Close_Sliding_Door_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_02.wav"  ]
 [tb_start_tyrano_code]
+#
+드륵-쾅![p]
+[chara_show name="Jin" top="0" left="375" time=100 wait=false]
 #진다영
 설나희! 죽을래![p]
 #강여진
@@ -105,13 +108,18 @@
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Run_01.wav"  ]
+[stopse  time="2000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 [chara_hide name="Jin" time=500 wait=false]
 [_tb_end_tyrano_code]
 
+[playse  volume="70"  time="1000"  buf="1"  storage="SFX/Common_Door_Slam_01.wav"  ]
 [tb_start_tyrano_code]
 #
 쾅-![p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="8" ]
 [chara_show name="Kang" top="0" left="375" width="1169" height="2735" time=100 wait=false ]
 #강여진
@@ -131,6 +139,11 @@
 [tb_start_tyrano_code]
 #&[sf.name]
 ( 음...)[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1500"  buf="4"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="false"  loop="true"  ]
+[tb_start_tyrano_code]
+#&[sf.name]
 ( 어색하다... )[p]
 저기...[p]
 나희...누나...?[p]
@@ -149,6 +162,11 @@
 아는 언니 동생 사이...[p]
 #&[sf.name]
 아… 하하...[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="50"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
+[tb_start_tyrano_code]
+#&[sf.name]
 ( 역시 이 사람과는 단둘이 있는 게 어렵다... )[p]
 여진이는 어떻게 알게 됐어요?[p]
 #설나희
@@ -156,6 +174,7 @@
 옆집 동생이야[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [quake  time="300"  count="3"  hmax="4"  wait="false"  vmax="4"  ]
 [tb_start_tyrano_code]
 [chara_move name="Sul" top="0" left="553" width="813" height="1903" time=100 wait=false ]
@@ -165,7 +184,8 @@
 [chara_hide_all time=500 wait=false]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
+[stopse  time="1000"  buf="4"  ]
+[playse  volume="200"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
 [tb_start_tyrano_code]
 #
 드르륵-[p]
@@ -215,15 +235,20 @@
 #전대용
 오! 믿고 있었다고 친구[p]
 [chara_part name="Jeon" body="4" face="1" ]
+[_tb_end_tyrano_code]
+
+[playse  volume="150"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_Short_02.wav"  ]
+[tb_start_tyrano_code]
 #전대용
 그럼, 수고![p]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_start_tyrano_code]
 [chara_hide name="Jeon" time=500 wait=true]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 ; 설나희 등장
 [chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
@@ -256,6 +281,10 @@
 [chara_move name="Sul" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
 #설나희
 ......[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
+[tb_start_tyrano_code]
 [chara_part name="Sul" body="3" face="9" ]
 #설나희
 기분 나빠...[p]
