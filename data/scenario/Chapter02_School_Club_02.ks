@@ -141,16 +141,24 @@
 #강여진
 에? 그게 무슨소리야...?[p]
 #&[sf.name]
-나 음치일지도 몰라...[p]
+연습한 노래가 없는데...[p]
 #진다영
-거봐 쓸모없을 줄 알았어![p]
+보컬로 온거 아니야? 근데 준비가 안 되어있다고?[p]
+너 진짜 바보야?[p]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
-그럴지도...[p]
+나는 바보가 아니야!!![p]
 [chara_part name="Kang" body="3" face="7" ]
 #강여진
 ...[p]
 [chara_part name="Kang" body="3" face="8" ]
 그... 그래도 한번 들어볼 수 있을까..?[p]
+자신이 없는거지 우리가 들어보는 건 또 다를 수 있으니까![p]
+#&[sf.name]
+맞아! 우선 해볼게![p]
 [_tb_end_tyrano_code]
 
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
