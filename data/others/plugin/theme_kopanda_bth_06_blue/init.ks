@@ -66,7 +66,7 @@ if(TG.config.alreadyReadTextColor != "default"){
 [button name="rol_button" role="skip" graphic="../image/New_GUI/Menu_UI/Skip_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Skip_Button_02.png" x="1743" y="840"]
 
 ; Config（※sleepgame を使用して config.ks を呼び出しています）
-[button name="rol_button" role="sleepgame" graphic="../image/New_GUI/Menu_UI/Setting_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Setting_Button_02.png"  x="1743" y="930" storage="../others/plugin/theme_kopanda_bth_06_blue/config.ks" x="1743" y="920"]
+[button name="rol_button" role="sleepgame" graphic="../image/New_GUI/Menu_UI/Setting_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Setting_Button_02.png"  x="1743" y="930" storage="../scenario/config.ks" x="1743" y="920"]
 
 ; Title
 [button name="rol_button" role="title" graphic="../image/New_GUI/Menu_UI/Title_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Title_Button_02.png" x="1743" y="1000"]
