@@ -4,7 +4,7 @@ window.tyrano_lang={
 		"exit_game":"게임을 종료하시겠습니까?",
 		"not_saved":"빈 슬롯입니다.",
 		"tag":"Tag name",
-		"not_exists":"없다 닝겐. 찾을 수 없다 닝겐.",
+		"not_exists":"없다 닝겐. 찾을 수 없다 닝겐.(not_exists)",
 		"error":"An error occurred. check the scenario script.",
 		"label":"The label",
 		"label_double":"has more than one occurrence in the scene file",

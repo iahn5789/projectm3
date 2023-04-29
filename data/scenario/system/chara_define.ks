@@ -17,4 +17,5 @@ f['select']='FALSE';
 f['question']=1; 
 f['giftScene']=''; 
 f['fullscreen_mode']='OFF'; 
+f['msg_line']=''; 
 [endscript] 

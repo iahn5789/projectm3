@@ -53,6 +53,7 @@ $('.msgopen03').hide().fadeIn(500);
 [endscript]
 [_tb_end_tyrano_code]
 
+[call  storage="Msg_line_script_Scene_01.ks"  target="*Msg_line_Open_Kang"  ]
 [return  ]
 [s  ]
 *Msg_Open_Jin_01
@@ -100,6 +101,7 @@ $('.msgopen02jin').fadeOut(500);
 [wait  time="500"  ]
 [tb_start_tyrano_code]
 [image layer=1 width=800 height=705 left=560 top=136 page=fore visible=true name=msgopen03jin storage = ../image/New_GUI/Test_UI/Secret_Msg_Textbox_Jin_01.png ]
+
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -163,5 +165,6 @@ $('.msgopen03sul').hide().fadeIn(500);
 [endscript]
 [_tb_end_tyrano_code]
 
+[call  storage="Msg_line_script_Scene_01.ks"  target="*Msg_line_Open_Sul"  ]
 [return  ]
 [s  ]
