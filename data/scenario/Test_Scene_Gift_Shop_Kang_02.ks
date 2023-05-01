@@ -15,7 +15,7 @@
 [tb_eval  exp="f.gift_line=Math.floor(Math.random()*(2-0+1)+0)"  name="gift_line"  cmd="="  op="r"  val="0"  val_2="2"  ]
 [call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
-[anim name=Back time=1 opacity=50]
+[anim name=Back time=1 opacity=10]
 [html]
 <div>
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_01.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
