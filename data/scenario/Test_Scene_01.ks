@@ -310,6 +310,7 @@ $('.msgopen03').fadeOut(300);
 [endscript]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *secret_buy_fail_01
