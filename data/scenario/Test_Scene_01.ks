@@ -90,7 +90,7 @@
 
 [_tb_end_tyrano_code]
 
-[jump  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
+[call  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
 [s  ]
 [tb_start_tyrano_code]
 [anim name="teststart" top=912 time=300 effect=easeInQuad]

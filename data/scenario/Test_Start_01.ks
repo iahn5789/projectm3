@@ -16,6 +16,13 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 

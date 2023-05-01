@@ -14,6 +14,13 @@
 [free name="score" layer=2 ]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
 [mask_off  time="300"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
 [image layer=1 width=606 height=601 left=607 top=240 page=fore visible=true name=msgopen01 storage = ../image/New_GUI/Test_UI/Msg_Open_01.png ]
@@ -60,6 +67,13 @@ $('.msgopen03').hide().fadeIn(500);
 
 [mask  time="400"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="100"  method="crossfade"  storage="Test_BGI/Msg_Open_Bgi_01.png"  ]
+[tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
@@ -116,6 +130,13 @@ $('.msgopen03jin').hide().fadeIn(500);
 
 [mask  time="400"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="100"  method="crossfade"  storage="Test_BGI/Msg_Open_Bgi_01.png"  ]
+[tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]

@@ -14,6 +14,13 @@
 [free name="score" layer=2 ]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
 [bg  time="0"  method="fadeIn"  storage="Giftshop_BGI/Giftshop_Bgi_Kang_01.png"  ]
 [tb_start_tyrano_code]
 [cm]
