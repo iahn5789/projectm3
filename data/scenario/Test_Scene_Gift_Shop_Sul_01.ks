@@ -86,15 +86,19 @@
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_01.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<div class="buymsg">
+<div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_01.png';>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_gift_bt_01" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="857"]
-[button name="sul_back_bt_01" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="857"]
+[button name="sul_gift_bt_01" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="1100"]
+[button name="sul_back_bt_01" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="1100"]
+[anim name=sul_gift_bt_01 time=200 top=857]
+[anim name=sul_back_bt_01 time=200 top=857]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -159,15 +163,19 @@
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_02.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<div class="buymsg">
+<div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_02.png';>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_gift_bt_02" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="857"]
-[button name="sul_back_bt_02" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="857"]
+[button name="sul_gift_bt_02" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="1100"]
+[button name="sul_back_bt_02" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_02" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="1100"]
+[anim name=sul_gift_bt_02 time=200 top=857]
+[anim name=sul_back_bt_02 time=200 top=857]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -232,15 +240,19 @@
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_03.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<div class="buymsg">
+<div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_03.png';>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_gift_bt_03" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="857"]
-[button name="sul_back_bt_03" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="857"]
+[button name="sul_gift_bt_03" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="1100"]
+[button name="sul_back_bt_03" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_03" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="1100"]
+[anim name=sul_gift_bt_03 time=200 top=857]
+[anim name=sul_back_bt_03 time=200 top=857]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -305,15 +317,19 @@
 
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_04.png' style='z-index:-1; left:456px; top:297px; width:1008px; height:486px; position:absolute;'>
+<div class="buymsg">
+<div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Sul_04.png';>
+</div>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_gift_bt_04" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="857"]
-[button name="sul_back_bt_04" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="857"]
+[button name="sul_gift_bt_04" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_gift_bt_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png"  width="281" height="92" x="579" y="1100"]
+[button name="sul_back_bt_04" storage="Test_Scene_Gift_Shop_Sul_01.ks" target="sul_back_bt_04" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="1100"]
+[anim name=sul_gift_bt_04 time=200 top=857]
+[anim name=sul_back_bt_04 time=200 top=857]
 [_tb_end_tyrano_code]
 
 [s  ]
