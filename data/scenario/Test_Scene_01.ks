@@ -9,6 +9,13 @@
 
 [cm  ]
 [tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
 [free name="jlove" layer=2 ]
@@ -26,14 +33,15 @@
 [button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841"]
 [button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100"]
 [button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100"]
-[button name="lootkang" storage="Test_Scene_01.ks" target="lootkang" graphic="../image/New_GUI/Test_UI/Loot_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Kang_02.png" width="274" height="410" x="614" y="105" ]
-[button name="lootjin" storage="Test_Scene_01.ks" target="lootjin" graphic="../image/New_GUI/Test_UI/Loot_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Jin_02.png" width="274" height="410" x="927" y="105"]
-[button name="lootsul" storage="Test_Scene_01.ks" target="lootsul" graphic="../image/New_GUI/Test_UI/Loot_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Sul_02.png" width="274" height="410" x="1241" y="105"]
 [_tb_end_tyrano_code]
 
+[jump  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
+[s  ]
+*After_Button_Change
+
 [tb_start_tyrano_code]
-[anim name="teststart" top=912 time=300 effect=easeInQuad]
-[anim name="msgshow" top=912 time=300 effect=easeInQuad]
+;[anim name="teststart" top=912 time=300 effect=easeInQuad]
+;[anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_02" top=1100 time=300 effect=easeInQuad]
 [anim name="test_start_bt_01" top=1100 time=1000 effect=easeInQuad]
@@ -42,6 +50,8 @@
 
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+*After_Button_Click
+
 [s  ]
 *close_back
 
@@ -51,6 +61,13 @@
 [hidemenubutton]
 
 [cm  ]
+[tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
 [bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [free name="money" layer=2 ]
@@ -70,11 +87,11 @@
 [button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841"]
 [button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100"]
 [button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100"]
-[button name="lootkang" storage="Test_Scene_01.ks" target="lootkang" graphic="../image/New_GUI/Test_UI/Loot_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Kang_02.png" width="274" height="410" x="614" y="105" ]
-[button name="lootjin" storage="Test_Scene_01.ks" target="lootjin" graphic="../image/New_GUI/Test_UI/Loot_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Jin_02.png" width="274" height="410" x="927" y="105"]
-[button name="lootsul" storage="Test_Scene_01.ks" target="lootsul" graphic="../image/New_GUI/Test_UI/Loot_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Loot_Sul_02.png" width="274" height="410" x="1241" y="105"]
+
 [_tb_end_tyrano_code]
 
+[jump  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
+[s  ]
 [tb_start_tyrano_code]
 [anim name="teststart" top=912 time=300 effect=easeInQuad]
 [anim name="msgshow" top=912 time=300 effect=easeInQuad]
@@ -499,3 +516,18 @@ $('.msgopen03sul').fadeOut(300);
 
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
+*TestStart_Bt_Anim
+
+[tb_start_tyrano_code]
+[iscript]
+console.log("teststart_SCNEDNC")
+[endscript]
+[anim name="teststart" top=912 time=300 effect=easeInQuad]
+[anim name="msgshow" top=912 time=300 effect=easeInQuad]
+[anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
+[anim name="kang_secret_bt_02" top=1100 time=300 effect=easeInQuad]
+[anim name="test_start_bt_01" top=1100 time=1000 effect=easeInQuad]
+[anim name="test_back_bt_01" top=1100 time=1000 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[return  ]

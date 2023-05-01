@@ -3,6 +3,13 @@
 *gift_kang
 
 [cm  ]
+[tb_start_tyrano_code]
+[clearfix name="lootcommon"]
+[clearfix name="lootkang"]
+[clearfix name="lootjin"]
+[clearfix name="lootsul"]
+[_tb_end_tyrano_code]
+
 [mask  time="300"  effect="rotateInUpRight"  color="0x031a00"  ]
 [tb_start_tyrano_code]
 [cm]
