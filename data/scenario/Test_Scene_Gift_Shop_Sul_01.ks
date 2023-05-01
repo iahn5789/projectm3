@@ -3,7 +3,7 @@
 *gift_sul
 
 [cm  ]
-[mask  time="300"  effect="rotateInUpRight"  color="0x000000"  ]
+[mask  time="200"  effect="rotateInUpRight"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
@@ -33,7 +33,7 @@
 
 [hidemenubutton]
 
-[mask_off  time="1000"  effect="rotateOutUpRight"  ]
+[mask_off  time="700"  effect="rotateOutUpRight"  ]
 [tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [s  ]
 *gift_sul_back
