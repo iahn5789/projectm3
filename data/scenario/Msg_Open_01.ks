@@ -124,6 +124,7 @@ $('.msgopen03jin').hide().fadeIn(500);
 [endscript]
 [_tb_end_tyrano_code]
 
+[call  storage="Msg_line_script_Scene_01.ks"  target="*Msg_line_Open_Jin"  ]
 [return  ]
 [s  ]
 *Msg_Open_Sul_01

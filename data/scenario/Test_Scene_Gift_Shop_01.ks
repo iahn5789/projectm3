@@ -3,7 +3,7 @@
 *gift_kang
 
 [cm  ]
-[mask  time="300"  effect="rotateInUpRight"  color="0x031a00"  ]
+[mask  time="300"  effect="rotateInUpRight"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
