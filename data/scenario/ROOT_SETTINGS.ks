@@ -2,6 +2,10 @@
 
 *Day_Check
 
+[jump  storage="ROOT_SETTINGS.ks"  target="*Day_Check_02"  cond="f.testScene=='FALSE'"  ]
+[s  ]
+*Day_Check_02
+
 [tb_start_tyrano_code]
 [if exp="f.Day === 1"]
 [call  storage="ROOT_SETTINGS.ks"  target="*COMMON_ROOT"]
@@ -28,15 +32,16 @@
 [endif]
 [_tb_end_tyrano_code]
 
+[return  ]
 [jump  storage="Test_Scene_01.ks"  target="*After_Button_Change"  ]
 [s  ]
 *COMMON_ROOT
 
 [tb_start_tyrano_code]
 [if exp="f.common_poster_choice_whether === 'FALSE'"]
-[button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_01.png" width="274" height="410" x="927" y="105"]
+[button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_01.png" width="274" height="410" x="927" y="105" z-index="100"]
 [else]
-[button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_02.png" width="274" height="410" x="927" y="105"]
+[button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_02.png" width="274" height="410" x="927" y="105" z-index="100"]
 [endif]
 [_tb_end_tyrano_code]
 
@@ -76,6 +81,10 @@
 [return  ]
 *Common_Bt_Click
 
+[jump  storage="ROOT_SETTINGS.ks"  target="*Common_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
+[return  ]
+*Common_Bt_Click_02
+
 [tb_eval  exp="f.common_poster_choice_whether='TRUE'"  name="common_poster_choice_whether"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
@@ -96,6 +105,10 @@ document.querySelector(".lootcommon.event-setting-element").setAttribute("src", 
 [return  ]
 [s  ]
 *Kang_Bt_Click
+
+[jump  storage="ROOT_SETTINGS.ks"  target="*Kang_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
+[return  ]
+*Kang_Bt_Click_02
 
 [tb_eval  exp="f.k_poster_choice_whether='TRUE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.j_poster_choice_whether='FALSE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
@@ -122,6 +135,10 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [s  ]
 *Jin_Bt_Click
 
+[jump  storage="ROOT_SETTINGS.ks"  target="*Jin_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
+[return  ]
+*Jin_Bt_Click_02
+
 [tb_eval  exp="f.k_poster_choice_whether='FALSE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.j_poster_choice_whether='TRUE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.s_poster_choice_whether='FALSE'"  name="s_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
@@ -146,6 +163,10 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [return  ]
 [s  ]
 *Sul_Bt_Click
+
+[jump  storage="ROOT_SETTINGS.ks"  target="*Sul_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
+[return  ]
+*Sul_Bt_Click_02
 
 [tb_eval  exp="f.k_poster_choice_whether='FALSE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.j_poster_choice_whether='FALSE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]

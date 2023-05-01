@@ -26,4 +26,5 @@ f['common_poster_choice_whether']='FALSE';
 f['k_poster_choice_whether']='FALSE'; 
 f['j_poster_choice_whether']='FALSE'; 
 f['s_poster_choice_whether']='FALSE'; 
+f['testScene']='FALSE'; 
 [endscript] 

@@ -35,7 +35,7 @@
 [button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100"]
 [_tb_end_tyrano_code]
 
-[jump  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
+[call  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
 [s  ]
 *After_Button_Change
 
@@ -101,6 +101,7 @@
 [s  ]
 *msgshow
 
+[tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [anim name="teststart" top=1100 time=200 effect=easeInQuad]
 [anim name="msgshow" top=1100 time=200 effect=easeInQuad]
@@ -141,6 +142,7 @@
 [freeimage layer="1" time=200 wait=false ]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *gift
@@ -157,9 +159,10 @@
 [tb_start_tyrano_code]
 [filter layer=all blur=0 opacity=100]
 [anim name=msgkang time=1 opacity=50]
-[anim name=lootkang time=1 opacity=50]
-[anim name=lootjin time=1 opacity=50]
-[anim name=lootsul time=1 opacity=50]
+[anim name=lootcommon time=1 opacity=10]
+[anim name=lootkang time=1 opacity=10]
+[anim name=lootjin time=1 opacity=10]
+[anim name=lootsul time=1 opacity=10]
 [anim name=gift time=1 opacity=50]
 
 [_tb_end_tyrano_code]
@@ -175,31 +178,31 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[html]
-<div>
-<p  style='z-index:2; left:1000px; top:480px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
-<span id="score_form"></span>
-</p>
-<p  style='z-index:2; left:1000px; top:595px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
-<span id="money_form"></span>
-</p>
-</div>
-
-<script>
-function setScore() {
-let giftLineElem = document.getElementById("score_form");
-giftLineElem.innerHTML = "";
-giftLineElem.innerHTML = window.TYRANO.kag.stat.f.score;
-}
-function setMoney() {
-let giftLineElem = document.getElementById("money_form");
-giftLineElem.innerHTML = "";
-giftLineElem.innerHTML = window.TYRANO.kag.stat.f.money;
-}
-setMoney();
-setScore();
-</script>
-[endhtml]
+;[html]
+;<div>
+;<p  style='z-index:2; left:1000px; top:480px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
+;<span id="score_form"></span>
+;</p>
+;<p  style='z-index:2; left:1000px; top:595px; width:700px; height:100px; color:white; position:absolute;font-size: 50px;'>
+;<span id="money_form"></span>
+;</p>
+;</div>
+;
+;<script>
+;function setScore() {
+;let giftLineElem = document.getElementById("score_form");
+;giftLineElem.innerHTML = "";
+;giftLineElem.innerHTML = window.TYRANO.kag.stat.f.score;
+;}
+;function setMoney() {
+;let giftLineElem = document.getElementById("money_form");
+;giftLineElem.innerHTML = "";
+;giftLineElem.innerHTML = window.TYRANO.kag.stat.f.money;
+;}
+;setMoney();
+;setScore();
+;</script>
+;[endhtml]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -221,6 +224,7 @@ setScore();
 [freeimage layer="1" time=500 wait=false ]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *test_back_bt_01
@@ -234,16 +238,13 @@ setScore();
 [s  ]
 *msgkang
 
-[jump  storage="Test_Scene_01.ks"  target="*msgkang_02"  cond="f.testScene=='FALSE'"  ]
-[s  ]
-*msgkang_02
-
 [tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=5 opacity=40]
-[anim name=lootkang time=1 opacity=50]
-[anim name=lootjin time=1 opacity=50]
-[anim name=lootsul time=1 opacity=50]
+[anim name=lootcommon time=1 opacity=10]
+[anim name=lootkang time=1 opacity=10]
+[anim name=lootjin time=1 opacity=10]
+[anim name=lootsul time=1 opacity=10]
 [anim name=gift time=1 opacity=50]
 [anim name="msgkangbt" top=1100 time=200 effect=easeInQuad]
 [anim name="msgjinbt" top=1100 time=200 effect=easeInQuad]
@@ -319,6 +320,7 @@ $('.msgopen03').fadeOut(300);
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *kang_secret_bt_02
@@ -331,20 +333,18 @@ $('.msgopen03').fadeOut(300);
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *msgjin
 
-[jump  storage="Test_Scene_01.ks"  target="*msgjin_02"  cond="f.testScene=='FALSE'"  ]
-[s  ]
-*msgjin_02
-
 [tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=5 opacity=40]
-[anim name=lootkang time=1 opacity=50]
-[anim name=lootjin time=1 opacity=50]
-[anim name=lootsul time=1 opacity=50]
+[anim name=lootcommon time=1 opacity=10]
+[anim name=lootkang time=1 opacity=10]
+[anim name=lootjin time=1 opacity=10]
+[anim name=lootsul time=1 opacity=10]
 [anim name=gift time=1 opacity=50]
 [anim name="msgkangbt" top=1100 time=200 effect=easeInQuad]
 [anim name="msgjinbt" top=1100 time=200 effect=easeInQuad]
@@ -411,6 +411,7 @@ $('.msgopen03jin').fadeOut(300);
 [endscript]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *jin_secret_bt_02
@@ -423,20 +424,18 @@ $('.msgopen03jin').fadeOut(300);
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *msgsul
 
-[jump  storage="Test_Scene_01.ks"  target="*msgsul_02"  cond="f.testScene=='FALSE'"  ]
-[s  ]
-*msgsul_02
-
 [tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=5 opacity=40]
-[anim name=lootkang time=1 opacity=50]
-[anim name=lootjin time=1 opacity=50]
-[anim name=lootsul time=1 opacity=50]
+[anim name=lootcommon time=1 opacity=10]
+[anim name=lootkang time=1 opacity=10]
+[anim name=lootjin time=1 opacity=10]
+[anim name=lootsul time=1 opacity=10]
 [anim name=gift time=1 opacity=50]
 [anim name="msgkangbt" top=1100 time=200 effect=easeInQuad]
 [anim name="msgjinbt" top=1100 time=200 effect=easeInQuad]
@@ -502,6 +501,7 @@ $('.msgopen03sul').fadeOut(300);
 [endscript]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *sul_secret_bt_02
@@ -514,6 +514,7 @@ $('.msgopen03sul').fadeOut(300);
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
+[tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *TestStart_Bt_Anim
