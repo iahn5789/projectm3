@@ -91,8 +91,8 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="kang_gift_bt_01" storage="Test_Scene_Gift_Shop_01.ks" target="kang_gift_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png" width="241" height="69" x="876" y="640"]
-[button name="kang_back_bt_01" storage="Test_Scene_Gift_Shop_01.ks" target="kang_back_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="241" height="69" x="1145" y="640"]
+[button name="kang_gift_bt_01" storage="Test_Scene_Gift_Shop_01.ks" target="kang_gift_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Gift_Bt_02.png" width="281" height="92" x="579" y="857"]
+[button name="kang_back_bt_01" storage="Test_Scene_Gift_Shop_01.ks" target="kang_back_bt_01" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Back_Bt_02.png" width="281" height="92" x="1060" y="857"]
 [_tb_end_tyrano_code]
 
 [s  ]
