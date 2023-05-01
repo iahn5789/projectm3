@@ -1,2 +1,2 @@
-[preload  storage="./data/bgimage/Common_Sc_ClassRoom_Bgi_01_.png"  ]
+[preload  storage="./data/bgimage/Test_BGI/Test_Bgi_01.png"  ]
 [return] 
