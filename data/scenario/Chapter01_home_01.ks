@@ -121,9 +121,15 @@
 
 [tb_hide_message_window  ]
 [stopse  time="1000"  buf="1"  ]
+[mask  time="800"  effect="fadeIn"  color="0x000000"  ]
 [playbgm  volume="100"  time="2000"  loop="true"  storage="Common_Backstage_cutoff_01.mp3"  fadein="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_cutoff_01.wav"  loop="true"  fadein="true"  ]
-[bg  time="1000"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=multiply wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="100"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
+[mask_off  time="700"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #???
@@ -131,8 +137,11 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[bg  time="500"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=exclusion wait=false]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #???
@@ -140,8 +149,11 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[bg  time="500"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=overlay wait=false]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
@@ -149,8 +161,11 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[bg  time="500"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="500"  method="vanishIn"  storage="BGI/Common_Black.jpg"  ]
+[quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=difference wait=false]
+[_tb_end_tyrano_code]
+
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Mic_Feedback_cutoff_01.wav"  ]
 [stopbgm  time="1000"  fadeout="true"  ]
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
@@ -169,7 +184,11 @@
 [playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Road_01.wav"  fadein="true"  ]
 [playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="vanishIn"  storage="BGI/Common_White_01.png"  ]
-[bg  time="1000"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[tb_start_tyrano_code]
+[free_layermode time=0 wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="2" face="6" ]
 [chara_show name="Jeon" time="100" top="0" left="100" ]

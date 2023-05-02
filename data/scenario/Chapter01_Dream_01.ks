@@ -11,7 +11,7 @@
 ( .....어? )[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_BackStage_01.png"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
 [playbgm  volume="100"  time="1500"  loop="true"  storage="Common_Backstage_01.wav"  fadein="true"  ]
 [tb_start_text mode=1 ]
