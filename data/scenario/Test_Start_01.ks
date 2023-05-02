@@ -40,6 +40,7 @@
 [anim name=testpaper top="-=900" time=1000  ]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Zoom_In_01.wav"  ]
 [tb_start_tyrano_code]
 [camera zoom=1 x=0 y=-0 time=800]
 [camera zoom=1.8 x=0 y=-0 time=1000]

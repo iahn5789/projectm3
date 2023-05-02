@@ -6,6 +6,7 @@
 [cm  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
