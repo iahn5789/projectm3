@@ -509,6 +509,28 @@ body{
   z-index: 999999999;
   animation: fadein 0.5s;
 }
+/* 비밀쪽지 텍스트 출력 */
+.msgrandomtext {
+  z-index:2; 
+  left:680px; 
+  top:910px; 
+  width:600px; 
+  height:120px; 
+  color:white; 
+  position:absolute;
+  font-size: 30px; 
+  font-family: NanumGothicRegular; 
+  line-height: 40px;
+  display: inline-block;
+  padding: 0px;
+  z-index: 999999999;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: break-word;
+  animation: typing 1s steps(20),
+  cursor 1s steps(1) infinite;
+}
+
 
 @keyframes fadein {
     from {
@@ -517,4 +539,11 @@ body{
     to {
         opacity: 1;
     }
+}
+@keyframes typing{
+  from{ width: 0; }
+}
+ 
+@keyframes cursor{
+  50%{ border-color: transparent; }
 }

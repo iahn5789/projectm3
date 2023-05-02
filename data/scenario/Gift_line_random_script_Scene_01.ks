@@ -57,7 +57,7 @@
 [return  ]
 *L_line_value_04
 
-[tb_eval  exp="f.gift_line='나비야?&nbsp;나비야~&nbsp;나비야~&nbsp;<br/>이리&nbsp;날아&nbsp;오너라~'"  name="gift_line"  cmd="="  op="t"  val="나비야?&nbsp;나비야~&nbsp;나비야~&nbsp;<br/>이리&nbsp;날아&nbsp;오너라~"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='나비야?&nbsp;나비야~&nbsp;나비야~&nbsp;&nbsp;이리&nbsp;날아&nbsp;오너라~'"  name="gift_line"  cmd="="  op="t"  val="나비야?&nbsp;나비야~&nbsp;나비야~&nbsp;&nbsp;이리&nbsp;날아&nbsp;오너라~"  val_2="undefined"  ]
 [return  ]
 *L_line_value_05
 
@@ -77,11 +77,11 @@
 [return  ]
 *L_line_value_09
 
-[tb_eval  exp="f.gift_line='뭐야?&nbsp;레코드?<br/>이거&nbsp;들으려면&nbsp;턴테이블이&nbsp;있어야하지&nbsp;않아?'"  name="gift_line"  cmd="="  op="t"  val="뭐야?&nbsp;레코드?<br/>이거&nbsp;들으려면&nbsp;턴테이블이&nbsp;있어야하지&nbsp;않아?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='뭐야?&nbsp;레코드?&nbsp;이거&nbsp;들으려면&nbsp;턴테이블이&nbsp;있어야하지&nbsp;않아?'"  name="gift_line"  cmd="="  op="t"  val="뭐야?&nbsp;레코드?&nbsp;이거&nbsp;들으려면&nbsp;턴테이블이&nbsp;있어야하지&nbsp;않아?"  val_2="undefined"  ]
 [return  ]
 *L_line_value_10
 
-[tb_eval  exp="f.gift_line='뭔가&nbsp;굉장히&nbsp;고급스러워&nbsp;보이는데...&nbsp;<br/>생각보다&nbsp;엄청&nbsp;커!'"  name="gift_line"  cmd="="  op="t"  val="뭔가&nbsp;굉장히&nbsp;고급스러워&nbsp;보이는데...&nbsp;<br/>생각보다&nbsp;엄청&nbsp;커!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='뭔가&nbsp;굉장히&nbsp;고급스러워&nbsp;보이는데...&nbsp;&nbsp;생각보다&nbsp;엄청&nbsp;커!'"  name="gift_line"  cmd="="  op="t"  val="뭔가&nbsp;굉장히&nbsp;고급스러워&nbsp;보이는데...&nbsp;&nbsp;생각보다&nbsp;엄청&nbsp;커!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_11
 
@@ -93,7 +93,7 @@
 [return  ]
 *L_line_value_13
 
-[tb_eval  exp="f.gift_line='뭐야?&nbsp;<br/>난&nbsp;제로&nbsp;말고&nbsp;그냥&nbsp;콜라가&nbsp;더&nbsp;좋아!'"  name="gift_line"  cmd="="  op="t"  val="뭐야?&nbsp;<br/>난&nbsp;제로&nbsp;말고&nbsp;그냥&nbsp;콜라가&nbsp;더&nbsp;좋아!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='뭐야?&nbsp;&nbsp;난&nbsp;제로&nbsp;말고&nbsp;그냥&nbsp;콜라가&nbsp;더&nbsp;좋아!'"  name="gift_line"  cmd="="  op="t"  val="뭐야?&nbsp;&nbsp;난&nbsp;제로&nbsp;말고&nbsp;그냥&nbsp;콜라가&nbsp;더&nbsp;좋아!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_14
 
@@ -101,7 +101,7 @@
 [return  ]
 *L_line_value_15
 
-[tb_eval  exp="f.gift_line='너&nbsp;내가&nbsp;비둘기&nbsp;싫어하는건&nbsp;알아...?<br/>아무튼&nbsp;고마워.'"  name="gift_line"  cmd="="  op="t"  val="너&nbsp;내가&nbsp;비둘기&nbsp;싫어하는건&nbsp;알아...?<br/>아무튼&nbsp;고마워."  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='너&nbsp;내가&nbsp;비둘기&nbsp;싫어하는건&nbsp;알아...?&nbsp;아무튼&nbsp;고마워.'"  name="gift_line"  cmd="="  op="t"  val="너&nbsp;내가&nbsp;비둘기&nbsp;싫어하는건&nbsp;알아...?&nbsp;아무튼&nbsp;고마워."  val_2="undefined"  ]
 [return  ]
 *L_line_value_16
 
@@ -113,7 +113,7 @@
 [return  ]
 *L_line_value_18
 
-[tb_eval  exp="f.gift_line='너&nbsp;아침의&nbsp;유혹&nbsp;봤어?<br/>그&nbsp;드라마&nbsp;진짜&nbsp;재미있어'"  name="gift_line"  cmd="="  op="t"  val="너&nbsp;아침의&nbsp;유혹&nbsp;봤어?<br/>그&nbsp;드라마&nbsp;진짜&nbsp;재미있어"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='너&nbsp;아침의&nbsp;유혹&nbsp;봤어?&nbsp;그&nbsp;드라마&nbsp;진짜&nbsp;재미있어'"  name="gift_line"  cmd="="  op="t"  val="너&nbsp;아침의&nbsp;유혹&nbsp;봤어?&nbsp;그&nbsp;드라마&nbsp;진짜&nbsp;재미있어"  val_2="undefined"  ]
 [return  ]
 *L_line_value_19
 
@@ -121,7 +121,7 @@
 [return  ]
 *L_line_value_20
 
-[tb_eval  exp="f.gift_line='그&nbsp;둘이&nbsp;헤어졌어!<br/>이런&nbsp;결말을&nbsp;원했던&nbsp;게&nbsp;아닌데!!!'"  name="gift_line"  cmd="="  op="t"  val="그&nbsp;둘이&nbsp;헤어졌어!<br/>이런&nbsp;결말을&nbsp;원했던&nbsp;게&nbsp;아닌데!!!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='그&nbsp;둘이&nbsp;헤어졌어!&nbsp;이런&nbsp;결말을&nbsp;원했던&nbsp;게&nbsp;아닌데!!!'"  name="gift_line"  cmd="="  op="t"  val="그&nbsp;둘이&nbsp;헤어졌어!&nbsp;이런&nbsp;결말을&nbsp;원했던&nbsp;게&nbsp;아닌데!!!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_21
 
@@ -129,7 +129,7 @@
 [return  ]
 *L_line_value_22
 
-[tb_eval  exp="f.gift_line='있잖아&nbsp;핸드폰&nbsp;말고&nbsp;이런&nbsp;카메라로&nbsp;찍는게&nbsp;<br/>더&nbsp;잘나온다니까?'"  name="gift_line"  cmd="="  op="t"  val="있잖아&nbsp;핸드폰&nbsp;말고&nbsp;이런&nbsp;카메라로&nbsp;찍는게&nbsp;<br/>더&nbsp;잘나온다니까?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='있잖아&nbsp;핸드폰&nbsp;말고&nbsp;이런&nbsp;카메라로&nbsp;찍는게&nbsp;&nbsp;더&nbsp;잘나온다니까?'"  name="gift_line"  cmd="="  op="t"  val="있잖아&nbsp;핸드폰&nbsp;말고&nbsp;이런&nbsp;카메라로&nbsp;찍는게&nbsp;&nbsp;더&nbsp;잘나온다니까?"  val_2="undefined"  ]
 [return  ]
 *L_line_value_23
 
@@ -165,7 +165,7 @@
 [return  ]
 *L_line_value_31
 
-[tb_eval  exp="f.gift_line='지하철이&nbsp;멈추지&nbsp;않는&nbsp;<br/>간이역의&nbsp;비밀...'"  name="gift_line"  cmd="="  op="t"  val="지하철이&nbsp;멈추지&nbsp;않는&nbsp;<br/>간이역의&nbsp;비밀..."  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='지하철이&nbsp;멈추지&nbsp;않는&nbsp;&nbsp;간이역의&nbsp;비밀...'"  name="gift_line"  cmd="="  op="t"  val="지하철이&nbsp;멈추지&nbsp;않는&nbsp;&nbsp;간이역의&nbsp;비밀..."  val_2="undefined"  ]
 [return  ]
 *L_line_value_32
 
@@ -173,7 +173,7 @@
 [return  ]
 *L_line_value_33
 
-[tb_eval  exp="f.gift_line='헬멧은&nbsp;이미&nbsp;있는데...&nbsp;<br/>그래도&nbsp;고마워...'"  name="gift_line"  cmd="="  op="t"  val="헬멧은&nbsp;이미&nbsp;있는데...&nbsp;<br/>그래도&nbsp;고마워..."  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='헬멧은&nbsp;이미&nbsp;있는데...&nbsp;&nbsp;그래도&nbsp;고마워...'"  name="gift_line"  cmd="="  op="t"  val="헬멧은&nbsp;이미&nbsp;있는데...&nbsp;&nbsp;그래도&nbsp;고마워..."  val_2="undefined"  ]
 [return  ]
 *L_line_value_34
 

@@ -19,6 +19,9 @@
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_01.png';>
+<p class="msgrandomtext">
+<span id="gift_line_form"></span>
+</p>
 </div>
 </div>
 
@@ -46,7 +49,8 @@ setGiftLine();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
+[anim name=Back time=200 top=948]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -62,9 +66,11 @@ setGiftLine();
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_02.png';>
+<p class="msgrandomtext">
+<span id="gift_line_form"></span>
+</p>
 </div>
 </div>
-
 
 <script>
 function setGiftLine() {
@@ -89,7 +95,8 @@ setGiftLine();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
+[anim name=Back time=200 top=948]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -105,6 +112,9 @@ setGiftLine();
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_03.png';>
+<p class="msgrandomtext">
+<span id="gift_line_form"></span>
+</p>
 </div>
 </div>
 
@@ -133,7 +143,8 @@ setGiftLine();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
+[anim name=Back time=200 top=948]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -149,6 +160,9 @@ setGiftLine();
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_04.png';>
+<p class="msgrandomtext">
+<span id="gift_line_form"></span>
+</p>
 </div>
 </div>
 
@@ -177,7 +191,8 @@ setGiftLine();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="142" height="106" x="1381" y="207"]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
+[anim name=Back time=200 top=948]
 [_tb_end_tyrano_code]
 
 [s  ]
