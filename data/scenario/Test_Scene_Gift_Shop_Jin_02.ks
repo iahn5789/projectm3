@@ -16,11 +16,10 @@
 [call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_01.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
-<p  style='z-index:2; left:620px; top:800px; width:700px; height:100px; color:white; position:absolute;font-size: 30px;'>
-<span id="gift_line_form"></span>
-</p>
+<div class="shopmsg">
+<div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_01.png';>
+</div>
 </div>
 
 <script>
@@ -60,12 +59,12 @@ setGiftLine();
 [call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_02.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
-<p  style='z-index:2; left:620px; top:800px; width:700px; height:100px; color:white; position:absolute;font-size: 30px;'>
-<span id="gift_line_form"></span>
-</p>
+<div class="shopmsg">
+<div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_02.png';>
 </div>
+</div>
+
 
 <script>
 function setGiftLine() {
@@ -103,12 +102,12 @@ setGiftLine();
 [call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_03.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
-<p  style='z-index:2; left:620px; top:800px; width:700px; height:100px; color:white; position:absolute;font-size: 30px;'>
-<span id="gift_line_form"></span>
-</p>
+<div class="shopmsg">
+<div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_03.png';>
 </div>
+</div>
+
 
 <script>
 function setGiftLine() {
@@ -147,12 +146,12 @@ setGiftLine();
 [call  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_save"  ]
 [tb_start_tyrano_code]
 [html]
-<div>
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_04.png' style='z-index:1; left:538px; top:109px; width:843px; height:862px; position:absolute;'>
-<p  style='z-index:2; left:620px; top:800px; width:700px; height:100px; color:white; position:absolute;font-size: 30px;'>
-<span id="gift_line_form"></span>
-</p>
+<div class="shopmsg">
+<div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Jin_04.png';>
 </div>
+</div>
+
 
 <script>
 function setGiftLine() {
