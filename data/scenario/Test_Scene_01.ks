@@ -2,6 +2,7 @@
 
 *testscene
 
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  ]
 [tb_hide_message_window  ]
 [bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
 [tb_keyconfig  flag="0"  ]

@@ -1,7 +1,7 @@
 [_tb_system_call storage=system/_Chapter01_School_Club_01.ks]
 
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
-[playbgm  volume="30"  time="1000"  loop="true"  storage="Common_Embarrass_01.mp3"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  ]
 [tb_start_text mode=1 ]
 #???
 꺄악-!!!!!!![p]
