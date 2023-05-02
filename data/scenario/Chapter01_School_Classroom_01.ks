@@ -2,7 +2,7 @@
 
 [hidemenubutton]
 
-[playbgm  volume="40"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="true"  ]
+[playbgm  volume="80"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  ]
 [playse  volume="40"  time="1000"  buf="0"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
@@ -282,7 +282,7 @@
 [_tb_end_text]
 
 [quake  time="400"  count="5"  hmax="5"  wait="true"  ]
-[font  size="40"  color="0xffffff"  face="SBB"  ]
+[font  size="40"  color="0x000000"  face="SBB"  ]
 [playse  volume="65"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  ]
 [tb_start_text mode=1 ]
 #전대용
@@ -295,7 +295,7 @@
 으응...?[p]
 [_tb_end_text]
 
-[font  size="40"  color="0xffffff"  face="SBB"  ]
+[font  size="40"  color="0x000000"  face="SBB"  ]
 [playse  volume="70"  time="1000"  buf="1"  storage="SFX/Typing_Fast_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #전대용

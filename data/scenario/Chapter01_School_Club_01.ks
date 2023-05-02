@@ -1,13 +1,13 @@
 [_tb_system_call storage=system/_Chapter01_School_Club_01.ks]
 
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  ]
 [tb_start_text mode=1 ]
 #???
 꺄악-!!!!!!![p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[playbgm  volume="85"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  fadein="false"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [playse  volume="60"  time="1000"  buf="0"  storage="SFX/Body_Fall_01.wav"  ]
@@ -276,8 +276,6 @@
 [filter layer=all blur=0 ]
 [_tb_end_tyrano_code]
 
-[stopbgm  time="1000"  ]
-[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="2" ]
@@ -334,7 +332,7 @@
 으...응...[p]
 [_tb_end_text]
 
-[font  size="40"  color="0xffffff"  face="SBB"  ]
+[font  size="40"  color="0x000000"  face="SBB"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jin" body="3" ]
 [_tb_end_tyrano_code]
@@ -433,8 +431,6 @@
 [filter layer=all blur=0 ]
 [_tb_end_tyrano_code]
 
-[stopbgm  time="1000"  ]
-[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="2" ]
@@ -585,7 +581,6 @@
 [chara_show name="Kang" time="100" width="1169" height="2735" left="375" top="0"]
 [_tb_end_tyrano_code]
 
-[stopbgm  time="1000"  fadeout="true"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Cloth_movement_02.wav"  ]
 [tb_start_text mode=1 ]
 #
@@ -662,8 +657,6 @@
 [filter layer=all blur=0 ]
 [_tb_end_tyrano_code]
 
-[stopbgm  time="1000"  ]
-[playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="2"]
