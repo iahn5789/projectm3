@@ -160,6 +160,9 @@ setGiftLine();
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
 <img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_04.png';>
+<p class="msgrandomtext">
+<span id="gift_line_form"></span>
+</p>
 </div>
 </div>
 
