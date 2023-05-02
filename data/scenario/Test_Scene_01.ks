@@ -2,7 +2,7 @@
 
 *testscenestart
 
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  ]
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  ]
 *testscene
 
 [tb_hide_message_window  ]
@@ -34,8 +34,8 @@
 
 [tb_start_tyrano_code]
 [button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
-[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Exam_Desk_Draw_01.wav"]
 [_tb_end_tyrano_code]
 
 [call  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
@@ -87,10 +87,9 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841"]
-[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100"]
-[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100"]
-
+[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Exam_Desk_Draw_01.wav"]
 [_tb_end_tyrano_code]
 
 [call  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
@@ -115,10 +114,10 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="msgkangbt" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="231" height="229" x="946" y="1100"]
-[button name="msgjinbt" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="240" height="241" x="730" y="1100"]
-[button name="msgsulbt" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="256" height="256" x="1131" y="1100"]
-[button name="msgclosebt" storage="Test_Scene_01.ks" target="msgclosebt" graphic="../image/New_GUI/Test_UI/Msg_Close_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Close_Bt_02.png" width="135" height="229" x="1430" y="1100"]
+[button name="msgkangbt" storage="Test_Scene_01.ks" target="msgkang" graphic="../image/New_GUI/Test_UI/Test_Msg_Kang_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Kang_02.png" width="231" height="229" x="946" y="1100" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="msgjinbt" storage="Test_Scene_01.ks" target="msgjin" graphic="../image/New_GUI/Test_UI/Test_Msg_Jin_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Jin_02.png" width="240" height="241" x="730" y="1100" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="msgsulbt" storage="Test_Scene_01.ks" target="msgsul" graphic="../image/New_GUI/Test_UI/Test_Msg_Sul_01.png" enterimg="../image/New_GUI/Test_UI/Test_Msg_Sul_02.png" width="256" height="256" x="1131" y="1100" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="msgclosebt" storage="Test_Scene_01.ks" target="msgclosebt" graphic="../image/New_GUI/Test_UI/Msg_Close_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Close_Bt_02.png" width="135" height="229" x="1430" y="1100" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -209,8 +208,8 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="test_start_bt_01" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png"]
-[button name="test_back_bt_01" storage="Test_Scene_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Test_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Test_Close_02.png"]
+[button name="test_start_bt_01" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[button name="test_back_bt_01" storage="Test_Scene_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Test_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Test_Close_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -268,8 +267,8 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="kang_secret_bt_01" storage="Test_Scene_01.ks" target="kang_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
-[button name="kang_secret_bt_02" storage="Test_Scene_01.ks" target="kang_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="kang_secret_bt_01" storage="Test_Scene_01.ks" target="kang_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="kang_secret_bt_02" storage="Test_Scene_01.ks" target="kang_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 
 [_tb_end_tyrano_code]
 
@@ -298,7 +297,7 @@
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Kang_01"  ]
 [tb_start_tyrano_code]
-[button name="msg_close_01" storage="Test_Scene_01.ks" target="msg_close_01" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="msg_close_01" storage="Test_Scene_01.ks" target="msg_close_01" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 
 [_tb_end_tyrano_code]
 
@@ -369,8 +368,8 @@ $('.msgopen03').fadeOut(300);
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="jin_secret_bt_01" storage="Test_Scene_01.ks" target="jin_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
-[button name="jin_secret_bt_02" storage="Test_Scene_01.ks" target="jin_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="jin_secret_bt_01" storage="Test_Scene_01.ks" target="jin_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="jin_secret_bt_02" storage="Test_Scene_01.ks" target="jin_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 
 [_tb_end_tyrano_code]
 
@@ -400,7 +399,7 @@ $('.msgopen03').fadeOut(300);
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Jin_01"  ]
 [tb_start_tyrano_code]
-[button name="msg_close_02" storage="Test_Scene_01.ks" target="msg_close_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="msg_close_02" storage="Test_Scene_01.ks" target="msg_close_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 
 [_tb_end_tyrano_code]
 
@@ -460,8 +459,8 @@ $('.msgopen03jin').fadeOut(300);
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png"]
-[button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="sul_secret_bt_01" storage="Test_Scene_01.ks" target="sul_secret_bt_01" graphic="../image/New_GUI/Test_UI/Popup_Buy_01.png" width="348" height="106" x="575" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Buy_02.png" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="sul_secret_bt_02" storage="Test_Scene_01.ks" target="sul_secret_bt_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="999" y="1100" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -490,7 +489,7 @@ $('.msgopen03jin').fadeOut(300);
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Sul_01"  ]
 [tb_start_tyrano_code]
-[button name="msg_close_03" storage="Test_Scene_01.ks" target="msg_close_03" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png"]
+[button name="msg_close_03" storage="Test_Scene_01.ks" target="msg_close_03" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 
 [_tb_end_tyrano_code]
 
