@@ -224,3 +224,4 @@
 강여진!!![p]
 [_tb_end_tyrano_code]
 
+[jump  storage="Chapter03_School_Club_02.ks"  target="*Chapter03_02"  ]
