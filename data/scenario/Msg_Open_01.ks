@@ -21,6 +21,7 @@
 [clearfix name="lootsul"]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Open_Message_01.wav"  fadein="false"  ]
 [mask_off  time="300"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
 [image layer=1 width=606 height=601 left=607 top=240 page=fore visible=true name=msgopen01 storage = ../image/New_GUI/Test_UI/Msg_Open_01.png ]
@@ -84,6 +85,7 @@ $('.msgopen03').hide().fadeIn(500);
 [free name="score" layer=2 ]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Open_Message_01.wav"  ]
 [mask_off  time="300"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
 [image layer=1 width=606 height=601 left=607 top=240 page=fore visible=true name=msgopen01jin storage = ../image/New_GUI/Test_UI/Msg_Open_01.png ]
@@ -148,6 +150,7 @@ $('.msgopen03jin').hide().fadeIn(500);
 [free name="score" layer=2 ]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Open_Message_01.wav"  ]
 [mask_off  time="300"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
 [image layer=1 width=606 height=601 left=607 top=240 page=fore visible=true name=msgopen01sul storage = ../image/New_GUI/Test_UI/Msg_Open_01.png ]
