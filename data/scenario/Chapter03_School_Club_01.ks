@@ -3,6 +3,7 @@
 *chapter03_01
 
 [cm  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
@@ -61,10 +62,14 @@
 그래도 혹시 모르니까 연습 정도는 해두는 것이 좋을 것 같아[p]
 [chara_part name="Kang" body="1" face="2" ]
 [chara_move name="Kang" width=1169 height=2735 left=375 top=0 time=300 wait=false]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 다들 기다리고 있으니까 어서 동아리방으로 가자![p]
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
@@ -121,11 +126,15 @@
 [chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open.wav"  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="1" ]
 [chara_show name="Kang" top="0" left="553" time=200 wait=false ]
 #강여진
 아! 둘 다 와있었구나![p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #진다영
 늦어! 늦는다구![p]
 #설나희
@@ -138,6 +147,10 @@
 [chara_show name="Jin" top="0" left="553" time=200 wait=false ]
 #강여진
 이 쪽은 우리 밴드부에서 베이스와 귀염둥이역을 맡은[r]새침데기 진다영![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Applause_01.wav"  ]
+[tb_start_tyrano_code]
 #진다영
 누...누가 귀염둥이라는거야![p]
 #강여진
@@ -158,6 +171,10 @@
 [chara_show name="Sul" top="0" left="553" time=200 wait=false ]
 #강여진
 그리고 이쪽은 우리 밴드의 드럼을 맡고 있는 우리들의[r]맏언니 설나희![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Applause_02.wav"  ]
+[tb_start_tyrano_code]
 #설나희
 ...[p]
 #설나희
@@ -192,9 +209,14 @@
 그냥 편하게 여진이라고 불러도 좋아![p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Heart_Beat_01.wav"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 ( 처음으로 손잡아 본 여자... )[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 응...고마워 여진아...[p]
 [chara_part name="Kang" body="2" face="2" ]
@@ -301,11 +323,23 @@
 #진다영
 엥?[p]
 [chara_part name="Kang" body="1" face="1" ]
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #강여진
 당연한 거잖아? [r]밴드 하는 사람은 어쩔 수 없이[r]기타를 좋아할 수 밖에 없다구?[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Guitar_Lick_01.wav"  ]
+[tb_start_tyrano_code]
 #강여진
 멋진 소리와 음악의 절정에서 휘몰아치는 기타 솔로! [p]
 결국 기타를 좋아할 수 밖에 없는 거 아니겠어?[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="2000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #진다영
 아하 그렇게 생각하고 있다는거지?[p]
 #강여진
@@ -316,6 +350,10 @@
 #진다영
 베이스를 한 번도 연주해 본 적이 없으니까 그런 말이[r]나오는 거잖아[p]
 [chara_part name="Jin" body="1" face="1" ]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Bass_Lick_01.wav"  ]
+[tb_start_tyrano_code]
 #진다영
 커다란 바디에서 나오는 묵직한 울림![p]
 #진다영
@@ -327,9 +365,9 @@
 모기 같이 앵앵거리는 기타하고는 결이 다르다 이 말이야![p]
 #진다영
 하긴 박자와 프레이즈 사이에서 항상 고민하는[r]베이시스트의 고뇌를 우리 기타 쟁이는 한 번도[r]느껴본 적이 없으니까 모르는 거겠지~[p]
-
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="5" ]
 #강여진
