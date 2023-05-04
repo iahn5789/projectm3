@@ -71,6 +71,7 @@
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_hide_message_window  ]
+[playbgm  volume="70"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
