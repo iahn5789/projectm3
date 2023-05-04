@@ -3,9 +3,11 @@
 *Chapter03_02
 
 [cm  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
+[tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
-쾅!!!!!!![p]
+쾅!!        쾅!!!!            쾅!!!!!!!!![p]
 #설나희
 둘 다 그만[p]
 #설나희
@@ -38,3 +40,237 @@
 저...저는...[p]
 [_tb_end_tyrano_code]
 
+[tb_hide_message_window  ]
+[tb_start_tyrano_code]
+[glink color="btn_21_yellow" target="l_kang" text="그래도&nbsp;역시&nbsp;밴드는&nbsp;기타가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="200" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_jin" text="베이스가&nbsp;없으면&nbsp;허전하지..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="500" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_sul" text="둘&nbsp;다&nbsp;그만해!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="800" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[_tb_end_tyrano_code]
+
+[s  ]
+*l_kang
+
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#&[sf.name]
+그래도 밴드에 기타가 없으면 조금 허전하지 아마...[p]
+#강여진
+하하! 거봐 그럴 줄 알았어![r]다들 기타를 좋아할 수밖에 없다니까?[p]
+#진다영
+뭐?! 인정할 수 없어! 네가 데려온 사람이잖아![r]그러면 당연히 네 편을 들 수밖에 없는 거 아니야?[p]
+#강여진
+그래도 역시 밴드에는 기타가 있어야 하지![r]다영이 넌 나한테 진 게 그렇게 분한 거야? 하하하!![p]
+#진다영
+시끄러!! 바보!! 멍청이!! 말미잘!![p]
+#강여진
+알겠어 이제 그만하자!![p]
+#진다영
+퉤!![p]
+#설나희
+에휴...[p]
+#설나희
+답은 이미 정해졌으니 둘 다 이제 그만해...[p]
+#설나희
+만약 이 이상 또 이 문제로 싸우면...[p]
+#설나희
+말 안해도 알지?[p]
+#
+네...[p]
+#설나희
+그래 싸우지 말자...[p]
+[_tb_end_tyrano_code]
+
+[jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
+[s  ]
+*l_jin
+
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#&[sf.name]
+그래도 역시 밴드에 베이스가 빠지면 뭔가 허전하지...[p]
+#진다영
+하하하하하하하하하핳!! 들었어??? 이 변태가 방금[r]베이스가 없으면 허전하다고 했지?[p]
+#
+그러니까 그 변태는...좀 빼줬으면 좋겠는데...[p]
+#진다영
+음흉한 생각만 하는 줄 알았는데 나름대로 생각할 줄[r]아는가 보네! 베이스를 아주 정확하게 알고 있잖아??[p]
+#진다영
+내 승리다 강여진!! 하하하하하하하!!![p]
+#강여진
+다영이 너 진짜...[p]
+#강여진
+그래 뭐 틀린 말은 아니니까 내가 한번 봐줬다![p]
+#강여진
+두고봐 다음에 다시 한번 물어볼 땐 기타가 없으면[r]안 된다는 걸 알게 될 테니까![p]
+#진다영
+응 아니야~ 다음에도 똑같아~~~~![p]
+#설나희
+...[p]
+#설나희
+다시...한다고...?[p]
+#
+헉...[p]
+#설나희
+다시할까?[p]
+#
+아니요...[p]
+#설나희
+그래 이제 그만하자.[p]
+#&[sf.name]
+역시 이사람 무서워...[p]
+[_tb_end_tyrano_code]
+
+[jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
+[s  ]
+*l_sul
+
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#&[sf.name]
+둘 다 그만해...[r]좋아하는 악기는 있지만 뭐가 더 중요하다고는 할 수 없어[p]
+#&[sf.name]
+모두 다 똑같은 밴드의 구성원이야[r]그러니 싸우지 마[p]
+#설나희
+...
+#강여진
+맞아 다 똑같이 중요한데[r]부끄러운 모습을 보여버린 것 같네...[p]
+#진다영
+아니..나는 싸우려고 했던 건 아니였는데...[p]
+#설나희
+그래서 좋아하는 악기는 뭐야?[p]
+#&[sf.name]
+( 앗...당장 생각나는 악기가 없는데... )[p]
+#&[sf.name]
+( 일단 눈에 들어오는 거로..! )[p]
+#&[sf.name]
+저는...드럼...[r]드럼이 제일 좋아요[p]
+#강여진
+오? 의외네?[p]
+#진다영
+그러게 운동은 잘 못할 것 같은데?[p]
+#&[sf.name]
+운동?[p]
+#강여진
+조용한 걸 좋아할 줄 알았는데[r]드럼을 좋아한다니 의외인걸?[p]
+#강여진
+맞아 매력 있는 악기지[r]나도 가끔은 배워보고 싶다니까?[p]
+#진다영
+칠 줄 아는 거 아니였어?[p]
+#강여진
+그래도 우리 나희 언니만큼은 아니야~[p]
+
+[_tb_end_tyrano_code]
+
+[jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
+[s  ]
+*l_01
+
+[tb_start_tyrano_code]
+#강여진
+자! 그럼 소개도 끝난 것 같으니[r]아주 중요한 일이 남아있어[p]
+#진다영
+또? 집에 가고 싶단 말이야!! 집에 보내줘~~~[p]
+#강여진
+동아리 이름! 즉, 밴드 이름을 정해야 해![p]
+#&[sf.name]
+그러고 보니 왜 우리 동아리 이름은 리듬 오브 레전드야?[p]
+#강여진
+아... 그건...[p]
+#강여진
+멋있지 않아?[r]
+리듬 오브 레전드! 뭔가 엄청날 것 같잖아![p]
+#진다영
+구려...[p]
+#설나희
+별로야...[p]
+#&[sf.name]
+하하...[p]
+#강여진
+다들 이런 반응이라니까...[p]
+#강여진
+그래서 모든 맴버들이 다 모이면[r]새로 이름을 정하고 싶었어![p]
+#강여진
+추천할 만한 이름이 있다면 말하도록![r]
+오! 다영이 손 든 거야?[p]
+#진다영
+진다영과 친구들 어때?[p]
+#강여진
+음..다른 누군가가 떠오르는 이름인걸[r]
+나희 언니는?[p]
+#설나희
+와일드 캣...?[p]
+#진다영
+그거 완전 축구팀 이름 같은 건 알고 있지?[p]
+#강여진
+뭐야...다들 태클만 걸고 제대로 된 이름이 없잖아![r]
+역시 리듬 오브 레전드가 최고라니까...[p]
+#진다영
+싫어!!! 그런 이름으로 난 하기 싫어!!![p]
+#설나희
+나도 다른 이름이 좋다고 생각해...[p]
+#강여진
+칫...[p]
+#강여진
+네 생각은 어때?[p]
+#&[sf.name]
+나...?[p]
+#&[sf.name]
+나는 따로 생각한 건 없는데[r]
+애초에 밴드를 할 생각도 없었다고...[p]
+#강여진
+그래도 의견은 내야지~ 이제 같은 밴드부원이라구![p]
+#진다영
+이 바보가 무슨 생각이 있겠어![r]음흉한 상상만 하고 있겠지![p]
+#&[sf.name]
+그건 아니거든![p]
+#&[sf.name]
+음...뭔가 떠오르는건 없는데...[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#
+( 어...잠깐만...? )[p]
+#
+( 분명... )[p]
+#사회자
+이번 순서는~~러브 크레센도~~!!!!![p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+#&[sf.name]
+러브...크레센도...?[p]
+#진다영
+하하! 그게 뭐야 어디서 나온 말이야![p]
+#&[sf.name]
+꿈...속에서...?[p]
+#강여진
+음...러브 크레센도? 나쁘지 않은데?[p]
+#진다영
+솔직히 리듬 오브 레전드보다는 훨~씬 좋다고 봐[p]
+#설나희
+나도 좋다고 생각해...[p]
+#강여진
+좋아! 결정이다![p]
+#강여진
+지금부터 우리 밴드의 이름은 러브 크레센도야!![p]
+#강여진
+다들 이견 없지?[p]
+#진다영
+좋아 맘에 들어[p]
+#설나희
+좋아...[p]
+#강여진
+그래 러브 크레센도 결성 기념으로...[p]
+#강여진
+오늘은 내가 쏜다!![p]
+#진다영
+또 언제나처럼 떡볶이 먹으러 가는 거겠지...[p]
+#설나희
+그렇지...[p]
+#강여진
+하하! 어서 가자! [p]
+#강여진
+오늘은 왕창 먹을 거야![p]
+[_tb_end_tyrano_code]
+
+[s  ]
