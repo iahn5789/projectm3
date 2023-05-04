@@ -7,7 +7,11 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
-쾅!!        쾅!!!!            쾅!!!!!!!!![p]
+쾅!!!        쾅!!!!            쾅!!!!!!!!![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="true"  loop="true"  ]
+[tb_start_tyrano_code]
 #설나희
 둘 다 그만[p]
 #설나희
@@ -40,6 +44,7 @@
 저...저는...[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  ]
 [tb_hide_message_window  ]
 [tb_start_tyrano_code]
 [glink color="btn_21_yellow" target="l_kang" text="그래도&nbsp;역시&nbsp;밴드는&nbsp;기타가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="200" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
@@ -70,14 +75,20 @@
 에휴...[p]
 #설나희
 답은 이미 정해졌으니 둘 다 이제 그만해...[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
+[tb_start_tyrano_code]
 #설나희
 만약 이 이상 또 이 문제로 싸우면...[p]
 #설나희
 말 안해도 알지?[p]
-#
+#강여진
 네...[p]
+#진다영
+아하하...싸우긴 누가~...하!하!하!
 #설나희
-그래 싸우지 말자...[p]
+그래...싸우지 말자[p]
 [_tb_end_tyrano_code]
 
 [jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
@@ -106,6 +117,10 @@
 응 아니야~ 다음에도 똑같아~~~~![p]
 #설나희
 ...[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
+[tb_start_tyrano_code]
 #설나희
 다시...한다고...?[p]
 #
@@ -179,6 +194,10 @@
 #강여진
 멋있지 않아?[r]
 리듬 오브 레전드! 뭔가 엄청날 것 같잖아![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
+[tb_start_tyrano_code]
 #진다영
 구려...[p]
 #설나희
@@ -187,6 +206,10 @@
 하하...[p]
 #강여진
 다들 이런 반응이라니까...[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #강여진
 그래서 모든 맴버들이 다 모이면[r]새로 이름을 정하고 싶었어![p]
 #강여진
@@ -199,6 +222,10 @@
 나희 언니는?[p]
 #설나희
 와일드 캣...?[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Whistle_01.wav"  ]
+[tb_start_tyrano_code]
 #진다영
 그거 완전 축구팀 이름 같은 건 알고 있지?[p]
 #강여진
@@ -261,10 +288,19 @@
 좋아...[p]
 #강여진
 그래 러브 크레센도 결성 기념으로...[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Crowd_Cheer_01.wav"  ]
+[tb_start_tyrano_code]
 #강여진
 오늘은 내가 쏜다!![p]
 #진다영
 또 언제나처럼 떡볶이 먹으러 가는 거겠지...[p]
+
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #설나희
 그렇지...[p]
 #강여진
