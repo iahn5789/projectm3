@@ -109,9 +109,9 @@
 [stopse  time="1000"  buf="0"  ]
 [tb_hide_message_window  ]
 [tb_start_tyrano_code]
-[glink color="btn_21_yellow" target="l_kang" text="그래도&nbsp;역시&nbsp;밴드는&nbsp;기타가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="200" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_jin" text="베이스가&nbsp;없으면&nbsp;허전하지..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="500" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
-[glink color="btn_21_yellow" target="l_sul" text="둘&nbsp;다&nbsp;그만해!" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="800" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_kang" text="그래도 역시 밴드는 기타가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="200" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_jin" text="베이스가 없으면 허전하지..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="500" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
+[glink color="btn_21_yellow" target="l_sul" text="둘 다 그만해..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="800" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -173,7 +173,7 @@
 그래...싸우지 말자[p]
 [_tb_end_tyrano_code]
 
-[jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
+[jump  storage="Chapter03_School_Club_02.ks"  target="*l_kangjin"  ]
 [s  ]
 *l_jin
 
@@ -250,7 +250,7 @@
 역시 이사람 무서워...[p]
 [_tb_end_tyrano_code]
 
-[jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
+[jump  storage="Chapter03_School_Club_02.ks"  target="*l_kangjin"  ]
 [s  ]
 *l_sul
 
@@ -265,13 +265,14 @@
 #&[sf.name]
 둘 다 그만해...[r]좋아하는 악기는 있지만 뭐가 더 중요하다고는 할 수 없어[p]
 #&[sf.name]
-모두 다 똑같은 밴드의 구성원이야[r]그러니 싸우지 마[p]
+모두 다 똑같은 밴드의 구성원이야[r]그러니 싸우지 말았으면 해...[p]
 #설나희
-...
+...[p]
 #강여진
 맞아 다 똑같이 중요한데[r]부끄러운 모습을 보여버린 것 같네...[p]
 #진다영
 아니..나는 싸우려고 했던 건 아니였는데...[p]
+[chara_part name="Sul" body="4" face="1" ]
 #설나희
 그래서 좋아하는 악기는 뭐야?[p]
 #&[sf.name]
@@ -280,21 +281,39 @@
 ( 일단 눈에 들어오는 거로..! )[p]
 #&[sf.name]
 저는...드럼...[r]드럼이 제일 좋아요[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="3" face="1" ]
+[chara_part name="Jin" body="1" face="2" ]
+[chara_show name="Jin" time="200" width="813" height="1903" top="0" left="146" wait=false]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="960" wait=false]
 #강여진
-오? 의외네?[p]
+오! 의외네![p]
 #진다영
 그러게 운동은 잘 못할 것 같은데?[p]
 #&[sf.name]
 운동?[p]
+[chara_part name="Kang" body="2" face="1" ]
 #강여진
 조용한 걸 좋아할 줄 알았는데[r]드럼을 좋아한다니 의외인걸?[p]
 #강여진
 맞아 매력 있는 악기지[r]나도 가끔은 배워보고 싶다니까?[p]
+[chara_part name="Jin" body="1" face="4" ]
 #진다영
 칠 줄 아는 거 아니였어?[p]
 #강여진
 그래도 우리 나희 언니만큼은 아니야~[p]
+[_tb_end_tyrano_code]
 
+[jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
+[s  ]
+*l_kangjin
+
+[tb_start_tyrano_code]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="3" face="1" ]
+[chara_part name="Jin" body="1" face="2" ]
+[chara_show name="Jin" time="200" width="813" height="1903" top="0" left="146" wait=false]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="960" wait=false]
 [_tb_end_tyrano_code]
 
 [jump  storage="Chapter03_School_Club_02.ks"  target="*l_01"  ]
@@ -304,27 +323,52 @@
 [tb_start_tyrano_code]
 #강여진
 자! 그럼 소개도 끝난 것 같으니[r]아주 중요한 일이 남아있어[p]
+[chara_part name="Jin" body="2" face="6" ]
 #진다영
 또? 집에 가고 싶단 말이야!! 집에 보내줘~~~[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="2" face="2" ]
+[chara_show name="Kang" time="200" width="1169" height="2735" top="0" left="375" wait=false]
 #강여진
-동아리 이름! 즉, 밴드 이름을 정해야 해![p]
+동아리 이름! 밴드 이름을 정해야 해![p]
 #&[sf.name]
 그러고 보니 왜 우리 동아리 이름은 리듬 오브 레전드야?[p]
+[chara_part name="Kang" body="3" face="8" ]
 #강여진
 아... 그건...[p]
+[chara_part name="Kang" body="2" face="3" ]
 #강여진
-멋있지 않아?[r]
+멋있지...않아?[r]
+[chara_part name="Kang" body="2" face="1" ]
+#강여진
 리듬 오브 레전드! 뭔가 엄청날 것 같잖아![p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #진다영
 구려...[p]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Sul" body="3" face="1" ]
+[chara_show name="Sul" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #설나희
 별로야...[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #&[sf.name]
 하하...[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="3" face="1" ]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #강여진
 다들 이런 반응이라니까...[p]
 [_tb_end_tyrano_code]
