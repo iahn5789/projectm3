@@ -6,12 +6,68 @@
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
+; 설나희 등장
+[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
+
+[chara_layer name="Sul" part="body" id="1" storage="chara/Sul_SC/Sul_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="2" storage="chara/Sul_SC/Sul_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="3" storage="chara/Sul_SC/Sul_Body_Sc_03.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="4" storage="chara/Sul_SC/Sul_Body_Sc_04.png" zindex=20 ]
+
+[chara_layer name="Sul" part="face" id="1" storage="chara/Sul_SC/Sul_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="2" storage="chara/Sul_SC/Sul_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="3" storage="chara/Sul_SC/Sul_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="4" storage="chara/Sul_SC/Sul_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="5" storage="chara/Sul_SC/Sul_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="7" storage="chara/Sul_SC/Sul_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="8" storage="chara/Sul_SC/Sul_Face_Embarrass_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="9" storage="chara/Sul_SC/Sul_Face_Aversion_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+; 강여진 등장
+[chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="813" height="1903" ]
+
+[chara_layer name="Kang" part="body" id="1" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="2" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_03.png" zindex=20 ]
+
+[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="2" storage="chara/Kang_SC/Kang_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="3" storage="chara/Kang_SC/Kang_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="4" storage="chara/Kang_SC/Kang_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="5" storage="chara/Kang_SC/Kang_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="6" storage="chara/Kang_SC/Kang_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+; 진다영 등장
+[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
+
+[chara_layer name="Jin" part="body" id="1" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="body" id="2" storage="chara/Jin_SC/Jin_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Jin" part="body" id="3" storage="chara/Jin_SC/Jin_Body_Sc_03.png" zindex=20 ]
+
+[chara_layer name="Jin" part="face" id="1" storage="chara/Jin_SC/Jin_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="2" storage="chara/Jin_SC/Jin_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="3" storage="chara/Jin_SC/Jin_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="4" storage="chara/Jin_SC/Jin_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="6" storage="chara/Jin_SC/Jin_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=200 wait=false]
 #
 쾅!!!        쾅!!!!            쾅!!!!!!!!![p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="true"  loop="true"  ]
 [tb_start_tyrano_code]
+[chara_part name="Sul" body="3" face="4" ]
+[chara_show name="Sul" top="0" width=1169 height=2735 left=375 top=0 time=200 wait=false ]
 #설나희
 둘 다 그만[p]
 #설나희
@@ -28,6 +84,7 @@
 ...[p]
 #강여진
 아니요...[p]
+[chara_part name="Sul" body="3" face="1" ]
 #설나희
 둘이 싸우지 말고 이 일을 해결할 수 있는 사람이 있잖아[p]
 넌 어떻게 생각해?[p]
@@ -38,10 +95,15 @@
 너는 어떻게 생각하냐고[p]
 #&[sf.name]
 갑자기 그렇게 물어보시면...[p]
+[chara_part name="Sul" body="3" face="5" ]
 #설나희
 어.떠.냐.고[p]
 #&[sf.name]
 저...저는...[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[filter layer=all blur=5 ]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  ]
@@ -55,22 +117,38 @@
 [s  ]
 *l_kang
 
+[tb_start_tyrano_code]
+[filter layer=all blur=0 ]
+[_tb_end_tyrano_code]
+
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
+[chara_part name="Sul" body="3" face="1" ]
 #&[sf.name]
 그래도 밴드에 기타가 없으면 조금 허전하지 아마...[p]
+[chara_hide_all time=200 wait=false]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_part name="Kang" body="3" face="1" ]
+[chara_show name="Kang" time="200" top="0" left="553" wait=false]
 #강여진
 하하! 거봐 그럴 줄 알았어![r]다들 기타를 좋아할 수밖에 없다니까?[p]
 #진다영
 뭐?! 인정할 수 없어! 네가 데려온 사람이잖아![r]그러면 당연히 네 편을 들 수밖에 없는 거 아니야?[p]
+[chara_part name="Kang" body="3" face="2" ]
 #강여진
 그래도 역시 밴드에는 기타가 있어야 하지![r]다영이 넌 나한테 진 게 그렇게 분한 거야? 하하하!![p]
 #진다영
 시끄러!! 바보!! 멍청이!! 말미잘!![p]
+[chara_part name="Kang" body="1" face="1" ]
 #강여진
-알겠어 이제 그만하자!![p]
+알겠으니 이제 그만해![p]
 #진다영
 퉤!![p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Sul" body="3" face="1" ]
+[chara_show name="Sul" time="200" top="0" left="553" width="813" height="1903" wait=false]
 #설나희
 에휴...[p]
 #설나희
@@ -79,14 +157,18 @@
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
 [tb_start_tyrano_code]
+[chara_part name="Sul" body="3" face="4" ]
+[chara_move name="Sul" time="200" width="1169" height="2735" top="0" left="375" wait=false]
 #설나희
 만약 이 이상 또 이 문제로 싸우면...[p]
+[chara_part name="Sul" body="3" face="5" ]
 #설나희
 말 안해도 알지?[p]
 #강여진
 네...[p]
 #진다영
-아하하...싸우긴 누가~...하!하!하!
+아하하...싸우긴 누가~...하!하!하![p]
+[chara_part name="Sul" body="3" face="2" ]
 #설나희
 그래...싸우지 말자[p]
 [_tb_end_tyrano_code]
@@ -95,42 +177,75 @@
 [s  ]
 *l_jin
 
+[tb_start_tyrano_code]
+[filter layer=all blur=0 ]
+[_tb_end_tyrano_code]
+
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
+[chara_part name="Sul" body="3" face="1" ]
 #&[sf.name]
 그래도 역시 밴드에 베이스가 빠지면 뭔가 허전하지...[p]
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Jin" body="3" face="2" ]
+[chara_show name="Jin" time="200" top="0" left="553" width="813" height="1903" wait=false]
 #진다영
-하하하하하하하하하핳!! 들었어??? 이 변태가 방금[r]베이스가 없으면 허전하다고 했지?[p]
-#
+하하하하하하하하하핳!! 들었어?[r]이 변태가 방금 베이스가 없으면 허전하다고 했지?[p]
+#&[sf.name]
 그러니까 그 변태는...좀 빼줬으면 좋겠는데...[p]
+[chara_part name="Jin" body="1" face="2" ]
+[chara_move name="Jin" time="200" width="1169" height="2735" top="0" left="375" ]
 #진다영
-음흉한 생각만 하는 줄 알았는데 나름대로 생각할 줄[r]아는가 보네! 베이스를 아주 정확하게 알고 있잖아??[p]
+음흉한 생각만 하는 줄 알았는데 나름대로 생각할 줄[r]아는가 보네! 베이스를 아주 정확하게 알고 있잖아?[p]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
+[tb_start_tyrano_code]
+[chara_part name="Jin" body="3" face="2" ]
 #진다영
-내 승리다 강여진!! 하하하하하하하!!![p]
+내 승리다 강여진!!! 하하하하하하하!!![p]
+[chara_move name="Jin" time="200" width="813" height="1903" top="0" left="146" wait=false]
+[chara_part name="Kang" body="1" face="4" ]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="960" wait=false]
 #강여진
 다영이 너 진짜...[p]
+[chara_part name="Kang" body="3" face="7" ]
 #강여진
 그래 뭐 틀린 말은 아니니까 내가 한번 봐줬다![p]
+[chara_part name="Kang" body="1" face="5" ]
 #강여진
-두고봐 다음에 다시 한번 물어볼 땐 기타가 없으면[r]안 된다는 걸 알게 될 테니까![p]
+두고봐! 다음에 다시 물어볼 때 기타가 없으면[r]안 된다는 걸 알게 될 테니까![p]
+[chara_part name="Jin" body="1" face="2" ]
 #진다영
-응 아니야~ 다음에도 똑같아~~~~![p]
+응 아니야~ 다음에도 똑같아~~~~[p]
 #설나희
 ...[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Sul" body="3" face="4" ]
+[chara_show name="Sul" top="0" width=1169 height=2735 left=375 top=0 time=200 wait=false ]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
 [tb_start_tyrano_code]
 #설나희
 다시...한다고...?[p]
-#
+#진다영
 헉...[p]
+[chara_part name="Sul" body="2" face="4" ]
 #설나희
 다시할까?[p]
-#
+#강여진
 아니요...[p]
+[chara_part name="Sul" body="2" face="1" ]
 #설나희
-그래 이제 그만하자.[p]
+그래 이제 그만하자[p]
 #&[sf.name]
 역시 이사람 무서워...[p]
 [_tb_end_tyrano_code]
@@ -139,8 +254,14 @@
 [s  ]
 *l_sul
 
-[tb_show_message_window  ]
 [tb_start_tyrano_code]
+[filter layer=all blur=0 ]
+[_tb_end_tyrano_code]
+
+[tb_show_message_window  ]
+[quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
+[tb_start_tyrano_code]
+[chara_part name="Sul" body="3" face="1" ]
 #&[sf.name]
 둘 다 그만해...[r]좋아하는 악기는 있지만 뭐가 더 중요하다고는 할 수 없어[p]
 #&[sf.name]
