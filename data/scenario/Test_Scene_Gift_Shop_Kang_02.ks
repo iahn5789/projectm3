@@ -19,23 +19,31 @@
 [html]
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_01.png';>
-<p class="msgrandomtext">
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_01.png'/>
+<div class="msgrandomtext">
 <span id="gift_line_form"></span>
-</p>
+</div>
 </div>
 </div>
 
 <script>
-function setGiftLine() {
-console.log("Console_Log_TEST" + window.TYRANO.kag.stat.f.gift_line);
-let giftLineElem = document.getElementById("gift_line_form");
-giftLineElem.innerHTML = "";
-giftLineElem.innerHTML = window.TYRANO.kag.stat.f.gift_line;
-}
+var giftLineElem = document.getElementById("gift_line_form");
+var string = window.TYRANO.kag.stat.f.gift_line;
+var replacedString = string.replace(/\u00A0/g, ' ');
+var array = replacedString.split("");
+var frameTimer;
 
-setGiftLine();
+function frameLooper() {
+if (array.length > 0) {
+giftLineElem.textContent+= array.shift();
+frameTimer = requestAnimationFrame(frameLooper);
+} else {
+cancelAnimationFrame(frameTimer);
+}
+}
+setTimeout(frameLooper, 500);
 </script>
+
 
 [endhtml]
 [free name="money" layer=2 ]
@@ -67,7 +75,7 @@ setGiftLine();
 [html]
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_02.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_02.png'/>
 <p class="msgrandomtext">
 <span id="gift_line_form"></span>
 </p>
@@ -75,15 +83,24 @@ setGiftLine();
 </div>
 
 <script>
-function setGiftLine() {
-console.log("Console_Log_TEST" + window.TYRANO.kag.stat.f.gift_line);
-let giftLineElem = document.getElementById("gift_line_form");
-giftLineElem.innerHTML = "";
-giftLineElem.innerHTML = window.TYRANO.kag.stat.f.gift_line;
-}
+var giftLineElem = document.getElementById("gift_line_form");
+var string = window.TYRANO.kag.stat.f.gift_line;
+var replacedString = string.replace(/\u00A0/g, ' ');
+var array = replacedString.split("");
+var frameTimer;
 
-setGiftLine();
+function frameLooper() {
+if (array.length > 0) {
+giftLineElem.textContent+= array.shift();
+frameTimer = requestAnimationFrame(frameLooper);
+} else {
+cancelAnimationFrame(frameTimer);
+}
+}
+setTimeout(frameLooper, 500);
 </script>
+
+
 [endhtml]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -113,7 +130,7 @@ setGiftLine();
 [html]
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_03.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_03.png'/>
 <p class="msgrandomtext">
 <span id="gift_line_form"></span>
 </p>
@@ -121,15 +138,23 @@ setGiftLine();
 </div>
 
 <script>
-function setGiftLine() {
-console.log("Console_Log_TEST" + window.TYRANO.kag.stat.f.gift_line);
-let giftLineElem = document.getElementById("gift_line_form");
-giftLineElem.innerHTML = "";
-giftLineElem.innerHTML = window.TYRANO.kag.stat.f.gift_line;
-}
+var giftLineElem = document.getElementById("gift_line_form");
+var string = window.TYRANO.kag.stat.f.gift_line;
+var replacedString = string.replace(/\u00A0/g, ' ');
+var array = replacedString.split("");
+var frameTimer;
 
-setGiftLine();
+function frameLooper() {
+if (array.length > 0) {
+giftLineElem.textContent+= array.shift();
+frameTimer = requestAnimationFrame(frameLooper);
+} else {
+cancelAnimationFrame(frameTimer);
+}
+}
+setTimeout(frameLooper, 500);
 </script>
+
 [endhtml]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -159,23 +184,31 @@ setGiftLine();
 [html]
 <div class="shopmsg">
 <div style="position: absolute; left:0px; top:0px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_04.png';>
-<p class="msgrandomtext">
-<span id="gift_line_form"></span>
-</p>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Msg_Kang_04.png'/>
+<div class="msgrandomtext">
+<p id="gift_line_form"></p>
+</div>
 </div>
 </div>
 
 <script>
-function setGiftLine() {
-console.log("Console_Log_TEST" + window.TYRANO.kag.stat.f.gift_line);
-let giftLineElem = document.getElementById("gift_line_form");
-giftLineElem.innerHTML = "";
-giftLineElem.innerHTML = window.TYRANO.kag.stat.f.gift_line;
-}
+var giftLineElem = document.getElementById("gift_line_form");
+var string = window.TYRANO.kag.stat.f.gift_line;
+var replacedString = string.replace(/\u00A0/g, ' ');
+var array = replacedString.split("");
+var frameTimer;
 
-setGiftLine();
+function frameLooper() {
+if (array.length > 0) {
+giftLineElem.textContent+= array.shift();
+frameTimer = requestAnimationFrame(frameLooper);
+} else {
+cancelAnimationFrame(frameTimer);
+}
+}
+setTimeout(frameLooper, 500);
 </script>
+
 [endhtml]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
