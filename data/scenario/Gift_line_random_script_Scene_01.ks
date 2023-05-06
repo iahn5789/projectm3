@@ -53,27 +53,27 @@
 [return  ]
 *L_line_value_03
 
-[tb_eval  exp="f.gift_line='와아\u00A0마치\u00A0살아있는\u00A0것\u00A0같아!'"  name="gift_line"  cmd="="  op="t"  val="와아\u00A0마치\u00A0살아있는\u00A0것\u00A0같아!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='장미의\u00A0꽃말은\u00A0낭만적인\u00A0사랑이래!'"  name="gift_line"  cmd="="  op="t"  val="장미의\u00A0꽃말은\u00A0낭만적인\u00A0사랑이래!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_04
 
-[tb_eval  exp="f.gift_line='나비야?\u00A0나비야~\u00A0나비야~\u00A0\u00A0이리\u00A0날아\u00A0오너라~'"  name="gift_line"  cmd="="  op="t"  val="나비야?\u00A0나비야~\u00A0나비야~\u00A0\u00A0이리\u00A0날아\u00A0오너라~"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='장미?\u00A0갑자기?\u00A0나한테?\u00A0고마워!'"  name="gift_line"  cmd="="  op="t"  val="장미?\u00A0갑자기?\u00A0나한테?\u00A0고마워!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_05
 
-[tb_eval  exp="f.gift_line='이건\u00A0무슨\u00A0나비야?'"  name="gift_line"  cmd="="  op="t"  val="이건\u00A0무슨\u00A0나비야?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='뭐야\u00A0뭐야!\u00A0나를\u00A0닮은\u00A0꽃인거야??'"  name="gift_line"  cmd="="  op="t"  val="뭐야\u00A0뭐야!\u00A0나를\u00A0닮은\u00A0꽃인거야??"  val_2="undefined"  ]
 [return  ]
 *L_line_value_06
 
-[tb_eval  exp="f.gift_line='장미의\u00A0꽃말은\u00A0낭만적인\u00A0사랑이래!'"  name="gift_line"  cmd="="  op="t"  val="장미의\u00A0꽃말은\u00A0낭만적인\u00A0사랑이래!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='와아\u00A0마치\u00A0살아있는\u00A0것\u00A0같아!'"  name="gift_line"  cmd="="  op="t"  val="와아\u00A0마치\u00A0살아있는\u00A0것\u00A0같아!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_07
 
-[tb_eval  exp="f.gift_line='장미?\u00A0갑자기?\u00A0나한테?\u00A0고마워!'"  name="gift_line"  cmd="="  op="t"  val="장미?\u00A0갑자기?\u00A0나한테?\u00A0고마워!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='나비야?\u00A0나비야~\u00A0나비야~\u00A0\u00A0이리\u00A0날아\u00A0오너라~'"  name="gift_line"  cmd="="  op="t"  val="나비야?\u00A0나비야~\u00A0나비야~\u00A0\u00A0이리\u00A0날아\u00A0오너라~"  val_2="undefined"  ]
 [return  ]
 *L_line_value_08
 
-[tb_eval  exp="f.gift_line='뭐야\u00A0뭐야!\u00A0나를\u00A0닮은\u00A0꽃인거야??'"  name="gift_line"  cmd="="  op="t"  val="뭐야\u00A0뭐야!\u00A0나를\u00A0닮은\u00A0꽃인거야??"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='이건\u00A0무슨\u00A0나비야?'"  name="gift_line"  cmd="="  op="t"  val="이건\u00A0무슨\u00A0나비야?"  val_2="undefined"  ]
 [return  ]
 *L_line_value_09
 
