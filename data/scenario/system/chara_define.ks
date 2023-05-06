@@ -4,14 +4,14 @@
 ;=========変数宣言部分 
 [iscript] 
 f['null']=''; 
-f['money']=100000000; 
+f['money']=3200; 
 f['klove']=20; 
 f['jlove']=20; 
 f['slove']=20; 
 f['Day']=1; 
 f['story']=''; 
 f['answer']=''; 
-f['score']=100; 
+f['score']=88; 
 f['gift_line']=''; 
 f['select']='FALSE'; 
 f['question']=1; 
