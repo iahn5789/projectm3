@@ -3,6 +3,7 @@
 
 
 [plugin name="theme_kopanda_bth_06_blue" font_color="0x222222" name_color="0x222222" opacity="255" ]
+[plugin name="time_limit"]
 
 
 [mask time=10]

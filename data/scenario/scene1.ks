@@ -1,11 +1,12 @@
 [_tb_system_call storage=system/_scene1.ks]
 
 [stopbgm  time="7000"  fadeout="true"  ]
-[bg  time="1000"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
+[tb_show_message_window  ]
 [tb_start_tyrano_code]
-[glink color="btn_13_red" target="help" text="장범준" face="The Jamsil5Bold" width="446" height="116" x="1310" y="305" enterse="SFX/Common_Click_Hover_01.wav" clickse="SFX/Common_Click_01.wav"]
 
+
+[time_limit label="*timeover" (posX=560) (posY=330) (width=624) (height=40) (time=30000) (layer="0")]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -103,4 +104,11 @@ TEST 3[p]
 [tb_hide_message_window  ]
 [s  ]
 [glink  color="btn_05_black"  storage="scene2.ks"  size="20"  text="나는&nbsp;니가&nbsp;좋아"  target="*123"  x="278"  y="494"  width="700"  height="100"  _clickable_img=""  ]
+[s  ]
+*timeover
+
+[tb_start_text mode=1 ]
+망했어[p]
+[_tb_end_text]
+
 [s  ]

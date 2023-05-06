@@ -1,0 +1,37 @@
+progress[value]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: thick double white;
+    background-color: black;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: black;
+}
+
+/* Chrome */
+progress[value]::-webkit-progress-value {
+    background-color: green;
+}
+
+progress[value].-warning::-webkit-progress-value {
+    background-color: yellow;
+}
+
+progress[value].-denger::-webkit-progress-value {
+    background-color: red;
+}
+
+/* FireFox */
+progress[value]::-moz-progress-bar {
+    background-color: green;
+}
+
+progress[value].-warning::-moz-progress-bar {
+    background-color: yellow;
+}
+
+progress[value].-denger::-moz-progress-bar {
+    background-color: red;
+}
