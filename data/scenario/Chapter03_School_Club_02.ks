@@ -3,6 +3,7 @@
 *Chapter03_02
 
 [cm  ]
+[bg  time="10"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
@@ -338,7 +339,7 @@
 아... 그건...[p]
 [chara_part name="Kang" body="2" face="3" ]
 #강여진
-멋있지...않아?[r]
+멋있지...않아?[p]
 [chara_part name="Kang" body="2" face="1" ]
 #강여진
 리듬 오브 레전드! 뭔가 엄청날 것 같잖아![p]
@@ -367,7 +368,7 @@
 #&[sf.name]
 하하...[p]
 [chara_hide_all time=200 wait=false]
-[chara_part name="Kang" body="3" face="1" ]
+[chara_part name="Kang" body="3" face="4" ]
 [chara_show name="Kang" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #강여진
 다들 이런 반응이라니까...[p]
@@ -375,33 +376,57 @@
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
+[chara_part name="Kang" body="1" face="1" ]
 #강여진
 그래서 모든 맴버들이 다 모이면[r]새로 이름을 정하고 싶었어![p]
 #강여진
-추천할 만한 이름이 있다면 말하도록![r]
+추천할 만한 이름이 있다면 말하도록![p]
+[chara_part name="Kang" body="1" face="6" ]
+#강여진
 오! 다영이 손 든 거야?[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="1" face="1" ]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" time="200" width="813" height="1903" top="0" left="146" wait=false]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="960" wait=false]
 #진다영
 진다영과 친구들 어때?[p]
+[chara_part name="Kang" body="1" face="8" ]
 #강여진
-음..다른 누군가가 떠오르는 이름인걸[r]
+음..다른 누군가가 떠오르는 이름인걸[p]
+[chara_part name="Kang" body="1" face="1" ]
+#강여진
 나희 언니는?[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" time="1" width="813" height="1903" top="0" left="146" wait=false]
+[chara_part name="Sul" body="1" face="1" ]
+[chara_show name="Sul" time="200" width="813" height="1903" top="0" left="960" wait=false]
 #설나희
 와일드 캣...?[p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Whistle_01.wav"  ]
 [tb_start_tyrano_code]
+[chara_part name="Jin" body="2" face="2" ]
 #진다영
 그거 완전 축구팀 이름 같은 건 알고 있지?[p]
 #강여진
 뭐야...다들 태클만 걸고 제대로 된 이름이 없잖아![r]
 역시 리듬 오브 레전드가 최고라니까...[p]
+[chara_part name="Jin" body="3" face="4" ]
 #진다영
 싫어!!! 그런 이름으로 난 하기 싫어!!![p]
+[chara_part name="Sul" body="3" face="1" ]
 #설나희
 나도 다른 이름이 좋다고 생각해...[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="1" face="4" ]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #강여진
 칫...[p]
+[chara_part name="Kang" body="2" face="1" ]
+[chara_move name="Kang" time="200" width="1169" height="2735" top="0" left="375" wait=false]
 #강여진
 네 생각은 어때?[p]
 #&[sf.name]
@@ -409,10 +434,12 @@
 #&[sf.name]
 나는 따로 생각한 건 없는데[r]
 애초에 밴드를 할 생각도 없었다고...[p]
+[chara_part name="Kang" body="2" face="4" ]
 #강여진
 그래도 의견은 내야지~ 이제 같은 밴드부원이라구![p]
 #진다영
 이 바보가 무슨 생각이 있겠어![r]음흉한 상상만 하고 있겠지![p]
+[chara_part name="Kang" body="2" face="1" ]
 #&[sf.name]
 그건 아니거든![p]
 #&[sf.name]
