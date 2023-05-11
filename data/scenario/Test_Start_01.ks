@@ -46,7 +46,7 @@
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_01.png page=fore visible=true name=testpaper ]
-[image layer=1 left=1822 top=886 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
+[image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -110,7 +110,7 @@
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper ]
-[image layer=1 left=1822 top=886 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
+[image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -121,7 +121,7 @@
 [s  ]
 *quiz_02_scoring
 
-[jump  storage="Test_Start_01.ks"  target="*o_01"  cond="f.select=='TRUE'"  ]
+[jump  storage="Test_Start_01.ks"  target="*o_02"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_02"  cond=""  ]
 [s  ]
 *o_02
@@ -174,7 +174,7 @@
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_03.png page=fore visible=true name=testpaper ]
-[image layer=1 left=1822 top=886 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
+[image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
