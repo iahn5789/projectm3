@@ -4,7 +4,6 @@
 
 [tb_keyconfig  flag="0"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
@@ -29,28 +28,15 @@
 [tb_ptext_show  x="424"  y="47"  size="45"  color="0x000000"  time="1"  face="The&nbsp;Jamsil3Regular"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="630"  y="410"  size="30"  color="0x000000"  time="1"  text="&sf.name"  anim="false"  face="The&nbsp;Jamsil3Regular"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
-[image layer=0 left=329 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
-
+[image layer=0 left=0 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
+[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="828" clickse="UI/Exam_Zoom_In_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="2000"  effect="fadeOut"  ]
-[l  ]
-[tb_ptext_hide  time="1"  ]
-[tb_start_tyrano_code]
-[anim name=testpaper top="-=900" time=1000  ]
-[_tb_end_tyrano_code]
-
-[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Zoom_In_01.wav"  ]
-[tb_start_tyrano_code]
-[camera zoom=1 x=0 y=-0 time=800]
-[camera zoom=1.8 x=0 y=-0 time=1000]
-[_tb_end_tyrano_code]
-
-[bg  time="0"  method="crossfade"  storage="Common_Test.png"  ]
-[jump  storage="Test_Start_01.ks"  target="*quiz_01"  ]
 [s  ]
 *quiz_01
 
+[tb_ptext_hide  time="1"  ]
 [tb_eval  exp="f.question=1"  name="question"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
 [cm  ]
 [tb_start_tyrano_code]
