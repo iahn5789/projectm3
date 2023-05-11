@@ -61,6 +61,7 @@
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_01.png page=fore visible=true name=testpaper ]
+[image layer=1 left=1822 top=886 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="240"  y="62"  size="33"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -119,6 +120,7 @@
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper ]
+[image layer=1 left=1822 top=886 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="240"  y="54"  size="33"  color="0x000000"  time="0"  face="null"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -177,6 +179,7 @@
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_03.png page=fore visible=true name=testpaper ]
+[image layer=1 left=1822 top=886 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="240"  y="54"  size="33"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
