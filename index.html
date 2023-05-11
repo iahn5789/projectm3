@@ -91,7 +91,7 @@ try{
 function doScroll() { if (window.pageYOffset === 0) { window.scrollTo(0,1); } }  
 window.onload = function() { setTimeout(doScroll, 100); }  
 
-</script>  
+</script>
 
 </head>
 
@@ -131,6 +131,23 @@ window.onload = function() { setTimeout(doScroll, 100); }
   <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
 </div>
 
+<script>
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      console.log("ESC누름");
+      console.log("ESC",event);
+      event.preventDefault(); // 기본 동작 방지
+      return;
+    }
+  });
+  document.addEventListener("fullscreenchange", function() {
+    if (event.key === 'Escape') {
+      console.log("ESCFullscreen mode changed");
+      event.preventDefault(); // 기본 동작 방지
+    }
+});
+  </script>
 
 </body>
+  
 </html>

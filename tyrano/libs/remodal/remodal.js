@@ -774,9 +774,9 @@
 
     // Handles the keydown event
     $(document).on('keydown.' + NAMESPACE, function(e) {
-      if (current && current.settings.closeOnEscape && current.state === STATES.OPENED && e.keyCode === 27) {
-        current.close();
-      }
+      // if (current && current.settings.closeOnEscape && current.state === STATES.OPENED && e.keyCode === 27) {
+      //   current.close();
+      // }
     });
 
     // Handles the hashchange event
