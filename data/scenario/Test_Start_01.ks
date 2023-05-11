@@ -29,10 +29,10 @@
 [tb_ptext_show  x="630"  y="410"  size="30"  color="0x000000"  time="1"  text="&sf.name"  anim="false"  face="The&nbsp;Jamsil3Regular"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=0 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
-[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="828" clickse="UI/Exam_Zoom_In_01.wav"]
+[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="859" clickse="UI/Exam_Zoom_In_01.wav"]
 [_tb_end_tyrano_code]
 
-[mask_off  time="2000"  effect="fadeOut"  ]
+[mask_off  time="500"  effect="fadeOut"  ]
 [s  ]
 *quiz_01
 
