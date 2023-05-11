@@ -25,7 +25,7 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=0 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
 [button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="859" clickse="UI/Exam_Zoom_In_01.wav"]
@@ -49,7 +49,7 @@
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="1638"  y="59"  size="35"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_01
 
@@ -113,7 +113,7 @@
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="1637"  y="48"  size="35"  color="0x000000"  time="0"  face="PyeongChangPeaceLight"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_02
 
@@ -177,7 +177,7 @@
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1770"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_ptext_show  x="1638"  y="48"  size="35"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]

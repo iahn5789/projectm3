@@ -49,8 +49,6 @@ f.Test_Item05 = arr[4];
 *1Week_Button
 
 [tb_start_tyrano_code]
-[button name="correct_01" storage="Test_Start_01.ks" target="quiz_01_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
-
 [iscript]
 
 
@@ -251,12 +249,16 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[button name="correct_01" storage="Test_Start_01.ks" target="quiz_01_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[anim name=correct_01 time=700 left=1659]
+
+[_tb_end_tyrano_code]
+
 [return  ]
 *2Week_Button
 
 [tb_start_tyrano_code]
-[button name="correct_01" storage="Test_Start_01.ks" target="quiz_02_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
-
 [iscript]
 
 
@@ -457,12 +459,16 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[button name="correct_01" storage="Test_Start_01.ks" target="quiz_02_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[anim name=correct_01 time=700 left=1659]
+
+[_tb_end_tyrano_code]
+
 [return  ]
 *3Week_Button
 
 [tb_start_tyrano_code]
-[button name="correct_01" storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
-
 [iscript]
 
 
@@ -660,6 +666,12 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 [endscript]
 
 
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="correct_01" storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[anim name=correct_01 time=700 left=1659]
 
 [_tb_end_tyrano_code]
 
