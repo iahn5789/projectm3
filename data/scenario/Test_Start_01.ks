@@ -118,7 +118,7 @@
 [s  ]
 *quiz_02_scoring
 
-[jump  storage="Test_Start_01.ks"  target="*o_02"  cond="f.select=='TRUE'"  ]
+[jump  storage="Test_Start_01.ks"  target="*o_01"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_02"  cond=""  ]
 [s  ]
 *o_02

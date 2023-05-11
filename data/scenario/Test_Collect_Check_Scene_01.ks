@@ -123,11 +123,13 @@ left: 0;
 width: 100%;
 height: 100%;
 opacity: 1;
+animation: fadein 1.5s;
 }
 
 .button-box button:hover .buttonimg {
 opacity: 0;
 }
+
 </style>
 <script>
 function doAction(buttonId) {
@@ -253,7 +255,7 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 *2Week_Button
 
 [tb_start_tyrano_code]
-[button name="correct_01" storage="Test_Start_01.ks" target="quiz_01_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
+[button name="correct_01" storage="Test_Start_01.ks" target="quiz_02_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
 
 [iscript]
 
@@ -328,6 +330,7 @@ left: 0;
 width: 100%;
 height: 100%;
 opacity: 1;
+animation: fadein 1.5s;
 }
 
 .button-box button:hover .buttonimg {
@@ -458,7 +461,7 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 *3Week_Button
 
 [tb_start_tyrano_code]
-[button name="correct_01" storage="Test_Start_01.ks" target="quiz_01_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
+[button name="correct_01" storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1659" y="457"]
 
 [iscript]
 
@@ -533,6 +536,7 @@ left: 0;
 width: 100%;
 height: 100%;
 opacity: 1;
+animation: fadein 1.5s;
 }
 
 .button-box button:hover .buttonimg {
