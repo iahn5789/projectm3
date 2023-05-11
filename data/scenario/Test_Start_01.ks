@@ -64,6 +64,7 @@
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -77,8 +78,10 @@
 [s  ]
 *x_01
 
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -123,6 +126,7 @@
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -136,8 +140,10 @@
 [s  ]
 *x_02
 
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -180,6 +186,7 @@
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -200,8 +207,10 @@
 [s  ]
 *x_03
 
+[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -219,4 +228,20 @@
 [_tb_end_tyrano_code]
 
 [jump  storage="Test_Start_01.ks"  target="*teststart"  ]
+*timeout
+
+[tb_start_tyrano_code]
+[freeimage layer="2"]
+[cm]
+[filter layer=0 blur=10 opacity=80]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Timeout_UI_01.png"]
+[_tb_end_tyrano_code]
+
+[wait  time="1000"  ]
+[jump  storage="Test_Start_01.ks"  target=""  ]
+[jump  storage="Test_Start_01.ks"  target=""  ]
+[jump  storage="Test_Start_01.ks"  target=""  ]
 [s  ]
