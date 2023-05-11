@@ -35,9 +35,9 @@ function update() {
     time = document.getElementById("time_limit");
     time.value--;
     
-    if(time.value == 50) {
+    if(time.value == 66) {
         time.classList.add("-warning");
-    } else if(time.value == 25) {
+    } else if(time.value == 33) {
         time.classList.remove("-warning");
         time.classList.add("-denger");
     } else if(time.value == 0) {
@@ -53,16 +53,24 @@ function update() {
 TYRANO.kag.ftag.master_tag.time_limit = {
     vital:["label"],
     pm: {
-        posX: 0,
-        posY: 0,
-        width: 100,
-        height: 10,
-        time: 1000,
+        posX: 100,
+        posY: 100,
+        width: 1000,
+        height: 100,
+        time: 1000000,
+        barcolor:"",
+        gagecolor:"",
+        warningcolor:"",
+        dengercolor:"",
         label: "",
-        layer: "0",
+        layer: "2",
     },
     start: function(pm) {
         html = "<progress id='time_limit' value=100 max=100 min=0></progress>";
+        "" == pm.barcolor ? pm.barcolor = $.convertColor(that.kag.stat.font.color) : pm.barcolor = $.convertColor(pm.barcolor);
+        "" == pm.gagecolor ? pm.gagecolor = $.convertColor(that.kag.stat.font.color) : pm.gagecolor = $.convertColor(pm.gagecolor);
+        "" == pm.warningcolor ? pm.warningcolor = $.convertColor(that.kag.stat.font.color) : pm.warningcolor = $.convertColor(pm.warningcolor);
+        "" == pm.dengercolor ? pm.dengercolor = $.convertColor(that.kag.stat.font.color) : pm.dengercolor = $.convertColor(pm.dengercolor);
         css = {
             "position": "absolute",
             "top": pm.posX + 'px',
@@ -70,13 +78,28 @@ TYRANO.kag.ftag.master_tag.time_limit = {
             "width": pm.width + 'px',
             "height": pm.height + 'px'
         };
-
         progress = $(html);
         progress.css(css);
 
-        // $(".2_fore").append(progress);
+        var style = document.createElement('style');
+        style.innerHTML = 'progress[value]::-webkit-progress-bar { background-color: ' + pm.barcolor + '; }';
+        document.getElementsByTagName('head')[0].appendChild(style);
+
+        var style = document.createElement('style');
+        style.innerHTML = 'progress[value]::-webkit-progress-value { background-color: ' + pm.gagecolor + '; }';
+        document.getElementsByTagName('head')[0].appendChild(style);
+
+        var style = document.createElement('style');
+        style.innerHTML = 'progress[value].-denger::-webkit-progress-value { background-color: ' + pm.dengercolor + '; }';
+        document.getElementsByTagName('head')[0].appendChild(style);
+
+        var style = document.createElement('style');
+        style.innerHTML = 'progress[value].-warning::-webkit-progress-value { background-color: ' + pm.warningcolor + '; }';
+        document.getElementsByTagName('head')[0].appendChild(style);
+
         console.log("." + pm.layer + "_fore");
         $("." + pm.layer + "_fore").append(progress);
+        
         interval(pm.time, pm.label);
         TYRANO.kag.ftag.nextOrder();
     }

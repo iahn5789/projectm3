@@ -4,9 +4,9 @@
 [playbgm  volume="10"  time="1000"  loop="true"  storage="Common_Daily_BGM_01.mp3"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-
-
-[time_limit label="*timeover" (posX=560) (posY=330) (width=624) (height=40) (time=30000) (layer="0")]
+[time_limit label="*timeover" posX=0 posY=0 width=624 height=40 time=10000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2"]
+[layopt layer=0 visible=true]
+[mtext text="演出テキスト" x=500 y=500 in_effect="fadeIn" color=0xffffff time=10000 out_effect="fadeOut"]
 [_tb_end_tyrano_code]
 
 [s  ]
