@@ -3,7 +3,7 @@
 *teststart
 
 [tb_keyconfig  flag="0"  ]
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
@@ -31,7 +31,8 @@
 [button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="859" clickse="UI/Exam_Zoom_In_01.wav"]
 [_tb_end_tyrano_code]
 
-[mask_off  time="500"  effect="fadeOut"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[mask_off  time="1500"  effect="fadeOut"  ]
 [s  ]
 *quiz_01
 
@@ -103,8 +104,7 @@
 [cm]
 [clr_time_limit]
 [eval exp="f.testTime = 30"]
-[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2"]
-[freeimage layer="1" time="100"]
+[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
@@ -168,8 +168,7 @@
 [cm]
 [clr_time_limit]
 [eval exp="f.testTime = 30"]
-[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2"]
-[freeimage layer="1" time="100"]
+[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
