@@ -2,11 +2,17 @@
 
 *test_result
 
-[cm  ]
+[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
+[cm]
+[freeimage layer="0" time="100"]
+[freeimage layer="1" time="100"]
+[filter layer=all blur=0 opacity=100]
+
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_Result_Bgi_01.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
+[mask_off  time="1500"  effect="fadeOut"  ]
 [call  storage="Test_Result_01.ks"  target="*star"  ]
 [tb_start_tyrano_code]
 [button name="next" storage="Chapter03_School_Club_01.ks" target="chapter03_01" graphic="../image/New_GUI/Test_In_UI/Quiz_End_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Quiz_End_Bt_02.png" width="618" height="107" x="655" y="1100" ]

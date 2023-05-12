@@ -47,7 +47,7 @@
 [tb_start_tyrano_code]
 [freeimage layer="0"]
 [eval exp="f.testTime = 30"]
-[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"]
+[time_limit label="*timeout_01" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -114,7 +114,7 @@
 [tb_start_tyrano_code]
 [cm]
 [eval exp="f.testTime = 30"]
-[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
+[time_limit label="*timeout_02" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
@@ -186,7 +186,7 @@
 [tb_start_tyrano_code]
 [cm]
 [eval exp="f.testTime = 30"]
-[time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
+[time_limit label="*timeout_03" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
@@ -262,10 +262,11 @@
 [_tb_end_tyrano_code]
 
 [jump  storage="Test_Result_01.ks"  target="*test_result"  ]
-*timeout
+*timeout_01
 
 [tb_start_tyrano_code]
 [freeimage layer="2"]
+[freeimage layer="1" time="100"]
 [cm]
 [filter layer=0 blur=10 opacity=80]
 [_tb_end_tyrano_code]
@@ -275,7 +276,35 @@
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
-[jump  storage="Test_Start_01.ks"  target=""  ]
-[jump  storage="Test_Start_01.ks"  target=""  ]
-[jump  storage="Test_Start_01.ks"  target=""  ]
+[jump  storage="Test_Start_01.ks"  target="*quiz_02"  ]
+*timeout_02
+
+[tb_start_tyrano_code]
+[freeimage layer="2"]
+[freeimage layer="1" time="100"]
+[cm]
+[filter layer=0 blur=10 opacity=80]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Timeout_UI_01.png"]
+[_tb_end_tyrano_code]
+
+[wait  time="1000"  ]
+[jump  storage="Test_Start_01.ks"  target="*quiz_03"  ]
+*timeout_03
+
+[tb_start_tyrano_code]
+[freeimage layer="2"]
+[freeimage layer="1" time="100"]
+[cm]
+[filter layer=0 blur=10 opacity=80]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Timeout_UI_01.png"]
+[_tb_end_tyrano_code]
+
+[wait  time="1000"  ]
+[jump  storage="Test_Result_01.ks"  target="*test_result"  ]
 [s  ]
