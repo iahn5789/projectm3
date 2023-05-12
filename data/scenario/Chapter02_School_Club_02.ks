@@ -509,13 +509,12 @@
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  ]
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[wait  time="1000"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=100 wait=false]
-[chara_part name="Kang" body="3" face="1" ]
-[chara_show name="Kang" top="0" left="375" time=200 width="1169" height="2735" wait=false ]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[jump  storage="Test_Tutorial_01.ks"  target="*tutorial"  ]
+[jump  storage="Test_Scene_01.ks"  target="*testscenestart"  ]
 [s  ]
