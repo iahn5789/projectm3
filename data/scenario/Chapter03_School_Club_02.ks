@@ -451,11 +451,81 @@
 ( 어...잠깐만...? )[p]
 #
 ( 분명... )[p]
-#사회자
-이번 순서는~~러브 크레센도~~!!!!![p]
+[chara_hide_all time=200 wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="500"  method="crossfade"  storage="Common_Black.jpg"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=difference wait=false]
+[_tb_end_tyrano_code]
+
+[tb_show_message_window  ]
+[font  size="80"  color="0x000000"  face="TheJamsil5Bold"  ]
+[tb_start_tyrano_code]
+#
+이번 순서는...
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[bg  time="100"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=exclusion wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="100"  method="crossfade"  storage="Common_Black.jpg"  ]
+[tb_start_tyrano_code]
+[er]
+[_tb_end_tyrano_code]
+
+[tb_show_message_window  ]
+[font  size="80"  color="0x000000"  face="TheJamsil5Bold"  ]
+[tb_start_tyrano_code]
+#
+이번 순서는...
+[_tb_end_tyrano_code]
+
+[tb_hide_message_window  ]
+[bg  time="100"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=overlay wait=false]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[er]
+[_tb_end_tyrano_code]
+
+[font  size="80"  color="0x000000"  face="TheJamsil5Bold"  ]
+[tb_show_message_window  ]
+[quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
+[tb_start_tyrano_code]
+#
+러브크레센도!
+[_tb_end_tyrano_code]
+
+[bg  time="100"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
+[bg  time="100"  method="crossfade"  storage="Common_Black.jpg"  ]
+[bg  time="100"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
+[tb_hide_message_window  ]
+[tb_start_tyrano_code]
+[layermode graphic=Common_Dream_Bgi_01.png folder=bgimage time=100 mode=multiply wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="100"  method="crossfade"  storage="BGI/Common_White_01.png"  ]
+[tb_start_tyrano_code]
+[free_layermode time=0 wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[tb_start_tyrano_code]
+[er]
+[_tb_end_tyrano_code]
+
+[bg  time="2000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
+[resetfont  ]
+[tb_show_message_window  ]
+[tb_start_tyrano_code]
+#&[sf.name]
+......[p]
 #&[sf.name]
 러브...크레센도...?[p]
 #진다영
@@ -463,21 +533,55 @@
 #&[sf.name]
 꿈...속에서...?[p]
 #강여진
-음...러브 크레센도? 나쁘지 않은데?[p]
+음...러브 크레센도... 나쁘지 않은데![p]
+#강여진
+크레센도라면 소리를 조금씩 크게 연주하는거잖아?[p]
+#강여진
+뜻도 좋은 것 같아![p]
 #진다영
-솔직히 리듬 오브 레전드보다는 훨~씬 좋다고 봐[p]
+이거 말고...다른 이름은 없는거야?[p]
 #설나희
-나도 좋다고 생각해...[p]
+스파이럴...캣츠...?[p]
+#진다영
+그러니까! 왜 항상 캣츠로 끝나는건데!!![p]
+#설나희
+고양이는...귀엽잖아...[p]
+#진다영
+우리는 고양이가 아니야!![p]
+#강여진
+하하하! 스파이럴 캣츠도 좋은 것 같아![p]
+#강여진
+아니면 싸우지말고 그냥 리듬 오브 레전드로 하자![p]
+#진다영
+안 돼![p]
+#설나희
+...[p]
+#&[sf.name]
+그건 좀...[p]
+#강여진
+힝...[p]
+#진다영
+이럴거면 그냥 변태가 말했던 러브...그 뭐지?[p]
+#설나희
+러브...크레센도...?[p]
+#진다영
+그래 그거! 러브크레센도![p]
+#진다영
+그걸로 하자...![p]
+#&[sf.name]
+엥? 정말 이걸로 결정하는거야?[p]
+#강여진
+응! 지금까지 들은 이름중에는 제일 좋은걸?[p]
 #강여진
 좋아! 결정이다![p]
 #강여진
-지금부터 우리 밴드의 이름은 러브 크레센도야!![p]
+지금부터 우리 밴드의 이름은 러브 크레센도야![p]
 #강여진
 다들 이견 없지?[p]
 #진다영
-좋아 맘에 들어[p]
+하하...맘에...들어...[p]
 #설나희
-좋아...[p]
+나는 좋아...[p]
 #강여진
 그래 러브 크레센도 결성 기념으로...[p]
 [_tb_end_tyrano_code]
@@ -501,4 +605,6 @@
 오늘은 왕창 먹을 거야![p]
 [_tb_end_tyrano_code]
 
+[tb_hide_message_window  ]
+[jump  storage="Chapter03_School_Club_02.ks"  target=""  ]
 [s  ]
