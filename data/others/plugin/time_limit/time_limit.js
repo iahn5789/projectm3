@@ -11,11 +11,31 @@ function timeout(label) {
 /*
     インターバルの設定
 */
-function interval(time, label) {
+function interval(time, label, pm) {
     TYRANO.kag.variable.tf.intervalId = setInterval(
         function() {
           update();
+          
+          pm.timeText = Math.floor(window.TYRANO.kag.stat.f.testTime) + 1;
+          TYRANO.kag.ftag.startTag("free",{name: pm.ptextname, layer: pm.textlayer});
+          TYRANO.kag.ftag.startTag("ptext", {
+            layer: pm.textlayer,
+            name: pm.ptextname,
+            text: pm.timeText,
+            x: pm.posXtext,
+            y: pm.posYtext,
+            size: pm.textsize,
+            face: pm.textface,
+            color: pm.ptextcolor,
+            align: pm.textalign,
+            zindex: pm.textzindex,
+            overwrite: "false",});
+            console.log("ptext 출력");
+            console.log("f.testTime : ",window.TYRANO.kag.stat.f.testTime)
           time = document.getElementById("time_limit");
+          TYRANO.kag.ftag.startTag("eval", {
+            exp: "f.testTime = f.testTime - ("+pm.time+"/100000)"
+          });
           if (time.value == 0) {
               if(TYRANO.kag.variable.tf.intervalId) {
                 clearInterval(TYRANO.kag.variable.tf.intervalId);
@@ -53,6 +73,7 @@ function update() {
 TYRANO.kag.ftag.master_tag.time_limit = {
     vital:["label"],
     pm: {
+        label: "",
         posX: 100,
         posY: 100,
         width: 1000,
@@ -62,8 +83,18 @@ TYRANO.kag.ftag.master_tag.time_limit = {
         gagecolor:"",
         warningcolor:"",
         dengercolor:"",
-        label: "",
         layer: "2",
+        posXtext: 100,
+        posYtext: 100,
+        textsize: "",
+        ptextname: "",
+        ptextcolor: "",
+        textface: "",
+        textwidth: "",
+        textalign: "left",
+        timeText: "",
+        textlayer: "0",
+        textzindex: "9999",
     },
     start: function(pm) {
         html = "<progress id='time_limit' value=100 max=100 min=0></progress>";
@@ -79,7 +110,9 @@ TYRANO.kag.ftag.master_tag.time_limit = {
             "height": pm.height + 'px'
         };
         progress = $(html);
+
         progress.css(css);
+
 
         var style = document.createElement('style');
         style.innerHTML = 'progress[value]::-webkit-progress-bar { background-color: ' + pm.barcolor + '; }';
@@ -97,10 +130,9 @@ TYRANO.kag.ftag.master_tag.time_limit = {
         style.innerHTML = 'progress[value].-warning::-webkit-progress-value { background-color: ' + pm.warningcolor + '; }';
         document.getElementsByTagName('head')[0].appendChild(style);
 
-        console.log("." + pm.layer + "_fore");
         $("." + pm.layer + "_fore").append(progress);
         
-        interval(pm.time, pm.label);
+        interval(pm.time, pm.label, pm);
         TYRANO.kag.ftag.nextOrder();
     }
 }
