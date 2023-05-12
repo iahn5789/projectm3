@@ -1,6 +1,6 @@
 [preload  storage="./data/bgimage/BGI/Common_Black.jpg"  ]
 [preload  storage="./data/bgimage/BGI/Common_White_01.png"  ]
-[preload  storage="./data/bgimage/BGI/Common_home_01.png"  ]
-[preload  storage="./data/bgimage/BGI/Common_Road_01.png"  ]
+[preload  storage="./data/bgimage/Common_Home_Room_Bgi_01.png"  ]
+[preload  storage="./data/bgimage/Common_Road_Bgi_01.png"  ]
 [preload  storage="./data/bgimage/Common_Dream_Bgi_01.png"  ]
 [return]

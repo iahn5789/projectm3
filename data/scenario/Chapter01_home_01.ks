@@ -30,7 +30,7 @@
 [bg  time="600"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_White_01.png"  ]
 [playbgm  volume="40"  time="2000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
-[bg  time="3000"  method="fadeIn"  storage="BGI/Common_home_01.png"  ]
+[bg  time="3000"  method="fadeIn"  storage="Common_Home_Room_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -62,7 +62,7 @@
 
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
-[bg  time="100"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[bg  time="100"  method="fadeIn"  storage="Common_Road_Bgi_01.png"  cross="false"  ]
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [wait  time="2000"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
@@ -188,7 +188,7 @@
 [free_layermode time=0 wait=false]
 [_tb_end_tyrano_code]
 
-[bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[bg  time="1500"  method="fadeIn"  storage="Common_Road_Bgi_01.png"  cross="false"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="2" face="6" ]
 [chara_show name="Jeon" time="100" top="0" left="100" ]
@@ -255,7 +255,7 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[bg  time="1500"  method="fadeIn"  storage="BGI/Common_Road_01.png"  cross="false"  ]
+[bg  time="1500"  method="fadeIn"  storage="Common_Road_Bgi_01.png"  cross="false"  ]
 [font  size="40"  color="0xff8f8f"  face="SBB"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
