@@ -508,6 +508,7 @@
 일단 교실로 가면서 쪽지 시험이 어떻게 나오는지 알려줄게![p]
 [_tb_end_tyrano_code]
 
+[tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [wait  time="1000"  ]
@@ -515,6 +516,5 @@
 [chara_hide_all time=100 wait=false]
 [_tb_end_tyrano_code]
 
-[tb_hide_message_window  ]
 [jump  storage="Test_Scene_01.ks"  target="*testscenestart"  ]
 [s  ]

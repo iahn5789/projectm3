@@ -39,7 +39,7 @@
 [_tb_end_tyrano_code]
 
 [call  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
-[mask_off  time="2000"  effect="fadeOut"  ]
+[mask_off  time="3000"  effect="fadeOut"  ]
 [s  ]
 *After_Button_Change
 
