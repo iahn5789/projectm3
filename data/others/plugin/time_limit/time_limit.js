@@ -85,12 +85,12 @@ TYRANO.kag.ftag.master_tag.time_limit = {
         posXtext: 100,
         posYtext: 100,
         textsize: "",
-        ptextname: "",
         ptextcolor: "",
         textface: "",
         textwidth: "",
         textalign: "left",
         timeText: "",
+        ptextname: "",
         textlayer: "0",
         textzindex: "9999",
     },
@@ -107,10 +107,9 @@ TYRANO.kag.ftag.master_tag.time_limit = {
             "width": pm.width + 'px',
             "height": pm.height + 'px'
         };
+
         progress = $(html);
-
         progress.css(css);
-
 
         var style = document.createElement('style');
         style.innerHTML = 'progress[value]::-webkit-progress-bar { background-color: ' + pm.barcolor + '; }';
@@ -155,7 +154,10 @@ TYRANO.kag.ftag.master_tag.time_limit = {
 */
 TYRANO.kag.ftag.master_tag.clr_time_limit = {
     vital:[],
-    pm: {},
+    pm: {
+        ptextname: "",
+        textlayer: "0",
+    },
     start: function(pm) {
         if($("#time_limit").length) {
             $("#time_limit").remove();

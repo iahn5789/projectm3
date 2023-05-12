@@ -59,6 +59,11 @@
 [s  ]
 *quiz_01_scoring
 
+[tb_start_tyrano_code]
+
+[clr_time_limit]
+[_tb_end_tyrano_code]
+
 [jump  storage="Test_Start_01.ks"  target="*o_01"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_01"  ]
 [s  ]
@@ -102,7 +107,6 @@
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
-[clr_time_limit]
 [eval exp="f.testTime = 30"]
 [time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
@@ -122,6 +126,11 @@
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
 *quiz_02_scoring
+
+[tb_start_tyrano_code]
+
+[clr_time_limit]
+[_tb_end_tyrano_code]
 
 [jump  storage="Test_Start_01.ks"  target="*o_02"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_02"  cond=""  ]
@@ -166,7 +175,6 @@
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
-[clr_time_limit]
 [eval exp="f.testTime = 30"]
 [time_limit label="*timeout" posX=1043 posY=0 width=1920 height=37 time=30000 barcolor=0xFFE8CA gagecolor=0xFF9811 warningcolor=0xFF4D00 dengercolor=0xFF0000 layer="2" posXtext=95 posYtext=970 textsize="50" textwidth="300" texttalign="left" ptextname="quiz_time" textface="PyeongChangPeaceBold" ptextcolor="0xFF8100" timeText="&f.testTime" textlayer="2"][freeimage layer="1" time="100"]
 [freeimage layer="0" time="100"]
@@ -184,6 +192,11 @@
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
 *quiz_03_scoring
+
+[tb_start_tyrano_code]
+
+[clr_time_limit]
+[_tb_end_tyrano_code]
 
 [jump  storage="Test_Start_01.ks"  target="*o_03"  cond="f.select=='TRUE'"  ]
 [jump  storage="Test_Start_01.ks"  target="*x_03"  cond=""  ]
