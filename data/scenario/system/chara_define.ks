@@ -28,4 +28,5 @@ f['j_poster_choice_whether']='FALSE';
 f['s_poster_choice_whether']='FALSE'; 
 f['testScene']='FALSE'; 
 f['testTime']=30; 
+f['testResult']=0; 
 [endscript] 

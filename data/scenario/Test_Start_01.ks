@@ -32,6 +32,7 @@
 [_tb_end_tyrano_code]
 
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[tb_eval  exp="f.testResult=0"  name="testResult"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [mask_off  time="1500"  effect="fadeOut"  ]
 [s  ]
 *quiz_01
@@ -70,6 +71,7 @@
 *o_01
 
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
+[tb_eval  exp="f.testResult+=1"  name="testResult"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [freeimage layer="1" time="100"]
@@ -115,8 +117,11 @@
 
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
-[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper ]
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -138,6 +143,7 @@
 *o_02
 
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.testResult+=2"  name="testResult"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [freeimage layer="1" time="100"]
@@ -183,8 +189,11 @@
 
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
-[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_03.png page=fore visible=true name=testpaper ]
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_03.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
 [tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
@@ -204,6 +213,7 @@
 *o_03
 
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
+[tb_eval  exp="f.testResult+=4"  name="testResult"  cmd="+="  op="t"  val="4"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [freeimage layer="1" time="100"]
@@ -223,7 +233,7 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
+[jump  storage="Test_Result_01.ks"  target="*test_result"  ]
 [s  ]
 *x_03
 
@@ -247,7 +257,7 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Start_01.ks"  target="*teststart"  ]
+[jump  storage="Test_Result_01.ks"  target="*test_result"  ]
 *timeout
 
 [tb_start_tyrano_code]
