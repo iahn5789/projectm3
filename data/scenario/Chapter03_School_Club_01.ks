@@ -2,9 +2,16 @@
 
 *chapter03_01
 
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [cm  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  ]
+[tb_start_tyrano_code]
+[freeimage layer="0" time=200 wait=false ]
+[cm]
+[_tb_end_tyrano_code]
+
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 ; 강여진 등장
