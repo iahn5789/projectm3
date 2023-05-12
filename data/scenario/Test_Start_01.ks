@@ -28,12 +28,16 @@
 [tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=0 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
-[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="859" clickse="UI/Exam_Zoom_In_01.wav"]
+[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="413" height="94" x="756" y="1100" clickse="UI/Exam_Zoom_In_01.wav"]
 [_tb_end_tyrano_code]
 
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_eval  exp="f.testResult=0"  name="testResult"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
-[mask_off  time="1500"  effect="fadeOut"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
+[tb_start_tyrano_code]
+[anim name=teststart time=500 top=951]
+[_tb_end_tyrano_code]
+
 [s  ]
 *quiz_01
 
