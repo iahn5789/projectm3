@@ -48,7 +48,6 @@
 [_tb_end_text]
 
 [quake  time="800"  count="10"  hmax="8"  wait="false"  vmax="6"  ]
-[font  size="40"  color="0xff0000"  face="SBB"  ]
 [playse  volume="40"  time="1000"  buf="0"  storage="SFX/Emotion_Anoying_Dog_growl_01.wav"  ]
 [tb_start_text mode=1 ]
 #???
@@ -56,7 +55,6 @@
 [_tb_end_text]
 
 [stopse  time="500"  buf="0"  fadeout="true"  ]
-[resetfont  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" face="4"]
 [_tb_end_tyrano_code]
@@ -68,7 +66,6 @@
 이해할 수 없어! 왜 우리 대화를 엿듣고 있던건데!?[p]
 [_tb_end_text]
 
-[font  size="60"  color="0xe62525"  face="SBB"  ]
 [tb_start_text mode=1 ]
 #???
 찐따! 찌질이! 버러지! 거지![p]
@@ -84,7 +81,6 @@
 진다영![p]
 [_tb_end_text]
 
-[resetfont  ]
 [tb_start_tyrano_code]
 ; 진다영 등장
 [chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="1169" height="2735" ]
@@ -332,7 +328,6 @@
 으...응...[p]
 [_tb_end_text]
 
-[font  size="40"  color="0x000000"  face="SBB"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jin" body="3" ]
 [_tb_end_tyrano_code]
@@ -342,7 +337,6 @@
 변태...[p]
 [_tb_end_text]
 
-[resetfont  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
 아니! 그런 게 아니라![p]
@@ -482,7 +476,6 @@
 앞으로 잘 부탁해! 우리 보컬![p]
 [_tb_end_text]
 
-[font  size="40"  color="0xff0000"  face="SBB"  ]
 [quake  time="1000"  count="5"  hmax="4"  wait="false"  vmax="4"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time="100"]
@@ -496,7 +489,6 @@
 내 이야기 아직 안끝났어어어어!!![p]
 [_tb_end_text]
 
-[resetfont  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
@@ -693,7 +685,6 @@
 [_tb_end_text]
 
 [quake  time="500"  count="3"  hmax="2"  wait="false"  vmax="3"  ]
-[font  size="40"  color="0xff4747"  face="SBB"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time="100"]
 [chara_part name="Jin" body="3" face="6"]
@@ -705,7 +696,6 @@
 설나희...! 너까지![p]
 [_tb_end_text]
 
-[resetfont  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]

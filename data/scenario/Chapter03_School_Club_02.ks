@@ -326,7 +326,7 @@
 자! 그럼 소개도 끝난 것 같으니[r]아주 중요한 일이 남아있어[p]
 [chara_part name="Jin" body="2" face="6" ]
 #진다영
-또? 집에 가고 싶단 말이야!! 집에 보내줘~~~[p]
+또? 집에 가고 싶단 말이야! 집에 보내줘~~~[p]
 [chara_hide_all time=200 wait=false]
 [chara_part name="Kang" body="2" face="2" ]
 [chara_show name="Kang" time="200" width="1169" height="2735" top="0" left="375" wait=false]
@@ -617,7 +617,7 @@
 #설나희
 고양이는...귀엽잖아...[p]
 #진다영
-우리는 고양이가 아니야!![p]
+우리는 고양이가 아니야![p]
 [chara_hide_all time=200 wait=false]
 [chara_part name="Kang" body="2" face="2" ]
 [chara_show name="Kang" time="200" width="813" height="1903" top="0" left="553" wait=false]
@@ -697,7 +697,7 @@
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="2" ]
 #강여진
-오늘은 내가 쏜다!![p]
+오늘은 내가 쏜다![p]
 #진다영
 또 언제나처럼 떡볶이 먹으러 가는 거겠지...[p]
 
