@@ -524,70 +524,178 @@
 [resetfont  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
+; 설나희 등장
+[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
+
+[chara_layer name="Sul" part="body" id="1" storage="chara/Sul_SC/Sul_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="2" storage="chara/Sul_SC/Sul_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="3" storage="chara/Sul_SC/Sul_Body_Sc_03.png" zindex=20 ]
+[chara_layer name="Sul" part="body" id="4" storage="chara/Sul_SC/Sul_Body_Sc_04.png" zindex=20 ]
+
+[chara_layer name="Sul" part="face" id="1" storage="chara/Sul_SC/Sul_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="2" storage="chara/Sul_SC/Sul_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="3" storage="chara/Sul_SC/Sul_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="4" storage="chara/Sul_SC/Sul_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="5" storage="chara/Sul_SC/Sul_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="7" storage="chara/Sul_SC/Sul_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="8" storage="chara/Sul_SC/Sul_Face_Embarrass_Sc_01.png" zindex=20 ]
+[chara_layer name="Sul" part="face" id="9" storage="chara/Sul_SC/Sul_Face_Aversion_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+; 강여진 등장
+[chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="813" height="1903" ]
+
+[chara_layer name="Kang" part="body" id="1" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="2" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_03.png" zindex=20 ]
+
+[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="2" storage="chara/Kang_SC/Kang_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="3" storage="chara/Kang_SC/Kang_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="4" storage="chara/Kang_SC/Kang_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="5" storage="chara/Kang_SC/Kang_Face_Angry_Sc_02.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="6" storage="chara/Kang_SC/Kang_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=20 ]
+[chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+; 진다영 등장
+[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
+
+[chara_layer name="Jin" part="body" id="1" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="body" id="2" storage="chara/Jin_SC/Jin_Body_Sc_02.png" zindex=20 ]
+[chara_layer name="Jin" part="body" id="3" storage="chara/Jin_SC/Jin_Body_Sc_03.png" zindex=20 ]
+
+[chara_layer name="Jin" part="face" id="1" storage="chara/Jin_SC/Jin_Face_Base_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="2" storage="chara/Jin_SC/Jin_Face_Smile_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="3" storage="chara/Jin_SC/Jin_Face_Shy_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="4" storage="chara/Jin_SC/Jin_Face_Angry_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="6" storage="chara/Jin_SC/Jin_Face_Surprise_Sc_01.png" zindex=20 ]
+[chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #&[sf.name]
 ......[p]
 #&[sf.name]
 러브...크레센도...?[p]
+[chara_part name="Jin" body="3" face="2" ]
+[chara_show name="Jin" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #진다영
 하하! 그게 뭐야 어디서 나온 말이야![p]
 #&[sf.name]
 꿈...속에서...?[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="3" face="7" ]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #강여진
 음...러브 크레센도... 나쁘지 않은데![p]
+[chara_part name="Kang" body="2" face="1" ]
 #강여진
 크레센도라면 소리를 조금씩 크게 연주하는거잖아?[p]
 #강여진
 뜻도 좋은 것 같아![p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #진다영
 이거 말고...다른 이름은 없는거야?[p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Sul" body="3" face="1" ]
+[chara_show name="Sul" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #설나희
 스파이럴...캣츠...?[p]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[tb_start_tyrano_code]
 #진다영
 그러니까! 왜 항상 캣츠로 끝나는건데!!![p]
+[chara_part name="Sul" body="3" face="3" ]
 #설나희
 고양이는...귀엽잖아...[p]
 #진다영
 우리는 고양이가 아니야!![p]
+[chara_hide_all time=200 wait=false]
+[chara_part name="Kang" body="2" face="2" ]
+[chara_show name="Kang" time="200" width="813" height="1903" top="0" left="553" wait=false]
 #강여진
 하하하! 스파이럴 캣츠도 좋은 것 같아![p]
+[chara_part name="Kang" body="2" face="1" ]
 #강여진
 아니면 싸우지말고 그냥 리듬 오브 레전드로 하자![p]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=10 wait=false]
+[chara_part name="Jin" body="3" face="4" ]
+[chara_show name="Jin" time="10" width="813" height="1903" top="0" left="553" wait=false]
 #진다영
-안 돼![p]
+안 돼!        [er]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=10 wait=false]
+[chara_part name="Sul" body="3" face="4" ]
+[chara_show name="Sul" time="10" width="813" height="1903" top="0" left="553" wait=false]
 #설나희
-...[p]
+...!            [er]
+[_tb_end_tyrano_code]
+
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[tb_start_tyrano_code]
+[chara_hide_all time=10 wait=false]
+[chara_part name="Kang" body="2" face="8" ]
+[chara_show name="Kang" time="10" width="813" height="1903" top="0" left="553" wait=false]
 #&[sf.name]
 그건 좀...[p]
+[chara_part name="Kang" body="1" face="4" ]
 #강여진
 힝...[p]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Jin" body="3" face="4" ]
+[chara_show name="Jin" time="100" width="813" height="1903" top="0" left="553" wait=false]
 #진다영
 이럴거면 그냥 변태가 말했던 러브...그 뭐지?[p]
 #설나희
 러브...크레센도...?[p]
+[chara_part name="Jin" body="3" face="2" ]
 #진다영
 그래 그거! 러브크레센도![p]
 #진다영
 그걸로 하자...![p]
 #&[sf.name]
 엥? 정말 이걸로 결정하는거야?[p]
+[chara_hide_all time=100 wait=false]
+[chara_part name="Kang" body="2" face="2" ]
+[chara_show name="Kang" time="100" width="813" height="1903" top="0" left="553" wait=false]
 #강여진
 응! 지금까지 들은 이름중에는 제일 좋은걸?[p]
+[chara_part name="Kang" body="1" face="1" ]
 #강여진
 좋아! 결정이다![p]
 #강여진
 지금부터 우리 밴드의 이름은 러브 크레센도야![p]
+[chara_part name="Kang" body="1" face="2" ]
 #강여진
 다들 이견 없지?[p]
 #진다영
 하하...맘에...들어...[p]
 #설나희
 나는 좋아...[p]
+[chara_part name="Kang" body="3" face="7" ]
 #강여진
 그래 러브 크레센도 결성 기념으로...[p]
 [_tb_end_tyrano_code]
 
 [playse  volume="70"  time="1000"  buf="0"  storage="SFX/Crowd_Cheer_01.wav"  ]
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 [tb_start_tyrano_code]
+[chara_part name="Kang" body="1" face="2" ]
 #강여진
 오늘은 내가 쏜다!![p]
 #진다영
@@ -599,12 +707,15 @@
 [tb_start_tyrano_code]
 #설나희
 그렇지...[p]
+[chara_part name="Kang" body="2" face="1" ]
+[chara_move name="Kang" time="200" width="1169" height="2735" top="0" left="375" wait=false]
 #강여진
 하하! 어서 가자! [p]
+[chara_part name="Kang" body="2" face="2" ]
 #강여진
 오늘은 왕창 먹을 거야![p]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
-[jump  storage="Chapter03_School_Club_02.ks"  target=""  ]
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [s  ]
