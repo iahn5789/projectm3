@@ -79,7 +79,7 @@
 
 [tb_start_tyrano_code]
 ; 캐릭터 등장
-[chara_new name="Jeon" storage="chara/Jeon_Sc/bin.png" zindex=1 jname="Jeon" width="1444" height="2735" ]
+[chara_new name="Jeon" storage="chara/Jeon_Sc/bin.png" zindex=1 jname="Jeon" width="1004" height="1903" ]
 
 [chara_layer name="Jeon" part="body" id="1" storage="chara/Jeon_SC/Jeon_Body_Sc_01.png" zindex=20 ]
 [chara_layer name="Jeon" part="body" id="2" storage="chara/Jeon_SC/Jeon_Body_Sc_02.png" zindex=20 ]
@@ -93,7 +93,7 @@
 [chara_layer name="Jeon" part="face" id="8" storage="chara/Jeon_SC/Jeon_Face_Embarrass_Sc_01.png" zindex=20 ]
 
 [chara_part name="Jeon" body="1" face="1" ]
-[chara_show name="Jeon" time="100" top="0" left="100" ]
+[chara_show name="Jeon" time="100" top="0" left="362" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
@@ -191,7 +191,7 @@
 [bg  time="1500"  method="fadeIn"  storage="Common_Road_Bgi_01.png"  cross="false"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="2" face="6" ]
-[chara_show name="Jeon" time="100" top="0" left="100" ]
+[chara_show name="Jeon" time="100" top="0" left="362" ]
 [_tb_end_tyrano_code]
 
 [tb_show_message_window  ]
@@ -256,7 +256,6 @@
 
 [tb_hide_message_window  ]
 [bg  time="1500"  method="fadeIn"  storage="Common_Road_Bgi_01.png"  cross="false"  ]
-[font  size="40"  color="0xff8f8f"  face="SBB"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
@@ -264,11 +263,10 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
-[resetfont  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="1" face="1" ]
-[chara_show name="Jeon" time="100" width="1444" height="2735" top="0" left="100" ]
+[chara_show name="Jeon" time="100" width="1004" height="1903" top="0" left="362" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
