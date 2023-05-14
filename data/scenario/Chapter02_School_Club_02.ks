@@ -526,5 +526,5 @@
 [chara_hide_all time=100 wait=false]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_01.ks"  target="*testscenestart"  ]
+[jump  storage="Test_Tutorial_01.ks"  target="*tutorial"  ]
 [s  ]
