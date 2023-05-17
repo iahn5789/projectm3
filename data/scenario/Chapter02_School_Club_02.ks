@@ -131,7 +131,7 @@
 [chara_part name="Kang" body="2" face="6" ]
 무슨 문제라도 있어?[p]
 #&[sf.name]
-( 그러고보니 노래는 자신이 없는데... )[p]
+( 그러고 보니 노래는 자신이 없는데... )[p]
 [chara_part name="Kang" body="1" face="8" ]
 #강여진
 갑자기 얼굴이 어두워졌어! 어디 아픈 건 아니지?[p]
