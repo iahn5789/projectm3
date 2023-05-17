@@ -379,7 +379,7 @@
 [chara_part name="Kang" body="2" face="1" ]
 #강여진
 네...실은 [emb exp="sf.name"]에게 랩을 부탁할까 고민하고 있었어요![p]
-#합갑수
+#한갑수
 뭐어? 랩?[p]
 [chara_part name="Kang" body="2" face="2" ]
 #강여진
