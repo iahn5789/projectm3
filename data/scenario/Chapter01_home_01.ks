@@ -52,7 +52,6 @@
 ( 마치 현실같이... )[p]
 [_tb_end_text]
 
-[font  size="40"  color="0xff0000"  face="SBB"  bold="false"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  ]
 [tb_start_text mode=1 ]
@@ -66,7 +65,6 @@
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [wait  time="2000"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
-[resetfont  ]
 [playse  volume="50"  time="1000"  buf="1"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_show_message_window  ]

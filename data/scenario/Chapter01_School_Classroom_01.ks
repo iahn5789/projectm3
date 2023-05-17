@@ -282,20 +282,17 @@
 [_tb_end_text]
 
 [quake  time="400"  count="5"  hmax="5"  wait="true"  ]
-[font  size="40"  color="0x000000"  face="SBB"  ]
 [playse  volume="65"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  ]
 [tb_start_text mode=1 ]
 #전대용
 도내 최상위 S랭크급 쿨뷰티초미녀![p]
 [_tb_end_text]
 
-[resetfont  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
 으응...?[p]
 [_tb_end_text]
 
-[font  size="40"  color="0x000000"  face="SBB"  ]
 [playse  volume="70"  time="1000"  buf="1"  storage="SFX/Typing_Fast_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #전대용
@@ -303,7 +300,6 @@
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="1"  fadeout="false"  ]
-[resetfont  ]
 [quake  time="200"  count="2"  hmax="2"  wait="true"  vmax="3"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="4" face="8" ]
