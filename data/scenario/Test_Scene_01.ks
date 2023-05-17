@@ -104,7 +104,6 @@
 [s  ]
 *msgshow
 
-[tb_eval  exp="f.testScene='TRUE'"  name="testScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [anim name="teststart" top=1100 time=200 effect=easeInQuad]
 [anim name="msgshow" top=1100 time=200 effect=easeInQuad]
@@ -149,6 +148,10 @@
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *gift
+
+[tb_start_tyrano_code]
+[freeimage layer="1" time=200 wait=false ]
+[_tb_end_tyrano_code]
 
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang"  cond="f.testScene=='FALSE'"  ]
 [s  ]
@@ -397,7 +400,7 @@ $('.msgopen03').fadeOut(300);
 [_tb_end_tyrano_code]
 
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  val_2="undefined"  ]
-[tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Jin_01"  ]
 [tb_start_tyrano_code]
 [button name="msg_close_02" storage="Test_Scene_01.ks" target="msg_close_02" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
@@ -487,7 +490,7 @@ $('.msgopen03jin').fadeOut(300);
 [_tb_end_tyrano_code]
 
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  val_2="undefined"  ]
-[tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [call  storage="Msg_Open_01.ks"  target="*Msg_Open_Sul_01"  ]
 [tb_start_tyrano_code]
 [button name="msg_close_03" storage="Test_Scene_01.ks" target="msg_close_03" graphic="../image/New_GUI/Test_UI/Popup_Close_01.png" width="348" height="106" x="786" y="920" enterimg="../image/New_GUI/Test_UI/Popup_Close_02.png" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
