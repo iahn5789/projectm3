@@ -238,12 +238,12 @@
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
-[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진
-기다리고 있을게 꼭 와야 돼! 있다봐!                [er]
+기다리고 있을게 꼭 와야 돼! 있다봐![p]
 [_tb_end_tyrano_code]
 
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_01
 
@@ -296,7 +296,7 @@
 [playse  volume="70"  time="1000"  buf="1"  storage="SFX/Typing_Fast_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #전대용
-금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4......          [er]
+금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를.......[p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="1"  fadeout="false"  ]
