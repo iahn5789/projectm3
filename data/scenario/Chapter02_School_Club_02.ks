@@ -234,7 +234,7 @@
 할 줄 아는 게 뭐야!! 바보!! 죽어!! 죽어!![p]
 [chara_part name="Jin" body="1" face="4" ]
 #&[sf.name]
-( 크흑… 아무리 그래도 눈 앞에서 대놓고… )[p]
+( 크흑... 아무리 그래도 눈 앞에서 대놓고... )[p]
 [chara_part name="Kang" body="1" face="5" ]
 
 [_tb_end_tyrano_code]
@@ -261,7 +261,7 @@
 그래 열~심히 해봐~ 달라지는 건 없겠지만~[p]
 [chara_part name="Kang" body="1" face="4" ]
 #&[sf.name]
-( 아무리 봐도…비웃는 거로 밖에 안 보이는군…)[p]
+( 아무리 봐도...비웃는 거로 밖에 안 보이는군...)[p]
 [chara_part name="Kang" body="1" face="5" ]
 #강여진
 두고봐 선생님 마음에 쏙 들 거야![p]
@@ -341,7 +341,7 @@
 
 [tb_start_tyrano_code]
 #진다영
-그러니까...변태에게 힙합...[r]즉…랩을 시킨다는 거야…?[p]
+그러니까...변태에게 힙합...[r]즉...랩을 시킨다는 거야...?[p]
 #강여진
 래...랩을 한다고...?[p]
 [chara_part name="Jin" body="3" face="2" ]
@@ -361,7 +361,7 @@
 시도해 볼 가치는 있어...[p]
 [chara_part name="Jin" body="1" face="8" ]
 #진다영
-으으...이…[p]
+으으...이...[p]
 [chara_hide_all time=100 wait=false]
 #한갑수
 에헴![p]

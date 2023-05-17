@@ -161,7 +161,7 @@
 그냥...[p]
 아는 언니 동생 사이...[p]
 #&[sf.name]
-아… 하하...[p]
+아... 하하...[p]
 [_tb_end_tyrano_code]
 
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
@@ -179,7 +179,7 @@
 [tb_start_tyrano_code]
 [chara_move name="Sul" top="0" left="553" width="813" height="1903" time=100 wait=false ]
 #&[sf.name]
-( 틀렸어.. 대화가 두 마디 이상 진행되질 않아…!)[p]
+( 틀렸어.. 대화가 두 마디 이상 진행되질 않아...!)[p]
 ( 누구라도 좋으니까 도와줘...! )[p]
 [chara_hide_all time=500 wait=false]
 [_tb_end_tyrano_code]
