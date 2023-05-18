@@ -5,6 +5,7 @@
 [mask  time="200"  effect="slideInRight"  color="0x000000"  ]
 *prod
 
+[mask  time="100"  effect="slideInRight"  color="0xffffff"  ]
 [tb_start_tyrano_code]
 [freeimage layer="0"]
 [image layer=0 left=0 top=0 page=fore visible=true name=credit storage = ../image/New_GUI/Credit_UI/Credit_Bgi_01.png ]
@@ -24,6 +25,7 @@
 [s  ]
 *help
 
+[mask  time="100"  effect="slideInRight"  color="0xffffff"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [freeimage layer="1"]
@@ -37,9 +39,11 @@
 [button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
 [_tb_end_tyrano_code]
 
+[mask_off  time="200"  effect="slideOutRight"  ]
 [s  ]
 *Spon
 
+[mask  time="100"  effect="slideInRight"  color="0xffffff"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [freeimage layer="1"]
@@ -53,6 +57,7 @@
 [button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
 [_tb_end_tyrano_code]
 
+[mask_off  time="200"  effect="slideOutRight"  ]
 [s  ]
 *back
 
