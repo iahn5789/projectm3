@@ -10,6 +10,7 @@
 [cm]
 [_tb_end_tyrano_code]
 
+[tb_keyconfig  flag="1"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
