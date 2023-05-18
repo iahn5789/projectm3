@@ -8,10 +8,10 @@ var __tyrano_key_config = {
 		"91": "skip"
 	},
 	"mouse": {
-		"right": "hidemessage",
-		"center": "menu",
-		"wheel_up": "backlog",
-		"wheel_down": "next"
+		"right": "",
+		"center": "",
+		"wheel_up": "",
+		"wheel_down": ""
 	},
 	"gesture": {
 		"swipe_up_1": {
