@@ -324,7 +324,7 @@
 #&[sf.name]
 ( 응...? )               [er]
 [chara_hide_all time=1 wait=false]
-[chara_part name="Sul" body="1" face="2" ]
+[chara_part name="Sul" body="1" face="1" ]
 [chara_show name="Sul" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
 #설나희
 말 그대로...힙합을 좋아해...[p]
