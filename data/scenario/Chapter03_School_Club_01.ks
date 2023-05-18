@@ -336,7 +336,7 @@
 
 [tb_start_tyrano_code]
 #강여진
-당연한 거잖아? [r]밴드 하는 사람은 어쩔 수 없이[r]기타를 좋아할 수 밖에 없다구?[p]
+당연한 거잖아? 밴드 하는 사람은 어쩔 수 없이[r]기타를 좋아할 수 밖에 없다구?[p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Guitar_Lick_01.wav"  ]
