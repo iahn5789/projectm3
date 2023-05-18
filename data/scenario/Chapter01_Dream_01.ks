@@ -3,6 +3,7 @@
 *L_input_name
 
 [cm  ]
+[tb_keyconfig  flag="1"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  ]

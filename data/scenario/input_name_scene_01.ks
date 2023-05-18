@@ -3,6 +3,7 @@
 *l_jump_1
 
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[tb_keyconfig  flag="0"  ]
 [hidemenubutton]
 
 [bg  storage="BGI/Common_Black.jpg"  method="puffIn"  time="1"  ]
