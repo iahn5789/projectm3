@@ -1,11 +1,10 @@
 var __tyrano_key_config = {
 	"key": {
 		"13": "next",
-		"17": "skip",
 		"32": "hidemessage",
 		"81": "save",
-		"87": "load",
-		"91": "skip"
+		"83": "skip",
+		"87": "load"
 	},
 	"mouse": {
 		"right": "",
