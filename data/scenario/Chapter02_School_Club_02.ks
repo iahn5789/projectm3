@@ -42,7 +42,7 @@
 #&[sf.name]
 어...별 일 아니야! 그냥 이런저런 이야기?[p]
 #강여진
-아참! 그러고 보니 오는 길에 선생님을 만났어[p]
+아 참! 그러고 보니 오는 길에 선생님을 만났어[p]
 #&[sf.name]
 선생님?[p]
 [chara_part name="Kang" body="2" face="2" ]
@@ -142,8 +142,12 @@
 에? 그게 무슨소리야...?[p]
 #&[sf.name]
 연습한 노래가 없는데...[p]
+[chara_hide_all time=20 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" top="0" left="375" time=20 wait=false ]
 #진다영
-보컬로 온거 아니야? 근데 준비가 안 되어있다고?[p]
+보컬로 온 거 아니야? 근데 준비가 안 되어있다고?[p]
+[chara_part name="Jin" body="2" face="2" ]
 너 진짜 바보야?[p]
 [_tb_end_tyrano_code]
 
@@ -151,7 +155,9 @@
 [tb_start_tyrano_code]
 #&[sf.name]
 나는 바보가 아니야!!![p]
+[chara_hide_all time=20 wait=false]
 [chara_part name="Kang" body="3" face="7" ]
+[chara_show name="Kang" top="0" left="375" time=20 wait=false ]
 #강여진
 ...[p]
 [chara_part name="Kang" body="3" face="8" ]
