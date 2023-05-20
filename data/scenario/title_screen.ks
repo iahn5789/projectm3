@@ -43,12 +43,8 @@
 [wa]
 [_tb_end_tyrano_code]
 
-[showmenubutton]
-
 [cm  ]
-[tb_keyconfig  flag="1"  ]
 [stopbgm  time="1000"  fadeout="true"  ]
-[tb_hide_message_window  ]
 [jump  storage="input_name_scene_01.ks"  target="*l_jump_1"  ]
 [s  ]
 *LOAD
