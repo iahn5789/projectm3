@@ -365,7 +365,7 @@
 [chara_part name="Kang" body="1" face="1" ]
 #강여진
 시도해 볼 가치는 있어...[p]
-[chara_part name="Jin" body="1" face="8" ]
+[chara_part name="Jin" body="1" face="6" ]
 #진다영
 으으...이...[p]
 [chara_hide_all time=100 wait=false]
