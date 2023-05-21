@@ -1,7 +1,8 @@
 [_tb_system_call storage=system/_Chapter01_Lobby_01.ks]
 
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
-[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  ]
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
@@ -10,7 +11,7 @@
 ( 어디보자...리듬 오브 레전드? 뭐야 이거? )[p]
 [_tb_end_text]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
 [tb_start_text mode=1 ]
 #강여진
 아니야! 진짜로 올거야! 약속까지 했다구![p]
