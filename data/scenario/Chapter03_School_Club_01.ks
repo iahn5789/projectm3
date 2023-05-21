@@ -10,6 +10,7 @@
 [cm]
 [_tb_end_tyrano_code]
 
+[tb_keyconfig  flag="1"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -336,7 +337,7 @@
 
 [tb_start_tyrano_code]
 #강여진
-당연한 거잖아? [r]밴드 하는 사람은 어쩔 수 없이[r]기타를 좋아할 수 밖에 없다구?[p]
+당연한 거잖아? 밴드 하는 사람은 어쩔 수 없이[r]기타를 좋아할 수 밖에 없다구?[p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]

@@ -42,7 +42,7 @@
 #강여진
 와줬구나! 어서 와![p]
 #???
-뭐야! [l]변태같이 다 엿 듣고 있던거야?![p]
+뭐야! [l]변태같이 다 엿듣고 있던거야?![p]
 #&[sf.name]
 아니 나는.......[p]
 [_tb_end_text]
@@ -283,7 +283,7 @@
 #진다영
 ...그치만 이건 너무 억지잖아! [l][r]폐부 막아보겠다고 저런 변태랑...헙![p]
 #&[sf.name]
-응?[l]그게 무슨말..........[p]
+응? 그게 무슨말..........[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -447,12 +447,12 @@
 [_tb_end_text]
 
 [tb_start_tyrano_code]
-[chara_part name="Kang" body="3" face="4" ]
+[chara_part name="Kang" body="3" face="1" ]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #강여진
-그렇지만 지금부터 우리 동아리에 맴버라구?[p]
+그렇지만 지금부터 우리 동아리에 멤버라구?[p]
 #설나희
 난...괜찮다고 생각해...[p]
 [_tb_end_text]

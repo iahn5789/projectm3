@@ -3,6 +3,7 @@
 *l_jump_1
 
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[tb_keyconfig  flag="0"  ]
 [hidemenubutton]
 
 [bg  storage="BGI/Common_Black.jpg"  method="puffIn"  time="1"  ]
@@ -11,13 +12,13 @@
 [tb_ptext_show  x="715"  y="408"  size="48"  color="0xffffff"  time="1000"  text="너의&nbsp;이름을&nbsp;알려줘"  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [html]
-<input required autofocus class="text_box form event-setting-element" name="sf.name" type="text" value="" placeholder="이름" data-event-tag="edit" data-event-pm="{"name":"sf.name","color":"black","left":"714","top":"483","size":"60","face":"TheJamsil5Bold","width":"480","autocomplete":"false","height":"80","maxchars":"5","reflect":"false","_tag":"edit"}" maxlength="5" autocomplete="off" style="border-radius:16px; padding-left: 8px; color: rgb(0, 0, 0); left: 714px; top: 483px; width: 400px; height: 80px; font-size: 32px; font-family: TheJamsil5Bold; position: absolute;">
+<input required autofocus class="text_box form event-setting-element" name="sf.name" type="text" value="" placeholder="이름" data-event-tag="edit" data-event-pm="{"name":"sf.name","color":"black","left":"714","top":"483","size":"60","face":"TheJamsil5Bold","width":"480","autocomplete":"false","height":"80","maxchars":"5","reflect":"false","_tag":"edit"}" maxlength="4" autocomplete="off" style="border-radius:16px; padding-left: 8px; color: rgb(0, 0, 0); left: 714px; top: 483px; width: 400px; height: 80px; font-size: 32px; font-family: TheJamsil5Bold; position: absolute;">
 [endhtml]
 [_tb_end_tyrano_code]
 
 [button  storage="input_name_scene_01.ks"  target="*L_name_1"  graphic="button/Common_Button.png"  width="83"  height="47"  x="1032"  y="503"  _clickable_img=""  name="img_8"  ]
-[tb_ptext_show  x="715"  y="578"  size="30"  color="0xffffff"  time="1000"  text="최대&nbsp;5글자까지&nbsp;가능합니다."  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="715"  y="620"  size="20"  color="0xffffff"  time="1000"  text="이름을&nbsp;입력하지&nbsp;않을&nbsp;시&nbsp;기본&nbsp;이름&nbsp;[현수]로&nbsp;시작합니다."  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="715"  y="578"  size="30"  color="0xffffff"  time="1000"  text="최대&nbsp;4글자까지&nbsp;가능합니다."  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="715"  y="620"  size="20"  color="0xffffff"  time="1000"  text="이름을&nbsp;입력하지&nbsp;않을&nbsp;시&nbsp;기본&nbsp;이름&nbsp;[정민]로&nbsp;시작합니다."  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [s  ]
 *L_name_1
 
@@ -29,7 +30,7 @@
 [tb_ptext_hide  time="1000"  ]
 [tb_start_tyrano_code]
 [if exp=" sf.name ===  f.null"]
-[eval exp="sf.name='현수'"]
+[eval exp="sf.name='정민'"]
 [jump storage="Chapter01_Dream_01.ks" target="L_input_name"]
 [endif]
 [_tb_end_tyrano_code]

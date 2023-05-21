@@ -4,7 +4,6 @@
 
 [cm  ]
 [bg  time="10"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 ; 설나희 등장
@@ -59,10 +58,11 @@
 [chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=20 ]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=200 wait=false]
 #
-쾅!!!        쾅!!!!            쾅!!!!!!!!![p]
+쾅!!!!!!!!![p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="true"  loop="true"  ]
@@ -81,8 +81,8 @@
 ...[p]
 #설나희
 둘 다 오늘 혼나볼래?[p]
-#
-...[p]
+#진다영
+미...미안...[p]
 #강여진
 아니요...[p]
 [chara_part name="Sul" body="3" face="1" ]
@@ -380,7 +380,7 @@
 #강여진
 그래서 모든 맴버들이 다 모이면[r]새로 이름을 정하고 싶었어![p]
 #강여진
-추천할 만한 이름이 있다면 말하도록![p]
+추천 할 만한 이름이 있다면 말하도록![p]
 [chara_part name="Kang" body="1" face="6" ]
 #강여진
 오! 다영이 손 든 거야?[p]

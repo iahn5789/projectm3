@@ -42,7 +42,7 @@
 #&[sf.name]
 어...별 일 아니야! 그냥 이런저런 이야기?[p]
 #강여진
-아참! 그러고 보니 오는 길에 선생님을 만났어[p]
+아 참! 그러고 보니 오는 길에 선생님을 만났어[p]
 #&[sf.name]
 선생님?[p]
 [chara_part name="Kang" body="2" face="2" ]
@@ -112,7 +112,7 @@
 ( 그런 말은 당사자 앞에서 하지 않아줬으면 좋겠는데... )[p]
 [chara_part name="Kang" body="1" face="4" ]
 #강여진
-진다영! 아무리 그래도 당사자 앞에서 그렇게 말하면 어떡해![p]
+진다영![r]아무리 그래도 당사자 앞에서 그렇게 말하면 어떡해![p]
 #&[sf.name]
 ( 너가 제일 나빠..흑... )[p]
 [chara_part name="Jin" body="1" face="4" ]
@@ -131,7 +131,7 @@
 [chara_part name="Kang" body="2" face="6" ]
 무슨 문제라도 있어?[p]
 #&[sf.name]
-( 그러고보니 노래는 자신이 없는데... )[p]
+( 그러고 보니 노래는 자신이 없는데... )[p]
 [chara_part name="Kang" body="1" face="8" ]
 #강여진
 갑자기 얼굴이 어두워졌어! 어디 아픈 건 아니지?[p]
@@ -142,8 +142,12 @@
 에? 그게 무슨소리야...?[p]
 #&[sf.name]
 연습한 노래가 없는데...[p]
+[chara_hide_all time=20 wait=false]
+[chara_part name="Jin" body="1" face="4" ]
+[chara_show name="Jin" top="0" left="375" time=20 wait=false ]
 #진다영
-보컬로 온거 아니야? 근데 준비가 안 되어있다고?[p]
+보컬로 온 거 아니야? 근데 준비가 안 되어있다고?[p]
+[chara_part name="Jin" body="2" face="2" ]
 너 진짜 바보야?[p]
 [_tb_end_tyrano_code]
 
@@ -151,12 +155,14 @@
 [tb_start_tyrano_code]
 #&[sf.name]
 나는 바보가 아니야!!![p]
+[chara_hide_all time=20 wait=false]
 [chara_part name="Kang" body="3" face="7" ]
+[chara_show name="Kang" top="0" left="375" time=20 wait=false ]
 #강여진
 ...[p]
 [chara_part name="Kang" body="3" face="8" ]
 그... 그래도 한번 들어볼 수 있을까..?[p]
-자신이 없는거지 우리가 들어보는 건 또 다를 수 있으니까![p]
+자신이 없는거지 우리가 들어보는 건 또 다를 수[r]있으니까![p]
 #&[sf.name]
 맞아! 우선 해볼게![p]
 [_tb_end_tyrano_code]
@@ -226,15 +232,15 @@
 #&[sf.name]
 아니...[p]
 #설나희
-그래도 일주일 뒤가 오디션이니 그때까지 준비한다면 어쩌면...[p]
+그래도 일주일 뒤가 오디션이니 그때까지 준비한다면[r]어쩌면...[p]
 [chara_part name="Jin" body="3" face="4" ]
 [chara_part name="Kang" body="1" face="4" ]
 #진다영
-틀렸어! [r]이 실력으로는 그 깐깐한 도덕 선생을 납득시킬 수 없단 말이야!![p]
-할 줄 아는 게 뭐야!! 바보!! 죽어!! 죽어!![p]
+틀렸어! 이 실력으로는 그 깐깐한 도덕 선생을[r]납득시킬 수 없단 말이야!![p]
+할 줄 아는 게 뭐야! 바보! 죽어! 죽어![p]
 [chara_part name="Jin" body="1" face="4" ]
 #&[sf.name]
-( 크흑… 아무리 그래도 눈 앞에서 대놓고… )[p]
+( 크흑... 아무리 그래도 눈 앞에서 대놓고... )[p]
 [chara_part name="Kang" body="1" face="5" ]
 
 [_tb_end_tyrano_code]
@@ -261,7 +267,7 @@
 그래 열~심히 해봐~ 달라지는 건 없겠지만~[p]
 [chara_part name="Kang" body="1" face="4" ]
 #&[sf.name]
-( 아무리 봐도…비웃는 거로 밖에 안 보이는군…)[p]
+( 아무리 봐도...비웃는 거로 밖에 안 보이는군...)[p]
 [chara_part name="Kang" body="1" face="5" ]
 #강여진
 두고봐 선생님 마음에 쏙 들 거야![p]
@@ -324,7 +330,7 @@
 #&[sf.name]
 ( 응...? )               [er]
 [chara_hide_all time=1 wait=false]
-[chara_part name="Sul" body="1" face="2" ]
+[chara_part name="Sul" body="1" face="1" ]
 [chara_show name="Sul" top="0" left="375" width="1169" height="2735" time=10 wait=false ]
 #설나희
 말 그대로...힙합을 좋아해...[p]
@@ -341,7 +347,7 @@
 
 [tb_start_tyrano_code]
 #진다영
-그러니까...변태에게 힙합...[r]즉…랩을 시킨다는 거야…?[p]
+그러니까...변태에게 힙합...[r]즉...랩을 시킨다는 거야...?[p]
 #강여진
 래...랩을 한다고...?[p]
 [chara_part name="Jin" body="3" face="2" ]
@@ -359,9 +365,9 @@
 [chara_part name="Kang" body="1" face="1" ]
 #강여진
 시도해 볼 가치는 있어...[p]
-[chara_part name="Jin" body="1" face="8" ]
+[chara_part name="Jin" body="1" face="6" ]
 #진다영
-으으...이…[p]
+으으...이...[p]
 [chara_hide_all time=100 wait=false]
 #한갑수
 에헴![p]
@@ -373,13 +379,13 @@
 #강여진
 아! 선생님 안녕하세요![p]
 #한갑수
-여진이가 성실하고 착한 친구라고 해서[r] 동아리에 입부시키긴 했지만 나는 아직 믿지 못한다![p]
+여진이가 성실하고 착한 친구라고 해서 동아리에[r]입부시키긴 했지만 나는 아직 믿지 못한다![p]
 #한갑수
 준비는 잘 되어가고 있나?[p]
 [chara_part name="Kang" body="2" face="1" ]
 #강여진
 네...실은 [emb exp="sf.name"]에게 랩을 부탁할까 고민하고 있었어요![p]
-#합갑수
+#한갑수
 뭐어? 랩?[p]
 [chara_part name="Kang" body="2" face="2" ]
 #강여진
@@ -407,7 +413,7 @@
 너희가 힙합에 대해서 제대로 아느냔 말이다!![p]
 [chara_part name="Kang" body="3" face="8" ]
 #한갑수
-단순히 비트 위에 빠르게 말하는 것은 힙합이 아니란말이다아아아!!!!![p]
+단순히 비트 위에 빠르게 말하는 것은 힙합이[r]아니란말이다아아아!!!!![p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
@@ -430,7 +436,7 @@
 #강여진
 으으...네...[p]
 #한갑수
-그리고! 오디션을 보는 것도 맞지만[r] 오디션만 보는 게 아니다![p]
+그리고! 오디션을 보는 것도 맞지만 오디션만[r]보는 게 아니다![p]
 [chara_part name="Kang" body="1" face="6" ]
 #강여진
 네? 그럼 오디션 말고 다른 것도 본다는 말씀이신가요?[p]
@@ -446,7 +452,7 @@
 
 [tb_start_tyrano_code]
 #한갑수
-그래 알면 됐다! 그럼, 이만 가보마![p]
+그래 알면 됐다! 그럼 이만 가보마![p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
@@ -471,7 +477,7 @@
 #진다영
 그래도 20분 동안 혼자서 저렇게 연설을 할 줄이야...[p]
 #강여진
-확실히 그건 예상 밖이었지만 말이야,,,[p]
+확실히 그건 예상 밖이었지만 말이야...[p]
 [chara_part name="Jin" body="1" face="4" ]
 #진다영
 이제 어쩔거야... [p]
@@ -488,9 +494,9 @@
 
 [tb_start_tyrano_code]
 #강여진
-음... 우리 신입 부원이 공부도 잘하길 기도하는 수밖에?[p]
+음... 우리 신입부원이 공부도 잘하길 기도하는 수밖에?[p]
 #&[sf.name]
-그건 걱정하지 마. 그래도 중간은 하니까...[p]
+그건 걱정하지 마[r]그래도 중간은 하니까...[p]
 [chara_part name="Kang" body="2" face="2" ]
 #강여진
 그럼 다행이네![p]
@@ -526,5 +532,5 @@
 [chara_hide_all time=100 wait=false]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_01.ks"  target="*testscenestart"  ]
+[jump  storage="Test_Tutorial_01.ks"  target="*tutorial"  ]
 [s  ]

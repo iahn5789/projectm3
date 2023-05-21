@@ -37,7 +37,17 @@
 [mask_off  time="200"  effect="slideOutRight"  ]
 *base_01
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [button name="pageback" storage="Gallery.ks" target="base_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="base_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
@@ -65,7 +75,17 @@
 [s  ]
 *base_02
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [button name="pageback" storage="Gallery.ks" target="base_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="base_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
@@ -107,7 +127,17 @@
 
 *kang_01
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 
 [button name="pageback" storage="Gallery.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
@@ -136,7 +166,17 @@
 [s  ]
 *kang_02
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [button name="pageback" storage="Gallery.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
@@ -178,7 +218,17 @@
 
 *jin_01
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 
 [button name="pageback" storage="Gallery.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
@@ -207,7 +257,17 @@
 [s  ]
 *jin_02
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [button name="pageback" storage="Gallery.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
@@ -224,7 +284,7 @@
 
 [tb_cg_image_button  graphic="../bgimage/CG/IU4.jpg"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="1063"  y="284"  _tb_parts_type="cg_image_button"  id="jin08"  ]
 
-[tb_cg_image_button  graphic=none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="1469"  y="284"  _tb_parts_type="cg_image_button"  id="jin09"  ]
+[tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="1469"  y="284"  _tb_parts_type="cg_image_button"  id="jin09"  ]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="566"  _tb_parts_type="cg_image_button"  id="jin10"  ]
 
@@ -249,7 +309,17 @@
 
 *sul_01
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 
 [button name="pageback" storage="Gallery.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
@@ -278,7 +348,17 @@
 [s  ]
 *sul_02
 
-[tb_ptext_hide  time="0"  ]
+[tb_ptext_hide  time="1"  ]
+[tb_clear_images]
+
+[tb_start_tyrano_code]
+[button name="base" storage="Gallery.ks" target="base_root" graphic="../image/New_GUI/CG_UI/Base_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Base_Bt_02.png" width="418" height="88" x="105" y="272"]
+[button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426"]
+[button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582"]
+[button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [button name="pageback" storage="Gallery.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
 [button name="pagenext" storage="Gallery.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]

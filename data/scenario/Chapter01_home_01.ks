@@ -48,11 +48,10 @@
 #&[sf.name]
 네에... 일어났어요...[p]
 ( 꿈이라기엔 너무 생생해... )[p]
-( 지금도 꿈을 꾸고 있는 건가?? )[p]
+( 지금도 꿈을 꾸고 있는 건가? )[p]
 ( 마치 현실같이... )[p]
 [_tb_end_text]
 
-[font  size="40"  color="0xff0000"  face="SBB"  bold="false"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  ]
 [tb_start_text mode=1 ]
@@ -66,7 +65,6 @@
 [playse  volume="30"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [wait  time="2000"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
-[resetfont  ]
 [playse  volume="50"  time="1000"  buf="1"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_show_message_window  ]
@@ -199,7 +197,7 @@
 #전대용
 야! 야! [emb exp="sf.name"]![p]
 #
-... ... ......[p]
+............[p]
 #전대용
 표정이 왜 그래?[p]
 [_tb_end_text]
@@ -330,7 +328,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-그 말은 즉, 전교생 중 동아리를 가입하지 않는 사람이.....[p]
+그 말은 즉, 전교생 중 동아리를 가입하지 않는 사람이...[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -352,7 +350,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-글쎄.. 나는 딱히 취미도 없고...[l][r]하고 싶은 것도 별로 없는 걸....[p]
+글쎄.. 나는 딱히 취미도 없고...[l][r]하고 싶은 것도 별로 없는 걸...[p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -382,7 +380,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-게다가 거기 부장 누나가 가슴이 아주 그냥....흐흐...[p]
+게다가 거기 부장 누나가 가슴이 아주 그냥...흐흐...[p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
