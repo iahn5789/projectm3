@@ -339,7 +339,6 @@
 당연한 거잖아? [r]밴드 하는 사람은 어쩔 수 없이[r]기타를 좋아할 수 밖에 없다구?[p]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Guitar_Lick_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진
 멋진 소리와 음악의 절정에서 휘몰아치는 기타 솔로! [p]
@@ -360,7 +359,6 @@
 [chara_part name="Jin" body="1" face="1" ]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Bass_Lick_01.wav"  ]
 [tb_start_tyrano_code]
 #진다영
 커다란 바디에서 나오는 묵직한 울림![p]
