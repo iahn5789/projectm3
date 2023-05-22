@@ -46,11 +46,6 @@
 그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하.... [p]
 [_tb_end_text]
 
-[tb_start_text mode=1 ]
-#???
-응?[p]
-[_tb_end_text]
-
 [playse  volume="130"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open.wav"  ]
 [tb_start_tyrano_code]
 [chara_hide name="Jeon" time=100]
@@ -58,8 +53,13 @@
 
 [tb_start_tyrano_code]
 #
-드르륵 -                           쿵                                 [er]
+드르륵 -                       쿵                                 [er]
 [_tb_end_tyrano_code]
+
+[tb_start_text mode=1 ]
+#???
+응?[p]
+[_tb_end_text]
 
 [tb_start_tyrano_code]
 ; 캐릭터 등장
