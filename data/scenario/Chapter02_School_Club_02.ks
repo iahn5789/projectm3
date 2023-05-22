@@ -314,7 +314,7 @@
 [_tb_end_tyrano_code]
 
 [quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Whistle_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Emotion_Question_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진
 으잉?               [er]
@@ -392,7 +392,6 @@
 네! 그러니까 힙합을...[p]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Lightning_One_Shot_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Slam_01.wav"  ]
 [quake  time="200"  count="3"  hmax="5"  wait="true"  ]
 [tb_start_tyrano_code]
@@ -404,8 +403,7 @@
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Door_Slam_01.wav"  ]
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
-[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
+[playse  volume="70"  time="1000"  buf="1"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [quake  time="500"  count="6"  hmax="20"  wait="true"  vmax="10"  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="6" ]
@@ -417,14 +415,14 @@
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Typing_Fast_01.wav"  loop="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Cartoon_Walla_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #한갑수
 힙합이란 1970년대 후반 뉴욕 브롱크스 남쪽 빈민가에 거주하는 미국 흑인과
-남미 히스패닉계 청소년들에 의해 형성된 새로운 문화운동 전반을 가르치는 말로........[p]
+남미 히스패닉계 청소년들에 의해 형성된 새로운 문화운동 전반을 가르치는 말로........[er]
 [_tb_end_tyrano_code]
 
-[stopse  time="1000"  buf="0"  fadeout="false"  ]
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 ......[p]

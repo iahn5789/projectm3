@@ -283,7 +283,7 @@
 ......[p]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  fadein="true"  ]
 [tb_start_tyrano_code]
 [chara_part name="Sul" body="3" face="9" ]
 #설나희
