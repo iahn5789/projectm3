@@ -6,15 +6,15 @@
 [tb_keyconfig  flag="1"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
 [playse  volume="40"  time="1000"  buf="0"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
 ( .....어? )[p]
 [_tb_end_text]
 
-[bg  time="1000"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
-[playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
 [playse  volume="100"  time="1000"  buf="2"  storage="SFX/Common_Backstage_01.wav"  loop="true"  fadein="false"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Dream_Bgi_01.png"  ]
 [tb_start_text mode=1 ]
 #관객들
 와아아아-! [p]
