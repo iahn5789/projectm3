@@ -2,7 +2,7 @@
 
 *office_01
 
-[stopbgm  time="1000"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
 [playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Embarrass_01.mp3"  ]
 [tb_replay_start  ]
 [bg  time="1000"  method="crossfade"  storage="943a383299379145946725d58025e83f.jpg"  ]

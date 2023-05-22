@@ -601,7 +601,7 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [tb_show_message_window  ]
-[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  ]
+[playse  volume="250"  time="1000"  buf="0"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  fadein="true"  ]
 [tb_start_text mode=1 ]
 #
 손.....손을 잡았어..... [p]
