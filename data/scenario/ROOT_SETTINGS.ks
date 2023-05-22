@@ -39,8 +39,10 @@
 
 [tb_start_tyrano_code]
 [if exp="f.common_poster_choice_whether === 'FALSE'"]
+[clearfix name="lootcommon"]
 [button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_01.png" width="274" height="410" x="927" y="105" z-index="100"]
 [else]
+[clearfix name="lootcommon"]
 [button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_02.png" width="274" height="410" x="927" y="105" z-index="100"]
 [endif]
 [_tb_end_tyrano_code]
@@ -50,8 +52,10 @@
 
 [tb_start_tyrano_code]
 [if exp="f.k_poster_choice_whether === 'FALSE'"]
+[clearfix name="lootkang"]
 [button name="lootkang" storage="ROOT_SETTINGS.ks" fix="true" target="Kang_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_Kang_01.png"  width="274" height="410" x="614" y="105"]
 [else]
+[clearfix name="lootkang"]
 [button name="lootkang" storage="ROOT_SETTINGS.ks" fix="true" target="Kang_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_Kang_02.png"  width="274" height="410" x="614" y="105"]
 [endif]
 [_tb_end_tyrano_code]
@@ -61,8 +65,10 @@
 
 [tb_start_tyrano_code]
 [if exp="f.j_poster_choice_whether === 'FALSE'"]
+[clearfix name="lootjin"]
 [button name="lootjin" storage="ROOT_SETTINGS.ks" fix="true" target="Jin_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_Jin_01.png" width="274" height="410" x="927" y="105"]
 [else]
+[clearfix name="lootjin"]
 [button name="lootjin" storage="ROOT_SETTINGS.ks" fix="true" target="Jin_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_Jin_02.png" width="274" height="410" x="927" y="105"]
 [endif]
 [_tb_end_tyrano_code]
@@ -72,8 +78,10 @@
 
 [tb_start_tyrano_code]
 [if exp="f.s_poster_choice_whether === 'FALSE'"]
+[clearfix name="lootsul"]
 [button name="lootsul" storage="ROOT_SETTINGS.ks" fix="true" target="Sul_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_Sul_01.png" width="274" height="410" x="1241" y="105"]
 [else]
+[clearfix name="lootsul"]
 [button name="lootsul" storage="ROOT_SETTINGS.ks" fix="true" target="Sul_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_Sul_02.png" width="274" height="410" x="1241" y="105"]
 [endif]
 [_tb_end_tyrano_code]

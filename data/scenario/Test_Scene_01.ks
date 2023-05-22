@@ -12,13 +12,6 @@
 
 [cm  ]
 [tb_start_tyrano_code]
-[clearfix name="lootcommon"]
-[clearfix name="lootkang"]
-[clearfix name="lootjin"]
-[clearfix name="lootsul"]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
 [free name="jlove" layer=2 ]
@@ -44,13 +37,39 @@
 [s  ]
 *After_Button_Change
 
+[cm  ]
 [tb_start_tyrano_code]
-;[anim name="teststart" top=912 time=300 effect=easeInQuad]
-;[anim name="msgshow" top=912 time=300 effect=easeInQuad]
+[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="Day" layer=2 ]
+[free name="score" layer=2 ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=206 y=199 width=120 color="0x856000" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=200 y=420 width=150 color="0x856000" align="center" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=200 y=514 width=150 color="0x856000" align="center" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="slove" page=fore text="&[f.slove]" size=30 x=200 y=612 width=150 color="0x856000" align="center" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=210 y=28 width=50 color="0x856000" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="score" page=fore text="&[f.score]" size=30 x=214 y=114 width=70 color="0x856000" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="343" height="209" x="47" y="841" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="teststart" storage="Test_Scene_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_UI/Test_Start_02.png" width="348" height="106" x="653" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="msgshow" storage="Test_Scene_01.ks" target="msgshow" graphic="../image/New_GUI/Test_UI/Msg_Bt_01.png" enterimg="../image/New_GUI/Test_UI/Msg_Bt_02.png" width="348" height="106" x="1128" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Exam_Desk_Draw_01.wav"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[anim name="teststart" top=912 time=300 effect=easeInQuad]
+[anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_02" top=1100 time=300 effect=easeInQuad]
 [anim name="test_start_bt_01" top=1100 time=1000 effect=easeInQuad]
 [anim name="test_back_bt_01" top=1100 time=1000 effect=easeInQuad]
+[anim name=lootcommon time=1 opacity=255]
+[anim name=lootkang time=1 opacity=255]
+[anim name=lootjin time=1 opacity=255]
+[anim name=lootsul time=1 opacity=255]
 [_tb_end_tyrano_code]
 
 [mask_off  time="1000"  effect="fadeOut"  ]
@@ -147,7 +166,7 @@
 [_tb_end_tyrano_code]
 
 [tb_eval  exp="f.testScene='FALSE'"  name="testScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
-[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
+[jump  storage="Test_Scene_01.ks"  target="*After_Button_Change"  ]
 [s  ]
 *gift
 
