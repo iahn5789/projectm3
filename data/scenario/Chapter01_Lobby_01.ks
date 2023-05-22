@@ -42,5 +42,4 @@
 문 앞?[p]
 [_tb_end_text]
 
-[stopbgm  time="2000"  fadeout="true"  ]
 [jump  storage="Chapter01_School_Club_01.ks"  target=""  ]
