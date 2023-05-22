@@ -64,6 +64,11 @@
 [s  ]
 *quiz_01_scoring
 
+[jump  storage="Test_Start_01.ks"  target="*quiz_select_check_01"  cond="f.select!=''"  ]
+[return  ]
+[s  ]
+*quiz_select_check_01
+
 [tb_start_tyrano_code]
 
 [clr_time_limit]
@@ -136,6 +141,11 @@
 [s  ]
 *quiz_02_scoring
 
+[jump  storage="Test_Start_01.ks"  target="*quiz_select_check_02"  cond="f.select!=''"  ]
+[return  ]
+[s  ]
+*quiz_select_check_02
+
 [tb_start_tyrano_code]
 
 [clr_time_limit]
@@ -205,6 +215,11 @@
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
 *quiz_03_scoring
+
+[jump  storage="Test_Start_01.ks"  target="*quiz_select_check_03"  cond="f.select!=''"  ]
+[return  ]
+[s  ]
+*quiz_select_check_03
 
 [tb_start_tyrano_code]
 
