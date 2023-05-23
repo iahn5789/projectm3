@@ -5,7 +5,7 @@
 [stopbgm  time="1000"  fadeout="true"  ]
 [playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Embarrass_01.mp3"  ]
 [tb_replay_start  ]
-[bg  time="1000"  method="crossfade"  storage="943a383299379145946725d58025e83f.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Sc_Office_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 ; 강여진 등장
 [chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="1169" height="2735" ]
@@ -23,13 +23,13 @@
 [chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=20 ]
 [chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
 
+[chara_part name="Kang" body="1" face="4" ]
+[chara_show name="Kang" time=200 top="0" left="375" wait=false]
 [_tb_end_tyrano_code]
 
 [mask_off  time="3000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-[chara_part name="Kang" body="1" face="4" ]
-[chara_show name="Kang" time="100" top="0" left="375" ]
 #한갑수
 안 돼![p]
 [chara_part name="Kang" body="1" face="5" ]
@@ -47,23 +47,23 @@
 [chara_part name="Kang" body="1" face="5" ]
 #강여진
 아까부터 계속 같은 말만 하시잖아요![p]
+[chara_part name="Kang" body="1" face="4" ]
 #한갑수
 그래! 귀찮다고![p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[chara_part name="Kang" body="2" face="4" ]
+[chara_part name="Kang" body="2" face="5" ]
 #강여진
 선생님이 귀찮을 게 어디있어요..동아리 활동은 저희가 하는 건데![p]
 #한갑수
-너희가 그렇게 활동을 하게 되면 내가 신경 써야 하잖아![r]
+너희가 그렇게 활동을 하게 되면 내가 신경 써야 하잖아![p]
 나는 그게 귀찮은 거라고[p]
-[chara_part name="Kang" body="1" face="5" ]
+[chara_part name="Kang" body="1" face="4" ]
 #강여진
 선생님! 너무해요...![p]
 #한갑수
 흥, 그렇게 말해도 안 되는 건 안 되는 거야 ![p]
-[chara_part name="Kang" body="1" face="4" ]
 #강여진
 너무해...[p]
 #한갑수

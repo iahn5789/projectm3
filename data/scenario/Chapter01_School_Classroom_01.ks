@@ -189,6 +189,7 @@
 [filter layer=all blur=5]
 [_tb_end_tyrano_code]
 
+[tb_keyconfig  flag="0"  ]
 [tb_start_tyrano_code]
 [glink color="btn_21_yellow" target="l_yes_01" text="알긴 하는데..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="300" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [glink color="btn_21_yellow" target="l_no_01" text="동아리..방..?" face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="600" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
@@ -197,6 +198,7 @@
 [s  ]
 *l_yes_01
 
+[tb_keyconfig  flag="1"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0]
 [_tb_end_tyrano_code]
@@ -221,6 +223,7 @@
 [jump  storage="Chapter01_School_Classroom_01.ks"  target="*l_01"  ]
 *l_no_01
 
+[tb_keyconfig  flag="1"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0]
 [_tb_end_tyrano_code]

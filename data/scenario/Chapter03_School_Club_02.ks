@@ -109,6 +109,7 @@
 
 [stopse  time="1000"  buf="0"  ]
 [tb_hide_message_window  ]
+[tb_keyconfig  flag="0"  ]
 [tb_start_tyrano_code]
 [glink color="btn_21_yellow" target="l_kang" text="그래도 역시 밴드는 기타가..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="200" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 [glink color="btn_21_yellow" target="l_jin" text="베이스가 없으면 허전하지..." face="The Jamsil5Bold" size="55" width="1000" height="150" x="466" y="500" enterse="UI/Common_Branch_Hover_01.wav" leavese="UI/Common_Branch_Hover_Leave_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
@@ -118,6 +119,7 @@
 [s  ]
 *l_kang
 
+[tb_keyconfig  flag="1"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0 ]
 [_tb_end_tyrano_code]
@@ -178,6 +180,7 @@
 [s  ]
 *l_jin
 
+[tb_keyconfig  flag="1"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0 ]
 [_tb_end_tyrano_code]
@@ -255,6 +258,7 @@
 [s  ]
 *l_sul
 
+[tb_keyconfig  flag="1"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0 ]
 [_tb_end_tyrano_code]
