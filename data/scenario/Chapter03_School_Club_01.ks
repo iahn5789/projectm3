@@ -2,6 +2,7 @@
 
 *chapter03_01
 
+[stopbgm  time="1000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [cm  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  ]
