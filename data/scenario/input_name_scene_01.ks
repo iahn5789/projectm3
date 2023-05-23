@@ -8,6 +8,7 @@
 
 [bg  storage="BGI/Common_Black.jpg"  method="puffIn"  time="1"  ]
 [mask_off  time="3000"  effect="fadeOut"  ]
+[playse  volume="150"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_cutoff_01.wav"  fadein="true"  loop="true"  ]
 [tb_hide_message_window  ]
 [tb_ptext_show  x="715"  y="408"  size="48"  color="0xffffff"  time="1000"  text="너의&nbsp;이름을&nbsp;알려줘"  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
