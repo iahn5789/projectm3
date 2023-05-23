@@ -132,7 +132,6 @@ opacity: 0;
 </style>
 <script>
 function doAction(buttonId) {
-console.log("buttonId : "+ buttonId);
 if (buttonId === 'button_01') {
 var con1 = document.getElementById("button_01checkimg");
 var con2 = document.getElementById("button_02checkimg");
@@ -214,7 +213,6 @@ window.TYRANO.kag.stat.f.select = 'TRUE';
 window.TYRANO.kag.stat.f.select = 'FALSE';
 }
 }
-console.log("f.select_answer : "+ window.TYRANO.kag.stat.f.select);
 }
 
 const buttons1 = document.querySelectorAll("button");
@@ -296,7 +294,6 @@ f.Test_Item02 = displayButtonImage(f.Test_Item02);
 f.Test_Item03= displayButtonImage(f.Test_Item03);
 f.Test_Item04= displayButtonImage(f.Test_Item04);
 f.Test_Item05= displayButtonImage(f.Test_Item05);
-console.log("f.Test_Item01 : "+ f.Test_Item01);
 
 
 [endscript]
@@ -342,7 +339,6 @@ opacity: 0;
 </style>
 <script>
 function doAction(buttonId) {
-console.log("buttonId : "+ buttonId);
 if (buttonId === 'button_01') {
 var con1 = document.getElementById("button_01checkimg");
 var con2 = document.getElementById("button_02checkimg");
@@ -424,7 +420,6 @@ window.TYRANO.kag.stat.f.select = 'TRUE';
 window.TYRANO.kag.stat.f.select = 'FALSE';
 }
 }
-console.log("f.select_answer : "+ window.TYRANO.kag.stat.f.select);
 }
 
 const buttons2 = document.querySelectorAll("button");
@@ -506,7 +501,6 @@ f.Test_Item02 = displayButtonImage(f.Test_Item02);
 f.Test_Item03= displayButtonImage(f.Test_Item03);
 f.Test_Item04= displayButtonImage(f.Test_Item04);
 f.Test_Item05= displayButtonImage(f.Test_Item05);
-console.log("f.Test_Item01 : "+ f.Test_Item01);
 
 
 [endscript]
@@ -552,7 +546,6 @@ opacity: 0;
 </style>
 <script>
 function doAction(buttonId) {
-console.log("buttonId : "+ buttonId);
 if (buttonId === 'button_01') {
 var con1 = document.getElementById("button_01checkimg");
 var con2 = document.getElementById("button_02checkimg");
@@ -634,7 +627,6 @@ window.TYRANO.kag.stat.f.select = 'TRUE';
 window.TYRANO.kag.stat.f.select = 'FALSE';
 }
 }
-console.log("f.select_answer : "+ window.TYRANO.kag.stat.f.select);
 }
 
 const buttons3 = document.querySelectorAll("button");

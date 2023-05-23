@@ -61,6 +61,7 @@ tyrano.plugin.kag.menu = {
         }))
     },
     displaySave: function(cb) {
+        console.log("displaySave");
         var that = this;
         this.kag.stat.is_skip = !1;
         for (var array = that.getSaveData().data, i = (that.kag.layer.getMenuLayer(), 0); i < array.length; i++) array[i].num = i;
@@ -82,7 +83,10 @@ tyrano.plugin.kag.menu = {
                                 j_slot.find(".save_list_item_thumb").css("background-image", "");
                                 j_slot.find(".save_list_item_thumb").append("<img>");
                                 j_slot.find(".save_list_item_thumb").find("img").attr("src", save_data.img_data)
-                            } j_slot.find(".save_list_item_date").html(save_data.save_date);
+                            } 
+                        j_slot.find(".save_list_item_day").html(save_data.day);
+                        j_slot.find(".save_list_item_subheading").html(save_data.subheading);
+                        j_slot.find(".save_list_item_date").html(save_data.save_date);
                         j_slot.find(".save_list_item_text").html(save_data.title);
                         "function" == typeof cb && cb()
                     }))
@@ -128,6 +132,7 @@ tyrano.plugin.kag.menu = {
             $.setStorage(that.kag.config.projectID + "_tyrano_data", array_save, that.kag.config.configSave);
             "function" == typeof cb && cb(data)
         }
+        console.log("data : ",data);
     },
     setQuickSave: function() {
         var that = this,
@@ -164,7 +169,9 @@ tyrano.plugin.kag.menu = {
             _current_order_index = that.kag.ftag.current_order_index - 1,
             _stat = $.extend(!0, {}, $.cloneObject(that.kag.stat)),
             models = (three = this.kag.tmp.three).models,
-            three_save = {};
+            three_save = {},
+            day = window.TYRANO.kag.stat.f.Day;
+            subheading = window.TYRANO.kag.stat.f.story;
         three_save.stat = three.stat;
         three_save.evt = three.evt;
         var three = this.kag.tmp.three,
@@ -180,6 +187,8 @@ tyrano.plugin.kag.menu = {
             data.title = title;
             data.stat = _stat;
             data.three = three_save;
+            data.day = day;
+            data.subheading = subheading;
             data.current_order_index = _current_order_index;
             data.save_date = $.getNowDate() + "　" + $.getNowTime();
             data.img_data = "";
@@ -195,6 +204,8 @@ tyrano.plugin.kag.menu = {
                     data.title = title;
                     data.stat = _stat;
                     data.three = three_save;
+                    data.day = day;
+                    data.subheading = subheading;
                     data.current_order_index = _current_order_index;
                     data.save_date = $.getNowDate() + "　" + $.getNowTime();
                     data.img_data = img_code;
@@ -542,6 +553,7 @@ tyrano.plugin.kag.menu = {
             json.save_date = "";
             json.img_data = "";
             json.stat = {};
+            json.subheading = "";
             tmp_array.push(json)
         }
         root.data = tmp_array;

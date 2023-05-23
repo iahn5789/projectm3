@@ -145,9 +145,6 @@
 *quiz_02_scoring
 
 [tb_start_tyrano_code]
-[iscript]
-console.log("sibal");
-[endscript]
 [_tb_end_tyrano_code]
 
 [jump  storage="Test_Start_01.ks"  target="*quiz_select_check_02"  cond="f.select!=''"  ]

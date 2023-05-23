@@ -58,21 +58,18 @@ function playRound(playerChoice, computerChoice) {
 }
 
 const rockButton = document.querySelector('#rock');
-console.log("%%%%");
 rockButton.addEventListener('click', () => {
   const result = playRound('rock', computerChoice());
   document.querySelector('#result').textContent = result;
 });
 
 const paperButton = document.querySelector('#paper');
-console.log("$$$$");
 paperButton.addEventListener('click', () => {
   const result = playRound('paper', computerChoice());
   document.querySelector('#result').textContent = result;
 });
 
 const scissorsButton = document.querySelector('#scissors');
-console.log("####");
 scissorsButton.addEventListener('click', () => {
   const result = playRound('scissors', computerChoice());
   document.querySelector('#result').textContent = result;
