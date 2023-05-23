@@ -1,8 +1,9 @@
 [_tb_system_call storage=system/_Chapter02_School_Club_01.ks]
 
-[playse  volume="25"  time="1000"  buf="5"  storage="Amb/Amb_Kitchen_01.wav"  loop="true"  ]
 *l_in
 
+[playse  volume="50"  time="1000"  buf="5"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 ; 강여진 등장
@@ -164,7 +165,7 @@
 아... 하하...[p]
 [_tb_end_tyrano_code]
 
-[playse  volume="50"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
+[playse  volume="90"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 ( 역시 이 사람과는 단둘이 있는 게 어렵다... )[p]

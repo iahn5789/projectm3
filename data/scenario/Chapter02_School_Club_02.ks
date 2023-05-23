@@ -314,7 +314,7 @@
 [_tb_end_tyrano_code]
 
 [quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Emotion_Question_01.wav"  ]
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Common_Emotion_Question_01.wav"  ]
 [tb_start_tyrano_code]
 #강여진
 으잉?               [er]
@@ -414,7 +414,6 @@
 단순히 비트 위에 빠르게 말하는 것은 힙합이[r]아니란말이다아아아!!!!![p]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Cartoon_Walla_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #한갑수
@@ -524,7 +523,9 @@
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  ]
+[stopse  time="1000"  buf="5"  fadeout="true"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
 [wait  time="1000"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=100 wait=false]

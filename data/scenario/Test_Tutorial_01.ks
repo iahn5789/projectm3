@@ -4,9 +4,9 @@
 
 [tb_keyconfig  flag="0"  ]
 [cm  ]
+[playbgm  volume="100"  time="1500"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
 [image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_Guide_01.png page=fore visible=true time=3000ms wait=true]

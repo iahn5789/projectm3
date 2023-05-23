@@ -3,7 +3,8 @@
 *office_01
 
 [stopbgm  time="1000"  fadeout="true"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Embarrass_01.mp3"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="true"  ]
+[playse  volume="45"  time="1000"  buf="0"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
 [tb_replay_start  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Office_Bgi_01.png"  ]
 [tb_start_tyrano_code]
@@ -72,6 +73,7 @@
 
 [tb_hide_message_window  ]
 [tb_replay  id="kang01"  ]
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [chara_hide name="Kang" time=1 wait=false]
@@ -79,7 +81,16 @@
 
 [bg  time="100"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_02.png"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Hallway_01.wav"  loop="true"  fadein="true"  ]
 [tb_show_message_window  ]
+[playse  volume="10"  time="1000"  buf="1"  storage="SFX/Common_Cartoon_Walla_01.wav"  ]
+[tb_start_tyrano_code]
+#한갑수
+( ?#@!..!@#!$찮은 거라고! )[p]
+
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 ( 안이 제법 시끄럽네... )[p]
