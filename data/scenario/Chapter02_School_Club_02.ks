@@ -511,6 +511,7 @@
 자! 그럼 너는 어떤 걸 하고 싶어?[p]
 #&[sf.name]
 ( 나는...역시 잘 모르겠다 )[p]
+[chara_part name="Kang" body="2" face="1" ]
 #강여진
 역시 잘 모르겠다고 생각했지?[p]
 [chara_part name="Kang" body="3" face="7" ]
