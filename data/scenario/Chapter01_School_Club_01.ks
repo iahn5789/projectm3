@@ -768,13 +768,13 @@
 [quake  time="500"  count="3"  hmax="2"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time="100"]
-[chara_part name="Jin" body="3" face="6"]
+[chara_part name="Jin" body="3" face="4"]
 [chara_show name="Jin" time="100" width="1169" height="2735" left="375" top="-100"]
 [_tb_end_tyrano_code]
 
 [tb_start_text mode=1 ]
 #진다영
-설나희...! 너까지![p]
+뭐? 설나희 너까지![p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]

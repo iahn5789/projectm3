@@ -23,14 +23,14 @@
 [chara_layer name="Kang" part="face" id="6" storage="chara/Kang_SC/Kang_Face_Surprise_Sc_01.png" zindex=20 ]
 [chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=20 ]
 [chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
-
-[chara_part name="Kang" body="1" face="4" ]
-[chara_show name="Kang" time=200 top="0" left="375" wait=false]
 [_tb_end_tyrano_code]
 
 [mask_off  time="3000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
+[chara_part name="Kang" body="1" face="4" ]
+[chara_show name="Kang" time=500 top="0" left="375" wait=false]
+
 #한갑수
 안 돼![p]
 [chara_part name="Kang" body="1" face="5" ]
@@ -38,7 +38,7 @@
 그러니까 왜 안 되는 건데요![p]
 [chara_part name="Kang" body="1" face="4" ]
 #한갑수
-오늘까지 등록을 갱신하는 날인데 동아리 인원이 세 명밖에 없잖아![p]
+오늘까지 등록을 갱신하는 날인데 동아리 인원이[r]세 명밖에 없잖아![p]
 [chara_part name="Kang" body="1" face="5" ]
 #강여진
 네 명 다 모였어요! 선생님이 승인만 해주시면 된다구요![p]
@@ -56,7 +56,7 @@
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="2" face="5" ]
 #강여진
-선생님이 귀찮을 게 어디있어요..동아리 활동은 저희가 하는 건데![p]
+선생님이 귀찮을 게 어디있어요..동아리 활동은 저희가[r]하는 건데![p]
 #한갑수
 너희가 그렇게 활동을 하게 되면 내가 신경 써야 하잖아![p]
 나는 그게 귀찮은 거라고[p]
