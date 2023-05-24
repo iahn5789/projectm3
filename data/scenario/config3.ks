@@ -116,22 +116,22 @@
 	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_System_01.png'" time="1" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle3" x="33" y="965"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle3" x="33" y="965" clickse="UI/Config_Sellect_Click_01.wav"]
 
 [jump target="*config_page3"]
 
 *config_page3
 [clearstack]
-   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
-   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
-   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_02.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
+   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_02.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662" clickse="UI/Config_Sellect_Click_01.wav"]
    
-	[button name="unread_on"  fix="true" target="*skip_on3"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_On_02.png'" width="259" height="60" x="1208" y="504"]
-	[button name="unread_off" fix="true" target="*skip_off3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_Off_02.png'" width="259" height="60" x="1530" y="504"]
+	[button name="unread_on"  fix="true" target="*skip_on3"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_On_02.png'" width="259" height="60" x="1208" y="504" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="unread_off" fix="true" target="*skip_off3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_Off_02.png'" width="259" height="60" x="1530" y="504" clickse="UI/Config_Sellect_Click_01.wav"]
 	; 전체화면
-	[button name="fullscreen"  fix="true" target="*fullscreen"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Fullscreen_02.png'" width="259" height="60" x="1208" y="357"]
+	[button name="fullscreen"  fix="true" target="*fullscreen"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Fullscreen_02.png'" width="259" height="60" x="1208" y="357" clickse="UI/Config_Sellect_Click_01.wav"]
 	; 창화면
-	[button name="winscreen" fix="true" target="*winscreen" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Winscreen_02.png'" width="259" height="60" x="1530" y="357"]
+	[button name="winscreen" fix="true" target="*winscreen" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Winscreen_02.png'" width="259" height="60" x="1530" y="357" clickse="UI/Config_Sellect_Click_01.wav"]
 
 ;------------------------------------------------------------------------------------------------------
 ; コンフィグ起動時の画面更新

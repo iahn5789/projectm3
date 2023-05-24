@@ -115,7 +115,7 @@
 	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_01.png'" time="1" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle" x="33" y="965"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle" x="33" y="965" clickse="UI/Config_Sellect_Click_01.wav"]
 
 [jump target="*config_page"]
 
@@ -124,19 +124,19 @@
 ;------------------------------------------------------------------------------------------------------
 ; BGM音量
 ;------------------------------------------------------------------------------------------------------
-	[button name="bgmvol,bgmvol_10"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[1]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  10; tf.config_num_bgm =  1"]
-	[button name="bgmvol,bgmvol_20"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[2]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  20; tf.config_num_bgm =  2"]
-	[button name="bgmvol,bgmvol_30"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[3]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  30; tf.config_num_bgm =  3"]
-	[button name="bgmvol,bgmvol_40"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[4]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  40; tf.config_num_bgm =  4"]
-	[button name="bgmvol,bgmvol_50"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[5]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  50; tf.config_num_bgm =  5"]
-	[button name="bgmvol,bgmvol_60"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[6]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  60; tf.config_num_bgm =  6"]
-	[button name="bgmvol,bgmvol_70"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[7]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  70; tf.config_num_bgm =  7"]
-	[button name="bgmvol,bgmvol_80"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[8]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  80; tf.config_num_bgm =  8"]
-	[button name="bgmvol,bgmvol_90"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[9]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  90; tf.config_num_bgm =  9"]
-	[button name="bgmvol,bgmvol_100" fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol = 100; tf.config_num_bgm = 10"]
+	[button name="bgmvol,bgmvol_10"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[1]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  10; tf.config_num_bgm =  1" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_20"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[2]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  20; tf.config_num_bgm =  2" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_30"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[3]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  30; tf.config_num_bgm =  3" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_40"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[4]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  40; tf.config_num_bgm =  4" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_50"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[5]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  50; tf.config_num_bgm =  5" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_60"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[6]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  60; tf.config_num_bgm =  6" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_70"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[7]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  70; tf.config_num_bgm =  7" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_80"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[8]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  80; tf.config_num_bgm =  8" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_90"  fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[9]"  y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol =  90; tf.config_num_bgm =  9" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button name="bgmvol,bgmvol_100" fix="true" target="*vol_bgm_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_bgm" exp="tf.current_bgm_vol = 100; tf.config_num_bgm = 10" clickse="UI/Config_Sellect_Click_01.wav"]
 
 ;	BGMミュート
-	[button name="bgmvol,bgmvol_0"   fix="true" target="*vol_bgm_mute" graphic="&tf.btl_path_off" width="24" height="25" x="1802" y="338"]
+	[button name="bgmvol,bgmvol_0"   fix="true" target="*vol_bgm_mute" graphic="&tf.btl_path_off" width="24" height="25" x="1802" y="338" clickse="UI/Config_Sellect_Click_01.wav"]
 
 ;------------------------------------------------------------------------------------------------------
 ; SE音量
@@ -153,14 +153,14 @@
 	[button name="sevol,sevol_100" fix="true" target="*vol_se_change" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Config_Bt_Hover_01.png'" width="&tf.btl_width" height="&tf.btl_height" x="&tf.config_x_1[10]" y="&tf.config_y_1_se" exp="tf.current_se_vol = 100; tf.config_num_se = 10" clickse="UI/Config_Sellect_Click_01.wav"]
 
 ;	SEミュート
-	[button name="sevol,sevol_0"   fix="true" target="*vol_se_mute" graphic="&tf.btl_path_off" width="24" height="25" x="1802" y="492"]
+	[button name="sevol,sevol_0"   fix="true" target="*vol_se_mute" graphic="&tf.btl_path_off" width="24" height="25" x="1802" y="492" clickse="UI/Config_Sellect_Click_01.wav"]
 
 ;------------------------------------------------------------------------------------------------------
 ; 테스트용 버튼 이미지 테스트 민아럼ㄴㅇ러
 ;------------------------------------------------------------------------------------------------------
-   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_02.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353"]
-   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507"]
-   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662"]
+   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_02.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353" clickse="UI/Config_Sellect_Click_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507" clickse="UI/Config_Sellect_Click_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662" clickse="UI/Config_Sellect_Click_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
    
 [mask_off  time="100"  effect="slideOutLeft"  ]
 ;------------------------------------------------------------------------------------------------------
