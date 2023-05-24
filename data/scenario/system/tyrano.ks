@@ -180,6 +180,20 @@ tf.savetext = "<span style='font-size:10px'>"+tf.save_date+"</span><br />"+tf.ti
 
 [endmacro]
 
+;텍스트 사운드 매크로(시작)
+[macro name="t1"]
+
+	[playse storage=UI/Common_Text_Type_01.wav loop="true" buf="5" volume="100"]
+
+[endmacro]
+
+;텍스트 사운드 매크로(종료)
+[macro name="t2"]
+
+	[stopse  time="50"  buf="5"  fadeout="true"  ]
+
+[endmacro]
+
 [return]
 
 
