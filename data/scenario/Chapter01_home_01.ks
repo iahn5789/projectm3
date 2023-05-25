@@ -18,7 +18,7 @@
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Alarm_Clock_off_01.mp3"  ]
 [tb_start_text mode=1 ]
 탁-[p]
-으으...시끄러워...![p]
+[t1]으으...시끄러워...![t2][p]
 
 
 [_tb_end_text]
@@ -34,29 +34,29 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-....[p]
-.......................[p]
-후... [p]
-( 이상한 꿈이네... )[p]
+[t1]....[t2][p]
+[t1].......................[t2][p]
+[t1]후... [t2][p]
+[t1]( 이상한 꿈이네... )[t2][p]
 [_tb_end_text]
 
 [quake  time="300"  count="3"  hmax="5"  wait="false"  ]
 [tb_start_text mode=1 ]
 #엄마
-아들![p]
-일어난거니!?[p]
+[t1]아들![t2][p]
+[t1]일어난거니!?[t2][p]
 #&[sf.name]
-네에... 일어났어요...[p]
-( 꿈이라기엔 너무 생생해... )[p]
-( 지금도 꿈을 꾸고 있는 건가? )[p]
-( 마치 현실같이... )[p]
+[t1]네에... 일어났어요...[t2][p]
+[t1]( 꿈이라기엔 너무 생생해... )[t2][p]
+[t1]( 지금도 꿈을 꾸고 있는 건가? )[t2][p]
+[t1]( 마치 현실같이... )[t2][p]
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  ]
 [tb_start_text mode=1 ]
 #엄마
-아! 들! 늦는다니까!!!!!!!!!!!!![p]
+[t1]아![t2][t1]들![t2][t1] 늦는다니까!!!!!!!!!!!!![t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -70,9 +70,9 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-아효.. 우리 엄마는 화가 많다니깐..?[p]
+[t1]아효.. 우리 엄마는 화가 많다니깐..?[t2][p]
 #전대용
-어이 [emb exp="sf.name"] ~ 좋은 아침이지 않냐?[p]
+[t1]어이 [emb exp="sf.name"] ~ 좋은 아침이지 않냐?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -96,7 +96,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-내가 오늘 엄청 좋은 꿈을 꿨는데 말이지...[p]
+[t1]내가 오늘 엄청 좋은 꿈을 꿨는데 말이지...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -105,12 +105,12 @@
 
 [tb_start_text mode=1 ]
 #전대용
-쭉쭉빵빵 누님이 나를......[p]
+[t1]쭉쭉빵빵 누님이 나를......[t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #&[sf.name]
-꿈? 어라, 나도 분명...[p]
+[t1]꿈? 어라, 나도 분명...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -131,7 +131,7 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #???
-잘 해낼%있@까?               [er]
+[t1]잘 해낼%있@까?[t2]               [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -143,7 +143,7 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #???
-너무 긴장하@#마! 원래 하던 %@#로만 하면 되!%>거야!              [er]
+[t1]너무 긴장하@#마! 원래 하던 %@#로만 하면 되!%>거야![t2]              [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -155,7 +155,7 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
-네가 선택한 길이니까!                 [er]
+[t1]네가 선택한 길이니까![t2]                 [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -170,12 +170,12 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #사회자
-자! 다$을 소개하도@ 하겠습#다~!!    [er]
+[t1]자! 다$을 소개하도@ 하겠습#다~!![t2]    [er]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 #사회자
-이번 순!#는@%#@            [er]
+[t1]이번 순!#는@%#@[t2]            [er]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -195,11 +195,11 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #전대용
-야! 야! [emb exp="sf.name"]![p]
+[t1]야! 야! [emb exp="sf.name"]![t2][p]
 #
-............[p]
+[t1]............[t2][p]
 #전대용
-표정이 왜 그래?[p]
+[t1]표정이 왜 그래?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -208,13 +208,13 @@
 
 [tb_start_text mode=1 ]
 #전대용
-아! 설마 너도...[p]
+[t1]아! 설마 너도...[t2][p]
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="3"  wait="false"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-아니야 이 변태야!  [l][r] 아무튼 너는 입이 문제라니깐?[p]
+[t1]아니야 이 변태야![t2]  [l][r] [t1]아무튼 너는 입이 문제라니깐?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -223,11 +223,11 @@
 
 [tb_start_text mode=1 ]
 #전대용
-하여간 너 놀릴 때가 제일 재밌어[p]
+[t1]하여간 너 놀릴 때가 제일 재밌어[t2][p]
 #&[sf.name]
-한 번만 더 농담했다간 경찰 아저씨가 잡아가도 모른다?[p]
+[t1]한 번만 더 농담했다간 경찰 아저씨가 잡아가도 모른다?[t2][p]
 #전대용
-아 알겠어 알겠어~[p]
+[t1]아 알겠어 알겠어~[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -244,8 +244,8 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
-전대용[l][r]전학을 오자마자 친해지게 된 친구다.[p]
-재미있고 정보가 많지만...[p]
+[t1]전대용[t2][l][r][t1]전학을 오자마자 친해지게 된 친구다.[t2][p]
+[t1]재미있고 정보가 많지만...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -257,7 +257,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-...변태다...[p]
+[t1]...변태다...[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -269,7 +269,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-응? [l]그나저나 너 동아리는 좀 알아봤어?[p]
+[t1]응?[t2] [l][t1]그나저나 너 동아리는 좀 알아봤어?[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -299,9 +299,9 @@
 
 [tb_start_text mode=1 ]
 #전대용
-너도 전학 온 지 일주일이나 지났잖아?[l][r]이제 동아리에 들어가야지![p]
+[t1]너도 전학 온 지 일주일이나 지났잖아?[t2][l][r][t1]이제 동아리에 들어가야지![t2][p]
 #&[sf.name]
-동아리에? 왜?[p]
+[t1]동아리에? 왜?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -310,13 +310,13 @@
 
 [tb_start_text mode=1 ]
 #전대용
-나 참..진짜 모르는거야?[l][r]우리 학교는 동아리가 선택이 아니고 필수 참여잖아![p]
+[t1]나 참..진짜 모르는거야?[t2][l][r][t1]우리 학교는 동아리가 선택이 아니고 필수 참여잖아![t2][p]
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="3"  wait="false"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-뭐? 그게 정말이야?![p]
+[t1]뭐? 그게 정말이야?![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -325,12 +325,12 @@
 
 [tb_start_text mode=1 ]
 #전대용
-그래! 전교생이 동아리에 참여한다고![p]
+[t1]그래! 전교생이 동아리에 참여한다고![t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #전대용
-그 말은 즉, 전교생 중 동아리를 가입하지 않는 사람이...[p]
+[t1]그 말은 즉, 전교생 중 동아리를 가입하지 않는 사람이...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -339,7 +339,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-너 하나뿐이겠네...[p]
+[t1]너 하나뿐이겠네...[t2][p]
 [_tb_end_text]
 
 [jump  storage="Chapter01_home_01.ks"  target="*L_yes"  ]
@@ -353,7 +353,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-글쎄.. 나는 딱히 취미도 없고...[l][r]하고 싶은 것도 별로 없는 걸...[p]
+[t1]글쎄.. 나는 딱히 취미도 없고...[t2][l][r][t1]하고 싶은 것도 별로 없는 걸...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -362,10 +362,10 @@
 
 [tb_start_text mode=1 ]
 #전대용
-그럼 서예부는 어때?[p]
+[t1]그럼 서예부는 어때?[t2][p]
 #주인공
-서예?[p]
-맨날 앉아서 글 쓰는게 재미있어?[p]
+[t1]서예?[t2][p]
+[t1]맨날 앉아서 글 쓰는게 재미있어?[t2][p]
 [_tb_end_text]
 
 [quake  time="200"  count="2"  hmax="3"  wait="false"  ]
@@ -375,7 +375,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-서예가 얼마나 재밌는데![p]
+[t1]서예가 얼마나 재밌는데![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -384,12 +384,12 @@
 
 [tb_start_text mode=1 ]
 #전대용
-게다가 거기 부장 누나가 가슴이 아주 그냥...흐흐...[p]
+[t1]게다가 거기 부장 누나가 가슴이 아주 그냥...흐흐...[t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #&[sf.name]
-경찰아저씨! 여기에요![p]
+[t1]경찰아저씨! 여기에요![t2][p]
 [_tb_end_text]
 
 [playse  volume="40"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_ctr_run_01.wav"  ]
@@ -400,7 +400,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-야! 같이 가![p]
+[t1]야! 같이 가![t2][p]
 [_tb_end_text]
 
 [stopbgm  time="2000"  fadeout="true"  ]
