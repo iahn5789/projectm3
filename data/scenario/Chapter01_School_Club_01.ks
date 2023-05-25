@@ -3,18 +3,18 @@
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
 [tb_start_text mode=1 ]
 #???
-꺄악-!!!!!!![p]
+[t1]꺄악-!!!!!!![t2][p]
 [_tb_end_text]
 
 [playse  volume="60"  time="1000"  buf="0"  storage="SFX/Body_Fall_01.wav"  ]
 [stopbgm  time="2000"  fadeout="true"  ]
 [tb_hide_message_window  ]
-[playbgm  volume="85"  time="1200"  loop="true"  storage="Common_School_Club_01.wav"  fadein="true"  ]
+[playbgm  volume="90"  time="700"  loop="true"  storage="Common_School_Club_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-( 헉-! 큰일났... )[p]
+[t1]( 헉-! 큰일났... )[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -41,18 +41,18 @@
 
 [tb_start_text mode=1 ]
 #강여진
-와줬구나! 어서 와![p]
+[t1]와줬구나! 어서 와![t2][p]
 #???
-뭐야! [l]변태같이 다 엿듣고 있던거야?![p]
+[t1]뭐야![t2][l][t1]변태같이 다 엿듣고 있던거야?![t2][p]
 #&[sf.name]
-아니 나는.......[p]
+[t1]아니 나는.......[t2][p]
 [_tb_end_text]
 
 [quake  time="800"  count="10"  hmax="8"  wait="false"  vmax="6"  ]
 [playse  volume="40"  time="1000"  buf="0"  storage="SFX/Emotion_Anoying_Dog_growl_01.wav"  ]
 [tb_start_text mode=1 ]
 #???
-시끄러! 변태! 호색한! 대머리![p]
+[t1]시끄러! 변태! 호색한! 대머리![t2][p]
 [_tb_end_text]
 
 [stopse  time="500"  buf="0"  fadeout="true"  ]
@@ -62,14 +62,14 @@
 
 [tb_start_text mode=1 ]
 #강여진
-그만! 내가 불러서 온 친구란 말이야![p]
+[t1]그만! 내가 불러서 온 친구란 말이야![t2][p]
 #???
-이해할 수 없어! 왜 우리 대화를 엿듣고 있던건데!?[p]
+[t1]이해할 수 없어! 왜 우리 대화를 엿듣고 있던건데!?[t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #???
-찐따! 찌질이! 버러지! 거지![p]
+[t1]찐따! 찌질이! 버러지! 거지![t2][p]
 [_tb_end_text]
 
 [quake  time="300"  count="3"  hmax="10"  wait="false"  ]
@@ -79,7 +79,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-진다영![p]
+[t1]진다영![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -107,9 +107,9 @@
 
 [tb_start_text mode=1 ]
 #진다영
-왜! [l]왜 소리를 질러![p]
+[t1]왜![t2][l][t1]왜 소리를 질러![t2][p]
 #강여진
-앞으로 우리랑 같이 밴드부를 할 친구란 말이야[l][r]같은 부원이 하는 이야기를 들을 수도 있지![p]
+[t1]앞으로 우리랑 같이 밴드부를 할 친구란 말이야[t2][l][r][t1]같은 부원이 하는 이야기를 들을 수도 있지![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -118,12 +118,12 @@
 
 [tb_start_text mode=1 ]
 #진다영
-싫어! 나는 이런 변태랑은 밴드부 절대 못 해! 안 해![p]
+[t1]싫어! 나는 이런 변태랑은 밴드부 절대 못 해! 안 해![t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #???
-저기...[p]
+[t1]저기...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -156,15 +156,15 @@
 
 [tb_start_text mode=1 ]
 #설나희
-나는 좋다고 생각해...[p]
+[t1]나는 좋다고 생각해...[t2][p]
 
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #진다영
-뭐어? 진심으로 하는말이야?![p]
+[t1]뭐어? 진심으로 하는말이야?![t2][p]
 #설나희
-다른 방법이...있는 건 아니잖아..?[p]
+[t1]다른 방법이...있는 건 아니잖아..?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -176,7 +176,7 @@
 
 [tb_start_text mode=1 ]
 #진다영
-그...그렇지만...[p]
+[t1]그...그렇지만...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -185,9 +185,9 @@
 
 [tb_start_text mode=1 ]
 #진다영
-...하! 거기 너![p]
+[t1]...하! 거기 너![t2][p]
 #&[sf.name]
-저...저요...?[p]
+[t1]저...저요...?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -196,9 +196,9 @@
 
 [tb_start_text mode=1 ]
 #진다영
-그래! [l]변태같이 엿듣는 것 말고 할 줄 아는 게 있긴 해?[p]
+[t1]그래! [t2][l][t1]변태같이 엿듣는 것 말고 할 줄 아는 게 있긴 해?[t2][p]
 #&[sf.name]
-나...나는...[p]
+[t1]나...나는...[t2][p]
 [_tb_end_text]
 
 [quake  time="300"  count="3"  hmax="10"  wait="false"  ]
@@ -212,9 +212,9 @@
 
 [tb_start_text mode=1 ]
 #강여진
-보컬! [l]보컬을 맡을 거야![p]
+[t1]보컬![t2][l][t1]보컬을 맡을 거야![t2][p]
 #진다영
-뭐? 보컬?! [l]노래라면 이미 네가 하고 있잖아[p]
+[t1]뭐? 보컬?![t2][l][t1]노래라면 이미 네가 하고 있잖아[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -224,7 +224,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-나는 악기도 함께 연주하고 있잖아 [l][r]나 혼자 두 가지를 하는 건 너무 어렵단 말이야[p]
+[t1]나는 악기도 함께 연주하고 있잖아 [t2][l][r][t1]나 혼자 두 가지를 하는 건 너무 어렵단 말이야[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -233,7 +233,7 @@
 
 [tb_start_text mode=1 ]
 #진다영
-으이...그래도...!!![p]
+[t1]으이...그래도...!!![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -242,7 +242,7 @@
 
 [tb_start_text mode=1 ]
 #설나희
-나는 좋다고 생각해...[p]
+[t1]나는 좋다고 생각해...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -252,7 +252,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-네 생각은 어때? 같이 할거지?[p]
+[t1]네 생각은 어때? 같이 할거지?[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -282,11 +282,11 @@
 
 [tb_start_text mode=1 ]
 #강여진
-좋아! 잘 생각했어![p]
+[t1]좋아! 잘 생각했어![t2][p]
 #진다영
-...그치만 이건 너무 억지잖아! [l][r]폐부 막아보겠다고 저런 변태랑...헙![p]
+[t1]...그치만 이건 너무 억지잖아![t2][l][r][t1]폐부 막아보겠다고 저런 변태랑...헙![t2][p]
 #&[sf.name]
-응? 그게 무슨 말..........[p]
+[t1]응? 그게 무슨 말..........[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -295,7 +295,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-하하...[p]
+[t1]하하...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -304,14 +304,14 @@
 
 [tb_start_text mode=1 ]
 #설나희
-규정상 동아리 인원이 4명 이상 되어야 하거든.....[p]
-지금 우리는 폐...[p]
+[t1]규정상 동아리 인원이 4명 이상 되어야 하거든.....[t2][p]
+[t1]지금 우리는 폐...[t2][p]
 [_tb_end_text]
 
 [quake  time="300"  count="3"  hmax="10"  wait="true"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-잠깐....뭐라고...?[p]
+[t1]잠깐....뭐라고...?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -320,9 +320,9 @@
 
 [tb_start_text mode=1 ]
 #강여진
-맞아! 하마터면 폐부 될 뻔했다구 [l][r]네가 와줘서 정말 다행이야![p]
+[t1]맞아! 하마터면 폐부 될 뻔했다구[t2][l][r][t1]네가 와줘서 정말 다행이야![t2][p]
 #&[sf.name]
-잠깐! 그런 말은 없었잖아 나는...[p]
+[t1]잠깐! 그런 말은 없었잖아 나는...[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -331,7 +331,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-그러니까... 할거지?[p]
+[t1]그러니까... 할거지?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -340,9 +340,9 @@
 
 [tb_start_text mode=1 ]
 #
-덥썩-[p]
+[t1]덥썩-[t2][p]
 #&[sf.name]
-어?[p]
+[t1]어?[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -352,19 +352,27 @@
 
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Heart_Beat_Slow_To_Fast_01.wav"  loop="false"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
-( 손...잡았어... )[p]
-( 진짜...여자 손... )[p]
-( 생각보다 말랑해... )[p]
+[t1]( 손...잡았어... )[t2][p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
+[t1]( 진짜...여자 손... )[t2][p]
+[t1]( 생각보다 말랑해... )[t2][p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #진다영
-강여진...너 지금 손 잡았어...[p]
+[t1]강여진...너 지금 손 잡았어...[t2][p]
 #설나희
-...[p]
+[t1]...[t2][p]
 #강여진
-할거지?[p]
+[t1]할거지?[t2][p]
 #&[sf.name]
-...응...[p]
+[t1]...응...[t2][p]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -377,12 +385,12 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #진다영
-변태...[p]
+[t1]변태...[t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #&[sf.name]
-아니! 그런 게 아니라![p]
+[t1]아니! 그런 게 아니라![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -393,7 +401,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-앞으로 잘 부탁해! 우리 보컬![p]
+[t1]앞으로 잘 부탁해! 우리 보컬![t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -418,9 +426,9 @@
 
 [tb_start_text mode=1 ]
 #강여진
-에...그치만...[p]
+[t1]에...그치만...[t2][p]
 #진다영
-거봐! 결국 안 하게 될 거라니깐?![p]
+[t1]거봐! 결국 안 하게 될 거라니깐?![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -429,23 +437,23 @@
 
 [tb_start_text mode=1 ]
 #진다영
-조금이라도 기대한 내가 바보지[p]
+[t1]조금이라도 기대한 내가 바보지[t2][p]
 [_tb_end_text]
 
 [quake  time="300"  count="2"  hmax="3"  wait="true"  vmax="3"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-잠깐! 갑자기 왜 이렇게 분위기가 무거워지는건데![p]
-나 한 명쯤 안 한다고 이렇게까지...?[p]
+[t1]잠깐! 갑자기 왜 이렇게 분위기가 무거워지는건데![t2][p]
+[t1]나 한 명쯤 안 한다고 이렇게까지...?[t2][p]
 #설나희
-...동아리는 일정 정원을 채우지 못하면 강제적으로[r]폐부되거든...[p]
-...내일까지 4명이 모이지 않는다면...[p]
+[t1]...동아리는 일정 정원을 채우지 못하면 강제적으로[r]폐부되거든...[t2][p]
+[t1]...내일까지 4명이 모이지 않는다면...[t2][p]
 #&[sf.name]
-...........[p]
+[t1]...........[t2][p]
 #강여진
-그러지 말고 같이 하자! 응?[l][r]우리는 네가 필요하단 말이야...[p]
+[t1]그러지 말고 같이 하자! 응?[t2][l][r][t1]우리는 네가 필요하단 말이야...[t2][p]
 #&[sf.name]
-나는...[p]
+[t1]나는...[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -477,7 +485,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
-역시! 그럴 줄 알았어!![p]
+[t1]역시! 그럴 줄 알았어!![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -486,27 +494,45 @@
 
 [tb_start_text mode=1 ]
 #
-덥썩-[p]
+[t1]덥썩-[t2][p]
 #&[sf.name]
-어?[p]
+[t1]어?[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Heart_Beat_Slow_To_Fast_01.wav"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
-( 헉... )[p]
-( 손...잡았어... )[p]
-#진다영
-에...?[p]
-강여진...너 손 잡았어...[p]
+[t1]( 헉... )[t2][p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
-( 부드러워... )[p]
+[t1]( 손...잡았어... )[t2][p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #진다영
-표정이 왜 이래! 더러워![p]
+[t1]에...?[t2][p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #&[sf.name]
-아...아니! 나는 그런 게 아니고...![p]
+[t1]( 부드러워... )[t2][p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  ]
+[stopse  time="1000"  buf="2"  fadeout="true"  ]
+[tb_start_tyrano_code]
+#진다영
+[t1]강여진...너 손 잡았어...[t2][p]
+#진다영
+[t1]표정이 왜 이래! 더러워![t2][p]
+#&[sf.name]
+[t1]아...아니! 나는 그런 게 아니고...![t2][p]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -519,7 +545,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #진다영
-이건 너무 억지잖아! [l]폐부 막아보겠다고 저런 변태랑..![p]
+[t1]이건 너무 억지잖아![t2][l][t1]폐부 막아보겠다고 저런 변태랑..![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -530,19 +556,19 @@
 
 [tb_start_text mode=1 ]
 #강여진
-그렇지만 지금부터 우리 동아리에 멤버라구?[p]
+[t1]그렇지만 지금부터 우리 동아리에 멤버라구?[t2][p]
 #설나희
-난...괜찮다고 생각해...[p]
+[t1]난...괜찮다고 생각해...[t2][p]
 [_tb_end_text]
 
 [quake  time="300"  count="2"  hmax="3"  wait="true"  vmax="3"  ]
 [tb_start_text mode=1 ]
 #진다영
-설나희! 너까지!!!![p]
+[t1]설나희! 너까지!!!![t2][p]
 #강여진
-그럼 이야기는 끝난거네! 다들 동의한거다?![p]
+[t1]그럼 이야기는 끝난거네! 다들 동의한거다?![t2][p]
 #진다영
-잠깐 아직 나는.....![p]
+[t1]잠깐 아직 나는.....![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -551,7 +577,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-앞으로 잘 부탁해! 우리 보컬![p]
+[t1]앞으로 잘 부탁해! 우리 보컬![t2][p]
 [_tb_end_text]
 
 [quake  time="1000"  count="5"  hmax="4"  wait="false"  vmax="4"  ]
@@ -564,7 +590,7 @@
 [playse  volume="20"  time="1000"  buf="0"  storage="SFX/Metal_Wood_Debris_01.wav"  ]
 [tb_start_text mode=1 ]
 #진다영
-내 이야기 아직 안끝났어어어어!!![p]
+[t1]내 이야기 아직 안끝났어어어어!!![t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -589,7 +615,7 @@
 
 [tb_start_text mode=1 ]
 #진다영
-거봐! 시간 낭비만 한거잖아![p]
+[t1]거봐! 시간 낭비만 한거잖아![t2][p]
 
 [_tb_end_text]
 
@@ -601,7 +627,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-아냐! 네가 계속 소리를 지르니까 그러는 거 아니야![p]
+[t1]아냐! 네가 계속 소리를 지르니까 그러는 거 아니야![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -610,7 +636,7 @@
 
 [tb_start_text mode=1 ]
 #설나희
-그럴지도.....[p]
+[t1]그럴지도.....[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -619,7 +645,7 @@
 
 [tb_start_text mode=1 ]
 #진다영
-뭐? 설나희 너까지![p]
+[t1]뭐? 설나희 너까지![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -630,20 +656,20 @@
 
 [tb_start_text mode=1 ]
 #강여진
-부탁이야! 우리는 네가 정말 필요해 [l][r]너를 보는 순간부터 같이 하고 싶었단 말이야 응?[p]
+[t1]부탁이야! 우리는 네가 정말 필요해[t2][l][r][t1]너를 보는 순간부터 같이 하고 싶었단 말이야 응?[t2][p]
 [_tb_end_text]
 
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [tb_start_text mode=1 ]
 #진다영
-우리가 아니고 네가 필요한거겠지![p]
+[t1]우리가 아니고 네가 필요한거겠지![t2][p]
 #설나희
-저것도 맞는 말이긴 하지.....[p]
+[t1]저것도 맞는 말이긴 하지.....[t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #강여진
-할거지!?[p]
+[t1]할거지!?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -655,12 +681,12 @@
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Cloth_movement_02.wav"  ]
 [tb_start_text mode=1 ]
 #
-덥썩-[p]
+[t1]덥썩-[t2][p]
 [_tb_end_text]
 
 [tb_start_text mode=1 ]
 #&[sf.name]
-( ............어? )[p]
+[t1]( ............어? )[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -669,7 +695,7 @@
 
 [tb_start_text mode=1 ]
 #진다영
-에...?????[p]
+[t1]에...?????[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -680,17 +706,17 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="fadeIn"  storage="BGI/Common_Black.jpg"  ]
 [tb_show_message_window  ]
-[playse  volume="250"  time="1000"  buf="0"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  fadein="true"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Heart_Beat_Slow_To_Fast_01.wav"  ]
 [tb_start_text mode=1 ]
 #
-( 손.....손을 잡았어..... )[p]
-( 여자 손을 잡아보는 건....처음이야..... )[p]
+[t1]( 손.....손을 잡았어..... )[t2][p]
+[t1]( 여자 손을 잡아보는 건....처음이야..... )[t2][p]
 [_tb_end_text]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  ]
+[playse  volume="250"  time="1000"  buf="2"  storage="SFX/Emotion_Shame_Kettle_Steam_01.wav"  fadein="true"  ]
 [tb_start_text mode=1 ]
 #
-( 부...부드러워..... )[p]
+[t1]( 부...부드러워..... )[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
@@ -705,13 +731,13 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-나는.....나는..........나는.......[p]
+[t1]나는.....나는..........나는.......[t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="2"  storage="UI/Common_UI_whoosh_01.wav"  ]
-[stopse  time="1000"  buf="0"  ]
-[stopse  time="1000"  buf="1"  fadeout="true"  ]
+[stopse  time="1000"  buf="1"  ]
+[stopse  time="1000"  buf="2"  fadeout="true"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=5 ]
 [_tb_end_tyrano_code]
@@ -738,7 +764,7 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #강여진
-역시! 그럴 줄 알았어![p]
+[t1]역시! 그럴 줄 알았어![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -747,13 +773,13 @@
 
 [tb_start_text mode=1 ]
 #진다영
-에? 너 방금...손...![p]
+[t1]에? 너 방금...손...![t2][p]
 #강여진
-우리 동아리에 들어온 걸 환영해!![p]
+[t1]우리 동아리에 들어온 걸 환영해!![t2][p]
 #진다영
-아니...손...[p]
+[t1]아니...손...[t2][p]
 #강여진
-앞으로 잘 부탁해! 우리 보컬![p]
+[t1]앞으로 잘 부탁해! 우리 보컬![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -762,7 +788,7 @@
 
 [tb_start_text mode=1 ]
 #설나희
-난...좋다고 생각해...[p]
+[t1]난...좋다고 생각해...[t2][p]
 [_tb_end_text]
 
 [quake  time="500"  count="3"  hmax="2"  wait="false"  vmax="3"  ]
@@ -774,7 +800,7 @@
 
 [tb_start_text mode=1 ]
 #진다영
-뭐? 설나희 너까지![p]
+[t1]뭐? 설나희 너까지![t2][p]
 [_tb_end_text]
 
 [tb_hide_message_window  ]
