@@ -12,12 +12,12 @@
 [tb_show_message_window  ]
 [tb_start_text mode=1 ]
 #
-띠리리리- 띠리리리-[p]
+띠리리리- 띠리리리-[t2][p]
 [_tb_end_text]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Alarm_Clock_off_01.mp3"  ]
 [tb_start_text mode=1 ]
-탁-[p]
+탁-[t2][p]
 [t1]으으...시끄러워...![t2][p]
 
 
