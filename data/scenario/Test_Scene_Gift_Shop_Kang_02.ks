@@ -52,10 +52,9 @@ setTimeout(frameLooper, 500);
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1600 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
-[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1420 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -108,9 +107,9 @@ setTimeout(frameLooper, 500);
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1600 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
-[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1420 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -162,9 +161,9 @@ setTimeout(frameLooper, 500);
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1600 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
-[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1420 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -216,10 +215,9 @@ setTimeout(frameLooper, 500);
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1600 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
-[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1420 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
