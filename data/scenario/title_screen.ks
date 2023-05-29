@@ -9,7 +9,7 @@
 
 [tb_keyconfig  flag="0"  ]
 [playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
-[bg  storage="BGI/Common_Title_Screen.jpg"  method="fadeIn"  ]
+[bg  storage="BGI/Common_Title_Screen.jpg"  method="fadeIn"  time="10"  ]
 *title
 
 [tb_start_tyrano_code]
@@ -30,7 +30,7 @@
 [wa]
 [_tb_end_tyrano_code]
 
-[mask_off  time="500"  effect="fadeOut"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
 [s  ]
 *START
 
