@@ -104,7 +104,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_01.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_01.png'/>
 </div>
 </div>
 [endhtml]
@@ -117,7 +117,6 @@
 [anim name=kang_back_bt_01 time=200 top=857]
 [_tb_end_tyrano_code]
 
-[wait  time="1000"  ]
 [s  ]
 *kang_gift_bt_01
 
@@ -181,7 +180,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_02.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_02.png'/>
 </div>
 </div>
 [endhtml]
@@ -256,7 +255,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_03.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_03.png'/>
 </div>
 </div>
 [endhtml]
@@ -333,7 +332,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_04.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Kang_04.png'/>
 </div>
 </div>
 [endhtml]

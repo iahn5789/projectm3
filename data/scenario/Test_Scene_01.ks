@@ -160,7 +160,6 @@
 [anim name="msgclosebt" top=1100 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
-[wait  time="300"  ]
 [tb_start_tyrano_code]
 [freeimage layer="1" time=200 wait=false ]
 [_tb_end_tyrano_code]

@@ -91,7 +91,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_01.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_01.png'/>
 </div>
 </div>
 [endhtml]
@@ -166,7 +166,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_02.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_02.png'/>
 </div>
 </div>
 [endhtml]
@@ -241,7 +241,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_03.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_03.png'/>
 </div>
 </div>
 [endhtml]
@@ -317,7 +317,7 @@
 [html]
 <div class="buymsg">
 <div style="position: absolute; left:456px; top:297px; z-index: 99999999;">
-<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_04.png';>
+<img src='data/image/New_GUI/Giftshop_UI/Popup_Jin_04.png'/>
 </div>
 </div>
 [endhtml]
