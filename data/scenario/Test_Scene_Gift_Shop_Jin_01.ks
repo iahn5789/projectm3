@@ -17,15 +17,10 @@
 [bg  time="0"  method="fadeIn"  storage="Giftshop_BGI/Giftshop_Bgi_Jin_01.png"  ]
 [tb_start_tyrano_code]
 [cm]
-[free name="money" layer=2 ]
-[free name="klove" layer=2 ]
-[free name="jlove" layer=2 ]
-[free name="slove" layer=2 ]
-[free name="Day" layer=2 ]
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-[button name="close" storage="Test_Scene_01.ks" target="testscene" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
+[button name="close" storage="Test_Scene_Gift_Shop_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_03.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="243" height="78" x="1063" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
@@ -41,12 +36,22 @@
 [mask_off  time="700"  effect="rotateOutUpRight"  ]
 [tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [s  ]
+*gift_close
+
+[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_close_01"  cond="f.giftScene=='FALSE'"  ]
+[s  ]
+*gift_close_01
+
+[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
+[s  ]
 *gift_jin_back
 
 [cm  ]
 [bg  time="0"  method="fadeIn"  storage="Giftshop_BGI/Giftshop_Bgi_Jin_01.png"  ]
 [tb_start_tyrano_code]
-[button name="close" storage="Test_Scene_01.ks" target="testscene" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
+[cm]
+[filter layer=all blur=0 opacity=100]
+[button name="close" storage="Test_Scene_Gift_Shop_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_03.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="243" height="78" x="1063" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
@@ -113,7 +118,7 @@
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
+[button name="close" storage="Test_Scene_Gift_Shop_Jin_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_03.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="243" height="78" x="1063" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
@@ -133,10 +138,11 @@
 
 [jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_01"  cond="f.money>499"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*buy_jin_01"  cond=""  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
 *jin_back_bt_01
 
+[tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
@@ -188,7 +194,7 @@
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
+[button name="close" storage="Test_Scene_Gift_Shop_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_03.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160"]
 [button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="243" height="78" x="1063" y="160"]
@@ -208,10 +214,11 @@
 
 [jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_02"  cond="f.money>899"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*buy_jin_02"  cond=""  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
 *jin_back_bt_02
 
+[tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
@@ -263,7 +270,7 @@
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
+[button name="close" storage="Test_Scene_Gift_Shop_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_03.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="243" height="78" x="1063" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
@@ -283,10 +290,11 @@
 
 [jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_03"  cond="f.money>1699"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*buy_jin_03"  cond=""  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
 *jin_back_bt_03
 
+[tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [cm]
 [filter layer=all blur=0 opacity=100]
@@ -339,7 +347,7 @@
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=30 x=1630 y=29 width=150 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=30 x=290 y=984 width=150 color="yellow" align="center" vertical=false face="PyeongChangPeaceLight" ]
 [ptext layer=2 name="Day" page=fore text="&[f.Day]" size=30 x=1423 y=29 width=60 color="0xffffff" align="right" vertical=false face="PyeongChangPeaceLight" ]
-[button name="close" storage="Test_Scene_01.ks" target="close_back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
+[button name="close" storage="Test_Scene_Gift_Shop_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_03.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="sul" storage="Test_Scene_Gift_Shop_01.ks" target="gift_sul_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Sul_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Sul_02.png" width="243" height="78" x="1063" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
@@ -359,7 +367,7 @@
 
 [jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_04"  cond="f.money>2499"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*buy_jin_04"  cond=""  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
 *jin_back_bt_04
 
