@@ -1,6 +1,7 @@
 var __tyrano_key_config = {
 	"key": {
-		"13": "next",
+		"13": "fullscreen",
+		"27": "fullscreen",
 		"32": "hidemessage",
 		"81": "save",
 		"83": "skip",
