@@ -171,7 +171,7 @@
 #강여진
 자! 그럼 정식으로 우리 밴드부원을 소개할게![t2][p]
 [chara_hide_all time=200 wait=false]
-[chara_part name="Jin" body="1" face="8" ]
+[chara_part name="Jin" body="1" face="4" ]
 [chara_show name="Jin" top="0" left="553" time=200 wait=false ]
 [t1]
 #강여진
@@ -180,6 +180,7 @@
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Applause_01.wav"  ]
 [tb_start_tyrano_code]
+[chara_part name="Jin" body="3" face="6" ]
 [t1]
 #진다영
 누...누가 귀염둥이라는거야![t2][p]
