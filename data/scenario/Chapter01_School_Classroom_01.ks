@@ -2,6 +2,8 @@
 
 [hidemenubutton]
 
+[tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
+[tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [playbgm  volume="80"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  ]
 [playse  volume="40"  time="1000"  buf="0"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
@@ -34,7 +36,7 @@
 [quake  time="200"  count="2"  hmax="3"  wait="false"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-[t1]아 좀![t2][l][t1]나는 서예 같은 건 관심이 없어![t2][p]
+[t1]아 좀![t2][l][t1] 나는 서예 같은 건 관심이 없어![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -43,7 +45,7 @@
 
 [tb_start_text mode=1 ]
 #전대용
-[t1]그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하.... [t2][p]
+[t1]그러지 말고 나와 함께 벼루에 먹을 갈며 운기 조식을 하는.... [t2][p]
 [_tb_end_text]
 
 [playse  volume="130"  time="1000"  buf="1"  storage="SFX/Common_Sliding_door_open.wav"  ]

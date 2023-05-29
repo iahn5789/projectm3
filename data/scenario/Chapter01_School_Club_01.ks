@@ -6,6 +6,8 @@
 [t1]꺄악-!!!!!!![t2][p]
 [_tb_end_text]
 
+[tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
+[tb_eval  exp="f.story='동아리&nbsp;생활'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활"  val_2="undefined"  ]
 [playse  volume="60"  time="1000"  buf="0"  storage="SFX/Body_Fall_01.wav"  ]
 [stopbgm  time="2000"  fadeout="true"  ]
 [tb_hide_message_window  ]

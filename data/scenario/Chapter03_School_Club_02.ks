@@ -2,6 +2,8 @@
 
 *Chapter03_02
 
+[tb_eval  exp="f.Day=1"  name="Day"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.story='자기소개'"  name="story"  cmd="="  op="t"  val="자기소개"  val_2="undefined"  ]
 [cm  ]
 [bg  time="10"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]

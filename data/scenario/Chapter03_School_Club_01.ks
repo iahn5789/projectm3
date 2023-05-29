@@ -4,6 +4,8 @@
 
 [stopbgm  time="1000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[tb_eval  exp="f.Day=1"  name="Day"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
+[tb_eval  exp="f.story='자기소개'"  name="story"  cmd="="  op="t"  val="자기소개"  val_2="undefined"  ]
 [cm  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  clear="true"  ]
 [tb_start_tyrano_code]

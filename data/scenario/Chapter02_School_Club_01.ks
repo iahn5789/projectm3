@@ -2,6 +2,8 @@
 
 *l_in
 
+[tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
+[tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [playse  volume="50"  time="1000"  buf="5"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
 [playbgm  volume="85"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]

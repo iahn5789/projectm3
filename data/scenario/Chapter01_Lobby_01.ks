@@ -1,6 +1,8 @@
 [_tb_system_call storage=system/_Chapter01_Lobby_01.ks]
 
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
+[tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
+[tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  ]
 [playse  volume="60"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]

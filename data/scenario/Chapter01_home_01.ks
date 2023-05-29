@@ -5,6 +5,8 @@
 [hidemenubutton]
 
 [mask  time="1"  effect="fadeIn"  color="0x000000"  ]
+[tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
+[tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [stopbgm  time="1000"  ]
 [bg  time="10"  method="crossfade"  storage="BGI/Common_Black.jpg"  ]
 [playse  volume="50"  time="1000"  buf="0"  storage="SFX/Common_Alarm_Clock_01.wav"  loop="true"  ]
