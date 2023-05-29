@@ -44,6 +44,7 @@
 [bg  time="0"  method="fadeIn"  storage="Giftshop_BGI/Giftshop_Bgi_Sul_01.png"  ]
 [tb_start_tyrano_code]
 [cm]
+[filter layer=all blur=0 opacity=100]
 [button name="close" storage="Test_Scene_Gift_Shop_01.ks" target="gift_close" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="228" height="98" x="0" y="0" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Shop_Door_Hover_01.wav"]
 [button name="kang" storage="Test_Scene_Gift_Shop_01.ks" target="gift_kang" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Kang_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Kang_02.png" width="243" height="78" x="517" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [button name="jin" storage="Test_Scene_Gift_Shop_01.ks" target="gift_jin_change" graphic="../image/New_GUI/Giftshop_UI/Giftshop_Jin_01.png" enterimg="../image/New_GUI/Giftshop_UI/Giftshop_Jin_02.png" width="243" height="78" x="790" y="160" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
