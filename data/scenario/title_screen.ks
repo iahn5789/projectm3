@@ -2,8 +2,12 @@
 
 [hidemenubutton]
 
+[tb_start_tyrano_code]
+[title_first]
+[freeimage layer=0]
+[_tb_end_tyrano_code]
+
 [tb_keyconfig  flag="0"  ]
-[mask  time="100"  effect="fadeIn"  color="0x000000"  ]
 [playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
 [bg  storage="BGI/Common_Title_Screen.jpg"  method="fadeIn"  ]
 *title
