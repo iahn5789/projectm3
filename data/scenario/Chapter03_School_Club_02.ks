@@ -784,7 +784,7 @@
 [t1]
 #설나희
 러브...크레센도...?[t2][p]
-[chara_part name="Jin" body="3" face="2" ]
+[chara_part name="Jin" body="3" face="4" ]
 [t1]
 #진다영
 그래 그거! 러브크레센도![t2][p]
