@@ -2,6 +2,9 @@
 
 *tutorial
 
+[tb_start_tyrano_code]
+[autostop ]
+[_tb_end_tyrano_code]
 [tb_keyconfig  flag="0"  ]
 [cm  ]
 [playbgm  volume="100"  time="1500"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
