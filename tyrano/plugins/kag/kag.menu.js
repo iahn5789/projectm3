@@ -172,6 +172,7 @@ tyrano.plugin.kag.menu = {
             three_save = {},
             day = window.TYRANO.kag.stat.f.Day;
             subheading = window.TYRANO.kag.stat.f.story;
+            playername = window.TYRANO.kag.variable.sf.name;
         three_save.stat = three.stat;
         three_save.evt = three.evt;
         var three = this.kag.tmp.three,
@@ -189,6 +190,7 @@ tyrano.plugin.kag.menu = {
             data.three = three_save;
             data.day = day;
             data.subheading = subheading;
+            data.playername = playername;
             data.current_order_index = _current_order_index;
             data.save_date = $.getNowDate() + "　" + $.getNowTime();
             data.img_data = "";
@@ -206,6 +208,7 @@ tyrano.plugin.kag.menu = {
                     data.three = three_save;
                     data.day = day;
                     data.subheading = subheading;
+                    data.playername = playername;
                     data.current_order_index = _current_order_index;
                     data.save_date = $.getNowDate() + "　" + $.getNowTime();
                     data.img_data = img_code;
@@ -468,6 +471,7 @@ tyrano.plugin.kag.menu = {
             this.kag.stat.current_bgcamera.stop = "true";
             this.kag.ftag.startTag("bgcamera", this.kag.stat.current_bgcamera)
         }
+        window.TYRANO.kag.variable.sf.name = data.playername;
         var three = data.three;
         if (1 == three.stat.is_load) {
             this.kag.stat.is_strong_stop = !0;
@@ -554,6 +558,7 @@ tyrano.plugin.kag.menu = {
             json.img_data = "";
             json.stat = {};
             json.subheading = "";
+            json.playername = "";
             tmp_array.push(json)
         }
         root.data = tmp_array;
