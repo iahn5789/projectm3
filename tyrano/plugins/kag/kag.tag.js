@@ -1703,7 +1703,8 @@ tyrano.plugin.kag.tag.glink = {
         clickse: "",
         enterse: "",
         leavese: "",
-        face: ""
+        face: "",
+        autoread: ""
     },
     start: function(pm) {
         var target_layer = null;
@@ -1732,6 +1733,7 @@ tyrano.plugin.kag.tag.glink = {
             j_button.css("left", first_left + "px")
         } else "" == pm.x ? j_button.css("left", this.kag.stat.locate.x + "px") : j_button.css("left", pm.x + "px");
         "" == pm.y ? j_button.css("top", this.kag.stat.locate.y + "px") : j_button.css("top", pm.y + "px");
+        pm.autoread = (1 == this.kag.stat.is_auto);
         $.setName(j_button, pm.name);
         this.kag.event.addEventElement({
             tag: "glink",
@@ -1759,6 +1761,7 @@ tyrano.plugin.kag.tag.glink = {
                 "" != _pm.exp && that.kag.embScript(_pm.exp, preexp);
                 that.kag.layer.showEventLayer();
                 "true" == pm.cm && that.kag.ftag.startTag("cm", {});
+                pm.autoread ? that.kag.ftag.startTag("autostart", {}) : that.kag.ftag.startTag("autostop", {next: "false"});
                 that.kag.ftag.startTag("jump", _pm);
                 "true" == that.kag.stat.skip_link ? e.stopPropagation() : that.kag.stat.is_skip = !1
             }));
