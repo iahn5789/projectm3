@@ -18,10 +18,10 @@
 [tb_clear_images]
 
 [tb_start_tyrano_code]
-[button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341"]
-[button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496"]
-[button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650"]
-[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -30,8 +30,8 @@
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 
-[button name="pageback" storage="replay.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
-[button name="pagenext" storage="replay.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
+[button name="pageback" storage="replay.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="pagenext" storage="replay.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
 
 [_tb_end_tyrano_code]
@@ -54,8 +54,8 @@
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 
-[button name="pageback" storage="replay.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
-[button name="pagenext" storage="replay.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
+[button name="pageback" storage="replay.ks" target="kang_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="pagenext" storage="replay.ks" target="kang_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
 [_tb_end_tyrano_code]
 
@@ -79,10 +79,10 @@
 [tb_clear_images]
 
 [tb_start_tyrano_code]
-[button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341"]
-[button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496"]
-[button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650"]
-[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -91,8 +91,8 @@
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 
-[button name="pageback" storage="replay.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
-[button name="pagenext" storage="replay.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
+[button name="pageback" storage="replay.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="pagenext" storage="replay.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
 
 [_tb_end_tyrano_code]
@@ -115,8 +115,8 @@
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 
-[button name="pageback" storage="replay.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
-[button name="pagenext" storage="replay.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
+[button name="pageback" storage="replay.ks" target="jin_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="pagenext" storage="replay.ks" target="jin_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
 [_tb_end_tyrano_code]
 
@@ -140,10 +140,10 @@
 [tb_clear_images]
 
 [tb_start_tyrano_code]
-[button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341"]
-[button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496"]
-[button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650"]
-[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965"]
+[button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -152,8 +152,8 @@
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 
-[button name="pageback" storage="replay.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
-[button name="pagenext" storage="replay.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
+[button name="pageback" storage="replay.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="pagenext" storage="replay.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="1"]
 
 [_tb_end_tyrano_code]
@@ -176,8 +176,8 @@
 [tb_ptext_hide  time="1"  ]
 [tb_start_tyrano_code]
 
-[button name="pageback" storage="replay.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796"]
-[button name="pagenext" storage="replay.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796"]
+[button name="pageback" storage="replay.ks" target="sul_01" graphic="../image/New_GUI/CG_UI/Pageback_01.png" enterimg="../image/New_GUI/CG_UI/Pageback_02.png" width="23" height="41" x="1688" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="pagenext" storage="replay.ks" target="sul_02" graphic="../image/New_GUI/CG_UI/Pagenext_01.png" enterimg="../image/New_GUI/CG_UI/Pagenext_02.png" width="23" height="41" x="1787" y="796" clickse="UI/Config_Sellect_Click_01.wav"]
 [tb_ptext_show x="1737" y="796" size="41" color="0x000000" time="0" text="2"]
 [_tb_end_tyrano_code]
 
