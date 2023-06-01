@@ -36,7 +36,7 @@
 [quake  time="200"  count="2"  hmax="3"  wait="false"  ]
 [tb_start_text mode=1 ]
 #&[sf.name]
-[t1]아 좀![t2][l][t1] 나는 서예 같은 건 관심이 없어![t2][p]
+[t1]아 좀![t2] [l][t1] 나는 서예 같은 건 관심이 없어![t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
@@ -93,7 +93,7 @@
 
 [tb_start_text mode=1 ]
 #강여진
-[t1]후후후...[t2][l][t1]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나?[t2][p]
+[t1]후후후...[t2] [l][t1]둘 다 아직 어떤 동아리에 들어갈 지 정하지 못 했구나?[t2][p]
 [_tb_end_text]
 
 [tb_start_tyrano_code]
