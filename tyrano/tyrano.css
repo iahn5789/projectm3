@@ -547,3 +547,77 @@ body{
 @keyframes cursor{
   50%{ border-color: transparent; }
 } */
+
+.AUT {
+  position: absolute;
+  top: 18px;
+  left: 1800px;
+  color: #ffffff;
+  font-size: 33px;
+}
+
+.loader {
+  position: absolute;
+  top: 35px;
+  left: 1880px;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  animation: spin .6s linear infinite reverse;
+}
+
+.ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  animation: spin 1s infinite ease-in-out
+}
+
+.ball:after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  top: 0;
+}
+
+.ball:nth-child(2) {
+  animation-delay: -0.1s;
+}
+.ball:nth-child(3) {
+  animation-delay: -0.2s;
+}
+.ball:nth-child(4) {
+  animation-delay: -0.3s;
+}
+.ball:nth-child(5) {
+  animation-delay: -0.4s;
+}
+.ball:nth-child(6) {
+  animation-delay: -0.5s;
+}
+.ball:nth-child(7) {
+  animation-delay: -0.6s;
+}
+.ball:nth-child(8) {
+  animation-delay: -0.7s;
+}
+.ball:nth-child(9) {
+  animation-delay: -0.8s;
+}
+.ball:nth-child(10) {
+  animation-delay: -0.9s;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
