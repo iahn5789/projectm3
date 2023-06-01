@@ -2,11 +2,9 @@
 
 *office_01
 
+[wait  time="2000"  ]
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
-[stopbgm  time="1000"  fadeout="true"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="true"  ]
-[playse  volume="45"  time="1000"  buf="0"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
 [tb_replay_start  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Office_Bgi_01.png"  ]
 [tb_start_tyrano_code]
@@ -27,7 +25,9 @@
 [chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=20 ]
 [_tb_end_tyrano_code]
 
-[mask_off  time="3000"  effect="fadeOut"  ]
+[mask_off  time="1000"  effect="fadeOut"  ]
+[playbgm  volume="100"  time=""  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  fadein="false"  ]
+[playse  volume="45"  time="1000"  buf="0"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="4" ]

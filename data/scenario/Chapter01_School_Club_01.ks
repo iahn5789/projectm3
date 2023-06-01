@@ -378,6 +378,8 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[stopse  time="1000"  buf="2"  fadeout="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jin" body="3" face="3" ]
@@ -407,6 +409,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[stopbgm  time="3000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=1 wait=false]
@@ -596,6 +599,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[stopbgm  time="3000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=1 wait=false]
@@ -806,6 +810,7 @@
 [_tb_end_text]
 
 [tb_hide_message_window  ]
+[stopbgm  time="3000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [chara_hide_all time=1 wait=false]
