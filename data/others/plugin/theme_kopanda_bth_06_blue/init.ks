@@ -78,7 +78,7 @@ if(TG.config.alreadyReadTextColor != "default"){
 ;[button name="menu_button" role="menu" graphic="../image/New_GUI/Menu_UI/Title_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Title_Button_02.png" x="1743" y="802"]
 
 ; Screen
-[button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="1860" y="20"]
+;[button name="role_button" role="fullscreen" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/screen2.png" x="1860" y="20"]
 
 ; Close
 ;[button name="role_button" role="window" graphic="../others/plugin/theme_kopanda_bth_06_blue/image/button/close.png" enterimg="../others/plugin/theme_kopanda_bth_06_blue/image/button/close2.png" x="1195" y="535"]
