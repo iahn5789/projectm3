@@ -284,8 +284,8 @@ tyrano.plugin.kag.tag.autostop = {
     },
     start: function(pm) {
         btnEl = document.getElementsByClassName("loader");
-        document.querySelector(".AUT").id = 'AUT';
         if (btnEl.length != 0) {
+            document.querySelector(".AUT").id = 'AUT';
             $("#loader").remove();
             $("#AUT").remove();
         }
