@@ -14,7 +14,7 @@
 
 [cm  ]
 [tb_start_tyrano_code]
-[image layer=1 left=695 top=227 page=fore visible=true name=We storage = ../image/New_GUI/Credit_UI/Credit_We_01.png ]
+[image layer=1 left=695 top=118 page=fore visible=true name=We storage = ../image/New_GUI/Credit_UI/Credit_We_01.png ]
 [button name="prod" storage="Credit_01.ks" target="prod" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Prod_03.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Prod_02.png" width="418" height="88" x="105" y="322" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="help" storage="Credit_01.ks" target="help" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Help_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Help_02.png" width="418" height="88" x="105" y="505" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="Spon" storage="Credit_01.ks" target="Spon" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Spon_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Spon_02.png" width="418" height="88" x="105" y="688" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
@@ -32,7 +32,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[image layer=1 left=695 top=227 page=fore visible=true name=We storage = ../image/New_GUI/Credit_UI/Credit_Help_01.png ]
+[image layer=1 left=695 top=118 page=fore visible=true name=We storage = ../image/New_GUI/Credit_UI/Credit_Help_01.png ]
 [button name="prod" storage="Credit_01.ks" target="prod" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Prod_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Prod_02.png" width="418" height="88" x="105" y="322" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="help" storage="Credit_01.ks" target="help" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Help_03.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Help_02.png" width="418" height="88" x="105" y="505" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="Spon" storage="Credit_01.ks" target="Spon" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Spon_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Spon_02.png" width="418" height="88" x="105" y="688" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
@@ -50,7 +50,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[image layer=1 left=695 top=227 page=fore visible=true name=We storage = ../image/New_GUI/Credit_UI/Credit_Spon_01.png ]
+[image layer=1 left=695 top=118 page=fore visible=true name=We storage = ../image/New_GUI/Credit_UI/Credit_Spon_01.png ]
 [button name="prod" storage="Credit_01.ks" target="prod" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Prod_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Prod_02.png" width="418" height="88" x="105" y="322" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="help" storage="Credit_01.ks" target="help" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Help_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Help_02.png" width="418" height="88" x="105" y="505" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="Spon" storage="Credit_01.ks" target="Spon" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Spon_03.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Spon_02.png" width="418" height="88" x="105" y="688" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
