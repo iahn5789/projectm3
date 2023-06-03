@@ -1,11 +1,10 @@
 var __tyrano_key_config = {
 	"key": {
-		"13": "fullscreen",
-		"27": "fullscreen",
 		"32": "hidemessage",
 		"81": "save",
 		"83": "skip",
-		"87": "load"
+		"87": "load",
+		"112": "fullscreen"
 	},
 	"mouse": {
 		"right": "",

@@ -112,7 +112,7 @@ function b () {window.addEventListener("load", function() {
     }
     
     document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
+      if (event.key === 'Control') {
         is_msg_visible = document.querySelector(".layer.message0_fore.layer_fore").getAttribute("l_visible");
         if (is_msg_visible==='true'){
 
