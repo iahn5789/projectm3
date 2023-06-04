@@ -20,21 +20,14 @@ function interval(time, label, pm) {
                 exp: "f.testTime = f.testTime-1"
             });
             pm.timeText = window.TYRANO.kag.stat.f.testTime;
-            TYRANO.kag.ftag.startTag("free", { name: pm.ptextname, layer: pm.textlayer });
-            TYRANO.kag.ftag.startTag("ptext", {
-                layer: pm.textlayer,
-                name: pm.ptextname,
-                text: pm.timeText,
-                x: pm.posXtext,
-                y: pm.posYtext,
-                size: pm.textsize,
-                face: pm.textface,
-                color: pm.ptextcolor,
-                align: pm.textalign,
-                zindex: pm.textzindex,
-                overwrite: "false",
-            });
+
             time = document.getElementById("time_limit");
+            if ($("#"+pm.textname).length) {
+                $("#"+pm.textname).remove();
+            }
+            text = $(html);
+            $("." + pm.layer + "_fore").append(text);
+            html = "<p class='"+pm.textname+"' id='"+pm.textname+"' style=" +'"position: absolute; top: '+pm.posYtext+'px; left: '+pm.posXtext+'px; width: '+pm.width+'px; text-align: '+pm.textalign+'; color: '+pm.ptextcolor+'; font-size: '+pm.textsize+'px; font-family: '+pm.textface+'; z-index: 999;"' + ">"+pm.timeText+"</p>";
             if (time.value == 0) {
                 if (TYRANO.kag.variable.tf.intervalId) {
                     clearInterval(TYRANO.kag.variable.tf.intervalId);
@@ -101,6 +94,7 @@ TYRANO.kag.ftag.master_tag.time_limit = {
         "" == pm.gagecolor ? pm.gagecolor = $.convertColor(that.kag.stat.font.color) : pm.gagecolor = $.convertColor(pm.gagecolor);
         "" == pm.warningcolor ? pm.warningcolor = $.convertColor(that.kag.stat.font.color) : pm.warningcolor = $.convertColor(pm.warningcolor);
         "" == pm.dengercolor ? pm.dengercolor = $.convertColor(that.kag.stat.font.color) : pm.dengercolor = $.convertColor(pm.dengercolor);
+        "" == pm.ptextcolor ? pm.ptextcolor = $.convertColor(that.kag.stat.font.color) : pm.ptextcolor = $.convertColor(pm.ptextcolor);
         css = {
             "position": "absolute",
             "top": pm.posX + 'px',
@@ -127,20 +121,9 @@ TYRANO.kag.ftag.master_tag.time_limit = {
         var style = document.createElement('style');
         style.innerHTML = 'progress[value].-warning::-webkit-progress-value { background-color: ' + pm.warningcolor + '; }';
         document.getElementsByTagName('head')[0].appendChild(style);
-
-        TYRANO.kag.ftag.startTag("ptext", {
-            layer: pm.textlayer,
-            name: pm.ptextname,
-            text: pm.timeText,
-            x: pm.posXtext,
-            y: pm.posYtext,
-            size: pm.textsize,
-            face: pm.textface,
-            color: pm.ptextcolor,
-            align: pm.textalign,
-            zindex: pm.textzindex,
-            overwrite: "false",
-        });
+        html = "<p class='"+pm.textname+"' id='"+pm.textname+"' style=" +'"position: absolute; top: '+pm.posYtext+'px; left: '+pm.posXtext+'px; width: '+pm.textwidth+'px; text-align: '+pm.textalign+'; color: '+pm.ptextcolor+'; font-size: '+pm.textsize+'px; font-family: '+pm.textface+'; z-index: 999;"' + ">"+window.TYRANO.kag.stat.f.testTime +"</p>";
+        text = $(html);
+        $("." + pm.layer + "_fore").append(text);
 
         $("." + pm.layer + "_fore").append(progress);
 
