@@ -197,7 +197,7 @@
 [html]
 <div class="testscenefadein">
 <div style="position: absolute;top: 0px;left: 0px;z-index: 99999999;">
-<img src=data/image/New_GUI/Test_UI/Test_In_Msg_01.png>
+<img src="data/image/New_GUI/Test_UI/Test_In_Msg_01.png"/>
 </div>
 </div>
 [endhtml]
@@ -284,7 +284,7 @@
 [html]
 <div class="msgkang">
 <div style="position: absolute; left:366px; top:31px; z-index: 99999999;">
-<img src=data/image/New_GUI/Test_UI/Secret_Msg_Kang_01.png>
+<img src="data/image/New_GUI/Test_UI/Secret_Msg_Kang_01.png"/>
 </div>
 </div>
 [endhtml]
@@ -385,7 +385,7 @@ $('.msgopen03').fadeOut(300);
 [html]
 <div class="msgjin">
 <div style="position: absolute; left:366px; top:31px; z-index: 99999999;">
-<img src=data/image/New_GUI/Test_UI/Secret_Msg_Jin_01.png>
+<img src="data/image/New_GUI/Test_UI/Secret_Msg_Jin_01.png"/>
 </div>
 </div>
 [endhtml]
@@ -476,7 +476,7 @@ $('.msgopen03jin').fadeOut(300);
 [html]
 <div class="msgsul">
 <div style="position: absolute; left:366px; top:31px; z-index: 99999999;">
-<img src=data/image/New_GUI/Test_UI/Secret_Msg_Sul_01.png>
+<img src="data/image/New_GUI/Test_UI/Secret_Msg_Sul_01.png"/>
 </div>
 </div>
 [endhtml]

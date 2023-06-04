@@ -11,6 +11,10 @@
 [tb_start_tyrano_code]
 [freeimage layer="0" time=200 wait=false ]
 [cm]
+[free name="Score" layer=2 ]
+[free name="Money" layer=2 ]
+[free name="minus_Score_text" layer=2 ]
+[free name="minus_Money_text" layer=2 ]
 [_tb_end_tyrano_code]
 
 [tb_keyconfig  flag="1"  ]

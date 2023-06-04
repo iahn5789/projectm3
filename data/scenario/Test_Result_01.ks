@@ -23,16 +23,18 @@
 *Score_Change
 
 [tb_start_tyrano_code]
-[change_number textlayer="2" textname="Score" textface="PyeongChangPeace" time="80" startnumber="&[f.score]" posXtext="890" posYtext="530" width="90" color="0xffffff" textzindex="999" textsize="40" textalign="right" delay="1300"]
 [ptext layer=2 name="minus_Score_text" page=fore text="&[f.change_number]" size=30 x=1050 y=540 width=100 color="0xFF7676" align="left" vertical=false face="PyeongChangPeace" ]
+[change_number textlayer="2" textname="Score" textface="PyeongChangPeace" time="80" startnumber="&[f.score]" posXtext="890" posYtext="530" width="90" color="0xffffff" textzindex="999" textsize="40" textalign="right" delay="1000"]
+
 [_tb_end_tyrano_code]
 
 [return  ]
 *Money_Change
 
 [tb_start_tyrano_code]
-[change_number textlayer="2" textname="Money" textface="PyeongChangPeace" time="80" startnumber="&[f.money]" posXtext="890" posYtext="750" width="90" color="0xffffff" textzindex="999" textsize="40" textalign="right" delay="1300"]
-[ptext layer=2 name="minus_Score_text" page=fore text="&[f.change_number]" size=30 x=1050 y=760 width=100 color="0x69FF43" align="left" vertical=false face="PyeongChangPeace" ]
+[ptext layer=2 name="minus_Money_text" page=fore text="&[f.change_number]" size=30 x=1050 y=760 width=100 color="0x69FF43" align="left" vertical=false face="PyeongChangPeace" ]
+[change_number textlayer="2" textname="Money" textface="PyeongChangPeace" time="80" startnumber="&[f.money]" posXtext="890" posYtext="750" width="90" color="0xffffff" textzindex="999" textsize="40" textalign="right" delay="1000"]
+
 [_tb_end_tyrano_code]
 
 [return  ]

@@ -172,38 +172,31 @@ TYRANO.kag.ftag.master_tag.clr_time_limit = {
     }
 }
 
+
 const counteup = ($counter, max, pm) => {
     max = parseInt(max);
     let now = parseInt(pm.startnumber);
     const handle = setInterval(() => {
-      $counter.innerHTML = Math.ceil(max - now);
-      console.log("$counter.innerHTML", $counter.innerHTML);
-      TYRANO.kag.ftag.startTag("ptext", {
-          layer: pm.textlayer,
-          name: pm.textname,
-          face: pm.textface,
-          text: Math.floor(now),
-          x: pm.posXtext,
-          y: pm.posYtext,
-          size: pm.textsize,
-          color: pm.color,
-          align: pm.textalign,
-          width: pm.width,
-          zindex: pm.textzindex,
-          overwrite: "true"
-      });
-      // 목표수치에 도달하면 정지
-      if (Math.floor(now) >= pm.endnumber) {
-        clearInterval(handle);
-      }
-      
-      // 증가되는 값이 계속하여 작아짐
-      const step = $counter.innerHTML / 10;
-      console.log("console.log > step", step);
-      
-      // 값을 적용시키면서 다음 차례에 영향을 끼침
-      now += step;
-    }, pm.time);
+        $counter.innerHTML = Math.ceil(max - now);
+        html = "<p class='"+pm.textname+"' id='"+pm.textname+"' style=" +'"position: absolute; top: '+pm.posYtext+'px; left: '+pm.posXtext+'px; width: '+pm.width+'px; text-align: '+pm.textalign+'; color: '+pm.color+'; font-size: '+pm.textsize+'px; font-family: '+pm.textface+'; z-index: 999;"' + ">"+Math.floor(now)+"</p>";
+        text = $(html);
+        if ($("#"+pm.textname).length) {
+            $("#"+pm.textname).remove();
+        }
+        $("." + pm.textlayer + "_fore").append(text);
+        
+        // 목표수치에 도달하면 정지
+        if (Math.floor(now) >= pm.endnumber) {
+            clearInterval(handle);
+            TYRANO.kag.ftag.nextOrder();
+        }
+        
+        // 증가되는 값이 계속하여 작아짐
+        const step = $counter.innerHTML / 10;
+        
+        // 값을 적용시키면서 다음 차례에 영향을 끼침
+        now += step;
+      }, parseInt(pm.time));
 }
   
 const countedown = ($counter, max, pm) => {
@@ -211,25 +204,17 @@ const countedown = ($counter, max, pm) => {
   let now = parseInt(pm.startnumber);
   const handle = setInterval(() => {
     $counter.innerHTML = Math.floor(now - max);
-    console.log("console.log > $counter.innerHTML", $counter.innerHTML);
-    TYRANO.kag.ftag.startTag("ptext", {
-        layer: pm.textlayer,
-        name: pm.textname,
-        face: pm.textface,
-        text: Math.floor(now),
-        x: pm.posXtext,
-        y: pm.posYtext,
-        size: pm.textsize,
-        color: pm.color,
-        align: pm.textalign,
-        width: pm.width,
-        zindex: pm.textzindex,
-        overwrite: "true"
-    });
+    html = "<p class='"+pm.textname+"' id='"+pm.textname+"' style=" +'"position: absolute; top: '+pm.posYtext+'px; left: '+pm.posXtext+'px; width: '+pm.width+'px; text-align: '+pm.textalign+'; color: '+pm.color+'; font-size: '+pm.textsize+'px; font-family: '+pm.textface+'; z-index: 999;"' + ">"+Math.floor(now)+"</p>";
+    text = $(html);
+    if ($("#"+pm.textname).length) {
+        $("#"+pm.textname).remove();
+    }
+    $("." + pm.textlayer + "_fore").append(text);
   
     // 목표수치에 도달하면 정지
     if (Math.floor(now) <= pm.endnumber) {
-      clearInterval(handle);
+        clearInterval(handle);
+        TYRANO.kag.ftag.nextOrder();
     }
     
     // 증가되는 값이 계속하여 작아짐
@@ -246,7 +231,7 @@ TYRANO.kag.ftag.master_tag.change_number = {
         textlayer: 0,
         textname: "",
         textface: "",
-        time: 50,
+        time: 30,
         startnumber: "",
         endnumber: "",
         posXtext: "",
@@ -262,31 +247,19 @@ TYRANO.kag.ftag.master_tag.change_number = {
     },
     start: function (pm) {
         pm.endnumber=parseInt(pm.startnumber) +  parseInt(window.TYRANO.kag.stat.f.change_number);
-        console.log("console.log > pm.endnumber : ",pm.endnumber)
-        TYRANO.kag.ftag.startTag("ptext", {
-            layer: pm.textlayer,
-            name: pm.textname,
-            face: pm.textface,
-            text: pm.startnumber,
-            x: pm.posXtext,
-            y: pm.posYtext,
-            size: pm.textsize,
-            color: pm.color,
-            align: pm.textalign,
-            zindex: pm.textzindex,
-            width: pm.width,
-            overwrite: "false"
-        });
-        var $counter = document.getElementsByClassName("Score");
+        "" == pm.color ? pm.color = $.convertColor(that.kag.stat.font.color) : pm.color = $.convertColor(pm.color);
+        html = "<p class='"+pm.textname+"' id='"+pm.textname+"' style=" +'"position: absolute; top: '+pm.posYtext+'px; left: '+pm.posXtext+'px; width: '+pm.width+'px; text-align: '+pm.textalign+'; color: '+pm.color+'; font-size: '+pm.textsize+'px; font-family: '+pm.textface+'; z-index: 999;"' + ">"+pm.startnumber+"</p>";
+        
+        text = $(html);
+        console.log("text : ",text);
+        $("." + pm.textlayer + "_fore").append(text);
+
+        var $counter = document.getElementsByClassName(pm.textname);
         if (parseInt(pm.startnumber) > parseInt(pm.endnumber)) {
-            console.log("console.log > downstart")
             setTimeout(() => countedown($counter, pm.endnumber, pm), pm.delay);
         }
         else {
-            console.log("console.log > upstart")
             setTimeout(() => counteup($counter, pm.endnumber, pm), pm.delay);
         }
-        // const $counter = document.querySelector(".count");
-        // counteup($counter, max, pm)
     }
 }
