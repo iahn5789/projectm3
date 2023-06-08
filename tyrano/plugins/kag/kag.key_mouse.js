@@ -56,6 +56,11 @@ tyrano.plugin.kag.key_mouse = {
         this.map_mouse = this.keyconfig.mouse;
         this.map_ges = this.keyconfig.gesture;
         $(document).keydown((function(e) {
+            if (e.keyCode === 27)
+            {
+                window.TYRANO.kag.stat.f.fullscreen_mode = 'OFF';
+                
+            }
             if (1 == that.kag.stat.enable_keyconfig) {
                 if (1 == that.is_keydown) return "true" == __tyrano_key_config.system_key_event;
                 that.is_keydown = !0;
