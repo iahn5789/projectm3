@@ -211,7 +211,7 @@ window.TYRANO.kag.stat.f.select = 'FALSE';
 }
 }
 
-const buttons1 = document.querySelectorAll("button");
+var buttons1 = document.querySelectorAll("button");
 buttons1.forEach((button) => {
 button.addEventListener("click", function(event) {
 doAction(event.target.id);
@@ -441,7 +441,7 @@ window.TYRANO.kag.stat.f.select = 'FALSE';
 }
 }
 
-const buttons2 = document.querySelectorAll("button");
+var buttons2 = document.querySelectorAll("button");
 buttons2.forEach((button) => {
 button.addEventListener("click", function(event) {
 doAction(event.target.id);
@@ -669,7 +669,7 @@ window.TYRANO.kag.stat.f.select = 'FALSE';
 }
 }
 
-const buttons3 = document.querySelectorAll("button");
+var buttons3 = document.querySelectorAll("button");
 buttons3.forEach((button) => {
 button.addEventListener("click", function(event) {
 doAction(event.target.id);
