@@ -59,6 +59,13 @@ tyrano.plugin.kag.key_mouse = {
             if (e.keyCode === 27)
             {
                 window.TYRANO.kag.stat.f.fullscreen_mode = 'OFF';
+
+                var targetElement = document.querySelector('.winscreen');
+
+                if(targetElement != null)
+                {
+                    TYRANO.kag.ftag.startTag("jump", { "*config_page3": 'config3' });
+                }
                 
             }
             if (1 == that.kag.stat.enable_keyconfig) {
