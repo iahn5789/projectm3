@@ -252,26 +252,26 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 [iscript]
 var ani = document.querySelector(".button-box");
 ani.addEventListener("animationend", function(e) {
-   var con1 = document.getElementById("button_01_02_img"); 	
-   var con2 = document.getElementById("button_02_02_img"); 
-   var con3 = document.getElementById("button_03_02_img"); 
-   var con4 = document.getElementById("button_04_02_img"); 
-   var con5 = document.getElementById("button_05_02_img"); 
-   con1.style.display = 'block'; 
-   con2.style.display = 'block'; 
-   con3.style.display = 'block'; 
-   con4.style.display = 'block'; 
-   con5.style.display = 'block';  
-   document.getElementById("button_01checkimg").style.opacity = 1;
-   document.getElementById("button_02checkimg").style.opacity = 1;
-   document.getElementById("button_03checkimg").style.opacity = 1;
-   document.getElementById("button_04checkimg").style.opacity = 1;
-   document.getElementById("button_05checkimg").style.opacity = 1;
-   conop1.style.opacity = 1; 
-   conop2.style.opacity = 1; 
-   conop3.style.opacity = 1; 
-   conop4.style.opacity = 1; 
-   conop5.style.opacity = 1; 
+var con1 = document.getElementById("button_01_02_img");
+var con2 = document.getElementById("button_02_02_img");
+var con3 = document.getElementById("button_03_02_img");
+var con4 = document.getElementById("button_04_02_img");
+var con5 = document.getElementById("button_05_02_img");
+con1.style.display = 'block';
+con2.style.display = 'block';
+con3.style.display = 'block';
+con4.style.display = 'block';
+con5.style.display = 'block';
+document.getElementById("button_01checkimg").style.opacity = 1;
+document.getElementById("button_02checkimg").style.opacity = 1;
+document.getElementById("button_03checkimg").style.opacity = 1;
+document.getElementById("button_04checkimg").style.opacity = 1;
+document.getElementById("button_05checkimg").style.opacity = 1;
+conop1.style.opacity = 1;
+conop2.style.opacity = 1;
+conop3.style.opacity = 1;
+conop4.style.opacity = 1;
+conop5.style.opacity = 1;
 }, false);
 
 [endscript]
@@ -480,26 +480,26 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 [iscript]
 var ani = document.querySelector(".button-box");
 ani.addEventListener("animationend", function(e) {
-   var con1 = document.getElementById("button_01_02_img"); 	
-   var con2 = document.getElementById("button_02_02_img"); 
-   var con3 = document.getElementById("button_03_02_img"); 
-   var con4 = document.getElementById("button_04_02_img"); 
-   var con5 = document.getElementById("button_05_02_img"); 
-   con1.style.display = 'block'; 
-   con2.style.display = 'block'; 
-   con3.style.display = 'block'; 
-   con4.style.display = 'block'; 
-   con5.style.display = 'block';  
-   document.getElementById("button_01checkimg").style.opacity = 1;
-   document.getElementById("button_02checkimg").style.opacity = 1;
-   document.getElementById("button_03checkimg").style.opacity = 1;
-   document.getElementById("button_04checkimg").style.opacity = 1;
-   document.getElementById("button_05checkimg").style.opacity = 1;
-   conop1.style.opacity = 1; 
-   conop2.style.opacity = 1; 
-   conop3.style.opacity = 1; 
-   conop4.style.opacity = 1; 
-   conop5.style.opacity = 1; 
+var con1 = document.getElementById("button_01_02_img");
+var con2 = document.getElementById("button_02_02_img");
+var con3 = document.getElementById("button_03_02_img");
+var con4 = document.getElementById("button_04_02_img");
+var con5 = document.getElementById("button_05_02_img");
+con1.style.display = 'block';
+con2.style.display = 'block';
+con3.style.display = 'block';
+con4.style.display = 'block';
+con5.style.display = 'block';
+document.getElementById("button_01checkimg").style.opacity = 1;
+document.getElementById("button_02checkimg").style.opacity = 1;
+document.getElementById("button_03checkimg").style.opacity = 1;
+document.getElementById("button_04checkimg").style.opacity = 1;
+document.getElementById("button_05checkimg").style.opacity = 1;
+conop1.style.opacity = 1;
+conop2.style.opacity = 1;
+conop3.style.opacity = 1;
+conop4.style.opacity = 1;
+conop5.style.opacity = 1;
 }, false);
 
 [endscript]
@@ -708,27 +708,27 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 [iscript]
 var ani = document.querySelector(".button-box");
 ani.addEventListener("animationend", function(e) {
-   var con1 = document.getElementById("button_01_02_img"); 	
-   var con2 = document.getElementById("button_02_02_img"); 
-   var con3 = document.getElementById("button_03_02_img"); 
-   var con4 = document.getElementById("button_04_02_img"); 
-   var con5 = document.getElementById("button_05_02_img"); 
-   
-   con1.style.display = 'block'; 
-   con2.style.display = 'block'; 
-   con3.style.display = 'block'; 
-   con4.style.display = 'block'; 
-   con5.style.display = 'block'; 
-   document.getElementById("button_01checkimg").style.opacity = 1;
-   document.getElementById("button_02checkimg").style.opacity = 1;
-   document.getElementById("button_03checkimg").style.opacity = 1;
-   document.getElementById("button_04checkimg").style.opacity = 1;
-   document.getElementById("button_05checkimg").style.opacity = 1;
-   conop1.style.opacity = 1; 
-   conop2.style.opacity = 1; 
-   conop3.style.opacity = 1; 
-   conop4.style.opacity = 1; 
-   conop5.style.opacity = 1; 
+var con1 = document.getElementById("button_01_02_img");
+var con2 = document.getElementById("button_02_02_img");
+var con3 = document.getElementById("button_03_02_img");
+var con4 = document.getElementById("button_04_02_img");
+var con5 = document.getElementById("button_05_02_img");
+
+con1.style.display = 'block';
+con2.style.display = 'block';
+con3.style.display = 'block';
+con4.style.display = 'block';
+con5.style.display = 'block';
+document.getElementById("button_01checkimg").style.opacity = 1;
+document.getElementById("button_02checkimg").style.opacity = 1;
+document.getElementById("button_03checkimg").style.opacity = 1;
+document.getElementById("button_04checkimg").style.opacity = 1;
+document.getElementById("button_05checkimg").style.opacity = 1;
+conop1.style.opacity = 1;
+conop2.style.opacity = 1;
+conop3.style.opacity = 1;
+conop4.style.opacity = 1;
+conop5.style.opacity = 1;
 }, false);
 
 [endscript]
