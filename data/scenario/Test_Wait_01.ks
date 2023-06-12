@@ -28,12 +28,12 @@
 
 [tb_start_tyrano_code]
 [image layer=1 width=382 height=550 left=-500 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png ]
-[button name="gift" storage="Test_Scene_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="-500" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="story" storage="Test_Scene_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="2420" y="658" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="secret" storage="Test_Scene_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Secret_01.png" enterimg="../image/New_GUI/Test_UI/Button_Secret_02.png" width="233" height="67" x="2420" y="739" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="work" storage="Test_Scene_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="2420" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="badge" storage="Test_Scene_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="setting" storage="Test_Scene_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="gift" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="-500" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="2420" y="658" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="secret" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Secret_01.png" enterimg="../image/New_GUI/Test_UI/Button_Secret_02.png" width="233" height="67" x="2420" y="739" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="work" storage="Test_Wait_01.ks" target="workspace" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="2420" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -46,33 +46,50 @@
 [anim name="setting" left=1668 time=500 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
-[mask_off  time="3000"  effect="fadeOut"  ]
-[wait  time="500"  ]
-*story
-
+[call  storage="ROOT_SETTINGS.ks"  target="*Day_Check"  ]
 [tb_start_tyrano_code]
-[image layer=2 width=1080 height=638 left=464 top=-700 page=fore visible=true name=storyboard storage = ../image/New_GUI/Test_UI/UI_Storyboard_01.png ]
+[if exp="f.k_poster_choice_whether === 'TRUE'"]
+[call  storage="Test_Wait_Call_01.ks"  target="*labelkang"  ]
+[endif]
 [_tb_end_tyrano_code]
 
+[mask_off  time="3000"  effect="fadeOut"  ]
+[s  ]
+*callback
+
 [tb_start_tyrano_code]
-[anim name="storyboard" top=0 time=1000 effect=easeInQuad]
+[cm]
+[image layer=1 width=382 height=550 left=40 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png ]
+[button name="gift" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="40" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="1668" y="658" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="secret" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Secret_01.png" enterimg="../image/New_GUI/Test_UI/Button_Secret_02.png" width="233" height="67" x="1668" y="739" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="work" storage="Test_Wait_01.ks" target="workspace" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="1668" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="1668" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [_tb_end_tyrano_code]
 
 [s  ]
-*undefined
+*story
 
+[call  storage="Test_Wait_Call_01.ks"  target="*story"  ]
+[jump  storage="Test_Wait_01.ks"  target="*callback"  ]
+[s  ]
+*workspace
+
+[call  storage="Test_Wait_Call_01.ks"  target="*workspace"  ]
+[jump  storage="Test_Wait_01.ks"  target="*callback"  ]
+[s  ]
+*gift
+
+[call  storage="Test_Wait_Call_01.ks"  target="*gift"  ]
+[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang"  cond="f.testScene=='FALSE'"  ]
+[s  ]
+*setting
+
+[call  storage="Test_Wait_Call_01.ks"  target="*gift"  ]
+[jump  storage="Test_Wait_01.ks"  target="*callback"  cond=""  ]
+[s  ]
 *secret
 
-[tb_start_tyrano_code]
-[anim name="storyboard" top=-700 time=500 wait=true effect=easeInQuad]
-[freeimage layer="2"]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-[image layer=3 width=750 height=464 left=652 top=-700 page=fore visible=true name=secretkang storage = ../image/New_GUI/Test_UI/UI_Secret_Kang_01.png ]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-[anim name="secretkang" top=0 time=1000 effect=easeInQuad]
-[_tb_end_tyrano_code]
-
+[call  storage="Test_Wait_01.ks"  target=""  ]
+[s  ]
