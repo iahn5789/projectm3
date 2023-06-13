@@ -122,9 +122,9 @@
 
 *config_page3
 [clearstack]
-   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353" clickse="UI/Config_Sellect_Click_01.wav"]
-   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507" clickse="UI/Config_Sellect_Click_01.wav"]
-   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_02.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_01.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_02.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
    
 	[button name="unread_on"  fix="true" target="*skip_on3"  graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_On_02.png'" width="259" height="60" x="1208" y="504" clickse="UI/Config_Sellect_Click_01.wav"]
 	[button name="unread_off" fix="true" target="*skip_off3" graphic="&tf.btn_path_off" enterimg="&tf.img_path + 'Skip_Off_02.png'" width="259" height="60" x="1530" y="504" clickse="UI/Config_Sellect_Click_01.wav"]
