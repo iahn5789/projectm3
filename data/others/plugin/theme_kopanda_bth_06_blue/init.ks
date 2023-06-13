@@ -51,25 +51,25 @@ if(TG.config.alreadyReadTextColor != "default"){
 [hidemenubutton]
 
 ; Save
-[button name="menu_button" role="save" graphic="../image/New_GUI/Menu_UI/Save_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Save_Button_02.png" x="1743" y="520" ]
+[button name="menu_button" role="save" graphic="../image/New_GUI/Menu_UI/Save_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Save_Button_02.png" x="1743" y="520" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 ; Load
-[button name="menu_button" role="load" graphic="../image/New_GUI/Menu_UI/Load_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Load_Button_02.png" x="1743" y="600" ]
+[button name="menu_button" role="load" graphic="../image/New_GUI/Menu_UI/Load_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Load_Button_02.png" x="1743" y="600" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 ; Backlog
-[button name="menu_button" role="backlog" graphic="../image/New_GUI/Menu_UI/Log_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Log_Button_02.png" x="1743" y="680"]
+[button name="menu_button" role="backlog" graphic="../image/New_GUI/Menu_UI/Log_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Log_Button_02.png" x="1743" y="680" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 ; Auto
-[button name="rol_button" role="auto" graphic="../image/New_GUI/Menu_UI/Auto_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Auto_Button_02.png" x="1743" y="760"]
+[button name="rol_button" role="auto" graphic="../image/New_GUI/Menu_UI/Auto_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Auto_Button_02.png" x="1743" y="760" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 ; Skip
-[button name="rol_button" role="skip" graphic="../image/New_GUI/Menu_UI/Skip_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Skip_Button_02.png" x="1743" y="840"]
+[button name="rol_button" role="skip" graphic="../image/New_GUI/Menu_UI/Skip_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Skip_Button_02.png" x="1743" y="840" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 ; Config（※sleepgame を使用して config.ks を呼び出しています）
-[button name="rol_button" role="sleepgame" graphic="../image/New_GUI/Menu_UI/Setting_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Setting_Button_02.png"  x="1743" y="930" storage="../scenario/config.ks" x="1743" y="920"]
+[button name="rol_button" role="sleepgame" graphic="../image/New_GUI/Menu_UI/Setting_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Setting_Button_02.png"  x="1743" y="930" storage="../scenario/config.ks" x="1743" y="920" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 ; Title
-[button name="rol_button" role="title" graphic="../image/New_GUI/Menu_UI/Title_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Title_Button_02.png" x="1743" y="1000"]
+[button name="rol_button" role="title" graphic="../image/New_GUI/Menu_UI/Title_Button_01.png" enterimg="../image/New_GUI/Menu_UI/Title_Button_02.png" x="1743" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Common_Branch_Click_01.wav"]
 
 ; Menu_Hide
 ;[button name='rol_button" role="" graphic="../image/New_GUI/Menu_UI/Hide_Button_01.png" x="1743" y="37" ]
