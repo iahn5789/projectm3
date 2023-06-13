@@ -491,6 +491,40 @@ body{
   z-index: 999999999;
   animation: fadein 1s;
 }
+/* 시험대기창 도움말 출력 1번 */
+.help01{
+  position:relative;
+  width: 100px;
+  height: 100px;
+}
+.help01 img{
+  position:absolute;
+  left: 361px;
+  top: 68px;
+  width: 34px;
+  height: 34px;
+  z-index: 999999999;
+  animation: fadein 3s;
+}
+.help01 img.img-hover{
+  display:none;
+  position: absolute;
+  left: 425px;
+  top: 37px;
+  width: 454px;
+  height: 251px;
+  z-index: 999999999;
+}
+.help01:hover .img-hover{
+  display:block;
+  position: absolute;
+  left: 433px;
+  top: 37px;
+  width: 454px;
+  height: 251px;
+  animation: none;
+}
+
 /* 선물상점 구매 시 이미지 출력 */
 .buymsg img{
   display: inline-block;

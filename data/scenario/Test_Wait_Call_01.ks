@@ -24,6 +24,15 @@
 [anim name="storyboard" top=0 time=1000 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[html]
+<div class="help01">
+<img class="img" src="data/image/New_GUI/Test_UI/Button_Help_01.png" alt="">
+<img class="img-hover" src="data/image/New_GUI/Test_UI/Button_Help_02.png" alt="">
+</div>
+[endhtml]
+[_tb_end_tyrano_code]
+
 [return  ]
 *workspace
 
@@ -55,6 +64,15 @@
 
 [_tb_end_tyrano_code]
 
+[tb_start_tyrano_code]
+[html]
+<div class="help01">
+<img class="img" src="data/image/New_GUI/Test_UI/Button_Help_01.png" alt="">
+<img class="img-hover" src="data/image/New_GUI/Test_UI/Button_Help_02.png" alt="">
+</div>
+[endhtml]
+[_tb_end_tyrano_code]
+
 [return  ]
 *gift
 
@@ -63,3 +81,4 @@
 [_tb_end_tyrano_code]
 
 [return  ]
+[s  ]

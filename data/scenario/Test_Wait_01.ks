@@ -44,6 +44,17 @@
 [anim name="work" left=1668 time=500 effect=easeInQuad]
 ;[anim name="badge" left=1668 time=500 effect=easeInQuad]
 [anim name="setting" left=1668 time=500 effect=easeInQuad]
+[anim name="help01" left=361 time=500 effect=easeInQuad]
+[anim name="help02" left=361 time=500 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[html]
+<div class="help01">
+<img class="img" src="data/image/New_GUI/Test_UI/Button_Help_01.png" alt="">
+<img class="img-hover" src="data/image/New_GUI/Test_UI/Button_Help_02.png" alt="">
+</div>
+[endhtml]
 [_tb_end_tyrano_code]
 
 [mask_off  time="3000"  effect="fadeOut"  ]
@@ -71,7 +82,8 @@
 [call  storage="Test_Wait_Call_01.ks"  target="*gift"  ]
 [jump  storage="Test_Wait_01.ks"  target="*callback"  cond=""  ]
 [s  ]
-*secret
+*help01
 
-[call  storage="Test_Wait_01.ks"  target=""  ]
+[call  storage="Test_Wait_Call_01.ks"  target="*help01"  ]
+[jump  storage="Test_Wait_01.ks"  target="*callback"  cond=""  ]
 [s  ]
