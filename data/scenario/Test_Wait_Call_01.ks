@@ -25,11 +25,3 @@
 [_tb_end_tyrano_code]
 
 [return  ]
-*labelkang
-
-[tb_start_tyrano_code]
-[image layer=2 width=301 height=197 left=1602 top=-700 page=fore visible=true name=labelkang storage = ../image/New_GUI/Test_UI/UI_Label_Kang_01.png ]
-[anim name="labelkang" top=0 time=1000 effect=easeInQuad]
-[_tb_end_tyrano_code]
-
-[return  ]

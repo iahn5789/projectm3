@@ -131,6 +131,10 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[anim name="labeljin" top=-200 time=300 effect=easeInQuad]
+[anim name="labelsul" top=-200 time=300 effect=easeInQuad]
+[image layer=2 width=301 height=197 left=1602 top=-200 page=fore visible=true name=labelkang storage = ../image/New_GUI/Test_UI/UI_Label_Kang_01.png ]
+[anim name="labelkang" top=0 time=1000 effect=easeInQuad]
 [anim name="teststart" top=912 time=300 effect=easeInQuad]
 [anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
@@ -160,6 +164,10 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[anim name="labelkang" top=-200 time=300 effect=easeInQuad]
+[anim name="labelsul" top=-200 time=300 effect=easeInQuad]
+[image layer=2 width=301 height=197 left=1602 top=-200 page=fore visible=true name=labeljin storage = ../image/New_GUI/Test_UI/UI_Label_Jin_01.png ]
+[anim name="labeljin" top=0 time=1000 effect=easeInQuad]
 [anim name="teststart" top=912 time=300 effect=easeInQuad]
 [anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
@@ -189,6 +197,10 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[anim name="labeljin" top=-200 time=300 effect=easeInQuad]
+[anim name="labelkang" top=-200 time=300 effect=easeInQuad]
+[image layer=2 width=301 height=197 left=1602 top=-200 page=fore visible=true name=labelsul storage = ../image/New_GUI/Test_UI/UI_Label_Sul_01.png ]
+[anim name="labelsul" top=0 time=1000 effect=easeInQuad]
 [anim name="teststart" top=912 time=300 effect=easeInQuad]
 [anim name="msgshow" top=912 time=300 effect=easeInQuad]
 [anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
