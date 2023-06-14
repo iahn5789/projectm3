@@ -1,14 +1,20 @@
 [_tb_system_call storage=system/_Test_Wait_Teststart_01.ks]
 
-*teststartcheckkang
+*teststartcheck
 
-[jump  storage="Test_Wait_Teststart_01.ks"  target="*teststartcheckjin"  cond="f.k_poster_choice_whether=='FALSE'"  ]
-*teststartcheckjin
+[tb_start_tyrano_code]
+[if exp="f.k_poster_choice_whether === 'TRUE'"]
+[jump  storage="Test_Wait_Teststart_01.ks"  target="teststart_kang" ]
+[elsif exp="f.j_poster_choice_whether === 'TRUE'"]
+[jump  storage="Test_Wait_Teststart_01.ks"  target="teststart_jin" ]
+[elsif exp="f.s_poster_choice_whether === 'TRUE'"]
+[jump  storage="Test_Wait_Teststart_01.ks"  target="teststart_sul" ]
+[else]
+[jump  storage="Test_Wait_Teststart_01.ks"  target="teststartfail" ]
+[endif]
+[_tb_end_tyrano_code]
 
-[jump  storage="Test_Wait_Teststart_01.ks"  target="*teststartchecksul"  cond="f.j_poster_choice_whether=='FALSE'"  ]
-*teststartchecksul
-
-[jump  storage="Test_Wait_Teststart_01.ks"  target="*teststartfail"  cond="f.s_poster_choice_whether=='FALSE'"  ]
+[s  ]
 *teststartfail
 
 [tb_start_tyrano_code]
@@ -17,44 +23,113 @@
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Caution_Teststart_01.png" alt="">
 </div>
 [endhtml]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 [button name="teststart" storage="Test_Wait_Teststart_01.ks" target="teststartcheck" graphic="../image/New_GUI/Test_UI/Button_Test_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_02.png" width="348" height="106" x="830" y="927" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [_tb_end_tyrano_code]
 
 [jump  storage="Test_Wait_01.ks"  target="*callback"  ]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="*teststartsuccess"  cond="f.k_poster_choice_whether=='TRUE'"  ]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="*teststartsuccess"  cond="f.j_poster_choice_whether=='TRUE'"  ]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="*teststartsuccess"  cond="f.s_poster_choice_whether=='TRUE'"  ]
-*teststartcheck
+*teststart_kang
 
 [tb_start_tyrano_code]
-[if exp="f.k_poster_choice_whether === 'TRUE'"]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="test01" ]
-[elsif exp="f.j_poster_choice_whether === 'TRUE'"]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="test02" ]
-[elsif exp="f.s_poster_choice_whether === 'TRUE'"]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="test03" ]
-[else]
-[jump  storage="Test_Wait_Teststart_01.ks"  target="teststartfail" ]
-[endif]
+[anim name="storyboard" top=-700 time=300 effect=easeInQuad]
+[anim name="lootkang" top=-600 time=300 effect=easeInQuad]
+[anim name="lootjin" top=-600 time=300 effect=easeInQuad]
+[anim name="lootsul" top=-600 time=300 effect=easeInQuad]
+[anim name="teststart" top=1200 time=300 effect=easeInQuad]
+[anim name="labelkang" top=-200 time=300 effect=easeInQuad]
+[anim name="labeljin" top=-200 time=300 effect=easeInQuad]
+[anim name="labelsul" top=-200 time=300 effect=easeInQuad]
+[wa]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
+[clearfix name="setting"]
+[cm]
 
+[html]
+<div class="testscenefadein">
+<div style="position: absolute;top: 0px;left: 0px;z-index: 99999999;">
+<img src="data/image/New_GUI/Test_UI/UI_Teststart_01.png"/>
+</div>
+</div>
+[endhtml]
+
+[button name="testin" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Button_Test_In_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_In_02.png" width="233" height="67" x="708" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="testback" storage="Test_Wait_Teststart_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="978" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[anim name="testin" top=967 time=300 effect=easeInQuad]
+[anim name="testback" top=967 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [s  ]
-*test01
+*teststart_jin
 
-[tb_ptext_show  x="1129"  y="625"  size="50"  color="0x000000"  time="10"  text="1"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
-[s  ]
-*test02
+[tb_start_tyrano_code]
+[anim name="storyboard" top=-700 time=300 effect=easeInQuad]
+[anim name="lootkang" top=-600 time=300 effect=easeInQuad]
+[anim name="lootjin" top=-600 time=300 effect=easeInQuad]
+[anim name="lootsul" top=-600 time=300 effect=easeInQuad]
+[anim name="teststart" top=1200 time=300 effect=easeInQuad]
+[anim name="labelkang" top=-200 time=300 effect=easeInQuad]
+[anim name="labeljin" top=-200 time=300 effect=easeInQuad]
+[anim name="labelsul" top=-200 time=300 effect=easeInQuad]
+[wa]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
+[clearfix name="setting"]
+[cm]
 
-[tb_ptext_show  x="1129"  y="625"  size="50"  color="0x000000"  time="10"  text="2"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
-[s  ]
-*test03
+[html]
+<div class="testscenefadein">
+<div style="position: absolute;top: 0px;left: 0px;z-index: 99999999;">
+<img src="data/image/New_GUI/Test_UI/UI_Teststart_01.png"/>
+</div>
+</div>
+[endhtml]
 
-[tb_ptext_show  x="1129"  y="625"  size="50"  color="0x000000"  time="10"  text="3"  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
+[button name="testin" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Button_Test_In_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_In_02.png" width="233" height="67" x="708" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="testback" storage="Test_Wait_Teststart_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="978" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[anim name="testin" top=967 time=300 effect=easeInQuad]
+[anim name="testback" top=967 time=300 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
 [s  ]
-[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[jump  storage="Test_Wait_01.ks"  target="*callback"  ]
+*teststart_sul
+
+[tb_start_tyrano_code]
+[anim name="storyboard" top=-700 time=300 effect=easeInQuad]
+[anim name="lootkang" top=-600 time=300 effect=easeInQuad]
+[anim name="lootjin" top=-600 time=300 effect=easeInQuad]
+[anim name="lootsul" top=-600 time=300 effect=easeInQuad]
+[anim name="teststart" top=1200 time=300 effect=easeInQuad]
+[anim name="labelkang" top=-200 time=300 effect=easeInQuad]
+[anim name="labeljin" top=-200 time=300 effect=easeInQuad]
+[anim name="labelsul" top=-200 time=300 effect=easeInQuad]
+[wa]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
+[clearfix name="setting"]
+[cm]
+
+[html]
+<div class="testscenefadein">
+<div style="position: absolute;top: 0px;left: 0px;z-index: 99999999;">
+<img src="data/image/New_GUI/Test_UI/UI_Teststart_01.png"/>
+</div>
+</div>
+[endhtml]
+
+[button name="testin" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Button_Test_In_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_In_02.png" width="233" height="67" x="708" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="testback" storage="Test_Wait_Teststart_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="978" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[anim name="testin" top=967 time=300 effect=easeInQuad]
+[anim name="testback" top=967 time=300 effect=easeInQuad]
+[_tb_end_tyrano_code]
+
+[s  ]
+*testback
+
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="0"]
+[freeimage layer="1"]
+[freeimage layer="2"]
+[bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
+[_tb_end_tyrano_code]
+
+[jump  storage="Test_Wait_01.ks"  target="*test"  ]
