@@ -11,6 +11,8 @@
 [anim name="game05" top=-350 time=300 effect=easeInQuad]
 [wa]
 
+[call storage="ROOT_SETTINGS.ks"  target="*Day_Check"]
+
 [cm]
 [image layer=1 width=382 height=550 left=-500 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png ]
 [button name="gift" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="40" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
@@ -22,6 +24,9 @@
 
 [image layer=2 width=1080 height=638 left=464 top=-700 page=fore visible=true name=storyboard storage = ../image/New_GUI/Test_UI/UI_Storyboard_01.png ]
 [anim name="storyboard" top=0 time=1000 effect=easeInQuad]
+[anim name="lootkang" top=105 time=1000 effect=easeInQuad]
+[anim name="lootjin" top=105 time=1000 effect=easeInQuad]
+[anim name="lootsul" top=105 time=1000 effect=easeInQuad]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -42,7 +47,11 @@
 
 [tb_start_tyrano_code]
 [anim name="storyboard" top=-700 time=300 effect=easeInQuad]
+[anim name="lootkang" top=-600 time=300 effect=easeInQuad]
+[anim name="lootjin" top=-600 time=300 effect=easeInQuad]
+[anim name="lootsul" top=-600 time=300 effect=easeInQuad]
 [wa]
+
 [cm]
 [image layer=1 width=382 height=550 left=-500 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png ]
 [button name="gift" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="40" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
