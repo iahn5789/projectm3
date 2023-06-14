@@ -2,6 +2,13 @@
 
 *testin
 
+[tb_start_tyrano_code]
+[tb_eval  exp="f.common_poster_choice_whether='FALSE'"  name="common_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.k_poster_choice_whether='FALSE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.j_poster_choice_whether='FALSE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.s_poster_choice_whether='FALSE'"  name="s_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[_tb_end_tyrano_code]
+
 [playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  ]
 [tb_hide_message_window  ]
 [bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
@@ -33,21 +40,14 @@
 [button name="work" storage="Test_Wait_01.ks" target="workspace" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 ;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [anim name="charinfo" left=40 time=500 effect=easeInQuad]
 [anim name="gift" left=40 time=500 effect=easeInQuad]
 [anim name="story" left=1668 time=500 effect=easeInQuad]
-[anim name="secret" left=1668 time=500 effect=easeInQuad]
 [anim name="work" left=1668 time=500 effect=easeInQuad]
 ;[anim name="badge" left=1668 time=500 effect=easeInQuad]
 [anim name="setting" left=1668 time=500 effect=easeInQuad]
-[anim name="help01" left=361 time=500 effect=easeInQuad]
-[anim name="help02" left=361 time=500 effect=easeInQuad]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [html]
 <div class="help01">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
