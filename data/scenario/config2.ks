@@ -115,7 +115,7 @@
 	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_Text_01.png'" time="1" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="33" y="965" clickse="UI/Config_Sellect_Click_01.wav"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="33" y="965" clickse="UI/Config_Back_01.wav"]
 
 [jump target="*config_page2"]
 
@@ -152,9 +152,9 @@
 -
 ; 테스트용 버튼 이미지 테스트 민아럼ㄴㅇ러
 ;------------------------------------------------------------------------------------------------------
-   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353" clickse="UI/Config_Sellect_Click_01.wav"]
-   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_02.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507" clickse="UI/Config_Sellect_Click_01.wav"]
-   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="sound" storage="config.ks" target="*sound" graphic="../image/New_GUI/Config_UI/Config_Audio_01.png" enterimg="../image/New_GUI/Config_UI/Config_Audio_03.png" width="418" height="88" x="104" y="353" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="text" storage="config2.ks" target="*text" graphic="../image/New_GUI/Config_UI/Config_Text_02.png" enterimg="../image/New_GUI/Config_UI/Config_Text_03.png" width="418" height="88" x="104" y="507" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+   [button name="system" storage="config3.ks" target="*system" graphic="../image/New_GUI/Config_UI/Config_System_01.png" enterimg="../image/New_GUI/Config_UI/Config_System_03.png" width="418" height="88" x="104" y="662" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
    
 ;------------------------------------------------------------------------------------------------------
 ; コンフィグ起動時の画面更新
