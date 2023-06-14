@@ -503,7 +503,7 @@ body{
   top: 68px;
   width: 34px;
   height: 34px;
-  z-index: 999999999;
+  z-index: 9999999999;
   animation: fadein 3s;
 }
 .help01 img.img-hover{
@@ -513,7 +513,7 @@ body{
   top: 37px;
   width: 454px;
   height: 251px;
-  z-index: 999999999;
+  z-index: 9999999999;
 }
 .help01:hover .img-hover{
   display:block;
@@ -537,7 +537,7 @@ body{
   top: 68px;
   width: 34px;
   height: 34px;
-  z-index: 999999999;
+  z-index: 9999999999;
 }
 .help011 img.img-hover{
   display:none;
@@ -546,7 +546,7 @@ body{
   top: 37px;
   width: 454px;
   height: 251px;
-  z-index: 999999999;
+  z-index: 9999999999;
 }
 .help011:hover .img-hover{
   display:block;
@@ -569,7 +569,7 @@ body{
   top: 222px;
   width: 34px;
   height: 34px;
-  z-index: 999999999;
+  z-index: 9999999999;
   animation: fadein 3s;
 }
 .help02 img.img-hover{
@@ -579,7 +579,7 @@ body{
   top: 222px;
   width: 454px;
   height: 251px;
-  z-index: 999999999;
+  z-index: 9999999999;
 }
 .help02:hover .img-hover{
   display:block;
@@ -602,7 +602,7 @@ body{
   top: 222px;
   width: 34px;
   height: 34px;
-  z-index: 999999999;
+  z-index: 9999999999;
 }
 .help022 img.img-hover{
   display:none;
@@ -611,7 +611,7 @@ body{
   top: 222px;
   width: 454px;
   height: 251px;
-  z-index: 999999999;
+  z-index: 9999999999;
 }
 .help022:hover .img-hover{
   display:block;
@@ -622,6 +622,28 @@ body{
   height: 251px;
 }
 
+/* 시험대기창 대자보 선택하지 않고 시험 시작 시 출력되는 경고문 */
+.caution01 img{
+  position:absolute;
+  left: 830px;
+  top: 826px;
+  width: 350px;
+  height: 78px;
+  z-index: 999999999;
+  opacity: 0;
+  animation: caution 3s;
+}
+
+@keyframes caution {
+  from {
+      opacity: 1;
+      top: 826px;
+  }
+  to {
+      opacity: 0;
+      top: 726px;
+  }
+}
 
 /* 선물상점 구매 시 이미지 출력 */
 .buymsg img{
