@@ -97,7 +97,11 @@
 *gift
 
 [tb_start_tyrano_code]
-[freeimage layer="1" time=200 wait=false ]
+[cm]
+[freeimage layer="0" ]
+[freeimage layer="1" ]
+[freeimage layer="2" ]
+[clearfix name="setting" ]
 [_tb_end_tyrano_code]
 
 [return  ]

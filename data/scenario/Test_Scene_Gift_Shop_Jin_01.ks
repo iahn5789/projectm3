@@ -42,7 +42,19 @@
 [s  ]
 *gift_close_01
 
-[jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="0"]
+[freeimage layer="1"]
+[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="Day" layer=2 ]
+[free name="score" layer=2 ]
+[_tb_end_tyrano_code]
+
+[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
 [s  ]
 *gift_jin_back
 

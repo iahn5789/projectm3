@@ -5,6 +5,7 @@
 [tb_start_tyrano_code]
 [autostop ]
 [_tb_end_tyrano_code]
+
 [tb_keyconfig  flag="0"  ]
 [cm  ]
 [playbgm  volume="100"  time="1500"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
@@ -89,5 +90,5 @@
 [freeimage layer="2" time=100ms wait=true]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_01.ks"  target="*testscenestart"  ]
+[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
 [s  ]
