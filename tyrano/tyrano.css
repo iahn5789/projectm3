@@ -622,6 +622,40 @@ body{
   height: 251px;
 }
 
+/* 시험대기창 비밀쪽지 도움말 출력 (페이드인) */
+.help03{
+  position:relative;
+  width: 100px;
+  height: 100px;
+}
+.help03 img{
+  position:absolute;
+  left: 832px;
+  top: 684px;
+  width: 34px;
+  height: 34px;
+  z-index: 9999999999;
+  animation: fadein 1.5s;
+}
+.help03 img.img-hover{
+  display:none;
+  position: absolute;
+  left: 869px;
+  top: 668px;
+  width: 454px;
+  height: 251px;
+  z-index: 9999999999;
+}
+.help03:hover .img-hover{
+  display:block;
+  position: absolute;
+  left: 869px;
+  top: 668px;
+  width: 454px;
+  height: 251px;  
+  animation: none;
+}
+
 /* 시험대기창 대자보 선택하지 않고 시험 시작 시 출력되는 경고문 */
 .caution01 img{
   position:absolute;
