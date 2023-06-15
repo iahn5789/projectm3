@@ -315,6 +315,20 @@ tyrano.plugin.kag.menu = {
                 $(this).click((function(e) {
                     var num = $(this).attr("data-num");
                     if ("" != array[num].save_date) {
+
+                        var j_div = $("<div class='layer layer_mask'style='z-index:100000000;position:absolute;'>");
+                        var sc_width = parseInt(that.kag.config.scWidth),
+                            sc_height = parseInt(that.kag.config.scHeight),
+                            behind = !1;
+                        j_div.css({
+                            width: sc_width,
+                            height: sc_height
+                        });
+                        j_div.css("background-color", $.convertColor("0x000000"));
+                        0 == behind && j_div.css("transform", "scale(1.02)");
+                        $(".tyrano_base").append(j_div);
+
+
                         that.snap = null;
                         that.loadGame(num);
                         var layer_menu = that.kag.layer.getMenuLayer();
@@ -507,6 +521,7 @@ tyrano.plugin.kag.menu = {
         }
         this.kag.setCursor(this.kag.stat.current_cursor);
         1 == this.kag.stat.visible_menu_button ? $(".button_menu").show() : $(".button_menu").hide();
+
         $(".event-setting-element").each((function() {
             var j_elm = $(this),
                 kind = j_elm.attr("data-event-tag"),
@@ -521,6 +536,25 @@ tyrano.plugin.kag.menu = {
             },
             val: ""
         };
+        this.kag.layer.hideEventLayer();
+
+
+        var that = this,
+            j_div = $(".layer_mask");
+        $("#root_layer_game").css("opacity", 1);
+        if (j_div.get(0)) {
+            var _effect = j_div.attr("data-effect");
+            j_div.removeClass("animated " + _effect);
+            j_div.css("animation-duration", parseInt(3000) + "ms");
+            j_div.addClass("animated " + "fadeOut").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", (function() {
+                j_div.remove();
+                that.kag.layer.showEventLayer();
+        }))
+        } else {
+            that.kag.layer.showEventLayer();
+        }
+
+
         this.kag.clearTmpVariable();
         this.kag.ftag.nextOrderWithIndex(data.current_order_index, data.stat.current_scenario, !0, insert, "yes")
     },
