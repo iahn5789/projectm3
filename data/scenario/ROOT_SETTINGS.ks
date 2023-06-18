@@ -165,6 +165,14 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 
 [button name="teststart" storage="Test_Wait_Teststart_01.ks" target="teststartcheck" graphic="../image/New_GUI/Test_UI/Button_Test_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_02.png" width="348" height="106" x="830" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
+
+[html]
+<div class="help03">
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt="">
+</div>
+[endhtml]
+
 [_tb_end_tyrano_code]
 
 [return  ]
@@ -222,6 +230,14 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 
 [button name="teststart" storage="Test_Wait_Teststart_01.ks" target="teststartcheck" graphic="../image/New_GUI/Test_UI/Button_Test_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_02.png" width="348" height="106" x="830" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
+
+[html]
+<div class="help03">
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt="">
+</div>
+[endhtml]
+
 [_tb_end_tyrano_code]
 
 [return  ]
@@ -279,6 +295,14 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 
 [button name="teststart" storage="Test_Wait_Teststart_01.ks" target="teststartcheck" graphic="../image/New_GUI/Test_UI/Button_Test_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_02.png" width="348" height="106" x="830" y="1100" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
+
+[html]
+<div class="help03">
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt="">
+</div>
+[endhtml]
+
 [_tb_end_tyrano_code]
 
 [return  ]
