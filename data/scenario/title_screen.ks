@@ -3,6 +3,7 @@
 [hidemenubutton]
 
 [tb_start_tyrano_code]
+[cursor storage = "my_cursor.png"]
 [title_first]
 [freeimage layer=0]
 [_tb_end_tyrano_code]
