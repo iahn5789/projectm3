@@ -738,19 +738,32 @@ body{
 
 .AUT {
   position: absolute;
-  top: 18px;
-  left: 1800px;
+  top: 9px;
+  left: 1807px;
   color: #ffffff;
-  font-size: 33px;
+  font-size: 25px;
+  padding: 5px 0 0 5px;
+  width: 83px;
+  height: 32px;
+  letter-spacing: 2px;
+  border-style: double;
+  border-width: 9px;
+  border-color: #656565;
+  background-color: rgb(0, 0, 0);
+  text-shadow: 1px 1px #656565;
+  border-radius: 16px;
+  opacity: 0.5;
 }
 
 .loader {
   position: absolute;
-  top: 35px;
-  left: 1880px;
+  top: 36px;
+  left: 1888px;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
+  z-index: 99999;
+  opacity: 0.7;
   animation: spin .6s linear infinite reverse;
 }
 
