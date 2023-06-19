@@ -119,10 +119,10 @@ function b () {window.addEventListener("load", function() {
           for (let i = 0; i < fixLayers.length; i++) {
             if (fixLayers[i].classList.contains('hidden')) {
               fixLayers[i].classList.remove('hidden');
-              fixLayers[i].style.transform = 'translateX(0)';
+              fixLayers[i].style.transform = 'translateX(-225%)';
             } else {
               fixLayers[i].classList.add('hidden');
-              fixLayers[i].style.transform = 'translateX(250%)';
+              fixLayers[i].style.transform = 'translateX(0)';
             }  
           }
         }
@@ -136,7 +136,7 @@ document.addEventListener('click', function(event) {
       if (!fixLayers[i].classList.contains('hidden') && fixLayers[i].src.includes('Menu_UI')) {
         fixLayers[i].classList.add('hidden');
         fixLayers[i].style.display = 'block';
-        fixLayers[i].style.transform = 'translateX(250%)';
+        fixLayers[i].style.transform = 'translateX(0)';
       }
     }
   }
