@@ -57,8 +57,8 @@
 </div>
 [endhtml]
 
-[button name="testin" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Button_Test_In_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_In_02.png" width="233" height="67" x="708" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
-[button name="testback" storage="Test_Wait_Teststart_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="978" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="testin" storage="Test_Start_01.ks" target="teststart" graphic="../image/New_GUI/Test_UI/Button_Test_In_01.png" enterimg="../image/New_GUI/Test_UI/Button_Test_In_02.png" width="233" height="67" x="708" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Exam_Open_Paper_01.wav"]
+[button name="testback" storage="Test_Wait_Teststart_01.ks" target="testback" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="978" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Exam_Desk_Draw_01.wav"]
 [anim name="testin" top=967 time=300 effect=easeInQuad]
 [anim name="testback" top=967 time=300 effect=easeInQuad]
 [_tb_end_tyrano_code]
