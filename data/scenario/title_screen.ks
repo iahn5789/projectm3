@@ -32,6 +32,7 @@
 [_tb_end_tyrano_code]
 
 [mask_off  time="1000"  effect="fadeOut"  ]
+[call  storage="Particle_Test_Scene_01.ks"  target="*Buble_particle"  ]
 [s  ]
 *START
 
@@ -46,9 +47,9 @@
 [anim name="gamenote" top=1300 time=100 effect=easeInQuad]
 [anim name="exit" top=1300 time=100 effect=easeInQuad]
 [wa]
+[delete_particle]
 [_tb_end_tyrano_code]
 
-[cm  ]
 [stopbgm  time="1000"  fadeout="true"  ]
 [jump  storage="input_name_scene_01.ks"  target="*l_jump_1"  ]
 [s  ]

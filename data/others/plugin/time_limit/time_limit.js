@@ -246,3 +246,18 @@ TYRANO.kag.ftag.master_tag.change_number = {
         }
     }
 }
+
+
+
+TYRANO.kag.ftag.master_tag.delete_particle = {
+    vital: [],
+    pm: {
+        particle_name : "canvas"
+    },
+    start: function (pm) {
+
+        var _childNode =document.querySelector("#"+ pm.particle_name);
+        _childNode.parentNode.remove();
+        TYRANO.kag.ftag.nextOrder();
+    }
+}
