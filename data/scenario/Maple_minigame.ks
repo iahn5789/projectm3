@@ -22,18 +22,52 @@
 <button id="stop" name="stop" class="btn btn-success button-style">
 멈춰!
 </button>
+<p id="collect"></p>
 </div>
 </div>
 
 [endhtml]
 
 [iscript]
+
+
+var H = !1
+, W = null;
+function Starcatch_time() {
+console.log("inputstarcatchtimer1");
+W = setInterval(function() {
+console.log("inputstarcatchtimer2");
+var e = parseInt($("#starcatch_timer").text());
+e <= 0 ? $("#stop").click() : $("#starcatch_timer").text(e - 1)}, 1e3)
+}
+
+function R() {
+try {
+
+clearInterval(W),
+W = null,
+
+H = !1
+} catch (e) {}
+}
+
 const myButton = document.getElementById('stop');
 const myAnimation = document.getElementById('starcatch_item');
-
+Starcatch_time();
 myButton.addEventListener('click', () => {
+var s = $("#starcatch_item").offset().left, v = $("#starcatch_zone").offset().left;
+var f = s - v;
+var _ = 0-10;
+var g = 62;
+h = !!(f > _) && !!(f < g);
+var d = "";
+h && (d = "[스타캐치 ⭐]");
+$("#collect").text(d);
 myAnimation.style.animationPlayState = 'paused';
+R();
 });
+
+
 [endscript]
 
 [_tb_end_tyrano_code]
