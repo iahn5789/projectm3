@@ -196,4 +196,91 @@ tf.savetext = "<span style='font-size:10px'>"+tf.save_date+"</span><br />"+tf.ti
 
 [return]
 
+;강여진 캐릭터 일러스트 코드
+[macro name="kang_ill"]
 
+	[chara_new name="Kang" storage="chara/Kang_Sc/bin.png" zindex=1 jname="Kang" width="813" height="1903" ]
+
+	[chara_layer name="Kang" part="body" id="1" storage="chara/Kang_SC/Kang_Body_Sc_01.png" zindex=20 ]
+	[chara_layer name="Kang" part="body" id="2" storage="chara/Kang_SC/Kang_Body_Sc_02.png" zindex=20 ]
+	[chara_layer name="Kang" part="body" id="3" storage="chara/Kang_SC/Kang_Body_Sc_03.png" zindex=20 ]
+	[chara_layer name="Kang" part="body" id="4" storage="chara/Kang_SC/Kang_Body_Sc_04.png" zindex=20 ]
+	[chara_layer name="Kang" part="body" id="5" storage="chara/Kang_SC/Kang_Body_Sc_05.png" zindex=20 ]
+	[chara_layer name="Kang" part="body" id="6" storage="chara/Kang_SC/Kang_Body_Sc_06.png" zindex=20 ]
+	[chara_layer name="Kang" part="body" id="7" storage="chara/Kang_SC/Kang_Body_Sc_07.png" zindex=20 ]
+
+	[chara_layer name="Kang" part="face" id="1" storage="chara/Kang_SC/Kang_Face_Base_Sc_01.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="2" storage="chara/Kang_SC/Kang_Face_Smile_Sc_01.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="3" storage="chara/Kang_SC/Kang_Face_Shy_Sc_01.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="4" storage="chara/Kang_SC/Kang_Face_Angry_Sc_01.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="5" storage="chara/Kang_SC/Kang_Face_Angry_Sc_02.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="6" storage="chara/Kang_SC/Kang_Face_Surprise_Sc_01.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="7" storage="chara/Kang_SC/Kang_Face_Worry_Sc_01.png" zindex=21 ]
+	[chara_layer name="Kang" part="face" id="8" storage="chara/Kang_SC/Kang_Face_Embarrass_Sc_01.png" zindex=21 ]
+
+[endmacro]
+
+;진다영 캐릭터 일러스트 코드
+[macro name="jin_ill"]
+
+	[chara_new name="Jin" storage="chara/Jin_Sc/bin.png" zindex=1 jname="Jin" width="813" height="1903" ]
+
+	[chara_layer name="Jin" part="body" id="1" storage="chara/Jin_SC/Jin_Body_Sc_01.png" zindex=20 ]
+	[chara_layer name="Jin" part="body" id="2" storage="chara/Jin_SC/Jin_Body_Sc_02.png" zindex=20 ]
+	[chara_layer name="Jin" part="body" id="3" storage="chara/Jin_SC/Jin_Body_Sc_03.png" zindex=20 ]
+	[chara_layer name="Jin" part="body" id="4" storage="chara/Jin_SC/Jin_Body_Sc_04.png" zindex=20 ]
+	[chara_layer name="Jin" part="body" id="5" storage="chara/Jin_SC/Jin_Body_Sc_05.png" zindex=20 ]
+	[chara_layer name="Jin" part="body" id="6" storage="chara/Jin_SC/Jin_Body_Sc_06.png" zindex=20 ]
+	[chara_layer name="Jin" part="body" id="7" storage="chara/Jin_SC/Jin_Body_Sc_07.png" zindex=20 ]
+
+	[chara_layer name="Jin" part="face" id="1" storage="chara/Jin_SC/Jin_Face_Base_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jin" part="face" id="2" storage="chara/Jin_SC/Jin_Face_Smile_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jin" part="face" id="3" storage="chara/Jin_SC/Jin_Face_Shy_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jin" part="face" id="4" storage="chara/Jin_SC/Jin_Face_Angry_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jin" part="face" id="6" storage="chara/Jin_SC/Jin_Face_Surprise_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jin" part="face" id="8" storage="chara/Jin_SC/Jin_Face_Embarrass_Sc_01.png" zindex=21 ]
+
+[endmacro]
+
+;설나희 캐릭터 일러스트 코드
+[macro name="sul_ill"]
+
+	[chara_new name="Sul" storage="chara/Sul_Sc/bin.png" zindex=1 jname="Sul" width="813" height="1903" ]
+
+	[chara_layer name="Sul" part="body" id="1" storage="chara/Sul_SC/Sul_Body_Sc_01.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="2" storage="chara/Sul_SC/Sul_Body_Sc_02.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="3" storage="chara/Sul_SC/Sul_Body_Sc_03.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="4" storage="chara/Sul_SC/Sul_Body_Sc_04.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="5" storage="chara/Sul_SC/Sul_Body_Sc_05.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="6" storage="chara/Sul_SC/Sul_Body_Sc_06.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="7" storage="chara/Sul_SC/Sul_Body_Sc_07.png" zindex=20 ]
+	[chara_layer name="Sul" part="body" id="8" storage="chara/Sul_SC/Sul_Body_Sc_08.png" zindex=20 ]
+
+	[chara_layer name="Sul" part="face" id="1" storage="chara/Sul_SC/Sul_Face_Base_Sc_01.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="2" storage="chara/Sul_SC/Sul_Face_Smile_Sc_01.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="3" storage="chara/Sul_SC/Sul_Face_Shy_Sc_01.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="4" storage="chara/Sul_SC/Sul_Face_Angry_Sc_01.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="5" storage="chara/Sul_SC/Sul_Face_Angry_Sc_02.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="7" storage="chara/Sul_SC/Sul_Face_Worry_Sc_01.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="8" storage="chara/Sul_SC/Sul_Face_Embarrass_Sc_01.png" zindex=21 ]
+	[chara_layer name="Sul" part="face" id="9" storage="chara/Sul_SC/Sul_Face_Aversion_Sc_01.png" zindex=21 ]
+
+[endmacro]
+
+;진대용 캐릭터 일러스트 코드
+[macro name="jeon_ill"]
+
+	[chara_new name="Jeon" storage="chara/Jeon_Sc/bin.png" zindex=1 jname="Jeon" width="1444" height="2735" ]
+
+	[chara_layer name="Jeon" part="body" id="1" storage="chara/Jeon_SC/Jeon_Body_Sc_01.png" zindex=20 ]
+	[chara_layer name="Jeon" part="body" id="2" storage="chara/Jeon_SC/Jeon_Body_Sc_02.png" zindex=20 ]
+	[chara_layer name="Jeon" part="body" id="3" storage="chara/Jeon_SC/Jeon_Body_Sc_03.png" zindex=20 ]
+	[chara_layer name="Jeon" part="body" id="4" storage="chara/Jeon_SC/Jeon_Body_Sc_04.png" zindex=20 ]
+
+	[chara_layer name="Jeon" part="face" id="1" storage="chara/Jeon_SC/Jeon_Face_Base_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jeon" part="face" id="2" storage="chara/Jeon_SC/Jeon_Face_Smile_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jeon" part="face" id="4" storage="chara/Jeon_SC/Jeon_Face_Angry_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jeon" part="face" id="6" storage="chara/Jeon_SC/Jeon_Face_Surprise_Sc_01.png" zindex=21 ]
+	[chara_layer name="Jeon" part="face" id="8" storage="chara/Jeon_SC/Jeon_Face_Embarrass_Sc_01.png" zindex=21 ]
+
+[endmacro]
