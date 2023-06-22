@@ -101,9 +101,6 @@
 #&[sf.name]
 변태다...[p]
 ;[chara_hide_all time=200 wait=false]
-[jeon_ill]
-[chara_part name="Jeon" body="3" face="1" ]
-[chara_show name="Jeon" top="0" left="362" width=1004 height=1903 time=300 wait=false ]
 #전대용
 뭐? 하하! 자기소개라도 하는 건가?[p]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
