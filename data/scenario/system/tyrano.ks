@@ -194,8 +194,6 @@ tf.savetext = "<span style='font-size:10px'>"+tf.save_date+"</span><br />"+tf.ti
 
 [endmacro]
 
-[return]
-
 ;강여진 캐릭터 일러스트 코드
 [macro name="kang_ill"]
 
@@ -284,3 +282,5 @@ tf.savetext = "<span style='font-size:10px'>"+tf.save_date+"</span><br />"+tf.ti
 	[chara_layer name="Jeon" part="face" id="8" storage="chara/Jeon_SC/Jeon_Face_Embarrass_Sc_01.png" zindex=21 ]
 
 [endmacro]
+
+[return]
