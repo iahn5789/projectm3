@@ -173,3 +173,6 @@
 멀리서 동아리 꼭 생각해 보라는 대용이의 말이[r]마지막으로 들려왔다.[p]
 [_tb_end_tyrano_code]
 
+[tb_hide_message_window  ]
+[mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[jump  storage="A_01_Prologue_03.ks"  target="*in_01"  ]
