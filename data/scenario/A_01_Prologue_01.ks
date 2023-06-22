@@ -2,6 +2,7 @@
 
 *in01
 
+[call  storage="Particle_Test_Scene_01.ks"  target="*dust_particle"  ]
 [tb_keyconfig  flag="1"  ]
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
@@ -24,7 +25,6 @@
 [_tb_end_tyrano_code]
 
 [bg  time="500"  method="crossfade"  storage="Common_Black.jpg"  ]
-[call  storage="Particle_Test_Scene_01.ks"  target="*dust_particle"  ]
 [quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [tb_start_tyrano_code]
@@ -251,4 +251,8 @@
 
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[cm]
+[_tb_end_tyrano_code]
+
 [jump  storage="A_01_Prologue_02.ks"  target="*in01"  ]
