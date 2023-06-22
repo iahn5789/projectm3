@@ -169,6 +169,40 @@ tyrano.plugin.kag.tag.endhtml = {
         this.kag.ftag.nextOrder()
     }
 };
+tyrano.plugin.kag.tag.particlehtml = {
+    pm: {
+        layer: "",
+        zindex: 5,
+        top: 0,
+        left: 0
+    },
+    start: function(pm) {
+        this.kag.stat.is_html = !0;
+        this.kag.stat.map_html = {};
+        this.kag.stat.map_html.buff_html = "";
+        this.kag.stat.map_html.buff_pm = pm;
+        this.kag.ftag.nextOrder()
+    }
+};
+tyrano.plugin.kag.tag.particleendhtml = {
+    start: function(pm) {
+        var tpm = this.kag.stat.map_html.buff_pm,
+            html = this.kag.stat.map_html.buff_html,
+            html_obj = $("<div></div>");
+        html_obj.css("position", "absolute");
+        html_obj.css("top", tpm.top + "px");
+        html_obj.css("left", tpm.left + "px");
+        $.setName(html_obj, tpm.name);
+        html_obj.append($(html));
+        var layer_particle = this.kag.layer.getParticleLayer();
+        layer_particle.css("z-index", tpm.zindex);
+        layer_particle.append(html_obj);
+        layer_particle.show();
+        this.kag.stat.is_html = !1;
+        this.kag.stat.map_html = {};
+        this.kag.ftag.nextOrder()
+    }
+};
 tyrano.plugin.kag.tag.emb = {
     vital: ["exp"],
     pm: {

@@ -4,6 +4,7 @@ tyrano.plugin.kag.layer = {
     layer_event: {},
     layer_menu: {},
     layer_free: {},
+    layer_particle: {},
     map_layer_fore: {},
     map_layer_back: {},
     is_swipe: !1,
@@ -30,13 +31,21 @@ tyrano.plugin.kag.layer = {
         var layer_free = $("<div class='layer layer_free' style='z-index:9998;display:none' ></div>");
         layer_free.css("width", this.kag.config.scWidth).css("height", this.kag.config.scHeight).css("position", "absolute");
         this.layer_free = layer_free;
-        this.appendLayer(this.layer_free, "root_layer_system")
+        this.appendLayer(this.layer_free, "root_layer_system");
+        var layer_particle = $("<div class='layer layer_particle' style='z-index:5;display:none'></div>");
+        layer_particle.css("width", this.kag.config.scWidth).css("height", this.kag.config.scHeight).css("position", "absolute");
+        this.layer_particle = layer_particle;
+        this.appendLayer(this.layer_particle, "root_layer_system");
+
     },
     getMenuLayer: function() {
         return this.layer_menu
     },
     getFreeLayer: function() {
         return this.layer_free
+    },
+    getParticleLayer: function() {
+        return this.layer_particle
     },
     addLayer: function(layer_name) {
         var system_layer = "",

@@ -700,7 +700,7 @@ tyrano.plugin.kag.tag.chara_show = {
         top: "0",
         width: "",
         height: "",
-        zindex: "1",
+        zindex: "10",
         depth: "front",
         reflect: "",
         face: "",

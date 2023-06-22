@@ -24,6 +24,7 @@
 [_tb_end_tyrano_code]
 
 [bg  time="500"  method="crossfade"  storage="Common_Black.jpg"  ]
+[call  storage="Particle_Test_Scene_01.ks"  target="*dust_particle"  ]
 [quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [tb_start_tyrano_code]
