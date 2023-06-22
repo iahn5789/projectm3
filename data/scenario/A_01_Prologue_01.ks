@@ -250,4 +250,4 @@
 
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
-[jump  storage="A_01_Prologue_01.ks"  target=""  ]
+[jump  storage="A_01_Prologue_02.ks"  target="*in01"  ]
