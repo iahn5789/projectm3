@@ -7,7 +7,7 @@
 <style>
 
 </style>
-<canvas id="canvas"></canvas>
+<canvas id="buble_particle"></canvas>
 [particleendhtml]
 
 [_tb_end_tyrano_code]
@@ -38,8 +38,8 @@ this.fps = 60;
 //number of particles
 this.numParticles = 75;
 //required canvas variables
-this.canvas = document.getElementById('canvas');
-this.ctx = this.canvas.getContext('2d');
+this.buble_particle = document.getElementById('buble_particle');
+this.ctx = this.buble_particle.getContext('2d');
 }
 Particles.prototype.init = function(){
 this.render();
@@ -52,8 +52,8 @@ Particles.prototype.render = function(){
 var self = this,
 wHeight = $(window).height(),
 wWidth = $(window).width();
-self.canvas.width = wWidth;
-self.canvas.height = wHeight;
+self.buble_particle.width = wWidth;
+self.buble_particle.height = wHeight;
 $(window).on('resize', self.render);
 }
 Particles.prototype.createCircle = function(){
@@ -63,8 +63,8 @@ var self = this,
 color = self.colors[~~(self._rand(0, self.colors.length))];
 particle[i] = {
 radius    : self._rand(self.minRadius, self.maxRadius),
-xPos      : self._rand(0, canvas.width),
-yPos      : self._rand(0, canvas.height),
+xPos      : self._rand(0, buble_particle.width),
+yPos      : self._rand(0, buble_particle.height),
 xVelocity : self._rand(self.minSpeed, self.maxSpeed),
 yVelocity : self._rand(self.minSpeed, self.maxSpeed),
 color     : 'rgba(' + color + ',' + self._rand(self.minOpacity, self.maxOpacity) + ')'
@@ -99,7 +99,10 @@ ctx.fill();
 Particles.prototype.animate = function(particle){
 var self = this,
 ctx = self.ctx;
-setInterval(function(){
+var particle_interval = setInterval(function(){
+    if(!document.querySelector('#buble_particle')){
+        clearInterval(particle_interval);
+    }
 //clears canvas
 self.clearCanvas();
 //then redraws particles in new positions based on velocity
@@ -107,7 +110,7 @@ for (var i = 0; i < self.numParticles; i++) {
 particle[i].xPos += particle[i].xVelocity;
 particle[i].yPos -= particle[i].yVelocity;
 //if particle goes off screen call reset method to place it offscreen to the left/bottom
-if (particle[i].xPos > self.canvas.width + particle[i].radius || particle[i].yPos > self.canvas.height + particle[i].radius) {
+if (particle[i].xPos > self.buble_particle.width + particle[i].radius || particle[i].yPos > self.buble_particle.height + particle[i].radius) {
 self.resetParticle(particle, i);
 } else {
 self.draw(particle, i);
@@ -121,17 +124,19 @@ var random = self._rand(0, 1);
 if (random > .5) {
 // 50% chance particle comes from left side of window...
 particle[i].xPos = -particle[i].radius;
-particle[i].yPos = self._rand(0, canvas.height);
+particle[i].yPos = self._rand(0, buble_particle.height);
 } else {
 //... or bottom of window
-particle[i].xPos = self._rand(0, canvas.width);
-particle[i].yPos = canvas.height + particle[i].radius;
+particle[i].xPos = self._rand(0, buble_particle.width);
+particle[i].yPos = buble_particle.height + particle[i].radius;
 }
 //redraw particle with new values
 self.draw(particle, i);
 }
 Particles.prototype.clearCanvas = function(){
-this.ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if(document.getElementById('buble_particle')){
+this.ctx.clearRect(0, 0, buble_particle.width, buble_particle.height);
+}
 }
 var particle = new Particles().init();
 [endscript]
@@ -274,7 +279,7 @@ box-shadow: 233px 1976px #3A3A3A , 1196px 1119px #3A3A3A , 646px 740px #3A3A3A ,
 
 
 </style>
-<div class="nc-main bg-cover bg-cc">
+<div id="dust_particle" class="nc-main bg-cover bg-cc">
 
 <div class="full-wh">
 

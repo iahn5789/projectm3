@@ -25,6 +25,10 @@
 [_tb_end_tyrano_code]
 
 [bg  time="500"  method="crossfade"  storage="Common_Black.jpg"  ]
+[tb_start_tyrano_code]
+[delete_particle particle_name=dust_particle]
+[_tb_end_tyrano_code]
+
 [quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [tb_start_tyrano_code]

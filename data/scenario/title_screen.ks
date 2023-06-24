@@ -47,7 +47,7 @@
 [anim name="gamenote" top=1300 time=100 effect=easeInQuad]
 [anim name="exit" top=1300 time=100 effect=easeInQuad]
 [wa]
-[delete_particle]
+[delete_particle particle_name=buble_particle]
 [_tb_end_tyrano_code]
 
 [stopbgm  time="1000"  fadeout="true"  ]
