@@ -12,8 +12,12 @@
 #
 아직은 익숙하지 않은 하굣길.[p]
 아스팔트의 질감부터 하늘의 모양까지 모든 게[r]새롭기만 하다.[p]
+[jeon_ill]
+[chara_part name="Jeon" body="2" face="2" ]
+[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
 #전대용
 그래서 내가 어제 그걸 보는데...[p]
+[chara_part name="Jeon" body="2" face="6" ]
 #전대용
 ...[p]
 #&[sf.name]
@@ -24,11 +28,13 @@
 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정으로[r]물어보았다.[p]
 #&[sf.name]
 지금? 여섯 시.[p]
-[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[chara_part name="Jeon" body="4" face="4" ]
 #전대용
 뭐!!! 여!섯!시!?[p]
 #&[sf.name]
 아 깜짝이야! 또 뭔데[p]
+[chara_hide_all time=300 wait=false]
 #
 처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너편에[r]있는 편의점으로 사라져 버렸다.[p]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
@@ -69,37 +75,49 @@
 
 [tb_start_tyrano_code]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[jeon_ill]
+[chara_part name="Jeon" body="2" face="1" ]
+[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
 #&[sf.name]
 야! 어디 갔다 온 거야![p]
+[chara_part name="Jeon" body="2" face="6" ]
 #전대용
 어디긴. 음료수 사러 갔다 왔지.[p]
 #&[sf.name]
 그러니까... 이걸 사려고 소리까지 지르면서 달려간 거야?[p]
+[chara_part name="Jeon" body="4" face="1" ]
 #전대용
 성공한 사람들은 항상 자기만의 인생 루틴을 따른다고[r]하지..[p]
 #전대용
 나에게 있어 여섯 시는 음료수를 마셔야 하는 시간이야.[p]
 #&[sf.name]
 하... 그럼 각 시간마다 먹는 음식이 있는 거야?[p]
+[chara_part name="Jeon" body="4" face="4" ]
 #전대용
 당연하지![p]
+[chara_part name="Jeon" body="3" face="4" ]
 #전대용
 아침, 점심, 저녁을 제외하고 여섯 시는 음료수를[r]마시는 시간! 아홉 시는 간식을 먹는 시간이지![p]
 #&[sf.name]
 그래. 루틴대로 살아서 성공하길 빈다.[p]
+[chara_hide_all time=300 wait=false]
 #
 대용이와 대화를 주고받으며 손에 들고 있던 전단지를[r]구겼다.[p]
 #&[sf.name]
 나 이것 좀 버리고 올게.[p]
+[chara_part name="Jeon" body="1" face="6" ]
+[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
 #전대용
 빨리 다녀와. 일곱 시에는 집에서 밥 먹는 게 내[r]루틴이라고.[p]
 #&[sf.name]
 알겠으니 그 루틴 이야기 좀 제발 그만해.[p]
+[chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 #
 근처에 보이는 쓰레기통에 전단지을 던져넣었다[p]
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 #
 휙-![p]
 #
@@ -124,10 +142,14 @@
 어! 지금 갈게![p]
 #
 손에 들고 있던 앨범을 쓰레기통에 같이 버린 뒤[r]대용이에게 향했다.[p]
+[jeon_ill]
+[chara_part name="Jeon" body="1" face="1" ]
+[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
 #전대용
 이런이런. 이러면 내 루틴에 지장이 생긴다고?[p]
 #&[sf.name]
 루틴 이야기 한 번만 더 하면 나 먼저 집에 가버릴 거야.[p]
+[chara_part name="Jeon" body="1" face="6" ]
 #전대용
 어차피 먼저 가도 할 거 없을 텐데?[p]
 #&[sf.name]
@@ -135,46 +157,63 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[chara_part name="Jeon" body="4" face="8" ]
 #전대용
 맞다 그걸 깜박했군.[p]
+[chara_part name="Jeon" body="4" face="1" ]
+#전대용
 그나저나 무얼 버리고 온 거야?[p]
 #&[sf.name]
 너의 그 잘난 루틴 기다리는 동안 전단지 하나 받았어.[p]
 무슨...축제한다고 하던데.[p]
+[chara_part name="Jeon" body="1" face="6" ]
 #전대용
 축제? 나의 여신 프리덤이 나오는 그 축제 말하는 거야?[p]
 #&[sf.name]
 그 이상한 밴드?[p]
+[chara_part name="Jeon" body="3" face="2" ]
 #전대용
 오! 역시 알고 있던 거냐고?[p]
+[chara_part name="Jeon" body="3" face="1" ]
 #&[sf.name]
 몰라. 전단지에 적혀있는데 특이해서 기억하는 거지.[p]
+[chara_part name="Jeon" body="4" face="1" ]
 #전대용
 이런 이런.... 너는 프리덤의 매력이 무엇인지 전혀 모르는[r]모양이군.[p]
+[chara_hide_all time=300 wait=false]
 #
 대용이가 안경을 고쳐 쓰고선 이야기를 시작했다.[p]
+[chara_part name="Jeon" body="4" face="2" ]
+[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
 #전대용
 여자들로만 이루어져 있고 독특한 변장을 하고[r]연주하지만 내 눈은 속일 순 없지.[p]
+[chara_part name="Jeon" body="2" face="2" ]
 #전대용
 그 밴드를 보면 옷으로는 숨길 수 없는 힘숨찐의 냄새가[r]난다고.[p]
+[chara_part name="Jeon" body="4" face="2" ]
 #전대용
 이 정도 알아차리는 건 신사의 기본적인 소양이지.[p]
 #&[sf.name]
 그냥 네가 변태인 건 아니고?[p]
+[chara_part name="Jeon" body="4" face="4" ]
 #전대용
 신.사.[p]
 #&[sf.name]
 그래 알겠다...[p]
+[chara_part name="Jeon" body="4" face="1" ]
 #&[sf.name]
 일단 오늘 짐 정리를 다 끝내고 나서 이야기하는 거로[r]하자.[p]
 #&[sf.name]
 오늘까지 정리 안 하면 엄마가 날 죽일 거야.[p]
+[chara_part name="Jeon" body="2" face="1" ]
 #전대용
 그래 살아서 보자고. 내일 아침에 늦어서 내 루틴[r]망치지 말...[p]
 #&[sf.name]
 나 먼저 갈게.[p]
+[chara_hide_all time=300 wait=false]
 #
 아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해[r]걸어갔다.[p]
+[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 #전대용
 동아리 꼭 생각해보고![p]
 [_tb_end_tyrano_code]
