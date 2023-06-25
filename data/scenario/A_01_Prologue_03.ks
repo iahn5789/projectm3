@@ -37,7 +37,7 @@
 #아빠
 우리도 그랬는데 뭘-[p]
 #
-아빠와 눈이 마주치자 능글맞게 눈썹을 두 번[r]치켜올리셨다.
+아빠와 눈이 마주치자 능글맞게 눈썹을 두 번[r]치켜올리셨다.[p]
 #&[sf.name]
 아빠가 엄마를 자연스럽게 데리고 나가려는 도중[r]엄마가 멈춰 서며 말씀하셨다.[p]
 #엄마
@@ -63,18 +63,24 @@
 침대에 몸을  잡생각이 떠올랐다.[r]
 동아리, 루틴, 전단지, 앨범, 짐정리...[p]
 낮에 꾸었던 꿈이 가장 크게 떠올랐다.[p]
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="Common_Home_Room_Bgi_02.png"  ]
+[tb_show_message_window  ]
 #&[sf.name]
 ( 그 꿈은 뭘까. )[p]
 #&[sf.name]
 ( 하필이면 수업 시간에 부끄럽게... )[p]
+[bg  time="500"  method="crossfade"  storage="Common_Home_Room_Bgi_03.png"  ]
 #&[sf.name]
 ( 한 번도 해본 적이 없는데 그런 꿈을 꾸는 게[r]참 이상하네... )[p]
+[bg  time="500"  method="crossfade"  storage="Common_Home_Room_Bgi_04.png"  ]
 #&[sf.name]
 ( 차라리 오늘 있던 일이 꿈이었으면 좋겠는데... )[p]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[bg  time="10"  method="crossfade"  storage="Common_Home_Room_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
