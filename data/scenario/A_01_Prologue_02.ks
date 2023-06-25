@@ -14,7 +14,7 @@
 아스팔트의 질감부터 하늘의 모양까지 모든 게[r]새롭기만 하다.[p]
 [jeon_ill]
 [chara_part name="Jeon" body="2" face="2" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 그래서 내가 어제 그걸 보는데...[p]
 [chara_part name="Jeon" body="2" face="6" ]
@@ -77,7 +77,7 @@
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jeon_ill]
 [chara_part name="Jeon" body="2" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #&[sf.name]
 야! 어디 갔다 온 거야![p]
 [chara_part name="Jeon" body="2" face="6" ]
@@ -106,7 +106,7 @@
 #&[sf.name]
 나 이것 좀 버리고 올게.[p]
 [chara_part name="Jeon" body="1" face="6" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 빨리 다녀와. 일곱 시에는 집에서 밥 먹는 게 내[r]루틴이라고.[p]
 #&[sf.name]
@@ -144,7 +144,7 @@
 손에 들고 있던 앨범을 쓰레기통에 같이 버린 뒤[r]대용이에게 향했다.[p]
 [jeon_ill]
 [chara_part name="Jeon" body="1" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 이런이런. 이러면 내 루틴에 지장이 생긴다고?[p]
 #&[sf.name]
@@ -184,7 +184,7 @@
 #
 대용이가 안경을 고쳐 쓰고선 이야기를 시작했다.[p]
 [chara_part name="Jeon" body="4" face="2" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 여자들로만 이루어져 있고 독특한 변장을 하고[r]연주하지만 내 눈은 속일 순 없지.[p]
 [chara_part name="Jeon" body="2" face="2" ]

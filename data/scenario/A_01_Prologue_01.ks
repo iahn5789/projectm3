@@ -107,7 +107,7 @@
 ;[chara_hide_all time=200 wait=false]
 [jeon_ill]
 [chara_part name="Jeon" body="1" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 뭐? 하하! 자기소개라도 하는 건가?[p]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
@@ -152,7 +152,7 @@
 [tb_start_tyrano_code]
 [jeon_ill]
 [chara_part name="Jeon" body="1" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 그건 그렇고 물어보고 싶은 게 있는데.[p]
 #전대용
@@ -195,7 +195,7 @@
 에...뭐?[p]
 [chara_hide_all time=300 wait=false]
 [chara_part name="Jeon" body="3" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="375" width="1004" height="1903" wait="false"]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 네가 좋던 싫든 간에 무조건 동아리에 들어가야 해.[p]
 #&[sf.name]
