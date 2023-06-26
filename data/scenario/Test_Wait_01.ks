@@ -57,13 +57,13 @@
 [anim name="setting" left=1668 time=500 effect=easeInQuad]
 
 [html]
-<div class="help01">
-<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
-<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt="">
+<div class="help01"/>
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt=""/>
 </div>
-<div class="help02">
-<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
-<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt="">
+<div class="help02"/>
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt=""/>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]

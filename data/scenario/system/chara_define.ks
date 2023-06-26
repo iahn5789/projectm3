@@ -30,4 +30,7 @@ f['testScene']='FALSE';
 f['testTime']=30; 
 f['testResult']=0; 
 f['change_number']='-12'; 
+f['kTopDay']=''; 
+f['sTopDay']=''; 
+f['jTopDay']=''; 
 [endscript] 

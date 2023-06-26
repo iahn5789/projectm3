@@ -31,13 +31,13 @@
 
 [tb_start_tyrano_code]
 [html]
-<div class="help011">
-<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
-<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt="">
+<div class="help011"/>
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt=""/>
 </div>
-<div class="help022">
-<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
-<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt="">
+<div class="help022"/>
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt=""/>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]
@@ -96,13 +96,13 @@
 
 [tb_start_tyrano_code]
 [html]
-<div class="help011">
-<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
-<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt="">
+<div class="help011"/>
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt=""/>
 </div>
-<div class="help022">
-<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt="">
-<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt="">
+<div class="help022"/>
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt=""/>
 </div>
 [endhtml]
 [_tb_end_tyrano_code]

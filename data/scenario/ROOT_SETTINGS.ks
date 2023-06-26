@@ -40,7 +40,11 @@
 [tb_start_tyrano_code]
 [if exp="f.common_poster_choice_whether === 'FALSE'"]
 [clearfix name="lootcommon"]
+[if exp="f.klove < 21"]
 [button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_01.png" width="274" height="410" x="869" y="-600" z-index="100"]
+[else]
+[button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_03.png" width="274" height="410" x="869" y="-600" z-index="100"]
+[endif]
 [else]
 [clearfix name="lootcommon"]
 [button name="lootcommon" storage="ROOT_SETTINGS.ks" fix="true" target="Common_Bt_Click" graphic="../image/New_GUI/Test_UI/Loot_All_02.png" width="274" height="410" x="869" y="-600" z-index="100"]
@@ -89,7 +93,15 @@
 [return  ]
 *Common_Bt_Click
 
+[tb_start_tyrano_code]
+[if exp="f.klove >= 21"]
 [jump  storage="ROOT_SETTINGS.ks"  target="*Common_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
+[else]
+;호감도가 안될때
+
+[endif]
+[_tb_end_tyrano_code]
+
 [return  ]
 *Common_Bt_Click_02
 
