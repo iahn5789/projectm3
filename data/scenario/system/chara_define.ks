@@ -8,7 +8,7 @@ f['money']=1000;
 f['klove']=20; 
 f['jlove']=20; 
 f['slove']=20; 
-f['Day']=1; 
+f['Day']=2; 
 f['story']=''; 
 f['answer']=''; 
 f['score']=100; 
@@ -30,7 +30,7 @@ f['testScene']='FALSE';
 f['testTime']=30; 
 f['testResult']=0; 
 f['change_number']='-12'; 
-f['kTopDay']=''; 
+f['kTopDay']=5; 
 f['sTopDay']=''; 
 f['jTopDay']=''; 
 [endscript] 
