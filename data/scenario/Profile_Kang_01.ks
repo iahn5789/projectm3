@@ -1,8 +1,9 @@
 [_tb_system_call storage=system/_Profile_Kang_01.ks]
 
 [mask  time="300"  effect="fadeIn"  color="0x000000"  ]
-*Profile_Kang_00
+*profile_Kang_00
 
+[tb_keyconfig  flag="0"  ]
 [bg  time="1000"  method="crossfade"  storage="Profile_BGI/Profile_Kang_01.png"  ]
 [tb_start_tyrano_code]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=23 x=166 y=931 width=97 height=31 edge="0xFFFFFF" color="0xFF4F6E" align="center" vertical=false face="NanumGothicBold" ]
@@ -11,8 +12,8 @@
 [image layer=1 width=399 height=42 left=1321 top=620 page=fore visible=true name=02_02 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/02_02.png" zindex=10 ]
 [image layer=1 width=399 height=42 left=906 top=667 page=fore visible=true name=02_03 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/02_03.png" zindex=10 ]
 [image layer=1 width=399 height=42 left=1321 top=667 page=fore visible=true name=02_04 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/02_04.png" zindex=10 ]
-[image layer=1 width=399 height=42 left=1321 top=714 page=fore visible=true name=07_01 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/07_01.png" zindex=10 ]
-[image layer=1 width=399 height=42 left=906 top=714 page=fore visible=true name=10_01 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/10_01.png" zindex=10 ]
+[image layer=1 width=399 height=42 left=1321 top=715 page=fore visible=true name=07_01 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/07_01.png" zindex=10 ]
+[image layer=1 width=399 height=42 left=906 top=715 page=fore visible=true name=10_01 storage ="../image/New_GUI/Profile_UI/Profile_UI_Kang/10_01.png" zindex=10 ]
 [image layer=1 width=902 height=679 left=862 top=245 page=fore visible=true name=profilekang01 storage ="../image/New_GUI/Profile_UI/UI_Profile_Kang_01.png" zindex=5 ]
 
 [button name="next" storage="Profile_Kang_01.ks" target="profile_kang_02" graphic="../image/New_GUI/Profile_UI/Button_Next_01.png" enterimg="../image/New_GUI/Profile_UI/Button_Next_02.png" width="80" height="40" x="1656" y="865" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
