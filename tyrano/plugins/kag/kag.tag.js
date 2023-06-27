@@ -1516,7 +1516,8 @@ tyrano.plugin.kag.tag.button = {
         clickimg: "",
         enterimg: "",
         auto_next: "yes",
-        role: ""
+        role: "",
+        zindex: 99999999
     },
     start: function(pm) {
         var target_layer = null;
@@ -1528,7 +1529,7 @@ tyrano.plugin.kag.tag.button = {
         j_button.attr("src", storage_url);
         j_button.css("position", "absolute");
         j_button.css("cursor", "pointer");
-        j_button.css("z-index", 99999999);
+        j_button.css("z-index", pm.zindex);
         "true" == pm.visible ? j_button.show() : j_button.hide();
         "" == pm.x ? j_button.css("left", this.kag.stat.locate.x + "px") : j_button.css("left", pm.x + "px");
         "" == pm.y ? j_button.css("top", this.kag.stat.locate.y + "px") : j_button.css("top", pm.y + "px");
