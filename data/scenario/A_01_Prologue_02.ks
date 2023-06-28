@@ -30,11 +30,20 @@
 지금? 여섯 시.[p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 [chara_part name="Jeon" body="4" face="4" ]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="UI/Common_Whistle_01.wav"  ]
+[tb_start_tyrano_code]
 #전대용
 뭐!!! 여!섯!시!?[p]
 #&[sf.name]
 아 깜짝이야! 또 뭔데[p]
 [chara_hide_all time=300 wait=false]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_ctr_run_01.wav"  ]
+[stopse  time="3000"  buf="1"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #
 처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너편에[r]있는 편의점으로 사라져 버렸다.[p]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
@@ -44,10 +53,15 @@
 뭐야 진짜...아무튼 이상한 놈이라니까..[p]
 #알바생
 안녕하세요![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="120"  time="500"  buf="1"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
 #
 눈앞에서 사라져 버린 전대용을 바라보던 와중 누군가가[r]다가왔다.[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="1"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 네? 저요?[p]
@@ -55,10 +69,19 @@
 다른 건 아니고 축제 홍보 때문에 그러는데요.[p]
 #알바생
 이번 주말에 진행하는 축제니 시간이 괜찮으시다면[r]오셔서 구경하고 가세요.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="120"  time="1000"  buf="1"  storage="SFX/Footsteps_Female_Ctr_Run_01.wav"  ]
+[stopse  time="5000"  buf="1"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #
 모자를 깊게 눌러쓴 알바생은 전단지를 내게 건네주고는[r]다른 사람에게 가버렸다.[p]
 #
 손에는 전단지 한 장이 민망하리만치 달랑 들려있었다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="110"  time="1000"  buf="1"  storage="UI/Exam_Open_Paper_01.wav"  fadein="false"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 이건... 뭐지...?[p]
 #&[sf.name]
@@ -69,10 +92,18 @@
 와... 이런 컨셉의 밴드가 축제에 나온다고? 신기하네.[p]
 #&[sf.name]
 이름이... 프리덤?[p]
+
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  fadeout="false"  ]
+[playse  volume="25"  time="1000"  buf="1"  storage="UI/Shop_Door_Click__01.wav"  ]
+[playse  volume="50"  time="1500"  buf="2"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
 #
 이때 편의점으로 사라져 버린 전대용이 양손에 음료수를[r]들고 나왔다.[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="1"  ]
 [tb_start_tyrano_code]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jeon_ill]
@@ -81,6 +112,10 @@
 #&[sf.name]
 야! 어디 갔다 온 거야![p]
 [chara_part name="Jeon" body="2" face="6" ]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="2"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #전대용
 어디긴. 음료수 사러 갔다 왔지.[p]
 #&[sf.name]
@@ -101,6 +136,10 @@
 #&[sf.name]
 그래. 루틴대로 살아서 성공하길 빈다.[p]
 [chara_hide_all time=300 wait=false]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Paper_Crumple_01.wav"  ]
+[tb_start_tyrano_code]
 #
 대용이와 대화를 주고받으며 손에 들고 있던 전단지를[r]구겼다.[p]
 #&[sf.name]
@@ -114,10 +153,15 @@
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="1"  ]
 [tb_start_tyrano_code]
 #
 근처에 보이는 쓰레기통에 전단지을 던져넣었다[p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[_tb_end_tyrano_code]
+
+[playse  volume="60"  time="1000"  buf="1"  storage="SFX/Whoosh_Paper_Cartoon_01.wav"  ]
+[tb_start_tyrano_code]
 #
 휙-![p]
 #
@@ -128,11 +172,19 @@
 떨어진 전단지 근처에 더러워 보이는 앨범이 땅바닥에[r]펼쳐져 있었다.[p]
 #&[sf.name]
 앨범? 이런 곳에?[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Beautiful_Bell_Tree_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
 #
 낡은 표지와 빛바랜 사진.[r]
 누가 봐도 앨범이 오래됐다고 느껴지기에 충분했다.[p]
 #
 사진 속에는 두 명의 남녀가 사이좋게 찍혀있었다.[r]연인관계인 것 같다.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1500"  buf="1"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 소중해 보이는 추억을 그냥 버리는구나.[p]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
@@ -196,8 +248,16 @@
 #&[sf.name]
 그냥 네가 변태인 건 아니고?[p]
 [chara_part name="Jeon" body="4" face="4" ]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Text_Kick_01.wav"  ]
+[tb_start_tyrano_code]
 #전대용
 신.사.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 그래 알겠다...[p]
 [chara_part name="Jeon" body="4" face="1" ]
@@ -211,13 +271,21 @@
 #&[sf.name]
 나 먼저 갈게.[p]
 [chara_hide_all time=300 wait=false]
+[_tb_end_tyrano_code]
+
+[playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
+[tb_start_tyrano_code]
 #
 아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해[r]걸어갔다.[p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #전대용
 동아리 꼭 생각해보고![p]
 [_tb_end_tyrano_code]
 
+[stopse  time="2000"  buf="1"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [jump  storage="A_01_Prologue_03.ks"  target="*in01"  ]
