@@ -6,6 +6,7 @@
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
+[playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Office_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Home_Room_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -18,17 +19,27 @@
 ( 후... 오늘 하루 정말 기네. 빨리 씻고 자야지. )[p]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Noke_01.wav"  ]
 [tb_start_tyrano_code]
 #
 짐을 내려놓고 씻을 준비를 하려던 찰나 노크 소리가 들리고 문이 열렸다.[p]
 [_tb_end_tyrano_code]
 
-[stopse  time="1000"  buf="1"  fadeout="true"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Door_Open_Squeak_01 -.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Noke_01.wav"  ]
+[tb_start_tyrano_code]
+#
+똑.  똑.  똑       [p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  fadeout="false"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Door_Open_Squeak_01.wav"  ]
 [tb_start_tyrano_code]
 #엄마
 아들 저녁 먹을 시간도 지났는데 학교에서 무슨 일 있었어?[p]
+
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 아... 그게... 친구랑 이야기하다가 늦었어요.[p]
 #엄마
@@ -39,6 +50,11 @@
 아들. 엄마한테는 솔직하게 말해야지.[p]
 #&[sf.name]
 그... 그러니까... 그게......[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Emotion_Angry_roar_01.wav"  ]
+[stopse  time="2000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 #엄마
 빨리 말 안 해!!![p]
@@ -63,6 +79,10 @@
 이사를 온 지 일주일 정도 지났지만, 아직 정리를 다 못[r]끝내서 상자 안에 있는 짐들이 아직 많다.[p]
 #&[sf.name]
 엄마가 정리하라고 하셨는데...[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Body_Fall_Bed_01.wav"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.[p]
 #&[sf.name]
@@ -76,10 +96,18 @@
 [tb_hide_message_window  ]
 [bg  time="3000"  method="crossfade"  storage="Common_Home_Room_Bgi_02.png"  ]
 [tb_show_message_window  ]
+[_tb_end_tyrano_code]
+
+[stopbgm  time="6000"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 ( 그 꿈은 뭘까. )[p]
 #&[sf.name]
 ( 하필이면 수업 시간에 부끄럽게... )[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
+[tb_start_tyrano_code]
 [bg  time="500"  method="crossfade"  storage="Common_Home_Room_Bgi_03.png"  ]
 #&[sf.name]
 ( 한 번도 해본 적이 없는데 그런 꿈을 꾸는 게[r]참 이상하네... )[p]
@@ -89,10 +117,14 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
+[stopbgm  time="1000"  fadeout="true"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[playse  volume="120"  time="1000"  buf="1"  storage="SFX/Common_Morning_Bird_Twitter_01.wav"  fadein="false"  ]
+[playse  volume="80"  time="500"  buf="5"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Home_Room_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
 아침의 시작을 알리는 새소리에 잠에서 깬 채 잠시 멍하니[r]누워있었다.[p]
@@ -100,6 +132,11 @@
 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.[p]
 #
 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Text_Kick_01.wav"  ]
+[playbgm  volume="110"  time="1000"  loop="true"  storage="Our_Story_Common_Classroom_01.wav"  ]
+[tb_start_tyrano_code]
 [quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
 #&[sf.name]
 !!![p]
@@ -111,12 +148,20 @@
 아들! 벌써 해 떴다 아침이야![p]
 #&[sf.name]
 네! 일어났어요![p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  ]
+[tb_start_tyrano_code]
 #
 나는 교복을 걸치다시피 한 채 집에서 부리나케[r]뛰쳐나왔다.[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="90"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Wood_Run_01.wav"  ]
+[stopse  time="1000"  buf="5"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
+[playse  volume="100"  time="1000"  buf="5"  storage="Amb/Amb_Road_01.wav"  fadein="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Road_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -146,8 +191,12 @@
 [chara_hide_all time="300" wait="false"]
 [_tb_end_tyrano_code]
 
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [tb_hide_message_window  ]
+[stopse  time="2500"  buf="0"  fadeout="true"  ]
+[stopse  time="1500"  buf="5"  fadeout="true"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[playse  volume="40"  time="1300"  buf="5"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -166,22 +215,35 @@
 [chara_hide_all time="300" wait="false"]
 #
 상상하기도 어려운 대용이의 동아리 활동 경험을 듣던[r]와중 교실 뒷문이 열렸다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="120"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_02.wav"  ]
+[tb_start_tyrano_code]
 #
-벌컥-[p]
+드르륵-      쿵! [p]
 #???
 네가 그 전학생이구나![p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[stopse  time="2000"  buf="5"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[playse  volume="100"  time="3000"  buf="4"  storage="SFX/Common_Beautiful_Bell_Tree_01.wav"  loop="true"  fadein="true"  ]
 [bg  time="500"  method="crossfade"  storage="Common_Black.jpg"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #
 문을 어찌나 세게 열었는지 쾅 하는 소리와 함께 약간의[r]바람을 타고 좋은 향기가 날라왔다.[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #&[sf.name]
 ( 예쁘다... )[p]
 #
@@ -190,19 +252,32 @@
 그 자리에는 처음 보는 여자애를 마주한 부끄러움만이[r]남아있었다.[p]
 #
 어떤 대답을 해야 할지 고민하는 와중에 눈앞의 여학생이[r]기다리지 못한 채 다시 말을 걸었다.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
+[playse  volume="100"  time="2000"  buf="5"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  fadein="true"  loop="true"  ]
+[tb_hide_message_window  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
+[tb_show_message_window  ]
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Common_Door_Noke_01.wav"  ]
+[stopse  time="2000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #???
 저기... 듣고 있는 거야?[p]
 #&[sf.name]
 어... 누구세요...?[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Common_String_Stab_Soft_01.wav"  ]
+[tb_start_tyrano_code]
 #???
-러브크레센도![p]
+러브크레센도!!!!! [p]
 #&[sf.name]
 ( ...진짜 학교에 소문이 다 난 거야?! )[p]
 [_tb_end_tyrano_code]
 
-[tb_hide_message_window  ]
-[bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
-[tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Footsteps_Female_Wood_Walk_01.wav"  fadein="true"  ]
+[stopse  time="3000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
 여학생은 나에게 볼일이 있다는 듯 교실로 들어와 내 앞에[r]멈춰선 채 말을 이어 나갔다.[p]
@@ -263,6 +338,11 @@
 [chara_part name="Kang" body="1" face="5" ]
 #강여진
 늦으면 안 돼![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Footsteps_Female_Wood_Walk_01.wav"  ]
+[stopse  time="3000"  buf="2"  fadeout="true"  ]
+[tb_start_tyrano_code]
 [chara_hide_all time="300" wait="false"]
 #
 일방적인 대화 끝에 여진이는 교실을 나갔다.[p]
@@ -282,10 +362,20 @@
 그럼! 당연히 알고 있지![p]
 #전대용
 도내 최상위S급쿨뷰티미녀![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="70"  time="1000"  buf="1"  storage="SFX/Common_Cartoon_Walla_01.wav"  loop="false"  ]
+[tb_start_tyrano_code]
 #전대용
-금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를...[p]
+금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를...                                                                                                                                                                             [er]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 [chara_part name="Jeon" body="4" face="8" ]
+
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  ]
+[playse  volume="70"  time="1000"  buf="2"  storage="UI/Common_Whistle_01.wav"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 그만! 거기까지![p]
 #전대용
@@ -305,6 +395,16 @@
 [chara_part name="Jeon" body="4" face="4" ]
 #전대용
 더는 묻지마라![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="40"  time="1000"  buf="1"  storage="UI/Common_Breaktime_Belltower_01.wav"  ]
+[tb_start_tyrano_code]
+#
+♪ ~ ♪ ~ ♪~ ♪♪ ~ ♬ [p]
+[_tb_end_tyrano_code]
+
+[stopse  time="3000"  buf="1"  fadeout="true"  ]
+[tb_start_tyrano_code]
 [chara_part name="Jeon" body="4" face="6" ]
 #전대용
 수업 종 울렸네. 난 간다![p]
@@ -320,5 +420,7 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[stopse  time="2000"  buf="5"  fadeout="true"  ]
 [jump  storage="A_01_Prologue_03.ks"  target=""  ]
