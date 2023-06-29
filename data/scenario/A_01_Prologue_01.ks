@@ -3,8 +3,8 @@
 *in01
 
 [call  storage="Particle_Test_Scene_01.ks"  target="*dust_particle"  ]
-[playse  volume="130"  time="1000"  buf="3"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
-[playbgm  volume="150"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="3"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
+[playbgm  volume="250"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
 [tb_keyconfig  flag="1"  ]
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
@@ -43,7 +43,7 @@
 [stopbgm  time="1000"  ]
 [playse  volume="75"  time="1000"  buf="1"  storage="SFX/Body_Fall_01.wav"  ]
 [playse  volume="140"  time="1000"  buf="0"  storage="SFX/Common_Desk_Rattle_01.wav"  ]
-[playse  volume="70"  time="1000"  buf="5"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
+[playse  volume="70"  time="1000"  buf="4"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
 [tb_start_tyrano_code]
 [t1]
 #&[sf.name]
@@ -103,10 +103,10 @@
 
 [playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [tb_hide_message_window  ]
-[stopse  time="1000"  buf="5"  fadeout="true"  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
-[playse  volume="100"  time="1000"  buf="5"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
+[playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Road_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]

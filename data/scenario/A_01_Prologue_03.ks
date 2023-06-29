@@ -458,7 +458,7 @@
 도내 최상위S급쿨뷰티미녀![t2][p]
 [_tb_end_tyrano_code]
 
-[playse  volume="70"  time="1000"  buf="1"  storage="SFX/Common_Cartoon_Walla_01.wav"  loop="false"  ]
+[playse  volume="50"  time="1000"  buf="1"  storage="SFX/Common_Cartoon_Walla_01.wav"  loop="false"  ]
 [tb_start_tyrano_code]
 [t1]
 #전대용
@@ -506,7 +506,7 @@
 ♪ ~ ♪ ~ ♪~ ♪♪ ~ ♬ [t2][p]
 [_tb_end_tyrano_code]
 
-[stopse  time="2000"  buf="1"  fadeout="true"  ]
+[stopse  time="3500"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="4" face="6" ]
 [t1]

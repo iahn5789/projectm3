@@ -5,6 +5,7 @@
 [tb_keyconfig  flag="1"  ]
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Lobby_BGM_01.mp3"  fadein="true"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Road_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -63,19 +64,22 @@
 [t1]
 #&[sf.name]
 뭐야 진짜...아무튼 이상한 놈이라니까..[t2][p]
+[_tb_end_tyrano_code]
+
+[playse  volume="120"  time="500"  buf="1"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  fadein="false"  ]
+[tb_start_tyrano_code]
 [t1]
 #알바생
 안녕하세요![t2][p]
 [_tb_end_tyrano_code]
 
-[playse  volume="120"  time="500"  buf="1"  storage="SFX/Footsteps_Female_Ctr_Walk_01.wav"  fadein="true"  ]
 [tb_start_tyrano_code]
 [t1]
 #
 눈앞에서 사라져 버린 전대용을 바라보던 와중 누군가가[r]다가왔다.[t2][p]
 [_tb_end_tyrano_code]
 
-[stopse  time="1000"  buf="1"  ]
+[stopse  time="2000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
 [t1]
 #&[sf.name]
@@ -128,7 +132,7 @@
 이때 편의점으로 사라져 버린 전대용이 양손에 음료수를[r]들고 나왔다.[t2][p]
 [_tb_end_tyrano_code]
 
-[stopse  time="1000"  buf="1"  ]
+[stopse  time="3000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jeon_ill]
@@ -140,7 +144,7 @@
 [chara_part name="Jeon" body="2" face="6" ]
 [_tb_end_tyrano_code]
 
-[stopse  time="1000"  buf="2"  fadeout="true"  ]
+[stopse  time="1000"  buf="2"  fadeout="false"  ]
 [tb_start_tyrano_code]
 [t1]
 #전대용
