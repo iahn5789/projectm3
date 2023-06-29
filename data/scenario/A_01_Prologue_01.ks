@@ -417,6 +417,7 @@
 [tb_hide_message_window  ]
 [playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  fadein="false"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [stopbgm  time="1000"  fadeout="true"  ]
 [tb_start_tyrano_code]
