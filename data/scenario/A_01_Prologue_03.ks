@@ -5,6 +5,7 @@
 [tb_keyconfig  flag="1"  ]
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Home_Room_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -15,8 +16,17 @@
 아직 정리가 되지 않은 방이 눈에 들어오자 벌써 머리가[r]지끈거렸다.[p]
 #&[sf.name]
 ( 후... 오늘 하루 정말 기네. 빨리 씻고 자야지. )[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Noke_01.wav"  ]
+[tb_start_tyrano_code]
 #
 짐을 내려놓고 씻을 준비를 하려던 찰나 노크 소리가 들리고 문이 열렸다.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Door_Open_Squeak_01 -.wav"  ]
+[tb_start_tyrano_code]
 #엄마
 아들 저녁 먹을 시간도 지났는데 학교에서 무슨 일 있었어?[p]
 #&[sf.name]
