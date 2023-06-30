@@ -503,7 +503,7 @@ body{
   top: 68px;
   width: 34px;
   height: 34px;
-  z-index: 9999999999;
+  z-index: 5;
   animation: fadein 3s;
 }
 .help01 img.img-hover{
@@ -513,7 +513,7 @@ body{
   top: 37px;
   width: 454px;
   height: 251px;
-  z-index: 9999999999;
+  z-index: 5;
 }
 .help01:hover .img-hover{
   display:block;
@@ -537,7 +537,7 @@ body{
   top: 68px;
   width: 34px;
   height: 34px;
-  z-index: 9999999999;
+  z-index: 5;
 }
 .help011 img.img-hover{
   display:none;
@@ -546,7 +546,7 @@ body{
   top: 37px;
   width: 454px;
   height: 251px;
-  z-index: 9999999999;
+  z-index: 5;
 }
 .help011:hover .img-hover{
   display:block;
@@ -569,7 +569,7 @@ body{
   top: 222px;
   width: 34px;
   height: 34px;
-  z-index: 9999999999;
+  z-index: 5;
   animation: fadein 3s;
 }
 .help02 img.img-hover{
@@ -579,7 +579,7 @@ body{
   top: 222px;
   width: 454px;
   height: 251px;
-  z-index: 9999999999;
+  z-index: 5;
 }
 .help02:hover .img-hover{
   display:block;
@@ -602,7 +602,7 @@ body{
   top: 222px;
   width: 34px;
   height: 34px;
-  z-index: 9999999999;
+  z-index: 5;
 }
 .help022 img.img-hover{
   display:none;
@@ -611,7 +611,7 @@ body{
   top: 222px;
   width: 454px;
   height: 251px;
-  z-index: 9999999999;
+  z-index: 5;
 }
 .help022:hover .img-hover{
   display:block;
@@ -873,4 +873,13 @@ body{
   to {
   transform: translateY(-1000px);
   }
+  }
+
+  @keyframes workspacetext {
+    from {
+    transform: translateY(0px);
+    }
+    to {
+    transform: translateY(397px);
+    }
   }

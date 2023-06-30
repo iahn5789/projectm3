@@ -5,7 +5,7 @@
 [tb_start_tyrano_code]
 [html zindex=6]
 
-<div id="starcatch_background" style="width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
+<div id="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">
 <div style=" margin-top:40px; left: 50px;">
 <span id="starcatch_timer" style="margin-left:320px;">10</span>
@@ -138,19 +138,33 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 [s  ]
 *Success
 
+[tb_eval  exp="f.money+=300"  name="money"  cmd="+="  op="t"  val="300"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
-imageElement.style.transition = 'opacity 2s';
+imageElement.style.transition = 'opacity 1s';
 imageElement.style.opacity = '0';
 setTimeout(function() {
 imageElement.style.display = 'none';
-}, 2000);
+}, 1000);
 [endscript]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[image layer=1 width=252 height=127 left=834 top=-150 page=fore visible=true name=successtext storage = ../image/New_GUI/Workspace_UI/UI_Success_Text_01.png z-index=99999999]
+[html zindex=8]
+<style>
+.successtext {
+position:absolute;
+width:252px;
+height:127px;
+left:834px;
+top:-150px;
+}
+</style>
+<div id="successtext" class="successtext">
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Text_01.png"/>
+</div>
+[endhtml]
 [anim name=successtext top=247 time=500]
 [wa]
 [anim name=successtext top=237 time=100]
@@ -161,10 +175,33 @@ imageElement.style.display = 'none';
 [wa]
 [anim name=successtext top=247 time=100]
 [wa]
-[wait time=500]
-[free name="successtext" layer=1 wait=true time=500]
-[image layer=1 width=1920 height=1080 left=0 top=0 page=fore visible=true name=successbgi storage = ../image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png wait=true time=500]
-[button name="back" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+
+[iscript]
+var imageElement = document.getElementById('successtext');
+imageElement.style.transition = 'opacity 0.5s';
+imageElement.style.opacity = '0';
+setTimeout(function() {
+imageElement.style.display = 'none';
+}, 500);
+[endscript]
+
+[html zindex=6]
+<style>
+.successbgi {
+position:absolute;
+width:1920px;
+height:1080px;
+left:0px;
+top:0px;
+animation:fadein 0.7s;
+}
+</style>
+<div class="successbgi">
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png"/>
+</div>
+[endhtml]
+
+[button name="back" storage="Maple_minigame.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=back top=647 time=500]
 
 [_tb_end_tyrano_code]
@@ -175,16 +212,30 @@ imageElement.style.display = 'none';
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
-imageElement.style.transition = 'opacity 2s';
+imageElement.style.transition = 'opacity 1s';
 imageElement.style.opacity = '0';
 setTimeout(function() {
 imageElement.style.display = 'none';
-}, 2000);
+}, 1000);
 [endscript]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[image layer=1 width=252 height=127 left=834 top=-150 page=fore visible=true name=failtext storage = ../image/New_GUI/Workspace_UI/UI_Fail_Text_01.png zindex=9999999999 ]
+[html zindex=8]
+<style>
+.failtext {
+position:absolute;
+width:252px;
+height:127px;
+left:834px;
+top:-150px;
+}
+</style>
+<div id="failtext" class="failtext">
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Text_01.png"/>
+</div>
+[endhtml]
+
 [anim name=failtext top=247 time=500]
 [wa]
 [anim name=failtext top=237 time=100]
@@ -195,11 +246,34 @@ imageElement.style.display = 'none';
 [wa]
 [anim name=failtext top=247 time=100]
 [wa]
-[wait time=500]
-[free name="failtext" layer=1 wait=true time=500]
-[image layer=1 width=1920 height=1080 left=0 top=0 page=fore visible=true name=failbgi storage = ../image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png wait=true time=500]
-[button name="restart" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Maple_minigame.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+
+[iscript]
+var imageElement = document.getElementById('failtext');
+imageElement.style.transition = 'opacity 0.5s';
+imageElement.style.opacity = '0';
+setTimeout(function() {
+imageElement.style.display = 'none';
+}, 500);
+[endscript]
+
+[html zindex=6]
+<style>
+.failbgi {
+position:absolute;
+width:1920px;
+height:1080px;
+left:0px;
+top:0px;
+animation:fadein 0.7s;
+}
+</style>
+<div class="failbgi">
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png"/>
+</div>
+[endhtml]
+
+[button name="restart" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[button name="back" storage="Maple_minigame.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=restart top=647 time=500]
 [anim name=back top=741 time=500]
 [_tb_end_tyrano_code]
@@ -210,6 +284,12 @@ imageElement.style.display = 'none';
 [tb_start_tyrano_code]
 [free name="failbgi" layer=1 wait=true time=200]
 [free name="successbgi" layer=1 wait=true time=200]
+[cm]
+[cm]
+[freeimage layer="0" ]
+[freeimage layer="1" ]
+[freeimage layer="2" ]
+[clearfix name="setting" ]
 [_tb_end_tyrano_code]
 
 [jump  storage="Test_Wait_01.ks"  target="*testin"  ]
