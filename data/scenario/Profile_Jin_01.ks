@@ -13,6 +13,8 @@
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
 [free name="charinfo" layer=1 ]
+[free name="workspace" layer=2 ]
+[free name="storyboard" layer=2 ]
 [clearfix name="lootcommon"]
 [clearfix name="lootkang"]
 [clearfix name="lootjin"]
