@@ -1,6 +1,7 @@
 [_tb_system_call storage=system/_Maple_minigame.ks]
 
-[bg  time="1000"  method="crossfade"  storage="Common_White_01.png"  ]
+*game01
+
 [tb_start_tyrano_code]
 [html]
 
@@ -137,9 +138,189 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 [s  ]
 *Success
 
-[tb_ptext_show  x="495"  y="528"  size="30"  color="0xff0505"  time="1000"  text="성공&nbsp;화면&nbsp;여기&nbsp;들어가면&nbsp;됩니다."  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
+[tb_start_tyrano_code]
+[iscript]
+var imageElement = document.getElementById('starcatch_background');
+imageElement.style.transition = 'opacity 2s';
+imageElement.style.opacity = '0';
+setTimeout(function() {
+imageElement.style.display = 'none';
+}, 2000);
+[endscript]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer=1 width=252 height=127 left=834 top=-150 page=fore visible=true name=successtext storage = ../image/New_GUI/Workspace_UI/UI_Success_Text_01.png z-index=99999999]
+[anim name=successtext top=247 time=500]
+[wa]
+[anim name=successtext top=237 time=100]
+[wa]
+[anim name=successtext top=247 time=100]
+[wa]
+[anim name=successtext top=237 time=100]
+[wa]
+[anim name=successtext top=247 time=100]
+[wa]
+[wait time=500]
+[free name="successtext" layer=1 wait=true time=500]
+[image layer=1 width=1920 height=1080 left=0 top=0 page=fore visible=true name=successbgi storage = ../image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png wait=true time=500]
+[button name="back" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[anim name=back top=647 time=500]
+
+[_tb_end_tyrano_code]
+
 [s  ]
 *Fail
 
-[tb_ptext_show  x="495"  y="528"  size="30"  color="0xff0505"  time="1000"  text="실패&nbsp;화면&nbsp;여기&nbsp;들어가면&nbsp;됩니다."  anim="false"  face="undefined"  edge="undefined"  shadow="undefined"  ]
+[tb_start_tyrano_code]
+[iscript]
+var imageElement = document.getElementById('starcatch_background');
+imageElement.style.transition = 'opacity 2s';
+imageElement.style.opacity = '0';
+setTimeout(function() {
+imageElement.style.display = 'none';
+}, 2000);
+[endscript]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer=1 width=252 height=127 left=834 top=-150 page=fore visible=true name=failtext storage = ../image/New_GUI/Workspace_UI/UI_Fail_Text_01.png zindex=9999999999 ]
+[anim name=failtext top=247 time=500]
+[wa]
+[anim name=failtext top=237 time=100]
+[wa]
+[anim name=failtext top=247 time=100]
+[wa]
+[anim name=failtext top=237 time=100]
+[wa]
+[anim name=failtext top=247 time=100]
+[wa]
+[wait time=500]
+[free name="failtext" layer=1 wait=true time=500]
+[image layer=1 width=1920 height=1080 left=0 top=0 page=fore visible=true name=failbgi storage = ../image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png wait=true time=500]
+[button name="restart" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Maple_minigame.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[anim name=restart top=647 time=500]
+[anim name=back top=741 time=500]
+[_tb_end_tyrano_code]
+
+[s  ]
+*back
+
+[tb_start_tyrano_code]
+[free name="failbgi" layer=1 wait=true time=200]
+[free name="successbgi" layer=1 wait=true time=200]
+[_tb_end_tyrano_code]
+
+[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="1"]
+[tb_eval  exp="f.common_poster_choice_whether='FALSE'"  name="common_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.k_poster_choice_whether='FALSE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.j_poster_choice_whether='FALSE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.s_poster_choice_whether='FALSE'"  name="s_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+
+;[free name="money" layer=2 ]
+[free name="klove" layer=2 ]
+[free name="jlove" layer=2 ]
+[free name="slove" layer=2 ]
+[free name="workspace" layer=2 ]
+[clearfix name="setting" layer=2 ]
+
+;[free name="Day" layer=2 ]
+;[free name="score" layer=2 ]
+[ptext layer=2 name="money" page=fore text="&[f.money]" size=22 x=-201 y=236 width=120 edge="0xFFEEB0" color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" ]
+[ptext layer=2 name="klove" page=fore text="&[f.klove]" size=20 x=-204 y=403 width=150 edge="0xFFEEB0" color="0x9B7900" align="center" vertical=false face="NanumGothicRegular" ]
+[ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=20 x=-204 y=449 width=150 edge="0xFFEEB0" color="0x9B7900" align="center" vertical=false face="NanumGothicRegular" ]
+[ptext layer=2 name="slove" page=fore text="&[f.slove]" size=20 x=-204 y=493 width=150 edge="0xFFEEB0" color="0x9B7900" align="center" vertical=false face="NanumGothicRegular" ]
+[ptext layer=2 name="Day" page=fore text="&[f.Day]" size=22 x=-185 y=145 width=50 edge="0xFFEEB0" color="0x9B7900" align="center" vertical=false face="NanumGothicRegular" ]
+[ptext layer=2 name="score" page=fore text="&[f.score]" size=22 x=-199 y=191 width=70 edge="0xFFEEB0" color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" ]
+[anim name="money" left=199 time=500 effect=easeInQuad]
+[anim name="klove" left=196 time=500 effect=easeInQuad]
+[anim name="jlove" left=196 time=500 effect=easeInQuad]
+[anim name="slove" left=196 time=500 effect=easeInQuad]
+[anim name="Day" left=215 time=500 effect=easeInQuad]
+[anim name="score" left=201 time=500 effect=easeInQuad]
+
+[image layer=1 width=382 height=550 left=-500 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png ]
+[button name="gift" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="-500" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="2420" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="work" storage="Test_Wait_01.ks" target="workspace" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="profilekang" storage="Profile_Kang_01.ks" target="profile_kang_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="399" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="profilejin" storage="Profile_Jin_01.ks" target="profile_jin_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="444" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="profilesul" storage="Profile_Sul_01.ks" target="profile_sul_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="489" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+
+[anim name="charinfo" left=40 time=500 effect=easeInQuad]
+[anim name="gift" left=40 time=500 effect=easeInQuad]
+[anim name="story" left=1668 time=500 effect=easeInQuad]
+[anim name="work" left=1668 time=500 effect=easeInQuad]
+;[anim name="badge" left=1668 time=500 effect=easeInQuad]
+[anim name="setting" left=1668 time=500 effect=easeInQuad]
+[anim name="profilekang" left=315 time=500 effect=easeInQuad]
+[anim name="profilejin" left=315 time=500 effect=easeInQuad]
+[anim name="profilesul" left=315 time=500 effect=easeInQuad]
+[anim name="storyboard" top=-700 time=300 effect=easeInQuad]
+[anim name="lootkang" top=-600 time=300 effect=easeInQuad]
+[anim name="lootjin" top=-600 time=300 effect=easeInQuad]
+[anim name="lootsul" top=-600 time=300 effect=easeInQuad]
+[anim name="lootcommon" top=-600 time=300 effect=easeInQuad]
+[anim name="teststart" top=1100 time=100 effect=easeInQuad]
+[anim name="secretmsgkang" top=1100 time=300 effect=easeInQuad]
+[anim name="secretmsgjin" top=1100 time=300 effect=easeInQuad]
+[anim name="secretmsgsul" top=1100 time=300 effect=easeInQuad]
+[anim name="secretmsgcommon" top=1100 time=300 effect=easeInQuad]
+[anim name="msgkang01" top=1100 time=270 effect=easeInQuad]
+[anim name="msgkang02" top=1100 time=270 effect=easeInQuad]
+[anim name="msgkang03" top=1100 time=270 effect=easeInQuad]
+[anim name="msgjin01" top=1100 time=270 effect=easeInQuad]
+[anim name="msgjin02" top=1100 time=270 effect=easeInQuad]
+[anim name="msgjin03" top=1100 time=270 effect=easeInQuad]
+[anim name="msgsul01" top=1100 time=270 effect=easeInQuad]
+[anim name="msgsul02" top=1100 time=270 effect=easeInQuad]
+[anim name="msgsul03" top=1100 time=270 effect=easeInQuad]
+[anim name="msgcommon01" top=1100 time=270 effect=easeInQuad]
+[anim name="msgcommon02" top=1100 time=270 effect=easeInQuad]
+[anim name="msgcommon03" top=1100 time=270 effect=easeInQuad]
+[wa]
+
+[cm]
+[image layer=1 width=382 height=550 left=-500 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png ]
+[button name="gift" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Test_Giftshop_01.png" enterimg="../image/New_GUI/Test_UI/Test_Giftshop_02.png" width="382" height="262" x="40" y="778" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Shop_Door_Click__01.wav"]
+[button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="1668" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="work" storage="Test_Wait_01.ks" target="callback" graphic="../image/New_GUI/Test_UI/Button_Work_03.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="1668" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="1668" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="1668" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+
+[image layer=2 width=850 height=559 left=580 top=-700 page=fore visible=true name=workspace storage = ../image/New_GUI/Test_UI/UI_Work_01.png ]
+[button name="game01" storage="Test_Wait_Call_01.ks" target="game01" graphic="../image/New_GUI/Test_UI/Button_Work_Game_01_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_01_02.png" zindex=2 width="203" height="179" x="649" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game02" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_02_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_02_02.png" zindex=2 width="203" height="179" x="901" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game03" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_03_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_03_02.png" zindex=2 width="203" height="179" x="1153" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game04" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_04_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_04_02.png" zindex=2 width="203" height="179" x="769" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game05" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_05_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_05_02.png" zindex=2 width="203" height="179" x="1021" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+
+[anim name="workspace" top=0 time=1000 effect=easeInQuad]
+[anim name="game01" top=112 time=1000 effect=easeInQuad]
+[anim name="game02" top=112 time=1000 effect=easeInQuad]
+[anim name="game03" top=112 time=1000 effect=easeInQuad]
+[anim name="game04" top=336 time=1000 effect=easeInQuad]
+[anim name="game05" top=336 time=1000 effect=easeInQuad]
+
+[html]
+<div class="help01">
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt=""/>
+</div>
+<div class="help02">
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
+<img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt=""/>
+</div>
+[endhtml]
+
+
+
+[_tb_end_tyrano_code]
+
 [s  ]
