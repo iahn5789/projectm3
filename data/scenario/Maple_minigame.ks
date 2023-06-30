@@ -3,7 +3,7 @@
 *game01
 
 [tb_start_tyrano_code]
-[html]
+[html zindex=6]
 
 <div id="starcatch_background" style="width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">

@@ -140,7 +140,8 @@ tyrano.plugin.kag.tag.html = {
     pm: {
         layer: "",
         top: 0,
-        left: 0
+        left: 0,
+        zindex:""
     },
     start: function(pm) {
         this.kag.stat.is_html = !0;
@@ -158,6 +159,7 @@ tyrano.plugin.kag.tag.endhtml = {
         html_obj.css("position", "absolute");
         html_obj.css("top", tpm.top + "px");
         html_obj.css("left", tpm.left + "px");
+        html_obj.css("z-index", tpm.zindex);
         $.setName(html_obj, tpm.name);
         html_obj.append($(html));
         var layer_free = this.kag.layer.getFreeLayer();
