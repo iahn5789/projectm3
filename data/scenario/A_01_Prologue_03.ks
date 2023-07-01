@@ -531,4 +531,4 @@
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [stopse  time="2000"  buf="4"  fadeout="true"  ]
-[jump  storage="A_01_Prologue_03.ks"  target=""  ]
+[jump  storage="A_02_Week_01_01.ks"  target="*in_01"  ]
