@@ -8,7 +8,7 @@
 <div id="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">
 <div style=" margin-top:40px; left: 50px;">
-<span id="starcatch_timer" style="margin-left:320px;">10</span>
+<span id="starcatch_timer" style="margin-left:320px;">1000</span>
 </div>
 <div id="starcatch_Gage" style="display:block;margin:auto; margin-top:55px; width:538px; height: 52px; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Gauge_Back_01.png');">
 <div id="starcatch_zone1" style="position: absolute; width: 50px; height:40px; background: #ffc1074d; margin-top: 2px;left: 100px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_01.png');">
@@ -17,7 +17,7 @@
 </div>
 <div id="starcatch_zone3" style="position: absolute; width: 10px; height:40px; background: #ffc1074d; margin-top: 2px;left: 250px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_03.png');">
 </div>
-<div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 2s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
+<div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 1s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
 </div>
 
 </div>
@@ -26,6 +26,12 @@
 </button>
 <p id="collect"></p>
 </div>
+</div>
+<div id="success_01" style="position: absolute;width: 19px; height:19px; top: 655px;left: 1175px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Success_Light_01.png');visibility: hidden;">
+</div>
+<div id="success_02" style="position: absolute;width: 19px; height:19px; top: 655px;left: 1201px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Success_Light_02.png');visibility: hidden;">
+</div>
+<div id="success_03" style="position: absolute;width: 19px; height:19px; top: 655px;left: 1227px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Success_Light_03.png');visibility: hidden;">
 </div>
 </div>
 
@@ -42,6 +48,7 @@ var zone2_bool = 0;
 var zone3_bool = 0;
 const myButton = document.getElementById('stop');
 const myAnimation = document.getElementById('starcatch_item');
+
 
 function Starcatch_time() {
 W = setInterval(function() {
@@ -81,30 +88,45 @@ var _ = 0-item_rect.width/9;
 var g = zone_rect.width;
 h = !!(f > _) && !!(f < g);
 var d = "";
+console.log("item_위치 : ",);
+
 if(h)
 {
 d = `${id} 성공`;
 success +=1;
 if("starcatch_zone1" == id){
 zone1_bool +=1;
+document.getElementById('starcatch_zone1').style.visibility = "hidden";
 }
 if("starcatch_zone2" == id){
 zone2_bool +=1;
+document.getElementById('starcatch_zone2').style.visibility = "hidden";
 }
 if("starcatch_zone3" == id){
 zone3_bool +=1;
+document.getElementById('starcatch_zone3').style.visibility = "hidden";
 }
+}
+else{
+// 실패시 작업
+
 }
 return d;
 }
 
 Starcatch_time();
 myButton.addEventListener('click', () => {
+
+myAnimation.style.animationPlayState = 'paused';
+setTimeout(function() {
+myAnimation.style.animationPlayState = 'running';
+}, 400);
 if(success != 3){
 var item_rect = document.getElementById('starcatch_item').getBoundingClientRect();
 var zone_rect1 = document.getElementById('starcatch_zone1').getBoundingClientRect();
 var zone_rect2 = document.getElementById('starcatch_zone2').getBoundingClientRect();
 var zone_rect3 = document.getElementById('starcatch_zone3').getBoundingClientRect();
+
 var load = "";
 if(load == "" && zone1_bool == 0)
 {
@@ -117,6 +139,34 @@ load = Check_success("starcatch_zone2",item_rect,zone_rect2);
 if(load == ""&& zone3_bool == 0)
 {
 load = Check_success("starcatch_zone3",item_rect,zone_rect3);
+}
+
+// 모든 박스 체크 후
+if(load == "")
+{
+var e = parseInt($("#starcatch_timer").text());
+if(e-1 >0)
+{
+$("#starcatch_timer").text(e - 1);
+}
+else
+{
+$("#starcatch_timer").text(0);
+}
+}
+else{
+if (success == 1)
+{
+document.getElementById('success_01').style.visibility = "visible";
+}
+if (success == 2)
+{
+document.getElementById('success_02').style.visibility = "visible";
+}
+if (success == 3)
+{
+document.getElementById('success_03').style.visibility = "visible";
+}
 }
 
 $("#collect").text(load);
