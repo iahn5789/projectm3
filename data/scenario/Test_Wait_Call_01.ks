@@ -86,10 +86,10 @@
 
 [image layer=2 width=850 height=559 left=580 top=-700 page=fore visible=true name=workspace storage = ../image/New_GUI/Test_UI/UI_Work_01.png ]
 [button name="game01" storage="Test_Wait_Call_01.ks" target="game01" graphic="../image/New_GUI/Test_UI/Button_Work_Game_01_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_01_02.png" zindex=2 width="203" height="179" x="649" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="3"]
-[button name="game02" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_02_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_02_02.png" zindex=2 width="203" height="179" x="901" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
-[button name="game03" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_03_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_03_02.png" zindex=2 width="203" height="179" x="1153" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
-[button name="game04" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_04_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_04_02.png" zindex=2 width="203" height="179" x="769" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
-[button name="game05" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_05_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_05_02.png" zindex=2 width="203" height="179" x="1021" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
+[button name="game02" storage="Test_Wait_Call_01.ks" target="game02" graphic="../image/New_GUI/Test_UI/Button_Work_Game_02_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_02_02.png" zindex=2 width="203" height="179" x="901" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
+[button name="game03" storage="Test_Wait_Call_01.ks" target="game03" graphic="../image/New_GUI/Test_UI/Button_Work_Game_03_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_03_02.png" zindex=2 width="203" height="179" x="1153" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
+[button name="game04" storage="Test_Wait_Call_01.ks" target="game04" graphic="../image/New_GUI/Test_UI/Button_Work_Game_04_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_04_02.png" zindex=2 width="203" height="179" x="769" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
+[button name="game05" storage="Test_Wait_Call_01.ks" target="game05" graphic="../image/New_GUI/Test_UI/Button_Work_Game_05_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_05_02.png" zindex=2 width="203" height="179" x="1021" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
 
 [anim name="workspace" top=0 time=1000 effect=easeInQuad]
 [anim name="game01" top=112 time=1000 effect=easeInQuad]
@@ -158,5 +158,21 @@
 [s  ]
 *game01
 
-[call  storage="Maple_minigame.ks"  target="*game01"  ]
+[call  storage="Workspace_Game_01.ks"  target="*game01"  ]
+[s  ]
+*game02
+
+[call  storage="Workspace_Game_02.ks"  target="*game01"  ]
+[s  ]
+*game03
+
+[call  storage="Workspace_Game_03.ks"  target="*game01"  ]
+[s  ]
+*game04
+
+[call  storage="Workspace_Game_04.ks"  target="*game01"  ]
+[s  ]
+*game05
+
+[call  storage="Workspace_Game_05.ks"  target="*game01"  ]
 [s  ]

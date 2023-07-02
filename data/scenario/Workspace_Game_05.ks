@@ -1,11 +1,11 @@
-[_tb_system_call storage=system/_Maple_minigame.ks]
+[_tb_system_call storage=system/_Workspace_Game_05.ks]
 
 *game01
 
 [tb_start_tyrano_code]
 [html zindex=6]
 
-<div id="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
+<div id="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_05.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">
 <div style=" margin-top:40px;margin-left:248px; left: 50px;height: 45px; width:84px;">
 <span id="starcatch_timer" style="justify-content: center;align-items: center;display: flex;">10</span>
@@ -188,7 +188,7 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 [s  ]
 *Success
 
-[tb_eval  exp="f.money+=300"  name="money"  cmd="+="  op="t"  val="300"  val_2="undefined"  ]
+[tb_eval  exp="f.money+=300"  name="money"  cmd="+="  op="t"  val="1000"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
@@ -247,11 +247,11 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="successbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_05.png"/>
 </div>
 [endhtml]
 
-[button name="back" storage="Maple_minigame.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=back top=647 time=500]
 
 [_tb_end_tyrano_code]
@@ -318,12 +318,12 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="failbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_05.png"/>
 </div>
 [endhtml]
 
 [button name="restart" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
-[button name="back" storage="Maple_minigame.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=restart top=647 time=500]
 [anim name=back top=741 time=500]
 [_tb_end_tyrano_code]
