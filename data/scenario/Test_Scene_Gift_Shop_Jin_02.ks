@@ -56,8 +56,8 @@ setTimeout(frameLooper, 500);
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
-[anim name=Back time=200 top=948]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="110" height="56" x="40" y="1200"]
+[anim name=Back time=500 top=984]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -110,8 +110,8 @@ setTimeout(frameLooper, 500);
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
-[anim name=Back time=200 top=948]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="110" height="56" x="40" y="1200"]
+[anim name=Back time=500 top=984]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -166,8 +166,8 @@ setTimeout(frameLooper, 500);
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
-[anim name=Back time=200 top=948]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="110" height="56" x="40" y="1200"]
+[anim name=Back time=500 top=984]
 [_tb_end_tyrano_code]
 
 [s  ]
@@ -220,8 +220,8 @@ setTimeout(frameLooper, 500);
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/Popup_Close_01.png" enterimg="../image/New_GUI/Giftshop_UI/Popup_Close_02.png" width="109" height="93" x="1385" y="1100"]
-[anim name=Back time=200 top=948]
+[button name="Back" storage="Test_Scene_Gift_Shop_Jin_02.ks" target="back" graphic="../image/New_GUI/Giftshop_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Giftshop_UI/UI_Close_Bt_02.png" width="110" height="56" x="40" y="1200"]
+[anim name=Back time=500 top=984]
 [_tb_end_tyrano_code]
 
 [s  ]
