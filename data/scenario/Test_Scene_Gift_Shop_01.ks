@@ -109,9 +109,6 @@
 [s  ]
 *buy_kang_01_02
 
-Gift_Bt[p]
-
-
 [tb_eval  exp="f.giftScene='TRUE'"  name="giftScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [cm]
