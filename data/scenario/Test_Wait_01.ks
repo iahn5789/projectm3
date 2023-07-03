@@ -93,7 +93,7 @@
 *gift
 
 [call  storage="Test_Wait_Call_01.ks"  target="*gift"  ]
-[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*gift_kang"  cond="f.testScene=='FALSE'"  ]
+[jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*bgm_start"  cond="f.testScene=='FALSE'"  ]
 [s  ]
 *setting
 

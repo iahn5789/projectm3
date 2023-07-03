@@ -1,5 +1,8 @@
 [_tb_system_call storage=system/_Test_Scene_Gift_Shop_01.ks]
 
+*bgm_start
+
+[playbgm  volume="80"  time="1000"  loop="true"  storage="Common_Giftshop_BGM_01.wav"  fadein="true"  ]
 *gift_kang
 
 [tb_eval  exp="f.giftScene='FALSE'"  name="giftScene"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
@@ -61,7 +64,7 @@
 [free name="score" layer=2 ]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
+[jump  storage="Test_Wait_01.ks"  target="*bgmstart"  ]
 [s  ]
 *gift_kang_back
 
@@ -105,7 +108,10 @@
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*buy_kang_01_02"  cond="f.giftScene=='FALSE'"  ]
 [s  ]
 *buy_kang_01_02
-Gift_Bt
+
+Gift_Bt[p]
+
+
 [tb_eval  exp="f.giftScene='TRUE'"  name="giftScene"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [cm]
