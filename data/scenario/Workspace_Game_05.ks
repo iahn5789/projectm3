@@ -212,7 +212,7 @@ top:-150px;
 }
 </style>
 <div id="successtext" class="successtext">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Text_01.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Text_05.png"/>
 </div>
 [endhtml]
 [anim name=successtext top=247 time=500]
