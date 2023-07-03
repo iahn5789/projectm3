@@ -52,7 +52,7 @@
 [free name="score" layer=2 ]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
+[jump  storage="Test_Wait_01.ks"  target="*bgmstart"  ]
 [s  ]
 *gift_jin_back
 

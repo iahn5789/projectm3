@@ -188,7 +188,7 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 [s  ]
 *Success
 
-[tb_eval  exp="f.money+=300"  name="money"  cmd="+="  op="t"  val="600"  val_2="undefined"  ]
+[tb_eval  exp="f.money+=600"  name="money"  cmd="+="  op="t"  val="600"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
@@ -212,7 +212,7 @@ top:-150px;
 }
 </style>
 <div id="successtext" class="successtext">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Text_03.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Text_01.png"/>
 </div>
 [endhtml]
 [anim name=successtext top=247 time=500]
@@ -318,7 +318,7 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="failbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_03.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png"/>
 </div>
 [endhtml]
 

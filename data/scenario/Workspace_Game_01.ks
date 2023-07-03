@@ -188,7 +188,7 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 [s  ]
 *Success
 
-[tb_eval  exp="f.money+=300"  name="money"  cmd="+="  op="t"  val="200"  val_2="undefined"  ]
+[tb_eval  exp="f.money+=200"  name="money"  cmd="+="  op="t"  val="200"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
