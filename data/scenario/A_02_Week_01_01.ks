@@ -2,6 +2,8 @@
 
 *in_01
 
+[playse  volume="200"  time="1000"  buf="3"  storage="Amb/Amb_Room_Tone_02.wav"  loop="true"  fadein="true"  ]
+[playse  volume="50"  time="1000"  buf="2"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -12,10 +14,25 @@
 자 다들 오늘 하루 수고했고 내일 보자! 이상![p]
 #일동
 수고하셨습니다![p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="2"  fadeout="true"  ]
+[stopse  time="1000"  buf="3"  fadeout="true"  ]
+[playse  volume="130"  time="1000"  buf="4"  storage="Amb/Amb_Classroom_Many_Footsteps_01.wav"  fadein="true"  loop="true"  ]
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_02.wav"  ]
+[tb_start_tyrano_code]
 #
 종례가 끝남과 동시에 수십 명이 자리에서 일어났다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="40"  time="1000"  buf="0"  storage="UI/Exam_Desk_Draw_01.wav"  ]
+[tb_start_tyrano_code]
 #
 의자를 뒤로 밀고 일어서는 소리가 여러 곳에서 들려왔다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="70"  time="1000"  buf="1"  storage="UI/Exam_Desk_Draw_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
 #
 가방을 둘러메고 교실 밖으로 나가면서 각자 무엇을 할지 이야기하고 있었다.[p]
 #
@@ -43,6 +60,7 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [tb_show_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Text_Kick_01.wav"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 잠깐만.[p]
@@ -58,8 +76,11 @@
 어차피 동아리 가입도 해야 했으니 한번 가볼까...[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_hide_message_window  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[playse  volume="60"  time="1000"  buf="4"  storage="Amb/Amb_Hallway_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -68,6 +89,11 @@
 밴드부는 4층 과학실 옆에 있다고 했다.[p]
 #
 수업 때문에 과학실은 몇 번 간 적이 있었지만, 그 옆에[r]밴드부가 있는 줄은 몰랐다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="2000"  buf="3"  storage="Amb/Amb_Room_Tone_02.wav"  fadein="true"  loop="true"  ]
+[stopse  time="3000"  buf="4"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #
 가뜩이나 과학실은 외진 장소에 있었는데, 거기에 더해[r]밴드부는 사람의 발길이 닿지 않은 곳 같아 보였다.[p]
 #
@@ -80,14 +106,27 @@
 입구에 도착하자 밴드부라고 적힌 나무로 된 작은 팻말이 걸려있었지만, 색이 바랜 지 오래였다.[p]
 #
 문을 열기 위해 손잡이 쪽으로 시선을 돌려봤다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="55"  time="1000"  buf="0"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
 #
 손잡이는 약간 부서져 있었고 문지방은 녹슬어 열리지[r]않을 것 같았다.[p]
 #&[sf.name]
 (이게 동아리실이라고? 창고도 이거보단 깔끔할 거[r]같은데?)[p]
 #&[sf.name]
 (이거 알고 보니 이상한 동아리 아니야?)[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1500"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #
 내가 잘못된 선택을 한 건 아닌지 고민하고 있을 때[r]안에서 소리가 들려왔다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="30"  time="1000"  buf="0"  storage="SFX/Common_Door_Slam_01.wav"  ]
+[playse  volume="45"  time="1000"  buf="1"  storage="SFX/Common_Desk_Rattle_01.wav"  ]
+[tb_start_tyrano_code]
 #???
 난 누군지도 모르는 사람이 우리 동아리에 들어오는 건[r]반대야![p]
 #강여진
@@ -109,6 +148,12 @@
 [tb_start_tyrano_code]
 #
 아주 짧은 눈빛 교환이 이어졌고, 여학생의 표정이[r]순식간에 굳어갔다.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  ]
+[stopse  time="1000"  buf="1"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_Short_02.wav"  ]
+[tb_start_tyrano_code]
 #
 이상한 사람으로 보일까 재빨리 문을 열자 살려달라고[r]외치듯 삐걱대는 소리가 났다.[p]
 [_tb_end_tyrano_code]
@@ -116,11 +161,16 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_show_message_window  ]
+[playse  volume="50"  time="1000"  buf="1"  storage="SFX/Common_Alarm_Clock_01.wav"  loop="true"  ]
 [tb_start_tyrano_code]
 #???
 꺄아아아아-![p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="1"  ]
+[stopse  time="1000"  buf="3"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  fadein="false"  ]
+[playse  volume="70"  time="1000"  buf="4"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
@@ -133,9 +183,14 @@
 아...아니 그러니까 나는...[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="45"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
 [tb_start_tyrano_code]
 #???
 시끄러워! 변태! 호색한! 대머리![p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #강여진
 그만! 내가 불러서 온 친구란 말이야![p]
 #???
@@ -179,6 +234,11 @@
 그 옆 푸른 머리 여학생은 내 편을 들어주고 있었지만,[r]표정만 봐서는 무슨 생각을 하는지 잘 알 수가 없었다.[p]
 #
 그때 한껏 화를 낸 진다영과 또다시 눈이 마주쳤다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Text_Kick_01.wav"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="UI/Common_Whistle_01.wav"  ]
+[tb_start_tyrano_code]
 #진다영
 흥! 뭘 봐 이 변태야![p]
 #&[sf.name]
@@ -242,9 +302,16 @@
 …보컬…[p]
 #&[sf.name]
 아…음…그러니까…[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Wood_Walk_01.wav"  fadein="false"  ]
+[tb_start_tyrano_code]
 #
 그 순간 여진이가 하던 말을 멈추고 내게 다가왔다.[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
+[stopbgm  time="4000"  fadeout="true"  ]
 [jump  storage="A_02_Week_01_02.ks"  target="*in01"  ]
 [s  ]
