@@ -15,6 +15,12 @@
 [free name="charinfo" layer=1 ]
 [free name="workspace" layer=2 ]
 [free name="storyboard" layer=2 ]
+[free name="labelkang" layer=2 ]
+[free name="labeljin" layer=2 ]
+[free name="labelsul" layer=2 ]
+[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgjin" layer=1 ]
+[free name="secretmsgsul" layer=1 ]
 [clearfix name="lootcommon"]
 [clearfix name="lootkang"]
 [clearfix name="lootjin"]
@@ -161,5 +167,5 @@
 [s  ]
 *back
 
-[jump  storage="Test_Wait_01.ks"  target="*bgmstart"  ]
+[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
 [s  ]

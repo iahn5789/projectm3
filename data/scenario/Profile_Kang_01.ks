@@ -20,6 +20,12 @@
 [clearfix name="lootjin"]
 [clearfix name="lootsul"]
 [clearfix name="setting"]
+[free name="labelkang" layer=2 ]
+[free name="labeljin" layer=2 ]
+[free name="labelsul" layer=2 ]
+[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgjin" layer=1 ]
+[free name="secretmsgsul" layer=1 ]
 
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=23 x=166 y=931 width=97 height=31 edge="0xFFFFFF" color="0xFF4F6E" align="center" vertical=false face="NanumGothicBold" ]
 [cm]
@@ -159,5 +165,5 @@
 [s  ]
 *back
 
-[jump  storage="Test_Wait_01.ks"  target="*bgmstart"  ]
+[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
 [s  ]
