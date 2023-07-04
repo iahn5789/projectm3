@@ -272,7 +272,7 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="successbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_02.png"/>
 </div>
 [endhtml]
 
@@ -343,7 +343,7 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="failbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_02.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png"/>
 </div>
 [endhtml]
 

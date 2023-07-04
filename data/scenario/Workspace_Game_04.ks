@@ -272,7 +272,7 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="successbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_04.png"/>
 </div>
 [endhtml]
 
