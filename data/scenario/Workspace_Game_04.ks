@@ -26,7 +26,7 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 </div>
 <div id="starcatch_zone2" style="position: absolute; width: 30px; height:40px; background: #ffc1074d; margin-top: 2px;left: 200px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_02.png');">
 </div>
-<div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 1s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
+<div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 1.6s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
 </div>
 
 </div>
@@ -39,8 +39,6 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 <div id="success_01" style="position: absolute;width: 19px; height:19px; top: 655px;left: 1175px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Success_Light_01.png');visibility: hidden;">
 </div>
 <div id="success_02" style="position: absolute;width: 19px; height:19px; top: 655px;left: 1201px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Success_Light_02.png');visibility: hidden;">
-</div>
-<div id="success_03" style="position: absolute;width: 19px; height:19px; top: 655px;left: 1227px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Success_Light_03.png');visibility: hidden;">
 </div>
 </div>
 
@@ -111,10 +109,6 @@ if("starcatch_zone2" == id){
 zone2_bool +=1;
 document.getElementById('starcatch_zone2').style.visibility = "hidden";
 }
-if("starcatch_zone3" == id){
-zone3_bool +=1;
-document.getElementById('starcatch_zone3').style.visibility = "hidden";
-}
 }
 else{
 // 실패시 작업
@@ -129,11 +123,10 @@ myAnimation.style.animationPlayState = 'paused';
 setTimeout(function() {
 myAnimation.style.animationPlayState = 'running';
 }, 400);
-if(success != 3){
+if(success != 2){
 var item_rect = document.getElementById('starcatch_item').getBoundingClientRect();
 var zone_rect1 = document.getElementById('starcatch_zone1').getBoundingClientRect();
 var zone_rect2 = document.getElementById('starcatch_zone2').getBoundingClientRect();
-var zone_rect3 = document.getElementById('starcatch_zone3').getBoundingClientRect();
 
 var load = "";
 if(load == "" && zone1_bool == 0)
@@ -143,10 +136,6 @@ load = Check_success("starcatch_zone1",item_rect,zone_rect1);
 if(load == ""&& zone2_bool == 0)
 {
 load = Check_success("starcatch_zone2",item_rect,zone_rect2);
-}
-if(load == ""&& zone3_bool == 0)
-{
-load = Check_success("starcatch_zone3",item_rect,zone_rect3);
 }
 
 // 모든 박스 체크 후
@@ -171,14 +160,10 @@ if (success == 2)
 {
 document.getElementById('success_02').style.visibility = "visible";
 }
-if (success == 3)
-{
-document.getElementById('success_03').style.visibility = "visible";
-}
 }
 
 $("#collect").text(load);
-if(success >= 3)
+if(success >= 2)
 {
 R();
 //성공시 점프

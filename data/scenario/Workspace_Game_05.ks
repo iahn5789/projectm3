@@ -28,7 +28,7 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 </div>
 <div id="starcatch_zone3" style="position: absolute; width: 10px; height:40px; background: #ffc1074d; margin-top: 2px;left: 250px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_03.png');">
 </div>
-<div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 1s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
+<div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 0.65s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
 </div>
 
 </div>
@@ -350,13 +350,27 @@ animation:fadein 0.7s;
 </div>
 [endhtml]
 
-[button name="restart" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[button name="restart" storage="Workspace_Game_05.ks" target="restart" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=restart top=647 time=500]
 [anim name=back top=741 time=500]
 [_tb_end_tyrano_code]
 
 [s  ]
+*restart
+
+[tb_start_tyrano_code]
+[free name="failbgi" layer=1 wait=true time=200]
+[free name="successbgi" layer=1 wait=true time=200]
+[iscript]
+
+var imageElement = document.getElementById('starcatch_background');
+imageElement.text = 10;
+
+[endscript]
+[jump target="*game01"]
+[_tb_end_tyrano_code]
+
 *back
 
 [tb_start_tyrano_code]
