@@ -66,9 +66,16 @@
 
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_start_tyrano_code]
+["kang_ill"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [t1]
+[chara_part name="Kang" body="2" face="2" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자![t2][p]
+[chara_hide name="Kang" time=300 wait=false]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -220,10 +227,18 @@
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
+["kang_ill"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [t1]
+[chara_part name="Kang" body="2" face="2" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 아! 와줬구나. 어서 와![t2][p]
 [t1]
+[chara_part name="Kang" body="2" face="8" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #???
 이거 봐! 완전 변태 아니야! 몰래 문 뒤에 숨어서 엿듣고 있던 거야?[t2][p]
 [t1]
@@ -240,7 +255,13 @@
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
+["kang_ill"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [t1]
+[chara_part name="Kang" body="1" face="4" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 그만! 내가 불러서 온 친구란 말이야![t2][p]
 [t1]
@@ -250,12 +271,15 @@
 #???
 찐따! 찌질이! 버러지! 거지![t2][p]
 [t1]
+[chara_part name="Kang" body="1" face="5" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 진다영!!![t2][p]
 [t1]
 #진다영
 왜! 내가 틀린 말 했어?! 왜 소리를 지르고 그래![t2][p]
 [t1]
+[chara_hide name="Kang" time=300 wait=false]
 #&[sf.name]
 그러니까...나는...[t2][p]
 [t1]
@@ -268,15 +292,20 @@
 #???
 ...그 친구야...?[t2][p]
 [t1]
+[chara_part name="Kang" body="2" face="2" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 응! 내가 말했지? 막상 보면 괜찮을거라고![t2][p]
 [t1]
 #???
 ...나는 괜찮다고 보는데...[t2][p]
 [t1]
+[chara_part name="Kang" body="3" face="8" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 설나희! 이 변태가 괜찮다고? 다들 무슨 생각을 하는거야![t2][p]
 [t1]
+[chara_hide name="Kang" time=300 wait=false]
 #설나희
 ...나쁜 사람 같아 보이지는 않아...[t2][p]
 [t1]
@@ -292,6 +321,7 @@
 
 [tb_start_tyrano_code]
 [t1]
+[chara_hide name="Kang" time=300 wait=false]
 #
 밴드부에는 여진이 말고도 두 명이 더 있었다.[t2][p]
 [t1]
@@ -308,16 +338,29 @@
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Text_Kick_01.wav"  ]
 [playse  volume="100"  time="1000"  buf="1"  storage="UI/Common_Whistle_01.wav"  ]
 [tb_start_tyrano_code]
+["jin_ill"]
+["kang_ill"]
+["sul_ill"]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [t1]
+[chara_part name="Jin" body="3" face="4"]
+[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 흥! 뭘 봐 이 변태야![t2][p]
 [t1]
+[chara_hide name="Jin" time=300 wait=false]
 #&[sf.name]
 난 변태가 아닌데...[t2][p]
 [t1]
+[chara_part name="Kang" body="2" face="1"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 우선 내가 부른 손님이니까 이야기만이라도 나눠보자![t2][p]
 [t1]
+[chara_part name="Kang" body="2" face="7"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 이제 동아리 마감까지 얼마 남지도 않았는데 다른 사람을 구하기엔 무리야.[t2][p]
 [t1]
@@ -327,12 +370,17 @@
 #진다영
 그... 그건 맞지만...[t2][p]
 [t1]
+[chara_hide name="Kang" time=300 wait=false]
+[chara_part name="Jin" body="3" face="4"]
+[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 야! 너! 변태![t2][p]
 [t1]
 #&[sf.name]
 저...저요?[t2][p]
 [t1]
+[chara_part name="Jin" body="3" face="4"]
+[chara_move name="Jin" time=300 wait=false top="0" left="375" width="1169" height="2735"]
 #진다영
 너 할 줄 아는 게 뭐야![t2][p]
 [t1]
@@ -342,6 +390,8 @@
 #&[sf.name]
 어…음…저기…그러니까…[t2][p]
 [t1]
+[chara_part name="Jin" body="1" face="4"]
+[chara_move name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 거봐 말도 제대로 못 하잖아! 엿듣는 거 말고 할 수 있는 게 뭐야![t2][p]
 [t1]
@@ -351,45 +401,66 @@
 
 [tb_start_tyrano_code]
 [t1]
+[chara_hide name="Jin" time=300 wait=false]
 #
 쉴 새 없이 몰아치는 폭언에 대략 정신이 멍해진다.[t2][p]
 [t1]
+[chara_part name="Kang" body="1" face="4"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 그만! 그렇게 몰아세우면 멀쩡하던 사람도 쓰러지겠어![t2][p]
 [t1]
+[chara_part name="Kang" body="1" face="5"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 우리 둘이 싸우고 있으니까 민망해서 들어오지도 못하고 밖에 서 있었던 거 아니야![t2][p]
 [t1]
 #설나희
 …그건 맞지…[t2][p]
 [t1]
+[chara_hide name="Kang" time=300 wait=false]
+[chara_part name="Jin" body="1" face="4"]
+[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 그럼 노크한다던가 인기척을 냈으면 우리도 대화를[r]멈췄을 거 아니야![t2][p]
 [t1]
 #설나희
 …그것도 맞지…[t2][p]
 [t1]
+[chara_part name="Jin" body="3" face="4"]
+[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 바보한테 뭘 시킬 건데![t2][p]
 [t1]
 #강여진
 그건...[t2][p]
 [t1]
+[chara_part name="Jin" body="1" face="4"]
+[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 없잖아! 뭘 시킬지도 모르면서![t2][p]
 [t1]
+[chara_hide name="Jin" time=300 wait=false]
+[chara_part name="Kang" body="2" face="8"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 보...보컬을 맡길 생각이야! 아마 맡겨놓으면 제대로 할 수 있을 거야![t2][p]
 [t1]
+[chara_hide name="Kang" time=300 wait=false]
+[chara_part name="Jin" body="1" face="4"]
+[chara_show name="Jin" time=300 wait=false top="0" left="375" width="1169" height="2735"]
 #진다영
 말도 제대로 못 하는 바보한테 무슨 보컬을 맡기는데![t2][p]
 [t1]
+[chara_hide name="Jin" time=300 wait=false]
 #
 둘은 잠시 소강상태가 되는 듯하더니 어느새 다시[r]싸울듯이 이야기를 이어 나가기 시작했다.[t2][p]
 [t1]
 #
 그때 옆에서 조용히 있던 푸른 머리 여학생이 내게[r]다가왔다.[t2][p]
 [t1]
+[chara_part name="Sul" body="3" face="1"]
+[chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #설나희
 …잘할 수 있겠어…?[t2][p]
 [t1]
@@ -399,6 +470,7 @@
 #설나희
 …보컬…[t2][p]
 [t1]
+[chara_hide name="Sul" time=300 wait=false]
 #&[sf.name]
 아…음…그러니까…[t2][p]
 [_tb_end_tyrano_code]
