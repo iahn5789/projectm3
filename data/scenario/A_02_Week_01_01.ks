@@ -412,6 +412,5 @@
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [stopse  time="1000"  buf="4"  fadeout="true"  ]
-[stopbgm  time="4000"  fadeout="true"  ]
 [jump  storage="A_02_Week_01_02.ks"  target="*in01"  ]
 [s  ]

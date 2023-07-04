@@ -2,9 +2,16 @@
 
 *in01
 
+[stopbgm  time="2000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[playse  volume="40"  time="1000"  buf="4"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
+[tb_show_message_window  ]
+[stopse  time="1000"  buf="0"  ]
+[playse  volume="100"  time="1000"  buf="3"  storage="Amb/Amb_Room_Tone_02.wav"  loop="true"  fadein="true"  ]
+[playse  volume="80"  time="2000"  buf="3"  storage="SFX/Common_Beautiful_Bell_Tree_01.wav"  loop="true"  fadein="true"  ]
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Emotion_Heart_Beat_01.wav"  loop="true"  fadein="true"  ]
 [tb_start_tyrano_code]
 #
 여진이는 연한 갈색 머리를 휘날리며 내 앞에 서 있었다.[p]
@@ -12,22 +19,41 @@
 고개를 살짝 내리자, 눈이 마주쳤다.[p]
 #
 머리카락과 비슷한 연한 갈색 눈동자.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="90"  time="1000"  buf="0"  storage="SFX/Heart_Beat_Fast_02.wav"  fadein="false"  loop="true"  ]
+[tb_start_tyrano_code]
 #
 여진이는 두 손을 앞으로 모은 채 내 손을 붙잡았다.[p]
 #
 워낙 빠르게 다가온지라 바람에 휘날린 머리카락이 아직 떨어지고 있었다.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="60"  time="1000"  buf="1"  storage="SFX/Common_Clock_Tictok_Slow_Highcut_01.wav"  fadein="false"  loop="true"  ]
+[tb_start_tyrano_code]
 #
 머리카락이 천천히 떨어지고 있는 건지 시간이 느리게[r]흘러가는 건지.[p]
 #
 어쩌면 심장이 빨리 뛰는 바람에 시간이 느리게 흘러간다 느끼고 있을지도 모르겠다.[p]
 #
 무언가를 말하려는 듯 여진이의 입술이 서서히 움직이기 시작했다.[p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #강여진
 할거지?[p]
 #&[sf.name]
 (여자의 손…엄마 손을 제외하고는 처음 잡아보는데…)[p]
 #&[sf.name]
 (이렇게 예쁜 여자애가 내 손을 잡았어…따뜻하고…)[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="1"  ]
+[stopse  time="1000"  buf="0"  ]
+[stopse  time="1000"  buf="3"  ]
+[stopse  time="1000"  buf="4"  ]
+[playse  volume="70"  time="1000"  buf="3"  storage="SFX/Common_Emotion_Question_01.wav"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 ( …거칠어? )[p]
 #
@@ -39,6 +65,8 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [tb_show_message_window  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Common_School_Club_01.wav"  ]
+[playse  volume="70"  time="1000"  buf="4"  storage="Amb/Amb_Shool_Club_01.wav"  loop="true"  fadein="true"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 자…잘 부탁…드립니다…!![p]
@@ -46,32 +74,61 @@
 좋아! 결정된 거다![p]
 #진다영
 정말로 동아리에 가입시킬거야? 진짜?[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Wood_Walk_01.wav"  ]
+[tb_start_tyrano_code]
 #강여진
-나는 교무실 갔다 올 테니 이야기 좀 나누고 있어! 오늘[r]안에 등록해야 해![p]
+나는 교무실 갔다 올 테니 이야기 좀 나누고 있어! 오늘 안에 등록해야 해![p]
+[_tb_end_tyrano_code]
+
+[stopse  time="3000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #진다영
 자...잠깐 기다려! 같이 가![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Wood_Run_01.wav"  ]
+[tb_start_tyrano_code]
 #
 도망치듯 나간 여진이를 진다영이 뒤쫓아 나갔다.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="2000"  buf="0"  fadeout="true"  ]
+[playse  volume="120"  time="1000"  buf="4"  storage="Amb/Amb_Room_Tone_02.wav"  fadein="true"  loop="true"  ]
+[tb_start_tyrano_code]
 #
-시끄럽기만 하던 동아리실에는 어느새 고요함이[r]맴돌았다.[p]
+시끄럽기만 하던 동아리실에는 어느새 고요함이 맴돌았다.[p]
 #&[sf.name]
-안녕하세요…? 하하…[p]
+안녕하세요…?[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="60"  time="1000"  buf="0"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="true"  ]
+[tb_start_tyrano_code]
 #설나희
 ...[p]
+#&[sf.name]
+하하하…[p]
 #
 인사를 건네도 나를 빤히 쳐다만 보고 있다.[p]
 #&[sf.name]
 ( 이 사람 무서워… )[p]
+#
+이 시각 교무실에선...[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_hide_message_window  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Whoosh_Cartoon_Change_Page_01.wav"  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Open_Squeak_01.wav"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Office_Bgi_01.png"  ]
+[playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Office_01.wav"  fadein="true"  loop="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
-#
-이 시각 교무실에선.[p]
 #강여진
 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야![r]괜찮은 애라니까?[p]
 #진다영
@@ -111,7 +168,9 @@
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_Club_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
@@ -132,10 +191,22 @@
 누나라고 불러도 될까요…?[p]
 #설나희
 …응…[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Crow_Caw_01.wav"  ]
+[tb_start_tyrano_code]
 #&[sf.name]
 (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
+[tb_start_tyrano_code]
+#
+드르륵-[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.[p]
@@ -155,11 +226,13 @@
 잠시 고민하던 대용이는 옆에 있던 나희누나에게 말을[r]건넸다.[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Common_Door_Noke_01.wav"  ]
 [tb_start_tyrano_code]
 #전대용
 헤헤 누나 안녕하세요! 혹시 마이크 남는 거 있나요?[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #설나희
 없어.[p]
@@ -171,9 +244,15 @@
 아 있었는데?[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Text_Kick_01.wav"  ]
 [tb_start_tyrano_code]
 #설나희
 그냥 없어.[p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
+[playse  volume="60"  time="1000"  buf="1"  storage="Amb/Amb_Cold_Wind_01.wav"  loop="true"  fadein="true"  ]
+[tb_start_tyrano_code]
 #
 ...[p]
 #전대용
@@ -181,10 +260,14 @@
 #&[sf.name]	어 들어가![p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="1"  fadeout="true"  ]
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_start_tyrano_code]
-#	대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라본 뒤 고개를 돌리고 쓸쓸히 사라졌다.[p]
+#
+대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라본 뒤 고개를 돌리고 쓸쓸히 사라졌다.[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #설나희
 …저기 네 친구야…?[p]
@@ -196,11 +279,13 @@
 문제라도...?[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="40"  time="1000"  buf="0"  storage="SFX/Common_Whoosh_Horror_01.wav"  ]
 [tb_start_tyrano_code]
 #설나희
 …기분나빠…[p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
 그때 여진이와 다영이가 다시 동아리실에 들어왔다.[p]
@@ -216,11 +301,13 @@
 본격적으로 말다툼이 시작되려 하던 그때.[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Common_Door_Slam_01.wav"  ]
 [tb_start_tyrano_code]
 #
 쾅![p]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  ]
 [tb_start_tyrano_code]
 #설나희
 둘 다 그만.[p]
@@ -274,6 +361,7 @@
 (그런데 그 이름이 왜 여기서 나오냐고...)[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Common_Sliding_door_open_short.wav"  ]
 [tb_start_tyrano_code]
 #한갑수
 엣헴![p]
@@ -305,6 +393,11 @@
 ...[p]
 #한갑수
 그럼, 이야기는 전부 다 했으니 난 이만 간다. 수고들 해라.[p]
+[_tb_end_tyrano_code]
+
+[playse  volume="45"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
+[stopse  time="4000"  buf="0"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #
 그렇게 자기 할 말만 열심히 하던 한갑수 선생님은 다시 교무실로 돌아가셨다.[p]
 [_tb_end_tyrano_code]
@@ -324,6 +417,10 @@
 아마 그동안 본 적 없는 시험이 될 수도 있을 것 같은데...[p]
 #강여진
 일단 교실로 가면서 쪽지 시험이 어떻게 나오는지[r]알려줄게![p]
+[_tb_end_tyrano_code]
+
+[playse  volume="70"  time="1000"  buf="0"  storage="SFX/Common_String_Stab_Soft_01.wav"  ]
+[tb_start_tyrano_code]
 #강여진
 같이 갈 사람 손![p]
 #진다영
@@ -332,8 +429,16 @@
 ...[p]
 #강여진
 아쉽네... 그럼, 우리 둘이 가자![p]
+[_tb_end_tyrano_code]
+
+[stopse  time="1000"  buf="0"  ]
+[tb_start_tyrano_code]
 #
 그렇게 우리는 동아리실을 나와 여진이에게 설명을[r]들으며 교실로 향했다.[p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
+[stopse  time="3000"  buf="0"  fadeout="true"  ]
+[stopse  time="1000"  buf="4"  fadeout="true"  ]
+[stopbgm  time="1000"  ]
 [s  ]
