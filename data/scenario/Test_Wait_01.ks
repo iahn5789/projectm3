@@ -2,7 +2,7 @@
 
 *bgmstart
 
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  ]
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  fadein="true"  ]
 *testin
 
 [tb_start_tyrano_code]
