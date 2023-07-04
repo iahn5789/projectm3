@@ -802,9 +802,9 @@
 [tb_start_tyrano_code]
 [chara_part name="Kang" body="1" face="2"]
 [t1]
-[chara_hide name="Jin" time=300 wait=false]
 #
 그렇게 우리는 동아리실을 나와 여진이에게 설명을[r]들으며 교실로 향했다.[t2][p]
+[chara_hide name="Kang" time=300 wait=false]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
