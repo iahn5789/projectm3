@@ -33,4 +33,6 @@ f['change_number']='-12';
 f['kTopDay']=5; 
 f['sTopDay']=''; 
 f['jTopDay']=''; 
+f['workspace_chance']=5; 
+f['workspace_state']='FALSE'; 
 [endscript] 

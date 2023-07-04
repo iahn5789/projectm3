@@ -3,6 +3,17 @@
 *game01
 
 [tb_start_tyrano_code]
+[iscript]
+
+if(window.TYRANO.kag.stat.f.workspace_chance == 0){
+TYRANO.kag.ftag.startTag("return", { });
+}
+
+window.TYRANO.kag.stat.f.workspace_chance -= 1;
+[endscript]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 [html zindex=6]
 
 <div id="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_05.png');">
@@ -114,8 +125,7 @@ else{
 return d;
 }
 
-Starcatch_time();
-myButton.addEventListener('click', () => {
+function Event_action(){
 
 myAnimation.style.animationPlayState = 'paused';
 setTimeout(function() {
@@ -178,7 +188,25 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 
 }
 }
+}
+let spacePressed = false;
+Starcatch_time();
+document.addEventListener("keydown", function(event) {
+if (event.keyCode === 32 && !spacePressed) {
+spacePressed = true;
+event.preventDefault();
+Event_action();
+}
 });
+document.addEventListener("keyup", function(event) {
+if (event.keyCode === 32) {
+spacePressed = false;
+}
+});
+myButton.addEventListener('click', () => {
+Event_action();
+});
+
 
 
 [endscript]

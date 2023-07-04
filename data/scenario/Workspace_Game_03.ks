@@ -1,6 +1,17 @@
-[_tb_system_call storage=system/_Workspace_Game_01.ks]
+[_tb_system_call storage=system/_Workspace_Game_03.ks]
 
 *game01
+
+[tb_start_tyrano_code]
+[iscript]
+
+if(window.TYRANO.kag.stat.f.workspace_chance == 0){
+TYRANO.kag.ftag.startTag("return", { });
+}
+window.TYRANO.kag.stat.f.workspace_chance -= 1;
+
+[endscript]
+[_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [html zindex=6]
@@ -13,10 +24,9 @@
 <div id="starcatch_Gage" style="display:block;margin:auto; margin-top:55px; width:538px; height: 52px; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Gauge_Back_01.png');">
 <div id="starcatch_zone1" style="position: absolute; width: 50px; height:40px; background: #ffc1074d; margin-top: 2px;left: 100px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_01.png');">
 </div>
-<div id="starcatch_zone2" style="position: absolute; width: 30px; height:40px; background: #ffc1074d; margin-top: 2px;left: 200px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_02.png');">
+<div id="starcatch_zone2" style="position: absolute; width: 50px; height:40px; background: #ffc1074d; margin-top: 2px;left: 240px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_01.png');">
 </div>
-<div id="starcatch_zone3" style="position: absolute; width: 10px; height:40px; background: #ffc1074d; margin-top: 2px;left: 250px; right: 0; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Pattern_03.png');">
-</div>
+
 <div id="starcatch_item" style="width: 27px; height:69px;position: absolute;margin-top:2px;display: inline-block;box-sizing: border-box;animation: linear infinite alternate;;animation-name: move_left_right;animation-duration: 1s; animation-duration: leaner;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Bar_01.png');">
 </div>
 
@@ -113,9 +123,7 @@ else{
 }
 return d;
 }
-
-Starcatch_time();
-myButton.addEventListener('click', () => {
+function Event_action(){
 
 myAnimation.style.animationPlayState = 'paused';
 setTimeout(function() {
@@ -178,7 +186,25 @@ TYRANO.kag.ftag.startTag("jump", { target: "Success" });
 
 }
 }
+}
+let spacePressed = false;
+Starcatch_time();
+document.addEventListener("keydown", function(event) {
+if (event.keyCode === 32 && !spacePressed) {
+spacePressed = true;
+event.preventDefault();
+Event_action();
+}
 });
+document.addEventListener("keyup", function(event) {
+if (event.keyCode === 32) {
+spacePressed = false;
+}
+});
+myButton.addEventListener('click', () => {
+Event_action();
+});
+
 
 
 [endscript]
@@ -247,7 +273,7 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="successbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_03.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Success_Bgi_01.png"/>
 </div>
 [endhtml]
 
@@ -318,7 +344,7 @@ animation:fadein 0.7s;
 }
 </style>
 <div class="failbgi">
-<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_01.png"/>
+<img class="img" src="data/image/New_GUI/Workspace_UI/UI_Fail_Bgi_03.png"/>
 </div>
 [endhtml]
 

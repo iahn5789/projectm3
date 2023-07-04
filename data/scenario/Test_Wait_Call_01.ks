@@ -158,21 +158,21 @@
 [s  ]
 *game01
 
-[call  storage="Workspace_Game_01.ks"  target="*game01"  ]
+[call  storage="Workspace_Game_01.ks"  target="*game01"  cond="f.workspace_state=='FALSE'"  ]
 [s  ]
 *game02
 
-[call  storage="Workspace_Game_02.ks"  target="*game01"  ]
+[call  storage="Workspace_Game_02.ks"  target="*game01"  cond="f.workspace_state=='FALSE'"  ]
 [s  ]
 *game03
 
-[call  storage="Workspace_Game_03.ks"  target="*game01"  ]
+[call  storage="Workspace_Game_03.ks"  target="*game01"  cond="f.workspace_state=='FALSE'"  ]
 [s  ]
 *game04
 
-[call  storage="Workspace_Game_04.ks"  target="*game01"  ]
+[call  storage="Workspace_Game_04.ks"  target="*game01"  cond="f.workspace_state=='FALSE'"  ]
 [s  ]
 *game05
 
-[call  storage="Workspace_Game_05.ks"  target="*game01"  ]
+[call  storage="Workspace_Game_05.ks"  target="*game01"  cond="f.workspace_state=='FALSE'"  ]
 [s  ]
