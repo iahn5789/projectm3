@@ -572,7 +572,7 @@
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
-[stopse  time="3000"  buf="0"  fadeout="true"  ]
-[stopse  time="1000"  buf="4"  fadeout="true"  ]
-[stopbgm  time="1000"  ]
+[mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
+[stopbgm  time="1000"  fadeout="true"  ]
+[jump  storage="Test_Tutorial_01.ks"  target=""  ]
 [s  ]
