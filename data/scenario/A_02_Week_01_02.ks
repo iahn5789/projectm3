@@ -152,13 +152,13 @@
 [t1]
 #설나희
 ...[t2][p]
-[chara_hide name="Sul" time=300 wait=false]
 [t1]
 #&[sf.name]
 하하하…[t2][p]
 [t1]
 #
 인사를 건네도 나를 빤히 쳐다만 보고 있다.[t2][p]
+[chara_hide name="Sul" time=300 wait=false]
 [t1]
 #&[sf.name]
 ( 이 사람 무서워… )[t2][p]
@@ -235,7 +235,7 @@
 #진다영
 아니 언제 그랬어! 그런 말 없었잖아! 강여진 너…[t2][p]
 [chara_part name="Kang" body="1" face="4"]
-[chara_move name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 [t1]
 #강여진
 들어오겠다고 말하는 거 너도 봤잖아! 맞아 아니야![t2][p]

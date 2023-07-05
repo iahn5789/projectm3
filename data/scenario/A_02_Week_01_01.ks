@@ -64,7 +64,9 @@
 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득[r]생각이 들었다.[t2][p]
 [_tb_end_tyrano_code]
 
+[tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[tb_show_message_window  ]
 [tb_start_tyrano_code]
 ["kang_ill"]
 [_tb_end_tyrano_code]
