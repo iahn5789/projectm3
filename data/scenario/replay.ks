@@ -21,7 +21,7 @@
 [button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -82,7 +82,7 @@
 [button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -143,7 +143,7 @@
 [button name="kang" storage="replay.ks" target="kang_root" graphic="../image/New_GUI/Replay_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="341" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="replay.ks" target="jin_root" graphic="../image/New_GUI/Replay_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="496" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="replay.ks" target="sul_root" graphic="../image/New_GUI/Replay_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/Replay_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="650" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="185" height="88" x="33" y="965" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="replay.ks" target="back" graphic="../image/New_GUI/Replay_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/Replay_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
