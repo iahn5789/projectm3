@@ -21,7 +21,7 @@
 		
 
 		;CG・回想用の共通項目
-		[eval exp="sf._tb_cg_noimage='Scene_Bt_Off_01.png'" ]
+		[eval exp="sf._tb_cg_noimage='Scene_Bt_Off_02.png'" ]
 		[eval exp="sf._tb_replay_noimage='Scene_Bt_Off_02.png'" ]
 
 		;ふきだし用の設定（message1）

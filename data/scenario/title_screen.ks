@@ -4,13 +4,16 @@
 
 [tb_start_tyrano_code]
 [cursor storage = "my_cursor.png"]
-[title_first]
+;[title_first]
 [freeimage layer=0]
+;[screenfull]
 [_tb_end_tyrano_code]
 
+[mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [tb_keyconfig  flag="0"  ]
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Title_Screen_01.mp3"  ]
+[playbgm  volume="60"  time="500"  loop="true"  storage="Common_Title_Screen_01.wav"  fadein="true"  ]
 [bg  storage="BGI/Common_Title_Screen.jpg"  method="fadeIn"  time="10"  ]
+[call  storage="Particle_Test_Scene_01.ks"  target="*Buble_particle"  ]
 *title
 
 [tb_start_tyrano_code]
@@ -31,8 +34,7 @@
 [wa]
 [_tb_end_tyrano_code]
 
-[mask_off  time="1000"  effect="fadeOut"  ]
-[call  storage="Particle_Test_Scene_01.ks"  target="*Buble_particle"  ]
+[mask_off  time="1500"  effect="fadeOut"  ]
 [s  ]
 *START
 
