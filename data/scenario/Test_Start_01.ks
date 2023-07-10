@@ -91,6 +91,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Correct_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Collect_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -109,6 +110,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Wrong_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Wrong_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -174,6 +176,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Correct_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Collect_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -192,6 +195,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Wrong_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Wrong_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -252,6 +256,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Correct_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Collect_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -277,6 +282,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Wrong_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Wrong_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -300,6 +306,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Timeout_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Wrong_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -316,6 +323,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Timeout_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Wrong_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
@@ -332,6 +340,7 @@
 
 [tb_start_tyrano_code]
 [image layer="1" page="fore" visible="true" top="78" left="591"  storage=" ../image/New_GUI/Test_In_UI/Timeout_UI_01.png"]
+[playse  volume="100"  time="1000"  buf="0"  storage="UI/Exam_Answer_Wrong_01.wav"]
 [_tb_end_tyrano_code]
 
 [wait  time="1000"  ]
