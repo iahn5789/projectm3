@@ -217,12 +217,14 @@ button.addEventListener("click", function(event) {
 doAction(event.target.id);
 });
 });</script>
+<audio id="test_items_audio_over" src="data/sound/UI/Config_Sellect_Hover_01.wav" preload="auto"></audio>
+<audio id="test_items_audio_click" src="data/sound/UI/Exam_Answer_Choose_01.wav" preload="auto"></audio>
 <div class="button-box">
-<button id="button_01" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
-<button id="button_02" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
-<button id="button_03" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
-<button id="button_04" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
-<button id="button_05" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
+<button id="button_01" class="button_sound" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
+<button id="button_02" class="button_sound" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
+<button id="button_03" class="button_sound" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
+<button id="button_04" class="button_sound" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
+<button id="button_05" class="button_sound" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""/><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"/><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"/></button>
 </div>
 [endhtml]
 
@@ -238,6 +240,21 @@ document.getElementById("button_02_02_img").setAttribute("src", f.Test_Item02.re
 document.getElementById("button_03_02_img").setAttribute("src", f.Test_Item03.replace("_1.png","_2.png"));
 document.getElementById("button_04_02_img").setAttribute("src", f.Test_Item04.replace("_1.png","_2.png"));
 document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.replace("_1.png","_2.png"));
+
+var audio_over = document.getElementById('test_items_audio_over');
+var audio_click = document.getElementById('test_items_audio_click');
+
+var searchBox = document.querySelectorAll(".button_sound");
+
+searchBox.forEach(button => {
+  button.addEventListener('mouseover', function() {
+    audio_over.play();
+  });
+  button.addEventListener('click', function() {
+    audio_click.play();
+  });
+});
+
 [endscript]
 
 
@@ -267,11 +284,7 @@ document.getElementById("button_02checkimg").style.opacity = 1;
 document.getElementById("button_03checkimg").style.opacity = 1;
 document.getElementById("button_04checkimg").style.opacity = 1;
 document.getElementById("button_05checkimg").style.opacity = 1;
-conop1.style.opacity = 1;
-conop2.style.opacity = 1;
-conop3.style.opacity = 1;
-conop4.style.opacity = 1;
-conop5.style.opacity = 1;
+
 }, false);
 
 [endscript]
@@ -447,12 +460,14 @@ button.addEventListener("click", function(event) {
 doAction(event.target.id);
 });
 });</script>
+<audio id="test_items_audio_over" src="data/sound/UI/Common_Branch_Hover_01.wav" preload="auto"></audio>
+<audio id="test_items_audio_click" src="data/sound/UI/Exam_Answer_Choose_01.wav" preload="auto"></audio>
 <div class="button-box">
-<button id="button_01" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_02" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_03" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_04" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_05" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_01" class="button_sound" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_02" class="button_sound" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_03" class="button_sound" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_04" class="button_sound" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_05" class="button_sound" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
 </div>
 [endhtml]
 
@@ -468,6 +483,21 @@ document.getElementById("button_02_02_img").setAttribute("src", f.Test_Item02.re
 document.getElementById("button_03_02_img").setAttribute("src", f.Test_Item03.replace("_1.png","_2.png"));
 document.getElementById("button_04_02_img").setAttribute("src", f.Test_Item04.replace("_1.png","_2.png"));
 document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.replace("_1.png","_2.png"));
+
+var audio_over = document.getElementById('test_items_audio_over');
+var audio_click = document.getElementById('test_items_audio_click');
+
+var searchBox = document.querySelectorAll(".button_sound");
+
+searchBox.forEach(button => {
+  button.addEventListener('mouseover', function() {
+    audio_over.play();
+  });
+  button.addEventListener('click', function() {
+    audio_click.play();
+  });
+});
+
 [endscript]
 
 
@@ -495,11 +525,7 @@ document.getElementById("button_02checkimg").style.opacity = 1;
 document.getElementById("button_03checkimg").style.opacity = 1;
 document.getElementById("button_04checkimg").style.opacity = 1;
 document.getElementById("button_05checkimg").style.opacity = 1;
-conop1.style.opacity = 1;
-conop2.style.opacity = 1;
-conop3.style.opacity = 1;
-conop4.style.opacity = 1;
-conop5.style.opacity = 1;
+
 }, false);
 
 [endscript]
@@ -675,12 +701,14 @@ button.addEventListener("click", function(event) {
 doAction(event.target.id);
 });
 });</script>
+<audio id="test_items_audio_over" src="data/sound/UI/Common_Branch_Hover_01.wav" preload="auto"></audio>
+<audio id="test_items_audio_click" src="data/sound/UI/Exam_Answer_Choose_01.wav" preload="auto"></audio>
 <div class="button-box">
-<button id="button_01" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_02" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_03" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_04" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
-<button id="button_05" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_01" class="button_sound" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_02" class="button_sound" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_03" class="button_sound" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_04" class="button_sound" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
+<button id="button_05" class="button_sound" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 408px;height: 94px;display: none;opacity: 0;"></button>
 </div>
 [endhtml]
 
@@ -696,6 +724,22 @@ document.getElementById("button_02_02_img").setAttribute("src", f.Test_Item02.re
 document.getElementById("button_03_02_img").setAttribute("src", f.Test_Item03.replace("_1.png","_2.png"));
 document.getElementById("button_04_02_img").setAttribute("src", f.Test_Item04.replace("_1.png","_2.png"));
 document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.replace("_1.png","_2.png"));
+
+var audio_over = document.getElementById('test_items_audio_over');
+var audio_leave = document.getElementById('test_items_audio_leave');
+var audio_click = document.getElementById('test_items_audio_click');
+
+var searchBox = document.querySelectorAll(".button_sound");
+
+searchBox.forEach(button => {
+  button.addEventListener('mouseover', function() {
+    audio_over.play();
+  });
+  button.addEventListener('click', function() {
+    audio_click.play();
+  });
+});
+
 [endscript]
 
 
@@ -705,6 +749,7 @@ document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.re
 [tb_start_tyrano_code]
 [button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
 [anim name=correct_01 time=700 left=1659]
+
 [iscript]
 var ani = document.querySelector(".button-box");
 ani.addEventListener("animationend", function(e) {
@@ -724,12 +769,11 @@ document.getElementById("button_02checkimg").style.opacity = 1;
 document.getElementById("button_03checkimg").style.opacity = 1;
 document.getElementById("button_04checkimg").style.opacity = 1;
 document.getElementById("button_05checkimg").style.opacity = 1;
-conop1.style.opacity = 1;
-conop2.style.opacity = 1;
-conop3.style.opacity = 1;
-conop4.style.opacity = 1;
-conop5.style.opacity = 1;
+
 }, false);
+
+
+
 
 [endscript]
 [_tb_end_tyrano_code]
