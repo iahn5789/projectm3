@@ -25,7 +25,7 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1772"  y="50"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicExtraBold"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=0 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
 [button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="250" height="80" x="834" y="1200" clickse="UI/Exam_Zoom_In_01.wav"]
@@ -42,6 +42,29 @@
 *quiz_01
 
 [tb_ptext_hide  time="1"  ]
+[tb_start_tyrano_code]
+
+[anim name=teststart time=300 top=1200]
+[free name="testpaper" layer=0 time=500]
+[wa]
+[image layer=1 left=2120 top=486 width=239 height=108 storage = ../image/New_GUI/Test_In_UI/UI_Text_Ready_01.png page=fore visible=true name=textready]
+[anim name=textready time=300 left=840]
+[wa]
+[anim name=textready time=700 left=840]
+[wa]
+[anim name=textready time=300 left=-200]
+[wa]
+[free name="textready" layer=1]
+[image layer=1 left=2120 top=486 width=239 height=108 storage = ../image/New_GUI/Test_In_UI/UI_Text_Start_01.png page=fore visible=true name=textstart]
+[anim name=textstart time=300 left=840]
+[wa]
+[anim name=textstart time=700 left=840]
+[wa]
+[anim name=textstart time=300 left=-200]
+[wa]
+[free name="textstart" layer=1]
+[_tb_end_tyrano_code]
+
 [tb_eval  exp="f.question=1"  name="question"  cmd="="  op="t"  val="1"  val_2="undefined"  ]
 [cm  ]
 [tb_start_tyrano_code]
@@ -52,7 +75,7 @@
 
 [tb_start_tyrano_code]
 [layopt layer=0 visible=true]
-[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_01.png page=fore visible=true name=testpaper ]
+[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_01.png page=fore visible=true name=testpaper time=1000]
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
