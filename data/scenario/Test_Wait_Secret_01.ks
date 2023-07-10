@@ -1,6 +1,6 @@
 [_tb_system_call storage=system/_Test_Wait_Secret_01.ks]
 
-*backkang
+*back
 
 [tb_start_tyrano_code]
 [awakegame]
@@ -9,8 +9,9 @@
 [s  ]
 *msgkang01
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Kang_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Kang_01.png"  ]
+
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -29,9 +30,7 @@
 [clearfix name="msgkang01"]
 [clearfix name="msgkang02"]
 [clearfix name="msgkang03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -45,7 +44,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -53,8 +52,9 @@ animation: fadein 1s;
 [s  ]
 *msgkang02
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Kang_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Kang_01.png"  ]
+
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -73,9 +73,7 @@ animation: fadein 1s;
 [clearfix name="msgkang01"]
 [clearfix name="msgkang02"]
 [clearfix name="msgkang03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -89,7 +87,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -97,8 +95,9 @@ animation: fadein 1s;
 [s  ]
 *msgkang03
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Kang_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Kang_01.png"  ]
+
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -117,9 +116,7 @@ animation: fadein 1s;
 [clearfix name="msgkang01"]
 [clearfix name="msgkang02"]
 [clearfix name="msgkang03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -133,7 +130,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -141,8 +138,8 @@ animation: fadein 1s;
 [s  ]
 *msgjin01
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Jin_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Jin_01.png"  ]
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -150,7 +147,7 @@ animation: fadein 1s;
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgjin" layer=1 ]
 [free name="storyboard" layer=2 ]
 [free name="charinfo" layer=2 ]
 [clearfix name="lootcommon"]
@@ -161,9 +158,7 @@ animation: fadein 1s;
 [clearfix name="msgjin01"]
 [clearfix name="msgjin02"]
 [clearfix name="msgjin03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -177,7 +172,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -185,8 +180,8 @@ animation: fadein 1s;
 [s  ]
 *msgjin02
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Jin_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Jin_01.png"  ]
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -194,7 +189,7 @@ animation: fadein 1s;
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgjin" layer=1 ]
 [free name="storyboard" layer=2 ]
 [free name="charinfo" layer=2 ]
 [clearfix name="lootcommon"]
@@ -205,9 +200,7 @@ animation: fadein 1s;
 [clearfix name="msgjin01"]
 [clearfix name="msgjin02"]
 [clearfix name="msgjin03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -221,7 +214,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -229,8 +222,8 @@ animation: fadein 1s;
 [s  ]
 *msgjin03
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Jin_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Jin_01.png"  ]
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -238,7 +231,7 @@ animation: fadein 1s;
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgjin" layer=1 ]
 [free name="storyboard" layer=2 ]
 [free name="charinfo" layer=2 ]
 [clearfix name="lootcommon"]
@@ -249,9 +242,7 @@ animation: fadein 1s;
 [clearfix name="msgjin01"]
 [clearfix name="msgjin02"]
 [clearfix name="msgjin03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -265,7 +256,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -273,8 +264,8 @@ animation: fadein 1s;
 [s  ]
 *msgsul01
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Sul_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Sul_01.png"  ]
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -282,7 +273,7 @@ animation: fadein 1s;
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgsul" layer=1 ]
 [free name="storyboard" layer=2 ]
 [free name="charinfo" layer=2 ]
 [clearfix name="lootcommon"]
@@ -293,9 +284,7 @@ animation: fadein 1s;
 [clearfix name="msgsul01"]
 [clearfix name="msgsul02"]
 [clearfix name="msgsul03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -309,7 +298,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -317,8 +306,8 @@ animation: fadein 1s;
 [s  ]
 *msgsul02
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Sul_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Sul_01.png"  ]
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -326,7 +315,7 @@ animation: fadein 1s;
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgsul" layer=1 ]
 [free name="storyboard" layer=2 ]
 [free name="charinfo" layer=2 ]
 [clearfix name="lootcommon"]
@@ -337,9 +326,7 @@ animation: fadein 1s;
 [clearfix name="msgsul01"]
 [clearfix name="msgsul02"]
 [clearfix name="msgsul03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -353,7 +340,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
@@ -361,8 +348,8 @@ animation: fadein 1s;
 [s  ]
 *msgsul03
 
-[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Sul_01.png"  ]
 [tb_start_tyrano_code]
+[bg  time="2"  method="crossfade"  storage="Test_BGI/Bgi_Sceret_Sul_01.png"  ]
 [cm]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
@@ -370,7 +357,7 @@ animation: fadein 1s;
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
-[free name="secretmsgkang" layer=1 ]
+[free name="secretmsgsul" layer=1 ]
 [free name="storyboard" layer=2 ]
 [free name="charinfo" layer=2 ]
 [clearfix name="lootcommon"]
@@ -381,9 +368,7 @@ animation: fadein 1s;
 [clearfix name="msgsul01"]
 [clearfix name="msgsul02"]
 [clearfix name="msgsul03"]
-[_tb_end_tyrano_code]
 
-[tb_start_tyrano_code]
 [filter layer=all blur=10]
 [html]
 <style>
@@ -397,7 +382,7 @@ animation: fadein 1s;
 [endhtml]
 
 [button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="back" storage="Test_Wait_Secret_01.ks" target="backkang" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
