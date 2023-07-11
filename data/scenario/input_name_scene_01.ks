@@ -3,6 +3,12 @@
 *l_jump_1
 
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
+[tb_start_tyrano_code]
+[freeimage layer="0"]
+[freeimage layer="1"]
+[freeimage layer="2"]
+[_tb_end_tyrano_code]
+
 [tb_keyconfig  flag="0"  ]
 [hidemenubutton]
 
@@ -70,11 +76,11 @@
 [tb_start_tyrano_code]
 [if exp=" sf.name ===  f.null"]
 [eval exp="sf.name='정민'"]
-[jump storage="Chapter01_Dream_01.ks" target="L_input_name"]
+[jump storage="A_01_Prologue_01.ks" target="in01"]
 [endif]
 [_tb_end_tyrano_code]
 
-[jump  storage="Chapter01_Dream_01.ks"  target="*L_input_name"  cond="sf.name!=''"  ]
+[jump  storage="A_01_Prologue_01.ks"  target="*in01"  cond="sf.name!=''"  ]
 [s  ]
 [tb_start_tyrano_code]
 [html]<button data-event-tag="button" data-event-pm="{"storage":"input_name_scene_01.ks","target":"*L_name_1","ext":"","name":"img_7","x":"1059","y":"498","width":"47","height":"47","fix":"false","savesnap":"false","folder":"image","exp":"","prevar":"","visible":"true","hint":"","clickse":"","enterse":"","leavese":"","activeimg":"","clickimg":"","enterimg":"","auto_next":"yes","role":"","_clickable_img":"","_tag":"button"}" style="position: absolute; cursor: pointer; z-index: 99999999; left: 1059px; top: 498px; width: 47px; height: 47px; background-color: "black"; color: "white";">확인</button>

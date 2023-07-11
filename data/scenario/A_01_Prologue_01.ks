@@ -2,6 +2,13 @@
 
 *in01
 
+[tb_start_tyrano_code]
+[cm]
+[freeimage layer="0"]
+[freeimage layer="1"]
+[freeimage layer="2"]
+[_tb_end_tyrano_code]
+
 [call  storage="Particle_Test_Scene_01.ks"  target="*dust_particle"  ]
 [playse  volume="100"  time="1000"  buf="3"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
 [playbgm  volume="250"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
