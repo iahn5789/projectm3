@@ -12,6 +12,7 @@
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
+[freeimage layer="1" ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -19,6 +20,7 @@
 [clearfix name="lootkang"]
 [clearfix name="lootjin"]
 [clearfix name="lootsul"]
+[clearfix name="teststart"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -287,7 +289,7 @@
 [filter layer=all blur=0 opacity=100]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Result_01.ks"  target="*test_result"  ]
+[jump  storage="Test_Start_01.ks"  target="*quiz_04"  ]
 [s  ]
 *x_03
 
