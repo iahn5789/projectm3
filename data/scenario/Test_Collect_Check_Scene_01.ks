@@ -42,6 +42,8 @@ window.TYRANO.kag.stat.f.select = '';
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*1Week_Button"  cond="f.question==1"  ]
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*2Week_Button"  cond="f.question==2"  ]
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*3Week_Button"  cond="f.question==3"  ]
+[call  storage="Test_Collect_Check_Scene_01.ks"  target="*4Week_Button"  cond="f.question==4"  ]
+[call  storage="Test_Collect_Check_Scene_01.ks"  target="*5Week_Button"  cond="f.question==5"  ]
 [return  ]
 [s  ]
 *Collect_Check
@@ -247,12 +249,12 @@ var audio_click = document.getElementById('test_items_audio_click');
 var searchBox = document.querySelectorAll(".button_sound");
 
 searchBox.forEach(button => {
-  button.addEventListener('mouseover', function() {
-    audio_over.play();
-  });
-  button.addEventListener('click', function() {
-    audio_click.play();
-  });
+button.addEventListener('mouseover', function() {
+audio_over.play();
+});
+button.addEventListener('click', function() {
+audio_click.play();
+});
 });
 
 [endscript]
@@ -490,12 +492,12 @@ var audio_click = document.getElementById('test_items_audio_click');
 var searchBox = document.querySelectorAll(".button_sound");
 
 searchBox.forEach(button => {
-  button.addEventListener('mouseover', function() {
-    audio_over.play();
-  });
-  button.addEventListener('click', function() {
-    audio_click.play();
-  });
+button.addEventListener('mouseover', function() {
+audio_over.play();
+});
+button.addEventListener('click', function() {
+audio_click.play();
+});
 });
 
 [endscript]
@@ -732,12 +734,506 @@ var audio_click = document.getElementById('test_items_audio_click');
 var searchBox = document.querySelectorAll(".button_sound");
 
 searchBox.forEach(button => {
-  button.addEventListener('mouseover', function() {
-    audio_over.play();
-  });
-  button.addEventListener('click', function() {
-    audio_click.play();
-  });
+button.addEventListener('mouseover', function() {
+audio_over.play();
+});
+button.addEventListener('click', function() {
+audio_click.play();
+});
+});
+
+[endscript]
+
+
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[anim name=correct_01 time=700 left=1659]
+
+[iscript]
+var ani = document.querySelector(".button-box");
+ani.addEventListener("animationend", function(e) {
+var con1 = document.getElementById("button_01_02_img");
+var con2 = document.getElementById("button_02_02_img");
+var con3 = document.getElementById("button_03_02_img");
+var con4 = document.getElementById("button_04_02_img");
+var con5 = document.getElementById("button_05_02_img");
+
+con1.style.display = 'block';
+con2.style.display = 'block';
+con3.style.display = 'block';
+con4.style.display = 'block';
+con5.style.display = 'block';
+document.getElementById("button_01checkimg").style.opacity = 1;
+document.getElementById("button_02checkimg").style.opacity = 1;
+document.getElementById("button_03checkimg").style.opacity = 1;
+document.getElementById("button_04checkimg").style.opacity = 1;
+document.getElementById("button_05checkimg").style.opacity = 1;
+
+}, false);
+
+
+
+
+[endscript]
+[_tb_end_tyrano_code]
+
+[return  ]
+*4Week_Button
+
+[tb_start_tyrano_code]
+[iscript]
+
+
+// 버튼 이미지 출력 함수
+function displayButtonImage(item) {
+var imgSrc = ""; // 이미지 소스 경로 변수 초기화
+
+// 변수에 저장된 값에 따라 버튼 이미지 소스 경로 설정
+switch (item) {
+case 1:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/4_1_1.png";
+break;
+case 2:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/4_2_1.png";
+break;
+case 3:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/4_3_1.png";
+break;
+case 4:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/4_4_1.png";
+break;
+case 5:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/4_5_1.png";
+break;
+}
+
+return imgSrc;
+}
+
+
+
+f.Test_Item01 = displayButtonImage(f.Test_Item01);
+f.Test_Item02 = displayButtonImage(f.Test_Item02);
+f.Test_Item03= displayButtonImage(f.Test_Item03);
+f.Test_Item04= displayButtonImage(f.Test_Item04);
+f.Test_Item05= displayButtonImage(f.Test_Item05);
+
+
+[endscript]
+
+[html]
+<style>
+button:focus {
+outline: none;
+}
+.button-box button .buttonimg-hover {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+}
+
+.button-box button:hover .buttonimg-hover {
+opacity: 1;
+display: block;
+}
+
+.button-box button:hover .buttonimg {
+opacity: 0;
+}
+
+.button-box button .buttonimg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 1;
+animation: fadein 1.5s;
+}
+
+</style>
+<script>
+function doAction(buttonId) {
+if (buttonId === 'button_01') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'block';
+con2.style.display = 'none';
+con3.style.display = 'none';
+con4.style.display = 'none';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item01 === 'data/image/New_GUI/Test_In_UI/Week_01/4_4_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+} else if (buttonId === 'button_02') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'block';
+con3.style.display = 'none';
+con4.style.display = 'none';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item02 === 'data/image/New_GUI/Test_In_UI/Week_01/4_4_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+} else if (buttonId === 'button_03') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'none';
+con3.style.display = 'block';
+con4.style.display = 'none';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item03 === 'data/image/New_GUI/Test_In_UI/Week_01/4_4_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+} else if (buttonId === 'button_04') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'none';
+con3.style.display = 'none';
+con4.style.display = 'block';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item04 === 'data/image/New_GUI/Test_In_UI/Week_01/4_4_1.png'){
+window.TYRANO.kag.stat.f.select= 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select= 'FALSE';
+}
+} else if (buttonId === 'button_05'){
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'none';
+con3.style.display = 'none';
+con4.style.display = 'none';
+con5.style.display = 'block';
+if(window.TYRANO.kag.stat.f.Test_Item05 === 'data/image/New_GUI/Test_In_UI/Week_01/4_4_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+}
+}
+
+var buttons3 = document.querySelectorAll("button");
+buttons3.forEach((button) => {
+button.addEventListener("click", function(event) {
+doAction(event.target.id);
+});
+});</script>
+<audio id="test_items_audio_over" src="data/sound/UI/Common_Branch_Hover_01.wav" preload="auto"></audio>
+<audio id="test_items_audio_click" src="data/sound/UI/Exam_Answer_Choose_01.wav" preload="auto"></audio>
+<div class="button-box">
+<button id="button_01" class="button_sound" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_02" class="button_sound" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_03" class="button_sound" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_04" class="button_sound" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_05" class="button_sound" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+</div>
+[endhtml]
+
+[iscript]
+document.getElementById("button_01_01_img").setAttribute("src", f.Test_Item01);
+document.getElementById("button_02_01_img").setAttribute("src", f.Test_Item02);
+document.getElementById("button_03_01_img").setAttribute("src", f.Test_Item03);
+document.getElementById("button_04_01_img").setAttribute("src", f.Test_Item04);
+document.getElementById("button_05_01_img").setAttribute("src", f.Test_Item05);
+
+document.getElementById("button_01_02_img").setAttribute("src", f.Test_Item01.replace("_1.png","_2.png"));
+document.getElementById("button_02_02_img").setAttribute("src", f.Test_Item02.replace("_1.png","_2.png"));
+document.getElementById("button_03_02_img").setAttribute("src", f.Test_Item03.replace("_1.png","_2.png"));
+document.getElementById("button_04_02_img").setAttribute("src", f.Test_Item04.replace("_1.png","_2.png"));
+document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.replace("_1.png","_2.png"));
+
+var audio_over = document.getElementById('test_items_audio_over');
+var audio_leave = document.getElementById('test_items_audio_leave');
+var audio_click = document.getElementById('test_items_audio_click');
+
+var searchBox = document.querySelectorAll(".button_sound");
+
+searchBox.forEach(button => {
+button.addEventListener('mouseover', function() {
+audio_over.play();
+});
+button.addEventListener('click', function() {
+audio_click.play();
+});
+});
+
+[endscript]
+
+
+
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[anim name=correct_01 time=700 left=1659]
+
+[iscript]
+var ani = document.querySelector(".button-box");
+ani.addEventListener("animationend", function(e) {
+var con1 = document.getElementById("button_01_02_img");
+var con2 = document.getElementById("button_02_02_img");
+var con3 = document.getElementById("button_03_02_img");
+var con4 = document.getElementById("button_04_02_img");
+var con5 = document.getElementById("button_05_02_img");
+
+con1.style.display = 'block';
+con2.style.display = 'block';
+con3.style.display = 'block';
+con4.style.display = 'block';
+con5.style.display = 'block';
+document.getElementById("button_01checkimg").style.opacity = 1;
+document.getElementById("button_02checkimg").style.opacity = 1;
+document.getElementById("button_03checkimg").style.opacity = 1;
+document.getElementById("button_04checkimg").style.opacity = 1;
+document.getElementById("button_05checkimg").style.opacity = 1;
+
+}, false);
+
+
+
+
+[endscript]
+[_tb_end_tyrano_code]
+
+[return  ]
+*5Week_Button
+
+[tb_start_tyrano_code]
+[iscript]
+
+
+// 버튼 이미지 출력 함수
+function displayButtonImage(item) {
+var imgSrc = ""; // 이미지 소스 경로 변수 초기화
+
+// 변수에 저장된 값에 따라 버튼 이미지 소스 경로 설정
+switch (item) {
+case 1:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/5_1_1.png";
+break;
+case 2:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/5_2_1.png";
+break;
+case 3:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/5_3_1.png";
+break;
+case 4:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/5_4_1.png";
+break;
+case 5:
+imgSrc = "data/image/New_GUI/Test_In_UI/Week_01/5_5_1.png";
+break;
+}
+
+return imgSrc;
+}
+
+
+
+f.Test_Item01 = displayButtonImage(f.Test_Item01);
+f.Test_Item02 = displayButtonImage(f.Test_Item02);
+f.Test_Item03= displayButtonImage(f.Test_Item03);
+f.Test_Item04= displayButtonImage(f.Test_Item04);
+f.Test_Item05= displayButtonImage(f.Test_Item05);
+
+
+[endscript]
+
+[html]
+<style>
+button:focus {
+outline: none;
+}
+.button-box button .buttonimg-hover {
+display: none;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+}
+
+.button-box button:hover .buttonimg-hover {
+opacity: 1;
+display: block;
+}
+
+.button-box button:hover .buttonimg {
+opacity: 0;
+}
+
+.button-box button .buttonimg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 1;
+animation: fadein 1.5s;
+}
+
+</style>
+<script>
+function doAction(buttonId) {
+if (buttonId === 'button_01') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'block';
+con2.style.display = 'none';
+con3.style.display = 'none';
+con4.style.display = 'none';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item01 === 'data/image/New_GUI/Test_In_UI/Week_01/5_5_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+} else if (buttonId === 'button_02') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'block';
+con3.style.display = 'none';
+con4.style.display = 'none';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item02 === 'data/image/New_GUI/Test_In_UI/Week_01/5_5_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+} else if (buttonId === 'button_03') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'none';
+con3.style.display = 'block';
+con4.style.display = 'none';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item03 === 'data/image/New_GUI/Test_In_UI/Week_01/5_5_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+} else if (buttonId === 'button_04') {
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'none';
+con3.style.display = 'none';
+con4.style.display = 'block';
+con5.style.display = 'none';
+if(window.TYRANO.kag.stat.f.Test_Item04 === 'data/image/New_GUI/Test_In_UI/Week_01/5_5_1.png'){
+window.TYRANO.kag.stat.f.select= 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select= 'FALSE';
+}
+} else if (buttonId === 'button_05'){
+var con1 = document.getElementById("button_01checkimg");
+var con2 = document.getElementById("button_02checkimg");
+var con3 = document.getElementById("button_03checkimg");
+var con4 = document.getElementById("button_04checkimg");
+var con5 = document.getElementById("button_05checkimg");
+con1.style.display = 'none';
+con2.style.display = 'none';
+con3.style.display = 'none';
+con4.style.display = 'none';
+con5.style.display = 'block';
+if(window.TYRANO.kag.stat.f.Test_Item05 === 'data/image/New_GUI/Test_In_UI/Week_01/5_5_1.png'){
+window.TYRANO.kag.stat.f.select = 'TRUE';
+} else{
+window.TYRANO.kag.stat.f.select = 'FALSE';
+}
+}
+}
+
+var buttons3 = document.querySelectorAll("button");
+buttons3.forEach((button) => {
+button.addEventListener("click", function(event) {
+doAction(event.target.id);
+});
+});</script>
+<audio id="test_items_audio_over" src="data/sound/UI/Common_Branch_Hover_01.wav" preload="auto"></audio>
+<audio id="test_items_audio_click" src="data/sound/UI/Exam_Answer_Choose_01.wav" preload="auto"></audio>
+<div class="button-box">
+<button id="button_01" class="button_sound" type="button" onclick="doAction('button_01')" style="position: absolute;top: 662px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_01_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_01_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_01checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_02" class="button_sound" type="button" onclick="doAction('button_02')" style="position: absolute;top: 662px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_02_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_02_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_02checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_03" class="button_sound" type="button" onclick="doAction('button_03')" style="position: absolute;top: 662px;left: 1286px;width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_03_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_03_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_03checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_04" class="button_sound" type="button" onclick="doAction('button_04')" style="position: absolute;top: 809px;left: 220px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_04_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_04_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_04checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+<button id="button_05" class="button_sound" type="button" onclick="doAction('button_05')" style="position: absolute;top: 809px;left: 753px;  width: 413px;height: 103px;background-color:transparent;border:none;"><img class="buttonimg" id = "button_05_01_img" src="" alt=""><img class="buttonimg-hover" id = "button_05_02_img" src="" alt="" style="position: absolute;width: 413px;height: 103px;display: none;"><img class="collect_bt" id = "button_05checkimg" src="data/image/New_GUI/Test_In_UI/Circle_Bt_01.png" alt="" style="position: absolute;top:0px;left: 0px; width: 413px;height: 103px;display: none;opacity: 0;"></button>
+</div>
+[endhtml]
+
+[iscript]
+document.getElementById("button_01_01_img").setAttribute("src", f.Test_Item01);
+document.getElementById("button_02_01_img").setAttribute("src", f.Test_Item02);
+document.getElementById("button_03_01_img").setAttribute("src", f.Test_Item03);
+document.getElementById("button_04_01_img").setAttribute("src", f.Test_Item04);
+document.getElementById("button_05_01_img").setAttribute("src", f.Test_Item05);
+
+document.getElementById("button_01_02_img").setAttribute("src", f.Test_Item01.replace("_1.png","_2.png"));
+document.getElementById("button_02_02_img").setAttribute("src", f.Test_Item02.replace("_1.png","_2.png"));
+document.getElementById("button_03_02_img").setAttribute("src", f.Test_Item03.replace("_1.png","_2.png"));
+document.getElementById("button_04_02_img").setAttribute("src", f.Test_Item04.replace("_1.png","_2.png"));
+document.getElementById("button_05_02_img").setAttribute("src", f.Test_Item05.replace("_1.png","_2.png"));
+
+var audio_over = document.getElementById('test_items_audio_over');
+var audio_leave = document.getElementById('test_items_audio_leave');
+var audio_click = document.getElementById('test_items_audio_click');
+
+var searchBox = document.querySelectorAll(".button_sound");
+
+searchBox.forEach(button => {
+button.addEventListener('mouseover', function() {
+audio_over.play();
+});
+button.addEventListener('click', function() {
+audio_click.play();
+});
 });
 
 [endscript]
