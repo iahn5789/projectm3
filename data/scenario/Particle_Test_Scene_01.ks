@@ -14,30 +14,30 @@
 
 [iscript]
 function Particles(){
-//particle colors
+
 this.colors = [
 '255, 255, 255',
 '255, 99, 71',
 '19, 19, 19'
 ]
-//adds gradient to particles on true
+
 this.blurry = true;
-//adds white border
+
 this.border = false;
-//particle radius min/max
+
 this.minRadius = 2;
 this.maxRadius = 7;
-//particle opacity min/max
+
 this.minOpacity = .005;
 this.maxOpacity = .3;
-//particle speed min/max
+
 this.minSpeed = .05;
 this.maxSpeed = .3;
-//frames per second
+
 this.fps = 60;
-//number of particles
+
 this.numParticles = 75;
-//required canvas variables
+
 this.buble_particle = document.getElementById('buble_particle');
 this.ctx = this.buble_particle.getContext('2d');
 }
@@ -69,23 +69,23 @@ xVelocity : self._rand(self.minSpeed, self.maxSpeed),
 yVelocity : self._rand(self.minSpeed, self.maxSpeed),
 color     : 'rgba(' + color + ',' + self._rand(self.minOpacity, self.maxOpacity) + ')'
 }
-//once values are determined, draw particle on canvas
+
 self.draw(particle, i);
 }
-//...and once drawn, animate the particle
+
 self.animate(particle);
 }
 Particles.prototype.draw = function(particle, i){
 var self = this,
 ctx = self.ctx;
 if (self.blurry === true ) {
-//creates gradient if blurry === true
+
 var grd = ctx.createRadialGradient(particle[i].xPos, particle[i].yPos, particle[i].radius, particle[i].xPos, particle[i].yPos, particle[i].radius/1.25);
 grd.addColorStop(1.000, particle[i].color);
 grd.addColorStop(0.000, 'rgba(34, 34, 34, 0)');
 ctx.fillStyle = grd;
 } else {
-//otherwise sets to solid color w/ opacity value
+
 ctx.fillStyle = particle[i].color;
 }
 if (self.border === true) {
@@ -103,13 +103,13 @@ var particle_interval = setInterval(function(){
 if(!document.querySelector('#buble_particle')){
 clearInterval(particle_interval);
 }
-//clears canvas
+
 self.clearCanvas();
-//then redraws particles in new positions based on velocity
+
 for (var i = 0; i < self.numParticles; i++) {
 particle[i].xPos += particle[i].xVelocity;
 particle[i].yPos -= particle[i].yVelocity;
-//if particle goes off screen call reset method to place it offscreen to the left/bottom
+
 if (particle[i].xPos > self.buble_particle.width + particle[i].radius || particle[i].yPos > self.buble_particle.height + particle[i].radius) {
 self.resetParticle(particle, i);
 } else {
@@ -122,15 +122,15 @@ Particles.prototype.resetParticle = function(particle, i){
 var self = this;
 var random = self._rand(0, 1);
 if (random > .5) {
-// 50% chance particle comes from left side of window...
+
 particle[i].xPos = -particle[i].radius;
 particle[i].yPos = self._rand(0, buble_particle.height);
 } else {
-//... or bottom of window
+
 particle[i].xPos = self._rand(0, buble_particle.width);
 particle[i].yPos = buble_particle.height + particle[i].radius;
 }
-//redraw particle with new values
+
 self.draw(particle, i);
 }
 Particles.prototype.clearCanvas = function(){
@@ -794,26 +794,26 @@ Passionately built by <a href="https://cmiller.tech/" target="_blank">Caleb Mill
 'use strict';
 console.clear();
 
-// This is a prime example of what starts out as a simple project
-// and snowballs way beyond its intended size. It's a little clunky
-// reading/working on this single file, but here it is anyways :)
+
+
+
 
 const IS_MOBILE = window.innerWidth <= 640;
 const IS_DESKTOP = window.innerWidth > 800;
 const IS_HEADER = IS_DESKTOP && window.innerHeight < 300;
-// Detect high end devices. This will be a moving target.
+
 const IS_HIGH_END_DEVICE = (() => {
 const hwConcurrency = navigator.hardwareConcurrency;
 if (!hwConcurrency) {
 return false;
 }
-// Large screens indicate a full size computer, which often have hyper threading these days.
-// So a quad core desktop machine has 8 cores. We'll place a higher min threshold there.
+
+
 const minCount = window.innerWidth <= 1024 ? 4 : 8;
 return hwConcurrency >= minCount;
 })();
-// Prevent canvases from getting too large on ridiculous screen sizes.
-// 8K - can restrict this if needed
+
+
 const MAX_WIDTH = 7680;
 const MAX_HEIGHT = 4320;
 const GRAVITY = 0.9; // Acceleration in px/s
@@ -825,11 +825,11 @@ if (IS_HEADER) return 0.75;
 return 1;
 }
 
-// Width/height values that take scale into account.
-// USE THESE FOR DRAWING POSITIONS
+
+
 let stageW, stageH;
 
-// All quality globals will be overwritten and updated via `configDidUpdate`.
+
 let quality = 1;
 let isLowQuality = false;
 let isNormalQuality = true;
@@ -852,13 +852,13 @@ Gold: '#ffbf36',
 White: '#ffffff'
 };
 
-// Special invisible color (not rendered, and therefore not in COLOR map)
+
 const INVISIBLE = '_INVISIBLE_';
 
 const PI_2 = Math.PI * 2;
 const PI_HALF = Math.PI * 0.5;
 
-// Stage.disableHighDPI = true;
+
 const trailsStage = new Stage('trails-canvas');
 const mainStage = new Stage('main-canvas');
 const stages = [
@@ -868,18 +868,18 @@ mainStage
 
 
 
-// Fullscreen helpers, using Fscreen for prefixes.
+
 function fullscreenEnabled() {
 return fscreen.fullscreenEnabled;
 }
 
-// Note that fullscreen state is synced to store, and the store should be the source
-// of truth for whether the app is in fullscreen mode or not.
+
+
 function isFullscreen() {
 return !!fscreen.fullscreenElement;
 }
 
-// Attempt to toggle fullscreen mode.
+
 function toggleFullscreen() {
 if (fullscreenEnabled()) {
 if (isFullscreen()) {
@@ -890,8 +890,8 @@ fscreen.requestFullscreen(document.documentElement);
 }
 }
 
-// Sync fullscreen changes with store. An event listener is necessary because the user can
-// toggle fullscreen mode directly through the browser, and we want to react to that.
+
+
 fscreen.addEventListener('fullscreenchange', () => {
 store.setState({ fullscreen: isFullscreen() });
 });
@@ -899,7 +899,7 @@ store.setState({ fullscreen: isFullscreen() });
 
 
 
-// Simple state container; the source of truth.
+
 const store = {
 _listeners: new Set(),
 _dispatch(prevState) {
@@ -907,14 +907,14 @@ this._listeners.forEach(listener => listener(this.state, prevState))
 },
 
 state: {
-// will be unpaused in init()
+
 paused: true,
 soundEnabled: false,
 menuOpen: false,
 openHelpTopic: null,
 fullscreen: isFullscreen(),
-// Note that config values used for <select>s must be strings, unless manually converting values to strings
-// at render time, and parsing on change.
+
+
 config: {
 quality: String(IS_HIGH_END_DEVICE ? QUALITY_HIGH : QUALITY_NORMAL), // will be mirrored to a global variable named `quality` in `configDidUpdate`, for perf.
 shell: 'Random',
@@ -944,8 +944,8 @@ this._listeners.add(listener);
 return () => this._listeners.remove(listener);
 },
 
-// Load / persist select state to localStorage
-// Mutates state because `store.load()` should only be called once immediately after store is created, before any subscriptions.
+
+
 load() {
 const serializedData = localStorage.getItem('cm_fireworks_data');
 if (serializedData) {
@@ -972,10 +972,10 @@ throw new Error('version switch should be exhaustive');
 }
 console.log(`Loaded config (schema version ${schemaVersion})`);
 }
-// Deprecated data format. Checked with care (it's not namespaced).
+
 else if (localStorage.getItem('schemaVersion') === '1') {
 let size;
-// Attempt to parse data, ignoring if there is an error.
+
 try {
 const sizeRaw = localStorage.getItem('configSize');
 size = typeof sizeRaw === 'string' && JSON.parse(sizeRaw);
@@ -985,7 +985,7 @@ console.log('Recovered from error parsing saved config:');
 console.error(e);
 return;
 }
-// Only restore validated values
+
 const sizeInt = parseInt(size, 10);
 if (sizeInt >= 0 && sizeInt <= 4) {
 this.state.config.size = String(sizeInt);
@@ -1012,8 +1012,8 @@ if (!IS_HEADER) {
 store.load();
 }
 
-// Actions
-// ---------
+
+
 
 function togglePause(toggle) {
 const paused = store.state.paused;
@@ -1054,7 +1054,7 @@ config: Object.assign({}, store.state.config, nextConfig)
 configDidUpdate();
 }
 
-// Map config to various properties & apply side effects
+
 function configDidUpdate() {
 const config = store.state.config;
 
@@ -1070,18 +1070,18 @@ appNodes.canvasContainer.style.backgroundColor = '#000';
 Spark.drawWidth = quality === QUALITY_HIGH ? 0.75 : 1;
 }
 
-// Selectors
-// -----------
+
+
 
 const isRunning = (state=store.state) => !state.paused && !state.menuOpen;
-// Whether user has enabled sound.
+
 const soundEnabledSelector = (state=store.state) => state.soundEnabled;
-// Whether any sounds are allowed, taking into account multiple factors.
+
 const canPlaySoundSelector = (state=store.state) => isRunning(state) && soundEnabledSelector(state);
-// Convert quality to number.
+
 const qualitySelector = () => +store.state.config.quality;
 const shellNameSelector = () => store.state.config.shell;
-// Convert shell size to number.
+
 const shellSizeSelector = () => +store.state.config.size;
 const finaleSelector = () => store.state.config.finale;
 const skyLightingSelector = () => +store.state.config.skyLighting;
@@ -1089,7 +1089,7 @@ const scaleFactorSelector = () => store.state.config.scaleFactor;
 
 
 
-// Help Content
+
 const helpContent = {
 shellType: {
 header: 'Shell Type',
@@ -1147,7 +1147,7 @@ longExposureLabel: 'longExposure'
 };
 
 
-// Render app UI / keep in sync with state
+
 const appNodes = {
 stageContainer: '.stage-container',
 canvasContainer: '.canvas-container',
@@ -1181,7 +1181,7 @@ fullscreenLabel: '.fullscreen-label',
 longExposure: '.long-exposure',
 longExposureLabel: '.long-exposure-label',
 
-// Help UI
+
 helpModal: '.help-modal',
 helpModalOverlay: '.help-modal__overlay',
 helpModalHeader: '.help-modal__header',
@@ -1189,17 +1189,17 @@ helpModalBody: '.help-modal__body',
 helpModalCloseBtn: '.help-modal__close-btn'
 };
 
-// Convert appNodes selectors to dom nodes
+
 Object.keys(appNodes).forEach(key => {
 appNodes[key] = document.querySelector(appNodes[key]);
 });
 
-// Remove fullscreen control if not supported.
+
 if (!fullscreenEnabled()) {
 appNodes.fullscreenFormOption.classList.add('remove');
 }
 
-// First render is called in init()
+
 function renderApp(state) {
 const pauseBtnIcon = `#icon-${state.paused ? 'play' : 'pause'}`;
 const soundBtnIcon = `#icon-sound-${soundEnabledSelector() ? 'on' : 'off'}`;
@@ -1234,7 +1234,7 @@ appNodes.helpModalBody.textContent = body;
 
 store.subscribe(renderApp);
 
-// Perform side effects on state changes
+
 function handleStateChange(state, prevState) {
 const canPlaySound = canPlaySoundSelector(state);
 const canPlaySoundPrev = canPlaySoundSelector(prevState);
@@ -1261,7 +1261,7 @@ finale: appNodes.finaleMode.checked,
 skyLighting: appNodes.skyLighting.value,
 longExposure: appNodes.longExposure.checked,
 hideControls: appNodes.hideControls.checked,
-// Store value as number.
+
 scaleFactor: parseFloat(appNodes.scaleFactor.value)
 };
 };
@@ -1276,7 +1276,7 @@ appNodes.skyLighting.addEventListener('input', updateConfigNoEvent);
 appNodes.longExposure.addEventListener('click', () => setTimeout(updateConfig, 0));
 appNodes.hideControls.addEventListener('click', () => setTimeout(updateConfig, 0));
 appNodes.fullscreen.addEventListener('click', () => setTimeout(toggleFullscreen, 0));
-// Changing scaleFactor requires triggering resize handling code as well.
+
 appNodes.scaleFactor.addEventListener('input', () => {
 updateConfig();
 handleResize();
@@ -1299,17 +1299,17 @@ store.setState({ openHelpTopic: null });
 
 
 
-// Constant derivations
+
 const COLOR_NAMES = Object.keys(COLOR);
 const COLOR_CODES = COLOR_NAMES.map(colorName => COLOR[colorName]);
-// Invisible stars need an indentifier, even through they won't be rendered - physics still apply.
+
 const COLOR_CODES_W_INVIS = [...COLOR_CODES, INVISIBLE];
-// Map of color codes to their index in the array. Useful for quickly determining if a color has already been updated in a loop.
+
 const COLOR_CODE_INDEXES = COLOR_CODES_W_INVIS.reduce((obj, code, i) => {
 obj[code] = i;
 return obj;
 }, {});
-// Tuples is a map keys by color codes (hex) with values of { r, g, b } tuples (still just objects).
+
 const COLOR_TUPLES = {};
 COLOR_CODES.forEach(hex => {
 COLOR_TUPLES[hex] = {
@@ -1319,12 +1319,12 @@ b: parseInt(hex.substr(5, 2), 16),
 };
 });
 
-// Get a random color.
+
 function randomColorSimple() {
 return COLOR_CODES[Math.random() * COLOR_CODES.length | 0];
 }
 
-// Get a random color, with some customization options available.
+
 let lastColor;
 function randomColor(options) {
 const notSame = options && options.notSame;
@@ -1332,7 +1332,7 @@ const notColor = options && options.notColor;
 const limitWhite = options && options.limitWhite;
 let color = randomColorSimple();
 
-// limit the amount of white chosen randomly
+
 if (limitWhite && color === COLOR.White && Math.random() < 0.6) {
 color = randomColorSimple();
 }
@@ -1357,12 +1357,12 @@ return Math.random() < 0.5 ? COLOR.Gold : COLOR.White;
 }
 
 
-// Shell helpers
+
 function makePistilColor(shellColor) {
 return (shellColor === COLOR.White || shellColor === COLOR.Gold) ? randomColor({ notColor: shellColor }) : whiteOrGold();
 }
 
-// Unique shell types
+
 const crysanthemumShell = (size=1) => {
 const glitter = Math.random() < 0.25;
 const singleColor = Math.random() < 0.72;
@@ -1391,21 +1391,21 @@ streamers
 
 
 const ghostShell = (size=1) => {
-// Extend crysanthemum shell
+
 const shell = crysanthemumShell(size);
-// Ghost effect can be fast, so extend star life
+
 shell.starLife *= 1.5;
-// Ensure we always have a single color other than white
+
 let ghostColor = randomColor({ notColor: COLOR.White });
-// Always use streamers, and sometimes a pistil
+
 shell.streamers = true;
 const pistil = Math.random() < 0.42;
 const pistilColor = pistil && makePistilColor(ghostColor);
-// Ghost effect - transition from invisible to chosen color
+
 shell.color = INVISIBLE;
 shell.secondColor = ghostColor;
-// We don't want glitter to be spewed by invisible stars, and we don't currently
-// have a way to transition glitter state. So we'll disable it.
+
+
 shell.glitter = '';
 
 return shell;
@@ -1460,7 +1460,7 @@ glitter: !pistil ? 'light' : '',
 glitterColor: color === COLOR.Gold ? COLOR.Gold : COLOR.White,
 streamers: Math.random() < 0.3
 };
-// return Object.assign({}, defaultShell, config);
+
 };
 
 const crossetteShell = (size=1) => {
@@ -1511,7 +1511,7 @@ color: INVISIBLE
 });
 
 const crackleShell = (size=1) => {
-// favor gold
+
 const color = Math.random() < 0.75 ? COLOR.Gold : randomColor();
 return {
 shellSize: size,
@@ -1539,7 +1539,7 @@ starDensity: 0.9,
 starLife: 2500 + size * 300,
 glitter: 'medium',
 glitterColor: Math.random() < 0.5 ? whiteOrGold() : color,
-// Add strobe effect to white horsetails, to make them more interesting
+
 strobe: color === COLOR.White
 };
 };
@@ -1549,9 +1549,9 @@ return Math.random() < 0.5 ? 'Crysanthemum' : shellNames[(Math.random() * (shell
 }
 
 function randomShell(size) {
-// Special selection for codepen header.
+
 if (IS_HEADER) return randomFastShell()(size);
-// Normal operation
+
 return shellTypes[randomShellName()](size);
 }
 
@@ -1559,9 +1559,9 @@ function shellFromConfig(size) {
 return shellTypes[shellNameSelector()](size);
 }
 
-// Get a random shell, not including processing intensive varients
-// Note this is only random when "Random" shell is selected in config.
-// Also, this does not create the shell, only returns the factory function.
+
+
+
 const fastShellBlacklist = ['Falling Leaves', 'Floral', 'Willow'];
 function randomFastShell() {
 const isRandom = shellNameSelector() === 'Random';
@@ -1593,20 +1593,20 @@ const shellTypes = {
 const shellNames = Object.keys(shellTypes);
 
 function init() {
-// Remove loading state
+
 document.querySelector('.loading-init').remove();
 appNodes.stageContainer.classList.remove('remove');
 
-// Populate dropdowns
+
 function setOptionsForSelect(node, options) {
 node.innerHTML = options.reduce((acc, opt) => acc += `<option value="${opt.value}">${opt.label}</option>`, '');
 }
 
-// shell type
+
 let options = '';
 shellNames.forEach(opt => options += `<option value="${opt}">${opt}</option>`);
 appNodes.shellType.innerHTML = options;
-// shell size
+
 options = '';
 ['3"', '4"', '6"', '8"', '12"', '16"'].forEach((opt, i) => options += `<option value="${i}">${opt}</option>`);
 appNodes.shellSize.innerHTML = options;
@@ -1623,20 +1623,20 @@ setOptionsForSelect(appNodes.skyLighting, [
 { label: 'Normal', value: SKY_LIGHT_NORMAL }
 ]);
 
-// 0.9 is mobile default
+
 setOptionsForSelect(
 appNodes.scaleFactor,
 [0.5, 0.62, 0.75, 0.9, 1.0, 1.5, 2.0]
 .map(value => ({ value: value.toFixed(2), label: `${value*100}%` }))
 );
 
-// Begin simulation
+
 togglePause(false);
 
-// initial render
+
 renderApp(store.state);
 
-// Apply initial config
+
 configDidUpdate();
 }
 
@@ -1674,7 +1674,7 @@ height: fitShellPositionInBoundsV(height)
 }
 
 
-// Launches a shell from a user pointer event, based on state.config
+
 function launchShellFromConfig(event) {
 const shell = new Shell(shellFromConfig(shellSizeSelector()));
 const w = mainStage.width;
@@ -1687,8 +1687,8 @@ event ? 1 - event.y / h : getRandomShellPositionV()
 }
 
 
-// Sequences
-// -----------
+
+
 
 function seqRandomShell() {
 const size = getRandomShellSize();
@@ -1811,7 +1811,7 @@ const shellSize = Math.max(0, shellSizeSelector() - 2);
 const randomMainShell = Math.random() < 0.78 ? crysanthemumShell : ringShell;
 const randomSpecialShell = randomFastShell();
 
-// (cos(x*5π+0.5π)+1)/2 is a custom wave bounded by 0 and 1 used to set varying launch heights
+
 function launchShell(x, useSpecial) {
 const isRandom = shellNameSelector() === 'Random';
 let shellType = isRandom
@@ -1955,15 +1955,15 @@ updateSpeedFromEvent(event);
 }
 
 function handleKeydown(event) {
-// P
+
 if (event.keyCode === 80) {
 togglePause();
 }
-// O
+
 else if (event.keyCode === 79) {
 toggleMenu();
 }
-// Esc
+
 else if (event.keyCode === 27) {
 toggleMenu(false);
 }
@@ -1975,55 +1975,55 @@ mainStage.addEventListener('pointermove', handlePointerMove);
 window.addEventListener('keydown', handleKeydown);
 
 
-// Account for window resize and custom scale changes.
+
 function handleResize() {
 const w = window.innerWidth;
 const h = window.innerHeight;
-// Try to adopt screen size, heeding maximum sizes specified
+
 const containerW = Math.min(w, MAX_WIDTH);
-// On small screens, use full device height
+
 const containerH = w <= 420 ? h : Math.min(h, MAX_HEIGHT);
 appNodes.stageContainer.style.width = containerW + 'px';
 appNodes.stageContainer.style.height = containerH + 'px';
 stages.forEach(stage => stage.resize(containerW, containerH));
-// Account for scale
+
 const scaleFactor = scaleFactorSelector();
 stageW = containerW / scaleFactor;
 stageH = containerH / scaleFactor;
 }
 
-// Compute initial dimensions
+
 handleResize();
 
 window.addEventListener('resize', handleResize);
 
 
-// Dynamic globals
+
 let currentFrame = 0;
 let speedBarOpacity = 0;
 let autoLaunchTime = 0;
 
 function updateSpeedFromEvent(event) {
 if (isUpdatingSpeed || event.y >= mainStage.height - 44) {
-// On phones it's hard to hit the edge pixels in order to set speed at 0 or 1, so some padding is provided to make that easier.
+
 const edge = 16;
 const newSpeed = (event.x - edge) / (mainStage.width - edge * 2);
 simSpeed = Math.min(Math.max(newSpeed, 0), 1);
-// show speed bar after an update
+
 speedBarOpacity = 1;
-// If we updated the speed, return true
+
 return true;
 }
-// Return false if the speed wasn't updated
+
 return false;
 }
 
 
-// Extracted function to keep `update()` optimized
+
 function updateGlobals(timeStep, lag) {
 currentFrame++;
 
-// Always try to fade out speed bar
+
 if (!isUpdatingSpeed) {
 speedBarOpacity -= lag / 30; // half a second
 if (speedBarOpacity < 0) {
@@ -2031,7 +2031,7 @@ speedBarOpacity = 0;
 }
 }
 
-// auto launch shells
+
 if (store.state.config.autoLaunch) {
 autoLaunchTime -= timeStep;
 if (autoLaunchTime <= 0) {
@@ -2056,11 +2056,11 @@ const starDragHeavy = 1 - (1 - Star.airDragHeavy) * speed;
 const sparkDrag = 1 - (1 - Spark.airDrag) * speed;
 const gAcc = timeStep / 1000 * GRAVITY;
 COLOR_CODES_W_INVIS.forEach(color => {
-// Stars
+
 const stars = Star.active[color];
 for (let i=stars.length-1; i>=0; i=i-1) {
 const star = stars[i];
-// Only update each star once per frame. Since color can change, it's possible a star could update twice without this, leading to a "jump".
+
 if (star.updateFrame === currentFrame) {
 continue;
 }
@@ -2078,7 +2078,7 @@ star.prevX = star.x;
 star.prevY = star.y;
 star.x += star.speedX * speed;
 star.y += star.speedY * speed;
-// Apply air drag if star isn't "heavy". The heavy property is used for the shell comets.
+
 if (!star.heavy) {
 star.speedX *= starDrag;
 star.speedY *= starDrag;
@@ -2110,7 +2110,7 @@ star.sparkLife * 0.8 + Math.random() * star.sparkLifeVariation * star.sparkLife
 }
 }
 
-// Handle star transitions
+
 if (star.life < star.transitionTime) {
 if (star.secondColor && !star.colorChanged) {
 star.colorChanged = true;
@@ -2123,14 +2123,14 @@ star.sparkFreq = 0;
 }
 
 if (star.strobe) {
-// Strobes in the following pattern: on:off:off:on:off:off in increments of `strobeFreq` ms.
+
 star.visible = Math.floor(star.life / star.strobeFreq) % 3 === 0;
 }
 }
 }
 }
 
-// Sparks
+
 const sparks = Spark.active[color];
 for (let i=sparks.length-1; i>=0; i=i-1) {
 const spark = sparks[i];
@@ -2164,7 +2164,7 @@ if (skyLightingSelector() !== SKY_LIGHT_NONE) {
 colorSky(speed);
 }
 
-// Account for high DPI screens, and custom scale factor.
+
 const scaleFactor = scaleFactorSelector();
 trailsCtx.scale(dpr * scaleFactor, dpr * scaleFactor);
 mainCtx.scale(dpr * scaleFactor, dpr * scaleFactor);
@@ -2175,9 +2175,9 @@ trailsCtx.fillRect(0, 0, width, height);
 
 mainCtx.clearRect(0, 0, width, height);
 
-// Draw queued burst flashes
-// These must also be drawn using source-over due to Safari. Seems rendering the gradients using lighten draws large black boxes instead.
-// Thankfully, these burst flashes look pretty much the same either way.
+
+
+
 while (BurstFlash.active.length) {
 const bf = BurstFlash.active.pop();
 
@@ -2192,10 +2192,10 @@ trailsCtx.fillRect(bf.x - bf.radius, bf.y - bf.radius, bf.radius * 2, bf.radius 
 BurstFlash.returnInstance(bf);
 }
 
-// Remaining drawing on trails canvas will use 'lighten' blend mode
+
 trailsCtx.globalCompositeOperation = 'lighten';
 
-// Draw stars
+
 trailsCtx.lineWidth = Star.drawWidth;
 trailsCtx.lineCap = isLowQuality ? 'square' : 'round';
 mainCtx.strokeStyle = '#fff';
@@ -2217,7 +2217,7 @@ trailsCtx.stroke();
 });
 mainCtx.stroke();
 
-// Draw sparks
+
 trailsCtx.lineWidth = Spark.drawWidth;
 trailsCtx.lineCap = 'butt';
 COLOR_CODES.forEach(color => {
@@ -2232,7 +2232,7 @@ trailsCtx.stroke();
 });
 
 
-// Render speed bar if visible
+
 if (speedBarOpacity) {
 const speedBarHeight = 6;
 mainCtx.globalAlpha = speedBarOpacity;
@@ -2247,22 +2247,22 @@ mainCtx.setTransform(1, 0, 0, 1, 0, 0);
 }
 
 
-// Draw colored overlay based on combined brightness of stars (light up the sky!)
-// Note: this is applied to the canvas container's background-color, so it's behind the particles
+
+
 const currentSkyColor = { r: 0, g: 0, b: 0 };
 const targetSkyColor = { r: 0, g: 0, b: 0 };
 function colorSky(speed) {
-// The maximum r, g, or b value that will be used (255 would represent no maximum)
+
 const maxSkySaturation = skyLightingSelector() * 15;
-// How many stars are required in total to reach maximum sky brightness
+
 const maxStarCount = 500;
 let totalStarCount = 0;
-// Initialize sky as black
+
 targetSkyColor.r = 0;
 targetSkyColor.g = 0;
 targetSkyColor.b = 0;
-// Add each known color to sky, multiplied by particle count of that color. This will put RGB values wildly out of bounds, but we'll scale them back later.
-// Also add up total star count.
+
+
 COLOR_CODES.forEach(color => {
 const tuple = COLOR_TUPLES[color];
 const count =  Star.active[color].length;
@@ -2272,17 +2272,17 @@ targetSkyColor.g += tuple.g * count;
 targetSkyColor.b += tuple.b * count;
 });
 
-// Clamp intensity at 1.0, and map to a custom non-linear curve. This allows few stars to perceivably light up the sky, while more stars continue to increase the brightness but at a lesser rate. This is more inline with humans' non-linear brightness perception.
+
 const intensity = Math.pow(Math.min(1, totalStarCount / maxStarCount), 0.3);
-// Figure out which color component has the highest value, so we can scale them without affecting the ratios.
-// Prevent 0 from being used, so we don't divide by zero in the next step.
+
+
 const maxColorComponent = Math.max(1, targetSkyColor.r, targetSkyColor.g, targetSkyColor.b);
-// Scale all color components to a max of `maxSkySaturation`, and apply intensity.
+
 targetSkyColor.r = targetSkyColor.r / maxColorComponent * maxSkySaturation * intensity;
 targetSkyColor.g = targetSkyColor.g / maxColorComponent * maxSkySaturation * intensity;
 targetSkyColor.b = targetSkyColor.b / maxColorComponent * maxSkySaturation * intensity;
 
-// Animate changes to color to smooth out transitions.
+
 const colorChange = 10;
 currentSkyColor.r += (targetSkyColor.r - currentSkyColor.r) / colorChange * speed;
 currentSkyColor.g += (targetSkyColor.g - currentSkyColor.g) / colorChange * speed;
@@ -2294,17 +2294,17 @@ appNodes.canvasContainer.style.backgroundColor = `rgb(${currentSkyColor.r | 0}, 
 mainStage.addEventListener('ticker', update);
 
 
-// Helper used to semi-randomly spread particles over an arc
-// Values are flexible - `start` and `arcLength` can be negative, and `randomness` is simply a multiplier for random addition.
+
+
 function createParticleArc(start, arcLength, count, randomness, particleFactory) {
 const angleDelta = arcLength / count;
-// Sometimes there is an extra particle at the end, too close to the start. Subtracting half the angleDelta ensures that is skipped.
-// Would be nice to fix this a better way.
+
+
 const end = start + arcLength - (angleDelta * 0.5);
 
 if (end > start) {
-// Optimization: `angle=angle+angleDelta` vs. angle+=angleDelta
-// V8 deoptimises with let compound assignment
+
+
 for (let angle=start; angle<end; angle=angle+angleDelta) {
 particleFactory(angle + Math.random() * angleDelta * randomness);
 }
@@ -2316,33 +2316,18 @@ particleFactory(angle + Math.random() * angleDelta * randomness);
 }
 
 
-/**
-* Helper used to create a spherical burst of particles.
-*
-* @param  {Number} count               The desired number of stars/particles. This value is a suggestion, and the
-*                                      created burst may have more particles. The current algorithm can't perfectly
-*                                      distribute a specific number of points evenly on a sphere's surface.
-* @param  {Function} particleFactory   Called once per star/particle generated. Passed two arguments:
-*                                        `angle`: The direction of the star/particle.
-*                                        `speed`: A multipler for the particle speed, from 0.0 to 1.0.
-* @param  {Number} startAngle=0        For segmented bursts, you can generate only a partial arc of particles. This
-*                                      allows setting the starting arc angle (radians).
-* @param  {Number} arcLength=TAU       The length of the arc (radians). Defaults to a full circle.
-*
-* @return {void}              Returns nothing; it's up to `particleFactory` to use the given data.
-*/
 function createBurst(count, particleFactory, startAngle=0, arcLength=PI_2) {
-// Assuming sphere with surface area of `count`, calculate various
-// properties of said sphere (unit is stars).
-// Radius
+
+
+
 const R = 0.5 * Math.sqrt(count/Math.PI);
-// Circumference
+
 const C = 2 * R * Math.PI;
-// Half Circumference
+
 const C_HALF = C / 2;
 
-// Make a series of rings, sizing them as if they were spaced evenly
-// along the curved surface of a sphere.
+
+
 for (let i=0; i<=C_HALF; i++) {
 const ringAngle = i / C_HALF * PI_HALF;
 const ringSize = Math.cos(ringAngle);
@@ -2351,7 +2336,7 @@ const partsPerArc = partsPerFullRing * (arcLength / PI_2);
 
 const angleInc = PI_2 / partsPerFullRing;
 const angleOffset = Math.random() * angleInc + startAngle;
-// Each particle needs a bit of randomness to improve appearance.
+
 const maxRandomAngleOffset = angleInc * 0.33;
 
 for (let i=0; i<partsPerArc; i++) {
@@ -2365,10 +2350,10 @@ particleFactory(angle, ringSize);
 
 
 
-// Various star effects.
-// These are designed to be attached to a star's `onDeath` event.
 
-// Crossette breaks star into four same-color pieces which branch in a cross-like shape.
+
+
+
 function crossetteEffect(star) {
 const startAngle = Math.random() * PI_HALF;
 createParticleArc(startAngle, PI_2, 4, 0.5, (angle) => {
@@ -2383,7 +2368,7 @@ Math.random() * 0.6 + 0.75,
 });
 }
 
-// Flower is like a mini shell
+
 function floralEffect(star) {
 const count = 12 + 6 * quality;
 createBurst(count, (angle, speedMult) => {
@@ -2398,12 +2383,12 @@ star.speedX,
 star.speedY
 );
 });
-// Queue burst flash render
+
 BurstFlash.add(star.x, star.y, 46);
 soundManager.playSound('burstSmall');
 }
 
-// Floral burst with willow stars
+
 function fallingLeavesEffect(star) {
 createBurst(7, (angle, speedMult) => {
 const newStar = Star.add(
@@ -2423,12 +2408,12 @@ newStar.sparkSpeed = 0.28;
 newStar.sparkLife = 750;
 newStar.sparkLifeVariation = 3.2;
 });
-// Queue burst flash render
+
 BurstFlash.add(star.x, star.y, 46);
 soundManager.playSound('burstSmall');
 }
 
-// Crackle pops into a small cloud of golden sparks.
+
 function crackleEffect(star) {
 const count = isHighQuality ? 32 : 16;
 createParticleArc(0, PI_2, count, 1.8, (angle) => {
@@ -2437,7 +2422,7 @@ star.x,
 star.y,
 COLOR.Gold,
 angle,
-// apply near cubic falloff to speed (places more particles towards outside)
+
 Math.pow(Math.random(), 0.45) * 2.4,
 300 + Math.random() * 200
 );
@@ -2446,23 +2431,6 @@ Math.pow(Math.random(), 0.45) * 2.4,
 
 
 
-/**
-* Shell can be constructed with options:
-*
-* spreadSize:      Size of the burst.
-* starCount: Number of stars to create. This is optional, and will be set to a reasonable quantity for size if omitted.
-* starLife:
-* starLifeVariation:
-* color:
-* glitterColor:
-* glitter: One of: 'light', 'medium', 'heavy', 'streamer', 'willow'
-* pistil:
-* pistilColor:
-* streamers:
-* crossette:
-* floral:
-* crackle:
-*/
 class Shell {
 constructor(options) {
 Object.assign(this, options);
@@ -2470,7 +2438,7 @@ this.starLifeVariation = options.starLifeVariation || 0.125;
 this.color = options.color || randomColor();
 this.glitterColor = options.glitterColor || this.color;
 
-// Set default starCount if needed, will be based on shell size and scale exponentially, like a sphere's surface area.
+
 if (!this.starCount) {
 const density = options.starDensity || 1;
 const scaledSize = this.spreadSize / 54;
@@ -2481,13 +2449,13 @@ this.starCount = Math.max(6, scaledSize * scaledSize * density);
 launch(position, launchHeight) {
 const width = stageW;
 const height = stageH;
-// Distance from sides of screen to keep shells.
+
 const hpad = 60;
-// Distance from top of screen to keep shell bursts.
+
 const vpad = 50;
-// Minimum burst height, as a percentage of stage height
+
 const minHeightPercent = 0.45;
-// Minimum burst height in px
+
 const minHeight = height - height * minHeightPercent;
 
 const launchX = position * (width - hpad * 2) + hpad;
@@ -2495,8 +2463,8 @@ const launchY = height;
 const burstY = minHeight - (launchHeight * (minHeight - vpad));
 
 const launchDistance = launchY - burstY;
-// Using a custom power curve to approximate Vi needed to reach launchDistance under gravity and air drag.
-// Magic numbers came from testing.
+
+
 const launchVelocity = Math.pow(launchDistance * 0.04, 0.64);
 
 const comet = this.comet = Star.add(
@@ -2505,13 +2473,13 @@ launchY,
 typeof this.color === 'string' && this.color !== 'random' ? this.color : COLOR.White,
 Math.PI,
 launchVelocity * (this.horsetail ? 1.2 : 1),
-// Hang time is derived linearly from Vi; exact number came from testing
+
 launchVelocity * (this.horsetail ? 100 : 400)
 );
 
-// making comet "heavy" limits air drag
+
 comet.heavy = true;
-// comet spark trail
+
 comet.spinRadius = MyMath.random(0.32, 0.85);
 comet.sparkFreq = 32 / quality;
 if (isHighQuality) comet.sparkFreq = 8;
@@ -2526,8 +2494,8 @@ if (this.color === INVISIBLE) {
 comet.sparkColor = COLOR.Gold;
 }
 
-// Randomly make comet "burn out" a bit early.
-// This is disabled for horsetail shells, due to their very short airtime.
+
+
 if (Math.random() > 0.4 && !this.horsetail) {
 comet.secondColor = INVISIBLE;
 comet.transitionTime = Math.pow(Math.random(), 1.5) * 700 + 500;
@@ -2539,12 +2507,12 @@ soundManager.playSound('lift');
 }
 
 burst(x, y) {
-// Set burst speed so overall burst grows to set size. This specific formula was derived from testing, and is affected by simulated air drag.
+
 const speed = this.spreadSize / 96;
 
 let color, onDeath, sparkFreq, sparkSpeed, sparkLife;
 let sparkLifeVariation = 0.25;
-// Some death effects, like crackle, play a sound, but should only be played once.
+
 let playedDeathSound = false;
 
 if (this.crossette) onDeath = (star) => {
@@ -2601,15 +2569,15 @@ sparkLife = 1400;
 sparkLifeVariation = 3.8;
 }
 
-// Apply quality to spark count
+
 sparkFreq = sparkFreq / quality;
 
-// Star factory for primary burst, pistils, and streamers.
+
 let firstStar = true;
 const starFactory = (angle, speedMult) => {
-// For non-horsetail shells, compute an initial vertical speed to add to star burst.
-// The magic number comes from testing what looks best. The ideal is that all shell
-// bursts appear visually centered for the majority of the star life (excl. willows etc.)
+
+
+
 const standardInitialSpeed = this.spreadSize / 1800;
 
 const star = Star.add(
@@ -2618,7 +2586,7 @@ y,
 color || randomColor(),
 angle,
 speedMult * speed,
-// add minor variation to star life
+
 this.starLife + Math.random() * this.starLife * this.starLifeVariation,
 this.horsetail ? this.comet && this.comet.speedX : 0,
 this.horsetail ? this.comet && this.comet.speedY : -standardInitialSpeed
@@ -2632,8 +2600,8 @@ star.secondColor = this.secondColor;
 if (this.strobe) {
 star.transitionTime = this.starLife * (Math.random() * 0.08 + 0.46);
 star.strobe = true;
-// How many milliseconds between switch of strobe state "tick". Note that the strobe pattern
-// is on:off:off, so this is the "on" duration, while the "off" duration is twice as long.
+
+
 star.strobeFreq = Math.random() * 20 + 40;
 if (this.strobeColor) {
 star.secondColor = this.strobeColor;
@@ -2660,16 +2628,16 @@ color = null; // falsey value creates random color in starFactory
 color = this.color;
 }
 
-// Rings have positional randomness, but are rotated randomly
+
 if (this.ring) {
 const ringStartAngle = Math.random() * Math.PI;
 const ringSquash = Math.pow(Math.random(), 2) * 0.85 + 0.15;;
 
 createParticleArc(0, PI_2, this.starCount, 0, angle => {
-// Create a ring, squashed horizontally
+
 const initSpeedX = Math.sin(angle) * speed * ringSquash;
 const initSpeedY = Math.cos(angle) * speed;
-// Rotate ring
+
 const newSpeed = MyMath.pointDist(0, 0, initSpeedX, initSpeedY);
 const newAngle = MyMath.pointAngle(0, 0, initSpeedX, initSpeedY) + ringStartAngle;
 const star = Star.add(
@@ -2677,9 +2645,9 @@ x,
 y,
 color,
 newAngle,
-// apply near cubic falloff to speed (places more particles towards outside)
+
 newSpeed,//speed,
-// add minor variation to star life
+
 this.starLife + Math.random() * this.starLife * this.starLifeVariation
 );
 
@@ -2693,7 +2661,7 @@ star.sparkTimer = Math.random() * star.sparkFreq;
 }
 });
 }
-// Normal burst
+
 else {
 createBurst(this.starCount, starFactory);
 }
@@ -2704,7 +2672,7 @@ const start = Math.random() * Math.PI;
 const start2 = start + Math.PI;
 const arc = Math.PI;
 color = this.color[0];
-// Not creating a full arc automatically reduces star count.
+
 createBurst(this.starCount, starFactory, start, arc);
 color = this.color[1];
 createBurst(this.starCount, starFactory, start2, arc);
@@ -2744,18 +2712,18 @@ glitter: 'streamer'
 innerShell.burst(x, y);
 }
 
-// Queue burst flash render
+
 BurstFlash.add(x, y, this.spreadSize / 4);
 
-// Play sound, but only for "original" shell, the one that was launched.
-// We don't want multiple sounds from pistil or streamer "sub-shells".
-// This can be detected by the presence of a comet.
+
+
+
 if (this.comet) {
-// Scale explosion sound based on current shell size and selected (max) shell size.
-// Shooting selected shell size will always sound the same no matter the selected size,
-// but when smaller shells are auto-fired, they will sound smaller. It doesn't sound great
-// when a value too small is given though, so instead of basing it on proportions, we just
-// look at the difference in size and map it to a range known to sound good.
+
+
+
+
+
 const maxDiff = 2;
 const sizeDifferenceFromMaxSize = Math.min(maxDiff, shellSizeSelector() - this.shellSize);
 const soundScale = (1 - sizeDifferenceFromMaxSize / maxDiff) * 0.3 + 0.7;
@@ -2792,8 +2760,8 @@ this._pool.push(instance);
 
 
 
-// Helper to generate objects for storing active particles.
-// Particles are stored in arrays keyed by color (code, not name) for improved rendering performance.
+
+
 function createParticleCollection() {
 const collection = {};
 COLOR_CODES_W_INVIS.forEach(color => {
@@ -2803,17 +2771,17 @@ return collection;
 }
 
 
-// Star properties (WIP)
-// -----------------------
-// transitionTime - how close to end of life that star transition happens
+
+
+
 
 const Star = {
-// Visual properties
+
 drawWidth: 3,
 airDrag: 0.98,
 airDragHeavy: 0.992,
 
-// Star particles will be keyed by color
+
 active: createParticleCollection(),
 _pool: [],
 
@@ -2850,27 +2818,27 @@ this.active[color].push(instance);
 return instance;
 },
 
-// Public method for cleaning up and returning an instance back to the pool.
+
 returnInstance(instance) {
-// Call onDeath handler if available (and pass it current star instance)
+
 instance.onDeath && instance.onDeath(instance);
-// Clean up
+
 instance.onDeath = null;
 instance.secondColor = null;
 instance.transitionTime = 0;
 instance.colorChanged = false;
-// Add back to the pool.
+
 this._pool.push(instance);
 }
 };
 
 
 const Spark = {
-// Visual properties
+
 drawWidth: 0, // set in `configDidUpdate()`
 airDrag: 0.9,
 
-// Star particles will be keyed by color
+
 active: createParticleCollection(),
 _pool: [],
 
@@ -2894,9 +2862,9 @@ this.active[color].push(instance);
 return instance;
 },
 
-// Public method for cleaning up and returning an instance back to the pool.
+
 returnInstance(instance) {
-// Add back to the pool.
+
 this._pool.push(instance);
 }
 };
@@ -2968,7 +2936,7 @@ const { fileNames } = source;
 const filePromises = [];
 fileNames.forEach(fileName => {
 const fileURL = this.baseURL + fileName;
-// Promise will resolve with decoded audio buffer.
+
 const promise = fetch(fileURL)
 .then(checkStatus)
 .then(response => response.arrayBuffer())
@@ -2994,44 +2962,35 @@ this.ctx.suspend();
 },
 
 resumeAll() {
-// Play a sound with no volume for iOS. This 'unlocks' the audio context when the user first enables sound.
+
 this.playSound('lift', 0);
-// Chrome mobile requires interaction before starting audio context.
-// The sound toggle button is triggered on 'touchstart', which doesn't seem to count as a full
-// interaction to Chrome. I guess it needs a click? At any rate if the first thing the user does
-// is enable audio, it doesn't work. Using a setTimeout allows the first interaction to be registered.
-// Perhaps a better solution is to track whether the user has interacted, and if not but they try enabling
-// sound, show a tooltip that they should tap again to enable sound.
+
+
+
+
+
+
 setTimeout(() => {
 this.ctx.resume();
 }, 250);
 },
 
-// Private property used to throttle small burst sounds.
+
 _lastSmallBurstTime: 0,
 
-/**
-* Play a sound of `type`. Will randomly pick a file associated with type, and play it at the specified volume
-* and play speed, with a bit of random variance in play speed. This is all based on `sources` config.
-*
-* @param  {string} type - The type of sound to play.
-* @param  {?number} scale=1 - Value between 0 and 1 (values outside range will be clamped). Scales less than one
-*                             descrease volume and increase playback speed. This is because large explosions are
-*                             louder, deeper, and reverberate longer than small explosions.
-*                             Note that a scale of 0 will mute the sound.
-*/
+
 playSound(type, scale=1) {
-// Ensure `scale` is within valid range.
+
 scale = MyMath.clamp(scale, 0, 1);
 
-// Disallow starting new sounds if sound is disabled, app is running in slow motion, or paused.
-// Slow motion check has some wiggle room in case user doesn't finish dragging the speed bar
-// *all* the way back.
+
+
+
 if (!canPlaySoundSelector() || simSpeed < 0.95) {
 return;
 }
 
-// Throttle small bursts, since floral/falling leaves shells have a lot of them.
+
 if (type === 'burstSmall') {
 const now = Date.now();
 if (now - this._lastSmallBurstTime < 20) {
@@ -3052,10 +3011,10 @@ source.playbackRateMin,
 source.playbackRateMax
 );
 
-// Volume descreases with scale.
+
 const scaledVolume = initialVolume * scale;
-// Playback rate increases with scale. For this, we map the scale of 0-1 to a scale of 2-1.
-// So at a scale of 1, sound plays normally, but as scale approaches 0 speed approaches double.
+
+
 const scaledPlaybackRate = initialPlaybackRate * (2 - scale);
 
 const gainNode = this.ctx.createGain();
@@ -3074,24 +3033,24 @@ bufferSource.start(0);
 
 
 
-// Kick things off.
+
 
 function setLoadingStatus(status) {
 document.querySelector('.loading-init__status').textContent = status;
 }
 
-// CodePen profile header doesn't need audio, just initialize.
+
 if (IS_HEADER) {
 init();
 } else {
-// Allow status to render, then preload assets and start app.
+
 setLoadingStatus('Lighting Fuses');
 setTimeout(() => {
 soundManager.preload()
 .then(
 init,
 reason => {
-// Codepen preview doesn't like to load the audio, so just init to fix the preview for now.
+
 init();
 return Promise.reject(reason);
 }
