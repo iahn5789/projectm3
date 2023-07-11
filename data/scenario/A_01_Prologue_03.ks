@@ -7,7 +7,7 @@
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [playbgm  volume="100"  time="1000"  loop="true"  storage="MySweethome_Scene_Home_01.wav"  fadein="true"  ]
 [playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Office_01.wav"  fadein="true"  loop="true"  ]
-[bg  time="10"  method="crossfade"  storage="Common_Home_Room_Bgi_01.png"  ]
+[bg  time="10"  method="crossfade"  storage="Common_Home_Dirtyroom_Bgi_Night_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
@@ -91,9 +91,7 @@
 [t1]내일 정리하는 걸로 하자...[t2][p]
 #
 [t1]침대에 몸을  잡생각이 떠올랐다.[r]동아리, 루틴, 전단지, 앨범, 짐정리...[t2][p][t1]낮에 꾸었던 꿈이 가장 크게 떠올랐다.[t2][p]
-[tb_hide_message_window  ]
-[bg  time="3000"  method="crossfade"  storage="Common_Home_Room_Bgi_02.png"  ]
-[tb_show_message_window  ]
+
 [_tb_end_tyrano_code]
 
 [stopbgm  time="6000"  fadeout="true"  ]
@@ -119,7 +117,7 @@
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [playse  volume="120"  time="1000"  buf="1"  storage="SFX/Common_Morning_Bird_Twitter_01.wav"  fadein="false"  ]
 [playse  volume="80"  time="500"  buf="3"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
-[bg  time="10"  method="crossfade"  storage="Common_Home_Room_Bgi_01.png"  ]
+[bg  time="10"  method="crossfade"  storage="Common_Home_Dirtyroom_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
@@ -147,6 +145,7 @@
 #&[sf.name]
 [t1]네! 일어났어요![t2][p]
 [_tb_end_tyrano_code]
+
 [stopse  time="1000"  buf="1"  ]
 [tb_start_tyrano_code]
 #
@@ -159,7 +158,7 @@
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
-[bg  time="1000"  method="crossfade"  storage="Common_Road_Bgi_01.png"  ]
+[bg  time="1000"  method="crossfade"  storage="Common_Road_Bgi_02.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]

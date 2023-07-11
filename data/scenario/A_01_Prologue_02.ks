@@ -7,7 +7,7 @@
 [tb_eval  exp="f.story='동아리&nbsp;생활을&nbsp;시작하다!'"  name="story"  cmd="="  op="t"  val="동아리&nbsp;생활을&nbsp;시작하다!"  val_2="undefined"  ]
 [playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
 [playbgm  volume="100"  time="1000"  loop="true"  storage="Common_Lobby_BGM_01.mp3"  fadein="true"  ]
-[bg  time="10"  method="crossfade"  storage="Common_Road_Bgi_01.png"  ]
+[bg  time="10"  method="crossfade"  storage="Common_Road_Bgi_02.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]

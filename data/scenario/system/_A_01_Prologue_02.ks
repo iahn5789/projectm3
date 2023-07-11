@@ -1,2 +1,2 @@
-[preload  storage="./data/bgimage/Common_Road_Bgi_01.png"  ]
+[preload  storage="./data/bgimage/Common_Road_Bgi_02.png"  ]
 [return]

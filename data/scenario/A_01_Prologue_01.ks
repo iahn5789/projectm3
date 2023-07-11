@@ -86,7 +86,7 @@
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]
-[bg  time="10"  method="crossfade"  storage="Common_Road_Bgi_01.png"  ]
+[bg  time="10"  method="crossfade"  storage="Common_Sc_Maingate_Bgi_01.png"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
@@ -117,7 +117,7 @@
 [chara_hide name="Jeon" ]
 [_tb_end_tyrano_code]
 
-[bg  time="1000"  method="vanishIn"  storage="Common_Road_Bgi_01.png"  ]
+[bg  time="1000"  method="vanishIn"  storage="Common_Sc_Maingate_Bgi_01.png"  ]
 [tb_start_tyrano_code]
 #&[sf.name]
 [t1]변태다...[t2][p]
