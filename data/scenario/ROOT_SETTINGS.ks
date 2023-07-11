@@ -98,7 +98,12 @@
 [jump  storage="ROOT_SETTINGS.ks"  target="*Common_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
 [else]
 ;호감도가 안될때
-
+[quake  time="300"  count="3"  hmax="2"  wait="false"  vmax="2"  ]
+[html]
+<div class="caution01">
+<img class="img" src="data/image/New_GUI/Test_UI/UI_Caution_Teststart_01.png"/>
+</div>
+[endhtml]
 [endif]
 [_tb_end_tyrano_code]
 
