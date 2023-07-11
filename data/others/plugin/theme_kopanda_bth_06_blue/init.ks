@@ -24,10 +24,10 @@ if(TG.config.alreadyReadTextColor != "default"){
 
 ; メッセージウィンドウの設定
 [position layer="message0" width="1920" height="363" top="718" left="0"]
-[position layer="message0" frame="../image/New_GUI/Text_Box_01.png" face="NanumGothicRegular" margint="90" marginl="533" marginr="387" marginb="74" opacity="100%" page="fore"]
+[position layer="message0" frame="../image/New_GUI/Text_Box_01.png" face="NanumGothicBold" margint="90" marginl="533" marginr="387" marginb="74" opacity="100%" page="fore"]
 
 ; 名前枠の設定
-[ptext name="chara_name_area" layer="message0" color="&mp.name_color" align="center" size="64" face="PyeongChangPeaceLight" x="202" y="857" width="242" color="white"]
+[ptext name="chara_name_area" layer="message0" color="&mp.name_color" align="center" size="64" face="NanumGothicRegular" x="202" y="857" width="242" color="white"]
 [chara_config ptext="chara_name_area"]
 
 ; デフォルトのフォントカラー指定
