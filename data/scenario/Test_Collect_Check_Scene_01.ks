@@ -1,6 +1,5 @@
 [_tb_system_call storage=system/_Test_Collect_Check_Scene_01.ks]
 
-[bg  time="1"  method="crossfade"  storage="Common_Test.png"  ]
 *Random_Number
 
 [tb_start_tyrano_code]
@@ -996,7 +995,7 @@ audio_click.play();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_04_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
 [anim name=correct_01 time=700 left=1659]
 
 [iscript]
@@ -1243,7 +1242,7 @@ audio_click.play();
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_03_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
+[button name="correct_01" fix=true storage="Test_Start_01.ks" target="quiz_05_scoring" graphic="../image/New_GUI/Test_In_UI/Correct_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Correct_Bt_02.png" width="261" height="122" x="1930" y="854"]
 [anim name=correct_01 time=700 left=1659]
 
 [iscript]
