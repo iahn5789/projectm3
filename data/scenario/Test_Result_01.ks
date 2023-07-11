@@ -15,8 +15,8 @@
 [mask_off  time="1500"  effect="fadeOut"  ]
 [call  storage="Test_Result_01.ks"  target="*star"  ]
 [tb_start_tyrano_code]
-[button name="next" storage="Chapter03_School_Club_01.ks" target="chapter03_01" graphic="../image/New_GUI/Test_In_UI/Quiz_End_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Quiz_End_Bt_02.png" width="618" height="107" x="655" y="1100" ]
-[anim name=next top=936 time=1000 ]
+[button name="next" storage="Chapter03_School_Club_01.ks" target="chapter03_01" graphic="../image/New_GUI/Test_In_UI/Quiz_End_Bt_01.png" enterimg="../image/New_GUI/Test_In_UI/Quiz_End_Bt_02.png" width="413" height="103" x="753" y="1100" ]
+[anim name=next top=889 time=1000 ]
 [_tb_end_tyrano_code]
 
 [s  ]
