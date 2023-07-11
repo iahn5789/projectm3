@@ -2,6 +2,7 @@
 
 *test_result
 
+[tb_ptext_hide  time="1"  ]
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [cm]

@@ -81,8 +81,8 @@
 [image layer=1 left=10 top=955 width=74 height=78 time=300ms storage = ../image/New_GUI/Test_In_UI/Timer_01.gif page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="1638"  y="59"  size="35"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="45"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicBold"  text="&f.score"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1495"  y="45"  size="25"  color="0xf78e22"  time="0"  face="NanumGothicBold"  text="&f.question"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_01
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
@@ -124,6 +124,7 @@
 [s  ]
 *x_01
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -144,6 +145,7 @@
 *quiz_02
 
 [tb_eval  exp="f.question=2"  name="question"  cmd="="  op="t"  val="2"  val_2="undefined"  ]
+[tb_ptext_hide  time="1"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
@@ -163,8 +165,8 @@
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_02.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="1637"  y="48"  size="35"  color="0x000000"  time="0"  face="PyeongChangPeaceLight"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="45"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicBold"  text="&f.score"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1495"  y="45"  size="25"  color="0xf78e22"  time="0"  face="NanumGothicBold"  text="&f.question"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_02
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
@@ -206,6 +208,7 @@
 [s  ]
 *x_02
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -226,6 +229,7 @@
 *quiz_03
 
 [tb_eval  exp="f.question=3"  name="question"  cmd="="  op="t"  val="3"  val_2="undefined"  ]
+[tb_ptext_hide  time="1"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
@@ -245,8 +249,8 @@
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_03.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="1638"  y="48"  size="35"  color="0x000000"  time="0"  face="The&nbsp;Jamsil3Regular"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1495"  y="45"  size="25"  color="0xf78e22"  time="0"  face="NanumGothicBold"  text="&f.question"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="45"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicBold"  text="&f.score"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
 [s  ]
 *quiz_03_scoring
@@ -293,6 +297,7 @@
 [s  ]
 *x_03
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -320,6 +325,7 @@
 *quiz_04
 
 [tb_eval  exp="f.question=4"  name="question"  cmd="="  op="t"  val="4"  val_2="undefined"  ]
+[tb_ptext_hide  time="1"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
@@ -339,8 +345,8 @@
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_04.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="1637"  y="48"  size="35"  color="0x000000"  time="0"  face="PyeongChangPeaceLight"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="45"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicBold"  text="&f.score"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1495"  y="45"  size="25"  color="0xf78e22"  time="0"  face="NanumGothicBold"  text="&f.question"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_04
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
@@ -382,6 +388,7 @@
 [s  ]
 *x_04
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -402,6 +409,7 @@
 *quiz_05
 
 [tb_eval  exp="f.question=5"  name="question"  cmd="="  op="t"  val="5"  val_2="undefined"  ]
+[tb_ptext_hide  time="1"  ]
 [cm  ]
 [tb_start_tyrano_code]
 [cm]
@@ -421,8 +429,8 @@
 [image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Test_In_UI/Quiz_01_05.png page=fore visible=true name=testpaper ]
 [_tb_end_tyrano_code]
 
-[tb_ptext_show  x="1760"  y="43"  size="30"  color="0xffffff"  time="1"  face="PyeongChangPeaceLight"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[tb_ptext_show  x="1637"  y="48"  size="35"  color="0x000000"  time="0"  face="PyeongChangPeaceLight"  text="&f.collect"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1495"  y="45"  size="25"  color="0xf78e22"  time="0"  face="NanumGothicBold"  text="&f.question"  anim="false"  edge="undefined"  shadow="undefined"  ]
+[tb_ptext_show  x="1760"  y="45"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicBold"  text="&f.score"  anim="false"  edge="undefined"  shadow="undefined"  ]
 *quiz_back_05
 
 [call  storage="Test_Collect_Check_Scene_01.ks"  target="*Random_Number"  ]
@@ -439,8 +447,8 @@
 [clr_time_limit]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Start_01.ks"  target="*o_04"  cond="f.select=='TRUE'"  ]
-[jump  storage="Test_Start_01.ks"  target="*x_04"  cond=""  ]
+[jump  storage="Test_Start_01.ks"  target="*o_05"  cond="f.select=='TRUE'"  ]
+[jump  storage="Test_Start_01.ks"  target="*x_05"  cond=""  ]
 [s  ]
 *o_05
 
@@ -464,6 +472,7 @@
 [s  ]
 *x_05
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -483,6 +492,7 @@
 [s  ]
 *timeout_01
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [clearfix name="correct_01"]
@@ -500,6 +510,7 @@
 [jump  storage="Test_Start_01.ks"  target="*quiz_02"  ]
 *timeout_02
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [clearfix name="correct_01"]
@@ -517,6 +528,7 @@
 [jump  storage="Test_Start_01.ks"  target="*quiz_03"  ]
 *timeout_03
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [clearfix name="correct_01"]
@@ -535,6 +547,7 @@
 [s  ]
 *timeout_04
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [clearfix name="correct_01"]
@@ -553,6 +566,7 @@
 [s  ]
 *timeout_05
 
+[tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
 [clearfix name="correct_01"]
