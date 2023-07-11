@@ -105,6 +105,7 @@
 *o_01
 
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
+[tb_eval  exp="f.star01='TRUE'"  name="star01"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.testResult+=1"  name="testResult"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -124,6 +125,8 @@
 [s  ]
 *x_01
 
+[tb_eval  exp="f.star01='FALSE'"  name="star01"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
@@ -188,6 +191,7 @@
 [s  ]
 *o_02
 
+[tb_eval  exp="f.star02='TRUE'"  name="star02"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.testResult+=2"  name="testResult"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [tb_start_tyrano_code]
@@ -208,6 +212,8 @@
 [s  ]
 *x_02
 
+[tb_eval  exp="f.star02='FALSE'"  name="star02"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
@@ -270,6 +276,7 @@
 [s  ]
 *o_03
 
+[tb_eval  exp="f.star03='TRUE'"  name="star03"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.testResult+=4"  name="testResult"  cmd="+="  op="t"  val="4"  val_2="undefined"  ]
 [tb_start_tyrano_code]
@@ -297,6 +304,8 @@
 [s  ]
 *x_03
 
+[tb_eval  exp="f.star03='FALSE'"  name="star03"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
@@ -368,6 +377,7 @@
 [s  ]
 *o_04
 
+[tb_eval  exp="f.star04='TRUE'"  name="star04"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.testResult+=2"  name="testResult"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [tb_start_tyrano_code]
@@ -388,6 +398,8 @@
 [s  ]
 *x_04
 
+[tb_eval  exp="f.star04='FALSE'"  name="star04"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
@@ -452,6 +464,7 @@
 [s  ]
 *o_05
 
+[tb_eval  exp="f.star05='TRUE'"  name="star05"  cmd="="  op="t"  val="TRUE"  val_2="undefined"  ]
 [tb_eval  exp="f.collect+=1"  name="collect"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.testResult+=2"  name="testResult"  cmd="+="  op="t"  val="2"  val_2="undefined"  ]
 [tb_start_tyrano_code]
@@ -472,6 +485,8 @@
 [s  ]
 *x_05
 
+[tb_eval  exp="f.star05='FALSE'"  name="star05"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [tb_start_tyrano_code]
@@ -492,6 +507,7 @@
 [s  ]
 *timeout_01
 
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -510,6 +526,7 @@
 [jump  storage="Test_Start_01.ks"  target="*quiz_02"  ]
 *timeout_02
 
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -528,6 +545,7 @@
 [jump  storage="Test_Start_01.ks"  target="*quiz_03"  ]
 *timeout_03
 
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -547,6 +565,7 @@
 [s  ]
 *timeout_04
 
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
@@ -566,6 +585,7 @@
 [s  ]
 *timeout_05
 
+[tb_eval  exp="f.wrong+=1"  name="wrong"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.score-=20"  name="score"  cmd="-="  op="t"  val="20"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2"]
