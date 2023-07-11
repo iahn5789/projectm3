@@ -40,6 +40,7 @@
 [clearfix name="msgsul01"]
 [clearfix name="msgsul02"]
 [clearfix name="msgsul03"]
+[clearfix name="teststart"]
 
 [ptext layer=2 name="slove" page=fore text="&[f.slove]" size=23 x=166 y=931 width=97 height=31 edge="0xFFFFFF" color="0xFF4F6E" align="center" vertical=false face="NanumGothicBold" ]
 [cm]

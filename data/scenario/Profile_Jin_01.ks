@@ -40,6 +40,7 @@
 [clearfix name="msgsul01"]
 [clearfix name="msgsul02"]
 [clearfix name="msgsul03"]
+[clearfix name="teststart"]
 [_tb_end_tyrano_code]
 
 [bg  time="10"  method="crossfade"  storage="Profile_BGI/Profile_Jin_01.png"  ]
