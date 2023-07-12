@@ -58,6 +58,22 @@
 [jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_53"  cond="f.gift_line==53"  ]
 [jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_54"  cond="f.gift_line==54"  ]
 [jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_55"  cond="f.gift_line==55"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_56"  cond="f.gift_line==56"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_57"  cond="f.gift_line==57"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_58"  cond="f.gift_line==58"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_59"  cond="f.gift_line==59"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_60"  cond="f.gift_line==60"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_61"  cond="f.gift_line==61"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_62"  cond="f.gift_line==62"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_63"  cond="f.gift_line==63"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_64"  cond="f.gift_line==64"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_65"  cond="f.gift_line==65"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_66"  cond="f.gift_line==66"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_67"  cond="f.gift_line==67"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_68"  cond="f.gift_line==68"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_69"  cond="f.gift_line==69"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_70"  cond="f.gift_line==70"  ]
+[jump  storage="Gift_line_random_script_Scene_01.ks"  target="*L_line_value_71"  cond="f.gift_line==71"  ]
 [s  ]
 *L_line_value_00
 
@@ -253,11 +269,99 @@
 [return  ]
 *L_line_value_48
 
-[tb_eval  exp="f.gift_line='ㅔ'"  name="gift_line"  cmd="="  op="t"  val="ㅔ"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='이거\u00A0어릴\u00A0때\u00A0엄마가\u00A0못\u00A0먹게\u00A0했는데...'"  name="gift_line"  cmd="="  op="t"  val="이거\u00A0어릴\u00A0때\u00A0엄마가\u00A0못\u00A0먹게\u00A0했는데..."  val_2="undefined"  ]
 [return  ]
 *L_line_value_49
 
-[tb_eval  exp="f.gift_line='ㅔ'"  name="gift_line"  cmd="="  op="t"  val="ㅔ"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='가끔은\u00A0이런\u00A0것도\u00A0좋지...'"  name="gift_line"  cmd="="  op="t"  val="가끔은\u00A0이런\u00A0것도\u00A0좋지..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_50
+
+[tb_eval  exp="f.gift_line='불량식품...'"  name="gift_line"  cmd="="  op="t"  val="불량식품..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_51
+
+[tb_eval  exp="f.gift_line='고양이는\u00A0츄르를\u00A0좋아해...'"  name="gift_line"  cmd="="  op="t"  val="고양이는\u00A0츄르를\u00A0좋아해..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_52
+
+[tb_eval  exp="f.gift_line='츄르...'"  name="gift_line"  cmd="="  op="t"  val="츄르..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_53
+
+[tb_eval  exp="f.gift_line='내가\u00A0먹을\u00A0거\u00A0아니야...'"  name="gift_line"  cmd="="  op="t"  val="내가\u00A0먹을\u00A0거\u00A0아니야..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_54
+
+[tb_eval  exp="f.gift_line='고양이가\u00A0세상을\u00A0구할거야...'"  name="gift_line"  cmd="="  op="t"  val="고양이가\u00A0세상을\u00A0구할거야..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_55
+
+[tb_eval  exp="f.gift_line='샴\u00A0인가봐\u00A0얼굴이\u00A0검은색이네...'"  name="gift_line"  cmd="="  op="t"  val="샴\u00A0인가봐\u00A0얼굴이\u00A0검은색이네..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_56
+
+[tb_eval  exp="f.gift_line='고양이...'"  name="gift_line"  cmd="="  op="t"  val="고양이..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_57
+
+[tb_eval  exp="f.gift_line='괴담은...별로\u00A0안\u00A0무서워\u00A0하는데...'"  name="gift_line"  cmd="="  op="t"  val="괴담은...별로\u00A0안\u00A0무서워\u00A0하는데..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_58
+
+[tb_eval  exp="f.gift_line='지하철이\u00A0멈추지\u00A0않는\u00A0\u00A0간이역의\u00A0비밀...'"  name="gift_line"  cmd="="  op="t"  val="지하철이\u00A0멈추지\u00A0않는\u00A0\u00A0간이역의\u00A0비밀..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_59
+
+[tb_eval  exp="f.gift_line='도시\u00A0괴담...'"  name="gift_line"  cmd="="  op="t"  val="도시\u00A0괴담..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_60
+
+[tb_eval  exp="f.gift_line='너도\u00A0한\u00A0장\u00A0그려줄까...?'"  name="gift_line"  cmd="="  op="t"  val="너도\u00A0한\u00A0장\u00A0그려줄까...?"  val_2="undefined"  ]
+[return  ]
+*L_line_value_61
+
+[tb_eval  exp="f.gift_line='확실히\u00A0스케치북보다\u00A0캔버스에\u00A0그리는\u00A0게\u00A0더\u00A0좋아...'"  name="gift_line"  cmd="="  op="t"  val="확실히\u00A0스케치북보다\u00A0캔버스에\u00A0그리는\u00A0게\u00A0더\u00A0좋아..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_62
+
+[tb_eval  exp="f.gift_line='캔버스...'"  name="gift_line"  cmd="="  op="t"  val="캔버스..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_63
+
+[tb_eval  exp="f.gift_line='우리\u00A0집에\u00A0진검도\u00A0있어...'"  name="gift_line"  cmd="="  op="t"  val="우리\u00A0집에\u00A0진검도\u00A0있어..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_64
+
+[tb_eval  exp="f.gift_line='죽도로\u00A0죽도록\u00A0맞아본\u00A0적\u00A0있어...?'"  name="gift_line"  cmd="="  op="t"  val="죽도로\u00A0죽도록\u00A0맞아본\u00A0적\u00A0있어...?"  val_2="undefined"  ]
+[return  ]
+*L_line_value_65
+
+[tb_eval  exp="f.gift_line='죽도...'"  name="gift_line"  cmd="="  op="t"  val="죽도..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_66
+
+[tb_eval  exp="f.gift_line='...무슨\u00A0뜻이야...?'"  name="gift_line"  cmd="="  op="t"  val="...무슨\u00A0뜻이야...?"  val_2="undefined"  ]
+[return  ]
+*L_line_value_67
+
+[tb_eval  exp="f.gift_line='이거...나한테는\u00A0조금\u00A0작아...'"  name="gift_line"  cmd="="  op="t"  val="이거...나한테는\u00A0조금\u00A0작아..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_68
+
+[tb_eval  exp="f.gift_line='비키니...?'"  name="gift_line"  cmd="="  op="t"  val="비키니...?"  val_2="undefined"  ]
+[return  ]
+*L_line_value_69
+
+[tb_eval  exp="f.gift_line='헬멧은\u00A0이미\u00A0있는데...\u00A0\u00A0그래도\u00A0고마워...'"  name="gift_line"  cmd="="  op="t"  val="헬멧은\u00A0이미\u00A0있는데...\u00A0\u00A0그래도\u00A0고마워..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_70
+
+[tb_eval  exp="f.gift_line='내가\u00A0쓰는거랑\u00A0디자인이\u00A0조금\u00A0다르네...'"  name="gift_line"  cmd="="  op="t"  val="내가\u00A0쓰는거랑\u00A0디자인이\u00A0조금\u00A0다르네..."  val_2="undefined"  ]
+[return  ]
+*L_line_value_71
+
+[tb_eval  exp="f.gift_line='헬멧...'"  name="gift_line"  cmd="="  op="t"  val="헬멧..."  val_2="undefined"  ]
 [return  ]
 
 
@@ -297,46 +401,3 @@
 
 
 
-
-
-
-
-
-
-
-; *L_line_value_27
-
-; [tb_eval  exp="f.gift_line='고양이가\u00A0세상을\u00A0구할거야...'"  name="gift_line"  cmd="="  op="t"  val="고양이가\u00A0세상을\u00A0구할거야..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_28
-
-; [tb_eval  exp="f.gift_line='샴\u00A0인가봐\u00A0얼굴이\u00A0검은색이네...'"  name="gift_line"  cmd="="  op="t"  val="샴\u00A0인가봐\u00A0얼굴이\u00A0검은색이네..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_29
-
-; [tb_eval  exp="f.gift_line='고양이...'"  name="gift_line"  cmd="="  op="t"  val="고양이..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_30
-
-; [tb_eval  exp="f.gift_line='괴담은...별로\u00A0안\u00A0무서워\u00A0하는데...'"  name="gift_line"  cmd="="  op="t"  val="괴담은...별로\u00A0안\u00A0무서워\u00A0하는데..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_31
-
-; [tb_eval  exp="f.gift_line='지하철이\u00A0멈추지\u00A0않는\u00A0\u00A0간이역의\u00A0비밀...'"  name="gift_line"  cmd="="  op="t"  val="지하철이\u00A0멈추지\u00A0않는\u00A0\u00A0간이역의\u00A0비밀..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_32
-
-; [tb_eval  exp="f.gift_line='도시\u00A0괴담...'"  name="gift_line"  cmd="="  op="t"  val="도시\u00A0괴담..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_33
-
-; [tb_eval  exp="f.gift_line='헬멧은\u00A0이미\u00A0있는데...\u00A0\u00A0그래도\u00A0고마워...'"  name="gift_line"  cmd="="  op="t"  val="헬멧은\u00A0이미\u00A0있는데...\u00A0\u00A0그래도\u00A0고마워..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_34
-
-; [tb_eval  exp="f.gift_line='내가\u00A0쓰는거랑\u00A0디자인이\u00A0조금\u00A0다르네...'"  name="gift_line"  cmd="="  op="t"  val="내가\u00A0쓰는거랑\u00A0디자인이\u00A0조금\u00A0다르네..."  val_2="undefined"  ]
-; [return  ]
-; *L_line_value_35
-
-; [tb_eval  exp="f.gift_line='헬멧...'"  name="gift_line"  cmd="="  op="t"  val="헬멧..."  val_2="undefined"  ]
-; [return  ]
