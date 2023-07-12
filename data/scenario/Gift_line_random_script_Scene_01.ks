@@ -77,63 +77,63 @@
 [return  ]
 *L_line_value_09
 
-[tb_eval  exp="f.gift_line='뭐야?\u00A0레코드?\u00A0이거\u00A0들으려면\u00A0턴테이블이\u00A0있어야하지\u00A0않아?'"  name="gift_line"  cmd="="  op="t"  val="뭐야?\u00A0레코드?\u00A0이거\u00A0들으려면\u00A0턴테이블이\u00A0있어야하지\u00A0않아?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='이\u00A0이야기의\u00A0결말은\u00A0어떻게\u00A0되는걸까...'"  name="gift_line"  cmd="="  op="t"  val="이\u00A0이야기의\u00A0결말은\u00A0어떻게\u00A0되는걸까..."  val_2="undefined"  ]
 [return  ]
 *L_line_value_10
 
-[tb_eval  exp="f.gift_line='뭔가\u00A0굉장히\u00A0고급스러워\u00A0보이는데...\u00A0\u00A0생각보다\u00A0엄청\u00A0커!'"  name="gift_line"  cmd="="  op="t"  val="뭔가\u00A0굉장히\u00A0고급스러워\u00A0보이는데...\u00A0\u00A0생각보다\u00A0엄청\u00A0커!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='잠깐!\u00A0스포하면\u00A0안돼!'"  name="gift_line"  cmd="="  op="t"  val="잠깐!\u00A0스포하면\u00A0안돼!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_11
 
-[tb_eval  exp="f.gift_line='이게\u00A0뭐야?\u00A0LP?\u00A0이걸로\u00A0디제잉을\u00A0한다고?\u00A0슝슝?'"  name="gift_line"  cmd="="  op="t"  val="이게\u00A0뭐야?\u00A0LP?\u00A0이걸로\u00A0디제잉을\u00A0한다고?\u00A0슝슝?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='나도\u00A0가끔은\u00A0이런\u00A0소설의\u00A0주인공처럼\u00A0사는\u00A0상상을\u00A0해'"  name="gift_line"  cmd="="  op="t"  val="나도\u00A0가끔은\u00A0이런\u00A0소설의\u00A0주인공처럼\u00A0사는\u00A0상상을\u00A0해"  val_2="undefined"  ]
 [return  ]
 *L_line_value_12
 
-[tb_eval  exp="f.gift_line='콜라는\u00A0X카보다는\u00A0X시지.'"  name="gift_line"  cmd="="  op="t"  val="콜라는\u00A0X카보다는\u00A0X시지."  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='헤드폰은\u00A0목에\u00A0거는\u00A0게\u00A0정석이지!'"  name="gift_line"  cmd="="  op="t"  val="헤드폰은\u00A0목에\u00A0거는\u00A0게\u00A0정석이지!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_13
 
-[tb_eval  exp="f.gift_line='뭐야?\u00A0\u00A0난\u00A0제로\u00A0말고\u00A0그냥\u00A0콜라가\u00A0더\u00A0좋아!'"  name="gift_line"  cmd="="  op="t"  val="뭐야?\u00A0\u00A0난\u00A0제로\u00A0말고\u00A0그냥\u00A0콜라가\u00A0더\u00A0좋아!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='오래쓰면\u00A0머리가\u00A0눌려서\u00A0아파...!'"  name="gift_line"  cmd="="  op="t"  val="오래쓰면\u00A0머리가\u00A0눌려서\u00A0아파...!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_14
 
-[tb_eval  exp="f.gift_line='이\u00A0썩는다고?\u00A0죽을래?'"  name="gift_line"  cmd="="  op="t"  val="이\u00A0썩는다고?\u00A0죽을래?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='확실히\u00A0선이\u00A0있는\u00A0게\u00A0소리는\u00A0조금\u00A0더\u00A0좋은\u00A0것\u00A0같아!'"  name="gift_line"  cmd="="  op="t"  val="확실히\u00A0선이\u00A0있는\u00A0게\u00A0소리는\u00A0조금\u00A0더\u00A0좋은\u00A0것\u00A0같아!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_15
 
-[tb_eval  exp="f.gift_line='너\u00A0내가\u00A0비둘기\u00A0싫어하는건\u00A0알아...?\u00A0아무튼\u00A0고마워.'"  name="gift_line"  cmd="="  op="t"  val="너\u00A0내가\u00A0비둘기\u00A0싫어하는건\u00A0알아...?\u00A0아무튼\u00A0고마워."  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='오늘은\u00A0네가\u00A0쏘는거야?!'"  name="gift_line"  cmd="="  op="t"  val="오늘은\u00A0네가\u00A0쏘는거야?!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_16
 
-[tb_eval  exp="f.gift_line='이거\u00A0움직이는건\u00A0아니지?'"  name="gift_line"  cmd="="  op="t"  val="이거\u00A0움직이는건\u00A0아니지?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='가끔은\u00A0이런\u00A0것도\u00A0좋지!'"  name="gift_line"  cmd="="  op="t"  val="가끔은\u00A0이런\u00A0것도\u00A0좋지!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_17
 
-[tb_eval  exp="f.gift_line='비둘기!!\u00A0죽어!\u00A0죽어!'"  name="gift_line"  cmd="="  op="t"  val="비둘기!!\u00A0죽어!\u00A0죽어!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='마침\u00A0배고팠는데\u00A0잘\u00A0됐다!'"  name="gift_line"  cmd="="  op="t"  val="마침\u00A0배고팠는데\u00A0잘\u00A0됐다!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_18
 
-[tb_eval  exp="f.gift_line='너\u00A0아침의\u00A0유혹\u00A0봤어?\u00A0그\u00A0드라마\u00A0진짜\u00A0재미있어'"  name="gift_line"  cmd="="  op="t"  val="너\u00A0아침의\u00A0유혹\u00A0봤어?\u00A0그\u00A0드라마\u00A0진짜\u00A0재미있어"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='레코드?\u00A0이거\u00A0들으려면\u00A0턴테이블이\u00A0있어야하지\u00A0않아?'"  name="gift_line"  cmd="="  op="t"  val="레코드?\u00A0이거\u00A0들으려면\u00A0턴테이블이\u00A0있어야하지\u00A0않아?"  val_2="undefined"  ]
 [return  ]
 *L_line_value_19
 
-[tb_eval  exp="f.gift_line='미드..영드보다는\u00A0역시\u00A0한드...'"  name="gift_line"  cmd="="  op="t"  val="미드..영드보다는\u00A0역시\u00A0한드..."  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='뭔가\u00A0굉장히\u00A0고급스러워\u00A0보이는데...\u00A0생각보다\u00A0엄청\u00A0커!'"  name="gift_line"  cmd="="  op="t"  val="뭔가\u00A0굉장히\u00A0고급스러워\u00A0보이는데...\u00A0생각보다\u00A0엄청\u00A0커!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_20
 
-[tb_eval  exp="f.gift_line='그\u00A0둘이\u00A0헤어졌어!\u00A0이런\u00A0결말을\u00A0원했던\u00A0게\u00A0아닌데!!!'"  name="gift_line"  cmd="="  op="t"  val="그\u00A0둘이\u00A0헤어졌어!\u00A0이런\u00A0결말을\u00A0원했던\u00A0게\u00A0아닌데!!!"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='이게\u00A0뭐야?\u00A0LP?\u00A0이걸로\u00A0디제잉을\u00A0한다고?\u00A0슝슝?'"  name="gift_line"  cmd="="  op="t"  val="이게\u00A0뭐야?\u00A0LP?\u00A0이걸로\u00A0디제잉을\u00A0한다고?\u00A0슝슝?"  val_2="undefined"  ]
 [return  ]
 *L_line_value_21
 
-[tb_eval  exp="f.gift_line='카메라?\u00A0진짜로?\u00A0나\u00A0주는거야?'"  name="gift_line"  cmd="="  op="t"  val="카메라?\u00A0진짜로?\u00A0나\u00A0주는거야?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='향수는\u00A0조금\u00A0낯설어!'"  name="gift_line"  cmd="="  op="t"  val="향수는\u00A0조금\u00A0낯설어!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_22
 
-[tb_eval  exp="f.gift_line='있잖아\u00A0핸드폰\u00A0말고\u00A0이런\u00A0카메라로\u00A0찍는게\u00A0\u00A0더\u00A0잘나온다니까?'"  name="gift_line"  cmd="="  op="t"  val="있잖아\u00A0핸드폰\u00A0말고\u00A0이런\u00A0카메라로\u00A0찍는게\u00A0\u00A0더\u00A0잘나온다니까?"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='와!\u00A0이거\u00A0향\u00A0엄청\u00A0좋다!'"  name="gift_line"  cmd="="  op="t"  val="와!\u00A0이거\u00A0향\u00A0엄청\u00A0좋다!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_23
 
-[tb_eval  exp="f.gift_line='너도...찍어줄까??'"  name="gift_line"  cmd="="  op="t"  val="너도...찍어줄까??"  val_2="undefined"  ]
+[tb_eval  exp="f.gift_line='은은하게\u00A0퍼지는\u00A0게\u00A0나랑\u00A0잘\u00A0어울리는\u00A0것\u00A0같아!'"  name="gift_line"  cmd="="  op="t"  val="은은하게\u00A0퍼지는\u00A0게\u00A0나랑\u00A0잘\u00A0어울리는\u00A0것\u00A0같아!"  val_2="undefined"  ]
 [return  ]
 *L_line_value_24
 
