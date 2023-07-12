@@ -244,7 +244,7 @@
 [filter layer=all blur=5 opacity=40]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_03"  cond="f.money>1699"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_03"  cond="f.money>1299"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
@@ -298,7 +298,7 @@
 [filter layer=all blur=5 opacity=40]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_04"  cond="f.money>2499"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_04"  cond="f.money>1599"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
@@ -351,7 +351,7 @@
 [filter layer=all blur=5 opacity=40]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_05"  cond="f.money>899"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_05"  cond="f.money>1999"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
@@ -405,7 +405,7 @@
 [filter layer=all blur=5 opacity=40]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_06"  cond="f.money>899"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_06"  cond="f.money>2399"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
@@ -459,7 +459,7 @@
 [filter layer=all blur=5 opacity=40]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_07"  cond="f.money>899"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_07"  cond="f.money>2799"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
@@ -512,7 +512,7 @@
 [filter layer=all blur=5 opacity=40]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_08"  cond="f.money>899"  ]
+[jump  storage="Test_Scene_Gift_Shop_Jin_02.ks"  target="*popupjin_08"  cond="f.money>3199"  ]
 [quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
 [jump  storage="Test_Scene_Gift_Shop_Jin_01.ks"  target="*gift_jin_back"  cond=""  ]
 [s  ]
