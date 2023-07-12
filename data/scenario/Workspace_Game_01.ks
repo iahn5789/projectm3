@@ -1,5 +1,19 @@
 [_tb_system_call storage=system/_Workspace_Game_01.ks]
 
+*restart
+
+[tb_start_tyrano_code]
+[freebutton layer="layer_free" name="restart"]
+[freebutton layer="layer_free" name="back"]
+[iscript]
+$("#starcatch_timer").text("10");
+
+$(".starcatch_background").parent().remove();
+$(".failbgi").parent().remove();
+$(".failtext").parent().remove();
+
+[endscript]
+[_tb_end_tyrano_code]
 *game01
 
 [tb_start_tyrano_code]
@@ -15,7 +29,7 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 [tb_start_tyrano_code]
 [html zindex=6]
 
-<div id="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
+<div id="starcatch_background" class="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">
 <div style=" margin-top:40px;margin-left:248px; left: 50px;height: 45px; width:84px;">
 <span id="starcatch_timer" style="justify-content: center;align-items: center;display: flex;">10</span>
@@ -75,7 +89,7 @@ H = !1
 
 function Fail(){
 try {
-
+R();
 myAnimation.style.animationPlayState = 'paused';
 clearInterval(W),
 TYRANO.kag.ftag.startTag("jump", { target: "Fail" })
@@ -319,7 +333,7 @@ animation:fadein 0.7s;
 </div>
 [endhtml]
 
-[button name="restart" storage="" target="" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[button name="restart" storage="" target="restart" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=restart top=647 time=500]
 [anim name=back top=741 time=500]

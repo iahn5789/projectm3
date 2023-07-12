@@ -961,7 +961,9 @@ tyrano.plugin.kag.tag.freeimage = {
         "false" == pm.wait && this.kag.ftag.nextOrder()
     }
 };
+
 tyrano.plugin.kag.tag.freelayer = tyrano.plugin.kag.tag.freeimage;
+
 tyrano.plugin.kag.tag.free = {
     vital: ["layer", "name"],
     pm: {
@@ -1000,6 +1002,34 @@ tyrano.plugin.kag.tag.free = {
         }
     }
 };
+tyrano.plugin.kag.tag.deleteParents = {
+    vital: ["layer", "name"],
+    pm: {
+        layer: "",
+        name: ""
+    },
+    start: function(pm) {
+        var element = $("."  +pm.layer).find("."  + pm.name);
+        var parent = element.parentNode;
+        parent.remove();
+
+        this.kag.ftag.nextOrder();
+    }
+};
+tyrano.plugin.kag.tag.freebutton = {
+    vital: ["layer", "name"],
+    pm: {
+        layer: "",
+        name: ""
+    },
+    start: function(pm) {
+        var j_obj;
+        $("."  +pm.layer).find("."  + pm.name).remove();
+
+        this.kag.ftag.nextOrder();
+        }
+    };
+
 tyrano.plugin.kag.tag.ptext = {
     vital: ["layer", "x", "y"],
     pm: {
