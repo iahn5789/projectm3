@@ -19,6 +19,8 @@ tyrano.plugin.kag.key_mouse = {
     },
     init: function() {
         var that = this;
+
+
         "undefined" == typeof __tyrano_key_config && (__tyrano_key_config = {
             key: {
                 32: "hidemessage",
@@ -161,9 +163,11 @@ tyrano.plugin.kag.key_mouse = {
         }
     },
     showmenu: function() {
+        this.kag.stat.enable_keyconfig = !1;
         this.canShowMenu() && ($(".menu_close").length > 0 && "none" != $(".layer_menu").css("display") ? $(".menu_close").click() : $(".button_menu").click())
     },
     hidemessage: function() {
+        this.kag.stat.enable_keyconfig = !1;
         this.canShowMenu() && ($(".menu_close").length > 0 && "none" != $(".layer_menu").css("display") ? $(".menu_close").click() : this.kag.stat.is_strong_stop || (this.kag.stat.is_hide_message ? this.kag.layer.showMessageLayers() : this.kag.ftag.startTag("hidemessage")))
     },
     save: function() {

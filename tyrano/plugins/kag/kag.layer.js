@@ -17,6 +17,7 @@ tyrano.plugin.kag.layer = {
         x: 0,
         y: 0
     },
+    isAnimationRunning: false,
     init: function() {
         $("#tyrano_base").append('<div id="root_layer_game" class="root_layer_game"></div>');
         $("#tyrano_base").append('<div id="root_layer_system" class="root_layer_system"></div>');
@@ -79,16 +80,45 @@ tyrano.plugin.kag.layer = {
         "fore" == (page = page || "fore") ? this.map_layer_fore[layer_name] = layer_obj: this.map_layer_back[layer_name] = layer_obj
     },
     hideMessageLayers: function() {
+        var self = this;
         if (1 == this.kag.stat.display_link) return !1;
-        this.kag.stat.is_hide_message = !0;
-        for (var num_message_layer = parseInt(this.kag.config.numMessageLayers), i = 0; i < num_message_layer; i++) this.getLayer("message" + i).hide();
+        if(this.isAnimationRunning == false){
+            for (var num_message_layer = parseInt(this.kag.config.numMessageLayers), i = 0; i < num_message_layer; i++) this.getLayer("message" + i).children().fadeOut({
+                duration: 1000, // 애니메이션 지속 시간 (1초)
+                start: function() {
+                    self.isAnimationRunning = true;
+                },
+                complete: function() {
+                    self.isAnimationRunning = false;
+                    self.kag.stat.enable_keyconfig = !0;
+                    self.kag.stat.is_hide_message = !0;
+                }
+              });
+        }
+        
         this.hideFixLayer()
     },
     showMessageLayers: function() {
-        this.kag.stat.is_hide_message = !1;
+        var self = this;
         for (var num_message_layer = parseInt(this.kag.config.numMessageLayers), i = 0; i < num_message_layer; i++) {
             var j_layer = this.getLayer("message" + i);
-            "true" == j_layer.attr("l_visible") && j_layer.show()
+            
+            if(j_layer.attr("l_visible") && this.isAnimationRunning == false)
+            {
+                j_layer.children().fadeIn({
+                    duration: 1000, // 애니메이션 지속 시간 (1초)
+                    start: function() {
+                        self.isAnimationRunning = true;
+                    },
+                    complete: function() {
+                        self.isAnimationRunning = false;
+                        self.kag.stat.enable_keyconfig = !0;
+                        self.kag.stat.is_hide_message = !1;
+                    }
+                  });
+                
+            }
+            
         }
         this.showFixLayer()
     },
