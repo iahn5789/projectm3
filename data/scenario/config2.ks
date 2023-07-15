@@ -59,9 +59,9 @@
 	tf.config_y_auto  = 527; // オート速度のY座標
 
 	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
+	tf.config_x_1       = [1802, 1075, 1154, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
 	tf.config_y_1_ch    = 368; // テキスト速度のY座標
-	tf.config_y_1_auto  = 521; // オート速度のY座標
+	tf.config_y_1_auto  = 522; // オート速度のY座標
 
 	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
 	tf.config_num_ch;   // テキスト速度
@@ -115,7 +115,7 @@
 	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_Text_01.png'" time="1" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="33" y="965" clickse="UI/Config_Back_01.wav"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle2" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
 
 [jump target="*config_page2"]
 

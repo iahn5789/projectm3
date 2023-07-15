@@ -62,9 +62,9 @@
 	; tf.config_y_vox    = 527; // 성우음성
 
 	// ボタンを表示する座標（tf.config_y_ch[0]とtf.config_y_auto[0]は未使用）
-	tf.config_x_1       = [1802, 1075, 1153, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
+	tf.config_x_1       = [1802, 1075, 1154, 1231, 1309, 1387, 1465, 1543, 1621, 1699, 1777]; // X座標（共通）
 	tf.config_y_1_bgm   = 368; // BGMのY座標
-	tf.config_y_1_se    = 521; // SEのY座標
+	tf.config_y_1_se    = 522; // SEのY座標
 
 	// 上記の配列変数の添字を格納しておく変数。選択した音量や速度に対応。
 	tf.config_num_bgm;  // BGM
@@ -115,7 +115,7 @@
 	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_01.png'" time="1" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle" x="33" y="965" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 
 [jump target="*config_page"]
 

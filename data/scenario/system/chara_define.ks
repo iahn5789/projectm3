@@ -5,10 +5,10 @@
 [iscript] 
 f['null']=''; 
 f['money']=1000; 
-f['klove']=20; 
+f['klove']=22; 
 f['jlove']=20; 
 f['slove']=20; 
-f['Day']=2; 
+f['Day']=1; 
 f['story']=''; 
 f['answer']=''; 
 f['score']=100; 
@@ -35,4 +35,11 @@ f['sTopDay']='';
 f['jTopDay']=''; 
 f['workspace_chance']=5; 
 f['workspace_state']='FALSE'; 
+f['star01']='FALSE'; 
+f['star02']='FALSE'; 
+f['star03']='FALSE'; 
+f['star04']='FALSE'; 
+f['star05']='FALSE'; 
+f['collect']=0; 
+f['wrong']=0; 
 [endscript] 

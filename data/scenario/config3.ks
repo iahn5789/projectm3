@@ -116,7 +116,7 @@
 	[bg class="bg-image" storage="&tf.img_path +'Config_Bgi_System_01.png'" time="1" ]
 
 ;	戻るボタン
-	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle3" x="33" y="965" clickse="UI/Config_Back_01.wav"]
+	[button fix="true" graphic="&tf.img_path + 'UI_Close_Bt_01.png'" enterimg="&tf.img_path + 'UI_Close_Bt_02.png'" target="*backtitle3" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
 
 [jump target="*config_page3"]
 
