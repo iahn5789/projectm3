@@ -1,6 +1,7 @@
 [_tb_system_call storage=system/_title_screen.ks]
 
-[wait  time="2000"  ]
+[tb_keyconfig  flag="1"  ]
+[wait  time="10000"  ]
 [hidemenubutton]
 
 [tb_start_tyrano_code]
@@ -10,9 +11,13 @@
 ;[screenfull]
 [_tb_end_tyrano_code]
 
-[tb_keyconfig  flag="0"  ]
-[playbgm  volume="80"  time="500"  loop="true"  storage="Common_Title_Screen_01.wav"  fadein="false"  ]
+[playbgm  volume="100"  time="1000"  loop="false"  storage="BGM.wav"  ]
 [call  storage="title_produce_01.ks"  target="*in01"  ]
+[tb_start_tyrano_code]
+;[image layer=1 width=196 height=170 left=1700 top=30 page=fore visible=true name=titlelogo storage = ../image/New_GUI/UI_Logo_01.png time=3000 ]
+[image layer=1 width=280 height=243 left=820 top=675 page=fore visible=true name=titlelogo storage = ../image/New_GUI/UI_Logo_01.png time=3000 ]
+[_tb_end_tyrano_code]
+
 [tb_start_tyrano_code]
 [cm]
 [button name="start" storage="title_screen.ks" target="START" graphic="../image/New_GUI/Title_Bt/Title_Start_Bt_01.png" enterimg="../image/New_GUI/Title_Bt/Title_Start_Bt_02.png" width="242" height="100" x="339" y="1300" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Game_Start_01.wav"]
