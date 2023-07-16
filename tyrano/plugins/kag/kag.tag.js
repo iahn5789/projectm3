@@ -1436,6 +1436,7 @@ tyrano.plugin.kag.tag.layopt = {
     pm: {
         layer: "",
         page: "fore",
+        animation: false,
         visible: "",
         left: "",
         top: "",
@@ -1450,7 +1451,16 @@ tyrano.plugin.kag.tag.layopt = {
         }
         var j_layer = this.kag.layer.getLayer(pm.layer, pm.page);
         "fix" != pm.layer && "fixlayer" != pm.layer || (j_layer = $("#tyrano_base").find(".fixlayer"));
-        if ("" != pm.visible)
+        if(pm.animation)
+        {
+            if ("" != pm.visible)
+                if ("true" == pm.visible) {
+                    this.kag.layer.showMessageLayers();
+                } else {
+                    this.kag.layer.hideMessageLayers();
+                }
+        }
+        else if ("" != pm.visible)
             if ("true" == pm.visible) {
                 "fore" == pm.page && j_layer.css("display", "");
                 j_layer.attr("l_visible", "true")

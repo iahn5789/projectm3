@@ -8,8 +8,8 @@
 
 ;メッセージウィンドウを表示する
 [macro name="tb_hide_message_window"]
-	[layopt  layer="message0"  visible="false"  ]
-	[layopt  layer="fixlayer"  visible="false"  ]
+	[layopt  layer="message0"  visible="false"  animation=true  ]
+	[layopt  layer="fixlayer"  visible="false"  animation=true  ]
 [endmacro]
 
 [macro name="_tb_system_call"]
