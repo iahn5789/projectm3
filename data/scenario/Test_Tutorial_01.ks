@@ -23,7 +23,6 @@
 [_tb_end_tyrano_code]
 
 [mask  time="500"  effect="fadeIn"  color="0x000000"  ]
-[tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Test_BGI/Tutorial_Bgi_01.png"  ]
 [mask_off  time="500"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
