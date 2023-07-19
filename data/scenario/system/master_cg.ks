@@ -33,6 +33,9 @@
 [awakegame] 
 *kang01 
 [cm][clearfix] 
+[tb_ptext_hide time="1"]
+[image  name="kang_cg_01"  layer="1"  zindex="10"  time="100"  storage="CG/Kang_CG_01.png"  folder="bgimage"  visible="true"  width="1920"  height="1080"  ]
+[l] 
 [awakegame] 
 *kang02 
 [cm][clearfix] 

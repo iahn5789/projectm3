@@ -153,7 +153,7 @@
 [tb_ptext_show x="1825" y="594" size="17" color="0xFFFFFF" time="0" text="6"]
 [_tb_end_tyrano_code]
 
-[tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="kang01"  ]
+[tb_cg_image_button  graphic="../bgimage/CG/Kang_CG_01.png"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="kang01"  ]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="1063"  y="284"  _tb_parts_type="cg_image_button"  id="kang02"  ]
 

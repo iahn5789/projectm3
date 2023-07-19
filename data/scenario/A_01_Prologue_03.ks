@@ -227,8 +227,9 @@
 [tb_hide_message_window  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [playse  volume="100"  time="3000"  buf="4"  storage="SFX/Common_Beautiful_Bell_Tree_01.wav"  loop="true"  fadein="true"  ]
-[bg  time="500"  method="crossfade"  storage="Common_Black.jpg"  ]
-[mask_off  time="1000"  effect="fadeOut"  ]
+[tb_cg  id="kang01"  ]
+[bg  time="500"  method="crossfade"  storage="CG/Kang_CG_01.png"  ]
+[mask_off  time="2000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
