@@ -248,7 +248,7 @@ tf.swing_2 = mp.swing*2*-1;
 [mask_off  time="1000"  effect="fadeOut"  ]
 [wait  time="1000"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Title_Bt/Team_Logo_01.png page=fore visible=true name=testpaper ]
+[image layer=0 left=0 top=0 width=1920 height=1080 time=300ms storage = ../image/New_GUI/Title_Bt/Team_Logo_01.png page=fore visible=true name=testpaper ]
 
 [mask_off  time="1000"  effect="fadeOut"  ]
 [wait  time="1000"  ]

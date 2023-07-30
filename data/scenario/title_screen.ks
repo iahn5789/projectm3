@@ -6,11 +6,12 @@
 
 [tb_start_tyrano_code]
 [cursor storage = "my_cursor.png"]
-;[title_first]
+[title_first]
 [freeimage layer=0]
 
 [_tb_end_tyrano_code]
 
+[mask_off  time="500"  effect="fadeOut"  ]
 [playbgm  volume="100"  time="1"  loop="true"  storage="Common_Title_BGM_Loop_01.wav"  ]
 [bgmovie  time="1"  volume="0"  loop="false"  storage="title_intro_02.mp4"  ]
 [tb_start_tyrano_code]
