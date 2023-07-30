@@ -1,21 +1,27 @@
 [_tb_system_call storage=system/_title_screen.ks]
 
-[tb_keyconfig  flag="1"  ]
-[wait  time="10000"  ]
+[tb_keyconfig  flag="0"  ]
+[tb_hide_message_window  ]
 [hidemenubutton]
 
 [tb_start_tyrano_code]
 [cursor storage = "my_cursor.png"]
 ;[title_first]
 [freeimage layer=0]
-;[screenfull]
+
 [_tb_end_tyrano_code]
 
-[playbgm  volume="100"  time="1000"  loop="false"  storage="BGM.wav"  ]
-[call  storage="title_produce_01.ks"  target="*in01"  ]
+[playbgm  volume="100"  time="1"  loop="true"  storage="Common_Title_BGM_Loop_01.wav"  ]
+[bgmovie  time="1"  volume="0"  loop="false"  storage="title_intro_02.mp4"  ]
 [tb_start_tyrano_code]
-;[image layer=1 width=196 height=170 left=1700 top=30 page=fore visible=true name=titlelogo storage = ../image/New_GUI/UI_Logo_01.png time=3000 ]
-[image layer=1 width=280 height=243 left=820 top=675 page=fore visible=true name=titlelogo storage = ../image/New_GUI/UI_Logo_01.png time=3000 ]
+[wait_bgmovie]
+[_tb_end_tyrano_code]
+
+[bg  storage="BGI/Common_Title_Screen.jpg"  method="fadeIn"  time="1"  ]
+[stop_bgmovie  time="500"  ]
+[call  storage="Particle_Test_Scene_01.ks"  target="*Buble_particle"  ]
+[tb_start_tyrano_code]
+[image layer=1 width=280 height=243 left=1600 top=40 page=fore visible=true name=titlelogo storage = ../image/New_GUI/UI_Logo_01.png time=500 ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -38,6 +44,10 @@
 
 [tb_start_tyrano_code]
 [cm]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
+[image layer=1 width=280 height=243 left=1600 top=40 page=fore visible=true name=titlelogo storage = ../image/New_GUI/UI_Logo_01.png time=10 ]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
