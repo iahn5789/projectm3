@@ -70,7 +70,7 @@ tyrano.plugin.kag.ftag = {
             this.kag.stat.vchat.is_active ? this.kag.ftag.startTag("vchat_in", {}) : this.kag.getMessageInnerLayer().html("")
         }
         if (1 == this.checkCond(tag)) {
-            if (1 == this.kag.stat.is_hide_message && 1 != this.kag.stat.fuki.active) {
+            if (1 == this.kag.stat.is_hide_message && 1 != this.kag.stat.fuki.active && 1 == this.kag.stat.isAnimationRunning) {
                 this.kag.layer.showMessageLayers();
                 this.kag.stat.is_hide_message = !1
             }
@@ -1453,21 +1453,26 @@ tyrano.plugin.kag.tag.layopt = {
         "fix" != pm.layer && "fixlayer" != pm.layer || (j_layer = $("#tyrano_base").find(".fixlayer"));
         if(pm.animation)
         {
-            if ("" != pm.visible)
+            if ("" != pm.visible){
                 if ("true" == pm.visible) {
+                    j_layer.attr("l_visible", "true");
+                    j_layer.css("display", "");
                     this.kag.layer.showMessageLayers();
                 } else {
+                    j_layer.attr("l_visible", "false");
+                    j_layer.css("display", "");
                     this.kag.layer.hideMessageLayers();
                 }
+            }
         }
         else if ("" != pm.visible)
+        {
             if ("true" == pm.visible) {
                 "fore" == pm.page && j_layer.css("display", "");
-                j_layer.attr("l_visible", "true")
             } else {
                 j_layer.css("display", "none");
-                j_layer.attr("l_visible", "false")
             }
+        }
         "" != pm.left && j_layer.css("left", parseInt(pm.left));
         "" != pm.top && j_layer.css("top", parseInt(pm.top));
         "" != pm.opacity && j_layer.css("opacity", $.convertOpacity(pm.opacity));

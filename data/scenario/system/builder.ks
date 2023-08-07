@@ -2,14 +2,14 @@
 
 ;メッセージウィンドウを非表示にする
 [macro name="tb_show_message_window"]
-	[layopt  layer="message0"  visible="true"  ]
-	[layopt  layer="fixlayer"  visible="true"  ]
+	[layopt  layer="message0"  visible="true"  animation="true" wait="true"]
+	[layopt  layer="fixlayer"  visible="true"  animation="true" wait="true"]
 [endmacro]
 
 ;メッセージウィンドウを表示する
 [macro name="tb_hide_message_window"]
-	[layopt  layer="message0"  visible="false"  animation=true  ]
-	[layopt  layer="fixlayer"  visible="false"  animation=true  ]
+	[layopt  layer="message0"  visible="false"  animation="true" wait="true"]
+	[layopt  layer="fixlayer"  visible="false"  animation="true" wait="true"]
 [endmacro]
 
 [macro name="_tb_system_call"]

@@ -171,7 +171,7 @@ tyrano.plugin.kag.tag.mask = {
             behind = !1;
         j_div.css({
             width: sc_width,
-            height: sc_height
+            height: sc_height,
         });
         "none" == pm.color ? j_div.css("background-color", "") : j_div.css("background-color", $.convertColor(pm.color));
         if ("" != pm.graphic) {
@@ -185,6 +185,8 @@ tyrano.plugin.kag.tag.mask = {
         }
         0 == behind && j_div.css("transform", "scale(1.02)");
         $(".tyrano_base").append(j_div);
+        var _effect = j_div.attr("data-effect");
+        j_div.removeClass("animated " + _effect);
         j_div.addClass("animated " + pm.effect).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", (function() {
             0 == behind && $("#root_layer_game").css("opacity", 0);
             that.kag.ftag.nextOrder()

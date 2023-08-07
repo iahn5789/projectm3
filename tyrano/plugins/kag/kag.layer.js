@@ -84,14 +84,14 @@ tyrano.plugin.kag.layer = {
         if (1 == this.kag.stat.display_link) return !1;
         if(this.isAnimationRunning == false){
             for (var num_message_layer = parseInt(this.kag.config.numMessageLayers), i = 0; i < num_message_layer; i++) this.getLayer("message" + i).children().fadeOut({
-                duration: 1000, // 애니메이션 지속 시간 (1초)
+                duration: 500, // 애니메이션 지속 시간 (1초)
                 start: function() {
                     self.isAnimationRunning = true;
                 },
                 complete: function() {
-                    self.isAnimationRunning = false;
                     self.kag.stat.enable_keyconfig = !0;
                     self.kag.stat.is_hide_message = !0;
+                    self.isAnimationRunning = false;
                 }
               });
         }
@@ -102,23 +102,20 @@ tyrano.plugin.kag.layer = {
         var self = this;
         for (var num_message_layer = parseInt(this.kag.config.numMessageLayers), i = 0; i < num_message_layer; i++) {
             var j_layer = this.getLayer("message" + i);
-            
             if(j_layer.attr("l_visible") && this.isAnimationRunning == false)
             {
                 j_layer.children().fadeIn({
-                    duration: 1000, // 애니메이션 지속 시간 (1초)
+                    duration: 500, // 애니메이션 지속 시간 (1초)
                     start: function() {
                         self.isAnimationRunning = true;
                     },
                     complete: function() {
-                        self.isAnimationRunning = false;
                         self.kag.stat.enable_keyconfig = !0;
                         self.kag.stat.is_hide_message = !1;
+                        self.isAnimationRunning = false;
                     }
                   });
-                
             }
-            
         }
         this.showFixLayer()
     },
