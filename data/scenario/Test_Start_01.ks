@@ -30,7 +30,7 @@
 [tb_ptext_show  x="1772"  y="50"  size="25"  color="0xf78e22"  time="1"  face="NanumGothicExtraBold"  text="&f.Day"  anim="false"  edge="undefined"  shadow="undefined"  ]
 [tb_start_tyrano_code]
 [image layer=0 left=0 top=0  storage = ../image/New_GUI/Test_In_UI/Test_Paper_Bgi_01.png page=fore visible=true name=testpaper ]
-[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="250" height="80" x="834" y="1200" clickse="UI/Exam_Zoom_In_01.wav"]
+[button name="teststart" storage="Test_Start_01.ks" target="quiz_01" graphic="../image/New_GUI/Test_In_UI/Test_Start_01.png" enterimg="../image/New_GUI/Test_In_UI/Test_Start_02.png" width="250" height="80" x="834" y="1200" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Exam_Zoom_In_01.wav"]
 [_tb_end_tyrano_code]
 
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
