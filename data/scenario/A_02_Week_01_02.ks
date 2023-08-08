@@ -4,7 +4,8 @@
 
 [stopbgm  time="2000"  fadeout="true"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
-[bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
+[bg  time="1000"  method="crossfade"  storage="CG/Kang_CG_02.png"  ]
+[tb_cg  id="kang02"  ]
 [playse  volume="40"  time="1000"  buf="4"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
