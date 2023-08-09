@@ -311,8 +311,42 @@ tyrano.plugin.kag.menu = {
         }, (function(html_str) {
             var j_save = $(html_str);
             j_save.find(".save_list").css("font-family", that.kag.config.userFace);
+            console.log("test first array_save : ", array);
+            j_save.find(".load_delete_button").each(function() {
+                $(this).click(function() {
+                    var listItem = $(this).closest('.save_list_item');
+                    var num = listItem.attr("data-num");
+                    var array_save = that.getSaveData();
+                    var null_data = {
+                        current_order_index: 0,
+                        img_data: "",
+                        num: parseInt(num), // 번호는 그대로 유지
+                        playername: "",
+                        save_date: "",
+                        stat: {},
+                        subheading: "",
+                        title: "빈 슬롯입니다."
+                    }
+                    console.log("test array_save : ", array_save);
+                    console.log("test num : ", num);
+                    if(array[num].img_data != "") {
+                        array[num] = null_data;
+                        console.log("test array_save change : ", array);
+                        console.log("test array_save change array[num] : ", array[num]);
+                        console.log("test array_save change array[49]: ", array[49]);
+                        if (array[num] == array[49])
+                        {
+                            console.log("test success delete save data")
+                        }
+                        //$.setStorage(that.kag.config.projectID + "_tyrano_data", array, that.kag.config.configSave);
+                    }
+                });
+            });
             j_save.find(".save_display_area").each((function() {
                 $(this).click((function(e) {
+                    if ($(e.target).hasClass("load_delete_button")) {
+                        return; 
+                    }
                     var num = $(this).attr("data-num");
                     if ("" != array[num].save_date) {
 
@@ -338,6 +372,7 @@ tyrano.plugin.kag.menu = {
                     }
                 }))
             }));
+
             j_save.find(".button_smart").hide();
             if ("pc" != $.userenv()) {
                 j_save.find(".button_smart").show();
