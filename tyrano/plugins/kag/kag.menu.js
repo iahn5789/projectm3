@@ -74,24 +74,48 @@ tyrano.plugin.kag.menu = {
             j_save.find(".save_display_area").each((function() {
                 $(this).click((function(e) {
                     var num = $(this).attr("data-num");
-                    that.snap = null;
-                    that.doSave(num, (function(save_data) {
-                        var j_slot = layer_menu.find("[data-num='" + num + "']");
-                        if ("" != save_data.img_data)
-                            if (j_slot.find(".save_list_item_thumb").find("img").get(0)) j_slot.find(".save_list_item_thumb").find("img").attr("src", save_data.img_data);
-                            else {
-                                j_slot.find(".save_list_item_thumb").css("background-image", "");
-                                j_slot.find(".save_list_item_thumb").append("<img>");
-                                j_slot.find(".save_list_item_thumb").find("img").attr("src", save_data.img_data)
-                            } 
-                        j_slot.find(".save_list_item_day").html(save_data.day);
-                        j_slot.find(".save_list_item_subheading").html(save_data.subheading);
-                        j_slot.find(".save_list_item_date").html(save_data.save_date);
-                        j_slot.find(".save_list_item_text").html(save_data.title);
-                        "function" == typeof cb && cb()
-                    }))
+                    console.log("test array[num] : ",array[num]);
+                    if (array[num].title != "빈 슬롯입니다."){
+                        that.kag.html("confirm",{},(function(html_str){
+                            var j_confirm = $(html_str);
+                            // 페이지에 모달 추가
+                            $("body").append(j_confirm);
+                            document.getElementById("saveConfirmModal").style.display = "flex";
+
+                            j_confirm.find(".confirm-btn").on('click', function() {
+                                directSave(num);
+                                document.getElementById("saveConfirmModal").style.display = "none";
+                                j_confirm.remove(); // 모달 제거
+                            });
+                            j_confirm.find(".cancel-btn").on('click', function() {
+                                document.getElementById("saveConfirmModal").style.display = "none";
+                                j_confirm.remove(); // 모달 제거
+                            });
+                        }))
+                    }
+                    else{
+                        directSave(num);
+                    }
                 }))
             }));
+            function directSave(num) {
+                that.snap = null;
+                that.doSave(num, function(save_data) {
+                    var j_slot = layer_menu.find("[data-num='" + num + "']");
+                    if ("" != save_data.img_data)
+                        if (j_slot.find(".save_list_item_thumb").find("img").get(0)) j_slot.find(".save_list_item_thumb").find("img").attr("src", save_data.img_data);
+                        else {
+                            j_slot.find(".save_list_item_thumb").css("background-image", "");
+                            j_slot.find(".save_list_item_thumb").append("<img>");
+                            j_slot.find(".save_list_item_thumb").find("img").attr("src", save_data.img_data)
+                        } 
+                    j_slot.find(".save_list_item_day").html(save_data.day);
+                    j_slot.find(".save_list_item_subheading").html(save_data.subheading);
+                    j_slot.find(".save_list_item_date").html(save_data.save_date);
+                    j_slot.find(".save_list_item_text").html(save_data.title);
+                    "function" == typeof cb && cb()
+                });
+            }
             j_save.find(".button_smart").hide();
             if ("pc" != $.userenv()) {
                 j_save.find(".button_smart").show();
@@ -116,6 +140,7 @@ tyrano.plugin.kag.menu = {
             that.setMenu(j_save, cb)
         }))
     },
+
     doSave: function(num, cb) {
         var array_save = this.getSaveData(),
             data = {},

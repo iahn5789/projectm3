@@ -109,6 +109,9 @@ if(TG.config.alreadyReadTextColor != "default"){
 ; HTML-Menu
 [sysview type="menu" storage="./data/others/plugin/theme_kopanda_bth_06_blue/html/menu.html" ]
 
+; HTMLL-Confirm
+[sysview type="confirm" storage="./data/others/plugin/theme_kopanda_bth_06_blue/html/Confirm.html" ]
+
 ; CSS
 [loadcss file="./data/others/plugin/theme_kopanda_bth_06_blue/bth06.css"]
 

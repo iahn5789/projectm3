@@ -179,7 +179,8 @@ tyrano.plugin.kag = {
             save: "./tyrano/html/save.html",
             load: "./tyrano/html/load.html",
             backlog: "./tyrano/html/backlog.html",
-            menu: "./tyrano/html/menu.html"
+            menu: "./tyrano/html/menu.html",
+            confirm: "./tyrano/html/Confirm.html"
         },
         chara_pos_mode: "true",
         chara_effect: "swing",
@@ -858,7 +859,8 @@ tyrano.plugin.kag = {
                     save: "./tyrano/html/save.html",
                     load: "./tyrano/html/load.html",
                     backlog: "./tyrano/html/backlog.html",
-                    menu: "./tyrano/html/menu.html"
+                    menu: "./tyrano/html/menu.html",
+                    confirm: "./tyrano/html/Confirm.html",
                 }
             }
             var path_html = this.kag.stat.sysview[html_file_name];
