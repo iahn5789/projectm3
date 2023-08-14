@@ -159,7 +159,6 @@
 [playse  volume="90"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Wood_Run_01.wav"  ]
 [stopse  time="1000"  buf="3"  fadeout="true"  ]
 [tb_hide_message_window  ]
-[wait  time="5000"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]

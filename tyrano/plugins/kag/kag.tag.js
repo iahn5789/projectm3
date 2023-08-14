@@ -1447,7 +1447,7 @@ tyrano.plugin.kag.tag.layopt = {
     start: function(pm) {
         if ("message" == pm.layer) {
             pm.layer = this.kag.stat.current_layer;
-            pm.page = this.kag.stat.current_page
+            pm.page = this.kag.stat.current_page;
         }
         var j_layer = this.kag.layer.getLayer(pm.layer, pm.page);
         "fix" != pm.layer && "fixlayer" != pm.layer || (j_layer = $("#tyrano_base").find(".fixlayer"));
