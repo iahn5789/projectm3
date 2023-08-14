@@ -174,7 +174,7 @@
 [chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 [t1]늦는구만 늦어! 이럼 내 루틴이 또 꼬이잖아![t2][p]
-[chara_part name="Jeon" body="4" face="8" ]
+[chara_part name="Jeon" body="4" face="1" ]
 #&[sf.name]
 [t1]걱정하지 마 지각은 절대 안 할 테니까.[t2][p]
 [chara_part name="Jeon" body="3" face="1" ]

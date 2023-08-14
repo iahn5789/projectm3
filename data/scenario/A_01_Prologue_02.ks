@@ -151,7 +151,7 @@
 [t1]이대로 계속 가다가는 중이염에 걸릴 것만 같았다.[t2][p]
 #&[sf.name]
 [t1]나 이것 좀 버리고 올게.[t2][p]
-[chara_part name="Jeon" body="1" face="6" ]
+[chara_part name="Jeon" body="1" face="8" ]
 [chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 [t1]빨리 다녀와. 일곱 시에는 집에서 밥 먹는 게 내[r]루틴이라고.[t2][p]

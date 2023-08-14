@@ -80,11 +80,10 @@
 [tb_start_tyrano_code]
 [kang_ill]
 [jin_ill]
-[chara_part name="Kang" body="3" face="1"]
-[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #&[sf.name]
 [t1]자…잘 부탁…드립니다…!![t2][p]
 [chara_part name="Kang" body="2" face="2"]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 [t1]좋아! 결정된 거다![t2][p]
 #진다영
@@ -464,8 +463,7 @@
 [chara_show name="Jin" time=300 wait=false top="0" left="960" width="813" height="1903"]
 #진다영
 [t1]전혀 아니거든? 듣고 싶은 대로만 듣는 것 같은데 내가[r]다시 이야기해 줘?![t2][p]
-[chara_hide name="Kang" time=300 wait=false]
-[chara_hide name="Jin" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  ]
@@ -480,22 +478,24 @@
 #설나희
 [t1]교무실 다녀온 거 맞아...?[t2][p]
 [chara_hide name="Sul" time=300 wait=false]
-#강여진
-[t1]그럼![t2][p]
-#강여진
-[t1]가입을 허락하는 대신 간단한 테스트를 볼 거라고 말했어![t2][p]
 [chara_part name="Kang" body="1" face="1"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
+#강여진
+[t1]그럼![t2][p]
+[chara_part name="Kang" body="2" face="2"]
+#강여진
+[t1]가입을 허락하는 대신 간단한 테스트를 볼 거라고 말했어![t2][p]
 #&[sf.name]
 [t1]테스트…?[t2][p]
-[chara_part name="Kang" body="3" face="7"]
 
+[chara_part name="Kang" body="3" face="7"]
 #강여진
 [t1]응! 신입이 들어오는 것도 좋지만 제대로 검증되지 않은 것도 사실이니까.[t2][p]
-[chara_part name="Kang" body="3" face="1"]
 
+[chara_part name="Kang" body="3" face="1"]
 #강여진
 [t1]다영이의 말도 일리가 있다고 하시더라고[t2][p]
+
 #강여진
 [t1]그래서 일종의 테스트를 본다고 말씀하셨어![t2][p]
 [chara_hide name="Kang" time=300 wait=true]

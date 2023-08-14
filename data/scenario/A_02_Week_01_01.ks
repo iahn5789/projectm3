@@ -190,6 +190,7 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [kang_ill]
+[jin_ill]
 [chara_part name="Kang" body="2" face="2" ]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
@@ -200,29 +201,28 @@
 [chara_part name="Kang" body="2" face="8" ]
 #&[sf.name]
 [t1]아...아니 그러니까 나는...[t2][p]
-[_tb_end_tyrano_code]
-
-[playse  volume="45"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
-[tb_start_tyrano_code]
+[chara_hide name="Kang" time=300 wait=false]
+[chara_part name="Jin" body="3" face="4" ]
+[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
 [t1]시끄러워! 변태! 호색한! 대머리![t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
+[jin_ill]
 [kang_ill]
-[chara_part name="Kang" body="1" face="5" ]
 #강여진
 [t1]그만! 내가 불러서 온 친구란 말이야![t2][p]
-[chara_part name="Kang" body="1" face="4" ]
 #진다영
 [t1]찐따! 찌질이! 버러지! 거지![t2][p]
+[chara_hide name="Jin" time=300 wait=false]
 [chara_part name="Kang" body="1" face="5" ]
+[chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 #강여진
 [t1]진다영!!![t2][p]
 [chara_hide name="Kang" time=300 wait=false]
-[jin_ill]
 [chara_part name="Jin" body="1" face="4" ]
 [chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
@@ -322,6 +322,7 @@
 [t1]거봐 말도 제대로 못 하잖아! 엿듣는 거 말고[r]할 수 있는 게 뭐야![t2][p]
 #&[sf.name]
 [t1]아니 그러니까 나는…[t2][p]
+[chara_hide name="Jin" time=300 wait=false]
 #
 [t1]솔직히 밴드부에서 내가 맡을 수 있는 역할은 딱히 없었다.[t2][p]
 #

@@ -214,12 +214,13 @@
 #&[sf.name]
 [t1]난 동아리 들어갔다고 말한 적 없어.[t2][p]
 [chara_part name="Jeon" body="4" face="4" ]
+[chara_move name="Jeon" time=300 wait=false top="0" left="100" width="1444" height="2735"]
 #전대용
 [t1]동아리에 들어가지 않았다고?[t2][p]
 #
 [t1]대용이는 갑자기 무언가 큰일이라도 난 것처럼 목소리를[r]키웠다.[t2][p]
 [chara_part name="Jeon" body="3" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="100" width="1444" height="2735" wait="false"]
+[chara_move name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 [t1]잘 들어! 우리 학교는 말이야...[t2][p]
 [chara_part name="Jeon" body="4" face="1" ]
@@ -229,14 +230,13 @@
 [t1]에...뭐?[t2][p]
 [chara_hide_all time=300 wait=false]
 [chara_part name="Jeon" body="3" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 [t1]네가 좋던 싫든 간에 무조건 동아리에 들어가야 해.[t2][p]
 #&[sf.name]
 [t1]흠...그런 귀찮은 건 딱 질색인데.[t2][p]
 #전대용
 [t1]그렇다면.[t2][p]
-[chara_part name="Jeon" body="2" face="1" ]
+[chara_part name="Jeon" body="2" face="4" ]
 #전대용
 [t1]자네...나와 같은 서예부에 들어오지 않겠는가?[t2][p]
 #&[sf.name]
@@ -244,7 +244,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[chara_part name="Jeon" body="2" face="4" ]
+[chara_part name="Jeon" body="2" face="1" ]
 #&[sf.name]
 [t1]그리고 그냥 서예부도 아니고 【과학서예부】잖아.[t2][p]
 [chara_part name="Jeon" body="3" face="1" ]
