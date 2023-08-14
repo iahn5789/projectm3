@@ -3,6 +3,7 @@
 *story
 
 [tb_start_tyrano_code]
+[free name="workspace_chance" layer=2 ]
 [anim name="workspace" top=-700 time=300 wait=true effect=easeInQuad]
 [anim name="game01" top=-600 time=300 effect=easeInQuad]
 [anim name="game02" top=-600  time=300 effect=easeInQuad]
@@ -122,6 +123,7 @@
 
 [tb_start_tyrano_code]
 [cm]
+[free name="workspace_chance" layer=2 ]
 [freeimage layer="0" ]
 [freeimage layer="1" ]
 [freeimage layer="2" ]

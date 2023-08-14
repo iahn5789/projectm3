@@ -16,7 +16,7 @@
 
 [tb_hide_message_window  ]
 [bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
-[tb_keyconfig  flag="0"  ]
+[tb_keyconfig  flag="1"  ]
 *test
 
 [hidemenubutton]
@@ -29,6 +29,7 @@
 [free name="slove" layer=2 ]
 [free name="Day" layer=2 ]
 [free name="score" layer=2 ]
+[free name="workspace_chance" layer=2 ]
 [ptext layer=2 name="money" page=fore text="&[f.money]" size=22 x=-199 y=191 width=120 edge="0xFFEEB0" color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" zindex="5" ]
 [ptext layer=2 name="klove" page=fore text="&[f.klove]" size=20 x=-204 y=403 width=150 edge="0xFFEEB0" color="0x9B7900" align="center" vertical=false face="NanumGothicRegular" zindex="5" ]
 [ptext layer=2 name="jlove" page=fore text="&[f.jlove]" size=20 x=-204 y=449 width=150 edge="0xFFEEB0" color="0x9B7900" align="center" vertical=false face="NanumGothicRegular" zindex="5" ]

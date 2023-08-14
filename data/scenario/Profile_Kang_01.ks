@@ -6,6 +6,7 @@
 [tb_keyconfig  flag="0"  ]
 [bg  time="10"  method="crossfade"  storage="Profile_BGI/Profile_Kang_01.png"  ]
 [tb_start_tyrano_code]
+[free name="workspace_chance" layer=2 ]
 [free name="money" layer=2 ]
 [free name="klove" layer=2 ]
 [free name="jlove" layer=2 ]

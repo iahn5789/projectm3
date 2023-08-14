@@ -22,6 +22,8 @@
 [free name="secretmsgkang" layer=1 ]
 [free name="secretmsgjin" layer=1 ]
 [free name="secretmsgsul" layer=1 ]
+[free name="workspace_chance" layer=2 ]
+
 
 [clearfix name="lootcommon"]
 [clearfix name="lootkang"]

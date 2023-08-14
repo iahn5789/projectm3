@@ -1,4 +1,5 @@
 [_tb_system_call storage=system/_Workspace_Game_05.ks]
+
 *restart
 
 [tb_start_tyrano_code]
@@ -13,6 +14,7 @@ $(".failtext").parent().remove();
 
 [endscript]
 [_tb_end_tyrano_code]
+
 *game01
 
 [tb_start_tyrano_code]
@@ -230,6 +232,7 @@ Event_action();
 *Success
 
 [tb_eval  exp="f.money+=1000"  name="money"  cmd="+="  op="t"  val="1000"  val_2="undefined"  ]
+[tb_eval  exp="f.workspace_chance-=1"  name="workspace_chance"  cmd="-="  op="t"  val="1"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');

@@ -14,6 +14,7 @@ $(".failtext").parent().remove();
 
 [endscript]
 [_tb_end_tyrano_code]
+
 *game01
 
 [tb_start_tyrano_code]
@@ -200,6 +201,7 @@ Event_action();
 *Success
 
 [tb_eval  exp="f.money+=200"  name="money"  cmd="+="  op="t"  val="200"  val_2="undefined"  ]
+[tb_eval  exp="f.workspace_chance-=1"  name="workspace_chance"  cmd="-="  op="t"  val="1"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
@@ -333,6 +335,7 @@ animation:fadein 0.7s;
 </div>
 [endhtml]
 
+[ptext layer=2 name="workspace_chance" page=fore text="&[f.workspace_chance]" size=20 x=583 y=-700 width=120 color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" zindex="5" ]
 [button name="restart" storage="" target="restart" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
 [anim name=restart top=647 time=500]
