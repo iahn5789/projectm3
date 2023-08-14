@@ -10,7 +10,7 @@
 [_tb_end_tyrano_code]
 
 [call  storage="Particle_Test_Scene_01.ks"  target="*dust_particle"  ]
-[playse  volume="100"  time="1000"  buf="3"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
+[playse  volume="100"  time="1000"  buf="1"  storage="Amb/Amb_Crowd_Loop_01.wav"  loop="true"  fadein="true"  ]
 [playbgm  volume="250"  time="1000"  loop="true"  storage="Common_Backstage_01.wav"  ]
 [tb_keyconfig  flag="1"  ]
 [tb_eval  exp="f.Day=0"  name="Day"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
@@ -21,6 +21,9 @@
 [tb_start_tyrano_code]
 #
 [t1]...어?[t2][p]
+[_tb_end_tyrano_code]
+
+[tb_start_tyrano_code]
 #???
 [t1]많이 긴장한 것 같은데? 괜찮은거지?[t2][p]
 #???
@@ -40,8 +43,8 @@
 
 [quake  time="300"  count="3"  hmax="10"  wait="false"  vmax="10"  ]
 [bg  time="10"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
-[stopse  time="1000"  buf="3"  fadeout="false"  ]
 [stopbgm  time="1000"  ]
+[stopse  time="1000"  buf="3"  fadeout="false"  ]
 [playse  volume="75"  time="1000"  buf="1"  storage="SFX/Body_Fall_01.wav"  ]
 [playse  volume="140"  time="1000"  buf="0"  storage="SFX/Common_Desk_Rattle_01.wav"  ]
 [playse  volume="70"  time="1000"  buf="4"  storage="Amb/Amb_Classroom_Cutoff_01.wav"  loop="true"  fadein="true"  ]
@@ -205,7 +208,7 @@
 [t1]중요한 사실? 그런 게 있으면 그냥 빨리 말해줬으면[r]되잖아.[t2][p]
 [chara_part name="Jeon" body="4" face="2" ]
 #전대용
-[t1]후후...나 말고 다른 친구에게 들었으면 하는 마음에 미리 말하지 않았던 거라고![t2][p]
+[t1]후후...나 말고 다른 친구에게 들었으면 하는 마음에 미리 [r]말하지 않았던 거라고![t2][p]
 [chara_hide_all time=300 wait=false]
 #
 [t1]전대용은 무언가 큰일이라도 난 것처럼 고개를 숙이고[r]가까이 다가왔다.[t2][p]
