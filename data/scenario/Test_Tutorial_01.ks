@@ -8,7 +8,7 @@
 [autostop ]
 [_tb_end_tyrano_code]
 
-[tb_keyconfig  flag="0"  ]
+[tb_keyconfig  flag="1"  ]
 [cm  ]
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
@@ -50,13 +50,6 @@
 [playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Branch_Hover_Leave_01.wav"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2" time=300 wait=true]
-[image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_03.png page=fore visible=true time=300 wait=false]
-[_tb_end_tyrano_code]
-
-[l  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Branch_Hover_Leave_01.wav"  ]
-[tb_start_tyrano_code]
-[freeimage layer="2" time=300 wait=true]
 [camera zoom=1.2 x=-160 y=-80 time=1000 wait=false]
 [image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_04.png page=fore visible=true time=300 wait=false]
 [_tb_end_tyrano_code]
@@ -77,10 +70,14 @@
 
 [l  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="UI/Common_Branch_Hover_Leave_01.wav"  ]
-[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Whoosh_Cartoon_Change_Page_01.wav"  ]
 [tb_start_tyrano_code]
 [freeimage layer="2" time=300 wait=true]
 [camera zoom=1.2 x=150 y=-80 time=1000 wait=false]
+
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Whoosh_Cartoon_Change_Page_01.wav"  ]
+[tb_start_tyrano_code]
 [image layer=2 left=0 top=0  storage = ../image/New_GUI/Test_UI/Tutorial/Tutorial_07.png page=fore visible=true time=300 wait=false]
 [_tb_end_tyrano_code]
 
