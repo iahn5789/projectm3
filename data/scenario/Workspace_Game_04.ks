@@ -214,7 +214,6 @@ Event_action();
 *Success
 
 [tb_eval  exp="f.money+=800"  name="money"  cmd="+="  op="t"  val="800"  val_2="undefined"  ]
-[tb_eval  exp="f.workspace_chance-=1"  name="workspace_chance"  cmd="-="  op="t"  val="1"  ]
 [tb_start_tyrano_code]
 [iscript]
 var imageElement = document.getElementById('starcatch_background');
