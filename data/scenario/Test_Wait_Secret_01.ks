@@ -424,9 +424,10 @@ animation: fadein 1s;
 </div>
 [endhtml]
 
-[button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="buy" storage="Test_Wait_Secret_Open_01.ks" target="01msgcommon01" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
+[anim name=teststart top=1200 time=50]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
 
@@ -467,9 +468,10 @@ animation: fadein 1s;
 </div>
 [endhtml]
 
-[button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="buy" storage="Test_Wait_Secret_Open_01.ks" target="01msgcommon02" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
+[anim name=teststart top=1200 time=50]
 [anim name=back top=771 time=500]
 [_tb_end_tyrano_code]
 
@@ -510,10 +512,11 @@ animation: fadein 1s;
 </div>
 [endhtml]
 
-[button name="buy" storage="Test_Wait_Secret_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="buy" storage="Test_Wait_Secret_Open_01.ks" target="01msgcommon03" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="back" storage="Test_Wait_Secret_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [anim name=buy top=771 time=500]
 [anim name=back top=771 time=500]
+[anim name=teststart top=1200 time=50]
 [_tb_end_tyrano_code]
 
 [s  ]

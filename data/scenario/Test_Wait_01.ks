@@ -7,6 +7,7 @@
 
 [tb_start_tyrano_code]
 [freeimage layer="1"]
+[filter layer=all blur=0]
 [tb_eval  exp="f.common_poster_choice_whether='FALSE'"  name="common_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.k_poster_choice_whether='FALSE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.j_poster_choice_whether='FALSE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
