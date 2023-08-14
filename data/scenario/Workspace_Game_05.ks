@@ -31,7 +31,7 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 
 <div id="starcatch_background" class="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_05.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">
-<div style=" margin-top:40px;margin-left:248px; left: 50px;height: 45px; width:84px;">
+<div style=" margin-top:41px;margin-left:248px; left: 50px;height: 45px; width:84px;">
 <span id="starcatch_timer" style="justify-content: center;align-items: center;display: flex;">10</span>
 </div>
 <div id="starcatch_Gage" style="display:block;margin:auto; margin-top:55px; width:538px; height: 52px; background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Gauge_Back_01.png');">
@@ -116,7 +116,7 @@ console.log("item_위치 : ",);
 
 if(h)
 {
-d = `${id} 성공`;
+d = ` `;
 success +=1;
 if("starcatch_zone1" == id){
 zone1_bool +=1;
