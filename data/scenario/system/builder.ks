@@ -242,11 +242,6 @@ tf.swing_2 = mp.swing*2*-1;
 
 [macro name="title_first"]
 
-[mask  time="300"  effect="fadeIn"  color="0x000000"  ]
-[image layer=0 left=0 top=0 time=300ms storage = ../image/New_GUI/Title_Bt/Tyrano_Logo_01.png page=fore visible=true name=testpaper ]
-
-[mask_off  time="1000"  effect="fadeOut"  ]
-[wait  time="1000"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/SFX_Team_Name_01.wav"  ]
 [image layer=0 left=0 top=0 width=1920 height=1080 time=300ms storage = ../image/New_GUI/Title_Bt/Team_Logo_01.png page=fore visible=true name=testpaper ]

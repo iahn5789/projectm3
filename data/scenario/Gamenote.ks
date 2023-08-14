@@ -48,5 +48,5 @@
 [freeimage layer="0"]
 [_tb_end_tyrano_code]
 
-[jump  storage="title_screen.ks"  target="*title"  ]
+[jump  storage="title_screen.ks"  target="*particleon"  ]
 [s  ]
