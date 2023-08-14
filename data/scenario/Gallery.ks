@@ -25,7 +25,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -39,7 +39,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -77,7 +77,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_cg_image_button  graphic="none"  storage="system/master_cg.ks"  target=""  role="sleepgame"  no_graphic="&sf._tb_cg_noimage"  time="1"  width="344"  height="194"  x="669"  y="284"  _tb_parts_type="cg_image_button"  id="base07"  ]
@@ -116,7 +116,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 *kang_01
@@ -131,7 +131,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -170,7 +170,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -209,7 +209,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 *jin_01
@@ -222,7 +222,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -261,7 +261,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -300,7 +300,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 *sul_01
@@ -313,7 +313,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -352,7 +352,7 @@
 [button name="kang" storage="Gallery.ks" target="kang_root" graphic="../image/New_GUI/CG_UI/Kang_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Kang_Bt_02.png" width="418" height="88" x="105" y="426" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="jin" storage="Gallery.ks" target="jin_root" graphic="../image/New_GUI/CG_UI/Jin_Bt_01.png" enterimg="../image/New_GUI/CG_UI/Jin_Bt_02.png" width="418" height="88" x="105" y="582" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="sul" storage="Gallery.ks" target="sul_root" graphic="../image/New_GUI/CG_UI/Sul_Bt_03.png" enterimg="../image/New_GUI/CG_UI/Sul_Bt_02.png" width="418" height="88" x="105" y="736" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Gallery.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]

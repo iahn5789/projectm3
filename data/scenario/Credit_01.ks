@@ -18,7 +18,7 @@
 [button name="prod" storage="Credit_01.ks" target="prod" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Prod_03.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Prod_02.png" width="418" height="88" x="105" y="322" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="help" storage="Credit_01.ks" target="help" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Help_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Help_02.png" width="418" height="88" x="105" y="505" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="Spon" storage="Credit_01.ks" target="Spon" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Spon_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Spon_02.png" width="418" height="88" x="105" y="688" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -36,7 +36,7 @@
 [button name="prod" storage="Credit_01.ks" target="prod" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Prod_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Prod_02.png" width="418" height="88" x="105" y="322" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="help" storage="Credit_01.ks" target="help" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Help_03.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Help_02.png" width="418" height="88" x="105" y="505" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="Spon" storage="Credit_01.ks" target="Spon" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Spon_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Spon_02.png" width="418" height="88" x="105" y="688" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
@@ -54,7 +54,7 @@
 [button name="prod" storage="Credit_01.ks" target="prod" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Prod_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Prod_02.png" width="418" height="88" x="105" y="322" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="help" storage="Credit_01.ks" target="help" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Help_01.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Help_02.png" width="418" height="88" x="105" y="505" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 [button name="Spon" storage="Credit_01.ks" target="Spon" graphic="../image/New_GUI/Credit_UI/Credit_Bt_Spon_03.png" enterimg="../image/New_GUI/Credit_UI/Credit_Bt_Spon_02.png" width="418" height="88" x="105" y="688" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Credit_01.ks" target="back" graphic="../image/New_GUI/CG_UI/UI_Close_Bt_01.png" enterimg="../image/New_GUI/CG_UI/UI_Close_Bt_02.png" width="110" height="56" x="50" y="1000" enterse="UI/Common_Branch_Hover_01.wav" clickse="UI/Config_Back_01.wav"]
 [_tb_end_tyrano_code]
 
 [mask_off  time="200"  effect="slideOutRight"  ]
