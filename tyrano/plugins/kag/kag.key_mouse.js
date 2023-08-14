@@ -202,12 +202,15 @@ tyrano.plugin.kag.key_mouse = {
     },
     _role: function(role) {
         if (1 == this.kag.stat.is_skip && "skip" == role) {
-            this.kag.stat.is_skip = !1;
+            this.kag.ftag.startTag("skipstop", {log : "_role 1"});
+            //this.kag.stat.is_skip = !1;
             return !1
         }
         if ("none" == this.kag.layer.layer_event.css("display") && 1 != this.kag.stat.is_strong_stop) return !1;
         if (0 == this.kag.stat.enable_keyconfig) return !1;
-        this.kag.stat.is_skip = !1;
+        
+        this.kag.ftag.startTag("skipstop", {log : "_role 2"});
+        //this.kag.stat.is_skip = !1;
         "auto" != role && this.kag.ftag.startTag("autostop", {
             next: "false"
         });
@@ -263,7 +266,9 @@ tyrano.plugin.kag.key_mouse = {
     },
     clearSkip: function() {
         if (1 == this.kag.stat.is_skip && 0 == this.kag.stat.is_strong_stop) {
-            this.kag.stat.is_skip = !1;
+            
+            this.kag.ftag.startTag("skipstop", {log : "clearSkip"});
+            //this.kag.stat.is_skip = !1;
             return !1
         }
         1 == this.kag.stat.is_auto && "true" == this.kag.config.autoClickStop && this.kag.ftag.startTag("autostop", {

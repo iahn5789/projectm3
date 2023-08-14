@@ -7,7 +7,9 @@ tyrano.plugin.kag.menu = {
         if ("none" == this.kag.layer.layer_event.css("display") && 1 != this.kag.stat.is_strong_stop) return !1;
         if (1 == this.kag.stat.is_wait) return !1;
         var that = this;
-        this.kag.stat.is_skip = !1;
+        
+        this.kag.ftag.startTag("skipstop", {log : "showMenu"});
+        //this.kag.stat.is_skip = !1;
         this.kag.stat.is_auto = !1;
         this.kag.stat.is_auto_wait = !1;
         var layer_menu = this.kag.layer.getMenuLayer();
@@ -63,7 +65,9 @@ tyrano.plugin.kag.menu = {
     displaySave: function(cb) {
         console.log("displaySave");
         var that = this;
-        this.kag.stat.is_skip = !1;
+        
+        this.kag.ftag.startTag("skipstop", {log : "displaySave"});
+        //this.kag.stat.is_skip = !1;
         for (var array = that.getSaveData().data, i = (that.kag.layer.getMenuLayer(), 0); i < array.length; i++) array[i].num = i;
         this.kag.html("save", {
             array_save: array,
@@ -328,7 +332,8 @@ tyrano.plugin.kag.menu = {
     },
     displayLoad: function(cb) {
         var that = this;
-        this.kag.stat.is_skip = !1;
+        //this.kag.stat.is_skip = !1;
+        this.kag.ftag.startTag("skipstop", {log : "displayLoad"});
         for (var array = that.getSaveData().data, i = (that.kag.layer.getMenuLayer(), 0); i < array.length; i++) array[i].num = i;
         this.kag.html("load", {
             array_save: array,
@@ -625,7 +630,8 @@ tyrano.plugin.kag.menu = {
     },
     displayLog: function() {
         var that = this;
-        this.kag.stat.is_skip = !1;
+        //this.kag.stat.is_skip = !1;
+        this.kag.ftag.startTag("skipstop", {log : "displayLog"});
         $("<div></div>");
         this.kag.html("backlog", {
             novel: $.novel

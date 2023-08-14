@@ -112,8 +112,8 @@
 [t1]( 차라리 오늘 있던 일이 꿈이었으면 좋겠는데... )[t2][p]
 [_tb_end_tyrano_code]
 
-[tb_hide_message_window  ]
 [stopbgm  time="1000"  fadeout="true"  ]
+[tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [playse  volume="120"  time="1000"  buf="1"  storage="SFX/Common_Morning_Bird_Twitter_01.wav"  fadein="false"  ]
 [playse  volume="80"  time="500"  buf="3"  storage="Amb/Amb_Shool_Club_01.wav"  fadein="true"  loop="true"  ]
@@ -155,6 +155,7 @@
 [playse  volume="90"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Wood_Run_01.wav"  ]
 [stopse  time="1000"  buf="3"  fadeout="true"  ]
 [tb_hide_message_window  ]
+[wait  time="5000"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [stopse  time="1000"  buf="1"  fadeout="true"  ]
 [playse  volume="100"  time="1000"  buf="4"  storage="Amb/Amb_Road_01.wav"  fadein="true"  loop="true"  ]

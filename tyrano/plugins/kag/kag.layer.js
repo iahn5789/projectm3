@@ -92,6 +92,7 @@ tyrano.plugin.kag.layer = {
                     self.kag.stat.enable_keyconfig = !0;
                     self.kag.stat.is_hide_message = !0;
                     self.isAnimationRunning = false;
+                    self.kag.ftag.startTag("skipstop", {next : false, log: "hideMessageLayers"});
                 }
               });
         }

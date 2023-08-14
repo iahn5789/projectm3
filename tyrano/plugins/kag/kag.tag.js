@@ -1521,7 +1521,8 @@ tyrano.plugin.kag.tag.endmark = {
 };
 tyrano.plugin.kag.tag.cancelskip = {
     start: function(pm) {
-        this.kag.stat.is_skip = !1;
+        //this.kag.stat.is_skip = !1;
+        this.kag.ftag.startTag("skipstop", {log : "cancleskip"});
         this.kag.ftag.nextOrder()
     }
 };

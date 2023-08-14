@@ -236,16 +236,42 @@ tyrano.plugin.kag.tag.skipstart = {
     pm: {},
     start: function(pm) {
         if (1 == this.kag.stat.is_skip || this.kag.stat.is_adding_text) return !1;
-        this.kag.readyAudio();
-        this.kag.stat.is_skip = !0;
-        this.kag.ftag.nextOrder()
+        if (this.kag.stat.is_skip == 0){
+            TYRANO.kag.ftag.startTag("ptext", {
+                layer: 2,
+                name: "SKIP",
+                text: "SKIP",
+                x: "853.825",
+                y: "488.56",
+                size: 100,
+                face: "",
+                color: "0xffffff",
+                align: pm.textalign,
+                zindex: pm.textzindex,
+                overwrite: "false",
+            });
+            this.kag.readyAudio();
+            this.kag.stat.is_skip = !0;
+            this.kag.ftag.nextOrder()
+        }
     }
 };
 tyrano.plugin.kag.tag.skipstop = {
-    pm: {},
+    pm: {
+        next: true,
+        log : "test"
+    },
     start: function(pm) {
+        console.log("test console. log : ", pm.log);
+        btnEl = document.getElementsByClassName("SKIP");
+        if (btnEl.length != 0) {
+            $(btnEl).remove();
+        }
         this.kag.stat.is_skip = !1;
-        this.kag.ftag.nextOrder()
+        console.log("test console. skip stop next : ", pm.next);
+        if(pm.next){
+            this.kag.ftag.nextOrder()
+        }
     }
 };
 tyrano.plugin.kag.tag.autostart = {
@@ -302,6 +328,7 @@ tyrano.plugin.kag.tag.autoconfig = {
     start: function(pm) {
         if ("" != pm.speed) {
             this.kag.config.autoSpeed = pm.speed;
+            console.log("test speed : ", pm.speed)
             this.kag.ftag.startTag("eval", {
                 exp: "sf._system_config_auto_speed = " + pm.speed,
                 next: "false"
