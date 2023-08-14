@@ -46,7 +46,7 @@
 #
 [t1]그것도 수업 시간에 졸다가 소리를 지른 전학생.[t2][p]
 #&[sf.name]
-[t1](에휴. 대용이나 만나러 가야지.)[t2][p]
+[t1]( 에휴. 그냥 빨리 집이나 가야지.)[t2][p]
 #
 [t1]축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득[r]생각이 들었다.[t2][p]
 [_tb_end_tyrano_code]
@@ -74,9 +74,9 @@
 #&[sf.name]
 [t1]잠깐만.[t2][p]
 #&[sf.name]
-[t1](생각해 보니 나도 학교 끝나고 보자는 친구가[r]있었잖아?)[t2][p]
+[t1](생각해 보니 나도 학교 끝나고 보자는 사람이 있었잖아?)[t2][p]
 #
-[t1]강여진.[t2][p]
+[t1]강여진...[t2][p]
 #
 [t1]조금 뜬금없긴 했지만, 분명히 나에게 먼저 말을 걸었다.[t2][p]
 #
@@ -100,21 +100,27 @@
 [t1]밴드부는 4층 과학실 옆에 있다고 했다.[t2][p]
 #
 [t1]수업 때문에 과학실은 몇 번 간 적이 있었지만, 그 옆에[r]밴드부가 있는 줄은 몰랐다.[t2][p]
+#
+[t1]가뜩이나 과학실로 가기 위해선 한참을 걸어가야 했는데[t2][p]
+#
+[t1]그 옆의 밴드부는 찾아오는 학생들이 과연 있을까 하는[r]생각이 들었다.[t2][p]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="2000"  buf="3"  storage="Amb/Amb_Room_Tone_02.wav"  fadein="true"  loop="true"  ]
 [stopse  time="3000"  buf="4"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
-[t1]가뜩이나 과학실은 외진 장소에 있었는데, 거기에 더해[r]밴드부는 사람의 발길이 닿지 않은 곳 같아 보였다.[t2][p]
-#
-[t1]방과 후 시간, 학생들이 빠져나간 학교는 이상할 정도로 조용했다.[t2][p]
+[t1]방과 후 시간, 학생들이 빠져나간 학교는 이상할 정도로[r]조용했다.[t2][p]
 #
 [t1]외진 장소에 있는 밴드부는 마치 다른 차원에 있는 교실 같은 느낌을 주었다.[t2][p]
 #
 [t1]아무도 없는 복도를 지나쳐 밴드부 앞으로 걸어갔다.[t2][p]
 #
-[t1]입구에 도착하자 밴드부라고 적힌 나무로 된 작은 팻말이 [r]걸려있었지만, 색이 바랜 지 오래였다.[t2][p]
+[t1]입구에 도착하자 밴드부라고 적힌 나무로 된 작은 팻말이[r]보였다.[t2][p]
+#
+[t1]팻말은 색도 바래고 몇 군데 갈라진 부분도 있었다.[t2][p]
+#
+[t1]오히려 없는 게 더 나아 보일 정도였다.[t2][p]
 #
 [t1]문을 열기 위해 손잡이 쪽으로 시선을 돌려봤다.[t2][p]
 [_tb_end_tyrano_code]
@@ -139,9 +145,11 @@
 [playse  volume="45"  time="1000"  buf="1"  storage="SFX/Common_Desk_Rattle_01.wav"  ]
 [tb_start_tyrano_code]
 #???
+[t1]언제까지 기다리고만 있어야 하는 건데![t2][p]
+#???
 [t1]난 누군지도 모르는 사람이 우리 동아리에 들어오는 건[r]반대야![t2][p]
 #강여진
-[t1]아직 학교 끝난 지 얼마 지나지도 않았거든? 일이 있어서 [r]늦는 게 분명해![t2][p]
+[t1]아직 학교 끝난 지 얼마 지나지도 않았거든? 일이 있어서[r]늦는 게 분명해![t2][p]
 #???
 [t1]수업 시간에 졸다가 이상한 소리를 지르면서 일어났다며![t2][p]
 #
@@ -164,11 +172,6 @@
 [stopse  time="1000"  buf="0"  ]
 [stopse  time="1000"  buf="1"  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_Short_02.wav"  ]
-[tb_start_tyrano_code]
-#
-[t1]이상한 사람으로 보일까 재빨리 문을 열자 살려달라고[r]외치듯 삐걱대는 소리가 났다.[t2][p]
-[_tb_end_tyrano_code]
-
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_show_message_window  ]
@@ -193,7 +196,7 @@
 [t1]아! 와줬구나. 어서 와![t2][p]
 [chara_part name="Kang" body="2" face="1" ]
 #???
-[t1]이거 봐! 완전 변태 아니야! 몰래 문 뒤에 숨어서 엿듣고 있던 거야?[t2][p]
+[t1]이거 봐! 완전 변태 아니야! 몰래 숨어서 엿듣고 있던 거야?[t2][p]
 [chara_part name="Kang" body="2" face="8" ]
 #&[sf.name]
 [t1]아...아니 그러니까 나는...[t2][p]
@@ -201,7 +204,7 @@
 
 [playse  volume="45"  time="1000"  buf="0"  storage="SFX/Shotgun_Desk_01.wav"  ]
 [tb_start_tyrano_code]
-#???
+#진다영
 [t1]시끄러워! 변태! 호색한! 대머리![t2][p]
 [_tb_end_tyrano_code]
 
@@ -212,9 +215,7 @@
 #강여진
 [t1]그만! 내가 불러서 온 친구란 말이야![t2][p]
 [chara_part name="Kang" body="1" face="4" ]
-#???
-[t1]이해할 수 없어! 왜 우리 대화를 엿듣고 있던 건데!?[t2][p]
-#???
+#진다영
 [t1]찐따! 찌질이! 버러지! 거지![t2][p]
 [chara_part name="Kang" body="1" face="5" ]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
@@ -225,7 +226,7 @@
 [chara_part name="Jin" body="1" face="4" ]
 [chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
-[t1]왜! 내가 틀린 말 했어?! 왜 소리를 지르고 그래![t2][p]
+[t1]내가 틀린 말 했어?! 왜 소리를 지르고 그래![t2][p]
 #&[sf.name]
 [t1]그러니까...나는...[t2][p]
 [chara_part name="Jin" body="3" face="4" ]
@@ -233,17 +234,17 @@
 [t1]조용히 해! 이 변태![t2][p]
 #&[sf.name]
 [t1]미...미안...[t2][p]
-#???
+#설나희
 [t1]...그 친구야...?[t2][p]
 [chara_hide name="Jin" time=300 wait=false]
 [chara_part name="Kang" body="2" face="1" ]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 [t1]응! 내가 말했지? 막상 보면 괜찮을거라고![t2][p]
-#???
+#설나희
 [t1]...나는 괜찮다고 보는데...[t2][p]
 #진다영
-[t1]설나희! 이 변태가 괜찮다고? 다들 무슨 생각을 하는거야![t2][p]
+[t1]이 변태가 괜찮다고? 다들 무슨 생각을 하는거야![t2][p]
 [sul_ill]
 [chara_hide name="Kang" time=300 wait=false]
 [chara_part name="Sul" body="3" face="1" ]
@@ -251,7 +252,7 @@
 #설나희
 [t1]...나쁜 사람 같아 보이지는 않아...[t2][p]
 #진다영
-[t1]나는 인정 못 해! 생긴 건 그렇다 치더라도 문 앞에서[r]엿듣던 있는 건 어떻게 설명할 건데![t2][p]
+[t1]나는 인정 못 해! 생긴 건 그렇다 치더라도 몰래 엿듣고[r]있던 건 어떻게 설명할 건데![t2][p]
 [chara_part name="Sul" body="2" face="1" ]
 #설나희
 [t1]둘이 싸우는 소리가 밖에 뻔히 들리잖아...[t2][p]
@@ -266,7 +267,9 @@
 #
 [t1]진다영이라고 불리는 분홍 머리 여학생은 나 때문인지[r]잔뜩 화가 난 상태였다.[t2][p]
 #
-[t1]그 옆 푸른 머리 여학생은 내 편을 들어주고 있었지만,[r]표정만 봐서는 무슨 생각을 하는지 잘 알 수가 없었다.[t2][p]
+[t1]그 옆 푸른 머리 여학생은 내 편을 들어주고 있었지만,[t2][p]
+#
+표정만 봐서는 무슨 생각을 하는지 잘 알 수가 없었다.[t2][p]
 #
 [t1]그때 한껏 화를 낸 진다영과 또다시 눈이 마주쳤다.[t2][p]
 [_tb_end_tyrano_code]
@@ -293,7 +296,7 @@
 [t1]우선 내가 부른 손님이니까 이야기만이라도 나눠보자![t2][p]
 [chara_part name="Kang" body="2" face="7"]
 #강여진
-[t1]이제 동아리 마감까지 얼마 남지도 않았는데 다른 사람을 구하기엔 무리야.[t2][p]
+[t1]이제 동아리 마감까지 얼마 남지도 않았는데 다른 사람을[r]구하기엔 무리야.[t2][p]
 [chara_part name="Kang" body="2" face="1"]
 #강여진
 [t1]아니면 더 좋은 생각이 있어? 지금은 별다른 수가[r]없잖아...[t2][p]
@@ -316,15 +319,17 @@
 [t1]어…음…저기…그러니까…[t2][p]
 [chara_part name="Jin" body="3" face="4"]
 #진다영
-[t1]거봐 말도 제대로 못 하잖아! 엿듣는 거 말고 [r]할 수 있는 게 뭐야![t2][p]
+[t1]거봐 말도 제대로 못 하잖아! 엿듣는 거 말고[r]할 수 있는 게 뭐야![t2][p]
 #&[sf.name]
 [t1]아니 그러니까 나는…[t2][p]
+#
+[t1]솔직히 밴드부에서 내가 맡을 수 있는 역할은 딱히 없었다.[t2][p]
+#
+[t1]남들보다 노래를 잘하는 것도 아니고, 악기를 다룰 수 있는 것도 아니니까.[t2][p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [chara_hide name="Jin" time=300 wait=false]
-#
-[t1]쉴 새 없이 몰아치는 폭언에 대략 정신이 멍해진다.[t2][p]
 [chara_part name="Kang" body="1" face="5"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
@@ -342,12 +347,15 @@
 [t1]…그것도 맞지…[t2][p]
 [chara_part name="Jin" body="3" face="2"]
 #진다영
-[t1]바보한테 뭘 시킬 건데![t2][p]
+[t1]애초에 누군지도 모르는 사람을 불러서 대뜸[r]가입시킨다는 게 말이 돼?[t2][p]
+[chara_part name="Jin" body="3" face="2"]
+#진다영
+[t1]이 변태한테 뭘 시킬 건데![t2][p]
 #강여진
 [t1]그건...[t2][p]
 [chara_part name="Jin" body="1" face="4"]
 #진다영
-[t1]없잖아! 뭘 시킬지도 모르면서![t2][p]
+[t1]생각해 본 적도 없지?[t2][p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 [chara_hide name="Jin" time=300 wait=false]
 [chara_part name="Kang" body="2" face="5"]

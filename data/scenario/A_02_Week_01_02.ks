@@ -66,15 +66,10 @@
 [stopse  time="1000"  buf="4"  ]
 [playse  volume="70"  time="1000"  buf="3"  storage="SFX/Common_Emotion_Question_01.wav"  ]
 [tb_start_tyrano_code]
-
 #&[sf.name]
 [t1]( …거칠어? )[t2][p]
-
 #
 [t1]무엇 하나 알지도 못한 채 이렇게 결정해도 되는 건가[r]싶었지만...[t2][p]
-
-#
-[t1]아무래도 좋았다.[t2][p]
 [_tb_end_tyrano_code]
 
 [tb_hide_message_window  ]
@@ -84,6 +79,7 @@
 [playse  volume="70"  time="1000"  buf="4"  storage="Amb/Amb_Shool_Club_01.wav"  loop="true"  fadein="true"  ]
 [tb_start_tyrano_code]
 [kang_ill]
+[jin_ill]
 [chara_part name="Kang" body="3" face="1"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #&[sf.name]
@@ -96,6 +92,7 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
+[kang_ill]
 [chara_part name="Kang" body="2" face="1"]
 #강여진
 [t1]나는 교무실 갔다 올 테니 이야기 좀 나누고 있어! 오늘 안에 등록해야 해![t2][p]
@@ -113,8 +110,8 @@
 
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Footsteps_Female_Wood_Run_01.wav"  ]
 [tb_start_tyrano_code]
+[jin_ill]
 [chara_hide name="Jin" time=300 wait=false]
-
 #
 [t1]도망치듯 나간 여진이를 진다영이 뒤쫓아 나갔다.[t2][p]
 [_tb_end_tyrano_code]
@@ -122,37 +119,27 @@
 [stopse  time="2000"  buf="0"  fadeout="true"  ]
 [playse  volume="120"  time="1000"  buf="4"  storage="Amb/Amb_Room_Tone_02.wav"  fadein="true"  loop="true"  ]
 [tb_start_tyrano_code]
-
+[sul_ill]
 #
 [t1]시끄럽기만 하던 동아리실에는 어느새 고요함이 맴돌았다.[t2][p]
-
 #&[sf.name]
-[t1]안녕하세요…?[t2][p]
+[t1]...[t2][p]
+[chara_part name="Sul" body="1" face="1"]
+[chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
+#설나희
+[t1]...[t2][p]
+#&[sf.name]
+[t1]안녕...하세요…?[t2][p]
+#
+[t1]어색한 분위기 속 인사를 건네자, 고개를 살짝 돌렸다.[t2][p]
+#
+[t1]무언가 말을 하려나 싶었지만, 말 없이 쳐다만 보고 있었다.[t2][p]
+#&[sf.name]
+[t1]( 이 사람 무서워… )[t2][p]
+[chara_hide name="Sul" time=300 wait=false]
 [_tb_end_tyrano_code]
 
 [playse  volume="60"  time="1000"  buf="0"  storage="Amb/Amb_Cold_Wind_01.wav"  fadein="true"  ]
-[tb_start_tyrano_code]
-[sul_ill]
-[chara_part name="Sul" body="1" face="1"]
-[chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
-
-#설나희
-[t1]...[t2][p]
-
-#&[sf.name]
-[t1]하하하…[t2][p]
-
-#
-[t1]인사를 건네도 나를 빤히 쳐다만 보고 있다.[t2][p]
-[chara_hide name="Sul" time=300 wait=false]
-
-#&[sf.name]
-[t1]( 이 사람 무서워… )[t2][p]
-
-;#
-;[t1]이 시각 교무실에선...[t2][p]
-[_tb_end_tyrano_code]
-
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [playse  volume="100"  time="1000"  buf="0"  storage="SFX/Whoosh_Cartoon_Change_Page_01.wav"  ]
@@ -169,9 +156,8 @@
 [jin_ill]
 [chara_part name="Kang" body="1" face="5"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
-
 #강여진
-[t1]그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야![r]괜찮은 애라니까?[t2][p]
+[t1]그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야![t2][p]
 [chara_part name="Kang" body="1" face="4"]
 [chara_move name="Kang" time=300 wait=false top="0" left="146" width="813" height="1903"]
 [chara_part name="Jin" body="1" face="4"]
@@ -197,7 +183,7 @@
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 
 #강여진
-[t1]아! 아니에요! 저희 동아리 신입 부원 들어왔어요! 그거 [r]때문에 왔습니다![t2][p]
+[t1]아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다![t2][p]
 
 #한갑수
 [t1]원래 있던 애들 나간 지 좀 되지 않았나? 이번에는 누가[r]들어온 거야?[t2][p]
@@ -222,7 +208,9 @@
 [t1]아니 그건 네가…[t2][p]
 [chara_part name="Kang" body="1" face="1"]
 #한갑수
-[t1]뭐? 하하하! 걔가 동아리에 들어온다고? 그놈 목소리[r]하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…[t2][p]
+[t1]뭐? 하하하! 걔가 동아리에 들어온다고?[t2][p]
+#한갑수
+[t1]그놈 목소리 하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…[t2][p]
 
 #한갑수
 [t1]여진이는 들어온다고 하고 다영이는 아니라고 말하고.[r]부원들끼리 합의된 거 맞아?[t2][p]
@@ -253,11 +241,11 @@
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
-;#
-;[t1]다시 동아리실.[t2][p]
 [sul_ill]
 #
-[t1]5분 정도 긴 침묵이 이어졌다. 어색한 분위기가 이어지자, [r]말을 걸어 보기 위해 이야기를 꺼냈다.[t2][p]
+[t1]5분 정도 긴 침묵이 이어졌다.[t2][p]
+#
+[t1]어색한 분위기가 이어지자, 말을 걸어 보기 위해 이야기를[r]꺼냈다.[t2][p]
 
 #&[sf.name]
 [t1]저기… 이름이 설나희...[t2][p]
@@ -285,7 +273,9 @@
 [tb_start_tyrano_code]
 
 #&[sf.name]
-[t1]( 틀렸어…대화가 두 마디 이상 진행되질 않아… [r]누가 좀 구해줘… )[t2][p]
+[t1]( 틀렸어…대화가 두 마디 이상 진행되질 않아…)[t2][p]
+#&[sf.name]
+[t1](누가 좀 구해줘…) [t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
@@ -359,7 +349,7 @@
 #설나희
 [t1]없어.[t2][p]
 #전대용
-[t1]없었어요?[t2][p]
+[t1]없어요?[t2][p]
 [chara_part name="Sul" body="2" face="1"]
 #설나희
 [t1]없어.[t2][p]
@@ -395,7 +385,9 @@
 [playse  volume="60"  time="1000"  buf="0"  storage="SFX/Footsteps_Male_Wood_Walk_01.wav"  ]
 [tb_start_tyrano_code]
 #
-[t1]대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라본 뒤 고개를 돌리고 쓸쓸히 사라졌다.[t2][p]
+[t1]대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라봤다.[t2][p]
+#
+[t1]나가는 뒷모습이 어쩐지 쓸쓸해 보였다.[t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
@@ -405,7 +397,9 @@
 [chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
 
 #설나희
-[t1]…저기 네 친구야…?[t2][p]
+[t1]…저기[t2][p]
+#설나희
+[t1]네 친구야…?[t2][p]
 
 #&[sf.name]
 [t1]네. 전학 와서 사귀게 된 친구예요.[t2][p]
@@ -414,7 +408,7 @@
 [t1]…[t2][p]
 
 #&[sf.name]
-[t1]문제라도...?[t2][p]
+[t1]왜요...?[t2][p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -439,8 +433,12 @@
 [stopse  time="1000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
-[t1]그때 여진이와 다영이가 다시 동아리실에 들어왔다.[t2][p]
+[t1]그때 여진이와 다영이가 동아리실에 들어왔다.[t2][p]
 [chara_hide_all time=300 wait=false]
+#
+[t1]밝게 웃으며 한껏 들뜬 걸음걸이로 들어온 여진이와는[r]다르게[t2][p]
+#
+[t1]다영이는 무언가 불만이 있는 듯 약간 흐느적거리며[r]들어왔다.[t2][p]
 [chara_part name="Kang" body="2" face="2"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 
@@ -464,26 +462,10 @@
 [chara_show name="Kang" time=300 wait=false top="0" left="146" width="813" height="1903"]
 [chara_part name="Jin" body="3" face="4"]
 [chara_show name="Jin" time=300 wait=false top="0" left="960" width="813" height="1903"]
-
 #진다영
 [t1]전혀 아니거든? 듣고 싶은 대로만 듣는 것 같은데 내가[r]다시 이야기해 줘?![t2][p]
-
-#
-[t1]본격적으로 말다툼이 시작되려 하던 그때.[t2][p]
-[_tb_end_tyrano_code]
-
-[tb_start_tyrano_code]
-["kang_ill"]
-["jin_ill"]
-[_tb_end_tyrano_code]
-
-[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Common_Door_Slam_01.wav"  ]
-[tb_start_tyrano_code]
 [chara_hide name="Kang" time=300 wait=false]
 [chara_hide name="Jin" time=300 wait=false]
-
-#
-[t1]쾅![t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  ]
@@ -491,36 +473,19 @@
 ["sul_ill"]
 ["kang_ill"]
 ["jin_ill"]
-[chara_part name="Sul" body="2" face="4"]
+[chara_part name="Sul" body="1" face="1"]
 [chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
-
 #설나희
-[t1]둘 다 그만.[t2][p]
-[chara_part name="Sul" body="2" face="4"]
-
+[t1]…후[t2][p]
 #설나희
-[t1]계속 싸울 거야? 아직 할 말 남았어?[t2][p]
-
-#
-[t1]…[t2][p]
-[chara_part name="Sul" body="2" face="4"]
-
-#설나희
-[t1]둘 다 오늘 혼나볼래?[t2][p]
-
-#
-[t1]아니요…[t2][p]
-[chara_part name="Sul" body="4" face="1"]
-
-#설나희
-[t1]…설명해 봐[t2][p]
-[chara_hide_all time=300 wait=false]
+[t1]교무실 다녀온 거 맞아...?[t2][p]
+[chara_hide name="Sul" time=300 wait=false]
+#강여진
+[t1]그럼![t2][p]
+#강여진
+[t1]가입을 허락하는 대신 간단한 테스트를 볼 거라고 말했어![t2][p]
 [chara_part name="Kang" body="1" face="1"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
-
-#강여진
-[t1]선생님이 간단한 테스트를 볼 거라고 말했어![t2][p]
-
 #&[sf.name]
 [t1]테스트…?[t2][p]
 [chara_part name="Kang" body="3" face="7"]
@@ -530,7 +495,9 @@
 [chara_part name="Kang" body="3" face="1"]
 
 #강여진
-[t1]다영이가 반대하는 것도 일리가 있다고 말씀하시면서[r]가입을 위해 테스트를 본다고 말씀하셨어![t2][p]
+[t1]다영이의 말도 일리가 있다고 하시더라고[t2][p]
+#강여진
+[t1]그래서 일종의 테스트를 본다고 말씀하셨어![t2][p]
 [chara_hide name="Kang" time=300 wait=true]
 [chara_part name="Jin" body="3" face="4"]
 [chara_show name="Jin" time=300 wait=false top="0" left="375" width="1169" height="2735"]
@@ -604,35 +571,38 @@
 [t1]어? 선생님 언제 오셨어요?[t2][p]
 
 #한갑수
-[t1]방금 막 올라왔다. 무슨 이야기를 그리하는지 내가[r]들어오는 것도 모르고 이야기하더구나.[t2][p]
+[t1]방금 막 올라왔다.[t2][p]
+#한갑수
+[t1]무슨 이야기를 그리하는지 내가 들어오는 것도 모르고[r]이야기하더구나.[t2][p]
 [chara_hide name="Kang" time=300 wait=false]
 
 #
-[t1]선생님이 들어오고 눈이 마주쳤다. 등줄기에서 식은땀이 흐르는 듯했다.[t2][p]
+[t1]선생님과 눈이 마주쳤다. 등줄기에서 식은땀이 흐르는[r]듯했다.[t2][p]
 
 #한갑수
 [t1]하하하! 이 녀석 수업 시간에 그리 졸더니 밤에 잠은 잘[r]자나?[t2][p]
 
-#한갑수
-[t1]밤에 잠을 잘 자야지 키도 크고 수업 시간에 졸다가[r]이상한 소리도 안 하는 거 아니겠어? 하하하![t2][p]
 
 #&[sf.name]
 [t1]죄...송합니다...[t2][p]
 
 #한갑수
-[t1]아무튼! 여진이의 말처럼 동아리 부원이 들어오지 않으면 폐부가 되니 너를 받아들이는 게 맞다.[t2][p]
+[t1]아무튼! 여진이의 말처럼아무튼! 여진이의 말처럼 동아리[r]부원이 필요한 상황이지만,[t2][p]
 
 #한갑수
-[t1]하지만 다영이의 말처럼 무작정 검증되지 않은 사람을[r]받아들일 수도 없는 노릇이지.[t2][p]
+[t1]다영이의 말처럼 아무나 받아들일 수도 없는 노릇이지.[t2][p]
 
 #한갑수
-[t1]따라서 동아리 가입은 허락하겠지만, 매주 학교에서 보는 [r]쪽지 시험 점수로 너의 성실성을 확인하겠다. 오디션은 생략하도록 하마.[t2][p]
+[t1]따라서 평소 보던 오디션은 생략하는 대신 쪽지 시험 점수로 너를 판단하겠다.[t2][p]
 
 #한갑수
-[t1]동아리 활동도 좋지만 우선 학생이잖아. 학생으로서의[r]본분을 지킨 뒤 하고 싶은 일을 하도록 해라.[t2][p]
+[t1]동아리 활동도 좋지만 우선 학생이잖아?[t2][p]
 
 #한갑수
-[t1]내일이 쪽지 시험 날이지? [emb exp="sf.name"]는 쪽지 시험 점수를 매주[r]나에게 가져오도록.[t2][p]
+[t1]상황이 상황인 만큼 학생의 본분인 공부로 너를 판단할 거야.[t2][p]
+
+#한갑수
+[t1]내일이 쪽지 시험 날이지? [emb exp="sf.name"]는 쪽지 시험 점수를[r]매주 나에게 가져오도록.[t2][p]
 
 #한갑수
 [t1]혹시 궁금한 거 있나?[t2][p]
@@ -662,18 +632,25 @@
 
 #강여진
 [t1]잘 됐다. 그래도 오디션보다는 쪽지 시험이 좋지 않을까?[t2][p]
+
+#
+[t1]확실히 오디션보다는 쪽지 시험이 나았다.[t2][p]
+#
+[t1]만약 오디션을 봤다면...[t2][p]
+#
+[t1]상상도 하기 싫었다.[t2][p]
 [chara_part name="Kang" body="3" face="6"]
 
 #강여진
-[t1]엇... 그러고보니 성적은 어때...?[t2][p]
+[t1]음... 그러고보니 성적은 어때...?[t2][p]
 
 #&[sf.name]
-[t1]어...중간...정도?[t2][p]
+[t1]중간...정도?[t2][p]
 [chara_part name="Kang" body="3" face="7"]
 [chara_move name="Kang" time=300 wait=false top="0" left="375" width="1169" height="2735"]
 
 #강여진
-[t1]흠... 그럼, 낙제는 걱정하지 않아도 괜찮으려나...[t2][p]
+[t1]그럼, 낙제는 걱정하지 않아도 괜찮으려나...[t2][p]
 [chara_part name="Kang" body="3" face="8"]
 
 #강여진
@@ -719,9 +696,26 @@
 #강여진
 [t1]아쉽네... 그럼 우리 둘이 가자![t2][p]
 [chara_hide_all time=300 wait=false]
+[_tb_end_tyrano_code]
+
+[bg  time="1000"  method="crossfade"  storage="Common_Sc_Lobby_Bgi_02.png"  ]
+[tb_start_tyrano_code]
 #
 [t1]그렇게 우리는 동아리실을 나와 여진이에게 설명을[r]들으며 교실로 향했다.[t2][p]
-
+#
+[t1]아무도 없는 학교는 이제 조금 익숙해졌지만,[t2][p]
+#
+[t1]그렇기에 단둘이 걸어가는 복도가 새롭게 느껴졌다.[t2][p]
+#
+[t1]여자애와 단둘이 나란히 걸은 적은 없었기에[t2][p]
+#
+[t1]걸음을 걸을 때마다 약간씩.[t2][p]
+#
+[t1]앞서나가기도 하고 뒤처지기도 했지만.[t2][p]
+#
+[t1]조금씩, 조금씩[t2][p]
+#
+[t1]맞춰 가는 발걸음 소리가 아무도 없는 복도에 울려 퍼졌다.[t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="0"  ]
