@@ -73,6 +73,8 @@
 [anim name="msgcommon03" top=1100 time=270 effect=easeInQuad]
 [wa]
 
+
+
 [cm]
 [image layer=1 width=382 height=550 left=-500 top=17 page=fore visible=true name=charinfo storage = ../image/New_GUI/Test_UI/UI_Charinfo_01.png zindex="3"]
 [button name="profilekang" storage="Profile_Kang_01.ks" target="profile_kang_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="305" y="399" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="5"]
@@ -84,6 +86,7 @@
 ;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="1668" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="5"]
 [button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="1668" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="5"]
 
+[ptext layer=2 name="workspace_chance" page=fore text="&[f.workspace_chance]" size=20 x=583 y=-700 width=120 color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" zindex="5" ]
 [image layer=2 width=850 height=559 left=580 top=-700 page=fore visible=true name=workspace storage = ../image/New_GUI/Test_UI/UI_Work_01.png ]
 [button name="game01" storage="Test_Wait_Call_01.ks" target="game01" graphic="../image/New_GUI/Test_UI/Button_Work_Game_01_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_01_02.png" zindex=2 width="203" height="179" x="649" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="3"]
 [button name="game02" storage="Test_Wait_Call_01.ks" target="game02" graphic="../image/New_GUI/Test_UI/Button_Work_Game_02_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_02_02.png" zindex=2 width="203" height="179" x="901" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav" zindex="5"]
@@ -97,6 +100,7 @@
 [anim name="game03" top=112 time=1000 effect=easeInQuad]
 [anim name="game04" top=336 time=1000 effect=easeInQuad]
 [anim name="game05" top=336 time=1000 effect=easeInQuad]
+[anim name="workspace_chance" top=65.5 time=1000 effect=easeInQuad]
 
 [_tb_end_tyrano_code]
 

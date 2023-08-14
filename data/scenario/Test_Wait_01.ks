@@ -16,7 +16,7 @@
 
 [tb_hide_message_window  ]
 [bg  time="10"  method="crossfade"  storage="Test_BGI/Test_Bgi_01.png"  ]
-[tb_keyconfig  flag="0"  ]
+[tb_keyconfig  flag="1"  ]
 *test
 
 [hidemenubutton]
