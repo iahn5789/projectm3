@@ -81,9 +81,11 @@
 [stopse  time="5000"  buf="1"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #
-[t1]모자를 깊게 눌러쓴 알바생은 전단지를 내게 건네주고는[r]다른 사람에게 가버렸다.[t2][p]
+[t1]모자를 깊게 눌러쓴 알바생은 전단지를 내게 건네주었다.[t2][p]
 #
-[t1]손에는 전단지 한 장이 민망하리만치 달랑 들려있었다.[t2][p]
+[t1]알바생은 내 반응 따위는 신경도 쓰지 않은 채 다른 사람에게 가버렸다.[t2][p]
+#
+[t1]손에는 전단지 한 장만이 민망하리만치 달랑 들려있었다.[t2][p]
 [_tb_end_tyrano_code]
 
 [playse  volume="110"  time="1000"  buf="1"  storage="UI/Exam_Open_Paper_01.wav"  fadein="false"  ]
@@ -96,9 +98,6 @@
 [t1]독특한 컨셉의 2인조 그룹이 눈에 띈다.[t2][p]
 #&[sf.name]
 [t1]와... 이런 컨셉의 밴드가 축제에 나온다고? 신기하네.[t2][p]
-#&[sf.name]
-[t1]이름이... 프리덤?[t2][p]
-
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="1"  fadeout="false"  ]
@@ -138,16 +137,18 @@
 [t1]당연하지![t2][p]
 [chara_part name="Jeon" body="3" face="4" ]
 #전대용
-[t1]아침, 점심, 저녁을 제외하고 여섯 시는 음료수를[r]마시는 시간! 아홉 시는 간식을 먹는 시간이지![t2][p]
-#&[sf.name]
-[t1]그래. 루틴대로 살아서 성공하길 빈다.[t2][p]
+[t1]아침, 점심, 저녁을 제외하고 여섯 시는[r]음료수! 여덟 시는 간식! 열 시는...[t2][p]
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Paper_Crumple_01.wav"  ]
 [tb_start_tyrano_code]
 #
-[t1]대용이와 대화를 주고받으며 손에 들고 있던 전단지를[r]구겼다.[t2][p]
+[t1]대용이의 하루 루틴을 듣고 있자니 또다시 귀에서 피가 나는 느낌이 들었다.[t2][p]
+#
+[t1]혹시나 해서 만져보니 역시나 대용이의 침이었다.[t2][p]
+#
+[t1]이대로 계속 가다가는 중이염에 걸릴 것만 같았다.[t2][p]
 #&[sf.name]
 [t1]나 이것 좀 버리고 올게.[t2][p]
 [chara_part name="Jeon" body="1" face="6" ]
@@ -162,7 +163,9 @@
 [stopse  time="1000"  buf="1"  ]
 [tb_start_tyrano_code]
 #
-[t1]근처에 보이는 쓰레기통에 전단지을 던져넣었다[t2][p]
+[t1]겨우 대용이의 이야기를 끝낸 나는 주변에 적당한[r]쓰레기통을 찾았다.[t2][p]
+#
+[t1]조금 떨어져 있는 곳에 쓰레기통이 보였다.[t2][p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
 [_tb_end_tyrano_code]
 
@@ -171,11 +174,15 @@
 #
 [t1]휙-![t2][p]
 #
-[t1]전단지는 쓰레기통을 향해 날아갔지만, 중간에 떨어지고[r]말았다.[t2][p]
+[t1]굳이 근처까지 가고 싶지 않아서 전단지를 던졌지만,[t2][p]
+#
+[t1]힘이 부족했는지 중간에 떨어지고 말았다.[t2][p]
 #&[sf.name]
 [t1]오늘은 되는 일이 없네...[t2][p]
 #
-[t1]떨어진 전단지 근처에 더러워 보이는 앨범이 땅바닥에[r]펼쳐져 있었다.[t2][p]
+[t1]하는 수 없이 직접 버리기 위해 쓰레기통 근처로 갔다.[t2][p]
+#
+[t1]쓰레기통 근처에는 낡아 보이는 앨범이 땅바닥에[r]펼쳐져 있었다.[t2][p]
 #&[sf.name]
 [t1]앨범? 이런 곳에?[t2][p]
 [_tb_end_tyrano_code]
@@ -183,9 +190,15 @@
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Beautiful_Bell_Tree_01.wav"  fadein="true"  ]
 [tb_start_tyrano_code]
 #
+[t1]땅바닥에 펼쳐져 있던 앨범을 주워서 살펴보았다.[t2][p]
+#
 [t1]낡은 표지와 빛바랜 사진.[r]누가 봐도 앨범이 오래됐다고 느껴지기에 충분했다.[t2][p]
 #
-[t1]사진 속에는 두 명의 남녀가 사이좋게 찍혀있었다.[r]연인관계인 것 같다.[t2][p]
+[t1]사진 속에는 두 명의 남녀가 사이좋게 찍혀있었다.[t2][p]
+#
+[t1]친구라고 보기에는 너무 다정해 보였다.[t2][p]
+#
+[t1]어쩌면 연인일지도 몰랐다.[t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1500"  buf="1"  fadeout="true"  ]
@@ -214,59 +227,6 @@
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[chara_part name="Jeon" body="4" face="8" ]
-#전대용
-[t1]맞다 그걸 깜박했군.[t2][p]
-[chara_part name="Jeon" body="4" face="1" ]
-#전대용
-[t1]그나저나 무얼 버리고 온 거야?[t2][p]
-#&[sf.name]
-[t1]너의 그 잘난 루틴 기다리는 동안 전단지 하나 받았어.[t2][p]무슨...축제한다고 하던데.[t2][p]
-[chara_part name="Jeon" body="1" face="6" ]
-#전대용
-[t1]축제? 나의 여신 프리덤이 나오는 그 축제 말하는 거야?[t2][p]
-#&[sf.name]
-[t1]그 이상한 밴드?[t2][p]
-[chara_part name="Jeon" body="3" face="2" ]
-#전대용
-[t1]오! 역시 알고 있던 거냐고?[t2][p]
-[chara_part name="Jeon" body="3" face="1" ]
-#&[sf.name]
-[t1]몰라. 전단지에 적혀있는데 특이해서 기억하는 거지.[t2][p]
-[chara_part name="Jeon" body="4" face="1" ]
-#전대용
-[t1]이런 이런.... 너는 프리덤의 매력이 무엇인지 전혀 모르는[r]모양이군.[t2][p]
-[chara_hide_all time=300 wait=false]
-#
-[t1]대용이가 안경을 고쳐 쓰고선 이야기를 시작했다.[t2][p]
-[chara_part name="Jeon" body="4" face="2" ]
-[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
-#전대용
-[t1]여자들로만 이루어져 있고 독특한 변장을 하고[r]연주하지만 내 눈은 속일 순 없지.[t2][p]
-[chara_part name="Jeon" body="2" face="2" ]
-#전대용
-[t1]그 밴드를 보면 옷으로는 숨길 수 없는 힘숨찐의 냄새가[r]난다고.[t2][p]
-[chara_part name="Jeon" body="4" face="2" ]
-#전대용
-[t1]이 정도 알아차리는 건 신사의 기본적인 소양이지.[t2][p]
-#&[sf.name]
-[t1]그냥 네가 변태인 건 아니고?[t2][p]
-[chara_part name="Jeon" body="4" face="4" ]
-[_tb_end_tyrano_code]
-
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Text_Kick_01.wav"  ]
-[tb_start_tyrano_code]
-#전대용
-[t1]신.사.[t2][p]
-[_tb_end_tyrano_code]
-
-[stopse  time="1000"  buf="1"  ]
-[tb_start_tyrano_code]
-#&[sf.name]
-[t1]그래 알겠다...[t2][p]
-[chara_part name="Jeon" body="4" face="1" ]
-#&[sf.name]
-[t1]일단 오늘 짐 정리를 다 끝내고 나서 이야기하는 거로[r]하자.[t2][p]
 #&[sf.name]
 [t1]오늘까지 정리 안 하면 엄마가 날 죽일 거야.[t2][p]
 [chara_part name="Jeon" body="2" face="1" ]
@@ -277,16 +237,27 @@
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
-[playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
-[tb_start_tyrano_code]
-#
-[t1]아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해[r]걸어갔다.[t2][p]
-[quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
-[_tb_end_tyrano_code]
-
 [tb_start_tyrano_code]
 #전대용
 [t1]동아리 꼭 생각해보고![t2][p]
+[_tb_end_tyrano_code]
+
+[playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
+[tb_start_tyrano_code]
+#
+[t1]대용이와 헤어지니 주변이 확실히 조용해졌다.[t2][p]
+#
+[t1]아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해[r]걸어갔다.[t2][p]
+#
+[t1]차도, 사람도 많이 지나다니지 않는 골목길이라 더 조용한[r]건지도 몰랐다.[t2][p]
+#
+[t1]주변이 갑작스럽게 조용해지니 오히려 어색한 기분이[r]들었다.[t2][p]
+#
+[t1]아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해[r]걸어갔다.[t2][p]
+#
+[t1]그 후 10분 정도 걸었을까[t2][p]
+#
+[t1]어느새 하늘은 검은색으로 변하고 있었다.[t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="2000"  buf="1"  fadeout="true"  ]

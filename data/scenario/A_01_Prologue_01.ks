@@ -21,6 +21,16 @@
 [tb_start_tyrano_code]
 #
 [t1]...어?[t2][p]
+#
+[t1]묘한 감정이 나를 짓눌렀다.[t2][p]
+#
+[t1]적당히 떨리는 손을 들어 가슴에 올렸다.[t2][p]
+#
+[t1]손에서 느껴지는 두근거림은 어쩐지 귀에서도 들리는 것 같았다.[t2][p]
+#
+[t1]어두운 공간이지만 먼지가 떨어지는게 선명히 보였다.[t2][p]
+#
+[t1]그 뒤로 어떤 사람이 말하는게 들렸다.[t2][p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
@@ -85,9 +95,9 @@
 #선생님
 [t1]모두 조용! 집중해![t2][p]
 #
-[t1]창밖의 햇살과 반 친구들의 웃음소리, 선생님의 호통을[r]들으니, 현실에 있다는 것이 실감이 난다.[t2][p]
-#&[sf.name]
-[t1]( 꿈이였다니... 뭔가 기운빠지는구만... )[t2][p]
+[t1]주변에서 들려오는 웃음소리, 선생님의 호통을 뒤로 창밖의 햇살이 따사롭게 느껴졌다.[t2][p]
+#
+[t1]조금씩 사라져가는 꿈의 자리에 현실감이 들어오고 있었다.[t2][p]
 [_tb_end_tyrano_code]
 
 [playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
@@ -101,9 +111,19 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #&[sf.name]
-[t1]뒤에 나가 서 있는 거로 모자라 청소까지 하고 가라니...[t2][p]
+[t1]혼자서 화장실 청소까지 하고 가라니...[t2][p]
+#
+[t1]모두가 하교한 학교는 유령도시 같은 느낌을 주었다.[t2][p]
+#
+[t1]걸음을 걸을 때마다 들리는 발소리를 제외하면 어떤 소리도 들리지 않았다.[t2][p]
+#
+[t1]하교할 때마다 보는 익숙한 하늘보다 조금 더 붉은 하늘[t2][p]
+#
+[t1]거기에 더해 학교에서 느껴본 적 없는 조용함은 이상한 기분을 들게 했다.[t2][p]
 #&[sf.name]
-[t1]이건 너무한 거 아니냐고...[t2][p]
+[t1]교실도 아니고 화장실 청소는 너무한 거 아니냐고...[t2][p]
+#
+[t1]그 때.[t2][p]
 #???
 [t1]오늘도 깊은 밤 꿈속에서 당신을 구하는 최고의 히어로![t2][p]
 #???
@@ -133,27 +153,18 @@
 [t1]변태다...[t2][p]
 ;[chara_hide_all time=200 wait=false]
 [jeon_ill]
-[chara_part name="Jeon" body="1" face="1" ]
-[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
-#전대용
-[t1]뭐? 하하! 자기소개라도 하는 건가?[t2][p]
-[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-#&[sf.name]
-[t1]시끄러워![t2][p]
 [chara_part name="Jeon" body="4" face="1" ]
+[chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
 [t1]너 수업 중에 사자후를 날렸다며?[t2][p]
 #전대용
 [t1][chara_part name="Jeon" body="4" face="2" ]
 정말 멋있는 녀석이야.[t2][p]
-[chara_part name="Jeon" body="2" face="6" ]
-#전대용
-[t1]수업을 듣기 싫으니 소리를 지른 것 아니야?[t2][p]
 [chara_part name="Jeon" body="2" face="1" ]
 #&[sf.name]
 [t1]그거 칭찬 맞지?[t2][p]
 #&[sf.name]
-[t1]근데 넌 왜 이 시간까지 학교에 있는 거야? [t2][p]너도 수업 듣기 싫어서 소리질렀냐?[t2][p]
+[t1]근데 넌 왜 이 시간까지 학교에 있는 거야? [t2][p]
 [chara_part name="Jeon" body="2" face="8" ]
 #전대용
 [t1]...가끔 남자에게는 말 못 할 비밀들이 있지...[t2][p]
@@ -165,8 +176,6 @@
 [chara_part name="Jeon" body="4" face="1" ]
 #&[sf.name]
 [t1]( 역시 변태다. )[t2][p]
-#&[sf.name]
-[t1]일이 있었겠지. 빨리 집에 가자.[t2][p]
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
@@ -179,6 +188,10 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 [jeon_ill]
+#
+[t1]대용이와 함께 학교에서 나와 함께 길을 걸어갔다.[t2][p]
+#
+[t1]시간이 시간인지라 확실히 낮보다는 더 시원했다.[t2][p]
 [chara_part name="Jeon" body="1" face="1" ]
 [chara_show name="Jeon" time="300" top="0" left="362" width="1004" height="1903" wait="false"]
 #전대용
@@ -189,29 +202,22 @@
 #전대용
 [t1]늘 나랑만 붙어 다니는 것 같단 말이지.[t2][p]
 #&[sf.name]
-[t1]그야 내가 먼저 다가가는 성격은 아니니까...[t2][p]
+[t1]딱히?[t2][p]
 #&[sf.name]
-[t1]굳이 따지자면 너 말고는 친구가 없다고 할 수 있지.[t2][p]
-[chara_part name="Jeon" body="4" face="8" ]
+[t1]내가 먼저 다가가는 성격은 아니니까...[t2][p]
+[chara_part name="Jeon" body="2" face="6" ]
 #전대용
-[t1]흠...곤란하군 곤란해...[t2][p]
-[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
+[t1]동아리에 들어갔는데도 친구를 사귀지 못했다고?[t2][p]
+[chara_part name="Jeon" body="4" face="6" ]
+#전대용
+[t1]그건 좀 큰일인데.[t2][p]
 #&[sf.name]
-[t1]갑자기 왜 시비야! 나는 지금 생활에 만족하고 있다고![t2][p]
+[t1]난 동아리 들어갔다고 말한 적 없어.[t2][p]
 [chara_part name="Jeon" body="4" face="4" ]
 #전대용
-[t1]아니. 내 말은 그게 아니야![t2][p]
-[chara_part name="Jeon" body="4" face="1" ]
-#전대용
-[t1]너는 지금 우리 학교에서 아주 중요한 사실을 놓치고 있어.[t2][p]
-#&[sf.name]
-[t1]중요한 사실? 그런 게 있으면 그냥 빨리 말해줬으면[r]되잖아.[t2][p]
-[chara_part name="Jeon" body="4" face="2" ]
-#전대용
-[t1]후후...나 말고 다른 친구에게 들었으면 하는 마음에 미리 [r]말하지 않았던 거라고![t2][p]
-[chara_hide_all time=300 wait=false]
+[t1]동아리에 들어가지 않았다고?[t2][p]
 #
-[t1]전대용은 무언가 큰일이라도 난 것처럼 고개를 숙이고[r]가까이 다가왔다.[t2][p]
+[t1]대용이는 갑자기 무언가 큰일이라도 난 것처럼 목소리를[r]키웠다.[t2][p]
 [chara_part name="Jeon" body="3" face="1" ]
 [chara_show name="Jeon" time="300" top="0" left="100" width="1444" height="2735" wait="false"]
 #전대용
@@ -228,32 +234,22 @@
 [t1]네가 좋던 싫든 간에 무조건 동아리에 들어가야 해.[t2][p]
 #&[sf.name]
 [t1]흠...그런 귀찮은 건 딱 질색인데.[t2][p]
-[chara_part name="Jeon" body="4" face="1" ]
 #전대용
-[t1]응~교칙이야~ 그 누구도 예외는 없어~[t2][p]
-#&[sf.name]
-[t1]글쎄.. 나는 딱히 취미도 없고 하고 싶은 것도 별로 없는걸.[t2][p]
-[quake  time="300"  count="3"  hmax="3"  wait="false"  vmax="3"  ]
-[chara_part name="Jeon" body="4" face="4" ]
-#전대용
-[t1]그렇다면 이미 정답은 정해져 있다![t2][p]
+[t1]그렇다면.[t2][p]
 [chara_part name="Jeon" body="2" face="1" ]
 #전대용
 [t1]자네...나와 같은 서예부에 들어오지 않겠는가?[t2][p]
 #&[sf.name]
 [t1]거기는 죽어도 싫어.[t2][p]
-[chara_part name="Jeon" body="2" face="4" ]
-#전대용
-[t1]어째서지? 이런 마음에 평화를 주는 활동은 우리[r]서예부가 유일무이한데?[t2][p]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="2" face="4" ]
 #&[sf.name]
-[t1]그야 당연히 그냥 서예부가 아니고 【과학서예부】잖아.[t2][p]
+[t1]그리고 그냥 서예부도 아니고 【과학서예부】잖아.[t2][p]
 [chara_part name="Jeon" body="3" face="1" ]
 #전대용
-[t1]이런 21세기 최첨단 시대에 과학은 기본 소양이라고?[t2][p]
+[t1]요즘 같은 시대에 시대에 과학은 기본 소양이라고?[t2][p]
 #&[sf.name]
 [t1]바로 그게 문제라는 거야.[t2][p]
 #&[sf.name]
@@ -262,8 +258,6 @@
 [chara_part name="Jeon" body="4" face="4" ]
 #전대용
 [t1]어허! 다 의미 있는 일이라는 것을 정녕 모르는 것이냐![t2][p]
-#전대용
-[t1]너는 아주 중요한 사실을 놓치고 있어...[t2][p]
 [chara_part name="Jeon" body="4" face="4" ]
 #전대용
 [t1]나는 단순히 과학과 서예 때문에 과학서예부에 들어가[r]있는 것이 아니야![t2][p]
@@ -276,12 +270,6 @@
 [chara_part name="Jeon" body="1" face="4" ]
 #전대용
 [t1]바로 동아리 부장 때문이지![t2][p]
-[chara_part name="Jeon" body="4" face="2" ]
-#&[sf.name]
-[t1]동아리 부장한테 약점이라도 잡힌 거야?[t2][p]
-[chara_part name="Jeon" body="3" face="1" ]
-#전대용
-[t1]아니! 다른 이유가 있지![t2][p]
 [chara_part name="Jeon" body="4" face="1" ]
 #전대용
 [t1]우리 동아리 부장 누나는 말이야...[t2][p]
@@ -295,9 +283,6 @@
 [t1]예쁘다고.[t2][p]
 #&[sf.name]
 [t1]진짜 고작 그 이유로 그 동아리에 들어간 거라고...?[t2][p]
-[chara_part name="Jeon" body="2" face="1" ]
-#전대용
-[t1]하하하! 내가 큰 그림을 보라고 했을 텐데?[t2][p]
 #&[sf.name]
 [t1]설마...[t2][p]
 [chara_part name="Jeon" body="4" face="2" ]
