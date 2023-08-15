@@ -3,8 +3,7 @@
 *teststart
 
 [tb_keyconfig  flag="0"  ]
-[stopbgm  time="1000"  ]
-[playbgm  volume="100"  time="1000"  loop="true"  storage="Exam_ingame_temporary.wav"  fadein="true"  ]
+[stopbgm  time="2300"  fadeout="true"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [cm]
@@ -37,6 +36,7 @@
 
 [bg  time="1000"  method="crossfade"  storage="Common_Black.jpg"  ]
 [tb_eval  exp="f.testResult=0"  name="testResult"  cmd="="  op="t"  val="0"  val_2="undefined"  ]
+[playbgm  volume="90"  time="1000"  loop="true"  storage="Exam_ingame_temporary.wav"  fadein="true"  ]
 [mask_off  time="1000"  effect="fadeOut"  ]
 [tb_start_tyrano_code]
 [anim name=teststart time=500 top=930]
