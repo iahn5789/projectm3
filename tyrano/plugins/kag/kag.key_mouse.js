@@ -23,10 +23,12 @@ tyrano.plugin.kag.key_mouse = {
 
         "undefined" == typeof __tyrano_key_config && (__tyrano_key_config = {
             key: {
-                32: "hidemessage",
-                13: "next",
-                91: "skip",
-                17: "skip",
+                32: "next",
+                81: "save",
+                83: "skip",
+                85: "hidemessage",
+                87: "load",
+                112: "fullscreen",
                 67: function() {}
             },
             mouse: {
@@ -74,9 +76,11 @@ tyrano.plugin.kag.key_mouse = {
                 if (1 == that.is_keydown) return "true" == __tyrano_key_config.system_key_event;
                 that.is_keydown = !0;
                 var keycode = e.keyCode;
+                console.log("test keydown start : ", keycode)
                 that.map_key[keycode] && ("function" == typeof that.map_key[keycode] ? that.map_key[keycode]() : that[that.map_key[keycode]] && that[that.map_key[keycode]]())
             }
         }));
+
         $(document).keyup((function(e) {
             that.is_keydown = !1;
             var keycode = e.keyCode;
@@ -135,6 +139,7 @@ tyrano.plugin.kag.key_mouse = {
                     that.kag.stat.is_click_text = !0;
                     return !1
                 }
+                console.log("test nextOrder to click1");
                 that.kag.ftag.nextOrder();
                 return !1
             }
@@ -153,6 +158,7 @@ tyrano.plugin.kag.key_mouse = {
             if (1 == that.kag.stat.is_click_text) return !1;
             if (1 == that.kag.stat.is_stop) return !1;
             1 == that.kag.stat.fuki.active && that.kag.layer.hideMessageLayers();
+            console.log("test nextOrder to click2");
             that.kag.ftag.nextOrder()
         }))
     },
@@ -202,14 +208,14 @@ tyrano.plugin.kag.key_mouse = {
     },
     _role: function(role) {
         if (1 == this.kag.stat.is_skip && "skip" == role) {
-            this.kag.ftag.startTag("skipstop", {log : "_role 1"});
+            this.kag.ftag.startTag("skipstop", {next: false,log : "_role 1"});
             //this.kag.stat.is_skip = !1;
             return !1
         }
         if ("none" == this.kag.layer.layer_event.css("display") && 1 != this.kag.stat.is_strong_stop) return !1;
         if (0 == this.kag.stat.enable_keyconfig) return !1;
         
-        this.kag.ftag.startTag("skipstop", {log : "_role 2"});
+        this.kag.ftag.startTag("skipstop", {next: false,log : "_role 2"});
         //this.kag.stat.is_skip = !1;
         "auto" != role && this.kag.ftag.startTag("autostop", {
             next: "false"
@@ -267,7 +273,7 @@ tyrano.plugin.kag.key_mouse = {
     clearSkip: function() {
         if (1 == this.kag.stat.is_skip && 0 == this.kag.stat.is_strong_stop) {
             
-            this.kag.ftag.startTag("skipstop", {log : "clearSkip"});
+            this.kag.ftag.startTag("skipstop", {next: false,log : "clearSkip"});
             //this.kag.stat.is_skip = !1;
             return !1
         }

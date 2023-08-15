@@ -8,7 +8,7 @@ tyrano.plugin.kag.menu = {
         if (1 == this.kag.stat.is_wait) return !1;
         var that = this;
         
-        this.kag.ftag.startTag("skipstop", {log : "showMenu"});
+        this.kag.ftag.startTag("skipstop", {next: false,log : "showMenu"});
         //this.kag.stat.is_skip = !1;
         this.kag.stat.is_auto = !1;
         this.kag.stat.is_auto_wait = !1;
@@ -66,7 +66,7 @@ tyrano.plugin.kag.menu = {
         console.log("displaySave");
         var that = this;
         
-        this.kag.ftag.startTag("skipstop", {log : "displaySave"});
+        this.kag.ftag.startTag("skipstop", {next: false,log : "displaySave"});
         //this.kag.stat.is_skip = !1;
         for (var array = that.getSaveData().data, i = (that.kag.layer.getMenuLayer(), 0); i < array.length; i++) array[i].num = i;
         this.kag.html("save", {
@@ -333,7 +333,7 @@ tyrano.plugin.kag.menu = {
     displayLoad: function(cb) {
         var that = this;
         //this.kag.stat.is_skip = !1;
-        this.kag.ftag.startTag("skipstop", {log : "displayLoad"});
+        this.kag.ftag.startTag("skipstop", {next: false,log : "displayLoad"});
         for (var array = that.getSaveData().data, i = (that.kag.layer.getMenuLayer(), 0); i < array.length; i++) array[i].num = i;
         this.kag.html("load", {
             array_save: array,
@@ -631,7 +631,7 @@ tyrano.plugin.kag.menu = {
     displayLog: function() {
         var that = this;
         //this.kag.stat.is_skip = !1;
-        this.kag.ftag.startTag("skipstop", {log : "displayLog"});
+        this.kag.ftag.startTag("skipstop", {next: false,log : "displayLog"});
         $("<div></div>");
         this.kag.html("backlog", {
             novel: $.novel
