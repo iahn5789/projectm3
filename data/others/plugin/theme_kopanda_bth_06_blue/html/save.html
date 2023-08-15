@@ -6,8 +6,11 @@
 
 	<div style='clear:both'></div>
 
-	<!-- <img class="button_smart button_arrow_up" src='data/others/plugin/theme_kopanda_bth_06_blue/image/system/arrow_up.png' style='cursor:pointer;left:540px;top:100px;position:absolute;'>
-	<img class="button_smart button_arrow_down" src='data/others/plugin/theme_kopanda_bth_06_blue/image/system/arrow_down.png' style='cursor:pointer;left:680px;top:100px;position:absolute;'> -->
+	<audio id="hoverAudio" src="data/sound/UI/Config_Sellect_Hover_01.wav" preload="auto"></audio>
+	<audio id="clickAudio" src="data/sound/UI/Config_Sellect_Click_01.wav" preload="auto"></audio>
+
+	<audio id="backhoverAudio" src="data/sound/UI/Common_Branch_Hover_01.wav" preload="auto"></audio>
+	<audio id="backclickAudio" src="data/sound/UI/Config_Back_01.wav" preload="auto"></audio>
 
 	<div class="area_save_list">
 		<ul class='save_list'>
@@ -29,7 +32,6 @@
 				</li>
 			{{/for}}
 		</ul>
-
 	</div>
 
 	<img id="save_bg_img" src='data/image/New_GUI/Save_UI/Save_Bgi_01.png' style='z-index:-1;left: 0px; top: 0px; width:871px;height:1080px;position:absolute;'>
@@ -43,9 +45,27 @@
 		$(this).find("img").attr("src",img_src);
 	},
 	function(){
-
-		//���Ƃɂ��ǂ�
 		$(this).find("img").attr("src",tmp_src);
+	});
+	$(".save_display_area").mouseenter(function(){
+        var audioElement = document.getElementById('hoverAudio');
+        audioElement.currentTime = 0;  // 오디오를 처음부터 재생
+        audioElement.play();
+    }),
+	$(".save_display_area").click(function(){
+    	var clickAudioElement = document.getElementById('clickAudio');
+    	clickAudioElement.currentTime = 0;  // 오디오를 처음부터 재생
+    	clickAudioElement.play();
+	});
+	$(".menu_close").mouseenter(function(){
+        var audioElement = document.getElementById('backhoverAudio');
+        audioElement.currentTime = 0;  // 오디오를 처음부터 재생
+        audioElement.play();
+    }),
+	$(".menu_close").click(function(){
+    	var clickAudioElement = document.getElementById('backclickAudio');
+    	clickAudioElement.currentTime = 0;  // 오디오를 처음부터 재생
+    	clickAudioElement.play();
 	});
 </script>
 

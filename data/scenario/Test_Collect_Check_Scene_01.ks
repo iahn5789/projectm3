@@ -91,7 +91,7 @@ f.Test_Item05= displayButtonImage(f.Test_Item05);
 
 [endscript]
 
-[html]
+[html zindex=99]
 <style>
 button:focus {
 outline: none;
@@ -335,7 +335,7 @@ f.Test_Item05= displayButtonImage(f.Test_Item05);
 
 [endscript]
 
-[html]
+[html zindex=99]
 <style>
 button:focus {
 outline: none;
@@ -576,7 +576,7 @@ f.Test_Item05= displayButtonImage(f.Test_Item05);
 
 [endscript]
 
-[html]
+[html zindex=99]
 <style>
 button:focus {
 outline: none;
@@ -823,7 +823,7 @@ f.Test_Item05= displayButtonImage(f.Test_Item05);
 
 [endscript]
 
-[html]
+[html zindex=99]
 <style>
 button:focus {
 outline: none;
@@ -1070,7 +1070,7 @@ f.Test_Item05= displayButtonImage(f.Test_Item05);
 
 [endscript]
 
-[html]
+[html zindex=99]
 <style>
 button:focus {
 outline: none;

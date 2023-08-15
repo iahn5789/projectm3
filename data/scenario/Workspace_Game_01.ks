@@ -27,8 +27,6 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 
 const targetContainer = document.querySelector('.layer_free');
 
-
-
 if (targetContainer) {  // 요소가 존재하는지 확인
     targetContainer.style.setProperty('zIndex', '1000000000', 'important');
     //targetContainer.style.zIndex = 1000000000;  // 원하는 z-index 값으로 변경

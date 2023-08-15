@@ -1,4 +1,5 @@
 <div class="custom-modal" id="saveConfirmModal">
+	<audio id="clickAudio" src="data/sound/UI/Config_Sellect_Click_01.wav" preload="auto"></audio>
     <div class="modal-content">
       <h2>저장하시겠습니까?</h2>
       <div class="modal-buttons">
@@ -6,4 +7,20 @@
         <button class="cancel-btn">아니오</button>
       </div>
     </div>
+
+    <script class="menu_close">
+      var tmp_src = "";
+    
+      $(".confirm-btn").click(function(){
+          var clickAudioElement = document.getElementById('clickAudio');
+          clickAudioElement.currentTime = 0;  // 오디오를 처음부터 재생
+          clickAudioElement.play();
+      }),
+      $(".cancel-btn").click(function(){
+          var clickAudioElement = document.getElementById('clickAudio');
+          clickAudioElement.currentTime = 0;  // 오디오를 처음부터 재생
+          clickAudioElement.play();
+      });
+    </script>
+    
   </div>
