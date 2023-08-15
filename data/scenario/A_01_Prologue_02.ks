@@ -175,6 +175,10 @@
 [t1]휙-![t2][p]
 #
 [t1]굳이 근처까지 가고 싶지 않아서 전단지를 던졌지만,[t2][p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Paper_Drop_01.wav"  ]
+[tb_start_tyrano_code]
 #
 [t1]힘이 부족했는지 중간에 떨어지고 말았다.[t2][p]
 #&[sf.name]
@@ -210,6 +214,10 @@
 [t1]뭐해! 빨리 와![t2][p]
 #&[sf.name]
 [t1]어! 지금 갈게![t2][p]
+[_tb_end_tyrano_code]
+
+[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Trash_Can_01.wav"  ]
+[tb_start_tyrano_code]
 #
 [t1]손에 들고 있던 앨범을 쓰레기통에 같이 버린 뒤[r]대용이에게 향했다.[t2][p]
 [jeon_ill]
@@ -242,7 +250,7 @@
 [t1]동아리 꼭 생각해보고![t2][p]
 [_tb_end_tyrano_code]
 
-[playse  volume="80"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
+[playse  volume="70"  time="1000"  buf="1"  storage="SFX/Footsteps_Male_Ctr_Walk_01.wav"  ]
 [tb_start_tyrano_code]
 #
 [t1]대용이와 헤어지니 주변이 확실히 조용해졌다.[t2][p]

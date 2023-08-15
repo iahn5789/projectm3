@@ -137,7 +137,7 @@
 [tb_start_tyrano_code]
 [quake  time="300"  count="5"  hmax="10"  wait="false"  vmax="10"  ]
 #&[sf.name]
-[t1]!!![p]
+[t1]!!![t2][p]
 #
 [t1]엄습해온 불안감에 나는 휴대폰을 꺼내 시간을 확인해[r]보았다.[t2][p]
 #

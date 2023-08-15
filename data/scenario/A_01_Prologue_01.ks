@@ -243,6 +243,7 @@
 [t1]거기는 죽어도 싫어.[t2][p]
 [_tb_end_tyrano_code]
 
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Common_Robot_Glitch.wav"  ]
 [tb_start_tyrano_code]
 [chara_part name="Jeon" body="2" face="1" ]
 #&[sf.name]
