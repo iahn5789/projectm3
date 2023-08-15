@@ -42,4 +42,7 @@ f['star04']='FALSE';
 f['star05']='FALSE'; 
 f['collect']=0; 
 f['wrong']=0; 
+f['note01']='FALSE'; 
+f['note02']='FALSE'; 
+f['note03']='FALSE'; 
 [endscript] 

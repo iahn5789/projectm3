@@ -2,7 +2,10 @@
 
 *01msgcommon01
 
-[tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  val_2="undefined"  ]
+[if exp="f.note01 === 'FALSE'"]
+[tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  ]
+[tb_eval  exp="f.note01='TRUE'"  name="note01"  cmd="="  op="t"  val="0"  ]
+[endif]
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  ]
@@ -61,14 +64,17 @@ animation: fadein 1s;
 
 [call  storage="Msg_line_script_Scene_01.ks"  target="*Msg_line_Open_Common_01"  ]
 [tb_start_tyrano_code]
-[button name="back" storage="Test_Wait_Secret_Open_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="843" y="1300" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Test_Wait_01.ks" target="*testin" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="843" y="1300" clickse="UI/Config_Back_01.wav"]
 [anim name=back top=900 time=300]
 [_tb_end_tyrano_code]
 
 [s  ]
 *01msgcommon02
 
+[if exp="f.note02 === 'FALSE'"]
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  ]
+[tb_eval  exp="f.note02='TRUE'"  name="note01"  cmd="="  op="t"  val="0"  ]
+[endif]
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
@@ -127,14 +133,17 @@ animation: fadein 1s;
 
 [call  storage="Msg_line_script_Scene_01.ks"  target="*Msg_line_Open_Common_02"  ]
 [tb_start_tyrano_code]
-[button name="back" storage="Test_Wait_Secret_Open_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="843" y="1300" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Test_Wait_01.ks" target="*testin" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="843" y="1300" clickse="UI/Config_Back_01.wav"]
 [anim name=back top=900 time=300]
 [_tb_end_tyrano_code]
 
 [s  ]
 *01msgcommon03
 
+[if exp="f.note03 === 'FALSE'"]
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  ]
+[tb_eval  exp="f.note03='TRUE'"  name="note01"  cmd="="  op="t"  val="0"  ]
+[endif]
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  ]
@@ -193,7 +202,7 @@ animation: fadein 1s;
 
 [call  storage="Msg_line_script_Scene_01.ks"  target="*Msg_line_Open_Common_03"  ]
 [tb_start_tyrano_code]
-[button name="back" storage="Test_Wait_Secret_Open_01.ks" target="back" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="843" y="1300" clickse="UI/Config_Back_01.wav"]
+[button name="back" storage="Test_Wait_01.ks" target="*testin" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="843" y="1300" clickse="UI/Config_Back_01.wav"]
 [anim name=back top=900 time=300]
 [_tb_end_tyrano_code]
 

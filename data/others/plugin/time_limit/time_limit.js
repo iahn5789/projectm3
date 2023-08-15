@@ -257,7 +257,9 @@ TYRANO.kag.ftag.master_tag.delete_particle = {
     start: function (pm) {
 
         var _childNode =document.querySelector("#"+ pm.particle_name);
-        _childNode.parentNode.remove();
+        if (_childNode) {
+            _childNode.parentNode.remove();
+        }
         TYRANO.kag.ftag.nextOrder();
     }
 }
