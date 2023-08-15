@@ -3,12 +3,15 @@
 *01msgcommon01
 
 [if exp="f.note01 === 'FALSE'"]
+
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  ]
 [tb_eval  exp="f.note01='TRUE'"  name="note01"  cmd="="  op="t"  val="0"  ]
 [endif]
+
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Open_Message_01.wav"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
@@ -72,12 +75,15 @@ animation: fadein 1s;
 *01msgcommon02
 
 [if exp="f.note02 === 'FALSE'"]
+
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  ]
 [tb_eval  exp="f.note02='TRUE'"  name="note01"  cmd="="  op="t"  val="0"  ]
 [endif]
+
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  val_2="undefined"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Open_Message_01.wav"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
@@ -141,12 +147,15 @@ animation: fadein 1s;
 *01msgcommon03
 
 [if exp="f.note03 === 'FALSE'"]
+
 [tb_eval  exp="f.money-=300"  name="money"  cmd="-="  op="t"  val="300"  ]
 [tb_eval  exp="f.note03='TRUE'"  name="note01"  cmd="="  op="t"  val="0"  ]
 [endif]
+
 [tb_eval  exp="f.klove+=1"  name="klove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.jlove+=1"  name="jlove"  cmd="+="  op="t"  val="1"  ]
 [tb_eval  exp="f.slove+=1"  name="slove"  cmd="+="  op="t"  val="1"  ]
+[playse  volume="100"  time="1000"  buf="0"  storage="SFX/Open_Message_01.wav"  ]
 [tb_start_tyrano_code]
 [cm]
 [free name="money" layer=2 ]
