@@ -4,6 +4,8 @@
 	<img src='data/image/New_GUI/Log_UI/UI_Close_Bt_01.png' />
 	</div>
 
+    <audio id="backhoverAudio" src="data/sound/UI/Common_Branch_Hover_01.wav" preload="auto"></audio>
+    <audio id="backclickAudio" src="data/sound/UI/Config_Back_01.wav" preload="auto"></audio>
 	<img class="button_smart button_arrow_up" src='data/others/plugin/theme_kopanda_bth_06_blue/image/system/arrow_up.png' style='cursor:pointer;left:540px;top:100px;position:absolute;'>
 	<img class="button_smart button_arrow_down" src='data/others/plugin/theme_kopanda_bth_06_blue/image/system/arrow_down.png' style='cursor:pointer;left:680px;top:100px;position:absolute;'>
 
@@ -67,6 +69,15 @@
 			$('#touchbox').scrollTop(moveScrollY);
 		}
 	}
-});
+	});
+	$(".menu_item").mouseenter(function() {
+	    var audioElement = document.getElementById('backhoverAudio');
+	    audioElement.currentTime = 0;  // 오디오를 처음부터 재생
+	    audioElement.play();
+	}).click(function() {
+	    var clickAudioElement = document.getElementById('backclickAudio');
+	    clickAudioElement.currentTime = 0;  // 오디오를 처음부터 재생
+	    clickAudioElement.play();
+	});
 
 </script>
