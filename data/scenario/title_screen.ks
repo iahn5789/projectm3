@@ -1,6 +1,6 @@
 [_tb_system_call storage=system/_title_screen.ks]
 
-[tb_keyconfig  flag="0"  ]
+[tb_keyconfig  flag="1"  ]
 [tb_hide_message_window  ]
 [hidemenubutton]
 
