@@ -141,7 +141,6 @@
 [chara_hide_all time=300 wait=false]
 [_tb_end_tyrano_code]
 
-[playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Paper_Crumple_01.wav"  ]
 [tb_start_tyrano_code]
 #
 [t1]대용이의 하루 루틴을 듣고 있자니 또다시 귀에서 피가 나는 느낌이 들었다.[t2][p]
@@ -254,6 +253,11 @@
 [tb_start_tyrano_code]
 #
 [t1]대용이와 헤어지니 주변이 확실히 조용해졌다.[t2][p]
+[_tb_end_tyrano_code]
+
+[stopbgm  time="6000"  fadeout="true"  ]
+[stopse  time="2000"  buf="1"  fadeout="true"  ]
+[tb_start_tyrano_code]
 #
 [t1]아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해[r]걸어갔다.[t2][p]
 #
@@ -268,7 +272,6 @@
 [t1]어느새 하늘은 검은색으로 변하고 있었다.[t2][p]
 [_tb_end_tyrano_code]
 
-[stopse  time="2000"  buf="1"  fadeout="true"  ]
 [tb_hide_message_window  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [jump  storage="A_01_Prologue_03.ks"  target="*in01"  ]

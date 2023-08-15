@@ -221,7 +221,7 @@
 [t1]상상하기도 어려운 대용이의 동아리 활동 경험을 듣던[r]와중 교실 뒷문이 열렸다.[t2][p]
 [_tb_end_tyrano_code]
 
-[playse  volume="120"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_02.wav"  ]
+[playse  volume="140"  time="1000"  buf="0"  storage="SFX/Common_Sliding_Door_Open_02.wav"  ]
 [tb_start_tyrano_code]
 
 #
@@ -274,7 +274,7 @@
 [tb_hide_message_window  ]
 [bg  time="1000"  method="crossfade"  storage="Common_Sc_ClassRoom_Bgi_01_.png"  ]
 [tb_show_message_window  ]
-[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Common_Door_Noke_01.wav"  ]
+[playse  volume="90"  time="1000"  buf="0"  storage="SFX/Common_Door_Noke_01.wav"  ]
 [stopse  time="2000"  buf="0"  fadeout="true"  ]
 [tb_start_tyrano_code]
 #???
@@ -283,7 +283,7 @@
 [t1]어... 누구세요...?[t2][p]
 [_tb_end_tyrano_code]
 
-[playse  volume="60"  time="1000"  buf="0"  storage="SFX/Common_String_Stab_Soft_01.wav"  ]
+[playse  volume="80"  time="1000"  buf="0"  storage="SFX/Common_String_Stab_Soft_01.wav"  ]
 [tb_start_tyrano_code]
 #???
 [t1]러브크레센도!!!!![t2][p]
