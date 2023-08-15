@@ -71,6 +71,7 @@
 [s  ]
 *name_init
 
+[playse  volume="100"  time="1000"  buf="1"  storage="UI/Common_Branch_Click_01.wav"  ]
 [mask  time="1000"  effect="fadeIn"  color="0x000000"  ]
 [tb_ptext_hide  time="1000"  ]
 [tb_start_tyrano_code]
@@ -89,6 +90,7 @@
 
 *shake
 
+[playse  volume="100"  time="1000"  buf="2"  storage="SFX/Common_Text_Kick_01.wav"  ]
 [tb_start_tyrano_code]
 
 [ptext layer="2" name="name_error" text="불가능한&nbsp;이름입니다." size="30" x="715" y="678" color="red" face="TheJamsil5Bold" ]
@@ -101,5 +103,6 @@
 [free name="name_error" layer="2" ]
 [_tb_end_tyrano_code]
 
+[stopse  time="1000"  buf="0"  ]
 [jump  storage="input_name_scene_01.ks"  target="*name"  ]
 [s  ]
