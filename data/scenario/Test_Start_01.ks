@@ -3,6 +3,8 @@
 *teststart
 
 [tb_keyconfig  flag="0"  ]
+[stopbgm  time="1000"  ]
+[playbgm  volume="100"  time="1000"  loop="true"  storage="Exam_ingame_temporary.wav"  fadein="true"  ]
 [mask  time="2000"  effect="fadeIn"  color="0x000000"  ]
 [tb_start_tyrano_code]
 [cm]
