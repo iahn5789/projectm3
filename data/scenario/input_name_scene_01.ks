@@ -17,7 +17,7 @@
 [playse  volume="150"  time="1000"  buf="0"  storage="Amb/Amb_Crowd_Loop_cutoff_01.wav"  fadein="true"  loop="true"  ]
 [tb_hide_message_window  ]
 [tb_ptext_show  x="715"  y="408"  size="48"  color="0xffffff"  time="1000"  text="너의&nbsp;이름을&nbsp;알려줘"  face="TheJamsil5Bold"  anim="false"  edge="undefined"  shadow="undefined"  ]
-[button  storage="input_name_scene_01.ks"  target="*L_name_1"  graphic="button/Common_Button.png"  width="83"  height="47"  x="1032"  y="503"  _clickable_img=""  name="img_8"  ]
+[button  storage="input_name_scene_01.ks"  target="*L_name_1"  graphic="button/Common_Button.png"  width="83"  height="47"  x="1032"  y="503"  _clickable_img=""  name="img_8"  clickse="UI/Common_Branch_Click_01.wav"  ]
 [tb_start_tyrano_code]
 [html]
 <input required autofocus class="text_box form event-setting-element" name="sf.name" type="text" value="" placeholder="정민" data-event-tag="edit" data-event-pm='{"name":"sf.name","color":"black","left":"714","top":"483","size":"60","face":"TheJamsil5Bold","width":"480","autocomplete":"false","height":"80","maxchars":"5","reflect":"false","_tag":"edit"}' maxlength="4" autocomplete="off" style="border-radius:16px; padding-left: 8px; color: rgb(0, 0, 0); left: 714px; top: 483px; width: 400px; height: 80px; font-size: 32px; font-family: TheJamsil5Bold; position: absolute;"/>
@@ -33,7 +33,7 @@
 [cm]
 [_tb_end_tyrano_code]
 
-[button  storage="input_name_scene_01.ks"  target="*L_name_1"  graphic="button/Common_Button.png"  width="83"  height="47"  x="1032"  y="503"  _clickable_img=""  name="img_8"  ]
+[button  storage="input_name_scene_01.ks"  target="*L_name_1"  graphic="button/Common_Button.png"  width="83"  height="47"  x="1032"  y="503"  _clickable_img=""  name="img_8"  clickse="UI/Common_Branch_Click_01.wav"  ]
 [tb_start_tyrano_code]
 [html]
 <input required autofocus class="text_box form event-setting-element" name="sf.name" type="text" value="" placeholder="정민" data-event-tag="edit" data-event-pm='{"name":"sf.name","color":"black","left":"714","top":"483","size":"60","face":"TheJamsil5Bold","width":"480","autocomplete":"false","height":"80","maxchars":"5","reflect":"false","_tag":"edit"}' maxlength="4" autocomplete="off" style="border-radius:16px; padding-left: 8px; color: rgb(0, 0, 0); left: 714px; top: 483px; width: 400px; height: 80px; font-size: 32px; font-family: TheJamsil5Bold; position: absolute;"/>
