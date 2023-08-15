@@ -29,7 +29,7 @@
 [playse  volume="100"  time="1000"  buf="1"  storage="SFX/Common_Door_Noke_01.wav"  ]
 [tb_start_tyrano_code]
 #
-[t1]똑.  똑.  똑       [p]
+[t1]똑.  똑.  똑     [t2][p]
 [_tb_end_tyrano_code]
 
 [stopse  time="1000"  buf="1"  fadeout="false"  ]
