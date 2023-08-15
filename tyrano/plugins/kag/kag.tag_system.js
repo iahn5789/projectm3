@@ -162,10 +162,20 @@ tyrano.plugin.kag.tag.endhtml = {
         html_obj.css("z-index", tpm.zindex);
         $.setName(html_obj, tpm.name);
         html_obj.append($(html));
-        var layer_free = this.kag.layer.getFreeLayer();
-        layer_free.css("z-index", 9999999);
-        layer_free.append(html_obj);
-        layer_free.show();
+        if(tpm.layer != "")
+        {
+            var layer_name = $("."+ tpm.layer);
+            layer_name.css("z-index", tpm.zindex);
+            layer_name.append(html_obj);
+            layer_name.show();
+            console.log("test ......... : ", layer_name);
+        }
+        else{
+            var layer_free = this.kag.layer.getFreeLayer();
+            layer_free.css("z-index", tpm.zindex);
+            layer_free.append(html_obj);
+            layer_free.show();
+        }
         this.kag.stat.is_html = !1;
         this.kag.stat.map_html = {};
         this.kag.ftag.nextOrder()

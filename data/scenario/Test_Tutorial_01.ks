@@ -120,5 +120,5 @@
 [freeimage layer="2" time=300 wait=true]
 [_tb_end_tyrano_code]
 
-[jump  storage="Test_Wait_01.ks"  target="*bgmstart"  ]
+[jump  storage="Test_Wait_01.ks"  target="*test_wait_start"  ]
 [s  ]

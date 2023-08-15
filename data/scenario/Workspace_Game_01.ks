@@ -24,11 +24,24 @@ TYRANO.kag.ftag.startTag("return", { });
 }
 window.TYRANO.kag.stat.f.workspace_chance -= 1;
 
+
+const targetContainer = document.querySelector('.layer_free');
+
+console.log("test target: ", targetContainer);
+
+if (targetContainer) {  // 요소가 존재하는지 확인
+    targetContainer.style.setProperty('zIndex', '1000000000', 'important');
+    //targetContainer.style.zIndex = 1000000000;  // 원하는 z-index 값으로 변경
+    console.log("test z-index updated for target: ", targetContainer);
+} else {
+    console.log("Element with class 'layer_free' not found.");
+}
+
 [endscript]
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[html zindex=6]
+[html zindex=1000000000]
 
 <div id="starcatch_background" class="starcatch_background" style="animation: fadein 1s; width: 1920px; height: 1080px;background-image: url('../projectm3/data/image/New_GUI/Workspace_UI/UI_Workspace_Bgi_01.png');">
 <div id="starcatch_wrapper" style="display: block;position: absolute;top: 380px;left: 650px;pxmargin: auto;width: 579px;padding: 20px;height: 280px; border-radius: 26px">
@@ -199,7 +212,15 @@ Event_action();
 
 [s  ]
 *Success
-
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+console.log("test container : ", targetContainers);
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+console.log("test container : ", container);
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
 [tb_eval  exp="f.money+=200"  name="money"  cmd="+="  op="t"  val="200"  val_2="undefined"  ]
 [tb_start_tyrano_code]
 [iscript]
@@ -213,7 +234,7 @@ imageElement.style.display = 'none';
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[html zindex=8]
+[html zindex=1000000002]
 <style>
 .successtext {
 position:absolute;
@@ -247,7 +268,7 @@ imageElement.style.display = 'none';
 }, 500);
 [endscript]
 
-[html zindex=6]
+[html zindex=1000000000]
 <style>
 .successbgi {
 position:absolute;
@@ -263,13 +284,23 @@ animation:fadein 0.7s;
 </div>
 [endhtml]
 
-[button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="1000000001"]
 [anim name=back top=647 time=500]
 
 [_tb_end_tyrano_code]
 
 [s  ]
 *Fail
+
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+console.log("test container : ", targetContainers);
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+console.log("test container : ", container);
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
 
 [tb_start_tyrano_code]
 [iscript]
@@ -283,7 +314,7 @@ imageElement.style.display = 'none';
 [_tb_end_tyrano_code]
 
 [tb_start_tyrano_code]
-[html zindex=8]
+[html zindex=1000000002]
 <style>
 .failtext {
 position:absolute;
@@ -318,7 +349,7 @@ imageElement.style.display = 'none';
 }, 500);
 [endscript]
 
-[html zindex=6]
+[html zindex=1000000000]
 <style>
 .failbgi {
 position:absolute;
@@ -334,9 +365,9 @@ animation:fadein 0.7s;
 </div>
 [endhtml]
 
-[ptext layer=2 name="workspace_chance" page=fore text="&[f.workspace_chance]" size=20 x=583 y=-700 width=120 color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" zindex="5" ]
-[button name="restart" storage="" target="restart" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
-[button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="7"]
+[ptext layer=2 name="workspace_chance" page=fore text="&[f.workspace_chance]" size=20 x=583 y=-700 width=120 color="0x9B7900" align="right" vertical=false face="NanumGothicRegular" zindex="999999999" ]
+[button name="restart" storage="" target="restart" graphic="../image/New_GUI/Workspace_UI/Button_Fail_Restart_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Fail_Restart_02.png" width="233" height="67" x="842" y="1280" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="1000000001"]
+[button name="back" storage="Workspace_Game_01.ks" target="back" graphic="../image/New_GUI/Workspace_UI/Button_Back_01.png" enterimg="../image/New_GUI/Workspace_UI/Button_Back_02.png" width="233" height="67" x="842" y="1480" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav" zindex="1000000001"]
 [anim name=restart top=647 time=500]
 [anim name=back top=741 time=500]
 [_tb_end_tyrano_code]
@@ -391,7 +422,7 @@ animation:fadein 0.7s;
 [button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="2420" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="work" storage="Test_Wait_01.ks" target="workspace" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 ;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="setting" storage="Test_Wait_01.ks" target="setting" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="profilekang" storage="Profile_Kang_01.ks" target="profile_kang_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="399" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="profilejin" storage="Profile_Jin_01.ks" target="profile_jin_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="444" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="profilesul" storage="Profile_Sul_01.ks" target="profile_sul_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="489" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
@@ -435,14 +466,14 @@ animation:fadein 0.7s;
 [button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="1668" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="work" storage="Test_Wait_01.ks" target="callback" graphic="../image/New_GUI/Test_UI/Button_Work_03.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="1668" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 ;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="1668" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="1668" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="setting" storage="Test_Wait_01.ks" target="setting" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 
 [image layer=2 width=850 height=559 left=580 top=-700 page=fore visible=true name=workspace storage = ../image/New_GUI/Test_UI/UI_Work_01.png ]
-[button name="game01" storage="Test_Wait_Call_01.ks" target="game01" graphic="../image/New_GUI/Test_UI/Button_Work_Game_01_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_01_02.png" zindex=2 width="203" height="179" x="649" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="game02" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_02_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_02_02.png" zindex=2 width="203" height="179" x="901" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="game03" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_03_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_03_02.png" zindex=2 width="203" height="179" x="1153" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="game04" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_04_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_04_02.png" zindex=2 width="203" height="179" x="769" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
-[button name="game05" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_05_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_05_02.png" zindex=2 width="203" height="179" x="1021" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game01" storage="Test_Wait_Call_01.ks" target="game01" graphic="../image/New_GUI/Test_UI/Button_Work_Game_01_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_01_02.png" zindex=999999996 width="203" height="179" x="649" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game02" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_02_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_02_02.png" zindex=999999996 width="203" height="179" x="901" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game03" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_03_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_03_02.png" zindex=999999996 width="203" height="179" x="1153" y="-600" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game04" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_04_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_04_02.png" zindex=999999996 width="203" height="179" x="769" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
+[button name="game05" storage="Test_Wait_01.ks" target="gift" graphic="../image/New_GUI/Test_UI/Button_Work_Game_05_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_Game_05_02.png" zindex=999999996 width="203" height="179" x="1021" y="-350" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
 
 [anim name="workspace" top=0 time=1000 effect=easeInQuad]
 [anim name="game01" top=112 time=1000 effect=easeInQuad]
@@ -451,12 +482,12 @@ animation:fadein 0.7s;
 [anim name="game04" top=336 time=1000 effect=easeInQuad]
 [anim name="game05" top=336 time=1000 effect=easeInQuad]
 
-[html]
-<div class="help01">
+[html layer="tyrano_base" zindex="100000000"]
+<div class="help01 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt=""/>
 </div>
-<div class="help02">
+<div class="help02 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt=""/>
 </div>

@@ -1,14 +1,15 @@
 [_tb_system_call storage=system/_Test_Wait_01.ks]
 
-*bgmstart
+*test_wait_start
 
-[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  fadein="true"  ]
-[tb_start_tyrano_code]
 [tb_eval  exp="f.common_poster_choice_whether='FALSE'"  name="common_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.k_poster_choice_whether='FALSE'"  name="k_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.j_poster_choice_whether='FALSE'"  name="j_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
 [tb_eval  exp="f.s_poster_choice_whether='FALSE'"  name="s_poster_choice_whether"  cmd="="  op="t"  val="FALSE"  val_2="undefined"  ]
-[_tb_end_tyrano_code]
+
+*bgmstart
+
+[playbgm  volume="50"  time="1000"  loop="true"  storage="Common_Exam_Ready_BGM_01.wav"  fadein="true"  ]
 
 *testin
 
@@ -53,7 +54,7 @@
 [button name="story" storage="Test_Wait_01.ks" target="story" graphic="../image/New_GUI/Test_UI/Button_Story_01.png" enterimg="../image/New_GUI/Test_UI/Button_Story_02.png" width="233" height="67" x="2420" y="820" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="work" storage="Test_Wait_01.ks" target="workspace" graphic="../image/New_GUI/Test_UI/Button_Work_01.png" enterimg="../image/New_GUI/Test_UI/Button_Work_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 ;[button name="badge" storage="Test_Wait_01.ks" target="" graphic="../image/New_GUI/Test_UI/Button_Badge_01.png" enterimg="../image/New_GUI/Test_UI/Button_Badge_02.png" width="233" height="67" x="2420" y="901" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
-[button name="setting" storage="config.ks" role="sleepgame" fix="true" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
+[button name="setting" storage="Test_Wait_01.ks" target="setting" graphic="../image/New_GUI/Test_UI/Button_Setting_01.png" enterimg="../image/New_GUI/Test_UI/Button_Setting_02.png" width="233" height="67" x="2420" y="982" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="profilekang" storage="Profile_Kang_01.ks" target="profile_kang_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="399" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="profilejin" storage="Profile_Jin_01.ks" target="profile_jin_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="444" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="profilesul" storage="Profile_Sul_01.ks" target="profile_sul_00" graphic="../image/New_GUI/Test_UI/Button_Profile_01.png" enterimg="../image/New_GUI/Test_UI/Button_Profile_02.png" width="67" height="33" x="-300" y="489" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
@@ -68,12 +69,12 @@
 [anim name="profilejin" left=305 time=500 effect=easeInQuad]
 [anim name="profilesul" left=305 time=500 effect=easeInQuad]
 
-[html]
-<div class="help01">
+[html layer="tyrano_base" zindex="10000000"]
+<div class="help01 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Charinfo_01.png" alt=""/>
 </div>
-<div class="help02">
+<div class="help02 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Love_01.png" alt=""/>
 </div>
@@ -97,11 +98,32 @@
 [s  ]
 *gift
 
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+console.log("test container : ", targetContainers);
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+console.log("test container : ", container);
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
+
 [call  storage="Test_Wait_Call_01.ks"  target="*gift"  ]
 [jump  storage="Test_Scene_Gift_Shop_01.ks"  target="*bgm_start"  cond="f.testScene=='FALSE'"  ]
 [s  ]
 *setting
 
-[call  storage="Test_Wait_Call_01.ks"  target="*gift"  ]
-[jump  storage="Test_Wait_01.ks"  target="*callback"  cond=""  ]
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+console.log("test container : ", targetContainers);
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+console.log("test container : ", container);
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
+
+[sleepgame storage="config.ks"]
+
+[jump  storage="Test_Wait_01.ks"  target="*testin"  ]
 [s  ]

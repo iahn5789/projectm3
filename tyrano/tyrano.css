@@ -494,8 +494,9 @@ body{
 /* 시험대기창 도움말 첫 등장 출력 1번(애니메이션있음) */
 .help01{
   position:relative;
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
+  z-index: 100000000;
 }
 .help01 img{
   position:absolute;
@@ -528,8 +529,9 @@ body{
 /* 시험대기창 도움말 출력 1번(애니메이션없음) */
 .help011{
   position:relative;
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
+  z-index: 100000000;
 }
 .help011 img{
   position:absolute;
@@ -546,7 +548,7 @@ body{
   top: 37px;
   width: 454px;
   height: 251px;
-  z-index: 5;
+  z-index: 100000000;
 }
 .help011:hover .img-hover{
   display:block;
@@ -555,18 +557,20 @@ body{
   top: 37px;
   width: 454px;
   height: 251px;
+  z-index: 100000000;
 }
 
 /* 시험대기창 도움말 첫 등장 출력 2번(애니메이션있음) */
 .help02{
   position:relative;
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
+  z-index: 100000000;
 }
 .help02 img{
   position:absolute;
   left: 361px;
-  top: 222px;
+  top: 322px;
   width: 34px;
   height: 34px;
   z-index: 5;
@@ -576,7 +580,7 @@ body{
   display:none;
   position: absolute;
   left: 425px;
-  top: 222px;
+  top: 322px;
   width: 454px;
   height: 251px;
   z-index: 5;
@@ -585,7 +589,7 @@ body{
   display:block;
   position: absolute;
   left: 433px;
-  top: 190px;
+  top: 290px;
   width: 454px;
   height: 251px;
   animation: none;
@@ -593,13 +597,13 @@ body{
 /* 시험대기창 도움말 출력 2번(애니메이션없음) */
 .help022{
   position:relative;
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
 }
 .help022 img{
   position:absolute;
   left: 361px;
-  top: 222px;
+  top: 322px;
   width: 34px;
   height: 34px;
   z-index: 5;
@@ -608,7 +612,7 @@ body{
   display:none;
   position: absolute;
   left: 425px;
-  top: 222px;
+  top: 322px;
   width: 454px;
   height: 251px;
   z-index: 5;
@@ -617,7 +621,7 @@ body{
   display:block;
   position: absolute;
   left: 433px;
-  top: 190px;
+  top: 290px;
   width: 454px;
   height: 251px;
 }
@@ -625,8 +629,8 @@ body{
 /* 시험대기창 비밀쪽지 도움말 출력 (페이드인) */
 .help03{
   position:relative;
-  width: 100px;
-  height: 100px;
+  width: 0px;
+  height: 0px;
 }
 .help03 img{
   position:absolute;

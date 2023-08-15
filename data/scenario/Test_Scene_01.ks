@@ -545,17 +545,12 @@ $('.msgopen03sul').fadeOut(300);
 [jump  storage="Test_Scene_01.ks"  target="*testscene"  ]
 [s  ]
 *TestStart_Bt_Anim
+; [image layer=2 width=1080 height=638 left=464 top=-700 page=fore visible=true name=storyboard storage = ../image/New_GUI/Test_UI/UI_Storyboard_01.png ]
+; [anim name="storyboard" top=0 time=1000 effect=easeInQuad]
+; [anim name="lootkang" top=105 time=1000 effect=easeInQuad]
+; [anim name="lootjin" top=105 time=1000 effect=easeInQuad]
+; [anim name="lootsul" top=105 time=1000 effect=easeInQuad]
+; [anim name="lootcommon" top=105 time=1000 effect=easeInQuad]
 
-[tb_start_tyrano_code]
-[iscript]
-console.log("teststart_SCNEDNC")
-[endscript]
-[anim name="teststart" top=912 time=300 effect=easeInQuad]
-[anim name="msgshow" top=912 time=300 effect=easeInQuad]
-[anim name="kang_secret_bt_01" top=1100 time=300 effect=easeInQuad]
-[anim name="kang_secret_bt_02" top=1100 time=300 effect=easeInQuad]
-[anim name="test_start_bt_01" top=1100 time=1000 effect=easeInQuad]
-[anim name="test_back_bt_01" top=1100 time=1000 effect=easeInQuad]
-[_tb_end_tyrano_code]
 
 [return  ]

@@ -413,6 +413,8 @@ animation: fadein 1s;
 [clearfix name="msgcommon03"]
 
 [filter layer=all blur=10]
+
+
 [html]
 <style>
 .secretmsg01{
@@ -423,6 +425,21 @@ animation: fadein 1s;
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Secret_Msg_01.png"/>
 </div>
 [endhtml]
+
+[iscript]
+
+var secret = document.querySelector(".secretmsg01");
+if (secret)
+{
+//실행될 코드
+const targetContainers = document.getElementsByClassName('help');
+// HTMLCollection의 모든 요소에 대해 반복합니다.
+for (let container of targetContainers) {
+container.style.display = 'none'; // 컨테이너를 숨깁니다.
+}
+console.log('Container has been loaded.'); // 원하는 동작을 수행합니다.
+}
+[endscript]
 
 [button name="buy" storage="Test_Wait_Secret_Open_01.ks" target="01msgcommon01" graphic="../image/New_GUI/Test_UI/Button_Buy_01.png" enterimg="../image/New_GUI/Test_UI/Button_Buy_02.png" width="233" height="67" x="680" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]
 [button name="back" storage="Test_Wait_01.ks" target="testin" graphic="../image/New_GUI/Test_UI/Button_Back_01.png" enterimg="../image/New_GUI/Test_UI/Button_Back_02.png" width="233" height="67" x="1007" y="1200" enterse="UI/Common_Click_Hover_01.wav" clickse="UI/Config_Sellect_Click_01.wav"]

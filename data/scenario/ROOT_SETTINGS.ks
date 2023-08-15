@@ -160,8 +160,8 @@ document.querySelector(".lootcommon.event-setting-element").setAttribute("src", 
 [wa]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
 
-[html]
-<div class="help03">
+[html layer="tyrano_base" zindex="100000000"]
+<div class="help03 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt=""/>
 </div>
@@ -227,8 +227,8 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [wa]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
 
-[html]
-<div class="help03">
+[html layer="tyrano_base" zindex="100000000"]
+<div class="help03 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt=""/>
 </div>
@@ -294,8 +294,8 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [wa]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
 
-[html]
-<div class="help03">
+[html layer="tyrano_base" zindex="100000000"]
+<div class="help03 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt=""/>
 </div>
@@ -361,8 +361,8 @@ document.querySelector(".lootsul.event-setting-element").setAttribute("src", "da
 [wa]
 [anim name="teststart" top=947 time=500 effect=easeInQuad]
 
-[html]
-<div class="help03">
+[html layer="tyrano_base" zindex="100000000"]
+<div class="help03 help">
 <img class="img" src="data/image/New_GUI/Test_UI/UI_Help_01.png" alt=""/>
 <img class="img-hover" src="data/image/New_GUI/Test_UI/UI_Help_Secretmsg_01.png" alt=""/>
 </div>
