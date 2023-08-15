@@ -27,6 +27,7 @@
 
 *particleon
 
+[bg  storage="BGI/Common_Title_Screen.jpg"  method="fadeIn"  time="1"  ]
 [call  storage="Particle_Test_Scene_01.ks"  target="*Buble_particle"  ]
 [tb_start_tyrano_code]
 [cm]

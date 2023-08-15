@@ -14,6 +14,7 @@
 
 [cm  ]
 [tb_ptext_hide  time="1"  ]
+[bg  time="1"  method="crossfade"  storage="BGI/Common_Title_Screen_02.jpg"  ]
 [tb_start_tyrano_code]
 [image name=gamenote layer=0 left=-1920 top=0 page=fore visible=true storage = ../image/New_GUI/Gamenote_UI/Gamenote_Bgi_01.png ]
 [button name="gallery" storage="Gallery.ks" target="gallery_01" graphic="../image/New_GUI/Gamenote_UI/CG_Bt_01.png" enterimg="../image/New_GUI/Gamenote_UI/CG_Bt_02.png" width="374" height="601" x="-1920" y="239" enterse="UI/Config_Sellect_Hover_01.wav" clickse="UI/Common_Click_01.wav"]
