@@ -3,6 +3,15 @@
 [mask  time="300"  effect="fadeIn"  color="0x000000"  ]
 *profile_sul_00
 
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
 [tb_keyconfig  flag="0"  ]
 [bg  time="10"  method="crossfade"  storage="Profile_BGI/Profile_Sul_01.png"  ]
 [tb_start_tyrano_code]

@@ -1,23 +1,5 @@
 function a () {window.addEventListener('load', function() {
 
-  // const triggerDiv = document.querySelector('.secretmsg01');
-  // console.log("test triggerDiv : ", triggerDiv);
-
-  // const observer2 = new MutationObserver((mutationsList) => {
-  //   for (const mutation of mutationsList) {
-  //     if (mutation.type === 'childList') {
-  //       const containersWithHelp = document.querySelectorAll('.help');
-
-  //       containersWithHelp.forEach(container => {
-  //         container.style.display = 'none';
-  //       });
-  //     }
-  //   }
-  // });
-
-  // const config = { attributes: false, childList: true, subtree: true };
-
-  // observer2.observe(triggerDiv, config);
 
   const observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {

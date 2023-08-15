@@ -2,6 +2,16 @@
 
 *teststartcheck
 
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
+
 [tb_start_tyrano_code]
 [if exp="f.k_poster_choice_whether === 'TRUE'"]
 [jump  storage="Test_Wait_Teststart_01.ks"  target="teststart_kang" ]
@@ -152,9 +162,9 @@
 [anim name="labelsul" top=-200 time=300 effect=easeInQuad]
 [anim name="labelcommon" top=-200 time=300 effect=easeInQuad]
 [anim name="secretmsgcommon" top=1100 time=300 effect=easeInQuad]
-[clearfix name="msgcommon01" top=1100 time=270 effect=easeInQuad]
-[clearfix name="msgcommon02" top=1100 time=270 effect=easeInQuad]
-[clearfix name="msgcommon03" top=1100 time=270 effect=easeInQuad]
+[anim name="msgcommon01" top=1100 time=270 effect=easeInQuad]
+[anim name="msgcommon02" top=1100 time=270 effect=easeInQuad]
+[anim name="msgcommon03" top=1100 time=270 effect=easeInQuad]
 [wa]
 [bg  time="1"  method="crossfade"  storage="Test_BGI/Test_Bgi_02.png"  ]
 [clearfix name="setting"]

@@ -168,7 +168,7 @@ tyrano.plugin.kag.tag.endhtml = {
             layer_name.css("z-index", tpm.zindex);
             layer_name.append(html_obj);
             layer_name.show();
-            console.log("test ......... : ", layer_name);
+            
         }
         else{
             var layer_free = this.kag.layer.getFreeLayer();

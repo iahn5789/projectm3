@@ -220,10 +220,10 @@ Event_action();
 
 [iscript]
 const targetContainers = document.getElementsByClassName('help');
-console.log("test container : ", targetContainers);
+
 const containerArray = Array.from(targetContainers);
 for (let container of containerArray) {
-console.log("test container : ", container);
+
 container.remove(); // 컨테이너를 삭제합니다.
 }
 [endscript]
@@ -300,10 +300,10 @@ animation:fadein 0.7s;
 
 [iscript]
 const targetContainers = document.getElementsByClassName('help');
-console.log("test container : ", targetContainers);
+
 const containerArray = Array.from(targetContainers);
 for (let container of containerArray) {
-console.log("test container : ", container);
+
 container.remove(); // 컨테이너를 삭제합니다.
 }
 [endscript]

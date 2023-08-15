@@ -262,13 +262,13 @@ tyrano.plugin.kag.tag.skipstop = {
         log : "test"
     },
     start: function(pm) {
-        console.log("test console. log : ", pm.log);
+        
         btnEl = document.getElementsByClassName("SKIP");
         if (btnEl.length != 0) {
             $(btnEl).remove();
         }
         this.kag.stat.is_skip = !1;
-        console.log("test console. skip stop next : ", pm.next);
+        
         if(pm.next){
             this.kag.ftag.nextOrder()
         }
@@ -328,7 +328,7 @@ tyrano.plugin.kag.tag.autoconfig = {
     start: function(pm) {
         if ("" != pm.speed) {
             this.kag.config.autoSpeed = pm.speed;
-            console.log("test speed : ", pm.speed)
+            
             this.kag.ftag.startTag("eval", {
                 exp: "sf._system_config_auto_speed = " + pm.speed,
                 next: "false"

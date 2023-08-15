@@ -27,12 +27,12 @@ window.TYRANO.kag.stat.f.workspace_chance -= 1;
 
 const targetContainer = document.querySelector('.layer_free');
 
-console.log("test target: ", targetContainer);
+
 
 if (targetContainer) {  // 요소가 존재하는지 확인
     targetContainer.style.setProperty('zIndex', '1000000000', 'important');
     //targetContainer.style.zIndex = 1000000000;  // 원하는 z-index 값으로 변경
-    console.log("test z-index updated for target: ", targetContainer);
+    
 } else {
     console.log("Element with class 'layer_free' not found.");
 }
@@ -286,19 +286,19 @@ animation:fadein 0.7s;
 
 [iscript]
 const targetContainers = document.getElementsByClassName('help');
-console.log("test container : ", targetContainers);
+
 const containerArray = Array.from(targetContainers);
 for (let container of containerArray) {
-console.log("test container : ", container);
+
 container.remove(); // 컨테이너를 삭제합니다.
 }
 [endscript]
 [iscript]
 const targetContainers = document.getElementsByClassName('help');
-console.log("test container : ", targetContainers);
+
 const containerArray = Array.from(targetContainers);
 for (let container of containerArray) {
-console.log("test container : ", container);
+
 container.remove(); // 컨테이너를 삭제합니다.
 }
 [endscript]

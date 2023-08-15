@@ -3,6 +3,15 @@
 [mask  time="300"  effect="fadeIn"  color="0x000000"  ]
 *profile_jin_00
 
+[iscript]
+const targetContainers = document.getElementsByClassName('help');
+
+const containerArray = Array.from(targetContainers);
+for (let container of containerArray) {
+
+container.remove(); // 컨테이너를 삭제합니다.
+}
+[endscript]
 [tb_keyconfig  flag="0"  ]
 [tb_start_tyrano_code]
 [free name="money" layer=2 ]

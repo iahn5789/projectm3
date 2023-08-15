@@ -78,7 +78,7 @@ tyrano.plugin.kag.menu = {
             j_save.find(".save_display_area").each((function() {
                 $(this).click((function(e) {
                     var num = $(this).attr("data-num");
-                    console.log("test array[num] : ",array[num]);
+                    
                     if (array[num].title != "빈 슬롯입니다."){
                         that.kag.html("confirm",{},(function(html_str){
                             var j_confirm = $(html_str);

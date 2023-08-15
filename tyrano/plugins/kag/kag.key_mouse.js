@@ -76,7 +76,7 @@ tyrano.plugin.kag.key_mouse = {
                 if (1 == that.is_keydown) return "true" == __tyrano_key_config.system_key_event;
                 that.is_keydown = !0;
                 var keycode = e.keyCode;
-                console.log("test keydown start : ", keycode)
+                
                 that.map_key[keycode] && ("function" == typeof that.map_key[keycode] ? that.map_key[keycode]() : that[that.map_key[keycode]] && that[that.map_key[keycode]]())
             }
         }));
@@ -139,7 +139,7 @@ tyrano.plugin.kag.key_mouse = {
                     that.kag.stat.is_click_text = !0;
                     return !1
                 }
-                console.log("test nextOrder to click1");
+                
                 that.kag.ftag.nextOrder();
                 return !1
             }
@@ -158,7 +158,7 @@ tyrano.plugin.kag.key_mouse = {
             if (1 == that.kag.stat.is_click_text) return !1;
             if (1 == that.kag.stat.is_stop) return !1;
             1 == that.kag.stat.fuki.active && that.kag.layer.hideMessageLayers();
-            console.log("test nextOrder to click2");
+            
             that.kag.ftag.nextOrder()
         }))
     },
