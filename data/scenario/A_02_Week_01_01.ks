@@ -203,7 +203,7 @@
 [t1]아...아니 그러니까 나는...[t2][p]
 [chara_hide name="Kang" time=300 wait=false]
 [chara_part name="Jin" body="3" face="4" ]
-[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
+[chara_show name="Jin" time=300 wait=false top="0" left="554" width="813" height="1903"]
 #진다영
 [t1]시끄러워! 변태! 호색한! 대머리![t2][p]
 [_tb_end_tyrano_code]
@@ -216,7 +216,7 @@
 [t1]그만! 내가 불러서 온 친구란 말이야![t2][p]
 #진다영
 [t1]찐따! 찌질이! 버러지! 거지![t2][p]
-[chara_hide name="Jin" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Kang" body="1" face="5" ]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
@@ -224,7 +224,7 @@
 [t1]진다영!!![t2][p]
 [chara_hide name="Kang" time=300 wait=false]
 [chara_part name="Jin" body="1" face="4" ]
-[chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
+[chara_show name="Jin" time=300 wait=false top="0" left="554" width="813" height="1903"]
 #진다영
 [t1]내가 틀린 말 했어?! 왜 소리를 지르고 그래![t2][p]
 #&[sf.name]
@@ -236,7 +236,7 @@
 [t1]미...미안...[t2][p]
 #설나희
 [t1]...그 친구야...?[t2][p]
-[chara_hide name="Jin" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Kang" body="2" face="1" ]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
@@ -246,7 +246,7 @@
 #진다영
 [t1]이 변태가 괜찮다고? 다들 무슨 생각을 하는거야![t2][p]
 [sul_ill]
-[chara_hide name="Kang" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Sul" body="3" face="1" ]
 [chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #설나희
@@ -289,7 +289,7 @@
 [t1]흥! 뭘 봐 이 변태야![t2][p]
 #&[sf.name]
 [t1]난 변태가 아닌데...[t2][p]
-[chara_hide name="Jin" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Kang" body="2" face="1"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
@@ -300,7 +300,7 @@
 [chara_part name="Kang" body="2" face="1"]
 #강여진
 [t1]아니면 더 좋은 생각이 있어? 지금은 별다른 수가[r]없잖아...[t2][p]
-[chara_hide name="Kang" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Jin" body="1" face="8"]
 [chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
@@ -339,7 +339,7 @@
 [t1]우리 둘이 싸우고 있으니까 민망해서 들어오지도 못하고 [r]밖에 서 있었던 거 아니야![t2][p]
 #설나희
 [t1]…그건 맞지…[t2][p]
-[chara_hide name="Kang" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Jin" body="1" face="4"]
 [chara_show name="Jin" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #진다영
@@ -358,13 +358,13 @@
 #진다영
 [t1]생각해 본 적도 없지?[t2][p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
-[chara_hide name="Jin" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Kang" body="2" face="5"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
 [t1]보...보컬을 맡길 생각이야! 아마 맡겨놓으면 제대로 [r]할 수 있을 거야![t2][p]
 [quake  time="300"  count="3"  hmax="5"  wait="false"  vmax="5"  ]
-[chara_hide name="Kang" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Jin" body="3" face="4"]
 [chara_show name="Jin" time=300 wait=false top="0" left="375" width="1169" height="2735"]
 #진다영

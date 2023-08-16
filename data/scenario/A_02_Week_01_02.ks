@@ -340,7 +340,7 @@
 [tb_start_tyrano_code]
 [sul_ill]
 [jeon_ill]
-[chara_hide name="Jeon" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Sul" body="2" face="1"]
 [chara_show name="Sul" time=300 wait=false top="0" left="553" width="813" height="1903"]
 
@@ -476,7 +476,7 @@
 [t1]…후[t2][p]
 #설나희
 [t1]교무실 다녀온 거 맞아...?[t2][p]
-[chara_hide name="Sul" time=300 wait=false]
+[chara_hide_all time=300 wait=false]
 [chara_part name="Kang" body="1" face="1"]
 [chara_show name="Kang" time=300 wait=false top="0" left="553" width="813" height="1903"]
 #강여진
