@@ -5,7 +5,7 @@
 [iscript] 
 f['null']=''; 
 f['money']=1000; 
-f['klove']=22; 
+f['klove']=20; 
 f['jlove']=20; 
 f['slove']=20; 
 f['Day']=1; 
@@ -30,9 +30,9 @@ f['testScene']='FALSE';
 f['testTime']=30; 
 f['testResult']=0; 
 f['change_number']='-12'; 
-f['kTopDay']=5; 
-f['sTopDay']=''; 
-f['jTopDay']=''; 
+f['kTopDay']=1; 
+f['sTopDay']=1; 
+f['jTopDay']=1; 
 f['workspace_chance']=5; 
 f['workspace_state']='FALSE'; 
 f['star01']='FALSE'; 

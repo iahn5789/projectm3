@@ -94,7 +94,7 @@
 *Common_Bt_Click
 
 [tb_start_tyrano_code]
-[if exp="f.klove >= 19"]
+[if exp="f.klove >= 21"]
 [jump  storage="ROOT_SETTINGS.ks"  target="*Common_Bt_Click_02"  cond="f.testScene=='FALSE'"  ]
 [else]
 ;호감도가 안될때

@@ -143,7 +143,9 @@
 [tb_show_message_window  ]
 [tb_start_tyrano_code]
 #
-[t1]전대용[t2][p]전학을 오자마자 친해진 유일한 친구다.[t2][t1][p]재미도 있고 은근히 아는 것도 많지만...[t2][p]
+[t1]전대용[t2][p]
+[t1]전학을 오자마자 친해진 유일한 친구다.[t2][p]
+[t1]재미도 있고 은근히 아는 것도 많지만...[t2][p]
 [chara_hide name="Jeon" ]
 [_tb_end_tyrano_code]
 
