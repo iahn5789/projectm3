@@ -1,6 +1,0 @@
-[preload  storage="./data/bgimage/Common_Home_Dirtyroom_Bgi_Night_01.png"  ]
-[preload  storage="./data/bgimage/Common_Home_Dirtyroom_Bgi_01.png"  ]
-[preload  storage="./data/bgimage/Common_Road_Bgi_02.png"  ]
-[preload  storage="./data/bgimage/Common_Sc_ClassRoom_Bgi_01_.png"  ]
-[preload  storage="./data/bgimage/CG/Kang_CG_01.png"  ]
-[return]
