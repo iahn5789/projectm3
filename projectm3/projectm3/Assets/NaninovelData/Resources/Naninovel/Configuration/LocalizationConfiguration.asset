@@ -9,19 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c89ad71654f08844b3f0a643b14912a, type: 3}
-  m_Name: MoviesConfiguration
+  m_Script: {fileID: 11500000, guid: e7211bd8c0ca06c4793502a6e355d374, type: 3}
+  m_Name: LocalizationConfiguration
   m_EditorClassIdentifier: 
   Loader:
-    PathPrefix: Movies
+    PathPrefix: Localization
     ProviderTypes:
     - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  SkipOnInput: 1
-  SkipFrames: 1
-  FadeDuration: 0
-  CustomFadeTexture: {fileID: 0}
-  PlayIntroMovie: 0
-  IntroMovieName: Titleintro_02
+  SourceLocale: en
+  DefaultLocale: 
