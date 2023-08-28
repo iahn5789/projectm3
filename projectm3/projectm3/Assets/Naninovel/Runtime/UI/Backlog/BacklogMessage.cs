@@ -23,11 +23,11 @@ namespace Naninovel
         protected virtual Button PlayVoiceButton => playVoiceButton;
         protected virtual Button RollbackButton => rollbackButton;
 
-        [Tooltip("Panel hosting author name text (optional). When assigned will be de-activated based on whether author is assigned.")]
+        [Tooltip("패널 호스팅 작성자 이름 텍스트(선택사항). 할당되면 작성자의 할당 여부에 따라 비활성화됩니다.")]
         [SerializeField] private GameObject authorPanel;
-        [Tooltip("Button to replay voice associated with the message (optional).")]
+        [Tooltip("메시지와 관련된 음성을 재생하는 버튼(선택사항).")]
         [SerializeField] private Button playVoiceButton;
-        [Tooltip("Button to perform rollback to the moment the messages was added (optional).")]
+        [Tooltip("메시지가 추가된 순간으로 롤백을 수행하는 버튼(선택 사항).")]
         [SerializeField] private Button rollbackButton;
         [SerializeField] private OnMessageChangedEvent onMessageChanged;
         [SerializeField] private OnAuthorChangedEvent onAuthorChanged;

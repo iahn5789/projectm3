@@ -16,7 +16,7 @@ namespace Naninovel.UI
         [ManagedText("DefaultUI")]
         protected static string ExtraLarge = "Extra Large";
 
-        [Tooltip("Index of the dropdown list associated with default font size.")]
+        [Tooltip("기본 글꼴 크기와 관련된 드롭다운 목록의 인덱스입니다.")]
         [SerializeField] private int defaultSizeIndex = 1;
 
         private IUIManager uiManager;

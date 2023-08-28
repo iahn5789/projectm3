@@ -13,11 +13,11 @@ namespace Naninovel
         [System.Serializable]
         private class ThresholdReachedEvent : UnityEvent<bool> { }
 
-        [Tooltip("When scene aspect ratio (width divided by height) goes above or below the value, the event will be invoked.")]
+        [Tooltip("장면 종횡비(폭을 높이로 나눈 값)가 값을 상회하거나 하회하면 이벤트가 호출됩니다.")]
         [SerializeField] private float aspectThreshold = 1f;
-        [Tooltip("How frequently update the values, in seconds."), Range(0f, 1f)]
+        [Tooltip("값을 업데이트하는 빈도(초)입니다."), Range(0f, 1f)]
         [SerializeField] private float updateDelay = .5f;
-        [Tooltip("Invoked when scene aspect ratio (width divided by height) is changed and become either equal or above (true) or below (false) specified threshold.")]
+        [Tooltip("장면 종횡비(폭을 높이로 나눈 값)가 변경되어 지정된 임계값 이상(참값) 또는 미만(거짓값)이 될 때 호출됩니다.")]
         [SerializeField] private ThresholdReachedEvent onThresholdReached;
 
         private AspectMonitor aspectMonitor;

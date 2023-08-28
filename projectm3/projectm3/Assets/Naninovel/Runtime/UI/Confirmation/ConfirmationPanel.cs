@@ -17,11 +17,11 @@ namespace Naninovel.UI
         protected virtual Button CloseButton => closeButton;
         protected virtual bool? Confirmed { get; private set; }
 
-        [Tooltip("Used to agree on confirmation dialogue.")]
+        [Tooltip("확인 대화에 동의하는 데 사용됩니다.")]
         [SerializeField] private Button confirmButton;
-        [Tooltip("Used to cancel on confirmation dialogue.")]
+        [Tooltip("확인 대화 시 취소하는 데 사용됩니다.")]
         [SerializeField] private Button cancelButton;
-        [Tooltip("Used to close notification dialogue.")]
+        [Tooltip("알림 대화를 닫는 데 사용됩니다.")]
         [SerializeField] private Button closeButton;
         [SerializeField] private OnMessageChangedEvent onMessageChanged;
 

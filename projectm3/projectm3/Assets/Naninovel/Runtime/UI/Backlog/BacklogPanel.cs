@@ -33,27 +33,27 @@ namespace Naninovel.UI
         [SerializeField] private RectTransform messagesContainer;
         [SerializeField] private ScrollRect scrollRect;
         [SerializeField] private BacklogMessage messagePrefab;
-        [Tooltip("Whether to clear the backlog when loading another script or resetting state (exiting to title).")]
+        [Tooltip("다른 스크립트를 로드할 때 또는 상태를 재설정할 때(타이틀로 종료) 백로그를 지울지 여부입니다.")]
         [SerializeField] private bool clearOnLoad = true;
-        [Tooltip("Whether to clear the backlog when changing game localization (language).")]
+        [Tooltip("게임 현지화(언어)를 변경할 때 밀린 작업을 지울지 여부입니다.")]
         [SerializeField] private bool clearOnLocaleChange = true;
-        [Tooltip("How many messages should the backlog keep.")]
+        [Tooltip("백로그가 보관해야 할 메시지 수.")]
         [SerializeField] private int capacity = 100;
-        [Tooltip("How many messages should the backlog keep when saving the game.")]
+        [Tooltip("게임을 저장할 때 백로그에 저장해야 하는 메시지 수.")]
         [SerializeField] private int saveCapacity = 30;
-        [Tooltip("Whether to strip formatting content (content inside `<` `>` and the angle brackets themselves) from the added messages.")]
+        [Tooltip("추가된 메시지에서 포맷 콘텐츠('<'<'>'안의 콘텐츠와 각괄호 자체)를 삭제할지 여부입니다.")]
         [SerializeField] private bool stripTags = true;
-        [Tooltip("Whether to add choices summary to the log.")]
+        [Tooltip("선택 요약을 로그에 추가할지 여부입니다.")]
         [SerializeField] private bool addChoices = true;
-        [Tooltip("Template to use for selected choice summary. " + choiceTemplateLiteral + " will be replaced with the actual choice summary.")]
+        [Tooltip("선택한 선택 요약에 사용할 템플릿입니다. " + choiceTemplateLiteral + "는 실제 선택 요약으로 대체됩니다.")]
         [SerializeField] private string selectedChoiceTemplate = $"    <b>{choiceTemplateLiteral}</b>";
-        [Tooltip("Template to use for other (not selected) choice summary. " + choiceTemplateLiteral + " will be replaced with the actual choice summary.")]
+        [Tooltip("다른(선택하지 않은) 선택 요약에 사용할 템플릿입니다. " + choiceTemplateLiteral + "는 실제 선택 요약으로 대체됩니다.")]
         [SerializeField] private string otherChoiceTemplate = $"    <color=#ffffff88>{choiceTemplateLiteral}</color>";
-        [Tooltip("String added between consequent choices.")]
+        [Tooltip("결과 선택 사이에 문자열이 추가되었습니다.")]
         [SerializeField] private string choiceSeparator = "<br>";
-        [Tooltip("Whether to allow replaying voices associated with the backlogged messages.")]
+        [Tooltip("백로깅된 메시지와 관련된 음성 재생을 허용할지 여부입니다.")]
         [SerializeField] private bool allowReplayVoice = true;
-        [Tooltip("Whether to allow rolling back to playback spots associated with the backlogged messages.")]
+        [Tooltip("백로깅된 메시지와 관련된 재생 자리로의 롤백을 허용할지 여부입니다.")]
         [SerializeField] private bool allowRollback = true;
 
         private const int messageLengthLimit = 10000; // Due to Unity's mesh verts count limit.

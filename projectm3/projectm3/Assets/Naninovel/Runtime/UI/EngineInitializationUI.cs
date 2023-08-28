@@ -12,7 +12,7 @@ namespace Naninovel.Runtime.UI
     /// </remarks>
     public class EngineInitializationUI : ScriptableUIBehaviour
     {
-        [Tooltip("Event invoked when engine initialization progress is changed, in 0.0 to 1.0 range.")]
+        [Tooltip("엔진 초기화 진행률이 0.0 ~ 1.0 범위에서 변경될 때 이벤트가 호출됩니다.")]
         [SerializeField] private FloatUnityEvent onInitializationProgress;
 
         protected override void OnEnable ()

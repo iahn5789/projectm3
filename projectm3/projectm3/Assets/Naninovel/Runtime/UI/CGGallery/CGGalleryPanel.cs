@@ -18,14 +18,14 @@ namespace Naninovel.UI
         protected virtual CGViewerPanel ViewerPanel => viewerPanel;
         protected virtual CGGalleryGrid Grid => grid;
 
-        [Tooltip("The specified resource loaders will be used to retrieve the available CG slots and associated textures.")]
+        [Tooltip("지정된 리소스 로더를 사용하여 사용 가능한 CG 슬롯 및 관련 텍스처를 검색합니다.")]
         [SerializeField] private ResourceLoaderConfiguration[] cgSources = {
             new ResourceLoaderConfiguration { PathPrefix = $"{UnlockablesConfiguration.DefaultPathPrefix}/{CGPrefix}" },
             new ResourceLoaderConfiguration { PathPrefix = $"{BackgroundsConfiguration.DefaultPathPrefix}/{BackgroundsConfiguration.MainActorId}/{CGPrefix}" }
         };
-        [Tooltip("Used to view selected CG slots.")]
+        [Tooltip("선택한 CG 슬롯을 보는 데 사용됩니다.")]
         [SerializeField] private CGViewerPanel viewerPanel;
-        [Tooltip("Used to host and navigate selectable CG preview thumbnails.")]
+        [Tooltip("선택 가능한 CG 미리 보기 썸네일을 호스팅하고 탐색하는 데 사용됩니다.")]
         [SerializeField] private CGGalleryGrid grid;
 
         private IResourceProviderManager providerManager;

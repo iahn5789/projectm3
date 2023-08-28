@@ -11,9 +11,9 @@ namespace Naninovel.UI
     {
         protected virtual string ShaderName { get; } = "Naninovel/TransitionalUI";
 
-        [Tooltip("The image where the assigned CGs will be shown.")]
+        [Tooltip("할당된 CG가 표시되는 이미지입니다.")]
         [SerializeField] private RawImage contentImage;
-        [Tooltip("When multiple CGs assigned, controls crossfade duration, in seconds.")]
+        [Tooltip("여러 CG가 할당되면 크로스페이드 기간(초)을 제어합니다.")]
         [SerializeField] private float crossfadeDuration = .3f;
 
         private readonly Queue<Texture2D> textureQueue = new Queue<Texture2D>();

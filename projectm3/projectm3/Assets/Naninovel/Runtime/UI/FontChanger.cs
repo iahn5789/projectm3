@@ -10,7 +10,7 @@ namespace Naninovel.Runtime.UI
 {
     public class FontChanger : MonoBehaviour
     {
-        [Tooltip("Setup which game objects should be affected by font and text size changes (set in game settings).")]
+        [Tooltip("글꼴 및 텍스트 크기 변경(게임 설정에서 설정)의 영향을 받는 게임 개체를 설정합니다.")]
         [SerializeField] private CustomUI.FontChangeConfiguration[] configuration;
 
         private IUIManager uiManager;

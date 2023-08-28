@@ -29,29 +29,29 @@ namespace Naninovel.UI
         protected virtual Canvas TopmostCanvas => topmostCanvasCache ? topmostCanvasCache : topmostCanvasCache = gameObject.FindTopmostComponent<Canvas>();
         protected virtual bool Edited => !Application.isPlaying || ObjectUtils.IsEditedInPrefabMode(gameObject);
 
-        [Tooltip("Vertical line offset to use for the ruby (furigana) text; supported units: em, px, %.")]
+        [Tooltip("루비(후리가나) 텍스트에 사용할 수직 선 간격띄우기, 지원되는 단위: em, px, %.")]
         [SerializeField] private string rubyVerticalOffset = "1em";
-        [Tooltip("Font size scale (relative to the main text font size) to apply for the ruby (furigana) text.")]
+        [Tooltip("루비(후리가나) 텍스트에 적용할 글꼴 크기 척도(기본 텍스트 글꼴 크기에 상대적).")]
         [SerializeField] private float rubySizeScale = .5f;
-        [Tooltip("Whether to compensate (add) line height for the lines that contain ruby tags.")]
+        [Tooltip("루비 태그가 포함된 선에 대해 선 높이를 보상(추가)할지 여부입니다.")]
         [SerializeField] private bool addRubyLineHeight = true;
-        [Tooltip("Whether to automatically unlock associated tip records when text wrapped in <tip> tags is printed.")]
+        [Tooltip("<tip> 태그로 포장된 텍스트를 인쇄할 때 관련 팁 레코드의 잠금을 자동으로 해제할지 여부입니다.")]
         [SerializeField] private bool unlockTipsOnPrint = true;
-        [Tooltip("Template to use when processing text wrapped in <tip> tags. " + tipTemplateLiteral + " will be replaced with the actual tip content.")]
+        [Tooltip("<tip> 태그로 포장된 텍스트를 처리할 때 사용할 템플릿입니다. " + tipTemplateLiteral + "는 실제 팁 내용으로 대체됩니다.")]
         [SerializeField] private string tipTemplate = $"<u>{tipTemplateLiteral}</u>";
-        [Tooltip("Invoked when a text wrapped in <tip> tags is clicked; returned string argument is the ID of the clicked tip. Be aware, that the default behaviour (showing `ITipsUI` when a tip is clicked) won't be invoked when a custom handler is assigned.")]
+        [Tooltip("<tip> 태그로 포장된 텍스트를 클릭할 때 호출됩니다. 반환된 문자열 인수는 클릭한 팁의 ID입니다. 사용자 지정 핸들러가 할당되었을 때 기본 동작(팁을 클릭하면 'ITipsUI' 표시)이 호출되지 않습니다.")]
         [SerializeField] private StringUnityEvent onTipClicked;
-        [Tooltip("Whether to modify the text to support arabic languages (fix letters connectivity issues).")]
+        [Tooltip("아랍어를 지원하도록 텍스트를 수정할지 여부(글자 연결 문제 수정).")]
         [SerializeField] private bool fixArabicText;
-        [Tooltip("When `Fix Arabic Text` is enabled, controls to whether also fix Farsi characters.")]
+        [Tooltip("아랍어 텍스트 수정을 활성화하면 파르시 문자도 수정할 수 있는지 여부를 제어합니다.")]
         [SerializeField] private bool fixArabicFarsi = true;
-        [Tooltip("When `Fix Arabic Text` is enabled, controls to whether also fix rich text tags.")]
+        [Tooltip("'아랍어 텍스트 수정'을 활성화하면 리치 텍스트 태그도 수정할지 여부를 제어합니다.")]
         [SerializeField] private bool fixArabicTextTags = true;
-        [Tooltip("When `Fix Arabic Text` is enabled, controls to whether preserve numbers.")]
+        [Tooltip("아랍어 텍스트 수정을 활성화하면 숫자 보존 여부를 제어합니다.")]
         [SerializeField] private bool fixArabicPreserveNumbers;
-        [Tooltip("Template to use when processing text wrapped in <link> tags. " + linkTemplateLiteral + " will be replaced with the actual tip content. When nothing is specified, the link tags won't be modified.")]
+        [Tooltip("<link> 태그로 포장된 텍스트를 처리할 때 사용할 템플릿입니다. " + linkTemplateLiteral + "는 실제 팁 내용으로 대체됩니다. 아무것도 지정되지 않은 경우 링크 태그는 수정되지 않습니다.")]
         [SerializeField] private string linkTemplate = $"<u>{linkTemplateLiteral}</u>";
-        [Tooltip("Invoked when a text wrapped in <link> tags is clicked.")]
+        [Tooltip("<link> 태그로 포장된 텍스트를 클릭하면 호출됩니다.")]
         [SerializeField] private LinkClickedEvent onLinkClicked;
 
         private const string tipIdPrefix = "NANINOVEL.TIP.";

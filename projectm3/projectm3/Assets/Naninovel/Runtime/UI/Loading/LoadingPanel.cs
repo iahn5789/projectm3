@@ -6,7 +6,7 @@ namespace Naninovel.UI
 {
     public class LoadingPanel : CustomUI, ILoadingUI
     {
-        [Tooltip("Event invoked when script preload progress is changed, in 0.0 to 1.0 range.")]
+        [Tooltip("0.0 ~ 1.0 범위의 스크립트 프리로드 진행률이 변경될 때 이벤트가 호출됩니다.")]
         [SerializeField] private FloatUnityEvent onProgressChanged;
 
         private IStateManager stateManager;

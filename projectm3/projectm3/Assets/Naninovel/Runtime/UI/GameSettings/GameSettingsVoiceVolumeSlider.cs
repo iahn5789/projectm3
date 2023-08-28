@@ -6,7 +6,7 @@ namespace Naninovel.UI
 {
     public class GameSettingsVoiceVolumeSlider : ScriptableSlider
     {
-        [Tooltip("When provided, the slider will control voice volume of the printed message author (character actor) with the provided ID. When empty will control voice mixer group volume.")]
+        [Tooltip("제공된 경우 슬라이더는 제공된 ID로 인쇄된 메시지 작성자(캐릭터 배우)의 음성 볼륨을 제어합니다. 비어 있으면 음성 믹서 그룹 볼륨을 제어합니다.")]
         [SerializeField] private string authorId;
 
         private IAudioManager audioManager;

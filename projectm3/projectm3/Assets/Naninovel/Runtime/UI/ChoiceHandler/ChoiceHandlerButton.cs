@@ -20,7 +20,7 @@ namespace Naninovel.UI
 
         public ChoiceState ChoiceState { get; private set; }
 
-        [Tooltip("Invoked when the choice summary text is changed.")]
+        [Tooltip("선택 요약 텍스트가 변경되면 호출됩니다.")]
         [SerializeField] private SummaryTextChangedEvent onSummaryTextChanged;
 
         public virtual void Initialize (ChoiceState choiceState)

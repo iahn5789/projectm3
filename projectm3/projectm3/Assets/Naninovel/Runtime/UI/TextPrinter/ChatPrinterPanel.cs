@@ -46,7 +46,7 @@ namespace Naninovel.UI
         [SerializeField] private ChatMessage messagePrototype;
         [SerializeField] private ScriptableUIBehaviour inputIndicator;
         [SerializeField] private float revealDelayModifier = 3f;
-        [Tooltip("Associated choice handler actor ID to embed inside the printer; implementation is expected to be MonoBehaviourActor-derived.")]
+        [Tooltip("프린터에 내장할 관련 선택 핸들러 액터 ID. 구현은 MonoBehaviourActor 파생 모델로 예상됩니다.")]
         [SerializeField] private string choiceHandlerId = "ChatReply";
         [SerializeField] private RectTransform choiceHandlerContainer;
 

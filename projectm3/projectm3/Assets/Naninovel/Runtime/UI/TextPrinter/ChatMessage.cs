@@ -27,7 +27,7 @@ namespace Naninovel.UI
         [SerializeField] private AuthorNamePanel actorNamePanel;
         [SerializeField] private Image messageFrameImage;
         [SerializeField] private RawImage avatarImage;
-        [Tooltip("Invoked when the message text is changed.")]
+        [Tooltip("메시지 텍스트가 변경되면 호출됩니다.")]
         [SerializeField] private MessageTextChangedEvent onMessageTextChanged;
         [SerializeField] private UnityEvent onStartTyping;
         [SerializeField] private UnityEvent onStopTyping;

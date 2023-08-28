@@ -24,9 +24,9 @@ namespace Naninovel.UI
         protected virtual RawImage ThumbnailImage => thumbnailImage;
         protected virtual Texture2D EmptySlotThumbnail => emptySlotThumbnail;
 
-        [Tooltip("Format of the date set in the title. For available options see C# docs for date and time format strings.")]
+        [Tooltip("제목에 설정된 날짜 형식. 사용 가능한 옵션은 C# 문서에서 날짜 및 시간 형식 문자열을 참조하십시오.")]
         [SerializeField] private string dateFormat = "yyyy-MM-dd HH:mm:ss";
-        [Tooltip("Title template. `{N}` is replaced with the slot number, `{D}` — with the date (or empty label when the slot is empty).")]
+        [Tooltip("제목 템플릿. '{N}'은 슬롯 번호 '{D}' - 날짜(또는 슬롯이 비어 있는 경우 레이블이 비어 있음)로 대체됩니다.")]
         [SerializeField] private string titleTemplate = "{N}. {D}";
         [SerializeField] private Button deleteButton;
         [SerializeField] private RawImage thumbnailImage;
