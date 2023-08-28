@@ -20,13 +20,13 @@ namespace Naninovel
         protected virtual Button Button => button;
         protected virtual GameObject SelectedIndicator => selectedIndicator;
 
-        [Tooltip("Tip label template. `{N}` will be replaced with the record number, `{T}` — with the title.")]
+        [Tooltip("팁 레이블 템플릿. '{N}'은 레코드 번호 '{T}'로 대체됩니다. - 제목.")]
         [SerializeField] private string template = "{N}. {T}";
-        [Tooltip("Record title to set when the tip item is locked.")]
+        [Tooltip("팁 항목이 잠겼을 때 설정할 레코드 제목.")]
         [SerializeField] private string lockedTitle = "???";
-        [Tooltip("The tip button.")]
+        [Tooltip("팁 버튼")]
         [SerializeField] private Button button;
-        [Tooltip("When assigned, the game object will be activated when the tip is selected.")]
+        [Tooltip("할당되면 팁을 선택하면 게임 개체가 활성화됩니다.")]
         [SerializeField] private GameObject selectedIndicator;
         [SerializeField] private OnLabelChangedEvent onLabelChanged;
         [SerializeField] private OnLabelStyleChangedEvent onLabelStyleChanged;

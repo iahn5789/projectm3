@@ -13,7 +13,7 @@ namespace Naninovel.UI
         protected virtual float PingPongTime => pingPongTime;
         protected virtual float RevealTime => revealTime;
 
-        [Tooltip("Whether to tint the image in ping and pong colors when visible.")]
+        [Tooltip("보일 때 이미지를 핑 및 퐁 색상으로 색칠할지 여부입니다.")]
         [SerializeField] private bool tintPingPong = true;
         [SerializeField] private Color pingColor = ColorUtils.ClearWhite;
         [SerializeField] private Color pongColor = Color.white;

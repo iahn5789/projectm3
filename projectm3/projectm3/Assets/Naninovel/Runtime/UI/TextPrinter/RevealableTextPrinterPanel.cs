@@ -21,9 +21,9 @@ namespace Naninovel.UI
         [Serializable]
         protected class CharsToSfx
         {
-            [Tooltip("The characters for which to trigger the SFX. Leave empty to trigger on any character.")]
+            [Tooltip(""SFX"를 트리거할 문자. 모든 문자를 트리거하려면 비워 둡니다")]
             public string Characters;
-            [Tooltip("The name (local path) of the SFX to trigger for the specified characters.")]
+            [Tooltip("지정된 문자에 대해 트리거할 SFX의 이름(로컬 경로")]
             [ResourcePopup(AudioConfiguration.DefaultAudioPathPrefix)]
             public string SfxName;
         }
@@ -31,9 +31,9 @@ namespace Naninovel.UI
         [Serializable]
         protected class CharsToPlaylist
         {
-            [Tooltip("The characters for which to trigger the command. Leave empty to trigger on any character.")]
+            [Tooltip("명령을 트리거할 문자입니다. 문자를 트리거하려면 비워 둡니다.")]
             public string Characters;
-            [Tooltip("The text of the script command to execute for the specified characters.")]
+            [Tooltip("지정한 문자에 대해 실행할 스크립트 명령의 텍스트입니다.")]
             public string CommandText;
             public ScriptPlaylist Playlist { get; set; }
         }
@@ -64,19 +64,19 @@ namespace Naninovel.UI
         [SerializeField] private AuthorImage authorAvatarImage;
         [FormerlySerializedAs("inputIndicatorPrefab"), Tooltip("Object to use as an indicator when player is supposed to activate a `Continue` input to progress further. The prefab should have an `IInputIndicator` component on the root game object. Will instantiate a clone when an external prefab is assigned.")]
         [SerializeField] private MonoBehaviour inputIndicator;
-        [Tooltip("Whether to automatically move input indicator so it appears after the last revealed text character.")]
+        [Tooltip("입력 표시자가 마지막으로 표시된 텍스트 문자 뒤에 나타나도록 자동으로 이동할지 여부")]
         [SerializeField] private bool positionIndicatorOverText = true;
-        [Tooltip("Assigned canvas groups will represent printer appearances. Game object name of the canvas group represents the appearance name. Alpha of the group will be set to 1 when the appearance is activated and vice-versa.")]
+        [Tooltip("할당된 캔버스 그룹은 프린터 모양을 나타냅니다. 캔버스 그룹의 게임 개체 이름은 모양 이름을 나타냅니다. 모양이 활성화되면 그룹의 Alpha가 1로 설정되고 그 반대도 마찬가지입니다.")]
         [SerializeField] private List<CanvasGroup> appearances;
-        [Tooltip("Allows binding an SFX to play when specific characters are revealed.")]
+        [Tooltip("특정 문자가 표시될 때 SFX를 바인딩하여 재생할 수 있습니다.")]
         [SerializeField] private List<CharsToSfx> charsSfx = new List<CharsToSfx>();
-        [Tooltip("Allows binding a script command to execute when specific characters are revealed.")]
+        [Tooltip("특정 문자가 나타날 때 스크립트 명령을 바인딩하여 실행할 수 있습니다.")]
         [SerializeField] private List<CharsToPlaylist> charsCommands = new List<CharsToPlaylist>();
-        [Tooltip("Invoked when author (character ID) of the currently printed text is changed.")]
+        [Tooltip("현재 인쇄된 텍스트의 작성자(문자 ID)가 변경되면 호출됩니다.")]
         [SerializeField] private AuthorChangedEvent onAuthorChanged;
-        [Tooltip("Invoked when text reveal is started.")]
+        [Tooltip("문자 표시 시작 시 호출됨")]
         [SerializeField] private UnityEvent onRevealStarted;
-        [Tooltip("Invoked when text reveal is finished.")]
+        [Tooltip("텍스트 표시가 완료되면 호출")]
         [SerializeField] private UnityEvent onRevealFinished;
 
         private readonly CommandParser commandParser = new CommandParser();

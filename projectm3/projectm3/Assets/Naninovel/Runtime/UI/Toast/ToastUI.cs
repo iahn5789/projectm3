@@ -9,9 +9,9 @@ namespace Naninovel.UI
     /// <inheritdoc cref="IToastUI"/>
     public class ToastUI : CustomUI, IToastUI
     {
-        [Tooltip("The appearance used by default, when `appearance` parameter is not provided.")]
+        [Tooltip("'aperance' 매개 변수가 제공되지 않을 때 기본적으로 사용되는 모양입니다.")]
         [SerializeField] private ToastAppearance defaultAppearance;
-        [Tooltip("Seconds to wait before hiding the toast; used by default, when `duration` parameter is not provided.")]
+        [Tooltip("토스트를 숨기기 전에 대기하는 시간(초). 기본적으로 '기간' 매개 변수가 제공되지 않을 때 사용됩니다.")]
         [SerializeField] private float defaultDuration = 5f;
 
         private readonly Dictionary<string, ToastAppearance> appearances = new Dictionary<string, ToastAppearance>(StringComparer.OrdinalIgnoreCase);

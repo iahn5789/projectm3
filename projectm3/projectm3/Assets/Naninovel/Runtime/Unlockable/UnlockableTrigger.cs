@@ -26,13 +26,13 @@ namespace Naninovel
 
         protected IUnlockableManager UnlockableManager => Engine.GetService<IUnlockableManager>();
 
-        [Tooltip("ID of the unlockable item to listen for.")]
+        [Tooltip("듣는 잠금 해제 가능 항목의 ID")]
         [SerializeField] private string unlockableItemId;
-        [Tooltip("Invoked when unlocked state of the listened unlockable item is changed; also invoked when the component is started.")]
+        [Tooltip("수신된 잠금 해제 가능 항목의 잠금 해제 상태가 변경될 때 호출됩니다. 구성 요소가 시작될 때도 호출됩니다.")]
         [SerializeField] private UnlockedStateChangedEvent onUnlockedStateChanged;
-        [Tooltip("Invoked when the item is unlocked.")]
+        [Tooltip("항목 잠금 해제 시 호출")]
         [SerializeField] private UnityEvent onUnlocked;
-        [Tooltip("Invoked when the item is locked.")]
+        [Tooltip("항목이 잠겨 있을 때 호출됨")]
         [SerializeField] private UnityEvent onLocked;
 
         protected virtual void OnEnable ()

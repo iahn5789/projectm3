@@ -9,7 +9,7 @@ namespace Naninovel.UI
     {
         private const string titleLabel = "OnNewGame";
 
-        [Tooltip("Services to exclude from state reset when starting a new game.")]
+        [Tooltip("새 게임을 시작할 때 상태 재설정에서 제외하는 서비스")]
         [SerializeField] private string[] excludeFromReset = Array.Empty<string>();
 
         private string startScriptName;

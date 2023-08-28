@@ -23,9 +23,9 @@ namespace Naninovel.UI
         private const string selectedPrefix = "TIP_SELECTED_";
 
         [Header("Tips Setup")]
-        [Tooltip("All the unlockable item IDs with the specified prefix will be considered Tips items.")]
+        [Tooltip("지정된 접두사가 있는 잠금 해제 가능한 모든 항목 ID는 팁 항목으로 간주됩니다.")]
         [SerializeField] private string unlockableIdPrefix = DefaultUnlockableIdPrefix;
-        [Tooltip("The name of the managed text document (category) where all the tips data is stored.")]
+        [Tooltip("모든 팁 데이터가 저장되는 관리되는 텍스트 문서(카테고리)의 이름입니다.")]
         [SerializeField] private string managedTextCategory = DefaultManagedTextCategory;
 
         [Header("UI Setup")]

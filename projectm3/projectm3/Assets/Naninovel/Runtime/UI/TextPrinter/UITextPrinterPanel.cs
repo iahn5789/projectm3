@@ -43,11 +43,11 @@ namespace Naninovel.UI
 
         protected ICharacterManager CharacterManager { get; private set; }
 
-        [Tooltip("Transform used for printer position, scale and rotation external manipulations.")]
+        [Tooltip("프린터 위치, 스케일 및 회전 외부 조작에 사용되는 변환")]
         [SerializeField] private RectTransform content;
-        [Tooltip("Objects that should trigger continue input when interacted with. Make sure the objects are a raycast target and not blocked by other raycast targets.")]
+        [Tooltip("와 상호 작용할 때 입력을 트리거해야 하는 객체. 객체가 레이캐스트 대상이며 다른 레이캐스트 대상에 의해 차단되지 않도록 하십시오.")]
         [SerializeField] private List<GameObject> continueInputTriggers;
-        [Tooltip("Event invoked when tint color of the printer actor is changed.")]
+        [Tooltip("프린터 액터의 틴트 색상이 변경될 때 이벤트가 호출됩니다.")]
         [SerializeField] private ColorUnityEvent onTintChanged;
 
         private IInputSampler continueInput;

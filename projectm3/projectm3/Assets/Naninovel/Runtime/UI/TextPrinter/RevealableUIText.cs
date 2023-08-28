@@ -35,13 +35,13 @@ namespace Naninovel.UI
         public virtual bool Revealing => revealBehaviour.Revealing;
         public virtual float RevealProgress { get => revealBehaviour.GetRevealProgress(); set => revealBehaviour.SetRevealProgress(value); }
 
-        [Tooltip("Width (in pixels) of the gradient fade near the reveal border.")]
+        [Tooltip("기울기 테두리 근처에서 그라데이션의 너비(픽셀)")]
         [SerializeField] private float revealFadeWidth = 100f;
-        [Tooltip("Whether to smoothly reveal the text. Disable for the `typewriter` effect.")]
+        [Tooltip("텍스트를 원활하게 공개할 수 있는지 여부. '타자기' 효과를 위해 사용할 수 없습니다.")]
         [SerializeField] private bool slideClipRect = true;
-        [Tooltip("How much to slant the reveal rect to compensate for italic characters; 10 is usually enough for most fonts.\n\nNotice, that enabling the slanting (value greater than zero) would introduce minor reveal effect artifacts. TMPro printers are not affected by this issue, so consider using them instead.")]
+        [Tooltip("탤릭체 문자를 보정하기 위해 노출을 직선으로 기울이는 정도입니다. 일반적으로 대부분의 글꼴에 10이면 충분합니다.\n\n참고: 기울임(0보다 큰 값)을 활성화하면 작은 노출 효과 아티팩트가 발생합니다. TMPro 프린터는 이 문제에 영향을 받지 않으므로 대신 사용하는 것을 고려하십시오.")]
         [SerializeField] private float italicSlantAngle;
-        [Tooltip("Whether to draw line and character clip rectangles gizmo for debug purposes.")]
+        [Tooltip("디버그 목적으로 선 및 문자 클립 사각형 지모 그리기 여부")]
         [SerializeField] private bool drawClipRects;
 
         private const string textShaderName = "Naninovel/RevealableText";

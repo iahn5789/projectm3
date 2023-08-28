@@ -26,11 +26,11 @@ namespace Naninovel.UI
 
         [SerializeField] private InputField inputField;
         [SerializeField] private Button submitButton;
-        [Tooltip("Whether to automatically select and activate input field when the UI is shown.")]
+        [Tooltip(""UI" 표시 시 입력 필드를 자동으로 선택하여 활성화할지 여부")]
         [SerializeField] private bool activateOnShow = true;
-        [Tooltip("Whether to attempt submit input field value when a `Submit` input is activated.")]
+        [Tooltip(""Submit" 입력이 활성화된 경우 입력 필드 값 제출 시도 여부")]
         [SerializeField] private bool submitOnInput = true;
-        [Tooltip("When assigned, the game object will be de-/activated based on whether summary is assigned.")]
+        [Tooltip("할당되면 요약 할당 여부에 따라 게임 객체가 비활성화/활성화됩니다")]
         [SerializeField] private GameObject summaryContainer;
         [SerializeField] private StringUnityEvent onSummaryChanged;
 
@@ -40,7 +40,7 @@ namespace Naninovel.UI
         private IInputSampler submitInput;
         private string variableName;
         private bool playOnSubmit;
-
+o
         public virtual void Show (string variableName, string summary, string predefinedValue, bool playOnSubmit)
         {
             this.variableName = variableName;

@@ -33,17 +33,17 @@ namespace Naninovel.UI
         public virtual bool Revealing => revealBehaviour.Revealing;
         public virtual float RevealProgress { get => revealBehaviour.GetRevealProgress(); set => revealBehaviour.SetRevealProgress(value); }
 
-        [Tooltip("Width (in pixels) of the gradient fade near the reveal border.")]
+        [Tooltip("기울기 테두리 근처에서 그라데이션의 너비(픽셀)")]
         [SerializeField] private float revealFadeWidth = 100f;
-        [Tooltip("Whether to smoothly reveal the text. Disable for the `typewriter` effect.")]
+        [Tooltip("문자의 원활한 공개 여부', '타자기' 효과를 위해 비활성화됨")]
         [SerializeField] private bool slideClipRect = true;
-        [Tooltip("How much to slant the reveal rect by default.")]
+        [Tooltip("기본적으로 노출을 바로 기울이는 정도")]
         [SerializeField] private float defaultSlantAngle;
-        [Tooltip("How much to slant the reveal rect when passing over italic characters.")]
+        [Tooltip("이탤릭체 문자를 전달할 때 노출을 정확하게 기울이는 정도입니다.")]
         [SerializeField] private float italicSlantAngle = 10f;
-        [Tooltip("Scales the reveal clip rect by specified width (x) and height (y). By default, clip rect size is evaluated from text layout, but you may need to modify it in some cases (eg, when applying font dilate via shader).")]
+        [Tooltip("지정된 너비(x) 및 높이(y)로 노출 클립을 바로 확대합니다. 기본적으로 클립 바로 크기는 텍스트 레이아웃에서 평가되지만 경우에 따라 수정해야 할 수 있습니다(예: 쉐이더를 통해 글꼴 확장을 적용하는 경우).")]
         [SerializeField] private Vector2 clipRectScale = Vector2.one;
-        [Tooltip("Whether to draw line and character clip rectangles gizmo for debug purposes.")]
+        [Tooltip("디버그 목적으로 선 및 문자 클립 사각형 지모를 그릴 것인지 여부입니다.")]
         [SerializeField] private bool drawClipRects;
 
         private Material[] cachedFontMaterials;
