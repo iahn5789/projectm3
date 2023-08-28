@@ -21,11 +21,11 @@ namespace Naninovel
         
         private enum ActorType { Character, Background }
         
-        [Tooltip("Whether the actor is a character or a background.")]
+        [Tooltip("배우가 캐릭터인지 배경인지.")]
         [SerializeField] private ActorType actorType;
-        [Tooltip("ID of the actor from which to get the render texture.")]
+        [Tooltip("렌더 텍스처를 가져올 배우의 ID입니다.")]
         [SerializeField] private string actorId;
-        [Tooltip("Invoked when render texture is retrieved from the specified actor.")]
+        [Tooltip("렌더 텍스처가 지정된 액터에서 검색될 때 호출됩니다.")]
         [SerializeField] private RenderTextureRetrievedEvent onRenderTextureRetrieved;
         
         private void OnEnable ()

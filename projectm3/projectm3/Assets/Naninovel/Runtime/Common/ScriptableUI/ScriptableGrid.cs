@@ -41,17 +41,17 @@ namespace Naninovel
         protected virtual Button PreviousPageButton => previousPageButton;
         protected virtual Button NextPageButton => nextPageButton;
 
-        [Tooltip("Prefab representing grid slot.")]
+        [Tooltip("그리드 슬롯을 나타내는 접두사입니다.")]
         [SerializeField] private TSlot slotPrototype;
-        [Tooltip("How many slots should be visible per page."), Range(1, 99)]
+        [Tooltip("페이지당 몇 개의 슬롯이 표시되어야 합니다."), Range(1, 99)]
         [SerializeField] private int itemsPerPage = 9;
-        [Tooltip("Container for the page number controls (optional). Will be disabled when grid has only one page.")]
+        [Tooltip("페이지 번호 컨트롤용 컨테이너(옵션). 그리드에 페이지가 하나만 있는 경우 비활성화됩니다.")]
         [SerializeField] private GameObject paginationPanel;
-        [Tooltip("Button inside pagination panel to select next grid page.")]
+        [Tooltip("페이지 표시 패널 내부 버튼을 눌러 다음 그리드 페이지를 선택합니다.")]
         [SerializeField] private Button previousPageButton;
-        [Tooltip("Button inside pagination panel to select previous grid page.")]
+        [Tooltip("이전 그리드 페이지를 선택하려면 페이지 표시 패널 내부 버튼을 누릅니다.")]
         [SerializeField] private Button nextPageButton;
-        [Tooltip("Event invoked when grid page number changes.")]
+        [Tooltip("그리드 페이지 번호가 변경될 때 이벤트가 호출됩니다.")]
         [SerializeField] private OnGridPageChangedEvent onPageChanged;
 
         /// <summary>

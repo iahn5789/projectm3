@@ -7,29 +7,29 @@ namespace Naninovel
     [EditInProjectSettings]
     public class CameraConfiguration : Configuration
     {
-        [Tooltip("The reference resolution is used to evaluate proper rendering dimensions, so that actors are correctly positioned on scene. As a rule of thumb, set this equal to the resolution of the background textures you make for the game.")]
+        [Tooltip("기준 해상도는 적절한 렌더링 차원을 평가하는 데 사용되므로 배우가 장면에 올바르게 배치됩니다. 경험의 규칙으로 게임에서 만든 배경 텍스처의 해상도와 동일하게 설정하십시오.")]
         public Vector2Int ReferenceResolution = new Vector2Int(1920, 1080);
-        [Tooltip("How many pixels correspond to a scene unit. Reducing this will make all the actors appear smaller and vice-versa. Default value of 100 is recommended for most cases.")]
+        [Tooltip("장면 단위에 해당하는 픽셀의 수. 이를 줄이면 모든 배우가 더 작아지고 그 반대도 마찬가지입니다. 대부분의 경우 기본값 100이 권장됩니다.")]
         public float ReferencePPU = 100;
-        [Tooltip("Whether reference scene rectangle width should be matched against screen width. When enabled, relative (scene) position evaluation will use screen border as the origin; otherwise reference resolution is used.")]
+        [Tooltip("기준 장면 직사각형 너비를 화면 너비와 일치시켜야 하는지 여부입니다. 이 옵션을 선택하면 상대(장면) 위치 평가에서 화면 테두리를 원점으로 사용하고, 그렇지 않으면 기준 해상도가 사용됩니다.")]
         public bool MatchScreenWidth;
-        [Tooltip("Initial world position of the managed cameras.")]
+        [Tooltip("관리되는 카메라의 초기 월드 위치입니다.")]
         public Vector3 InitialPosition = new Vector3(0, 0, -10);
-        [Tooltip("A prefab with a camera component to use for rendering. Will use a default one when not specified. In case you wish to set some camera properties (background color, FOV, HDR, etc) or add post-processing scripts, create a prefab with the desired camera setup and assign the prefab to this field.")]
+        [Tooltip("렌더링에 사용할 카메라 구성 요소가 있는 프리패브. 지정되지 않은 경우 기본값을 사용합니다. 일부 카메라 속성(배경 색상, FOV, HDR 등)을 설정하거나 후처리 스크립트를 추가하려는 경우 원하는 카메라 설정으로 프리패브를 생성하고 이 필드에 프리패브를 할당합니다.")]
         public Camera CustomCameraPrefab;
-        [Tooltip("Whether to render the UI with a dedicated camera. This option is for backward-compatibility and should not be disabled in new projects. Expect issues when disabled (eg, constant uGUI layout rebuilds on camera animations).")]
+        [Tooltip("전용 카메라로 UI를 렌더링할지 여부. 이 옵션은 하위 호환성을 위한 것이며 새 프로젝트에서 비활성화해서는 안 됩니다. 비활성화 시 문제가 예상됩니다(예: 카메라 애니메이션에서 지속적인 uGUI 레이아웃 재구축).")]
         public bool UseUICamera = true;
-        [Tooltip("A prefab with a camera component to use for UI rendering. Will use a default one when not specified. Has no effect when `Use UI Camera` is disabled")]
+        [Tooltip("UI 렌더링에 사용할 카메라 구성 요소가 있는 프리패브입니다. 지정하지 않으면 기본값을 사용합니다. 'UI 카메라 사용'이 비활성화된 경우 효과가 없습니다")]
         public Camera CustomUICameraPrefab;
-        [Tooltip("Default duration (in seconds) for all the camera modifications (changing zoom, position, rotation, etc).")]
+        [Tooltip("모든 카메라 수정(줌, 위치, 회전 등 변경)의 기본 지속 시간(초)입니다.")]
         public float DefaultDuration = .35f;
-        [Tooltip("Easing function to use by default for all the camera modifications (changing zoom, position, rotation, etc).")]
+        [Tooltip("모든 카메라 수정(줌, 위치, 회전 등 변경)에 기본적으로 사용할 수 있는 기능을 완화합니다.")]
         public EasingType DefaultEasing = EasingType.Linear;
 
         [Header("Thumbnails")]
-        [Tooltip("The resolution in which thumbnails to preview game save slots will be captured.")]
+        [Tooltip("미리 보기 게임 저장 슬롯에 대한 축소판 그림이 캡처됩니다.")]
         public Vector2Int ThumbnailResolution = new Vector2Int(240, 140);
-        [Tooltip("Whether to ignore UI layer when capturing thumbnails.")]
+        [Tooltip("썸네일을 캡처할 때 UI 계층을 무시할지 여부입니다.")]
         public bool HideUIInThumbnails;
 
         /// <summary>

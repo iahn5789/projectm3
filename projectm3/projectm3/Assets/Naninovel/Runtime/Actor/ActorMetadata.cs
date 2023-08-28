@@ -15,9 +15,9 @@ namespace Naninovel
         /// </summary>
         public string Guid => guid;
 
-        [Tooltip("Assembly-qualified type name of the actor implementation.")]
+        [Tooltip("어셈블리 자격 형식의 배우 구현 이름입니다.")]
         public string Implementation;
-        [Tooltip("Data describing how to load actor's resources.")]
+        [Tooltip("배우의 리소스를 로드하는 방법을 설명하는 데이터입니다.")]
         public ResourceLoaderConfiguration Loader;
 
         [HideInInspector]

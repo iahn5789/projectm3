@@ -99,23 +99,23 @@ namespace Naninovel
         /// </summary>
         protected virtual bool ControlOpacity => controlOpacity;
 
-        [Tooltip("Whether to permanently disable interaction with the object, no matter the visibility. Requires `Canvas Group` component on the same game object.")]
+        [Tooltip("가시성에 관계없이 객체와의 상호작용을 영구적으로 해제할지 여부. 동일한 게임 객체에 '캔버스 그룹' 구성요소가 필요합니다.")]
         [SerializeField] private bool disableInteraction;
-        [Tooltip("Whether UI element should be visible or hidden on awake.")]
+        [Tooltip("UI 요소가 활성화 시 표시되거나 숨겨져야 하는지 여부입니다.")]
         [SerializeField] private bool visibleOnAwake = true;
-        [Tooltip("Whether to change opacity (alpha) of Canvas Group in correspondence to visibility of the UI element. Requires `Canvas Group` component on the same game object.")]
+        [Tooltip("UI 요소의 가시성에 대응하여 캔버스 그룹의 불투명도(알파)를 변경할지 여부. 동일한 게임 오브젝트에 '캔버스 그룹' 구성요소가 필요합니다.")]
         [SerializeField] private bool controlOpacity = true;
-        [Tooltip("When `Control Opacity` is enabled, controls opacity fade duration (in seconds) when changing visibility.")]
+        [Tooltip("'Control Opacity'를 활성화하면 가시성을 변경할 때 불투명도가 사라지는 시간(초)을 제어합니다.")]
         [SerializeField] private float fadeTime = .3f;
-        [Tooltip("When `Control Opacity` is enabled, controls whether to ignore time scale when changing visibility.")]
+        [Tooltip("'Control Opacity'를 활성화하면 가시성을 변경할 때 시간 척도를 무시할지 여부를 제어합니다.")]
         [SerializeField] private bool ignoreTimeScale = true;
-        [Tooltip("When assigned, will make the object focused (for keyboard or gamepad control) when the UI becomes visible or upon navigation.")]
+        [Tooltip("할당되면 UI가 표시되거나 탐색 시에 (키보드 또는 게임 패드 제어용) 개체에 초점을 맞출 수 있습니다.")]
         [SerializeField] private GameObject focusObject;
-        [Tooltip("When `Focus Object` is assigned, determines when to focus the object: on the UI becomes visible or on first navigation attempt (arrow keys or d-pad) while the UI is visible. Be aware, that gamepad support for Navigation mode requires Unity's new input system package installed.")]
+        [Tooltip("Focus Object'가 할당되면 객체에 초점을 맞출 시기를 결정합니다. UI가 표시되는 동안 또는 첫 번째 탐색 시도(화살표 키 또는 d-pad)가 표시됩니다. 탐색 모드에 대한 게임 패드 지원을 위해서는 Unity의 새로운 입력 시스템 패키지가 설치되어야 합니다.")]
         [SerializeField] private FocusMode focusMode;
-        [Tooltip("Invoked when the UI element is shown.")]
+        [Tooltip("UI 요소가 표시될 때 호출됩니다.")]
         [SerializeField] private UnityEvent onShow;
-        [Tooltip("Invoked when the UI element is hidden.")]
+        [Tooltip("UI 요소를 숨길 때 호출됩니다.")]
         [SerializeField] private UnityEvent onHide;
 
         private readonly Tweener<FloatTween> fadeTweener = new Tweener<FloatTween>();

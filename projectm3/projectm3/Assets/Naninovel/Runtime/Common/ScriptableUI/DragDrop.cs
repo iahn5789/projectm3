@@ -11,7 +11,7 @@ namespace Naninovel
     public class DragDrop : MonoBehaviour
     {
         [SerializeField] private DragDropHandle handle;
-        [Tooltip("Whether to prevent dragging over the canvas bounds.")]
+        [Tooltip("캔버스 경계로 끌지 말지 여부입니다.")]
         [SerializeField] private bool clipOverCanvas = true;
 
         private RectTransform trs;

@@ -13,7 +13,7 @@ namespace Naninovel
         [System.Serializable]
         public class Map : ActorMetadataMap<ChoiceHandlerMetadata> { }
 
-        [Tooltip("Whether to wait until the choice handler UI is completely hidden before proceeding when a choice is picked.")]
+        [Tooltip("선택을 선택할 때 계속하기 전에 선택 핸들러 UI가 완전히 숨겨질 때까지 기다릴지 여부입니다.")]
         public bool WaitHideOnChoice;
 
         public ChoiceHandlerMetadata ()

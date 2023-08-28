@@ -16,7 +16,7 @@ namespace Naninovel
         public virtual string Id { get; } = default;
         public virtual bool Selected { get; private set; }
 
-        [Tooltip("Opacity to fade to when the slot is hovered or selected; set to zero to disable the fade behaviour.")]
+        [Tooltip("슬롯을 호버링하거나 선택할 때 페이드할 불투명도. 페이드 동작을 비활성화하려면 0으로 설정합니다.")]
         [SerializeField] private float hoverOpacityFade = .25f;
         [SerializeField] private OnSlotClickedEvent onSlotClicked;
 

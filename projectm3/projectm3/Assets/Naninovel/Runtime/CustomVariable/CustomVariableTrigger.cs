@@ -34,15 +34,15 @@ namespace Naninovel
         /// </summary>
         public string CustomVariableValue => variableManager?.GetVariableValue(CustomVariableName);
 
-        [Tooltip("Name of a custom state variable to listen for.")]
+        [Tooltip("수신 대기할 사용자 지정 상태 변수의 이름입니다.")]
         [SerializeField] private string customVariableName;
-        [Tooltip("Invoked when value of a custom variable with specified name is changed; also invoked when the component is started.")]
+        [Tooltip("지정된 이름의 사용자 지정 변수 값이 변경될 때 호출되며, 구성 요소가 시작될 때도 호출됩니다.")]
         [SerializeField] private VariableValueChangedEvent onVariableValueChanged;
-        [Tooltip("Invoked when value of a custom variable with specified name is changed and the value is a float; also invoked when the component is started.")]
+        [Tooltip("지정된 이름의 사용자 지정 변수 값이 변경되고 값이 부동 변수일 때 호출되며 구성 요소가 시작될 때도 호출됩니다.")]
         [SerializeField] private FloatVariableValueChangedEvent onFloatVariableValueChanged;
-        [Tooltip("Invoked when value of a custom variable with specified name is changed and the value is an integer; also invoked when the component is started.")]
+        [Tooltip("지정된 이름의 사용자 지정 변수 값이 변경되고 값이 정수일 때 호출되며 구성 요소가 시작될 때도 호출됩니다.")]
         [SerializeField] private IntVariableValueChangedEvent onIntVariableValueChanged;
-        [Tooltip("Invoked when value of a custom variable with specified name is changed and the value is a boolean; also invoked when the component is started.")]
+        [Tooltip("지정된 이름의 사용자 지정 변수 값이 변경되고 값이 부울일 때 호출되며 구성 요소가 시작될 때도 호출됩니다.")]
         [SerializeField] private BoolVariableValueChangedEvent onBoolVariableValueChanged;
 
         private ICustomVariableManager variableManager;

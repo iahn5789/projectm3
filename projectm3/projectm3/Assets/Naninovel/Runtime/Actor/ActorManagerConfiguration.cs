@@ -9,11 +9,11 @@ namespace Naninovel
     /// </summary>
     public abstract class ActorManagerConfiguration : Configuration
     {
-        [Tooltip("Default duration (in seconds) for all the actor modifications (changing appearance, position, tint, etc).")]
+        [Tooltip("모든 액터 수정(외형, 위치, 색조 변경 등)의 기본 지속 시간(초)입니다.")]
         public float DefaultDuration = .35f;
-        [Tooltip("Easing function to use by default for all the actor modification animations (changing appearance, position, tint, etc).")]
+        [Tooltip("모든 배우 수정 애니메이션(외형, 위치, 틴트 등 변경)에 기본적으로 사용할 수 있는 쉬운 기능입니다.")]
         public EasingType DefaultEasing = EasingType.Linear;
-        [Tooltip("Whether to automatically reveal (show) an actor when executing modification commands.")]
+        [Tooltip("수정 명령을 실행할 때 액터를 자동으로 표시(표시)할지 여부입니다.")]
         public bool AutoShowOnModify = true;
 
         public abstract ActorMetadataMap MetadataMap { get; }

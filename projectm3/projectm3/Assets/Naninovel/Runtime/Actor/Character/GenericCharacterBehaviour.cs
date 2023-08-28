@@ -26,15 +26,15 @@ namespace Naninovel
         public bool TransformByLookDirection => transformByLookDirection;
         public float LookDeltaAngle => lookDeltaAngle;
 
-        [Tooltip("Invoked when look direction of the character is changed.")]
+        [Tooltip("문자의 모양 방향이 변경되면 호출됩니다.")]
         [SerializeField] private LookDirectionChangedEvent onLookDirectionChanged;
-        [Tooltip("Invoked when the character becomes the author of the printed text message.")]
+        [Tooltip("문자가 인쇄된 텍스트 메시지의 작성자가 될 때 호출됩니다.")]
         [SerializeField] private UnityEvent onStartedSpeaking;
-        [Tooltip("Invoked after `On Started Speaking` when the message is fully revealed or (when auto voicing is enabled) voice clip finish playing.")]
+        [Tooltip("메시지가 완전히 표시되거나 (자동 음성이 활성화된 경우) 음성 클립 재생이 완료되면 'On Started Speaking'(시작된 발화 시) 후에 호출됩니다.")]
         [SerializeField] private UnityEvent onFinishedSpeaking;
-        [Tooltip("Whether to react to look direction changes by rotating the object's transform.")]
+        [Tooltip("방향을 보기 위해 반응할지 여부는 객체의 변환을 회전함으로써 변경됩니다.")]
         [SerializeField] private bool transformByLookDirection = true;
-        [Tooltip("When `" + nameof(transformByLookDirection) + "` is enabled, controls the rotation angle.")]
+        [Tooltip("`" + nameof(transformByLookDirection) + "` 활성화될 때 회전 각도를 제어합니다.")]
         [SerializeField] private float lookDeltaAngle = 30;
 
         public void NotifyLookDirectionChanged (CharacterLookDirection value)

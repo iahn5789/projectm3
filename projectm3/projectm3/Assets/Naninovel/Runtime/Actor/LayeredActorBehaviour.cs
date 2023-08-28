@@ -39,15 +39,15 @@ namespace Naninovel
         private const string splitLiteral = ",";
         private static readonly string[] splitLiterals = { splitLiteral };
 
-        [Tooltip("Whether the actor should be rendered every frame. Enable when animating the layers or implementing other dynamic behaviour.")]
+        [Tooltip("액터가 모든 프레임을 렌더링해야 하는지 여부. 레이어를 애니메이션화하거나 다른 동적 동작을 구현할 때 활성화합니다.")]
         [SerializeField] private bool animated;
-        [Tooltip("Whether to render the layers in a reversed order.")]
+        [Tooltip("레이어를 반대 순서로 렌더링할지 여부입니다.")]
         [SerializeField] private bool reversed;
-        [Tooltip("Shared material to use when rendering the layers. Will use layer renderer's material when not assigned.")]
+        [Tooltip("레이어를 렌더링할 때 사용할 공유 재료. 할당되지 않은 경우 레이어 렌더링기의 재료를 사용합니다.")]
         [SerializeField] private Material renderMaterial;
-        [Tooltip("Allows to map layer composition expressions to keys; the keys can then be used to specify layered actor appearances instead of the full expressions.")]
+        [Tooltip("계층 구성 식을 키에 매핑할 수 있습니다. 그런 다음 키를 사용하여 전체 식을 지정하는 대신 계층적 배우 모양을 지정할 수 있습니다.")]
         [SerializeField] private List<CompositionMapItem> compositionMap = new List<CompositionMapItem>();
-        [Tooltip("Invoked when appearance of the actor is changed.")]
+        [Tooltip("배우의 모양이 변경될 때 호출됩니다.")]
         [SerializeField] private StringUnityEvent onAppearanceChanged;
 
         /// <summary>

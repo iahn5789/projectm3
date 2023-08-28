@@ -14,7 +14,7 @@ namespace Naninovel
         /// </summary>
         public const string GlobalPrefix = "G_";
 
-        [Tooltip("The list of variables to initialize by default. Global variables (names starting with `G_` or `g_`) are initialized on first application start, and others on each state reset.")]
+        [Tooltip("기본적으로 초기화할 변수 목록입니다. 글로벌 변수('G_' 또는 'g_'로 시작하는 이름)는 첫 번째 응용 프로그램 시작 시 초기화되고 다른 변수는 각 상태 재설정 시 초기화됩니다.")]
         public List<CustomVariable> PredefinedVariables = new List<CustomVariable>();
 
         /// <summary>

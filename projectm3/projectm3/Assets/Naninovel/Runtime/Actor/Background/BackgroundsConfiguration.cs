@@ -18,13 +18,13 @@ namespace Naninovel
         public override BackgroundMetadata DefaultActorMetadata => DefaultMetadata;
         public override ActorMetadataMap<BackgroundMetadata> ActorMetadataMap => Metadata;
 
-        [Tooltip("Metadata to use by default when creating background actors and custom metadata for the created actor ID doesn't exist.")]
+        [Tooltip("백그라운드 액터를 만들 때 기본적으로 사용할 메타데이터와 생성된 액터 ID에 대한 사용자 정의 메타데이터가 없습니다.")]
         public BackgroundMetadata DefaultMetadata = new BackgroundMetadata();
-        [Tooltip("Metadata to use when creating background actors with specific IDs.")]
+        [Tooltip("특정 ID로 백그라운드 액터를 작성할 때 사용할 메타데이터입니다.")]
         public BackgroundMetadata.Map Metadata = new BackgroundMetadata.Map {
             [MainActorId] = new BackgroundMetadata()
         };
-        [Tooltip("Named states (poses) shared between the backgrounds; pose name can be used as appearance in `@back` commands to set enabled properties of the associated state.")]
+        [Tooltip("배경 간에 공유된 명명된 상태(포즈). 포즈 이름은 '@back' 명령에서 모양으로 사용하여 관련 상태의 활성화된 속성을 설정할 수 있습니다.")]
         public List<BackgroundMetadata.Pose> SharedPoses = new List<BackgroundMetadata.Pose>();
 
         protected override ActorPose<TState> GetSharedPose<TState> (string poseName) => SharedPoses.FirstOrDefault(p => p.Name == poseName) as ActorPose<TState>;
