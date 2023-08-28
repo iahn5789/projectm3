@@ -12,7 +12,7 @@ namespace Naninovel
     {
         protected virtual IRevealableText RevealableText { get; private set; }
 
-        [Tooltip("미리보기 텍스트를 표시하기 위한 '" + (IleveableText) + "' 인터페이스를 구현하는 구성요소입니다.")]
+        [Tooltip("'미리보기 텍스트를 표시하기 위한 '"+ nameof(IRevealableText) + "'인터페이스를 구현하는 구성요소입니다.'")]
         [SerializeField] private Graphic revealableText;
 
         private CancellationTokenSource revealCTS;
