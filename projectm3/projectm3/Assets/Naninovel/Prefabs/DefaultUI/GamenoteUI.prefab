@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 942680361515491530}
   - component: {fileID: 6882394524308811947}
   - component: {fileID: 6675432076228838708}
+  - component: {fileID: 2793979974902789052}
   m_Layer: 5
   m_Name: Button_Credit
   m_TagString: Untagged
@@ -117,7 +118,34 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6882394524308811947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6675432076228838708}
+        m_MethodName: set_image
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2793979974902789052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229717084091363586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptName: TitleUI_New
+  scriptText: 
+  playOnAwake: 0
+  disableWaitInput: 0
 --- !u!1 &954658874143592125
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6306036015961478113
 RectTransform:
   m_ObjectHideFlags: 0
@@ -610,7 +638,7 @@ Canvas:
   m_GameObject: {fileID: 6306036015961478139}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
