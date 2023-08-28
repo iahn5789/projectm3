@@ -13,7 +13,7 @@ namespace Naninovel
         /// </summary>
         public const string IdDelimiter = "#";
 
-        [Tooltip("Configuration of the resource loader used with spawn resources.")]
+        [Tooltip("스폰 리소스에 사용되는 리소스 로더의 구성입니다.")]
         public ResourceLoaderConfiguration Loader = new ResourceLoaderConfiguration { PathPrefix = DefaultPathPrefix };
         
         /// <summary>

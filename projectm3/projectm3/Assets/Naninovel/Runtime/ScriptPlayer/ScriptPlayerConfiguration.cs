@@ -8,17 +8,17 @@ namespace Naninovel
     [EditInProjectSettings]
     public class ScriptPlayerConfiguration : Configuration
     {
-        [Tooltip("Default skip mode to set when the game is first started.")]
+        [Tooltip("게임을 처음 시작할 때 설정할 기본 스킵 모드입니다.")]
         public PlayerSkipMode DefaultSkipMode = PlayerSkipMode.ReadOnly;
-        [Tooltip("Time scale to use when in skip (fast-forward) mode."), Range(1f, 100f)]
+        [Tooltip("건너뛰기(빠른 회송) 모드일 때 사용할 시간 척도."), Range(1f, 100f)]
         public float SkipTimeScale = 10f;
-        [Tooltip("Minimum seconds to wait before executing next command while in auto play mode.")]
+        [Tooltip("자동 재생 모드에서 다음 명령을 실행하기 전에 대기하는 최소 시간(초)입니다.")]
         public float MinAutoPlayDelay = 3f;
-        [Tooltip("Whether to instantly complete blocking (`wait:true`) commands performed over time (eg, animations, hide/reveal, tint changes, etc) when `Continue` input is activated.")]
+        [Tooltip("'continue' 입력이 활성화되면 시간 경과에 따라 수행된 차단('wait:true') 명령을 즉시 완료할지 여부입니다(예: 애니메이션, 숨김/공개, 틴트 변경 등).")]
         public bool CompleteOnContinue = true;
-        [Tooltip("Whether to show player debug window on engine initialization.")]
+        [Tooltip("엔진 초기화 시 플레이어 디버그 창을 표시할지 여부입니다.")]
         public bool ShowDebugOnInit;
-        [Tooltip("Whether to wait the played commands when the `wait` parameter is not explicitly specified.")]
+        [Tooltip("'wait' 매개 변수가 명시적으로 지정되지 않은 경우 재생된 명령을 대기할지 여부입니다.")]
         public bool WaitByDefault = true;
 
         public virtual bool ShouldWait (Command command)
