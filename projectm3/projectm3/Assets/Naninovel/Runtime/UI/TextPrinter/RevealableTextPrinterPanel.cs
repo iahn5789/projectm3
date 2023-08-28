@@ -21,7 +21,7 @@ namespace Naninovel.UI
         [Serializable]
         protected class CharsToSfx
         {
-            [Tooltip(""SFX"를 트리거할 문자. 모든 문자를 트리거하려면 비워 둡니다")]
+            [Tooltip("'SFX'를 트리거할 문자. 모든 문자를 트리거하려면 비워 둡니다")]
             public string Characters;
             [Tooltip("지정된 문자에 대해 트리거할 SFX의 이름(로컬 경로")]
             [ResourcePopup(AudioConfiguration.DefaultAudioPathPrefix)]
