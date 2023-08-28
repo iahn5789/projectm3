@@ -19,13 +19,13 @@ namespace Naninovel
         public string Key => string.IsNullOrWhiteSpace(key) ? gameObject.name : key;
         public string DefaultValue => defaultValue;
 
-        [Tooltip("Name of the managed text document, which contains tracked managed text record.")]
+        [Tooltip("추적된 관리 텍스트 레코드를 포함하는 관리 텍스트 문서의 이름입니다.")]
         [SerializeField] private string category = ManagedTextRecord.DefaultCategoryName;
-        [Tooltip("ID of the tracked managed text record; when not provided (empty), will use name of the game object to which the component is attached.")]
+        [Tooltip("추적된 관리되는 텍스트 레코드의 ID입니다. 제공되지 않은 경우(공백일 경우) 구성 요소가 연결된 게임 개체의 이름을 사용합니다.")]
         [SerializeField] private string key;
-        [Tooltip("Default value to use when the tracked record is missing.")]
+        [Tooltip("추적된 레코드가 누락된 경우 사용할 기본값입니다.")]
         [SerializeField] private string defaultValue;
-        [Tooltip("Invoked when value of the tracked managed text record is changed (eg, when switching localization); also invoked when the engine is initialized.")]
+        [Tooltip("추적된 관리 텍스트 레코드의 값이 변경될 때(예: 현지화 전환 시) 호출되며, 엔진이 초기화될 때도 호출됩니다.")]
         [SerializeField] private ValueChangedEvent onValueChanged;
 
         private ILocalizationManager localizationManager;

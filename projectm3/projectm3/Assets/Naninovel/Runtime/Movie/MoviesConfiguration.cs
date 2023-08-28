@@ -9,19 +9,19 @@ namespace Naninovel
     {
         public const string DefaultPathPrefix = "Movies";
 
-        [Tooltip("Configuration of the resource loader used with movie resources.")]
+        [Tooltip("동영상 리소스에 사용되는 리소스 로더의 구성입니다.")]
         public ResourceLoaderConfiguration Loader = new ResourceLoaderConfiguration { PathPrefix = DefaultPathPrefix };
-        [Tooltip("Whether to skip movie playback when user activates `cancel` input keys.")]
+        [Tooltip("사용자가 '취소' 입력 키를 활성화할 때 동영상 재생을 생략할지 여부입니다.")]
         public bool SkipOnInput = true;
-        [Tooltip("Whether to skip frames to catch up with current time.")]
+        [Tooltip("현재 시간을 따라잡기 위해 프레임을 건너 뛸지 여부입니다.")]
         public bool SkipFrames = true;
-        [Tooltip("Time in seconds to fade in/out before starting/finishing playing the movie.")]
+        [Tooltip("동영상 재생을 시작/종료하기 전에 페이드 인/아웃하는 시간(초)입니다.")]
         public float FadeDuration = 1f;
-        [Tooltip("Texture to show while fading. Will use a simple black texture when not provided.")]
+        [Tooltip("페이딩하는 동안 보여줄 텍스처. 제공되지 않을 때 간단한 검은색 텍스처를 사용합니다.")]
         public Texture2D CustomFadeTexture;
-        [Tooltip ("Whether to automatically play a movie after engine initialization and before showing the main menu.")]
+        [Tooltip ("엔진 초기화 후 메인 메뉴를 표시하기 전에 동영상을 자동으로 재생할지 여부입니다.")]
         public bool PlayIntroMovie;
-        [Tooltip("Path to the intro movie resource.")]
+        [Tooltip("소개 동영상 리소스의 경로입니다.")]
         [ResourcePopup(DefaultPathPrefix, DefaultPathPrefix)]
         public string IntroMovieName;
     }

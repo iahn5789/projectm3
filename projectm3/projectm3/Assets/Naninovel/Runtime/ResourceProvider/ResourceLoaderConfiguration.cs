@@ -12,14 +12,14 @@ namespace Naninovel
     [System.Serializable]
     public class ResourceLoaderConfiguration
     {
-        [Tooltip("Path prefix to add for each requested resource.")]
+        [Tooltip("요청된 각 리소스에 대해 추가할 경로 프리픽스입니다.")]
         public string PathPrefix = string.Empty;
-        [Tooltip("Provider types to use, in order." +
-                 "\n\nBuilt-in options:" +
-                 "\n • Addressable — For assets managed via the Addressable Asset System." +
-                 "\n • Project — For assets stored in project's `Resources` folders." +
-                 "\n • Local — For assets stored on a local file system." +
-                 "\n • GoogleDrive — For assets stored remotely on a Google Drive account.")]
+        [Tooltip("순서대로 사용할 프로바이더 유형입니다." +
+                 "\n\n기본 제공 옵션:" +
+                 "\n • 주소 지정 가능 - 주소 지정 가능 에셋 시스템을 통해 관리되는 에셋입니다." +
+                 "\n • 프로젝트 - 프로젝트의 'Resources' 폴더에 저장된 에셋입니다." +
+                 "\n • 로컬 - 로컬 파일 시스템에 저장된 에셋입니다." +
+                 "\n • Google Drive — Google Drive 계정에 원격으로 저장된 에셋입니다.")]
         public List<string> ProviderTypes = new List<string> { ResourceProviderConfiguration.AddressableTypeName, ResourceProviderConfiguration.ProjectTypeName };
 
         public ResourceLoader<TResource> CreateFor<TResource> (IResourceProviderManager providerManager) where TResource : Object

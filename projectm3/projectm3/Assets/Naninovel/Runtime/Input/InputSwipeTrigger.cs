@@ -11,13 +11,13 @@ namespace Naninovel
     [Serializable]
     public class InputSwipeTrigger
     {
-        [Tooltip("Swipe of which direction should be registered.")]
+        [Tooltip("어느 방향으로 스와이프를 등록해야 합니다.")]
         public InputSwipeDirection Direction;
-        [Tooltip("How much fingers (touches) should be active to register the swipe."), Range(1, 5)]
+        [Tooltip("스와이프를 등록하려면 손가락(터치)이 얼마나 활성화되어야 합니다."), Range(1, 5)]
         public int FingerCount = 1;
-        [Tooltip("Minimum required swipe distance to activate the trigger, in pixels.")]
+        [Tooltip("트리거를 활성화하는 데 필요한 최소 스와이프 거리(픽셀)입니다.")]
         public float MinimumDistance = 50f;
-        [Tooltip("Whether to activate the input while moving fingers. When disabled, will only active when fingers are released.")]
+        [Tooltip("손가락을 움직이는 동안 입력을 활성화할지 여부입니다. 비활성화하면 손가락을 놓을 때만 활성화됩니다.")]
         public bool ActivateOnMove;
         
         private Vector2 startPosition;

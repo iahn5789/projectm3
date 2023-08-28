@@ -7,11 +7,11 @@ namespace Naninovel
     [System.Serializable]
     public class InputAxisTrigger
     {
-        [Tooltip("Name of the axis.")]
+        [Tooltip("축의 이름입니다.")]
         public string AxisName = string.Empty;
-        [Tooltip("Whether trigger should happen when axis value is positive, negative or both.")]
+        [Tooltip("축 값이 positive, negative 또는 두 가지 모두일 때 트리거를 수행할지 여부입니다.")]
         public InputAxisTriggerMode TriggerMode = InputAxisTriggerMode.Both;
-        [Tooltip("When axis value is below or equal to this value, the trigger won't be activated."), Range(0, .999f)]
+        [Tooltip("축 값이 이 값보다 작거나 같으면 트리거가 활성화되지 않습니다."), Range(0, .999f)]
         public float TriggerTolerance = .001f;
 
         /// <summary>

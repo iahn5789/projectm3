@@ -9,7 +9,7 @@ namespace Naninovel
     {
         public const string DefaultPathPrefix = "Text";
 
-        [Tooltip("Configuration of the resource loader used with the managed text documents.")]
+        [Tooltip("관리되는 텍스트 문서에 사용되는 리소스 로더의 구성입니다.")]
         public ResourceLoaderConfiguration Loader = new ResourceLoaderConfiguration { PathPrefix = DefaultPathPrefix };
     }
 }

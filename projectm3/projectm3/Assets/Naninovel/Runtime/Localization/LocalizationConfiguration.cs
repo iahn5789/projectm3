@@ -9,11 +9,11 @@ namespace Naninovel
     {
         public const string DefaultLocalizationPathPrefix = "Localization";
 
-        [Tooltip("Configuration of the resource loader used with the localization resources.")]
+        [Tooltip("지역화 리소스에 사용되는 리소스 로더의 구성입니다.")]
         public ResourceLoaderConfiguration Loader = new ResourceLoaderConfiguration { PathPrefix = DefaultLocalizationPathPrefix };
-        [Tooltip("Locale of the source project resources (language in which the project assets are being authored).")]
+        [Tooltip("원본 프로젝트 리소스(프로젝트 자산을 작성하는 언어)의 로케일입니다.")]
         public string SourceLocale = "en";
-        [Tooltip("Locale selected by default when running the game for the first time. Will select `Source Locale` when not specified.")]
+        [Tooltip("게임을 처음 실행할 때 기본적으로 선택한 로케일입니다. 지정하지 않으면 '소스 로케일'을 선택합니다.")]
         public string DefaultLocale;
     }
 }

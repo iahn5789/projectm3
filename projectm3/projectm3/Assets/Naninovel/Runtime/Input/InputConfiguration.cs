@@ -23,23 +23,23 @@ namespace Naninovel
         public const string CameraLookXName = "CameraLookX";
         public const string CameraLookYName = "CameraLookY";
 
-        [Tooltip("Whether to spawn an event system when initializing.")]
+        [Tooltip("초기화 시 이벤트 시스템 생성 여부.")]
         public bool SpawnEventSystem = true;
-        [Tooltip("A prefab with an `EventSystem` component to spawn for input processing. Will spawn a default one when not specified.")]
+        [Tooltip("이벤트 시스템 구성 요소를 사용하여 입력 프로세스를 생성하기 위해 이벤트 시스템 구성 요소입니다.지정되지 않은 경우 기본 하나를 생성합니다.")]
         public EventSystem CustomEventSystem;
-        [Tooltip("Whether to spawn an input module when initializing.")]
+        [Tooltip("초기화할 때 입력 모듈을 생성할지 여부입니다.")]
         public bool SpawnInputModule = true;
-        [Tooltip("A prefab with an `InputModule` component to spawn for input processing. Will spawn a default one when not specified.")]
+        [Tooltip("입력 처리를 위해 생성할 'InputModule' 구성 요소가 있는 프리패브. 지정되지 않으면 기본값을 생성합니다.")]
         public BaseInputModule CustomInputModule;
-        [Tooltip("Limits frequency of the registered touch inputs, in seconds.")]
+        [Tooltip("등록된 터치 입력의 빈도를 초 단위로 제한합니다.")]
         public float TouchFrequencyLimit = .1f;
-        [Tooltip("Limits distance of the registered touch inputs, in pixels.")]
+        [Tooltip("등록된 터치 입력의 거리를 픽셀 단위로 제한합니다.")]
         public float TouchDistanceLimit = 25f;
         #if ENABLE_INPUT_SYSTEM && INPUT_SYSTEM_AVAILABLE
-        [Tooltip("When Unity's new input system is installed, assign input actions asset here.\n\nTo map input actions to Naninovel's input bindings, create `Naninovel` action map and add actions with names equal to the binding names (found below under `Control Scheme` -> Bindings list).\n\nBe aware, that 2-dimensional (Vector2) axes are not supported.")]
+        [Tooltip("유니티의 새 입력 시스템이 설치되면 여기에 입력 작업 자산을 할당합니다.\nNaninovel의 입력 바인딩에 입력 작업을 매핑하려면 'Naninovel' 작업 맵을 만들고 바인딩 이름과 동일한 이름의 작업을 추가합니다('제어 체계' -> 바인딩 목록 아래에 있음).\n\n2차원(Vector2) 축은 지원되지 않습니다.")]
         public UnityEngine.InputSystem.InputActionAsset InputActions = default;
         #endif
-        [Tooltip("Whether to process legacy input bindings. Disable in case you're using Unity's new input system and don't want the legacy bindings to work in addition to input actions.")]
+        [Tooltip("레거시 입력 바인딩을 처리할지 여부. 유니티의 새 입력 시스템을 사용하고 있고 입력 작업 외에 레거시 바인딩이 작동하지 않도록 하려면 사용하지 않도록 설정합니다.")]
         public bool ProcessLegacyBindings = true;
 
         [Header("Control Scheme"), Tooltip("Bindings to process input for.")]

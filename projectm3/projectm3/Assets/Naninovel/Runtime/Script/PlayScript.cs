@@ -11,14 +11,14 @@ namespace Naninovel
     /// </summary>
     public class PlayScript : MonoBehaviour
     {
-        [Tooltip("The script asset to play.")]
+        [Tooltip("재생할 스크립트 에셋입니다.")]
         [ResourcePopup(ScriptsConfiguration.DefaultPathPrefix, ScriptsConfiguration.DefaultPathPrefix, emptyOption: "None (play script text)")]
         [SerializeField] private string scriptName;
         [TextArea(3, 10), Tooltip("The naninovel script text (commands) to execute; has no effect when `Script Name` is specified. Argument of the event (if any) can be referenced in the script text via `{arg}` expression. Conditional block commands (if, else, etc) are not supported.")]
         [SerializeField] private string scriptText;
-        [Tooltip("Whether to automatically play the script when the game object is instantiated.")]
+        [Tooltip("게임 개체가 인스턴스화될 때 스크립트를 자동으로 재생할지 여부입니다.")]
         [SerializeField] private bool playOnAwake;
-        [Tooltip("Whether to disable waiting for input mode when the script is played.")]
+        [Tooltip("스크립트가 재생될 때 입력 모드 대기를 비활성화할지 여부입니다.")]
         [SerializeField] private bool disableWaitInput;
 
         private string argument;
