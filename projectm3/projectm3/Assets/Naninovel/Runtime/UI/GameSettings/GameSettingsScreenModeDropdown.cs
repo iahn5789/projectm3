@@ -8,13 +8,13 @@ namespace Naninovel.UI
     public class GameSettingsScreenModeDropdown : ScriptableDropdown
     {
         [ManagedText("DefaultUI")]
-        protected static string ExclusiveFullScreen = "Full Screen";
+        protected static string ExclusiveFullScreen = "전체화면";
         [ManagedText("DefaultUI")]
-        protected static string FullScreenWindow = "Full Screen Window";
+        protected static string FullScreenWindow = "전체 창화면";
         [ManagedText("DefaultUI")]
-        protected static string MaximizedWindow = "Maximized Window";
+        protected static string MaximizedWindow = "창화면";
         [ManagedText("DefaultUI")]
-        protected static string Windowed = "Windowed";
+        protected static string Windowed = "창화면";
 
         private readonly Dictionary<int, FullScreenMode> indexToMode = new Dictionary<int, FullScreenMode>();
         private readonly List<string> options = new List<string>();
