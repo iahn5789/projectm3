@@ -18,14 +18,14 @@ namespace Naninovel.UI
         public GameStateMap State { get; private set; }
 
         [ManagedText("DefaultUI")]
-        protected static string EmptySlotLabel = "Empty";
+        protected static string EmptySlotLabel = "빈 슬롯";
 
         protected virtual Button DeleteButton => deleteButton;
         protected virtual RawImage ThumbnailImage => thumbnailImage;
         protected virtual Texture2D EmptySlotThumbnail => emptySlotThumbnail;
 
         [Tooltip("제목에 설정된 날짜 형식. 사용 가능한 옵션은 C# 문서에서 날짜 및 시간 형식 문자열을 참조하십시오.")]
-        [SerializeField] private string dateFormat = "yyyy-MM-dd HH:mm:ss";
+        [SerializeField] private string dateFormat = "yy년MM월dd일 HH시mm분";
         [Tooltip("제목 템플릿. '{N}'은 슬롯 번호 '{D}' - 날짜(또는 슬롯이 비어 있는 경우 레이블이 비어 있음)로 대체됩니다.")]
         [SerializeField] private string titleTemplate = "{N}. {D}";
         [SerializeField] private Button deleteButton;
