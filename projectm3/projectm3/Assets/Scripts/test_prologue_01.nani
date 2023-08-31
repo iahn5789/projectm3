@@ -1,4 +1,4 @@
-;테스트용 프롤로그 제작
+; 테스트용 프롤로그 제작
 @back Dream
 ...어?
 ???: 많이 긴장한 것 같은데? 괜찮은 거지?
@@ -7,7 +7,8 @@
 ???: 다음 차례는!!! 러브!!!
 러브.....
 @back ScClassRoom01 wait:false
-@hidePrinter
+@hidePrinter 
+@spawn ShakeBackground wait:false
 러브크레센도!!!
 하하하하! 갑자기 뭐야!!!
 어...뭐지...?
@@ -24,11 +25,34 @@
 창밖의 햇살과 반 친구들의 웃음소리, 선생님의 호통을 들으니, 현실에 있다는 것이 실감이 난다.
 ( 꿈이였다니... 뭔가 기운빠지는구만... )
 @hideAll
-@back Black time:2
-@back ScMaingate01
+@back Black time:1
+@back ScMaingate01 time:1
 뒤에 나가 서 있는 거로 모자라 청소까지 하고 가라니...
 이건 너무한 거 아니냐고...
 ???: 오늘도 깊은 밤 꿈속에서 당신을 구하는 최고의 히어로!
 ???: 그 이름은 아름다운 러브크레센도!
 하...
-@stop
+@back Black time:1 wait:false
+@hidePrinter  time:1 wait:true
+@char firstjeon
+전대용
+( 전학을 오자마자 친해진 유일한 친구다. )
+( 재미도 있고 은근히 아는 것도 많지만... )
+@hideChars time:1 wait:false
+@hidePrinter time:1 wait:false
+@back Black time:1 wait:true
+@back ScMaingate01 time:1 wait:true
+변태다...
+jeon: 뭐? 하하! 자기소개라도 하는 건가?
+시끄러워!
+jeon: 너 수업 중에 사자후를 날렸다며?
+jeon: 정말 멋있는 녀석이야.
+jeon: 수업을 듣기 싫으니 소리를 지른 것 아니야?
+그거 칭찬 맞지?
+근데 넌 왜 이 시간까지 학교에 있는 거야? 너도 수업 듣기 싫어서 소리질렀냐?
+jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
+jeon: 더는 묻지마라...!
+어... 그래...
+( 역시 변태다. )
+일이 있었겠지. 빨리 집에 가자.
+@goto test_prologue_02
