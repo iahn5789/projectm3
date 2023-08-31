@@ -50,7 +50,7 @@ public class CheckInputName : MonoBehaviour
         var hideUI = new HideUI{UINames = inputHideUI};
         hideUI.ExecuteAsync();
         // Naninovel Goto 문
-        var inputRoot = new NamedString("test_prologue_01", "GameStart");
+        var inputRoot = new NamedString("A_prologue_01", "GameStart");
         var Goto = new Goto { Path = inputRoot };
         Goto.ExecuteAsync();
     }
