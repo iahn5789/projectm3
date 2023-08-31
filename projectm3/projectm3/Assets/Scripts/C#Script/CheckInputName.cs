@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Naninovel;
+using Naninovel.Commands;
 
 public class CheckInputName : MonoBehaviour
 {
@@ -21,22 +22,36 @@ public class CheckInputName : MonoBehaviour
         {
             string textFieldValue = nameTextField.text.Trim(); // 공백 제거
             var variableManager = Engine.GetService<ICustomVariableManager>();
+            var gotoHendler = Engine.GetService<IEngineService>();
             if (string.IsNullOrEmpty(textFieldValue))
             {
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", "정민");
+                gotoGame();
+
             }
             else if (textFieldValue != "강여진" && textFieldValue != "진다영" && textFieldValue != "설나희" && textFieldValue != "전대용")
             {
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", textFieldValue);
+                gotoGame();
             }
             else{
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", "");
             }
-            Debug.Log("입력된 이름: " + textFieldValue);
-            Debug.Log("저장된 이름: " + variableManager.GetVariableValue("Player_name"));
         }
+    }
+
+    private void gotoGame()
+    {
+        // Naninovel UI Hide 문
+        var inputHideUI = new List<string>() {"InputNameUI"};
+        var hideUI = new HideUI{UINames = inputHideUI};
+        hideUI.ExecuteAsync();
+        // Naninovel Goto 문
+        var inputRoot = new NamedString("test_prologue_01", "GameStart");
+        var Goto = new Goto { Path = inputRoot };
+        Goto.ExecuteAsync();
     }
 }

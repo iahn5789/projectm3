@@ -27,7 +27,6 @@ public class LoadGamenote : MonoBehaviour
         Scene previousScene = SceneManager.GetActiveScene();
         foreach (GameObject obj in previousScene.GetRootGameObjects())
         {
-            Debug.Log("test GameObject : " , obj);
             obj.SetActive(false);
         }
     }
