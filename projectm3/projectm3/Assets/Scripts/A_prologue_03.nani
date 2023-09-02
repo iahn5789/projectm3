@@ -4,44 +4,60 @@
 @back Black time:1 wait:true
 @back Black time:2 wait:true
 @back Road02 time:1 wait:true
-아직은 익숙하지 않은 하굣길.
-아스팔트의 질감부터 하늘의 모양까지 모든 게 새롭기만 하다.
+describe: 아직은 익숙하지 않은 하굣길.
+describe: 아스팔트의 질감부터 하늘의 모양까지 모든 게 새롭기만 하다.
+@char jeon.body>body2,face>face2 wait:false
 jeon: 그래서 내가 어제 그걸 보는데...
+@char jeon.body>body2,face>face4 wait:false
 jeon: ...
-갑자기 왜 말을 하다 말아.
+{Player_name}: 갑자기 왜 말을 하다 말아.
 jeon: 지금 혹시 몇 시지?
-갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정으로 물어보았다.
-지금? 여섯 시.
+describe: 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정으로 물어보았다.
+{Player_name}: 지금? 여섯 시.
+@char jeon.body>body4,face>face3 wait:false
+@spawn ShakeCharacter params:jeon wait:false
 jeon: 뭐!!! 여!섯!시!?
-아 깜짝이야! 또 뭔데!
-처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너편에 있는 편의점으로 사라져 버렸다.
-야! 어디가! 전대용!!!
-뭐야 진짜...아무튼 이상한놈이라니까..
+{Player_name}: 아 깜짝이야! 또 뭔데!
+@hideChars
+describe: 처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너편에 있는 편의점으로 사라져 버렸다.
+@spawn ShakePrinter wait:false
+{Player_name}: 야! 어디가! 전대용!!!
+{Player_name}: 뭐야 진짜...아무튼 이상한놈이라니까..
 알바생: 안녕하세요!
-눈앞에서 사라져 버린 전대용을 바라보던 와중 누군가가 다가왔다.
-네? 저요?
+describe: 눈앞에서 사라져 버린 전대용을 바라보던 와중 누군가가 다가왔다.
+{Player_name}: 네? 저요?
 알바생: 다른 건 아니고 축제 홍보 때문에 그러는데요.
 알바생: 이번 주말에 진행하는 축제니 시간이 괜찮으시다면 오셔서 구경하고 가세요.
-모자를 깊게 눌러쓴 알바생은 전단지를 내게 건네주었다.
-알바생은 내 반응 따위는 신경도 쓰지 않은 채 다른 사람에게 가버렸다.
-손에는 전단지 한 장만이 민망하리만치 들려있었다.
-이건...뭐지...?
-그냥 동네 축제같은데...연예인도 오고 공연도 하나보네..
-축제에 참여하는 연애인과 뮤지션들 중 독특한 컨셉의 2인조 그룹이 눈에 띈다.
-와...이런 컨셉의 밴드가 축제에 나온다고? 신기하네.
-이때 편의점으로 사라져 버린 전대용이 양손에 음료수를 들고나왔다.
-야! 어디 갔다 온 거야!
+describe: 모자를 깊게 눌러쓴 알바생은 전단지를 내게 건네주었다.
+describe: 알바생은 내 반응 따위는 신경도 쓰지 않은 채 다른 사람에게 가버렸다.
+describe: 손에는 전단지 한 장만이 민망하리만치 들려있었다.
+{Player_name}: 이건...뭐지...?
+{Player_name}: 그냥 동네 축제같은데...연예인도 오고 공연도 하나보네..
+describe: 축제에 참여하는 연애인과 뮤지션들 중 독특한 컨셉의 2인조 그룹이 눈에 띈다.
+{Player_name}: 와...이런 컨셉의 밴드가 축제에 나온다고? 신기하네.
+describe: 이때 편의점으로 사라져 버린 전대용이 양손에 음료수를 들고나왔다.
+@spawn ShakePrinter wait:false
+@char jeon.body>body2,face>face1 wait:false
+{Player_name}: 야! 어디 갔다 온 거야!
+@char jeon.body>body2,face>face4 wait:false
 jeon: 어디긴. 음료수 사러 갔다 왔지.
-그러니까...이걸 사려고 소리까지 지르면서 달려간 거야?
+{Player_name}: 그러니까...이걸 사려고 소리까지 지르면서 달려간 거야?
+@char jeon.body>body4,face>face1 wait:false
 jeon: 성공한 사람들은 항상 자기만의 인생 루틴을 따른다고 하지..
 jeon: 나에게 있어 여섯 시는 음료수를 마셔야 하는 시간이야.
-하...그럼 각 시간마다 먹는 음식이 있는 거야?
+{Player_name}: 하...그럼 각 시간마다 먹는 음식이 있는 거야?
+@char jeon.body>body2,face>face3 wait:false
 jeon: 당연하지!
+@char jeon.body>body3,face>face3 wait:false
+@spawn ShakePrinter wait:false params:,0
 jeon: 아침, 점심, 저녁을 제외하고 여섯 시는 음료수! 여덟 시는 간식! 열 시는...
-대용이의 하루 루틴을 듣고 있자니 또다시 귀에서 피가 나는 것 같았다.
-혹시나 해서 만져보니 역시나 대용이의 침이었다.
-이대로 계속 가다가는 중이염에 걸릴 것만 같았다.
-잠깐 잠깐. 나 이것 좀 버리고 올게.
+@despawn ShakePrinter
+@hideChars
+describe: 대용이의 하루 루틴을 듣고 있자니 또다시 귀에서 피가 나는 것 같았다.
+describe: 혹시나 해서 만져보니 역시나 대용이의 침이었다.
+describe: 이대로 계속 가다가는 중이염에 걸릴 것만 같았다.
+{Player_name}: 잠깐 잠깐. 나 이것 좀 버리고 올게.
+@char jeon.body>body1,face>face5 wait:false
 jeon: 빨리 다녀와. 일곱 시에는 집에서 밥 먹는 게 내 루틴이라고.
-알겠으니 그 루틴 이야기 좀 제발 그만해.
+{Player_name}: 알겠으니 그 루틴 이야기 좀 제발 그만해.
 @goto A_prologue_04.prologue_04
