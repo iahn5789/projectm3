@@ -33,6 +33,10 @@ namespace Naninovel.UI
         protected virtual GameStateSlotsGrid QuickLoadGrid => quickLoadGrid;
         protected virtual GameStateSlotsGrid SaveGrid => saveGrid;
         protected virtual GameStateSlotsGrid LoadGrid => loadGrid;
+        protected virtual Canvas SaveBg => saveBg;
+        protected virtual Canvas LoadBg => loadBg;
+        protected virtual Image SavePanel => savePanel;
+        protected virtual Image LoadPanel => loadPanel;
 
         [Header("Tabs")]
         [SerializeField] private Toggle quickLoadToggle;
@@ -44,6 +48,13 @@ namespace Naninovel.UI
         [SerializeField] private GameStateSlotsGrid saveGrid;
         [SerializeField] private GameStateSlotsGrid loadGrid;
 
+        [Header("BG")]
+        [SerializeField] private Canvas saveBg;
+        [SerializeField] private Canvas loadBg;
+        
+        [Header("Panel")]
+        [SerializeField] private Image savePanel;
+        [SerializeField] private Image loadPanel;
         private const string titleLabel = "OnLoad";
 
         private string titleScriptName;
@@ -83,7 +94,7 @@ namespace Naninovel.UI
         protected override void Awake ()
         {
             base.Awake();
-            this.AssertRequiredObjects(QuickLoadToggle, SaveToggle, LoadToggle, QuickLoadGrid, SaveGrid, LoadGrid);
+            this.AssertRequiredObjects(QuickLoadToggle, SaveToggle, LoadToggle, QuickLoadGrid, SaveGrid, LoadGrid, SaveBg, LoadBg, SavePanel, LoadPanel);
         }
 
         protected override void OnDestroy ()
@@ -103,18 +114,30 @@ namespace Naninovel.UI
             switch (value)
             {
                 case SaveLoadUIPresentationMode.QuickLoad:
+                    LoadBg.gameObject.SetActive(true);
+                    SaveBg.gameObject.SetActive(false);
+                    LoadPanel.gameObject.SetActive(true);
+                    SavePanel.gameObject.SetActive(false);
                     LoadToggle.gameObject.SetActive(true);
                     QuickLoadToggle.gameObject.SetActive(true);
                     QuickLoadToggle.isOn = true;
                     SaveToggle.gameObject.SetActive(false);
                     break;
                 case SaveLoadUIPresentationMode.Load:
+                    LoadBg.gameObject.SetActive(true);
+                    SaveBg.gameObject.SetActive(false);
+                    LoadPanel.gameObject.SetActive(true);
+                    SavePanel.gameObject.SetActive(false);
                     LoadToggle.gameObject.SetActive(true);
                     QuickLoadToggle.gameObject.SetActive(true);
                     LoadToggle.isOn = true;
                     SaveToggle.gameObject.SetActive(false);
                     break;
                 case SaveLoadUIPresentationMode.Save:
+                    LoadBg.gameObject.SetActive(false);
+                    SaveBg.gameObject.SetActive(true);
+                    LoadPanel.gameObject.SetActive(false);
+                    SavePanel.gameObject.SetActive(true);
                     SaveToggle.gameObject.SetActive(true);
                     SaveToggle.isOn = true;
                     LoadToggle.gameObject.SetActive(false);
