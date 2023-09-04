@@ -1509,6 +1509,7 @@ GameObject:
   - component: {fileID: 8409165586169877612}
   - component: {fileID: 1696624346109881775}
   - component: {fileID: 7067069828461443168}
+  - component: {fileID: 1403010503276006920}
   m_Layer: 5
   m_Name: GamenoteButton
   m_TagString: Untagged
@@ -1616,17 +1617,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1979428275877861955}
-        m_MethodName: GoGameScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7136921894640332932}
         m_MethodName: Play
         m_Mode: 1
@@ -1638,6 +1628,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1403010503276006920}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1403010503276006920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770442782681576365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptName: 
+  scriptText: '@showUI GamenoteUI
+
+    @stop'
+  playOnAwake: 0
+  disableWaitInput: 0
 --- !u!1 &4621344034470821630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,7 +1974,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4237543007054515084}
-  - component: {fileID: 1979428275877861955}
   m_Layer: 5
   m_Name: SceneLoad
   m_TagString: Untagged
@@ -1982,20 +2000,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1979428275877861955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6272490723151999273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da9797dd7c2216540a474494f06573c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gamenoteUIPrefab: {fileID: 6306036015961478139, guid: 8cab5d3fb9023bc4eafb40a316b13ee2,
-    type: 3}
 --- !u!1 &7759426239576870978
 GameObject:
   m_ObjectHideFlags: 0
