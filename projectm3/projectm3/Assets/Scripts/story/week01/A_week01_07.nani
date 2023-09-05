@@ -1,35 +1,56 @@
 #week01_07
+@char kang.body>body1,face>face1 wait:false
 한갑수: 뭐? 하하하! 걔가 동아리에 들어온다고?
 한갑수: 그놈 목소리 하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…
 한갑수: 여진이는 들어온다고 하고 다영이는 아니라고 말하고. 부원들끼리 합의된 거 맞아?
+@char kang.body>body1,face>face8 wait:false
 kang: 그…그건…
+@char kang.body>body1,face>face6 wait:false
 한갑수: 어쨌든 재미있을 것 같으니 그 친구가 동아리에 들어오는 걸 허락하마.
 한갑수: 단, 조건이 하나 있다.
+@hideChars
+@char bigkang.body>body2,face>face8 wait:false
 kang: 조건…이요…?
+@hideChars wait:false
 @hidePrinter  wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @back ScClub01 time:1
+describe: 5분 정도 긴 침묵이 이어졌다.
+describe: 어색한 분위기가 이어지자, 말을 걸어 보기 위해 이야기를 꺼냈다.
 {Player_name}: 저기… 이름이 설나희...
+@char sul.body>body1,face>face1 wait:false
 sul: …
 {Player_name}: 혹시 몇 학년이세요…?
 sul: …3학년…
 {Player_name}: 누나라고 불러도 될까요…?
+@char sul.body>body3,face>face1 wait:false
 sul: …응…
 {Player_name}: (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)
+@hideChars
 describe: 드르륵.
 describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
+@char jeon.body>body2,face>face1 wait:false
 jeon: 실례합니다.
 {Player_name}: 어? 대용이? 여긴 무슨 일이야?
+@char jeon.body>body2,face>face4 wait:false
 jeon: 오! {Player_name}! 결국 가입해 버린 거냐고?
+@char jeon.body>body1,face>face1 wait:false
 jeon: 별건 아니고 잠깐 필요한 게 있어서 찾아보러 왔지. 혹시 마이크 남는 거 있어?
 {Player_name}: 마이크? 나는 잘 모르겠는데?
+@char jeon.body>body4,face>face5 wait:false
 jeon: 아 그래? 흠…
+@hideChars wait:false
 describe: 잠시 고민하던 대용이는 옆에 있던 나희누나에게 말을 건넸다.
+@char jeon.body>body2,face>face2 wait:false
 jeon: 헤헤 누나 안녕하세요! 혹시 마이크 남는 거 있나요?
+@hideChars wait:false
+@char sul.body>body2,face>face1 wait:false
 sul: 없어.
 jeon: 없어요?
 sul: 없어.
 jeon: 아 있었는데?
+@hideChars
+@char bigsul.body>body2,face>face4 wait:false
 sul: 그냥 없어.
 @goto A_week01_08.week01_08

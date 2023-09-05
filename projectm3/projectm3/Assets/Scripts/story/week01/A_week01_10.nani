@@ -1,20 +1,35 @@
 #week01_10
 한갑수: 그럼, 이야기는 전부 다 했으니 난 이만 간다. 수고들 해라.
 describe: 그렇게 자기 할 말만 열심히 하던 한갑수 선생님은 다시 교무실로 돌아가셨다.
+@char kang.body>body1,face>face1 wait:false
 kang: 잘 됐다. 그래도 오디션보다는 쪽지 시험이 좋지 않을까?
 describe: 확실히 오디션보다는 쪽지 시험이 나았다.
 describe: 만약 오디션을 봤다면...
 describe: 상상도 하기 싫었다.
+@char kang.body>body3,face>face6 wait:false
 kang: 음... 그러고보니 성적은 어때...?
 {Player_name}: 중간...정도?
+@hideChars wait:false
+@char bigkang.body>body3,face>face7 wait:false
 kang: 그럼, 낙제는 걱정하지 않아도 괜찮으려나...
+@char bigkang.body>body3,face>face8 wait:false
 kang: 우리학교는 시험을 보는 게 조금 독특해서...
 kang: 아마 그동안 본 적 없는 시험이 될 수도 있을 것 같은데...
+@char bigkang.body>body1,face>face1 wait:false
 kang: 일단 교실로 가면서 쪽지 시험이 어떻게 나오는지 알려줄게!
+@char bigkang.body>body2,face>face2 wait:false
+@spawn ShakeCharacter params:bigkang wait:false
 kang: 같이 갈 사람 손!
+@hideChars wait:false
+@char jin.body>body1,face>face4 wait:false
 jin: 몰라! 난 집에 갈 거야!
+@hideChars wait:false
+@char sul.body>body1,face>face1 wait:false
 sul: ...
+@hideChars wait:false
+@char kang.body>body1,face>face8 wait:false
 kang: 아쉽네... 그럼, 우리 둘이 가자!
+@hideChars wait:false
 @hidePrinter  wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
@@ -24,5 +39,6 @@ describe: 아무도 없는 학교는 여전히 어색했지만,
 describe: 누군가가. 그것도 예쁜 여자애가 내 옆에 서 있는 게 더 어색했다.
 describe: 신경을 쓰지 않으려 해도 그럴 때마다 더욱 신경이 쓰였다.
 describe: 나도 모르게 자꾸만 발을 맞추며 걷고 있었다.
-describe: 아무도 없는 조용한 복도.
-describe: 맞춰 가는 발걸음 소리가 울려 퍼지고 있었다.
+describe: 우리 둘 밖에 없는 조용한 복도.
+describe: 그 복도에 발걸음 소리가 조금씩 울려 퍼지고 있었다.
+@stop
