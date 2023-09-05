@@ -1,7 +1,9 @@
-;첫 시작
-#GameStart
+; 첫 시작
+# GameStart
 @hideUI InputNameUI
 @back Dream
+@bgm Common_Backstage_01 volume:80 loop:true fade:2 wait:false
+@sfx Amb_Crowd_Loop_01 volume:60 loop:true fade:1
 {Player_name}: ...어?
 describe: 묘한 감정이 나를 짓눌렀다.
 describe: 적당히 떨리는 손을 들어 가슴에 올렸다.
@@ -15,12 +17,18 @@ describe: 어두운 탓에 잘 보이지는 않았지만 분명 나를 향해 �
 ???: 심호흡 한번하고...
 ???: 다음 차례는!!! 러브!!!
 {Player_name}: 러브.....
+@stopBgm Common_Backstage_01 wait:false
+@stopSfx Amb_Crowd_Loop_01 wait:false
 @back ScClassRoom01 wait:false
+@bgm Common_School_Club_01 volume:100 loop:true fade:0
+@sfx Common_Desk_Rattle_01 volume:100 loop:false
 @hidePrinter 
 @spawn ShakeBackground wait:false
+@sfx Amb_Classroom_01 volume:30 loop:ture fade:1
 {Player_name}: 러브크레센도!!!
 일동: 하하하하! 갑자기 뭐야!!!
 {Player_name}: 어...뭐지...?
+@sfx Body_Fall_01 volume:80 loop:false fade:0
 describe: 빢!
 describe: 갑자기 누군가 내 뒤통수를 때렸다.
 한갑수: 이 자식은 수업 시간에 자는 걸로도 모자라서 소리까지 질러대네!
@@ -33,10 +41,10 @@ describe: 뒤통수 너머로 더 화끈거리는 시선들이 느껴졌다.
 한갑수: 모두 조용! 집중해!
 describe: 주변에서 들려오는 웃음소리, 선생님의 호통을 뒤로 창밖의 햇살이 따사롭게 느껴졌다.
 describe: 조금씩 사라져가는 꿈의 자리에 현실감이 들어오고 있었다.
-@hidePrinter wait:false
+@hidePrinter  wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back ScMaingate01 time:1 wait:true tint:#EAD0B4
+@back ScMaingate01 tint:#EAD0B4 time:1 wait:true
 {Player_name}: 혼자서 화장실 청소까지 하고 가라니...
 describe: 모두가 하교한 학교는 유령도시 같은 느낌을 주었다.
 describe: 걸음을 걸을 때마다 들리는 발소리를 제외하면 어떤 소리도 들리지 않았다.
