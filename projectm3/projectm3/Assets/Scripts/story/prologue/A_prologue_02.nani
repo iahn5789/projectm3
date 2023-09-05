@@ -1,9 +1,9 @@
 # prologue_02
-@hideChars time:1 wait:false
-@hidePrinter  time:1 wait:false
+@hideChars wait:false
+@hidePrinter  wait:false
 @back Black time:1 wait:true
 @back Black time:2 wait:true
-@back Road01 time:1 wait:true
+@back Road01 time:1 wait:true tint:#E5BA8C
 describe: 대용이와 함께 학교에서 나와 함께 길을 걸어갔다.
 describe: 시간이 시간인지라 확실히 낮보다는 더 시원했다.
 @char jeon.body>body1,face>face1 wait:false
@@ -68,10 +68,11 @@ jeon: 역시 큰 가ㅅ...
 jeon: 한번 보면 헤어 나오지 못하고 과학서예부에 들어오게 될걸?
 @char jeon.body>body4,face>face1 wait:false
 {Player_name}: 제발 좀 조용히 말해줘...같이 다니기 너무 부끄러워...
-@char jeon.body>body3,face>face4 wait:false
+@char jeon.body>body3 time:0 wait:false
+@char jeon.face>face4 time:1 wait:false
 jeon: 어차피 여기엔 우리 말고는 없다고?
 {Player_name}: 에휴. 말을 말자.
-@hideChars
+@hideChars time:0 wait:false
 describe: 한번 풀려버린 대용이의 입은 멈출 줄 몰랐다. 
 describe: 귀에 피가 나는 것 같아 만져보니 대용이의 침이었다.
 describe: 그렇게 만나 본 적도 없는 동아리 부장의 음식 취향까지 들어가며 대용이와 함께 길을 걸어갔다.

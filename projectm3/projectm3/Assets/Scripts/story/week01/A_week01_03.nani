@@ -20,10 +20,10 @@ describe: 아주 짧은 눈빛 교환이 이어졌고, 여학생의 표정이 �
 kang: 아! 와줬구나. 어서 와!
 @char kang.body>body2,face>face1 wait:false
 jin: 이거 봐! 완전 변태 아니야! 몰래 숨어서 엿듣고 있던 거야?
-@char kang.body>body2,face>face8 wait:false
+@char kang.body>body2,face>face8 time:0 wait:false
 {Player_name}: 아...아니 그러니까 나는...
-@hideChars
-@char jin.body>body3,face>face4 wait:false
+@hideChars time:0 wait:false
+@char jin.body>body3,face>face4 time:0.1 wait:false
 jin: 시끄러워! 변태! 호색한! 대머리!
 kang: 그만! 내가 불러서 온 친구란 말이야!
 jin: 찐따! 찌질이! 버러지! 거지!

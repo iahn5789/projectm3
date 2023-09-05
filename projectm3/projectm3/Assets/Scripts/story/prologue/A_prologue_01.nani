@@ -33,9 +33,10 @@ describe: 뒤통수 너머로 더 화끈거리는 시선들이 느껴졌다.
 한갑수: 모두 조용! 집중해!
 describe: 주변에서 들려오는 웃음소리, 선생님의 호통을 뒤로 창밖의 햇살이 따사롭게 느껴졌다.
 describe: 조금씩 사라져가는 꿈의 자리에 현실감이 들어오고 있었다.
-@hideAll
-@back Black time:1
-@back ScMaingate01 time:1
+@hidePrinter wait:false
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back ScMaingate01 time:1 wait:true tint:#EAD0B4
 {Player_name}: 혼자서 화장실 청소까지 하고 가라니...
 describe: 모두가 하교한 학교는 유령도시 같은 느낌을 주었다.
 describe: 걸음을 걸을 때마다 들리는 발소리를 제외하면 어떤 소리도 들리지 않았다.
@@ -48,7 +49,7 @@ describe: 그 때.
 {Player_name}: 하...
 @back Black time:1 wait:false
 @hidePrinter  time:1 wait:true
-@char firstjeon
+@char firstjeon wait:false
 describe: 전대용
 describe: 전학을 오자마자 친해진 유일한 친구다.
 describe: 재미도 있고 은근히 아는 것도 많지만...
@@ -57,7 +58,7 @@ describe: 재미도 있고 은근히 아는 것도 많지만...
 @back Black time:1 wait:true
 @back ScMaingate01 time:1 wait:true
 {Player_name}: 변태다...
-@char jeon.body>body4,face>face1 wait:false
+@char jeon.body>body4,face>face1 time:0 wait:false
 jeon: 너 수업 중에 사자후를 날렸다며?
 @char jeon.body>body4,face>face2 wait:false
 jeon: 정말 멋있는 녀석이야.
@@ -66,9 +67,9 @@ jeon: 정말 멋있는 녀석이야.
 {Player_name}: 근데 넌 왜 이 시간까지 학교에 있는 거야?
 @char jeon.body>body2,face>face5 wait:false
 jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
-@char jeon.body>body4,face>face3 wait:false
+@char jeon.body>body4,face>face3 time:0 wait:false
 jeon: 더는 묻지마라...!
 {Player_name}: 어... 그래...
-@char jeon.body>body4,face>face1 wait:false
+@char jeon.body>body4,face>face1 time:0 wait:false
 describe: 역시 변태다.
 @goto A_prologue_02.prologue_02

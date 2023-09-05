@@ -20,6 +20,7 @@ describe: 시끄럽기만 하던 동아리실에는 어느새 고요함이 맴�
 sul: …...
 {Player_name}: 안녕...하세요...?
 describe: 어색한 분위기 속 인사를 건네자, 고개를 살짝 돌렸다.
+@hideChars wait:false
 describe: 무언가 말을 하려나 싶었지만, 말 없이 쳐다만 보고 있었다.
 {Player_name}: ( 이 사람 무서워… )
 @hideChars wait:false
@@ -29,16 +30,18 @@ describe: 무언가 말을 하려나 싶었지만, 말 없이 쳐다만 보고 �
 @back ScOffice01 time:1
 @char kang.body>body1,face>face5 wait:false
 kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
-@char kang.body>body1,face>face4 position:-4 wait:false
+@char kang.body>body1,face>face4 position:-4 wait:false tint:grey
 @char jin.body>body1,face>face4 position:4 wait:false
 jin: 아직 대화도 제대로 나눠보지도 못했고! 무엇보다 음흉해서 싫어!
-@char kang.body>body1,face>face5 position:-4 wait:false
+@char kang.body>body1,face>face5 position:-4 wait:false tint:#ffffff
+@char jin.body>body1,face>face4 position:4 wait:false tint:grey
 kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야?
-@char jin.body>body3,face>face4 position:4 wait:false
+@char jin.body>body3,face>face4 position:4 wait:false tint:#ffffff
+@char kang.body>body1,face>face5 position:-4 wait:false tint:grey
 jin: 고집을 부리는 건 내가 아니라 너야 바보야!
 @hideChars wait:false
 한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
-@char kang.body>body1,face>face8 wait:false
+@char kang.body>body1,face>face8 wait:false tint:white
 kang: 아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다!
 한갑수: 원래 있던 애들 나간 지 좀 되지 않았나? 이번에는 누가 들어온 거야?
 @char kang.body>body1,face>face1 wait:false

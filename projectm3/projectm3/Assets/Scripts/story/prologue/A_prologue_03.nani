@@ -3,7 +3,7 @@
 @hidePrinter  time:1 wait:false
 @back Black time:1 wait:true
 @back Black time:2 wait:true
-@back Road02 time:1 wait:true
+@back Road02 tint:#E1B585 time:1 wait:true
 describe: 아직은 익숙하지 않은 하굣길.
 describe: 아스팔트의 질감부터 하늘의 모양까지 모든 게 새롭기만 하다.
 @char jeon.body>body2,face>face2 wait:false
@@ -18,7 +18,7 @@ describe: 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정
 @spawn ShakeCharacter params:jeon wait:false
 jeon: 뭐!!! 여!섯!시!?
 {Player_name}: 아 깜짝이야! 또 뭔데!
-@hideChars
+@hideChars wait:false
 describe: 처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너편에 있는 편의점으로 사라져 버렸다.
 @spawn ShakePrinter wait:false
 {Player_name}: 야! 어디가! 전대용!!!
@@ -49,7 +49,7 @@ jeon: 나에게 있어 여섯 시는 음료수를 마셔야 하는 시간이야.
 @char jeon.body>body2,face>face3 wait:false
 jeon: 당연하지!
 @char jeon.body>body3,face>face3 wait:false
-@spawn ShakePrinter wait:false params:,0
+@spawn ShakePrinter params:,0 wait:false
 jeon: 아침, 점심, 저녁을 제외하고 여섯 시는 음료수! 여덟 시는 간식! 열 시는...
 @despawn ShakePrinter
 @hideChars
