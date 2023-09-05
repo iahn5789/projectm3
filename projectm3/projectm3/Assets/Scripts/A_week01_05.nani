@@ -1,22 +1,37 @@
 #week01_05
+@char kang.body>body1,face>face5 wait:false
 kang: 그만! 그렇게 몰아세우면 멀쩡하던 사람도 쓰러지겠어!
 kang: 우리 둘이 싸우고 있으니까 민망해서 들어오지도 못하고 밖에 서 있었던 거 아니야!
 sul: …그건 맞지…
+@hideChars
+@char jin.body>body1,face>face4 wait:false
 jin: 그럼 노크한다던가 인기척을 냈으면 우리도 대화를 멈췄을 거 아니야!
 sul: …그것도 맞지…
+@char jin.body>body3,face>face2 wait:false
 jin: 애초에 누군지도 모르는 사람을 불러서 대뜸 가입시킨다는 게 말이 돼?
 jin: 이 변태한테 뭘 시킬 건데!
 kang: 그...그건...
+@char jin.body>body1,face>face4 wait:false
 jin: 생각해 본 적도 없지?
+@hideChars
+@char kang.body>body2,face>face5 wait:false
+@spawn ShakeBackground wait:false
 kang: 보...보컬을 맡길 생각이야!
+kang: 아마 맡겨놓으면 제대로 할 수 있을거야!
+@hideChars
+@char bigjin.body>body3,face>face4 wait:false
+@spawn ShakeBackground wait:false
 jin: 말도 제대로 못 하는 바보한테 무슨 보컬을 맡기는데!
+@hideChars
 describe: 둘은 잠시 소강상태가 되는 듯하더니 어느새 다시 싸울 듯이 이야기를 이어 나가기 시작했다.
 describe: 그때 옆에서 조용히 있던 푸른 머리 여학생이 내게 다가왔다.
+@char sul.body>body3,face>face1 wait:false
 sul: …잘할 수 있겠어…?
 {Player_name}: 어…네? 어떤 거 말씀이세요…?
 sul: …보컬…
 {Player_name}: 아…음…그러니까…
 describe: 그 순간 여진이가 하던 말을 멈추고 내게 다가왔다.
+@hideChars
 @hidePrinter time:1 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true

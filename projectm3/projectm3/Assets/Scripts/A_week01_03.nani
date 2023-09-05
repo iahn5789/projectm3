@@ -15,18 +15,27 @@ describe: 아주 짧은 눈빛 교환이 이어졌고, 여학생의 표정이 �
 ???: 꺄아아아아-!
 @hidePrinter time:1 wait:false
 @back Black time:1 wait:true
-@back ScClub01 time:1 wait:false
-@char kang.body>body1,face>face1 wait:false
+@back ScClub01 time:1 wait:true
+@char kang.body>body2,face>face2 wait:false
 kang: 아! 와줬구나. 어서 와!
-@hideChars wait:false
+@char kang.body>body2,face>face1 wait:false
 jin: 이거 봐! 완전 변태 아니야! 몰래 숨어서 엿듣고 있던 거야?
+@char kang.body>body2,face>face8 wait:false
 {Player_name}: 아...아니 그러니까 나는...
+@hideChars
+@char jin.body>body3,face>face4 wait:false
 jin: 시끄러워! 변태! 호색한! 대머리!
 kang: 그만! 내가 불러서 온 친구란 말이야!
 jin: 찐따! 찌질이! 버러지! 거지!
+@hideChars
+@char kang.body>body1,face>face5 wait:false
+@spawn ShakeCharacter params:kang wait:false
 kang: 진다영!!!
+@hideChars
+@char jin.body>body1,face>face4 wait:false
 jin: 내가 틀린 말 했어?! 왜 소리를 지르고 그래!
 {Player_name}: 그러니까...나는...
+@char jin.body>body3,face>face4 wait:false
 jin: 조용히 해! 이 변태!
 {Player_name}: 미...미안...
 @goto A_week01_04.week01_04
