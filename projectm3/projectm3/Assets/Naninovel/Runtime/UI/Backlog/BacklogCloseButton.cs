@@ -1,5 +1,6 @@
 // Copyright 2022 ReWaffle LLC. All rights reserved.
-
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Naninovel.UI
 {
@@ -14,6 +15,9 @@ namespace Naninovel.UI
             backlogPanel = GetComponentInParent<BacklogPanel>();
         }
 
-        protected override void OnButtonClick () => backlogPanel.Hide();
+        protected override void OnButtonClick ()
+        {
+            backlogPanel.Hide();
+        }
     }
 }

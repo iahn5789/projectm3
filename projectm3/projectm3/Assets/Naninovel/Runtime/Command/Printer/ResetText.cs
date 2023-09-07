@@ -18,7 +18,7 @@ namespace Naninovel.Commands
 
         public override async UniTask ExecuteAsync (AsyncToken asyncToken = default)
         {
-            var printer = await GetOrAddPrinterAsync(asyncToken);
+            var printer = await GetOrAddPrinterAsync(asyncToken);   
             printer.Text = string.Empty;
             printer.RevealProgress = 0f;
         }
