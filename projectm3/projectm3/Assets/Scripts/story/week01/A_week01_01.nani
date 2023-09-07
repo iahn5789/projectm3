@@ -12,15 +12,19 @@ describe: 말도 없고 딱히 재미도 없는 전학생.
 describe: 그것도 수업 시간에 졸다가 소리를 지른 전학생.
 {Player_name}: (에휴. 그냥 빨리 집이나 가야지.)
 describe: 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득 생각이 들었다.
-@hidePrinter  time:1 wait:false
-@back Black time:1 wait:true
-@back Black time:1 wait:true
-@char kang.body>body1,face>face1 wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@processInput true
+@char kang.body>body1,face>face1 time:1.5 wait:false
 kang: (그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!)
+@processInput false
 @hideChars time:1 wait:false
 @hidePrinter time:1 wait:true
-@back Black time:1 wait:true
-@back ScClassRoom01 time:1 wait:false
+@back Black time:0.5 wait:true
+@back ScClassRoom01 time:0.5 wait:false
+@processInput true
 {Player_name}: 잠깐만.
 {Player_name}: (생각해 보니 나도 학교 끝나고 보자는 사람이 있었잖아?)
 describe: 강여진...

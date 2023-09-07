@@ -1,4 +1,10 @@
 # prologue_06
+@processInput false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:2 wait:true
+@back HomeDirtyroom01 time:1 wait:true tint:white
+@processInput true
 describe: 아침의 시작을 알리는 새소리에 잠에서 깬 채 잠시 멍하니 누워있었다.
 describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
 describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
@@ -9,9 +15,11 @@ describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 �
 엄마: 아들! 벌써 해 떴다 아침이야!
 {Player_name}: 네! 일어났어요!
 describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
-@hidePrinter  time:1 wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Road02 time:1
+@processInput true
 describe: 집을 나서자 잔뜩 불편한 얼굴의 대용이를 만났다.
 @char jeon.body>body4,face>face3 wait:false
 @spawn ShakeCharacter params:jeon wait:false
@@ -25,11 +33,13 @@ jeon: 지각도 문제지만 어제 내가 말한 동아리는 생각해 봤어?
 @char jeon.body>body2,face>face1 wait:false
 jeon: 이런이런... 오늘까지 동아리에 들어가야 하니 기억하라고?
 {Player_name}: 알겠어. 늦겠다 어서 가자.
-@hideChars wait:false
-@hidePrinter  wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:false
+@hideChars time:0.5 wait:true
 @back Black time:1 wait:true
-@back Black time:2 wait:true
-@back ScClassRoom01 time:1
+@back Black time:1 wait:true
+@back ScClassRoom01 time:1 wait:true
+@processInput true
 jeon: 그러니까 나랑 같이 벼루에 먹을 갈고 운기조식을 하며...
 @char jeon.body>body1,face>face2 wait:false
 {Player_name}: 밀린 숙제를 하기 위해 쉬는 시간에도 책상에 앉아있었지만
@@ -42,11 +52,12 @@ jeon: 항상 마요네즈만 쓰는 건 아니라고? 가끔은 간장이나 초
 describe: 상상하기도 어려운 대용이의 동아리 활동 경험을 듣던 와중 교실 뒷문이 열렸다.
 describe: 드르륵- 쿵!
 ???: 네가 그 전학생이구나!
-@hideChars time:1 wait:false
-@hidePrinter  time:1 wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back CG1 time:1 wait:true
+@back CG/01 time:1 wait:true
+@processInput true
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
 describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
 describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날라왔다.

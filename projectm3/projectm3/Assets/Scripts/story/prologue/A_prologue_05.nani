@@ -1,9 +1,10 @@
 # prologue_05
-@hideChars time:1 wait:false
-@hidePrinter  time:1 wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:2 wait:true
 @back HomeDirtyroomNight01 time:1 wait:true tint:white
+@processInput true
 describe: 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
 describe: 피곤한 몸을 이끌고 곧장 방 안으로 들어갔다.
 describe: 아직 정리가 되지 않은 방이 눈에 들어오자 벌써 머리가 지끈거렸다.
@@ -39,8 +40,4 @@ describe: 그 중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
 {Player_name}: 한 번도 해본 적이 없는데 그런 꿈을 꾸는 게 참 이상하네...
 @back tint:#434343 time:1 wait:false
 {Player_name}: 차라리 오늘 있던 일이 꿈이었으면 좋겠는데...
-@hidePrinter  time:0 wait:false
-@back Black time:1 wait:true
-@back Black time:2 wait:true
-@back HomeDirtyroom01 time:1 wait:true tint:white
 @goto A_prologue_06.prologue_06

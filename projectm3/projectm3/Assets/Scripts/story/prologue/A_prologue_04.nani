@@ -22,7 +22,7 @@ describe: 손에 들고 있던 앨범을 쓰레기통에 같이 버린 뒤 대�
 @char jeon.body>body1,face>face1 wait:false
 jeon: 이런이런. 이러면 내 루틴에 지장이 생긴다고?
 {Player_name}: 루틴 이야기 한 번만 더 하면 나 먼저 집에 가버릴 거야.
-@char jeon.body>body1   ,face>face4 wait:false
+@char jeon.body>body1,face>face4 wait:false
 jeon: 어차피 먼저 가도 할 거 없을 텐데?
 {Player_name}: 할 게 없긴 왜 없어. 아직 이삿짐 정리도 안 끝났는데.
 {Player_name}: 오늘까지 정리 안 하면 엄마가 날 죽일 거야.
@@ -37,6 +37,6 @@ describe: 차도, 사람도 많이 지나다니지 않는 골목길이라 더 �
 describe: 주변이 갑작스럽게 조용해지니 오히려 어색한 기분이 들었다.
 describe: 아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해 걸어갔다.
 describe: 그 후 10분 정도 걸었을까
-@back time:2 wait:false tint:#7C7368
+@back  tint:#7C7368 time:2 wait:false
 describe: 어느새 하늘은 검은색으로 변하고 있었다.
 @goto A_prologue_05.prologue_05

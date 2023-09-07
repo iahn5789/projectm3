@@ -1,5 +1,5 @@
 #week01_08
-@hideChars
+@hideChars wait:false
 {Player_name}: ...
 @char jeon.body>body3,face>face5 wait:false
 jeon: {Player_name} 가볼 게 내일 봐!
@@ -22,19 +22,21 @@ describe: 한껏 들뜬 모습으로 밝게 웃으며 들어오는 여진이.
 describe: 그 뒤로 어딘가 잔뜩 불만이 있는 듯한 표정의 다영이가 보였다.
 @char kang.body>body2,face>face2 wait:false
 kang: 축하해! 앞으로 동아리를 함께 하게 돼서 기뻐!
-@char kang.body>body2,face>face2 wait:false position:-4
+@char kang.body>body2,face>face2 wait:false position:-4 tint:grey
 @char jin.body>body1,face>face4 wait:false position:4
 jin: 그게 무슨 소리야! 아직 아니거든?
-@char kang.body>body1,face>face4 wait:false position:-4
+@char kang.body>body1,face>face4 wait:false position:-4 tint:white
+@char jin.body>body1,face>face4 wait:false position:4 tint:grey
 kang: 난 선생님이 {Player_name}의 가입을 허락한 걸로 들었는걸?
-@char jin.body>body3,face>face4 wait:false position:4
+@char jin.body>body3,face>face4 wait:false position:4 tint:white
+@char kang.body>body1,face>face4 wait:false position:-4 tint:grey
 jin: 전혀 아니거든? 듣고 싶은 대로만 듣는 것 같은데 내가 다시 이야기해 줘?!
 @hideChars wait:false
 @char sul.body>body1,face>face1 wait:false
 sul: ...후
 sul: 교무실 다녀온 거 맞아...?
 @hideChars wait:false
-@char kang.body>body1,face>face1 wait:false position:0
+@char kang.body>body1,face>face1 wait:false position:0 tint:white
 kang: 그럼!
 @char kang.body>body2,face>face2 wait:false
 kang: 가입을 허락하는 대신 간단한 테스트를 볼 거라고 말씀하셨어.

@@ -1,9 +1,11 @@
 # prologue_02
-@hideChars wait:false
-@hidePrinter  wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:false
+@hideChars time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:2 wait:true
-@back Road01 time:1 wait:true tint:#E5BA8C
+@back Road01 time:1 wait:true
+@processInput true
 describe: 대용이와 함께 학교에서 나와 함께 길을 걸어갔다.
 describe: 시간이 시간인지라 확실히 낮보다는 더 시원했다.
 @char jeon.body>body1,face>face1 wait:false

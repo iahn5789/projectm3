@@ -1,4 +1,4 @@
-#week01_07
+# week01_07
 @char kang.body>body1,face>face1 wait:false
 한갑수: 뭐? 하하하! 걔가 동아리에 들어온다고?
 한갑수: 그놈 목소리 하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…
@@ -11,11 +11,13 @@ kang: 그…그건…
 @hideChars wait:false
 @char bigkang.body>body2,face>face8 wait:false
 kang: 조건…이요…?
-@hideChars wait:false
-@hidePrinter  wait:false
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back ScClub01 time:1
+@back ScClub01 time:1 wait:true
+@processInput true
 describe: 5분 정도 긴 침묵이 이어졌다.
 describe: 어색한 분위기가 이어지자, 말을 걸어 보기 위해 이야기를 꺼냈다.
 {Player_name}: 저기… 이름이 설나희...
@@ -27,7 +29,7 @@ sul: …3학년…
 @char sul.body>body3,face>face1 wait:false
 sul: …응…
 {Player_name}: (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)
-@hideChars
+@hideChars wait:false
 describe: 드르륵.
 describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
 @char jeon.body>body2,face>face1 wait:false
@@ -50,7 +52,8 @@ sul: 없어.
 jeon: 없어요?
 sul: 없어.
 jeon: 아 있었는데?
-@hideChars
+@hideChars wait:false
 @char bigsul.body>body2,face>face4 wait:false
+@spawn ShakeCharacter params:bigsul wait:false
 sul: 그냥 없어.
 @goto A_week01_08.week01_08

@@ -29,11 +29,13 @@ sul: ...
 @hideChars wait:false
 @char kang.body>body1,face>face8 wait:false
 kang: 아쉽네... 그럼, 우리 둘이 가자!
-@hideChars wait:false
-@hidePrinter  wait:false
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back ScLobby02 time:1
+@back ScLobby02 time:1 wait:true
+@processInput true
 describe: 그렇게 우리는 동아리실을 나와 여진이에게 설명을 들으며 교실로 향했다.
 describe: 아무도 없는 학교는 여전히 어색했지만,
 describe: 누군가가. 그것도 예쁜 여자애가 내 옆에 서 있는 게 더 어색했다.

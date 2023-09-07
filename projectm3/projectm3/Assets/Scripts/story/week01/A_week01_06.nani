@@ -1,8 +1,11 @@
 # week01_06
-@hidePrinter  wait:false
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back ScClub01 time:1
+@back ScClub01 time:1 wait:true
+@processInput true
 {Player_name}: 자…잘 부탁…드립니다…!!
 @char kang.body>body2,face>face2 wait:false
 kang: 좋아! 결정된 거다!
@@ -23,11 +26,13 @@ describe: 어색한 분위기 속 인사를 건네자, 고개를 살짝 돌렸�
 @hideChars wait:false
 describe: 무언가 말을 하려나 싶었지만, 말 없이 쳐다만 보고 있었다.
 {Player_name}: ( 이 사람 무서워… )
-@hideChars wait:false
-@hidePrinter  wait:false
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back ScOffice01 time:1
+@back ScOffice01 time:1 wait:true
+@processInput true
 @char kang.body>body1,face>face5 wait:false
 kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
 @char kang.body>body1,face>face4 position:-4 wait:false tint:grey
@@ -41,7 +46,7 @@ kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야
 jin: 고집을 부리는 건 내가 아니라 너야 바보야!
 @hideChars wait:false
 한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
-@char kang.body>body1,face>face8 wait:false tint:white
+@char kang.body>body1,face>face8 wait:false tint:white position:0
 kang: 아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다!
 한갑수: 원래 있던 애들 나간 지 좀 되지 않았나? 이번에는 누가 들어온 거야?
 @char kang.body>body1,face>face1 wait:false

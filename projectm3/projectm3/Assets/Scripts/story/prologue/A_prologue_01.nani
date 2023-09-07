@@ -41,10 +41,12 @@ describe: 뒤통수 너머로 더 화끈거리는 시선들이 느껴졌다.
 한갑수: 모두 조용! 집중해!
 describe: 주변에서 들려오는 웃음소리, 선생님의 호통을 뒤로 창밖의 햇살이 따사롭게 느껴졌다.
 describe: 조금씩 사라져가는 꿈의 자리에 현실감이 들어오고 있었다.
+@processInput false
 @hidePrinter  wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back ScMaingate01 tint:#EAD0B4 time:1 wait:true
+@back ScMaingate01 time:1
+@processInput true
 {Player_name}: 혼자서 화장실 청소까지 하고 가라니...
 describe: 모두가 하교한 학교는 유령도시 같은 느낌을 주었다.
 describe: 걸음을 걸을 때마다 들리는 발소리를 제외하면 어떤 소리도 들리지 않았다.
@@ -55,16 +57,22 @@ describe: 그 때.
 ???: 오늘도 깊은 밤 꿈속에서 당신을 구하는 최고의 히어로!
 ???: 그 이름은 아름다운 러브크레센도!
 {Player_name}: 하...
-@back Black time:1 wait:false
-@hidePrinter  time:1 wait:true
-@char firstjeon wait:false
+@processInput false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@char firstjeon time:1 wait:true
+@processInput true
 describe: 전대용
 describe: 전학을 오자마자 친해진 유일한 친구다.
 describe: 재미도 있고 은근히 아는 것도 많지만...
+@processInput false
 @hideChars time:1 wait:false
-@hidePrinter  time:1 wait:false
-@back Black time:1 wait:true
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
 @back ScMaingate01 time:1 wait:true
+@processInput true
 {Player_name}: 변태다...
 @char jeon.body>body4,face>face1 time:0 wait:false
 jeon: 너 수업 중에 사자후를 날렸다며?
