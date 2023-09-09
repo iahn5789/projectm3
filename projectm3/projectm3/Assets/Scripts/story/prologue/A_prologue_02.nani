@@ -1,4 +1,7 @@
 # prologue_02
+@sfx Footsteps_Male_Ctr_Walk_01 volume:80 loop:false
+@stopSfx Amb_Classroom_01 fade:1
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:4 wait:false
 @processInput false
 @hidePrinter  time:0.5 wait:false
 @hideChars time:0.5 wait:true
@@ -38,7 +41,9 @@ jeon: 그렇다면.
 jeon: 자네...나와 같은 서예부에 들어오지 않겠는가?
 {Player_name}: 거기는 죽어도 싫어.
 @char jeon.body>body2,face>face1 wait:false
+@sfx Common_Robot_Glitch volume:90 loop:false
 {Player_name}: 그리고 그냥 서예부가 아니고 『과학서예부』잖아.
+@stopSfx Common_Robot_Glitch fade:1
 @char jeon.body>body3,face>face1 wait:false
 jeon: 요즘 같은 시대에 과학은 기본 소양이라고?
 {Player_name}: 바로 그게 문제라는 거야!
@@ -77,5 +82,7 @@ jeon: 어차피 여기엔 우리 말고는 없다고?
 @hideChars time:0 wait:false
 describe: 한번 풀려버린 대용이의 입은 멈출 줄 몰랐다. 
 describe: 귀에 피가 나는 것 같아 만져보니 대용이의 침이었다.
-describe: 그렇게 만나 본 적도 없는 동아리 부장의 음식 취향까지 들어가며 대용이와 함께 길을 걸어갔다.
+ 
+@sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:3
 @goto A_prologue_03.prologue_03

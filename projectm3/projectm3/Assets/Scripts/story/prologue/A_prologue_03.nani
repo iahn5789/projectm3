@@ -1,4 +1,6 @@
 # prologue_03
+@stopBgm Common_School_Club_01 fade:2
+@bgm Common_Lobby_BGM_01 volume:90 loop:true fade:2
 @processInput false
 @hidePrinter  time:0 wait:false
 @hideChars time:0 wait:false
@@ -18,32 +20,46 @@ describe: 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정
 {Player_name}: 지금? 여섯 시.
 @char jeon.body>body4,face>face3 wait:false
 @spawn ShakeCharacter params:jeon wait:false
+@sfx Common_Whistle_01 volume:100
 jeon: 뭐!!! 여!섯!시!?
+@stopSfx Common_Whistle_01 fade:0
 {Player_name}: 아 깜짝이야! 또 뭔데!
 @hideChars wait:false
+@sfx Footsteps_Male_ctr_run_01 volume:80 loop:false
+@stopSfx Footsteps_Male_ctr_run_01 fade:4 wait:false
 describe: 처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너편에 있는 편의점으로 사라져 버렸다.
 @spawn ShakePrinter wait:false
 {Player_name}: 야! 어디가! 전대용!!!
 {Player_name}: 뭐야 진짜...아무튼 이상한놈이라니까..
+@sfx Footsteps_Female_Ctr_Walk_01 volume:100 fade:0
 알바생: 안녕하세요!
 describe: 눈앞에서 사라져 버린 전대용을 바라보던 와중 누군가가 다가왔다.
+@stopSfx Footsteps_Female_Ctr_Walk_01 fade:3
 {Player_name}: 네? 저요?
 알바생: 다른 건 아니고 축제 홍보 때문에 그러는데요.
 알바생: 이번 주말에 진행하는 축제니 시간이 괜찮으시다면 오셔서 구경하고 가세요.
 describe: 모자를 깊게 눌러쓴 알바생은 전단지를 내게 건네주었다.
+@sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false
 describe: 알바생은 내 반응 따위는 신경도 쓰지 않은 채 다른 사람에게 가버렸다.
+@stopSfx Footsteps_Female_Ctr_Run_01 fade:3
 describe: 손에는 전단지 한 장만이 민망하리만치 들려있었다.
+@sfx Exam_Open_Paper_01 volume:100 loop:false fade:0
 {Player_name}: 이건...뭐지...?
+@stopSfx Exam_Open_Paper_01 fade:1
 {Player_name}: 그냥 동네 축제같은데...연예인도 오고 공연도 하나보네..
 describe: 축제에 참여하는 연애인과 뮤지션들 중 독특한 컨셉의 2인조 그룹이 눈에 띈다.
 {Player_name}: 와...이런 컨셉의 밴드가 축제에 나온다고? 신기하네.
+@sfx Shop_Door_Click__01 volume:10
 describe: 이때 편의점으로 사라져 버린 전대용이 양손에 음료수를 들고나왔다.
+@stopSfx Shop_Door_Click_01 fade:1
 @spawn ShakePrinter wait:false
 @char jeon.body>body2,face>face1 wait:false
 {Player_name}: 야! 어디 갔다 온 거야!
+@sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false fade:2
 @char jeon.body>body2,face>face4 wait:false
-jeon: 어디긴. 음료수 사러 갔다 왔지.
 {Player_name}: 그러니까...이걸 사려고 소리까지 지르면서 달려간 거야?
+jeon: 어디긴. 음료수 사러 갔다 왔지.
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:2
 @char jeon.body>body4,face>face1 wait:false
 jeon: 성공한 사람들은 항상 자기만의 인생 루틴을 따른다고 하지..
 jeon: 나에게 있어 여섯 시는 음료수를 마셔야 하는 시간이야.
