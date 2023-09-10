@@ -38,8 +38,6 @@ public class Timer : MonoBehaviour
             }
             delayTime += Time.deltaTime;
             timer -= Time.deltaTime;
-            // Debug.Log("delayTime : " + delayTime);
-            // Debug.Log("timer : " + timer);
             if (delayTime >= interval)
             {
                 if (timer <= 0)

@@ -25,7 +25,7 @@ namespace Naninovel
         [SerializeField] private Texture2D lockedTexture;
         [SerializeField] private Texture2D loadingTexture;
 
-        private IUnlockableManager unlockableManager;
+        [SerializeField] private IUnlockableManager unlockableManager;
         private ILocalizationManager localizationManager;
         private Action<IEnumerable<Texture2D>> showTextures;
 
@@ -55,9 +55,12 @@ namespace Naninovel
                 var unlockableId = PathToUnlockableId(path);
                 if (!unlockableManager.ItemUnlocked(unlockableId)) return;
                 var index = Data.TexturePaths.IndexOf(path);
-                textures[index] = Data.TextureLoader.IsLoaded(path)
-                    ? Data.TextureLoader.GetLoadedOrNull(path)
-                    : await Data.TextureLoader.LoadAndHoldAsync(path, this);
+                if (index >= 0 && index < textures.Length) // 범위 확인 추가
+                {
+                    textures[index] = Data.TextureLoader.IsLoaded(path)
+                        ? Data.TextureLoader.GetLoadedOrNull(path)
+                        : await Data.TextureLoader.LoadAndHoldAsync(path, this);
+                }
             }
         }
 
@@ -83,6 +86,7 @@ namespace Naninovel
             localizationManager.OnLocaleChanged += HandleLocaleChanged;
         }
 
+        
         protected override void OnDestroy ()
         {
             base.OnDestroy();
