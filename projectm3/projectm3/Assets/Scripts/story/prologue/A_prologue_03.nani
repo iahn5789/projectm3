@@ -1,6 +1,7 @@
 # prologue_03
-@stopBgm Common_School_Club_01 fade:2
-@bgm Common_Lobby_BGM_01 volume:90 loop:true fade:2
+@stopBgm Common_Lobby_BGM_01 fade:2
+@bgm Common_Lobby_BGM_01 volume:90 loop:true fade:3 wait:false
+@sfx Amb_Road_01 volume:80 loop:true fade:3 wait:false
 @processInput false
 @hidePrinter  time:0 wait:false
 @hideChars time:0 wait:false
@@ -31,7 +32,7 @@ describe: 처절하게 여섯 시를 외치던 대용이가 갑자기 길 건너
 @spawn ShakePrinter wait:false
 {Player_name}: 야! 어디가! 전대용!!!
 {Player_name}: 뭐야 진짜...아무튼 이상한놈이라니까..
-@sfx Footsteps_Female_Ctr_Walk_01 volume:100 fade:0
+@sfx Footsteps_Female_Ctr_Walk_01 volume:100 fade:2
 알바생: 안녕하세요!
 describe: 눈앞에서 사라져 버린 전대용을 바라보던 와중 누군가가 다가왔다.
 @stopSfx Footsteps_Female_Ctr_Walk_01 fade:3
@@ -49,13 +50,14 @@ describe: 손에는 전단지 한 장만이 민망하리만치 들려있었다.
 {Player_name}: 그냥 동네 축제같은데...연예인도 오고 공연도 하나보네..
 describe: 축제에 참여하는 연애인과 뮤지션들 중 독특한 컨셉의 2인조 그룹이 눈에 띈다.
 {Player_name}: 와...이런 컨셉의 밴드가 축제에 나온다고? 신기하네.
-@sfx Shop_Door_Click__01 volume:10
+@sfx Shop_Door_Click__01 volume:50
 describe: 이때 편의점으로 사라져 버린 전대용이 양손에 음료수를 들고나왔다.
 @stopSfx Shop_Door_Click_01 fade:1
 @spawn ShakePrinter wait:false
 @char jeon.body>body2,face>face1 wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false fade:2 wait:false
 {Player_name}: 야! 어디 갔다 온 거야!
-@sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false fade:2
+@stopSfx Ctr_Walk_01 fade:2 wait:false
 @char jeon.body>body2,face>face4 wait:false
 {Player_name}: 그러니까...이걸 사려고 소리까지 지르면서 달려간 거야?
 jeon: 어디긴. 음료수 사러 갔다 왔지.

@@ -1,13 +1,16 @@
 # prologue_06
+@sfx Amb_Room_Tone_02 volume:70 loop:true fade:3
 @processInput false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:2 wait:true
-@back HomeDirtyroom01 time:1 wait:true tint:white
+@back HomeDirtyroom01 tint:white time:1 wait:true
 @processInput true
+@sfx Common_Morning_Bird_Twitter_01 volume:70 loop:true fade:2
 describe: 아침의 시작을 알리는 새소리에 잠에서 깬 채 잠시 멍하니 누워있었다.
 describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
 describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
+@sfx Common_Text_Kick_01 volume:100 loop:false
 {Player_name}: !!!
 describe: 엄습해온 불안감에 나는 휴대폰을 꺼내 시간을 확인해 보았다.
 describe: 역시나 안 좋은 예감은 언제나 틀리지 않는다.
@@ -15,12 +18,17 @@ describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 �
 엄마: 아들! 벌써 해 떴다 아침이야!
 {Player_name}: 네! 일어났어요!
 describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
+@sfx Footsteps_Female_Wood_Run_01 volume:80 loop:false wait:false
+@stopSfx Common_Morning_Bird_Twitter_01 fade:3 wait:false
 @processInput false
+@stopSfx Amb_Room_Tone_02 fade:3 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Road02 time:1
 @processInput true
-describe: 집을 나서자 잔뜩 불편한 얼굴의 대용이를 만났다.
+@bgm Common_Lobby_BGM_01 volume:80 loop:true fade:3 wait:false
+@sfx Amb_Road_01 volume:40 loop:true fade:3 wait:false
+	
 @char jeon.body>body4,face>face3 wait:false
 @spawn ShakeCharacter params:jeon wait:false
 jeon: 늦는구만 늦어! 이럼 내 루틴이 또 꼬이잖아!
@@ -34,12 +42,18 @@ jeon: 지각도 문제지만 어제 내가 말한 동아리는 생각해 봤어?
 jeon: 이런이런... 오늘까지 동아리에 들어가야 하니 기억하라고?
 {Player_name}: 알겠어. 늦겠다 어서 가자.
 @processInput false
+@stopSfx Amb_Road_01 fade:3
 @hidePrinter  time:0.5 wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:60 loop:false
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:3 wait:false
 @hideChars time:0.5 wait:true
 @back Black time:1 wait:true
+@stopBgm Common_Lobby_BGM_01 fade:3
 @back Black time:1 wait:true
 @back ScClassRoom01 time:1 wait:true
 @processInput true
+@bgm Our_Story_Common_Classroom_01 volume:70 loop:true fade:3 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:20 loop:true fade:3 wait:false
 jeon: 그러니까 나랑 같이 벼루에 먹을 갈고 운기조식을 하며...
 @char jeon.body>body1,face>face2 wait:false
 {Player_name}: 밀린 숙제를 하기 위해 쉬는 시간에도 책상에 앉아있었지만
@@ -50,19 +64,23 @@ describe: 대용이는 반까지 찾아와 『과학서예부』 이야기를 �
 jeon: 항상 마요네즈만 쓰는 건 아니라고? 가끔은 간장이나 초고추장 같은 것도 쓴다니깐!?
 @hideChars wait:false
 describe: 상상하기도 어려운 대용이의 동아리 활동 경험을 듣던 와중 교실 뒷문이 열렸다.
+@sfx Common_Sliding_door_open volume:100 loop:false
 describe: 드르륵- 쿵!
 ???: 네가 그 전학생이구나!
+@stopSfx Common_Sliding_door_open fade:2 wait:false
 @processInput false
 @hidePrinter  time:0.5 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @back CG/01 time:1 wait:true
+@sfx Common_Beautiful_Bell_Tree_01 volume:70 loop:true fade:3 wait:false
 @processInput true
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
 describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
 describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날라왔다.
 {Player_name}: 예쁘다...
 describe: 감탄하고 있는 사이 향기가 지나가 버렸다.
+@stopSfx Common_Beautiful_Bell_Tree_01 fade:3 wait:false
 describe: 그 자리에는 처음 보는 여자애를 마주한 부끄러움만이 남아있었다.
 describe: 처음 보는 예쁜 여자애가 반까지 찾아와 나에게 말을 걸었다.
 describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있자

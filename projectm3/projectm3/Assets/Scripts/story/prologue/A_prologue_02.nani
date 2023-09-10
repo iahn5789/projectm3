@@ -1,14 +1,18 @@
 # prologue_02
-@sfx Footsteps_Male_Ctr_Walk_01 volume:80 loop:false
 @stopSfx Amb_Classroom_01 fade:1
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:4 wait:false
+@stopBgm Our_Story_Common_Classroom_01 fade:2 wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false wait:false
 @processInput false
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:3 wait:false
 @hidePrinter  time:0.5 wait:false
 @hideChars time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:2 wait:true
 @back Road01 time:1 wait:true
 @processInput true
+@bgm Common_Lobby_BGM_01 volume:80 loop:true fade:3 wait:false
+@sfx Amb_Road_01 volume:50 loop:true fade:3
 describe: 대용이와 함께 학교에서 나와 함께 길을 걸어갔다.
 describe: 시간이 시간인지라 확실히 낮보다는 더 시원했다.
 @char jeon.body>body1,face>face1 wait:false

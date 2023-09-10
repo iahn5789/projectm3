@@ -2,14 +2,18 @@
 @processInput false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
+@bgm MySweethome_Scene_Home_01 volume:70 loop:true fade:3 wait:false
 @back Black time:2 wait:true
-@back HomeDirtyroomNight01 time:1 wait:true tint:white
+@back HomeDirtyroomNight01 tint:white time:1 wait:true
+@sfx Amb_Office_01 volume:90 loop:true fade:3 wait:false
 @processInput true
 describe: 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
 describe: 피곤한 몸을 이끌고 곧장 방 안으로 들어갔다.
 describe: 아직 정리가 되지 않은 방이 눈에 들어오자 벌써 머리가 지끈거렸다.
 {Player_name}: 후... 오늘 하루 정말 기네. 빨리 씻고 자야지.
+@sfx Common_Door_Noke_01 volume:100 loop:false
 describe: 짐을 내려놓고 씻을 준비를 하려던 찰나 노크 소리가 들리고 문이 열렸다.
+@sfx Common_Door_Open_Squeak_01 volume:100 loop:false
 엄마: 아들 저녁 먹을 시간도 지났는데 학교에서 무슨 일 있었어?
 {Player_name}: 아...그게...친구랑 이야기하다가 늦었어요..
 엄마: 그래? 무슨 이야기를 이렇게 길게 했어?
@@ -26,18 +30,21 @@ describe: 아빠가 엄마를 자연스럽게 데리고 나가려는 도중 엄�
 describe: 여기저기 어지럽게 널브러진 이삿짐들이 눈에 띈다.
 describe: 이사를 온 지 일주일 정도 지났지만, 아직 정리를 다 못 끝내서 상자 안에 있는 짐들이 아직 많다.
 describe: 엄마가 정리하라고 하셨는데...
+@sfx Common_Body_Fall_Bed_01 volume:100 loop:false
 describe: 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.
 {Player_name}: 하자...
 {Player_name}: 내일 정리하는 걸로 하자...
 describe: 침대에 몸을  잡생각이 떠올랐다.
 describe: 동아리, 루틴, 전단지, 앨범, 짐정리...
 describe: 그 중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
-@back tint:#ACACAC time:1 wait:false
+@stopBgm MySweethome_Scene_Home_01 fade:6 wait:false
+@stopSfx Amb_Office_01 fade:6 wait:false
+@back  tint:#ACACAC time:1 wait:false
 {Player_name}: 그 꿈은 뭘까.
-@back tint:#7C7C7C time:1 wait:false
+@back  tint:#7C7C7C time:1 wait:false
 {Player_name}: 하필이면 수업 시간에 부끄럽게...
-@back tint:#626262 time:1 wait:false
+@back  tint:#626262 time:1 wait:false
 {Player_name}: 한 번도 해본 적이 없는데 그런 꿈을 꾸는 게 참 이상하네...
-@back tint:#434343 time:1 wait:false
+@back  tint:#434343 time:1 wait:false
 {Player_name}: 차라리 오늘 있던 일이 꿈이었으면 좋겠는데...
 @goto A_prologue_06.prologue_06
