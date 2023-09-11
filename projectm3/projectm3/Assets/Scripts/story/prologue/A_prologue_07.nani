@@ -7,10 +7,13 @@
 @processInput true
 ???: 저기... 듣고 있는 거야?
 {Player_name}: 어...누구세요...?
+@sfx Common_String_Stab_Soft_01 volume:80 loop:false fade:0
 ???: 러브크레센도!
 {Player_name}: ...진짜 학교에 소문이 다 난 거야?!
+@sfx Footsteps_Female_Wood_Walk_01 volume:80 loop:false fade:1 wait:false
 {Player_name}: 여학생은 나에게 볼일이 있다는 듯 교실로 들어와 내 앞에 멈춰선 채 말을 이어 나갔다.
 @char kang.body>body2,face>face1 wait:false
+@stopSfx _Female_Wood_Walk_01 fade:1 wait:false
 kang: 반가워! 내 이름은 강여진이라고 해!
 @char kang.body>body1,face>face2 wait:false
 kang: 네가 누군지 한번 보러왔어! 화제의 전학생이잖아!
@@ -45,6 +48,8 @@ kang: 위치는 4층 과학실 옆에 있어! 동아리실 이름이 붙어있�
 kang: 오늘 방과 후에 기다리고 있을 테니 이따 보는 걸로 하자!
 @char bigkang.body>body1,face>face5 wait:false
 kang: 늦으면 안 돼!
+@sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false wait:false
 @hideChars wait:false
+@stopSfx Footsteps_Female_Wood_Run_01 fade:2 wait:false
 describe: 일방적인 대화 끝에 여진이는 교실을 나갔다.
 @goto A_prologue_08.prologue_08

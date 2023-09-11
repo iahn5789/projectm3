@@ -1,4 +1,4 @@
-#prologue_08
+# prologue_08
 @char jeon.body>body2,face>face2 wait:false
 jeon: 오...강여진...
 {Player_name}: 뭐야? 아는 사람이야?
@@ -7,10 +7,13 @@ jeon: 오...강여진...
 jeon: 그럼! 당연히 알고 있지!
 jeon: 도내 최상위S급쿨뷰티미녀!
 @spawn ShakePrinter params:,0 wait:false
+@sfx Common_Cartoon_Walla_01 volume:60 loop:true fade:0 wait:false
 jeon: 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4......
+@stopSfx Common_Cartoon_Walla_01 fade:0 wait:false
 @despawn ShakePrinter
 @spawn ShakePrinter wait:false
 @char jeon.body>body4,face>face5 wait:false
+@sfx Common_Whistle_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 그만! 거기까지!
 @char jeon.body>body2,face>face1 wait:false
 jeon: 엣헴...아무튼 그런 사람이 너랑 말을 하게 될 줄이야.
@@ -22,11 +25,15 @@ jeon: 이 자식 대단한걸?
 jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
 @char jeon.body>body4,face>face3 wait:false
 jeon: 더는 묻지마라!
+@sfx Common_Breaktime_Belltower_01 volume:50 loop:false fade:0 wait:false
 describe: ♪~♪~♪~♪♪~♬
 @char jeon.body>body4,face>face4 wait:false
 jeon: 수업 종 울렸네. 난 간다!
 @hideChars wait:false
 describe: 대용이가 교실에서 나가고 잠시 후 선생님이 교실로 들어오셨다.
+@stopSfx Common_Breaktime_Belltower_01 fade:6 wait:false
 {Player_name}: ( 밴드부라... 너무나 갑작스럽게 초대받았는데... )
 {Player_name}: ( 딱히 생각은 없었는데... 한번 가볼까... )
+@stopSfx Amb_Classroom_Cutoff_01 fade:2 wait:false
+@stopBgm Our_Story_Common_Classroom_01 fade:2 wait:false
 @goto A_week01_01.week01_01

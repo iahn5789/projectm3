@@ -1,12 +1,12 @@
 # prologue_06
-@sfx Amb_Room_Tone_02 volume:70 loop:true fade:3
 @processInput false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:2 wait:true
+@sfx Amb_Room_Tone_02 volume:70 loop:true fade:3 wait:false
+@sfx Common_Morning_Bird_Twitter_01 volume:50 loop:true fade:3 wait:false
 @back HomeDirtyroom01 tint:white time:1 wait:true
 @processInput true
-@sfx Common_Morning_Bird_Twitter_01 volume:70 loop:true fade:2
 describe: 아침의 시작을 알리는 새소리에 잠에서 깬 채 잠시 멍하니 누워있었다.
 describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
 describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
@@ -19,7 +19,7 @@ describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 �
 {Player_name}: 네! 일어났어요!
 describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
 @sfx Footsteps_Female_Wood_Run_01 volume:80 loop:false wait:false
-@stopSfx Common_Morning_Bird_Twitter_01 fade:3 wait:false
+@stopSfx Common_Morning_Bird_Twitter_01 fade:1 wait:false
 @processInput false
 @stopSfx Amb_Room_Tone_02 fade:3 wait:false
 @hidePrinter  time:0.5 wait:true
@@ -42,13 +42,13 @@ jeon: 지각도 문제지만 어제 내가 말한 동아리는 생각해 봤어?
 jeon: 이런이런... 오늘까지 동아리에 들어가야 하니 기억하라고?
 {Player_name}: 알겠어. 늦겠다 어서 가자.
 @processInput false
-@stopSfx Amb_Road_01 fade:3
+@stopSfx Amb_Road_01 fade:3 wait:false
 @hidePrinter  time:0.5 wait:false
 @sfx Footsteps_Male_Ctr_Walk_01 volume:60 loop:false
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:3 wait:false
 @hideChars time:0.5 wait:true
 @back Black time:1 wait:true
-@stopBgm Common_Lobby_BGM_01 fade:3
+@stopBgm Common_Lobby_BGM_01 fade:3 wait:false
 @back Black time:1 wait:true
 @back ScClassRoom01 time:1 wait:true
 @processInput true
@@ -73,6 +73,7 @@ describe: 드르륵- 쿵!
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @back CG/01 time:1 wait:true
+@stopSfx Amb_Classroom_Cutoff_01 fade:3 wait:false
 @sfx Common_Beautiful_Bell_Tree_01 volume:70 loop:true fade:3 wait:false
 @processInput true
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
@@ -81,6 +82,7 @@ describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날�
 {Player_name}: 예쁘다...
 describe: 감탄하고 있는 사이 향기가 지나가 버렸다.
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:3 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:20 loop:true fade:3 wait:false
 describe: 그 자리에는 처음 보는 여자애를 마주한 부끄러움만이 남아있었다.
 describe: 처음 보는 예쁜 여자애가 반까지 찾아와 나에게 말을 걸었다.
 describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있자
