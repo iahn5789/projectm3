@@ -1,4 +1,5 @@
-#week01_03
+# week01_03
+@sfx Common_Door_Slam_01 volume:70 loop:false wait:false
 ???: 언제까지 기다리고만 있어야 하는 건데!
 ???: 난 누군지도 모르는 사람이 우리 동아리에 들어오는 건 반대야!
 kang: 아직 학교 끝난 지 얼마 지나지도 않았거든? 일이 있어서 늦는 게 분명해!
@@ -14,9 +15,13 @@ describe: 아주 짧은 눈빛 교환이 이어졌고, 여학생의 표정이 �
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @processInput true
+@stopBgm Our_Story_Common_Classroom_01 fade:2 wait:false
+@stopSfx Amb_Hallway_01 fade:2 wait:false
 ???: 꺄아아아아-!
 @processInput false
-@hidePrinter time:0.5 wait:true
+@bgm Common_School_Club_01 volume:70 loop:true fade:2 wait:false
+@sfx Amb_Shool_Club_01 volume:50 loop:true fade:2 wait:false
+@hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @processInput true

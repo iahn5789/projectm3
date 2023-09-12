@@ -1,16 +1,20 @@
-#week01_02
+# week01_02
 @processInput false
 @hidePrinter  time:0.5 wait:false
+@sfx Footsteps_Male_Wood_Walk_01 volume:100 loop:false wait:false
 @back Black time:1 wait:true
 @back Black time:2 wait:true
+@stopSfx Footsteps_Male_Wood_Walk_01 fade:3 wait:false
 @back ScLobby01 time:1 wait:true
 @processInput true
+@sfx Amb_Hallway_01 volume:50 loop:true wait:false fade:2
 describe: 밴드부는 4층 과학실 옆에 있다고 했었다.
 describe: 수업 때문에 과학실은 몇 번 간 적이 있었지만, 그 옆에 밴드부가 있는 줄은 몰랐다.
 describe: 가뜩이나 과학실로 가기 위해선 한참을 걸어가야 했는데 그 옆에 있는 밴드부라니.
 describe: 과연 찾아오는 학생들이 있을까 하는 생각이 들었다.
 describe: 가뜩이나 과학실로 가기 위해선 한참을 걸어가야 했는데
 describe: 그 옆의 밴드부는 찾아오는 학생들이 있을까 하는 생각이 들었다.
+@stopSfx Amb_Hallway_01 fade:2 wait:false
 describe: 방과 후 시간, 학생들이 빠져나간 학교는 이상할 정도로 조용했다.
 describe: 외진 장소에 있는 밴드부는 마치 다른 차원에 있는 교실 같은 느낌을 주었다.
 describe: 아무도 없는 복도를 지나쳐 밴드부 앞으로 걸어갔다.
@@ -18,8 +22,10 @@ describe: 입구에 도착하자 밴드부라고 적힌 나무로 된 작은 팻
 describe: 팻말은 색도 바래고 몇 군데 갈라진 부분도 있었다.
 describe: 오히려 없는 게 더 나아 보일 정도였다.
 describe: 문을 열기 위해 손잡이 쪽으로 시선을 돌려봤다.
+@sfx Amb_Cold_Wind_01 volume:100 loop:false fade:1 wait:false
 describe: 손잡이는 약간 부서져 있었고 문지방은 녹슬어 열리지 않을 것 같았다.
 {Player_name}: (이게 동아리실이라고? 창고도 이거보단 깔끔할 거 같은데?)
+@stopSfx Amb_Cold_Wind_01 fade:3 wait:false
 {Player_name}: (이거 알고 보니 이상한 동아리 아니야?)
 describe: 내가 잘못된 선택을 한 건 아닌지 고민하고 있을 때 안에서 소리가 들려왔다.
 @goto A_week01_03.week01_03
