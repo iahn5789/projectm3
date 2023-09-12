@@ -37,7 +37,26 @@ namespace Naninovel.UI
         private void InitializeOptions (List<string> availableOptions)
         {
             UIComponent.ClearOptions();
-            UIComponent.AddOptions(availableOptions);
+            List<string> odds = availableOptions
+            .Where(name =>
+            {
+                string[] parts = name.Split(' ');
+                if (parts.Length == 5)
+                {
+                    int x, y;
+                    if (Int32.TryParse(parts[0], out x) && Int32.TryParse(parts[2], out y))
+                    {
+                        return x == 1920 && y == 1080 ||
+                         x == 640 && y == 360 ||
+                          x == 1600 && y == 900 ||
+                           x == 1280 && y == 720 ||
+                            x == 960 && y == 540 ;
+                    }
+                }
+                return false;
+            })
+            .ToList();
+            UIComponent.AddOptions(odds);
             UIComponent.value = GetCurrentResolutionIndex();
             UIComponent.RefreshShownValue();
             allowApplySettings = true;
