@@ -6,6 +6,9 @@ public class CloseButtonToSidebar : MonoBehaviour
 {
     public void onClick()
     {
-        MenuInOut.target();
+
+        GameObject dialogObject = GameObject.Find("Dialogue");
+        if (dialogObject != null)
+            MenuInOut.target();
     }
 }
