@@ -9,8 +9,8 @@ public class ScreenModeManager : MonoBehaviour
     public GameObject winScreenBt;
     private Button fullScreenButton;
     private Button winScreenButton;
-    private string statusNowScreenColorHex = "#000000"; // 회색
-    private string statusNormalScreenColorHex = "#444444"; // 회색
+    private string statusNowScreenColorHex = "#444444"; // 회색
+    private string statusNormalScreenColorHex = "#CDCDCD"; // 회색
 
     private bool screenStatus;
     // Start is called before the first frame update
