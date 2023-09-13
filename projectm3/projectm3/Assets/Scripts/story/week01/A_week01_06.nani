@@ -4,6 +4,7 @@
 @hidePrinter  time:0.5 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@sfx Amb_Shool_Club_01 volume:30 loop:true fade:2 wait:false
 @back ScClub01 time:1 wait:true
 @processInput true
 {Player_name}: 자…잘 부탁…드립니다…!!
@@ -11,13 +12,19 @@
 kang: 좋아! 결정된 거다!
 jin: 정말로 동아리에 가입시킬거야? 진짜?
 @char kang.body>body2,face>face1 wait:false
+@sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:false wait:false
 kang: 나는 교무실 갔다 올 테니 이야기 좀 나누고 있어! 오늘 안에 등록해야 해!
 @hideChars wait:false
 @char jin.body>body1,face>face3 wait:false
+@sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false wait:false
 jin: 자...잠깐 기다려! 같이 가!
+@stopSfx Footsteps_Female_Wood_Run_01 fade:2 wait:false
 @hideChars wait:false
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
 describe: 도망치듯 나간 여진이를 진다영이 뒤쫓아 나갔다.
+@sfx Amb_Room_Tone_02 volume:60 loop:true fade:1 wait:false
 describe: 시끄럽기만 하던 동아리실에는 어느새 고요함이 맴돌았다.
+@sfx Amb_Cold_Wind_01 volume:80 loop:true fade:1 wait:false
 {Player_name}: ...
 @char sul.body>body1,face>face1 wait:false
 sul: …...
@@ -30,23 +37,25 @@ describe: 무언가 말을 하려나 싶었지만, 말 없이 쳐다만 보고 �
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
+@sfx Whoosh_Cartoon_Change_Page_01 volume:100 loop:false fade:2 wait:false
 @back Black time:1 wait:true
+@sfx Amb_Office_01 volume:70 loop:true fade:1 wait:false
 @back ScOffice01 time:1 wait:true
 @processInput true
 @char kang.body>body1,face>face5 wait:false
 kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
-@char kang.body>body1,face>face4 position:-4 wait:false tint:grey
+@char kang.body>body1,face>face4 position:-4 tint:grey wait:false
 @char jin.body>body1,face>face4 position:4 wait:false
 jin: 아직 대화도 제대로 나눠보지도 못했고! 무엇보다 음흉해서 싫어!
-@char kang.body>body1,face>face5 position:-4 wait:false tint:#ffffff
-@char jin.body>body1,face>face4 position:4 wait:false tint:grey
+@char kang.body>body1,face>face5 position:-4 tint:#ffffff wait:false
+@char jin.body>body1,face>face4 position:4 tint:grey wait:false
 kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야?
-@char jin.body>body3,face>face4 position:4 wait:false tint:#ffffff
-@char kang.body>body1,face>face5 position:-4 wait:false tint:grey
+@char jin.body>body3,face>face4 position:4 tint:#ffffff wait:false
+@char kang.body>body1,face>face5 position:-4 tint:grey wait:false
 jin: 고집을 부리는 건 내가 아니라 너야 바보야!
 @hideChars wait:false
 한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
-@char kang.body>body1,face>face8 wait:false tint:white position:0
+@char kang.body>body1,face>face8 position:0 tint:white wait:false
 kang: 아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다!
 한갑수: 원래 있던 애들 나간 지 좀 되지 않았나? 이번에는 누가 들어온 거야?
 @char kang.body>body1,face>face1 wait:false

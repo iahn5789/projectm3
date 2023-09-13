@@ -1,11 +1,15 @@
-#week01_08
+# week01_08
 @hideChars wait:false
+@sfx Amb_Cold_Wind_01 volume:100 loop:false fade:1 wait:false
 {Player_name}: ...
 @char jeon.body>body3,face>face5 wait:false
 jeon: {Player_name} 가볼 게 내일 봐!
 {Player_name}: 어 들어가!
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
+@sfx Footsteps_Male_Wood_Walk_01 volume:80 loop:false wait:false
 @hideChars wait:false
 describe: 대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라봤다.
+@stopSfx Footsteps_Male_Wood_Walk_01 fade:2 wait:false
 describe: 나가는 뒷모습이 어쩐지 쓸쓸해 보였다.
 @char sul.body>body1,face>face1 wait:false
 sul: …저기
@@ -15,28 +19,30 @@ sul: …
 {Player_name}: 왜요...?
 @hideChars wait:false
 @char bigsul.body>body3,face>face8 wait:false
+@sfx Common_Whoosh_Horror_01 volume:80 loop:false wait:false
 sul: …기분나빠…
 describe: 그때 여진이가 동아리실에 들어왔다.
+@stopSfx Common_Whoosh_Horror_01 fade:1 wait:false
 @hideChars wait:false
 describe: 한껏 들뜬 모습으로 밝게 웃으며 들어오는 여진이.
 describe: 그 뒤로 어딘가 잔뜩 불만이 있는 듯한 표정의 다영이가 보였다.
 @char kang.body>body2,face>face2 wait:false
 kang: 축하해! 앞으로 동아리를 함께 하게 돼서 기뻐!
-@char kang.body>body2,face>face2 wait:false position:-4 tint:grey
-@char jin.body>body1,face>face4 wait:false position:4
+@char kang.body>body2,face>face2 position:-4 tint:grey wait:false
+@char jin.body>body1,face>face4 position:4 wait:false
 jin: 그게 무슨 소리야! 아직 아니거든?
-@char kang.body>body1,face>face4 wait:false position:-4 tint:white
-@char jin.body>body1,face>face4 wait:false position:4 tint:grey
+@char kang.body>body1,face>face4 position:-4 tint:white wait:false
+@char jin.body>body1,face>face4 position:4 tint:grey wait:false
 kang: 난 선생님이 {Player_name}의 가입을 허락한 걸로 들었는걸?
-@char jin.body>body3,face>face4 wait:false position:4 tint:white
-@char kang.body>body1,face>face4 wait:false position:-4 tint:grey
+@char jin.body>body3,face>face4 position:4 tint:white wait:false
+@char kang.body>body1,face>face4 position:-4 tint:grey wait:false
 jin: 전혀 아니거든? 듣고 싶은 대로만 듣는 것 같은데 내가 다시 이야기해 줘?!
 @hideChars wait:false
 @char sul.body>body1,face>face1 wait:false
 sul: ...후
 sul: 교무실 다녀온 거 맞아...?
 @hideChars wait:false
-@char kang.body>body1,face>face1 wait:false position:0 tint:white
+@char kang.body>body1,face>face1 position:0 tint:white wait:false
 kang: 그럼!
 @char kang.body>body2,face>face2 wait:false
 kang: 가입을 허락하는 대신 간단한 테스트를 볼 거라고 말씀하셨어.

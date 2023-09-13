@@ -17,8 +17,8 @@ describe: 어두운 탓에 잘 보이지는 않았지만 분명 나를 향해 �
 ???: 심호흡 한번하고...
 ???: 다음 차례는!!! 러브!!!
 {Player_name}: 러브.....
-@stopBgm Common_Backstage_01 wait:false fade:3
-@stopSfx Amb_Crowd_Loop_01 wait:false fade:3
+@stopBgm Common_Backstage_01 fade:3 wait:false
+@stopSfx Amb_Crowd_Loop_01 fade:3 wait:false
 @back ScClassRoom01 wait:false
 @bgm Our_Story_Common_Classroom_01 volume:100 loop:true fade:1 wait:false
 @sfx Amb_Classroom_01 volume:10 loop:true fade:3
@@ -28,7 +28,7 @@ describe: 어두운 탓에 잘 보이지는 않았지만 분명 나를 향해 �
 {Player_name}: 러브크레센도!!!
 일동: 하하하하! 갑자기 뭐야!!!
 {Player_name}: 어...뭐지...?
-@sfx Body_Fall_01 volume:100 loop:false fade:0
+@sfx Common_Cartoon_Hit_01 volume:100 loop:false fade:0
 describe: 빢!
 describe: 갑자기 누군가 내 뒤통수를 때렸다.
 한갑수: 이 자식은 수업 시간에 자는 걸로도 모자라서 소리까지 질러대네!
