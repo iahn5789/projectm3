@@ -10,9 +10,50 @@ public class ButtonClickHandler : MonoBehaviour
 
     public void OnButtonClick_Work_Game_1()
     {
-        Debug.Log("test");
         var variableManager = Engine.GetService<ICustomVariableManager>();
         variableManager?.SetVariableValue("Start_Timer", "true");
+        variableManager?.SetVariableValue("Create_Object", "true");
+        variableManager?.SetVariableValue("PartTimeJob_Object", "1");
+        var inputShowUI = new List<string>() {"PartTimeJobUI"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
+    }
+    public void OnButtonClick_Work_Game_2()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager?.SetVariableValue("Start_Timer", "true");
+        variableManager?.SetVariableValue("Create_Object", "true");
+        variableManager?.SetVariableValue("PartTimeJob_Object", "2");
+        var inputShowUI = new List<string>() {"PartTimeJobUI"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
+    }
+    public void OnButtonClick_Work_Game_3()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager?.SetVariableValue("Start_Timer", "true");
+        variableManager?.SetVariableValue("Create_Object", "true");
+        variableManager?.SetVariableValue("PartTimeJob_Object", "3");
+        var inputShowUI = new List<string>() {"PartTimeJobUI"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
+    }
+    public void OnButtonClick_Work_Game_4()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager?.SetVariableValue("Start_Timer", "true");
+        variableManager?.SetVariableValue("Create_Object", "true");
+        variableManager?.SetVariableValue("PartTimeJob_Object", "4");
+        var inputShowUI = new List<string>() {"PartTimeJobUI"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
+    }
+    public void OnButtonClick_Work_Game_5()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager?.SetVariableValue("Start_Timer", "true");
+        variableManager?.SetVariableValue("Create_Object", "true");
+        variableManager?.SetVariableValue("PartTimeJob_Object", "5");
         var inputShowUI = new List<string>() {"PartTimeJobUI"};
         var showUI = new ShowUI{UINames = inputShowUI};
         showUI.ExecuteAsync();
