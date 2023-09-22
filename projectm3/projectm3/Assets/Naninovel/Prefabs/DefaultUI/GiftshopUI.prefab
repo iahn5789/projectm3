@@ -24744,6 +24744,7 @@ GameObject:
   - component: {fileID: 4749590635949102509}
   - component: {fileID: 6930898032990001009}
   - component: {fileID: 3908174765759082994}
+  - component: {fileID: 675773746361522573}
   m_Layer: 5
   m_Name: Image_Item01
   m_TagString: Untagged
@@ -24936,7 +24937,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7290583068179914664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2391649056755537558}
+        m_MethodName: ShowImageA
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 675773746361522573}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &3908174765759082994
 Animator:
   serializedVersion: 3
@@ -24956,6 +24979,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &675773746361522573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405843240186565311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptName: 
+  scriptText: '@showUI GiftshopUI_Item
+
+    @stop'
+  playOnAwake: 0
+  disableWaitInput: 0
 --- !u!1 &1425493539857632565
 GameObject:
   m_ObjectHideFlags: 0
@@ -33458,7 +33499,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6410513067715264075}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2391649056755537558}
+        m_MethodName: ShowImageB
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &6466543132987367091
 Animator:
   serializedVersion: 3
@@ -68291,6 +68343,7 @@ GameObject:
   - component: {fileID: 5006022413095778975}
   - component: {fileID: 9094399025307592311}
   - component: {fileID: 889807257062968350}
+  - component: {fileID: 2391649056755537558}
   m_Layer: 5
   m_Name: Image_Frame
   m_TagString: Untagged
@@ -68386,6 +68439,20 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &2391649056755537558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4786694881439217716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7ceb90d492386b4baf9e04d53e9b8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  giftshopUIPrefab: {fileID: 6306036015961478139, guid: fb8b3b410c2ef9b4eaed70d5ad37f02c,
+    type: 3}
 --- !u!1 &4814961306752786829
 GameObject:
   m_ObjectHideFlags: 0
