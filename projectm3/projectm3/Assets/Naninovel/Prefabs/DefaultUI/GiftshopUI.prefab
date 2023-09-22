@@ -24862,7 +24862,6 @@ GameObject:
   - component: {fileID: 3884200086247702393}
   - component: {fileID: 4749590635949102509}
   - component: {fileID: 3908174765759082994}
-  - component: {fileID: 675773746361522573}
   - component: {fileID: 1002652845833093895}
   m_Layer: 5
   m_Name: Image_Item01
@@ -25033,24 +25032,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &675773746361522573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405843240186565311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: '@showUI GiftshopUI_Item
-
-    @stop'
-  playOnAwake: 0
-  disableWaitInput: 0
 --- !u!114 &1002652845833093895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25093,29 +25074,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7290583068179914664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 675773746361522573}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1994329981683075264}
-        m_MethodName: OnButtonClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 5634684927048833104}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -34931,7 +34890,7 @@ MonoBehaviour:
   _bursts:
   - time: 0
     count: 1
-    used: 1
+    used: 0
   _particleTrailRenderer: {fileID: 0}
   _trailModule:
     enabled: 0
@@ -94611,7 +94570,6 @@ GameObject:
   - component: {fileID: 6306036015961478117}
   - component: {fileID: 6306036015961478116}
   - component: {fileID: 5831472459804802558}
-  - component: {fileID: 1994329981683075264}
   m_Layer: 5
   m_Name: GiftshopUI
   m_TagString: Untagged
@@ -94775,20 +94733,6 @@ MonoBehaviour:
   Button_Kang: {fileID: 781626422329038273}
   Button_Jin: {fileID: 825975093563795776}
   Button_Sul: {fileID: 966137204527394014}
---- !u!114 &1994329981683075264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6306036015961478139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ceb90d492386b4baf9e04d53e9b8bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  giftshopUIItem: {fileID: 6306036015961478139, guid: fb8b3b410c2ef9b4eaed70d5ad37f02c,
-    type: 3}
 --- !u!1 &6335242389392375072
 GameObject:
   m_ObjectHideFlags: 0
