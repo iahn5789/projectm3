@@ -11,6 +11,8 @@ public class CheckPriceBuyItemManager : MonoBehaviour
     public GameObject BuyResultUI;
     public GameObject SetBuyResultInfoObject;
     public Text CoinText;
+    public GameObject CoinLackUI;
+    public GameObject CoinLackPrefab;
     public void CheckPrice()
     {
         ICustomVariableManager variableManager = Engine.GetService<ICustomVariableManager>();
@@ -21,6 +23,12 @@ public class CheckPriceBuyItemManager : MonoBehaviour
             BuyResultUI.SetActive(true);
             BuyGiftUIManager buyGiftManager = SetBuyResultInfoObject.GetComponent<BuyGiftUIManager>();
             buyGiftManager.SetBuyResultInfo();
+        }
+        else
+        {
+            GameObject createdCoinLack = Instantiate(CoinLackPrefab, CoinLackUI.transform);
+            Destroy(createdCoinLack, 1f);
+            //  CoinLackUI;
         }
     }
 }
