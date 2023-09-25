@@ -36888,8 +36888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 3653483274016232481}
-  fullText: "\uC544\uB2C8 \uC11D\uCC2C\uC544... \uC774\uB7F0 \uAC70 \uC904 \uC2DC\uAC04\uC5D0
-    \uAC1C\uBC1C\uC744 \uB354 \uD574\uBCF4\uB294 \uAC74 \uC5B4\uB5A8\uAE4C?"
+  fullText: 
   typingSpeed: 0.1
 --- !u!1 &2031098860005476821
 GameObject:
@@ -97225,10 +97224,32 @@ MonoBehaviour:
   focusMode: 0
   onShow:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6121231470421691076}
+        m_MethodName: Onshow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6121231470421691076}
+        m_MethodName: OnHide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hideOnLoad: 1
   hideInThumbnail: 0
   saveVisibilityState: 1
@@ -97302,11 +97323,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c75d30e379b424cadc48efc0b71889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoneyTextUI: {fileID: 3013406287397041734}
+  KangLikeAbilityText: {fileID: 8152647802794857839}
+  JinLikeAbilityText: {fileID: 6655081610279242992}
+  SulLikeAbilityText: {fileID: 147714489883511168}
+  Panel:
+  - {fileID: 3680565593568472701}
+  - {fileID: 991430049546660370}
+  - {fileID: 5022779655815892396}
   giftImage: {fileID: 1494512136680712326}
   priceText: {fileID: 1097171436302474464}
   likeAbilityText: {fileID: 8473774243145986311}
   nameText: {fileID: 3688401956740092392}
   giftInfoText: {fileID: 5174279047071499153}
+  resultPriceText: {fileID: 3289309599786759600}
+  resultLikeAbilityText: {fileID: 7172308179830287186}
+  resultCharactorName: {fileID: 4180304701425702867}
+  resultCharactorDialog: {fileID: 2004717115152267182}
+  NowResultPriceText: {fileID: 4183596775881413364}
+  NowResultLikeAbilityText: {fileID: 4091480054086746730}
+  charactorFace: {fileID: 6183867144861599349}
+  charactorBody: {fileID: 5659116803972189984}
+  charactorFaceList:
+  - {fileID: 21300000, guid: f40eaf348c35ffb4ab8f683168c96423, type: 3}
+  - {fileID: 21300000, guid: 1fa89f4afe6cffc4ca28e267a47c9c1f, type: 3}
+  - {fileID: 21300000, guid: 5cbccc197b554cc4b96e5ef12309b3bd, type: 3}
+  charactorBodyList:
+  - {fileID: 21300000, guid: 325fff49e0503d84f87ceaa45c3002fd, type: 3}
+  - {fileID: 21300000, guid: 7f3385c47992b2d459f38ba0eeb4fe01, type: 3}
+  - {fileID: 21300000, guid: 9768c346dc4975d41a94c0a8c4719fb0, type: 3}
 --- !u!114 &5831472459804802558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144869,6 +144914,7 @@ GameObject:
   - component: {fileID: 6419544760908162704}
   - component: {fileID: 3080730006335218091}
   - component: {fileID: 2587683621656325184}
+  - component: {fileID: 7224503551925022310}
   - component: {fileID: 4176734951362091575}
   m_Layer: 5
   m_Name: Button_Yes
@@ -144949,20 +144995,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8633555005745888240}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4726722649150787815}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 7224503551925022310}
+        m_MethodName: CheckPrice
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -145015,6 +145050,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 20, y: 20, z: 20, w: 20}
+--- !u!114 &7224503551925022310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9093694233986653601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2167d04b6aaa04e9d4274248bf24a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuyItemUI: {fileID: 8633555005745888240}
+  BuyResultUI: {fileID: 4726722649150787815}
+  SetBuyResultInfoObject: {fileID: 6306036015961478139}
+  CoinText: {fileID: 1097171436302474464}
 --- !u!95 &4176734951362091575
 Animator:
   serializedVersion: 3
