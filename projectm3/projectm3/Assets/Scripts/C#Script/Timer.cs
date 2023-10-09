@@ -73,6 +73,11 @@ public class Timer : MonoBehaviour
                 var HideUI = new HideUI{UINames = inputHideUI};
                 HideUI.ExecuteAsync();
                 variableManager?.SetVariableValue("Start_Timer", "false");
+                variableManager?.SetVariableValue("PartTimeJob_Count", "0");
+                var money = int.Parse(variableManager?.GetVariableValue("money"));
+                var Reward = int.Parse(variableManager?.GetVariableValue("PartTimeJob_Object")) * 200;
+                variableManager?.SetVariableValue("money", (money + Reward).ToString());
+                variableManager?.SetVariableValue("update_TestSceneUI_variable", "true");
             }
 
         }
