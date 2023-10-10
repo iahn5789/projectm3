@@ -65,9 +65,9 @@ public class BuyGiftUIManager : MonoBehaviour
         myTable.Add("레스토랑 상품권1", ("오늘은 네가 쏘는거야?!", 2, 5));
         myTable.Add("레스토랑 상품권2", ("가끔은 이런것도 좋지!", 0, 0));
         myTable.Add("레스토랑 상품권3", ("마침 배고팠는데 잘됐다! 같이가자!", 1, 1));
-        myTable.Add("LP 레코드1", ("LP 레코드1", 1, 1));
-        myTable.Add("LP 레코드2", ("LP 레코드2", 2, 2));
-        myTable.Add("LP 레코드3", ("LP 레코드3", 0, 0));
+        myTable.Add("LP 레코드1", ("뭐야? 레코드? 이거 들으려면 턴테이블이 있어야하지 않아?", 1, 6));
+        myTable.Add("LP 레코드2", ("뭔가 굉장히 고급스러워 보이는데... 생각보다 엄청 커!", 0, 1));
+        myTable.Add("LP 레코드3", ("이게 뭐야? LP? 이걸로 디제잉을 한다고? 슝슝?", 2, 5));
         myTable.Add("향수1", ("향수는 조금 낮설어!", 0, 6));
         myTable.Add("향수2", ("와! 이거 향 엄청좋다!", 1, 5));
         myTable.Add("향수3", ("은은하게 퍼지는게 나랑 잘 어울리는거 같아!", 2, 1));
