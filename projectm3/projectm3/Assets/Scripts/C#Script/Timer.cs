@@ -8,7 +8,6 @@ using Naninovel.Commands;
 public class Timer : MonoBehaviour
 {
     public Text timerText; // UI Text 요소
-    public Text Count3; // 3초 카운트 UI
     public float countdownTime; // 타이머 시간(초)
     public Image range1;
     public Image range2;
@@ -35,6 +34,12 @@ public class Timer : MonoBehaviour
     public Sprite[] JobIconList;
     public Sprite StarOn;
     public Sprite StarOff;
+    public GameObject SuccessUI;
+    public GameObject FailUI;
+    public GameObject MainUI;
+    public Button RetryButton;
+    public Text FailCount;
+    public Text SuccessReward;
     void Start()
     {
         timer = countdownTime;
@@ -69,18 +74,31 @@ public class Timer : MonoBehaviour
             if (!isActive)
             {
                 // 아르바이트 성공!
-                var inputHideUI = new List<string>() {"PartTimeJobUI"};
-                var HideUI = new HideUI{UINames = inputHideUI};
-                HideUI.ExecuteAsync();
                 variableManager?.SetVariableValue("Start_Timer", "false");
                 variableManager?.SetVariableValue("PartTimeJob_Count", "0");
                 var money = int.Parse(variableManager?.GetVariableValue("money"));
                 var Reward = int.Parse(variableManager?.GetVariableValue("PartTimeJob_Object")) * 200;
                 variableManager?.SetVariableValue("money", (money + Reward).ToString());
                 variableManager?.SetVariableValue("update_TestSceneUI_variable", "true");
+
+                // 숨기지 말라!
+                SuccessUI.SetActive(true);
+                MainUI.SetActive(false);
+                SuccessReward.text = JobReward.text;
             }
 
         }
+    }
+    public void RetryGame()
+    {
+        string count = variableManager?.GetVariableValue("PartTimeJob_Count");
+        if (count != "")
+        {
+            variableManager?.SetVariableValue("PartTimeJob_Count", (int.Parse(count) - 1).ToString());
+        }
+        variableManager?.SetVariableValue("Start_Timer", "true");
+        variableManager?.SetVariableValue("Create_Object", "true");
+        MainUI.SetActive(true);
     }
     void Update()
     {
@@ -134,10 +152,14 @@ public class Timer : MonoBehaviour
                 if (timer <= 0)
                 {
                     // 아르바이트 실패!!!!!!!!!!!
-                    
-                    var inputShowUI = new List<string>() {"PartTimeJobUI"};
-                    var HideUI = new HideUI{UINames = inputShowUI};
-                    HideUI.ExecuteAsync();
+                    FailUI.SetActive(true);
+                    MainUI.SetActive(false);
+                    string count = variableManager?.GetVariableValue("PartTimeJob_Count");
+                    FailCount.text = count;
+                    if (count == "0")
+                    {
+                        RetryButton.interactable = false;
+                    }
                     timer = 0;
                     variableManager?.SetVariableValue("Start_Timer", "false");
                 }
@@ -153,7 +175,7 @@ public class Timer : MonoBehaviour
         // 처음 입장시 초기화 부분
         timer = countdownTime;
         moveRight = true;
-        Count3.enabled = true;
+        MainUI.SetActive(true);
         
         Vector2 newPosition = new Vector2(10, trigger.rectTransform.anchoredPosition.y);
         trigger.rectTransform.anchoredPosition = newPosition;
@@ -170,18 +192,8 @@ public class Timer : MonoBehaviour
         timerText.text = timer.ToString("F0");
         string PartTimeJob_Object = variableManager?.GetVariableValue("PartTimeJob_Object");
         Set_Active_Object(PartTimeJob_Object);
-        // 3초 딜레이 넣어야함. 3 2 1 넣어줘야함
-        for (int i = 3; i > 0; i--)
-        {
-            Count3.text = i.ToString();
-            yield return new WaitForSeconds(1f);
-            if (i == 1)
-            {
-            Count3.text = "Start!";
-            yield return new WaitForSeconds(1f);
-            }
-        }
-        Count3.enabled = false;
+        // 0.5초 딜레이
+        yield return new WaitForSeconds(0.5f);
 
         variableManager?.SetVariableValue("Create_Object", "false");
         shouldStartCountdown = false;  // 코루틴이 끝난 후 플래그 리셋
