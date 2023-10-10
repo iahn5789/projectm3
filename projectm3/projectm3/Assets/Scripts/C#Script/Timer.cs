@@ -73,21 +73,25 @@ public class Timer : MonoBehaviour
             }
             if (!isActive)
             {
-                // 아르바이트 성공!
-                variableManager?.SetVariableValue("Start_Timer", "false");
-                variableManager?.SetVariableValue("PartTimeJob_Count", "0");
-                var money = int.Parse(variableManager?.GetVariableValue("money"));
-                var Reward = int.Parse(variableManager?.GetVariableValue("PartTimeJob_Object")) * 200;
-                variableManager?.SetVariableValue("money", (money + Reward).ToString());
-                variableManager?.SetVariableValue("update_TestSceneUI_variable", "true");
-
-                // 숨기지 말라!
-                SuccessUI.SetActive(true);
-                MainUI.SetActive(false);
-                SuccessReward.text = JobReward.text;
+                // 아르바이트 성공 !!!!!!!!!
+                StartCoroutine(HandleSuccess());
             }
 
         }
+    }
+    IEnumerator HandleSuccess()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        variableManager?.SetVariableValue("Start_Timer", "false");
+        variableManager?.SetVariableValue("PartTimeJob_Count", "0");
+        var money = int.Parse(variableManager?.GetVariableValue("money"));
+        var Reward = int.Parse(variableManager?.GetVariableValue("PartTimeJob_Object")) * 200;
+        variableManager?.SetVariableValue("money", (money + Reward).ToString());
+        variableManager?.SetVariableValue("update_TestSceneUI_variable", "true");
+        SuccessUI.SetActive(true);
+        MainUI.SetActive(false);
+        SuccessReward.text = JobReward.text;
     }
     public void RetryGame()
     {
@@ -151,17 +155,8 @@ public class Timer : MonoBehaviour
             {
                 if (timer <= 0)
                 {
-                    // 아르바이트 실패!!!!!!!!!!!
-                    FailUI.SetActive(true);
-                    MainUI.SetActive(false);
-                    string count = variableManager?.GetVariableValue("PartTimeJob_Count");
-                    FailCount.text = count;
-                    if (count == "0")
-                    {
-                        RetryButton.interactable = false;
-                    }
-                    timer = 0;
-                    variableManager?.SetVariableValue("Start_Timer", "false");
+                    // 아르바이트 실패 !!!!!!!!!
+                    StartCoroutine(HandleFailure());
                 }
 
                 // 타이머 값을 텍스트로 표시
@@ -169,6 +164,22 @@ public class Timer : MonoBehaviour
                 delayTime = 0f;
             }
         }
+    }
+    IEnumerator HandleFailure()
+    {
+        variableManager?.SetVariableValue("Start_Timer", "false");
+        yield return new WaitForSeconds(0.5f);
+
+        FailUI.SetActive(true);
+        MainUI.SetActive(false);
+        string count = variableManager?.GetVariableValue("PartTimeJob_Count");
+        variableManager?.SetVariableValue("update_TestSceneUI_variable", "true");
+        FailCount.text = count;
+        if (count == "0")
+        {
+            RetryButton.interactable = false;
+        }
+        timer = 0;
     }
     IEnumerator InitializeAndCountdown()
     {
@@ -193,10 +204,14 @@ public class Timer : MonoBehaviour
         string PartTimeJob_Object = variableManager?.GetVariableValue("PartTimeJob_Object");
         Set_Active_Object(PartTimeJob_Object);
         // 0.5초 딜레이
-        yield return new WaitForSeconds(0.5f);
+        yield return StartCoroutine(DelayForSeconds(0.5f));
 
         variableManager?.SetVariableValue("Create_Object", "false");
         shouldStartCountdown = false;  // 코루틴이 끝난 후 플래그 리셋
+    }
+    IEnumerator DelayForSeconds(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
     void SetStarOnOff(int PartTimeJob_Object)
     {
