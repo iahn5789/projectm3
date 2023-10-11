@@ -234,7 +234,7 @@ public class Timer : MonoBehaviour
         if (PartTimeJob_Object == "1")
         {
             JobName.text = "용돈 받기";
-            JobSubtitle.text = "두꺼운 봉투를 보고 기대하셨나요? 파란 종이가 나와도 실망하지 마세요.";
+            JobSubtitle.text = "두꺼운 봉투를 보고 기대하셨나요? 파란 종이가 나와도 실망하지 마세요. 은색 동전보다는 나을테니까요. 학생에게 노란 종이는 사치입니다!";
             JobIcon.sprite = JobIconList[0];
             JobReward.text = "200 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability01");
@@ -248,7 +248,7 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "2")
         {
             JobName.text = "호텔 서빙";
-            JobSubtitle.text = "누구나 할 수 있는 일이지만 보수 또한 적습니다. 물론 일이 쉬운건 아니지만요.";
+            JobSubtitle.text = "누구나 할 수 있는 일이지만 그만큼 보수가 적습니다. 물론 일이 쉬운 건 아니지만요. 팔이 후들거리는 건 기분 탓만은 아닐 겁니다.";
             JobIcon.sprite = JobIconList[1];
             JobReward.text = "400 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability02");
@@ -262,7 +262,7 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "3")
         {
             JobName.text = "인형탈 알바";
-            JobSubtitle.text = "어릴적 인형탈 안에 사람이 있는지 궁금했다면, 이제 직접 알아볼 차례입니다.";
+            JobSubtitle.text = "어릴 적 인형 탈 안에 사람이 있는지 궁금했다면, 이제 직접 알아볼 차례입니다. 비 오듯 흐르는 땀을 뒤로 한 채 아이들의 동심을 지켜주세요.";
             JobIcon.sprite = JobIconList[2];
             JobReward.text = "600 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability03");
@@ -277,7 +277,7 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "4")
         {
             JobName.text = "택배 상하차";
-            JobSubtitle.text = "단기간에 택배 상하차만큼 돈을 벌 수 있는 아르바이트는 없습니다. 병원비로 다 쓰지만 않는다면 말이죠.";
+            JobSubtitle.text = "단기간에 택배 상하차만큼 돈을 벌 수 있는 일은 없습니다. 병원비로 다 쓰지만 않는다면 말이죠. 도망치고 싶다면 지금입니다!";
             JobIcon.sprite = JobIconList[3];
             JobReward.text = "800 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability04");
@@ -292,7 +292,7 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "5")
         {
             JobName.text = "거리 공연";
-            JobSubtitle.text = "드라마 속 주인공의 낭만 넘치는 거리 공연 따위는 기대하지 마세요. 취객, 진상, 양아치들 사이에서 살아남으세요.";
+            JobSubtitle.text = "드라마 속 주인공의 낭만 넘치는 거리 공연 따위는 기대하지 마세요. 취객, 진상, 양아치들 사이에서 살아남을 자신이 있다면 지금 당장 거리로 나가세요!";
             JobIcon.sprite = JobIconList[4];
             JobReward.text = "1000 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability05");
