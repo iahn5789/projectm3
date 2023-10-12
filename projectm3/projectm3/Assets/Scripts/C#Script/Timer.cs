@@ -51,14 +51,12 @@ public class Timer : MonoBehaviour
         if (bt_active == "true")
         {
             currentStopTime = stopDuration;  // 멈추는 시간 설정
-            bool isOverlapping = false;
             Image[] images = { range1, range2, range3 };
             foreach (Image img in images)
             {
                 if (img.gameObject.activeSelf && IsOverlappingWithTrigger(img))
                 {
                     img.gameObject.SetActive(false);
-                    isOverlapping = true;  // 겹치는 이미지가 있음
                     break;  // 이미 겹치는 이미지를 찾았으므로 반복 종료
                 }
             }
