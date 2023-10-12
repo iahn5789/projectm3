@@ -40,6 +40,8 @@ public class Timer : MonoBehaviour
     public Button RetryButton;
     public Text FailCount;
     public Text SuccessReward;
+    public AudioSource SuccessAudioSource;
+    public AudioSource FailAudioSource;
     void Start()
     {
         timer = countdownTime;
@@ -52,13 +54,23 @@ public class Timer : MonoBehaviour
         {
             currentStopTime = stopDuration;  // 멈추는 시간 설정
             Image[] images = { range1, range2, range3 };
+            bool active_object = false;
             foreach (Image img in images)
             {
                 if (img.gameObject.activeSelf && IsOverlappingWithTrigger(img))
                 {
+                    active_object = true;
                     img.gameObject.SetActive(false);
                     break;  // 이미 겹치는 이미지를 찾았으므로 반복 종료
                 }
+            }
+            if (active_object)
+            {
+                SuccessAudioSource.Play();
+            }
+            else
+            {
+                FailAudioSource.Play();
             }
             bool isActive = false;
             foreach (Image img in images)
