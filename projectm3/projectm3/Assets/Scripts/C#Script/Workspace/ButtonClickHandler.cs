@@ -6,8 +6,6 @@ using Naninovel;
 
 public class ButtonClickHandler : MonoBehaviour
 {
-    public GameObject Button_Work_Game_1;
-
     public void OnButtonClick_Work_Game_1()
     {
         var variableManager = Engine.GetService<ICustomVariableManager>();
@@ -106,5 +104,26 @@ public class ButtonClickHandler : MonoBehaviour
         {
             variableManager?.SetVariableValue("PartTimeJob_Count", (int.Parse(count) - 1).ToString());
         }
+    }
+    public void OnButtonClickKangProfile()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        var inputShowUI = new List<string>() {"ProfileUI_Kang"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
+    }
+    public void OnButtonClickJinProfile()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        var inputShowUI = new List<string>() {"ProfileUI_Jin"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
+    }
+        public void OnButtonClickSulProfile()
+    {
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        var inputShowUI = new List<string>() {"ProfileUI_Sul"};
+        var showUI = new ShowUI{UINames = inputShowUI};
+        showUI.ExecuteAsync();
     }
 }
