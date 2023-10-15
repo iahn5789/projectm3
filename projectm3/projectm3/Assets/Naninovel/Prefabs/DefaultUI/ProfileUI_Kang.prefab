@@ -12195,7 +12195,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBC1D\uACE0 \uBA85\uB7C9\uD55C \uC18C\uB140"
+  m_Text: 
 --- !u!1 &3936270201901377925
 GameObject:
   m_ObjectHideFlags: 0
@@ -13095,7 +13095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000036716, y: 0}
+  m_AnchoredPosition: {x: 0.000038146973, y: 0}
   m_SizeDelta: {x: 0.000015258789, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7116399490772568163
@@ -18722,6 +18722,7 @@ GameObject:
   - component: {fileID: 6306036015961478118}
   - component: {fileID: 6306036015961478117}
   - component: {fileID: 6306036015961478116}
+  - component: {fileID: 7930223436502061643}
   m_Layer: 5
   m_Name: ProfileUI_Kang
   m_TagString: Untagged
@@ -18799,7 +18800,18 @@ MonoBehaviour:
   focusMode: 0
   onShow:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: LikeAbilityToLine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls: []
@@ -18864,6 +18876,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7930223436502061643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6306036015961478139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f436e2bf686449b7370d3de91723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Kang
+  lineText: {fileID: 972404607329315485}
+  firstLimit: 20
+  secondLimit: 50
+  thirdLimit: 80
 --- !u!1 &6323549410028339576
 GameObject:
   m_ObjectHideFlags: 0
@@ -24781,7 +24810,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4000303601127548449}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.524286
+  m_Size: 0.5242859
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

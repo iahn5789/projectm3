@@ -7240,7 +7240,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC870\uC6A9\uD558\uC9C0\uB9CC \uCE74\uB9AC\uC2A4\uB9C8 \uC788\uB294 \uC18C\uB140"
+  m_Text: 
 --- !u!1 &3977738223073638909
 GameObject:
   m_ObjectHideFlags: 0
@@ -10750,6 +10750,7 @@ GameObject:
   - component: {fileID: 6306036015961478118}
   - component: {fileID: 6306036015961478117}
   - component: {fileID: 6306036015961478116}
+  - component: {fileID: 446572573683751715}
   m_Layer: 5
   m_Name: ProfileUI_Sul
   m_TagString: Untagged
@@ -10826,7 +10827,18 @@ MonoBehaviour:
   focusMode: 0
   onShow:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 446572573683751715}
+        m_MethodName: LikeAbilityToLine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls: []
@@ -10891,6 +10903,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &446572573683751715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6306036015961478139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f436e2bf686449b7370d3de91723d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Sul
+  lineText: {fileID: 972404607329315485}
+  firstLimit: 20
+  secondLimit: 50
+  thirdLimit: 80
 --- !u!1 &6367317853932607812
 GameObject:
   m_ObjectHideFlags: 0
@@ -14072,7 +14101,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4000303601127548449}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.524286
+  m_Size: 0.5242859
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
