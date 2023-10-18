@@ -34,6 +34,7 @@ public class ProfileUIManager : MonoBehaviour
     public GameObject StoryPopUp;
     public Text BuyLikeAbilityText;
     public Text BuyWeekText;
+    public Text BuyBadgeText;
     private int NowStory;
     // 정보창
     public GameObject Name;
@@ -162,8 +163,6 @@ public class ProfileUIManager : MonoBehaviour
     }
     public void SetStoryText(int i)
     {
-        Debug.Log($"{i} send sibal");
-        Debug.Log($"{StoryTextString[i-1].text}");
         StoryText.text = StoryTextString[i-1].text;
     }
     public void ClickStory(int i)
@@ -195,6 +194,14 @@ public class ProfileUIManager : MonoBehaviour
             }
             BuyLikeAbilityText.text = $"{name} {i}주차 스토리 완료";
             BuyWeekText.text = $"{name} 호감도 {i*10} 이상";
+            if (i == 1)
+            {
+                BuyBadgeText.text = "필요 뱃지 0개";
+            }
+            else
+            {
+                BuyBadgeText.text = "필요 뱃지 3개";
+            }
         }
     }
     public void ClickBuyButton()
@@ -202,9 +209,18 @@ public class ProfileUIManager : MonoBehaviour
         int badge = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Badge"));
         int LikeAbility = Int32.Parse(variableManager?.GetVariableValue($"{characterName}LikeAbility"));
         int Week = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Week"));
-        if (badge >= 3 && LikeAbility >= 10 * NowStory && Week >= NowStory)
+        if ((badge >= 3 && LikeAbility >= 10 * NowStory && Week >= NowStory) && NowStory != 1)
         {
             variableManager?.SetVariableValue($"{characterName}Badge",(badge - 3).ToString());
+            variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
+            StoryBuyPopUp.SetActive(false);
+            StoryPopUp.SetActive(true);
+            SetStoryText(NowStory);
+            UpdateBadge();
+            UpdateStory();
+        }
+        else if(NowStory == 1)
+        {
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
             StoryPopUp.SetActive(true);
