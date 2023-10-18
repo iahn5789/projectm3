@@ -145,7 +145,7 @@ public class ProfileUIManager : MonoBehaviour
     }
     public void UpdateBadge()
     {
-        badgeText.text = variableManager?.GetVariableValue($"{characterName}Badge");
+        badgeText.text = variableManager?.GetVariableValue($"Badge");
     }
     public void UpdateStory()
     {
@@ -206,12 +206,12 @@ public class ProfileUIManager : MonoBehaviour
     }
     public void ClickBuyButton()
     {
-        int badge = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Badge"));
+        int badge = Int32.Parse(variableManager?.GetVariableValue($"Badge"));
         int LikeAbility = Int32.Parse(variableManager?.GetVariableValue($"{characterName}LikeAbility"));
         int Week = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Week"));
         if ((badge >= 3 && LikeAbility >= 10 * NowStory && Week >= NowStory) && NowStory != 1)
         {
-            variableManager?.SetVariableValue($"{characterName}Badge",(badge - 3).ToString());
+            variableManager?.SetVariableValue($"Badge",(badge - 3).ToString());
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
             StoryPopUp.SetActive(true);
@@ -257,6 +257,17 @@ public class ProfileUIManager : MonoBehaviour
             OnText(Constellation, SecretConstellation);
             OnText(Flower, SecretFlower);
         }
+        else
+        {
+            OffText(Name, SecretName);
+            OffText(Grade, SecretGrade);
+            OffText(Age, SecretAge);
+            OffText(Birthday, SecretBirthday);
+            OffText(Height, SecretHeight);
+            OffText(Kg, SecretKg);
+            OffText(Constellation, SecretConstellation);
+            OffText(Flower, SecretFlower);
+        }
         if (Week>=2)
         {
             OnText(FavoriteThing, SecretFavoriteThing);
@@ -264,16 +275,34 @@ public class ProfileUIManager : MonoBehaviour
             OnText(FavoriteFood, SecretFavoriteFood);
             OnText(HateFood, SecretHateFood);
         }
+        else
+        {
+            OffText(FavoriteThing, SecretFavoriteThing);
+            OffText(HateThing, SecretHateThing);
+            OffText(FavoriteFood, SecretFavoriteFood);
+            OffText(HateFood, SecretHateFood);
+        }
         if (Week>=3)
         {
             OnText(MBTI, SecretMBTI);
             OnText(BloodType, SecretBloodType);
             OnText(BandPosition, SecretBandPosition);
         }
+        else
+        {
+            OffText(MBTI, SecretMBTI);
+            OffText(BloodType, SecretBloodType);
+            OffText(BandPosition, SecretBandPosition);
+        }
         if (Week>=4)
         {
             OnText(Family, SecretFamily);
             OnText(FirstName, SecretFirstName);
+        }
+        else
+        {
+            OffText(Family, SecretFamily);
+            OffText(FirstName, SecretFirstName);
         }
         if (Week>=5)
         {
@@ -281,28 +310,57 @@ public class ProfileUIManager : MonoBehaviour
             OnText(Habit, SecretHabit);
             OnText(Interest, SecretInterest);
         }
+        else
+        {
+            OffText(Food, SecretFood);
+            OffText(Habit, SecretHabit);
+            OffText(Interest, SecretInterest);
+        }
         if (Week>=6)
         {
             OnText(Money, SecretMoney);
         }
+        else
+        {
+            OffText(Money, SecretMoney);
+        }
         if (Week>=7)
         {
             OnText(Styling, SecretStyling);
+        }
+        else
+        {
+            OffText(Styling, SecretStyling);
         }
         if (Week>=8)
         {
             OnText(Specialty, SecretSpecialty);
             OnText(Hobby, SecretHobby);
         }
+        else
+        {
+            OffText(Specialty, SecretSpecialty);
+            OffText(Hobby, SecretHobby);
+        }
         if (Week>=9)
         {
             OnText(Dream, SecretDream);
             OnText(Type, SecretType);
+        }
+        else
+        {
+            OffText(Dream, SecretDream);
+            OffText(Type, SecretType);
         }
     }
     public void OnText(GameObject text, GameObject secret)
     {
         text.SetActive(true);
         secret.SetActive(false);
+    }
+    public void OffText(GameObject text, GameObject secret)
+    {
+        text.SetActive(false);
+        secret.SetActive(true);
     }
 }

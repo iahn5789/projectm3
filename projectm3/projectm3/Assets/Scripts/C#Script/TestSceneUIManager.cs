@@ -10,6 +10,7 @@ using Naninovel.Commands;
 public class TestSceneUIManager : MonoBehaviour
 {
     public Text MoneyUI;    // 현재 돈
+    public Text BadgeUI;    // 현재 뱃지
     public Text CountUI;    // 남은 횟수
     public GameObject Image_End_PartTimeJob;    // 아르바이트 종료
     private ICustomVariableManager variableManager;
@@ -71,12 +72,7 @@ public class TestSceneUIManager : MonoBehaviour
     public void setUI()
     {
         string moneyText = variableManager.GetVariableValue("money");
-        int moneyValue;
-        if (int.TryParse(moneyText, out moneyValue))
-        {
-            CultureInfo ci = new CultureInfo("en-US"); // 미국의 숫자 형식을 사용하여 천 단위 구분 기호를 추가합니다.
-            MoneyUI.text = moneyValue.ToString("N0", ci);
-        }
+        MoneyUI.text = moneyText;
 
         string countText = variableManager.GetVariableValue("PartTimeJob_Count");
         CountUI.text = countText;
@@ -84,6 +80,9 @@ public class TestSceneUIManager : MonoBehaviour
         {
             Image_End_PartTimeJob.SetActive(true);
         }
+
+        string badgeText = variableManager.GetVariableValue("Badge");
+        BadgeUI.text = badgeText;
     }
     public void SetLikeAbilityToText()
     {

@@ -2801,7 +2801,13 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8396739336599454041}
+  - {fileID: 5091174130206884421}
+  - {fileID: 5203047975541439119}
+  - {fileID: 3625468458121859378}
+  - {fileID: 5591885754206889011}
+  - {fileID: 1267339506947271573}
   m_Father: {fileID: 8715627250941439771}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4798,7 +4804,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8715627250941439771}
   m_Layer: 5
-  m_Name: Info_Coin
+  m_Name: Info_Goods
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4816,12 +4822,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7515197455285686831}
-  - {fileID: 8396739336599454041}
-  - {fileID: 5091174130206884421}
-  - {fileID: 5203047975541439119}
-  - {fileID: 3625468458121859378}
-  - {fileID: 5591885754206889011}
-  - {fileID: 1267339506947271573}
   m_Father: {fileID: 5200419254018941297}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9139,7 +9139,7 @@ GameObject:
   - component: {fileID: 7145634172330258440}
   - component: {fileID: 6171636464740814769}
   m_Layer: 5
-  m_Name: Text_Amount
+  m_Name: Text_Coin_Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9156,8 +9156,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8715627250941439771}
-  m_RootOrder: 2
+  m_Father: {fileID: 7515197455285686831}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9937,7 +9937,7 @@ GameObject:
   - component: {fileID: 4280690021967772921}
   - component: {fileID: 6167436295938057408}
   m_Layer: 5
-  m_Name: Text_Coin
+  m_Name: Text_Coin_Unit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9954,8 +9954,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8715627250941439771}
-  m_RootOrder: 1
+  m_Father: {fileID: 7515197455285686831}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12175,7 +12175,7 @@ GameObject:
   - component: {fileID: 4211403779325884633}
   - component: {fileID: 5704693205579173206}
   m_Layer: 5
-  m_Name: Image_Icon02
+  m_Name: Image_Coin_Icon02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12192,8 +12192,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8715627250941439771}
-  m_RootOrder: 3
+  m_Father: {fileID: 7515197455285686831}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22751,7 +22751,7 @@ GameObject:
   - component: {fileID: 2917383086560071533}
   - component: {fileID: 8531437887407286612}
   m_Layer: 5
-  m_Name: Image_Icon02
+  m_Name: Image_Bedge_Icon02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22768,8 +22768,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8715627250941439771}
-  m_RootOrder: 6
+  m_Father: {fileID: 7515197455285686831}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26097,7 +26097,6 @@ RectTransform:
   - {fileID: 3529177745756797242}
   - {fileID: 1073322790287049482}
   - {fileID: 8715627250941439771}
-  - {fileID: 7864150633181651280}
   m_Father: {fileID: 6306036015961478113}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26763,41 +26762,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &4692673411354050024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7864150633181651280}
-  m_Layer: 5
-  m_Name: Info_Badge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &7864150633181651280
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4692673411354050024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5200419254018941297}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1571, y: 270.1}
-  m_SizeDelta: {x: 230, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4761669322884873452
 GameObject:
   m_ObjectHideFlags: 0
@@ -29819,7 +29783,7 @@ GameObject:
   - component: {fileID: 1270309078999925187}
   - component: {fileID: 3520780401082331446}
   m_Layer: 5
-  m_Name: Text_Coin
+  m_Name: Text_Bedge_Unit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29836,8 +29800,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8715627250941439771}
-  m_RootOrder: 4
+  m_Father: {fileID: 7515197455285686831}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31756,6 +31720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoneyUI: {fileID: 6171636464740814769}
+  BadgeUI: {fileID: 3339403712405633086}
   CountUI: {fileID: 5969429557378043738}
   Image_End_PartTimeJob: {fileID: 4855784165837560114}
   KangLine: {fileID: 8581352866371338503}
@@ -38844,7 +38809,7 @@ GameObject:
   - component: {fileID: 5406235345306089550}
   - component: {fileID: 3339403712405633086}
   m_Layer: 5
-  m_Name: Text_Amount
+  m_Name: Text_Bedge_Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38861,8 +38826,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8715627250941439771}
-  m_RootOrder: 5
+  m_Father: {fileID: 7515197455285686831}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
