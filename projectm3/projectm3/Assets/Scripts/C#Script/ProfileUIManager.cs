@@ -23,6 +23,10 @@ public class ProfileUIManager : MonoBehaviour
     public Text WeekText;
     // 뱃지
     public Text badgeText;
+    public GameObject LackUI;
+    public GameObject BadgeLackPrefab;
+    public GameObject WeekLackPrefab;
+    public GameObject LikeAbilityLackPrefab;
     // 스토리
     public GameObject[] Story;
     public GameObject StoryBuyPopUp;
@@ -198,6 +202,24 @@ public class ProfileUIManager : MonoBehaviour
             StoryPopUp.SetActive(true);
             UpdateBadge();
             UpdateStory();
+        }
+        else
+        {
+            if (badge < 3)
+            {
+                GameObject createdLack = Instantiate(BadgeLackPrefab, LackUI.transform);
+                Destroy(createdLack, 1f);
+            }
+            else if (LikeAbility < 10 * NowStory)
+            {
+                GameObject createdLack = Instantiate(LikeAbilityLackPrefab, LackUI.transform);
+                Destroy(createdLack, 1f);
+            }
+            else if (Week < NowStory)
+            {
+                GameObject createdLack = Instantiate(WeekLackPrefab, LackUI.transform);
+                Destroy(createdLack, 1f);
+            }
         }
     }
     public bool CheckBuyStory(int i)
