@@ -8161,10 +8161,10 @@ RectTransform:
   m_Father: {fileID: 1261285403195963379}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 220, y: -50}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6024973600134627139
 CanvasRenderer:
@@ -8347,7 +8347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4988153893255911037
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17649,10 +17649,10 @@ RectTransform:
   m_Father: {fileID: 1261285403195963379}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 480, y: -50}
+  m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1432669521974889383
 CanvasRenderer:
@@ -20189,12 +20189,19 @@ MonoBehaviour:
   WeekText: {fileID: 2010216890601979769}
   badgeText: {fileID: 5893872768315440894}
   LackUI: {fileID: 3877955677019860558}
-  BadgeLackPrefab: {fileID: 6306036015961478139, guid: 3dfe02a4256232a48adca5d8549fca8d,
+  LackPrefab: {fileID: 6306036015961478139, guid: 001103df2441ac040aca7b77ec75bda9,
     type: 3}
-  WeekLackPrefab: {fileID: 6306036015961478139, guid: 001103df2441ac040aca7b77ec75bda9,
-    type: 3}
-  LikeAbilityLackPrefab: {fileID: 6306036015961478139, guid: 44a9c8c22a633244fb3d1105565694f1,
-    type: 3}
+  StoryTextString:
+  - {fileID: 4900000, guid: 7d00aae0961ee7e4a9eb2cac986e9534, type: 3}
+  - {fileID: 4900000, guid: 4ef98f167b5d1f24d979b597f8e57443, type: 3}
+  - {fileID: 4900000, guid: cee1f7974df7dc44e848604f95b61528, type: 3}
+  - {fileID: 4900000, guid: afc429b1aabd5ca42841b5d9f4ca95fd, type: 3}
+  - {fileID: 4900000, guid: 28a8d8455f292854496bba6df44ba0be, type: 3}
+  - {fileID: 4900000, guid: ce827cc04355ee34999855948502cb07, type: 3}
+  - {fileID: 4900000, guid: be1a9b3273fb8bb499da22d4d58e86e1, type: 3}
+  - {fileID: 4900000, guid: 1f5c57c8945508c45b99f23015b523c7, type: 3}
+  - {fileID: 4900000, guid: d22e199f0ccac0446b61f59137d6d38f, type: 3}
+  StoryText: {fileID: 6047702315483814854}
   Story:
   - {fileID: 8638921517870425914}
   - {fileID: 2536139569064372557}
@@ -20207,8 +20214,8 @@ MonoBehaviour:
   - {fileID: 8096734464730914275}
   StoryBuyPopUp: {fileID: 2372772360983510828}
   StoryPopUp: {fileID: 1036397966500571280}
-  BuyLikeAbilityText: {fileID: 6042763595262399230}
-  BuyWeekText: {fileID: 8622880661721285265}
+  BuyLikeAbilityText: {fileID: 8622880661721285265}
+  BuyWeekText: {fileID: 6042763595262399230}
   Name: {fileID: 3324954830298154208}
   SecretName: {fileID: 1180234410698179933}
   Grade: {fileID: 4412021800460653573}

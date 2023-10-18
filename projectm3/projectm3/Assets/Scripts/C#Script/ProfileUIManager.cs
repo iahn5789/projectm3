@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Naninovel;
 using Naninovel.Commands;
+using System.IO; 
 
 public class ProfileUIManager : MonoBehaviour
 {
@@ -24,10 +25,10 @@ public class ProfileUIManager : MonoBehaviour
     // 뱃지
     public Text badgeText;
     public GameObject LackUI;
-    public GameObject BadgeLackPrefab;
-    public GameObject WeekLackPrefab;
-    public GameObject LikeAbilityLackPrefab;
+    public GameObject LackPrefab;
     // 스토리
+    public TextAsset[] StoryTextString;
+    public Text StoryText;
     public GameObject[] Story;
     public GameObject StoryBuyPopUp;
     public GameObject StoryPopUp;
@@ -159,12 +160,20 @@ public class ProfileUIManager : MonoBehaviour
             }
         }
     }
+    public void SetStoryText(int i)
+    {
+        Debug.Log($"{i} send sibal");
+        Debug.Log($"{StoryTextString[i-1].text}");
+        StoryText.text = StoryTextString[i-1].text;
+    }
     public void ClickStory(int i)
     {
         if (CheckBuyStory(i))
         {
             // 구매 팝업 X
+            SetStoryText(i);
             StoryPopUp.SetActive(true);
+            
         }
         else
         {
@@ -196,30 +205,17 @@ public class ProfileUIManager : MonoBehaviour
         if (badge >= 3 && LikeAbility >= 10 * NowStory && Week >= NowStory)
         {
             variableManager?.SetVariableValue($"{characterName}Badge",(badge - 3).ToString());
-            Debug.Log($"{characterName}Story_{NowStory}_Buy");
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
             StoryPopUp.SetActive(true);
+            SetStoryText(NowStory);
             UpdateBadge();
             UpdateStory();
         }
         else
         {
-            if (badge < 3)
-            {
-                GameObject createdLack = Instantiate(BadgeLackPrefab, LackUI.transform);
-                Destroy(createdLack, 1f);
-            }
-            else if (LikeAbility < 10 * NowStory)
-            {
-                GameObject createdLack = Instantiate(LikeAbilityLackPrefab, LackUI.transform);
-                Destroy(createdLack, 1f);
-            }
-            else if (Week < NowStory)
-            {
-                GameObject createdLack = Instantiate(WeekLackPrefab, LackUI.transform);
-                Destroy(createdLack, 1f);
-            }
+            GameObject createdLack = Instantiate(LackPrefab, LackUI.transform);
+            Destroy(createdLack, 1f);
         }
     }
     public bool CheckBuyStory(int i)
