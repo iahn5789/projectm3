@@ -1,10 +1,22 @@
 # week02_02
 {Player_name}: 자... 자...
+@spawn ShakeCamera wait:false
+@spawn ShakePrinter wait:false
 {Player_name}: 자연스레 조금씩...
+@char instkang.body>body6,face>face8 wait:false
 kang: 잠...잠깐!
+@spawn ShakeCamera wait:false
+@spawn ShakePrinter wait:false
+@spawn ShakeCharacter wait:false
 {Player_name}: 네게 다가가는 내 모습...
+@hideChars wait:false
+@char instsul.body>body7,face>face1 wait:false
 sul: ...
+@hideChars wait:false
+@char instjin.body>body5,face>face6 wait:false
 jin: 멈춰!!!
+@hideChars wait:false
+@spawn ShakePrinter wait:false
 describe: 뚝!
 {Player_name}: 오랜 시간이... 어라?
 describe: 어느새 정신을 차려보니 연주는 멈춰있었고 손에 든 마이크 역시 꺼져있었다.
@@ -13,21 +25,30 @@ describe: 고개를 들어 주변을 둘러보았다.
 describe: 어딘가 황당한 듯한 표정을 짓고 있는 여진이.
 describe: 여전히 포커페이스인 나희 누나. 그리고...
 describe: 다영이가 스피커 옆에서 씩씩대며 나를 바라보고 있었다.
+@char jin.body>body3,face>face4 wait:false
+@spawn ShakePrinter wait:false
 jin: 야!
 {Player_name}: 어? 나? 왜...?
 {Player_name}: 아! 이거 마이크가 갑자기 안 나와서.
 {Player_name}: 잠깐만! 내가 한번 고쳐볼...
+@char jin.body>body2,face>face4 wait:false
 jin: 너 지금 뭐가 문제인지 정말 모르는거야...?
 {Player_name}: 어... 마이크가 안 나오는 거 아니었어?
 {Player_name}: 아니면 지금 이게 나오고 있는 건가?
+@char jin.body>body3,face>face4 wait:false
 jin: 선을 뽑았으니, 마이크는 당연히 안 나오지!
 kang: 하하하...
+@char jin.body>body1,face>face4 wait:false
 jin: 하... 진짜 못 해 먹겠네.
+@hideChars wait:false
+@char instsul.body>body5,face>face1 wait:false
 sul: ...
+@char instsul.body>body7,face>face1 wait:false
 sul: 시작할까...?
 {Player_name}: 네?
 {Player_name}: 아..! 시작하겠습니다.
 describe: 나는 떨어져 있던 마이크 선을 집어 스피커에 꽂은 뒤 다시 자리로 돌아왔다.
+@hideChars wait:false
 describe: 연주가 시작되었다.
 describe: 한마디. 두 마디. 세 마디. 네 마디.
 @goto A_week02_03.week02_03

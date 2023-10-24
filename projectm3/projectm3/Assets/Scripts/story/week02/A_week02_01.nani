@@ -1,23 +1,43 @@
 # week02_01
+@back ScLobby01
 describe: 모두가 하교한 시간.
 describe: 아무도 찾아오지 않는 4층의 복도는 특별한 것이 없어 보인다.
 describe: 하지만 발걸음을 멈추고 가만히 서 있으면 어떤 소리가 들리기 시작한다.
+@spawn Blur wait:false
 describe: 스러져 가는 동아리 팻말을 흔들어 놓는 드럼의 진동.
 describe: 뼛속까지 퍼지는 강렬한 베이스의 울림.
 describe: 나도 모르게 리듬을 타게 되는 화려한 기타 연주.
 describe: 그리고...
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@despawn Blur wait:false
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@processInput true
 {Player_name}: ...
 {Player_name}: ......
+@char instkang.body>body4,face>face8 wait:false
 kang: 저기...
 {Player_name}: 어...응? 왜?
+@char instkang.body>body5,face>face8 wait:false
 kang: 무슨 일 있어?
 {Player_name}: 아...!
+@hideChars wait:false
+@char instjin.body>body4,face>face4 wait:false
 jin: 뭐야! 정신 똑바로 안 차려?
 jin: 무슨 생각을 하는 거야!
+@hideChars wait:false
+@char instsul.body>body5,face>face1 wait:false
 sul: ...
 kang: 괜찮아. 다시 갈까 그럼?
+@char instsul.body>body7,face>face1 wait:false
 sul: 응...
+@hideChars wait:false
+@char instjin.body>body6,face>face4 wait:false
 jin: 집중해! 이번에도 실수하면 나 화낼 거야!
+@hideChars wait:false
 describe: 동아리에 들어온 지 어느덧 2주 정도의 시간이 흘렀다.
 describe: 2주라는 시간 동안 동아리 부원들과 꽤 친해졌냐고 묻는다면, 아직 그 정도까지는 아니었다.
 describe: 하지만, 단 하나는 확실히 느낄 수 있을 만큼의 충분한 시간이었다.

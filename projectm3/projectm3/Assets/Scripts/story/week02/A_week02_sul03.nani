@@ -1,32 +1,45 @@
 # week02_sul03
 {Player_name}: 저... 나희 누나?
+@char sul.body>body3,face>face1 wait:false
 sul: ...응?
 {Player_name}: 궁금한 게 있는데...
 {Player_name}: 그...저기...마이크를 세팅할 때 쓰는 저 큰 장치는 뭐라고 불러요...?
+@char sul.body>body1,face>face1 wait:false
 sul: ...
 {Player_name}: ...
 describe: 나희 누나는 말없이 그저 빤히 내 얼굴을 쳐다보고 있다.
 sul: ...
+@char sul.body>body2,face>face1 wait:false
 sul: ...궁금해...?
 {Player_name}: 네...!
+@hideChars wait:false
+@char bigsul.body>body2,face>face1 wait:false
 sul: 그럼...
 sul: 알려줄게...
 describe: 나희누나는 동아리방 구석에 놓인 어떤 기계 앞으로 나를 데려갔다.
+@hideChars wait:false
+@char sul.body>body2,face>face1 wait:false
 sul: 자...네가 말했던 게 이거야?
 {Player_name}: 아 넵...이름을 잘 몰라서...
+@char sul.body>body4,face>face1 wait:false
 sul: 믹서.
 sul: 믹서라고 하는 거야. 보기보다 중요하니까 외워두면 좋아.
 {Player_name}: 믹서...요? 믹서기...?
+@char sul.body>body1,face>face1 wait:false
 sul: ...
 {Player_name}: 하하하...
 describe: 괜한 말을 한 것 같았다.
+@char sul.body>body2,face>face1 wait:false
 sul: 비슷해. 모든 소리를 한곳으로 모아 스피커로 내보내 주는 역할을 하거든.
 {Player_name}: 네...?
+@char sul.body>body4,face>face1 wait:false
 sul: 각 채널마다 페이더를 움직여서 소리의 크기를 조절하거나 EQ를 만져서 소리를 증폭시켜 줄 수 있어.
 sul: 그만큼 민감하고 비싼 장비기 때문에 조심해서 다뤄야 해.
 sul: 우선 이걸 다시 한번 설명하자면...
+@hideChars wait:false
 describe: 나희누나는 내가 이해를 못하고 있다는 걸 아는지 모르는지 멈추지 않고 설명했다.
-{Player_name}: 나희 누나 이렇게 말이 많은 사람이였나...
-{Player_name}: 다른사람을 보는 것 같아.
+{Player_name}: (나희 누나 이렇게 말이 많은 사람이였나...)
+{Player_name}: (다른사람을 보는 것 같아.)
+@char sul.body>body2,face>face1 wait:false
 sul: 듣고 있어?
 @goto A_week02_sul04.week02_sul04

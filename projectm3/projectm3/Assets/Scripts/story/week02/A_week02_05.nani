@@ -1,22 +1,41 @@
 # week02_05
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@processInput true
+@spawn ShakeCamera wait:false
+@spawn ShakePrinter wait:false
 describe: 쾅!
+@char sul.body>body2,face>face4 wait:false
 sul: ...
 sul: 둘 다 그만.
+@char sul.body>body4,face>face4 wait:false
 sul: 더 싸울 거야?
 kang: 아...
 sul: 아직 할 말 남아있어?
 jin: ...
+@hideChars wait:false
+@char bigsul.body>body2,face>face5 wait:false
 sul: 오늘 둘 다 혼나볼래?
 describe: 아니요...
 sul: ......
 describe: ...
+@hideChars wait:false
+@char sul.body>body1,face>face1 wait:false
 sul: 후...
 sul: 그렇게 서로 싸우기 전에.
+@char sul.body>body4,face>face1 wait:false
 sul: 본인 의견부터 들어봐야 하지 않을까?
 describe: 순식간에 상황을 정리한 나희 누나는 이내 나를 바라보고 있었다.
 describe: 여진이와 다영이 역시 고개를 돌려 나를 쳐다봤다.
+@hideChars wait:false
+@char bigsul.body>body4,face>face1 wait:false
 sul: 너는 어떻게 하고 싶어?
 {Player_name}: 저... 저는...
+@hideChars wait:false
 describe: 어떻게 하면 좋을까.
 describe: 다영이 말대로 나는 노래를 못한다.
 describe: 당연히 밴드부에서 보컬을 맡을 정도의 실력도 아니다.
@@ -25,12 +44,18 @@ describe: 평생 악기 한번 다뤄본 적 없는 내가 갑자기 기타를 �
 describe: 이러지도 저러지도 못하는 상황...
 describe: 어떤 선택을 해야 할까.
 describe: 어쩌면 내가 이 동아리에 들어온 게 문제일까...?
+@char sul.body>body4,face>face1 wait:false
 sul: 참고로.
+@char sul.body>body2,face>face1 wait:false
 sul: 나는 보컬 마음에 들어...
 {Player_name}: 네...?
 jin: 뭐...? 마음에 든다고? 아까 그게?
 sul: 응...
+@char sul.body>body1,face>face2 wait:false
 sul: 매력있잖아...
+@hideChars wait:false
+@char jin.body>body1,face>face4 wait:false
 jin: 그건 매력이 아니지!
 kang: 그래! Player_name 보컬이면 매력 있고 좋지!
+@hideChars wait:false
 @goto A_week02_06.week02_06
