@@ -8393,7 +8393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -665}
+  m_AnchoredPosition: {x: 0, y: 940}
   m_SizeDelta: {x: 950, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8132492213959420398
@@ -11771,7 +11771,6 @@ RectTransform:
   - {fileID: 7017868849338083963}
   - {fileID: 7847879932175561989}
   - {fileID: 2106210378497700148}
-  - {fileID: 4672337732372586037}
   m_Father: {fileID: 4133535926056832208}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17179,7 +17178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 815}
+  m_AnchoredPosition: {x: 0, y: 1380}
   m_SizeDelta: {x: 950, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6849898764054494196
@@ -18789,17 +18788,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3448807859969030780}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: WorkSpace_In
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2817534558444432304}
         m_MethodName: SetActive
         m_Mode: 6
@@ -18808,7 +18796,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: WorkSpace_In
+          m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 4536868728333620331}
@@ -18832,6 +18820,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: SecretMessage_Out
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3448807859969030780}
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: WorkSpace_In
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!95 &6013323114900899986
 Animator:
@@ -32954,6 +32953,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1873498860638096085}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StoryBoard_In
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 4536868728333620331}
         m_MethodName: Play
         m_Mode: 5
@@ -32963,11 +32973,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: StoryBoard_In
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1873498860638096085}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: StoryBoardSelectedCheck
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -38120,7 +38130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5103399155075957895
 RectTransform:
   m_ObjectHideFlags: 0
@@ -42559,6 +42569,8 @@ GameObject:
   - component: {fileID: 371691481370588345}
   - component: {fileID: 2977881303778485136}
   - component: {fileID: 6649924411528894276}
+  - component: {fileID: 922221352928201587}
+  - component: {fileID: 4729320875176275044}
   m_Layer: 5
   m_Name: Button_Jin
   m_TagString: Untagged
@@ -42573,7 +42585,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5243219248992583080}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0011451485, w: 0.9999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -42591,7 +42603,7 @@ RectTransform:
   - {fileID: 4700622593806511643}
   m_Father: {fileID: 4550293265124021837}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.13100001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 475, y: -284}
@@ -42652,7 +42664,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -42676,29 +42688,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7589473822637763389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1083861821153921021}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 8534286915910426194}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SecretMessage_In
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2977881303778485136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42781,6 +42771,89 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &922221352928201587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5243219248992583080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4729320875176275044}
+          m_MethodName: OnHighlighted
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Jin
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4729320875176275044}
+          m_MethodName: OnExit
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Jin
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4729320875176275044}
+          m_MethodName: OnSelected
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Jin
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &4729320875176275044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5243219248992583080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adfba8c0eb9a82438c810b37c4f1fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 6649924411528894276}
+  SecretMessage: {fileID: 1083861821153921021}
+  SecretMessageAnimator: {fileID: 8534286915910426194}
+  SecretMessageImage:
+  - {fileID: 8874131897770397616}
+  - {fileID: 993304600483618932}
+  - {fileID: 2394187850297161410}
+  - {fileID: 268609721099548339}
+  - {fileID: 7338744119754947762}
+  - {fileID: 8194648207179958044}
+  Sprite_SecretSD: {fileID: 21300000, guid: 6697cfabbef8ed54db7d5de8adb22f41, type: 3}
+  SecretSD: {fileID: 6491952705665505265}
+  SecretLine: {fileID: 9089852443444024356}
 --- !u!1 &5256963586754585438
 GameObject:
   m_ObjectHideFlags: 0
@@ -49245,6 +49318,8 @@ GameObject:
   - component: {fileID: 7823172516511162787}
   - component: {fileID: 6904047962638183975}
   - component: {fileID: 7274650245510311452}
+  - component: {fileID: 6450187037882179117}
+  - component: {fileID: 2419644736021180815}
   m_Layer: 5
   m_Name: Button_Sul
   m_TagString: Untagged
@@ -49338,7 +49413,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -49362,29 +49437,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4800371173779059341}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1083861821153921021}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 8534286915910426194}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SecretMessage_In
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &6904047962638183975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49467,6 +49520,89 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6450187037882179117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278372205298584750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2419644736021180815}
+          m_MethodName: OnHighlighted
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Sul
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2419644736021180815}
+          m_MethodName: OnExit
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Sul
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2419644736021180815}
+          m_MethodName: OnSelected
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Sul
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2419644736021180815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278372205298584750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adfba8c0eb9a82438c810b37c4f1fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 7274650245510311452}
+  SecretMessage: {fileID: 1083861821153921021}
+  SecretMessageAnimator: {fileID: 8534286915910426194}
+  SecretMessageImage:
+  - {fileID: 8874131897770397616}
+  - {fileID: 993304600483618932}
+  - {fileID: 2394187850297161410}
+  - {fileID: 268609721099548339}
+  - {fileID: 7338744119754947762}
+  - {fileID: 8194648207179958044}
+  Sprite_SecretSD: {fileID: 21300000, guid: 00da23e31eb205f4c9babd772c809ee3, type: 3}
+  SecretSD: {fileID: 6491952705665505265}
+  SecretLine: {fileID: 9089852443444024356}
 --- !u!1 &6306036015961478139
 GameObject:
   m_ObjectHideFlags: 0
@@ -49714,6 +49850,7 @@ MonoBehaviour:
   KangLine: {fileID: 8581352866371338503}
   JinLine: {fileID: 841799596245714004}
   SulLine: {fileID: 3004615744531593032}
+  SecretMessage: {fileID: 8534286915910426194}
 --- !u!114 &2448798598284601826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50914,7 +51051,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4672337732372586037}
   m_Father: {fileID: 17180711641834787}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54971,6 +55109,8 @@ GameObject:
   - component: {fileID: 1514086987721057697}
   - component: {fileID: 7904167608129169126}
   - component: {fileID: 3624945394504422884}
+  - component: {fileID: 8760520459417440658}
+  - component: {fileID: 6271786797568869744}
   m_Layer: 5
   m_Name: Button_Common
   m_TagString: Untagged
@@ -55064,7 +55204,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -55088,29 +55228,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6866470939251908233}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8534286915910426194}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SecretMessage_In
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1083861821153921021}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &7904167608129169126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55193,6 +55311,89 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8760520459417440658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172101960486089482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6271786797568869744}
+          m_MethodName: OnHighlighted
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Common
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6271786797568869744}
+          m_MethodName: OnExit
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Common
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6271786797568869744}
+          m_MethodName: OnSelected
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Common
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &6271786797568869744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172101960486089482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adfba8c0eb9a82438c810b37c4f1fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 3624945394504422884}
+  SecretMessage: {fileID: 1083861821153921021}
+  SecretMessageAnimator: {fileID: 8534286915910426194}
+  SecretMessageImage:
+  - {fileID: 8874131897770397616}
+  - {fileID: 993304600483618932}
+  - {fileID: 2394187850297161410}
+  - {fileID: 268609721099548339}
+  - {fileID: 7338744119754947762}
+  - {fileID: 8194648207179958044}
+  Sprite_SecretSD: {fileID: 21300000, guid: 00da23e31eb205f4c9babd772c809ee3, type: 3}
+  SecretSD: {fileID: 6491952705665505265}
+  SecretLine: {fileID: 9089852443444024356}
 --- !u!1 &7203318255273994436
 GameObject:
   m_ObjectHideFlags: 0
@@ -58610,6 +58811,8 @@ GameObject:
   - component: {fileID: 2676658563055073158}
   - component: {fileID: 5039131041493805197}
   - component: {fileID: 5036193374075739934}
+  - component: {fileID: 1338287521773420537}
+  - component: {fileID: 4250909080534072336}
   m_Layer: 5
   m_Name: Button_Kang
   m_TagString: Untagged
@@ -58703,7 +58906,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -58727,29 +58930,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1424545628511920544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1083861821153921021}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 8534286915910426194}
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SecretMessage_In
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &5039131041493805197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58832,6 +59013,89 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1338287521773420537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525833113346650842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4250909080534072336}
+          m_MethodName: OnHighlighted
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kang
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4250909080534072336}
+          m_MethodName: OnExit
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kang
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 9
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4250909080534072336}
+          m_MethodName: OnSelected
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kang
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &4250909080534072336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525833113346650842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4adfba8c0eb9a82438c810b37c4f1fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 5036193374075739934}
+  SecretMessage: {fileID: 1083861821153921021}
+  SecretMessageAnimator: {fileID: 8534286915910426194}
+  SecretMessageImage:
+  - {fileID: 8874131897770397616}
+  - {fileID: 993304600483618932}
+  - {fileID: 2394187850297161410}
+  - {fileID: 268609721099548339}
+  - {fileID: 7338744119754947762}
+  - {fileID: 8194648207179958044}
+  Sprite_SecretSD: {fileID: 21300000, guid: 3d85c0f8546d3c445988237c3b298dc3, type: 3}
+  SecretSD: {fileID: 6491952705665505265}
+  SecretLine: {fileID: 9089852443444024356}
 --- !u!1 &7533942937226082330
 GameObject:
   m_ObjectHideFlags: 0
@@ -71272,16 +71536,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9181718714756027450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 17180711641834787}
-  m_RootOrder: 4
+  m_Father: {fileID: 7847879932175561989}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.47712, y: -88.5}
+  m_AnchoredPosition: {x: -0.00012877584, y: 0.000045776367}
   m_SizeDelta: {x: 220.00024, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &571870909822571091

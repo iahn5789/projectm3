@@ -18,6 +18,8 @@ public class TestSceneUIManager : MonoBehaviour
     public Text KangLine;
     public Text JinLine;
     public Text SulLine;
+    // 대자보 관련
+    public Animator SecretMessage;
     // Start is called before the first frame update
     void Start()
     {
@@ -86,9 +88,9 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetLikeAbilityToText()
     {
-        int KangLikeAbility =  Int32.Parse(variableManager?.GetVariableValue($"KangLikeAbility"));
-        int JinLikeAbility =  Int32.Parse(variableManager?.GetVariableValue($"JinLikeAbility"));
-        int SulLikeAbility =  Int32.Parse(variableManager?.GetVariableValue($"SulLikeAbility"));
+        int KangLikeAbility = Int32.Parse(variableManager?.GetVariableValue("KangLikeAbility"));
+        int JinLikeAbility = Int32.Parse(variableManager?.GetVariableValue("JinLikeAbility"));
+        int SulLikeAbility = Int32.Parse(variableManager?.GetVariableValue("SulLikeAbility"));
         setCharacterText($"Kang{(int)KangLikeAbility/10}", "Kang");
         setCharacterText($"Jin{(int)JinLikeAbility/10}", "Jin");
         setCharacterText($"Sul{(int)SulLikeAbility/10}", "Sul");
@@ -111,4 +113,35 @@ public class TestSceneUIManager : MonoBehaviour
             }
         }
     }
+    public void StoryBoardSelectedCheck()
+    {
+        string Selected = variableManager?.GetVariableValue("Selected");
+        Debug.Log(Selected);
+        if (Selected == "Kang")
+        {
+            //강여진 보드 눌려있는 상태 유지
+            SecretMessage.Play("SecretMessageCheckIn");
+        }
+        else if (Selected == "Jin")
+        {
+            //진다영 보드 눌려있는 상태 유지
+            SecretMessage.Play("SecretMessageCheckIn");
+        }
+        else if (Selected == "Sul")
+        {
+            //설나희 보드 눌려있는 상태 유지
+            SecretMessage.Play("SecretMessageCheckIn");
+        }
+        else if (Selected == "Common")
+        {
+            // 전대용 보드 눌려있는 상태 유지
+            SecretMessage.Play("SecretMessageCheckIn");
+        }
+        else
+        {
+            //안눌려있음
+            SecretMessage.Play("SecretMessage_Out");
+        }
+    }
+
 }
