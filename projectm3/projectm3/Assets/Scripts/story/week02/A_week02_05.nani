@@ -8,7 +8,7 @@
 @processInput true
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
-describe: 쾅!
+describe: <size=60>쾅</size>
 @char sul.body>body2,face>face4 wait:false
 sul: ...
 sul: 둘 다 그만.
@@ -19,7 +19,7 @@ sul: 아직 할 말 남아있어?
 jin: ...
 @hideChars wait:false
 @char bigsul.body>body2,face>face5 wait:false
-sul: 오늘 둘 다 혼나볼래?
+sul: <size=50>오</size><size=50>늘</size> <size=50>둘</size> <size=50>다</size> <size=50>혼</size><size=50>나</size><size=50>볼</size><size=50>래</size><size=50>?</size>
 describe: 아니요...
 sul: ......
 describe: ...
@@ -56,6 +56,6 @@ sul: 매력있잖아...
 @hideChars wait:false
 @char jin.body>body1,face>face4 wait:false
 jin: 그건 매력이 아니지!
-kang: 그래! Player_name 보컬이면 매력 있고 좋지!
+kang: 그래! {Player_name} 보컬이면 매력 있고 좋지!
 @hideChars wait:false
 @goto A_week02_06.week02_06
