@@ -5,6 +5,7 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 using Naninovel;
+using Naninovel.UI;
 using Naninovel.Commands;
 
 public class TestSceneUIManager : MonoBehaviour
@@ -18,8 +19,26 @@ public class TestSceneUIManager : MonoBehaviour
     public Text KangLine;
     public Text JinLine;
     public Text SulLine;
+    public GameObject BuySecretMessageUI;
+    public GameObject SecretMessageInUI;
+    public GameObject LackUI;
+    public GameObject LackPrefab;
     // 대자보 관련
     public Animator SecretMessage;
+    // 비밀쪽지 이미지
+    public GameObject[] SecretMessageImage;
+    public Text buyTextTitle;
+    private string nowSecretMessage;
+    private Dictionary<string, (string, int, int)> SecretMessageLine;
+    public GameObject SecretMessgeText;   // 비밀쪽지 텍스트
+    public Image charactorFace; // 비밀쪽지 캐릭터 얼굴
+    public Image charactorBody; // 비밀쪽지 캐릭터 몸
+    public Sprite[] KangFaceList; // 비밀쪽지 캐릭터 얼굴 리스트
+    public Sprite[] JinFaceList; // 비밀쪽지 캐릭터 얼굴 리스트
+    public Sprite[] SulFaceList; // 비밀쪽지 캐릭터 얼굴 리스트
+    public Sprite[] KangBodyList; // 비밀쪽지 캐릭터 몸 리스트
+    public Sprite[] JinBodyList; // 비밀쪽지 캐릭터 몸 리스트
+    public Sprite[] SulBodyList; // 비밀쪽지 캐릭터 몸 리스트
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +77,92 @@ public class TestSceneUIManager : MonoBehaviour
         line.Add("Sul8", "교복이 조금 작나... 네가 보기엔 어때?");
         line.Add("Sul9", "학교 끝나고 우리 집 고양이 보러 갈래...?");
         line.Add("Sul10","오늘은... 그때처럼 문 벌컥 열어도 돼...");
+
+        SecretMessageLine = new Dictionary<string, (string, int, int)>();
+        // 강여진 비밀쪽지 (순서 : 대사, 얼굴, 몸)
+        SecretMessageLine.Add("11Kang", ("1_1_Kang대사", 0,0));
+        SecretMessageLine.Add("12Kang", ("1_2_Kang대사", 1,1));
+        SecretMessageLine.Add("13Kang", ("1_3_Kang대사", 2,2));
+        SecretMessageLine.Add("21Kang", ("2_1_Kang대사", 1,1));
+        SecretMessageLine.Add("22Kang", ("2_2_Kang대사", 2,2));
+        SecretMessageLine.Add("23Kang", ("2_3_Kang대사", 3,3));
+        SecretMessageLine.Add("31Kang", ("3_1_Kang대사", 1,1));
+        SecretMessageLine.Add("32Kang", ("3_2_Kang대사", 2,2));
+        SecretMessageLine.Add("33Kang", ("3_3_Kang대사", 3,3));
+        SecretMessageLine.Add("41Kang", ("4_1_Kang대사", 1,1));
+        SecretMessageLine.Add("42Kang", ("4_2_Kang대사", 2,2));
+        SecretMessageLine.Add("43Kang", ("4_3_Kang대사", 3,3));
+        SecretMessageLine.Add("51Kang", ("5_1_Kang대사", 1,1));
+        SecretMessageLine.Add("52Kang", ("5_2_Kang대사", 2,2));
+        SecretMessageLine.Add("53Kang", ("5_3_Kang대사", 3,3));
+        SecretMessageLine.Add("61Kang", ("6_1_Kang대사", 1,1));
+        SecretMessageLine.Add("62Kang", ("6_2_Kang대사", 2,2));
+        SecretMessageLine.Add("63Kang", ("6_3_Kang대사", 3,3));
+        SecretMessageLine.Add("71Kang", ("7_1_Kang대사", 1,1));
+        SecretMessageLine.Add("72Kang", ("7_2_Kang대사", 2,2));
+        SecretMessageLine.Add("73Kang", ("7_3_Kang대사", 3,3));
+        SecretMessageLine.Add("81Kang", ("8_1_Kang대사", 1,1));
+        SecretMessageLine.Add("82Kang", ("8_2_Kang대사", 2,2));
+        SecretMessageLine.Add("83Kang", ("8_3_Kang대사", 3,3));
+        SecretMessageLine.Add("91Kang", ("9_1_Kang대사", 1,1));
+        SecretMessageLine.Add("92Kang", ("9_2_Kang대사", 2,2));
+        SecretMessageLine.Add("93Kang", ("9_3_Kang대사", 3,3));
+        // 진다영 비밀쪽지
+        SecretMessageLine.Add("11Jin", ("1_1_Jin대사", 1,1));
+        SecretMessageLine.Add("12Jin", ("1_2_Jin대사", 2,2));
+        SecretMessageLine.Add("13Jin", ("1_3_Jin대사", 3,3));
+        SecretMessageLine.Add("21Jin", ("2_1_Jin대사", 1,1));
+        SecretMessageLine.Add("22Jin", ("2_2_Jin대사", 2,2));
+        SecretMessageLine.Add("23Jin", ("2_3_Jin대사", 3,3));
+        SecretMessageLine.Add("31Jin", ("3_1_Jin대사", 1,1));
+        SecretMessageLine.Add("32Jin", ("3_2_Jin대사", 2,2));
+        SecretMessageLine.Add("33Jin", ("3_3_Jin대사", 3,3));
+        SecretMessageLine.Add("41Jin", ("4_1_Jin대사", 1,1));
+        SecretMessageLine.Add("42Jin", ("4_2_Jin대사", 2,2));
+        SecretMessageLine.Add("43Jin", ("4_3_Jin대사", 3,3));
+        SecretMessageLine.Add("51Jin", ("5_1_Jin대사", 1,1));
+        SecretMessageLine.Add("52Jin", ("5_2_Jin대사", 2,2));
+        SecretMessageLine.Add("53Jin", ("5_3_Jin대사", 3,3));
+        SecretMessageLine.Add("61Jin", ("6_1_Jin대사", 1,1));
+        SecretMessageLine.Add("62Jin", ("6_2_Jin대사", 2,2));
+        SecretMessageLine.Add("63Jin", ("6_3_Jin대사", 3,3));
+        SecretMessageLine.Add("71Jin", ("7_1_Jin대사", 1,1));
+        SecretMessageLine.Add("72Jin", ("7_2_Jin대사", 2,2));
+        SecretMessageLine.Add("73Jin", ("7_3_Jin대사", 3,3));
+        SecretMessageLine.Add("81Jin", ("8_1_Jin대사", 1,1));
+        SecretMessageLine.Add("82Jin", ("8_2_Jin대사", 2,2));
+        SecretMessageLine.Add("83Jin", ("8_3_Jin대사", 3,3));
+        SecretMessageLine.Add("91Jin", ("9_1_Jin대사", 1,1));
+        SecretMessageLine.Add("92Jin", ("9_2_Jin대사", 2,2));
+        SecretMessageLine.Add("93Jin", ("9_3_Jin대사", 3,3));
+        // 설나희 비밀쪽지
+        SecretMessageLine.Add("11Sul", ("1_1_Sul대사", 1,1));
+        SecretMessageLine.Add("12Sul", ("1_2_Sul대사", 2,2));
+        SecretMessageLine.Add("13Sul", ("1_3_Sul대사", 3,3));
+        SecretMessageLine.Add("21Sul", ("2_1_Sul대사", 1,1));
+        SecretMessageLine.Add("22Sul", ("2_2_Sul대사", 2,2));
+        SecretMessageLine.Add("23Sul", ("2_3_Sul대사", 3,3));
+        SecretMessageLine.Add("31Sul", ("3_1_Sul대사", 1,1));
+        SecretMessageLine.Add("32Sul", ("3_2_Sul대사", 2,2));
+        SecretMessageLine.Add("33Sul", ("3_3_Sul대사", 3,3));
+        SecretMessageLine.Add("41Sul", ("4_1_Sul대사", 1,1));
+        SecretMessageLine.Add("42Sul", ("4_2_Sul대사", 2,2));
+        SecretMessageLine.Add("43Sul", ("4_3_Sul대사", 3,3));
+        SecretMessageLine.Add("51Sul", ("5_1_Sul대사", 1,1));
+        SecretMessageLine.Add("52Sul", ("5_2_Sul대사", 2,2));
+        SecretMessageLine.Add("53Sul", ("5_3_Sul대사", 3,3));
+        SecretMessageLine.Add("61Sul", ("6_1_Sul대사", 1,1));
+        SecretMessageLine.Add("62Sul", ("6_2_Sul대사", 2,2));
+        SecretMessageLine.Add("63Sul", ("6_3_Sul대사", 3,3));
+        SecretMessageLine.Add("71Sul", ("7_1_Sul대사", 1,1));
+        SecretMessageLine.Add("72Sul", ("7_2_Sul대사", 2,2));
+        SecretMessageLine.Add("73Sul", ("7_3_Sul대사", 3,3));
+        SecretMessageLine.Add("81Sul", ("8_1_Sul대사", 1,1));
+        SecretMessageLine.Add("82Sul", ("8_2_Sul대사", 2,2));
+        SecretMessageLine.Add("83Sul", ("8_3_Sul대사", 3,3));
+        SecretMessageLine.Add("91Sul", ("9_1_Sul대사", 1,1));
+        SecretMessageLine.Add("92Sul", ("9_2_Sul대사", 2,2));
+        SecretMessageLine.Add("93Sul", ("9_3_Sul대사", 3,3));
     }
 
     // Update is called once per frame
@@ -143,5 +248,102 @@ public class TestSceneUIManager : MonoBehaviour
             SecretMessage.Play("SecretMessage_Out");
         }
     }
-
+    public void BuySecretMessageExist(string SecretMessageName)
+    {
+        string Selected = variableManager?.GetVariableValue("Selected");
+        nowSecretMessage = Selected + "Secret_" + SecretMessageName + "_Buy";
+        string buybool = variableManager?.GetVariableValue(nowSecretMessage);
+        if (buybool == "False")
+        {
+            UpdateBuySecretMessageUI(SecretMessageName);
+            BuySecretMessageUI.SetActive(true);
+        }
+        else
+        {
+            SecretMessageInUI.SetActive(true);
+        }
+    }
+    public void BuySecretMessageWithMoneyExist()
+    {
+        string Selected = variableManager?.GetVariableValue("Selected");
+        string buybool = variableManager?.GetVariableValue(nowSecretMessage);
+        int money = int.Parse(variableManager?.GetVariableValue("money"));
+        if (money > 499)
+        {
+            BuySecretMessageUI.SetActive(false);
+            UpdateBuySecretMessageWithMoneyUI(Selected,nowSecretMessage.Split('_')[1]);
+            SecretMessageInUI.SetActive(true);
+            variableManager?.SetVariableValue("money", (money-500).ToString());
+            variableManager?.SetVariableValue($"{Selected}LikeAbility", (int.Parse(variableManager?.GetVariableValue($"{Selected}LikeAbility"))+1).ToString());
+            variableManager?.SetVariableValue("update_TestSceneUI_variable","true");
+            variableManager?.SetVariableValue(nowSecretMessage, "true");
+            UpdateSecretMessageUI(Selected);
+        }
+        else
+        {
+            GameObject createdLack = Instantiate(LackPrefab, LackUI.transform);
+            Destroy(createdLack, 1f);
+        }
+    }
+    public void UpdateSecretMessageUI(string OnName)
+    {
+        string buy1 = variableManager?.GetVariableValue($"{OnName}Secret_1_Buy");
+        string buy2 = variableManager?.GetVariableValue($"{OnName}Secret_2_Buy");
+        string buy3 = variableManager?.GetVariableValue($"{OnName}Secret_3_Buy");
+        SetActiveBasedOnPurchase(buy1, 0, 1);
+        SetActiveBasedOnPurchase(buy2, 2, 3);
+        SetActiveBasedOnPurchase(buy3, 4, 5);
+    }
+    private void SetActiveBasedOnPurchase(string buyStatus, int trueIndex, int falseIndex)
+    {
+        bool isPurchased = buyStatus == "true";
+        SecretMessageImage[trueIndex].SetActive(!isPurchased);
+        SecretMessageImage[falseIndex].SetActive(isPurchased);
+    }
+    public void UpdateBuySecretMessageUI(string number)
+    {
+        string text;
+        if (number == "1")
+        {
+            text = "첫 번째 ";
+        }
+        else if (number == "2")
+        {
+            text = "두 번째 ";
+        }
+        else if (number == "3")
+        {
+            text = "세 번째 ";
+        }
+        else
+        {
+            text = "";
+        }
+        buyTextTitle.text = text + "비밀쪽지";
+    }
+    public void UpdateBuySecretMessageWithMoneyUI(string name ,string number)
+    {
+        string week = variableManager?.GetVariableValue($"{name}Week");
+        string key = week+number+name;
+        if(SecretMessageLine.ContainsKey(key)) // 해당 키가 myTable 딕셔너리에 있는지 확인
+        {
+            var tupleValue = SecretMessageLine[key];
+            SecretMessgeText.GetComponent<TypingEffect>().fullText = tupleValue.Item1;
+            if (name == "Kang")
+            {
+                charactorFace.sprite = KangFaceList[tupleValue.Item2];
+                charactorBody.sprite = KangBodyList[tupleValue.Item3];
+            }
+            else if (name == "Jin")
+            {
+                charactorFace.sprite = JinFaceList[tupleValue.Item2];
+                charactorBody.sprite = JinBodyList[tupleValue.Item3];
+            }
+            else if (name == "Sul")
+            {
+                charactorFace.sprite = SulFaceList[tupleValue.Item2];
+                charactorBody.sprite = SulBodyList[tupleValue.Item3];
+            }
+        }
+    }
 }

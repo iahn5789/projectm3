@@ -416,16 +416,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9033063732358454801}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: BuySecretMessageExist
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
+          m_StringArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1976139304773496709
 MonoBehaviour:
@@ -3933,16 +3933,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9033063732358454801}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: BuySecretMessageExist
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
+          m_StringArgument: 2
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &8351748362516892543
 MonoBehaviour:
@@ -23321,9 +23321,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9033063732358454801}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: BuySecretMessageWithMoneyExist
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23331,17 +23331,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 87742227764332809}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &5198529922711114085
 MonoBehaviour:
@@ -33248,16 +33237,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9033063732358454801}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: BuySecretMessageExist
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
+          m_StringArgument: 3
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1127297569063194815
 MonoBehaviour:
@@ -41071,6 +41060,41 @@ MonoBehaviour:
     \uB2E4\uB8E8\uB294 \uB2E4\uC601\uC774\uB294 \uCC38 \uC2E0\uAE30\uD55C \uAC83
     \uAC19\uB2E4. \uCC9C\uCC9C\uD788 \uAD00\uCC30\uD558\uB2E4 \uBCF4\uBA74 \uC880
     \uB354 \uC0AC\uC774\uAC00 \uC88B\uC544\uC9C8 \uC218 \uC788\uC744\uAE4C?"
+--- !u!1 &4920722320506283100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6648548664126677788}
+  m_Layer: 5
+  m_Name: LackUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6648548664126677788
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4920722320506283100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6306036015961478113}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4924003956773772711
 GameObject:
   m_ObjectHideFlags: 0
@@ -52060,6 +52084,7 @@ RectTransform:
   - {fileID: 5882326466415105756}
   - {fileID: 449072789123623266}
   - {fileID: 508519445143055308}
+  - {fileID: 6648548664126677788}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -52258,7 +52283,47 @@ MonoBehaviour:
   KangLine: {fileID: 8581352866371338503}
   JinLine: {fileID: 841799596245714004}
   SulLine: {fileID: 3004615744531593032}
+  BuySecretMessageUI: {fileID: 9033063732358454801}
+  SecretMessageInUI: {fileID: 87742227764332809}
+  LackUI: {fileID: 4920722320506283100}
+  LackPrefab: {fileID: 6306036015961478139, guid: 33538b454a0b3b94e8725e382440775e,
+    type: 3}
   SecretMessage: {fileID: 8534286915910426194}
+  SecretMessageImage:
+  - {fileID: 8874131897770397616}
+  - {fileID: 993304600483618932}
+  - {fileID: 2394187850297161410}
+  - {fileID: 268609721099548339}
+  - {fileID: 7338744119754947762}
+  - {fileID: 8194648207179958044}
+  buyTextTitle: {fileID: 3262296162758340596}
+  SecretMessgeText: {fileID: 1624289095900423358}
+  charactorFace: {fileID: 8583759279665664264}
+  charactorBody: {fileID: 6167678501694220176}
+  KangFaceList:
+  - {fileID: 21300000, guid: f40eaf348c35ffb4ab8f683168c96423, type: 3}
+  - {fileID: 21300000, guid: 1fa89f4afe6cffc4ca28e267a47c9c1f, type: 3}
+  - {fileID: 21300000, guid: 5cbccc197b554cc4b96e5ef12309b3bd, type: 3}
+  JinFaceList:
+  - {fileID: 21300000, guid: c9205e10429c4564c94546c562bd75a2, type: 3}
+  - {fileID: 21300000, guid: 597b19c9aa749154c9b2962342d01409, type: 3}
+  - {fileID: 21300000, guid: 1379fe8e2f782e547b648eec0ffc04d7, type: 3}
+  SulFaceList:
+  - {fileID: 21300000, guid: 2ec363cfc06f73e41a67931402ee73a2, type: 3}
+  - {fileID: 21300000, guid: 598e3db93c9942249a06be902931727c, type: 3}
+  - {fileID: 21300000, guid: caffbb96582f6444a81dea350fb2a696, type: 3}
+  KangBodyList:
+  - {fileID: 21300000, guid: 7f3385c47992b2d459f38ba0eeb4fe01, type: 3}
+  - {fileID: 21300000, guid: 325fff49e0503d84f87ceaa45c3002fd, type: 3}
+  - {fileID: 21300000, guid: 9768c346dc4975d41a94c0a8c4719fb0, type: 3}
+  JinBodyList:
+  - {fileID: 21300000, guid: 2384bddf39df84b4e8d1cbcfee25c85b, type: 3}
+  - {fileID: 21300000, guid: 394b64cbfce7704489c744418856582a, type: 3}
+  - {fileID: 21300000, guid: d61a9b449a3953d43b2ceadd4a061634, type: 3}
+  SulBodyList:
+  - {fileID: 21300000, guid: a6a8dd588d1664f4cb28638a7dee827c, type: 3}
+  - {fileID: 21300000, guid: 6dceaf4f6f7b10b4383754d4c6c604eb, type: 3}
+  - {fileID: 21300000, guid: 6ead43ba05682b94a9e9aa1c54b983db, type: 3}
 --- !u!114 &2448798598284601826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55238,7 +55303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 300 C
+  m_Text: 500 C
 --- !u!1 &6881539483843023006
 GameObject:
   m_ObjectHideFlags: 0
@@ -57965,7 +58030,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 474.98148, y: -284}
+  m_AnchoredPosition: {x: 1075, y: -247.75}
   m_SizeDelta: {x: 260, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2768365893437402744
@@ -64613,7 +64678,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 300
+  m_Text: 500
 --- !u!1 &7854989380192944595
 GameObject:
   m_ObjectHideFlags: 0
