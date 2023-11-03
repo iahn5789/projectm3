@@ -84,10 +84,10 @@ public class TestSceneUIManager : MonoBehaviour
         line.Add("Sul10","오늘은... 그때처럼 문 벌컥 열어도 돼...");
 
         SecretMessageLine = new Dictionary<string, (string, int, int)>();
-        // 강여진 비밀쪽지 (순서 : 대사, 얼굴, 몸)
-        SecretMessageLine.Add("11Kang", ("1_1_Kang대사", 0,0));
-        SecretMessageLine.Add("12Kang", ("1_2_Kang대사", 1,1));
-        SecretMessageLine.Add("13Kang", ("1_3_Kang대사", 2,2));
+        // 강여진 비밀쪽지 (순서 : 대사, 얼굴, 몸. 스프레드시트 번호 -1)
+        SecretMessageLine.Add("11Kang", ("분홍 머리 여자애 이름?\n다영이잖아! 설마 무서워서 이때까지 못물어본거야..?", 5,2));
+        SecretMessageLine.Add("12Kang", ("우리 동아리방은 4층 과학실 옆에\n있어. 좀 멀긴 해도 조용해서 좋더라!", 6,1));
+        SecretMessageLine.Add("13Kang", ("내 손? 아하하... 조금 거칠지? 연습을 많이 해서 그래!", 7,0));
         SecretMessageLine.Add("21Kang", ("2_1_Kang대사", 1,1));
         SecretMessageLine.Add("22Kang", ("2_2_Kang대사", 2,2));
         SecretMessageLine.Add("23Kang", ("2_3_Kang대사", 3,3));
@@ -112,10 +112,10 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("91Kang", ("9_1_Kang대사", 1,1));
         SecretMessageLine.Add("92Kang", ("9_2_Kang대사", 2,2));
         SecretMessageLine.Add("93Kang", ("9_3_Kang대사", 3,3));
-        // 진다영 비밀쪽지
-        SecretMessageLine.Add("11Jin", ("1_1_Jin대사", 1,1));
-        SecretMessageLine.Add("12Jin", ("1_2_Jin대사", 2,2));
-        SecretMessageLine.Add("13Jin", ("1_3_Jin대사", 3,3));
+        // 진다영 비밀쪽지 스프레드시트 번호 -1
+        SecretMessageLine.Add("11Jin", ("내 이름을 아직도 모른다고...?\n진다영이잖아!", 3,1));
+        SecretMessageLine.Add("12Jin", ("동아리방 위치를 아직도 모른다고...? 4층 과학실 옆이잖아!", 1,0));
+        SecretMessageLine.Add("13Jin", ("너도 여진이 손처럼 거칠어질 때까지 연습해! 알았어?", 2,2));
         SecretMessageLine.Add("21Jin", ("2_1_Jin대사", 1,1));
         SecretMessageLine.Add("22Jin", ("2_2_Jin대사", 2,2));
         SecretMessageLine.Add("23Jin", ("2_3_Jin대사", 3,3));
@@ -140,10 +140,10 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("91Jin", ("9_1_Jin대사", 1,1));
         SecretMessageLine.Add("92Jin", ("9_2_Jin대사", 2,2));
         SecretMessageLine.Add("93Jin", ("9_3_Jin대사", 3,3));
-        // 설나희 비밀쪽지
-        SecretMessageLine.Add("11Sul", ("1_1_Sul대사", 1,1));
-        SecretMessageLine.Add("12Sul", ("1_2_Sul대사", 2,2));
-        SecretMessageLine.Add("13Sul", ("1_3_Sul대사", 3,3));
+        // 설나희 비밀쪽지 스프레드시트 번호 -1
+        SecretMessageLine.Add("11Sul", ("다영이 너무 무서워하지 마...", 0,1));
+        SecretMessageLine.Add("12Sul", ("동아리방은 4층 과학실 옆에 있어. 혹시 헷갈릴까봐...", 0,0));
+        SecretMessageLine.Add("13Sul", ("여진이 손이 좀 거칠어. 연습을 많이 해서 그런 건가..?", 0,2));
         SecretMessageLine.Add("21Sul", ("2_1_Sul대사", 1,1));
         SecretMessageLine.Add("22Sul", ("2_2_Sul대사", 2,2));
         SecretMessageLine.Add("23Sul", ("2_3_Sul대사", 3,3));
