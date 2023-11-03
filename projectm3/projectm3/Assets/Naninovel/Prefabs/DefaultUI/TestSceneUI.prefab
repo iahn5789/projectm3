@@ -18195,7 +18195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &934268191069171985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45613,8 +45613,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "\uC6B0\uB9AC \uB3D9\uC544\uB9AC\uC2E4\uC740 2\uCE35\uC778\uB370 \uB108\uB124\uB294
-    \uC5B4\uB514\uC57C?"
+  m_Text: 
 --- !u!114 &3923332848474446653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45928,9 +45927,9 @@ RectTransform:
   m_Father: {fileID: 4550293265124021837}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 475, y: -247.75}
   m_SizeDelta: {x: 260, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4727472799537636048
@@ -46167,6 +46166,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6649924411528894276}
   SecretMessage: {fileID: 1083861821153921021}
+  SelectedOn: {fileID: 8660330625234986217}
+  SelectedOff:
+  - {fileID: 8105018437857100485}
+  - {fileID: 2204086059461094337}
   SecretMessageAnimator: {fileID: 8534286915910426194}
   SecretMessageImage:
   - {fileID: 8874131897770397616}
@@ -53424,9 +53427,9 @@ RectTransform:
   m_Father: {fileID: 4550293265124021837}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 775, y: -247.75}
   m_SizeDelta: {x: 260, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6508744491708199993
@@ -53663,6 +53666,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 7274650245510311452}
   SecretMessage: {fileID: 1083861821153921021}
+  SelectedOn: {fileID: 2204086059461094337}
+  SelectedOff:
+  - {fileID: 8660330625234986217}
+  - {fileID: 8105018437857100485}
   SecretMessageAnimator: {fileID: 8534286915910426194}
   SecretMessageImage:
   - {fileID: 8874131897770397616}
@@ -53821,6 +53828,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: SetLikeAbilityAmount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls: []
@@ -53925,10 +53943,23 @@ MonoBehaviour:
   SulLine: {fileID: 3004615744531593032}
   BuySecretMessageUI: {fileID: 9033063732358454801}
   SecretMessageInUI: {fileID: 87742227764332809}
+  SecretMessageResultUI: {fileID: 7338439784280996592}
   LackUI: {fileID: 4920722320506283100}
   LackPrefab: {fileID: 6306036015961478139, guid: 33538b454a0b3b94e8725e382440775e,
     type: 3}
   SecretMessage: {fileID: 8534286915910426194}
+  LikeAbilityAmount:
+  - {fileID: 9155498117191463410}
+  - {fileID: 4386458884861699960}
+  - {fileID: 715053249399938365}
+  StoryBoardPossible:
+  - {fileID: 3332850140129465529}
+  - {fileID: 2646880460237354347}
+  - {fileID: 8483104014081668834}
+  StoryBoardImPossible:
+  - {fileID: 8696059434029211787}
+  - {fileID: 6220076740902953441}
+  - {fileID: 3905196582935343571}
   SecretMessageImage:
   - {fileID: 8874131897770397616}
   - {fileID: 993304600483618932}
@@ -53938,6 +53969,7 @@ MonoBehaviour:
   - {fileID: 8194648207179958044}
   buyTextTitle: {fileID: 3262296162758340596}
   SecretMessgeText: {fileID: 1624289095900423358}
+  SecretMessgeText2: {fileID: 5216203926453257036}
   charactorFace: {fileID: 8583759279665664264}
   charactorBody: {fileID: 6167678501694220176}
   KangFaceList:
@@ -60186,6 +60218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 3624945394504422884}
   SecretMessage: {fileID: 1083861821153921021}
+  SelectedOn: {fileID: 0}
+  SelectedOff: []
   SecretMessageAnimator: {fileID: 8534286915910426194}
   SecretMessageImage:
   - {fileID: 8874131897770397616}
@@ -63894,9 +63928,9 @@ RectTransform:
   m_Father: {fileID: 4550293265124021837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -247.75}
   m_SizeDelta: {x: 260, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4301197220239010139
@@ -64133,6 +64167,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 5036193374075739934}
   SecretMessage: {fileID: 1083861821153921021}
+  SelectedOn: {fileID: 8105018437857100485}
+  SelectedOff:
+  - {fileID: 8660330625234986217}
+  - {fileID: 2204086059461094337}
   SecretMessageAnimator: {fileID: 8534286915910426194}
   SecretMessageImage:
   - {fileID: 8874131897770397616}
@@ -79229,7 +79267,7 @@ PrefabInstance:
     - target: {fileID: 2373548326963315315, guid: bb818bcd1f8fc4170ad421ddfa84c1e9,
         type: 3}
       propertyPath: _bursts.Array.data[0].used
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3817557494372724381, guid: bb818bcd1f8fc4170ad421ddfa84c1e9,
         type: 3}
@@ -79244,7 +79282,7 @@ PrefabInstance:
     - target: {fileID: 5476149695428531946, guid: bb818bcd1f8fc4170ad421ddfa84c1e9,
         type: 3}
       propertyPath: _bursts.Array.data[0].used
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8805784165914375672, guid: bb818bcd1f8fc4170ad421ddfa84c1e9,
         type: 3}

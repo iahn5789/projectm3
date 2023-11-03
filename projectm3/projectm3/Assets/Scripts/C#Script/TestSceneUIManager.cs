@@ -21,16 +21,21 @@ public class TestSceneUIManager : MonoBehaviour
     public Text SulLine;
     public GameObject BuySecretMessageUI;
     public GameObject SecretMessageInUI;
+    public GameObject SecretMessageResultUI;
     public GameObject LackUI;
     public GameObject LackPrefab;
     // 대자보 관련
     public Animator SecretMessage;
+    public Text[] LikeAbilityAmount;
+    public GameObject[] StoryBoardPossible;
+    public GameObject[] StoryBoardImPossible;
     // 비밀쪽지 이미지
     public GameObject[] SecretMessageImage;
     public Text buyTextTitle;
     private string nowSecretMessage;
     private Dictionary<string, (string, int, int)> SecretMessageLine;
     public GameObject SecretMessgeText;   // 비밀쪽지 텍스트
+    public GameObject SecretMessgeText2;   // 비밀쪽지(2번째) 텍스트
     public Image charactorFace; // 비밀쪽지 캐릭터 얼굴
     public Image charactorBody; // 비밀쪽지 캐릭터 몸
     public Sprite[] KangFaceList; // 비밀쪽지 캐릭터 얼굴 리스트
@@ -190,6 +195,36 @@ public class TestSceneUIManager : MonoBehaviour
 
         string badgeText = variableManager.GetVariableValue("Badge");
         BadgeUI.text = badgeText;
+
+        CehckedLikeAbility("Kang",0);
+        CehckedLikeAbility("Jin",1);
+        CehckedLikeAbility("Sul",2);
+    }
+    public void CehckedLikeAbility(string name, int number)
+    {
+        int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
+        int LikeAbility = Int32.Parse(variableManager?.GetVariableValue($"{name}LikeAbility"));
+
+        if (LikeAbility >= (week * 10) + 5)
+        {
+            StoryBoardPossible[number].SetActive(true);
+            StoryBoardImPossible[number].SetActive(false);
+        }
+        else
+        {
+            StoryBoardPossible[number].SetActive(false);
+            StoryBoardImPossible[number].SetActive(true);
+        }
+    }
+    public void SetLikeAbilityAmount()
+    {
+        int kweek = Int32.Parse(variableManager?.GetVariableValue("KangWeek"));
+        int jweek = Int32.Parse(variableManager?.GetVariableValue("JinWeek"));
+        int sweek = Int32.Parse(variableManager?.GetVariableValue("SulWeek"));
+
+        LikeAbilityAmount[0].text = ((kweek * 10) + 5).ToString();
+        LikeAbilityAmount[1].text = ((jweek * 10) + 5).ToString();
+        LikeAbilityAmount[2].text = ((sweek * 10) + 5).ToString();
     }
     public void SetLikeAbilityToText()
     {
@@ -221,7 +256,6 @@ public class TestSceneUIManager : MonoBehaviour
     public void StoryBoardSelectedCheck()
     {
         string Selected = variableManager?.GetVariableValue("Selected");
-        Debug.Log(Selected);
         if (Selected == "Kang")
         {
             //강여진 보드 눌려있는 상태 유지
@@ -260,7 +294,8 @@ public class TestSceneUIManager : MonoBehaviour
         }
         else
         {
-            SecretMessageInUI.SetActive(true);
+            UpdateBuySecretMessageResultUI(Selected, nowSecretMessage.Split('_')[1]);
+            SecretMessageResultUI.SetActive(true);
         }
     }
     public void BuySecretMessageWithMoneyExist()
@@ -344,6 +379,16 @@ public class TestSceneUIManager : MonoBehaviour
                 charactorFace.sprite = SulFaceList[tupleValue.Item2];
                 charactorBody.sprite = SulBodyList[tupleValue.Item3];
             }
+        }
+    }
+    public void UpdateBuySecretMessageResultUI(string name ,string number)
+    {
+        string week = variableManager?.GetVariableValue($"{name}Week");
+        string key = week+number+name;
+        if(SecretMessageLine.ContainsKey(key)) // 해당 키가 myTable 딕셔너리에 있는지 확인
+        {
+            var tupleValue = SecretMessageLine[key];
+            SecretMessgeText2.GetComponent<TypingEffect>().fullText = tupleValue.Item1;
         }
     }
 }

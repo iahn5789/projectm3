@@ -11,6 +11,8 @@ public class StoryBoardUIManager : MonoBehaviour
     private ICustomVariableManager variableManager;
     public Animator anim;
     public GameObject SecretMessage;
+    public GameObject SelectedOn;
+    public GameObject[] SelectedOff;
     public Animator SecretMessageAnimator;
     // 비밀쪽지 이미지
     public GameObject[] SecretMessageImage;
@@ -51,6 +53,9 @@ public class StoryBoardUIManager : MonoBehaviour
             UpdateSecretMessageUI(OnName);
             SecretMessageAnimator.PlayInFixedTime(0);
             SecretMessageAnimator.Play("SecretMessage_In");
+            SelectedOn.SetActive(true);
+            SelectedOff[0].SetActive(false);
+            SelectedOff[1].SetActive(false);
             
         }
         variableManager?.SetVariableValue("Selected", OnName);
