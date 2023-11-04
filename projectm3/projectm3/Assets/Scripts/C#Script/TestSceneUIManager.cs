@@ -10,6 +10,13 @@ using Naninovel.Commands;
 
 public class TestSceneUIManager : MonoBehaviour
 {
+    // 주차 관련 UI
+    public Text WeekUI;
+    public Text WeekTextUI;
+    public Text WeekTitleUI;
+    public Text WeekSubjectUI;
+    private Dictionary<string, (string, string, string)> DictWeekText;
+    // 재화 UI
     public Text MoneyUI;    // 현재 돈
     public Text BadgeUI;    // 현재 뱃지
     public Text CountUI;    // 남은 횟수
@@ -24,11 +31,13 @@ public class TestSceneUIManager : MonoBehaviour
     public GameObject SecretMessageResultUI;
     public GameObject LackUI;
     public GameObject LackPrefab;
+    public GameObject BuyLackPrefab;
     // 대자보 관련
     public Animator SecretMessage;
     public Text[] LikeAbilityAmount;
     public GameObject[] StoryBoardPossible;
     public GameObject[] StoryBoardImPossible;
+    public Text[] StoryBoardWeekText;
     // 비밀쪽지 이미지
     public GameObject[] SecretMessageImage;
     public Text buyTextTitle;
@@ -48,6 +57,42 @@ public class TestSceneUIManager : MonoBehaviour
     void Start()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
+        DictWeekText = new Dictionary<string, (string, string, string)>();
+        // 제목, 타이틀, Subject
+        // 강여진 1주차~9주차?
+        DictWeekText.Add("Kang1", ("1주차 제목","1주차 타이틀","1주차 Subject"));
+        DictWeekText.Add("Kang2", ("2주차 제목","2주차 타이틀","2주차 Subject"));
+        DictWeekText.Add("Kang3", ("3주차 제목","3주차 타이틀","3주차 Subject"));
+        DictWeekText.Add("Kang4", ("4주차 제목","4주차 타이틀","4주차 Subject"));
+        DictWeekText.Add("Kang5", ("5주차 제목","5주차 타이틀","5주차 Subject"));
+        DictWeekText.Add("Kang6", ("6주차 제목","6주차 타이틀","6주차 Subject"));
+        DictWeekText.Add("Kang7", ("7주차 제목","7주차 타이틀","7주차 Subject"));
+        DictWeekText.Add("Kang8", ("8주차 제목","8주차 타이틀","8주차 Subject"));
+        DictWeekText.Add("Kang9", ("9주차 제목","9주차 타이틀","9주차 Subject"));
+        DictWeekText.Add("Kang10", ("10주차 제목","10주차 타이틀","10주차 Subject"));
+        // 진다영 1주차~9주차?
+        DictWeekText.Add("Jin1", ("1주차 제목","1주차 타이틀","1주차 Subject"));
+        DictWeekText.Add("Jin2", ("2주차 제목","2주차 타이틀","2주차 Subject"));
+        DictWeekText.Add("Jin3", ("3주차 제목","3주차 타이틀","3주차 Subject"));
+        DictWeekText.Add("Jin4", ("4주차 제목","4주차 타이틀","4주차 Subject"));
+        DictWeekText.Add("Jin5", ("5주차 제목","5주차 타이틀","5주차 Subject"));
+        DictWeekText.Add("Jin6", ("6주차 제목","6주차 타이틀","6주차 Subject"));
+        DictWeekText.Add("Jin7", ("7주차 제목","7주차 타이틀","7주차 Subject"));
+        DictWeekText.Add("Jin8", ("8주차 제목","8주차 타이틀","8주차 Subject"));
+        DictWeekText.Add("Jin9", ("9주차 제목","9주차 타이틀","9주차 Subject"));
+        DictWeekText.Add("Jin10", ("10주차 제목","10주차 타이틀","10주차 Subject"));
+        // 설나희 1주차~9주차?
+        DictWeekText.Add("Sul1", ("1주차 제목","1주차 타이틀","1주차 Subject"));
+        DictWeekText.Add("Sul2", ("2주차 제목","2주차 타이틀","2주차 Subject"));
+        DictWeekText.Add("Sul3", ("3주차 제목","3주차 타이틀","3주차 Subject"));
+        DictWeekText.Add("Sul4", ("4주차 제목","4주차 타이틀","4주차 Subject"));
+        DictWeekText.Add("Sul5", ("5주차 제목","5주차 타이틀","5주차 Subject"));
+        DictWeekText.Add("Sul6", ("6주차 제목","6주차 타이틀","6주차 Subject"));
+        DictWeekText.Add("Sul7", ("7주차 제목","7주차 타이틀","7주차 Subject"));
+        DictWeekText.Add("Sul8", ("8주차 제목","8주차 타이틀","8주차 Subject"));
+        DictWeekText.Add("Sul9", ("9주차 제목","9주차 타이틀","9주차 Subject"));
+        DictWeekText.Add("Sul10", ("10주차 제목","10주차 타이틀","10주차 Subject"));
+
         line = new Dictionary<string, string>();
         // 강여진 대사
         line.Add("Kang1", "안녕! 우리 동아리에 들어온 걸 환영해!");
@@ -181,6 +226,62 @@ public class TestSceneUIManager : MonoBehaviour
             variableManager?.SetVariableValue("update_TestSceneUI_variable", "false");
         }
     }
+    public void setUPWeekUI()
+    {
+        // 이전 차수에 마지막에 선택한 대자보를 바탕으로 주차 UI setup
+        string name = variableManager?.GetVariableValue("Selected");
+        int week = 1;
+        Debug.Log(name);
+        if (name != "")
+        {
+            week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
+        }
+        else
+        {
+            name = "Kang";
+        }
+        setUPWeekUIText(name, week);
+    }
+    public void setUPWeekUIText(string name, int week)
+    {
+        UpdateMainWeekUI(name, week);
+        UpdateStoryBoardWeekUI(week);
+    }
+    private void UpdateMainWeekUI(string name, int week)
+    {
+        string key = $"{name}{week}";
+        if (DictWeekText.TryGetValue(key, out var weekInfo))
+        {
+            WeekUI.text = week.ToString();
+            WeekTextUI.text = weekInfo.Item1;
+            WeekTitleUI.text = weekInfo.Item2;
+            WeekSubjectUI.text = weekInfo.Item3;
+        }
+    }
+
+    private void UpdateStoryBoardWeekUI(int week)
+    {
+        var names = new[] { "Kang", "Jin", "Sul" };
+        for (int i = 0, j = 0; i < names.Length; i++)
+        {
+            var tuple = GetStoryBoardWeekTextToDict(names[i], week + 1);
+            if (tuple.HasValue)
+            {
+                StoryBoardWeekText[j++].text = tuple.Value.Item2;
+                StoryBoardWeekText[j++].text = tuple.Value.Item3;
+            }
+        }
+    }
+
+    private (string, string, string)? GetStoryBoardWeekTextToDict(string name, int week)
+    {
+        string key = $"{name}{week}";
+        if (DictWeekText.TryGetValue(key, out var value))
+        {
+            return value;
+        }
+        return null;
+    }
     public void setUI()
     {
         string moneyText = variableManager.GetVariableValue("money");
@@ -284,19 +385,58 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void BuySecretMessageExist(string SecretMessageName)
     {
+        // 구매 여부 확인 (다른 캐릭터 On인지 확인해야함)
+        ///////
         string Selected = variableManager?.GetVariableValue("Selected");
         nowSecretMessage = Selected + "Secret_" + SecretMessageName + "_Buy";
         string buybool = variableManager?.GetVariableValue(nowSecretMessage);
         if (buybool == "False")
         {
-            UpdateBuySecretMessageUI(SecretMessageName);
-            BuySecretMessageUI.SetActive(true);
+            if(CheckBuyByAnotherCharacter(Selected, SecretMessageName))
+            {
+                UpdateBuySecretMessageUI(SecretMessageName);
+                BuySecretMessageUI.SetActive(true);
+            }
+            else
+            { 
+                GameObject buyLack = Instantiate(BuyLackPrefab, LackUI.transform);
+                Destroy(buyLack, 1f);
+            }
         }
         else
         {
             UpdateBuySecretMessageResultUI(Selected, nowSecretMessage.Split('_')[1]);
             SecretMessageResultUI.SetActive(true);
         }
+    }
+    public bool CheckBuyByAnotherCharacter(string name, string number)
+    {
+        // name으로 들어온 문자열에 따라 다른 두 문자열을 결정합니다.
+        string[] characters = { "Kang", "Jin", "Sul" };
+        string firstOther = "", secondOther = "";
+
+        foreach (string character in characters)
+        {
+            if (character != name)
+            {
+                if (string.IsNullOrEmpty(firstOther))
+                {
+                    firstOther = character;
+                }
+                else
+                {
+                    secondOther = character;
+                    break;
+                }
+            }
+        }
+
+        // 다른 두 캐릭터의 구매 여부를 확인합니다.
+        string firstBuy = variableManager?.GetVariableValue(firstOther + "Secret_" + number + "_Buy");
+        string secondBuy = variableManager?.GetVariableValue(secondOther + "Secret_" + number + "_Buy");
+
+        // 두 값 모두 false일 때만 true를 반환합니다.
+        return firstBuy == "False" && secondBuy == "False";
     }
     public void BuySecretMessageWithMoneyExist()
     {

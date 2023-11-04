@@ -108,7 +108,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3529177745756797242}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -334,9 +334,9 @@ RectTransform:
   m_Father: {fileID: 5431601561044655755}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 123.248474, y: -125}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5951039726885987215
@@ -4083,9 +4083,9 @@ RectTransform:
   m_Father: {fileID: 5431601561044655755}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 349.74542, y: -125}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9046134965191176916
@@ -9146,7 +9146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4133535926056832208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18796,7 +18796,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3529177745756797242}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -34748,9 +34748,9 @@ RectTransform:
   m_Father: {fileID: 5431601561044655755}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 576.2424, y: -125}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &173776980367642947
@@ -35987,7 +35987,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -47513,6 +47513,17 @@ MonoBehaviour:
             m_StringArgument: Jin
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 4729320875176275044}
+          m_MethodName: UpdateMarker
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Jin
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4729320875176275044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47542,6 +47553,16 @@ MonoBehaviour:
   Sprite_SecretSD: {fileID: 21300000, guid: 6697cfabbef8ed54db7d5de8adb22f41, type: 3}
   SecretSD: {fileID: 6491952705665505265}
   SecretLine: {fileID: 9089852443444024356}
+  SecretMessageMarkerImage:
+  - {fileID: 7212108240719960951}
+  - {fileID: 4631700669426559673}
+  - {fileID: 499067126060176787}
+  - {fileID: 3092336141822230773}
+  - {fileID: 6372346392726059396}
+  - {fileID: 3640879354417093958}
+  - {fileID: 2856733184364349467}
+  - {fileID: 4066073635886083927}
+  - {fileID: 7925679278265018041}
 --- !u!1 &5256963586754585438
 GameObject:
   m_ObjectHideFlags: 0
@@ -55013,6 +55034,17 @@ MonoBehaviour:
             m_StringArgument: Sul
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 2419644736021180815}
+          m_MethodName: UpdateMarker
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Sul
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &2419644736021180815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55042,6 +55074,16 @@ MonoBehaviour:
   Sprite_SecretSD: {fileID: 21300000, guid: 00da23e31eb205f4c9babd772c809ee3, type: 3}
   SecretSD: {fileID: 6491952705665505265}
   SecretLine: {fileID: 9089852443444024356}
+  SecretMessageMarkerImage:
+  - {fileID: 7212108240719960951}
+  - {fileID: 4631700669426559673}
+  - {fileID: 499067126060176787}
+  - {fileID: 3092336141822230773}
+  - {fileID: 6372346392726059396}
+  - {fileID: 3640879354417093958}
+  - {fileID: 2856733184364349467}
+  - {fileID: 4066073635886083927}
+  - {fileID: 7925679278265018041}
 --- !u!1 &6306036015961478139
 GameObject:
   m_ObjectHideFlags: 0
@@ -55200,6 +55242,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: setUPWeekUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls: []
@@ -55295,6 +55348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1993e5e3b367e414499bc35d2769c157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeekUI: {fileID: 3276077390744705901}
+  WeekTextUI: {fileID: 2237977622772807450}
+  WeekTitleUI: {fileID: 4311151231657940353}
+  WeekSubjectUI: {fileID: 964007604801745891}
   MoneyUI: {fileID: 6171636464740814769}
   BadgeUI: {fileID: 3339403712405633086}
   CountUI: {fileID: 5969429557378043738}
@@ -55307,6 +55364,8 @@ MonoBehaviour:
   SecretMessageResultUI: {fileID: 7338439784280996592}
   LackUI: {fileID: 4920722320506283100}
   LackPrefab: {fileID: 6306036015961478139, guid: 33538b454a0b3b94e8725e382440775e,
+    type: 3}
+  BuyLackPrefab: {fileID: 6306036015961478139, guid: ed6b8719b111e6a4192c5d9ccf6878f4,
     type: 3}
   SecretMessage: {fileID: 8534286915910426194}
   LikeAbilityAmount:
@@ -55321,6 +55380,13 @@ MonoBehaviour:
   - {fileID: 8696059434029211787}
   - {fileID: 6220076740902953441}
   - {fileID: 3905196582935343571}
+  StoryBoardWeekText:
+  - {fileID: 325876548434279330}
+  - {fileID: 2774800974112677421}
+  - {fileID: 2282174011320225146}
+  - {fileID: 6516256012867094828}
+  - {fileID: 406594474995399803}
+  - {fileID: 6805745528314923251}
   SecretMessageImage:
   - {fileID: 8874131897770397616}
   - {fileID: 993304600483618932}
@@ -56029,8 +56095,8 @@ RectTransform:
   - {fileID: 7428519165111981795}
   - {fileID: 7486894648037407776}
   - {fileID: 2285361847334062193}
-  - {fileID: 601594254464004852}
   - {fileID: 3373010222385731644}
+  - {fileID: 601594254464004852}
   - {fileID: 9117085147050401994}
   - {fileID: 136504309779418995}
   - {fileID: 7195288397429653177}
@@ -61745,6 +61811,7 @@ MonoBehaviour:
   Sprite_SecretSD: {fileID: 21300000, guid: 00da23e31eb205f4c9babd772c809ee3, type: 3}
   SecretSD: {fileID: 6491952705665505265}
   SecretLine: {fileID: 9089852443444024356}
+  SecretMessageMarkerImage: []
 --- !u!1 &7203318255273994436
 GameObject:
   m_ObjectHideFlags: 0
@@ -65880,6 +65947,17 @@ MonoBehaviour:
             m_StringArgument: Kang
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 4250909080534072336}
+          m_MethodName: UpdateMarker
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kang
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &4250909080534072336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65909,6 +65987,16 @@ MonoBehaviour:
   Sprite_SecretSD: {fileID: 21300000, guid: 3d85c0f8546d3c445988237c3b298dc3, type: 3}
   SecretSD: {fileID: 6491952705665505265}
   SecretLine: {fileID: 9089852443444024356}
+  SecretMessageMarkerImage:
+  - {fileID: 7212108240719960951}
+  - {fileID: 4631700669426559673}
+  - {fileID: 499067126060176787}
+  - {fileID: 3092336141822230773}
+  - {fileID: 6372346392726059396}
+  - {fileID: 3640879354417093958}
+  - {fileID: 2856733184364349467}
+  - {fileID: 4066073635886083927}
+  - {fileID: 7925679278265018041}
 --- !u!1 &7533942937226082330
 GameObject:
   m_ObjectHideFlags: 0

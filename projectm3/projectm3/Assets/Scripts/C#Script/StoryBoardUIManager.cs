@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Naninovel;
@@ -19,6 +20,8 @@ public class StoryBoardUIManager : MonoBehaviour
     public Sprite Sprite_SecretSD;
     public Image SecretSD;
     public Text SecretLine;
+    public GameObject[] SecretMessageMarkerImage;
+
     void Start()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
@@ -104,5 +107,38 @@ public class StoryBoardUIManager : MonoBehaviour
         bool isPurchased = buyStatus == "true";
         SecretMessageImage[trueIndex].SetActive(!isPurchased);
         SecretMessageImage[falseIndex].SetActive(isPurchased);
+    }
+    public void UpdateMarker(string Nowname)
+    {
+        string[] nameList={"Kang", "Jin", "Sul"};
+
+        foreach(var name in nameList.Select((value, index) => (value, index)))
+        {
+            if(Nowname != name.value)
+            {
+                for (int i=0; i<3;i++)
+                {
+                    if (returnToSecretBuy(name.value,i+1) == "true")
+                    {
+                        SecretMessageMarkerImage[(i * 3) + name.index].SetActive(true);
+                    }
+                    else
+                    {
+                        SecretMessageMarkerImage[(i * 3) + name.index].SetActive(false);
+                    }
+                }
+            }
+            else
+            {
+                SecretMessageMarkerImage[(name.index)].SetActive(false);
+                SecretMessageMarkerImage[(name.index)+3].SetActive(false);
+                SecretMessageMarkerImage[(name.index)+6].SetActive(false);
+            }
+        }
+    }
+    // return "true" or "false"
+    private string returnToSecretBuy(string OnName, int number)
+    {
+        return variableManager?.GetVariableValue($"{OnName}Secret_{number}_Buy");
     }
 }
