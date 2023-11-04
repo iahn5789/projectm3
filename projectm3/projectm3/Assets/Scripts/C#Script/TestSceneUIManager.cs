@@ -15,7 +15,7 @@ public class TestSceneUIManager : MonoBehaviour
     public Text WeekTextUI;
     public Text WeekTitleUI;
     public Text WeekSubjectUI;
-    private Dictionary<string, (string, string, string)> DictWeekText;
+    private Dictionary<string, (string, string, string, string)> DictWeekText;
     // 재화 UI
     public Text MoneyUI;    // 현재 돈
     public Text BadgeUI;    // 현재 뱃지
@@ -57,41 +57,41 @@ public class TestSceneUIManager : MonoBehaviour
     void Start()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
-        DictWeekText = new Dictionary<string, (string, string, string)>();
+        DictWeekText = new Dictionary<string, (string, string, string, string)>();
         // 제목, 타이틀, Subject
         // 강여진 1주차~9주차?
-        DictWeekText.Add("Kang1", ("1주차 제목","1주차 타이틀","1주차 Subject"));
-        DictWeekText.Add("Kang2", ("2주차 제목","2주차 타이틀","2주차 Subject"));
-        DictWeekText.Add("Kang3", ("3주차 제목","3주차 타이틀","3주차 Subject"));
-        DictWeekText.Add("Kang4", ("4주차 제목","4주차 타이틀","4주차 Subject"));
-        DictWeekText.Add("Kang5", ("5주차 제목","5주차 타이틀","5주차 Subject"));
-        DictWeekText.Add("Kang6", ("6주차 제목","6주차 타이틀","6주차 Subject"));
-        DictWeekText.Add("Kang7", ("7주차 제목","7주차 타이틀","7주차 Subject"));
-        DictWeekText.Add("Kang8", ("8주차 제목","8주차 타이틀","8주차 Subject"));
-        DictWeekText.Add("Kang9", ("9주차 제목","9주차 타이틀","9주차 Subject"));
-        DictWeekText.Add("Kang10", ("10주차 제목","10주차 타이틀","10주차 Subject"));
+        DictWeekText.Add("Kang1", ("1주차 제목","1주차 타이틀","1주차 Subject(주인공 시점)", "1주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang2", ("2주차 제목","2주차 타이틀","2주차 Subject(주인공 시점)", "2주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang6", ("6주차 제목","6주차 타이틀","6주차 Subject(주인공 시점)", "6주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang7", ("7주차 제목","7주차 타이틀","7주차 Subject(주인공 시점)", "7주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang8", ("8주차 제목","8주차 타이틀","8주차 Subject(주인공 시점)", "8주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang9", ("9주차 제목","9주차 타이틀","9주차 Subject(주인공 시점)", "9주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(강여진시점)"));
         // 진다영 1주차~9주차?
-        DictWeekText.Add("Jin1", ("1주차 제목","1주차 타이틀","1주차 Subject"));
-        DictWeekText.Add("Jin2", ("2주차 제목","2주차 타이틀","2주차 Subject"));
-        DictWeekText.Add("Jin3", ("3주차 제목","3주차 타이틀","3주차 Subject"));
-        DictWeekText.Add("Jin4", ("4주차 제목","4주차 타이틀","4주차 Subject"));
-        DictWeekText.Add("Jin5", ("5주차 제목","5주차 타이틀","5주차 Subject"));
-        DictWeekText.Add("Jin6", ("6주차 제목","6주차 타이틀","6주차 Subject"));
-        DictWeekText.Add("Jin7", ("7주차 제목","7주차 타이틀","7주차 Subject"));
-        DictWeekText.Add("Jin8", ("8주차 제목","8주차 타이틀","8주차 Subject"));
-        DictWeekText.Add("Jin9", ("9주차 제목","9주차 타이틀","9주차 Subject"));
-        DictWeekText.Add("Jin10", ("10주차 제목","10주차 타이틀","10주차 Subject"));
+        DictWeekText.Add("Jin1", ("1주차 제목","1주차 타이틀","1주차 Subject(주인공 시점)", "1주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin2", ("2주차 제목","2주차 타이틀","2주차 Subject(주인공 시점)", "2주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin6", ("6주차 제목","6주차 타이틀","6주차 Subject(주인공 시점)", "6주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin7", ("7주차 제목","7주차 타이틀","7주차 Subject(주인공 시점)", "7주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin8", ("8주차 제목","8주차 타이틀","8주차 Subject(주인공 시점)", "8주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin9", ("9주차 제목","9주차 타이틀","9주차 Subject(주인공 시점)", "9주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(진다영시점)"));
         // 설나희 1주차~9주차?
-        DictWeekText.Add("Sul1", ("1주차 제목","1주차 타이틀","1주차 Subject"));
-        DictWeekText.Add("Sul2", ("2주차 제목","2주차 타이틀","2주차 Subject"));
-        DictWeekText.Add("Sul3", ("3주차 제목","3주차 타이틀","3주차 Subject"));
-        DictWeekText.Add("Sul4", ("4주차 제목","4주차 타이틀","4주차 Subject"));
-        DictWeekText.Add("Sul5", ("5주차 제목","5주차 타이틀","5주차 Subject"));
-        DictWeekText.Add("Sul6", ("6주차 제목","6주차 타이틀","6주차 Subject"));
-        DictWeekText.Add("Sul7", ("7주차 제목","7주차 타이틀","7주차 Subject"));
-        DictWeekText.Add("Sul8", ("8주차 제목","8주차 타이틀","8주차 Subject"));
-        DictWeekText.Add("Sul9", ("9주차 제목","9주차 타이틀","9주차 Subject"));
-        DictWeekText.Add("Sul10", ("10주차 제목","10주차 타이틀","10주차 Subject"));
+        DictWeekText.Add("Sul1", ("1주차 제목","1주차 타이틀","1주차 Subject(주인공 시점)", "1주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul2", ("2주차 제목","2주차 타이틀","2주차 Subject(주인공 시점)", "2주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul6", ("6주차 제목","6주차 타이틀","6주차 Subject(주인공 시점)", "6주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul7", ("7주차 제목","7주차 타이틀","7주차 Subject(주인공 시점)", "7주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul8", ("8주차 제목","8주차 타이틀","8주차 Subject(주인공 시점)", "8주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul9", ("9주차 제목","9주차 타이틀","9주차 Subject(주인공 시점)", "9주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(설나희시점)"));
 
         line = new Dictionary<string, string>();
         // 강여진 대사
@@ -268,12 +268,12 @@ public class TestSceneUIManager : MonoBehaviour
             if (tuple.HasValue)
             {
                 StoryBoardWeekText[j++].text = tuple.Value.Item2;
-                StoryBoardWeekText[j++].text = tuple.Value.Item3;
+                StoryBoardWeekText[j++].text = tuple.Value.Item4;
             }
         }
     }
 
-    private (string, string, string)? GetStoryBoardWeekTextToDict(string name, int week)
+    private (string, string, string, string)? GetStoryBoardWeekTextToDict(string name, int week)
     {
         string key = $"{name}{week}";
         if (DictWeekText.TryGetValue(key, out var value))
