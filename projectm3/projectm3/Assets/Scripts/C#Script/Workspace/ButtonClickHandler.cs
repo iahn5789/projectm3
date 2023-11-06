@@ -14,7 +14,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "1");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "1000");
@@ -32,7 +32,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "2");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "2000");
@@ -50,7 +50,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "3");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "3000");
@@ -68,7 +68,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "4");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "4000");
@@ -86,7 +86,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "5");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "5000");
