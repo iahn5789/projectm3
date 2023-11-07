@@ -27,6 +27,9 @@ public class ProfileUIManager : MonoBehaviour
     public GameObject LackUI;
     public GameObject LackPrefab;
     // 스토리
+    public Text TitleStoryPopup;
+    public Text NumberStoryPopup;
+    public RectTransform ScrollContent; // 스토리 창 위치 초기화 용으로
     public TextAsset[] StoryTextString;
     public Text StoryText;
     public GameObject[] Story;
@@ -170,9 +173,9 @@ public class ProfileUIManager : MonoBehaviour
         if (CheckBuyStory(i))
         {
             // 구매 팝업 X
+            SetRectPosition();
             SetStoryText(i);
             StoryPopUp.SetActive(true);
-            
         }
         else
         {
@@ -204,6 +207,19 @@ public class ProfileUIManager : MonoBehaviour
             }
         }
     }
+    public void SetRectPosition()
+    {
+        float x = ScrollContent.anchoredPosition.x;
+        ScrollContent.anchoredPosition = new Vector3(x, 0, 0);
+    }
+    public void SetTitleStoryPopup(Text Title)
+    {
+        TitleStoryPopup.text = Title.text;
+    }
+    public void SetNumberStoryPopup(Text Number)
+    {
+        NumberStoryPopup.text = Number.text;
+    }
     public void ClickBuyButton()
     {
         int badge = Int32.Parse(variableManager?.GetVariableValue($"Badge"));
@@ -211,6 +227,7 @@ public class ProfileUIManager : MonoBehaviour
         int Week = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Week"));
         if ((badge >= 3 && LikeAbility >= 10 * NowStory && Week >= NowStory) && NowStory != 1)
         {
+            SetRectPosition();
             variableManager?.SetVariableValue($"Badge",(badge - 3).ToString());
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
@@ -221,6 +238,7 @@ public class ProfileUIManager : MonoBehaviour
         }
         else if(NowStory == 1)
         {
+            SetRectPosition();
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
             StoryPopUp.SetActive(true);
@@ -270,6 +288,7 @@ public class ProfileUIManager : MonoBehaviour
         }
         if (Week>=2)
         {
+            Debug.Log("favoriteThing");
             OnText(FavoriteThing, SecretFavoriteThing);
             OnText(HateThing, SecretHateThing);
             OnText(FavoriteFood, SecretFavoriteFood);
