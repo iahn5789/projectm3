@@ -45,8 +45,10 @@ public class Timer : MonoBehaviour
     public AudioSource FailAudioSource;
     public GameObject Gauge;
     public Animator _animator;  // 알바 시작
+    private bool isSuccess;
     void Start()
     {
+        isSuccess = false;
         timer = countdownTime;
         timerText.text = timer.ToString("F0"); // 소수점 첫 번째 자리까지 출력
         variableManager = Engine.GetService<ICustomVariableManager>();
@@ -57,6 +59,7 @@ public class Timer : MonoBehaviour
     }
     public void start_timer()
     {
+        isSuccess = false;
         variableManager?.SetVariableValue("Start_Timer", "true");
     }
     public void SpaceBtn_Click()
@@ -95,6 +98,7 @@ public class Timer : MonoBehaviour
             if (!isActive)
             {
                 // 아르바이트 성공 !!!!!!!!!
+                isSuccess = true;
                 StartCoroutine(HandleSuccess());
             }
 
@@ -181,7 +185,10 @@ public class Timer : MonoBehaviour
                 if (timer <= 0)
                 {
                     // 아르바이트 실패 !!!!!!!!!
-                    StartCoroutine(HandleFailure());
+                    if (!isSuccess)
+                    {
+                        StartCoroutine(HandleFailure());
+                    }
                 }
 
                 // 타이머 값을 텍스트로 표시
