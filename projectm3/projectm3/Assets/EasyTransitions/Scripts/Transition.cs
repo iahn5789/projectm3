@@ -173,8 +173,7 @@ namespace EasyTransition
                 destroyTime = destroyTime / transitionSettings.transitionSpeed;
 
             //Destroying the transition
-            Destroy(gameObject, destroyTime);
+            //Destroy(gameObject, destroyTime);
         }
     }
-
 }
