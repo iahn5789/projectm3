@@ -170,7 +170,7 @@ public class ExamUIManager : MonoBehaviour
             if (j == i)
             {
                 ProceduralImage answergameobject = AnswerGameObjectList[j].GetComponent<ProceduralImage>();
-                answergameobject.color = Color.black;
+                answergameobject.color = new Color(0.3137f, 0.5176f, 0.9804f);
                 // AnswerAnimationList[i-1].SetActive(true);
             }
             else
