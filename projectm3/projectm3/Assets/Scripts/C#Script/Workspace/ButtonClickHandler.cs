@@ -14,7 +14,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "1");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "1000");
@@ -32,7 +32,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "2");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "2000");
@@ -50,7 +50,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "3");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "3000");
@@ -68,7 +68,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "4");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "4000");
@@ -86,7 +86,7 @@ public class ButtonClickHandler : MonoBehaviour
         {
             return;
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        // variableManager?.SetVariableValue("Start_Timer", "true");
         variableManager?.SetVariableValue("Create_Object", "true");
         variableManager?.SetVariableValue("PartTimeJob_Object", "5");
         variableManager?.SetVariableValue("PartTimeJob_Speed", "5000");
@@ -107,23 +107,27 @@ public class ButtonClickHandler : MonoBehaviour
     }
     public void OnButtonClickKangProfile()
     {
-        var variableManager = Engine.GetService<ICustomVariableManager>();
-        var inputShowUI = new List<string>() {"ProfileUI_Kang"};
-        var showUI = new ShowUI{UINames = inputShowUI};
-        showUI.ExecuteAsync();
+        StartCoroutine(ShowProfileWithDelay("ProfileUI_Kang", 0.3f));
     }
+
     public void OnButtonClickJinProfile()
     {
-        var variableManager = Engine.GetService<ICustomVariableManager>();
-        var inputShowUI = new List<string>() {"ProfileUI_Jin"};
-        var showUI = new ShowUI{UINames = inputShowUI};
-        showUI.ExecuteAsync();
+        StartCoroutine(ShowProfileWithDelay("ProfileUI_Jin", 0.3f));
     }
-        public void OnButtonClickSulProfile()
+
+    public void OnButtonClickSulProfile()
     {
+        StartCoroutine(ShowProfileWithDelay("ProfileUI_Sul", 0.3f));
+    }
+
+    private IEnumerator ShowProfileWithDelay(string profileName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
         var variableManager = Engine.GetService<ICustomVariableManager>();
-        var inputShowUI = new List<string>() {"ProfileUI_Sul"};
-        var showUI = new ShowUI{UINames = inputShowUI};
+        var inputShowUI = new List<string>() { profileName };
+        var showUI = new ShowUI { UINames = inputShowUI };
+        
         showUI.ExecuteAsync();
     }
 }
