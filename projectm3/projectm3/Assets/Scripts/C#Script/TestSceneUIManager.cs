@@ -503,6 +503,7 @@ public class TestSceneUIManager : MonoBehaviour
         {
             var tupleValue = SecretMessageLine[key];
             SecretMessgeText.GetComponent<TypingEffect>().fullText = tupleValue.Item1;
+            variableManager?.SetVariableValue($"SecretMessage_{number}_Buy", tupleValue.Item1);
             if (name == "Kang")
             {
                 charactorFace.sprite = KangFaceList[tupleValue.Item2];

@@ -22,6 +22,7 @@ public class ExamUIManager : MonoBehaviour
     public Text QuestionTitle;
     public Text Question;
     public Text[] Answer;
+    public Text[] AnswerNumber;
     public string selectAnswer;
     // 타이머
     private float timer = 0f;
@@ -36,6 +37,10 @@ public class ExamUIManager : MonoBehaviour
     public Text RoundUI;
     public Text ScoreUI;
     public Text CorrectNumberUI;
+    public GameObject TestResultUI;
+    public GameObject QuestionUI;
+    public TestResultUIManager testResultUIManager;
+    public GameObject demoLoadScene;
     private ICustomVariableManager variableManager;
 
     void Start()
@@ -107,9 +112,13 @@ public class ExamUIManager : MonoBehaviour
         RoundUI.text = round.ToString();
         ScoreUI.text = score.ToString();
         CorrectNumberUI.text = CorrectAnswers.ToString();
+        variableManager?.SetVariableValue("TestScore", ScoreUI.text);
+        variableManager?.SetVariableValue("TestCorrect", CorrectNumberUI.text);
+
     }
     public void nextExam()
     {
+        updateExamUI();
         if (round < 5)
         {
             // 시험 업데이트
@@ -130,7 +139,13 @@ public class ExamUIManager : MonoBehaviour
             test_start = true;
             selectAnswer = "";
         }
-        updateExamUI();
+        else
+        {
+            TestResultUI.SetActive(true);
+            testResultUIManager.SetUI();
+            // demoLoadScene.LoadScene("projectm3");
+            QuestionUI.SetActive(false);
+        }
     }
 
     public void RandomAnswer()
@@ -171,13 +186,17 @@ public class ExamUIManager : MonoBehaviour
             {
                 ProceduralImage answergameobject = AnswerGameObjectList[j].GetComponent<ProceduralImage>();
                 answergameobject.color = new Color(0.3137f, 0.5176f, 0.9804f);
-                // AnswerAnimationList[i-1].SetActive(true);
+                AnswerAnimationList[j].SetActive(true);
+                Answer[j].color = Color.white;
+                AnswerNumber[j].color = Color.white;
             }
             else
             {
                 ProceduralImage answergameobject = AnswerGameObjectList[j].GetComponent<ProceduralImage>();
                 answergameobject.color = Color.white;
-                // AnswerAnimationList[i-1].SetActive(false);
+                AnswerAnimationList[j].SetActive(false);
+                Answer[j].color = new Color(0.2666667f, 0.2666667f, 0.2666667f);
+                AnswerNumber[j].color = new Color(0.2666667f, 0.2666667f, 0.2666667f);
             }
         }
     }
