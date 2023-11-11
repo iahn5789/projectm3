@@ -8,11 +8,16 @@
 @processInput true
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
+@stopSfx Amb_Shool_Club_01 fade:0 wait:0
+@stopBgm Our_Story_Common_Classroom_01 fade:0 wait:0
+@sfx Common_Door_Slam_01 volume:100 loop:false wait:0
 describe: <size=60>쾅</size>
 @char sul.body>body2,face>face4 wait:false
+@sfx Amb_Cold_Wind_01 volume:100 loop:false fade:1 wait:0
 sul: ...
 sul: 둘 다 그만.
 @char sul.body>body4,face>face4 wait:false
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:0
 sul: 더 싸울 거야?
 kang: 아...
 sul: 아직 할 말 남아있어?
@@ -36,6 +41,7 @@ describe: 여진이와 다영이 역시 고개를 돌려 나를 쳐다봤다.
 sul: 너는 어떻게 하고 싶어?
 {Player_name}: 저... 저는...
 @hideChars wait:false
+@sfx Emotion_Heart_Beat_01 volume:100 loop:true fade:1 wait:0
 describe: 어떻게 하면 좋을까.
 describe: 다영이 말대로 나는 노래를 못한다.
 describe: 당연히 밴드부에서 보컬을 맡을 정도의 실력도 아니다.
@@ -43,6 +49,7 @@ describe: 하지만 여진이의 말도 일리가 있었다.
 describe: 평생 악기 한번 다뤄본 적 없는 내가 갑자기 기타를 배울 수도 없는 노릇이니 말이다.
 describe: 이러지도 저러지도 못하는 상황...
 describe: 어떤 선택을 해야 할까.
+@stopSfx Emotion_Heart_Beat_01 fade:1 wait:0
 describe: 어쩌면 내가 이 동아리에 들어온 게 문제일까...?
 @char sul.body>body4,face>face1 wait:false
 sul: 참고로.

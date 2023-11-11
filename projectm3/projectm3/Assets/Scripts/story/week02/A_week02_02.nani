@@ -1,25 +1,40 @@
 # week02_02
 {Player_name}: <size=30>자</size>... <size=35>자</size>...
+@bgm Chapter01_ED_01 volume:80 loop:true fade:0 wait:0
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:0 wait:0
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
+@sfx Common_Lightning_One_Shot_01 volume:80 loop:false fade:0 wait:0
 {Player_name}: <size=30>자</size><size=35>연</size><size=40>스</size><size=45>레</size> <size=50>조</size><size=55>금</size><size=60>씩</size>...
 @char instkang.body>body6,face>face8 wait:false
 kang: 잠...잠깐!
+@stopSfx Common_Lightning_One_Shot_01 fade:0 wait:0
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
 @spawn ShakeCharacter wait:false
+@sfx Lightning_designed_01 volume:80 loop:false fade:0 wait:0
 {Player_name}: <size=30>네</size><size=35>게</size> <size=40>다</size><size=45>가</size><size=50>가</size><size=55>는</size> <size=60>내</size> <size=65>모</size><size=70>습</size>...
 @hideChars wait:false
 @char instsul.body>body7,face>face1 wait:false
+@stopSfx Lightning_designed_01 wait:0 fade:1
+@stopBgm Chapter01_ED_01 fade:0 wait:0
+@sfx Crow_Caw_01 volume:80 loop:false fade:0 wait:0
 sul: ...
-@style
+@stopSfx Crow_Caw_01 fade:3 wait:0
+@style 
 @hideChars wait:false
 @char instjin.body>body5,face>face6 wait:false
+@sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:0
+@stopSfx Amb_Room_Tone_02 fade:0 wait:0
 jin: 멈춰!!!
+@stopSfx Common_Door_Slam_01 wait:0
 @hideChars wait:false
 @spawn ShakePrinter wait:false
 describe: <size=65>뚝!</size>
+@sfx Amb_Cold_Wind_01 volume:100 loop:true fade:1 wait:0
+@sfx Common_Emotion_Question_01 volume:80 loop:false fade:0 wait:0
 {Player_name}: 오랜 시간이... 어라?
+@stopSfx Common_Emotion_Question_01 wait:0
 describe: 어느새 정신을 차려보니 연주는 멈춰있었고 손에 든 마이크 역시 꺼져있었다.
 describe: 혹시나 하는 마음에 마이크를 손으로 툭툭 쳐 보았지만, 여전히 반응이 없었다.
 describe: 고개를 들어 주변을 둘러보았다.
@@ -28,11 +43,15 @@ describe: 여전히 포커페이스인 나희 누나. 그리고...
 describe: 다영이가 스피커 옆에서 씩씩대며 나를 바라보고 있었다.
 @char jin.body>body3,face>face4 wait:false
 @spawn ShakePrinter wait:false
+@sfx Common_Cartoon_Hit_01 volume:100 loop:false fade:0 wait:0
 jin: 야!
+@stopSfx Common_Cartoon_Hit_01 wait:0
 {Player_name}: 어? 나? 왜...?
 {Player_name}: 아! 이거 마이크가 갑자기 안 나와서.
+@sfx Common_Mic_Feedback_01 volume:80 loop:false fade:0 wait:0
 {Player_name}: 잠깐만! 내가 한번 고쳐볼...
 @char jin.body>body2,face>face4 wait:false
+@stopSfx Common_Mic_Feedback_01 fade:1 wait:0
 jin: 너 지금 뭐가 문제인지 정말 모르는거야...?
 {Player_name}: 어... 마이크가 안 나오는 거 아니었어?
 {Player_name}: 아니면 지금 이게 나오고 있는 건가?
@@ -43,8 +62,10 @@ kang: 하하하...
 jin: 하... 진짜 못 해 먹겠네.
 @hideChars wait:false
 @char instsul.body>body5,face>face1 wait:false
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:0
 sul: ...
 @char instsul.body>body7,face>face1 wait:false
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:0
 sul: 시작할까...?
 {Player_name}: 네?
 {Player_name}: 아..! 시작하겠습니다.
@@ -52,4 +73,5 @@ describe: 나는 떨어져 있던 마이크 선을 집어 스피커에 꽂은 �
 @hideChars wait:false
 describe: 연주가 시작되었다.
 describe: 한마디. 두 마디. 세 마디. 네 마디.
+@stopSfx Amb_Room_Tone_02 fade:1 wait:0
 @goto A_week02_03.week02_03

@@ -1,17 +1,25 @@
 # week02_03
+@bgm Common_Title_BGM_Intro_01 intro:0 volume:100 loop:false fade:0 wait:0
 describe: 그리고...
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
+@stopBgm Common_Title_BGM_Intro_01 fade:1
+@sfx Common_Lightning_One_Shot_01 volume:80 loop:false fade:0 wait:0
 {Player_name}: <size=30>자</size><size=35>연</size><size=40>스</size><size=45>레</size> <size=50>조</size><size=55>금</size><size=60>씩</size>...
 @char instjin.body>body4,face>face4 wait:false
+@stopSfx Common_Lightning_One_Shot_01 fade:1 wait:0
 jin: 하...
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
 @spawn ShakeCharacter wait:false
+@sfx Lightning_designed_01 volume:100 loop:false wait:0
 {Player_name}: <size=30>네</size><size=35>게</size> <size=40>다</size><size=45>가</size><size=50>가</size><size=55>는</size> <size=60>내</size> <size=65>모</size><size=70>습</size>...
 @hideChars wait:false
 @char instkang.body>body4,face>face8 wait:false
+@stopSfx Lightning_designed_01 fade:1 wait:0
+@sfx Common_Whistle_01 volume:80 loop:false
 kang: 잠깐만...!
+@stopSfx Common_Whistle_01 fade:0 wait:0
 {Player_name}: 응? 왜 그래?
 @char instkang.body>body5,face>face8 wait:false
 kang: 그... 우리 한 번만 다시 시작할까?
@@ -28,7 +36,11 @@ kang: 뭐야. 갑자기 연습하다 말고 무슨 소리야.
 @char jin.body>body3,face>face4 wait:false
 jin: 그 연습 때문에 할 얘기가 있으니까 모여보라는 거야!
 @hideChars wait:false
+@sfx Amb_Shool_Club_01 volume:80 loop:true fade:1 wait:0
+@bgm Our_Story_Common_Classroom_01 volume:70 loop:true fade:1 wait:0
+@sfx Common_Desk_Rattle_01 volume:100 loop:false fade:0 wait:0
 describe: 다영이가 동아리방 앞쪽에 있는 의자에 걸터앉으며 말했다.
+@stopSfx Common_Desk_Rattle_01 fade:0 wait:0
 describe: 갑작스러운 상황에 당황한 나는 주변을 두리번거렸지만, 여진이와 나희 누나도 당황하기는 마찬가지인 것 같았다.
 describe: 일단 나는 손에 들고 있던 마이크를 스탠드에 꽂아 넣고는 다영이에게 향했다.
 describe: 여진이와 나희 누나도 서로 눈을 마주치더니 이내 각각 들고 있던 악기를 내려놓고는 다영이를 쳐다봤다.
