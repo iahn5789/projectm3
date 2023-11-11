@@ -13,11 +13,8 @@ public class QuizSecretMessageManager : MonoBehaviour
     private string status = "Normal";
     private string name = "Normal";
     private int number = 0;
+    public Button[] SecretMessageButton;
     private ICustomVariableManager variableManager;
-    void Start()
-    {
-        variableManager = Engine.GetService<ICustomVariableManager>();
-    }
     public void ClickButton(int Clicknumber)
     {
         name = CheckMessage(Clicknumber);
@@ -42,8 +39,24 @@ public class QuizSecretMessageManager : MonoBehaviour
         SManimator.SetTrigger("Out");
         status = "Out";
     }
+    public void CheckMessageUI()
+    {
+        variableManager = Engine.GetService<ICustomVariableManager>();
+        for (int i = 1;i<=3;i++)
+        {
+            string check = CheckMessage(i);
+            if (check == "null")
+            {
+                SecretMessageButton[i-1].interactable = false; 
+            }
+        }
+    }
     public string CheckMessage(int number)
     {
+        if (variableManager == null)
+        {
+            Debug.Log("null variableManager");
+        }
         var checks = new Dictionary<string, string>
         {
             {"강여진", variableManager?.GetVariableValue($"KangSecret_{number}_Buy")},

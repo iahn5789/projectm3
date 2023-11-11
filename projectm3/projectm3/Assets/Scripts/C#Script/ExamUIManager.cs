@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UI.ProceduralImage;
 using Naninovel;
 using Naninovel.Commands;
+using EasyTransition;
 
 public class ExamUIManager : MonoBehaviour
 {
@@ -40,8 +42,9 @@ public class ExamUIManager : MonoBehaviour
     public GameObject TestResultUI;
     public GameObject QuestionUI;
     public TestResultUIManager testResultUIManager;
-    public GameObject demoLoadScene;
+    public DemoLoadScene demoLoadScene;
     private ICustomVariableManager variableManager;
+    public Animator Answeranimator; // answer 애니메이터 컴포넌트
 
     void Start()
     {
@@ -59,7 +62,7 @@ public class ExamUIManager : MonoBehaviour
             // 경과 시간을 업데이트
             timer += Time.deltaTime;
             RectTransform rectTran = gauge.GetComponent<RectTransform>();
-            rectTran.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (targetTime - timer) * 64);
+            rectTran.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (targetTime - timer) * 60);
             timeText.text = (Mathf.CeilToInt(targetTime - timer)).ToString();
             // 30초 경과
             if (timer >= targetTime)
@@ -109,16 +112,21 @@ public class ExamUIManager : MonoBehaviour
     }
     public void updateExamUI()
     {
-        RoundUI.text = round.ToString();
+        RoundUI.text = (round+1).ToString();
         ScoreUI.text = score.ToString();
         CorrectNumberUI.text = CorrectAnswers.ToString();
+
+    }
+    public void SetVariableUI()
+    {
+        Answeranimator.SetTrigger("QuestionIn");
         variableManager?.SetVariableValue("TestScore", ScoreUI.text);
         variableManager?.SetVariableValue("TestCorrect", CorrectNumberUI.text);
-
     }
     public void nextExam()
     {
         updateExamUI();
+        SetVariableUI();
         if (round < 5)
         {
             // 시험 업데이트
@@ -128,6 +136,9 @@ public class ExamUIManager : MonoBehaviour
             {
                 ProceduralImage answergameobject = AnswerGameObjectList[j].GetComponent<ProceduralImage>();
                 answergameobject.color = Color.white;
+                AnswerAnimationList[j].SetActive(false);
+                Answer[j].color = new Color(0.2666667f, 0.2666667f, 0.2666667f);
+                AnswerNumber[j].color = new Color(0.2666667f, 0.2666667f, 0.2666667f);
                 // AnswerAnimationList[i-1].SetActive(false);
             }
             // 시험 문제 출제
@@ -141,19 +152,26 @@ public class ExamUIManager : MonoBehaviour
         }
         else
         {
-            TestResultUI.SetActive(true);
             testResultUIManager.SetUI();
-            // demoLoadScene.LoadScene("projectm3");
-            QuestionUI.SetActive(false);
+            StartCoroutine(WaitAndActivateUI());
         }
     }
-
+    private IEnumerator WaitAndActivateUI()
+    {
+        demoLoadScene.LoadScene("projectm3");
+    
+        // 0.3초 기다림
+        yield return new WaitForSeconds(0.3f);
+    
+        TestResultUI.SetActive(true);
+        QuestionUI.SetActive(false);
+    }
     public void RandomAnswer()
     {
         // Fisher-Yates 셔플 알고리즘을 사용하여 리스트를 섞음
         for (int i = numbers.Count - 1; i > 0; i--)
         {
-            int j = Random.Range(0, i + 1);
+            int j = UnityEngine.Random.Range(0, i + 1); // UnityEngine.Random 명시
             int temp = numbers[i];
             numbers[i] = numbers[j];
             numbers[j] = temp;
@@ -211,7 +229,7 @@ public class ExamUIManager : MonoBehaviour
         {
             if (selectAnswer == CorrectAnswerList[round-1])
             {
-
+                AppendTestCorrectResult(1);
                 ResultSetActive("success");
             }
             else
@@ -223,7 +241,7 @@ public class ExamUIManager : MonoBehaviour
         {
             if (selectAnswer == CorrectAnswerList[round-1])
             {
-
+                AppendTestCorrectResult(2);
                 ResultSetActive("success");
             }
             else
@@ -235,7 +253,7 @@ public class ExamUIManager : MonoBehaviour
         {
             if (selectAnswer == CorrectAnswerList[round-1])
             {
-
+                AppendTestCorrectResult(4);
                 ResultSetActive("success");
             }
             else
@@ -247,7 +265,7 @@ public class ExamUIManager : MonoBehaviour
         {
             if (selectAnswer == CorrectAnswerList[round-1])
             {
-
+                AppendTestCorrectResult(8);
                 ResultSetActive("success");
             }
             else
@@ -259,7 +277,7 @@ public class ExamUIManager : MonoBehaviour
         {
             if (selectAnswer == CorrectAnswerList[round-1])
             {
-
+                AppendTestCorrectResult(16);
                 ResultSetActive("success");
             }
             else
@@ -267,5 +285,11 @@ public class ExamUIManager : MonoBehaviour
                 ResultSetActive("fail");
             }
         }
+    }
+    public void AppendTestCorrectResult(int Add)
+    {
+        int TestCorrectResult = Int32.Parse(variableManager?.GetVariableValue("TestCorrectResult"));
+        variableManager?.SetVariableValue("TestCorrectResult", (Add+TestCorrectResult).ToString());
+
     }
 }
