@@ -27,6 +27,9 @@ public class ProfileUIManager : MonoBehaviour
     public GameObject LackUI;
     public GameObject LackPrefab;
     // 스토리
+    public Text TitleStoryPopup;
+    public Text NumberStoryPopup;
+    public RectTransform ScrollContent; // 스토리 창 위치 초기화 용으로
     public TextAsset[] StoryTextString;
     public Text StoryText;
     public GameObject[] Story;
@@ -93,21 +96,21 @@ public class ProfileUIManager : MonoBehaviour
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
         line = new Dictionary<string, (string, int, int)>();
-        // 강여진 대사
+        // 강여진 대사 몸 얼굴
         line.Add("Kang1", ("밝고 명량한 소녀", 0, 0));
-        line.Add("Kang2", ("위험한 가시를 숨긴 소녀", 1, 1));
-        line.Add("Kang3", ("슬픈(위태로운) 가시를 숨긴 소녀", 2, 2));
-        line.Add("Kang4", ("아름다운 가시를 숨긴 소녀", 3, 3));
+        line.Add("Kang2", ("위험한 가시를 숨긴 소녀", 1, 3));
+        line.Add("Kang3", ("슬픈(위태로운) 가시를 숨긴 소녀", 1, 4));
+        line.Add("Kang4", ("아름다운 가시를 숨긴 소녀", 2, 2));
         // 설나희 대사
         line.Add("Jin1", ("겉은 차갑지만, 속은 따뜻(?)한 소녀", 0, 0));
-        line.Add("Jin2", ("사랑할 줄 모르는 소녀", 1, 1));
-        line.Add("Jin3", ("사랑받고 싶은 소녀", 2, 2));
-        line.Add("Jin4", ("사랑을 알게 된 소녀", 3, 3));
+        line.Add("Jin2", ("사랑할 줄 모르는 소녀", 2, 0));
+        line.Add("Jin3", ("사랑받고 싶은 소녀", 2, 1));
+        line.Add("Jin4", ("사랑을 알게 된 소녀", 1, 2));
         // 진다영 대사
         line.Add("Sul1", ("조용하지만 카리스마 있는 소녀", 0, 0));
-        line.Add("Sul2", ("꿈을 꾸고 싶은 소녀", 1, 1));
-        line.Add("Sul3", ("꿈을 꾸고 있는 소녀", 2, 2));
-        line.Add("Sul4", ("꿈을 이루게 된 소녀", 3, 3));
+        line.Add("Sul2", ("꿈을 꾸고 싶은 소녀", 0, 3));
+        line.Add("Sul3", ("꿈을 꾸고 있는 소녀", 2, 1));
+        line.Add("Sul4", ("꿈을 이루게 된 소녀", 1, 2));
     }
     public void LikeAbilityToLine()
     {
@@ -170,9 +173,9 @@ public class ProfileUIManager : MonoBehaviour
         if (CheckBuyStory(i))
         {
             // 구매 팝업 X
+            SetRectPosition();
             SetStoryText(i);
             StoryPopUp.SetActive(true);
-            
         }
         else
         {
@@ -204,6 +207,19 @@ public class ProfileUIManager : MonoBehaviour
             }
         }
     }
+    public void SetRectPosition()
+    {
+        float x = ScrollContent.anchoredPosition.x;
+        ScrollContent.anchoredPosition = new Vector3(x, 0, 0);
+    }
+    public void SetTitleStoryPopup(Text Title)
+    {
+        TitleStoryPopup.text = Title.text;
+    }
+    public void SetNumberStoryPopup(Text Number)
+    {
+        NumberStoryPopup.text = Number.text;
+    }
     public void ClickBuyButton()
     {
         int badge = Int32.Parse(variableManager?.GetVariableValue($"Badge"));
@@ -211,6 +227,7 @@ public class ProfileUIManager : MonoBehaviour
         int Week = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Week"));
         if ((badge >= 3 && LikeAbility >= 10 * NowStory && Week >= NowStory) && NowStory != 1)
         {
+            SetRectPosition();
             variableManager?.SetVariableValue($"Badge",(badge - 3).ToString());
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
@@ -221,6 +238,7 @@ public class ProfileUIManager : MonoBehaviour
         }
         else if(NowStory == 1)
         {
+            SetRectPosition();
             variableManager?.SetVariableValue($"{characterName}Story_{NowStory}_Buy", "true");
             StoryBuyPopUp.SetActive(false);
             StoryPopUp.SetActive(true);
@@ -270,6 +288,7 @@ public class ProfileUIManager : MonoBehaviour
         }
         if (Week>=2)
         {
+            Debug.Log("favoriteThing");
             OnText(FavoriteThing, SecretFavoriteThing);
             OnText(HateThing, SecretHateThing);
             OnText(FavoriteFood, SecretFavoriteFood);
