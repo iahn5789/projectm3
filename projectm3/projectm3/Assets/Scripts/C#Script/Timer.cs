@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UI.ProceduralImage;
 using Naninovel;
 using Naninovel.Commands;
 
@@ -26,7 +27,7 @@ public class Timer : MonoBehaviour
     private float currentStopTime = 0f;  // 현재 멈춘 시간 추적
 
     public Text JobName;
-    public Text JobSubtitle;
+    public Text Jobtitle;
     public Image JobIcon;
     public Text JobReward;
     public Text JobSuccessProbability;
@@ -42,11 +43,24 @@ public class Timer : MonoBehaviour
     public Text SuccessReward;
     public AudioSource SuccessAudioSource;
     public AudioSource FailAudioSource;
+    public GameObject Gauge;
+    public Animator _animator;  // 알바 시작
+    private bool isSuccess;
     void Start()
     {
+        isSuccess = false;
         timer = countdownTime;
         timerText.text = timer.ToString("F0"); // 소수점 첫 번째 자리까지 출력
         variableManager = Engine.GetService<ICustomVariableManager>();
+    }
+    public void ResetAnimation()
+    {
+        _animator.Play("Work_In",-1,0f);
+    }
+    public void start_timer()
+    {
+        isSuccess = false;
+        variableManager?.SetVariableValue("Start_Timer", "true");
     }
     public void SpaceBtn_Click()
     {
@@ -84,6 +98,7 @@ public class Timer : MonoBehaviour
             if (!isActive)
             {
                 // 아르바이트 성공 !!!!!!!!!
+                isSuccess = true;
                 StartCoroutine(HandleSuccess());
             }
 
@@ -110,7 +125,7 @@ public class Timer : MonoBehaviour
         {
             variableManager?.SetVariableValue("PartTimeJob_Count", (int.Parse(count) - 1).ToString());
         }
-        variableManager?.SetVariableValue("Start_Timer", "true");
+        ResetAnimation();
         variableManager?.SetVariableValue("Create_Object", "true");
         MainUI.SetActive(true);
     }
@@ -138,9 +153,9 @@ public class Timer : MonoBehaviour
         
             float newX = trigger.rectTransform.anchoredPosition.x + (moveRight ? speed : -speed) * Time.deltaTime;
         
-            if (newX > 640f)
+            if (newX > 890f)
             {
-                newX = 640f;
+                newX = 890f;
                 moveRight = false;
             }
             else if (newX < 0f)
@@ -161,12 +176,19 @@ public class Timer : MonoBehaviour
             }
             delayTime += Time.deltaTime;
             timer -= Time.deltaTime;
+
+            RectTransform rectTran = Gauge.GetComponent<RectTransform>();
+            rectTran.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (timer) * 46.2f);
+
             if (delayTime >= interval)
             {
                 if (timer <= 0)
                 {
                     // 아르바이트 실패 !!!!!!!!!
-                    StartCoroutine(HandleFailure());
+                    if (!isSuccess)
+                    {
+                        StartCoroutine(HandleFailure());
+                    }
                 }
 
                 // 타이머 값을 텍스트로 표시
@@ -244,7 +266,8 @@ public class Timer : MonoBehaviour
         if (PartTimeJob_Object == "1")
         {
             JobName.text = "용돈 받기";
-            JobSubtitle.text = "두꺼운 봉투를 보고 기대하셨나요? 파란 종이가 나와도 실망하지 마세요. 은색 동전보다는 나을테니까요. 학생에게 노란 종이는 사치입니다!";
+            Jobtitle.text = "집안일 하는 중...";
+            // JobSubtitle.text = "두꺼운 봉투를 보고 기대하셨나요? 파란 종이가 나와도 실망하지 마세요. 은색 동전보다는 나을테니까요. 학생에게 노란 종이는 사치입니다!";
             JobIcon.sprite = JobIconList[0];
             JobReward.text = "200 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability01");
@@ -258,7 +281,8 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "2")
         {
             JobName.text = "호텔 서빙";
-            JobSubtitle.text = "누구나 할 수 있는 일이지만 그만큼 보수가 적습니다. 물론 일이 쉬운 건 아니지만요. 팔이 후들거리는 건 기분 탓만은 아닐 겁니다.";
+            Jobtitle.text = "빈 접시 치우는 중...";
+            // JobSubtitle.text = "누구나 할 수 있는 일이지만 그만큼 보수가 적습니다. 물론 일이 쉬운 건 아니지만요. 팔이 후들거리는 건 기분 탓만은 아닐 겁니다.";
             JobIcon.sprite = JobIconList[1];
             JobReward.text = "400 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability02");
@@ -272,7 +296,8 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "3")
         {
             JobName.text = "인형탈 알바";
-            JobSubtitle.text = "어릴 적 인형 탈 안에 사람이 있는지 궁금했다면, 이제 직접 알아볼 차례입니다. 비 오듯 흐르는 땀을 뒤로 한 채 아이들의 동심을 지켜주세요.";
+            Jobtitle.text = "더워서 지쳐가는 중...";
+            // JobSubtitle.text = "어릴 적 인형 탈 안에 사람이 있는지 궁금했다면, 이제 직접 알아볼 차례입니다. 비 오듯 흐르는 땀을 뒤로 한 채 아이들의 동심을 지켜주세요.";
             JobIcon.sprite = JobIconList[2];
             JobReward.text = "600 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability03");
@@ -287,7 +312,8 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "4")
         {
             JobName.text = "택배 상하차";
-            JobSubtitle.text = "단기간에 택배 상하차만큼 돈을 벌 수 있는 일은 없습니다. 병원비로 다 쓰지만 않는다면 말이죠. 도망치고 싶다면 지금입니다!";
+            Jobtitle.text = "온몸이 부서지는 중...";
+            // JobSubtitle.text = "단기간에 택배 상하차만큼 돈을 벌 수 있는 일은 없습니다. 병원비로 다 쓰지만 않는다면 말이죠. 도망치고 싶다면 지금입니다!";
             JobIcon.sprite = JobIconList[3];
             JobReward.text = "800 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability04");
@@ -302,7 +328,8 @@ public class Timer : MonoBehaviour
         else if (PartTimeJob_Object == "5")
         {
             JobName.text = "거리 공연";
-            JobSubtitle.text = "드라마 속 주인공의 낭만 넘치는 거리 공연 따위는 기대하지 마세요. 취객, 진상, 양아치들 사이에서 살아남을 자신이 있다면 지금 당장 거리로 나가세요!";
+            Jobtitle.text = "마이크 설치하는 중...";
+            // JobSubtitle.text = "드라마 속 주인공의 낭만 넘치는 거리 공연 따위는 기대하지 마세요. 취객, 진상, 양아치들 사이에서 살아남을 자신이 있다면 지금 당장 거리로 나가세요!";
             JobIcon.sprite = JobIconList[4];
             JobReward.text = "1000 코인";
             JobSuccessProbability.text = variableManager?.GetVariableValue("PartTimeJob_SuccessProbability05");
@@ -332,7 +359,7 @@ public class Timer : MonoBehaviour
         RectTransform rect = img.GetComponent<RectTransform>();
         rect.sizeDelta = new Vector2(randomWidth, rect.sizeDelta.y);
 
-        float maxXPos = 515f - randomWidth;
+        float maxXPos = 800f - randomWidth;
         float randomXPos;
 
         bool isOverlapping;

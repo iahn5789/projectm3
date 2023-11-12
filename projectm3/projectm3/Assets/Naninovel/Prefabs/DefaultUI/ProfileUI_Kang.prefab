@@ -1505,6 +1505,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3380778202889278300}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3205761945627493101}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1264784461934265578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,7 +1627,8 @@ AudioSource:
   m_GameObject: {fileID: 344852465562776236}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2193,6 +2216,7 @@ GameObject:
   - component: {fileID: 3478731915154557183}
   - component: {fileID: 1659774489602774767}
   - component: {fileID: 368761932383536152}
+  - component: {fileID: 4138409689493012931}
   m_Layer: 5
   m_Name: Button_Voice
   m_TagString: Untagged
@@ -2316,6 +2340,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 4138409689493012931}
+        m_MethodName: SetRectPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &8452661681017984316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,7 +2436,8 @@ AudioSource:
   m_GameObject: {fileID: 460712291999380251}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2488,6 +2524,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4138409689493012931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460712291999380251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06219cd82f88b50408d870c0d3cc7112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollContent: {fileID: 2372806270294207525}
 --- !u!1 &487004996402519949
 GameObject:
   m_ObjectHideFlags: 0
@@ -4372,6 +4421,7 @@ GameObject:
   - component: {fileID: 7388782183384827250}
   - component: {fileID: 6749960503273374800}
   - component: {fileID: 7015565466316912147}
+  - component: {fileID: 152941783576498109}
   m_Layer: 5
   m_Name: Button_Profile
   m_TagString: Untagged
@@ -4495,6 +4545,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 152941783576498109}
+        m_MethodName: SetRectPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8393482654171620472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4580,7 +4641,8 @@ AudioSource:
   m_GameObject: {fileID: 1099036179884449992}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4667,6 +4729,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &152941783576498109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099036179884449992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06219cd82f88b50408d870c0d3cc7112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollContent: {fileID: 7883986684569020339}
 --- !u!1 &1104654472322211543
 GameObject:
   m_ObjectHideFlags: 0
@@ -5524,6 +5599,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7539402556057540815}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 130811724012498635}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &4453057016917803656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5624,7 +5721,8 @@ AudioSource:
   m_GameObject: {fileID: 1306102333732674498}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -8582,6 +8680,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6787854577259495842}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8345381318593923771}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1414377183145353758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8682,7 +8802,8 @@ AudioSource:
   m_GameObject: {fileID: 2362395398484724454}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -9281,7 +9402,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8301813490449769315}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.4
+  m_Size: 0.40000004
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13050,6 +13171,7 @@ GameObject:
   - component: {fileID: 6355325224767189973}
   - component: {fileID: 9130638801718061710}
   - component: {fileID: 6471156170840077016}
+  - component: {fileID: 4189416512535422388}
   m_Layer: 5
   m_Name: ReturnButton
   m_TagString: Untagged
@@ -13129,6 +13251,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 4189416512535422388}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: projectm3
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 5524741472640943795}
         m_MethodName: Play
         m_Mode: 1
@@ -13208,7 +13341,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: 
-  scriptText: '@hideUI ProfileUI_Kang
+  scriptText: '@wait 0.3
+
+    @hideUI ProfileUI_Kang
 
     @showUI TestSceneUI
 
@@ -13256,7 +13391,8 @@ AudioSource:
   m_GameObject: {fileID: 3771992474757537607}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2580629b41fee004fb24e2e2ddf80f6b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -13343,6 +13479,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4189416512535422388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3771992474757537607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb84b9801d302a448833f1fb2f6166c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 11400000, guid: 5d42ad7319df4a8439d74d82f30a60cc, type: 2}
+  startDelay: 0
 --- !u!1 &3791528689803900364
 GameObject:
   m_ObjectHideFlags: 0
@@ -13802,6 +13952,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6101971534855525869}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3962117175006726679}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1684629826847627719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13902,7 +14074,8 @@ AudioSource:
   m_GameObject: {fileID: 3882749254742605443}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -14516,6 +14689,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8734410266162508503}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2340526825660895137}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &5190484881171025235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14616,7 +14811,8 @@ AudioSource:
   m_GameObject: {fileID: 4023510176284584339}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -19494,6 +19690,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5157676698847611453}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1503860146685403821}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6246789105786972027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19594,7 +19812,8 @@ AudioSource:
   m_GameObject: {fileID: 5658836779949618554}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -20501,6 +20720,7 @@ GameObject:
   - component: {fileID: 8363191095610998951}
   - component: {fileID: 142491205911337625}
   - component: {fileID: 988738129196067065}
+  - component: {fileID: 805732918404102471}
   m_Layer: 5
   m_Name: Button_Story
   m_TagString: Untagged
@@ -20624,6 +20844,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 805732918404102471}
+        m_MethodName: SetRectPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1578693186739798791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20709,7 +20940,8 @@ AudioSource:
   m_GameObject: {fileID: 5895357757365220506}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -20796,6 +21028,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &805732918404102471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895357757365220506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06219cd82f88b50408d870c0d3cc7112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollContent: {fileID: 1642387621295898764}
 --- !u!1 &5922138985375732914
 GameObject:
   m_ObjectHideFlags: 0
@@ -21892,6 +22137,50 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1038082815260070128}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6044177765815227876}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8792867523110083373}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 152941783576498109}
+        m_MethodName: SetRectPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls:
@@ -21987,20 +22276,26 @@ MonoBehaviour:
   charactorFace: {fileID: 8047650686747742618}
   charactorBody: {fileID: 5361138778433138579}
   charactorFaceList:
-  - {fileID: 21300000, guid: f40eaf348c35ffb4ab8f683168c96423, type: 3}
-  - {fileID: 21300000, guid: 5cbccc197b554cc4b96e5ef12309b3bd, type: 3}
-  - {fileID: 21300000, guid: aac71479448e71240978cfa336f8d941, type: 3}
-  - {fileID: 21300000, guid: ccaf80629aa3b3b4e83d58e067c6e69b, type: 3}
+  - {fileID: 21300000, guid: 8afcfbfe3c7266940ae73f2dc4357fbc, type: 3}
+  - {fileID: 21300000, guid: aa7472d9ad85d1e4e8a915fcb50efcaa, type: 3}
+  - {fileID: 21300000, guid: 0f5f2c9fcbb493e418aa85f426b776ac, type: 3}
+  - {fileID: 21300000, guid: f5ea615e74274914291a803b44aa271b, type: 3}
+  - {fileID: 21300000, guid: aab6044f2d527194e9e996eac516d272, type: 3}
+  - {fileID: 21300000, guid: 698263a879401ee488ac876eacb76981, type: 3}
+  - {fileID: 21300000, guid: 9367fa19775764048b1bbfba70803016, type: 3}
+  - {fileID: 21300000, guid: 7dc8c1c5b46028649a904a69a2a4816a, type: 3}
   charactorBodyList:
-  - {fileID: 21300000, guid: 325fff49e0503d84f87ceaa45c3002fd, type: 3}
-  - {fileID: 21300000, guid: 7f3385c47992b2d459f38ba0eeb4fe01, type: 3}
-  - {fileID: 21300000, guid: 9768c346dc4975d41a94c0a8c4719fb0, type: 3}
-  - {fileID: 21300000, guid: 60b3698c6d6bbee449a79e4de1dbafa8, type: 3}
+  - {fileID: 21300000, guid: 1f07aa59353381440ad1bda01729ddc8, type: 3}
+  - {fileID: 21300000, guid: 2c980282104e5a04aa59e083cb95068e, type: 3}
+  - {fileID: 21300000, guid: a9201a61364ce244ba199479c1bf4f60, type: 3}
   WeekText: {fileID: 3013406287397041734}
   badgeText: {fileID: 418739742991755361}
   LackUI: {fileID: 5320929526196786436}
   LackPrefab: {fileID: 6306036015961478139, guid: 001103df2441ac040aca7b77ec75bda9,
     type: 3}
+  TitleStoryPopup: {fileID: 7825824876419031256}
+  NumberStoryPopup: {fileID: 8843569409100469921}
+  ScrollContent: {fileID: 6044950034674080861}
   StoryTextString:
   - {fileID: 4900000, guid: fc8b12d93e22d1a40bb685a2fa08d66c, type: 3}
   - {fileID: 4900000, guid: de0dab78e0aa5af48937a66fbcf4a041, type: 3}
@@ -22052,7 +22347,7 @@ MonoBehaviour:
   HateFood: {fileID: 3126824890896863587}
   SecretHateFood: {fileID: 6226283391961353948}
   Styling: {fileID: 7792622439600361720}
-  SecretStyling: {fileID: 1431937109918718578}
+  SecretStyling: {fileID: 1274748887477347231}
   Type: {fileID: 4838487177366943513}
   SecretType: {fileID: 5242441269190365481}
   MBTI: {fileID: 3435511432682233470}
@@ -22541,7 +22836,8 @@ AudioSource:
   m_GameObject: {fileID: 6404093502054877989}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -24835,7 +25131,8 @@ AudioSource:
   m_GameObject: {fileID: 7112651730757682319}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -25445,6 +25742,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6835033995668616541}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2208141941713409714}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 1
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &5565650827010092665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25545,7 +25864,8 @@ AudioSource:
   m_GameObject: {fileID: 7360499153768092004}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -30742,6 +31062,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 948411603714648146}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2130547933274459420}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2383099961455249276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30842,7 +31184,8 @@ AudioSource:
   m_GameObject: {fileID: 8869792355565224238}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -31500,6 +31843,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetTitleStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3565367446193020153}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: SetNumberStoryPopup
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 3744662464083780691}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4002388762698988688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31600,7 +31965,8 @@ AudioSource:
   m_GameObject: {fileID: 8998297601207942541}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243845848804372736, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4fee330162280a443b95cffc8c375edf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
