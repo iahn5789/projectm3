@@ -3,7 +3,9 @@
 jin: 뭐하고있어! 빨리 와!
 {Player_name}: 미..미안...
 @hideChars wait:false
+@sfx Common_Paper_Drop_01 volume:100 loop:false fade:0 wait:0
 describe: 다영이는 교무실 책장에 꽂힌 활동지를 꺼내 비어있는 테이블에 앉았다.
+@stopSfx Common_Paper_Drop_01 fade:0 wait:0
 describe: 활동지를 펼친 다영이는 빼곡하게 적힌 페이지를 넘기고 무언가를 새로 적기 시작했다.
 describe: 활동지에는 갖가지 내용들이 단정한 글씨체로 질서정연하게 적혀있었다.
 describe: 날짜. 시간. 내용 등은 물론이고 회비를 얼마를 받았고 어떻게 사용했는지, 사용한 이유와 그로 인한 기대점 등
@@ -42,16 +44,22 @@ jin: ...
 @hideChars wait:false
 @char bigjin.body>body1,face>face4 wait:false
 jin: <size=50>안</size><size=50>녕</size><size=50>히</size> <size=50>계</size><size=50>세</size><size=50>요</size><size=50>!</size>
+@sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false fade:0 wait:0
 @hideChars wait:false
 describe: 다영이는 더 이상 교무실에 있기 싫다는 듯 문을 박차고 나가버렸다.
 {Player_name}: 안녕히 계세요!
+@sfx Footsteps_Male_Wood_Run_01 volume:100 loop:false fade:0 wait:0
 describe: 나는 재빨리 다영이를 따라 교무실에서 나갔다.
+@stopSfx Footsteps_Male_Wood_Run_01 fade:2 wait:0
 한갑수:	허... 무슨 일이 있나...?
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
+@stopSfx Amb_Office_01 fade:1 wait:0
+@stopBgm Common_BGM_01 fade:4 wait:0
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@sfx Amb_Road_01 volume:80 loop:true fade:2 wait:0
 @back ScLobby01 time:1 wait:true
 @processInput true
 describe: 교무실을 나와 집으로 가는 길.

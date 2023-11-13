@@ -6,11 +6,14 @@ jin: 아니거든! 난 그냥 열심히 하는거라고...
 {Player_name}: 그래? 그럼 나도 열심히 해야겠네.
 @char jin.body>body3,face>face2 wait:false
 jin: 당연하지! 내가 계속 지켜볼 거야!
+@sfx Footsteps_Male_Wood_Walk_01 volume:100 loop:false wait:0
+@stopSfx Amb_Hallway_01 fade:2 wait:0
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@sfx Amb_Office_01 volume:100 loop:true fade:1 wait:0
 @back ScOffice01 time:1 wait:true
 @processInput true
 describe: 다영이와 얘기하다 보니 어느새 교무실에 도착했다.

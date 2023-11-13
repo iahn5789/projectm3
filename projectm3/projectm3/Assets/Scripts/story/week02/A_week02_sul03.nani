@@ -33,8 +33,10 @@ describe: 괜한 말을 한 것 같았다.
 sul: 비슷해. 모든 소리를 한곳으로 모아 스피커로 내보내 주는 역할을 하거든.
 {Player_name}: 네...?
 @char sul.body>body4,face>face1 wait:false
+@sfx Common_Robot_Glitch volume:100 loop:false fade:1 wait:0
 sul: 각 채널마다 페이더를 움직여서 소리의 크기를 조절하거나 EQ를 만져서 소리를 증폭시켜 줄 수 있어.
 sul: 그만큼 민감하고 비싼 장비기 때문에 조심해서 다뤄야 해.
+@stopSfx Common_Robot_Glitch fade:1 wait:0
 sul: 우선 이걸 다시 한번 설명하자면...
 @hideChars wait:false
 describe: 나희누나는 내가 이해를 못하고 있다는 걸 아는지 모르는지 멈추지 않고 설명했다.

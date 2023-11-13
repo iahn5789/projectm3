@@ -37,7 +37,9 @@ sul: ...약속이 있어서...먼저 가봐야 할 것 같아...
 @char sul.body>body4,face>face1 wait:false
 sul: 빗자루질만 하고 너도 집에 가...
 sul: ...다음 연습할 때 보자...
+@sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:false wait:0
 @hideChars wait:false
+@stopSfx Footsteps_Female_Wood_Run_01 fade:4 wait:0
 describe: 나희누나는 그 말을 끝으로 짐을 챙겨 나갔다.
 {Player_name}: 뭐지..?
 describe: 나는 나희 누나가 주고 간 빗자루를 멍하니 쳐다보고 있었다.
@@ -47,4 +49,6 @@ describe: 드르륵
 jeon: 오! {Player_name}! 아직 집에 안 가고 있었냐고!
 jeon: 혹시 마이크 남는 거 있어?
 {Player_name}: 하...
+@stopSfx Amb_Office_01 fade:2 wait:0
 
+@stopBgm Common_BGM_02 fade:2 wait:0

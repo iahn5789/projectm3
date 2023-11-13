@@ -35,4 +35,6 @@ kang: 두고 가는 물건 같은 거 없지?
 {Player_name}: 가져온 물건도 없었는데 뭐.
 @char kang.body>body2,face>face2 wait:false
 kang: 그러면 이제 집에 가자!
+@sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:true fade:0 wait:0
+@stopSfx Footsteps_Female_Wood_Walk_01 fade:3 wait:0
 @goto A_week02_kang04.week02_kang04

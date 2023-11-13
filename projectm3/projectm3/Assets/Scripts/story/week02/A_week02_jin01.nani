@@ -27,10 +27,16 @@ jin: 따라와!
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
+@bgm Common_BGM_01 volume:30 loop:true fade:3 wait:0
 @back Black time:1 wait:true
+@sfx Amb_Hallway_01 volume:60 loop:true fade:1 wait:0
 @back ScLobby01 time:1 wait:true
 @processInput true
+@sfx Common_Sliding_door_open volume:100 loop:false fade:0 wait:0
 describe: 드르륵-
+@stopSfx _Sliding_door_open fade:1 wait:0
+@sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:true fade:0 wait:1
+@sfx Footsteps_Male_Wood_Walk_01 volume:100 loop:true
 describe: 다영이와 함께 동아리실에서 나와 교무실로 걷기 시작했다.
 describe: 복도에는 나와 다영이밖에 없었다.
 describe: 둘이 함께 걸어가는 소리가 묘하게 박자가 맞지 않았다.
@@ -38,6 +44,8 @@ describe: 맞지 않는 박자 소리가 어색한 침묵을 더 크게 만들�
 {Player_name}: (어색해서 숨을 못 쉬겠어...!)
 {Player_name}: (무슨 말이라도 해야 하나?)
 {Player_name}: 그...
+@stopSfx Footsteps_Female_Wood_Walk_01 fade:0 wait:0
+@stopSfx Footsteps_Male_Wood_Walk_01 fade:0 wait:0
 @char jin.body>body1,face>face4 wait:false
 jin: 왜.
 {Player_name}: 아니. 뭐... 활동지가 어떤 건가 해서.

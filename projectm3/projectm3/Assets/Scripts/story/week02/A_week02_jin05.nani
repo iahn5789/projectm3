@@ -59,6 +59,8 @@ jin: 교무실?
 jin: 아니야! 뭐 좀 확인할 게 있어서 그래.
 @char jin.body>body3,face>face6 wait:false
 jin: 먼저가!
+@sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false fade:0
+@stopSfx Footsteps_Female_Ctr_Run_01 fade:4 wait:0
 @hideChars wait:false
 describe: 다영이는 말을 마치자, 교무실을 향해 뛰어갔다.
 {Player_name}: (빠르다...)
@@ -67,3 +69,5 @@ describe: 그때. 어딘가 익숙한 냄새가 등 뒤에서 다가오고 있�
 @char jeon.body>body2,face>face2 wait:false
 jeon: 오! {Player_name}! 아직 집에 안 가고 있었냐고!
 {Player_name}: 하...
+
+@stopSfx Amb_Road_01 fade:2 wait:0
