@@ -13,31 +13,31 @@ public class QuizSecretMessageManager : MonoBehaviour
     private string status = "Normal";
     private string name = "Normal";
     private int number = 0;
+    private int In_number = 0;
     public Button[] SecretMessageButton;
     private ICustomVariableManager variableManager;
     public void ClickButton(int Clicknumber)
     {
         name = CheckMessage(Clicknumber);
-        number = Clicknumber;
+        In_number = Clicknumber;
         if (name != "null")
-            {
-            if (status == "In")
+        {
+            if (status == "In" && number != Clicknumber)
             {
                 SManimator.SetTrigger("Out");
                 SManimator.SetTrigger("In");
-                status = "In";
             }
             else
             {
                 SManimator.SetTrigger("In");
-                status = "In";
             }
         }
+        number = Clicknumber;
     }
-    public void ClickOutButton()
+    public void StatusOut()
     {
-        SManimator.SetTrigger("Out");
         status = "Out";
+        number = 0;
     }
     public void CheckMessageUI()
     {
@@ -75,7 +75,9 @@ public class QuizSecretMessageManager : MonoBehaviour
     }
     public void SetMessage()
     {
+        number = In_number;
         SecretMessageNameText.text = name;
         SecretMessageText.text = variableManager?.GetVariableValue($"SecretMessage_{number}_Buy");
+        status = "In";
     }
 }
