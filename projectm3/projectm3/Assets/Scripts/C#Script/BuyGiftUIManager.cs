@@ -30,6 +30,7 @@ public class BuyGiftUIManager : MonoBehaviour
     public Sprite[] charactorBodyList; // Result창 캐릭터 몸 리스트
     private Dictionary<string, (string, int, int)> myTable;
     public ICustomVariableManager variableManager;
+    public AudioSource audioSource;
     private string CharName = "GiftShopUI Object에 캐릭터 판넬을 연결하세요.";
     public void Onshow()
     {
@@ -244,6 +245,28 @@ public class BuyGiftUIManager : MonoBehaviour
             resultCharactorDialog.GetComponent<TypingEffect>().fullText = tupleValue.Item1;
             charactorBody.sprite = charactorBodyList[tupleValue.Item2];
             charactorFace.sprite = charactorFaceList[tupleValue.Item3];
+        }
+    }
+    public void FadeOutAudio_0_5()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeInAudio_0_5()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
+        }
+        else
+        {
+            Debug.Log("없어");
         }
     }
 }

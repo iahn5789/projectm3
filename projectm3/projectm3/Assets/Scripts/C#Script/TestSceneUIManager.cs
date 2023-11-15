@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System;
 using System.Globalization;
+
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 using Naninovel;
 using Naninovel.UI;
@@ -53,6 +55,7 @@ public class TestSceneUIManager : MonoBehaviour
     public Sprite[] KangBodyList; // 비밀쪽지 캐릭터 몸 리스트
     public Sprite[] JinBodyList; // 비밀쪽지 캐릭터 몸 리스트
     public Sprite[] SulBodyList; // 비밀쪽지 캐릭터 몸 리스트
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -356,30 +359,37 @@ public class TestSceneUIManager : MonoBehaviour
     public void StoryBoardSelectedCheck()
     {
         string Selected = variableManager?.GetVariableValue("Selected");
-        if (Selected == "Kang")
+        if (!SecretMessage.GetCurrentAnimatorStateInfo(0).IsName("SecretMessage_In"))
         {
-            //강여진 보드 눌려있는 상태 유지
-            SecretMessage.Play("SecretMessageCheckIn");
-        }
-        else if (Selected == "Jin")
-        {
-            //진다영 보드 눌려있는 상태 유지
-            SecretMessage.Play("SecretMessageCheckIn");
-        }
-        else if (Selected == "Sul")
-        {
-            //설나희 보드 눌려있는 상태 유지
-            SecretMessage.Play("SecretMessageCheckIn");
-        }
-        else if (Selected == "Common")
-        {
-            // 전대용 보드 눌려있는 상태 유지
-            SecretMessage.Play("SecretMessageCheckIn");
+            if (Selected == "Kang")
+            {
+                //강여진 보드 눌려있는 상태 유지
+                SecretMessage.Play("SecretMessageCheckIn");
+            }
+            else if (Selected == "Jin")
+            {
+                //진다영 보드 눌려있는 상태 유지
+                SecretMessage.Play("SecretMessageCheckIn");
+            }
+            else if (Selected == "Sul")
+            {
+                //설나희 보드 눌려있는 상태 유지
+                SecretMessage.Play("SecretMessageCheckIn");
+            }
+            else if (Selected == "Common")
+            {
+                // 전대용 보드 눌려있는 상태 유지
+                SecretMessage.Play("SecretMessageCheckIn");
+            }
+            else
+            {
+                //안눌려있음
+                SecretMessage.Play("SecretMessage_Out");
+            }
         }
         else
         {
-            //안눌려있음
-            SecretMessage.Play("SecretMessage_Out");
+            Debug.Log("실행중이라고!");
         }
     }
     public void BuySecretMessageExist(string SecretMessageName)
@@ -529,6 +539,61 @@ public class TestSceneUIManager : MonoBehaviour
         {
             var tupleValue = SecretMessageLine[key];
             SecretMessgeText2.GetComponent<TypingEffect>().fullText = tupleValue.Item1;
+        }
+    }
+    public void FadeOutAudio_0_5()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeOutAudio_1()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,1.0f,0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeOutAudio_2()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,2.0f,0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeInAudio_1()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeInAudio_0_5()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
+        }
+        else
+        {
+            Debug.Log("없어");
         }
     }
 }

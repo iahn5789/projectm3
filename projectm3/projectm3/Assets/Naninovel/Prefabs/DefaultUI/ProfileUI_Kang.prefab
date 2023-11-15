@@ -13284,6 +13284,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: FadeOutAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8475681840477052827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16159,7 +16170,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 0a3f391927cc97146a7052fff77ffb93, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22181,11 +22192,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onHide:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1954322257599740304}
-        m_MethodName: Stop
+      - m_Target: {fileID: 7930223436502061643}
+        m_MethodName: FadeInAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22195,6 +22203,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onHide:
+    m_PersistentCalls:
+      m_Calls: []
   hideOnLoad: 1
   hideInThumbnail: 0
   saveVisibilityState: 1
@@ -22374,6 +22385,7 @@ MonoBehaviour:
   SecretSpecialty: {fileID: 7808521114419214537}
   Dream: {fileID: 3709948037977479367}
   SecretDream: {fileID: 4440197017041694793}
+  audioSource: {fileID: 1954322257599740304}
 --- !u!1 &6323549410028339576
 GameObject:
   m_ObjectHideFlags: 0

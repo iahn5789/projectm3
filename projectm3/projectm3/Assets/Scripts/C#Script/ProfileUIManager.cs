@@ -92,6 +92,7 @@ public class ProfileUIManager : MonoBehaviour
     public GameObject SecretSpecialty;
     public GameObject Dream;
     public GameObject SecretDream;
+    public AudioSource audioSource;
     public void Start()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
@@ -381,5 +382,27 @@ public class ProfileUIManager : MonoBehaviour
     {
         text.SetActive(false);
         secret.SetActive(true);
+    }
+    public void FadeInAudio()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,0.5f,1f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeOutAudio()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
     }
 }
