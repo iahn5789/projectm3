@@ -27,8 +27,10 @@ public class ExamUIManager : MonoBehaviour
     private Dictionary<string, string> KCorrectAnswerList;
     private Dictionary<string, string> JCorrectAnswerList;
     private Dictionary<string, string> SCorrectAnswerList;
+    private Dictionary<string, bool> SecretMessageLightList;
     public GameObject[] AnswerGameObjectList;
     public GameObject[] AnswerAnimationList;
+    public GameObject[] SecretMessageLight;
     public Text QuestionTitle;
     public Text Question;
     public Text[] Answer;
@@ -63,7 +65,94 @@ public class ExamUIManager : MonoBehaviour
         {
             numbers.Add(i);
         }
-        // 문제 타이틀 숫자는 : (주차, 라운드 - 1)
+        // 문제 비밀쪽지 연결 (캐릭터이름 앞글자 ,주차 - 1 , 연결되는 문제 ,비밀쪽지 번호)
+        SecretMessageLightList = new Dictionary<string, bool>();
+        // 강여진
+        SecretMessageLightList.Add("K011", true);
+        SecretMessageLightList.Add("K032", true);
+        SecretMessageLightList.Add("K053", true);
+        SecretMessageLightList.Add("K101", true);
+        SecretMessageLightList.Add("K102", true);
+        SecretMessageLightList.Add("K103", true);
+        SecretMessageLightList.Add("K201", true);
+        SecretMessageLightList.Add("K202", true);
+        SecretMessageLightList.Add("K203", true);
+        SecretMessageLightList.Add("K301", true);
+        SecretMessageLightList.Add("K302", true);
+        SecretMessageLightList.Add("K303", true);
+        SecretMessageLightList.Add("K401", true);
+        SecretMessageLightList.Add("K402", true);
+        SecretMessageLightList.Add("K403", true);
+        SecretMessageLightList.Add("K501", true);
+        SecretMessageLightList.Add("K502", true);
+        SecretMessageLightList.Add("K503", true);
+        SecretMessageLightList.Add("K601", true);
+        SecretMessageLightList.Add("K602", true);
+        SecretMessageLightList.Add("K603", true);
+        SecretMessageLightList.Add("K701", true);
+        SecretMessageLightList.Add("K702", true);
+        SecretMessageLightList.Add("K703", true);
+        SecretMessageLightList.Add("K801", true);
+        SecretMessageLightList.Add("K802", true);
+        SecretMessageLightList.Add("K803", true);
+        // 진다영
+        SecretMessageLightList.Add("J011", true);
+        SecretMessageLightList.Add("J032", true);
+        SecretMessageLightList.Add("J053", true);
+        SecretMessageLightList.Add("J101", true);
+        SecretMessageLightList.Add("J102", true);
+        SecretMessageLightList.Add("J103", true);
+        SecretMessageLightList.Add("J201", true);
+        SecretMessageLightList.Add("J202", true);
+        SecretMessageLightList.Add("J203", true);
+        SecretMessageLightList.Add("J301", true);
+        SecretMessageLightList.Add("J302", true);
+        SecretMessageLightList.Add("J303", true);
+        SecretMessageLightList.Add("J401", true);
+        SecretMessageLightList.Add("J402", true);
+        SecretMessageLightList.Add("J403", true);
+        SecretMessageLightList.Add("J501", true);
+        SecretMessageLightList.Add("J502", true);
+        SecretMessageLightList.Add("J503", true);
+        SecretMessageLightList.Add("J601", true);
+        SecretMessageLightList.Add("J602", true);
+        SecretMessageLightList.Add("J603", true);
+        SecretMessageLightList.Add("J701", true);
+        SecretMessageLightList.Add("J702", true);
+        SecretMessageLightList.Add("J703", true);
+        SecretMessageLightList.Add("J801", true);
+        SecretMessageLightList.Add("J802", true);
+        SecretMessageLightList.Add("J803", true);
+        // 설나희
+        SecretMessageLightList.Add("S011", true);
+        SecretMessageLightList.Add("S032", true);
+        SecretMessageLightList.Add("S053", true);
+        SecretMessageLightList.Add("S101", true);
+        SecretMessageLightList.Add("S102", true);
+        SecretMessageLightList.Add("S103", true);
+        SecretMessageLightList.Add("S201", true);
+        SecretMessageLightList.Add("S202", true);
+        SecretMessageLightList.Add("S203", true);
+        SecretMessageLightList.Add("S301", true);
+        SecretMessageLightList.Add("S302", true);
+        SecretMessageLightList.Add("S303", true);
+        SecretMessageLightList.Add("S401", true);
+        SecretMessageLightList.Add("S402", true);
+        SecretMessageLightList.Add("S403", true);
+        SecretMessageLightList.Add("S501", true);
+        SecretMessageLightList.Add("S502", true);
+        SecretMessageLightList.Add("S503", true);
+        SecretMessageLightList.Add("S601", true);
+        SecretMessageLightList.Add("S602", true);
+        SecretMessageLightList.Add("S603", true);
+        SecretMessageLightList.Add("S701", true);
+        SecretMessageLightList.Add("S702", true);
+        SecretMessageLightList.Add("S703", true);
+        SecretMessageLightList.Add("S801", true);
+        SecretMessageLightList.Add("S802", true);
+        SecretMessageLightList.Add("S803", true);
+
+        // 문제 타이틀 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
         KQuestionTitleList = new Dictionary<string, string>();
         KQuestionTitleList.Add("00", "다음 보기에 공통점이 있는 인물을 고르시오.");
@@ -88,7 +177,7 @@ public class ExamUIManager : MonoBehaviour
         SQuestionTitleList.Add("03", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
         SQuestionTitleList.Add("04", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
 
-        // 문제 숫자는 : (주차, 라운드 - 1)
+        // 문제 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
         KQuestionList = new Dictionary<string, string>();
         KQuestionList.Add("00", "분홍색\n단발머리\n베이스기타");
@@ -113,7 +202,7 @@ public class ExamUIManager : MonoBehaviour
         SQuestionList.Add("03", "OO을 맡길 생각이야!\n아마 맡겨놓으면 제대로 할 수 있을거야!");
         SQuestionList.Add("04", "이렇게 예쁜 여자애가 내손을 잡았어…\n따뜻하고…OOO?");
         
-        // 정답 항목 숫자는 : (주차, 라운드 - 1, 답 번호 -1)
+        // 정답 항목 숫자는 : (주차-1, 라운드 - 1, 답 번호 -1)
         // Kang(250개)
         KAnswerList = new Dictionary<string, string>();
         KAnswerList.Add("000", "강여진");
@@ -198,7 +287,7 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("043", "끈적해");
         SAnswerList.Add("044", "거칠어");
         
-        // 정답 숫자는 : (주차, 라운드 - 1)
+        // 정답 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
         KCorrectAnswerList = new Dictionary<string, string>();
         KCorrectAnswerList.Add("00", "진다영");
@@ -328,6 +417,7 @@ public class ExamUIManager : MonoBehaviour
             test_start = true;
             selectAnswer = "";
             round = 1 + round;
+            SetSecretMessageCheck(name,Week);
         }
         else
         {
@@ -541,6 +631,25 @@ public class ExamUIManager : MonoBehaviour
         int TestCorrectResult = Int32.Parse(variableManager?.GetVariableValue("TestCorrectResult"));
         variableManager?.SetVariableValue("TestCorrectResult", (Add+TestCorrectResult).ToString());
 
+    }
+    public void SetSecretMessageCheck(string name, int week)
+    {
+        string key = name.Substring(0,1)+(week - 1).ToString() + round.ToString();
+        bool CorrectAnswer;
+        for(int i =0;i<3;i++)
+        {
+            SecretMessageLight[i].SetActive(false);
+            string SecretMessageBuy = variableManager?.GetVariableValue(name + "Secret_" + (i+1).ToString() + "_Buy");
+            if (SecretMessageBuy == "true")
+            {
+                Debug.Log(SecretMessageBuy);
+                Debug.Log(key + (i+1).ToString());
+                if (SecretMessageLightList.TryGetValue(key + (i+1).ToString(), out CorrectAnswer))
+                {
+                    SecretMessageLight[i].SetActive(CorrectAnswer);
+                }
+            }
+        }
     }
     public void FadeInAudio()
     {
