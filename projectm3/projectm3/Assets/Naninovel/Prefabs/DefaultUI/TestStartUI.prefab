@@ -16150,7 +16150,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 022bd43f04235b24c9f37d1db56ed276, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -20628,6 +20628,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8310058538611491372}
+        m_MethodName: FadeInAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls: []
@@ -20744,6 +20755,7 @@ MonoBehaviour:
   testResultUIManager: {fileID: 6331179380849077234}
   demoLoadScene: {fileID: 7690876535970732376}
   Answeranimator: {fileID: 7232441406867419983}
+  audioSource: {fileID: 7505412119940179883}
 --- !u!95 &615439656208253299
 Animator:
   serializedVersion: 3

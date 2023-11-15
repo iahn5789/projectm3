@@ -53,6 +53,7 @@ public class ExamUIManager : MonoBehaviour
     public DemoLoadScene demoLoadScene;
     private ICustomVariableManager variableManager;
     public Animator Answeranimator; // answer 애니메이터 컴포넌트
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -540,5 +541,27 @@ public class ExamUIManager : MonoBehaviour
         int TestCorrectResult = Int32.Parse(variableManager?.GetVariableValue("TestCorrectResult"));
         variableManager?.SetVariableValue("TestCorrectResult", (Add+TestCorrectResult).ToString());
 
+    }
+    public void FadeInAudio()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,2f,1f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
+    }
+    public void FadeOutAudio()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
+        }
+        else
+        {
+            Debug.Log("없어");
+        }
     }
 }
