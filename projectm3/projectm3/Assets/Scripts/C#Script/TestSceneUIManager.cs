@@ -61,10 +61,10 @@ public class TestSceneUIManager : MonoBehaviour
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
         DictWeekText = new Dictionary<string, (string, string, string, string)>();
-        // 제목, 타이틀, Subject
+        // 제목, 타이틀, Subject n주차 제목,n주차 타이틀,n주차 Subject(주인공 시점), n주차 Subject(강여진시점)
         // 강여진 1주차~9주차?
-        DictWeekText.Add("Kang1", ("1주차 제목","1주차 타이틀","1주차 Subject(주인공 시점)", "1주차 Subject(강여진시점)"));
-        DictWeekText.Add("Kang2", ("2주차 제목","2주차 타이틀","2주차 Subject(주인공 시점)", "2주차 Subject(강여진시점)"));
+        DictWeekText.Add("Kang1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터k"));
+        DictWeekText.Add("Kang2", ("2주차 제목","좌충우돌 첫 연습","말도 많고 탈도 많던 연습이 끝나고, 악기 정리를 하기 위해 여진이와 함께 창고로 갔다. 뒤숭숭한 마음이었지만 여진이의 말을 듣고 기분이 한결 나아졌다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력에도 불구하고 여진이는 괜찮다고 한다."));
         DictWeekText.Add("Kang3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(강여진시점)"));
         DictWeekText.Add("Kang4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(강여진시점)"));
         DictWeekText.Add("Kang5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(강여진시점)"));
@@ -74,8 +74,8 @@ public class TestSceneUIManager : MonoBehaviour
         DictWeekText.Add("Kang9", ("9주차 제목","9주차 타이틀","9주차 Subject(주인공 시점)", "9주차 Subject(강여진시점)"));
         DictWeekText.Add("Kang10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(강여진시점)"));
         // 진다영 1주차~9주차?
-        DictWeekText.Add("Jin1", ("1주차 제목","1주차 타이틀","1주차 Subject(주인공 시점)", "1주차 Subject(진다영시점)"));
-        DictWeekText.Add("Jin2", ("2주차 제목","2주차 타이틀","2주차 Subject(주인공 시점)", "2주차 Subject(진다영시점)"));
+        DictWeekText.Add("Jin1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터j"));
+        DictWeekText.Add("Jin2", ("2주차 제목","좌충우돌 첫 연습","말도 많고 탈도 많던 연습이 끝나고, 장부 정리를 하기 위해 다영이와 함께  교무실로 갔다. 늘 화만 내는 줄 알았던 다영이의 약간은 다정한 속마음도 들을 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력에 다영이는 보컬 교체 제안을 하는데..."));
         DictWeekText.Add("Jin3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(진다영시점)"));
         DictWeekText.Add("Jin4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(진다영시점)"));
         DictWeekText.Add("Jin5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(진다영시점)"));
@@ -85,8 +85,8 @@ public class TestSceneUIManager : MonoBehaviour
         DictWeekText.Add("Jin9", ("9주차 제목","9주차 타이틀","9주차 Subject(주인공 시점)", "9주차 Subject(진다영시점)"));
         DictWeekText.Add("Jin10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(진다영시점)"));
         // 설나희 1주차~9주차?
-        DictWeekText.Add("Sul1", ("1주차 제목","1주차 타이틀","1주차 Subject(주인공 시점)", "1주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul2", ("2주차 제목","2주차 타이틀","2주차 Subject(주인공 시점)", "2주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터s"));
+        DictWeekText.Add("Sul2", ("2주차 제목","좌충우돌 첫 연습","말도 많고 탈도 많던 연습이 끝나고, 나희 누나와 함께 남아 시작한 동아리방 정리. 무뚝뚝한 줄만 알았던 나희 누나의 색다른 모습도 볼 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력을 나희 누나는 오히려 매력 있다고 말한다."));
         DictWeekText.Add("Sul3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(설나희시점)"));
         DictWeekText.Add("Sul4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(설나희시점)"));
         DictWeekText.Add("Sul5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(설나희시점)"));
@@ -255,7 +255,6 @@ public class TestSceneUIManager : MonoBehaviour
         if (DictWeekText.TryGetValue(key, out var weekInfo))
         {
             WeekUI.text = week.ToString();
-            WeekTextUI.text = weekInfo.Item1;
             WeekTitleUI.text = weekInfo.Item2;
             WeekSubjectUI.text = weekInfo.Item3;
         }
