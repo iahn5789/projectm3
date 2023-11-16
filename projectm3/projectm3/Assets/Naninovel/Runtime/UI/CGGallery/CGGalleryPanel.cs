@@ -145,6 +145,34 @@ namespace Naninovel.UI
                     return "Mini5번";
                 else if(name == "Mini06")
                     return "Mini6번";
+                else if(name == "Mini07")
+                    return "Mini7번";
+                else if(name == "Mini08")
+                    return "Mini8번";
+                else if(name == "Mini09")
+                    return "Mini9번";
+                else if(name == "Mini10")
+                    return "Mini10번";
+                else if(name == "Mini11")
+                    return "Mini11번";
+                else if(name == "Mini12")
+                    return "Mini12번";
+                else if(name == "Mini13")
+                    return "Mini13번";
+                else if(name == "Mini14")
+                    return "Mini14번";
+                else if(name == "Mini15")
+                    return "Mini15번";
+                else if(name == "Mini16")
+                    return "Mini16번";
+                else if(name == "Mini17")
+                    return "Mini17번";
+                else if(name == "Mini18")
+                    return "Mini18번";
+                else if(name == "Mini19")
+                    return "Mini19번";
+                else if(name == "Mini20")
+                    return "Mini20번";
                 else
                     return name;
             }
