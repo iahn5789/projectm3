@@ -1,5 +1,6 @@
 // Copyright 2022 ReWaffle LLC. All rights reserved.
 
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using Naninovel.Runtime.UI;
@@ -86,12 +87,73 @@ namespace Naninovel.UI
             {
                 var id = pathsBySlot.Key;
                 if (slotData.Any(s => s.Id == id)) return;
+                var title = ExtractTitleFromPath(pathsBySlot.First()); // pathsBySlot 중 하나의 경로에서 제목 추출
                 // 여기서 texturePaths를 생성해서 CGSlotData에 전달합니다.
                 var texturePaths = pathsBySlot.OrderBy(p => p).ToList();
-                var data = new CGSlotData(id, texturePaths , loader);
+                var data = new CGSlotData(id, texturePaths , loader,title);
                 slotData.Add(data);
             }
+            string ExtractTitleFromPath(string path)
+            {
+                // 경로에서 파일 이름을 추출하고, 필요에 따라 추가 처리를 수행
+                var name = Path.GetFileNameWithoutExtension(path);
+                if(name == "Kang01")
+                    return "Kang1번";
+                else if(name == "Kang02")
+                    return "Kang2번";
+                else if(name == "Kang03")
+                    return "Kang3번";
+                else if(name == "Kang04")
+                    return "Kang4번";
+                else if(name == "Kang05")
+                    return "Kang5번";
+                else if(name == "Kang06")
+                    return "Kang6번";
+                else if(name == "Jin01")
+                    return "Jin1번";
+                else if(name == "Jin02")
+                    return "Jin2번";
+                else if(name == "Jin03")
+                    return "Jin3번";
+                else if(name == "Jin04")
+                    return "Jin4번";
+                else if(name == "Jin05")
+                    return "Jin5번";
+                else if(name == "Jin06")
+                    return "Jin6번";
+                else if(name == "Sul01")
+                    return "Sul1번";
+                else if(name == "Sul02")
+                    return "Sul2번";
+                else if(name == "Sul03")
+                    return "Sul3번";
+                else if(name == "Sul04")
+                    return "Sul4번";
+                else if(name == "Sul05")
+                    return "Sul5번";
+                else if(name == "Sul06")
+                    return "Sul6번";
+                else if(name == "Mini01")
+                    return "Mini1번";
+                else if(name == "Mini02")
+                    return "Mini2번";
+                else if(name == "Mini03")
+                    return "Mini3번";
+                else if(name == "Mini04")
+                    return "Mini4번";
+                else if(name == "Mini05")
+                    return "Mini5번";
+                else if(name == "Mini06")
+                    return "Mini6번";
+                else
+                    return name;
+            }
         }
+        public string GetTitle()
+        {
+            return "";
+        }
+
 
         protected override void Awake ()
         {

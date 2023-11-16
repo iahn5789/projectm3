@@ -16,6 +16,7 @@ namespace Naninovel
         protected virtual List<CGSlotData> SulSlotData { get; private set; } = new List<CGSlotData>();
         protected virtual List<CGSlotData> JinSlotData { get; private set; } = new List<CGSlotData>();
         private CGViewerPanel viewerPanel;
+        public string[] title;
 
         public void Initialize (CGViewerPanel viewerPanel, List<CGSlotData> slotData)
         {
@@ -26,13 +27,13 @@ namespace Naninovel
             {
                 // 각 카테고리에 맞게 데이터를 분류합니다.
                 if (data.Id.StartsWith("Kang"))
-                    KangSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader));
+                    KangSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader, ""));
                 else if (data.Id.StartsWith("Sul"))
-                    SulSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader));
+                    SulSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader, ""));
                 else if (data.Id.StartsWith("Jin"))
-                    JinSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader));
+                    JinSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader, ""));
                 else if (data.Id.StartsWith("Mini"))
-                    JinSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader));
+                    JinSlotData.Add(new CGSlotData(data.Id, data.TexturePaths, data.TextureLoader, ""));
             }
             Initialize(slotData.Count);
         }

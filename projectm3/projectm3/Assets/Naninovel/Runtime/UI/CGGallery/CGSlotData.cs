@@ -10,12 +10,14 @@ namespace Naninovel.Runtime.UI
     public readonly struct CGSlotData : IEquatable<CGSlotData>
     {
         public readonly string Id;
+        public readonly string Title; // 추가된 필드
         public readonly IReadOnlyList<string> TexturePaths;
         public readonly IResourceLoader<Texture2D> TextureLoader;
 
-        public CGSlotData (string id, IEnumerable<string> texturePaths, IResourceLoader<Texture2D> textureLoader)
+        public CGSlotData (string id, IEnumerable<string> texturePaths, IResourceLoader<Texture2D> textureLoader, string title)
         {
             Id = id;
+            Title = title;
             TexturePaths = texturePaths.ToArray();
             TextureLoader = textureLoader;
         }

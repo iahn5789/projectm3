@@ -18,12 +18,14 @@ namespace Naninovel
         protected virtual RawImage ThumbnailImage => thumbnailImage;
         protected virtual Texture2D LockedTexture => lockedTexture;
         protected virtual Texture2D LoadingTexture => loadingTexture;
+        protected virtual Text CGText => cgText;
         protected virtual IReadOnlyList<Texture2D> CGTextures { get; private set; }
         protected virtual bool AnyUnlocked => CGTextures?.Any(t => t != null) ?? false;
 
         [SerializeField] private RawImage thumbnailImage;
         [SerializeField] private Texture2D lockedTexture;
         [SerializeField] private Texture2D loadingTexture;
+        [SerializeField] private Text cgText;
 
         [SerializeField] private IUnlockableManager unlockableManager;
         private ILocalizationManager localizationManager;
@@ -104,11 +106,26 @@ namespace Naninovel
                 await UniTask.DelayFrame(1);
                 if (!this) return;
             }
-
+            
             await LoadCGTexturesAsync();
 
-            if (!AnyUnlocked) ThumbnailImage.texture = LockedTexture;
-            else ThumbnailImage.texture = CGTextures.FirstOrDefault(t => t != null);
+            if (!AnyUnlocked) 
+            {
+                ThumbnailImage.texture = LockedTexture;
+                if (CGText != null)
+                {
+                    CGText.text = "Locked CG"; // 잠긴 CG 제목
+                }
+            }
+            else 
+            {
+                ThumbnailImage.texture = CGTextures.FirstOrDefault(t => t != null);
+                
+                if (CGText != null)
+                {
+                    CGText.text = Data.Title; // 잠금 해제된 CG의 제목
+                }
+            }
         }
 
         protected virtual void HandleLocaleChanged (string _) => Refresh();
