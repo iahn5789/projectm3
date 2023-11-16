@@ -114,7 +114,7 @@ namespace Naninovel
                 ThumbnailImage.texture = LockedTexture;
                 if (CGText != null)
                 {
-                    CGText.text = "Locked CG"; // 잠긴 CG 제목
+                    CGText.text = "???"; // 잠긴 CG 제목
                 }
             }
             else 

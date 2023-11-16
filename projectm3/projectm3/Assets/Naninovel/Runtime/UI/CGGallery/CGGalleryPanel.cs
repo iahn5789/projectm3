@@ -98,9 +98,9 @@ namespace Naninovel.UI
                 // 경로에서 파일 이름을 추출하고, 필요에 따라 추가 처리를 수행
                 var name = Path.GetFileNameWithoutExtension(path);
                 if(name == "Kang01")
-                    return "Kang1번";
+                    return "네가 그 전학생이구나!";
                 else if(name == "Kang02")
-                    return "Kang2번";
+                    return "처음 잡아본 여자의 손...";
                 else if(name == "Kang03")
                     return "Kang3번";
                 else if(name == "Kang04")
@@ -122,7 +122,7 @@ namespace Naninovel.UI
                 else if(name == "Jin06")
                     return "Jin6번";
                 else if(name == "Sul01")
-                    return "Sul1번";
+                    return "이딴게 회의?";
                 else if(name == "Sul02")
                     return "Sul2번";
                 else if(name == "Sul03")
