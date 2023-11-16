@@ -39,7 +39,7 @@ public class ExamUIManager : MonoBehaviour
     // 타이머
     private float timer = 0f;
     private float targetTime = 30f; // 30초 타이머 설정
-    private bool test_start = true;
+    private bool test_start = false;
     public Text timeText;
     public GameObject gauge;
     public GameObject SuccessResult;
@@ -639,11 +639,25 @@ public class ExamUIManager : MonoBehaviour
         for(int i =0;i<3;i++)
         {
             SecretMessageLight[i].SetActive(false);
-            string SecretMessageBuy = variableManager?.GetVariableValue(name + "Secret_" + (i+1).ToString() + "_Buy");
-            if (SecretMessageBuy == "true")
+            string KSecretMessageBuy = variableManager?.GetVariableValue("KangSecret_" + (i+1).ToString() + "_Buy");
+            string SSecretMessageBuy = variableManager?.GetVariableValue("SulSecret_" + (i+1).ToString() + "_Buy");
+            string JSecretMessageBuy = variableManager?.GetVariableValue("JinSecret_" + (i+1).ToString() + "_Buy");
+            if (KSecretMessageBuy == "true")
             {
-                Debug.Log(SecretMessageBuy);
-                Debug.Log(key + (i+1).ToString());
+                if (SecretMessageLightList.TryGetValue(key + (i+1).ToString(), out CorrectAnswer))
+                {
+                    SecretMessageLight[i].SetActive(CorrectAnswer);
+                }
+            }
+            else if (SSecretMessageBuy == "true")
+            {
+                if (SecretMessageLightList.TryGetValue(key + (i+1).ToString(), out CorrectAnswer))
+                {
+                    SecretMessageLight[i].SetActive(CorrectAnswer);
+                }
+            }
+            else if (JSecretMessageBuy == "true")
+            {
                 if (SecretMessageLightList.TryGetValue(key + (i+1).ToString(), out CorrectAnswer))
                 {
                     SecretMessageLight[i].SetActive(CorrectAnswer);
