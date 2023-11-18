@@ -13,8 +13,8 @@ using Naninovel.Commands;
 public class TestSceneUIManager : MonoBehaviour
 {
     // 주차 관련 UI
+    public TestStartPopupManager TSPM;
     public Text WeekUI;
-    public Text WeekTextUI;
     public Text WeekTitleUI;
     public Text WeekSubjectUI;
     private Dictionary<string, (string, string, string, string)> DictWeekText;
@@ -301,6 +301,11 @@ public class TestSceneUIManager : MonoBehaviour
         CehckedLikeAbility("Kang",0);
         CehckedLikeAbility("Jin",1);
         CehckedLikeAbility("Sul",2);
+        SetActiveTSPM();
+    }
+    public void SetActiveTSPM()
+    {
+        TSPM.CheckLikeAbility();
     }
     public void CehckedLikeAbility(string name, int number)
     {
@@ -364,21 +369,25 @@ public class TestSceneUIManager : MonoBehaviour
             {
                 //강여진 보드 눌려있는 상태 유지
                 SecretMessage.Play("SecretMessageCheckIn");
+                SetActiveTSPM();
             }
             else if (Selected == "Jin")
             {
                 //진다영 보드 눌려있는 상태 유지
                 SecretMessage.Play("SecretMessageCheckIn");
+                SetActiveTSPM();
             }
             else if (Selected == "Sul")
             {
                 //설나희 보드 눌려있는 상태 유지
                 SecretMessage.Play("SecretMessageCheckIn");
+                SetActiveTSPM();
             }
             else if (Selected == "Common")
             {
                 // 전대용 보드 눌려있는 상태 유지
                 SecretMessage.Play("SecretMessageCheckIn");
+                SetActiveTSPM();
             }
             else
             {
@@ -546,20 +555,12 @@ public class TestSceneUIManager : MonoBehaviour
         {
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
         }
-        else
-        {
-            Debug.Log("없어");
-        }
     }
     public void FadeOutAudio_1()
     {
         if (audioSource != null)
         {
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,1.0f,0f));
-        }
-        else
-        {
-            Debug.Log("없어");
         }
     }
     public void FadeOutAudio_2()
@@ -568,10 +569,6 @@ public class TestSceneUIManager : MonoBehaviour
         {
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,2.0f,0f));
         }
-        else
-        {
-            Debug.Log("없어");
-        }
     }
     public void FadeInAudio_1()
     {
@@ -579,20 +576,12 @@ public class TestSceneUIManager : MonoBehaviour
         {
             StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
         }
-        else
-        {
-            Debug.Log("없어");
-        }
     }
     public void FadeInAudio_0_5()
     {
         if (audioSource != null)
         {
             StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
-        }
-        else
-        {
-            Debug.Log("없어");
         }
     }
 }

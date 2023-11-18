@@ -389,20 +389,12 @@ public class ProfileUIManager : MonoBehaviour
         {
             StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,0.5f,1f));
         }
-        else
-        {
-            Debug.Log("없어");
-        }
     }
     public void FadeOutAudio()
     {
         if (audioSource != null)
         {
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
-        }
-        else
-        {
-            Debug.Log("없어");
         }
     }
 }

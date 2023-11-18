@@ -8,8 +8,7 @@ using Naninovel.Commands;
 
 public class TestStartPopupManager : MonoBehaviour
 {
-    public GameObject TestStartPopupUI_NotEnough;
-    public GameObject TestStartPopupUI_Enough;
+    public GameObject TestStartButton;
     public Text NowAbility;
     public Text NeedAbility;
     private ICustomVariableManager variableManager;
@@ -27,17 +26,20 @@ public class TestStartPopupManager : MonoBehaviour
     public void CheckLikeAbility()
     {
         name = variableManager?.GetVariableValue("Selected");
-        money = int.Parse(variableManager?.GetVariableValue($"money"));
-        week = int.Parse(variableManager?.GetVariableValue($"{name}Week"));
-        LikeAbility = int.Parse(variableManager?.GetVariableValue($"{name}LikeAbility"));
-        Count = variableManager?.GetVariableValue("PartTimeJob_Count");
-        if (LikeAbility >= (week * 10) + 5)
+        if(name == "Kang" || name == "Jin" || name == "Sul")
         {
-            TestStartPopupUI_Enough.SetActive(true);
-        }
-        else
-        {
-            CalculatorLikeAbility();
+            money = int.Parse(variableManager?.GetVariableValue($"money"));
+            week = int.Parse(variableManager?.GetVariableValue($"{name}Week"));
+            LikeAbility = int.Parse(variableManager?.GetVariableValue($"{name}LikeAbility"));
+            Count = variableManager?.GetVariableValue("PartTimeJob_Count");
+            if (LikeAbility >= (week * 10) + 5)
+            {
+                TestStartButton.SetActive(true);
+            }
+            else
+            {
+                CalculatorLikeAbility();
+            }
         }
     }
     private void CalculatorLikeAbility()
@@ -69,12 +71,12 @@ public class TestStartPopupManager : MonoBehaviour
     {
         NowAbility.text = now.ToString();
         NeedAbility.text = need.ToString();
-        TestStartPopupUI_NotEnough.SetActive(true);
+        TestStartButton.SetActive(false);
     }
     private void BadEnding()
     {
         variableManager?.SetVariableValue("BadEnding", "true");
-        TestStartPopupUI_Enough.SetActive(true);
+        TestStartButton.SetActive(true);
     }
     private bool CalculatorRemaining(int _moeny, int RemainingLikeAbility)
     {

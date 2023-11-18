@@ -253,20 +253,12 @@ public class BuyGiftUIManager : MonoBehaviour
         {
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
         }
-        else
-        {
-            Debug.Log("없어");
-        }
     }
     public void FadeInAudio_0_5()
     {
         if (audioSource != null)
         {
             StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
-        }
-        else
-        {
-            Debug.Log("없어");
         }
     }
 }
