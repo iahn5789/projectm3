@@ -56,6 +56,11 @@ public class TestSceneUIManager : MonoBehaviour
     public Sprite[] JinBodyList; // 비밀쪽지 캐릭터 몸 리스트
     public Sprite[] SulBodyList; // 비밀쪽지 캐릭터 몸 리스트
     public AudioSource audioSource;
+    // Audio 및 튜토리얼
+    public GameObject TutorialObject;
+    public GameObject WeekTutorial;
+    public GameObject TutorialNoneObject;
+    public AudioSource TutorialAudioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -570,6 +575,13 @@ public class TestSceneUIManager : MonoBehaviour
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,2.0f,0f));
         }
     }
+    public void FadeInAudio_2()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,2.0f,1.0f));
+        }
+    }
     public void FadeInAudio_1()
     {
         if (audioSource != null)
@@ -581,7 +593,76 @@ public class TestSceneUIManager : MonoBehaviour
     {
         if (audioSource != null)
         {
-            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,1.0f,1.0f));
+            StartCoroutine(FadeAudioSource.StartFadeIn(audioSource,0.5f,1.0f));
         }
+    }
+    public void FadeInAudio_tuto_2()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeIn(TutorialAudioSource,2.0f,1.0f));
+        }
+    }
+    public void FadeOutAudio_tuto_2()
+    {
+        if (audioSource != null)
+        {
+            StartCoroutine(FadeAudioSource.StartFadeOut(TutorialAudioSource,2.0f,0f));
+        }
+    }
+    public void TutorialObjectOn()
+    {
+        string tutorialvarialble = variableManager?.GetVariableValue($"Tutorial");
+        string kweek = variableManager?.GetVariableValue($"KangWeek");
+        string jweek = variableManager?.GetVariableValue($"JinWeek");
+        string sweek = variableManager?.GetVariableValue($"SulWeek");
+
+        //tutorialvarialble = "First";
+        //tutorialvarialble = "Last";
+        tutorialvarialble = "false";
+
+        if (kweek == "1" && jweek == "1" && sweek == "1")
+        {
+            Debug.Log(tutorialvarialble);
+            if (tutorialvarialble == "First")
+            {
+                FadeInAudio_tuto_2();
+                TutorialAudioSource.Play();
+                TutorialObject.SetActive(true);
+                WeekTutorial.SetActive(true);
+                TutorialNoneObject.SetActive(false);
+            }
+            else if(tutorialvarialble == "Last")
+            {
+                FadeInAudio_tuto_2();
+                TutorialAudioSource.Play();
+                TutorialObject.SetActive(true);
+                WeekTutorial.SetActive(false);
+                TutorialNoneObject.SetActive(true);
+            }
+            else
+            {
+                TutorialObject.SetActive(false);
+                FadeInAudio_1();
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            TutorialObject.SetActive(false);
+            FadeInAudio_1();
+            audioSource.Play();
+        }
+    }
+    public void TutorialFinish()
+    {
+        variableManager?.SetVariableValue($"Tutorial","false");
+        StartCoroutine(DeactivateAfterDelay(2f));
+    }
+    IEnumerator DeactivateAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        FadeInAudio_2();
+        audioSource.Play();
     }
 }

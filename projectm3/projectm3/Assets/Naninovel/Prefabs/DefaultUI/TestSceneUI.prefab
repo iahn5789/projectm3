@@ -4672,7 +4672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &675248371402306656
 Transform:
   m_ObjectHideFlags: 0
@@ -45666,7 +45666,7 @@ GameObject:
   - component: {fileID: 5021237744481045854}
   - component: {fileID: 2045883777282419541}
   m_Layer: 5
-  m_Name: Audio Source
+  m_Name: MySweetHome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45700,12 +45700,13 @@ AudioSource:
   m_GameObject: {fileID: 2916395003065651982}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243004622454717180, guid: a8d2f798fc082fd408df1fe76f6182f5,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 400d649a56d2a5b4896a0ce41a657003, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -67473,6 +67474,7 @@ GameObject:
   - component: {fileID: 718077211454510298}
   - component: {fileID: 2375122944036304742}
   - component: {fileID: 6959370321242375395}
+  - component: {fileID: 8817734416701629390}
   m_Layer: 5
   m_Name: Button_Yes
   m_TagString: Untagged
@@ -67594,6 +67596,39 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: FadeOutAudio_tuto_2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: TutorialFinish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8817734416701629390}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: projectm3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &5061037812258899138
@@ -67769,6 +67804,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 2375122944036304742}
+--- !u!114 &8817734416701629390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4441911220248853345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb84b9801d302a448833f1fb2f6166c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 11400000, guid: 057babd6f13132c449650d99e3c4e99c, type: 2}
+  startDelay: 0
 --- !u!1 &4450097761099025343
 GameObject:
   m_ObjectHideFlags: 0
@@ -72840,7 +72889,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5919230800813909702
 Transform:
   m_ObjectHideFlags: 0
@@ -90470,17 +90519,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4649160094681424072}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2154150274867395756}
         m_MethodName: SetLikeAbilityToText
         m_Mode: 1
@@ -90515,7 +90553,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2154150274867395756}
-        m_MethodName: FadeInAudio_1
+        m_MethodName: TutorialObjectOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -90818,6 +90856,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2ecd0658721124645a8fe718050d629a, type: 3}
   - {fileID: 21300000, guid: a3c7bee2e1102b947914ac166f438c09, type: 3}
   audioSource: {fileID: 4649160094681424072}
+  TutorialObject: {fileID: 4815456750770205810}
+  WeekTutorial: {fileID: 320367177004778024}
+  TutorialNoneObject: {fileID: 8721002019451923909}
+  TutorialAudioSource: {fileID: 2045883777282419541}
 --- !u!1 &6310674089674386504
 GameObject:
   m_ObjectHideFlags: 0
