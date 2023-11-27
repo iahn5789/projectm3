@@ -39,6 +39,30 @@ public class StoryBoardUIManager : MonoBehaviour
         }
 
     }
+    public void OnSelectedTutorial(Animator maskAnim)
+    {
+        if(!gameObject.activeInHierarchy)
+        {
+            return;
+        }
+        if (!SecretMessage.activeInHierarchy)
+        {
+            SecretMessage.SetActive(true);
+        }
+        anim.Play("Selected");
+        UpdateSecretMessageUI("Kang");
+        // SecretMessageAnimator.PlayInFixedTime(0);
+        // SecretMessageAnimator.Play("SecretMessage_In");
+        maskAnim.Play("SecretMessage_In_tuto");
+        SelectedOn.SetActive(true);
+        SelectedOff[0].SetActive(false);
+        SelectedOff[1].SetActive(false);
+        variableManager?.SetVariableValue("Selected", "Kang");
+    }
+    public void ResetSelected()
+    {
+        variableManager?.SetVariableValue("Selected", "");
+    }
     public void OnSelected(string OnName)
     {
         if(!gameObject.activeInHierarchy)
@@ -107,6 +131,34 @@ public class StoryBoardUIManager : MonoBehaviour
         bool isPurchased = buyStatus == "true";
         SecretMessageImage[trueIndex].SetActive(!isPurchased);
         SecretMessageImage[falseIndex].SetActive(isPurchased);
+    }
+    public void UpdateMarkerTutorial(string Nowname)
+    {
+        string[] nameList={"Kang", "Jin", "Sul"};
+
+        foreach(var name in nameList.Select((value, index) => (value, index)))
+        {
+            if(Nowname != name.value)
+            {
+                for (int i=0; i<3;i++)
+                {
+                    if (returnToSecretBuy(name.value,i+1) == "true")
+                    {
+                        SecretMessageMarkerImage[(i * 3) + name.index].SetActive(true);
+                    }
+                    else
+                    {
+                        SecretMessageMarkerImage[(i * 3) + name.index].SetActive(false);
+                    }
+                }
+            }
+            else
+            {
+                SecretMessageMarkerImage[(name.index)].SetActive(false);
+                SecretMessageMarkerImage[(name.index)+3].SetActive(false);
+                SecretMessageMarkerImage[(name.index)+6].SetActive(false);
+            }
+        }
     }
     public void UpdateMarker(string Nowname)
     {
