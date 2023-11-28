@@ -27,7 +27,7 @@ public class QuizSecretMessageManager : MonoBehaviour
                 SManimator.SetTrigger("Out");
                 SManimator.SetTrigger("In");
             }
-            else
+            else if (number != Clicknumber)
             {
                 SManimator.SetTrigger("In");
             }
