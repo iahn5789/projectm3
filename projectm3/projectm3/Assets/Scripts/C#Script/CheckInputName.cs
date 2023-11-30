@@ -8,6 +8,7 @@ using Naninovel.Commands;
 public class CheckInputName : MonoBehaviour
 {
     public Text nameTextField;
+    public GameObject DeleteText;
     Button button;
 
     private void Start()
@@ -39,8 +40,17 @@ public class CheckInputName : MonoBehaviour
             else{
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", "");
+                StartCoroutine(WaitAndActivateUI());
             }
         }
+    }
+    private IEnumerator WaitAndActivateUI()
+    {
+        DeleteText.SetActive(true);
+    
+        yield return new WaitForSeconds(2f);
+    
+        DeleteText.SetActive(false);
     }
 
     private void gotoGame()

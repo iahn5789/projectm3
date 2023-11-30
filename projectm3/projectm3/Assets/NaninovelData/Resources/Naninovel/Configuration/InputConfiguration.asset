@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: InputConfiguration
   m_EditorClassIdentifier: 
   SpawnEventSystem: 1
-  CustomEventSystem: {fileID: 0}
-  SpawnInputModule: 1
+  CustomEventSystem: {fileID: 2625473055988473671, guid: 1498b0519087e91439c8a505c3d7df97,
+    type: 3}
+  SpawnInputModule: 0
   CustomInputModule: {fileID: 0}
   TouchFrequencyLimit: 0.1
   TouchDistanceLimit: 25
+  InputActions: {fileID: 0}
   ProcessLegacyBindings: 1
   Bindings:
   - Name: Submit
@@ -37,7 +39,7 @@ MonoBehaviour:
     Swipes: []
   - Name: Continue
     AlwaysProcess: 0
-    Keys: 0d0000000f0100004a010000
+    Keys: 0d000000200000004a010000
     Axes:
     - AxisName: Mouse ScrollWheel
       TriggerMode: 2
@@ -49,7 +51,7 @@ MonoBehaviour:
       ActivateOnMove: 0
   - Name: Pause
     AlwaysProcess: 0
-    Keys: 7000000051010000
+    Keys: 
     Axes: []
     Swipes: []
   - Name: Skip
@@ -69,7 +71,7 @@ MonoBehaviour:
     Swipes: []
   - Name: ToggleUI
     AlwaysProcess: 0
-    Keys: 200000004d010000
+    Keys: 750000004d010000
     Axes: []
     Swipes:
     - Direction: 1
