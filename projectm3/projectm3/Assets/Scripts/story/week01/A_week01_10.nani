@@ -46,6 +46,14 @@ describe: 신경을 쓰지 않으려 해도 그럴 때마다 더욱 신경이 �
 describe: 나도 모르게 자꾸만 발을 맞추며 걷고 있었다.
 describe: 우리 둘 밖에 없는 조용한 복도.
 describe: 그 복도에 발걸음 소리가 조금씩 울려 퍼지고 있었다.
+@set Tutorial="First"
 @stopSfx 
 @stopBgm 
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@showUI TestSceneUI
+@processInput true
 @stop
