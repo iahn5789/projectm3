@@ -617,10 +617,6 @@ public class TestSceneUIManager : MonoBehaviour
         string jweek = variableManager?.GetVariableValue($"JinWeek");
         string sweek = variableManager?.GetVariableValue($"SulWeek");
 
-        //tutorialvarialble = "First";
-        //tutorialvarialble = "Last";
-        tutorialvarialble = "false";
-
         if (kweek == "1" && jweek == "1" && sweek == "1")
         {
             Debug.Log(tutorialvarialble);
