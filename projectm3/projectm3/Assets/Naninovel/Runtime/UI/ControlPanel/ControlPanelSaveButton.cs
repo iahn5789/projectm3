@@ -31,6 +31,7 @@ namespace Naninovel.UI
             var saveLoadUI = uiManager.GetUI<ISaveLoadUI>();
             var saveLoadUI_Load = uiManager.GetUI<ISaveLoadUI>();
             if (saveLoadUI is null) return;
+            if (!Engine.GetService<IInputManager>().ProcessInput) return;
 
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Save;
             saveLoadUI.Show();
