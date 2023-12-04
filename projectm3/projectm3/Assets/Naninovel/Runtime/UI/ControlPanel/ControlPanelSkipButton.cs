@@ -40,6 +40,7 @@ namespace Naninovel.UI
         }
         public void OnSkip ()
         {
+            if (!Engine.GetService<IInputManager>().ProcessInput) return;
             player.SetSkipEnabled(!player.SkipActive);
         }
     } 
