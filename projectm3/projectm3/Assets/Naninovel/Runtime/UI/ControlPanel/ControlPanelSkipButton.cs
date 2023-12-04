@@ -38,5 +38,9 @@ namespace Naninovel.UI
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
         }
+        public void OnSkip ()
+        {
+            player.SetSkipEnabled(!player.SkipActive);
+        }
     } 
 }
