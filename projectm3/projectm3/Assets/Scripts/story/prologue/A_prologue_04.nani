@@ -1,20 +1,39 @@
 # prologue_04
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back Road01 time:1 wait:true
+@processInput true
+@char jeon.body>body4,face>face2 wait:false
 jeon: 후후후...
 {Player_name}: 뭐야...
+@hideChars wait:false
 describe: 대용이와 함께 집에 가는 있는 중이었다.
 describe: 대용이는 어느샌가 이상한 포스터 하나를 손에 들고는 기분나쁘게 웃고 있었다.
+@char jeon.body>body4,face>face2 wait:false
 jeon: 우후후후...
 {Player_name}: (진짜 누가 변태 아니랄까봐...)
 {Player_name}: 뭘 그렇게 보고있는거야?
+@hideChars wait:false
+@char bigjeon.body>body4,face>face2 wait:false
 jeon: 아무것도 아니야...우후후후....
 {Player_name}: 어휴...
+@hideChars wait:false
 describe: 그 때.
 {Player_name}: 뭐야. 갑자기 왜 멈춰.
 describe: 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정으로 물어보았다.
+@char jeon.body>body2,face>face4 wait:false
 jeon: 지금 혹시 몇 시지?
 {Player_name}: 지금? 여섯 시.
-jeon: 뭐!!! 여!섯!시!?
+@spawn ShakeCamera wait:false
+@spawn ShakePrinter wait:false
+@hideChars wait:false
+@char bigjeon.body>body2,face>face3 wait:false
+jeon: <size=50>뭐</size><size=50>!</size><size=50>!</size><size=50>!</size> <size=50>여</size><size=50>!</size><size=50>섯</size><size=50>!</size><size=50>시</size><size=50>!</size><size=50>?</size>
 {Player_name}: 아 깜짝이야! 또 뭔데!
+@char bigjeon.body>body3,face>face3 wait:false
 jeon: 잠깐 이것 좀 들고 있어 봐!
 describe: 처절하게 여섯 시를 외치던 대용이는 포스터를 나에게 건내준 채 골목길로 사라져 버렸다.
 {Player_name}: 야! 어디가! 전대용!!!

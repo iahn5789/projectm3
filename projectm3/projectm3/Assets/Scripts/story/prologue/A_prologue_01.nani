@@ -29,8 +29,14 @@ MC: 오래 기다리셨습니다! 다음 차례는 드디어...
 ???: 러브...
 {Player_name}: 러브...
 MC: 러브크레센도입니다!
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:false
 @back ScClassRoom01 wait:false
-{Player_name}: 러브크레센도!
+@processInput true
+@spawn ShakePrinter wait:false
+@spawn ShakeCamera wait:false
+{Player_name}: <size=50>러</size><size=50>브</size><size=50>크</size><size=50>레</size><size=50>센</size><size=50>도</size><size=50>!</size>
 {Player_name}: ...
 describe: 어딘가 익숙한 풍경.
 describe: 조용하고 나른한 분위기.
@@ -43,7 +49,8 @@ describe: 주변을 둘러보고 싶었지만 그럴 용기조차 들지 않았�
 {Player_name}: 나... 자다가 수업시간에 소리친건가...?
 describe: 나는 고개를 들지조차 못하고 그저 책상에 파묻고 있었다.
 describe: 그 때.
-describe: 빢!
+@spawn ShakeCamera wait:false
+describe: <size=50>빢</size><size=50>!</size>
 describe: 누군가가 내 뒤통수를 시원하게 때렸다.
 describe: 반사적으로 고개를 들어 뒤를 바라보았다.
 describe: 등 뒤에는 무서울 정도로 온화한 얼굴의 선생님이 계셨다.
@@ -59,7 +66,7 @@ describe: 등 뒤에는 무서울 정도로 온화한 얼굴의 선생님이 계
 describe: 화끈거리는 뒤통수를 잡고 뒤로 걸어 나갔다.
 describe: 시선 사이사이로 반 친구들의 비웃는 얼굴이 보였다.
 describe: 화끈거리는 뒤통수보다 시선이 더 화끈거렸다.
-선생님: 빨리 빨리 안나가!!
+선생님: 빨리 안나가!!
 describe: 뒤로 나가 손을 들자 선생님은 다시 수업을 시작하셨다.
 describe: 하지만 수업이 다시 시작되었어도 반 친구들의 웃음은 멈출 줄 몰랐다.
 describe: 선생님이 있으니 대놓고 웃지는 못했지만 내 귀에는 충분히 들릴 정도였다.
