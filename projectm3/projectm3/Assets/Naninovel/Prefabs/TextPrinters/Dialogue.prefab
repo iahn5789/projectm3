@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 114653316575572746}
   - component: {fileID: 114172372010645744}
   - component: {fileID: 8562496282691939852}
+  - component: {fileID: 4559317640564415769}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -191,6 +192,82 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4119594405333609794}
   isMenuVisible: 0
+--- !u!114 &4559317640564415769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216038347459006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: a226e44435d8e7f458f3504f63fc7612,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4750409750797949344}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: deb78fb6-3427-4a4d-9287-743ac57f4332
+    m_ActionName: Naninovel/Save[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3370902968688856262}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0ba6c631-a7f5-46cb-b416-abdf0e72c78b
+    m_ActionName: Naninovel/Load[/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6884590911605556537}
+        m_MethodName: OnSkip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7254f119-c987-4976-8456-6ad71e734607
+    m_ActionName: Naninovel/Skip[/Keyboard/s]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Naninovel
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1398310929233790
 GameObject:
   m_ObjectHideFlags: 0
@@ -17038,12 +17115,6 @@ PrefabInstance:
     - {fileID: 114799799684431598, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
     - {fileID: 114499795578655216, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9ef02f710a46014a8a8584187c986f4, type: 3}
---- !u!224 &2639250122678751712 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224780725045092526, guid: f9ef02f710a46014a8a8584187c986f4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2863749366282629454}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2863058066451103132 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1606130285726930, guid: f9ef02f710a46014a8a8584187c986f4,
@@ -17062,6 +17133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &2639250122678751712 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224780725045092526, guid: f9ef02f710a46014a8a8584187c986f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2863749366282629454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5573172132447765456
 PrefabInstance:
   m_ObjectHideFlags: 0

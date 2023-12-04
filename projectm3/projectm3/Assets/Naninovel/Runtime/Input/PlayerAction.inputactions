@@ -1,15 +1,15 @@
 {
-    "name": "Naninovel",
+    "name": "PlayerAction",
     "maps": [
         {
-            "name": "Naninovel",
-            "id": "87c468cf-c4b9-46fc-8f83-69bc91afbbf7",
+            "name": "PlayerActions",
+            "id": "6a62917f-ece0-462c-82d5-ff41060d7540",
             "actions": [
                 {
-                    "name": "Save",
+                    "name": " Save",
                     "type": "Value",
-                    "id": "deb78fb6-3427-4a4d-9287-743ac57f4332",
-                    "expectedControlType": "Vector2",
+                    "id": "61016b84-8d4c-4668-abe1-0a5b1d883794",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -17,16 +17,7 @@
                 {
                     "name": "Load",
                     "type": "Value",
-                    "id": "0ba6c631-a7f5-46cb-b416-abdf0e72c78b",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Skip",
-                    "type": "Value",
-                    "id": "7254f119-c987-4976-8456-6ad71e734607",
+                    "id": "846c8857-52a4-4b9e-8220-dfd9fae0740f",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -36,18 +27,18 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "1ee046eb-7998-4059-93fd-a89b460cb2bb",
+                    "id": "57de6e00-8851-46ca-aa24-805022dd60cc",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Save",
+                    "action": " Save",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "8ee21407-0e84-4d3e-baec-101571d7758a",
+                    "id": "6bf30d97-c2d2-45b8-9d54-c2e577d9e983",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -55,20 +46,26 @@
                     "action": "Load",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "51d9c512-bb15-41ca-bb24-a6241baf0bd6",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Skip",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "PC",
+            "bindingGroup": "PC",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
 }

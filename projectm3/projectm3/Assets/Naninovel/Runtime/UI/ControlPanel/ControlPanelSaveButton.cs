@@ -24,5 +24,16 @@ namespace Naninovel.UI
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Save;
             saveLoadUI.Show();
         }
+        public void OnClick ()
+        {
+            uiManager.GetUI<IPauseUI>()?.Hide();
+
+            var saveLoadUI = uiManager.GetUI<ISaveLoadUI>();
+            var saveLoadUI_Load = uiManager.GetUI<ISaveLoadUI>();
+            if (saveLoadUI is null) return;
+
+            saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Save;
+            saveLoadUI.Show();
+        }
     } 
 }
