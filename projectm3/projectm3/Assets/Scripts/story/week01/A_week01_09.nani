@@ -1,43 +1,17 @@
 # week01_09
-@hideChars wait:false
-@char bigjin.body>body3,face>face4 wait:false
-@spawn ShakePrinter wait:false
-jin: 변태 너를 못 믿는다는 거지!
-sul: …오디션인가…
-@hideChars wait:false
-@char kang.body>body1,face>face1 wait:false
-kang: 조심하는 게 좋을걸? 너를 잘 아는 선생님이니까.
-{Player_name}: 누구신데 나를...?
-@hideChars wait:false
-@char bigkang.body>body1,face>face2 wait:false
-kang: 한갑수쌤!
-{Player_name}: 뭐…뭐?!
-@hideChars wait:false
-@char jin.body>body1,face>face2 position:0 wait:false
-jin: 너 갑수쌤 수업에서 소리 질렀다며? 선생님이 아-주 좋아하시던데?
-@hideChars wait:false
-@char kang.body>body2,face>face2 wait:false
-kang: 아냐. 너라고 말씀드리니까 엄청 좋아하시면서 재미있을 것 같다고 말씀하셨어!
-@hideChars wait:false
-describe: 여진이와 다영이의 말을 들으니 나는 그때의 일이 다시 떠올라 잠시 숨을 골랐다.
-describe: 아직 선생님들의 성함을 잘 모르지만, 단 한 명만큼은 정확하게 기억한다.
-{Player_name}: (그런데 그 이름이 왜 여기서 나오냐고...)
-@sfx Common_Door_Noke_01 volume:100 loop:false wait:false
-한갑수: 엣헴!
-@char bigkang.body>body1,face>face8 wait:false
-kang: 어? 선생님 언제 오셨어요?
-한갑수: 방금 막 올라왔다.
-한갑수: 무슨 이야기를 그리하는지 내가 들어오는 것도 모르고 이야기하더구나.
-@hideChars wait:false
-describe: 선생님과 눈이 마주쳤다. 등줄기에서 식은땀이 흐르는 듯했다.
-한갑수: 하하하! 이 녀석 수업 시간에 그리 졸더니 밤에 잠은 잘 자나?
-{Player_name}: 죄...송합니다...
-한갑수: 아무튼! 여진이의 말처럼 동아리 부원이 필요한 상황이지만,
-한갑수: 다영이의 말처럼 아무나 받아들일 수도 없는 노릇이지.
-한갑수: 따라서 평소 보던 오디션은 생략하는 대신 쪽지 시험 점수로 너를 판단하겠다.
-한갑수: 동아리 활동도 좋지만 우선 학생이잖아?
-한갑수: 상황이 상황인 만큼 학생의 본분인 공부로 너를 판단할 거야.
-한갑수: 내일이 쪽지 시험 날이지? {Player_name}는 쪽지 시험 점수를 매주 나에게 가져오도록.
 한갑수: 혹시 궁금한 거 있나?
 describe: ...
+한갑수: 그럼, 이야기는 전부 다 했으니 난 이만 간다. 수고들 해라.
+describe: 그렇게 자기 할 말만 열심히 하던 한갑수 선생님은 다시 교무실로 돌아가셨다.
+jin: 늘 자기 할 말만 하신다니까...
+kang: 잘 됐다. 그래도 오디션보다는 쪽지 시험이 좋지 않을까?
+describe: 확실히 오디션보다는 쪽지 시험이 나았다.
+describe: 만약 오디션을 봤다면...
+describe: 상상도 하기 싫었다.
+kang: 음... 그러고보니 성적은 어때...?
+{Player_name}: 전학와서 시험을 쳐 본 적이 없어서...
+kang: 아! 아직 쪽지시험도 안쳐봤겠구나!
+kang: 우리학교는 시험을 보는 게 조금 독특해서...
+kang: 아마 그동안 본 적 없는 시험이 될 수도 있을 것 같은데...
+kang: 혹시 궁금한거나 학교 생활 관련된 질문 같은거 있어?
 @goto A_week01_10.week01_10

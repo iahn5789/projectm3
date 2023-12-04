@@ -1,70 +1,41 @@
 # week01_06
-@processInput false
-@hideChars time:0.5 wait:false
-@hidePrinter  time:0.5 wait:false
-@back Black time:1 wait:true
-@back Black time:1 wait:true
-@sfx Amb_Shool_Club_01 volume:30 loop:true fade:2 wait:false
-@back ScClub01 time:1 wait:true
-@processInput true
-{Player_name}: 자…잘 부탁…드립니다…!!
-@char kang.body>body2,face>face2 wait:false
-kang: 좋아! 결정된 거다!
-jin: 정말로 동아리에 가입시킬거야? 진짜?
-@char kang.body>body2,face>face1 wait:false
-@sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:false wait:false
-kang: 나는 교무실 갔다 올 테니 이야기 좀 나누고 있어! 오늘 안에 등록해야 해!
-@hideChars wait:false
-@char jin.body>body1,face>face3 wait:false
-@sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false wait:false
-jin: 자...잠깐 기다려! 같이 가!
-@stopSfx Footsteps_Female_Wood_Run_01 fade:2 wait:false
-@hideChars wait:false
-@stopSfx Amb_Shool_Club_01 fade:1 wait:false
-describe: 도망치듯 나간 여진이를 진다영이 뒤쫓아 나갔다.
-@sfx Amb_Room_Tone_02 volume:60 loop:true fade:1 wait:false
-describe: 시끄럽기만 하던 동아리실에는 어느새 고요함이 맴돌았다.
-@sfx Amb_Cold_Wind_01 volume:80 loop:true fade:1 wait:false
-{Player_name}: ...
-@char sul.body>body1,face>face1 wait:false
-sul: …...
-{Player_name}: 안녕...하세요...?
-describe: 어색한 분위기 속 인사를 건네자, 고개를 살짝 돌렸다.
-@hideChars wait:false
-describe: 무언가 말을 하려나 싶었지만, 말 없이 쳐다만 보고 있었다.
-{Player_name}: ( 이 사람 무서워… )
-@processInput false
-@hideChars time:0.5 wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:1 wait:true
-@sfx Whoosh_Cartoon_Change_Page_01 volume:100 loop:false fade:2 wait:false
-@back Black time:1 wait:true
-@sfx Amb_Office_01 volume:70 loop:true fade:1 wait:false
-@back ScOffice01 time:1 wait:true
-@processInput true
-@char kang.body>body1,face>face5 wait:false
-kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
-@char kang.body>body1,face>face4 position:-4 tint:grey wait:false
-@char jin.body>body1,face>face4 position:4 wait:false
-jin: 아직 대화도 제대로 나눠보지도 못했고! 무엇보다 음흉해서 싫어!
-@char kang.body>body1,face>face5 position:-4 tint:#ffffff wait:false
-@char jin.body>body1,face>face4 position:4 tint:grey wait:false
-kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야?
-@char jin.body>body3,face>face4 position:4 tint:#ffffff wait:false
-@char kang.body>body1,face>face5 position:-4 tint:grey wait:false
-jin: 고집을 부리는 건 내가 아니라 너야 바보야!
-@hideChars wait:false
-한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
-@char kang.body>body1,face>face8 position:0 tint:white wait:false
-kang: 아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다!
-한갑수: 원래 있던 애들 나간 지 좀 되지 않았나? 이번에는 누가 들어온 거야?
-@char kang.body>body1,face>face1 wait:false
-kang: 선생님도 아실걸요? 그 수업 중에 이상한 소리 지른 애요!
-@char kang.body>body2,face>face2 wait:false
-kang: 전학을 온 지 얼마 안 돼서 밴드부가 있는지 몰랐는데 꼭 들어오고 싶다고 했어요!
-jin: 아니 언제 그랬어! 그런 말 없었잖아! 강여진 너…
-@char kang.body>body1,face>face5 wait:false
-kang: 들어오겠다고 말하는 거 너도 봤잖아! 맞아 아니야!
-@char kang.body>body1,face>face4 wait:false
-jin: 아니 그건 네가…
+kang: 조건…이요…?
+describe: 5분 정도 긴 침묵이 이어졌다.
+describe: 어색한 분위기가 이어지자, 침 삼키는 소리까지 들리는 듯 했다.
+describe: 이대로 가다간 동아리고 뭐고 그 전에 분위기에 깔려 죽을 것만 같았다.
+describe: 뭐라도 이야기 해야겠다는 생각이 들었다.
+{Player_name}: 저기… 이름이 설나희...
+sul: …
+{Player_name}: 혹시 몇 학년이세요…?
+sul: …3학년…
+{Player_name}: 누나라고 불러도 될까요…?
+sul: …응…
+{Player_name}: (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)
+describe: 드르륵.
+describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
+jeon: 실례합니다.
+jeon: 어? 대용이? 여긴 무슨 일이야?
+jeon: 오! {Player_name}! 결국 가입해 버린 거냐고?
+jeon: 별건 아니고 잠깐 필요한 게 있어서 찾아보러 왔지.
+jeon: 혹시 마이크 남는 거 있어?
+{Player_name}: 마이크? 나는 잘 모르겠는데?
+jeon: 아 그래? 흠…
+describe: 잠시 고민하던 대용이는 옆에 있던 나희누나에게 말을 건넸다.
+jeon: 헤헤 누나 안녕하세요! 혹시 마이크 남는 거 있나요?
+sul: 없어.
+jeon: 없어요?
+sul: 없어.
+jeon: 아 있었는데?
+sul: 그냥 없어.
+jeon: ...
+jeon: {Player_name}. 가볼 게 내일 봐!
+{Player_name}: 어...잘가!
+jeon: 대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라봤다.
+jeon: 나가는 뒷모습이 어쩐지 쓸쓸해 보였다.
+sul: …저기
+sul: 네 친구야…?
+{Player_name}: 네. 전학 와서 사귀게 된 친구예요.
+sul: …
+{Player_name}: 왜요...?
+sul: …기분나빠…
 @goto A_week01_07.week01_07

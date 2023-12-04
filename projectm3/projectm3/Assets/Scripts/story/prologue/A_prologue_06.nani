@@ -1,91 +1,50 @@
 # prologue_06
-@processInput false
-@hidePrinter  time:0.5 wait:true
-@back Black time:1 wait:true
-@back Black time:2 wait:true
-@sfx Amb_Room_Tone_02 volume:70 loop:true fade:3 wait:false
-@sfx Common_Morning_Bird_Twitter_01 volume:50 loop:true fade:3 wait:false
-@back HomeDirtyroom01 tint:white time:1 wait:true
-@processInput true
-describe: 아침의 시작을 알리는 새소리에 잠에서 깬 채 잠시 멍하니 누워있었다.
-describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
-describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
-@sfx Common_Text_Kick_01 volume:100 loop:false
-{Player_name}: !!!
-describe: 엄습해온 불안감에 나는 휴대폰을 꺼내 시간을 확인해 보았다.
-describe: 역시나 안 좋은 예감은 언제나 틀리지 않는다.
-describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 리가 없었다.
-엄마: 아들! 벌써 해 떴다 아침이야!
-{Player_name}: 네! 일어났어요!
-describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
-@sfx Footsteps_Female_Wood_Run_01 volume:80 loop:false wait:false
-@stopSfx Common_Morning_Bird_Twitter_01 fade:1 wait:false
-@processInput false
-@stopSfx Amb_Room_Tone_02 fade:3 wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:1 wait:true
-@back Road02 time:1
-@processInput true
-@bgm Common_Lobby_BGM_01 volume:80 loop:true fade:3 wait:false
-@sfx Amb_Road_01 volume:40 loop:true fade:3 wait:false
-	
-@char jeon.body>body4,face>face3 wait:false
-@spawn ShakeCharacter params:jeon wait:false
-jeon: 늦는구만 늦어! 이럼 내 루틴이 또 꼬이잖아!
-@char jeon.body>body4,face>face1 wait:false
-{Player_name}: 걱정하지 마 지각은 절대 안 할 테니까.
-@char jeon.body>body3,face>face1 wait:false
-jeon: 지각도 문제지만 어제 내가 말한 동아리는 생각해 봤어?
-@char jeon.body>body3,face>face5 wait:false
-{Player_name}: 그래도 역시 너희 동아리는 들어가지 않을 거야.
-@char jeon.body>body2,face>face1 wait:false
-jeon: 이런이런... 오늘까지 동아리에 들어가야 하니 기억하라고?
-{Player_name}: 알겠어. 늦겠다 어서 가자.
-@processInput false
-@stopSfx Amb_Road_01 fade:3 wait:false
-@hidePrinter  time:0.5 wait:false
-@sfx Footsteps_Male_Ctr_Walk_01 volume:60 loop:false
-@stopSfx Footsteps_Male_Ctr_Walk_01 fade:3 wait:false
-@hideChars time:0.5 wait:true
-@back Black time:1 wait:true
-@stopBgm Common_Lobby_BGM_01 fade:3 wait:false
-@back Black time:1 wait:true
-@back ScClassRoom01 time:1 wait:true
-@processInput true
-@bgm Our_Story_Common_Classroom_01 volume:70 loop:true fade:3 wait:false
-@sfx Amb_Classroom_Cutoff_01 volume:20 loop:true fade:3 wait:false
-jeon: 그러니까 나랑 같이 벼루에 먹을 갈고 운기조식을 하며...
-@char jeon.body>body1,face>face2 wait:false
-{Player_name}: 밀린 숙제를 하기 위해 쉬는 시간에도 책상에 앉아있었지만
-describe: 대용이는 반까지 찾아와 『과학서예부』 이야기를 멈추지 않았다.
-{Player_name}: 너희 동아리는 벼루에 먹이 아니고 마요네즈를 붓잖아....
-@char jeon.body>body2,face>face3 wait:false
-@spawn ShakeCharacter params:jeon wait:false
-jeon: 항상 마요네즈만 쓰는 건 아니라고? 가끔은 간장이나 초고추장 같은 것도 쓴다니깐!?
-@hideChars wait:false
-describe: 상상하기도 어려운 대용이의 동아리 활동 경험을 듣던 와중 교실 뒷문이 열렸다.
-@sfx Common_Sliding_door_open volume:100 loop:false
-describe: 드르륵- 쿵!
-???: 네가 그 전학생이구나!
-@stopSfx Common_Sliding_door_open fade:2 wait:false
-@processInput false
-@hidePrinter  time:0.5 wait:false
-@back Black time:1 wait:true
-@back Black time:1 wait:true
-@back CG01 time:1 wait:true
-@stopSfx Amb_Classroom_Cutoff_01 fade:3 wait:false
-@sfx Common_Beautiful_Bell_Tree_01 volume:70 loop:true fade:3 wait:false
-@processInput true
-@unlock CG/Kang01
-describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
-describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
-describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날라왔다.
-{Player_name}: 예쁘다...
-describe: 감탄하고 있는 사이 향기가 지나가 버렸다.
-@stopSfx Common_Beautiful_Bell_Tree_01 fade:3 wait:false
-@sfx Amb_Classroom_Cutoff_01 volume:20 loop:true fade:3 wait:false
-describe: 그 자리에는 처음 보는 여자애를 마주한 부끄러움만이 남아있었다.
-describe: 처음 보는 예쁜 여자애가 반까지 찾아와 나에게 말을 걸었다.
-describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있자
-describe:  눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다.
+describe: 대용이의 루틴 소동이 있고서 골목길을 따라 제법 걸었다.
+describe: 처음 와 보는 곳이라 길을 잘 알지 못했지만, 걷다 보니 집으로 어떻게 가야 할 지 알 것 같았다.
+{Player_name}: 맞다. 너 포스터 가져가야지.
+jeon: 포스터? 아아. 선물이야.
+{Player_name}: ...선물?
+jeon: 난 집에 많거든.
+{Player_name}: 그래... 고맙다...
+jeon: 천만의 말씀! 진정한 신사라면 선물을 아끼지 않는 법.
+{Player_name}: 그건 그렇고 넌 여기서 집에 어떻게 가?
+jeon: 거의 다 왔어. 저기 앞에서 오른쪽으로 가면 돼.
+jeon: 그러는 너는?
+{Player_name}: 나는 여기 처음 와 보긴 하는데...
+{Player_name}: 아마 저기서 왼쪽으로 가면 되지 않을까?
+jeon: 그렇구만. 그럼 조심히 들어가게!
+jeon: 내일 아침에 늦어서 내 루틴 망치지 말...
+{Player_name}: 나 먼저 갈게. 내일 봐!
+describe: 대용이의 말도 안되는 루틴 이야기가 다시 시작될 까 봐 나는 먼저 왼쪽으로 길을 꺾었다.
+describe: 대용이와 헤어지니 주변이 확실히 조용해졌다.
+describe: 차도, 사람도 많이 지나다니지 않는 골목길이라 더 조용한 건지도 몰랐다.
+describe: 주변이 갑작스럽게 조용해지니 오히려 어색한 기분이 들었다.
+describe: 왼쪽으로 가면 아는 길이 나올 까 했지만 조금 걸으니 다시 모르는 길이 나왔다.
+describe: 스마트폰을 꺼내 길을 확인하려 했으나 손에는 대용이가 사 준 다 마신 음료수 캔이 들려있었다.
+{Player_name}: 일단 이것부터 버리든가 해야지...
+describe: 주변을 둘러보니 다행히 조금 떨어진 곳에 쓰레기통이 보였다.
+describe: 휙!
+describe: 굳이 쓰레기통 근처로 가고 싶지 않아서 음료수 캔을 던졌다.
+describe: 하지만 음료수 캔은 쓰레기통 근처에서 아쉽게 떨어지고 말았다.
+{Player_name}: 오늘은 되는 일이 없네...
+describe: 하는 수 없이 직접 버리기 위해 쓰레기통 근처로 갔다.
+describe: 쓰레기통 근처에는 낡아 보이는 앨범이 땅바닥에 펼쳐져 있었다.
+{Player_name}: 앨범? 이런 곳에?
+describe: 땅바닥에 펼쳐져 있던 앨범을 주워서 살펴보았다.
+describe: 낡은 표지와 빛바랜 사진.
+describe: 군데군데 갈라진 가죽과 이미 쓸려버린 문양.
+describe: 한 눈에 봐도 앨범이 오래되었다는 걸 알 수 있었다.
+describe: 앨범 속 사진에서는 두 명의 남녀가 사이좋게 찍혀있었다.
+describe: 친구라고 보기에는 너무 다정해 보였다. 어쩌면 연인일지도 몰랐다.
+{Player_name}: 소중해 보이는 추억을 그냥 버리는구나.
+describe: 앨범을 다시 땅에 놓고 나서 음료수캔을 들어 쓰레기통 안에 넣었다.
+{Player_name}: 이제 집에 가야지...
+describe: 손을 한번 털고는 주머니 속 스마트폰을 꺼내 화면을 켰다.
+{Player_name}: 일단 지도부터 켜서...
+{Player_name}: ..?
+describe: 스마트폰은 아무리 건드려도 검은색 화면만 보여줄 뿐이었다.
+{Player_name}: 뭐야. 왜 안켜져.
+{Player_name}: 설마..!
+describe: 배터리가 나갔다.
+{Player_name}: 아오! 전대용!!
 @goto A_prologue_07.prologue_07

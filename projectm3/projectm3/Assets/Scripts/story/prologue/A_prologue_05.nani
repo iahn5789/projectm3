@@ -1,50 +1,31 @@
 # prologue_05
-@processInput false
-@hidePrinter  time:0.5 wait:true
-@back Black time:1 wait:true
-@bgm MySweethome_Scene_Home_01 volume:70 loop:true fade:3 wait:false
-@back Black time:2 wait:true
-@back HomeDirtyroomNight01 tint:white time:1 wait:true
-@sfx Amb_Office_01 volume:90 loop:true fade:3 wait:false
-@processInput true
-describe: 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
-describe: 피곤한 몸을 이끌고 곧장 방 안으로 들어갔다.
-describe: 아직 정리가 되지 않은 방이 눈에 들어오자 벌써 머리가 지끈거렸다.
-{Player_name}: 후... 오늘 하루 정말 기네. 빨리 씻고 자야지.
-@sfx Common_Door_Noke_01 volume:100 loop:false
-describe: 짐을 내려놓고 씻을 준비를 하려던 찰나 노크 소리가 들리고 문이 열렸다.
-@sfx Common_Door_Open_Squeak_01 volume:100 loop:false
-엄마: 아들 저녁 먹을 시간도 지났는데 학교에서 무슨 일 있었어?
-{Player_name}: 아...그게...친구랑 이야기하다가 늦었어요..
-엄마: 그래? 무슨 이야기를 이렇게 길게 했어?
-{Player_name}: 그냥.... 별 이야기는 아닌데..
-엄마: 아들. 엄마한테는 솔직하게 말해야지.
-{Player_name}: 그... 그러니까...그게......
-엄마: 빨리 말 안 해!!!
-아빠: 에헤이- 친구들끼리 놀다 보면 조금 늦을 수도 있지 왜 그래.
-아빠: 우리도 그랬는데 뭘-
-describe: 아빠와 눈이 마주치자 능글맞게 눈썹을 두 번 치켜올리셨다.
-describe: 아빠가 엄마를 자연스럽게 데리고 나가려는 도중 엄마가 멈춰 서며 말씀하셨다.
-엄마: 아들! 오늘은 꼭 방 정리하렴?
-{Player_name}: 네 알겠어요...
-describe: 여기저기 어지럽게 널브러진 이삿짐들이 눈에 띈다.
-describe: 이사를 온 지 일주일 정도 지났지만, 아직 정리를 다 못 끝내서 상자 안에 있는 짐들이 아직 많다.
-describe: 엄마가 정리하라고 하셨는데...
-@sfx Common_Body_Fall_Bed_01 volume:100 loop:false
-describe: 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.
-{Player_name}: 하자...
-{Player_name}: 내일 정리하는 걸로 하자...
-describe: 침대에 몸을  잡생각이 떠올랐다.
-describe: 동아리, 루틴, 전단지, 앨범, 짐정리...
-describe: 그 중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
-@stopBgm MySweethome_Scene_Home_01 fade:6 wait:false
-@stopSfx Amb_Office_01 fade:6 wait:false
-@back  tint:#ACACAC time:1 wait:false
-{Player_name}: 그 꿈은 뭘까.
-@back  tint:#7C7C7C time:1 wait:false
-{Player_name}: 하필이면 수업 시간에 부끄럽게...
-@back  tint:#626262 time:1 wait:false
-{Player_name}: 한 번도 해본 적이 없는데 그런 꿈을 꾸는 게 참 이상하네...
-@back  tint:#434343 time:1 wait:false
-{Player_name}: 차라리 오늘 있던 일이 꿈이었으면 좋겠는데...
+describe: 조금은 낯선 골목길
+describe: 전화도 받지 않는 대용이를 이곳에서 어떻게 찾아야 하나 고민하고 있을 때.
+jeon: {Player_name}! 따라와 준 거냐고!
+{Player_name}: 야! 어디 갔다 온 거야!
+describe: 갑자기 사라져버린 대용이는 어느새 양손에 음료수를 들고서 나타났다.
+jeon: 어디긴. 음료수 사러 갔다 왔지.
+{Player_name}: 음료...수?
+{Player_name}: 그러니까... 음료수 하나 사려고 소리까지 지르면서 사라진 거야?
+jeon: 성공한 사람들은 항상 자기만의 인생 루틴을 따른다고 하지..
+jeon: 나에게 있어 여섯 시는 음료수를 마셔야 하는 시간이야.
+{Player_name}: 그게 무슨 말도 안되는...
+{Player_name}: 잠깐. 여섯 시는 음료수를 마셔야 되는 시간이라고?
+{Player_name}: 그럼 각 시간마다 먹어야 되는 음식이 있는 거야?
+jeon: 당연하지!
+jeon: 아침, 점심, 저녁을 제외하고 여섯 시는 음료수! 여덟 시는 간식! 열 시는...
+describe: 대용이의 하루 루틴을 듣고 있자니 또다시 귀에서 피가 나는 것 같았다.
+describe: 혹시나 해서 만져보니 역시나 대용이의 침이었다.
+describe: 이대로 계속 가다가는 중이염에 걸릴 것만 같았다.
+jeon: 왜 그래? 무슨 일 있어?
+{Player_name}: 어... 귀에서 피가 나는 것 같아...
+jeon: 저런저런. 네 귀는 멀쩡하다고?
+{Player_name}: 지금은 그렇지.
+jeon: 아무튼 빨리 가자고.
+jeon: 일곱 시에는 집에서 밥 먹는 게 내 루틴이거든.
+{Player_name}: 루틴 이야기 한 번만 더 하면 나 먼저 집에 가버릴 거야.
+jeon: 어차피 먼저 가도 할 거 없을 텐데?
+{Player_name}: 할 게 없긴 왜 없어. 아직 이삿짐 정리도 안 끝났는데.
+{Player_name}: 오늘까지 정리 안 하면 엄마가 날 죽일 거야.
+jeon: 그래 그래. 아무튼 빨리 가자고.
 @goto A_prologue_06.prologue_06

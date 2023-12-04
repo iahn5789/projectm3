@@ -1,10 +1,7 @@
 # week01_01
-@sfx Amb_Classroom_Many_Footsteps_01 volume:50 loop:true fade:2 wait:false
-@bgm Our_Story_Common_Classroom_01 volume:80 loop:true fade:2 wait:false
 describe: 지루한 수업이 지나가고 어느덧 종례 시간이 다가왔다.
 선생님: 자 다들 오늘 하루 수고했고 내일 보자! 이상!
 일동: 수고하셨습니다!
-@sfx Exam_Desk_Draw_01 volume:70 loop:false wait:false
 describe: 종례가 끝남과 동시에 수십 명이 자리에서 일어났다.
 describe: 의자를 뒤로 밀고 일어서는 소리가 여러 곳에서 들려왔다.
 describe: 가방을 둘러메고 교실 밖으로 나가면서 각자 무엇을 할지 이야기하고 있었다.
@@ -13,29 +10,59 @@ describe: 다만 나에게 먼저 말을 거는 학생들은 없었다.
 describe: 전학을 온 지 일주일 정도 지났지만, 아직 대용이 말고는 친구가 없었기 때문이다.
 describe: 말도 없고 딱히 재미도 없는 전학생.
 describe: 그것도 수업 시간에 졸다가 소리를 지른 전학생.
-{Player_name}: (에휴. 그냥 빨리 집이나 가야지.)
+{Player_name}:  (에휴. 그냥 빨리 집이나 가야지.)
 describe: 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득 생각이 들었다.
-@processInput false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@processInput true
-@char kang.body>body1,face>face1 time:1.5 wait:false
-kang: (그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!)
-@processInput false
-@hideChars time:1 wait:false
-@hidePrinter  time:1 wait:true
-@back Black time:0.5 wait:true
-@back ScClassRoom01 time:0.5 wait:false
-@processInput true
-@sfx Common_Text_Kick_01 volume:80 loop:false wait:false
+kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
 {Player_name}: 잠깐만.
 {Player_name}: (생각해 보니 나도 학교 끝나고 보자는 사람이 있었잖아?)
 describe: 강여진...
 describe: 조금 뜬금없긴 했지만, 분명히 나에게 먼저 말을 걸었다.
 describe: ...왜 동아리 가입을 권유했는지는 알 수 없지만.
-{Player_name}: 어차피 동아리 가입도 해야 했으니 한번 가볼까...
-@stopSfx Amb_Classroom_Many_Footsteps_01 fade:1 wait:false
-@stopBgm Our_Story_Common_Classroom_01 fade:1 wait:false
-@stopSfx Amb_Shool_Club_01 fade:1 wait:false
+describe: 어차피 동아리 가입도 해야 했으니 한번 가볼까...
+describe: 밴드부는 4층 과학실 옆에 있다고 했었다.
+describe: 수업이 끝난 학교에서 학생들은 모두 집으로 가고 없었다.
+describe: 4층까지 가는 도중 단 한명의 학생도 만날 수 없었다.
+{Player_name}: 생각보다 높네..
+{Player_name}: 4층 과학실이... 여기서 어디로 가야 되더라?
+???: 안녕?
+{Player_name}: 우왁!!
+describe: 어느샌가 처음보는 여학생이 등 뒤에 서있었다.
+{Player_name}: 누...누...누구...세요..?
+???: 반가워.
+describe: 눈 앞의 여학생은 어딘지 모르게 감정이 없어 보이는 표정이었다.
+{Player_name}: 저...저요..?
+???: 내 이름은 라은이야. 너가 그 전학생이지?
+la: 신문부 부장을 맡고 있어. 우리 동갑이니까 말 편하게 해.
+describe: 신문..부?
+{Player_name}: 신문부 부장..?
+la: 응. 혹시 나에 대해 알고 있었어? 그런 표정인데.
+describe: 신문부 부장이라면...
+{Player_name}: 대용이...
+la: 응?
+{Player_name}: 대용이가 이야기 해줬어...
+la: 아...
+la: 전대용...
+describe: 라은이라는 여학생은 대용이 이야기가 나오자 순간적으로 표정이 변했다.
+la: 대용이도 우리 동아리 부원이야. 벌써 이야기 들었구나?
+la: 혹시 지금 어디가는 중이야?
+{Player_name}: 밴드 동아리... 가려고 하는데...
+la: 아...밴드...
+la: 흐음...
+la: 라은은 무언가 재밌는 생각이라도 난 듯한 표정을 짓고 있었다.
+la: 혹시 그러지말고 우리 신문부 들어올 생각 있어?
+{Player_name}: 신문부에..?
+la: 응. 너 지금 밴드부가 인원 부족인건 알고 있어?
+{Player_name}: 인원부족이라는게... 무슨 소리야?
+la: 쉽게 말해 최소 인원도 못채웠다는 소리지. 너 없으면 얼마 안가 없어질걸?
+{Player_name}: 그래서...
+describe: 어제 교무실에서 한 이야기가 그거였구나...
+la: 너가 들어갔다고 치자. 그렇다고 해도 원래 있던 사람 중 한명이라도 빠지면 다시 동아리에 들어가야 돼.
+la: 그럴바엔 그냥 처음부터 다른 동아리에 들어가는게 좋지 않을까?
+la: 네 친구 대..대..대용이도 있어.
+describe: 어쩐지 대용이의 이름을 말하기 싫어하는 것 같아 보였다.
+describe: 내가 무슨 일이라도 한건가?
+describe: 오늘만 들어서 처음 보는 여자애 두 명이 나에게 먼저 다가왔다.
+describe: 그것도 자기와 같은 동아리에 들어와 달라고.
+describe: 살짝 이상한 기분이 들긴 하지만...
+describe: 내 선택은...
 @goto A_week01_02.week01_02

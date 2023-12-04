@@ -1,55 +1,78 @@
 # prologue_07
-@processInput false
-@hidePrinter  time:0.5 wait:false
-@back Black time:1 wait:true
-@back Black time:1 wait:true
-@back ScClassRoom01 time:1 wait:true
-@processInput true
-???: 저기... 듣고 있는 거야?
-{Player_name}: 어...누구세요...?
-@sfx Common_String_Stab_Soft_01 volume:80 loop:false fade:0
-???: 러브크레센도!
-{Player_name}: ...진짜 학교에 소문이 다 난 거야?!
-@sfx Footsteps_Female_Wood_Walk_01 volume:80 loop:false fade:1 wait:false
-{Player_name}: 여학생은 나에게 볼일이 있다는 듯 교실로 들어와 내 앞에 멈춰선 채 말을 이어 나갔다.
-@char kang.body>body2,face>face1 wait:false
-@stopSfx _Female_Wood_Walk_01 fade:1 wait:false
-kang: 반가워! 내 이름은 강여진이라고 해!
-@char kang.body>body1,face>face2 wait:false
-kang: 네가 누군지 한번 보러왔어! 화제의 전학생이잖아!
-@char kang.body>body3,face>face7 wait:false
-kang: 전학생이면 아직 동아리에는 들어가지 않았을테고...
-@char kang.body>body2,face>face1 wait:false
-kang: 너 혹시 우리 동아리에 들어오지 않을래?
-{Player_name}: 어...갑자기...요? 혹시 이상한 곳은 아니죠?
-@char kang.body>body2,face>face8 wait:false
-{Player_name}: 마요네즈로 붓글씨를 쓴다던지...
-@char kang.body>body1,face>face2 wait:false
-kang: 하하! 우리 동아리는 이상한 곳 아니야!
-{Player_name}: ( 그래도 정상적인 동아리도 있어서 다행이다... )
-@char kang.body>body1,face>face1 wait:false
-kang: 우리 학교에 밴드부가 있다는 이야기는 들어본 적 있어?
-{Player_name}: 밴드...부?
-@hideChars wait:false
-@char bigkang.body>body2,face>face2 wait:false
-@spawn ShakeBackground wait:false
-kang: 응! 밴드부!
-{Player_name}: ( 윽... 가까워... )
-@char bigkang.body>body2,face>face1 wait:false
-kang: 우리는 네가 꼭 필요해!
-{Player_name}: 아무리 그래도 그렇게 갑작스럽게 말하면...
-@char bigkang.body>body3,face>face7 wait:false
-kang: 음...역시 생각할 시간이 필요한 건가?
-@char bigkang.body>body3,face>face1 wait:false
-kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
-@char bigkang.body>body1,face>face2 wait:false
-kang: 위치는 4층 과학실 옆에 있어! 동아리실 이름이 붙어있어서 찾기 쉬울 거야!
-@char bigkang.body>body2,face>face1 wait:false
-kang: 오늘 방과 후에 기다리고 있을 테니 이따 보는 걸로 하자!
-@char bigkang.body>body1,face>face5 wait:false
-kang: 늦으면 안 돼!
-@sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false wait:false
-@hideChars wait:false
-@stopSfx Footsteps_Female_Wood_Run_01 fade:2 wait:false
-describe: 일방적인 대화 끝에 여진이는 교실을 나갔다.
+describe: 꺼져버린 스마트폰과 어딘지 모르는 처음 보는 길.
+describe: 그 둘과 함께 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
+{Player_name}: 다녀왔습니다!
+describe: 피곤한 몸을 이끌고 곧장 방 안으로 들어갔다.
+describe: 방 안은 이사짐을 치우지 않아 어지럽기 짝이 없었다.
+describe: 지금 짐을 치우기엔 너무 피곤했다.
+describe: 교복을 채 벗지도 않은 채 곧장 침대에 쓰러지듯 누웠다.
+{Player_name}: (오늘 하루 정말 길다...)
+{Player_name}: (빨리 씻고 자야지.)
+describe: 똑똑
+describe: 그 떄 문에서 노크소리가 들렸다.
+엄마: 아들. 연락도 없이 왜 이렇게 늦었어?
+엄마: 엄마가 문을 열고 방 안으로 들어왔다.
+{Player_name}: 길을 잃어버렸는데 스마트폰 배터리가 다 닳아서...
+엄마: 그래? 조심해야지.
+엄마: 학교에서는 별 일 없었어?
+{Player_name}: 그...그게...
+엄마: ...별 일 있었어?
+{Player_name}: 별 일 까지는 아니고 그냥 살짝 해프닝 같은 거랄까..?
+엄마: 아들?
+{Player_name}: 네..?
+엄마: 빨리 말 안 해!!
+describe: 차마 학교에서 졸다가 소리쳤다고는 말하지 못하고 있었다.
+describe: 그걸 말했다간 진짜 쫓겨날 수도 있었다.
+describe: 그런데 그 때. 구원투수가 등장했다.
+아빠: 여보. 여기서 뭐 해?
+아빠: 아들! 언제 들어왔어?
+{Player_name}: 한 5분정도 됐어요...하하...
+아빠: 그래? 배고프겠네. 빨리 씻고 밥 먹으러 와.
+describe: 아빠는 엄마가 보지 못하게 능글맞게 눈썹을 두 번 치켜올리셨다.
+아빠: 여보는 나랑 같이 먼저 나갈까?
+엄마: 하하하. 당신도 참-
+describe: 아빠는 엄마를 데리고 나가면서 방 문을 닫고 나갔다.
+{Player_name}: 우..우웩...
+describe: 그래도 아빠가 타이밍을 잘 잡아줘서 자연스럽게 넘어갈 수 있었다.
+describe: 여기저기 어지럽게 널브러진 이삿짐들이 눈에 띈다.
+describe: 정리를 한다고는 했는데, 아직 정리를 다 못 끝내서 상자 안에 있는 짐들이 아직 많다.
+{Player_name}: 엄마가 짐 정리하라고 하셨는데...
+{Player_name}: 씻고 밥도 먹어야 되는데...
+describe: 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.
+{Player_name}: 하자...
+{Player_name}: 내일 정리하는 걸로 하자...
+describe: 침대에 눕자 온갖 잡생각이 떠올랐다.
+describe: 이상한 꿈, 동아리, 루틴, 전단지, 앨범...
+describe: 그 중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
+{Player_name}: ( 그 꿈은 뭘까. )
+{Player_name}: ( 하필이면 수업 시간에 부끄럽게... )
+{Player_name}: ( 차라리 오늘 있던 일이 꿈이었으면 좋겠는데... )
+{Player_name}: ...
+describe: 잠에서 깬 지는 조금 지났지만 멍 하니 누워있었다.
+describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
+describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
+{Player_name}: !!
+describe: 엄습해온 불안감에 나는 휴대폰을 꺼내 시간을 확인해 보았다.
+describe: 역시나 안 좋은 예감은 언제나 틀리지 않았다.
+describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 리가 없었다.
+엄마: 아들! 학교 안가?
+{Player_name}: 네! 지금 가요!
+describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
+jeon: 그래서 내가 어제 그걸 보는데...
+jeon: ...
+{Player_name}: ...
+jeon: {Player_name}!
+{Player_name}: 어..? 뭐야 갑자기.
+jeon: 지금 중요한 이야기 중인데 무슨 생각을 하는거야!
+{Player_name}: 아니. 생각해보니 어제 선생님이 동아리 들어가라고 했어가지고.
+{Player_name}: 어떤 동아리를 들어가야되나 생각중이었지...
+{Player_name}: 그런데 무슨 이야기 중이었지..?
+jeon: 어제 준 포스터 이야기 중이었잖아!
+jeon: 크흠... 아무튼 동아리가 고민이라 이거지?
+jeon: 그렇다면 우리 신문부에 들어오지 않겠는가?
+jeon: 신문부 부장이...
+{Player_name}: 절대 안갈거야.
+{Player_name}: 나 까지 변태 취급 받기는 싫어.
+describe: 드르륵-
+describe: 경찰서로 잡혀가기 딱 좋은 이야기를 듣던 도중 교실 뒷 문이 열렸다.
 @goto A_prologue_08.prologue_08

@@ -1,67 +1,27 @@
 # week01_07
-@char kang.body>body1,face>face1 wait:false
-한갑수: 뭐? 하하하! 걔가 동아리에 들어온다고?
-한갑수: 그놈 목소리 하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…
-한갑수: 여진이는 들어온다고 하고 다영이는 아니라고 말하고. 부원들끼리 합의된 거 맞아?
-@char kang.body>body1,face>face8 wait:false
-kang: 그…그건…
-@char kang.body>body1,face>face6 wait:false
-한갑수: 어쨌든 재미있을 것 같으니 그 친구가 동아리에 들어오는 걸 허락하마.
-한갑수: 단, 조건이 하나 있다.
-@hideChars wait:false
-@char bigkang.body>body2,face>face8 wait:false
-kang: 조건…이요…?
-@stopSfx Amb_Office_01 fade:1 wait:false
-@processInput false
-@hideChars time:0.5 wait:false
-@hidePrinter  time:0.5 wait:false
-@back Black time:1 wait:true
-@sfx Whoosh_Cartoon_Change_Page_01 volume:100 loop:false fade:2 wait:false
-@back Black time:1 wait:true
-@sfx Amb_Room_Tone_02 volume:80 loop:true fade:1 wait:false
-@back ScClub01 time:1 wait:true
-@processInput true
-describe: 5분 정도 긴 침묵이 이어졌다.
-describe: 어색한 분위기가 이어지자, 말을 걸어 보기 위해 이야기를 꺼냈다.
-{Player_name}: 저기… 이름이 설나희...
-@char sul.body>body1,face>face1 wait:false
-sul: …
-{Player_name}: 혹시 몇 학년이세요…?
-sul: …3학년…
-{Player_name}: 누나라고 불러도 될까요…?
-@char sul.body>body3,face>face1 wait:false
-sul: …응…
-@sfx Crow_Caw_01 volume:80 loop:false wait:false
-{Player_name}: (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)
-@stopSfx Crow_Caw_01 fade:1 wait:false
-@hideChars wait:false
-@sfx Common_Sliding_Door_Open_Short_02 volume:100 loop:false wait:false
-describe: 드르륵.
-describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
-@stopSfx Common_Sliding_Door_Open_Short_02 fade:1 wait:false
-@char jeon.body>body2,face>face1 wait:false
-jeon: 실례합니다.
-{Player_name}: 어? 대용이? 여긴 무슨 일이야?
-@char jeon.body>body2,face>face4 wait:false
-jeon: 오! {Player_name}! 결국 가입해 버린 거냐고?
-@char jeon.body>body1,face>face1 wait:false
-jeon: 별건 아니고 잠깐 필요한 게 있어서 찾아보러 왔지. 혹시 마이크 남는 거 있어?
-{Player_name}: 마이크? 나는 잘 모르겠는데?
-@char jeon.body>body4,face>face5 wait:false
-jeon: 아 그래? 흠…
-@hideChars wait:false
-describe: 잠시 고민하던 대용이는 옆에 있던 나희누나에게 말을 건넸다.
-@char jeon.body>body2,face>face2 wait:false
-jeon: 헤헤 누나 안녕하세요! 혹시 마이크 남는 거 있나요?
-@hideChars wait:false
-@char sul.body>body2,face>face1 wait:false
-sul: 없어.
-jeon: 없어요?
-sul: 없어.
-jeon: 아 있었는데?
-@hideChars wait:false
-@char bigsul.body>body2,face>face4 wait:false
-@spawn ShakeCharacter params:bigsul wait:false
-@sfx Common_Text_Kick_01 volume:100 loop:false wait:false
-sul: 그냥 없어.
+describe: 그때 여진이와 다영이가 동아리실로 돌아왔다.
+describe: 밝게 웃으며 한껏 들뜬 걸음걸이로 들어온 여진이와는 다르게
+describe: 다영이는 무언가 불만이 있는 듯 약간 흐느적거리며 들어왔다.
+kang: 축하해! 앞으로 동아리를 함께 하게 돼서 기뻐!
+jin: 그게 무슨 소리야! 아직 아니거든?
+kang: 난 선생님이 {Player_name}의 가입을 허락한 걸로 들었는걸?
+jin: 아직 아니거든? 듣고 싶은 대로만 듣는 것 같은데 내가 다시 이야기해 줘?!
+sul: ...후
+sul: 교무실 다녀온 거 맞아...?
+kang: 그럼!
+kang: 가입을 허락하는 대신 간단한 테스트를 볼 거라고 말씀하셨어.
+{Player_name}: 테스트…?
+kang: 응! 신입이 들어오는 건 좋지만 제대로 검증되지 않은 것도 사실이니까.
+jin: 다영이의 말도 일리가 있다고 하시더라고.
+kang: 그래서 일종의 테스트를 본다고 말씀하셨어!
+jin: 변태 너를 못 믿는다는 거지!
+jin: 조심하는 게 좋을걸? 너를 잘 아는 선생님이니까.
+{Player_name}: 누구신데 나를...?
+kang: 한갑수 선생님!
+{Player_name}: 뭐…뭐?!
+jin: 너 갑수쌤 수업에서 소리 질렀다며? 선생님이 아-주 좋아하시던데?
+describe: 여진이와 다영이의 말을 들으니 그때의 일이 다시 떠올라 잠시 숨을 골랐다.
+describe: 아직 전학온 지 일주일 정도 밖에 지나지 않아 선생님들의 성함을 잘 모른다.
+describe: 단 한 명을 제외하고는.
+{Player_name}: (그런데 그 이름이 왜 여기서 나오냐고...)
 @goto A_week01_08.week01_08

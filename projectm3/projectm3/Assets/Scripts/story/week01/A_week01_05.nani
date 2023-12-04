@@ -1,64 +1,26 @@
 # week01_05
-@char kang.body>body1,face>face5 wait:false
-kang: 그만! 그렇게 몰아세우면 멀쩡하던 사람도 쓰러지겠어!
-kang: 우리 둘이 싸우고 있으니까 민망해서 들어오지도 못하고 밖에 서 있었던 거 아니야!
-sul: …그건 맞지…
-@hideChars wait:false
-@char jin.body>body1,face>face4 wait:false
-jin: 그럼 노크한다던가 인기척을 냈으면 우리도 대화를 멈췄을 거 아니야!
-sul: …그것도 맞지…
-@char jin.body>body3,face>face2 wait:false
-jin: 애초에 누군지도 모르는 사람을 불러서 대뜸 가입시킨다는 게 말이 돼?
-jin: 이 변태한테 뭘 시킬 건데!
-kang: 그...그건...
-@char jin.body>body1,face>face4 wait:false
-jin: 생각해 본 적도 없지?
-@hideChars wait:false
-@char kang.body>body2,face>face5 wait:false
-@spawn ShakeBackground wait:false
-kang: 보...보컬을 맡길 생각이야!
-kang: 아마 맡겨놓으면 제대로 할 수 있을거야!
-@hideChars wait:false
-@char bigjin.body>body3,face>face4 wait:false
-@spawn ShakeBackground wait:false
-jin: 말도 제대로 못 하는 바보한테 무슨 보컬을 맡기는데!
-@hideChars wait:false
-describe: 둘은 잠시 소강상태가 되는 듯하더니 어느새 다시 싸울 듯이 이야기를 이어 나가기 시작했다.
-describe: 그때 옆에서 조용히 있던 푸른 머리 여학생이 내게 다가왔다.
-@char sul.body>body3,face>face1 wait:false
-sul: …잘할 수 있겠어…?
-{Player_name}: 어…네? 어떤 거 말씀이세요…?
-sul: …보컬…
-{Player_name}: 아…음…그러니까…
-describe: 그 순간 여진이가 하던 말을 멈추고 내게 다가왔다.
-@stopSfx Amb_Shool_Club_01 fade:2 wait:false
-@processInput false
-@sfx Common_Beautiful_Bell_Tree_01 volume:80 loop:true fade:2 wait:false
-@hideChars time:0.5 wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:1 wait:true
-@back Black time:1 wait:true
-@back CG02 time:1 wait:true
-@processInput true
-@unlock CG/Kang02
-@sfx Emotion_Heart_Beat_01 volume:60 loop:true wait:false
-describe: 여진이는 연한 갈색 머리를 휘날리며 내 앞에 서 있었다.
-describe: 고개를 살짝 내리자, 눈이 마주쳤다.
-describe: 머리카락과 비슷한 연한 갈색 눈동자.
-@sfx Common_Cloth_movement_02 volume:100 loop:false wait:false
-describe: 여진이는 두 손을 앞으로 모은 채 내 손을 붙잡았다.
-describe: 워낙 빠르게 다가온지라 바람에 휘날린 머리카락이 아직 떨어지고 있었다.
-@sfx Common_Clock_Tictok_Slow_Highcut_01 volume:100 loop:true wait:false
-describe: 머리카락이 천천히 떨어지고 있는 건지 시간이 느리게 흘러가는 건지.
-describe: 어쩌면 심장이 빨리 뛰는 바람에 시간이 느리게 흘러간다 느끼고 있을지도 모르겠다.
-describe: 무언가를 말하려는 듯 여진이의 입술이 서서히 움직이기 시작했다.
-kang: 할거지?
-{Player_name}: (여자의 손…엄마 손을 제외하고는 처음 잡아보는데…)
-{Player_name}: (이렇게 예쁜 여자애가 내 손을 잡았어…따뜻하고…)
-@stopSfx Emotion_Heart_Beat_01 wait:false
-@stopSfx Common_Clock_Tictok_Slow_Highcut_01 wait:false
-@sfx Common_Emotion_Question_01 volume:80 loop:false wait:false
-{Player_name}: ( …거칠어? )
-@stopSfx Common_Emotion_Question_01 fade:1 wait:false
-describe: 무엇 하나 알지도 못한 채 이렇게 결정해도 되는 건가 싶었지만...
+kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
+jin: 아직 대화도 제대로 나눠보지도 못했고! 무엇보다 음흉해서 싫어!
+kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야?
+jin: 고집을 부리는 건 내가 아니라 너야 바보야!
+한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
+kang: 아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다!
+한갑수: 신입..? 뭐야. 진짜로 찾아온거야?
+kang: 선생님도 아실걸요? 그 수업 중에 이상한 소리 지른 애요!
+kang: 전학을 온 지 얼마 안 돼서 밴드부가 있는지 몰랐는데 꼭 들어오고 싶다고 했어요!
+jin: 아니 언제 그랬어! 그런 말 없었잖아! 강여진 너…
+kang: 들어오겠다고 말하는 거 너도 봤잖아! 맞아 아니야!
+jin: 아니 그건 네가…
+한갑수: 그래? 어제 얘기했을 땐... 흐음...
+한갑수: 그놈 목소리 하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…
+한갑수: 여진이는 들어온다고 하고 다영이는 아니라고 말하고.
+한갑수: 누구 말이 맞는거야? 부원들끼리 합의된 거 맞아?
+kang: 그…그건…
+kang: 어쨌든 본인 의사가 가장 중요하니까요! 직접 들어온다고 했어요!
+한갑수: 본인이 직접 들어오겠다고 했으면 뭐...
+한갑수: 그래. 가입을 허락하마.
+jin: 으...
+kang: 아싸! 그럼 저희 인원 채운거죠?
+한갑수: 한국말은 끝가지 들어야지.
+한갑수: 대신 조건이 하나 있다.
 @goto A_week01_06.week01_06

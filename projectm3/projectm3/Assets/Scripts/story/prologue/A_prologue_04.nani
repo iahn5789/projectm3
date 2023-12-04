@@ -1,49 +1,39 @@
 # prologue_04
-@hideChars
-describe: 겨우 대용이의 이야기를 끝낸 나는 주변에 적당한 쓰레기통을 찾았다.
-describe: 조금 떨어져 있는 곳에 쓰레기통이 보였다.
-@spawn ShakeBackground wait:false
-@sfx Whoosh_Paper_Cartoon_01 volume:100 loop:false
-describe: 휙!
-describe: 굳이 근처까지 가고 싶지 않아서 전단지를 던졌지만,
-@sfx Common_Paper_Drop_01 volume:100 loop:false
-describe: 힘이 부족했는지 중간에 떨어지고 말았다.
-{Player_name}: 오늘은 되는 일이 없네...
-describe: 하는 수 없이 직접 버리기 위해 쓰레기통 근처로 갔다.
-describe: 쓰레기통 근처에는 낡아 보이는 앨범이 땅바닥에 펼쳐져 있었다.
-{Player_name}: 앨범? 이런 곳에?
-describe: 땅바닥에 펼쳐져 있던 앨범을 주워서 살펴보았다.
-@sfx Common_Beautiful_Bell_Tree_01 volume:100 loop:false
-describe: 낡은 표지와 빛바랜 사진.
-describe: 누가 봐도 앨범이 오래됐다고 느껴지기에 충분했다.
-describe: 사진 속에는 두 명의 남녀가 사이좋게 찍혀있었다.
-describe: 친구라고 보기에는 너무 다정해 보였고, 어쩌면 연인일지도 몰랐다.
-{Player_name}: 소중해 보이는 추억을 그냥 버리는구나.
-jeon: 뭐해! 빨리 와!
-@stopSfx Common_Beautiful_Bell_Tree_01 fade:2
-{Player_name}: 어! 지금 갈게!
-@sfx Common_Trash_Can_01 volume:100 loop:false
-describe: 손에 들고 있던 앨범을 쓰레기통에 같이 버린 뒤 대용이에게 향했다.
-@char jeon.body>body1,face>face1 wait:false
-jeon: 이런이런. 이러면 내 루틴에 지장이 생긴다고?
-{Player_name}: 루틴 이야기 한 번만 더 하면 나 먼저 집에 가버릴 거야.
-@char jeon.body>body1,face>face4 wait:false
-jeon: 어차피 먼저 가도 할 거 없을 텐데?
-{Player_name}: 할 게 없긴 왜 없어. 아직 이삿짐 정리도 안 끝났는데.
-{Player_name}: 오늘까지 정리 안 하면 엄마가 날 죽일 거야.
-@char jeon.body>body2,face>face1 wait:false
-jeon: 그래 살아서 보자고. 내일 아침에 늦어서 내 루틴 망치지 말...
-@stopSfx Amb_Road_01 fade:5 wait:false
-{Player_name}: 나 먼저 갈게.
-@char jeon.body>body4,face>face1 wait:false
-@stopBgm Common_Lobby_BGM_01 fade:5 wait:false
-jeon: 동아리 꼭 생각해보고!
-@hideChars wait:false
-describe: 대용이와 헤어지니 주변이 확실히 조용해졌다.
-describe: 차도, 사람도 많이 지나다니지 않는 골목길이라 더 조용한 건지도 몰랐다.
-describe: 주변이 갑작스럽게 조용해지니 오히려 어색한 기분이 들었다.
-describe: 아직은 익숙하지 않은 거리를 뒤로한 채 집을 향해 걸어갔다.
-describe: 그 후 10분 정도 걸었을까
-@back  tint:#7C7368 time:2 wait:false
-describe: 어느새 하늘은 검은색으로 변하고 있었다.
+jeon: 후후후...
+{Player_name}: 뭐야...
+describe: 대용이와 함께 집에 가는 있는 중이었다.
+describe: 대용이는 어느샌가 이상한 포스터 하나를 손에 들고는 기분나쁘게 웃고 있었다.
+jeon: 우후후후...
+{Player_name}: (진짜 누가 변태 아니랄까봐...)
+{Player_name}: 뭘 그렇게 보고있는거야?
+jeon: 아무것도 아니야...우후후후....
+{Player_name}: 어휴...
+describe: 그 때.
+{Player_name}: 뭐야. 갑자기 왜 멈춰.
+describe: 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정으로 물어보았다.
+jeon: 지금 혹시 몇 시지?
+{Player_name}: 지금? 여섯 시.
+jeon: 뭐!!! 여!섯!시!?
+{Player_name}: 아 깜짝이야! 또 뭔데!
+jeon: 잠깐 이것 좀 들고 있어 봐!
+describe: 처절하게 여섯 시를 외치던 대용이는 포스터를 나에게 건내준 채 골목길로 사라져 버렸다.
+{Player_name}: 야! 어디가! 전대용!!!
+{Player_name}: 진짜 이상한놈이라니까..
+{Player_name}: 근데 이건 뭐지...?
+describe: 대용이가 보고 있던 이상한 포스터.
+describe: 이상한 포스터는 다름 아닌 음악 콘서트 포스터였다.
+describe: 장소, 시간, 출연진 등등 콘서트에 관한 내용이 적혀있었다.
+{Player_name}: 뭐야. 의외네.
+{Player_name}: 대용이가 이런 콘서트에 관심이 있었나?
+{Player_name}: 아니면 설마...
+describe: 나는 포스터의 가운데에 있는 사람한테 눈이 갔다.
+describe: 얼굴을 드러내지 않는 오토바이 헬멧.
+describe: 그 밑으로 보이는 트레이닝복과...
+describe: 그리고...
+{Player_name}: 어휴... 그러면 그렇지.
+{Player_name}: 그나저나 얜 어딜 간거야?
+describe: 여섯시를 처절하게 외치며 사라진 대용이는 5분이 넘게 돌아오지 않고 있었다.
+describe: 전화를 해 보았지만 역시 받지 않았다.
+{Player_name}: 후... 따라가 봐야 되나?
+describe: 나는 손에 들고 있는 포스터를 가방 안에 넣고는 대용이가 사라진 골목길로 들어갔다.
 @goto A_prologue_05.prologue_05
