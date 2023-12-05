@@ -35,20 +35,23 @@ jeon: <size=50>뭐</size><size=50>!</size><size=50>!</size><size=50>!</size> <si
 {Player_name}: 아 깜짝이야! 또 뭔데!
 @char bigjeon.body>body3,face>face3 wait:false
 jeon: 잠깐 이것 좀 들고 있어 봐!
+@hideChars wait:false
 describe: 처절하게 여섯 시를 외치던 대용이는 포스터를 나에게 건내준 채 골목길로 사라져 버렸다.
 {Player_name}: 야! 어디가! 전대용!!!
 {Player_name}: 진짜 이상한놈이라니까..
 {Player_name}: 근데 이건 뭐지...?
+@back Minicut_poster id:Minicut wait:false scale:0.5 visible:true
 describe: 대용이가 보고 있던 이상한 포스터.
 describe: 이상한 포스터는 다름 아닌 음악 콘서트 포스터였다.
 describe: 장소, 시간, 출연진 등등 콘서트에 관한 내용이 적혀있었다.
 {Player_name}: 뭐야. 의외네.
 {Player_name}: 대용이가 이런 콘서트에 관심이 있었나?
 {Player_name}: 아니면 설마...
-describe: 나는 포스터의 가운데에 있는 사람한테 눈이 갔다.
+describe: 포스터의 가운데에 있는 사람한테 눈이 갔다.
 describe: 얼굴을 드러내지 않는 오토바이 헬멧.
 describe: 그 밑으로 보이는 트레이닝복과...
 describe: 그리고...
+@back Minicut_poster id:Minicut wait:false scale:0.5 visible:false
 {Player_name}: 어휴... 그러면 그렇지.
 {Player_name}: 그나저나 얜 어딜 간거야?
 describe: 여섯시를 처절하게 외치며 사라진 대용이는 5분이 넘게 돌아오지 않고 있었다.

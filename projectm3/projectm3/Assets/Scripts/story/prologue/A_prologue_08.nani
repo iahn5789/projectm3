@@ -1,5 +1,12 @@
 # prologue_08
 ???: 네가 그 전학생이구나!
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Kang01 time:0.5 wait:true tint:white
+@unlock CG/Kang01 wait:false
+@processInput true
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
 describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
 describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날라왔다.
@@ -9,52 +16,96 @@ describe: 그 자리에는 처음 보는 여자애를 마주한 부끄러움만�
 describe: 처음 보는 예쁜 여자애가 반까지 찾아와 나에게 말을 걸었다.
 describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있자
 describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다.
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClassRoom01 time:0.5 wait:true
+@processInput true
+@char kang.body>body1,face>face8 wait:false
 ???: 저기... 듣고 있는 거야?
 {Player_name}: 어...누구세요...?
+@char kang.body>body1,face>face2 wait:false
 ???: 러브크레센도!
 {Player_name}: ( ...진짜 학교에 소문이 다 난 거야? )
 describe: 여학생은 나에게 볼일이 있다는 듯 교실로 들어와 내 앞에 멈춰선 채 말을 이어 나갔다.
+@char kang.body>body2,face>face1 wait:false
 kang: 반가워! 내 이름은 강여진이라고 해! 밴드부의 부장을 맡고있어!
+@char kang.body>body2,face>face2 wait:false
 kang: 네가 누군지 한번 보러왔어!
 {Player_name}: 저...아세요?
+@char kang.body>body3,face>face2 wait:false
 kang: 그럼. 화제의 전학생이잖아!
 kang: 그리고 우리 어제 교무실에서 잠깐 마주쳤잖아.
 {Player_name}: ( 그러고보니... )
+@char kang.body>body3,face>face1 wait:false
 kang: 바로 본론부터 얘기할게.
+@char kang.body>body2,face>face1 wait:false
 kang: 너 혹시 우리 동아리에 들어오지 않을래?
 {Player_name}: 어...갑자기...요?
+@char kang.body>body2,face>face7 wait:false
 kang: 조금 갑작스러운가..?
+@char kang.body>body1,face>face7 wait:false
 kang: 그럼 우리 학교에 밴드부가 있다는 이야기는 들어본 적 있어?
 {Player_name}: 밴드...부?
+@char kang.body>body2,face>face1 wait:false
 kang: 응! 밴드부!
 {Player_name}: ( 윽... 가까워... )
 kang: 전학생이라 아직 동아리에 들어가지 않았으면 꼭 우리 동아리에 들어왔으면 해서.
+@char kang.body>body2,face>face2 wait:false
 kang: 우리는 네가 꼭 필요해!
 {Player_name}: 아무리 그래도 그렇게 갑작스럽게 말하면...
+@char kang.body>body3,face>face7 wait:false
 kang: 음...역시 생각할 시간이 필요한 건가?
+@char kang.body>body3,face>face6 wait:false
 kang: 아니면 혹시 들어가고 싶은 동아리가 있는거야?
 {Player_name}: 그런건 딱히 없는데...
+@char kang.body>body3,face>face1 wait:false
 kang: 잘됐다!
 kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
+@char kang.body>body1,face>face1 wait:false
 kang: 위치는 4층 과학실 옆에 있어! 동아리실 이름이 붙어있어서 찾기 쉬울 거야!
 kang: 오늘 방과 후에 기다리고 있을 테니 이따 보는 걸로 하자!
+@char kang.body>body2,face>face2 wait:false
 kang: 늦으면 안 돼!
+@hideChars wait:false
 describe: 일방적인 대화 끝에 여진이는 교실을 나갔다.
+@char jeon.body>body2,face>face2 wait:false
 jeon: 오...강여진...
 {Player_name}: 뭐야? 아는 사람이야?
-jeon: 그럼! 당연히 알고 있지!
+@char jeon.body>body2,face>face3 wait:false
+@spawn ShakeCamera wait:false
+jeon: <size=50>그</size><size=50>럼</size><size=50>!</size><size=50> </size><size=50>당</size><size=50>연</size><size=50>히</size><size=50> </size><size=50>알</size><size=50>고</size><size=50>있</size><size=50>지</size><size=50>!</size>
 jeon: 도내 최상위S급쿨뷰티미녀!
+@spawn ShakePrinter wait:false params:,0
+@spawn ShakeCharacter wait:false params:,0
 jeon: 금발태닝양아치선배님도절대로가질수없던마성의매력을소유한2학년최고미녀게다가샴푸는무엇을사용하는지머리향기는말로설명이되지않지아프로디테의질투를한몸에받는저몸매는쓰리사이즈160에4......
+@despawn ShakePrinter wait:false params:,0
+@despawn ShakeCharacter wait:false params:,0
 {Player_name}: 그만! 거기까지!
+@char jeon.body>body2,face>face1 wait:false
 jeon: 엣헴...아무튼 그런 사람이 너랑 말을 하게 될 줄이야.
+@char jeon.body>body4,face>face2 wait:false
 jeon: 이 자식 대단한걸?
 {Player_name}: 그러면 그렇게 잘 아는 녀석이 아까는 왜 조용했을까?
+@char jeon.body>body1,face>face5 wait:false
 jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
+@char jeon.body>body4,face>face3 wait:false
 jeon: 더는 묻지마라!
 describe: ♪~♪~♪~♪♪~♬
+@char jeon.body>body4,face>face1 wait:false
 jeon: 수업 종 울렸네. 난 간다!
+@hideChars wait:false
 describe: 대용이가 교실에서 나가고 잠시 후 선생님이 교실로 들어오셨다.
 describe: ( 밴드부라... 너무나 갑작스럽게 초대받았는데... )
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back ScClassRoom01 time:1 wait:true
+@processInput true
 describe: 지루한 수업이 지나가고 어느덧 종례 시간이 다가왔다.
 선생님: 자 다들 오늘 하루 수고했고 내일 보자! 이상!
 일동: 수고하셨습니다!
@@ -68,7 +119,21 @@ describe: 말도 없고 딱히 재미도 없는 전학생.
 describe: 그것도 수업 시간에 졸다가 소리를 지른 전학생.
 {Player_name}:  (에휴. 그냥 빨리 집이나 가야지.)
 describe: 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득 생각이 들었다.
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@processInput true
+@char kang.body>body3,face>face1 wait:false
 kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClassRoom01 time:0.5 wait:true
+@processInput true
 {Player_name}: 잠깐만.
 {Player_name}: (생각해 보니 나도 학교 끝나고 보자는 사람이 있었잖아?)
 describe: 강여진...
