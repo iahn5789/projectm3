@@ -22,4 +22,7 @@ kang: 우리학교는 시험을 보는 게 조금 독특해서...
 kang: 아마 그동안 본 적 없는 시험이 될 수도 있을 것 같은데...
 @char kang.body>body1,face>face1 wait:false
 kang: 혹시 궁금한거나 학교 생활 관련된 질문 같은거 있어?
-@goto A_week01_10.week01_10
+@hidePrinter wait:false
+@hideChars wait:false
+@choice "쪽지시험이고 뭐고 아무것도 모르겠어." goto:A_week01_10.week01_10
+@choice "괜찮아. 대충 어떤 느낌인지 알겠더라." goto:A_week01_tutorial.week01_tutorial
