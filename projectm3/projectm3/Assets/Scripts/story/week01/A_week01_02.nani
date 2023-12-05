@@ -1,11 +1,23 @@
 # week01_02
 {Player_name}: 제안은 고맙지만 밴드부에 들어갈게!
 {Player_name}: 선약이기도 하고... 지금도 기다리고 있을텐데.
+@char la.body>body3,face>face5 wait:false
 la: 그래..? 그럼 어쩔 수 없지.
-la: 즐거운 동아리 생활 하길 바랄게. 나중에 또 봐!
+@char la.body>body3,face>face6 wait:false
+la: 즐거운 동아리 생활 하길 바랄게.
+@char la.body>body1,face>face2 wait:false
+la: 나중에 또 봐!
+@hideChars wait:false
 describe: 라은은 살짝 미소를 보이며 계단을 내려갔다.
 describe: 후... 어제 오늘 정말 별 일이 다 있네.
-describe: 여진이가 기다리겠다. 빨리 가자.
+describe: 늦겠다. 빨리 가자.
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScLobby01 time:0.5 wait:true
+@processInput true
 describe: 밴드부가 있다는 4층에 도착하였다.
 describe: 수업 때문에 과학실은 몇 번 간 적이 있었지만, 그 옆에 밴드부가 있는 줄은 몰랐다.
 describe: 가뜩이나 과학실로 가기 위해선 한참을 걸어가야 했는데
@@ -13,6 +25,7 @@ describe: 그 옆의 밴드부는 찾아오는 학생들이 있을까 하는 생
 describe: 방과 후 시간, 학생들이 빠져나간 학교는 이상할 정도로 조용했다.
 describe: 아무도 없는 복도를 지나쳐 밴드부 앞으로 걸어갔다.
 describe: 입구에 도착하자 밴드부라고 적힌 나무로 된 작은 팻말이 보였다.
+@back Minicut_sign id:Minicut wait:false scale:0.5 visible:true
 describe: 팻말은 색도 바래고 몇 군데 갈라진 부분도 있었다.
 describe: 밴드부라는 글자 때문에 오히려 팻말이 더 처량하게 보였다.
 describe: 오히려 없는 게 더 나아 보일 정도였다.
@@ -21,6 +34,7 @@ describe: 손잡이가 약간 부서져 있었다.
 {Player_name}: (이게 동아리실이라고? 창고도 이거보단 깔끔할 거 같은데?)
 {Player_name}: (이거 알고 보니 이상한 동아리 아니야?)
 {Player_name}: ( ...그냥 지금이라도 신문부에 들어가야 되나..? )
+@back Minicut_oldalbum id:Minicut wait:false scale:0.5 visible:false
 describe: 고민하고 있던 도중 안에서 소리가 들려왔다.
 ???: 언제까지 기다리고만 있어야 하는 건데!
 ???: 난 누군지도 모르는 사람이 우리 동아리에 들어오는 건 반대야!
@@ -33,5 +47,11 @@ describe: 문 틈 너머로 보이는 여진이는 누군가와 말다툼을 하
 describe: 한껏 화가 난 듯한 분홍 머리 여학생이 고개를 돌렸고 눈이 마주쳤다.
 describe: 아주 짧은 눈빛 교환이 이어졌다.
 describe: 그 후 여학생의 표정이 순식간에 굳어갔다.
-???: 꺄아아아아-!
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@processInput true
+???: <size=50>꺄</size><size=50>아</size><size=50>아</size><size=50>아</size><size=50>아</size><size=50>-</size><size=50>!</size>
 @goto A_week01_03.week01_03

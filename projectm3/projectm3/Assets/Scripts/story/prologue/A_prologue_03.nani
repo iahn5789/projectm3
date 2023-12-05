@@ -1,5 +1,11 @@
 # prologue_03
-@back ScMaingate01
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScMaingate01 time:0.5 wait:true
+@processInput true
 describe: 교무실에서 나와 집으로 가기 위해 학교를 나가고 있었다.
 describe: 아무도 없는 학교는 어쩐지 황량한 느낌이 들었다.
 describe: 바람이 살짝 부니 운동장에서 흙먼지가 일었다.
@@ -8,70 +14,114 @@ describe: 그 때.
 ???: 오늘도 깊은 밤 꿈속에서 당신을 구하는 최고의 히어로!
 ???: 그 이름은 아름다운 러브크레센도!
 {Player_name}: 하...
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@processInput true
+@char firstjeon wait:false
 describe: 전대용
 describe: 전학을 온 뒤 친해진 유일한 친구다.
 describe: 첫인상과는 다르게 의외로 재미있고 아는것도 제법 많지만...
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScMaingate01 time:0.5 wait:true
+@processInput true
 {Player_name}: 변태다...
+@char jeon.body>body1,face>face1 wait:false
 jeon: {Player_name}! 소문 다 들었다고!
 {Player_name}: 소문? 무슨 소문?
+@char jeon.body>body2,face>face1 wait:false
 jeon: 너 수업 시간에 사자후를 날렸다며?
 jeon: 아무리 수업이 듣기 싫어도 그렇지 소리를 지르다니...
+@char jeon.body>body4,face>face2 wait:false
 jeon: 정말 멋있는 녀석이야.
 {Player_name}: 그게 벌써 소문이 났어?
+@char jeon.body>body3,face>face4 wait:false
 jeon: 그럼! 이미 교내에 모르는 사람이 없다고?
 {Player_name}: 후... 진짜 되는 일이 없네...
 {Player_name}: 그나저나 넌 왜 이 시간까지 학교에 있는 거야?
+@char jeon.body>body2,face>face2 wait:false
 jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
+@char jeon.body>body4,face>face3 wait:false
 jeon: 더는 묻지마라...!
 {Player_name}: 어... 그래...
 {Player_name}: ( 역시 변태다. )
-@back Road01 wait:false
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back Road01 time:1 wait:true
+@processInput true
 describe: 대용이와 함께 학교에서 나와 집으로 걸어가고 있었다.
 describe: 확실히 시간이 시간인지라 낮보다는 더 시원했다.
 describe: 그럼에도 불구하고 대용이는 더운지 계속 손바닥으로 부채질을 하고 있었다.
 {Player_name}: 너 괜찮은거 맞아?
+@char jeon.body>body2,face>face2 wait:false
 jeon: 후욱...후욱...뭐라고?
 describe: 대용이는 남들보다 월등히 큰 그 몸에서 계속 열을 발산하고 있었다.
 describe: 마치 추운 겨울날 실외기 옆을 지나가는 느낌이었다.
 {Player_name}: 아니야...아니야...
 jeon: 후욱...후욱...
+@char jeon.body>body4,face>face5 wait:false
 jeon: 난 괜찮아...난 괜찮아...안 괜찮아...
+@hideChars wait:false
 describe: 대용이는 갑자기 가방에서 무언가를 꺼내더니 목에 가져다 문댔다.
 describe: 스윽-
 describe: 스윽-스윽-
 {Player_name}: ...
+@char bigjeon.body>body1,face>face2 wait:false
 jeon: 후아..! 이제 좀 살 것 같네!
 {Player_name}: 그래. 다행이다...
+@hideChars wait:false
+@char jeon.body>body2,face>face3 wait:false
 jeon: 난 이 정도 시련으로 굴복하지 않아!
+@hideChars wait:false
 {Player_name}: 누가 뭐래...
 {Player_name}: 맞다! 나 너한테 물어보고 싶은게 있었는데.
+@char jeon.body>body3,face>face1 wait:false
 jeon: 그게 무엇이지?
 {Player_name}: 너도 동아리 활동 해?
+@char jeon.body>body2,face>face1 wait:false
 jeon: 그럼. 당연하지. 우리 학교는 동아리가 필수라고.
 {Player_name}: 무슨 동아리인데?
 jeon: 신문부.
 {Player_name}: 신문부? 네가?
+@char jeon.body>body2,face>face3 wait:false
 jeon: 무슨 문제라도 있는건가 {Player_name}?
 {Player_name}: 아니 그냥. 되게 의외라서...
+@char jeon.body>body3,face>face1 wait:false
 jeon: 내가 왜 신문부에 들어갔는지 궁금한가?
 {Player_name}: 그렇다고 딱히 궁금하다거나 그런건 아닌데.
+@char jeon.body>body4,face>face3 wait:false
 jeon: 나는 단순히 신문이 좋아서 신문부에 들어가 있는게 아니야!
 describe: 대용이는 내 말은 들은 척도 하지 않았다.
+@char jeon.body>body2,face>face3 wait:false
 jeon: 내가 신문부에 들어가 있는 이유는!
 jeon: 바로 동아리 부장 때문이지!
+@char jeon.body>body2,face>face1 wait:false
 jeon: 우리 동아리 부장은 말이야...
+@char jeon.body>body4,face>face2 wait:false
 jeon: 예뻐.
 {Player_name}: 뭐?
 jeon: 예쁘다고.
 {Player_name}: 진짜 고작 그 이유로 그 동아리에 들어간 거라고...?
 {Player_name}: 설마...
+@hideChars wait:false
+@char bigjeon.body>body4,face>face2 wait:false
 jeon: 역시 가ㅅ...
 {Player_name}: 그만! 거기까지!
 {Player_name}: 물어본 내가 바보지.
+@char bigjeon.body>body3,face>face2 wait:false
 jeon: 한번 보면 헤어 나오지 못하고 신문부에 들어오게 될걸?
 {Player_name}: 큰 소리로 말하지 마..!
+@char bigjeon.body>body1,face>face2 wait:false
 jeon: 어차피 여기엔 우리 말고는 없다고?
 {Player_name}: 에휴. 말을 말자.
+@hideChars wait:false
 describe: 한번 풀려버린 대용이의 입은 멈출 줄 몰랐다. 
 describe: 만나 본 적도 없는 동아리 부장의 음식 취향까지 알게 되었다.
 describe: 귀에 피가 나는 것 같아 만져보니 대용이의 침이었다.

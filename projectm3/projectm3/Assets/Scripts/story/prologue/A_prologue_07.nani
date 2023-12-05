@@ -1,4 +1,11 @@
 # prologue_07
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back HomeDirtyroomNight01 time:1 wait:true
+@processInput true
 describe: 꺼져버린 스마트폰과 어딘지 모르는 처음 보는 길.
 describe: 그 둘과 함께 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
 {Player_name}: 다녀왔습니다!
@@ -9,7 +16,7 @@ describe: 교복을 채 벗지도 않은 채 곧장 침대에 쓰러지듯 누�
 {Player_name}: (오늘 하루 정말 길다...)
 {Player_name}: (빨리 씻고 자야지.)
 describe: 똑똑
-describe: 그 떄 문에서 노크소리가 들렸다.
+describe: 그 때. 노크소리가 문 너머로 들려왔다.
 엄마: 아들. 연락도 없이 왜 이렇게 늦었어?
 엄마: 엄마가 문을 열고 방 안으로 들어왔다.
 {Player_name}: 길을 잃어버렸는데 스마트폰 배터리가 다 닳아서...
@@ -20,7 +27,7 @@ describe: 그 떄 문에서 노크소리가 들렸다.
 {Player_name}: 별 일 까지는 아니고 그냥 살짝 해프닝 같은 거랄까..?
 엄마: 아들?
 {Player_name}: 네..?
-엄마: 빨리 말 안 해!!
+엄마: <size=50>빨</size><size=50>리</size><size=50> </size><size=50>말</size><size=50> </size><size=50>안</size><size=50> </size><size=50>해</size><size=50>!</size><size=50>!</size>
 describe: 차마 학교에서 졸다가 소리쳤다고는 말하지 못하고 있었다.
 describe: 그걸 말했다간 진짜 쫓겨날 수도 있었다.
 describe: 그런데 그 때. 구원투수가 등장했다.
@@ -44,35 +51,64 @@ describe: 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.
 describe: 침대에 눕자 온갖 잡생각이 떠올랐다.
 describe: 이상한 꿈, 동아리, 루틴, 전단지, 앨범...
 describe: 그 중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
+@back HomeDirtyroomNight01 time:1 wait:false tint:#CDCDCD
 {Player_name}: ( 그 꿈은 뭘까. )
+@back HomeDirtyroomNight01 time:1 tint:#888888 wait:false
 {Player_name}: ( 하필이면 수업 시간에 부끄럽게... )
+@back HomeDirtyroomNight01 time:1 tint:#4F4F4F wait:false
 {Player_name}: ( 차라리 오늘 있던 일이 꿈이었으면 좋겠는데... )
+@back HomeDirtyroomNight01 time:1 tint:#000000 wait:false
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back HomeDirtyroom01 time:1 wait:true tint:white
+@processInput true
+@spawn SunShafts wait:false
 {Player_name}: ...
 describe: 잠에서 깬 지는 조금 지났지만 멍 하니 누워있었다.
 describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
 describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
+@despawn SunShafts wait:false params:1
 {Player_name}: !!
 describe: 엄습해온 불안감에 나는 휴대폰을 꺼내 시간을 확인해 보았다.
 describe: 역시나 안 좋은 예감은 언제나 틀리지 않았다.
 describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 리가 없었다.
-엄마: 아들! 학교 안가?
+엄마: <size=50>아</size><size=50>들</size><size=50>!</size><size=50> </size><size=50>학</size><size=50>교</size><size=50> </size><size=50>안</size><size=50>가</size><size=50>?</size>
 {Player_name}: 네! 지금 가요!
 describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@back ScClassRoom01 time:1 wait:true
+@processInput true
+@char jeon.body>body1,face>face2 wait:false
 jeon: 그래서 내가 어제 그걸 보는데...
-jeon: ...
+@hideChars wait:false
 {Player_name}: ...
+{Player_name}: ......
+@char jeon.body>body4,face>face3 wait:false
 jeon: {Player_name}!
 {Player_name}: 어..? 뭐야 갑자기.
+@char jeon.body>body1,face>face3 wait:false
 jeon: 지금 중요한 이야기 중인데 무슨 생각을 하는거야!
 {Player_name}: 아니. 생각해보니 어제 선생님이 동아리 들어가라고 했어가지고.
 {Player_name}: 어떤 동아리를 들어가야되나 생각중이었지...
 {Player_name}: 그런데 무슨 이야기 중이었지..?
+@char jeon.body>body4,face>face3 wait:false
 jeon: 어제 준 포스터 이야기 중이었잖아!
+@char jeon.body>body4,face>face1 wait:false
 jeon: 크흠... 아무튼 동아리가 고민이라 이거지?
+@char jeon.body>body2,face>face1 wait:false
 jeon: 그렇다면 우리 신문부에 들어오지 않겠는가?
+@char jeon.body>body2,face>face2 wait:false
 jeon: 신문부 부장이...
 {Player_name}: 절대 안갈거야.
 {Player_name}: 나 까지 변태 취급 받기는 싫어.
+@hideChars wait:false
 describe: 드르륵-
 describe: 경찰서로 잡혀가기 딱 좋은 이야기를 듣던 도중 교실 뒷 문이 열렸다.
 @goto A_prologue_08.prologue_08
