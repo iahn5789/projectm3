@@ -2,6 +2,7 @@
 
 using System;
 using UnityEngine;
+using System.Collections;
 
 namespace Naninovel.UI
 {
@@ -56,7 +57,11 @@ namespace Naninovel.UI
                 await scriptPlayer.PreloadAndPlayAsync(titleScript, label: titleLabel);
                 await UniTask.WaitWhile(() => scriptPlayer.Playing);
             }
-
+            StartCoroutine(Wait3Second());
+        }
+        private IEnumerator Wait3Second()
+        {
+            yield return new WaitForSeconds(3f);
             titleMenu.Hide();
             stateManager.ResetStateAsync(excludeFromReset,
                 () => scriptPlayer.PreloadAndPlayAsync(startScriptName)).Forget();

@@ -289,7 +289,6 @@ public class ProfileUIManager : MonoBehaviour
         }
         if (Week>=2)
         {
-            Debug.Log("favoriteThing");
             OnText(FavoriteThing, SecretFavoriteThing);
             OnText(HateThing, SecretHateThing);
             OnText(FavoriteFood, SecretFavoriteFood);

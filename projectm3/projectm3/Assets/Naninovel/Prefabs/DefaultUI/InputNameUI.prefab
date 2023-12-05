@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 2909914473444551948}
   - component: {fileID: 8197783653314781513}
   - component: {fileID: 3515518765124029533}
+  - component: {fileID: 2580886582920080018}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -261,7 +262,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2909914473444551948}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2580886582920080018}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: projectm3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8768719369401560591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +351,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2580886582920080018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008806725780980623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bb84b9801d302a448833f1fb2f6166c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 11400000, guid: ae3d3c83b23ae034b816c54958ce660c, type: 2}
+  startDelay: 0
 --- !u!1 &2241515835836818699
 GameObject:
   m_ObjectHideFlags: 0

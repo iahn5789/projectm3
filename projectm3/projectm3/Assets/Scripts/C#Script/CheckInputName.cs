@@ -28,14 +28,14 @@ public class CheckInputName : MonoBehaviour
             {
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", "정민");
-                gotoGame();
+                StartCoroutine(Wait3Second());
 
             }
             else if (textFieldValue != "강여진" && textFieldValue != "진다영" && textFieldValue != "설나희" && textFieldValue != "전대용")
             {
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", textFieldValue);
-                gotoGame();
+                StartCoroutine(Wait3Second());
             }
             else{
                 // Naninovel 변수 설정
@@ -63,5 +63,10 @@ public class CheckInputName : MonoBehaviour
         var inputRoot = new NamedString("A_prologue_01", "GameStart");
         var Goto = new Goto { Path = inputRoot };
         Goto.ExecuteAsync();
+    }
+    private IEnumerator Wait3Second()
+    {
+        yield return new WaitForSeconds(3f);
+        gotoGame();
     }
 }
