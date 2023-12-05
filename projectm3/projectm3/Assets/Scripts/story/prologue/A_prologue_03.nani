@@ -1,9 +1,12 @@
 # prologue_03
 @processInput false
+@stopBgm Common_BGM_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
+@bgm Common_Lobby_BGM_01 volume:80 loop:true fade:1 wait:false
 @back ScMaingate01 time:0.5 wait:true
 @processInput true
 describe: 교무실에서 나와 집으로 가기 위해 학교를 나가고 있었다.
@@ -54,8 +57,12 @@ jeon: 더는 묻지마라...!
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@stopSfx Amb_Room_Tone_02 fade:1 wait:false
+@sfx Amb_Road_01 volume:80 loop:true fade:1 wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:50 loop:false fade:1 wait:false
 @back Road01 time:1 wait:true
 @processInput true
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:2 wait:false
 describe: 대용이와 함께 학교에서 나와 집으로 걸어가고 있었다.
 describe: 확실히 시간이 시간인지라 낮보다는 더 시원했다.
 describe: 그럼에도 불구하고 대용이는 더운지 계속 손바닥으로 부채질을 하고 있었다.
