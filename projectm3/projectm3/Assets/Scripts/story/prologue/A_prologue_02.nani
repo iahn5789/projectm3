@@ -2,11 +2,16 @@
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
+@stopBgm Our_Story_Common_Classroom_01 fade:1 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
+@bgm Common_BGM_01 volume:80 loop:true fade:1 wait:false
 @back ScOffice01 time:1 wait:true
 @processInput true
+@sfx Common_Door_Noke_01 volume:100 loop:false fade:0 wait:false
 describe: 똑똑
+@stopSfx Common_Door_Noke_01 fade:0 wait:false
 {Player_name}: 안녕하세요...
 @char kang.body>body1,face>face4 wait:false
 ???: 왜 안되는데요!
@@ -52,8 +57,12 @@ describe: 그 때 여학생은 나를 쳐다보니 들릴 듯 말듯 혼잣말�
 @hideChars wait:false
 @char bigkang.body>body1,face>face2 wait:false
 ???: 흐음... 안녕히계세요!
-@hideChars wait:false
+@sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:false
+@hideChars time:0.5 wait:false
+@stopSfx Footsteps_Female_Wood_Walk_01 fade:3
+@sfx Common_Sliding_door_open volume:100 loop:false wait:false
 describe: 드르륵 쿵!
+@stopSfx Common_Sliding_door_open fade:1 wait:false
 describe: 나를 계속 처다보던 여학생은 인사를 하고는 교무실을 나갔다.
 describe: 어쩐지 나갈 때 표정이 살짝 웃는 것 같아 보이기도 했다.
 선생님: 왔냐? 저기 잠깐 앉아 있어봐.
@@ -103,4 +112,7 @@ describe: 그렇게 몇분 정도 지났을까.
 선생님: 상담이라도 하려고 했는데 나도 할 일이 산더미다.
 선생님: 혹시라도 무슨 일 있으면 얘기하고.
 {Player_name}: 네. 안녕히계세요!
+@sfx Footsteps_Male_Wood_Run_01 volume:80 loop:false wait:false
+@stopSfx Amb_Office_01 fade:2 wait:false
+@stopSfx Footsteps_Male_Wood_Run_01 fade:3 wait:false
 @goto A_prologue_03.prologue_03
