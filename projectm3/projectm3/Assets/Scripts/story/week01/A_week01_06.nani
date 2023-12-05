@@ -1,41 +1,70 @@
 # week01_06
-kang: 조건…이요…?
+@processInput false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@processInput true
 describe: 5분 정도 긴 침묵이 이어졌다.
 describe: 어색한 분위기가 이어지자, 침 삼키는 소리까지 들리는 듯 했다.
 describe: 이대로 가다간 동아리고 뭐고 그 전에 분위기에 깔려 죽을 것만 같았다.
 describe: 뭐라도 이야기 해야겠다는 생각이 들었다.
 {Player_name}: 저기… 이름이 설나희...
+@char sul.body>body1,face>face1 wait:false
 sul: …
 {Player_name}: 혹시 몇 학년이세요…?
+@char sul.body>body3,face>face1 wait:false
 sul: …3학년…
 {Player_name}: 누나라고 불러도 될까요…?
+@char sul.body>body1,face>face1 wait:false
 sul: …응…
 {Player_name}: (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)
+@hideChars wait:false
 describe: 드르륵.
 describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
+@char jeon.body>body1,face>face1 wait:false
 jeon: 실례합니다.
 jeon: 어? 대용이? 여긴 무슨 일이야?
+@char jeon.body>body2,face>face4 wait:false
 jeon: 오! {Player_name}! 결국 가입해 버린 거냐고?
+@char jeon.body>body2,face>face1 wait:false
 jeon: 별건 아니고 잠깐 필요한 게 있어서 찾아보러 왔지.
+@char jeon.body>body3,face>face1 wait:false
 jeon: 혹시 마이크 남는 거 있어?
 {Player_name}: 마이크? 나는 잘 모르겠는데?
+@char jeon.body>body4,face>face1 wait:false
 jeon: 아 그래? 흠…
+@hideChars wait:false
 describe: 잠시 고민하던 대용이는 옆에 있던 나희누나에게 말을 건넸다.
+@char jeon.body>body3,face>face2 wait:false
 jeon: 헤헤 누나 안녕하세요! 혹시 마이크 남는 거 있나요?
+@hideChars wait:false
+@char sul.body>body2,face>face1 wait:false
 sul: 없어.
 jeon: 없어요?
+@hideChars wait:false
+@char bigsul.body>body2,face>face1 wait:false
 sul: 없어.
 jeon: 아 있었는데?
+@spawn ShakeCamera wait:false
+@char bigsul.body>body2,face>face4 wait:false
 sul: 그냥 없어.
 jeon: ...
+@hideChars wait:false
+@char jeon.body>body2,face>face5 wait:false
 jeon: {Player_name}. 가볼 게 내일 봐!
 {Player_name}: 어...잘가!
+@hideChars wait:false
 jeon: 대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라봤다.
 jeon: 나가는 뒷모습이 어쩐지 쓸쓸해 보였다.
+@char sul.body>body1,face>face1 wait:false
 sul: …저기
-sul: 네 친구야…?
+sul: 아는 사람이야…?
 {Player_name}: 네. 전학 와서 사귀게 된 친구예요.
+@char sul.body>body3,face>face1 wait:false
 sul: …
 {Player_name}: 왜요...?
+@char sul.body>body3,face>face8 wait:false
 sul: …기분나빠…
 @goto A_week01_07.week01_07
