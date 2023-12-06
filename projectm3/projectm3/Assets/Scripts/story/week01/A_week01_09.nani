@@ -2,8 +2,10 @@
 한갑수: 혹시 궁금한 거 있나?
 describe: ...
 한갑수: 그럼, 이야기는 전부 다 했으니 난 이만 간다. 수고들 해라.
-@back Minicut_sign id:Minicut wait:false scale:0.5 visible:false
+@back Minicut_sign id:Minicut visible:false scale:0.5 wait:false
+@sfx Footsteps_Male_Wood_Walk_01 volume:90 loop:false wait:false
 describe: 그렇게 자기 할 말만 열심히 하던 한갑수 선생님은 다시 교무실로 돌아가셨다.
+@stopSfx Footsteps_Male_Wood_Walk_01 fade:2.5
 @char jin.body>body2,face>face6 wait:false
 jin: 늘 자기 할 말만 하신다니까...
 @hideChars wait:false
@@ -22,7 +24,7 @@ kang: 우리학교는 시험을 보는 게 조금 독특해서...
 kang: 아마 그동안 본 적 없는 시험이 될 수도 있을 것 같은데...
 @char kang.body>body1,face>face1 wait:false
 kang: 혹시 궁금한거나 학교 생활 관련된 질문 같은거 있어?
-@hidePrinter wait:false
+@hidePrinter  wait:false
 @hideChars wait:false
 @choice "쪽지시험이고 뭐고 아무것도 모르겠어." goto:A_week01_10.week01_10
 @choice "괜찮아. 대충 어떤 느낌인지 알겠더라." goto:A_week01_tutorial.week01_tutorial

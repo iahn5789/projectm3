@@ -1,8 +1,11 @@
 # week01_06
 @processInput false
+@stopBgm Common_BGM_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Shool_Club_01 volume:90 loop:true fade:1 wait:false
+@bgm Common_School_Club_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @processInput true
@@ -19,10 +22,14 @@ sul: …3학년…
 {Player_name}: 누나라고 불러도 될까요…?
 @char sul.body>body1,face>face1 wait:false
 sul: …응…
+@sfx Crow_Caw_01 volume:30 loop:false wait:false
 {Player_name}: (틀렸어…대화가 두 마디 이상 진행되질 않아…누가 좀 구해줘…)
+@stopSfx Crow_Caw_01 fade:2 wait:false
 @hideChars wait:false
+@sfx Common_Sliding_Door_Open_02 volume:80 loop:false wait:false
 describe: 드르륵.
 describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
+@stopSfx Common_Sliding_Door_Open_02 fade:2 wait:false
 @char jeon.body>body1,face>face1 wait:false
 jeon: 실례합니다.
 jeon: 어? 대용이? 여긴 무슨 일이야?
@@ -56,7 +63,9 @@ jeon: ...
 jeon: {Player_name}. 가볼 게 내일 봐!
 {Player_name}: 어...잘가!
 @hideChars wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false wait:false
 jeon: 대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라봤다.
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:2
 jeon: 나가는 뒷모습이 어쩐지 쓸쓸해 보였다.
 @char sul.body>body1,face>face1 wait:false
 sul: …저기
@@ -66,5 +75,7 @@ sul: 아는 사람이야…?
 sul: …
 {Player_name}: 왜요...?
 @char sul.body>body3,face>face8 wait:false
+@sfx Common_Whoosh_Horror_01 volume:50 loop:false wait:false
 sul: …기분나빠…
+@stopSfx Common_Whoosh_Horror_01 fade:2 wait:false
 @goto A_week01_07.week01_07
