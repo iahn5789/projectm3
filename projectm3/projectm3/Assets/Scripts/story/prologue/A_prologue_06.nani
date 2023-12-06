@@ -60,7 +60,8 @@ describe: 쓰레기통 근처에는 낡아 보이는 앨범이 땅바닥에 펼�
 {Player_name}: 앨범? 이런 곳에?
 describe: 땅바닥에 펼쳐져 있던 앨범을 주워서 살펴보았다.
 @sfx Common_Beautiful_Bell_Tree_01 volume:80 loop:true wait:false
-@back Minicut_oldalbum id:Minicut visible:true scale:0.5 wait:false
+@spawn Blur wait:false
+@back Minicut_oldalbum id:Minicut visible:true scale:0.7 wait:false position:0,1.5
 describe: 낡은 표지와 빛바랜 사진.
 describe: 군데군데 갈라진 가죽과 이미 쓸려버린 문양.
 describe: 한 눈에 봐도 앨범이 오래되었다는 걸 알 수 있었다.
@@ -69,7 +70,8 @@ describe: 친구라고 보기에는 너무 다정해 보였다. 어쩌면 연인
 {Player_name}: 소중해 보이는 추억을 그냥 버리는구나.
 describe: 앨범을 다시 땅에 놓고 나서 음료수캔을 들어 쓰레기통 안에 넣었다.
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:2 wait:false
-@back Minicut_oldalbum id:Minicut visible:false scale:0.5 wait:false
+@despawn Blur wait:false
+@back Minicut_oldalbum id:Minicut visible:false scale:0.7 wait:false position:0,1.5
 {Player_name}: 이제 집에 가야지...
 describe: 손을 한번 털고는 주머니 속 스마트폰을 꺼내 화면을 켰다.
 {Player_name}: 일단 지도부터 켜서...

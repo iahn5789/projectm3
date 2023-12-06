@@ -5,6 +5,7 @@
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
 @back Dream
 @sfx Heart_Beat_Fast_02 volume:100 loop:true fade:1 wait:false
+@spawn Blur wait:false
 describe: 두근거리는 심장
 describe: 떨리는 손을 들어 가슴에 올려보았다.
 describe: 어딘지 모르게 몸이 어색하게 움직이는 기분이었다.
@@ -42,6 +43,7 @@ MC: 러브크레센도입니다!
 @hidePrinter  time:0.5 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:60 loop:true fade:1 wait:false
 @back ScClassRoom01 wait:false
+@despawn Blur wait:false
 @processInput true
 @spawn ShakePrinter wait:false
 @spawn ShakeCamera wait:false

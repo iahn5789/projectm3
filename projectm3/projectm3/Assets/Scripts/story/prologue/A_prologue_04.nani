@@ -46,7 +46,8 @@ describe: 처절하게 여섯 시를 외치던 대용이는 포스터를 나에�
 {Player_name}: 진짜 이상한놈이라니까..
 {Player_name}: 근데 이건 뭐지...?
 @sfx Common_Paper_Crumple_01 volume:100 loop:false wait:false
-@back Minicut_poster id:Minicut visible:true scale:0.5 wait:false
+@spawn Blur wait:false
+@back Minicut_poster id:Minicut visible:true scale:0.7 wait:false position:0,1.5
 @stopSfx Common_Paper_Crumple_01 fade:1 wait:false
 describe: 대용이가 보고 있던 이상한 포스터.
 describe: 이상한 포스터는 다름 아닌 음악 콘서트 포스터였다.
@@ -58,7 +59,8 @@ describe: 포스터의 가운데에 있는 사람한테 눈이 갔다.
 describe: 얼굴을 드러내지 않는 오토바이 헬멧.
 describe: 그 밑으로 보이는 트레이닝복과...
 describe: 그리고...
-@back Minicut_poster id:Minicut visible:false scale:0.5 wait:false
+@despawn Blur wait:false
+@back Minicut_poster id:Minicut visible:false scale:0.7 wait:false position:0,1.5
 {Player_name}: 어휴... 그러면 그렇지.
 {Player_name}: 그나저나 얜 어딜 간거야?
 describe: 여섯시를 처절하게 외치며 사라진 대용이는 5분이 넘게 돌아오지 않고 있었다.
