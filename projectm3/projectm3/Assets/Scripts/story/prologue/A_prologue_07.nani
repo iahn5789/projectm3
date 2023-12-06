@@ -3,6 +3,8 @@
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
+@bgm MySweethome_Scene_Home_01 volume:80 loop:true fade:2 wait:false
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:1 wait:true
 @back HomeDirtyroomNight01 time:1 wait:true
 @processInput true
@@ -12,11 +14,14 @@ describe: 그 둘과 함께 집에 들어오니 어느새 하늘은 완전히 �
 describe: 피곤한 몸을 이끌고 곧장 방 안으로 들어갔다.
 describe: 방 안은 이사짐을 치우지 않아 어지럽기 짝이 없었다.
 describe: 지금 짐을 치우기엔 너무 피곤했다.
+@sfx Common_Body_Fall_Bed_01 volume:100 loop:false wait:false
 describe: 교복을 채 벗지도 않은 채 곧장 침대에 쓰러지듯 누웠다.
 {Player_name}: (오늘 하루 정말 길다...)
 {Player_name}: (빨리 씻고 자야지.)
+@sfx Common_Door_Noke_01 volume:100 loop:false wait:false
 describe: 똑똑
 describe: 그 때. 노크소리가 문 너머로 들려왔다.
+@sfx Common_Door_Open_Squeak_01 volume:80 loop:false wait:false
 엄마: 아들. 연락도 없이 왜 이렇게 늦었어?
 엄마: 엄마가 문을 열고 방 안으로 들어왔다.
 {Player_name}: 길을 잃어버렸는데 스마트폰 배터리가 다 닳아서...
@@ -51,38 +56,48 @@ describe: 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.
 describe: 침대에 눕자 온갖 잡생각이 떠올랐다.
 describe: 이상한 꿈, 동아리, 루틴, 전단지, 앨범...
 describe: 그 중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
-@back HomeDirtyroomNight01 time:1 wait:false tint:#CDCDCD
+@stopSfx Amb_Room_Tone_02 fade:8 wait:false
+@stopBgm MySweethome_Scene_Home_01 fade:8 wait:false
+@back HomeDirtyroomNight01 tint:#CDCDCD time:1 wait:false
 {Player_name}: ( 그 꿈은 뭘까. )
-@back HomeDirtyroomNight01 time:1 tint:#888888 wait:false
+@back HomeDirtyroomNight01 tint:#888888 time:1 wait:false
 {Player_name}: ( 하필이면 수업 시간에 부끄럽게... )
-@back HomeDirtyroomNight01 time:1 tint:#4F4F4F wait:false
+@back HomeDirtyroomNight01 tint:#4F4F4F time:1 wait:false
 {Player_name}: ( 차라리 오늘 있던 일이 꿈이었으면 좋겠는데... )
-@back HomeDirtyroomNight01 time:1 tint:#000000 wait:false
+@back HomeDirtyroomNight01 tint:#000000 time:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@back HomeDirtyroom01 time:1 wait:true tint:white
+@sfx Amb_Shool_Club_01 volume:80 loop:true fade:1 wait:false
+@back HomeDirtyroom01 tint:white time:1 wait:true
 @processInput true
 @spawn SunShafts wait:false
+@sfx Common_Morning_Bird_Twitter_01 volume:60 loop:false wait:false
 {Player_name}: ...
 describe: 잠에서 깬 지는 조금 지났지만 멍 하니 누워있었다.
 describe: 이렇게 개운하게 일어난 게 얼마 만인지 모르겠다.
 describe: 전날의 일들 때문에 몸이 피곤해 숙면을 한 것 같았...
-@despawn SunShafts wait:false params:1
+@despawn SunShafts params:1 wait:false
+@sfx Common_Text_Kick_01 volume:100 loop:false wait:false
 {Player_name}: !!
 describe: 엄습해온 불안감에 나는 휴대폰을 꺼내 시간을 확인해 보았다.
 describe: 역시나 안 좋은 예감은 언제나 틀리지 않았다.
 describe: 평소보다 20분이나 늦게 일어났으니 개운하지 않을 리가 없었다.
 엄마: <size=50>아</size><size=50>들</size><size=50>!</size><size=50> </size><size=50>학</size><size=50>교</size><size=50> </size><size=50>안</size><size=50>가</size><size=50>?</size>
 {Player_name}: 네! 지금 가요!
+@sfx Footsteps_Male_Wood_Run_01 volume:80 loop:false wait:false
 describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐나왔다.
+@stopSfx Footsteps_Male_Wood_Run_01 fade:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@sfx Amb_Classroom_Cutoff_01 volume:50 loop:true fade:1 wait:false
+@bgm Our_Story_Common_Classroom_01 volume:80 loop:true fade:1 wait:false
 @back ScClassRoom01 time:1 wait:true
 @processInput true
 @char jeon.body>body1,face>face2 wait:false
@@ -109,6 +124,7 @@ jeon: 신문부 부장이...
 {Player_name}: 절대 안갈거야.
 {Player_name}: 나 까지 변태 취급 받기는 싫어.
 @hideChars wait:false
+@sfx Common_Sliding_Door_Open_Short_02 volume:100 loop:false wait:false
 describe: 드르륵-
 describe: 경찰서로 잡혀가기 딱 좋은 이야기를 듣던 도중 교실 뒷 문이 열렸다.
 @goto A_prologue_08.prologue_08

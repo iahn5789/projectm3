@@ -1,9 +1,12 @@
 # prologue_05
 @processInput false
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:1 wait:false
+@stopBgm Common_LoveCroissant_01 fade:2 wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@bgm Common_Lobby_BGM_02 volume:75 loop:true fade:1 wait:false
 @back Road02 time:1 wait:true
 @processInput true
 describe: 조금은 낯선 골목길
@@ -11,6 +14,8 @@ describe: 전화도 받지 않는 대용이를 이곳에서 어떻게 찾아야 
 @char jeon.body>body1,face>face4 wait:false
 jeon: {Player_name}! 따라와 준 거냐고!
 {Player_name}: 야! 어디 갔다 온 거야!
+@sfx Footsteps_Male_Ctr_Walk_01 volume:60 fade:1 wait:false
+@stopSfx Footsteps_Male_Ctr_Walk_01 fade:1
 describe: 갑자기 사라져버린 대용이는 어느새 양손에 음료수를 들고서 나타났다.
 @char jeon.body>body4,face>face1 wait:false
 jeon: 어디긴. 음료수 사러 갔다 왔지.
