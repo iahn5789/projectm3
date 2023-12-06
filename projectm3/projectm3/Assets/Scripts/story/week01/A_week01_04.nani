@@ -2,30 +2,41 @@
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
+@stopSfx Amb_Shool_Club_01 fade:0.5 wait:false
+@stopBgm Common_School_Club_01 fade:0.5 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Whoosh_TestFinish_Before_Stamp_01 volume:80 loop:false wait:false
+@sfx Common_Beautiful_Bell_Tree_01 volume:80 loop:true fade:0.5 wait:false
 @back CG/Kang02 time:0.5 wait:true
 @unlock CG/Kang02 wait:false
 @processInput true
 describe: 그 순간.
+@sfx Heart_Beat_Fast_02 volume:50 loop:true fade:0.5 wait:false
 describe: 너무나 갑작스럽게도 여진이는 내게 다가왔다.
 describe: 여진이는 연한 갈색 머리를 휘날리며 내 앞에 서 있었다.
 describe: 고개를 살짝 내리자, 눈이 마주쳤다.
 describe: 머리카락과 비슷한 연한 갈색 눈동자.
 describe: 여진이는 두 손을 앞으로 모은 채 내 손을 붙잡았다.
 describe: 워낙 빠르게 다가온지라 바람에 휘날린 머리카락이 아직 떨어지고 있었다.
+@sfx Common_Clock_Tictok_Slow_Highcut_01 volume:70 loop:true wait:false
 describe: 머리카락이 천천히 떨어지고 있는 건지 시간이 느리게 흘러가는 건지.
 describe: 어쩌면 심장이 빨리 뛰는 바람에 시간이 느리게 흘러간다 느끼고 있을지도 모르겠다.
 describe: 무언가를 말하려는 듯 여진이의 입술이 서서히 움직이기 시작했다.
 kang: 할거지?
 {Player_name}: (여자의 손…엄마 손을 제외하고는 처음 잡아보는데…)
 {Player_name}: (이렇게 예쁜 여자애가 내 손을 잡았어…따뜻하고…)
+@stopSfx Heart_Beat_Fast_02 wait:false
+@stopSfx Common_Clock_Tictok_Slow_Highcut_01 wait:false
+@stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
 {Player_name}: ( …거칠어? )
 describe: 무엇 하나 알지도 못한 채 이렇게 결정해도 되는 건가 싶었지만...
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Shool_Club_01 volume:80 loop:true fade:1 wait:false
+@bgm Common_School_Club_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @processInput true
@@ -35,10 +46,14 @@ kang: 좋아! 결정된 거다!
 jin: 정말로 동아리에 가입시킬거야? 진짜?
 @char kang.body>body1,face>face2 wait:false
 kang: 나는 교무실 갔다 올 테니 이야기 좀 나누고 있어! 오늘 안에 등록해야 해!
+@sfx Footsteps_Female_Wood_Walk_01 volume:80 loop:false wait:false
 @hideChars wait:false
-@char jin.body>body2,face>face3 wait:false position:0
+@char jin.body>body2,face>face3 position:0 wait:false
 jin: 자...잠깐 기다려! 같이 가!
+@sfx Footsteps_Female_Wood_Run_01 volume:80 loop:false wait:false
 @hideChars wait:false
+@stopSfx Amb_Shool_Club_01 fade:1.5 wait:false
+@stopSfx Footsteps_Female_Wood_Run_01 fade:1.5
 describe: 도망치듯 나간 여진이를 진다영이 뒤쫓아 나갔다.
 describe: 시끄럽기만 하던 동아리실에는 어느새 고요함이 맴돌았다.
 {Player_name}: ...

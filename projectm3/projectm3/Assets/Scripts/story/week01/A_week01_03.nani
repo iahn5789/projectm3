@@ -3,6 +3,8 @@
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm Common_School_Club_01 volume:80 loop:true fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:70 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @processInput true
@@ -35,15 +37,15 @@ kang: 응! 내가 말했지? 막상 보면 괜찮을거라고!
 @char sul.body>body1,face>face1 wait:false
 ???: ...나는 괜찮다고 보는데...
 kang: 그렇지? 나희언니가 봐도 괜찮을 것 같지?
-@char jin.body>body1,face>face4 wait:false position:4
-@char sul.body>body1,face>face1 wait:false position:-5
+@char jin.body>body1,face>face4 position:4 wait:false
+@char sul.body>body1,face>face1 position:-5 wait:false
 jin: 설나희! 이 변태가 괜찮다고? 다들 무슨 생각을 하는 거야!
-@char sul.body>body3,face>face1 wait:false position:-5
+@char sul.body>body3,face>face1 position:-5 wait:false
 sul: ...나쁜 사람 같아 보이지는 않아...
-@char jin.body>body2,face>face4 wait:false position:4
+@char jin.body>body2,face>face4 position:4 wait:false
 jin: 나는 인정 못 해!
 jin: 생긴 건 그렇다 치더라도 몰래 엿듣고 있던 건 어떻게 설명할 건데!
-@char sul.body>body4,face>face1 wait:false position:-5
+@char sul.body>body4,face>face1 position:-5 wait:false
 sul: 둘이 싸우는 소리가 밖에 뻔히 들리잖아...
 sul: 어떻게 들어오겠어...
 @hideChars wait:false
@@ -62,14 +64,14 @@ kang: 동아리 폐부까지 얼마 남지도 않았는데 다른 사람을 구�
 @char kang.body>body3,face>face5 wait:false
 kang: 아니면 더 좋은 생각이 있어? 지금은 별다른 수가 없잖아...
 @hideChars wait:false
-@char jin.body>body2,face>face3 wait:false position:0
+@char jin.body>body2,face>face3 position:0 wait:false
 jin: 그... 그건 맞지만...
 @char jin.body>body3,face>face4 wait:false
 jin: 야! 너! 변태!
 {Player_name}: 저...저요?
 jin: 너 할 줄 아는 게 뭐야!
 @hideChars wait:false
-@char sul.body>body2,face>face1 wait:false position:0
+@char sul.body>body2,face>face1 position:0 wait:false
 sul: …그건 나도 궁금한데.
 {Player_name}: 어…음…저기…그러니까…
 @hideChars wait:false
@@ -85,18 +87,18 @@ kang: 그만! 그렇게 몰아세우면 멀쩡하던 사람도 쓰러지겠어!
 @char kang.body>body2,face>face5 wait:false
 kang: 우리 둘이 싸우고 있으니까 민망해서 들어오지도 못하고 밖에 서 있었던 거 아니야!
 sul: …그건 맞지…
-@char kang.body>body2,face>face5 wait:false position:4
-@char jin.body>body3,face>face4 wait:false position:-5
+@char kang.body>body2,face>face5 position:4 wait:false
+@char jin.body>body3,face>face4 position:-5 wait:false
 jin: 그럼 노크한다던가 인기척을 냈으면 우리도 대화를 멈췄을 거 아니야!
 sul: …그것도 맞지…
-@char jin.body>body1,face>face4 wait:false position:-5
+@char jin.body>body1,face>face4 position:-5 wait:false
 jin: 애초에 누군지도 모르는 사람을 불러서 대뜸 가입시킨다는 게 말이 돼?
 jin: 이 변태한테 뭘 시킬 건데!
-@char kang.body>body1,face>face8 wait:false position:4
+@char kang.body>body1,face>face8 position:4 wait:false
 kang: 그...그건...
-@char jin.body>body3,face>face4 wait:false position:-5
+@char jin.body>body3,face>face4 position:-5 wait:false
 jin: 생각해 본 적도 없지?
-@char kang.body>body2,face>face5 wait:false position:4
+@char kang.body>body2,face>face5 position:4 wait:false
 kang: 보...보컬을 맡길 생각이야!
 @hideChars wait:false
 @char bigjin.body>body3,face>face4 wait:false
@@ -110,4 +112,4 @@ sul: …잘할 수 있겠어…?
 @char sul.body>body1,face>face1 wait:false
 sul: …보컬…
 {Player_name}: 아…음…그러니까…
-@goto A_week01_04.week01_04
+@goto A_week01_04

@@ -1,19 +1,22 @@
 # week01_05
 @processInput false
+@stopBgm Common_School_Club_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
+@sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
+@bgm Common_BGM_01 volume:75 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScOffice01 time:0.5 wait:true
 @processInput true
 @char kang.body>body2,face>face4 wait:false
 kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
-@char kang.body>body2,face>face4 wait:false position:4
-@char jin.body>body3,face>face4 wait:false position:-5
+@char kang.body>body2,face>face4 position:4 wait:false
+@char jin.body>body3,face>face4 position:-5 wait:false
 jin: 아직 대화도 제대로 나눠보지도 못했고! 무엇보다 음흉해서 싫어!
-@char kang.body>body2,face>face5 wait:false position:4
+@char kang.body>body2,face>face5 position:4 wait:false
 kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야?
-@char jin.body>body2,face>face4 wait:false position:-5
+@char jin.body>body2,face>face4 position:-5 wait:false
 jin: 고집을 부리는 건 내가 아니라 너야 바보야!
 한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
 @hideChars wait:false
@@ -40,14 +43,15 @@ kang: 어쨌든 본인 의사가 가장 중요하니까요! 직접 들어온다�
 @hideChars wait:false
 한갑수: 본인이 직접 들어오겠다고 했으면 뭐...
 한갑수: 그래. 가입을 허락하마.
-@char jin.body>body2,face>face3 wait:false position:0
+@char jin.body>body2,face>face3 position:0 wait:false
 jin: 으...
-@char kang.body>body1,face>face2 wait:false position:4
-@char jin.body>body2,face>face3 wait:false position:-5
+@char kang.body>body1,face>face2 position:4 wait:false
+@char jin.body>body2,face>face3 position:-5 wait:false
 kang: 아싸! 그럼 저희 인원 채운거죠?
 @hideChars wait:false
 한갑수: 한국말은 끝가지 들어야지.
 한갑수: 대신 조건이 하나 있다.
 @char kang.body>body1,face>face6 wait:false
 kang: 조건…이요…?
+@stopSfx Amb_Office_01 fade:1 wait:false
 @goto A_week01_06.week01_06
