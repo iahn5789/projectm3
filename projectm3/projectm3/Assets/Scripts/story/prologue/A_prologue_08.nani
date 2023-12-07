@@ -1,5 +1,6 @@
 # prologue_08
 ???: 네가 그 전학생이구나!
+@stopBgm Our_Story_Common_Classroom_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
@@ -26,6 +27,7 @@ describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다
 @back ScClassRoom01 time:0.5 wait:true
 @processInput true
 @char kang.body>body1,face>face8 wait:false
+@bgm Our_Story_Common_Classroom_01 volume:80 loop:true wait:false
 ???: 저기... 듣고 있는 거야?
 {Player_name}: 어...누구세요...?
 @char kang.body>body1,face>face2 wait:false

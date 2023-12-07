@@ -4,8 +4,7 @@
 @bgm Common_Backstage_01 volume:70 loop:true fade:1 wait:false
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
 @back Dream
-@sfx Heart_Beat_Fast_02 volume:100 loop:true fade:1 wait:false
-@spawn Blur wait:false
+@sfx Heart_Beat_Fast_02 volume:70 loop:true fade:10 wait:false
 describe: 두근거리는 심장
 describe: 떨리는 손을 들어 가슴에 올려보았다.
 describe: 어딘지 모르게 몸이 어색하게 움직이는 기분이었다.
@@ -38,12 +37,10 @@ MC: 오래 기다리셨습니다! 다음 차례는 드디어...
 MC: 러브크레센도입니다!
 @stopSfx Amb_Crowd_Loop_01 fade:0 wait:false
 @processInput false
-@bgm Our_Story_Common_Classroom_01 volume:70 loop:true wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:false
-@sfx Amb_Classroom_Cutoff_01 volume:60 loop:true fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:1 wait:false
 @back ScClassRoom01 wait:false
-@despawn Blur wait:false
 @processInput true
 @spawn ShakePrinter wait:false
 @spawn ShakeCamera wait:false
@@ -53,7 +50,8 @@ MC: 러브크레센도입니다!
 describe: 어딘가 익숙한 풍경.
 describe: 조용하고 나른한 분위기.
 describe: 그 속에서 현실을 파악하기까지 걸리는 시간 3초.
-@sfx Common_Girl_Laugh_01 volume:80 loop:false wait:false
+@sfx Common_Girl_Laugh_01 volume:100 loop:false wait:false
+@bgm Our_Story_Common_Classroom_01 volume:70 loop:true wait:false
 describe: 3초동안의 정적은 뒷자리에서 터진 누군가의 웃음과 함께 끝이 났다.
 @stopSfx Common_Girl_Laugh_01 fade:1 wait:false
 일동: 쟤... 지금 뭐라고 한거야...?
@@ -78,8 +76,10 @@ describe: 등 뒤에는 무서울 정도로 온화한 얼굴의 선생님이 계
 {Player_name}: ...?
 선생님: 뒤로 나가서 손 들고 서 있어!!
 {Player_name}: 아..으..어...네...
+@sfx Footsteps_Male_Wood_Walk_01 volume:70 loop:false wait:false
 describe: 화끈거리는 뒤통수를 잡고 뒤로 걸어 나갔다.
 describe: 시선 사이사이로 반 친구들의 비웃는 얼굴이 보였다.
+@stopSfx Footsteps_Male_Wood_Walk_01 fade:1
 describe: 화끈거리는 뒤통수보다 시선이 더 화끈거렸다.
 선생님: 빨리 안나가!!
 describe: 뒤로 나가 손을 들자 선생님은 다시 수업을 시작하셨다.
