@@ -795,6 +795,7 @@ GameObject:
   - component: {fileID: 930383138181198539}
   - component: {fileID: 4825621791064576400}
   - component: {fileID: 5525360600529292589}
+  - component: {fileID: 1149887877900300435}
   m_Layer: 5
   m_Name: RollbackButton
   m_TagString: Untagged
@@ -868,6 +869,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8939494791307639823}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1149887877900300435}
+        m_MethodName: SetProcessInputOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1031,6 +1043,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1149887877900300435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5592023153365511576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6481528855278669199
 GameObject:
   m_ObjectHideFlags: 0
