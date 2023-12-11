@@ -213,7 +213,7 @@ public class ExamUIManager : MonoBehaviour
         KAnswerList.Add("010", "도서부");
         KAnswerList.Add("011", "프라모델부");
         KAnswerList.Add("012", "서예부");
-        KAnswerList.Add("013", "과학서예부");
+        KAnswerList.Add("013", "신문부");
         KAnswerList.Add("014", "테니스부");
         KAnswerList.Add("020", "3층 과학실 옆");
         KAnswerList.Add("021", "4층 과학실 옆");
@@ -241,7 +241,7 @@ public class ExamUIManager : MonoBehaviour
         JAnswerList.Add("010", "도서부");
         JAnswerList.Add("011", "프라모델부");
         JAnswerList.Add("012", "서예부");
-        JAnswerList.Add("013", "과학서예부");
+        JAnswerList.Add("013", "신문부");
         JAnswerList.Add("014", "테니스부");
         JAnswerList.Add("020", "3층 과학실 옆");
         JAnswerList.Add("021", "4층 과학실 옆");
@@ -269,7 +269,7 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("010", "도서부");
         SAnswerList.Add("011", "프라모델부");
         SAnswerList.Add("012", "서예부");
-        SAnswerList.Add("013", "과학서예부");
+        SAnswerList.Add("013", "신문부");
         SAnswerList.Add("014", "테니스부");
         SAnswerList.Add("020", "3층 과학실 옆");
         SAnswerList.Add("021", "4층 과학실 옆");
@@ -291,7 +291,7 @@ public class ExamUIManager : MonoBehaviour
         // Kang(50개)
         KCorrectAnswerList = new Dictionary<string, string>();
         KCorrectAnswerList.Add("00", "진다영");
-        KCorrectAnswerList.Add("01", "과학서예부");
+        KCorrectAnswerList.Add("01", "신문부");
         KCorrectAnswerList.Add("02", "4층 과학실 옆");
         KCorrectAnswerList.Add("03", "보컬");
         KCorrectAnswerList.Add("04", "거칠어");
@@ -299,7 +299,7 @@ public class ExamUIManager : MonoBehaviour
         // Jin(50개)
         JCorrectAnswerList = new Dictionary<string, string>();
         JCorrectAnswerList.Add("00", "진다영");
-        JCorrectAnswerList.Add("01", "과학서예부");
+        JCorrectAnswerList.Add("01", "신문부");
         JCorrectAnswerList.Add("02", "4층 과학실 옆");
         JCorrectAnswerList.Add("03", "보컬");
         JCorrectAnswerList.Add("04", "거칠어");
@@ -307,7 +307,7 @@ public class ExamUIManager : MonoBehaviour
         // Sul(50개)
         SCorrectAnswerList = new Dictionary<string, string>();
         SCorrectAnswerList.Add("00", "진다영");
-        SCorrectAnswerList.Add("01", "과학서예부");
+        SCorrectAnswerList.Add("01", "신문부");
         SCorrectAnswerList.Add("02", "4층 과학실 옆");
         SCorrectAnswerList.Add("03", "보컬");
         SCorrectAnswerList.Add("04", "거칠어");

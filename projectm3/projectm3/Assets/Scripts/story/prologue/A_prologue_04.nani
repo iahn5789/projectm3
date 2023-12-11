@@ -12,18 +12,21 @@
 jeon: 후후후...
 {Player_name}: 뭐야...
 @hideChars wait:false
-describe: 대용이와 함께 집에 가는 있는 중이었다.
-describe: 대용이는 어느샌가 이상한 포스터 하나를 손에 들고는 기분나쁘게 웃고 있었다.
+describe: 대용이와 함께 집에 가는 중이었다.
+describe: 대용이는 어느샌가 이상한 포스터 하나를 손에 들고는 기분 나쁘게 웃고 있었다.
 @char jeon.body>body4,face>face2 wait:false
+@spawn ShakePrinter wait:false
 jeon: 우후후후...
 {Player_name}: (진짜 누가 변태 아니랄까봐...)
 {Player_name}: 뭘 그렇게 보고있는거야?
 @hideChars wait:false
 @char bigjeon.body>body4,face>face2 wait:false
+@spawn ShakePrinter wait:false
 jeon: 아무것도 아니야...우후후후....
 {Player_name}: 어휴...
 @hideChars wait:false
 describe: 그 때.
+@spawn ShakePrinter wait:false
 {Player_name}: 뭐야. 갑자기 왜 멈춰.
 describe: 갑작스레 가던 길을 멈춘 대용이가 사뭇 진지한 표정으로 물어보았다.
 @char jeon.body>body2,face>face4 wait:false
@@ -63,8 +66,9 @@ describe: 그리고...
 @back Minicut_poster id:Minicut visible:false scale:0.7 wait:false position:0,1.5
 {Player_name}: 어휴... 그러면 그렇지.
 {Player_name}: 그나저나 얜 어딜 간거야?
-describe: 여섯시를 처절하게 외치며 사라진 대용이는 5분이 넘게 돌아오지 않고 있었다.
+describe: 여섯 시를 처절하게 외치며 사라진 대용이는 5분이 넘게 돌아오지 않고 있었다.
 @sfx Common_phone_call_01 volume:100 loop:false wait:false
+describe: ♪~♪~♪~♪♪~♬
 describe: 전화를 해 보았지만 역시 받지 않았다.
 @stopSfx Common_phone_call_01 fade:2
 {Player_name}: 후... 따라가 봐야 되나?

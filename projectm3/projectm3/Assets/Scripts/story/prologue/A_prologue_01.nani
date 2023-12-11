@@ -4,29 +4,31 @@
 @bgm Common_Backstage_01 volume:70 loop:true fade:1 wait:false
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
 @back Dream
+@spawn Blur wait:false
 @sfx Heart_Beat_Fast_02 volume:70 loop:true fade:10 wait:false
 describe: 두근거리는 심장
 describe: 떨리는 손을 들어 가슴에 올려보았다.
 describe: 어딘지 모르게 몸이 어색하게 움직이는 기분이었다.
 describe: 안개가 낀 듯 흐릿하게 보이는 무대.
 describe: 그 무대 너머로 들리는 어딘가 먹먹한 함성소리.
-describe: 나도 모르게 무대로 걸어나가려고 했지만 발이 떨어지지 않았다.
+describe: 나도 모르게 무대로 걸어 나가려고 했지만, 발이 떨어지지 않았다.
 describe: 긴장해서 그런 걸까.
 describe: 마치 내 몸이 내 몸이 아닌 기분이었다.
-describe: 그래도 미친듯이 뛰는 가슴 하나만큼은 확실하게 느낄 수 있었다.
+describe: 그래도 미친 듯이 뛰는 가슴 하나만큼은 확실하게 느낄 수 있었다.
 ???: 무슨 생각을 그렇게 해?
+@spawn ShakeCamera wait:false
 describe: 누군가가 뒤에서 내 어깨를 살짝 건드리며  말했다.
 describe: 고개를 돌리려고 했으나 시선이 무대에 고정된 듯 고개가 돌아가지 않았다.
-???: 혹시 긴장한거야?
+???: 혹시 긴장한 거야?
 describe: 긴장했냐 묻느냐면 질문에 나는 내 심장 소리를 들려주고 싶었다.
 describe: 그런데...
 describe: 내가 왜 긴장했지?
-???: 나도 살짝 긴장되긴 하는데... 연습한 대로만 하면 잘 될꺼야!
+???: 나도 살짝 긴장되긴 하는데... 연습한 대로만 하면 잘될 거야!
 describe: 연습?
 ???: 그러니까 심호흡 한번 하고...
 describe: 누군가의 손이 내 등 뒤에 닿았다.
 describe: 낯설지만 따뜻한 손.
-describe: 손바닥이 완전히 등에 닿지는 않았지만 온기를 느끼기엔 충분한 정도였다.
+describe: 손바닥이 완전히 등에 닿지는 않았지만, 온기를 느끼기엔 충분한 정도였다.
 @stopSfx Heart_Beat_Fast_02 fade:2 wait:false
 ???: 외치는거야!
 @sfx Common_Mic_Feedback_01 volume:70 loop:false fade:0 wait:false
@@ -41,6 +43,7 @@ MC: 러브크레센도입니다!
 @hidePrinter  time:0.5 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:1 wait:false
 @back ScClassRoom01 wait:false
+@despawn Blur wait:false
 @processInput true
 @spawn ShakePrinter wait:false
 @spawn ShakeCamera wait:false
@@ -52,15 +55,15 @@ describe: 조용하고 나른한 분위기.
 describe: 그 속에서 현실을 파악하기까지 걸리는 시간 3초.
 @sfx Common_Girl_Laugh_01 volume:100 loop:false wait:false
 @bgm Our_Story_Common_Classroom_01 volume:70 loop:true wait:false
-describe: 3초동안의 정적은 뒷자리에서 터진 누군가의 웃음과 함께 끝이 났다.
+describe: 3초 동안의 정적은 뒷자리에서 터진 누군가의 웃음과 함께 끝이 났다.
 @stopSfx Common_Girl_Laugh_01 fade:1 wait:false
 일동: 쟤... 지금 뭐라고 한거야...?
 일동: 러브...어쩌고 하지 않았나?
-describe: 상황파악이 끝나자 미칠듯한 부끄러움이 속에서부터 올라왔다.
-describe: 주변을 둘러보고 싶었지만 그럴 용기조차 들지 않았다.
-{Player_name}: 나... 자다가 수업시간에 소리친건가...?
-describe: 나는 고개를 들지조차 못하고 그저 책상에 파묻고 있었다.
-describe: 그 때.
+describe: 상황 파악이 끝나자 미칠듯한 부끄러움이 속에서부터 올라왔다.
+describe: 주변을 둘러보고 싶었지만, 그럴 용기조차 들지 않았다.
+{Player_name}: 나... 자다가 수업 시간에 소리친건가...?
+describe: 나는 고개를 들지 못하고 그저 책상에 파묻고 있었다.
+describe: 그때.
 @spawn ShakeCamera wait:false
 @sfx Common_Cartoon_Hit_01 volume:100 loop:false wait:false
 describe: <size=50>빢</size><size=50>!</size>
@@ -81,8 +84,9 @@ describe: 화끈거리는 뒤통수를 잡고 뒤로 걸어 나갔다.
 describe: 시선 사이사이로 반 친구들의 비웃는 얼굴이 보였다.
 @stopSfx Footsteps_Male_Wood_Walk_01 fade:1
 describe: 화끈거리는 뒤통수보다 시선이 더 화끈거렸다.
-선생님: 빨리 안나가!!
-describe: 뒤로 나가 손을 들자 선생님은 다시 수업을 시작하셨다.
+@spawn ShakeCamera wait:false
+선생님: 빨리빨리 안나가!!
+describe: 뒤로 나가 손을 들자, 선생님은 다시 수업을 시작하셨다.
 describe: 하지만 수업이 다시 시작되었어도 반 친구들의 웃음은 멈출 줄 몰랐다.
 describe: 선생님이 있으니 대놓고 웃지는 못했지만 내 귀에는 충분히 들릴 정도였다.
 {Player_name}: 후...
@@ -91,7 +95,7 @@ describe: 선생님이 갑자기 내 이름을 불렀다.
 {Player_name}: 네?!
 선생님: 넌 오늘 학교 끝나고 교무실로 와.
 {Player_name}: 알겠습니다...
-선생님: 대답 똑바로 안해!
+선생님: <size=50>대</size><size=50>답</size><size=50> </size><size=50>똑</size><size=50>바</size><size=50>로</size> <size=50>안</size><size=50>해</size><size=50>!</size>
 {Player_name}: 알겠습니다!
 @sfx Common_Crowd_Laugh_01 volume:80 loop:false fade:1 wait:false
 describe: 조금 사그라들었던 주변의 웃음소리가 다시 커졌다.

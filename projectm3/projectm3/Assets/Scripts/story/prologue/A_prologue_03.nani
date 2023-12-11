@@ -90,7 +90,7 @@ jeon: 후아..! 이제 좀 살 것 같네!
 jeon: 난 이 정도 시련으로 굴복하지 않아!
 @hideChars wait:false
 {Player_name}: 누가 뭐래...
-{Player_name}: 맞다! 나 너한테 물어보고 싶은게 있었는데.
+{Player_name}: 맞다! 나 너한테 물어보고 싶은 게 있었는데.
 @char jeon.body>body3,face>face1 wait:false
 jeon: 그게 무엇이지?
 {Player_name}: 너도 동아리 활동 해?
@@ -121,7 +121,8 @@ jeon: 예쁘다고.
 {Player_name}: 설마...
 @hideChars wait:false
 @char bigjeon.body>body4,face>face2 wait:false
-jeon: 역시 가ㅅ...
+@spawn ShakeCharacter wait:false
+jeon: <size=50>역</size><size=50>시</size><size=50> </size><size=50>가</size><size=50>ㅅ</size><size=50>.</size><size=50>.</size><size=50>.</size>
 {Player_name}: 그만! 거기까지!
 {Player_name}: 물어본 내가 바보지.
 @char bigjeon.body>body3,face>face2 wait:false
@@ -131,7 +132,7 @@ jeon: 한번 보면 헤어 나오지 못하고 신문부에 들어오게 될걸?
 jeon: 어차피 여기엔 우리 말고는 없다고?
 {Player_name}: 에휴. 말을 말자.
 @hideChars wait:false
-describe: 한번 풀려버린 대용이의 입은 멈출 줄 몰랐다. 
+describe: 한번 풀려버린 대용이의 입은 멈출 줄 몰랐다.
 describe: 만나 본 적도 없는 동아리 부장의 음식 취향까지 알게 되었다.
 describe: 귀에 피가 나는 것 같아 만져보니 대용이의 침이었다.
 @goto A_prologue_04.prologue_04

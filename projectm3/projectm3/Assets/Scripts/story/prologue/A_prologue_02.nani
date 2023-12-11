@@ -34,8 +34,8 @@ describe: 둘은 무언가에 관해 이야기를 하는 듯 보였는데 여학
 @hideChars wait:false
 describe: 선생님은 한숨을 푹 쉬며 손으로 머리를 감쌌다.
 선생님: 딱 하루야.
-선생님: 내일 하루 동안 단 한명이라도 못찾으면 밴드 동아리는 폐부되는거야.
-선생님: 내가 봐 줄수 있는 건 여기까지. 알겠어?
+선생님: 내일 하루 동안 단 한 명이라도 못 찾으면 밴드 동아리는 폐부 되는 거야.
+선생님: 내가 봐줄 수 있는 건 여기까지. 알겠어?
 @char kang.body>body1,face>face4 wait:false
 ???: 네...
 describe: 말을 마친 듯한 여학생은 선생님에게 인사를 한 뒤 고개를 돌렸다.
@@ -43,14 +43,14 @@ describe: 말을 마친 듯한 여학생은 선생님에게 인사를 한 뒤 �
 {Player_name}: ...
 @char kang.body>body1,face>face1 wait:false
 describe: 뒤로 돌아 나가려는 여학생과 눈이 마주쳤다.
-describe: 여학생은 무언가 할 말이라도 있는 듯 나를 처다보고 있었다.
+describe: 여학생은 무언가 할 말이라도 있는 듯 나를 쳐다보고 있었다.
 {Player_name}: (내 얼굴에 뭐라도 묻었나..?)
 선생님: 아직 할 말 남았어?
 @char kang.body>body1,face>face8 wait:false
 ???: 아니요. 그게...
-선생님: 뭐야. {Player_name}? 언제왔어?
+선생님: 뭐야. {Player_name}? 언제 왔어?
 {Player_name}: 방금 왔습니다..!
-describe: 그 때 여학생은 나를 쳐다보니 들릴 듯 말듯 혼잣말을 중얼거렸다.
+describe: 그때 여학생은 나를 쳐다보니 들릴 듯 말듯 혼잣말을 중얼거렸다.
 @char kang.body>body3,face>face7 wait:false
 ???: {Player_name}..?
 {Player_name}: ...?
@@ -63,39 +63,40 @@ describe: 그 때 여학생은 나를 쳐다보니 들릴 듯 말듯 혼잣말�
 @sfx Common_Sliding_door_open volume:100 loop:false wait:false
 describe: 드르륵 쿵!
 @stopSfx Common_Sliding_door_open fade:1 wait:false
-describe: 나를 계속 처다보던 여학생은 인사를 하고는 교무실을 나갔다.
-describe: 어쩐지 나갈 때 표정이 살짝 웃는 것 같아 보이기도 했다.
+describe: 나를 계속 쳐다보던 여학생은 인사를 하고는 교무실을 나갔다.
+describe: 어쩐지 나갈 때 표정이 살짝 웃는 것으로 보이기도 했다.
 선생님: 왔냐? 저기 잠깐 앉아 있어봐.
-describe: 선생님은 굉장히 바쁘신지 컴퓨터에서 눈을 때지 못하고 계셨다.
+describe: 선생님은 굉장히 바쁘신지 컴퓨터에서 눈을 떼지 못하고 계셨다.
 선생님: 잠깐만... 이것만 마저 하고...
 describe: 교무실에는 나와 선생님 말고는 아무도 없었다.
 @sfx Typing_Fast_01 volume:40 loop:false wait:false
 describe: 조용한 분위기 속 선생님의 타자 소리만 들리고 있었다.
-describe: 무얼 해야될 지 모른채 앉아서 손가락만 만지작 거리고 있었다.
+describe: 무얼 해야 할지 모른 채 앉아서 손가락만 만지작거리고 있었다.
 @sfx Common_Door_Slam_01 volume:60 loop:false wait:false
-선생님: 이게... 왜 안되는거야!
+@spawn ShakeCamera wait:false
+선생님: 이게... 왜 안 되는 거야!
 선생님: 조금만 있어 봐. 거의 다 됐으니까.
 {Player_name}: 아 넵...
 describe: 고개를 슬쩍 돌려 선생님을 바라봤다.
 describe: 책상 위의 짐들 때문에 잘 보이지 않았지만 선생님은 앨범처럼 보이는 걸 뒤적이고 계셨다.
 describe: 그렇게 몇분 정도 지났을까.
-선생님: 후우... 이 고물을 진짜 바꾸던가 해야지.
+선생님: 후우... 이 고물을 진짜 바꾸든가 해야지.
 선생님: 많이 기다렸냐? 졸리면 잠깐 자고 있지 그랬어.
 {Player_name}: 아...아닙니다...
-선생님: 아니긴... 학교는 다닐 만 해?
-{Player_name}: 네. 다닐 만 합니다.
-선생님: 다행이네. 전학와서 적응 못하면 어쩌나 했는데.
-선생님: 너무 다닐만 해서 수업시간에 잔건 아니고?
+선생님: 아니긴... 학교는 다닐 만해?
+{Player_name}: 네. 다닐 만합니다.
+선생님: 다행이네. 전학 와서 적응 못하면 어쩌나 했는데.
+선생님: 너무 다닐 만해서 수업 시간에 잔 건 아니고?
 {Player_name}: 그...그건...
 선생님: 친구들은 좀 사귀었냐?
 {Player_name}: 한 명 사귀긴 했는데...
-선생님: 한 명? 일주일에 한명 사귀었으면 된거지.
-선생님: 너 아직 동아리도 안들어갔잖아?
+선생님: 한 명? 일주일에 한 명 사귀었으면 된 거지.
+선생님: 너 아직 동아리도 안 들어갔잖아?
 {Player_name}: 동아리...요?
 선생님: 어. 혹시 동아리 벌써 들어갔어?
 {Player_name}: 동아리에 들어가야 하나요...?
 선생님: 당연히 들어가야지! 그게 우리 학교 교칙인데.
-선생님: 내가 얘기 안했던가?
+선생님: 내가 얘기 하지 않았던가?
 {Player_name}: 처음 듣습니다...
 선생님: 그래?
 선생님: 뭐 아무튼 지금이라도 알았으면 다행이지.
@@ -108,7 +109,7 @@ describe: 그렇게 몇분 정도 지났을까.
 선생님: 잘 생각해서 이번주까지 가입해. 알겠어?
 {Player_name}: 그...
 {Player_name}: 혹시 동아리 활동을 안하면...
-선생님: <size=50>뭐</size><size=50>?</size>
+선생님: 뭐?
 {Player_name}: 아...아닙니다!
 선생님: 그래. 그럼 그만 가 봐.
 선생님: 상담이라도 하려고 했는데 나도 할 일이 산더미다.
