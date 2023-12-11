@@ -12,11 +12,11 @@
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
 describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
 describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날라왔다.
-{Player_name}: ( 예쁘다... )
+{Player_name}: (예쁘다...)
 describe: 감탄하고 있는 사이 향기가 지나가 버렸다.
 describe: 그 자리에는 처음 보는 여자애를 마주한 부끄러움만이 남아있었다.
 describe: 처음 보는 예쁜 여자애가 반까지 찾아와 나에게 말을 걸었다.
-describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있자
+describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있는 상황.
 describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다.
 @processInput false
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:3 wait:false
@@ -29,10 +29,10 @@ describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다
 @char kang.body>body1,face>face8 wait:false
 @bgm Our_Story_Common_Classroom_01 volume:80 loop:true wait:false
 ???: 저기... 듣고 있는 거야?
-{Player_name}: 어...누구세요...?
+{Player_name}: 어... 누구세요...?
 @char kang.body>body1,face>face2 wait:false
 ???: 러브크레센도!
-{Player_name}: ( ...진짜 학교에 소문이 다 난 거야? )
+{Player_name}: (진짜 학교에 소문이 다 난 거야?)
 describe: 여학생은 나에게 볼일이 있다는 듯 교실로 들어와 내 앞에 멈춰선 채 말을 이어 나갔다.
 @char kang.body>body2,face>face1 wait:false
 kang: 반가워! 내 이름은 강여진이라고 해! 밴드부의 부장을 맡고있어!
@@ -42,12 +42,12 @@ kang: 네가 누군지 한번 보러왔어!
 @char kang.body>body3,face>face2 wait:false
 kang: 그럼. 화제의 전학생이잖아!
 kang: 그리고 우리 어제 교무실에서 잠깐 마주쳤잖아.
-{Player_name}: ( 그러고보니... )
+{Player_name}: (그러고보니...)
 @char kang.body>body3,face>face1 wait:false
 kang: 바로 본론부터 얘기할게.
 @char kang.body>body2,face>face1 wait:false
 kang: 너 혹시 우리 동아리에 들어오지 않을래?
-{Player_name}: 어...갑자기...요?
+{Player_name}: 어... 갑자기...요?
 @char kang.body>body2,face>face7 wait:false
 kang: 조금 갑작스러운가..?
 @char kang.body>body1,face>face7 wait:false
@@ -55,7 +55,7 @@ kang: 그럼 우리 학교에 밴드부가 있다는 이야기는 들어본 적 
 {Player_name}: 밴드...부?
 @char kang.body>body2,face>face1 wait:false
 kang: 응! 밴드부!
-{Player_name}: ( 윽... 가까워... )
+{Player_name}: (윽... 가까워...)
 kang: 전학생이라 아직 동아리에 들어가지 않았으면 꼭 우리 동아리에 들어왔으면 해서.
 @char kang.body>body2,face>face2 wait:false
 kang: 우리는 네가 꼭 필요해!
@@ -78,7 +78,7 @@ kang: 늦으면 안 돼!
 describe: 일방적인 대화 끝에 여진이는 교실을 나갔다.
 @stopSfx Footsteps_Female_Wood_Walk_01 fade:2
 @char jeon.body>body2,face>face2 wait:false
-jeon: 오...강여진...
+jeon: 오... 강여진...
 {Player_name}: 뭐야? 아는 사람이야?
 @char jeon.body>body2,face>face3 wait:false
 @spawn ShakeCamera wait:false
@@ -92,7 +92,7 @@ jeon: 금발태닝양아치선배님도절대로가질수없던마성의매력�
 @despawn ShakeCharacter params:,0 wait:false
 {Player_name}: 그만! 거기까지!
 @char jeon.body>body2,face>face1 wait:false
-jeon: 엣헴...아무튼 그런 사람이 너랑 말을 하게 될 줄이야.
+jeon: 엣헴... 아무튼 그런 사람이 너랑 말을 하게 될 줄이야.
 @char jeon.body>body4,face>face2 wait:false
 jeon: 이 자식 대단한걸?
 {Player_name}: 그러면 그렇게 잘 아는 녀석이 아까는 왜 조용했을까?
@@ -109,8 +109,8 @@ jeon: 수업 종 울렸네. 난 간다!
 @stopSfx Common_Breaktime_Belltower_01 fade:1 wait:false
 @hideChars wait:false
 describe: 대용이가 교실에서 나가고 잠시 후 선생님이 교실로 들어오셨다.
-describe: ( 밴드부라... 너무나 갑작스럽게 초대받았는데... )
-describe: ( 원래 이렇게 불쑥 찾아와서 초대하고 그러는건가..? )
+describe: (밴드부라... 너무나 갑작스럽게 초대받았는데...)
+describe: (원래 이렇게 불쑥 찾아와서 초대하고 그러는건가..?)
 @stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
@@ -128,7 +128,7 @@ describe: 종례가 끝남과 동시에 수십 명이 자리에서 일어났다.
 @sfx Common_Desk_Rattle_01 volume:30 loop:false wait:false
 describe: 의자를 뒤로 밀고 일어서는 소리가 여러 곳에서 들려왔다.
 describe: 가방을 둘러메고 교실 밖으로 나가면서 각자 무엇을 할지 이야기하고 있었다.
-describe: 피시방을 가자는 학생들도 있었고 영화를 보러 가자는 학생들도 있었다.
+describe: 노래방을 가자는 학생들도 있었고 영화를 보러 가자는 학생들도 있었다.
 describe: 다만 나에게 먼저 말을 거는 학생들은 없었다.
 describe: 전학을 온 지 일주일 정도 지났지만, 아직 대용이 말고는 친구가 없었기 때문이다.
 describe: 말도 없고 딱히 재미도 없는 전학생.
