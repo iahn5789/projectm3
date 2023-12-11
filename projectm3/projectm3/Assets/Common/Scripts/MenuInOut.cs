@@ -19,22 +19,14 @@ public class MenuInOut : MonoBehaviour
 
     public void setIsMenuVisible()
     {
-        if (isFirstEscape)
+        // 현재 상태에 따라 애니메이션 전환
+        if (!isMenuVisible)
         {
-            animator.SetTrigger("MenuIn"); // 첫 ESC 입력시 MenuUI 애니메이션 재생
-            isFirstEscape = false;
+            animator.SetTrigger("MenuUIOut"); // MenuUIOut 애니메이션 재생
         }
         else
         {
-            // 현재 상태에 따라 애니메이션 전환
-            if (!isMenuVisible)
-            {
-                animator.SetTrigger("MenuUI"); // MenuUI 애니메이션 재생
-            }
-            else
-            {
-                animator.SetTrigger("MenuUIOut"); // MenuUIOut 애니메이션 재생
-            }
+            animator.SetTrigger("MenuUI"); // MenuUI 애니메이션 재생
         }
 
         // 메뉴 상태 변경
