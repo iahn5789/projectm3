@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 namespace EasyTransition
 {
-
     public class Transition : MonoBehaviour
     {
         public TransitionSettings transitionSettings;
