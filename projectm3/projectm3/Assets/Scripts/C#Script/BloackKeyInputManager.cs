@@ -10,10 +10,10 @@ public class BloackKeyInputManager : MonoBehaviour
 {
     public void SetProcessInputOn()
     {
-        Engine.GetService<IInputManager>().ProcessInput = false;
+        Engine.GetService<IInputManager>().ProcessInput = true;
     }
     public void SetProcessInputOff()
     {
-        Engine.GetService<IInputManager>().ProcessInput = true;
+        Engine.GetService<IInputManager>().ProcessInput = false;
     }
 }

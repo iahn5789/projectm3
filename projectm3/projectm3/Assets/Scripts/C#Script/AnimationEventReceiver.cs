@@ -1,6 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Naninovel;
+using Naninovel.UI;
+using Naninovel.Commands;
+using UnityEngine;
+
 
 public class AnimationEventReceiver : MonoBehaviour
 {
@@ -11,6 +17,7 @@ public class AnimationEventReceiver : MonoBehaviour
         if (greatGrandparent != null)
         {
             Destroy(greatGrandparent.gameObject);
+            Engine.GetService<IInputManager>().ProcessInput = true;
         }
         else
         {
@@ -24,6 +31,7 @@ public class AnimationEventReceiver : MonoBehaviour
         if (greatGrandparent != null)
         {
             Destroy(greatGrandparent.gameObject);
+            Engine.GetService<IInputManager>().ProcessInput = true;
         }
         else
         {
