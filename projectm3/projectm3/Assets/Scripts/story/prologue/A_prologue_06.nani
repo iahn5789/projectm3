@@ -2,11 +2,13 @@
 @processInput false
 @sfx Footsteps_Male_Ctr_Walk_01 volume:40 wait:false loop:false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:2 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Road02 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 대용이의 루틴 소동이 있고서 골목길을 따라 제법 걸었다.
 describe: 처음 와 보는 곳이라 길을 잘 알지 못했지만, 걷다 보니 집으로 어떻게 가야 할지 알 것 같았다.
@@ -26,7 +28,7 @@ jeon: 그러는 너는?
 {Player_name}: 나는 여기 처음 와 보긴 하는데...
 {Player_name}: 아마 저기서 왼쪽으로 가면 되지 않을까?
 @char jeon.body>body1,face>face1 wait:false
-jeon: 그렇구먼. 그럼 조심히 들어가게!
+jeon: 그렇군. 그럼 조심히 들어가게!
 @char jeon.body>body1,face>face2 wait:false
 jeon: 내일 아침에 늦어서 내 루틴 망치지 말...
 {Player_name}: 나 먼저 갈게. 내일 봐!
@@ -35,12 +37,14 @@ jeon: 내일 아침에 늦어서 내 루틴 망치지 말...
 describe: 대용이의 말도 안 되는 루틴 이야기가 다시 시작될까 봐 나는 먼저 왼쪽으로 길을 꺾었다.
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @stopSfx Amb_Road_01 fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @sfx Amb_Shool_Club_01 volume:40 loop:true fade:1 wait:false
 @back Road02 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 대용이와 헤어지니 주변이 확실히 조용해졌다.
 describe: 차도, 사람도 많이 지나다니지 않는 골목길이라 더 조용한 건지도 몰랐다.
@@ -80,6 +84,6 @@ describe: 스마트폰은 아무리 건드려도 검은색 화면만 보여줄 �
 {Player_name}: 뭐야. 왜 안 켜져.
 {Player_name}: 설마..!
 describe: 배터리가 나갔다.
-{Player_name}: 아오! 전대용!!
+{Player_name}: <size=50>아</size><size=50>오</size><size=50>!</size><size=50> </size><size=50>전</size><size=50>대</size><size=50>용</size><size=50>!</size><size=50>!</size>
 @stopBgm Common_Lobby_BGM_02 fade:1 wait:false
 @goto A_prologue_07.prologue_07

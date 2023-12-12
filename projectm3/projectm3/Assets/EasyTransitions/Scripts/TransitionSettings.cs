@@ -52,6 +52,7 @@ namespace EasyTransition
         [Space(10)]
         public GameObject transitionIn;
         public GameObject transitionOut;
+        public bool Keyinput = true;
     }
 
     public enum ColorTintMode { Multiply, Add }

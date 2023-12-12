@@ -2,12 +2,14 @@
 @processInput false
 @stopBgm Common_BGM_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @bgm Common_LoveCroissant_01 volume:57 loop:true fade:1 wait:false
 @back ScMaingate01 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 교무실에서 나와 집으로 가기 위해 학교를 나가고 있었다.
 describe: 아무도 없는 학교는 어쩐지 황량한 느낌이 들었다.
@@ -22,17 +24,21 @@ describe: 그 때.
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
+@hideUI CP wait:false
 @back Black time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 @char firstjeon wait:false
 describe: 전대용
 describe: 전학을 온 뒤 친해진 유일한 친구다.
-describe: 첫인상과는 다르게 의외로 재미있고 아는것도 제법 많지만...
+describe: 첫인상과는 다르게 의외로 재미있고 아는 것도 제법 많지만...
 @processInput false
 @hideChars time:0.5 wait:false
-@hidePrinter  time:0.5 wait:true
+@hidePrinter  time:0.5 wait:false
+@hideUI CP wait:true
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 {Player_name}: 변태다...
 @char jeon.body>body1,face>face1 wait:false
@@ -53,9 +59,10 @@ jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
 @char jeon.body>body4,face>face3 wait:false
 jeon: 더는 묻지마라...!
 {Player_name}: 어... 그래...
-{Player_name}: ( 역시 변태다. )
+{Player_name}: (역시 변태다.)
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
@@ -63,6 +70,7 @@ jeon: 더는 묻지마라...!
 @sfx Amb_Road_01 volume:80 loop:true fade:1 wait:false
 @sfx Footsteps_Male_Ctr_Walk_01 volume:50 loop:false fade:1 wait:false
 @back Road01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:2 wait:false
 describe: 대용이와 함께 학교에서 나와 집으로 걸어가고 있었다.
@@ -70,17 +78,17 @@ describe: 확실히 시간이 시간인지라 낮보다는 더 시원했다.
 describe: 그럼에도 불구하고 대용이는 더운지 계속 손바닥으로 부채질을 하고 있었다.
 {Player_name}: 너 괜찮은거 맞아?
 @char jeon.body>body2,face>face2 wait:false
-jeon: 후욱...후욱...뭐라고?
+jeon: 후욱... 후욱... 뭐라고?
 describe: 대용이는 남들보다 월등히 큰 그 몸에서 계속 열을 발산하고 있었다.
 describe: 마치 추운 겨울날 실외기 옆을 지나가는 느낌이었다.
-{Player_name}: 아니야...아니야...
-jeon: 후욱...후욱...
+{Player_name}: 아니야... 아니야...
+jeon: 후욱... 후욱...
 @char jeon.body>body4,face>face5 wait:false
-jeon: 난 괜찮아...난 괜찮아...안 괜찮아...
+jeon: 난 괜찮아... 난 괜찮아... 안 괜찮아...
 @hideChars wait:false
 describe: 대용이는 갑자기 가방에서 무언가를 꺼내더니 목에 가져다 문댔다.
 describe: 스윽-
-describe: 스윽-스윽-
+describe: 스윽- 스윽-
 {Player_name}: ...
 @char bigjeon.body>body1,face>face2 wait:false
 jeon: 후아..! 이제 좀 살 것 같네!

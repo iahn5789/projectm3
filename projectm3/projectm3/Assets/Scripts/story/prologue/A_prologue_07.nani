@@ -2,12 +2,14 @@
 @processInput false
 @stopSfx Amb_Shool_Club_01 fade:1
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @bgm MySweethome_Scene_Home_01 volume:80 loop:true fade:2 wait:false
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:1 wait:true
 @back HomeDirtyroomNight01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 꺼져버린 스마트폰과 어딘지 모르는 처음 보는 길.
 describe: 그 둘과 함께 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
@@ -20,15 +22,15 @@ describe: 교복을 채 벗지도 않은 채 곧장 침대에 쓰러지듯 누�
 {Player_name}: (오늘 하루 정말 길다...)
 {Player_name}: (빨리 씻고 자야지.)
 @sfx Common_Door_Noke_01 volume:100 loop:false wait:false
-describe: 똑똑
-describe: 그 때. 노크소리가 문 너머로 들려왔다.
+describe: 똑똑-
+describe: 그때. 노크소리가 문 너머로 들려왔다.
 @sfx Common_Door_Open_Squeak_01 volume:80 loop:false wait:false
 엄마: 아들. 연락도 없이 왜 이렇게 늦었어?
 엄마: 엄마가 문을 열고 방 안으로 들어왔다.
 {Player_name}: 길을 잃어버렸는데 스마트폰 배터리가 다 닳아서...
 엄마: 그래? 조심해야지.
 엄마: 학교에서는 별일 없었어?
-{Player_name}: 그...그게...
+{Player_name}: 그... 그게...
 엄마: ...별 일 있었어?
 {Player_name}: 별일까지는 아니고 그냥 살짝 해프닝 같은 거랄까..?
 엄마: 아들?
@@ -39,16 +41,16 @@ describe: 그걸 말했다간 진짜 쫓겨날 수도 있었다.
 describe: 그런데 그때. 구원투수가 등장했다.
 아빠: 여보. 여기서 뭐 해?
 아빠: 아들! 언제 들어왔어?
-{Player_name}: 한 5분 정도 됐어요...하하...
+{Player_name}: 한 5분 정도 됐어요... 하하...
 아빠: 그래? 배고프겠네. 빨리 씻고 밥 먹으러 와.
 describe: 아빠는 엄마가 보지 못하게 능글맞게 눈썹을 두 번 치켜올리셨다.
 아빠: 여보는 나랑 같이 먼저 나갈까?
 엄마: 하하하. 당신도 참-
 describe: 아빠는 엄마를 데리고 나가면서 방문을 닫고 나갔다.
-{Player_name}: 우..우웩...
+{Player_name}: 우... 우웩...
 describe: 그래도 아빠가 타이밍을 잘 잡아줘서 자연스럽게 넘어갈 수 있었다.
 describe: 여기저기 어지럽게 널브러진 이삿짐들이 눈에 띈다.
-describe: 정리를 한다고는 했는데, 아직 정리를 다 못 끝내서 상자 안에 있는 짐들이 아직 많다.
+describe: 정리를 한다고는 했는데, 상자 안에 있는 짐들이 아직 많다.
 {Player_name}: 엄마가 짐 정리하라고 하셨는데...
 {Player_name}: 씻고 밥도 먹어야 하는데...
 describe: 생각하기를 잠시 멈춘 채 침대에 몸을 던졌다.
@@ -60,19 +62,21 @@ describe: 그중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
 @stopSfx Amb_Room_Tone_02 fade:8 wait:false
 @stopBgm MySweethome_Scene_Home_01 fade:8 wait:false
 @back HomeDirtyroomNight01 tint:#CDCDCD time:1 wait:false
-{Player_name}: ( 그 꿈은 뭘까. )
+{Player_name}: (그 꿈은 뭘까.)
 @back HomeDirtyroomNight01 tint:#888888 time:1 wait:false
-{Player_name}: ( 하필이면 수업 시간에 부끄럽게... )
+{Player_name}: (하필이면 수업 시간에 부끄럽게...)
 @back HomeDirtyroomNight01 tint:#4F4F4F time:1 wait:false
-{Player_name}: ( 차라리 오늘 있던 일이 꿈이었으면 좋겠는데... )
+{Player_name}: (차라리 오늘 있던 일이 꿈이었으면 좋겠는데...)
 @back HomeDirtyroomNight01 tint:#000000 time:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @sfx Amb_Shool_Club_01 volume:80 loop:true fade:1 wait:false
 @back HomeDirtyroom01 tint:white time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @spawn SunShafts wait:false
 @sfx Common_Morning_Bird_Twitter_01 volume:60 loop:false wait:false
@@ -93,6 +97,7 @@ describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐
 @stopSfx Footsteps_Male_Wood_Run_01 fade:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @back Black time:1 wait:true
@@ -100,6 +105,7 @@ describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐
 @sfx Amb_Classroom_Cutoff_01 volume:50 loop:true fade:1 wait:false
 @bgm Our_Story_Common_Classroom_01 volume:80 loop:true fade:1 wait:false
 @back ScClassRoom01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @char jeon.body>body1,face>face2 wait:false
 jeon: 그래서 내가 어제 그걸 보는데...

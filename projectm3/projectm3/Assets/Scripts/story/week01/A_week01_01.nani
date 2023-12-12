@@ -1,16 +1,18 @@
 # week01_01
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @bgm Common_Lobby_BGM_02 volume:75 loop:true fade:1 wait:false
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScLobby02 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 수업이 끝난 학교에서 학생들은 모두 집으로 가고 없었다.
 describe: 밴드부가 있다는 4층까지 가는 도중 단 한 명의 학생도 만날 수 없었다.
-{Player_name}: 생각보다 높네..
+{Player_name}: 생각보다 높네...
 {Player_name}: 4층 과학실이... 여기서 어디로 가야 하더라?
 @char la.body>body1,face>face1 wait:false
 ???: 안녕?
@@ -20,11 +22,11 @@ describe: 어느샌가 처음 보는 여학생이 등 뒤에 서 있었다.
 @char la.body>body1,face>face2 wait:false
 ???: 반가워.
 describe: 눈 앞의 여학생은 어딘지 모르게 감정이 없어 보이는 표정이었다.
-{Player_name}: 저...저요..?
+{Player_name}: 저... 저요..?
 @char la.body>body3,face>face2 wait:false
 ???: 내 이름은 라은이야. 네가 그 전학생이지?
 la: 신문부 부장을 맡고 있어. 우리 동갑이니까 말 편하게 해.
-describe: 신문..부?
+describe: 신문...부?
 {Player_name}: 신문부 부장..?
 @char la.body>body3,face>face5 wait:false
 la: 응. 혹시 나에 대해 알고 있었어? 그런 표정인데.
@@ -42,7 +44,7 @@ la: 대용이도 우리 동아리 부원이야. 벌써 이야기 들었구나?
 la: 혹시 지금 어디가는 중이야?
 {Player_name}: 밴드 동아리... 가려고 하는데...
 @char la.body>body3,face>face6 wait:false
-la: 아...밴드...
+la: 아... 밴드...
 la: 흐음...
 la: 라은은 무언가 재밌는 생각이라도 난 듯한 표정을 짓고 있었다.
 @char la.body>body1,face>face2 wait:false
@@ -76,5 +78,6 @@ describe: 그것도 자기와 같은 동아리에 들어와 달라고.
 describe: 살짝 이상한 기분이 들긴 하지만...
 describe: 내 선택은...
 @hidePrinter  wait:false
+@hideUI CP wait:false
 @choice "제안은 고맙지만 밴드부에 들어갈게!" goto:A_week01_02.week01_02
 @choice "그래! 신문부에 들어갈게!" goto:A_week01_badending.week01_badending

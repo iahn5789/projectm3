@@ -1,6 +1,7 @@
 ; 첫 시작
 # GameStart
 @hideUI InputNameUI
+@showUI CP wait:false
 @bgm Common_Backstage_01 volume:70 loop:true fade:1 wait:false
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
 @back Dream
@@ -17,7 +18,7 @@ describe: 마치 내 몸이 내 몸이 아닌 기분이었다.
 describe: 그래도 미친 듯이 뛰는 가슴 하나만큼은 확실하게 느낄 수 있었다.
 ???: 무슨 생각을 그렇게 해?
 @spawn ShakeCamera wait:false
-describe: 누군가가 뒤에서 내 어깨를 살짝 건드리며  말했다.
+describe: 누군가가 뒤에서 내 어깨를 살짝 건드리며 말했다.
 describe: 고개를 돌리려고 했으나 시선이 무대에 고정된 듯 고개가 돌아가지 않았다.
 ???: 혹시 긴장한 거야?
 describe: 긴장했냐 묻느냐면 질문에 나는 내 심장 소리를 들려주고 싶었다.
@@ -41,8 +42,10 @@ MC: 러브크레센도입니다!
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:false
+@hideUI CP wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:1 wait:false
 @back ScClassRoom01 wait:false
+@showUI CP wait:false
 @despawn Blur wait:false
 @processInput true
 @spawn ShakePrinter wait:false
@@ -58,10 +61,10 @@ describe: 그 속에서 현실을 파악하기까지 걸리는 시간 3초.
 describe: 3초 동안의 정적은 뒷자리에서 터진 누군가의 웃음과 함께 끝이 났다.
 @stopSfx Common_Girl_Laugh_01 fade:1 wait:false
 일동: 쟤... 지금 뭐라고 한거야...?
-일동: 러브...어쩌고 하지 않았나?
+일동: 러브... 어쩌고 하지 않았나?
 describe: 상황 파악이 끝나자 미칠듯한 부끄러움이 속에서부터 올라왔다.
 describe: 주변을 둘러보고 싶었지만, 그럴 용기조차 들지 않았다.
-{Player_name}: 나... 자다가 수업 시간에 소리친건가...?
+{Player_name}: 나... 자다가 수업 시간에 소리친건가..?
 describe: 나는 고개를 들지 못하고 그저 책상에 파묻고 있었다.
 describe: 그때.
 @spawn ShakeCamera wait:false
@@ -72,13 +75,13 @@ describe: 반사적으로 고개를 들어 뒤를 바라보았다.
 describe: 등 뒤에는 무서울 정도로 온화한 얼굴의 선생님이 계셨다.
 {Player_name}: ...
 선생님: 많이 졸리니?
-{Player_name}: 아...저...그게...
+{Player_name}: 아... 저... 그게...
 선생님: 졸리면 말을 하지 그랬어.
 {Player_name}: ...네?
 선생님: ...
 {Player_name}: ...?
 선생님: 뒤로 나가서 손 들고 서 있어!!
-{Player_name}: 아..으..어...네...
+{Player_name}: 아...으...어...네...
 @sfx Footsteps_Male_Wood_Walk_01 volume:70 loop:false wait:false
 describe: 화끈거리는 뒤통수를 잡고 뒤로 걸어 나갔다.
 describe: 시선 사이사이로 반 친구들의 비웃는 얼굴이 보였다.

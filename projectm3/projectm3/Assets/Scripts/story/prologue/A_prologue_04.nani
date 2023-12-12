@@ -1,12 +1,14 @@
 # prologue_04
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @sfx Footsteps_Male_Ctr_Walk_01 volume:70 loop:false wait:false
 @back Black time:1 wait:true
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:2 wait:false
 @back Black time:1 wait:true
 @back Road01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @char jeon.body>body4,face>face2 wait:false
 jeon: 후후후...
@@ -22,7 +24,7 @@ jeon: 우후후후...
 @hideChars wait:false
 @char bigjeon.body>body4,face>face2 wait:false
 @spawn ShakePrinter wait:false
-jeon: 아무것도 아니야...우후후후....
+jeon: 아무것도 아니야... 우후후후....
 {Player_name}: 어휴...
 @hideChars wait:false
 describe: 그 때.
@@ -46,8 +48,8 @@ jeon: 잠깐 이것 좀 들고 있어 봐!
 @stopSfx Footsteps_Male_ctr_run_01 fade:2
 describe: 처절하게 여섯 시를 외치던 대용이는 포스터를 나에게 건내준 채 골목길로 사라져 버렸다.
 {Player_name}: 야! 어디가! 전대용!!!
-{Player_name}: 진짜 이상한놈이라니까..
-{Player_name}: 근데 이건 뭐지...?
+{Player_name}: 진짜 이상한놈이라니까.
+{Player_name}: 근데 이건 뭐지..?
 @sfx Common_Paper_Crumple_01 volume:100 loop:false wait:false
 @spawn Blur wait:false
 @back Minicut_poster id:Minicut visible:true scale:0.7 wait:false position:0,1.5
