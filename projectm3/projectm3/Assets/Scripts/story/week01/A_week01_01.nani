@@ -1,12 +1,14 @@
 # week01_01
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @bgm Common_Lobby_BGM_02 volume:75 loop:true fade:1 wait:false
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScLobby02 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 수업이 끝난 학교에서 학생들은 모두 집으로 가고 없었다.
 describe: 밴드부가 있다는 4층까지 가는 도중 단 한 명의 학생도 만날 수 없었다.
@@ -76,5 +78,6 @@ describe: 그것도 자기와 같은 동아리에 들어와 달라고.
 describe: 살짝 이상한 기분이 들긴 하지만...
 describe: 내 선택은...
 @hidePrinter  wait:false
+@hideUI CP wait:false
 @choice "제안은 고맙지만 밴드부에 들어갈게!" goto:A_week01_02.week01_02
 @choice "그래! 신문부에 들어갈게!" goto:A_week01_badending.week01_badending

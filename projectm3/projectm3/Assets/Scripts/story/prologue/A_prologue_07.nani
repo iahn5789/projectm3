@@ -2,12 +2,14 @@
 @processInput false
 @stopSfx Amb_Shool_Club_01 fade:1
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @bgm MySweethome_Scene_Home_01 volume:80 loop:true fade:2 wait:false
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:1 wait:true
 @back HomeDirtyroomNight01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 꺼져버린 스마트폰과 어딘지 모르는 처음 보는 길.
 describe: 그 둘과 함께 집에 들어오니 어느새 하늘은 완전히 어두워져 있었다.
@@ -68,11 +70,13 @@ describe: 그중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
 @back HomeDirtyroomNight01 tint:#000000 time:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @sfx Amb_Shool_Club_01 volume:80 loop:true fade:1 wait:false
 @back HomeDirtyroom01 tint:white time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @spawn SunShafts wait:false
 @sfx Common_Morning_Bird_Twitter_01 volume:60 loop:false wait:false
@@ -93,6 +97,7 @@ describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐
 @stopSfx Footsteps_Male_Wood_Run_01 fade:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @back Black time:1 wait:true
@@ -100,6 +105,7 @@ describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐
 @sfx Amb_Classroom_Cutoff_01 volume:50 loop:true fade:1 wait:false
 @bgm Our_Story_Common_Classroom_01 volume:80 loop:true fade:1 wait:false
 @back ScClassRoom01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @char jeon.body>body1,face>face2 wait:false
 jeon: 그래서 내가 어제 그걸 보는데...

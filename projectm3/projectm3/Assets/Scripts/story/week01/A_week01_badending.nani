@@ -1,4 +1,5 @@
 #week01_badending
+@showUI CP wait:false
 {Player_name}: ...신문부에 들어갈게!
 {Player_name}: 어차피 악기도 다룰 줄 모르고 노래도 못부르는데...
 @char la.body>body1,face>face5 wait:false
@@ -51,10 +52,12 @@ la: 그럼. 그렇고말고.
 la: 가자! 다들 기다리고 있을 거야!
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @back ScClub01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 @char jin.body>body1,face>face4 wait:false
 ???: 언제까지 기다리고만 있어야 하는 건데!
@@ -92,10 +95,12 @@ kang: ...
 @back Minicut_han id:Minicut visible:false scale:0.7 wait:false position:0,1.5
 @despawn Blur wait:false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @back ScLobby01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 {Player_name}: 그런데...
 @char la.body>body1,face>face1 wait:false
@@ -129,12 +134,15 @@ la: ...
 la: <size=50>내</size><size=50>가</size><size=50> </size><size=50>그</size><size=50>렇</size><size=50>게</size><size=50> </size><size=50>만</size><size=50>들</size><size=50> </size><size=50>거</size><size=50>니</size><size=50>까</size><size=50>.</size><size=50>.</size><size=50>.</size>
 @processInput false
 @hideChars time:1 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:1 wait:true
 @back Black time:2 wait:true
 @back Black time:2 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 히든엔딩 : N (예시)
 describe: '신문부에 가입하다' (예시)
+@hideUI CP wait:false
 @hidePrinter wait:true time:3
 @back Black time:4 wait:true
 @showUI TitleUI time:3

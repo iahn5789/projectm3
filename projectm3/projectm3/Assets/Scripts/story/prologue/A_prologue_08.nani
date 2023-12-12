@@ -2,12 +2,14 @@
 ???: 네가 그 전학생이구나!
 @stopBgm Our_Story_Common_Classroom_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @sfx Common_Beautiful_Bell_Tree_01 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back CG/Kang01 tint:white time:0.5 wait:true
 @unlock CG/Kang01 wait:false
+@showUI CP wait:false
 @processInput true
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
 describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
@@ -21,10 +23,12 @@ describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다
 @processInput false
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:3 wait:false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScClassRoom01 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 @char kang.body>body1,face>face8 wait:false
 @bgm Our_Story_Common_Classroom_01 volume:80 loop:true wait:false
@@ -114,11 +118,13 @@ describe: (원래 이렇게 불쑥 찾아와서 초대하고 그러는건가..?)
 @stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @sfx Amb_Hallway_01 volume:70 loop:true fade:1 wait:false
 @back ScClassRoom01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 지루한 수업이 지나가고 어느덧 종례 시간이 다가왔다.
 선생님: 자 다들 오늘 하루 수고했고 내일 보자! 이상!
@@ -137,18 +143,22 @@ describe: 그것도 수업 시간에 졸다가 소리를 지른 전학생.
 describe: 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득 생각이 들었다.
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 @char kang.body>body3,face>face1 wait:false
 kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
 @processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScClassRoom01 time:0.5 wait:true
+@showUI CP wait:false
 @processInput true
 {Player_name}: 잠깐만.
 {Player_name}: (생각해 보니 나도 학교 끝나고 보자는 사람이 있었잖아?)

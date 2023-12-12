@@ -1,7 +1,7 @@
 ; 첫 시작
 # GameStart
 @hideUI InputNameUI
-@showUI ControlPanelContainer
+@showUI CP wait:false
 @bgm Common_Backstage_01 volume:70 loop:true fade:1 wait:false
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
 @back Dream
@@ -42,8 +42,10 @@ MC: 러브크레센도입니다!
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:false
+@hideUI CP wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:1 wait:false
 @back ScClassRoom01 wait:false
+@showUI CP wait:false
 @despawn Blur wait:false
 @processInput true
 @spawn ShakePrinter wait:false
