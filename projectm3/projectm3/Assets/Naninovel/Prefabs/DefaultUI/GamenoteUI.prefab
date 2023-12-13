@@ -2151,6 +2151,7 @@ GameObject:
   - component: {fileID: 6306036015961478116}
   - component: {fileID: 6891551926995512364}
   - component: {fileID: 500697966108114610}
+  - component: {fileID: 8931447900111554826}
   m_Layer: 5
   m_Name: GamenoteUI
   m_TagString: Untagged
@@ -2241,7 +2242,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 500697966108114610}
-        m_MethodName: SetProcessInputOff
+        m_MethodName: SetProcessInputValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2251,11 +2252,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8931447900111554826}
+        m_MethodName: SetValueInputKeyManager
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: false
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 500697966108114610}
-        m_MethodName: SetProcessInputOn
+        m_MethodName: SetProcessInputOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2355,6 +2367,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Titletext: {fileID: 0}
+--- !u!114 &8931447900111554826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6306036015961478139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb3eff0ca18a6545b691f299308d30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &5977063065066046677
@@ -3449,6 +3474,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7520280509167229651, guid: cd42201cf26df7f4fb71d0fc3abc3292, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cd42201cf26df7f4fb71d0fc3abc3292, type: 3}
+--- !u!1 &6480754641547574365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8967858175628617079, guid: cd42201cf26df7f4fb71d0fc3abc3292,
+    type: 3}
+  m_PrefabInstance: {fileID: 2703425854255733034}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7237868607093536603 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4753105598311558769, guid: cd42201cf26df7f4fb71d0fc3abc3292,
@@ -3461,12 +3492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f1c5417c9d7ab4b84e531f83f60a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6480754641547574365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8967858175628617079, guid: cd42201cf26df7f4fb71d0fc3abc3292,
-    type: 3}
-  m_PrefabInstance: {fileID: 2703425854255733034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1337144117775917948 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3965984621648968278, guid: cd42201cf26df7f4fb71d0fc3abc3292,
