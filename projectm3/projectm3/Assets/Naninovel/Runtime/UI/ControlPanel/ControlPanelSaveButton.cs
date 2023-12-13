@@ -1,10 +1,12 @@
 // Copyright 2022 ReWaffle LLC. All rights reserved.
 
+using UnityEngine;
 
 namespace Naninovel.UI
 {
     public class ControlPanelSaveButton : ScriptableButton
     {
+        private ICustomVariableManager variableManager;
         private IUIManager uiManager;
 
         protected override void Awake ()
@@ -24,7 +26,7 @@ namespace Naninovel.UI
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Save;
             saveLoadUI.Show();
         }
-        public void OnClick ()
+        public void OnClick (string InputKey)
         {
             uiManager.GetUI<IPauseUI>()?.Hide();
 
@@ -32,6 +34,9 @@ namespace Naninovel.UI
             var saveLoadUI_Load = uiManager.GetUI<ISaveLoadUI>();
             if (saveLoadUI is null) return;
             if (!Engine.GetService<IInputManager>().ProcessInput) return;
+
+            variableManager = Engine.GetService<ICustomVariableManager>();
+            variableManager?.SetVariableValue($"InputKeyValue", InputKey);
 
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Save;
             saveLoadUI.Show();

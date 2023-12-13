@@ -64,6 +64,7 @@ namespace Naninovel.UI
         private IConfirmationUI confirmationUI;
         private SaveLoadUIPresentationMode presentationMode;
         private ISaveSlotManager<GameStateMap> slotManager => stateManager?.GameSlotManager;
+        private ICustomVariableManager variableManager;
 
         public override UniTask InitializeAsync ()
         {
@@ -111,6 +112,9 @@ namespace Naninovel.UI
         protected virtual void SetPresentationMode (SaveLoadUIPresentationMode value)
         {
             presentationMode = value;
+            variableManager = Engine.GetService<ICustomVariableManager>();
+            variableManager?.SetVariableValue("SaveLoadScene", value.ToString());
+            
             switch (value)
             {
                 case SaveLoadUIPresentationMode.QuickLoad:
@@ -174,6 +178,9 @@ namespace Naninovel.UI
             Hide();
             Engine.GetService<IUIManager>()?.GetUI<ITitleUI>()?.Hide();
             await stateManager.LoadGameAsync(slotId);
+            variableManager = Engine.GetService<ICustomVariableManager>();
+            variableManager?.SetVariableValue($"InputKeyValue", "true");
+            Engine.GetService<IInputManager>().ProcessInput = true;
         }
 
         protected virtual void HandleSaveSlotClicked (int slotNumber)

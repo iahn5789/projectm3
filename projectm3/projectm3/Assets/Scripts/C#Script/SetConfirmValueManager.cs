@@ -4,12 +4,13 @@ using UnityEngine;
 using Naninovel;
 using Naninovel.Commands;
 
-public class SetInputKeyValueManager : MonoBehaviour
+
+public class SetConfirmValueManager : MonoBehaviour
 {
     private ICustomVariableManager variableManager;
     public void SetValueInputKeyManager(string InputKey)
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
-        variableManager?.SetVariableValue($"InputKeyValue", InputKey);
+        variableManager?.SetVariableValue($"ConfirmationValue", InputKey);
     }
 }

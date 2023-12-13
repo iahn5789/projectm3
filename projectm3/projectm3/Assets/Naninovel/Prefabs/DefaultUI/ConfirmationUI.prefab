@@ -637,6 +637,7 @@ GameObject:
   - component: {fileID: 6578423214009816939}
   - component: {fileID: 2678250027850051644}
   - component: {fileID: 328278312380588684}
+  - component: {fileID: 6074764858065743924}
   m_Layer: 5
   m_Name: CancelButton
   m_TagString: Untagged
@@ -718,6 +719,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5583907542991412163}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6074764858065743924}
+        m_MethodName: SetConfirmInputValue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -946,6 +958,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 2678250027850051644}
+--- !u!114 &6074764858065743924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3453689559653547966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Titletext: {fileID: 0}
 --- !u!1 &4955579973001425406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,17 +1298,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1430151997030331745}
-        m_MethodName: SetProcessInputOn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   hideOnLoad: 0
   hideInThumbnail: 1
   saveVisibilityState: 0
@@ -1374,6 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Titletext: {fileID: 0}
 --- !u!1 &6306036017273270223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1578,7 @@ GameObject:
   - component: {fileID: 4257821412419658019}
   - component: {fileID: 720396087304670260}
   - component: {fileID: 2687187176374623495}
+  - component: {fileID: 1998396436742214077}
   m_Layer: 5
   m_Name: ConfirmButton
   m_TagString: Untagged
@@ -1644,6 +1660,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5583907542991412163}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1998396436742214077}
+        m_MethodName: SetProcessInputOff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1876,6 +1903,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 2678250027850051644}
+--- !u!114 &1998396436742214077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617187980297251242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Titletext: {fileID: 0}
 --- !u!1 &7326192123093840477
 GameObject:
   m_ObjectHideFlags: 0
