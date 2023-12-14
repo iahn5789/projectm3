@@ -1,12 +1,13 @@
 # prologue_08
 ???: 네가 그 전학생이구나!
-@stopBgm Our_Story_Common_Classroom_01 fade:1 wait:false
+@stopBgm BGM_Map_Classroom_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Common_Beautiful_Bell_Tree_01 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
+@sfx Common_Wind_Blow_Bright_01 volume:100 loop:false fade:1 wait:false
+@sfx Common_Beautiful_Bell_Tree_01 volume:100 loop:true fade:1 wait:false
 @back CG/Kang01 tint:white time:0.5 wait:true
 @unlock CG/Kang01 wait:false
 @showUI CP wait:false
@@ -31,7 +32,7 @@ describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다
 @showUI CP wait:false
 @processInput true
 @char kang.body>body1,face>face8 wait:false
-@bgm Our_Story_Common_Classroom_01 volume:80 loop:true wait:false
+@bgm BGM_Map_Classroom_01 volume:80 loop:true wait:false
 ???: 저기... 듣고 있는 거야?
 {Player_name}: 어... 누구세요...?
 @char kang.body>body1,face>face2 wait:false
@@ -166,6 +167,6 @@ describe: 강여진...
 describe: 조금 뜬금없긴 했지만, 분명히 나에게 먼저 말을 걸었다.
 describe: ...왜 동아리 가입을 권유했는지는 알 수 없지만.
 describe: 어차피 동아리 가입도 해야 했으니 한번 가볼까...
-@stopBgm Amb_Classroom_Cutoff_01 fade:1 wait:false
-@stopSfx Our_Story_Common_Classroom_01 fade:2 wait:false
+@stopBgm BGM_Map_Classroom_01 fade:1 wait:false
+@stopSfx Amb_Classroom_Cutoff_01 fade:2 wait:false
 @goto A_week01_01.week01_01

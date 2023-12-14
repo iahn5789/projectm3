@@ -4,10 +4,10 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @stopSfx Amb_Shool_Club_01 fade:0.5 wait:false
-@stopBgm Common_School_Club_01 fade:0.5 wait:false
+@stopBgm BGM_Map_Antics_01 fade:0.5 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Whoosh_TestFinish_Before_Stamp_01 volume:80 loop:false wait:false
+@sfx Common_Wind_Blow_Bright_01 volume:80 loop:false wait:false
 @sfx Common_Beautiful_Bell_Tree_01 volume:80 loop:true fade:0.5 wait:false
 @back CG/Kang02 time:0.5 wait:true
 @unlock CG/Kang02 wait:false
@@ -39,13 +39,13 @@ describe: 무엇 하나 알지도 못한 채 이렇게 결정해도 되는 건�
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @sfx Amb_Shool_Club_01 volume:80 loop:true fade:1 wait:false
-@bgm Common_School_Club_01 volume:80 loop:true fade:1 wait:false
+@bgm BGM_Map_Antics_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 {Player_name}: 자... 잘 부탁... 드립니다..!!
-@char kang.body>body2,face>face2 wait:false position:0
+@char kang.body>body2,face>face2 position:0 wait:false
 kang: 좋아! 결정된 거다!
 jin: 정말로 동아리에 가입시킬거야? 진짜?
 @char kang.body>body1,face>face2 wait:false

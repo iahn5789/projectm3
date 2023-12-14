@@ -2,7 +2,7 @@
 # GameStart
 @hideUI InputNameUI
 @showUI CP wait:false
-@bgm Common_Backstage_01 volume:70 loop:true fade:1 wait:false
+@sfx Common_Backstage_01 volume:75 loop:true fade:1 wait:false
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
 @back Dream
 @spawn Blur wait:false
@@ -33,7 +33,7 @@ describe: 손바닥이 완전히 등에 닿지는 않았지만, 온기를 느끼
 @stopSfx Heart_Beat_Fast_02 fade:2 wait:false
 ???: 외치는거야!
 @sfx Common_Mic_Feedback_01 volume:70 loop:false fade:0 wait:false
-@stopBgm Common_Backstage_01 fade:0 wait:false
+@stopSfx Common_Backstage_01 fade:1 wait:false
 MC: 오래 기다리셨습니다! 다음 차례는 드디어...
 ???: 러브...
 {Player_name}: 러브...
@@ -57,7 +57,7 @@ describe: 어딘가 익숙한 풍경.
 describe: 조용하고 나른한 분위기.
 describe: 그 속에서 현실을 파악하기까지 걸리는 시간 3초.
 @sfx Common_Girl_Laugh_01 volume:100 loop:false wait:false
-@bgm Our_Story_Common_Classroom_01 volume:70 loop:true wait:false
+@bgm BGM_Map_Classroom_01 volume:70 loop:true wait:false
 describe: 3초 동안의 정적은 뒷자리에서 터진 누군가의 웃음과 함께 끝이 났다.
 @stopSfx Common_Girl_Laugh_01 fade:1 wait:false
 일동: 쟤... 지금 뭐라고 한거야...?

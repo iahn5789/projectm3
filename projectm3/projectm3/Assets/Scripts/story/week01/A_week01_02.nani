@@ -33,7 +33,7 @@ describe: 방과 후 시간, 학생들이 빠져나간 학교는 이상할 정�
 describe: 아무도 없는 복도를 지나쳐 밴드부 앞으로 걸어갔다.
 describe: 입구에 도착하자 밴드부라고 적힌 나무로 된 작은 팻말이 보였다.
 @spawn Blur wait:false
-@back Minicut_sign id:Minicut visible:true scale:0.7 wait:false position:0,1.5
+@back Minicut_sign id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 describe: 팻말은 색도 바래고 몇 군데 갈라진 부분도 있었다.
 describe: 밴드부라는 글자 때문에 오히려 팻말이 더 처량하게 보였다.
 describe: 오히려 없는 게 더 나아 보일 정도였다.
@@ -43,7 +43,7 @@ describe: 손잡이가 약간 부서져 있었다.
 {Player_name}: (이거 알고 보니 이상한 동아리 아니야?)
 {Player_name}: (...그냥 지금이라도 신문부에 들어가야 되나..?)
 @despawn Blur wait:false
-@back Minicut_sign id:Minicut visible:false scale:0.7 wait:false position:0,1.5
+@back Minicut_sign id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
 describe: 고민하고 있던 도중 안에서 소리가 들려왔다.
 @sfx Common_Door_Slam_01 volume:30 loop:false wait:false
 ???: 언제까지 기다리고만 있어야 하는 건데!
@@ -66,6 +66,6 @@ describe: 그 후 여학생의 표정이 순식간에 굳어갔다.
 @showUI CP wait:false
 @processInput true
 @stopSfx Amb_Room_Tone_02 wait:false
-@stopBgm Common_Lobby_BGM_02 wait:false
+@stopBgm BGM_Map_Cool_01 wait:false
 ???: <size=50>꺄</size><size=50>아</size><size=50>아</size><size=50>아</size><size=50>아</size><size=50>-</size><size=50>!</size>
 @goto A_week01_03.week01_03

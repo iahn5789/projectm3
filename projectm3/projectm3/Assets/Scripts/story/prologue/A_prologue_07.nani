@@ -5,7 +5,7 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
-@bgm MySweethome_Scene_Home_01 volume:80 loop:true fade:2 wait:false
+@bgm BGM_Map_Sweethome_01 volume:80 loop:true fade:2 wait:false
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:1 wait:true
 @back HomeDirtyroomNight01 time:1 wait:true
@@ -60,7 +60,7 @@ describe: 침대에 눕자 온갖 잡생각이 떠올랐다.
 describe: 이상한 꿈, 동아리, 루틴, 전단지, 앨범...
 describe: 그중 낮에 꾸었던 꿈이 가장 크게 떠올랐다.
 @stopSfx Amb_Room_Tone_02 fade:8 wait:false
-@stopBgm MySweethome_Scene_Home_01 fade:8 wait:false
+@stopBgm BGM_Map_Sweethome_01 fade:8 wait:false
 @back HomeDirtyroomNight01 tint:#CDCDCD time:1 wait:false
 {Player_name}: (그 꿈은 뭘까.)
 @back HomeDirtyroomNight01 tint:#888888 time:1 wait:false
@@ -103,7 +103,7 @@ describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @sfx Amb_Classroom_Cutoff_01 volume:50 loop:true fade:1 wait:false
-@bgm Our_Story_Common_Classroom_01 volume:80 loop:true fade:1 wait:false
+@bgm BGM_Map_Classroom_01 volume:80 loop:true fade:1 wait:false
 @back ScClassRoom01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
