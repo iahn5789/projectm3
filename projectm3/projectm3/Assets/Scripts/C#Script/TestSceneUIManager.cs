@@ -619,7 +619,6 @@ public class TestSceneUIManager : MonoBehaviour
 
         if (kweek == "1" && jweek == "1" && sweek == "1")
         {
-            Debug.Log(tutorialvarialble);
             if (tutorialvarialble == "First")
             {
                 FadeInAudio_tuto_2();

@@ -11,6 +11,7 @@ using EasyTransition;
 
 public class AnimationEventReceiver : MonoBehaviour
 {
+    private ICustomVariableManager variableManager;
     public void DestroyParentX3GameObject()
     {
         Transform greatGrandparent = transform.parent?.parent?.parent;
@@ -26,8 +27,15 @@ public class AnimationEventReceiver : MonoBehaviour
 
                 // Keyinput 값에 따라 ProcessInput 설정
                 Engine.GetService<IInputManager>().ProcessInput = keyInputValue;
+
+                variableManager = Engine.GetService<ICustomVariableManager>();
+                variableManager?.SetVariableValue($"InputKeyValue", keyInputValue.ToString());
             }
-            Destroy(greatGrandparent.gameObject);
+            // 오브젝트가 여전히 존재하는지 확인
+            if (greatGrandparent != null)
+            {
+                Destroy(greatGrandparent.gameObject);
+            }
         }
         else
         {
@@ -49,8 +57,15 @@ public class AnimationEventReceiver : MonoBehaviour
 
                 // Keyinput 값에 따라 ProcessInput 설정
                 Engine.GetService<IInputManager>().ProcessInput = keyInputValue;
+
+                variableManager = Engine.GetService<ICustomVariableManager>();
+                variableManager?.SetVariableValue($"InputKeyValue", keyInputValue.ToString());
             }
-            Destroy(greatGrandparent.gameObject);
+            // 오브젝트가 여전히 존재하는지 확인
+            if (greatGrandparent != null)
+            {
+                Destroy(greatGrandparent.gameObject);
+            }
         }
         else
         {
