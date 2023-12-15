@@ -142,7 +142,7 @@ namespace Naninovel
             if (this.Id.StartsWith("Mini"))
             {
                 distance_nanugi = 2400f;
-                referenceValue = ((itemId - 1) / 2) * -600;
+                referenceValue = ((itemId - 1) / 2) * -325;
             }
             else
             {
