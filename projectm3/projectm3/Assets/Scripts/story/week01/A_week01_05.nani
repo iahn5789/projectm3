@@ -11,26 +11,26 @@
 @back ScOffice01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
-@char kang.body>body2,face>face4 wait:false
+@char kangbody2.4 wait:false wait:false
 kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
-@char kang.body>body2,face>face4 position:4 wait:false
-@char jin.body>body3,face>face4 position:-5 wait:false
+@char kangbody2.4 wait:false position:4 wait:false
+@char jinbody3.4 position:-5 wait:false
 jin: 아직 대화도 제대로 나눠보지도 못했고! 무엇보다 음흉해서 싫어!
-@char kang.body>body2,face>face5 position:4 wait:false
+@char kangbody2.5 wait:false position:4 wait:false
 kang: 그럴만한 이유가 있었잖아! 왜 계속 고집을 부리는 거야?
-@char jin.body>body2,face>face4 position:-5 wait:false
+@char jinbody2.4 position:-5 wait:false
 jin: 고집을 부리는 건 내가 아니라 너야 바보야!
 한갑수: 얘들아…싸울 거면 나가서 싸우고 와라. 나도 할 일 많다!
 @hideChars wait:false
-@char kang.body>body2,face>face8 wait:false
+@char kangbody2.8 wait:false wait:false
 kang: 아! 아니에요! 저희 동아리 신입 부원 때문에 왔습니다!
 한갑수: 신입..? 뭐야. 진짜로 찾아온거야?
-@char kang.body>body2,face>face1 wait:false
+@char kangbody2.1 wait:false wait:false
 kang: 선생님도 아실걸요? 그 수업 중에 이상한 소리 지른 애요!
-@char kang.body>body1,face>face2 wait:false
+@char kangbody1.2 wait:false wait:false
 kang: 전학을 온 지 얼마 안 돼서 밴드부가 있는지 몰랐는데 꼭 들어오고 싶다고 했어요!
 jin: 아니 언제 그랬어! 그런 말 없었잖아! 강여진 너…
-@char kang.body>body3,face>face4 wait:false
+@char kangbody3.4 wait:false
 kang: 들어오겠다고 말하는 거 너도 봤잖아! 맞아 아니야!
 jin: 아니 그건 네가…
 @hideChars wait:false
@@ -38,22 +38,22 @@ jin: 아니 그건 네가…
 한갑수: 그놈 목소리 하나는 우렁차서 노래 부르면 기가 막힐 것 같긴 하다만…
 한갑수: 여진이는 들어온다고 하고 다영이는 아니라고 말하고.
 한갑수: 누구 말이 맞는거야? 부원들끼리 합의된 거 맞아?
-@char kang.body>body3,face>face8 wait:false
+@char kangbody3.8 wait:false
 kang: 그… 그건…
-@char kang.body>body2,face>face8 wait:false
+@char kangbody2.8 wait:false wait:false
 kang: 어쨌든 본인 의사가 가장 중요하니까요! 직접 들어온다고 했어요!
 @hideChars wait:false
 한갑수: 본인이 직접 들어오겠다고 했으면 뭐...
 한갑수: 그래. 가입을 허락하마.
-@char jin.body>body2,face>face3 position:0 wait:false
+@char jinbody2.3 position:0 wait:false
 jin: 으...
-@char kang.body>body1,face>face2 position:4 wait:false
-@char jin.body>body2,face>face3 position:-5 wait:false
+@char kangbody1.2 wait:false position:4 wait:false
+@char jinbody2.3 position:-5 wait:false
 kang: 아싸! 그럼 저희 인원 채운거죠?
 @hideChars wait:false
 한갑수: 한국말은 끝까지 들어야지.
 한갑수: 대신 조건이 하나 있다.
-@char kang.body>body1,face>face6 position:0 wait:false
+@char kangbody1.6 wait:false position:0 wait:false
 kang: 조건...이요..?
 @stopSfx Amb_Office_01 fade:1 wait:false
 @goto A_week01_06.week01_06

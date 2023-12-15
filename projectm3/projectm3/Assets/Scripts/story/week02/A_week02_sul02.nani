@@ -1,11 +1,11 @@
 # week02_sul02
 {Player_name}: (설명할 때는 뭔가 분위기가 다르네.)
-@char sul.body>body1,face>face1 wait:false
+@char sulbody1.1 wait:false
 sul: ...그거 그렇게 하면 안 돼...
 describe: 잭을 정리하는 도중 나희누나가 말을 걸었다
 {Player_name}: 네...?
 sul: ...잭을 접어서 보관하면 접힌 부분이 끊어져...
-@char sul.body>body2,face>face1 wait:false
+@char sulbody2.1 wait:false
 sul: ...동그랗게 말아서 정리해...
 {Player_name}: 아...네..!
 @hideChars wait:false
@@ -15,16 +15,16 @@ describe: 나희누나는 그런 내 모습을 잠깐 보더니 다시 말없이
 describe: 처음으로 동아리방을 정리했지만, 나희누나의 설명대로 하자 무난하게 정리를 끝마쳤다.
 {Player_name}: 흠...이정도면 다 된 것 같은데...
 @stopSfx Common_Branch_Click_01 fade:2 wait:0
-@char sul.body>body2,face>face1 wait:false
+@char sulbody2.1 wait:false
 sul: ...다했어?
 {Player_name}: 아! 네...일단 알려준 대로 하긴 했는데...제대로 한 건지 잘 모르겠어요...
-@char sul.body>body1,face>face1 wait:false
+@char sulbody1.1 wait:false
 sul: ...같이 봐보자...
 sul: ...흠...
 {Player_name}: 음...표정이 심각해 보이는 것 같기도 하고...아닌 것 같기도 하고...
 {Player_name}: 항상 같은 표정이니 모르겠어...
 sul: ...잘했네...
-@char sul.body>body3,face>face1 wait:false
+@char sulbody3.1 wait:false
 sul: ...고생했어...
 {Player_name}: 감사합니다!
 @processInput false
@@ -43,7 +43,7 @@ describe: 그렇지만 무언가 빼먹고 있다는 생각이 계속해서 내 
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @processInput true
-@char jin.body>body3,face>face2 wait:false
+@char jinbody3.2 wait:false
 jin: 잘됐네! 뒷정리하면서 장치 어떻게 쓰는지도 좀 배우고!
 @hideChars wait:false
 @char bigjin.body>body3,face>face2 wait:false
