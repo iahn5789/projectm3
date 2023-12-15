@@ -16,6 +16,8 @@ public class TestResultUIManager : MonoBehaviour
     public Text AddBadgeText;
     public Text TotalBadgeText;
     public GameObject[] Star;
+    public Sprite[] StampList;
+    public Image Stamp;
     private ICustomVariableManager variableManager;
     private int _Coin = 500;
     private int _Badge = 1;
@@ -27,6 +29,7 @@ public class TestResultUIManager : MonoBehaviour
         string _TestCorrect = variableManager?.GetVariableValue("TestCorrect");
         int TestCorrectResult = Int32.Parse(variableManager?.GetVariableValue("TestCorrectResult"));
         CollectScoreText.text = _TestCorrect;
+        SetStamp(Int32.Parse(_TestCorrect));
         SetStar(TestCorrectResult);
         int _AddCoin = Int32.Parse(_TestCorrect) * _Coin;
         int _AddBadge = Int32.Parse(_TestCorrect) * _Badge;
@@ -55,6 +58,10 @@ public class TestResultUIManager : MonoBehaviour
                 Star[i*2].SetActive(true);
             }
         }
+    }
+    private void SetStamp(int TestCorrectResult)
+    {
+        Stamp.sprite = StampList[TestCorrectResult];
     }
 
 }
