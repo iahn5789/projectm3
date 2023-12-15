@@ -124,7 +124,7 @@ namespace Naninovel.UI
                 else if(name == "Sul01")
                     return "이딴게 회의?";
                 else if(name == "Sul02")
-                    return "Sul2번";
+                    return "두근두근 벌컥벌컥";
                 else if(name == "Sul03")
                     return "Sul3번";
                 else if(name == "Sul04")
@@ -134,19 +134,19 @@ namespace Naninovel.UI
                 else if(name == "Sul06")
                     return "Sul6번";
                 else if(name == "Mini01")
-                    return "Mini1번";
+                    return "포스터";
                 else if(name == "Mini02")
-                    return "Mini2번";
+                    return "낡은 앨범";
                 else if(name == "Mini03")
-                    return "Mini3번";
+                    return "밴드부 팻말";
                 else if(name == "Mini04")
-                    return "Mini4번";
+                    return "한갑수 선생님";
                 else if(name == "Mini05")
-                    return "Mini5번";
+                    return "유리관 속 기타";
                 else if(name == "Mini06")
-                    return "Mini6번";
+                    return "졸업 앨범";
                 else if(name == "Mini07")
-                    return "Mini7번";
+                    return "믹서";
                 else if(name == "Mini08")
                     return "Mini8번";
                 else if(name == "Mini09")
