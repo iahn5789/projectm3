@@ -16,13 +16,15 @@ describe: 어색한 분위기가 이어지자, 침 삼키는 소리까지 들리
 describe: 이대로 가다간 동아리고 뭐고 그 전에 분위기에 깔려 죽을 것만 같았다.
 describe: 뭐라도 이야기 해야겠다는 생각이 들었다.
 {Player_name}: 저기… 이름이 설나희...
-@char sulbody1.1 wait:false
+@char sulbody1.1 wait:false pose:c
 sul: …
 {Player_name}: 혹시 몇 학년이세요…?
-@char sulbody3.1 wait:false
+@hideChars wait:false
+@char sulbody3.1 wait:false pose:c
 sul: …3학년…
 {Player_name}: 누나라고 불러도 될까요…?
-@char sulbody1.1 wait:false
+@hideChars wait:false
+@char sulbody1.1 wait:false pose:c
 sul: …응…
 @sfx Crow_Caw_01 volume:30 loop:false wait:false
 {Player_name}: (틀렸어… 대화가 두 마디 이상 진행되질 않아… 누가 좀 구해줘…)
@@ -32,36 +34,38 @@ sul: …응…
 describe: 드르륵.
 describe: 그때 동아리실 문이 열리며 뜻밖의 손님이 찾아왔다.
 @stopSfx Common_Sliding_Door_Open_02 fade:2 wait:false
-@char jeonbody1.1 wait:false
+@char jeonbody1.1 wait:false pose:c
 jeon: 실례합니다.
 jeon: 어? 대용이? 여긴 무슨 일이야?
-@char jeonbody2.4 wait:false
+@hideChars wait:false
+@char jeonbody2.4 wait:false pose:c
 jeon: 오! {Player_name}! 결국 가입해 버린 거냐고?
-@char jeonbody2.1 wait:false
+@char jeonbody2.1 wait:false pose:c
 jeon: 별건 아니고 잠깐 필요한 게 있어서 찾아보러 왔지.
-@char jeonbody3.1 wait:false
+@hideChars wait:false
+@char jeonbody3.1 wait:false pose:c
 jeon: 혹시 마이크 남는 거 있어?
 {Player_name}: 마이크? 나는 잘 모르겠는데?
-@char jeonbody4.1 wait:false
+@char jeonbody4.1 wait:false pose:c
 jeon: 아 그래? 흠…
 @hideChars wait:false
 describe: 잠시 고민하던 대용이는 옆에 있던 나희누나에게 말을 건넸다.
-@char jeonbody3.2 wait:false
+@char jeonbody3.2 wait:false pose:c
 jeon: 헤헤 누나 안녕하세요! 혹시 마이크 남는 거 있나요?
 @hideChars wait:false
-@char sulbody2.1 wait:false
+@char sulbody2.1 wait:false pose:c
 sul: 없어.
 jeon: 없어요?
-@hideChars wait:false
-@char bigsul.body>body2,face>face1 wait:false
+@hideChars wait:false pose:c
+@char sulbody2.1 pose:bc wait:false
 sul: 없어.
 jeon: 아 있었는데?
 @spawn ShakeCamera wait:false
-@char bigsul.body>body2,face>face4 wait:false
+@char sulbody2.4 pose:bc wait:false
 sul: 그냥 없어.
 jeon: ...
 @hideChars wait:false
-@char jeonbody2.5 wait:false
+@char jeonbody2.5 wait:false pose:c
 jeon: {Player_name}. 가볼 게 내일 봐!
 {Player_name}: 어...잘가!
 @hideChars wait:false
@@ -69,14 +73,16 @@ jeon: {Player_name}. 가볼 게 내일 봐!
 jeon: 대용이는 나에게 인사를 건네는 척하며 나희 누나를 슬며시 바라봤다.
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:2
 jeon: 나가는 뒷모습이 어쩐지 쓸쓸해 보였다.
-@char sulbody1.1 wait:false
+@char sulbody1.1 wait:false pose:c
 sul: …저기.
 sul: 아는 사람이야…?
 {Player_name}: 네. 전학 와서 사귀게 된 친구예요.
-@char sulbody3.1 wait:false
+@hideChars wait:false
+@char sulbody3.1 wait:false pose:c
 sul: …
 {Player_name}: 왜요...?
-@char sulbody3.8 wait:false
+@hideChars wait:false
+@char sulbody3.8 wait:false pose:bc
 @sfx Common_Whoosh_Horror_01 volume:50 loop:false wait:false
 sul: …기분나빠…
 @stopSfx Common_Whoosh_Horror_01 fade:2 wait:false

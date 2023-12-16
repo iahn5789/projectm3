@@ -1,47 +1,51 @@
 # week02_jin03
+@showUI CP wait:false
 {Player_name}: 결국 동아리에 애정이 있으니까 그런 말을 하는 거잖아?
 {Player_name}: 애초에 관심이 없었으면 의견을 낼 일도 없었겠지.
-@char jinbody3.3 wait:false
+@hideChars wait:false
+@char jinbody3.3 wait:false pose:c
 jin: 아니거든! 난 그냥 열심히 하는거라고...
 {Player_name}: 그래? 그럼 나도 열심히 해야겠네.
-@char jinbody3.2 wait:false
+@char jinbody3.2 wait:false pose:c
 jin: 당연하지! 내가 계속 지켜볼 거야!
 @sfx Footsteps_Male_Wood_Walk_01 volume:100 loop:false wait:0
 @stopSfx Amb_Hallway_01 fade:2 wait:0
 @processInput false
+@hideUI CP wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @sfx Amb_Office_01 volume:100 loop:true fade:1 wait:0
 @back ScOffice01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 다영이와 얘기하다 보니 어느새 교무실에 도착했다.
 {Player_name}: 실례하겠습니다.
 한갑수:	어 연습 끝났어? 고생했다. 근데 왜 오늘은 둘이 온 거야?
-@char jinbody1.1 wait:false
+@char jinbody1.1 wait:false pose:c
 jin: 활동지 작성하는 거 알려주려고 데려왔어요.
 @hideChars wait:false
 한갑수: 그래? 다영이만큼 잘 쓸 수 있으려나?
 한갑수:	수업 시간에 조는 거나 할 줄 알지 글은 잘 못 쓸 것 같단 말이지.
-{Player_name}: 아...음...열심히 하겠습니다...?
-@char jinbody3.4 wait:false
+{Player_name}: 아... 음... 열심히 하겠습니다..?
+@char jinbody3.4 wait:false pose:c
 jin: 너는 연습이나 열심히 해!
 한갑수:	그래. 열심히 하란 말이야! 뭘 하던 대충하지 말고!
 {Player_name}: 이젠 선생님까지...
 @hideChars wait:false
 한갑수:	아무튼 나는 이거 정리해야 되니까 알아서 적어놓고 가라!
+@spawn Blur wait:false
+@back Minicut_schoolalbum id:Minicut visible:true scale:0.7 wait:false position:0,1.5
+@unlock Minicut_schoolalbum wait:false
 describe: 한갑수 선생님의 책상 위에는 졸업앨범으로 보이는 책들이 잔뜩 쌓여있었다.
 describe: 생각보다 우리 학교가 오래된 모양이다.
-한갑수:	흠...그러고보니 다영아!
+한갑수:	흠... 그러고보니 다영아!
 한갑수:	너희 부모님도 우리 학교 다니셨다고 하지 않았었나?
-@char jinbody2.3 wait:false
-jin: 몰라요...그런거...
+jin: 몰라요... 그런거...
 한갑수:	이번에 동문회가 있어서 한번 알아봐.
 한갑수:	시간 괜찮으시면 부모님께 오시라고 말씀드리고!
-@char jinbody1.3 wait:false
 jin: ...
 한갑수:	다영아?
-@char jinbody1.4 wait:false
 jin: 알겠어요...
 @goto A_week02_jin04.week02_jin04
