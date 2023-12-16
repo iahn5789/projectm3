@@ -4,20 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using Naninovel;
 using Naninovel.Commands;
+using EasyTransition;
 
 public class CheckInputName : MonoBehaviour
 {
     public Text nameTextField;
     public GameObject DeleteText;
-    Button button;
 
-    private void Start()
-    {
-        button = GetComponent<Button>();
-        button.onClick.AddListener(OnClickButton);
-    }
 
-    public void OnClickButton()
+    public void OnClickButton(DemoLoadScene demoLoadScene)
     {
         if (nameTextField != null)
         {
@@ -29,19 +24,21 @@ public class CheckInputName : MonoBehaviour
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", "정민");
                 StartCoroutine(Wait3Second());
+                demoLoadScene.LoadScene("projectm3");
 
             }
-            else if (textFieldValue != "강여진" && textFieldValue != "진다영" && textFieldValue != "설나희" && textFieldValue != "전대용")
+            else if (textFieldValue != "강여진" && textFieldValue != "진다영" && textFieldValue != "설나희" && textFieldValue != "전대용" && textFieldValue != "라은" && textFieldValue != "시발" && textFieldValue != "다영" && textFieldValue != "나희" && textFieldValue != "여진" && textFieldValue != "대용")
             {
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", textFieldValue);
                 StartCoroutine(Wait3Second());
+                demoLoadScene.LoadScene("projectm3");
             }
             else{
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", "");
                 StartCoroutine(WaitAndActivateUI());
-            }
+            }   
         }
     }
     private IEnumerator WaitAndActivateUI()
