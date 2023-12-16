@@ -1,21 +1,27 @@
 # week02_kang02
+@showUI CP wait:false
 {Player_name}: 아마...도...?
-@char kangbody3.2 wait:false
+@hideChars wait:false
+@char kangbody3.2 wait:false pose:c
 kang: 정말?! 고생했어! 쉽지 않았을 텐데 잘했어!
 {Player_name}: 그냥 네가 도와줬던 게 컸던 것 같아.
 {Player_name}: 문제들도 쉬웠고... 네가 알아듣기 쉽게 잘 설명해 준 것도 있고...
-@char kangbody2.2 wait:false wait:false
+@hideChars wait:false
+@char kangbody2.2 wait:false pose:c
 kang: 아냐! 네가 열심히 한 거지!
 {Player_name}: 그래도 도움이 정말 많이 됐어! 고마워!
 @char kangbody2.6 wait:false wait:false
 kang: 아...고마울것 까진 없는데...
-@char kangbody3.8 wait:false
+@hideChars wait:false
+@char kangbody3.8 wait:false pose:c
 kang: 고맙다는 말을 정말 오랜만에 들어보네...
 {Player_name}: 응? 뭐라고?
-@char kangbody1.2 wait:false wait:false
+@hideChars wait:false
+@char kangbody1.2 pose:c wait:false pose:c
 kang: 아. 아니야! 신경 안 써도 돼!
 kang: 다 왔다. 여기야!
 @processInput false
+@hideUI CP wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
@@ -25,11 +31,12 @@ kang: 다 왔다. 여기야!
 @back Black time:1 wait:true
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:0
 @back ScLobby02 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 여진이와 함께 도착한 곳은 2층 복도 끝에 있는 어느 쓰지 않는 창고였다.
 describe: 창고가 좁다는 여진이의 말과는 달리 안은 생각보다 넓었고 깨끗했다.
 {Player_name}: 생각보다 넓다. 악기도 되게 많고.
-@char kangbody1.8 wait:false wait:false
+@char kangbody1.8 wait:false pose:c
 kang: 그래...? 아무튼 저기 비어있는 받침대 보이지? 저기다 두면 돼.
 {Player_name}: 알았어.
 @hideChars wait:false
@@ -37,19 +44,18 @@ describe: 나는 여진이의 말을 따라 비어있는 받침대로 향했다.
 describe: 받침대에 베이스를 놓고는 허리를 펴 잠시 주변을 둘러봤다.
 describe: 창고에는 기타만 해도 5개는 있었다.
 describe: 다른 악기까지 포함한다면 악기 개수만 15개에서 20개는 될 듯 보였다.
+@spawn Blur wait:false
+@back Minicut_guitar id:Minicut visible:true scale:0.7 wait:false position:0,1.5
+@unlock CG/Mini05 wait:false
 describe: 그중 가장 눈에 띄는 악기가 있었다.
 describe: 다른 악기들은 한곳에 종류별로 모아서 보관해 두고 있었지만, 한 기타만큼은 따로 보관하고 있었다.
 {Player_name}: 저건... 뭐지?
-@char kangbody1.1 wait:false
 kang: 정리 끝났어?
 {Player_name}: 어? 응 끝났어.
-@char kangbody1.6 wait:false wait:false
 kang: 뭘 그렇게 보고 있어?
 {Player_name}: 저 기타만 따로 유리관에 넣어서 보관 중이길래. 뭔가 했지.
-@char kangbody1.7 wait:false wait:false
 kang: 저거? 글쎄... 그냥 조금 더 비싼가 봐.
 describe: 자세히 보니 유리관의 문이 살짝 열린 것 같았다.
 {Player_name}: 근데 이거 유리가 열린 건가?
-@char kangbody1.3 wait:false wait:false
 kang: 저기...있잖아...
 @goto A_week02_kang03.week02_kang03

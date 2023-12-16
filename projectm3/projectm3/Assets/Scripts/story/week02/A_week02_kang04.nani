@@ -1,15 +1,17 @@
 # week02_kang04
 @processInput false
+@hideUI CP wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @back ScMaingate01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 정리를 끝내고 창고를 나오니 어느덧 시간이 제법 흘러있었다.
 describe: 여진이와 나는 학교 건물에서 나와 운동장을 향해 걸어가고 있었다.
 {Player_name}: 생각보다 시간이 많이 지났나보네...
-@char kangbody3.1 wait:false wait:false
+@char kangbody3.1 wait:false pose:c
 kang: 오늘 처음으로 정리하느라 힘들었을 텐데 고생 많았어!
 {Player_name}: 아니야. 너야말로 고생했어.
 @hideChars wait:false
@@ -17,20 +19,23 @@ describe: 노을 탓인지 어쩐지 여진이의 얼굴이 조금 붉어진 것
 {Player_name}: (어라? 나 여진이랑 조금 더 친해진 건가...?)
 {Player_name}: ...
 {Player_name}: 여진아?
-@char kangbody3.7 wait:false
+@char kangbody3.7 wait:false pose:c
 kang: ...
 {Player_name}: 혹시 따로 할 일 없으면...
-@char kangbody3.6 wait:false
+@char kangbody3.6 wait:false pose:c
 kang: 앗!
 {Player_name}: 무슨 일이야? 괜찮아?
-@char kangbody3.8 wait:false
+@char kangbody3.8 wait:false pose:c
 kang: 아하하... 내 정신 좀 봐. 창고에 목걸이를 두고 온 것 같아...
-@char kangbody2.8 wait:false wait:false
+@hideChars wait:false
+@char kangbody2.8 wait:false pose:c
 kang: 하하...바보같이...
-@char kangbody3.1 wait:false wait:false
+@hideChars wait:false
+@char kangbody3.1 wait:false pose:c
 kang: 먼저 가! 나는 목걸이 찾고 따라갈게!
 {Player_name}: 같이 가자. 어차피 금방인데 뭐.
-@char kangbody1.2 wait:false wait:false
+@hideChars wait:false
+@char kangbody1.2 pose:c wait:false pose:c
 kang: 어디다 놨는지 기억이 안 나서 그래! 먼저 가고 있어! 금방 따라갈게!
 @sfx Footsteps_Female_Ctr_Run_01 volume:80 loop:false fade:0 wait:0
 @hideChars wait:false
@@ -39,7 +44,7 @@ describe: 그렇게 일방적으로 자기 할 말만 한 여진이는 창고로
 {Player_name}: 뭐야. 엄청 빠르네...
 describe: 나는 뛰어가는 다영이의 뒷모습을 멍하니 쳐다보고 있었다.
 describe: 그때. 어딘가 익숙한 냄새가 등 뒤에서 다가오고 있었다.
-@char jeonbody2.2 wait:false
+@char jeonbody2.2 wait:false pose:c
 jeon: 오! {Player_name}! 아직 집에 안 가고 있었냐고!
 {Player_name}: 하...
 @hideChars wait:false

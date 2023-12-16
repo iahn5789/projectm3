@@ -1,8 +1,10 @@
 # week02_jin04
-@char jinbody3.4 wait:false
+@showUI CP wait:false
 jin: 뭐하고있어! 빨리 와!
 {Player_name}: 미..미안...
 @hideChars wait:false
+@despawn Blur wait:false
+@back Minicut_schoolalbum id:Minicut visible:false scale:0.7 wait:false position:0,1.5
 @sfx Common_Paper_Drop_01 volume:100 loop:false fade:0 wait:0
 describe: 다영이는 교무실 책장에 꽂힌 활동지를 꺼내 비어있는 테이블에 앉았다.
 @stopSfx Common_Paper_Drop_01 fade:0 wait:0
@@ -10,27 +12,29 @@ describe: 활동지를 펼친 다영이는 빼곡하게 적힌 페이지를 넘�
 describe: 활동지에는 갖가지 내용들이 단정한 글씨체로 질서정연하게 적혀있었다.
 describe: 날짜. 시간. 내용 등은 물론이고 회비를 얼마를 받았고 어떻게 사용했는지, 사용한 이유와 그로 인한 기대점 등
 describe: 고등학생이 썼다고는 믿기 어려울 만큼 정돈되어 있었다.
-@char jinbody1.1 wait:false
+@char jinbody1.1 wait:false pose:c
 jin: 봐봐.
 jin: 일단 먼저 오늘 날짜를 적고...
 jin: ...
 jin: ......
 {Player_name}: 그리고?
-@char jinbody1.4 wait:false
+@char jinbody1.4 wait:false pose:c
 jin: .........
 {Player_name}: 다영아?
-@char jinbody3.4 wait:false
+@hideChars wait:false
+@char jinbody3.4 wait:false pose:c
 @spawn ShakePrinter wait:false
 jin: <size=50>시</size><size=50>끄</size><size=50>러</size><size=50>!</size>
 jin: 조용히 좀 해! 집중 못하겠잖아!
 {Player_name}: 아니 난...
+@hideChars wait:false
 @char jinbody2.4 wait:false
 jin: 후... 됐어. 내가 그냥 알아서 쓸 테니까.
 @hideChars wait:false
 describe: 집중이 안 된다는 말과는 다르게 한번 글을 쓰기 시작한 다영이는 멈출 줄 모르고 써 내려갔다.
 describe: 내가 적었으면 20분은 걸렸을 내용을 다영이는 5분도 안 돼서 끝냈다.
 describe: 활동지 작성을 끝낸 다영이는 테이블에서 일어나 활동지를 다시 책장에 꽂았다.
-@char jinbody1.4 wait:false
+@char jinbody1.4 wait:false pose:c
 jin: 끝났어. 가자.
 {Player_name}: 응? 응. 알았어.
 @hideChars wait:false
@@ -42,7 +46,7 @@ describe: 배운다고 따라왔지만 정작 배우지는 못한 채 교무실�
 jin: ...
 한갑수:	다영아?
 @hideChars wait:false
-@char bigjin.body>body1,face>face4 wait:false
+@char jinbody1.4 pose:bc wait:false
 jin: <size=50>안</size><size=50>녕</size><size=50>히</size> <size=50>계</size><size=50>세</size><size=50>요</size><size=50>!</size>
 @sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false fade:0 wait:0
 @hideChars wait:false
@@ -53,6 +57,7 @@ describe: 나는 재빨리 다영이를 따라 교무실에서 나갔다.
 @stopSfx Footsteps_Male_Wood_Run_01 fade:2 wait:0
 한갑수:	허... 무슨 일이 있나...?
 @processInput false
+@hideUI CP wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @stopSfx Amb_Office_01 fade:1 wait:0
@@ -61,6 +66,7 @@ describe: 나는 재빨리 다영이를 따라 교무실에서 나갔다.
 @back Black time:1 wait:true
 @sfx Amb_Road_01 volume:80 loop:true fade:2 wait:0
 @back ScLobby01 time:1 wait:true
+@showUI CP wait:false
 @processInput true
 describe: 교무실을 나와 집으로 가는 길.
 describe: 집에 가는 방향이 같은 건지, 헤어질 타이밍을 놓친 건지.
@@ -69,5 +75,5 @@ describe: 다영이와 나는 같은 방향으로 걷고 있었다.
 describe: 여전히 어색한 침묵 속, 복도에는 발자국 소리만 들리고 있었다.
 {Player_name}: (활동지 적는 법 배운다고 따라왔는데)
 {Player_name}: (정작 배우지는 못하고 또 욕만 먹었네.)
-{Player_name}: (지금이라도 물어봐야 하나?...?)
+{Player_name}: (지금이라도 물어봐야 하나..?)
 @goto A_week02_jin05.week02_jin05

@@ -1,21 +1,24 @@
 #week01_tutorial
 @showUI CP wait:false
 {Player_name}: 괜찮아! 저번에 대충 보니까 어떻게 돌아가는지 알겠더라고.
-@char kangbody2.2 wait:false wait:false
+@char kangbody2.2 wait:false pose:c 
 kang: 그래? 그럼 다행이다.
-@char kangbody2.8 wait:false wait:false
+@char kangbody2.8 wait:false pose:c
 kang: 우리 학교가 조금 특이하긴 해서...
-@char kangbody1.1 wait:false
+@hideChars wait:false
+@char kangbody1.1 pose:c wait:false
 kang: 그래도 네가 잘 안다고 하니 굳이 설명 하진 않을게!
-@char kangbody2.1 wait:false wait:false
+@hideChars wait:false
+@char kangbody2.1 wait:false pose:c
 kang: 그럼 오늘은 이만 집에 갈까?
-@char kangbody1.2 wait:false wait:false
+@hideChars wait:false
+@char kangbody1.2 pose:c wait:false pose:c
 kang: 같이 갈 사람 손!
 @hideChars wait:false
-@char jinbody2.4 wait:false
+@char jinbody2.4 wait:false pose:c
 jin: 몰라! 난 혼자 갈 거야!
 @hideChars wait:false
-@char sulbody1.1 wait:false
+@char sulbody1.1 wait:false pose:c
 sul: ...
 @hideChars wait:false
 @char kangbody2.8 wait:false wait:false

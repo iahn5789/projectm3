@@ -7,23 +7,25 @@ describe: ...
 @sfx Footsteps_Male_Wood_Walk_01 volume:90 loop:false wait:false
 describe: 그렇게 자기 할 말만 열심히 하던 한갑수 선생님은 다시 교무실로 돌아가셨다.
 @stopSfx Footsteps_Male_Wood_Walk_01 fade:2.5
-@char jinbody2.6 wait:false
+@char jinbody2.6 wait:false pose:c
 jin: 늘 자기 할 말만 하신다니까...
 @hideChars wait:false
-@char kangbody2.2 wait:false wait:false
+@char kangbody2.2 wait:false wait:false pose:c
 kang: 잘 됐다. 그래도 오디션보다는 쪽지 시험이 좋지 않을까?
 describe: 확실히 오디션보다는 쪽지 시험이 나았다.
 describe: 만약 오디션을 봤다면...
 describe: 상상도 하기 싫었다.
-@char kangbody2.7 wait:false wait:false
+@char kangbody2.7 wait:false wait:false pose:c
 kang: 음... 그러고보니 성적은 어때...?
 {Player_name}: 전학와서 시험을 쳐 본 적이 없어서...
-@char kangbody3.6 wait:false
+@hideChars wait:false
+@char kangbody3.6 wait:false pose:c
 kang: 아! 아직 쪽지시험도 본 적 없겠구나!
-@char kangbody3.8 wait:false
+@char kangbody3.8 wait:false pose:c
 kang: 우리학교는 시험을 보는 게 조금 독특해서...
 kang: 아마 그동안 본 적 없는 시험이 될 수도 있을 것 같은데...
-@char kangbody1.1 wait:false
+@hideChars wait:false
+@char kangbody1.1 pose:c wait:false pose:c
 kang: 혹시 궁금한거나 학교 생활 관련된 질문 같은거 있어?
 @hidePrinter  wait:false
 @hideChars wait:false
