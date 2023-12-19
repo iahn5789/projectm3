@@ -36,6 +36,10 @@ namespace Naninovel.UI
         private Action<int> onClicked, onDeleteClicked;
         private ScriptableUIBehaviour deleteButtonBehaviour;
         private ISaveLoadUI saveLoadUI;
+        private ICustomVariableManager variableManager;
+        public Text WeekText;
+        public Text WeekUnitText;
+        public Text WeekNameText;
 
         public virtual void Initialize (Action<int> onClicked, Action<int> onDeleteClicked)
         {
@@ -54,14 +58,17 @@ namespace Naninovel.UI
             if (state is null)
             {
                 DeleteButton.gameObject.SetActive(false);
-                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", EmptySlotLabel));
+                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", EmptySlotLabel),"","","");
                 ThumbnailImage.texture = EmptySlotThumbnail;
             }
             else
             {
                 DeleteButton.gameObject.SetActive(true);
                 var date = state.SaveDateTime.ToString(dateFormat);
-                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date));
+                string name = variableManager?.GetVariableValue("Selected");
+                string Week = variableManager?.GetVariableValue($"{name}Week");
+                string WeekName = variableManager?.GetVariableValue("WeekTitle"); // 주차 내용
+                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),Week,"주차",WeekName);
                 ThumbnailImage.texture = state.Thumbnail;
             }
         }
@@ -91,6 +98,7 @@ namespace Naninovel.UI
                 emptySlotThumbnail = Texture2D.whiteTexture;
             DeleteButton.TryGetComponent<ScriptableUIBehaviour>(out deleteButtonBehaviour);
             DeleteButton.onClick.AddListener(HandleDeleteButtonClicked);
+            variableManager = Engine.GetService<ICustomVariableManager>();
         }
 
         protected override void OnDestroy ()
@@ -100,8 +108,11 @@ namespace Naninovel.UI
             DeleteButton.onClick.RemoveListener(HandleDeleteButtonClicked);
         }
 
-        protected virtual void SetTitleText (string value)
+        protected virtual void SetTitleText (string value, string Week, string WeekUnit, string WeekName)
         {
+            WeekText.text = Week;
+            WeekUnitText.text = WeekUnit;
+            WeekNameText.text = WeekName;
             onTitleTextChanged?.Invoke(value);
         }
 
