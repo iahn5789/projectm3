@@ -52,7 +52,7 @@ namespace Naninovel
         [Tooltip("이전 그리드 페이지를 선택하려면 페이지 표시 패널 내부 버튼을 누릅니다.")]
         [SerializeField] private Button nextPageButton;
         [Tooltip("그리드 페이지 번호가 변경될 때 이벤트가 호출됩니다.")]
-        [SerializeField] private OnGridPageChangedEvent onPageChanged;
+        [SerializeField] public OnGridPageChangedEvent onPageChanged;
 
         /// <summary>
         /// Instantiates displayed items (slots) and makes the grid
@@ -109,13 +109,15 @@ namespace Naninovel
         protected override void OnEnable ()
         {
             base.OnEnable();
-
             if (PreviousPageButton)
                 PreviousPageButton.onClick.AddListener(SelectPreviousPage);
             if (NextPageButton)
                 NextPageButton.onClick.AddListener(SelectNextPage);
         }
-
+        public void Reset ()
+        {
+            SelectPage(1);
+        }
         protected override void OnDisable ()
         {
             base.OnDisable();
