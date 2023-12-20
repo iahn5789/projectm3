@@ -27,7 +27,10 @@ public class CheckInputName : MonoBehaviour
                 demoLoadScene.LoadScene("projectm3");
 
             }
-            else if (textFieldValue != "강여진" && textFieldValue != "진다영" && textFieldValue != "설나희" && textFieldValue != "전대용" && textFieldValue != "라은" && textFieldValue != "시발" && textFieldValue != "다영" && textFieldValue != "나희" && textFieldValue != "여진" && textFieldValue != "대용")
+            else if (textFieldValue != "강여진" && textFieldValue != "진다영" && textFieldValue != "설나희" && textFieldValue != "전대용" && textFieldValue != "라은" && 
+                    textFieldValue != "시발" && textFieldValue != "다영" && textFieldValue != "나희" && textFieldValue != "여진" && textFieldValue != "대용" &&
+                    textFieldValue != "병신" && textFieldValue != "병신아" && textFieldValue != "섹스" && textFieldValue != "씨발" && textFieldValue != "느금마" && textFieldValue != "좆" &&
+                    textFieldValue != "개새끼" && textFieldValue != "지랄" && textFieldValue != "등신" && textFieldValue != "시발새끼" && textFieldValue != "씨발새끼" && textFieldValue != "병신새끼")
             {
                 // Naninovel 변수 설정
                 variableManager?.SetVariableValue("Player_name", textFieldValue);
