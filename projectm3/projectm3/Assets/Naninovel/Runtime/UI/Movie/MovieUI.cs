@@ -8,6 +8,7 @@ namespace Naninovel.UI
     /// <inheritdoc cref="IMovieUI"/>
     public class MovieUI : CustomUI, IMovieUI
     {
+        private IMoviePlayer moviePlayer;
         protected virtual RawImage MovieImage => movieImage;
         protected virtual RawImage FadeImage => fadeImage;
 
@@ -20,6 +21,10 @@ namespace Naninovel.UI
             MovieImage.SetOpacity(1);
         }
 
+        private void Start()
+        {
+            moviePlayer = Engine.GetService<IMoviePlayer>();
+        }
         protected override void Awake ()
         {
             base.Awake();
@@ -37,6 +42,10 @@ namespace Naninovel.UI
 
             MovieImage.texture = null;
             MovieImage.SetOpacity(0);
+        }
+        public void Stop()
+        {
+            moviePlayer?.Stop();
         }
     }
 }
