@@ -660,21 +660,21 @@ public class TestSceneUIManager : MonoBehaviour
         FadeInAudio_2();
         audioSource.Play();
     }
-    // public void StartButtonClick()
-    // {
-    //     SetVariable();
-    // }
-    // private void SetVariable()
-    // {
-    //     // 선택한 대자보의 다음 주차를 보여줌
-    //     string name = variableManager?.GetVariableValue("Selected");
-    //     int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
-    //     week += 1;
-    //     string key = $"{name}{week}";
-    //     if (DictWeekText.TryGetValue(key, out var weekInfo))
-    //     {
-    //         variableManager?.SetVariableValue($"{name}Week",week.ToString());
-    //         variableManager?.SetVariableValue("WeekTitleStart",weekInfo.Item2);
-    //     }
-    // }
+    public void StartButtonClick()
+    {
+        SetVariable();
+    }
+    private void SetVariable()
+    {
+        // 선택한 대자보의 다음 주차를 보여줌
+        string name = variableManager?.GetVariableValue("Selected");
+        int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
+        week += 1;
+        string key = $"{name}{week}";
+        if (DictWeekText.TryGetValue(key, out var weekInfo))
+        {
+            variableManager?.SetVariableValue($"{name}Week",week.ToString());
+            variableManager?.SetVariableValue("WeekTitleStart",weekInfo.Item2);
+        }
+    }
 }
