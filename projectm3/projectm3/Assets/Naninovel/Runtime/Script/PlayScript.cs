@@ -3,6 +3,7 @@
 using System;
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Naninovel
 {
@@ -51,6 +52,10 @@ namespace Naninovel
         {
             this.argument = argument.ToString(CultureInfo.InvariantCulture).ToLower();
             PlayScriptAsync();
+        }
+        public void SetScriptText(string Script)
+        {
+            scriptText = Script;
         }
 
         private void Awake ()
