@@ -1,0 +1,71 @@
+# week02_kang05
+@set "WeekTitle=\"너는 어떻게 하고 싶어?\""
+@processInput false
+@hideUI CP wait:false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@spawn ShakeCamera wait:false
+@spawn ShakePrinter wait:false
+@stopSfx Amb_Shool_Club_01 fade:0 wait:0
+@sfx Common_Door_Slam_01 volume:100 loop:false wait:0
+describe: <size=60>쾅</size>
+@char sulbody2.4 pose:c wait:false
+@sfx Amb_Cold_Wind_01 volume:100 loop:false fade:1 wait:0
+sul: ...
+sul: 둘 다 그만.
+@char sulbody4.4 pose:c wait:false
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:0
+sul: 더 싸울 거야?
+kang: 아...
+sul: 아직 할 말 남아있어?
+jin: ...
+@hideChars wait:false
+@char sulbody2.5 pose:bc wait:false
+sul: <size=50>오</size><size=50>늘</size> <size=50>둘</size> <size=50>다</size> <size=50>혼</size><size=50>나</size><size=50>볼</size><size=50>래</size><size=50>?</size>
+describe: 아니요...
+sul: ......
+describe: ...
+@hideChars wait:false
+@char sulbody1.1 pose:c wait:false
+sul: 후...
+sul: 그렇게 서로 싸우기 전에.
+@char sulbody4.1 pose:c wait:false
+sul: 본인 의견부터 들어봐야 하지 않을까?
+describe: 순식간에 상황을 정리한 나희 누나는 이내 나를 바라보고 있었다.
+describe: 여진이와 다영이 역시 고개를 돌려 나를 쳐다봤다.
+@hideChars wait:false
+@char sulbody4.1 pose:bc wait:false
+sul: 너는 어떻게 하고 싶어?
+{Player_name}: 저... 저는...
+@hideChars wait:false
+@sfx Emotion_Heart_Beat_01 volume:100 loop:true fade:1 wait:0
+describe: 어떻게 하면 좋을까.
+describe: 다영이 말대로 나는 노래를 못한다.
+describe: 당연히 밴드부에서 보컬을 맡을 정도의 실력도 아니다.
+describe: 하지만 여진이의 말도 일리가 있었다.
+describe: 평생 악기 한번 다뤄본 적 없는 내가 갑자기 기타를 배울 수도 없는 노릇이니 말이다.
+describe: 이러지도 저러지도 못하는 상황...
+describe: 어떤 선택을 해야 할까.
+@stopSfx Emotion_Heart_Beat_01 fade:1 wait:0
+describe: 어쩌면 내가 이 동아리에 들어온 게 문제일까...?
+@char sulbody4.1 pose:c wait:false
+sul: 참고로.
+@hideChars wait:false
+@char sulbody2.1 pose:c wait:false
+sul: 나는 보컬 마음에 들어...
+{Player_name}: 네...?
+jin: 뭐...? 마음에 든다고? 아까 그게?
+sul: 응...
+@char sulbody1.2 pose:c wait:false
+sul: 매력있잖아...
+@hideChars wait:false
+@char jinbody1.4 pose:c wait:false
+jin: 그건 매력이 아니지!
+kang: 그래! {Player_name} 보컬이면 매력 있고 좋지!
+@hideChars wait:false
+@goto A_week02_kang06.week02_kang06

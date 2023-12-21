@@ -1,0 +1,39 @@
+# week02_kang04
+@set WeekTitle="보컬과 기타 혹은 자존심"
+@processInput false
+@hideUI CP wait:false
+@hideChars time:0.5 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Sul01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@unlock CG/Kang03
+@sfx Common_Emotion_Question_01 volume:100 loop:false fade:0 wait:0
+kang: 잠깐! 갑자기 그게 무슨 소리야!
+@stopSfx Common_Emotion_Question_01 fade:0 wait:0
+jin: 너도 들었잖아! 저게 지금 연습으로 나아질 상황이야?
+kang: 그... 그래도 열심히 하고 있는 애한테 그러면 어떡해!
+kang: 그리고 내가 보컬하고 기타, 같이 하기 힘들다고 했잖아!
+jin: 그러니까 기타를 가르치라는 거 아니야!
+kang: 그게 그렇게 쉽게 되는 줄 알아?
+kang: 노래는 사람이면 누구나 다 할 수 있지만 기타는 아예 처음부터 배워야 한다고!
+kang: 난 보컬 못해! 기타도 못 가르쳐!
+jin: 아 그냥 적당히 연습시키면 되잖아!
+jin: 딱히 리듬 탈 필요도 없는 기타가 뭐가 어렵다고...
+{Player_name}:	아니 난...
+kang: 뭐... 뭐라고?
+kang: 리듬을 탈 필요가 없어?.
+sul: ...
+jin: 아니 뭐. 내가 틀린 말 했어?
+jin: 드럼이랑 베이스가 박자 잡아주면 대충 멜로디만 연주하면 되잖아.
+kang: 대충 멜로디만 연주해? 그게 베이스가 할 소리야?
+kang: 그러는 베이스야말로 혼자서는 아무것도 못 하잖아!
+kang: 기타처럼 단독공연도 못 하면서 숟가락만 올리는 주제에!
+{Player_name}:	잠깐만...
+jin: 수...숟가락?
+jin: 너 지금 말 다 했어?
+jin: <size=50>강</size><size=50>여</size><size=50>진</size><size=50>!</size><size=50>!</size>
+kang: <size=50>진</size><size=50>다</size><size=50>영</size><size=50>!</size><size=50>!</size>
+@goto A_week02_kang05.week02_kang05
