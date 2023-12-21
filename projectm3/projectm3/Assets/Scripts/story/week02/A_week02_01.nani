@@ -1,5 +1,5 @@
 # week02_01
-@set WeekTitle="이대로 괜찮을까?"
+@set "WeekTitle=\"이대로 괜찮을까?\""
 @showUI CP
 @back ScLobby01
 @sfx Amb_Office_01 volume:100 loop:true fade:1 time:0 wait:0
@@ -18,35 +18,35 @@ describe: 그리고...
 @stopSfx Amb_Office_01 fade:1 wait:0
 @back Black time:0.5 wait:true
 @sfx Amb_Shool_Club_01 volume:100 loop:ture fade:1 wait:0
-@bgm Common_School_Club_01 intro:false volume:60 loop:ture fade:1 wait:0
+@bgm BGM_Map_Antics_01 intro:false volume:60 loop:ture fade:1 wait:0
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @processInput true
 {Player_name}: ...
 {Player_name}: ......
-@char kangbody4.8 wait:false pose:c
+@char kangbody4.8 pose:c wait:false
 @sfx Common_Door_Noke_01 volume:100 loop:false fade:0 wait:0
 kang: 저기...
 @stopSfx Common_Door_Noke_01 fade:0 wait:0
 {Player_name}: 어...응? 왜?
 @hideChars wait:false
-@char kangbody5.8 wait:false pose:c
+@char kangbody5.8 pose:c wait:false
 kang: 무슨 일 있어?
 {Player_name}: 아...!
 @hideChars wait:false
-@char jinbody4.4 wait:false pose:c
+@char jinbody4.4 pose:c wait:false
 @sfx Common_Text_Kick_01 volume:100 loop:false fade:false wait:0
 jin: 뭐야! 정신 똑바로 안 차려?
 jin: 무슨 생각을 하는 거야!
 @hideChars wait:false
-@char sulbody5.1 wait:false pose:c
+@char sulbody5.1 pose:c wait:false
 sul: ...
 kang: 괜찮아. 다시 갈까 그럼?
 @hideChars wait:false
-@char sulbody7.1 wait:false pose:c
+@char sulbody7.1 pose:c wait:false
 sul: 응...
 @hideChars wait:false
-@char jinbody6.4 wait:false pose:c
+@char jinbody6.4 pose:c wait:false
 jin: 집중해! 이번에도 실수하면 나 화낼 거야!
 @hideChars wait:false
 describe: 동아리에 들어온 지 어느덧 2주 정도의 시간이 흘렀다.
@@ -65,6 +65,7 @@ describe: 연주가 진행될 때마다 이 공간이 점차 소리 그 자체�
 describe: 한마디. 두 마디 세 마디. 네 마디.
 describe: 그리고 이제 내가 그 소리에 뛰어들 차례였다.
 {Player_name}: 크흠...
-@stopBgm Common_School_Club_01 fade:0 wait:0
+@stopBgm BGM_Map_Antics_01 fade:0 wait:0
 @stopSfx Amb_Shool_Club_01 fade:0 wait:0
+@bgm BGM_Map_Aspera_01 volume:80 loop:true fade:0 wait:false
 @goto A_week02_02.week02_02
