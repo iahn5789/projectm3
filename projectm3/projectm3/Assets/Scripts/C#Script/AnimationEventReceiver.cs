@@ -5,7 +5,6 @@ using UnityEngine;
 using Naninovel;
 using Naninovel.UI;
 using Naninovel.Commands;
-using UnityEngine;
 using EasyTransition;
 
 

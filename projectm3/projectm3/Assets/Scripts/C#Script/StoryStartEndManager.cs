@@ -28,9 +28,11 @@ public class StoryStartEndManager : MonoBehaviour
         string name = variableManager?.GetVariableValue("Selected");
         string week = variableManager?.GetVariableValue($"{name}Week");
         week = int.TryParse(week, out int weekNumber) ? weekNumber.ToString("D2") : "01";
-        string Script = "@hideUI StoryStartEndUI\n@goto A_week" + week + "_01";
+        string Script = $"@hideUI StoryStartEndUI\n@goto A_week{week}_{name.ToLower()}01";
         NextScript.SetScriptText(Script);
         NextScript.Play();
         Debug.Log("ScriptStart");
+        Engine.GetService<IInputManager>().ProcessInput = true;
+        variableManager?.SetVariableValue($"InputKeyValue", "true");
     }
 }

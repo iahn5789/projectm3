@@ -679,4 +679,17 @@ public class ExamUIManager : MonoBehaviour
             StartCoroutine(FadeAudioSource.StartFadeOut(audioSource,0.5f,0f));
         }
     }
+    public void StartButtonClick()
+    {
+        SetVariable();
+    }
+    private void SetVariable()
+    {
+        // 선택한 대자보의 다음 주차를 보여줌
+        string name = variableManager?.GetVariableValue("Selected");
+        int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
+        week += 1;
+        variableManager?.SetVariableValue($"{name}Week",week.ToString());
+        Debug.Log(week);
+    }
 }

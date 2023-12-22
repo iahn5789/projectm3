@@ -673,7 +673,6 @@ public class TestSceneUIManager : MonoBehaviour
         string key = $"{name}{week}";
         if (DictWeekText.TryGetValue(key, out var weekInfo))
         {
-            variableManager?.SetVariableValue($"{name}Week",week.ToString());
             variableManager?.SetVariableValue("WeekTitleStart",weekInfo.Item2);
         }
     }
