@@ -1,11 +1,11 @@
 # week02_sul07
-@showUI wait:false
+@showUI  wait:false
 {Player_name}: 수...수고하셨습니다!
 @hideChars wait:false
 @char kangbody1.1 pose:c wait:false
 kang: {Player_name}. 고생 많았어.
 @hideChars wait:false
-@char kangbody2.2 wait:false pose:c
+@char kangbody2.2 pose:c wait:false
 kang: 오늘은 여기까지만 하고 그만 정리할까?
 jin: 그러든지 말든지!
 sul: ...그래.
@@ -15,7 +15,7 @@ describe: 정밀한 기계가 움직이는 것처럼 일사불란하게 움직�
 describe: 나는 어떤 걸 해야 할지 모른 채 마이크를 잡고 우두커니 서 있었다.
 {Player_name}: 어... 그...
 {Player_name}: 나도 같이 할게!
-@char jinbody1.4 wait:false pose:c
+@char jinbody1.4 pose:c wait:false
 jin: 뭐하게?
 {Player_name}: 어...
 {Player_name}: 그러게?
@@ -23,30 +23,29 @@ jin: 뭐하게?
 @char kangbody1.1 pose:c wait:false
 kang: 할 거 없으면 나희 누나랑 같이 동아리방 뒷정리하는 거 도와줄래?
 @hideChars wait:false
-@char kangbody3.1 wait:false pose:c
+@char kangbody3.1 pose:c wait:false
 kang: 나랑 다영이는 따로 정리할 게 있어서.
 @hideChars wait:false
-@char sulbody1.1 wait:false pose:c
+@char sulbody1.1 pose:c wait:false
 sul: 난... 혼자서 해도 돼...
 @hideChars wait:false
-@char sulbody3.1 wait:false pose:c
+@char sulbody3.1 pose:c wait:false
 sul: ...다영이... 도와줘...
 @hideChars wait:false
-@char jinbody1.4 wait:false pose:c
+@char jinbody1.4 pose:c wait:false
 jin: 난 됐어.
 @hideChars wait:false
-@char jinbody2.4 wait:false pose:c
+@char jinbody2.4 pose:c wait:false
 jin: 활동지 적는 건 혼자서 가는 게 더 편해.
 @hideChars wait:false
-@char jinbody1.2 wait:false pose:c
+@char jinbody1.2 pose:c wait:false
 jin: 여진이 따라서 기타랑 베이스 창고로 옮기는 거나 도와줘. 무거울 텐데.
 @hideChars wait:false
-@char kangbody2.2 wait:false pose:c
+@char kangbody2.2 pose:c wait:false
 kang: 나도 괜찮아! 창고 좁아서 혼자 정리하는 게 더 편해.
 @hideChars wait:false
 {Player_name}: (어떡하지.)
 describe: 셋 모두 혼자서 하는 게 편하다고 한다.
 {Player_name}: (아무리 그래도 나 혼자만 아무것도 안 할 수는 없는데.)
 {Player_name}: 그렇다면...
-@hidePrinter wait:false
 @goto A_week02_sul08.week02_sul08
