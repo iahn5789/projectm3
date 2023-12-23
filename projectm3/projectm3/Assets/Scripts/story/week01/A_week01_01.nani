@@ -14,7 +14,7 @@ describe: 수업이 끝난 학교에서 학생들은 모두 집으로 가고 없
 describe: 밴드부가 있다는 4층까지 가는 도중 단 한 명의 학생도 만날 수 없었다.
 {Player_name}: 생각보다 높네...
 {Player_name}: 4층 과학실이... 여기서 어디로 가야 하더라?
-@char labody1.1 wait:false pose:c
+@char labody1.1 pose:c wait:false
 ???: 안녕?
 {Player_name}: 우왁!!
 describe: 어느샌가 처음 보는 여학생이 등 뒤에 서 있었다.
@@ -24,7 +24,7 @@ describe: 어느샌가 처음 보는 여학생이 등 뒤에 서 있었다.
 describe: 눈 앞의 여학생은 어딘지 모르게 감정이 없어 보이는 표정이었다.
 {Player_name}: 저... 저요..?
 @hideChars wait:false
-@char labody3.2 wait:false pose:c
+@char labody3.2 pose:c wait:false
 ???: 내 이름은 라은이야. 네가 그 전학생이지?
 la: 신문부 부장을 맡고 있어. 우리 동갑이니까 말 편하게 해.
 describe: 신문...부?
@@ -37,13 +37,13 @@ la: 응?
 {Player_name}: 대용이가 이야기 해줬어...
 la: 아...
 @hideChars wait:false
-@char labody2.8 wait:false pose:c
+@char labody2.8 pose:c wait:false
 la: 전대용...
 describe: 라은이라는 여학생은 대용이 이야기가 나오자, 순간적으로 표정이 변했다.
 @char labody2.2 wait:false
 la: 대용이도 우리 동아리 부원이야. 벌써 이야기 들었구나?
 @hideChars wait:false
-@char labody3.2 wait:false pose:cs
+@char labody3.2 pose:cs wait:false
 la: 혹시 지금 어디가는 중이야?
 {Player_name}: 밴드 동아리... 가려고 하는데...
 @char labody3.6 wait:false
@@ -51,28 +51,67 @@ la: 아... 밴드...
 la: 흐음...
 la: 라은은 무언가 재밌는 생각이라도 난 듯한 표정을 짓고 있었다.
 @hideChars wait:false
-@char labody1.2 wait:false pose:c
+@char labody1.2 pose:c wait:false
 la: 혹시 그러지말고 우리 신문부 들어올 생각 있어?
 {Player_name}: 신문부에..?
 @hideChars wait:false
-@char labody3.1 wait:false pose:c
+@char labody3.1 pose:c wait:false
 la: 응. 너 지금 밴드부가 인원 부족인건 알고 있어?
 {Player_name}: 인원부족이라는게... 무슨 소리야?
 @hideChars wait:false
-@char labody4.1 wait:false pose:c
+@char labody4.1 pose:c wait:false
 la: 쉽게 말해 최소 인원도 못채웠다는 소리지. 너 없으면 얼마 안가 없어질걸?
 {Player_name}: 그래서...
 describe: 어제 교무실에서 한 이야기가 그거였구나...
+{Player_name}: 그런데 신문부면 기사 써야 되는거 아니야?
+{Player_name}: 나 기사 같은건 한번도 써본적이 없는데...
+@char labody4.1 pose:c wait:false
+la: 그럼 밴드부는? 악기 다룰 줄 아는건 있어서 들어가려는거야?
+{Player_name}: 어... 없긴한데...
 @hideChars wait:false
-@char labody2.1 wait:false pose:c
+@char labody2.2 pose:c wait:false
+la: 악기 다룰 줄 모르지? 그럴 줄 알았어!
+{Player_name}: 응..?
+la: 아... 별거 아니야. 너무 신경 쓰지 마!
+@hideChars wait:false
+@char labody2.1 pose:c wait:false
+la: 아무튼. 기사 써 본적 없어도 너무 걱정하지 마.
+la: 신문부라고 꼭 기사만 쓰는건 아니거든.
+{Player_name}: 그럼 뭘 하는데?
+@hideChars wait:false
+@char labody3.1 pose:c wait:false
+la: 교내 신문 따위에 실릴 기사보다 더 중요한게 있지.
+@hideChars wait:false
+@char labody4.2 pose:c wait:false
+la: 바로 정의를 실현하는거야.
+{Player_name}: 정의를 실현한다고..?
+{Player_name}: 뜬금없이 그게 무슨...
+@hideChars wait:false
+@char labody1.5 pose:c wait:false
+la: 너 혹시 요즘 무언가 이상한 점 못느꼈어?
+la: 처음 보는 사람이 대뜸 친한 척을 한다던가...
+{Player_name}: 있...지?
+@hideChars wait:false
+@char labody4.6 pose:c wait:false
+la: 그렇지? 그럴 줄 알았어!
+{Player_name}: 지금...
+@char labody4.5 pose:c wait:false
+la: 엥? 지금? 그게 무슨...
+@hideChars wait:false
+@char labody3.7 pose:c wait:false
+la: 아...
+la: 크흠..! 아무튼! 그게 중요한게 아니야!
+{Player_name}: (방금 전까지 중요한게 있다고 말해놓고선...)
+@hideChars wait:false
+@char labody2.1 pose:c wait:false
 la: 너가 들어갔다고 치자. 그렇다고 해도 원래 있던 사람 중 한명이라도 빠지면 다시 동아리에 들어가야 돼.
 @hideChars wait:false
-@char labody1.2 wait:false pose:c
+@char labody1.2 pose:c wait:false
 la: 그리고 그 정도로 인원이 없는 이유가 있지 않을까?
 @char labody1.6 wait:false
 la: 무언가 네가 모르는 속사정이 있을 수도 있고...
 @hideChars wait:false
-@char labody3.2 wait:false pose:c
+@char labody3.2 pose:c wait:false
 la: 그럴바엔 그냥 처음부터 다른 동아리에 들어가는게 좋지 않을까?
 @char labody3.8 wait:false
 la: 네 친구 대..대..
