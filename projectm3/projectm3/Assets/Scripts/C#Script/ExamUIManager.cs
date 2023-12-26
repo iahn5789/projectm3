@@ -71,9 +71,9 @@ public class ExamUIManager : MonoBehaviour
         SecretMessageLightList.Add("K011", true);
         SecretMessageLightList.Add("K032", true);
         SecretMessageLightList.Add("K053", true);
-        SecretMessageLightList.Add("K101", true);
-        SecretMessageLightList.Add("K102", true);
-        SecretMessageLightList.Add("K103", true);
+        SecretMessageLightList.Add("K111", true);
+        SecretMessageLightList.Add("K122", true);
+        SecretMessageLightList.Add("K133", true);
         SecretMessageLightList.Add("K201", true);
         SecretMessageLightList.Add("K202", true);
         SecretMessageLightList.Add("K203", true);
@@ -99,9 +99,9 @@ public class ExamUIManager : MonoBehaviour
         SecretMessageLightList.Add("J011", true);
         SecretMessageLightList.Add("J032", true);
         SecretMessageLightList.Add("J053", true);
-        SecretMessageLightList.Add("J101", true);
-        SecretMessageLightList.Add("J102", true);
-        SecretMessageLightList.Add("J103", true);
+        SecretMessageLightList.Add("J111", true);
+        SecretMessageLightList.Add("J122", true);
+        SecretMessageLightList.Add("J133", true);
         SecretMessageLightList.Add("J201", true);
         SecretMessageLightList.Add("J202", true);
         SecretMessageLightList.Add("J203", true);
@@ -127,9 +127,9 @@ public class ExamUIManager : MonoBehaviour
         SecretMessageLightList.Add("S011", true);
         SecretMessageLightList.Add("S032", true);
         SecretMessageLightList.Add("S053", true);
-        SecretMessageLightList.Add("S101", true);
-        SecretMessageLightList.Add("S102", true);
-        SecretMessageLightList.Add("S103", true);
+        SecretMessageLightList.Add("S111", true);
+        SecretMessageLightList.Add("S122", true);
+        SecretMessageLightList.Add("S133", true);
         SecretMessageLightList.Add("S201", true);
         SecretMessageLightList.Add("S202", true);
         SecretMessageLightList.Add("S203", true);
@@ -160,6 +160,11 @@ public class ExamUIManager : MonoBehaviour
         KQuestionTitleList.Add("02", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
         KQuestionTitleList.Add("03", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
         KQuestionTitleList.Add("04", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("10", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("11", "다음 보기 중 강여진의 입장으로 가장 적절한 것은?");
+        KQuestionTitleList.Add("12", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("13", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("14", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
 
         // Jin(50개)
         JQuestionTitleList = new Dictionary<string, string>();
@@ -168,6 +173,11 @@ public class ExamUIManager : MonoBehaviour
         JQuestionTitleList.Add("02", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
         JQuestionTitleList.Add("03", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
         JQuestionTitleList.Add("04", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        JQuestionTitleList.Add("10", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        JQuestionTitleList.Add("11", "다음 보기 중 강여진의 입장으로 가장 적절한 것은?");
+        JQuestionTitleList.Add("12", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        JQuestionTitleList.Add("13", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        JQuestionTitleList.Add("14", "다음 보기에 공통점이 있는 물건을 고르시오.");
 
         // Sul(50개)
         SQuestionTitleList = new Dictionary<string, string>();
@@ -176,11 +186,11 @@ public class ExamUIManager : MonoBehaviour
         SQuestionTitleList.Add("02", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
         SQuestionTitleList.Add("03", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
         SQuestionTitleList.Add("04", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
-        SQuestionTitleList.Add("10", "설나희 문제 1");
-        SQuestionTitleList.Add("11", "설나희 문제 2");
-        SQuestionTitleList.Add("12", "설나희 문제 3");
-        SQuestionTitleList.Add("13", "설나희 문제 4");
-        SQuestionTitleList.Add("14", "설나희 문제 5");
+        SQuestionTitleList.Add("10", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("11", "다음 보기 중 강여진의 입장으로 가장 적절한 것은?");
+        SQuestionTitleList.Add("12", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("13", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("14", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
 
         // 문제 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
@@ -190,6 +200,11 @@ public class ExamUIManager : MonoBehaviour
         KQuestionList.Add("02", "동아리에 내 이름을 등록했다.\n분명 여진이가 동아리실 위치를 알려줬었는데.. \n음.. 어디...였더라...?");
         KQuestionList.Add("03", "OO을 맡길 생각이야!\n아마 맡겨놓으면 제대로 할 수 있을거야!");
         KQuestionList.Add("04", "이렇게 예쁜 여자애가 내손을 잡았어…\n따뜻하고…OOO?");
+        KQuestionList.Add("10", "차라리 얘한테 (   ) 가르치는 게 더 빠르겠어.");
+        KQuestionList.Add("11", "대충 멜로디만 연주해? 그게 베이스가 할 소리야?\n그러는 베이스야말로 혼자서는 아무것도 못 하잖아!\n기타처럼 단독공연도 못 하면서 (   ) 주제에!");
+        KQuestionList.Add("12", "나는 보컬 마음에 들어...\n(   ) 있잖아...");
+        KQuestionList.Add("13", "동아리 연습이 끝난 후 강여진과 함께 한 행동은?");
+        KQuestionList.Add("14", "내 정신 좀 봐.\n창고에 (   )을/를 두고 온 것 같아...");
 
         // Jin(50개)
         JQuestionList = new Dictionary<string, string>();
@@ -198,6 +213,11 @@ public class ExamUIManager : MonoBehaviour
         JQuestionList.Add("02", "동아리에 내 이름을 등록했다.\n분명 여진이가 동아리실 위치를 알려줬었는데.. \n음.. 어디...였더라...?");
         JQuestionList.Add("03", "OO을 맡길 생각이야!\n아마 맡겨놓으면 제대로 할 수 있을거야!");
         JQuestionList.Add("04", "이렇게 예쁜 여자애가 내손을 잡았어…\n따뜻하고…OOO?");
+        JQuestionList.Add("10", "차라리 얘한테 (   ) 가르치는 게 더 빠르겠어.");
+        JQuestionList.Add("11", "대충 멜로디만 연주해? 그게 베이스가 할 소리야?\n그러는 베이스야말로 혼자서는 아무것도 못 하잖아!\n기타처럼 단독공연도 못 하면서 (   ) 주제에!");
+        JQuestionList.Add("12", "나는 보컬 마음에 들어...\n(   ) 있잖아...");
+        JQuestionList.Add("13", "동아리 연습이 끝난 후 진다영과 함께 한 행동은?");
+        JQuestionList.Add("14", "선생님의 책상 위\n책\n오래된");
 
         // Sul(50개)
         SQuestionList = new Dictionary<string, string>();
@@ -206,11 +226,11 @@ public class ExamUIManager : MonoBehaviour
         SQuestionList.Add("02", "동아리에 내 이름을 등록했다.\n분명 여진이가 동아리실 위치를 알려줬었는데.. \n음.. 어디...였더라...?");
         SQuestionList.Add("03", "OO을 맡길 생각이야!\n아마 맡겨놓으면 제대로 할 수 있을거야!");
         SQuestionList.Add("04", "이렇게 예쁜 여자애가 내손을 잡았어…\n따뜻하고…OOO?");
-        SQuestionList.Add("10", "설나희 지문 1");
-        SQuestionList.Add("11", "설나희 지문 2");
-        SQuestionList.Add("12", "설나희 지문 3");
-        SQuestionList.Add("13", "설나희 지문 4");
-        SQuestionList.Add("14", "설나희 지문 5");
+        SQuestionList.Add("10", "차라리 얘한테 (   ) 가르치는 게 더 빠르겠어.");
+        SQuestionList.Add("11", "대충 멜로디만 연주해? 그게 베이스가 할 소리야?\n그러는 베이스야말로 혼자서는 아무것도 못 하잖아!\n기타처럼 단독공연도 못 하면서 (   ) 주제에!");
+        SQuestionList.Add("12", "나는 보컬 마음에 들어...\n(   ) 있잖아...");
+        SQuestionList.Add("13", "동아리 연습이 끝난 후 설나희와 함께 한 행동은?");
+        SQuestionList.Add("14", "여러 음향 신호를 섞는데 사용하는 장비로 동아리실에서 찾아볼 수 있다.\n채널마다 페이더를 움직여서 소리의 크기를 조절하거나\n특정 주파수 대역을 조절할 수 있는 이것은?");
         
         // 정답 항목 숫자는 : (주차-1, 라운드 - 1, 답 번호 -1)
         // Kang(250개)
@@ -240,6 +260,31 @@ public class ExamUIManager : MonoBehaviour
         KAnswerList.Add("042", "촉촉해");
         KAnswerList.Add("043", "끈적해");
         KAnswerList.Add("044", "거칠어");
+        KAnswerList.Add("100", "기타");
+        KAnswerList.Add("101", "베이스");
+        KAnswerList.Add("102", "드럼");
+        KAnswerList.Add("103", "키보드");
+        KAnswerList.Add("104", "응원단장");
+        KAnswerList.Add("110", "숟가락만 올리는");
+        KAnswerList.Add("111", "버스만 타는");
+        KAnswerList.Add("112", "베짱이 같은");
+        KAnswerList.Add("113", "무임승차만 하는");
+        KAnswerList.Add("114", "젓가락만 올리는");
+        KAnswerList.Add("120", "매력");
+        KAnswerList.Add("121", "느낌");
+        KAnswerList.Add("122", "여유");
+        KAnswerList.Add("123", "깊이");
+        KAnswerList.Add("124", "여운");
+        KAnswerList.Add("130", "악기 정리");
+        KAnswerList.Add("131", "기타 선 정리");
+        KAnswerList.Add("132", "창고 청소");
+        KAnswerList.Add("133", "기타 강습");
+        KAnswerList.Add("134", "악보 정리");
+        KAnswerList.Add("140", "목걸이");
+        KAnswerList.Add("141", "학생증");
+        KAnswerList.Add("142", "가방");
+        KAnswerList.Add("143", "지갑");
+        KAnswerList.Add("144", "핸드폰");
 
         // Jin(250개)
         JAnswerList = new Dictionary<string, string>();
@@ -268,6 +313,31 @@ public class ExamUIManager : MonoBehaviour
         JAnswerList.Add("042", "촉촉해");
         JAnswerList.Add("043", "끈적해");
         JAnswerList.Add("044", "거칠어");
+        JAnswerList.Add("100", "기타");
+        JAnswerList.Add("101", "베이스");
+        JAnswerList.Add("102", "드럼");
+        JAnswerList.Add("103", "키보드");
+        JAnswerList.Add("104", "응원단장");
+        JAnswerList.Add("110", "숟가락만 올리는");
+        JAnswerList.Add("111", "버스만 타는");
+        JAnswerList.Add("112", "베짱이 같은");
+        JAnswerList.Add("113", "무임승차만 하는");
+        JAnswerList.Add("114", "젓가락만 올리는");
+        JAnswerList.Add("120", "매력");
+        JAnswerList.Add("121", "느낌");
+        JAnswerList.Add("122", "여유");
+        JAnswerList.Add("123", "깊이");
+        JAnswerList.Add("124", "여운");
+        JAnswerList.Add("130", "활동지 작성");
+        JAnswerList.Add("131", "동아리실 정리");
+        JAnswerList.Add("132", "교무실 청소");
+        JAnswerList.Add("133", "베이스 강습");
+        JAnswerList.Add("134", "악보 정리");
+        JAnswerList.Add("140", "졸업앨범");
+        JAnswerList.Add("141", "교과서");
+        JAnswerList.Add("142", "활동지");
+        JAnswerList.Add("143", "생활기록부");
+        JAnswerList.Add("144", "출석부");
 
         // Sul(250개)
         SAnswerList = new Dictionary<string, string>();
@@ -296,31 +366,31 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("042", "촉촉해");
         SAnswerList.Add("043", "끈적해");
         SAnswerList.Add("044", "거칠어");
-        SAnswerList.Add("100", "설2_11");
-        SAnswerList.Add("101", "설2_12");
-        SAnswerList.Add("102", "설2_13");
-        SAnswerList.Add("103", "설2_14");
-        SAnswerList.Add("104", "설2_15");
-        SAnswerList.Add("110", "설2_21");
-        SAnswerList.Add("111", "설2_22");
-        SAnswerList.Add("112", "설2_23");
-        SAnswerList.Add("113", "설2_24");
-        SAnswerList.Add("114", "설2_25");
-        SAnswerList.Add("120", "설2_31");
-        SAnswerList.Add("121", "설2_32");
-        SAnswerList.Add("122", "설2_33");
-        SAnswerList.Add("123", "설2_34");
-        SAnswerList.Add("124", "설2_35");
-        SAnswerList.Add("130", "설2_41");
-        SAnswerList.Add("131", "설2_42");
-        SAnswerList.Add("132", "설2_43");
-        SAnswerList.Add("133", "설2_44");
-        SAnswerList.Add("134", "설2_45");
-        SAnswerList.Add("140", "설2_51");
-        SAnswerList.Add("141", "설2_52");
-        SAnswerList.Add("142", "설2_53");
-        SAnswerList.Add("143", "설2_54");
-        SAnswerList.Add("144", "설2_55");
+        SAnswerList.Add("100", "기타");
+        SAnswerList.Add("101", "베이스");
+        SAnswerList.Add("102", "드럼");
+        SAnswerList.Add("103", "키보드");
+        SAnswerList.Add("104", "응원단장");
+        SAnswerList.Add("110", "숟가락만 올리는");
+        SAnswerList.Add("111", "버스만 타는");
+        SAnswerList.Add("112", "베짱이 같은");
+        SAnswerList.Add("113", "무임승차만 하는");
+        SAnswerList.Add("114", "젓가락만 올리는");
+        SAnswerList.Add("120", "매력");
+        SAnswerList.Add("121", "느낌");
+        SAnswerList.Add("122", "여유");
+        SAnswerList.Add("123", "깊이");
+        SAnswerList.Add("124", "여운");
+        SAnswerList.Add("130", "기타 선 정리");
+        SAnswerList.Add("131", "악기 정리");
+        SAnswerList.Add("132", "전원 끄기");
+        SAnswerList.Add("133", "드럼 강습");
+        SAnswerList.Add("134", "악보 정리");
+        SAnswerList.Add("140", "믹서");
+        SAnswerList.Add("141", "이펙터");
+        SAnswerList.Add("142", "이퀄라이저");
+        SAnswerList.Add("143", "블루투스 스피커");
+        SAnswerList.Add("144", "풀레인지 스피커");
         
         // 정답 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
@@ -330,6 +400,11 @@ public class ExamUIManager : MonoBehaviour
         KCorrectAnswerList.Add("02", "4층 과학실 옆");
         KCorrectAnswerList.Add("03", "보컬");
         KCorrectAnswerList.Add("04", "거칠어");
+        KCorrectAnswerList.Add("10", "기타");
+        KCorrectAnswerList.Add("11", "숟가락만 올리는");
+        KCorrectAnswerList.Add("12", "매력");
+        KCorrectAnswerList.Add("13", "악기 정리");
+        KCorrectAnswerList.Add("14", "목걸이");
 
         // Jin(50개)
         JCorrectAnswerList = new Dictionary<string, string>();
@@ -338,6 +413,11 @@ public class ExamUIManager : MonoBehaviour
         JCorrectAnswerList.Add("02", "4층 과학실 옆");
         JCorrectAnswerList.Add("03", "보컬");
         JCorrectAnswerList.Add("04", "거칠어");
+        JCorrectAnswerList.Add("10", "기타");
+        JCorrectAnswerList.Add("11", "숟가락만 올리는");
+        JCorrectAnswerList.Add("12", "매력");
+        JCorrectAnswerList.Add("13", "활동지 작성");
+        JCorrectAnswerList.Add("14", "졸업앨범");
 
         // Sul(50개)
         SCorrectAnswerList = new Dictionary<string, string>();
@@ -346,11 +426,11 @@ public class ExamUIManager : MonoBehaviour
         SCorrectAnswerList.Add("02", "4층 과학실 옆");
         SCorrectAnswerList.Add("03", "보컬");
         SCorrectAnswerList.Add("04", "거칠어");
-        SCorrectAnswerList.Add("10", "설2_11");
-        SCorrectAnswerList.Add("11", "설2_22");
-        SCorrectAnswerList.Add("12", "설2_33");
-        SCorrectAnswerList.Add("13", "설2_44");
-        SCorrectAnswerList.Add("14", "설2_55");
+        SCorrectAnswerList.Add("10", "기타");
+        SCorrectAnswerList.Add("11", "숟가락만 올리는");
+        SCorrectAnswerList.Add("12", "매력");
+        SCorrectAnswerList.Add("13", "기타 선 정리");
+        SCorrectAnswerList.Add("14", "믹서");
     }
     void Update()
     {
