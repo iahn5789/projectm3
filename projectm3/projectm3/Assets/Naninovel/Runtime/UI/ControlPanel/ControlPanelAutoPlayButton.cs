@@ -20,6 +20,7 @@ namespace Naninovel.UI
         protected override void OnEnable ()
         {
             base.OnEnable();
+            player.OnSkip -= HandleSkipModeChange;
             player.OnAutoPlay += HandleAutoModeChange;
         }
 
@@ -37,6 +38,15 @@ namespace Naninovel.UI
         private void HandleAutoModeChange (bool enabled)
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
+        }
+        private void HandleSkipModeChange (bool enabled)
+        {
+            UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
+        }
+        public void OffAuto ()
+        {
+            if (!Engine.GetService<IInputManager>().ProcessInput) return;
+            OnDisable();
         }
     } 
 }
