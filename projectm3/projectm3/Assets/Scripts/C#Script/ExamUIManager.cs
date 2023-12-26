@@ -176,6 +176,11 @@ public class ExamUIManager : MonoBehaviour
         SQuestionTitleList.Add("02", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
         SQuestionTitleList.Add("03", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
         SQuestionTitleList.Add("04", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("10", "설나희 문제 1");
+        SQuestionTitleList.Add("11", "설나희 문제 2");
+        SQuestionTitleList.Add("12", "설나희 문제 3");
+        SQuestionTitleList.Add("13", "설나희 문제 4");
+        SQuestionTitleList.Add("14", "설나희 문제 5");
 
         // 문제 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
@@ -201,6 +206,11 @@ public class ExamUIManager : MonoBehaviour
         SQuestionList.Add("02", "동아리에 내 이름을 등록했다.\n분명 여진이가 동아리실 위치를 알려줬었는데.. \n음.. 어디...였더라...?");
         SQuestionList.Add("03", "OO을 맡길 생각이야!\n아마 맡겨놓으면 제대로 할 수 있을거야!");
         SQuestionList.Add("04", "이렇게 예쁜 여자애가 내손을 잡았어…\n따뜻하고…OOO?");
+        SQuestionList.Add("10", "설나희 지문 1");
+        SQuestionList.Add("11", "설나희 지문 2");
+        SQuestionList.Add("12", "설나희 지문 3");
+        SQuestionList.Add("13", "설나희 지문 4");
+        SQuestionList.Add("14", "설나희 지문 5");
         
         // 정답 항목 숫자는 : (주차-1, 라운드 - 1, 답 번호 -1)
         // Kang(250개)
@@ -286,6 +296,31 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("042", "촉촉해");
         SAnswerList.Add("043", "끈적해");
         SAnswerList.Add("044", "거칠어");
+        SAnswerList.Add("100", "설2_11");
+        SAnswerList.Add("101", "설2_12");
+        SAnswerList.Add("102", "설2_13");
+        SAnswerList.Add("103", "설2_14");
+        SAnswerList.Add("104", "설2_15");
+        SAnswerList.Add("110", "설2_21");
+        SAnswerList.Add("111", "설2_22");
+        SAnswerList.Add("112", "설2_23");
+        SAnswerList.Add("113", "설2_24");
+        SAnswerList.Add("114", "설2_25");
+        SAnswerList.Add("120", "설2_31");
+        SAnswerList.Add("121", "설2_32");
+        SAnswerList.Add("122", "설2_33");
+        SAnswerList.Add("123", "설2_34");
+        SAnswerList.Add("124", "설2_35");
+        SAnswerList.Add("130", "설2_41");
+        SAnswerList.Add("131", "설2_42");
+        SAnswerList.Add("132", "설2_43");
+        SAnswerList.Add("133", "설2_44");
+        SAnswerList.Add("134", "설2_45");
+        SAnswerList.Add("140", "설2_51");
+        SAnswerList.Add("141", "설2_52");
+        SAnswerList.Add("142", "설2_53");
+        SAnswerList.Add("143", "설2_54");
+        SAnswerList.Add("144", "설2_55");
         
         // 정답 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
@@ -311,6 +346,11 @@ public class ExamUIManager : MonoBehaviour
         SCorrectAnswerList.Add("02", "4층 과학실 옆");
         SCorrectAnswerList.Add("03", "보컬");
         SCorrectAnswerList.Add("04", "거칠어");
+        SCorrectAnswerList.Add("10", "설2_11");
+        SCorrectAnswerList.Add("11", "설2_22");
+        SCorrectAnswerList.Add("12", "설2_33");
+        SCorrectAnswerList.Add("13", "설2_44");
+        SCorrectAnswerList.Add("14", "설2_55");
     }
     void Update()
     {

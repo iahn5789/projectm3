@@ -59,3 +59,28 @@ jeon: 혹시 마이크 남는 거 있어?
 {Player_name}: 하...
 @stopSfx Amb_Office_01 fade:2 wait:0
 @stopBgm Common_BGM_02 fade:2 wait:0
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@set SulWeek=2
+@set PartTimeJob_Count=5
+@set Start_Timer=false
+@set Selected="Sul"
+@set KangSelect_1_Buy=false
+@set KangSelect_2_Buy=false
+@set KangSelect_3_Buy=false
+@set JinSelect_1_Buy=false
+@set JinSelect_2_Buy=false
+@set JinSelect_3_Buy=false
+@set SulSelect_1_Buy=false
+@set SulSelect_2_Buy=false
+@set SulSelect_3_Buy=false
+@set TestScore=100
+@set TestCorrect=0
+@set Tutorial=End
+@goto TestSceneUI
+@processInput true
+@stop

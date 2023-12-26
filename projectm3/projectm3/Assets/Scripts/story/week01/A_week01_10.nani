@@ -30,13 +30,30 @@ kang: 아무도 없어..?
 kang: 괜찮아! 내가 알려주면 되니까!
 @stopSfx Amb_Shool_Club_01 fade:1 pose:c
 @stopBgm BGM_Map_Antics_01 fade:1 pose:c
-@set Tutorial="First"
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@set KangWeek=1
+@set JinWeek=1
+@set SulWeek=1
+@set PartTimeJob_Count=5
+@set Start_Timer=false
+@set Selected="Kang"
+@set KangSelect_1_Buy=false
+@set KangSelect_2_Buy=false
+@set KangSelect_3_Buy=false
+@set JinSelect_1_Buy=false
+@set JinSelect_2_Buy=false
+@set JinSelect_3_Buy=false
+@set SulSelect_1_Buy=false
+@set SulSelect_2_Buy=false
+@set SulSelect_3_Buy=false
+@set TestScore=100
+@set TestCorrect=0
+@set Tutorial="First"
 @goto TestSceneUI
 @processInput true
 @stop

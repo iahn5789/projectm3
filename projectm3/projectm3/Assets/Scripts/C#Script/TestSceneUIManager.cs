@@ -299,7 +299,10 @@ public class TestSceneUIManager : MonoBehaviour
         {
             Image_End_PartTimeJob.SetActive(true);
         }
-
+        else
+        {
+            Image_End_PartTimeJob.SetActive(false);
+        }
         string badgeText = variableManager.GetVariableValue("Badge");
         BadgeUI.text = badgeText;
 
