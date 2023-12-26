@@ -69,7 +69,7 @@ public class TestSceneUIManager : MonoBehaviour
         // 제목, 타이틀, Subject n주차 제목,n주차 타이틀,n주차 Subject(주인공 시점), n주차 Subject(강여진시점)
         // 강여진 1주차~9주차?
         DictWeekText.Add("Kang1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터k"));
-        DictWeekText.Add("Kang2", ("2주차 제목","좌충우돌 첫 연습","말도 많고 탈도 많던 연습이 끝나고, 악기 정리를 하기 위해 여진이와 함께 창고로 갔다. 뒤숭숭한 마음이었지만 여진이의 말을 듣고 기분이 한결 나아졌다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력에도 불구하고 여진이는 괜찮다고 한다."));
+        DictWeekText.Add("Kang2", ("2주차 제목","좌충우돌 첫 연습","연습이 끝나고 악기 정리를 하기 위해 여진이와 함께 창고로 갔다. 뒤숭숭한 마음이었지만 여진이의 말을 듣고 기분이 한결 나아졌다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력에도 불구하고 여진이는 괜찮다고 한다."));
         DictWeekText.Add("Kang3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(강여진시점)"));
         DictWeekText.Add("Kang4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(강여진시점)"));
         DictWeekText.Add("Kang5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(강여진시점)"));
@@ -80,7 +80,7 @@ public class TestSceneUIManager : MonoBehaviour
         DictWeekText.Add("Kang10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(강여진시점)"));
         // 진다영 1주차~9주차?
         DictWeekText.Add("Jin1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터j"));
-        DictWeekText.Add("Jin2", ("2주차 제목","좌충우돌 첫 연습","말도 많고 탈도 많던 연습이 끝나고, 장부 정리를 하기 위해 다영이와 함께  교무실로 갔다. 늘 화만 내는 줄 알았던 다영이의 약간은 다정한 속마음도 들을 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력에 다영이는 보컬 교체 제안을 하는데..."));
+        DictWeekText.Add("Jin2", ("2주차 제목","좌충우돌 첫 연습","연습이 끝나고 활동지 정리를 하기 위해 다영이와 함께  교무실로 갔다. 늘 화만 내는 줄 알았던 다영이의 속마음도 들을 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력에 다영이는 보컬 교체 제안을 하는데..."));
         DictWeekText.Add("Jin3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(진다영시점)"));
         DictWeekText.Add("Jin4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(진다영시점)"));
         DictWeekText.Add("Jin5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(진다영시점)"));
@@ -91,8 +91,8 @@ public class TestSceneUIManager : MonoBehaviour
         DictWeekText.Add("Jin10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(진다영시점)"));
         // 설나희 1주차~9주차?
         DictWeekText.Add("Sul1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터s"));
-        DictWeekText.Add("Sul2", ("2주차 제목","좌충우돌 첫 연습","말도 많고 탈도 많던 연습이 끝나고, 나희 누나와 함께 남아 시작한 동아리방 정리. 무뚝뚝한 줄만 알았던 나희 누나의 색다른 모습도 볼 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력을 나희 누나는 오히려 매력 있다고 말한다."));
-        DictWeekText.Add("Sul3", ("3주차 제목","3주차 타이틀","3주차 Subject(주인공 시점)", "3주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul2", ("2주차 제목","좌충우돌 첫 연습","연습이 끝나고 나희 누나와 함께 남아 시작한 동아리방 정리. 무뚝뚝한 줄만 알았던 나희 누나의 색다른 모습도 볼 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력을 나희 누나는 오히려 매력 있다고 말한다."));
+        DictWeekText.Add("Sul3", ("3주차 제목","어색한 만남","3주차 Subject(주인공 시점)", "3주차 Subject(설나희시점)"));
         DictWeekText.Add("Sul4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(설나희시점)"));
         DictWeekText.Add("Sul5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(설나희시점)"));
         DictWeekText.Add("Sul6", ("6주차 제목","6주차 타이틀","6주차 Subject(주인공 시점)", "6주차 Subject(설나희시점)"));
@@ -141,9 +141,9 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("11Kang", ("분홍 머리 여자애 이름?\n다영이잖아! 설마 무서워서 이때까지 못물어본거야..?", 5,2));
         SecretMessageLine.Add("12Kang", ("우리 동아리방은 4층 과학실 옆에\n있어. 좀 멀긴 해도 조용해서 좋더라!", 6,1));
         SecretMessageLine.Add("13Kang", ("내 손? 아하하... 조금 거칠지? 연습을 많이 해서 그래!", 7,0));
-        SecretMessageLine.Add("21Kang", ("2_1_Kang대사", 1,1));
-        SecretMessageLine.Add("22Kang", ("2_2_Kang대사", 2,2));
-        SecretMessageLine.Add("23Kang", ("2_3_Kang대사", 3,3));
+        SecretMessageLine.Add("21Kang", ("나만큼 기타 치려면 못해도 5년은 연습해야 하지 않을까?", 1,1));
+        SecretMessageLine.Add("22Kang", ("너도 우리 밴드부의 당당한 일원이야! 숟가락만 올리는 사람이 아니라구!", 2,2));
+        SecretMessageLine.Add("23Kang", ("매력..? 하하하... 처음 들어보는\n창법이긴 했어!", 3,2));
         SecretMessageLine.Add("31Kang", ("3_1_Kang대사", 1,1));
         SecretMessageLine.Add("32Kang", ("3_2_Kang대사", 2,2));
         SecretMessageLine.Add("33Kang", ("3_3_Kang대사", 3,3));
@@ -169,9 +169,9 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("11Jin", ("내 이름을 아직도 모른다고...?\n진다영이잖아!", 3,1));
         SecretMessageLine.Add("12Jin", ("동아리방 위치를 아직도 모른다고...? 4층 과학실 옆이잖아!", 1,0));
         SecretMessageLine.Add("13Jin", ("너도 여진이 손처럼 거칠어질 때까지 연습해! 알았어?", 2,2));
-        SecretMessageLine.Add("21Jin", ("2_1_Jin대사", 1,1));
-        SecretMessageLine.Add("22Jin", ("2_2_Jin대사", 2,2));
-        SecretMessageLine.Add("23Jin", ("2_3_Jin대사", 3,3));
+        SecretMessageLine.Add("21Jin", ("기타가 뭐가 어려워? 베이스에\n비하면 아무것도 아니야!", 1,1));
+        SecretMessageLine.Add("22Jin", ("어디 가서 숟가락 올린다는 소리 듣기 싫으면 빨리 연습해!", 2,2));
+        SecretMessageLine.Add("23Jin", ("귀 찢어지는 소리가 매력이냐!", 3,2));
         SecretMessageLine.Add("31Jin", ("3_1_Jin대사", 1,1));
         SecretMessageLine.Add("32Jin", ("3_2_Jin대사", 2,2));
         SecretMessageLine.Add("33Jin", ("3_3_Jin대사", 3,3));
@@ -197,9 +197,9 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("11Sul", ("다영이 너무 무서워하지 마...", 0,1));
         SecretMessageLine.Add("12Sul", ("동아리방은 4층 과학실 옆에 있어. 혹시 헷갈릴까봐...", 0,0));
         SecretMessageLine.Add("13Sul", ("여진이 손이 좀 거칠어. 연습을 많이 해서 그런 건가..?", 0,2));
-        SecretMessageLine.Add("21Sul", ("2_1_Sul대사", 1,1));
-        SecretMessageLine.Add("22Sul", ("2_2_Sul대사", 2,2));
-        SecretMessageLine.Add("23Sul", ("2_3_Sul대사", 3,3));
+        SecretMessageLine.Add("21Sul", ("기타는... 배우기 어려워...", 1,1));
+        SecretMessageLine.Add("22Sul", ("베이스가 숟가락이면... 그래서...?", 2,2));
+        SecretMessageLine.Add("23Sul", ("나는... 목소리 매력 있던데...", 3,3));
         SecretMessageLine.Add("31Sul", ("3_1_Sul대사", 1,1));
         SecretMessageLine.Add("32Sul", ("3_2_Sul대사", 2,2));
         SecretMessageLine.Add("33Sul", ("3_3_Sul대사", 3,3));
