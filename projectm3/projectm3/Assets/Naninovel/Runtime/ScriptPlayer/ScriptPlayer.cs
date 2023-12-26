@@ -409,6 +409,7 @@ namespace Naninovel
             OnAutoPlay?.Invoke(enable);
 
             if (enable && WaitingForInput) SetWaitingForInputEnabled(false);
+            if (enable && SkipActive) SetSkipEnabled(false);
         }
 
         public virtual void SetWaitingForInputEnabled (bool enable)
