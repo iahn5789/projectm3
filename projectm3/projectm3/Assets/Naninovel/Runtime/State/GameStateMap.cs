@@ -22,6 +22,14 @@ namespace Naninovel
         /// </summary>
         public DateTime SaveDateTime { get; set; }
         /// <summary>
+        /// Week when the snapshot was taken.
+        /// </summary>
+        public String Week { get; set; }
+        /// <summary>
+        /// WeekTitle when the snapshot was taken.
+        /// </summary>
+        public String WeekTitle { get; set; }
+        /// <summary>
         /// Preview of the screen when the snapshot was taken.
         /// </summary>
         public Texture2D Thumbnail { get; set; }
@@ -50,6 +58,8 @@ namespace Naninovel
         [SerializeField] private bool playerRollbackAllowed;
         [SerializeField] private bool forcedSerialize;
         [SerializeField] private string saveDateTime;
+        [SerializeField] private string week;
+        [SerializeField] private string weekTitle;
         [SerializeField] private string thumbnailBase64;
         [SerializeField] private string rollbackStackJson;
 
@@ -58,6 +68,8 @@ namespace Naninovel
             base.OnBeforeSerialize();
 
             saveDateTime = SaveDateTime.ToString(dateTimeFormat, CultureInfo.InvariantCulture);
+            week = Week;
+            weekTitle = WeekTitle;
             thumbnailBase64 = Thumbnail ? Convert.ToBase64String(Thumbnail.EncodeToJPG()) : null;
         }
 
@@ -66,6 +78,8 @@ namespace Naninovel
             base.OnAfterDeserialize();
 
             SaveDateTime = string.IsNullOrEmpty(saveDateTime) ? DateTime.MinValue : DateTime.ParseExact(saveDateTime, dateTimeFormat, CultureInfo.InvariantCulture);
+            Week = string.IsNullOrEmpty(week) ? "" : week;
+            WeekTitle = string.IsNullOrEmpty(weekTitle) ? "" : weekTitle;
             Thumbnail = string.IsNullOrEmpty(thumbnailBase64) ? null : GetThumbnail();
         }
 

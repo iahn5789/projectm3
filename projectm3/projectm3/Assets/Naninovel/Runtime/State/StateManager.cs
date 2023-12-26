@@ -40,6 +40,7 @@ namespace Naninovel
         private IInputSampler rollbackInput;
         private IScriptPlayer scriptPlayer;
         private ICameraManager cameraManager;
+        private ICustomVariableManager variableManager;
 
         // Remember to not reference any other engine services to make sure this service is always initialized first.
         // This is required for the post engine initialization tasks to be performed before any others.
@@ -109,7 +110,11 @@ namespace Naninovel
             {
                 PeekRollbackStack()?.ForceSerialize();
 
+                variableManager = Engine.GetService<ICustomVariableManager>();
                 state.SaveDateTime = DateTime.Now;
+                string name = variableManager?.GetVariableValue("Selected");
+                state.Week = variableManager?.GetVariableValue($"{name}Week");
+                state.WeekTitle = variableManager?.GetVariableValue("WeekTitle"); // 주차 내용
                 state.Thumbnail = cameraManager.CaptureThumbnail();
 
                 SaveAllServicesToState<IStatefulService<GameStateMap>, GameStateMap>(state);
@@ -222,8 +227,13 @@ namespace Naninovel
         {
             if (RollbackStack is null) return;
 
+            variableManager = Engine.GetService<ICustomVariableManager>();
+
             var state = new GameStateMap();
             state.SaveDateTime = DateTime.Now;
+            string name = variableManager?.GetVariableValue("Selected");
+            state.Week = variableManager?.GetVariableValue($"{name}Week");
+            state.WeekTitle = variableManager?.GetVariableValue("WeekTitle"); // 주차 내용
             state.PlayerRollbackAllowed = allowPlayerRollback;
 
             SaveAllServicesToState<IStatefulService<GameStateMap>, GameStateMap>(state);

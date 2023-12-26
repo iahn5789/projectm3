@@ -65,10 +65,7 @@ namespace Naninovel.UI
             {
                 DeleteButton.gameObject.SetActive(true);
                 var date = state.SaveDateTime.ToString(dateFormat);
-                string name = variableManager?.GetVariableValue("Selected");
-                string Week = variableManager?.GetVariableValue($"{name}Week");
-                string WeekName = variableManager?.GetVariableValue("WeekTitle"); // 주차 내용
-                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),Week,"주차",WeekName);
+                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),state.Week,"주차",state.WeekTitle);
                 ThumbnailImage.texture = state.Thumbnail;
             }
         }
