@@ -810,6 +810,5 @@ public class ExamUIManager : MonoBehaviour
         int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
         week += 1;
         variableManager?.SetVariableValue($"{name}Week",week.ToString());
-        Debug.Log(week);
     }
 }

@@ -42,8 +42,37 @@ public class TestStartPopupManager : MonoBehaviour
             }
         }
     }
+    private bool CheckAnotherLikeAbility()
+    {
+        string[] characterNames = {"Kang", "Jin", "Sul"};
+
+        foreach (var otherName in characterNames)
+        {
+            if (otherName != name)
+            {
+                if (_CheckLikeAbility(otherName))
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+    private bool _CheckLikeAbility(string otherName)
+    {
+        int week = int.Parse(variableManager?.GetVariableValue($"{otherName}Week"));
+        int likeAbility = int.Parse(variableManager?.GetVariableValue($"{otherName}LikeAbility"));
+
+        return (week * 10) + 5 <= likeAbility;
+    }
     private void CalculatorLikeAbility()
     {
+        if (CheckAnotherLikeAbility())
+        {
+            TestStartButton.SetActive(false);
+            return;
+        }
         if(Count != "0")
         {
             if(CalculatorRemaining(money+1000, (((week * 10) + 5) - LikeAbility)))

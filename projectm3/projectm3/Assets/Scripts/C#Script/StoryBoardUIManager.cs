@@ -59,10 +59,6 @@ public class StoryBoardUIManager : MonoBehaviour
         SelectedOff[1].SetActive(false);
         variableManager?.SetVariableValue("Selected", "Kang");
     }
-    public void ResetSelected()
-    {
-        variableManager?.SetVariableValue("Selected", "");
-    }
     public void OnSelected(string OnName)
     {
         if(!gameObject.activeInHierarchy)
