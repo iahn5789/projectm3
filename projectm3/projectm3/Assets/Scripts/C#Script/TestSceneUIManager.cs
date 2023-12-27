@@ -61,6 +61,10 @@ public class TestSceneUIManager : MonoBehaviour
     public GameObject WeekTutorial;
     public GameObject TutorialNoneObject;
     public AudioSource TutorialAudioSource;
+    public GameObject TestStartPopupUI_Enough;
+    public GameObject StoryboardUI;
+    public GameObject PartTimeJobUI;
+    public GameObject SecretMessageUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -310,6 +314,27 @@ public class TestSceneUIManager : MonoBehaviour
         CehckedLikeAbility("Jin",1);
         CehckedLikeAbility("Sul",2);
         SetActiveTSPM();
+    }
+    public void SetSelectedValue()
+    {
+        variableManager.SetVariableValue("Selected", "");
+    }
+    IEnumerator ResetUIAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ResetUI();
+    }
+    public void ResetUI()
+    {
+        TestStartPopupUI_Enough.SetActive(false);
+        StoryboardUI.SetActive(false);
+        PartTimeJobUI.SetActive(false);
+        SecretMessageUI.SetActive(false);
+    }
+    // 이 메서드를 호출하여 코루틴을 시작합니다.
+    public void StartResetUIAfterDelay()
+    {
+        StartCoroutine(ResetUIAfterDelay(3.0f));
     }
     public void SetActiveTSPM()
     {

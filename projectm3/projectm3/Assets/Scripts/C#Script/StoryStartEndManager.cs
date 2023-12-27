@@ -31,7 +31,6 @@ public class StoryStartEndManager : MonoBehaviour
         string Script = $"@hideUI StoryStartEndUI\n@goto A_week{week}_{name.ToLower()}01";
         NextScript.SetScriptText(Script);
         NextScript.Play();
-        Debug.Log("ScriptStart");
         Engine.GetService<IInputManager>().ProcessInput = true;
         variableManager?.SetVariableValue($"InputKeyValue", "true");
     }

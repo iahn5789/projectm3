@@ -18676,7 +18676,6 @@ GameObject:
   - component: {fileID: 2441370431643226293}
   - component: {fileID: 5313689048642686925}
   - component: {fileID: 8438536167744945345}
-  - component: {fileID: 6313733674590067466}
   - component: {fileID: 8678610365296732894}
   - component: {fileID: 9163732360579915363}
   - component: {fileID: 3883000989424673451}
@@ -18816,6 +18815,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: StartResetUIAfterDelay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5313689048642686925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18860,25 +18870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 20, y: 20, z: 20, w: 20}
---- !u!114 &6313733674590067466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168605339221676215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2167d04b6aaa04e9d4274248bf24a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BuyItemUI: {fileID: 8876063896719602450}
-  BuyResultUI: {fileID: 0}
-  SetBuyResultInfoObject: {fileID: 0}
-  CoinText: {fileID: 0}
-  CoinLackUI: {fileID: 0}
-  CoinLackPrefab: {fileID: 6306036015961478139, guid: 058b9518767b18e4d8db94e88a048f0a,
-    type: 3}
 --- !u!95 &8678610365296732894
 Animator:
   serializedVersion: 3
@@ -70865,6 +70856,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: SetSelectedValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5061037812258899138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94786,50 +94788,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8876063896719602450}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1873498860638096085}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2817534558444432304}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1083861821153921021}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   hideOnLoad: 0
   hideInThumbnail: 0
   saveVisibilityState: 1
@@ -95113,6 +95071,10 @@ MonoBehaviour:
   WeekTutorial: {fileID: 320367177004778024}
   TutorialNoneObject: {fileID: 8721002019451923909}
   TutorialAudioSource: {fileID: 2045883777282419541}
+  TestStartPopupUI_Enough: {fileID: 8876063896719602450}
+  StoryboardUI: {fileID: 1873498860638096085}
+  PartTimeJobUI: {fileID: 2817534558444432304}
+  SecretMessageUI: {fileID: 1083861821153921021}
 --- !u!114 &7128956764193607543
 MonoBehaviour:
   m_ObjectHideFlags: 0
