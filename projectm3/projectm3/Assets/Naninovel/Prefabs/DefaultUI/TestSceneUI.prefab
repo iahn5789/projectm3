@@ -61263,6 +61263,7 @@ GameObject:
   - component: {fileID: 7481624628698133504}
   - component: {fileID: 5289643533159125669}
   - component: {fileID: 3263051278218787766}
+  - component: {fileID: 6873581851203706227}
   m_Layer: 5
   m_Name: Button_Story
   m_TagString: Untagged
@@ -61387,6 +61388,17 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 7082295084105830029}
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 6873581851203706227}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -61585,6 +61597,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 5289643533159125669}
+--- !u!114 &6873581851203706227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782136772709484559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptName: 
+  scriptText: '@set Selected="null"
+
+    @stop'
+  playOnAwake: 0
+  disableWaitInput: 0
 --- !u!1 &3802985890502095453
 GameObject:
   m_ObjectHideFlags: 0
@@ -143186,15 +143216,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349d23746f27cf3499263871e93ac61d, type: 3}
---- !u!4 &1515861667286663174 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 640821111365559376, guid: 349d23746f27cf3499263871e93ac61d,
-    type: 3}
-  m_PrefabInstance: {fileID: 2156603274411844694}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &3852607786156823206 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2925929217047344880, guid: 349d23746f27cf3499263871e93ac61d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2156603274411844694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1515861667286663174 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 640821111365559376, guid: 349d23746f27cf3499263871e93ac61d,
     type: 3}
   m_PrefabInstance: {fileID: 2156603274411844694}
   m_PrefabAsset: {fileID: 0}
@@ -143432,15 +143462,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f707f87db9086e408d5b1209a7071f7, type: 3}
---- !u!4 &8848651443433148307 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1201647560676106497, guid: 6f707f87db9086e408d5b1209a7071f7,
-    type: 3}
-  m_PrefabInstance: {fileID: 7665590069868424850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &7082295084105830029 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 587992804166950943, guid: 6f707f87db9086e408d5b1209a7071f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7665590069868424850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8848651443433148307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1201647560676106497, guid: 6f707f87db9086e408d5b1209a7071f7,
     type: 3}
   m_PrefabInstance: {fileID: 7665590069868424850}
   m_PrefabAsset: {fileID: 0}
