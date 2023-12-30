@@ -265,7 +265,8 @@ public class ProfileUIManager : MonoBehaviour
     public void UpdateSecretProfile()
     {
         int Week = Int32.Parse(variableManager?.GetVariableValue($"{characterName}Week"));
-        if (Week>=1)
+        int LikeAbility = Int32.Parse(variableManager?.GetVariableValue($"{characterName}LikeAbility"));
+        if (Week>=1 && LikeAbility >= 10)
         {
             OnText(Name, SecretName);
             OnText(Grade, SecretGrade);
@@ -287,7 +288,7 @@ public class ProfileUIManager : MonoBehaviour
             OffText(Constellation, SecretConstellation);
             OffText(Flower, SecretFlower);
         }
-        if (Week>=2)
+        if (Week>=2 && LikeAbility >= 20)
         {
             OnText(FavoriteThing, SecretFavoriteThing);
             OnText(HateThing, SecretHateThing);
@@ -301,7 +302,7 @@ public class ProfileUIManager : MonoBehaviour
             OffText(FavoriteFood, SecretFavoriteFood);
             OffText(HateFood, SecretHateFood);
         }
-        if (Week>=3)
+        if (Week>=3 && LikeAbility >= 30)
         {
             OnText(MBTI, SecretMBTI);
             OnText(BloodType, SecretBloodType);
@@ -313,7 +314,7 @@ public class ProfileUIManager : MonoBehaviour
             OffText(BloodType, SecretBloodType);
             OffText(BandPosition, SecretBandPosition);
         }
-        if (Week>=4)
+        if (Week>=4 && LikeAbility >= 40)
         {
             OnText(Family, SecretFamily);
             OnText(FirstName, SecretFirstName);
@@ -323,7 +324,7 @@ public class ProfileUIManager : MonoBehaviour
             OffText(Family, SecretFamily);
             OffText(FirstName, SecretFirstName);
         }
-        if (Week>=5)
+        if (Week>=5 && LikeAbility >= 50)
         {
             OnText(Food, SecretFood);
             OnText(Habit, SecretHabit);
@@ -335,7 +336,7 @@ public class ProfileUIManager : MonoBehaviour
             OffText(Habit, SecretHabit);
             OffText(Interest, SecretInterest);
         }
-        if (Week>=6)
+        if (Week>=6 && LikeAbility >= 60)
         {
             OnText(Money, SecretMoney);
         }
@@ -343,7 +344,7 @@ public class ProfileUIManager : MonoBehaviour
         {
             OffText(Money, SecretMoney);
         }
-        if (Week>=7)
+        if (Week>=7 && LikeAbility >= 70)
         {
             OnText(Styling, SecretStyling);
         }
@@ -351,7 +352,7 @@ public class ProfileUIManager : MonoBehaviour
         {
             OffText(Styling, SecretStyling);
         }
-        if (Week>=8)
+        if (Week>=8 && LikeAbility >= 80)
         {
             OnText(Specialty, SecretSpecialty);
             OnText(Hobby, SecretHobby);
@@ -361,7 +362,7 @@ public class ProfileUIManager : MonoBehaviour
             OffText(Specialty, SecretSpecialty);
             OffText(Hobby, SecretHobby);
         }
-        if (Week>=9)
+        if (Week>=9 && LikeAbility >= 90)
         {
             OnText(Dream, SecretDream);
             OnText(Type, SecretType);
