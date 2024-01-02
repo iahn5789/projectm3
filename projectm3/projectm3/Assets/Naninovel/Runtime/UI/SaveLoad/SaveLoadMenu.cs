@@ -179,8 +179,8 @@ namespace Naninovel.UI
             Engine.GetService<IUIManager>()?.GetUI<ITitleUI>()?.Hide();
             await stateManager.LoadGameAsync(slotId);
             variableManager = Engine.GetService<ICustomVariableManager>();
-            variableManager?.SetVariableValue($"InputKeyValue", "true");
-            Engine.GetService<IInputManager>().ProcessInput = true;
+            bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"InputKeyValue"));
+            Engine.GetService<IInputManager>().ProcessInput = inputBool;
         }
 
         protected virtual void HandleSaveSlotClicked (int slotNumber)

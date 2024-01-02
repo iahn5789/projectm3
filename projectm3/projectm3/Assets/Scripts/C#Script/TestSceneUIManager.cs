@@ -342,10 +342,13 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void CehckedLikeAbility(string name, int number)
     {
-        int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
-        int LikeAbility = Int32.Parse(variableManager?.GetVariableValue($"{name}LikeAbility"));
+        if (!Int32.TryParse(variableManager?.GetVariableValue($"{name}Week"), out int week))
+            week = 0; // 기본값 설정
 
-        if (LikeAbility >= (week * 10) + 5)
+        if (!Int32.TryParse(variableManager?.GetVariableValue($"{name}LikeAbility"), out int likeAbility))
+            likeAbility = 0; // 기본값 설정
+
+        if (likeAbility >= (week * 10) + 5)
         {
             StoryBoardPossible[number].SetActive(true);
             StoryBoardImPossible[number].SetActive(false);

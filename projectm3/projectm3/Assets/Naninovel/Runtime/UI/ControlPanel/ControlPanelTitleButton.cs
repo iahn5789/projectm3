@@ -12,6 +12,8 @@ namespace Naninovel.UI
         private IUIManager uiManager;
         private IConfirmationUI confirmationUI;
 
+        public CustomUI NowScene;
+
         protected override void Awake ()
         {
             base.Awake();
@@ -30,7 +32,6 @@ namespace Naninovel.UI
         protected override void OnButtonClick ()
         {
             uiManager.GetUI<IPauseUI>()?.Hide();
-
             ExitToTitleAsync();
         }
 
@@ -39,6 +40,10 @@ namespace Naninovel.UI
             if (!await confirmationUI.ConfirmAsync(ConfirmationMessage)) return;
 
             await gameState.ResetStateAsync();
+            if (NowScene)
+            {
+                NowScene?.Hide();
+            }
             uiManager.GetUI<ITitleUI>()?.Show();
         }
     } 
