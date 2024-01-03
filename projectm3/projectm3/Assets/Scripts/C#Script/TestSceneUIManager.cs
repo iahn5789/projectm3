@@ -317,7 +317,9 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetSelectedValue()
     {
+        string selected = variableManager.GetVariableValue("Selected");
         variableManager.SetVariableValue("Selected", "");
+        variableManager.SetVariableValue("Selecteded", selected);
     }
     IEnumerator ResetUIAfterDelay(float delay)
     {

@@ -39,6 +39,7 @@ public class BloackKeyInputManager : MonoBehaviour
         string saveloadscene = variableManager?.GetVariableValue($"SaveLoadScene");
         if (saveloadscene != "Save")
         {
+            checkHideTestSceneUI();
             if (WeekName.text == "쪽지 시험")
             {
                 variableManager?.SetVariableValue($"InputKeyValue", "false");
@@ -48,6 +49,40 @@ public class BloackKeyInputManager : MonoBehaviour
             {
                 variableManager?.SetVariableValue($"InputKeyValue", "true");
                 Engine.GetService<IInputManager>().ProcessInput = true;
+            }
+        }
+    }
+    private void checkHideTestSceneUI()
+    {
+        Transform current = gameObject.transform;
+        for (int i = 0; i < 6 && current.parent != null; i++)
+        {
+            current = current.parent;
+        }
+        Transform uiTransform = current.Find("UI");
+
+        if (uiTransform != null)
+        {
+            Transform testSceneUITransform = uiTransform.Find("TestSceneUI");
+            if (testSceneUITransform != null)
+            {
+                HideAndPlayAnimation(testSceneUITransform, "StoryboardUI", "Normal");
+                HideAndPlayAnimation(testSceneUITransform, "SecretMessageUI", "Normal");
+                HideAndPlayAnimation(testSceneUITransform, "PartTimeJobList", "Normal");
+            }
+        }
+    }
+    private void HideAndPlayAnimation(Transform parentTransform, string childName, string animationState)
+    {
+        Transform childTransform = parentTransform.Find(childName);
+        if (childTransform != null)
+        {
+            childTransform.gameObject.SetActive(false);
+
+            Animator animator = childTransform.GetComponent<Animator>();
+            if (animator != null)
+            {
+                animator.Play(animationState);
             }
         }
     }

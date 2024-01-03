@@ -111,10 +111,21 @@ namespace Naninovel
                 PeekRollbackStack()?.ForceSerialize();
 
                 variableManager = Engine.GetService<ICustomVariableManager>();
+                string name = "";
                 state.SaveDateTime = DateTime.Now;
-                string name = variableManager?.GetVariableValue("Selected");
-                state.Week = variableManager?.GetVariableValue($"{name}Week");
                 state.WeekTitle = variableManager?.GetVariableValue("WeekTitle"); // 주차 내용
+                if (state.WeekTitle == "쪽지 시험")
+                {
+                    name = variableManager?.GetVariableValue("Selecteded");
+                }
+                else
+                {
+                    name = variableManager?.GetVariableValue("Selected");
+                }
+                Debug.Log("name : " + name);
+                state.Week = variableManager?.GetVariableValue($"{name}Week");
+                Debug.Log("{name}Week : " + state.Week);
+                Debug.Log("WeekTitle : " + state.WeekTitle);
                 state.Thumbnail = cameraManager.CaptureThumbnail();
 
                 SaveAllServicesToState<IStatefulService<GameStateMap>, GameStateMap>(state);
