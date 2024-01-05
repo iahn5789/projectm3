@@ -44,22 +44,5 @@ namespace Naninovel.UI
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
         }
-        public void OnSkip (InputAction.CallbackContext context)
-        {
-            if (context.started && SkipStatus)
-            {
-                //button is press
-                SkipStatus = !SkipStatus;
-                if (!Engine.GetService<IInputManager>().ProcessInput) return;
-                Debug.Log("OnSkip press : "+ gameObject.name + " : " + SkipStatus);
-                player.SetSkipEnabled(!player.SkipActive);
-            }
-            else if (context.canceled && !SkipStatus)
-            {
-                //button is released
-                SkipStatus = !SkipStatus;
-                Debug.Log("OnSkip released : "+ gameObject.name + " : " + SkipStatus);
-            }
-        }
     } 
 }
