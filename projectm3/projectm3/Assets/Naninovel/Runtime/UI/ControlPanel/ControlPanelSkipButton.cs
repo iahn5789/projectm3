@@ -1,6 +1,7 @@
 // Copyright 2022 ReWaffle LLC. All rights reserved.
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Naninovel.UI
 {
@@ -9,11 +10,11 @@ namespace Naninovel.UI
         [SerializeField] private Color activeColorMultiplier = Color.red;
 
         private IScriptPlayer player;
-
+        private bool SkipStatus;
         protected override void Awake ()
         {
             base.Awake();
-
+            SkipStatus = true;
             player = Engine.GetService<IScriptPlayer>();
         }
 
@@ -43,10 +44,22 @@ namespace Naninovel.UI
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
         }
-        public void OnSkip ()
+        public void OnSkip (InputAction.CallbackContext context)
         {
-            if (!Engine.GetService<IInputManager>().ProcessInput) return;
-            player.SetSkipEnabled(!player.SkipActive);
+            if (context.started && SkipStatus)
+            {
+                //button is press
+                SkipStatus = !SkipStatus;
+                if (!Engine.GetService<IInputManager>().ProcessInput) return;
+                Debug.Log("OnSkip press : "+ gameObject.name + " : " + SkipStatus);
+                player.SetSkipEnabled(!player.SkipActive);
+            }
+            else if (context.canceled && !SkipStatus)
+            {
+                //button is released
+                SkipStatus = !SkipStatus;
+                Debug.Log("OnSkip released : "+ gameObject.name + " : " + SkipStatus);
+            }
         }
     } 
 }
