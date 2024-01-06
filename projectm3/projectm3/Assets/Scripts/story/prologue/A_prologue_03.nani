@@ -1,5 +1,5 @@
 # prologue_03
-@set WeekTitle="전대용 등장!"
+@set "WeekTitle=\"전대용 등장!\""
 @processInput false
 @stopBgm BGM_Map_Friendly_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
@@ -7,7 +7,7 @@
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx BGM_Map_Cool_01 volume:100 loop:true fade:1 wait:false
+@sfx Amb_Room_Tone_02 volume:80 loop:true fade:1 wait:false
 @bgm BGM_Map_Cool_01 volume:57 loop:true fade:1 wait:false
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
@@ -29,7 +29,7 @@ describe: 그 때.
 @back Black time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
-@char jeonbody2.1 scale:0.4,0.4 position:0,-8 wait:false
+@char jeonbody2.1 position:0,-8 scale:0.4,0.4 wait:false
 describe: 전대용
 describe: 전학을 온 뒤 친해진 유일한 친구다.
 describe: 첫인상과는 다르게 의외로 재미있고 아는 것도 제법 많지만...
@@ -42,7 +42,7 @@ describe: 첫인상과는 다르게 의외로 재미있고 아는 것도 제법 
 @showUI CP wait:false
 @processInput true
 {Player_name}: 변태다...
-@char jeonbody1.1 wait:false pose:c
+@char jeonbody1.1 pose:c wait:false
 jeon: {Player_name}! 소문 다 들었다고!
 {Player_name}: 소문? 무슨 소문?
 @hideChars wait:false
@@ -54,7 +54,7 @@ jeon: 아무리 수업이 듣기 싫어도 그렇지 소리를 지르다니...
 jeon: 정말 멋있는 녀석이야.
 {Player_name}: 그게 벌써 소문이 났어?
 @hideChars wait:false
-@char jeonbody3.4 wait:false pose:c
+@char jeonbody3.4 pose:c wait:false
 jeon: 그럼! 이미 교내에 모르는 사람이 없다고?
 {Player_name}: 후... 진짜 되는 일이 없네...
 {Player_name}: 그나저나 넌 왜 이 시간까지 학교에 있는 거야?

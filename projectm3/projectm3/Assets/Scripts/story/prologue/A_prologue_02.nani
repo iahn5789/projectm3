@@ -1,5 +1,5 @@
 # prologue_02
-@set WeekTitle="교무실에서의 면담"
+@set "WeekTitle=\"교무실에서의 면담\""
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -8,7 +8,7 @@
 @back Black time:1 wait:true
 @back Black time:1 wait:true
 @sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
-@bgm BGM_Map_Friendly_01 volume:80 loop:true fade:1 wait:false
+@bgm BGM_Map_Friendly_01 volume:65 loop:true fade:1 wait:false
 @back ScOffice01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
@@ -16,7 +16,7 @@
 describe: 똑똑-
 @stopSfx Common_Door_Noke_01 fade:0 wait:false
 {Player_name}: 안녕하세요...
-@char kangbody1.4 wait:false pose:c
+@char kangbody1.4 pose:c wait:false
 ???: 왜 안되는데요!
 선생님: 교칙이 그런데 내가 어떻게 하겠냐...
 @char kangbody1.5 wait:false
@@ -28,7 +28,7 @@ describe: 교무실 안에는 선생님과 처음 보는 여학생이 있었다.
 describe: 둘은 무언가에 관해 이야기를 하는 듯 보였는데 여학생 쪽이 따지고 있는 것 처럼 보였다.
 선생님: 인원이 적으면 해당 동아리를 폐지한다. 여기서 융통성을 어떻게 부리지?
 선생님: 다른 동아리에 들어가 있는 학생을 강제로 옮길까?
-@char kangbody2.8 wait:false pose:c
+@char kangbody2.8 pose:c wait:false
 ???: 그... 그건...
 선생님: 아니면 서류라도 조작해 달라고 그러는거야?
 @char kangbody2.3 wait:false
@@ -39,7 +39,7 @@ describe: 선생님은 한숨을 푹 쉬며 손으로 머리를 감쌌다.
 선생님: 딱 하루야.
 선생님: 내일 하루 동안 단 한 명이라도 못 찾으면 밴드 동아리는 폐부 되는 거야.
 선생님: 내가 봐줄 수 있는 건 여기까지. 알겠어?
-@char kangbody1.4 wait:false pose:c
+@char kangbody1.4 pose:c wait:false
 ???: 네...
 describe: 말을 마친 듯한 여학생은 선생님에게 인사를 한 뒤 고개를 돌렸다.
 ???: ...
@@ -55,7 +55,7 @@ describe: 여학생은 무언가 할 말이라도 있는 듯 나를 쳐다보고
 {Player_name}: 방금 왔습니다..!
 describe: 그때 여학생은 나를 쳐다보니 들릴 듯 말 듯 혼잣말을 중얼거렸다.
 @hideChars wait:false
-@char kangbody3.7 wait:false pose:c
+@char kangbody3.7 pose:c wait:false
 ???: {Player_name}..?
 {Player_name}: ..?
 @hideChars wait:false

@@ -1,6 +1,7 @@
 # prologue_05
-@set WeekTitle="처음 보는 골목길"
+@set "WeekTitle=\"처음 보는 골목길\""
 @processInput false
+@stopSfx Amb_Road_01 fade:1 wait:false
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:1 wait:false
 @stopBgm BGM_Map_Cool_01 fade:2 wait:false
 @hideChars time:0.5 wait:false
@@ -8,32 +9,33 @@
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
-@bgm BGM_Map_Friendly_01 volume:75 loop:true fade:1 wait:false
+@sfx Amb_Road_01 volume:50 loop:true fade:1 wait:false
+@bgm BGM_Map_Friendly_01 volume:65 loop:true fade:1 wait:false
 @back Road02 time:1 wait:true
 @showUI CP wait:false
 @processInput true
 describe: 조금은 낯선 골목길
 describe: 전화도 받지 않는 대용이를 이곳에서 어떻게 찾아야 하나 고민하고 있을 때.
-@char jeonbody1.4 wait:false pose:c
+@char jeonbody1.4 pose:c wait:false
 jeon: {Player_name}! 따라와 준 거냐고!
 {Player_name}: 야! 어디 갔다 온 거야!
 @sfx Footsteps_Male_Ctr_Walk_01 volume:60 fade:1 wait:false
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:1
 describe: 갑자기 사라져버린 대용이는 어느새 양손에 음료수를 들고서 나타났다.
 @hideChars wait:false
-@char jeonbody4.1 wait:false pose:c
+@char jeonbody4.1 pose:c wait:false
 jeon: 어디긴. 음료수 사러 갔다 왔지.
 {Player_name}: 음료... 수?
 {Player_name}: 그러니까... 음료수 하나 사려고 소리까지 지르면서 사라진 거야?
 jeon: 성공한 사람들은 항상 자기만의 인생 루틴을 따른다고 하지.
 @hideChars wait:false
-@char jeonbody2.2 wait:false pose:c
+@char jeonbody2.2 pose:c wait:false
 jeon: 나에게 있어 여섯 시는 음료수를 마셔야 하는 시간이야.
 {Player_name}: 그게 무슨 말도 안되는...
 {Player_name}: 잠깐. 여섯 시는 음료수를 마셔야 되는 시간이라고?
 {Player_name}: 그럼 각 시간마다 먹어야 되는 음식이 있는 거야?
 @hideChars wait:false
-@char jeonbody4.3 wait:false pose:c
+@char jeonbody4.3 pose:c wait:false
 @spawn ShakeBackground wait:false
 jeon: 당연하지!
 @spawn ShakePrinter params:,0 wait:false
@@ -43,15 +45,15 @@ describe: 대용이의 하루 루틴을 듣고 있자니 또다시 귀에서 피
 describe: 혹시나 해서 만져보니 역시나 대용이의 침이었다.
 describe: 이대로 계속 가다가는 중이염에 걸릴 것만 같았다.
 @hideChars wait:false
-@char jeonbody3.4 wait:false pose:c
+@char jeonbody3.4 pose:c wait:false
 jeon: 왜 그래? 무슨 일 있어?
 {Player_name}: 어. 귀에서 피가 나는 것 같아...
 @hideChars wait:false
-@char jeonbody2.4 wait:false pose:c
+@char jeonbody2.4 pose:c wait:false
 jeon: 저런저런. 네 귀는 멀쩡하다고?
 {Player_name}: 지금은 그렇지.
 @hideChars wait:false
-@char jeonbody4.1 wait:false pose:c
+@char jeonbody4.1 pose:c wait:false
 jeon: 아무튼 빨리 가자고.
 jeon: 일곱 시에는 집에서 밥 먹는 게 내 루틴이거든.
 {Player_name}: 루틴 이야기 한 번만 더 하면 나 먼저 집에 가버릴 거야.
