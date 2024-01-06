@@ -242,9 +242,17 @@ namespace Naninovel
 
             var state = new GameStateMap();
             state.SaveDateTime = DateTime.Now;
-            string name = variableManager?.GetVariableValue("Selected");
-            state.Week = variableManager?.GetVariableValue($"{name}Week");
             state.WeekTitle = variableManager?.GetVariableValue("WeekTitle"); // 주차 내용
+            string name = "";
+            if (state.WeekTitle == "쪽지 시험")
+            {
+                name = variableManager?.GetVariableValue("Selecteded");
+            }
+            else
+            {
+                name = variableManager?.GetVariableValue("Selected");
+            }
+            state.Week = variableManager?.GetVariableValue($"{name}Week");
             state.PlayerRollbackAllowed = allowPlayerRollback;
 
             SaveAllServicesToState<IStatefulService<GameStateMap>, GameStateMap>(state);

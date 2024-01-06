@@ -241,7 +241,7 @@ public class TestSceneUIManager : MonoBehaviour
     public void setUPWeekUI()
     {
         // 이전 차수에 마지막에 선택한 대자보를 바탕으로 주차 UI setup
-        string name = variableManager?.GetVariableValue("Selecteded");
+        string name = variableManager?.GetVariableValue("Selected");
         int week = 1;
         if (name != "" || name != null)
         {
@@ -250,7 +250,7 @@ public class TestSceneUIManager : MonoBehaviour
         }
         else
         {
-            name = "Kang";
+            name = variableManager?.GetVariableValue("Selecteded");
         }
         setUPWeekUIText(name, week);
     }
@@ -694,14 +694,15 @@ public class TestSceneUIManager : MonoBehaviour
         FadeInAudio_2();
         audioSource.Play();
     }
-    public void StartButtonClick()
+    public void StartButtonClick() // 시험 시작 버튼 클릭시
     {
         SetVariable();
     }
     private void SetVariable()
     {
-        // 선택한 대자보의 다음 주차를 보여줌
+        // 선택한 대자보의 다음 주차를 가져옴
         string name = variableManager?.GetVariableValue("Selected");
+        Debug.Log("SetVariable : " + name);
         int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
         week += 1;
         string key = $"{name}{week}";
