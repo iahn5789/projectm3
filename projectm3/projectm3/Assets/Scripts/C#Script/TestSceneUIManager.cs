@@ -243,7 +243,7 @@ public class TestSceneUIManager : MonoBehaviour
         // 이전 차수에 마지막에 선택한 대자보를 바탕으로 주차 UI setup
         string name = variableManager?.GetVariableValue("Selected");
         int week = 1;
-        if (name != "" && name != null)
+        if (name != "" && name != null && name != "null")
         {
             week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
         }

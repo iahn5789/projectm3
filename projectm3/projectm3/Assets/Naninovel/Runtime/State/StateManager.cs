@@ -126,8 +126,14 @@ namespace Naninovel
                 state.Week = variableManager?.GetVariableValue($"{name}Week");
                 Debug.Log("{name}Week : " + state.Week);
                 Debug.Log("WeekTitle : " + state.WeekTitle);
-                state.Thumbnail = cameraManager.CaptureThumbnail();
-
+                if (state.WeekTitle == "쪽지 시험")
+                {
+                    
+                }
+                else
+                {
+                    state.Thumbnail = cameraManager.CaptureThumbnail();
+                }
                 SaveAllServicesToState<IStatefulService<GameStateMap>, GameStateMap>(state);
                 PerformOnGameSerializeTasks(state);
                 state.RollbackStackJson = SerializeRollbackStack();
@@ -138,7 +144,7 @@ namespace Naninovel
                 await SaveGlobalAsync();
             }
         }
-
+        
         public virtual async UniTask<GameStateMap> QuickSaveAsync ()
         {
             // Free first quick save slot by shifting existing ones by one.
