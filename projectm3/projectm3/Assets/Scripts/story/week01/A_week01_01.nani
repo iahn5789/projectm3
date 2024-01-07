@@ -127,5 +127,8 @@ describe: 살짝 이상한 기분이 들긴 하지만...
 describe: 내 선택은...
 @hidePrinter  wait:false
 @hideUI CP wait:false
+@processInput false
+@set InputKeyValue=false
+@skip false
 @choice "제안은 고맙지만 밴드부에 들어갈게!" goto:A_week01_02.week01_02
 @choice "그래! 신문부에 들어갈게!" goto:A_week01_badending.week01_badending

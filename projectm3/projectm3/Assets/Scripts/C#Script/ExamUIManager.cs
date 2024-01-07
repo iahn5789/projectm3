@@ -453,6 +453,7 @@ public class ExamUIManager : MonoBehaviour
         round = 0;
         CorrectAnswers = 0;
         score = 100;
+        variableManager?.SetVariableValue("TestCorrectResult", "0");
         nextExam();
     }
 

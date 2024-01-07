@@ -1,6 +1,7 @@
 // Copyright 2022 ReWaffle LLC. All rights reserved.
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Naninovel.UI
 {
@@ -9,11 +10,11 @@ namespace Naninovel.UI
         [SerializeField] private Color activeColorMultiplier = Color.red;
 
         private IScriptPlayer player;
-
+        private bool SkipStatus;
         protected override void Awake ()
         {
             base.Awake();
-
+            SkipStatus = true;
             player = Engine.GetService<IScriptPlayer>();
         }
 
@@ -42,11 +43,6 @@ namespace Naninovel.UI
         private void HandleAutoModeChange (bool enabled)
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
-        }
-        public void OnSkip ()
-        {
-            if (!Engine.GetService<IInputManager>().ProcessInput) return;
-            player.SetSkipEnabled(!player.SkipActive);
         }
     } 
 }

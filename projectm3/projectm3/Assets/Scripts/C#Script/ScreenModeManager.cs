@@ -18,6 +18,7 @@ public class ScreenModeManager : MonoBehaviour
     {
         fullScreenButton = fullScreenBt.GetComponent<Button>();
         winScreenButton = winScreenBt.GetComponent<Button>();
+        CheckFullScreen(Screen.fullScreen);
     }
     public void FullScreenBtOnClick(){
         SetResolution(true,1920,1080);
@@ -31,6 +32,35 @@ public class ScreenModeManager : MonoBehaviour
     {
         Screen.SetResolution(setWidth, setHeight, fullscreen);
     }
+    public void CheckFullScreen(bool isFullscreen)
+    {
+        Color statusNowScreenColor;
+        Color statusNormalScreenColor;
+        if (isFullscreen)
+        {
+            // 전체 화면 모드일 때 버튼 색상 변경
+            if (ColorUtility.TryParseHtmlString(statusNowScreenColorHex, out statusNowScreenColor))
+            {
+                fullScreenButton.image.color = statusNowScreenColor;
+            }
+            if (ColorUtility.TryParseHtmlString(statusNormalScreenColorHex, out statusNormalScreenColor))
+            {
+                winScreenButton.image.color = statusNormalScreenColor;
+            }
+        }
+        else
+        {
+            // 창 모드일 때 버튼 색상 변경
+            if (ColorUtility.TryParseHtmlString(statusNormalScreenColorHex, out statusNormalScreenColor))
+            {
+                fullScreenButton.image.color = statusNormalScreenColor;
+            }
+            if (ColorUtility.TryParseHtmlString(statusNowScreenColorHex, out statusNowScreenColor))
+            {
+                winScreenButton.image.color = statusNowScreenColor;
+            }
+        }
+    }
     public void Update()
     {
         
@@ -40,34 +70,7 @@ public class ScreenModeManager : MonoBehaviour
         if (isFullscreen != screenStatus)
         {
             screenStatus = isFullscreen;
-            
-            Color statusNowScreenColor;
-            Color statusNormalScreenColor;
-            // 전체 화면 모드가 변경되면 버튼 색상을 변경합니다.
-            if (isFullscreen)
-            {
-                // 전체 화면 모드일 때 버튼 색상 변경
-                if (ColorUtility.TryParseHtmlString(statusNowScreenColorHex, out statusNowScreenColor))
-                {
-                    fullScreenButton.image.color = statusNowScreenColor;
-                }
-                if (ColorUtility.TryParseHtmlString(statusNormalScreenColorHex, out statusNormalScreenColor))
-                {
-                    winScreenButton.image.color = statusNormalScreenColor;
-                }
-            }
-            else
-            {
-                // 창 모드일 때 버튼 색상 변경
-                if (ColorUtility.TryParseHtmlString(statusNormalScreenColorHex, out statusNormalScreenColor))
-                {
-                    fullScreenButton.image.color = statusNormalScreenColor;
-                }
-                if (ColorUtility.TryParseHtmlString(statusNowScreenColorHex, out statusNowScreenColor))
-                {
-                    winScreenButton.image.color = statusNowScreenColor;
-                }
-            }
+            CheckFullScreen(isFullscreen);
         }
     }
 }

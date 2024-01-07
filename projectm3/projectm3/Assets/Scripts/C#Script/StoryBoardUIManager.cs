@@ -51,8 +51,6 @@ public class StoryBoardUIManager : MonoBehaviour
         }
         anim.Play("Selected");
         UpdateSecretMessageUI("Kang");
-        // SecretMessageAnimator.PlayInFixedTime(0);
-        // SecretMessageAnimator.Play("SecretMessage_In");
         maskAnim.Play("SecretMessage_In_tuto");
         SelectedOn.SetActive(true);
         SelectedOff[0].SetActive(false);

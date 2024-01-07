@@ -1,4 +1,6 @@
 # week01_10
+@processInput true
+@set InputKeyValue=true
 @set WeekTitle="내가 알려줄게!"
 @showUI CP wait:false
 {Player_name}: 쪽지시험이고 뭐고 아무것도 모르겠어.
@@ -54,6 +56,7 @@ kang: 괜찮아! 내가 알려주면 되니까!
 @set TestScore=100
 @set TestCorrect=0
 @set Tutorial="First"
+@set WeekTitle="쪽지 시험"
+@skip false
 @goto TestSceneUI
-@processInput true
 @stop

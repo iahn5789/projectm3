@@ -243,13 +243,13 @@ public class TestSceneUIManager : MonoBehaviour
         // 이전 차수에 마지막에 선택한 대자보를 바탕으로 주차 UI setup
         string name = variableManager?.GetVariableValue("Selected");
         int week = 1;
-        if (name != "")
+        if (name != "" && name != null && name != "null")
         {
             week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
         }
         else
         {
-            name = "Kang";
+            name = variableManager?.GetVariableValue("Selecteded");
         }
         setUPWeekUIText(name, week);
     }
@@ -317,7 +317,9 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetSelectedValue()
     {
+        string selected = variableManager.GetVariableValue("Selected");
         variableManager.SetVariableValue("Selected", "");
+        variableManager.SetVariableValue("Selecteded", selected);
     }
     IEnumerator ResetUIAfterDelay(float delay)
     {
@@ -342,10 +344,13 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void CehckedLikeAbility(string name, int number)
     {
-        int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
-        int LikeAbility = Int32.Parse(variableManager?.GetVariableValue($"{name}LikeAbility"));
+        if (!Int32.TryParse(variableManager?.GetVariableValue($"{name}Week"), out int week))
+            week = 0; // 기본값 설정
 
-        if (LikeAbility >= (week * 10) + 5)
+        if (!Int32.TryParse(variableManager?.GetVariableValue($"{name}LikeAbility"), out int likeAbility))
+            likeAbility = 0; // 기본값 설정
+
+        if (likeAbility >= (week * 10) + 5)
         {
             StoryBoardPossible[number].SetActive(true);
             StoryBoardImPossible[number].SetActive(false);
@@ -688,14 +693,15 @@ public class TestSceneUIManager : MonoBehaviour
         FadeInAudio_2();
         audioSource.Play();
     }
-    public void StartButtonClick()
+    public void StartButtonClick() // 시험 시작 버튼 클릭시
     {
         SetVariable();
     }
     private void SetVariable()
     {
-        // 선택한 대자보의 다음 주차를 보여줌
+        // 선택한 대자보의 다음 주차를 가져옴
         string name = variableManager?.GetVariableValue("Selected");
+        Debug.Log("SetVariable : " + name);
         int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
         week += 1;
         string key = $"{name}{week}";
