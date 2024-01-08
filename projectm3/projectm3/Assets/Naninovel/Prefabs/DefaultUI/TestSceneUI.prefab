@@ -38094,6 +38094,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 9205052159892446227}
+        m_MethodName: Update_Success_Percent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!95 &6013323114900899986
 Animator:
   serializedVersion: 3
@@ -46419,6 +46430,7 @@ GameObject:
   - component: {fileID: 6211588228785557521}
   - component: {fileID: 7017926656767273337}
   - component: {fileID: 3448807859969030780}
+  - component: {fileID: 9205052159892446227}
   m_Layer: 5
   m_Name: PartTimeJobList
   m_TagString: Untagged
@@ -46521,6 +46533,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9205052159892446227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817534558444432304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f862ea2b36bf3448fbfe4d680a25ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SuccessPercentText1: {fileID: 1285575939801486487}
+  SuccessPercentText2: {fileID: 6053805098641509516}
+  SuccessPercentText3: {fileID: 779131426664290034}
+  SuccessPercentText4: {fileID: 937696983266357638}
+  SuccessPercentText5: {fileID: 8608247779801168737}
 --- !u!1 &2824810672160506839
 GameObject:
   m_ObjectHideFlags: 0
@@ -95427,6 +95456,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9205052159892446227}
+        m_MethodName: Update_Success_Percent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls:
@@ -143262,15 +143302,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 349d23746f27cf3499263871e93ac61d, type: 3}
---- !u!82 &3852607786156823206 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 2925929217047344880, guid: 349d23746f27cf3499263871e93ac61d,
-    type: 3}
-  m_PrefabInstance: {fileID: 2156603274411844694}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1515861667286663174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 640821111365559376, guid: 349d23746f27cf3499263871e93ac61d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2156603274411844694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &3852607786156823206 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2925929217047344880, guid: 349d23746f27cf3499263871e93ac61d,
     type: 3}
   m_PrefabInstance: {fileID: 2156603274411844694}
   m_PrefabAsset: {fileID: 0}
@@ -143508,15 +143548,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f707f87db9086e408d5b1209a7071f7, type: 3}
---- !u!82 &7082295084105830029 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 587992804166950943, guid: 6f707f87db9086e408d5b1209a7071f7,
-    type: 3}
-  m_PrefabInstance: {fileID: 7665590069868424850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8848651443433148307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1201647560676106497, guid: 6f707f87db9086e408d5b1209a7071f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7665590069868424850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &7082295084105830029 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 587992804166950943, guid: 6f707f87db9086e408d5b1209a7071f7,
     type: 3}
   m_PrefabInstance: {fileID: 7665590069868424850}
   m_PrefabAsset: {fileID: 0}
