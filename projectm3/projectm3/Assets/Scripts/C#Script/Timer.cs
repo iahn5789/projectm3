@@ -117,6 +117,17 @@ public class Timer : MonoBehaviour
         SuccessUI.SetActive(true);
         MainUI.SetActive(false);
         SuccessReward.text = JobReward.text;
+
+        // 전체 확률 관리
+        //////////////////
+        //////////////////
+        //////////////////
+        //////////////////
+        //////////////////
+        //////////////////
+        //////////////////
+        //////////////////
+        //////////////////
     }
     public void RetryGame()
     {

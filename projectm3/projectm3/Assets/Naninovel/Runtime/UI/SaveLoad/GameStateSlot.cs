@@ -23,7 +23,10 @@ namespace Naninovel.UI
         protected virtual Button DeleteButton => deleteButton;
         protected virtual RawImage ThumbnailImage => thumbnailImage;
         protected virtual Texture2D EmptySlotThumbnail => emptySlotThumbnail;
-        protected virtual Texture2D TestSceneThumbnail => testSceneThumbnail;
+        protected virtual Texture2D CommonTestSceneThumbnail => CommontestSceneThumbnail;
+        protected virtual Texture2D KangTestSceneThumbnail => KangtestSceneThumbnail;
+        protected virtual Texture2D JinTestSceneThumbnail => JintestSceneThumbnail;
+        protected virtual Texture2D SulTestSceneThumbnail => SultestSceneThumbnail;
 
         [Tooltip("제목에 설정된 날짜 형식. 사용 가능한 옵션은 C# 문서에서 날짜 및 시간 형식 문자열을 참조하십시오.")]
         [SerializeField] private string dateFormat = "yy년MM월dd일 HH시mm분";
@@ -32,7 +35,10 @@ namespace Naninovel.UI
         [SerializeField] private Button deleteButton;
         [SerializeField] private RawImage thumbnailImage;
         [SerializeField] private Texture2D emptySlotThumbnail;
-        [SerializeField] private Texture2D testSceneThumbnail;
+        [SerializeField] private Texture2D CommontestSceneThumbnail;
+        [SerializeField] private Texture2D KangtestSceneThumbnail;
+        [SerializeField] private Texture2D JintestSceneThumbnail;
+        [SerializeField] private Texture2D SultestSceneThumbnail;
         [SerializeField] private OnTitleTextChangedEvent onTitleTextChanged;
 
         private Action<int> onClicked, onDeleteClicked;
@@ -71,7 +77,25 @@ namespace Naninovel.UI
                 SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),state.Week,"주차",state.WeekTitle);
                 if (WeekNameText.text == "쪽지 시험")
                 {
-                    ThumbnailImage.texture = TestSceneThumbnail;
+                    if (state.Week == "2" || state.Week == "1")
+                    {
+                        ThumbnailImage.texture = CommonTestSceneThumbnail;
+                    }
+                    else
+                    {
+                        if (state.Selected == "Kang")
+                        {
+                            ThumbnailImage.texture = KangTestSceneThumbnail;
+                        }
+                        else if (state.Selected == "Jin")
+                        {
+                            ThumbnailImage.texture = JinTestSceneThumbnail;
+                        }
+                        else if (state.Selected == "Sul")
+                        {
+                            ThumbnailImage.texture = SulTestSceneThumbnail;
+                        }
+                    }
                 }
                 else
                 {
