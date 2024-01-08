@@ -64,6 +64,21 @@ public class BloackKeyInputManager : MonoBehaviour
         if (uiTransform != null)
         {
             Transform testSceneUITransform = uiTransform.Find("TestSceneUI");
+            Transform StoryBoardUITransform = testSceneUITransform.Find("StoryboardUI");
+            Transform ButtonPanelTransform = StoryBoardUITransform.Find("ButtonPanel");
+
+            Transform Button_KangTransform = ButtonPanelTransform.Find("Button_Kang");
+            Transform Button_JinTransform = ButtonPanelTransform.Find("Button_Jin");
+            Transform Button_SulTransform = ButtonPanelTransform.Find("Button_Sul");
+
+            Transform KangStorySelectOnTransform = Button_KangTransform.Find("StorySelectOn");
+            Transform JinStorySelectOnTransform = Button_JinTransform.Find("StorySelectOn");
+            Transform SulStorySelectOnTransform = Button_SulTransform.Find("StorySelectOn");
+            
+            KangStorySelectOnTransform.gameObject.SetActive(false);
+            JinStorySelectOnTransform.gameObject.SetActive(false);
+            SulStorySelectOnTransform.gameObject.SetActive(false);
+
             if (testSceneUITransform != null)
             {
                 HideAndPlayAnimation(testSceneUITransform, "StoryboardUI", "Normal");
