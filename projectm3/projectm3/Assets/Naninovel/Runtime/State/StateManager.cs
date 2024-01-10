@@ -126,6 +126,7 @@ namespace Naninovel
                 state.Week = variableManager?.GetVariableValue($"{name}Week");
                 Debug.Log("{name}Week : " + state.Week);
                 Debug.Log("WeekTitle : " + state.WeekTitle);
+                state.Selected = name;
                 if (state.WeekTitle == "쪽지 시험")
                 {
                     

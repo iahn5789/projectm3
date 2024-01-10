@@ -52,3 +52,32 @@ jeon: 오! {Player_name}! 아직 집에 안 가고 있었냐고!
 {Player_name}: 그런데...방금...목걸이 차고 있지 않았었나?
 @stopSfx Amb_Room_Tone_02 fade:2 wait:0
 @stopBgm Common_BGM_02 fade:2 wait:0
+@processInput false
+@skip false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:1 wait:true
+@back Black time:1 wait:true
+@set KangWeek=2
+@set JinWeek=2
+@set SulWeek=2
+@set PartTimeJob_Count=5
+@set Start_Timer=false
+@set Selected="Sul"
+@set KangSecret_1_Buy=false
+@set KangSecret_2_Buy=false
+@set KangSecret_3_Buy=false
+@set JinSecret_1_Buy=false
+@set JinSecret_2_Buy=false
+@set JinSecret_3_Buy=false
+@set SulSecret_1_Buy=false
+@set SulSecret_2_Buy=false
+@set SulSecret_3_Buy=false
+@set TestScore=100
+@set TestCorrect=0
+@set TestCorrectResult=0
+@set Tutorial=End
+@set WeekTitle="쪽지 시험"
+@goto TestSceneUI
+@stop

@@ -30,6 +30,10 @@ namespace Naninovel
         /// </summary>
         public String WeekTitle { get; set; }
         /// <summary>
+        /// Selected value.
+        /// </summary>
+        public String Selected { get; set; }
+        /// <summary>
         /// Preview of the screen when the snapshot was taken.
         /// </summary>
         public Texture2D Thumbnail { get; set; }
@@ -60,6 +64,7 @@ namespace Naninovel
         [SerializeField] private string saveDateTime;
         [SerializeField] private string week;
         [SerializeField] private string weekTitle;
+        [SerializeField] private string selected;
         [SerializeField] private string thumbnailBase64;
         [SerializeField] private string rollbackStackJson;
 
@@ -70,6 +75,8 @@ namespace Naninovel
             saveDateTime = SaveDateTime.ToString(dateTimeFormat, CultureInfo.InvariantCulture);
             week = Week;
             weekTitle = WeekTitle;
+            selected = Selected;
+
             thumbnailBase64 = Thumbnail ? Convert.ToBase64String(Thumbnail.EncodeToJPG()) : null;
         }
 
@@ -80,6 +87,7 @@ namespace Naninovel
             SaveDateTime = string.IsNullOrEmpty(saveDateTime) ? DateTime.MinValue : DateTime.ParseExact(saveDateTime, dateTimeFormat, CultureInfo.InvariantCulture);
             Week = string.IsNullOrEmpty(week) ? "" : week;
             WeekTitle = string.IsNullOrEmpty(weekTitle) ? "" : weekTitle;
+            Selected = string.IsNullOrEmpty(selected) ? null : selected;
             Thumbnail = string.IsNullOrEmpty(thumbnailBase64) ? null : GetThumbnail();
         }
 

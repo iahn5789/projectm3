@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.UI.ProceduralImage;
 using Naninovel;
 using Naninovel.Commands;
+using static System.Math;
 
 public class Timer : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class Timer : MonoBehaviour
     public AudioSource FailAudioSource;
     public GameObject Gauge;
     public Animator _animator;  // 알바 시작
+    public Text SuccessPercentText;
     private bool isSuccess;
     void Start()
     {
@@ -61,6 +63,30 @@ public class Timer : MonoBehaviour
     {
         isSuccess = false;
         variableManager?.SetVariableValue("Start_Timer", "true");
+        //확률 관련 코드
+        string _PartTimeJob_Object = variableManager?.GetVariableValue("PartTimeJob_Object");
+        variableManager?.SetVariableValue($"PartTimeJob_{_PartTimeJob_Object}_Total", (int.Parse(variableManager?.GetVariableValue($"PartTimeJob_{_PartTimeJob_Object}_Total")) + 1).ToString());
+        ///////////////
+    }
+    public void Success_Percent()
+    {
+        string _PartTimeJob_Object = variableManager?.GetVariableValue("PartTimeJob_Object");
+        int _Total_Count = int.Parse(variableManager?.GetVariableValue($"PartTimeJob_{_PartTimeJob_Object}_Total")) - 1;
+        int _Success_Count = int.Parse(variableManager?.GetVariableValue($"PartTimeJob_{_PartTimeJob_Object}_Success"));
+        if (_Total_Count == 0 && _Success_Count == 0)
+        {
+            SuccessPercentText.text = "-";
+            return;
+        }
+        else if(_Success_Count == 0)
+        {
+            SuccessPercentText.text = "0%";
+            return;
+        }
+
+        float successPercent = (float)_Success_Count / _Total_Count * 100;
+        successPercent = Mathf.Round(successPercent * 100) / 100;
+        SuccessPercentText.text = successPercent.ToString() + "%";
     }
     public void SpaceBtn_Click()
     {
@@ -111,12 +137,17 @@ public class Timer : MonoBehaviour
         variableManager?.SetVariableValue("Start_Timer", "false");
         variableManager?.SetVariableValue("PartTimeJob_Count", "0");
         var money = int.Parse(variableManager?.GetVariableValue("money"));
-        var Reward = int.Parse(variableManager?.GetVariableValue("PartTimeJob_Object")) * 200;
+        string _PartTimeJob_Object = variableManager?.GetVariableValue("PartTimeJob_Object");
+        var Reward = int.Parse(_PartTimeJob_Object) * 200;
         variableManager?.SetVariableValue("money", (money + Reward).ToString());
         variableManager?.SetVariableValue("update_TestSceneUI_variable", "true");
         SuccessUI.SetActive(true);
         MainUI.SetActive(false);
         SuccessReward.text = JobReward.text;
+
+        // 전체 확률 관리
+        variableManager?.SetVariableValue($"PartTimeJob_{_PartTimeJob_Object}_Success", (int.Parse(variableManager?.GetVariableValue($"PartTimeJob_{_PartTimeJob_Object}_Success")) + 1).ToString());
+        ////////////////
     }
     public void RetryGame()
     {
