@@ -5,55 +5,59 @@
 @showUI CP wait:false
 {Player_name}: ...신문부에 들어갈게!
 {Player_name}: 어차피 악기도 다룰 줄 모르고 노래도 못부르는데...
-@char labody1.5 wait:false pose:c
+@char labody1.12 wait:false pose:c
 la: 진짜?
-@char labody1.2 wait:false pose:c
+@char labody1.22 wait:false pose:c
 la: 잘됐다! 정말 다행이야!
-@char labody1.6 wait:false pose:c
+@char labody1.62 wait:false pose:c
 la: 정말로...
 {Player_name}: 응?
-@char labody1.2 wait:false pose:c
+@char labody1.52 wait:false pose:c
 la: 아... 아니야! 그것보다 빨리 가자!
 {Player_name}: 어딜?
-@char labody4.2 wait:false pose:c
+@hideChars wait:false
+@char labody4.11 wait:false pose:c
 la: 환영식 해야지! 마침 오늘 신문부 회의도 있어서 다들 모였을 거야!
 {Player_name}: 아니 뭐 환영식까지는...
-@char labody4.1 wait:false pose:c
+@char labody4.22 wait:false pose:c
 la: 아니야! 신입 부원이 들어오기로 했는데 당연히 환영식 해야지!
-@char labody4.8 wait:false pose:c
+@char labody4.83 wait:false pose:c
 la: 대... 대...
-@char labody4.2 wait:false pose:c
+@char labody4.22 wait:false pose:c
 la: 대용이도 기다리고 있을 거야!
 describe: 여전히 대용이의 이름을 말하기 싫어하는 것처럼 보였다.
 @hideChars wait:false
 {Player_name}: 자... 잠깐만!
 describe: 나는 앞질러 가는 라은을 잠시 멈춰 세웠다.
-@char labody1.1 wait:false pose:c
+@char labody1.51 wait:false pose:c
 la: 응? 왜 그래?
 {Player_name}: 아무리 그래도... 가서 말 정도는 전하는 게 좋지 않을까?
-@char labody1.5 wait:false pose:c
+@char labody1.53 wait:false pose:c
 la: 말을 전해? 누구한테?
 {Player_name}: 여진이한테..?
 {Player_name}: 그래도 직접 찾아와서 초대까지 해줬는데...
 {Player_name}: 못간다고 얘기 정도는 해줘야 하지 않을까 해서.
-@char labody1.6 wait:false pose:c
+@char labody1.63 wait:false pose:c
 la: 아하...
-@char labody2.1 wait:false pose:c
+@hideChars wait:false
+@char labody2.12 wait:false pose:c
 la: 그거라면 너무 걱정하지 마!
+@char labody2.22 wait:false pose:c
 la: 내가 밴드부 부원들하고 친하거든.
 {Player_name}: 그...래?
-@char labody2.2 wait:false pose:c
+@char labody2.62 wait:false pose:c
 la: 나도 예전에 밴드부였는걸?
 @hideChars wait:false
-@char labody4.2 wait:false pose:c
+@char labody4.22 wait:false pose:c
 la: 내가 잘 말해 둘게. 분명 이해해 줄 거야.
-@char labody4.1 wait:false pose:c
+@char labody4.82 wait:false pose:c
 la: 애초에 악기도 못 다루고 노래도 못 부르는데, 밴드부에 들어가는 게 이상한 거잖아?
 {Player_name}: 그... 그렇지?
-@char labody4.2 wait:false pose:c
+@hideChars wait:false
+@char labody1.42 wait:false pose:c
 la: 그럼. 그렇고말고.
 @hideChars wait:false
-@char labody2.2 wait:false pose:c
+@char labody2.62 wait:false pose:c
 la: 가자! 다들 기다리고 있을 거야!
 @processInput false
 @hideChars time:0.5 wait:false
@@ -64,24 +68,26 @@ la: 가자! 다들 기다리고 있을 거야!
 @back ScClub01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
-@char jinbody1.4 wait:false pose:c
+@char jinbody1.32 wait:false pose:c
 ???: 언제까지 기다리고만 있어야 하는 건데!
+@char jinbody1.34 wait:false pose:c
 ???: 난 누군지도 모르는 사람이 우리 동아리에 들어오는 건 반대야!
 @hideChars wait:false
-@char kangbody2.4 wait:false wait:false pose:c
+@char kangbody2.44 wait:false wait:false pose:c
 kang: 아직 학교 끝난 지 얼마 지나지도 않았거든? 일이 있어서 늦는 게 분명해!
 ???: 수업 시간에 졸다가 이상한 소리를 지르면서 일어났다며!
 @hideChars wait:false
-@char sulbody1.1 wait:false pose:c
+@char sulbody1.11 wait:false pose:c
 ???: 밖에...
 @hideChars wait:false
-@char kangbody2.6 wait:false pose:c
+@char kangbody2.63 wait:false pose:c
 kang: 밖에? 왔어?
-@char kangbody2.2 wait:false pose:c
+@char kangbody2.62 wait:false pose:c
 kang: 거봐! 내가 올 거라고 했지!
 @hideChars wait:false
-@char sulbody3.1 wait:false pose:c
+@char sulbody3.110 wait:false pose:c
 ???: ...
+@char sulbody3.15 wait:false pose:c
 ???: 선생님...
 kang: 응..?
 @hideChars wait:false
@@ -108,36 +114,36 @@ kang: ...
 @showUI CP wait:false
 @processInput true
 {Player_name}: 그런데...
-@char labody1.1 wait:false pose:c
+@char labody1.11 wait:false pose:c
 la: 응?
 {Player_name}: 여진이는 어떻게 되는 거야?
 @hideChars wait:false
 describe: 나는 라은과 함께 신문부 동아리실로 가고 있었다.
 describe: 할 줄도 모르고 관심도 없는 밴드부 대신 신문부를 선택했지만,
 describe: 그래도 마음 한구석이 찝찝한 건 여전했다.
-@char labody1.1 wait:false
+@char labody1.11 wait:false
 la: 신경 쓰이나 봐?
 {Player_name}: 아무래도 내가 없으면 동아리가 없어진다고 하니까...
-@char labody1.6 wait:false
+@char labody1.62 wait:false
 la: 아...
 describe: 라은은 무언가 재미있는 생각이라도 난 듯 싱긋 웃었다.
 {Player_name}: ..?
-@char labody1.2 wait:false
+@char labody1.22 wait:false
 la: 그거라면 괜찮아.
 {Player_name}: 내가 없어도 괜찮은 거야?
 @hideChars wait:false
-@char labody2.1 wait:false pose:c
+@char labody2.62 wait:false pose:c
 la: 뭐... 동아리는 없어지겠지만...
 @hideChars wait:false
-@char labody4.1 wait:false pose:c
+@char labody4.12 wait:false pose:c
 la: 우리 학교에 동아리가 밴드부 하나만 있는 건 아니잖아?
-@char labody4.2 wait:false pose:c
+@char labody4.22 wait:false pose:c
 la: 조만간 꼭 다시 볼 수 있을 거야!
 {Player_name}: 그...렇겠지..?
 la: 그럼!
 la: ...
 @hideChars wait:false
-@char labody1.2 pose:bc wait:false
+@char labody1.82 pose:bc wait:false
 la: <size=50>내</size><size=50>가</size><size=50> </size><size=50>그</size><size=50>렇</size><size=50>게</size><size=50> </size><size=50>만</size><size=50>들</size><size=50> </size><size=50>거</size><size=50>니</size><size=50>까</size><size=50>.</size><size=50>.</size><size=50>.</size>
 @processInput false
 @hideChars time:1 wait:false
