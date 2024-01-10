@@ -27,6 +27,7 @@ namespace Naninovel.UI
         protected virtual Texture2D KangTestSceneThumbnail => KangtestSceneThumbnail;
         protected virtual Texture2D JinTestSceneThumbnail => JintestSceneThumbnail;
         protected virtual Texture2D SulTestSceneThumbnail => SultestSceneThumbnail;
+        protected virtual GameObject ThumbnailTextWeek => ThumbnailtextWeek;
 
         [Tooltip("제목에 설정된 날짜 형식. 사용 가능한 옵션은 C# 문서에서 날짜 및 시간 형식 문자열을 참조하십시오.")]
         [SerializeField] private string dateFormat = "yy년MM월dd일 HH시mm분";
@@ -39,6 +40,7 @@ namespace Naninovel.UI
         [SerializeField] private Texture2D KangtestSceneThumbnail;
         [SerializeField] private Texture2D JintestSceneThumbnail;
         [SerializeField] private Texture2D SultestSceneThumbnail;
+        [SerializeField] private GameObject ThumbnailtextWeek;
         [SerializeField] private OnTitleTextChangedEvent onTitleTextChanged;
 
         private Action<int> onClicked, onDeleteClicked;
@@ -66,6 +68,7 @@ namespace Naninovel.UI
 
             if (state is null)
             {
+                ThumbnailTextWeek.SetActive(false);
                 DeleteButton.gameObject.SetActive(false);
                 SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", EmptySlotLabel),"","","");
                 ThumbnailImage.texture = EmptySlotThumbnail;
@@ -77,28 +80,40 @@ namespace Naninovel.UI
                 SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),state.Week,"주차",state.WeekTitle);
                 if (WeekNameText.text == "쪽지 시험")
                 {
+                    ThumbnailTextWeek.SetActive(true);
+                    Text thumbnailText = ThumbnailTextWeek.GetComponent<Text>();
+                    thumbnailText.text = state.Week;
                     if (state.Week == "2" || state.Week == "1")
                     {
                         ThumbnailImage.texture = CommonTestSceneThumbnail;
+                        ColorUtility.TryParseHtmlString("#CB0000", out Color color); // 빨간색
+                        thumbnailText.color = color;
                     }
                     else
                     {
                         if (state.Selected == "Kang")
                         {
                             ThumbnailImage.texture = KangTestSceneThumbnail;
+                            ColorUtility.TryParseHtmlString("#D84E00", out Color color); // 오렌지색
+                            thumbnailText.color = color;
                         }
                         else if (state.Selected == "Jin")
                         {
                             ThumbnailImage.texture = JinTestSceneThumbnail;
+                            ColorUtility.TryParseHtmlString("#D144BB", out Color color); // 오렌지색
+                            thumbnailText.color = color;
                         }
                         else if (state.Selected == "Sul")
                         {
                             ThumbnailImage.texture = SulTestSceneThumbnail;
+                            ColorUtility.TryParseHtmlString("#3800D9", out Color color); // 오렌지색
+                            thumbnailText.color = color;
                         }
                     }
                 }
                 else
                 {
+                    ThumbnailTextWeek.SetActive(false);
                     ThumbnailImage.texture = state.Thumbnail;
                 }
             }
