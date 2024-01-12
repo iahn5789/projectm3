@@ -1,33 +1,34 @@
 # week02_sul08
 @set "WeekTitle=\"어색한 뒷정리\""
 @showUI CP wait:false
-@sfx 
 {Player_name}: 최소한 제가 쓴 거는 제가 치워야죠. 같이 뒷정리해요.
+@char sulbody1.11 pose:c wait:false
 sul: ...
-@char jinbody3.2 pose:c wait:false
+@hideChars wait:false
+@char jinbody3.22 pose:c wait:false
 jin: 잘됐네! 뒷정리하면서 장치 어떻게 쓰는지도 좀 배우고!
 @hideChars wait:false
-@char jinbody2.2 pose:c wait:false
-jin: 난 그럼 활동지 쓰러 갈게. 내일 봐!
+@char jinbody2.42 pose:c wait:false
+jin: 난 그럼 활동지 쓰러 갈게.
 @hideChars wait:false
 @sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:false wait:0
 @stopSfx Footsteps_Female_Wood_Walk_01 fade:3 wait:0
-@char kangbody3.2 pose:c wait:false
+@char kangbody3.12 pose:c wait:false
 kang: 나도 악기 정리하러 가볼게!
 @hideChars wait:false
 @sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false wait:0
 @stopSfx Footsteps_Female_Wood_Run_01 fade:3 wait:0
 @sfx Common_Sliding_door_open volume:100 loop:false wait:0
-describe: 드르륵 쿵.
+describe: 드르륵- 쿵-
 @stopBgm BGM_Map_Friendly_01 fade:1 wait:false
 @stopBgm Our_Story_Common_Classroom_01 fade:1 wait:0
 @bgm BGM_Map_Littlesad_01 volume:70 loop:true fade:2 wait:0
 @stopSfx Common_Sliding_door_open fade:1 wait:0
-@char sulbody1.1 pose:c wait:false
+@char sulbody1.11 pose:c wait:false
 sul: ...
 {Player_name}: ...
 @hideChars wait:false
-@char sulbody3.1 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 @sfx Amb_Cold_Wind_01 volume:100 loop:true fade:1 wait:0
 sul: ...
 {Player_name}: (어... 어색해...)
@@ -40,23 +41,26 @@ describe: 특히 나희누나의 경우 더더욱...
 describe: 무얼 해야 할지 모른 채 서 있는 와중. 나희누나가 먼저 뒷정리를 시작했다.
 {Player_name}: (뭐라도 해야 하는데...)
 {Player_name}: 그... 나희 누나?
-@char sulbody3.1 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 @stopSfx Amb_Cold_Wind_01 fade:3 wait:0
 sul: ...응?
 {Player_name}: 저는 어떤 거 하면 될까요?
+@char sulbody3.14 pose:c wait:false
 sul: ...
 {Player_name}: (뭐라도 좀 알려줘...)
 @hideChars wait:false
-@char sulbody1.1 pose:c wait:false
+@char sulbody1.11 pose:c wait:false
 sul: 저기...
+@char sulbody1.15 pose:c wait:false
 sul: 선...
 {Player_name}: 네?
 @hideChars wait:false
-@char sulbody3.1 pose:c wait:false
+@char sulbody3.15 pose:c wait:false
 sul: ...기타선 먼저 정리해...
 @hideChars wait:false
-@char sulbody4.1 pose:c wait:false
+@char sulbody4.81 pose:c wait:false
 sul: 기타선부터 뽑은 다음에 잘 말아서 저쪽 맨 아래 서랍에 넣어두고...
+@char sulbody4.85 pose:c wait:false
 sul: 마이크선은 다른 데에 넣어놔야 하니까 섞이지 않게 우선 한쪽으로 치워놔...
 {Player_name}: 네..!
 describe: 이전까지와는 다르게 나희누나는 굉장히 세세하게 설명해 주었다.
