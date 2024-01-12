@@ -1,44 +1,45 @@
 # week02_jin12
 @showUI CP wait:false
-describe: 이러지도 저러지도 못하며 우물쭈물하는 사이. 예상 밖의 일이 일어났다.
-@char jinbody1.3 wait:false pose:c
-jin: ...
+describe: 이러지도 저러지도 못하며 우물쭈물하는 사이.
+@char jinbody2.33 wait:false pose:c
+jin: <size=20>.</size><size=20>.</size><size=20>.</size>
 {Player_name}: ...?
-@hideChars wait:false
-@char jinbody2.3 wait:false pose:c
+@char jinbody2.34 wait:false pose:c
 jin: <size=20>미</size><size=20>.</size><size=20>.</size><size=20>.</size>
 {Player_name}: 뭐라고?
 @hideChars wait:false
-@char jinbody3.3 pose:bc wait:false
+@char jinbody3.54 pose:bc wait:false
 jin: <size=30>미</size><size=32>안</size><size=34>하</size><size=36>다</size><size=38>고</size><size=40>!</size>
 {Player_name}: 어? 어??
 @hideChars wait:false
-@char jinbody1.3 wait:false pose:c
+@char jinbody1.34 wait:false pose:c
 jin: 미안하다고... 오늘 화내서...
 describe: 어쩐지 살짝 다영이의 얼굴이 붉어진 것 같았다.
 @hideChars wait:false
-@char jinbody2.3 wait:false pose:c
+@char jinbody2.34 wait:false pose:c
 jin: 여진이의 말이 맞아...
+@char jinbody2.32 wait:false pose:c
 jin: 처음부터 잘할 수 있는 사람은 없는데...
 {Player_name}: ...
-@hideChars wait:false
-@char jinbody2.3 pose:c wait:false
+@char jinbody2.33 pose:c wait:false
 jin: 연습 조금 더했으면 좋겠다는 마음이 그만...
 jin: 난 그냥.
 @hideChars wait:false
-@char jinbody1.3 pose:bc wait:false
+@char jinbody1.53 pose:c wait:false
 jin: 네가 우리랑 같이 동아리를 계속했으면 해서...
 @hideChars wait:false
 {Player_name}: ...
 {Player_name}: 아니야. 내가 못 한 거는 맞으니까.
 {Player_name}: 네 말이 맞아. 너처럼 동아리에 애정이 없었으면 하지도 못할 말이었는데 뭘.
+@char jinbody1.33 pose:c wait:false
 jin: ...!
 {Player_name}: 앞으로도 열심히 연습할게. 연습해서.
 {Player_name}: 너랑 같이 동아리 활동 계속할 수 있게 노력할게.
-@char jinbody2.3 wait:false pose:c
+@hideChars wait:false
+@char jinbody2.34 wait:false pose:c
 jin: 다... 당연하지!
 @hideChars wait:false
-@char jinbody3.3 pose:bc wait:false
+@char jinbody3.37 pose:bc wait:false
 jin: 내가 계속 지켜볼 거야! 똑바로 하나 안 하나!
 {Player_name}: 그래. 앞으로 같이 연습하자.
 @hideChars wait:false
@@ -48,22 +49,21 @@ describe: 그리고 표정도 조금 더 풀어진 것 같기도 하고...
 {Player_name}: (나 다영이랑 조금 더 친해진건가..?)
 {Player_name}: ...
 {Player_name}: 다영아?
+@char jinbody1.11 pose:c wait:false
 jin: ...
 {Player_name}: 혹시 따로 할 일 없으면...
-@hideChars wait:false
-@char jinbody1.3 wait:false pose:c
+@char jinbody1.61 wait:false pose:c
 jin: ...아!
 {Player_name}: 아?
-@hideChars wait:false
-@char jinbody1.3 pose:c wait:false
+@char jinbody1.32 pose:c wait:false
 jin: 나 잠깐 교무실 좀 다녀올게!
-jin: 교무실?
+{Player_name}: 교무실?
 {Player_name}: 활동지 때문에 그런 거야? 그럼 같이 가자.
 @hideChars wait:false
-@char jinbody2.6 wait:false
+@char jinbody2.32 wait:false
 jin: 아니야! 뭐 좀 확인할 게 있어서 그래.
 @hideChars wait:false
-@char jinbody3.6 wait:false pose:bc
+@char jinbody3.34 wait:false pose:bc
 jin: 먼저가!
 @sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false fade:0
 @stopSfx Footsteps_Female_Ctr_Run_01 fade:4 wait:0
@@ -72,8 +72,8 @@ describe: 다영이는 말을 마치자, 교무실을 향해 뛰어갔다.
 {Player_name}: (빠르다...)
 describe: 나는 뛰어가는 다영이의 뒷모습을 멍하니 쳐다보고 있었다.
 describe: 그때. 어딘가 익숙한 냄새가 등 뒤에서 다가오고 있었다.
-@char jeonbody2.2 wait:false pose:c
-jeon: 오! {Player_name}! 아직 집에 안 가고 있었냐고!
+@char jeonbody4.32 wait:false pose:c
+jeon: {Player_name}! 아직 집에 안 가고 있었냐고!
 {Player_name}: 하...
 @stopSfx Amb_Road_01 fade:2 wait:0
 @processInput false

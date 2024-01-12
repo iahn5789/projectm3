@@ -12,29 +12,31 @@ describe: 활동지를 펼친 다영이는 빼곡하게 적힌 페이지를 넘�
 describe: 활동지에는 갖가지 내용들이 단정한 글씨체로 질서정연하게 적혀있었다.
 describe: 날짜. 시간. 내용 등은 물론이고 회비를 얼마를 받았고 어떻게 사용했는지, 사용한 이유와 그로 인한 기대점 등
 describe: 고등학생이 썼다고는 믿기 어려울 만큼 정돈되어 있었다.
-@char jinbody1.1 wait:false pose:c
+@char jinbody1.44 wait:false pose:c
 jin: 봐봐.
 jin: 일단 먼저 오늘 날짜를 적고...
+@char jinbody1.43 wait:false pose:c
 jin: ...
 jin: ......
 {Player_name}: 그리고?
-@char jinbody1.4 wait:false pose:c
+@char jinbody1.43 wait:false pose:c
 jin: .........
 {Player_name}: 다영아?
 @hideChars wait:false
-@char jinbody3.4 wait:false pose:c
+@char jinbody3.44 wait:false pose:c
 @spawn ShakePrinter wait:false
 jin: <size=50>시</size><size=50>끄</size><size=50>러</size><size=50>!</size>
+@char jinbody3.34 wait:false pose:c
 jin: 조용히 좀 해! 집중 못하겠잖아!
 {Player_name}: 아니 난...
 @hideChars wait:false
-@char jinbody2.4 wait:false
+@char jinbody2.33 wait:false
 jin: 후... 됐어. 내가 그냥 알아서 쓸 테니까.
 @hideChars wait:false
 describe: 집중이 안 된다는 말과는 다르게 한번 글을 쓰기 시작한 다영이는 멈출 줄 모르고 써 내려갔다.
 describe: 내가 적었으면 20분은 걸렸을 내용을 다영이는 5분도 안 돼서 끝냈다.
 describe: 활동지 작성을 끝낸 다영이는 테이블에서 일어나 활동지를 다시 책장에 꽂았다.
-@char jinbody1.4 wait:false pose:c
+@char jinbody1.43 wait:false pose:c
 jin: 끝났어. 가자.
 {Player_name}: 응? 응. 알았어.
 @hideChars wait:false
@@ -43,10 +45,11 @@ describe: 배운다고 따라왔지만 정작 배우지는 못한 채 교무실�
 한갑수:	다 적었어? 수고했다. 얼른 가봐.
 한갑수:	아참!
 한갑수:	다영아. 선생님이 말한 거 기억하고 있지?
+@char jinbody1.43 wait:false pose:c
 jin: ...
 한갑수:	다영아?
 @hideChars wait:false
-@char jinbody1.4 pose:bc wait:false
+@char jinbody1.44 pose:bc wait:false
 jin: <size=50>안</size><size=50>녕</size><size=50>히</size> <size=50>계</size><size=50>세</size><size=50>요</size><size=50>!</size>
 @sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false fade:0 wait:0
 @hideChars wait:false
