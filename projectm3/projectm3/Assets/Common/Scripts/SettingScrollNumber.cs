@@ -11,6 +11,9 @@ public class SettingScrollNumber : MonoBehaviour
 
    public void ChangeSlider()
    {
-        sliderText.text = exSlider.value.ToString();
+      float normalizedValue = (exSlider.value - exSlider.minValue) / (exSlider.maxValue - exSlider.minValue);
+      int scaledValue = Mathf.FloorToInt(normalizedValue * 100);
+      sliderText.text = scaledValue.ToString();
+      //   sliderText.text = exSlider.value.ToString();
    }
 }
