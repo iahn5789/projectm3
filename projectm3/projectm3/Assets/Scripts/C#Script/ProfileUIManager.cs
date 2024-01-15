@@ -22,7 +22,7 @@ public class ProfileUIManager : MonoBehaviour
     public Sprite[] charactorBodyList; // Result창 캐릭터 몸 리스트
     // 주차
     public Text WeekText;
-    // 뱃지
+    // 배지
     public Text badgeText;
     public GameObject LackUI;
     public GameObject LackPrefab;
@@ -200,11 +200,11 @@ public class ProfileUIManager : MonoBehaviour
             BuyWeekText.text = $"{name} 호감도 {i*10} 이상";
             if (i == 1)
             {
-                BuyBadgeText.text = "필요 뱃지 0개";
+                BuyBadgeText.text = "필요 배지 0개";
             }
             else
             {
-                BuyBadgeText.text = "필요 뱃지 3개";
+                BuyBadgeText.text = "필요 배지 3개";
             }
         }
     }
