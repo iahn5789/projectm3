@@ -1,9 +1,10 @@
 # week02_sul12
 @showUI CP wait:false
 {Player_name}: 감사합니다!
+@char sulbody3.11 pose:c wait:false
 sul: 그래.
 @hideChars wait:false
-@char sulbody1.1 pose:c wait:false
+@char sulbody1.15 pose:c wait:false
 sul: 나머지 정리하자...
 @processInput false
 @hideUI CP wait:false
@@ -15,6 +16,7 @@ sul: 나머지 정리하자...
 @showUI CP wait:false
 @set "WeekTitle=\"먼저 가볼게\""
 @processInput true
+@char sulbody1.15 pose:c wait:false
 sul: ...수고했어...
 {Player_name}: 고생하셨어요!
 @hideChars wait:false
@@ -24,18 +26,19 @@ describe: 말수도 많아진 것 같았고...
 {Player_name}: (나 나희 누나랑 조금 더 친해진 건가...?)
 {Player_name}: ...
 {Player_name}: 나희 누나?
-@char sulbody1.1 pose:c wait:false
+@char sulbody1.81 pose:c wait:false
 sul: ...
 {Player_name}: 혹시 따로 할 일 없으시면...
 @hideChars wait:false
-@char sulbody3.1 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 sul: {Player_name}
 {Player_name}: 네..!
+@char sulbody3.15 pose:c wait:false
 sul: ...빗자루질 어떻게 하는지 알아...?
 {Player_name}: 빗자루...질이요?
 {Player_name}: 그럼요! 잘 알죠!
 @hideChars wait:false
-@char sulbody2.1 pose:c wait:false
+@char sulbody2.12 pose:c wait:false
 @sfx Whoosh_Arm_01 volume:100 loop:false wait:false
 sul: ...그러면 부탁 좀 할게...
 describe: 나희누나는 내 손에 빗자루를 넘겨주며 말했다.
@@ -43,7 +46,7 @@ describe: 나희누나는 내 손에 빗자루를 넘겨주며 말했다.
 sul: ...약속이 있어서...먼저 가봐야 할 것 같아...
 {Player_name}: 어... 어...
 @hideChars wait:false
-@char sulbody4.1 pose:c wait:false
+@char sulbody4.52 pose:c wait:false
 sul: 빗자루질만 하고 너도 집에 가...
 sul: ...다음 연습할 때 보자...
 @sfx Footsteps_Female_Wood_Walk_01 volume:100 loop:false wait:0
@@ -55,8 +58,8 @@ describe: 나는 나희 누나가 주고 간 빗자루를 멍하니 쳐다보고
 describe: 그때. 어딘가 익숙한 냄새가 동아리실 문밖에서 느껴졌다.
 @sfx Common_Sliding_door_open volume:90 loop:false wait:false
 describe: 드르륵
-@char jeonbody2.2 pose:c wait:false
-jeon: 오! {Player_name}! 아직 집에 안 가고 있었냐고!
+@char jeonbody4.32 wait:false pose:c
+jeon: {Player_name}! 아직 집에 안 가고 있었냐고!
 jeon: 혹시 마이크 남는 거 있어?
 {Player_name}: 하...
 @stopSfx Amb_Office_01 fade:2 wait:0

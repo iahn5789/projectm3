@@ -2,22 +2,21 @@
 @showUI CP wait:false
 @sfx Common_Door_Noke_01 volume:80 loop:false fade:1 wait:false
 {Player_name}: 저... 나희 누나?
-@char sulbody3.1 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 sul: ...응?
 {Player_name}: 궁금한 게 있는데...
 {Player_name}: 그...저기...마이크를 세팅할 때 쓰는 저 큰 장치는 뭐라고 불러요...?
 @hideChars wait:false
-@char sulbody1.1 pose:c wait:false
+@char sulbody1.11 pose:c wait:false
 sul: ...
 {Player_name}: ...
 describe: 나희 누나는 말없이 그저 빤히 내 얼굴을 쳐다보고 있다.
 sul: ...
 @hideChars wait:false
-@char sulbody2.1 pose:c wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 궁금해..?
 {Player_name}: 네..!
-@hideChars wait:false
-@char sulbody2.1 pose:bc wait:false
+@char sulbody2.11 pose:c wait:false
 sul: 그럼...
 sul: 알려줄게...
 describe: 나희누나는 동아리방 구석에 놓인 어떤 기계 앞으로 나를 데려갔다.
@@ -45,6 +44,6 @@ describe: 나희누나는 내가 이해를 못하고 있다는 걸 아는지 모
 {Player_name}: (다른사람을 보는 것 같아.)
 @despawn Blur wait:false
 @back Minicut_mixer id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
-@char sulbody2.1 pose:c wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 듣고 있어?
 @goto A_week02_sul11.week02_sul11
