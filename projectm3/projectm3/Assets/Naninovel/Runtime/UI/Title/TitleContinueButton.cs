@@ -1,5 +1,6 @@
 // Copyright 2022 ReWaffle LLC. All rights reserved.
-
+using System.Threading.Tasks;
+using UnityEngine;
 
 namespace Naninovel.UI
 {
@@ -7,6 +8,7 @@ namespace Naninovel.UI
     {
         private IStateManager stateManager;
         private IUIManager uiManager;
+        public GameObject SaveLoadUIPrefab;
 
         protected override void Awake ()
         {
@@ -39,16 +41,29 @@ namespace Naninovel.UI
             stateManager.GameSlotManager.OnDeleted -= ControlInteractability;
         }
 
-        protected override void OnButtonClick ()
+        protected override async void OnButtonClick ()
         {
             var saveLoadUI = uiManager.GetUI<ISaveLoadUI>();
-            if (saveLoadUI is null) return;
+            if (saveLoadUI == null)
+            {
+                saveLoadUI = await CreateAndInitializeSaveLoadUIAsync();
+                if (saveLoadUI == null) return; // 생성 실패 시 함수 종료
+            }
 
             var lastLoadMode = saveLoadUI.GetLastLoadMode();
             saveLoadUI.PresentationMode = lastLoadMode;
             saveLoadUI.Show();
         }
+        private async Task<ISaveLoadUI> CreateAndInitializeSaveLoadUIAsync()
+        {
+            var saveLoadUIInstance = await uiManager.AddUIAsync(SaveLoadUIPrefab);
+            return saveLoadUIInstance as ISaveLoadUI;
+        }
 
-        private void ControlInteractability (string _) => UIComponent.interactable = stateManager.AnyGameSaveExists;
+        // private void ControlInteractability (string _) => UIComponent.interactable = stateManager.AnyGameSaveExists;
+        private void ControlInteractability (string _)
+        {
+            UIComponent.interactable = true; // 항상 활성화 상태로 유지
+        }
     }
 }
