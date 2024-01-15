@@ -1,5 +1,5 @@
 # prologue_07
-@set WeekTitle="푸른 밤과 어질러진 방" wait:false
+@set "WeekTitle=\"푸른 밤과 어질러진 방\"" wait:false
 @processInput false
 @stopSfx Amb_Shool_Club_01 fade:1
 @hideChars time:0.5 wait:false
@@ -36,6 +36,7 @@ describe: 그때. 노크소리가 문 너머로 들려왔다.
 {Player_name}: 별일까지는 아니고 그냥 살짝 해프닝 같은 거랄까..?
 엄마: 아들?
 {Player_name}: 네..?
+@spawn ShakeCamera wait:false
 엄마: <size=50>빨</size><size=50>리</size><size=50> </size><size=50>말</size><size=50> </size><size=50>안</size><size=50> </size><size=50>해</size><size=50>!</size><size=50>!</size>
 describe: 차마 학교에서 졸다가 소리쳤다고는 말하지 못하고 있었다.
 describe: 그걸 말했다간 진짜 쫓겨날 수도 있었다.
@@ -107,31 +108,31 @@ describe: 나는 교복을 걸치다시피 한 채 집에서 부리나케 뛰쳐
 @bgm BGM_Map_Classroom_01 volume:80 loop:true fade:1 wait:false
 @back ScClassRoom01 time:1 wait:true
 @showUI CP wait:false
-@set WeekTitle="우리 동아리에 들어오지 않을래?" wait:false
+@set "WeekTitle=\"우리 동아리에 들어오지 않을래?\"" wait:false
 @processInput true
-@char jeonbody1.21 wait:false pose:c
+@char jeonbody1.21 pose:c wait:false
 jeon: 그래서 내가 어제 그걸 보는데...
 @hideChars wait:false
 {Player_name}: ...
 {Player_name}: ......
-@char jeonbody4.43 wait:false pose:c
+@char jeonbody4.43 pose:c wait:false
 jeon: {Player_name}!
 {Player_name}: 어..? 뭐야 갑자기.
 @hideChars wait:false
-@char jeonbody1.33 wait:false pose:c
+@char jeonbody1.33 pose:c wait:false
 jeon: 지금 중요한 이야기 중인데 무슨 생각을 하는 거야!
 {Player_name}: 아니. 생각해 보니 어제 선생님이 동아리 들어가라고 해서.
 {Player_name}: 어떤 동아리에 들어가야 하나 생각중이었지...
 {Player_name}: 그런데 무슨 이야기 중이었지..?
 @hideChars wait:false
-@char jeonbody4.34 wait:false pose:c
+@char jeonbody4.34 pose:c wait:false
 jeon: 어제 준 포스터 이야기 중이었잖아!
-@char jeonbody4.11 wait:false pose:c
+@char jeonbody4.11 pose:c wait:false
 jeon: 크흠... 아무튼 동아리가 고민이라 이거지?
 @hideChars wait:false
-@char jeonbody2.21 wait:false pose:c
+@char jeonbody2.21 pose:c wait:false
 jeon: 그렇다면 우리 신문부에 들어오지 않겠는가?
-@char jeonbody2.22 wait:false pose:bc
+@char jeonbody2.22 pose:bc wait:false
 jeon: 신문부 부장이...
 {Player_name}: 절대 안갈거야.
 {Player_name}: 나까지 변태 취급 받기는 싫어.
