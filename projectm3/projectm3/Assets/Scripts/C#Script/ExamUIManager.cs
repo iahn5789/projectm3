@@ -192,6 +192,27 @@ public class ExamUIManager : MonoBehaviour
         SQuestionTitleList.Add("13", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
         SQuestionTitleList.Add("14", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
 
+        SQuestionTitleList.Add("20", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("21", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("22", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("23", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("24", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("30", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("31", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("32", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("33", "다음 보기 중 설나희와의 대화에서 가장 적절한 것은?");
+        SQuestionTitleList.Add("34", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("40", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("41", "다음 지문을 잘 읽고 대답한 내용이 아닌 것을 고르시오.");
+        SQuestionTitleList.Add("42", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("43", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("44", "다음 보기 중 설나희와의 대화에서 가장 적절한 것은?");
+        SQuestionTitleList.Add("50", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("51", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("52", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("53", "다음 지문을 잘 읽고 설나희의 대화로 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("54", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+
         // 문제 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
         KQuestionList = new Dictionary<string, string>();
@@ -231,6 +252,26 @@ public class ExamUIManager : MonoBehaviour
         SQuestionList.Add("12", "나는 보컬 마음에 들어...\n(   ) 있잖아...");
         SQuestionList.Add("13", "동아리 연습이 끝난 후 설나희와 함께 한 행동은?");
         SQuestionList.Add("14", "여러 음향 신호를 섞는데 사용하는 장비로 동아리실에서 찾아볼 수 있다.\n채널마다 페이더를 움직여서 소리의 크기를 조절하거나\n특정 주파수 대역을 조절할 수 있는 이것은?");
+        SQuestionList.Add("20", "나희 누나는 내 말을 들었는지 못 들었는지 대답을 하지 않은 채 나갔다.\n늘 그랬듯, 내 손에 남은 건 (   ) 밖에 없었다.");
+        SQuestionList.Add("21", "콘서트 도착 전 전대용이 먹은 음식은?");
+        SQuestionList.Add("22", "헬멧을 착용하고 모든 악기를 혼자서\n연주하는 아티스트의 이름은?");
+        SQuestionList.Add("23", "친구 전대용의 선물 때문에 무대 뒤로 입장했지만 보안요원에게 걸리고 말았다.\n이 때 보안요원의 수는?");
+        SQuestionList.Add("24", "등 뒤로 보이는 우리 학교의 넥타이.\n그럴 일이 없다고 생각하지만, 눈에 보이는 모든 게 나희 누나를 가리키고 있었다.\n그리고 보이는 공연 때 봤던 (   )까지.");
+        SQuestionList.Add("30", "수업이 끝나고 전대용이 향한 곳은?");
+        SQuestionList.Add("31", "나희 누나의 손이 내 (   )을/를 가볍게 누르고 있었다.");
+        SQuestionList.Add("32", "설나희가 노래를 부르지 않는 이유는?");
+        SQuestionList.Add("33", "혹시 다영이 때문에 그러시는 거에요?\n제가 맨날 욕먹으니까?\n도대체 어딜 봐서 (   )이/가 있다는건데요!");
+        SQuestionList.Add("34", "그 공연을 보는 순간만큼은 뭐랄까...\n(   ) 느낌이었어요.");
+        SQuestionList.Add("40", "설나희와 동아리실 뒷정리 후 같이 간 곳은?");
+        SQuestionList.Add("41", "나희 누나가 음악 취향을 물어보았다.\n하지만 이상형을 물어본 것으로 착각한 나는 엉뚱한 대답을 하게 된다.");
+        SQuestionList.Add("42", "설나희가 가장 좋아하는 동물은?");
+        SQuestionList.Add("43", "나희 누나와 함께 공연에서 입을 코스튬을 결정했다.\n커플 같아보여 싫어했지만 결국 복장을 통일한 코스튬은?");
+        SQuestionList.Add("44", "사이즈 말해주면 내가 준비할게.\n너도 아까 나한테 (   ) 선물로 줬잖아?");
+        SQuestionList.Add("50", "공연 대기실에서 라은을 마주쳤다. 라은이 이 곳에 온 목적은?");
+        SQuestionList.Add("51", "라은을 따돌린 후 축제 인파 속에서 본 시계의 시간은?");
+        SQuestionList.Add("52", "설나희의 부모님은 딸이 검사가 되길 원했지만\n정작 그녀는 (   )이/가 되길 원했다.");
+        SQuestionList.Add("53", "프리덤은... 그냥 일종의 (   )이야...");
+        SQuestionList.Add("54", "발을 떼려고 하는 그 순간. 나희 누나가 손을 내밀었다.\n마치... 악수를 하자는 것 처럼.\n부드럽고 (   )했다.");
         
         // 정답 항목 숫자는 : (주차-1, 라운드 - 1, 답 번호 -1)
         // Kang(250개)
@@ -391,6 +432,110 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("142", "이퀄라이저");
         SAnswerList.Add("143", "블루투스 스피커");
         SAnswerList.Add("144", "풀레인지 스피커");
+
+        SAnswerList.Add("200", "기타");
+        SAnswerList.Add("201", "베이스");
+        SAnswerList.Add("202", "드럼");
+        SAnswerList.Add("203", "키보드");
+        SAnswerList.Add("204", "응원단장");
+        SAnswerList.Add("210", "숟가락만 올리는");
+        SAnswerList.Add("211", "버스만 타는");
+        SAnswerList.Add("212", "베짱이 같은");
+        SAnswerList.Add("213", "무임승차만 하는");
+        SAnswerList.Add("214", "젓가락만 올리는");
+        SAnswerList.Add("220", "매력");
+        SAnswerList.Add("221", "느낌");
+        SAnswerList.Add("222", "여유");
+        SAnswerList.Add("223", "깊이");
+        SAnswerList.Add("224", "여운");
+        SAnswerList.Add("230", "기타 선 정리");
+        SAnswerList.Add("231", "악기 정리");
+        SAnswerList.Add("232", "전원 끄기");
+        SAnswerList.Add("233", "드럼 강습");
+        SAnswerList.Add("234", "악보 정리");
+        SAnswerList.Add("240", "믹서");
+        SAnswerList.Add("241", "이펙터");
+        SAnswerList.Add("242", "이퀄라이저");
+        SAnswerList.Add("243", "블루투스 스피커");
+        SAnswerList.Add("244", "풀레인지 스피커");
+
+        SAnswerList.Add("300", "빗자루");
+        SAnswerList.Add("301", "대걸레");
+        SAnswerList.Add("302", "쓰레기통");
+        SAnswerList.Add("303", "기타선");
+        SAnswerList.Add("304", "칠판 지우개");
+        SAnswerList.Add("310", "햄버거");
+        SAnswerList.Add("311", "피자");
+        SAnswerList.Add("312", "치킨");
+        SAnswerList.Add("313", "김밥");
+        SAnswerList.Add("314", "라면");
+        SAnswerList.Add("320", "프리덤");
+        SAnswerList.Add("321", "리버티");
+        SAnswerList.Add("322", "플라이");
+        SAnswerList.Add("323", "스카이");
+        SAnswerList.Add("324", "페러것");
+        SAnswerList.Add("330", "2명");
+        SAnswerList.Add("331", "1명");
+        SAnswerList.Add("332", "3명");
+        SAnswerList.Add("333", "4명");
+        SAnswerList.Add("334", "5명");
+        SAnswerList.Add("340", "헬멧");
+        SAnswerList.Add("341", "마이크");
+        SAnswerList.Add("342", "넥타이");
+        SAnswerList.Add("343", "포스터");
+        SAnswerList.Add("344", "드럼");
+
+        SAnswerList.Add("400", "신문부 회의");
+        SAnswerList.Add("401", "남자 화장실");
+        SAnswerList.Add("402", "분식집");
+        SAnswerList.Add("403", "PC방");
+        SAnswerList.Add("404", "학교 매점");
+        SAnswerList.Add("410", "복부");
+        SAnswerList.Add("411", "머리");
+        SAnswerList.Add("412", "등");
+        SAnswerList.Add("413", "팔");
+        SAnswerList.Add("414", "목");
+        SAnswerList.Add("420", "실력 부족");
+        SAnswerList.Add("421", "트라우마");
+        SAnswerList.Add("422", "성대결절");
+        SAnswerList.Add("423", "부끄러움");
+        SAnswerList.Add("424", "이유 없음");
+        SAnswerList.Add("430", "재능");
+        SAnswerList.Add("431", "매력");
+        SAnswerList.Add("432", "힘");
+        SAnswerList.Add("433", "멋");
+        SAnswerList.Add("434", "실력");
+        SAnswerList.Add("440", "자유로운");
+        SAnswerList.Add("441", "하나가 되는");
+        SAnswerList.Add("442", "압도당하는");
+        SAnswerList.Add("443", "시간이 멈춘 듯한");
+        SAnswerList.Add("444", "처음 경험한");
+
+        SAnswerList.Add("500", "신문부 활동");
+        SAnswerList.Add("501", "포토타임");
+        SAnswerList.Add("502", "아르바이트");
+        SAnswerList.Add("503", "콘서트 관람");
+        SAnswerList.Add("504", "화장실 이용");
+        SAnswerList.Add("510", "오후 8시 30분");
+        SAnswerList.Add("511", "오후 8시 00분");
+        SAnswerList.Add("512", "오후 9시 00분");
+        SAnswerList.Add("513", "오후 9시 30분");
+        SAnswerList.Add("514", "오후 10시 30분");
+        SAnswerList.Add("520", "수의사");
+        SAnswerList.Add("521", "가수");
+        SAnswerList.Add("522", "간호사");
+        SAnswerList.Add("523", "드러머");
+        SAnswerList.Add("524", "회사원");
+        SAnswerList.Add("530", "반항");
+        SAnswerList.Add("531", "저항");
+        SAnswerList.Add("532", "반격");
+        SAnswerList.Add("533", "반대");
+        SAnswerList.Add("534", "반란");
+        SAnswerList.Add("540", "따뜻했다");
+        SAnswerList.Add("541", "포근했다");
+        SAnswerList.Add("542", "다정했다");
+        SAnswerList.Add("543", "편안했다");
+        SAnswerList.Add("544", "따스했다");
         
         // 정답 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
@@ -431,6 +576,26 @@ public class ExamUIManager : MonoBehaviour
         SCorrectAnswerList.Add("12", "매력");
         SCorrectAnswerList.Add("13", "기타 선 정리");
         SCorrectAnswerList.Add("14", "믹서");
+        SCorrectAnswerList.Add("20", "빗자루");
+        SCorrectAnswerList.Add("21", "햄버거");
+        SCorrectAnswerList.Add("22", "프리덤");
+        SCorrectAnswerList.Add("23", "2명");
+        SCorrectAnswerList.Add("24", "헬멧");
+        SCorrectAnswerList.Add("30", "신문부 회의");
+        SCorrectAnswerList.Add("31", "복부");
+        SCorrectAnswerList.Add("32", "실력 부족");
+        SCorrectAnswerList.Add("33", "재능");
+        SCorrectAnswerList.Add("34", "자유로운");
+        SCorrectAnswerList.Add("40", "다있어");
+        SCorrectAnswerList.Add("41", "맑은 눈");
+        SCorrectAnswerList.Add("42", "고양이");
+        SCorrectAnswerList.Add("43", "트레이닝복");
+        SCorrectAnswerList.Add("44", "고양이키링");
+        SCorrectAnswerList.Add("50", "신문부 활동");
+        SCorrectAnswerList.Add("51", "오후 8시 30분");
+        SCorrectAnswerList.Add("52", "수의사");
+        SCorrectAnswerList.Add("53", "반항");
+        SCorrectAnswerList.Add("54", "따뜻했다");
     }
     void Update()
     {
