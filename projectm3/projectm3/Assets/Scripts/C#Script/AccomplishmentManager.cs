@@ -41,8 +41,7 @@ public class AccomplishmentManager : MonoBehaviour
             "G_KangGift_Many_AC", "G_JinGift_ALL_CLEAR_AC", "G_JinGift_Many_AC",
             "G_SulGift_ALL_CLEAR_AC", "G_SulGift_Many_AC", "G_Kang_SM_Many_AC",
             "G_Jin_SM_Many_AC", "G_Sul_SM_Many_AC", "G_Kang_Story_End_AC",
-            "G_Kang_Sound_End_AC", "G_Jin_Story_End_AC", "G_Jin_Sound_End_AC",
-            "G_Sul_Story_End_AC", "G_Sul_Sound_End_AC", "G_Test_All_Back_Many_AC",
+            "G_Jin_Story_End_AC", "G_Sul_Story_End_AC", "G_Test_All_Back_Many_AC",
             "G_Test_Fail_AC", "G_CG_ALL_CLEAR_AC", "G_I_AM_RICH_AC", "G_Lot_Of_Badge_AC"
         };
         int count = 0;
