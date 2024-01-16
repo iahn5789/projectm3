@@ -276,8 +276,19 @@ namespace Naninovel
                 ui.UIComponent.SetFontSize(size);
         }
 
-        protected virtual void ToggleUI () => SetUIVisibleWithToggle(!cameraManager.RenderUI);
+        protected virtual void ToggleUI()
+        {
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
 
+            // UI의 가시성을 토글
+            SetUIVisibleWithToggle(!cameraManager.RenderUI);
+
+            // 스크립트 플레이어가 실행 중이고 스킵 상태인 경우 스킵을 멈춤
+            if (scriptPlayer != null && scriptPlayer.SkipActive)
+            {
+                scriptPlayer.SetSkipEnabled(false);
+            }
+        }
         protected virtual async UniTask InstantiateUIsAsync ()
         {
             var resources = await loader.LoadAndHoldAllAsync(this);
