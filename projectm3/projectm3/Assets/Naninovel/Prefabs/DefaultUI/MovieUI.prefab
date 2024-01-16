@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 114622209848465882}
   - component: {fileID: 114436052834980332}
   - component: {fileID: 3001968801150221181}
+  - component: {fileID: 7573166615874396109}
   m_Layer: 5
   m_Name: MovieUI
   m_TagString: Untagged
@@ -79,7 +80,7 @@ MonoBehaviour:
   disableInteraction: 0
   visibleOnAwake: 0
   controlOpacity: 1
-  fadeTime: 0.3
+  fadeTime: 0
   ignoreTimeScale: 1
   focusObject: {fileID: 0}
   focusMode: 0
@@ -178,7 +179,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2994620962487606861}
-        m_MethodName: Stop
+        m_MethodName: IsMoviePlaying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -195,6 +196,20 @@ MonoBehaviour:
   m_DefaultActionMap: Movie
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7573166615874396109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785700845218806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Titletext: {fileID: 0}
+  WeekName: {fileID: 0}
 --- !u!1 &2263373869854504801
 GameObject:
   m_ObjectHideFlags: 0

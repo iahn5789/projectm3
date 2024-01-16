@@ -70,11 +70,11 @@ namespace Naninovel
         {
             if (Playing) Stop();
             playedMovieName = movieName;
-            SetIsPlaying(true);
             if (UrlStreaming) Player.url = BuildStreamUrl(movieName);
             else Player.clip = await LoadMovieClipAsync(movieName, asyncToken);
             await PreparePlayerAsync(asyncToken);
             Player.Play();
+            SetIsPlaying(true);
             return Player.texture;
         }
 

@@ -2,12 +2,16 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using Naninovel.Commands;
+using System.Collections.Generic;
+using System;
 
 namespace Naninovel.UI
 {
     /// <inheritdoc cref="IMovieUI"/>
     public class MovieUI : CustomUI, IMovieUI
     {
+        private ICustomVariableManager variableManager;
         private IMoviePlayer moviePlayer;
         protected virtual RawImage MovieImage => movieImage;
         protected virtual RawImage FadeImage => fadeImage;
@@ -35,7 +39,15 @@ namespace Naninovel.UI
             if (config.CustomFadeTexture)
                 fadeImage.texture = config.CustomFadeTexture;
         }
-
+        public void IsMoviePlaying()
+        {
+            if (moviePlayer.Playing)
+            {
+                Stop();
+                // 영화가 재생 중인 경우
+                Debug.Log("Movie is currently playing.");
+            }
+        }
         protected override void HandleVisibilityChanged (bool visible)
         {
             base.HandleVisibilityChanged(visible);
@@ -46,6 +58,7 @@ namespace Naninovel.UI
         public void Stop()
         {
             moviePlayer?.Stop();
+
         }
     }
 }
