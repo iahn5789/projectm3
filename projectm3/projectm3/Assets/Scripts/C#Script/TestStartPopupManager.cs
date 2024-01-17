@@ -23,9 +23,13 @@ public class TestStartPopupManager : MonoBehaviour
         variableManager = Engine.GetService<ICustomVariableManager>();
     }
 
-    public void CheckLikeAbility()
+    public void CheckLikeAbility(string name)
     {
-        name = variableManager?.GetVariableValue("Selected");
+        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (name == "")
+        {
+            name = variableManager?.GetVariableValue("Selected");
+        }
         if(name == "Kang" || name == "Jin" || name == "Sul")
         {
             money = int.Parse(variableManager?.GetVariableValue($"money"));

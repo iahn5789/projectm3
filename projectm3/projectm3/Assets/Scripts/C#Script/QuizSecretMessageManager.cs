@@ -47,7 +47,11 @@ public class QuizSecretMessageManager : MonoBehaviour
             string check = CheckMessage(i);
             if (check == "null")
             {
-                SecretMessageButton[i-1].interactable = false; 
+                SecretMessageButton[i-1].interactable = false;
+            }
+            else
+            {
+                SecretMessageButton[i-1].interactable = true;
             }
         }
     }

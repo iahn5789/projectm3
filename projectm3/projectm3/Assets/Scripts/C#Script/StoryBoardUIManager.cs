@@ -22,7 +22,9 @@ public class StoryBoardUIManager : MonoBehaviour
     public Text SecretLine;
     public GameObject[] SecretMessageMarkerImage;
     public TestStartPopupManager TSPM;
-
+    public GameObject KangRootDisable;
+    public GameObject JinRootDisable;
+    public GameObject SulRootDisable;
     void Start()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
@@ -32,6 +34,27 @@ public class StoryBoardUIManager : MonoBehaviour
         if(!gameObject.activeInHierarchy)
         {
             return;
+        }
+        if (OnName == "Kang")
+        {
+            if (KangRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
+        else if (OnName == "Jin")
+        {
+            if (JinRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
+        else if (OnName == "Sul")
+        {
+            if (SulRootDisable.activeInHierarchy)
+            {
+                return;
+            }
         }
         string Selected = variableManager?.GetVariableValue("Selected");
         if (Selected != OnName)
@@ -64,6 +87,27 @@ public class StoryBoardUIManager : MonoBehaviour
         {
             return;
         }
+        if (OnName == "Kang")
+        {
+            if (KangRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
+        else if (OnName == "Jin")
+        {
+            if (JinRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
+        else if (OnName == "Sul")
+        {
+            if (SulRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
         if (!SecretMessage.activeInHierarchy)
         {
             SecretMessage.SetActive(true);
@@ -89,6 +133,27 @@ public class StoryBoardUIManager : MonoBehaviour
         if(!gameObject.activeInHierarchy)
         {
             return;
+        }
+        if (OnName == "Kang")
+        {
+            if (KangRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
+        else if (OnName == "Jin")
+        {
+            if (JinRootDisable.activeInHierarchy)
+            {
+                return;
+            }
+        }
+        else if (OnName == "Sul")
+        {
+            if (SulRootDisable.activeInHierarchy)
+            {
+                return;
+            }
         }
         string Selected = variableManager?.GetVariableValue("Selected");
         if (Selected != OnName)
@@ -190,4 +255,5 @@ public class StoryBoardUIManager : MonoBehaviour
     {
         return variableManager?.GetVariableValue($"{OnName}Secret_{number}_Buy");
     }
+
 }
