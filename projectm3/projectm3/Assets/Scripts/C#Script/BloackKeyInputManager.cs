@@ -24,14 +24,30 @@ public class BloackKeyInputManager : MonoBehaviour
     public void SetProcessInputValue()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
-        bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"InputKeyValue"));
-        Engine.GetService<IInputManager>().ProcessInput = inputBool;
+        bool LoadingValueBool = Convert.ToBoolean(variableManager?.GetVariableValue($"LoadingValue"));
+        if(LoadingValueBool)
+        {
+            Engine.GetService<IInputManager>().ProcessInput = false;
+        }
+        else
+        {
+            bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"InputKeyValue"));
+            Engine.GetService<IInputManager>().ProcessInput = inputBool;
+        }
     }
     public void SetConfirmInputValue()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
-        bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"ConfirmationValue"));
-        Engine.GetService<IInputManager>().ProcessInput = inputBool;
+        bool LoadingValueBool = Convert.ToBoolean(variableManager?.GetVariableValue($"LoadingValue"));
+        if(LoadingValueBool)
+        {
+            Engine.GetService<IInputManager>().ProcessInput = false;
+        }
+        else
+        {
+            bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"ConfirmationValue"));
+            Engine.GetService<IInputManager>().ProcessInput = inputBool;
+        }
     }
     public void ClickSlot()
     {

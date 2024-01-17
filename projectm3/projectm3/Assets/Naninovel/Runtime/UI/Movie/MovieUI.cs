@@ -48,6 +48,10 @@ namespace Naninovel.UI
                 Debug.Log("Movie is currently playing.");
             }
         }
+        public bool IsPlayingMovie()
+        {
+            return moviePlayer.Playing;
+        }
         protected override void HandleVisibilityChanged (bool visible)
         {
             base.HandleVisibilityChanged(visible);

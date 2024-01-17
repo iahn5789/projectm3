@@ -104,7 +104,7 @@ namespace Naninovel
                 ObjectUtils.DestroyOrImmediate(initializationUI.gameObject);
             }
 
-            Engine.GetService<IInputManager>().ProcessInput = true;
+            Engine.GetService<IInputManager>().ProcessInput = false;
 
             var movieConfig = Engine.GetConfiguration<MoviesConfiguration>();
             if (movieConfig.PlayIntroMovie)
