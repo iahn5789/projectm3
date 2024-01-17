@@ -1,6 +1,5 @@
 # week04_sul06
 @showUI CP wait:false
-
 describe: 전보다 능숙해진 탓에 정리하는 데 걸린 시간은 훨씬 줄어들었다.
 describe: 하지만 나희 누나와 이런저런 이야기를 하다 보니 시간은 어느새 제법 흘러가 있었다.
 sul: 얼마나 남았어?
@@ -106,6 +105,42 @@ describe: 협박 아닌 협박을 받을 줄은... 더더욱 몰랐다.
 {Player_name}: (그렇다고 이제 와서 안 한다고 했다간...)
 {Player_name}: ...
 {Player_name}: 제 선택은...
+@choice "같이 하겠습니다!" goto:.sul062
+@choice "제가 그걸 왜 해야되죠?" goto:A_week04_sulhidden.week04_sulhidden
+@stop
+# sul062
+{Player_name}: 같이 하겠습니다!
+{Player_name}: 누나 생각만큼 제가 도움이 될지는 모르겠지만...
+sul: 정말? 잘 생각했어!
+sul: 넌 분명히 잘할 수 있을 거야. 나만 믿어!
+{Player_name}: 아... 알겠습니다...
+describe: 나희 누나가 이렇게까지 좋아하는 건 처음 봤다.
+sul: 혹시라도 중간에 안 한다고 하면...
+describe: (옳은... 선택이겠지..?)
+describe: (만일 안 한다고 했다면... 상상도 하지 말자...)
+sul: 아무튼. 너도 이제 어엿한 '프리덤'의 일원이야.
+{Player_name}: 열심히 하겠습니다..!
+sul: 당연히 열심히 해야지.
+sul: 열심히 안 하면...
+sul: 알지..?
+{Player_name}: ...
+sul: 너무 걱정하지 마. 나만 믿어!
+sul: 오늘처럼 내가 계속 도와줄 거니까.
+{Player_name}: 오늘...처럼이요..?
+sul: 당연하지. 앞으로 무대에 올라야 되니까.
+sul: 호흡 교정도 하고... 발성 교정도 하고... 또...
+{Player_name}: 커... 커헉..!
+sul: ..?
+sul: 벌써 얼굴이 빨개지는 거야?
+sul: 아직 힘든 부분은 시작도 안 했는데...
+{Player_name}: 히... 힘든 건 아니고요... 하하...
+sul: 기대해. 죽기 직전까지 밀어붙일 테니까.
+{Player_name}: 네..!
+sul: 혹시라도 중간에 힘들다고 포기하면...
+sul: 알지..?
+{Player_name}: 하... 하하... 그럼요..!
+describe: (옳은... 선택이겠지..?)
+describe: (엄마... 보고 싶다...)
 
 ;변수 초기화(주의)
 @processInput false
