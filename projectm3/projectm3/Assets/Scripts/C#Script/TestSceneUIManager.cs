@@ -340,7 +340,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetActiveTSPM()
     {
-        TSPM.CheckLikeAbility();
+        string Selected_TSPM = variableManager?.GetVariableValue("Selected");
+        TSPM.CheckLikeAbility(Selected_TSPM);
     }
     public void CehckedLikeAbility(string name, int number)
     {
