@@ -34630,9 +34630,9 @@ RectTransform:
   m_Father: {fileID: 9019844777318161761}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -718.69836}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9011618206064507361
@@ -46437,7 +46437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8968215527857029007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52855,6 +52855,9 @@ MonoBehaviour:
   - {fileID: 6594838923477345745}
   - {fileID: 6127337974899512442}
   TSPM: {fileID: 0}
+  KangRootDisable: {fileID: 0}
+  JinRootDisable: {fileID: 0}
+  SulRootDisable: {fileID: 0}
 --- !u!82 &5443422055457001542
 AudioSource:
   m_ObjectHideFlags: 0
@@ -53081,9 +53084,9 @@ RectTransform:
   m_Father: {fileID: 9019844777318161761}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -537.4656}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5079132436525450697
@@ -65841,9 +65844,9 @@ RectTransform:
   m_Father: {fileID: 9019844777318161761}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -356.2328}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4082673188368703475
@@ -78165,9 +78168,9 @@ RectTransform:
   m_Father: {fileID: 9019844777318161761}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -175}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &67211876680022700
@@ -82759,6 +82762,9 @@ MonoBehaviour:
   - {fileID: 4066073635886083927}
   - {fileID: 7925679278265018041}
   TSPM: {fileID: 1299158556030311596}
+  KangRootDisable: {fileID: 2563649915113475800}
+  JinRootDisable: {fileID: 5484363565990914810}
+  SulRootDisable: {fileID: 2741230495630701696}
 --- !u!82 &6411813523216272212
 AudioSource:
   m_ObjectHideFlags: 0
@@ -95053,6 +95059,9 @@ MonoBehaviour:
   - {fileID: 4066073635886083927}
   - {fileID: 7925679278265018041}
   TSPM: {fileID: 1299158556030311596}
+  KangRootDisable: {fileID: 2563649915113475800}
+  JinRootDisable: {fileID: 5484363565990914810}
+  SulRootDisable: {fileID: 2741230495630701696}
 --- !u!82 &6782128095897088505
 AudioSource:
   m_ObjectHideFlags: 0
@@ -95439,6 +95448,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2154150274867395756}
+        m_MethodName: SetBlockUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls:
@@ -95751,6 +95771,9 @@ MonoBehaviour:
   StoryboardUI: {fileID: 1873498860638096085}
   PartTimeJobUI: {fileID: 2817534558444432304}
   SecretMessageUI: {fileID: 1083861821153921021}
+  KangRootDisable: {fileID: 2563649915113475800}
+  JinRootDisable: {fileID: 5484363565990914810}
+  SulRootDisable: {fileID: 2741230495630701696}
 --- !u!114 &7128956764193607543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108288,6 +108311,9 @@ MonoBehaviour:
   SecretLine: {fileID: 9089852443444024356}
   SecretMessageMarkerImage: []
   TSPM: {fileID: 0}
+  KangRootDisable: {fileID: 0}
+  JinRootDisable: {fileID: 0}
+  SulRootDisable: {fileID: 0}
 --- !u!1 &7179465027572455915
 GameObject:
   m_ObjectHideFlags: 0
@@ -115131,6 +115157,9 @@ MonoBehaviour:
   - {fileID: 4066073635886083927}
   - {fileID: 7925679278265018041}
   TSPM: {fileID: 1299158556030311596}
+  KangRootDisable: {fileID: 2563649915113475800}
+  JinRootDisable: {fileID: 5484363565990914810}
+  SulRootDisable: {fileID: 2741230495630701696}
 --- !u!82 &9004787477962574505
 AudioSource:
   m_ObjectHideFlags: 0
@@ -140131,9 +140160,9 @@ RectTransform:
   m_Father: {fileID: 9019844777318161761}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 425, y: -899.93115}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2715672786486237816

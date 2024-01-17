@@ -38,7 +38,7 @@ public class PartTimeJobManager : MonoBehaviour
         }
 
         float successPercent = (float)_Success_Count / _Total_Count * 100;
-        successPercent = Mathf.Round(successPercent * 100) / 100;
-        return successPercent.ToString() + "%";
+        successPercent = Mathf.Round(successPercent * 10) / 10;
+        return successPercent.ToString("F1") + "%"; // "F1" 포맷을 사용하여 소수점 한 자리 표시
     }
 }

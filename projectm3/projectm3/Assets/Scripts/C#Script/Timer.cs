@@ -85,8 +85,8 @@ public class Timer : MonoBehaviour
         }
 
         float successPercent = (float)_Success_Count / _Total_Count * 100;
-        successPercent = Mathf.Round(successPercent * 100) / 100;
-        SuccessPercentText.text = successPercent.ToString() + "%";
+        successPercent = Mathf.Round(successPercent * 10) / 10;
+        SuccessPercentText.text = successPercent.ToString("F1") + "%";
     }
     public void SpaceBtn_Click()
     {
