@@ -255,6 +255,7 @@ public class TestSceneUIManager : MonoBehaviour
         else
         {
             name = variableManager?.GetVariableValue("Selecteded");
+            week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));
         }
         setUPWeekUIText(name, week);
     }
