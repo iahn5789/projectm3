@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 2477733894345488460}
   - component: {fileID: 1000968175268313359}
   - component: {fileID: 9070089881792354546}
+  - component: {fileID: 7905567192520540337}
   m_Layer: 5
   m_Name: StoryStartEndUI
   m_TagString: Untagged
@@ -338,6 +339,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7905567192520540337}
+        m_MethodName: SetProcessInputOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls:
@@ -355,6 +367,17 @@ MonoBehaviour:
       - m_Target: {fileID: 431195155567332022}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7905567192520540337}
+        m_MethodName: SetProcessInputOff
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -489,6 +512,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 1159674690563061042}
+--- !u!114 &7905567192520540337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6306036015961478139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884799539e9fae846a24e94d8278b03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Titletext: {fileID: 0}
+  WeekName: {fileID: 0}
 --- !u!1 &7115403043909603271
 GameObject:
   m_ObjectHideFlags: 0

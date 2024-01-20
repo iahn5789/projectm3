@@ -707,9 +707,13 @@ public class ExamUIManager : MonoBehaviour
         }
         else
         {
-            testResultUIManager.SetUI();
-            StartCoroutine(WaitAndActivateUI());
+            SetResult();
         }
+    }
+    public void SetResult()
+    {
+        testResultUIManager.SetUI();
+        StartCoroutine(WaitAndActivateUI());
     }
     private string SetQuestionTilte(string name, int Week)
     {
