@@ -325,7 +325,8 @@ public class TestSceneUIManager : MonoBehaviour
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
         string selected = variableManager.GetVariableValue("Selected");
-        if (selected != "")
+        string selecteded = variableManager.GetVariableValue("Selecteded");
+        if (selected != "" && selecteded == "")
         {
             variableManager.SetVariableValue("Selected", "");
             variableManager.SetVariableValue("Selecteded", selected);
@@ -740,7 +741,8 @@ public class TestSceneUIManager : MonoBehaviour
             FadeInAudio_1();
             audioSource.Play();
             string selected = variableManager.GetVariableValue("Selected");
-            if (selected != "")
+            string selecteded = variableManager.GetVariableValue("Selecteded");
+            if (selected != "" && selecteded == "")
             {
                 variableManager.SetVariableValue("Selected", "");
                 variableManager.SetVariableValue("Selecteded", selected);
