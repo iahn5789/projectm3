@@ -9,6 +9,7 @@ namespace Naninovel.UI
         [SerializeField] private Color activeColorMultiplier = Color.red;
 
         private IScriptPlayer player;
+        public Animator autoButtonAnim;
 
         protected override void Awake ()
         {
@@ -47,6 +48,10 @@ namespace Naninovel.UI
         {
             if (!Engine.GetService<IInputManager>().ProcessInput) return;
             OnDisable();
+        }
+        public void HideUI()
+        {
+            autoButtonAnim.SetTrigger("UIHide");
         }
     } 
 }

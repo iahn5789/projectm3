@@ -288,6 +288,10 @@ namespace Naninovel
             {
                 scriptPlayer.SetSkipEnabled(false);
             }
+            if (scriptPlayer != null && scriptPlayer.AutoPlayActive)
+            {
+                scriptPlayer.SetAutoPlayEnabled(false);
+            }
         }
         protected virtual async UniTask InstantiateUIsAsync ()
         {
