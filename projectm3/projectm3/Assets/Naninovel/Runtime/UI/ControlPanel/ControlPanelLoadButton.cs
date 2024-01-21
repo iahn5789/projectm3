@@ -8,6 +8,7 @@ namespace Naninovel.UI
 {
     public class ControlPanelLoadButton : ScriptableButton
     {
+        public Animator autoButtonAnim;
         private ICustomVariableManager variableManager;
         private IUIManager uiManager;
 
@@ -39,6 +40,7 @@ namespace Naninovel.UI
 
             variableManager = Engine.GetService<ICustomVariableManager>();
             variableManager?.SetVariableValue($"InputKeyValue", InputKey);
+            autoButtonAnim.SetTrigger("UIHide");
             
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Load;
             saveLoadUI.Show();

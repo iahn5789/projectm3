@@ -8,7 +8,7 @@ namespace Naninovel.UI
     public class ControlPanelSkipButton : ScriptableLabeledButton
     {
         [SerializeField] private Color activeColorMultiplier = Color.red;
-
+        public Animator autoButtonAnim2;
         private IScriptPlayer player;
         private bool SkipStatus;
         protected override void Awake ()
@@ -34,11 +34,16 @@ namespace Naninovel.UI
         protected override void OnButtonClick ()
         {
             player.SetSkipEnabled(!player.SkipActive);
+            autoButtonAnim2.SetTrigger("UIHide");
         }
 
         private void HandleSkipModeChange (bool enabled)
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
+            if (autoButtonAnim2 != null)
+            {
+                autoButtonAnim2.SetTrigger("UIHide");
+            }
         }
         private void HandleAutoModeChange (bool enabled)
         {
