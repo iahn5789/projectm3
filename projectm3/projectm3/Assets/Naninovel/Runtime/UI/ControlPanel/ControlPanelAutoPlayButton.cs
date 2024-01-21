@@ -51,7 +51,10 @@ namespace Naninovel.UI
         }
         public void HideUI()
         {
-            autoButtonAnim.SetTrigger("UIHide");
+            if (!player.AutoPlayActive)
+            {
+                autoButtonAnim.SetTrigger("UIHide");
+            }
         }
     } 
 }

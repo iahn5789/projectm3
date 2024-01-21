@@ -288,7 +288,7 @@ namespace Naninovel
             {
                 scriptPlayer.SetSkipEnabled(false);
             }
-            if (scriptPlayer != null && scriptPlayer.AutoPlayActive)
+            else if (scriptPlayer != null && scriptPlayer.AutoPlayActive)
             {
                 scriptPlayer.SetAutoPlayEnabled(false);
             }
