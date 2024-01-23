@@ -7301,7 +7301,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8283470777167664982}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2432582881528464014}
+        m_MethodName: Catch
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8283470777167664982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9717,12 +9728,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2432582881528464014}
-        m_MethodName: Start
-        m_Mode: 1
+        m_MethodName: StartGame
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9804,11 +9815,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfDisks: 4
+  ClearCountText: {fileID: 3592036676736974272}
+  CountText: {fileID: 6521981321878604263}
+  StageText: {fileID: 6324313960377894840}
   Block:
   - {fileID: 4493040231801489694}
   - {fileID: 4304685536725051231}
   - {fileID: 4319043027046570981}
   - {fileID: 3196090773230276848}
+  SelectedLight:
+  - {fileID: 6944713176250600669}
+  - {fileID: 4931091230356582698}
+  - {fileID: 4298684771966022169}
+  - {fileID: 1442055530091831386}
+  Scaffolding:
+  - {fileID: 414734357170922343}
+  - {fileID: 5452075233055220197}
+  Arrow: {fileID: 4018072919586278073}
 --- !u!1 &6438421796173213636
 GameObject:
   m_ObjectHideFlags: 0
@@ -15181,7 +15204,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6467903956008351619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2432582881528464014}
+        m_MethodName: ResetGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6467903956008351619
 MonoBehaviour:
   m_ObjectHideFlags: 0
