@@ -61,6 +61,7 @@ public class TestSceneUIManager : MonoBehaviour
     public GameObject WeekTutorial;
     public GameObject TutorialNoneObject;
     public AudioSource TutorialAudioSource;
+    public Animator StoryboardUIAnim;
     public GameObject TestStartPopupUI_Enough;
     public GameObject StoryboardUI;
     public GameObject PartTimeJobUI;
@@ -233,7 +234,8 @@ public class TestSceneUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string update_TestSceneUI_variable = variableManager?.GetVariableValue("update_TestSceneUI_variable");
         if (update_TestSceneUI_variable == "true")
         {
@@ -245,7 +247,8 @@ public class TestSceneUIManager : MonoBehaviour
     public void setUPWeekUI()
     {
         // 이전 차수에 마지막에 선택한 대자보를 바탕으로 주차 UI setup
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string name = variableManager?.GetVariableValue("Selected");
         int week = 1;
         if (name != "" && name != null && name != "null")
@@ -300,7 +303,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void setUI()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string moneyText = variableManager.GetVariableValue("money");
         MoneyUI.text = moneyText;
 
@@ -324,7 +328,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetSelectedValue()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string selected = variableManager.GetVariableValue("Selected");
         string selecteded = variableManager.GetVariableValue("Selecteded");
         if (selected != "" && selecteded == "")
@@ -352,13 +357,13 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetActiveTSPM()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
         string Selected_TSPM = variableManager?.GetVariableValue("Selected");
         TSPM.CheckLikeAbility(Selected_TSPM);
     }
     public void CehckedLikeAbility(string name, int number)
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         if (!Int32.TryParse(variableManager?.GetVariableValue($"{name}Week"), out int week))
             week = 0; // 기본값 설정
 
@@ -378,7 +383,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetBlockUI()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         int week = Int32.Parse(variableManager?.GetVariableValue("KangWeek"));
         string Selected = variableManager?.GetVariableValue("Selected");
         string Selecteded = variableManager?.GetVariableValue("Selecteded");
@@ -415,7 +421,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetLikeAbilityAmount()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         int kweek = Int32.Parse(variableManager?.GetVariableValue("KangWeek"));
         int jweek = Int32.Parse(variableManager?.GetVariableValue("JinWeek"));
         int sweek = Int32.Parse(variableManager?.GetVariableValue("SulWeek"));
@@ -426,7 +433,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void SetLikeAbilityToText()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         int KangLikeAbility = Int32.Parse(variableManager?.GetVariableValue("KangLikeAbility"));
         int JinLikeAbility = Int32.Parse(variableManager?.GetVariableValue("JinLikeAbility"));
         int SulLikeAbility = Int32.Parse(variableManager?.GetVariableValue("SulLikeAbility"));
@@ -454,38 +462,43 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void StoryBoardSelectedCheck()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string Selected = variableManager?.GetVariableValue("Selected");
         if (!SecretMessage.GetCurrentAnimatorStateInfo(0).IsName("SecretMessage_In"))
         {
-            if (Selected == "Kang")
+            if (!StoryboardUIAnim.GetCurrentAnimatorStateInfo(0).IsName("StoryBoard_Out"))
             {
-                //강여진 보드 눌려있는 상태 유지
-                SecretMessage.Play("SecretMessageCheckIn");
-                SetActiveTSPM();
-            }
-            else if (Selected == "Jin")
-            {
-                //진다영 보드 눌려있는 상태 유지
-                SecretMessage.Play("SecretMessageCheckIn");
-                SetActiveTSPM();
-            }
-            else if (Selected == "Sul")
-            {
-                //설나희 보드 눌려있는 상태 유지
-                SecretMessage.Play("SecretMessageCheckIn");
-                SetActiveTSPM();
-            }
-            else if (Selected == "Common")
-            {
-                // 전대용 보드 눌려있는 상태 유지
-                SecretMessage.Play("SecretMessageCheckIn");
-                SetActiveTSPM();
-            }
-            else
-            {
-                //안눌려있음
-                SecretMessage.Play("SecretMessage_Out");
+                if (Selected == "Kang")
+                {
+                    //강여진 보드 눌려있는 상태 유지
+                    SecretMessage.Play("SecretMessageCheckIn");
+                    SetActiveTSPM();
+                }
+                else if (Selected == "Jin")
+                {
+                    //진다영 보드 눌려있는 상태 유지
+                    SecretMessage.Play("SecretMessageCheckIn");
+                    SetActiveTSPM();
+                }
+                else if (Selected == "Sul")
+                {
+                    //설나희 보드 눌려있는 상태 유지
+                    SecretMessage.Play("SecretMessageCheckIn");
+                    SetActiveTSPM();
+                }
+                else if (Selected == "Common")
+                {
+                    // 전대용 보드 눌려있는 상태 유지
+                    SecretMessage.Play("SecretMessageCheckIn");
+                    SetActiveTSPM();
+                }
+                else
+                {
+                    //안눌려있음
+                    Debug.Log("안눌");
+                    SecretMessage.Play("SecretMessage_Out");
+                }
             }
         }
         else
@@ -497,7 +510,8 @@ public class TestSceneUIManager : MonoBehaviour
     {
         // 구매 여부 확인 (다른 캐릭터 On인지 확인해야함)
         ///////
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string Selected = variableManager?.GetVariableValue("Selected");
         nowSecretMessage = Selected + "Secret_" + SecretMessageName + "_Buy";
         string buybool = variableManager?.GetVariableValue(nowSecretMessage);
@@ -551,7 +565,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void BuySecretMessageWithMoneyExist()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string Selected = variableManager?.GetVariableValue("Selected");
         string buybool = variableManager?.GetVariableValue(nowSecretMessage);
         int money = int.Parse(variableManager?.GetVariableValue("money"));
@@ -574,7 +589,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void UpdateSecretMessageUI(string OnName)
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string buy1 = variableManager?.GetVariableValue($"{OnName}Secret_1_Buy");
         string buy2 = variableManager?.GetVariableValue($"{OnName}Secret_2_Buy");
         string buy3 = variableManager?.GetVariableValue($"{OnName}Secret_3_Buy");
@@ -611,7 +627,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void UpdateBuySecretMessageWithMoneyUI(string name ,string number)
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string week = variableManager?.GetVariableValue($"{name}Week");
         string key = week+number+name;
         if(SecretMessageLine.ContainsKey(key)) // 해당 키가 myTable 딕셔너리에 있는지 확인
@@ -638,7 +655,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void UpdateBuySecretMessageResultUI(string name ,string number)
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string week = variableManager?.GetVariableValue($"{name}Week");
         string key = week+number+name;
         if(SecretMessageLine.ContainsKey(key)) // 해당 키가 myTable 딕셔너리에 있는지 확인
@@ -705,7 +723,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void TutorialObjectOn()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         string tutorialvarialble = variableManager?.GetVariableValue($"Tutorial");
         string kweek = variableManager?.GetVariableValue($"KangWeek");
         string jweek = variableManager?.GetVariableValue($"JinWeek");
@@ -752,7 +771,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     public void TutorialFinish()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         variableManager?.SetVariableValue($"Tutorial","false");
         StartCoroutine(DeactivateAfterDelay(2f));
     }
@@ -768,7 +788,8 @@ public class TestSceneUIManager : MonoBehaviour
     }
     private void SetVariable()
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
         // 선택한 대자보의 다음 주차를 가져옴
         string name = variableManager?.GetVariableValue("Selected");
         int week = Int32.Parse(variableManager?.GetVariableValue($"{name}Week"));

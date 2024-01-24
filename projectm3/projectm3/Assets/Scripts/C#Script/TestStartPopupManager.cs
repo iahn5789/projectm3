@@ -25,7 +25,9 @@ public class TestStartPopupManager : MonoBehaviour
 
     public void CheckLikeAbility(string name)
     {
-        variableManager = Engine.GetService<ICustomVariableManager>();
+        if (variableManager == null)
+            variableManager = Engine.GetService<ICustomVariableManager>();
+            
         if (name == "")
         {
             name = variableManager?.GetVariableValue("Selected");
