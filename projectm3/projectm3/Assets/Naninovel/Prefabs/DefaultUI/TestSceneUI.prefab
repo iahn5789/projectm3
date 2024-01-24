@@ -62084,7 +62084,6 @@ GameObject:
   - component: {fileID: 7481624628698133504}
   - component: {fileID: 5289643533159125669}
   - component: {fileID: 3263051278218787766}
-  - component: {fileID: 6873581851203706227}
   m_Layer: 5
   m_Name: Button_Story
   m_TagString: Untagged
@@ -62209,17 +62208,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 7082295084105830029}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 6873581851203706227}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -62418,24 +62406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 5289643533159125669}
---- !u!114 &6873581851203706227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3782136772709484559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: '@set Selected="null"
-
-    @stop'
-  playOnAwake: 0
-  disableWaitInput: 0
 --- !u!1 &3802985890502095453
 GameObject:
   m_ObjectHideFlags: 0
@@ -96687,6 +96657,7 @@ MonoBehaviour:
   WeekTutorial: {fileID: 320367177004778024}
   TutorialNoneObject: {fileID: 8721002019451923909}
   TutorialAudioSource: {fileID: 2045883777282419541}
+  StoryboardUIAnim: {fileID: 4536868728333620331}
   TestStartPopupUI_Enough: {fileID: 8876063896719602450}
   StoryboardUI: {fileID: 1873498860638096085}
   PartTimeJobUI: {fileID: 2817534558444432304}
