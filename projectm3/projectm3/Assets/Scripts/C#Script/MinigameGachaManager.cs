@@ -7,6 +7,7 @@ using Naninovel.Commands;
 
 public class MinigameGachaManager : MonoBehaviour
 {
+    public Animator CrainAnim;
     public int numberOfDisks = 4; // 원반의 수
     public Text ClearCountText;
     public Text CountText;
@@ -182,16 +183,12 @@ public class MinigameGachaManager : MonoBehaviour
             // PegsC에 원반이 1, 2, -1, -2 순서로 있을 때의 동작
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == -1 && PegsC.Pop() == -2 && Count <= ClearCount)
             {
-                // 순서가 맞을 때 동작
-                // 원하는 동작 코드를 여기에 추가
                 N_Round = 2;
-                Debug.Log("Next Game");
-                ResetGame();
+                PlaySuccessAnim();
             }
             else
             {
-                Debug.Log("Fail");
-                ResetGame();
+                PlayFailAnim();
             }
         }
         else if (N_Round == 2)
@@ -199,16 +196,12 @@ public class MinigameGachaManager : MonoBehaviour
             // PegsC에 원반이 1, 2, 3, -1 순서로 있을 때의 동작
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == 3 && PegsC.Pop() == -1 && Count <= ClearCount)
             {
-                // 순서가 맞을 때 동작
-                // 원하는 동작 코드를 여기에 추가
                 N_Round = 3;
-                Debug.Log("Next Game");
-                ResetGame();
+                PlaySuccessAnim();
             }
             else
             {
-                Debug.Log("Fail");
-                ResetGame();
+                PlayFailAnim();
             }
         }
         else if (N_Round == 3)
@@ -216,17 +209,26 @@ public class MinigameGachaManager : MonoBehaviour
             // PegsC에 원반이 1, 2, 3, 4 순서로 있을 때의 동작
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == 3 && PegsC.Pop() == 4 && Count <= ClearCount)
             {
-                // 순서가 맞을 때 동작
-                // 원하는 동작 코드를 여기에 추가
-                Debug.Log("Clear");
-                ResetGame();
+                PlaySuccessAnim();
             }
             else
             {
-                Debug.Log("Fail");
-                ResetGame();
+                PlayFailAnim();
             }
         }
+    }
+    public void PlaySuccessAnim()
+    {
+        CrainAnim.SetTrigger("success");
+    }
+    public void PlayFailAnim()
+    {
+        int height = PegsC.Count;
+        CrainAnim.SetTrigger($"fail0{height + 1}");
+    }
+    public void PlayIdleAnim()
+    {
+        CrainAnim.SetTrigger("next");
     }
     public void Selected(int Pegs)
     {

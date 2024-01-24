@@ -9705,6 +9705,7 @@ GameObject:
   - component: {fileID: 3478935118757139722}
   - component: {fileID: 1498819746535619016}
   - component: {fileID: 2556481503647087025}
+  - component: {fileID: 5358434880404870774}
   m_Layer: 5
   m_Name: Crain
   m_TagString: Untagged
@@ -9774,6 +9775,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5358434880404870774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6234416902661459337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16792e34895ee3d40b44f055d7a3bd3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minigameManager: {fileID: 2432582881528464014}
 --- !u!1 &6306036015961478139
 GameObject:
   m_ObjectHideFlags: 0
@@ -9951,6 +9965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1c5b7299189904abf0a356aaa0abb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CrainAnim: {fileID: 2556481503647087025}
   numberOfDisks: 4
   ClearCountText: {fileID: 3592036676736974272}
   CountText: {fileID: 6521981321878604263}
