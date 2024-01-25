@@ -17,6 +17,7 @@ public class MinigameGachaManager : MonoBehaviour
     public GameObject[] Block; // 4, 3, 2, 1
     public GameObject[] SelectedLight; // 4, 3, 2, 1
     public GameObject[] Scaffolding; // 2개 -1, -2
+    public GameObject[] Capsule;
     public GameObject Arrow;
     public Text DialogText;
     private Dictionary<int, (string, int, int)> line;
@@ -31,7 +32,9 @@ public class MinigameGachaManager : MonoBehaviour
     private int Selected_Pegs = -1;
     public int N_Round = 0;
     public Text RoundText;
+    public GameObject BlockImage;
     private ICustomVariableManager variableManager;
+    public bool Reposition = false;
     // 20회 도달시 뽑기 버튼 강제 클릭이 필요함 
     public void Start()
     {
@@ -72,7 +75,8 @@ public class MinigameGachaManager : MonoBehaviour
         StageText.text = Round.ToString();
         
         int randomValue = Random.Range(1, 11);
-        GetLine(randomValue);
+        if (!Reposition)
+            GetLine(randomValue);
 
         // 초기화 및 시작 위치 설정
         PegsA = new Stack<int>();
@@ -92,6 +96,9 @@ public class MinigameGachaManager : MonoBehaviour
             Scaffolding[1].SetActive(true);
             PegsC.Push(-2);
             PegsC.Push(-1);
+            Capsule[0].SetActive(true);
+            Capsule[1].SetActive(false);
+            Capsule[2].SetActive(false);
         }
         else if (Round == 2)
         {
@@ -104,6 +111,9 @@ public class MinigameGachaManager : MonoBehaviour
             Scaffolding[0].SetActive(false);
             Scaffolding[1].SetActive(true);
             PegsC.Push(-1);
+            Capsule[0].SetActive(false);
+            Capsule[1].SetActive(true);
+            Capsule[2].SetActive(false);
         }
         else if (Round == 3)
         {
@@ -115,6 +125,9 @@ public class MinigameGachaManager : MonoBehaviour
             Block[3].SetActive(true);
             Scaffolding[0].SetActive(false);
             Scaffolding[1].SetActive(false);
+            Capsule[0].SetActive(false);
+            Capsule[1].SetActive(false);
+            Capsule[2].SetActive(true);
         }
         ClearCountText.text = ClearCount.ToString();
         for (int i = numberOfDisks; i >= 1; i--)
@@ -124,7 +137,10 @@ public class MinigameGachaManager : MonoBehaviour
 
         // UpdatePegs 메서드 호출하여 위치 업데이트
         UpdatePegs();
-        InvokeRepeating("CallGetLine", 0, 10);
+        if (!Reposition)
+            InvokeRepeating("CallGetLine", 0, 10);
+        else
+            Reposition = false;
     }
     // 10초마다 호출될 함수
     private void CallGetLine()
@@ -177,11 +193,19 @@ public class MinigameGachaManager : MonoBehaviour
         // 옮긴 횟수 조절
         StartGame(N_Round);
     }
+    public void RePositionGame()
+    {
+        
+        UIReset();
+        Reposition = true;
+        StartGame(N_Round);
+    }
     public void Catch()
     {
         CancelInvoke("CallGetLine");
         // 랜덤 11~13 사이 값이 나와야함 그걸로 GetLine(int) 호출
         int randomValue = Random.Range(11, 14);
+        BlockImageOn();
         GetLine(randomValue);
         if (N_Round == 1)
         {
@@ -218,6 +242,9 @@ public class MinigameGachaManager : MonoBehaviour
             {
                 N_Round = 4;
                 PlaySuccessAnim();
+                int money = int.Parse(variableManager?.GetVariableValue("money"));
+                money += 3000;
+                variableManager?.SetVariableValue("money", money.ToString());
             }
             else
             {
@@ -321,5 +348,13 @@ public class MinigameGachaManager : MonoBehaviour
             Arrow.SetActive(false);
             UpdatePegs();
         }
+    }
+    public void BlockImageOn()
+    {
+        BlockImage.SetActive(true);
+    }
+    public void BlockImageOff()
+    {
+        BlockImage.SetActive(false);
     }
 }

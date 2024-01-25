@@ -33,4 +33,8 @@ public class CrainManager : MonoBehaviour
     {
         minigameManager.PlayIdleAnim();
     }
+    public void BlockImageOff()
+    {
+        minigameManager.BlockImageOff();
+    }
 }
