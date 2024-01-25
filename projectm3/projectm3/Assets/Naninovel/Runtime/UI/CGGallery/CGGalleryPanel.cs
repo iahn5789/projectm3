@@ -126,7 +126,7 @@ namespace Naninovel.UI
                 else if(name == "Sul02")
                     return "두근두근 벌컥벌컥";
                 else if(name == "Sul03")
-                    return "Sul3번";
+                    return "힘을 빼고 자연스럽게";
                 else if(name == "Sul04")
                     return "Sul4번";
                 else if(name == "Sul05")
