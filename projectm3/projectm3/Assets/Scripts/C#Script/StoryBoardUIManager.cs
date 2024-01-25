@@ -123,10 +123,8 @@ public class StoryBoardUIManager : MonoBehaviour
             SelectedOff[0].SetActive(false);
             SelectedOff[1].SetActive(false);
         }
-        Debug.Log(OnName);
         variableManager?.SetVariableValue("Selected", OnName);
-        string Selected_TSPM = variableManager?.GetVariableValue("Selected");
-        TSPM.CheckLikeAbility(Selected_TSPM);
+        TSPM.CheckLikeAbility(OnName);
     }
     public void OnExit(string OnName)
     {
