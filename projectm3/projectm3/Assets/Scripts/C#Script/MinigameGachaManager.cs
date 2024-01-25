@@ -29,7 +29,8 @@ public class MinigameGachaManager : MonoBehaviour
     private Stack<int> PegsC;
     private int Selected_block = -1;
     private int Selected_Pegs = -1;
-    private int N_Round = 0;
+    public int N_Round = 0;
+    public Text RoundText;
     private ICustomVariableManager variableManager;
     // 20회 도달시 뽑기 버튼 강제 클릭이 필요함 
     public void Start()
@@ -60,6 +61,10 @@ public class MinigameGachaManager : MonoBehaviour
             charactorBody.sprite = BodyList[tupleValue.Item2];
             charactorFace.sprite = FaceList[tupleValue.Item3];
         }
+    }
+    public void SetRoundText()
+    {
+        RoundText.text = N_Round.ToString();
     }
     public void StartGame(int Round)
     {
@@ -184,6 +189,7 @@ public class MinigameGachaManager : MonoBehaviour
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == -1 && PegsC.Pop() == -2 && Count <= ClearCount)
             {
                 N_Round = 2;
+                SetRoundText();
                 PlaySuccessAnim();
             }
             else
@@ -197,6 +203,7 @@ public class MinigameGachaManager : MonoBehaviour
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == 3 && PegsC.Pop() == -1 && Count <= ClearCount)
             {
                 N_Round = 3;
+                SetRoundText();
                 PlaySuccessAnim();
             }
             else
@@ -209,6 +216,7 @@ public class MinigameGachaManager : MonoBehaviour
             // PegsC에 원반이 1, 2, 3, 4 순서로 있을 때의 동작
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == 3 && PegsC.Pop() == 4 && Count <= ClearCount)
             {
+                N_Round = 4;
                 PlaySuccessAnim();
             }
             else

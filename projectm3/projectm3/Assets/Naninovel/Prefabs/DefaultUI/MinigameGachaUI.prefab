@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6562856333578126238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8363,6 +8363,7 @@ GameObject:
   - component: {fileID: 271141956584085529}
   - component: {fileID: 1006268716515475353}
   - component: {fileID: 5142314959986863488}
+  - component: {fileID: 524391105935256087}
   m_Layer: 5
   m_Name: NextStage
   m_TagString: Untagged
@@ -8452,6 +8453,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &524391105935256087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414742861186384364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b306fc0a11aa8c44b12e80e3e01f6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoundText: {fileID: 364148397690417455}
+  UI: {fileID: 2414742861186384364}
+  MGM: {fileID: 2432582881528464014}
 --- !u!1 &2436627047865222467
 GameObject:
   m_ObjectHideFlags: 0
@@ -11223,7 +11239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5344434740251095285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14303,7 +14319,7 @@ MonoBehaviour:
   _bursts:
   - time: 0
     count: 40
-    used: 1
+    used: 0
   _particleTrailRenderer: {fileID: 870656460535253151}
   _trailModule:
     enabled: 1
@@ -16789,7 +16805,6 @@ GameObject:
   - component: {fileID: 6711239207856212413}
   - component: {fileID: 8462482782806745590}
   - component: {fileID: 9082912772324736790}
-  - component: {fileID: 8935066415857415304}
   m_Layer: 5
   m_Name: Button_Restart
   m_TagString: Untagged
@@ -16872,6 +16887,17 @@ MonoBehaviour:
       - m_Target: {fileID: 4938703079890503590}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2432582881528464014}
+        m_MethodName: ResetGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17053,21 +17079,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 8462482782806745590}
---- !u!114 &8935066415857415304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4185328437780535832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb84b9801d302a448833f1fb2f6166c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transition: {fileID: 11400000, guid: 057babd6f13132c449650d99e3c4e99c, type: 2}
-  startDelay: 0
-  InputKey: 0
 --- !u!1 &4185603481586616263
 GameObject:
   m_ObjectHideFlags: 0
@@ -17386,7 +17397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -187, y: 98}
+  m_AnchoredPosition: {x: -187, y: -102.00001}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7641691936891016341
@@ -17413,7 +17424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3421225056958847922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17627,6 +17638,28 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2432582881528464014}
+        m_MethodName: SetRoundText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2414742861186384364}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &3040899705269215200
 MonoBehaviour:
@@ -18005,7 +18038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -187, y: 198}
+  m_AnchoredPosition: {x: -187, y: -2}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8136197727770524227
@@ -21284,7 +21317,7 @@ MonoBehaviour:
   _bursts:
   - time: 0
     count: 100
-    used: 1
+    used: 0
   _particleTrailRenderer: {fileID: 0}
   _trailModule:
     enabled: 0
@@ -21485,6 +21518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4080183287210441840}
   - component: {fileID: 8523207572547686457}
+  - component: {fileID: 3067206005266886305}
   m_Layer: 5
   m_Name: Fail
   m_TagString: Untagged
@@ -21533,6 +21567,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3067206005266886305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938703079890503590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b306fc0a11aa8c44b12e80e3e01f6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoundText: {fileID: 0}
+  UI: {fileID: 4938703079890503590}
+  MGM: {fileID: 2432582881528464014}
 --- !u!1 &5097452256464805411
 GameObject:
   m_ObjectHideFlags: 0
@@ -23059,6 +23108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigameManager: {fileID: 2432582881528464014}
+  SuccessUI: {fileID: 8887385277589939182}
+  FailUI: {fileID: 4938703079890503590}
+  NextRoundUI: {fileID: 2414742861186384364}
 --- !u!1 &6306036015961478139
 GameObject:
   m_ObjectHideFlags: 0
@@ -23150,13 +23202,24 @@ MonoBehaviour:
   onShow:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2432582881528464014}
-        m_MethodName: StartGame
-        m_Mode: 3
+      - m_Target: {fileID: 210928741284408409}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 4018072919586278073}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23269,6 +23332,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 36e4e3e11ad1d2549b8e3c0dad84aeb0, type: 3}
   - {fileID: 21300000, guid: 2ecd0658721124645a8fe718050d629a, type: 3}
   - {fileID: 21300000, guid: a3c7bee2e1102b947914ac166f438c09, type: 3}
+  N_Round: 1
+  RoundText: {fileID: 364148397690417455}
 --- !u!1 &6438421796173213636
 GameObject:
   m_ObjectHideFlags: 0
@@ -24684,7 +24749,7 @@ MonoBehaviour:
   _bursts:
   - time: 0
     count: 100
-    used: 1
+    used: 0
   _particleTrailRenderer: {fileID: 0}
   _trailModule:
     enabled: 0
@@ -31731,7 +31796,7 @@ MonoBehaviour:
   _bursts:
   - time: 0
     count: 40
-    used: 1
+    used: 0
   _particleTrailRenderer: {fileID: 7326230956437104304}
   _trailModule:
     enabled: 1
@@ -32741,6 +32806,7 @@ GameObject:
   - component: {fileID: 7662525840362110581}
   - component: {fileID: 2646373597127216681}
   - component: {fileID: 3343846905241356703}
+  - component: {fileID: 4874334326741943796}
   m_Layer: 5
   m_Name: Success
   m_TagString: Untagged
@@ -32804,6 +32870,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4874334326741943796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887385277589939182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b306fc0a11aa8c44b12e80e3e01f6d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoundText: {fileID: 0}
+  UI: {fileID: 8887385277589939182}
+  MGM: {fileID: 2432582881528464014}
 --- !u!1 &8924453162529761242
 GameObject:
   m_ObjectHideFlags: 0
