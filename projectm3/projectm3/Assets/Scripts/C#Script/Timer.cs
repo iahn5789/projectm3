@@ -242,6 +242,10 @@ public class Timer : MonoBehaviour
         {
             RetryButton.interactable = false;
         }
+        else
+        {
+            RetryButton.interactable = true;
+        }
         timer = 0;
     }
     IEnumerator InitializeAndCountdown()
