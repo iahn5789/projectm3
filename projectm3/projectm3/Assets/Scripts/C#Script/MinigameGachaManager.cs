@@ -35,6 +35,7 @@ public class MinigameGachaManager : MonoBehaviour
     public GameObject BlockImage;
     private ICustomVariableManager variableManager;
     public bool Reposition = false;
+    public Text ResultMoney;
     // 20회 도달시 뽑기 버튼 강제 클릭이 필요함 
     public void Start()
     {
@@ -241,6 +242,7 @@ public class MinigameGachaManager : MonoBehaviour
             if (PegsC.Count == 4 && PegsC.Pop() == 1 && PegsC.Pop() == 2 && PegsC.Pop() == 3 && PegsC.Pop() == 4 && Count <= ClearCount)
             {
                 N_Round = 4;
+                ResultMoney.text = "3000개";
                 PlaySuccessAnim();
                 int money = int.Parse(variableManager?.GetVariableValue("money"));
                 money += 3000;
@@ -251,6 +253,14 @@ public class MinigameGachaManager : MonoBehaviour
                 PlayFailAnim();
             }
         }
+    }
+    public void SkipGame()
+    {
+        N_Round = 4;
+        ResultMoney.text = "1500개";
+        int money = int.Parse(variableManager?.GetVariableValue("money"));
+        money += 1500;
+        variableManager?.SetVariableValue("money", money.ToString());
     }
     public void PlaySuccessAnim()
     {
