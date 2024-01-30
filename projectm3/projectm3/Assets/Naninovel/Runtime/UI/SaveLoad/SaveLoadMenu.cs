@@ -166,6 +166,8 @@ namespace Naninovel.UI
         {
             if (!slotManager.SaveSlotExists(slotId)) return;
 
+            variableManager = Engine.GetService<ICustomVariableManager>();
+            variableManager?.SetVariableValue($"LoadingValue","true");
             if (!string.IsNullOrEmpty(titleScriptName) &&
                 await scriptManager.LoadScriptAsync(titleScriptName) is Script titleScript &&
                 titleScript.LabelExists(titleLabel))
@@ -178,7 +180,6 @@ namespace Naninovel.UI
             Hide();
             Engine.GetService<IUIManager>()?.GetUI<ITitleUI>()?.Hide();
             await stateManager.LoadGameAsync(slotId);
-            variableManager = Engine.GetService<ICustomVariableManager>();
             bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"InputKeyValue"));
             Engine.GetService<IInputManager>().ProcessInput = inputBool;
         }

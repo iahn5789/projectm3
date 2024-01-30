@@ -16,10 +16,12 @@ public class BloackKeyInputManager : MonoBehaviour
     public void SetProcessInputOn()
     {
         Engine.GetService<IInputManager>().ProcessInput = true;
+        // Debug.Log("SetProcessInputOn : " + gameObject.name);
     }
     public void SetProcessInputOff()
     {
         Engine.GetService<IInputManager>().ProcessInput = false;
+        // Debug.Log("SetProcessInputOff : " + gameObject.name);
     }
     public void SetProcessInputValue()
     {
@@ -27,11 +29,13 @@ public class BloackKeyInputManager : MonoBehaviour
         bool LoadingValueBool = Convert.ToBoolean(variableManager?.GetVariableValue($"LoadingValue"));
         if(LoadingValueBool)
         {
+            // Debug.Log("SetProcessInputValue : " + gameObject.name + " : LoadingValueBool");
             Engine.GetService<IInputManager>().ProcessInput = false;
         }
         else
         {
             bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"InputKeyValue"));
+            // Debug.Log("SetProcessInputValue : " + gameObject.name + " : " + inputBool);
             Engine.GetService<IInputManager>().ProcessInput = inputBool;
         }
     }
@@ -41,13 +45,20 @@ public class BloackKeyInputManager : MonoBehaviour
         bool LoadingValueBool = Convert.ToBoolean(variableManager?.GetVariableValue($"LoadingValue"));
         if(LoadingValueBool)
         {
+            // Debug.Log("SetConfirmInputValue : " + gameObject.name + " : LoadingValueBool");
             Engine.GetService<IInputManager>().ProcessInput = false;
         }
         else
         {
             bool inputBool = Convert.ToBoolean(variableManager?.GetVariableValue($"ConfirmationValue"));
+            // Debug.Log("SetConfirmInputValue : " + gameObject.name + " : " + inputBool);
             Engine.GetService<IInputManager>().ProcessInput = inputBool;
         }
+    }
+    public void SetLoadingValueBool()
+    {
+        variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager?.SetVariableValue($"LoadingValue","false");
     }
     public void ClickSlot()
     {
