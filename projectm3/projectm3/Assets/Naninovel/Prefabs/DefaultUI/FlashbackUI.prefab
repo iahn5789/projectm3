@@ -18218,7 +18218,10 @@ MonoBehaviour:
   scriptName: 
   scriptText: '@set FlashBackStart=true
 
-    @set FlashBackName="Test1.FlashBack01_01"'
+    @set FlashBackName="Test1.FlashBack01_01"
+
+    @hideUI
+    GamenoteUI'
   playOnAwake: 0
   disableWaitInput: 0
 --- !u!114 &3066041001020105551
@@ -35956,9 +35959,16 @@ PrefabInstance:
     - target: {fileID: 7332309386293319352, guid: cd42201cf26df7f4fb71d0fc3abc3292,
         type: 3}
       propertyPath: scriptText
-      value: '@hideUI FlashbackUI
+      value: '@showUI GamenoteUI time:0
+
+        @hideUI FlashbackUI
 
         @stop'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7332309386293319352, guid: cd42201cf26df7f4fb71d0fc3abc3292,
+        type: 3}
+      propertyPath: disableWaitInput
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9071754051996254591, guid: cd42201cf26df7f4fb71d0fc3abc3292,
         type: 3}
@@ -35968,7 +35978,7 @@ PrefabInstance:
     - target: {fileID: 9071754051996254591, guid: cd42201cf26df7f4fb71d0fc3abc3292,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9071754051996254591, guid: cd42201cf26df7f4fb71d0fc3abc3292,
         type: 3}
