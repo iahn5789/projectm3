@@ -18004,6 +18004,8 @@ GameObject:
   - component: {fileID: 6184794944578381191}
   - component: {fileID: 7715286800581685956}
   - component: {fileID: 5780511786648612473}
+  - component: {fileID: 3066483075798165029}
+  - component: {fileID: 3066041001020105551}
   m_Layer: 5
   m_Name: "Play01_\uC81C\uBAA9"
   m_TagString: Untagged
@@ -18082,7 +18084,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3066041001020105551}
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!95 &7715286800581685956
 Animator:
   serializedVersion: 3
@@ -18190,6 +18203,39 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3066483075798165029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4747820796409043587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptName: 
+  scriptText: '@set FlashBackStart=true
+
+    @set FlashBackName="Test1.FlashBack01_01"'
+  playOnAwake: 0
+  disableWaitInput: 0
+--- !u!114 &3066041001020105551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4747820796409043587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c931c76efa57445aa2b5fdf176514d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  excludeFromReset: []
+  playScript: {fileID: 3066483075798165029}
+  Unlock: {fileID: 3845103618904348568}
 --- !u!1 &4752530750105292000
 GameObject:
   m_ObjectHideFlags: 0
@@ -35983,6 +36029,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7347173098348214056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1838133297313796703 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8967858175628617079, guid: cd42201cf26df7f4fb71d0fc3abc3292,
+    type: 3}
+  m_PrefabInstance: {fileID: 7347173098348214056}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2594085867767077209 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4753105598311558769, guid: cd42201cf26df7f4fb71d0fc3abc3292,
@@ -35995,12 +36047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f1c5417c9d7ab4b84e531f83f60a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1838133297313796703 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8967858175628617079, guid: cd42201cf26df7f4fb71d0fc3abc3292,
-    type: 3}
-  m_PrefabInstance: {fileID: 7347173098348214056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8479900960556075419
 PrefabInstance:
   m_ObjectHideFlags: 0
