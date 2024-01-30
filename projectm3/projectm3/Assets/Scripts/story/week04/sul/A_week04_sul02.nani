@@ -1,6 +1,7 @@
 # week04_sul02
 @showUI CP
 
+@back ScLobby01
 describe: 대용이와 헤어지고 동아리실로 가기 위해 4층에 도착했다.
 describe: 동아리실이 있는 4층은 언제나 그렇듯 조용했다.
 describe: 평소에도 사람 한 명 없었지만 오늘은 특히나 더 조용했다.
@@ -10,47 +11,83 @@ describe: 손잡이를 돌려야 할지 말아야 할지 고민이었다.
 {Player_name}: (그래도... 들어가야겠지..?)
 {Player_name}: (아무 일도 없었던 것처럼 지낼 순 없겠지만.)
 {Player_name}: (만나서 이야기정도는 해봐야 되니까...)
+@hideChars wait:false
+@char labody1.22 pose:c wait:false
 la: 안녕?
 {Player_name}: 우왁!!
+@hideChars wait:false
+@char labody4.11 pose:c wait:false
 la: 여기서 뭐 하고 있어?
 describe: 들어가야 될지 말아야 될지 고민하던 와중 어느새 라은이 내 뒤로 와있었다.
 {Player_name}: 아니 난...
 {Player_name}: 너야말로 여기서 뭐 하고 있는 거야?
+@hideChars wait:false
+@char labody3.65 pose:c wait:false
 la: 그냥 심심해서 와봤지.
 {Player_name}: 신문부 회의 있는 거 아니었어?
 {Player_name}: 부장이 여기서 이러고 있어도 되는 거야?
+@char labody3.57 pose:c wait:false
 la: 회의..? 회의 있는 건 어떻게 알았...
+@char labody3.51 pose:c wait:false
 la: ...
+@char labody3.81 pose:c wait:false
 la: 아...
+@char labody3.84 pose:c wait:false
 la: 아니야. 회의는 뭐 늘 하는 건데.
+@char labody3.14 pose:c wait:false
 la: 잠깐 내가 없다고 문제 생길 일은 없어.
+@char labody3.11 pose:c wait:false
 la: 그러는 넌 무슨 일 있는 거야?
 {Player_name}: 무... 무슨 일 있냐니...
+@hideChars wait:false
+@char labody2.14 pose:c wait:false
 la: 안 들어가고 가만히 있길래.
+@char labody2.11 pose:c wait:false
 la: 문 밖에서 엿듣는 게 취미야?
+@hideChars wait:false
+@char labody4.64 pose:c wait:false
 la: 아니면 혹시 무슨 일이라도 있는 거야?
+@hideChars wait:false
+@char labody1.45 pose:c wait:false
 la: 혹시라도 무슨 일 있으면 나한테 말해!
+@char labody1.11 pose:c wait:false
 la: 친구 좋다는 게 뭐겠어.
 {Player_name}: 별일 없어...
 {Player_name}: 그냥 조금... 피곤해서 그래.
+@hideChars wait:false
+@char labody1.54 pose:c wait:false
 la: 그래?
-la: 요즘 바쁘게 지내나 봐. 많이 피곤한가 보내.
+@char labody1.22 pose:c wait:false
+la: 요즘 바쁘게 지내나 봐. 많이 피곤한가 보네.
 la: 뭐 하고 지냈어?
 {Player_name}: 그냥 뭐. 밴드 연습하고 있지.
 {Player_name}: 얼마 전에 콘서트도 다녀오고...
+@hideChars wait:false
+@char labody3.51 pose:c wait:false
 la: 콘서트..?
+@char labody3.54 pose:c wait:false
 la: 그 길거리에서 포스터 나눠 줬던 콘서트 말하는 거야?
 {Player_name}: 어? 어...
+@char labody3.14 pose:c wait:false
 la: 거기서 무슨 일이라도 있었어?
 {Player_name}: 무... 무슨 소리야..!?
+@char labody3.51 pose:c wait:false
 la: ..?
+@hideChars wait:false
+@char labody4.41 pose:bc wait:false
 la: 진짜로 무슨 일이 있긴 한가 보네?
+@char labody4.46 pose:bc wait:false
 la: 그냥 해 본 말인데 그렇게 반응하는 거 보니.
 {Player_name}: 아... 아니거든!
 {Player_name}: 나 먼저 가볼게!
+@hideChars wait:true time:0.5
 describe: 나는 라은을 피해 손잡이를 잡고 동아리실 안으로 들어갔다.
+@hideChars wait:false
+@char labody3.61 pose:bc wait:false
 la: ...
+@char labody3.61 pose:bc wait:false
 la: 흐음.
+@char labody3.62 pose:bc wait:false
 la: 콘서트라...
 
 @goto A_week04_sul03.week04_sul03

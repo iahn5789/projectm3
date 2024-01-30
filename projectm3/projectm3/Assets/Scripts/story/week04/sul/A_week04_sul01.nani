@@ -22,6 +22,7 @@
 @set Tutorial=End
 @showUI CP
 
+@back ScClassRoom02
 선생님: 여기서 화자가 말하고자 하는 것은...
 describe: 대용이와 콘서트를 다녀온 지 벌써 며칠이 지났다.
 describe: 시간이 좀 지났지만, 주말이 끼는 바람에 그날 이후로 처음 학교에 왔다.
@@ -57,63 +58,102 @@ describe: 빢!
 {Player_name}: 네...
 선생님: 수업 다시 시작한다.
 선생님: 위의 근거로 미루어 볼 때 정답은...
+
+@back ScClassRoom01
 일동: 수고하셨습니다!
 선생님: 그래. 다들 조심히 들어가고.
 describe: 그렇게 안 가던 시간은 순식간에 지나가버렸고 어느덧 하교시간이 되었다.
 describe: 평소 같았으면 책가방을 정리하고 동아리실로 향했겠지만...
 describe: 오늘만큼은 어떻게 해야 할지 몰랐다.
 {Player_name}: (동아리실로 가야 되는 건가..?)
+@char jeonbody2.11 pose:c wait:false
 jeon: {Player_name}! 잘 지냈냐고!
 {Player_name}: 어떻게 된 거야! 넌 괜찮아?
+@hideChars wait:false
+@char jeonbody4.32 pose:c wait:false
 jeon: 어이어이. 걱정해 주는 건 고맙지만 난 멀쩡하다고.
-전대용: 나를 꺾지 못하는 고통은 결국 나를 강하게 만든다..!
+@char jeonbody4.33 pose:c wait:false
+jeon: 나를 꺾지 못하는 고통은 결국 나를 강하게 만든다..!
 describe: 헛소리를 하는 걸 보니 대용이는 멀쩡한 모양이다.
 {Player_name}: 어떻게 됐는지 자세히 좀 말해봐.
+@hideChars wait:false
+@char jeonbody2.34 pose:bc wait:false
 jeon: 가끔 남자에게는 말 못 할 비밀들이 있지...
 jeon: 더는 묻지 마라...!
 {Player_name}: 그... 그래...
-전대용: 나 사나이 전대용...
-전대용: 적진에서 그렇게 빠져나온 것이 조금 걸리더군...
+@hideChars wait:false
+@char jeonbody4.32 pose:c wait:false
+jeon: 나 사나이 전대용...
+jeon: 적진에서 그렇게 빠져나온 것이 조금 걸리더군...
 {Player_name}: 난 괜찮아.
 {Player_name}: 다행히 나희 누...
+@hideChars wait:false
+@char jeonbody1.45 pose:c wait:false
 jeon: 응? 뭐라고?
 {Player_name}: 아... 아니! 아니야. 다행히 나도 너랑 헤어지고 잘 찾아 나갔어.
-전대용: 아니. 너 말고.
+@hideChars wait:false
+@char jeonbody3.45 pose:c wait:false
+jeon: 아니. 너 말고.
 {Player_name}: ..?
+@hideChars wait:false
+@char jeonbody2.31 pose:bc wait:false
 jeon: 그건 어떻게 됐지..?
 {Player_name}: 그거?
+@char jeonbody2.33 pose:bc wait:false
 jeon: 내가 전해주려던 선물! 너한테 대신 건네줬잖아.
+@hideChars wait:false
+@char jeonbody4.35 pose:bc wait:false
 jeon: 설마 잊어버리고 전해주지 못한 건 아니겠지?
 {Player_name}: 아... 아! 그거! 잘... 전해줬어...
+@hideChars wait:false
+@char jeonbody2.35 pose:c wait:false
 describe: 사실 선물이라면 아직도 가방 속에 처박혀 있지만...
 describe: 그날 있었던 일을 대용이에게 말할 수는 없었다.
+@hideChars wait:false
+@char jeonbody1.45 pose:c wait:false
 jeon: 전해줬다고? 직접 만난 거야?
+@hideChars wait:false
+@char jeonbody2.42 pose:bc wait:false
 jeon: 프리덤의실제얼굴을직접본거야?어떻게생겼지?피부는어때?얼굴은어때?연예인닮은사람있어?나이는어느정도될것같아?우리랑또래야?.....
 describe: 대용이는 내가 직접 만났다고 생각했는지 갑자기 흥분하며 말을 멈추지 않았다.
 describe: 물론 직접 만난 건 맞지만...
+@char jeonbody2.45 pose:bc wait:false
 {Player_name}: 직접 전해준 건 아니고...
 {Player_name}: 대기실 문 앞에다가 놔두고 왔어!
 describe: 직접 만난 건 맞지만 직접 만났다고 말할 수는 없었다.
+@hideChars wait:false
+@char jeonbody4.54 pose:c wait:false
 jeon: 흐음... 그런 건가.
 describe: 설명을 들은 대용이는 눈에 띄게 침울해졌다.
+@char jeonbody4.55 pose:c wait:false
 jeon: 아쉽지만 신사라면 이 정도로 만족할 줄도 알아야겠지.
 {Player_name}: 그... 그래! 분명 좋아했을 거야!
 {Player_name}: 진정한 신사라면 마음이 중요한 것 아니겠어?
+@char jeonbody4.15 pose:c wait:false
 jeon: ...
 jeon: {Player_name}...
 {Player_name}: 응..?
 describe: 대용이의 표정이 사뭇 진지해졌다.
+@hideChars wait:false
+@char jeonbody1.12 pose:bc wait:false
 jeon: 너도 점점 어엿한 신사가 되어가는군!
+@char jeonbody1.22 pose:bc wait:false
 jeon: 좋아. 그렇게만 하라고!
 {Player_name}: 하하하... 그래...
 describe: 다행히 대용이는 무슨 일이 있었는지 짐작조차 못하는 모양이었다.
+@hideChars wait:false
+@char jeonbody3.12 pose:c wait:false
 jeon: 그러면 이제 가는 건가?
 {Player_name}: 간다니? 어딜?
 jeon: 어디긴! 당연히 동아리실이지. 동아리 활동 열심히 하고 있지 않았나?
 {Player_name}: 아... 동아리! 가야지... 가야지...
 {Player_name}: 너는 어디가?
+@char jeonbody3.42 pose:c wait:false
 jeon: 나도 동아리 활동 하러 가야지. 오늘 신문부 회의가 있거든.
+@hideChars wait:false
+@char jeonbody2.22 pose:c wait:false
 jeon: 그 말은 즉 부장도 온다는...
 {Player_name}: 그래. 나 먼저 가볼게!
+@hideChars wait:false
 
 @goto A_week04_sul02.week04_sul02
