@@ -10,6 +10,7 @@ public class CheckInputName : MonoBehaviour
 {
     public Text nameTextField;
     public GameObject DeleteText;
+    private ICustomVariableManager variableManager;
 
 
     public void OnClickButton(DemoLoadScene demoLoadScene)
@@ -17,7 +18,7 @@ public class CheckInputName : MonoBehaviour
         if (nameTextField != null)
         {
             string textFieldValue = nameTextField.text.Trim(); // 공백 제거
-            var variableManager = Engine.GetService<ICustomVariableManager>();
+            variableManager = Engine.GetService<ICustomVariableManager>();
             var gotoHendler = Engine.GetService<IEngineService>();
             if (string.IsNullOrEmpty(textFieldValue))
             {
@@ -59,10 +60,30 @@ public class CheckInputName : MonoBehaviour
         var inputHideUI = new List<string>() {"InputNameUI"};
         var hideUI = new HideUI{UINames = inputHideUI};
         hideUI.ExecuteAsync();
-        // Naninovel Goto 문
-        var inputRoot = new NamedString("A_prologue_01", "GameStart");
-        var Goto = new Goto { Path = inputRoot };
-        Goto.ExecuteAsync();
+        bool FlashBackStart = bool.Parse(variableManager.GetVariableValue("FlashBackStart"));
+        string FlashBackName = variableManager.GetVariableValue("FlashBackName");
+        if (FlashBackStart)
+        {
+            // Naninovel Goto 문
+            string[] splitParts = FlashBackName.Split(new char[] { '.' }, 2);
+            if (splitParts.Length == 2)
+            {
+                var inputRoot = new NamedString(splitParts[0], splitParts[1]);
+                var Goto = new Goto { Path = inputRoot };
+                Goto.ExecuteAsync();
+            }
+            else
+            {
+                Debug.Log("Error");
+            }
+        }
+        else
+        {
+            // Naninovel Goto 문
+            var inputRoot = new NamedString("A_prologue_01", "GameStart");
+            var Goto = new Goto { Path = inputRoot };
+            Goto.ExecuteAsync();
+        }
     }
     private IEnumerator Wait3Second()
     {
