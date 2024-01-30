@@ -31233,6 +31233,7 @@ GameObject:
   - component: {fileID: 934268191069171985}
   - component: {fileID: 6849898764054494196}
   - component: {fileID: 4536868728333620331}
+  - component: {fileID: 6804011617740834904}
   m_Layer: 5
   m_Name: StoryboardUI
   m_TagString: Untagged
@@ -31292,6 +31293,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6804011617740834904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873498860638096085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46e972f533b2d94b964cda91d19d7c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1876376999002785159
 GameObject:
   m_ObjectHideFlags: 0
@@ -62174,6 +62187,17 @@ MonoBehaviour:
           m_StringArgument: StoryBoard_In
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6804011617740834904}
+        m_MethodName: OnStoryBoard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: StoryBoard_In
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 2154150274867395756}
         m_MethodName: StoryBoardSelectedCheck
         m_Mode: 1
@@ -74515,7 +74539,7 @@ MonoBehaviour:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
+    m_SelectedTrigger: 
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 6343356934097163233}

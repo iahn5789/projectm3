@@ -335,6 +335,7 @@ public class TestSceneUIManager : MonoBehaviour
         if (selected != "" && selecteded == "")
         {
             variableManager.SetVariableValue("Selected", "");
+            Debug.Log("Selected Null input in SetSelectedValue");
             variableManager.SetVariableValue("Selecteded", selected);
         }
     }
@@ -465,9 +466,12 @@ public class TestSceneUIManager : MonoBehaviour
         if (variableManager == null)
             variableManager = Engine.GetService<ICustomVariableManager>();
         string Selected = variableManager?.GetVariableValue("Selected");
+        bool StoryBoard_Boolen = bool.Parse(variableManager?.GetVariableValue("StoryBoard_In_Boolen"));
+        Debug.Log("StoryBoardSelectedCheck : "+StoryBoard_Boolen);
+        //StoryBoard_In_Boolen
         if (!SecretMessage.GetCurrentAnimatorStateInfo(0).IsName("SecretMessage_In"))
         {
-            if (!StoryboardUIAnim.GetCurrentAnimatorStateInfo(0).IsName("StoryBoard_Out"))
+            if (StoryBoard_Boolen)
             {
                 if (Selected == "Kang")
                 {
@@ -484,6 +488,7 @@ public class TestSceneUIManager : MonoBehaviour
                 else if (Selected == "Sul")
                 {
                     //설나희 보드 눌려있는 상태 유지
+                    Debug.Log("Sulllllllllllllllllll");
                     SecretMessage.Play("SecretMessageCheckIn");
                     SetActiveTSPM();
                 }
@@ -765,6 +770,7 @@ public class TestSceneUIManager : MonoBehaviour
             if (selected != "" && selecteded == "")
             {
                 variableManager.SetVariableValue("Selected", "");
+                Debug.Log("Selected Null input in TutorialObjectOn");
                 variableManager.SetVariableValue("Selecteded", selected);
             }
         }
