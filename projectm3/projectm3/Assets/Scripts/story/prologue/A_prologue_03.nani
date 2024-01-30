@@ -1,5 +1,6 @@
 # prologue_03
 @set "WeekTitle=\"전대용 등장!\""
+@set LoadingValue=true
 @processInput false
 @stopBgm BGM_Map_Friendly_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
@@ -12,6 +13,7 @@
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 describe: 교무실에서 나와 집으로 가기 위해 학교를 나가고 있었다.
 describe: 아무도 없는 학교는 어쩐지 황량한 느낌이 들었다.
 @sfx Amb_Cold_Wind_01 volume:80 loop:false fade:1 wait:false
@@ -22,6 +24,7 @@ describe: 그 때.
 ???: 오늘도 깊은 밤 꿈속에서 당신을 구하는 최고의 히어로!
 ???: 그 이름은 아름다운 러브크레센도!
 {Player_name}: 하...
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
@@ -29,10 +32,12 @@ describe: 그 때.
 @back Black time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 @char jeonbody2.11 position:0,-8 scale:0.4,0.4 wait:false
 describe: 전대용
 describe: 전학을 온 뒤 친해진 유일한 친구다.
 describe: 첫인상과는 다르게 의외로 재미있고 아는 것도 제법 많지만...
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:false
@@ -41,6 +46,7 @@ describe: 첫인상과는 다르게 의외로 재미있고 아는 것도 제법 
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 {Player_name}: 변태다...
 @char jeonbody1.24 pose:c wait:false
 jeon: {Player_name}! 소문 다 들었다고!
@@ -67,6 +73,7 @@ jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
 jeon: 더는 묻지마라...!
 {Player_name}: 어... 그래...
 {Player_name}: (역시 변태다.)
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -79,6 +86,7 @@ jeon: 더는 묻지마라...!
 @back Road01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:2 wait:false
 describe: 대용이와 함께 학교에서 나와 집으로 걸어가고 있었다.
 describe: 확실히 시간이 시간인지라 낮보다는 더 시원했다.
