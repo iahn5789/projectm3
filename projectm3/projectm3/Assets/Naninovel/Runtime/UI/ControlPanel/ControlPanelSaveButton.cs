@@ -30,13 +30,15 @@ namespace Naninovel.UI
         public void OnClick (string InputKey)
         {
             uiManager.GetUI<IPauseUI>()?.Hide();
-
+            variableManager = Engine.GetService<ICustomVariableManager>();
+            bool FlashBackStart = bool.Parse(variableManager.GetVariableValue("G_FlashBackStart"));
             var saveLoadUI = uiManager.GetUI<ISaveLoadUI>();
             var saveLoadUI_Load = uiManager.GetUI<ISaveLoadUI>();
+            if (FlashBackStart) return;
             if (saveLoadUI is null) return;
             if (!Engine.GetService<IInputManager>().ProcessInput) return;
 
-            variableManager = Engine.GetService<ICustomVariableManager>();
+            
             variableManager?.SetVariableValue($"InputKeyValue", InputKey);
             autoButtonAnim.SetTrigger("UIHide");
 
