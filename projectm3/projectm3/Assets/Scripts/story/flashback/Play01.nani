@@ -1,0 +1,27 @@
+# FlashBack
+; 회상 시작(지우면 안 돼)
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP2 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScLobby02 time:0.5 wait:true
+@showUI CP2 wait:false
+@processInput true
+
+{Player_name}: 내 이름은 {Player_name}.
+{Player_name}: 테스트 1번
+
+; 회상 종료(지우면 안 돼)
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP2 wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@skip false
+@resetState  only:ICharacterManager,IBackgroundManager
+@goto FlashbackUI
+@stop
