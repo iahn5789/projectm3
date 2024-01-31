@@ -60,10 +60,13 @@ public class CheckInputName : MonoBehaviour
         var inputHideUI = new List<string>() {"InputNameUI"};
         var hideUI = new HideUI{UINames = inputHideUI};
         hideUI.ExecuteAsync();
-        bool FlashBackStart = bool.Parse(variableManager.GetVariableValue("FlashBackStart"));
-        string FlashBackName = variableManager.GetVariableValue("FlashBackName");
+        bool FlashBackStart = bool.Parse(variableManager.GetVariableValue("G_FlashBackStart"));
+        string FlashBackName = variableManager.GetVariableValue("G_FlashBackName");
+        Debug.Log("?" + FlashBackStart);
+        Debug.Log("?" + FlashBackName);
         if (FlashBackStart)
         {
+            Debug.Log("?");
             // Naninovel Goto 문
             string[] splitParts = FlashBackName.Split(new char[] { '.' }, 2);
             if (splitParts.Length == 2)

@@ -35,7 +35,7 @@ public class FlashBackManager : MonoBehaviour
         {
             stateManager.ResetStateAsync(excludeFromReset,
                 () => scriptPlayer.PreloadAndPlayAsync(startScriptName)).Forget();
-            // playScript.Play();
+            playScript.Play();
             Debug.Log("Unlock");
         }
         Debug.Log("OnButtonClick");
