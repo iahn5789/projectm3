@@ -1,38 +1,28 @@
 # FlashBack01_01
+; 회상 시작(지우면 안 돼)
 @processInput false
 @hideChars time:0.5 wait:false
-@hideUI CP wait:false
+@hideUI CP2 wait:false
 @hidePrinter  time:0.5 wait:true
-@bgm BGM_Map_Cool_01 volume:75 loop:true fade:1 wait:false
-@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScLobby02 time:0.5 wait:true
-@showUI CP wait:false
+@showUI CP2 wait:false
 @processInput true
-describe: 수업이 끝난 학교에서 학생들은 모두 집으로 가고 없었다.
-describe: 밴드부가 있다는 4층까지 가는 도중 단 한 명의 학생도 만날 수 없었다.
-{Player_name}: 생각보다 높네...
-{Player_name}: 4층 과학실이... 여기서 어디로 가야 하더라?
-@char labody1.11 pose:c wait:false
-???: 안녕?
-{Player_name}: 우왁!!
-describe: 어느샌가 처음 보는 여학생이 등 뒤에 서 있었다.
-{Player_name}: 누...누...누구...세요..?
-@char labody1.12 wait:false
-???: 반가워.
-describe: 눈 앞의 여학생은 어딘지 모르게 감정이 없어 보이는 표정이었다.
-{Player_name}: 저... 저요..?
+
+{Player_name}: 내 이름은 {Player_name}.
+{Player_name}: 테스트 1번
+
+; 회상 종료(지우면 안 돼)
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
-@hideUI CP wait:false
+@hideUI CP2 wait:false
 @hidePrinter  time:0.5 wait:true
-@bgm BGM_Map_Cool_01 volume:75 loop:true fade:1 wait:false
-@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @skip false
+@set G_FlashBackStart=false
 @resetState only:ICharacterManager,IBackgroundManager
 @goto FlashbackUI
 @stop
