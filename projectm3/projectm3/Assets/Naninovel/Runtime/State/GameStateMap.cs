@@ -36,7 +36,7 @@ namespace Naninovel
         /// <summary>
         /// Preview of the screen when the snapshot was taken.
         /// </summary>
-        public Texture2D Thumbnail { get; set; }
+        public Sprite Thumbnail { get; set; }
         /// <summary>
         /// Whether player is allowed rolling back to this snapshot; see remarks for more info.
         /// </summary>
@@ -77,7 +77,17 @@ namespace Naninovel
             weekTitle = WeekTitle;
             selected = Selected;
 
-            thumbnailBase64 = Thumbnail ? Convert.ToBase64String(Thumbnail.EncodeToJPG()) : null;
+            if (Thumbnail != null)
+            {
+                // Sprite를 Texture2D로 변환
+                Texture2D texture = Thumbnail.texture;
+                // Texture2D를 JPG 이미지로 인코딩하여 Base64로 변환
+                thumbnailBase64 = Convert.ToBase64String(texture.EncodeToJPG());
+            }
+            else
+            {
+                thumbnailBase64 = null;
+            }
         }
 
         public override void OnAfterDeserialize ()
@@ -88,7 +98,7 @@ namespace Naninovel
             Week = string.IsNullOrEmpty(week) ? "" : week;
             WeekTitle = string.IsNullOrEmpty(weekTitle) ? "" : weekTitle;
             Selected = string.IsNullOrEmpty(selected) ? null : selected;
-            Thumbnail = string.IsNullOrEmpty(thumbnailBase64) ? null : GetThumbnail();
+            Thumbnail = string.IsNullOrEmpty(thumbnailBase64) ? null : GetSpriteFromBase64();
         }
 
         /// <summary>
@@ -108,5 +118,19 @@ namespace Naninovel
             tex.LoadImage(Convert.FromBase64String(thumbnailBase64));
             return tex;
         }
+        public Sprite GetSpriteFromBase64()
+        {
+            if (string.IsNullOrEmpty(thumbnailBase64))
+                return null;
+
+            byte[] imageBytes = Convert.FromBase64String(thumbnailBase64);
+            Texture2D texture = new Texture2D(2, 2); // Texture2D 생성
+            texture.wrapMode = TextureWrapMode.Clamp;
+            texture.LoadImage(imageBytes); // Base64 문자열을 Texture2D로 변환
+            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
+            return sprite; // Texture2D를 Sprite로 변환하여 반환
+        }
+
+
     }
 }

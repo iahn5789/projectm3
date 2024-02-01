@@ -21,12 +21,12 @@ namespace Naninovel.UI
         protected static string EmptySlotLabel = "빈 슬롯";
 
         protected virtual Button DeleteButton => deleteButton;
-        protected virtual RawImage ThumbnailImage => thumbnailImage;
-        protected virtual Texture2D EmptySlotThumbnail => emptySlotThumbnail;
-        protected virtual Texture2D CommonTestSceneThumbnail => CommontestSceneThumbnail;
-        protected virtual Texture2D KangTestSceneThumbnail => KangtestSceneThumbnail;
-        protected virtual Texture2D JinTestSceneThumbnail => JintestSceneThumbnail;
-        protected virtual Texture2D SulTestSceneThumbnail => SultestSceneThumbnail;
+        protected virtual Image ThumbnailImage => thumbnailImage;
+        protected virtual Sprite EmptySlotThumbnail => emptySlotThumbnail;
+        protected virtual Sprite CommonTestSceneThumbnail => CommontestSceneThumbnail;
+        protected virtual Sprite KangTestSceneThumbnail => KangtestSceneThumbnail;
+        protected virtual Sprite JinTestSceneThumbnail => JintestSceneThumbnail;
+        protected virtual Sprite SulTestSceneThumbnail => SultestSceneThumbnail;
         protected virtual GameObject ThumbnailTextWeek => ThumbnailtextWeek;
 
         [Tooltip("제목에 설정된 날짜 형식. 사용 가능한 옵션은 C# 문서에서 날짜 및 시간 형식 문자열을 참조하십시오.")]
@@ -34,12 +34,13 @@ namespace Naninovel.UI
         [Tooltip("제목 템플릿. '{N}'은 슬롯 번호 '{D}' - 날짜(또는 슬롯이 비어 있는 경우 레이블이 비어 있음)로 대체됩니다.")]
         [SerializeField] private string titleTemplate = "{N}. {D}";
         [SerializeField] private Button deleteButton;
-        [SerializeField] private RawImage thumbnailImage;
-        [SerializeField] private Texture2D emptySlotThumbnail;
-        [SerializeField] private Texture2D CommontestSceneThumbnail;
-        [SerializeField] private Texture2D KangtestSceneThumbnail;
-        [SerializeField] private Texture2D JintestSceneThumbnail;
-        [SerializeField] private Texture2D SultestSceneThumbnail;
+        // [SerializeField] private RawImage thumbnailImage;
+        [SerializeField] private Image thumbnailImage;
+        [SerializeField] private Sprite emptySlotThumbnail;
+        [SerializeField] private Sprite CommontestSceneThumbnail;
+        [SerializeField] private Sprite KangtestSceneThumbnail;
+        [SerializeField] private Sprite JintestSceneThumbnail;
+        [SerializeField] private Sprite SultestSceneThumbnail;
         [SerializeField] private GameObject ThumbnailtextWeek;
         [SerializeField] private OnTitleTextChangedEvent onTitleTextChanged;
 
@@ -71,7 +72,7 @@ namespace Naninovel.UI
                 ThumbnailTextWeek.SetActive(false);
                 DeleteButton.gameObject.SetActive(false);
                 SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", EmptySlotLabel),"","","");
-                ThumbnailImage.texture = EmptySlotThumbnail;
+                ThumbnailImage.sprite = emptySlotThumbnail;
             }
             else
             {
@@ -85,7 +86,7 @@ namespace Naninovel.UI
                     thumbnailText.text = state.Week;
                     if (state.Week == "2" || state.Week == "1")
                     {
-                        ThumbnailImage.texture = CommonTestSceneThumbnail;
+                        ThumbnailImage.sprite = CommonTestSceneThumbnail;
                         ColorUtility.TryParseHtmlString("#CB0000", out Color color); // 빨간색
                         thumbnailText.color = color;
                     }
@@ -93,19 +94,19 @@ namespace Naninovel.UI
                     {
                         if (state.Selected == "Kang")
                         {
-                            ThumbnailImage.texture = KangTestSceneThumbnail;
+                            ThumbnailImage.sprite = KangTestSceneThumbnail;
                             ColorUtility.TryParseHtmlString("#D84E00", out Color color); // 오렌지색
                             thumbnailText.color = color;
                         }
                         else if (state.Selected == "Jin")
                         {
-                            ThumbnailImage.texture = JinTestSceneThumbnail;
+                            ThumbnailImage.sprite = JinTestSceneThumbnail;
                             ColorUtility.TryParseHtmlString("#D144BB", out Color color); // 오렌지색
                             thumbnailText.color = color;
                         }
                         else if (state.Selected == "Sul")
                         {
-                            ThumbnailImage.texture = SulTestSceneThumbnail;
+                            ThumbnailImage.sprite = SulTestSceneThumbnail;
                             ColorUtility.TryParseHtmlString("#3800D9", out Color color); // 오렌지색
                             thumbnailText.color = color;
                         }
@@ -114,7 +115,7 @@ namespace Naninovel.UI
                 else
                 {
                     ThumbnailTextWeek.SetActive(false);
-                    ThumbnailImage.texture = state.Thumbnail;
+                    ThumbnailImage.sprite = state.Thumbnail;
                 }
             }
         }
@@ -141,11 +142,16 @@ namespace Naninovel.UI
             this.AssertRequiredObjects(DeleteButton, ThumbnailImage);
 
             if (!EmptySlotThumbnail)
-                emptySlotThumbnail = Texture2D.whiteTexture;
+            {
+                // 'emptySlotThumbnail'을 직접 사용하여 'ThumbnailImage.sprite'를 설정
+                ThumbnailImage.sprite = emptySlotThumbnail;
+            }
+
             DeleteButton.TryGetComponent<ScriptableUIBehaviour>(out deleteButtonBehaviour);
             DeleteButton.onClick.AddListener(HandleDeleteButtonClicked);
             variableManager = Engine.GetService<ICustomVariableManager>();
         }
+
 
         protected override void OnDestroy ()
         {

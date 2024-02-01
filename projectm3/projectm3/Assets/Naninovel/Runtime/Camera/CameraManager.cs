@@ -163,20 +163,20 @@ namespace Naninovel
             LookController.Enabled = enabled;
         }
 
-        public virtual Texture2D CaptureThumbnail ()
+        public virtual Sprite CaptureThumbnail()
         {
             if (Configuration.HideUIInThumbnails)
                 RenderUI = false;
-
+        
             var disabledCanvases = Engine.GetService<IUIManager>()
                 .GetManagedUIs().OfType<CustomUI>()
                 .Where(u => u.HideInThumbnail && u.TopmostCanvas.enabled)
                 .Select(u => u.TopmostCanvas).ToArray();
             foreach (var canvas in disabledCanvases)
                 canvas.enabled = false;
-
+        
             var initialRenderTexture = Camera.targetTexture;
-
+        
             #if URP_AVAILABLE
             CaptureUI();
             CaptureMain();
@@ -184,25 +184,26 @@ namespace Naninovel
             CaptureMain();
             CaptureUI();
             #endif
-
-            var thumbnail = thumbnailRenderTexture.ToTexture2D();
-
+        
+            var thumbnailTexture = thumbnailRenderTexture.ToTexture2D();
+        
             foreach (var canvas in disabledCanvases)
                 canvas.enabled = true;
-
+        
             if (Configuration.HideUIInThumbnails)
                 RenderUI = true;
-
-            return thumbnail;
-
-            void CaptureMain ()
+        
+            // Texture2D에서 Sprite로 변환하여 반환
+            return Sprite.Create(thumbnailTexture, new Rect(0, 0, thumbnailTexture.width, thumbnailTexture.height), Vector2.one * 0.5f);
+        
+            void CaptureMain()
             {
                 Camera.targetTexture = thumbnailRenderTexture;
                 ForceTransitionalSpritesUpdate();
                 Camera.Render();
                 Camera.targetTexture = initialRenderTexture;
-
-                void ForceTransitionalSpritesUpdate ()
+        
+                void ForceTransitionalSpritesUpdate()
                 {
                     var updateMethod = typeof(TransitionalSpriteRenderer).GetMethod("Update", BindingFlags.NonPublic | BindingFlags.Instance);
                     if (updateMethod is null) throw new Error("Failed to locate `Update` method of transitional sprite renderer.");
@@ -211,8 +212,8 @@ namespace Naninovel
                         updateMethod.Invoke(sprite, null);
                 }
             }
-
-            void CaptureUI ()
+        
+            void CaptureUI()
             {
                 if (!RenderUI || !Configuration.UseUICamera) return;
                 initialRenderTexture = UICamera.targetTexture;

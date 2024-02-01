@@ -50,7 +50,7 @@ namespace Naninovel
         /// <summary>
         /// Save current content of the screen to be used as a thumbnail (eg, for save slots).
         /// </summary>
-        Texture2D CaptureThumbnail ();
+        Sprite CaptureThumbnail ();
         /// <summary>
         /// Modifies <see cref="Offset"/> over time.
         /// </summary>
