@@ -36,6 +36,8 @@ public class MinigameGachaManager : MonoBehaviour
     private ICustomVariableManager variableManager;
     public bool Reposition = false;
     public Text ResultMoney;
+    public AudioSource Block_Select;
+    public AudioSource Block_Drop;
     // 20회 도달시 뽑기 버튼 강제 클릭이 필요함 
     public void Start()
     {
@@ -279,6 +281,8 @@ public class MinigameGachaManager : MonoBehaviour
     {
         if (Selected_block == -1)
         {
+            Block_Select.Play();
+            Debug.Log("Select Play");
             if (Pegs == 1)
             {
                 if (PegsA.Count > 0)
@@ -319,6 +323,8 @@ public class MinigameGachaManager : MonoBehaviour
         }
         else
         {
+            Block_Drop.Play();
+            Debug.Log("Drop Play");
             if (Pegs == 1)
             {
                 if (Selected_Pegs != 1 && (PegsA.Count == 0 || Selected_block < PegsA.Peek() || PegsA.Peek() <= -1 ))
