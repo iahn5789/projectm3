@@ -20,9 +20,19 @@
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
-@showUI CP
 
-@back ScClub01
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: ...
 {Player_name}: 선명해지는 네 모습
 {Player_name}: 너를 이루고 싶어 이뤄내고 싶어

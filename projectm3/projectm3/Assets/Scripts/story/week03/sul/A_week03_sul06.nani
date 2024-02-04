@@ -1,5 +1,16 @@
 # week03_sul06
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Sul02 time:0.5 wait:true
 @showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 {Player_name}: 어?
 {Player_name}: 내가 잘못 보고 있는 건가?
@@ -13,18 +24,6 @@ describe: 그리고 보이는 공연 때 봤던 헬맷까지.
 describe: 1초도 안 되는 짧은 순간동안 많은 생각들이 머릿속을 스쳐 지나갔다.
 {Player_name}: ( 설마... )
 {Player_name}: 나희... 누나..?
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
-@char sulbody1.15 pose:c wait:false
 sul: ...
 describe: 나희 누나는 말없이 나를 쳐다보고만 있었다.
 {Player_name}: 아! 아니 이게 다름이 아니라...
@@ -36,41 +35,46 @@ describe: 무슨 말을 해야 할지, 그리고 무슨 말을 해도 이상한 
 {Player_name}: ( 미치겠네 진짜... )
 {Player_name}: ( 아무리 봐도 변태 그 자체잖아 이건. )
 {Player_name}: ( 이 오해를 도대체 어떻게 풀지..? )
-describe: 공란(대화창만 띄우고 대사 x, 발걸음 소리만 넣기, 점점 가까워지는 소리)
-@hideChars wait:false
-보안요원 1: 잠깐.. 저기서 무슨 소리 들리는데?
-보안요원 2: 저기 출연자 대기실 쪽 아니야?
-@char sulbody1.11 pose:c wait:false
+보안요원A: 잠깐.. 저기서 무슨 소리 들리는데?
+보안요원B: 저기 출연자 대기실 쪽 아니야?
 {Player_name}: ..!
 {Player_name}: 어.. 나희 누나..? 저 먼저 가볼게요!
 sul: ...
 {Player_name}: 저 진짜 이상한 상황인 건 알겠는데... 제가 나중에 설명...
-@char sulbody1.110 pose:c wait:false
 sul: ...기다려봐.
-@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 나희 누나는 헬맷을 챙겨서 쓰고는 방 밖으로 나가며 문을 닫았다.
 describe: 방에는 나 혼자와 나희 누나의 흔적만 남아 있었다.
-보안요원 1: 혹시 괜찮으신가요?
-@char sulbody3.11 pose:c wait:false
+보안요원A: 혹시 괜찮으신가요?
 sul: 네?
 describe: 문 밖에서 나희 누나가 헬맷을 쓴 채 보안요원들과 대화하고 있었다.
-보안요원 2: 신원 미상의 인물이 돌아다니고 있어서 보안팀에서 순찰 중입니다.
-보안요원 2: 혹시 수상한 사람 못 보셨나요?
+보안요원B: 신원 미상의 인물이 돌아다니고 있어서 보안팀에서 순찰 중입니다.
+보안요원B: 혹시 수상한 사람 못 보셨나요?
 sul: 아뇨. 이 근처에서는 못 본 것 같아요.
-@char sulbody3.81 pose:c wait:false
 sul: 아! 그러고 보니...
-보안요원 1: 무슨 일이시죠?
+보안요원A: 무슨 일이시죠?
 sul: 잠깐 화장실 가려고 나왔는데 이상한 소리가 들렸어요.
-@char sulbody3.11 pose:c wait:false
 sul: 제대로 보진 못했는데 아마 저 끝으로 갔을 거예요.
-보안요원 2: 몇 분 정도 지났는지 알 수 있을까요?
+보안요원B: 몇 분 정도 지났는지 알 수 있을까요?
 sul: 한 3분에서 5분 정도 지났어요.
-보안요원 1: 심려 끼쳐드려 죄송합니다. 신속히 해결하도록 하겠습니다.
+보안요원A: 심려 끼쳐드려 죄송합니다. 신속히 해결하도록 하겠습니다.
 sul: 아니에요. 괜찮습니다.
 sul: 그럼 이만.
-@hideChars wait:false
 describe: 보안요원들의 발소리가 멀어지는 게 들렸다.
 describe: 잠시 후 문이 열리고 나희 누나가 헬맷을 벗으며 들어왔다.
+
 @char sulbody2.11 pose:c wait:false
 sul: ...
 {Player_name}: ...
@@ -112,6 +116,7 @@ describe: 나...
 describe: 동아리 그만두어야 되는 걸까?
 
 ;변수 초기화(주의)
+@set LoadingValue=true
 @processInput false
 @skip false
 @hideChars time:0.5 wait:false
@@ -119,6 +124,7 @@ describe: 동아리 그만두어야 되는 걸까?
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@set LoadingValue=false
 @set KangWeek=3
 @set JinWeek=3
 @set SulWeek=3

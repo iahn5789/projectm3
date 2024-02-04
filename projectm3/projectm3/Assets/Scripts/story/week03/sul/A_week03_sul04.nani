@@ -1,5 +1,16 @@
 # week03_sul04
-@showUI CP
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 describe: 콘서트장에 도착하니 어느덧 날이 어두워져 있었다.
 describe: 근처라는 대용이의 말과는 다르게 콘서트장은 제법 떨어져 있었다.
@@ -136,16 +147,5 @@ jeon: 다..당연하지!
 jeon: 절대 그럴 일 없어! 나만 따라오라고!
 describe: 그렇게 대용이와 함께 비밀스럽게 무대 뒤편으로 향했다.
 @hideChars wait:false
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Dream time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
 
 @goto A_week03_sul05.week03_sul05
