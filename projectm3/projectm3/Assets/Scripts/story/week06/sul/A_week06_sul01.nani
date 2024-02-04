@@ -20,12 +20,28 @@
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
-@showUI CP
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@spawn DigitalGlitch params:60,0.2 wait:false
+@char sulbody3.71 pose:bc wait:false
 {Player_name}: 나희 누나...
 {Player_name}: 괜찮으세요..?
+@char sulbody3.65 pose:bc wait:false
 sul: ...
+@char sulbody3.75 pose:bc wait:false
 sul: 미안...
+@hideChars time:0.5 wait:false
 describe: 나희 누나는 미안하다는 말과 함께 몸을 돌려 반대쪽으로 걸어갔다.
 describe: 미안하다고 말하는 나희 누나의 표정은 누구보다도 슬퍼 보였다.
 describe: 나는 떠나는 나희 누나의 뒷모습을 바라보고 있었다.
@@ -52,4 +68,5 @@ describe: 차라리 내가 못해서 그런 거였다면 좋겠지만...
 {Player_name}: (도대체...)
 {Player_name}: (도대체 어디서부터 잘못된 거지..?)
 
+@despawn DigitalGlitch
 @goto A_week06_sul02.week06_sul02

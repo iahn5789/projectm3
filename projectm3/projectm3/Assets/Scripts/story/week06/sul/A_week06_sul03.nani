@@ -1,17 +1,17 @@
 # week06_sul03
-@showUI CP
 
-{Player_name}: 라은! 일단 도망가...
-describe: 주변을 둘러보니 라은은 이미 사라지고 없었다.
-{Player_name}: (어떡하지? 라은이 없으니 그냥 알려줘도 되지 않을까?)
-{Player_name}: ...
-{Player_name}: (아니야... 나희 누나도 보안요원들한테까지 철저히 숨기는데...)
-{Player_name}: (나 살자고 나희 누나를 실망시킬 순 없지.)
-{Player_name}: (게다가... 몰래 듣고 있기라도 한다면..!)
-describe: 달려오는 보안요원을 마주 본 채 나는 숨을 들이마 쉬었다.
-{Player_name}: 후웁..!
-보안요원1: 가만히 있어!
-{Player_name}: 안녕히 계세요!!
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 보안요원을 피해 경기장 밖으로 나왔다.
 describe: 누군가에게 다시는 쫓기는 경험은 한 번으로 충분하다고 생각했지만...
 describe: 두 번째라 그런지는 몰라도 처음보다는 쉽게 도망친 것 같았다.
@@ -25,17 +25,24 @@ describe: 다만 차이점이 있다면, 오늘은 평소보다 유달리 사람
 ???: 야!!!
 describe: 그때 어딘가 익숙한 목소리가 들려왔다.
 {Player_name}: 뭐지..?
+@char labody4.44 pose:c wait:false
 la: {Player_name}! 날 버려놓고 혼자서 도망가?!
 {Player_name}: 라은..?
+@hideChars time:0.5 wait:false
 describe: 멀리서 라은이 내 이름을 부르며 달려오고 있었다.
 {Player_name}: (뭐야. 대기실에 숨어있던 거 아니었어?)
 {Player_name}: (지금 만나서 이것저것 물어보면 곤란한데...)
 {Player_name}: 자... 잠깐!
+@char labody2.74 pose:bc wait:false
 la: 잠깐은 무슨! 거기 안 서?
 {Player_name}: 왜 쫓아오는 건데?
+@char labody2.46 pose:bc wait:false
 la: 그러는 너는 왜 도망가는 건데!
 {Player_name}: 네가 쫓아오니까 도망가지!
+@char labody2.74 pose:bc wait:false
 la: 네가 도망가니까 쫓아가지!!
+@char labody2.84 pose:bc wait:false
 la: 거기 안 서?! 기다려!!
+@hideChars time:0.5 wait:false
 
 @goto A_week06_sul04.week06_sul04
