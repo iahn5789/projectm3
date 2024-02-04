@@ -114,5 +114,16 @@ describe: 다행히 대용이는 잡히지 않은 듯했다.
 {Player_name}: 이대로 있다간 들킬 것 같은데...
 {Player_name}: 선물이고 뭐고 일단 숨자!
 describe: 끼익-!
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Sul02 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 @goto A_week03_sul06.week03_sul06

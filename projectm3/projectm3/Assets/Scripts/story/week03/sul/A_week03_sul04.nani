@@ -136,5 +136,16 @@ jeon: 다..당연하지!
 jeon: 절대 그럴 일 없어! 나만 따라오라고!
 describe: 그렇게 대용이와 함께 비밀스럽게 무대 뒤편으로 향했다.
 @hideChars wait:false
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Dream time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 @goto A_week03_sul05.week03_sul05

@@ -68,5 +68,15 @@ sul: 수고했어.
 @hideChars wait:false
 describe: 나희 누나는 내 말을 들었는지 못 들었는지 대답하지 않은 채 나갔다.
 describe: 늘 그랬듯, 내 손에 남은 건 빗자루밖에 없었다.
-
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScMaingate01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 @goto A_week03_sul03.week03_sul03
