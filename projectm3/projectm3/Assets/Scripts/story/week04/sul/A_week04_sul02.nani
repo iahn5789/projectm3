@@ -1,7 +1,18 @@
 # week04_sul02
 @showUI CP
 
-@back ScLobby01
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScLobby01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 대용이와 헤어지고 동아리실로 가기 위해 4층에 도착했다.
 describe: 동아리실이 있는 4층은 언제나 그렇듯 조용했다.
 describe: 평소에도 사람 한 명 없었지만 오늘은 특히나 더 조용했다.
@@ -54,7 +65,6 @@ la: 혹시라도 무슨 일 있으면 나한테 말해!
 la: 친구 좋다는 게 뭐겠어.
 {Player_name}: 별일 없어...
 {Player_name}: 그냥 조금... 피곤해서 그래.
-@hideChars wait:false
 @char labody1.54 pose:c wait:false
 la: 그래?
 @char labody1.22 pose:c wait:false
@@ -63,15 +73,15 @@ la: 뭐 하고 지냈어?
 {Player_name}: 그냥 뭐. 밴드 연습하고 있지.
 {Player_name}: 얼마 전에 콘서트도 다녀오고...
 @hideChars wait:false
-@char labody3.51 pose:c wait:false
+@char labody2.51 pose:c wait:false
 la: 콘서트..?
-@char labody3.54 pose:c wait:false
+@char labody2.54 pose:c wait:false
 la: 그 길거리에서 포스터 나눠 줬던 콘서트 말하는 거야?
 {Player_name}: 어? 어...
-@char labody3.14 pose:c wait:false
+@char labody2.14 pose:c wait:false
 la: 거기서 무슨 일이라도 있었어?
 {Player_name}: 무... 무슨 소리야..!?
-@char labody3.51 pose:c wait:false
+@char labody2.51 pose:c wait:false
 la: ..?
 @hideChars wait:false
 @char labody4.41 pose:bc wait:false

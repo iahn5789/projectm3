@@ -1,6 +1,18 @@
 # week04_sul04
 @showUI CP
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 말없이 시작된 정리는 어느덧 끝이 보이고 있었다.
 describe: 정리가 끝나기 전에 뭐라고 말이라도 걸어보려고 했다.
 describe: 그러나 뒷모습만 보이는 나희 누나에게 도저히 말을 걸 수가 없었다,
@@ -36,13 +48,33 @@ sul: 평소에도 자주 오는 편이야?
 @char sulbody1.71 pose:c wait:false
 sul: 콘서트. 평소에도 자주 오는 편이냐고.
 {Player_name}: 아...아뇨! 애초에 그날 가게 된 것도 대용...
-@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 jeon: 넌 밴드동아리잖아. 좋은 공부가 될 거라고?
 jeon: 혹시 알아? 밴드 콘서트에 갔다가 동아리 부원들이라도 만날지.
 jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
-@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @char sulbody1.71 pose:c wait:false
 {Player_name}: 자... 자...
 {Player_name}: 자주 가려고 하는 편이에요!

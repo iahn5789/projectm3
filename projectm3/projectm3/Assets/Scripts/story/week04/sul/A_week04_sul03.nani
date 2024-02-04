@@ -1,7 +1,18 @@
 # week04_sul03
 @showUI CP
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @char kangbody2.12 pose:c wait:false
 kang: {Player_name}! 왔어?
 @hideChars wait:false
@@ -86,6 +97,18 @@ jin: 뭐 해? 연습하자며!
 sul: ...
 @hideChars wait:false
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @char kangbody2.22 pose:c wait:false
 kang: 다들 수고 많았어!
 @hideChars wait:false
@@ -122,7 +145,6 @@ kang: 오늘은 혼자 해도 될 것 같아!
 {Player_name}: 다영아! 같이 교무실 가자!
 {Player_name}: 다영아?
 describe: 다영이는 어느새 동아리실에서 사라지고 없었다.
-sul: ...
 {Player_name}: (어떡하지..?)
 @char kangbody2.22 pose:c wait:false
 kang: 나희 언니 도와주면 되겠다!

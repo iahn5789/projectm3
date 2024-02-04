@@ -1,5 +1,4 @@
 # week04_sul05
-@showUI CP
 
 @char sulbody3.15 pose:bc wait:false
 sul: 똑바로 서봐.
@@ -8,6 +7,7 @@ sul: 똑바로 서봐.
 sul: 숨 들이마시고...
 describe: 숨을 들이마시라는 나희 누나는 내 옆에 가까이 다가왔다.
 
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -18,6 +18,7 @@ describe: 숨을 들이마시라는 나희 누나는 내 옆에 가까이 다가
 @unlock CG/Sul03 wait:false
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 
 {Player_name}: 흐... 흐읍...
 sul: 가슴을 내밀고...
@@ -50,6 +51,7 @@ sul: 제법인데?
 sul: 그게 호흡의 기본자세야.
 {Player_name}: 가... 감사합니다...
 
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -59,6 +61,7 @@ sul: 그게 호흡의 기본자세야.
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 
 describe: 호흡의 기본자세라고 배웠지만...
 describe: 어째서인지 숨이 평소보다 잘 쉬어지지 않았다.
@@ -81,5 +84,6 @@ describe: 가빠진 숨 때문에 얼굴이 빨개진 건지, 아니면...
 sul: 다시 정리 시작하자. 이제 거의 다 끝났어.
 @char sulbody3.81 pose:bc wait:false
 {Player_name}: 네!
+@hideChars wait:false
 
 @goto A_week04_sul06.week04_sul06

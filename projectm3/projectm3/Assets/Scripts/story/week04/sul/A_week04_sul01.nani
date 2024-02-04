@@ -22,7 +22,18 @@
 @set Tutorial=End
 @showUI CP
 
-@back ScClassRoom02
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClassRoom02 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 선생님: 여기서 화자가 말하고자 하는 것은...
 describe: 대용이와 콘서트를 다녀온 지 벌써 며칠이 지났다.
 describe: 시간이 좀 지났지만, 주말이 끼는 바람에 그날 이후로 처음 학교에 왔다.
@@ -59,7 +70,18 @@ describe: 빢!
 선생님: 수업 다시 시작한다.
 선생님: 위의 근거로 미루어 볼 때 정답은...
 
-@back ScClassRoom01
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClassRoom01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 일동: 수고하셨습니다!
 선생님: 그래. 다들 조심히 들어가고.
 describe: 그렇게 안 가던 시간은 순식간에 지나가버렸고 어느덧 하교시간이 되었다.
