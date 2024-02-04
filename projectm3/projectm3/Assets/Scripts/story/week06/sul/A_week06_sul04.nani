@@ -1,5 +1,16 @@
 # week06_sul04
-@showUI CP
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 {Player_name}: 허억... 허억...
 {Player_name}: (여기까진... 못 쫓아오겠지..?)

@@ -1,5 +1,16 @@
 # week06_sul05
-@showUI CP
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 describe: 축제 거리의 한가운데.
 describe: 그 속에서 남자 한 명, 여자 한 명으로 구성된 밴드가 버스킹을 하고 있었다.
@@ -33,11 +44,15 @@ describe: 꾸욱-
 describe: 뚜루루--
 describe: 뚜루루루---
 describe: ♪~♪~♪~♪♪~♬
+@char sulbody1.1 pose:c wait:false
 sul: 죄... 죄송합니다..!
 sul: 이게... 왜... 안꺼지...
+@char sulbody1.61 pose:c wait:false
 sul: ..?
 {Player_name}: ..!
+@char sulbody1.71 pose:c wait:false
 sul: ...
+@hideChars time:0.5 wait:false
 밴드: 우리는 서로에게 이끌릴 운명이에요
 밴드: 그대와 손을 잡고 춤을 추고 싶어요
 밴드: 어두운 우주를 밝히며 함께 달려가요
