@@ -1,4 +1,4 @@
-# week05_sul05
+#week05_sul05
 
 @set LoadingValue=true
 @processInput false
@@ -98,6 +98,32 @@ sul: 응..?
 @char sulbody1.67 pose:c wait:false
 sul: 정말?! 진짜야?! 거짓말 아니지?!
 {Player_name}: 그... 그럼요! 저만 믿으세요!
+
+@skip false
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@set LoadingValue=false
+@goto MinigameGachaUI
+
+#week05_sul0502
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+@clearBacklog
+
 {Player_name}: 여기 있습니다! 고양이 키링!
 @char sulbody1.52 pose:c wait:false
 sul: 어떡해... 너무 귀엽지 않아?

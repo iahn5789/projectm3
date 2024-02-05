@@ -20,9 +20,19 @@
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
-@showUI CP
 
-@back ScClub01
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 여느 때와 다름없는 동아리실 뒷정리.
 describe: 이제는 나희 누나의 도움 없이도 금방 끝날 정도로 익숙해졌다.
 describe: 다만 정리가 일찍 끝나도 집에 일찍 갈 수 있다는 말은 아니었다.
@@ -116,16 +126,5 @@ sul: 그런 건 걱정하지 말고 연습 다시 시작하자.
 sul: 쉴 만큼 쉬었잖아? 다시 시작해야지.
 {Player_name}: 알겠습니다..!
 @hideChars wait:false
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back ScClub01 time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
 
 @goto A_week05_sul02.week05_sul02
