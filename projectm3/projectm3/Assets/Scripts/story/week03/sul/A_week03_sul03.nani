@@ -7,6 +7,8 @@
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Wind_Bird_01 volume:100 loop:true fade:2 wait:false
+@sfx Amb_School_Club_01 volume:20 loop:true fade:2 wait:false
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
@@ -23,11 +25,17 @@ describe: 나희 누나는 공부를 잘하니 어쩌면 학교 끝나고 바로
 describe: 그렇지만... 단순히 공부하러 가는 것 치고는...
 {Player_name}: 에휴... 쓸데없는 생각 해서 뭐 하냐.
 {Player_name}: 집이나 가야지.
+@sfx Footsteps_Sand_03 volume:80 loop:false wait:false
 describe: 이제는 익숙해진 운동장의 흙먼지 속으로 걸어갔다.
+@stopSfx Footsteps_Sand_03 fade:2 wait:false
+@bgm BGM_Map_Blues_01 volume:80 loop:true fade:3 wait:false
 describe: 흙먼지 너머로 무언가 익숙한 실루엣이 보였다.
 describe: 저 너머로 보인 실루엣은 다름 아닌 대용이었다.
 {Player_name}: (쟤는 왜 맨날 집에 늦게 가는 거지..?)
+@sfx Footsteps_Sand_02 volume:100 fade:2 wait:false
 @char jeonbody1.11 pose:c wait:false
+@stopSfx Footsteps_Sand_02 wait:false
+@sfx Common_Text_Kick_01 volume:100 loop:false wait:false
 jeon: {Player_name}!
 describe: 대용이는 신기하게도 내가 있다는 걸 바로 알아차리고는 인사를 했다.
 @char jeonbody1.21 pose:c wait:false
@@ -48,6 +56,7 @@ jeon: 아무튼. 이제야 집으로 가는 건가?
 jeon: 그럼 너는 지금부터 나와 함께 가는 것이다.
 {Player_name}: 갑자기 그게 무슨...
 jeon: 너... 나와 함께 콘서트를 보러 가지 않겠나?
+@sfx Common_Emotion_Question_01 volume:80 loop:false wait:false
 {Player_name}: 콘서트? 갑자기? 그것도 너랑?
 @char jeonbody4.11 pose:c wait:false
 jeon: 어차피 할 일도 없잖아.
@@ -66,12 +75,16 @@ jeon: 이번에 내가 좋아하는 팀이 공연을 한다더군...
 jeon: 한 명의 팬으로서 무시할 수 없는 이벤트지...
 @char jeonbody4.11 pose:c wait:false
 jeon: 저번에 내가 선물로 줬던 포스터 기억나?
+@sfx Common_Robot_Glitch volume:80
 {Player_name}: 혹시 그 이상한 헬멧 쓰고 있던...
+@stopSfx Common_Robot_Glitch wait:false
 @char jeonbody4.33 pose:c wait:false
+@sfx Common_Lightning_One_Shot_01 volume:100
 jeon: 이상하다니!!
 jeon: 그 헬멧 속 숨겨진 미모를 보고도 그런 말을 한단 말인가!
 {Player_name}: 뭐야... 누군지 알아?
 @char jeonbody4.11 pose:c wait:false
+@sfx Common_Text_Kick_01 volume:100
 jeon: 아니.
 {Player_name}: 그럼 어떻게 생겼는지 네가 어떻게 아는데.
 @hideChars wait:false
@@ -92,7 +105,9 @@ jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
 @char jeonbody1.11 pose:c wait:false
 jeon: 동아리 활동을 위해 평소에 관심이 없던 콘서트까지 간다.
 @char jeonbody1.32 pose:c wait:false
+@sfx Common_Bell_Tree_NoHarp_01 volume:80
 jeon: 내 눈엔 네가 정말 예뻐 보일 거 같은데!
+@stopSfx Common_Bell_Tree_NoHarp_01 fade:1 wait:false
 describe: 오늘따라 의외로 논리적인 말만 골라서 하는 대용이었다.
 @hideChars wait:false
 {Player_name}: ( 혹시... )
@@ -104,6 +119,7 @@ jeon: 더 고민하지 말고 지금 나와 같이 공부를 하러 가보는 �
 {Player_name}: 그런데 생각해 보니 난 티켓도 없는데?
 @hideChars wait:false
 @char jeonbody4.11 pose:c wait:false
+@sfx Common_Paper_Open_02 volume:100 wait:false
 jeon: 걱정 말라고. 나한테 한 장 더 있으니까.
 {Player_name}: 그래? 아까는 혼자 가려고 했다며. 왜 두 장이 있는...
 @char jeonbody4.32 pose:c wait:false
@@ -116,6 +132,9 @@ describe: 여자랑 같이 가려다 실패한 모양이다.
 @char jeonbody4.22 pose:c wait:false
 jeon: 걱정하지 마! 그 근처 맛집은 내가 다 꿰고 있으니까.
 {Player_name}: 근처 맛집이 아니라 길을 알고 있냐고...
+@stopSfx Amb_School_Club_01 fade:1 wait:false
+@stopSfx Amb_Wind_Bird_01 fade:1 wait:false
+@stopBgm BGM_Map_Blues_01 fade:1 wait:false
 @hideChars wait:false
 
 @goto A_week03_sul04.week03_sul04
