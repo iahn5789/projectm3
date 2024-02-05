@@ -33,6 +33,7 @@
 @processInput true
 @set LoadingValue=false
 
+@bgm BGM_Map_Exciting_01 volume:70 loop:true fade:1 wait:false
 {Player_name}: ...
 {Player_name}: 선명해지는 네 모습
 {Player_name}: 너를 이루고 싶어 이뤄내고 싶어
@@ -46,7 +47,10 @@ describe: 그리고 마지막까지 곡을 진두지휘하는 나희 누나의 �
 @char sulbody6.11 pose:bc wait:false
 sul: ...
 describe: 나희 누나의 드럼을 마지막으로 연습이 끝났다.
+@stopBgm BGM_Map_Exciting_01 fade:3 wait:false
+@sfx Amb_Hallway_01 volume:100 loop:true
 {Player_name}: 후...
+@bgm BGM_Map_FeelGood_01 volume:80 loop:true fade:1 wait:false
 {Player_name}: (이 정도면 이때까지 연습한 것 중에선 제일 잘한 것 같은데?)
 @hideChars wait:false
 @char kangbody2.22 pose:l wait:false
@@ -72,6 +76,7 @@ kang: 그래도 조금 나아지지 않았나..?
 @char kangbody3.77 pose:l wait:false
 @char jinbody3.44 pose:r wait:false
 jin: 달리기 선수한테 걸음마 뗐다고 칭찬할 거야?
+@sfx Common_Cartoon_Hit_01 volume:100 loop:true fade:0 wait:false
 jin: {Player_name}! 너 어제 뭐 했어?!
 {Player_name}: 응...? 나?
 @hideChars wait:false
@@ -101,6 +106,7 @@ sul: 재능은...있는거 같은데..?
 jin: ...
 kang: ..?
 @char jinbody1.43 pose:r wait:false
+@sfx Common_Emotion_Question_01 volume:80 loop:false wait:false
 jin: 뭐...뭐?
 jin: 재능이 있는 것 같다고?
 {Player_name}: ( 내가..? )
@@ -122,6 +128,7 @@ jin: 그 찢어지는 목소리가 좋다고?
 @char jinbody2.45 pose:r wait:false
 sul: 개성있잖아...
 @char jinbody2.55 pose:r wait:false
+@sfx Common_Door_Slam_01 volume:90 loop:false wait:false
 jin: 그게 무슨 소리야!
 @char jinbody2.33 pose:r wait:false
 jin: 못하는 건 못하는 거지 그걸 어떻게 개성으로 보는데!
@@ -158,5 +165,7 @@ describe: 연습을 열심히 한 건 사실이지만 다영이 말처럼 아직
 describe: 아니면 나희 누나는 성실함을 중요하게 생각하는 건가.
 describe: 동아리에 들어온 지 어느덧 3주.
 describe: 아직도 부원들의 성격을 잘 모르겠다...
+@stopSfx Amb_Hallway_01 fade:1 wait:false
 
+@stopBgm BGM_Map_FeelGood_01 fade:1 wait:false
 @goto A_week03_sul02.week03_sul02
