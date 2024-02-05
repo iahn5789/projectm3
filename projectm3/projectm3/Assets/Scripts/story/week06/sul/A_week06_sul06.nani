@@ -20,6 +20,20 @@ describe: 가게들도 하나둘씩 내일을 준비하고 있었다.
 describe: 축제 거리의 한가운데.
 describe: 나와 나희 누나만이 남아있었다.
 describe: 고개를 살짝 돌려 나희 누나를 쳐다봤다.
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Sul04 time:0.5 wait:true
+@unlock CG/Sul04 wait:false
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 sul: ...
 describe: 나희 누나는 무언가 생각에 잠긴 듯 보였다,
 describe: 인기척을 내기엔 멀고 부르기엔 가까운 거리.
@@ -27,7 +41,7 @@ describe: 그 애매한 거리가 오히려 나희 누나를 멀어보기에 했
 sul: ...
 describe: 나희 누나는 고개를 돌려 나를 쳐다봤다.
 sul: ...
-sul: 나희 누나는 말없이 싱긋 웃었다.
+describe: 나희 누나는 말없이 싱긋 웃었다.
 {Player_name}: 안녕...하세요...
 sul: ...안녕?
 {Player_name}: ...
@@ -75,55 +89,99 @@ sul: 부모님이 먹지 말라고 한 불량식품 하나 몰래 못 먹는 겁
 {Player_name}: ...
 {Player_name}: 그러면...
 sul: ...
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 지금부터라도 해보시는 건 어떠세요?
+@char sulbody3.65 pose:c wait:false
 sul: 해보다니..?
 {Player_name}: 저희 프리덤은 자유를 노래하는 밴드잖아요.
 {Player_name}: 그러니 지금부터라도 자유를 느끼는 거죠.
+@char sulbody3.71 pose:c wait:false
 sul: ...
+@char sulbody3.61 pose:c wait:false
 sul: 자유를... 느껴보라고..?
 {Player_name}: 네!
+@char sulbody3.75 pose:c wait:false
 sul: 어떻게..?
 {Player_name}: 어... 그러게요..?
+@char sulbody3.71 pose:c wait:false
 sul: ...
+@hideChars wait:false
+@char sulbody2.75 pose:bc wait:false
 sul: {Player_name}.
 {Player_name}: 네..?
+@char sulbody2.71 pose:bc wait:false
 sul: 너는... 내가 밉지 않아..?
+@char sulbody2.65 pose:bc wait:false
 sul: 나는 너를 이용했는데..?
 {Player_name}: ...
 {Player_name}: 아니요. 제가 어떻게 누나를 미워하겠어요.
 {Player_name}: 저희는 같은 '프리덤'이잖아요!
+@char sulbody2.75 pose:bc wait:false
 sul: 프리덤...
+@hideChars wait:false
+@char sulbody1.57 pose:bc wait:false
 sul: 푸훗..! 하하하!
 {Player_name}: ..?
+@char sulbody1.77 pose:bc wait:false
 sul: 맞아... 맞지...
+@char sulbody1.75 pose:bc wait:false
 sul: 우리는 '프리덤'이니까... 그렇지?
 {Player_name}: 그... 그렇죠!
-sul: 그나저나... 그 말책임질 수 있겠어?
+@hideChars wait:false
+@char sulbody2.85 pose:c wait:false
+sul: 그나저나... 그 말 책임질 수 있겠어?
 {Player_name}: 네..? 책임이라뇨..?
+@char sulbody2.11 pose:c wait:false
 sul: 자유를 느껴보라는 말. 책임질 수 있겠냐고.
 {Player_name}: 그... 그건...
+@char sulbody2.15 pose:c wait:false
 sul: 자유를 느끼더라도 같이 느껴야 하지 않겠어?
+@char sulbody2.82 pose:c wait:false
 sul: 네 말대로 우린 같은 '프리덤'이니까.
+@char sulbody2.72 pose:c wait:false
 sul: 기대하고 있어. 자유를 느끼다 못해 날아가게 해 줄 테니까.
 {Player_name}: 어떤 걸 하시려고...
+@char sulbody2.65 pose:c wait:false
 sul: 나중에 말해줄게. 미리 알면 재미없잖아?
+@char sulbody2.62 pose:c wait:false
 sul: 우리도 이만 가자. 늦었잖아.
 {Player_name}: 네..!
+@hideChars wait:false
+@char sulbody4.61 pose:bc wait:false
 describe: 발을 떼려고 하는 그 순간. 나희 누나가 손을 내밀었다.
+@char sulbody4.71 pose:bc wait:false
 describe: 마치... 악수를 하자는 것처럼.
 describe: 나희누나의 손을 잡았다.
 describe: 부드럽고... 따뜻했다...
+@char sulbody4.61 pose:bc wait:false
 sul: 오늘... 고마웠어...
+@char sulbody4.75 pose:bc wait:false
 sul: 사실 다른 누군가에게 이런 말을 할 수 있을 거라 생각을 못했는데...
+@char sulbody4.65 pose:bc wait:false
 sul: ...막상 하고 나니 마음이 좀 후련해졌어.
 {Player_name}: 도... 도움이 되었다니 다행이네요...
+@char sulbody4.1 pose:bc wait:false
 sul: 후후... 그럼 나 먼저 갈게... 내일 보자.
 {Player_name}: 누나도 조심히 들어가세요!
+@hideChars wait:false
 describe: 시간이 지나고 거리의 가게들도 이젠 절반 넘게 영업을 끝냈다.
 describe: 거리를 밝게 비추던 네온사인이 점점 밤하늘의 달보다 어두워지고 있었다.
 describe: 점점 어두워지는 거리 속으로 나희누나는 사라져 갔다.
 
 ; 변수 초기화(주의)
+@set LoadingValue=true
 @processInput false
 @skip false
 @hideChars time:0.5 wait:false
@@ -131,9 +189,12 @@ describe: 점점 어두워지는 거리 속으로 나희누나는 사라져 갔�
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@set LoadingValue=false
+
 @set KangWeek=6
 @set JinWeek=6
 @set SulWeek=6
+@set Week=6
 @set PartTimeJob_Count=5
 @set Start_Timer=false
 @set Selected="Sul"
