@@ -39,6 +39,11 @@ public class MinigameGachaManager : MonoBehaviour
     public AudioSource Block_Select;
     public AudioSource Block_Drop;
     // 20회 도달시 뽑기 버튼 강제 클릭이 필요함 
+    public void SetRound()
+    {
+        N_Round = 1;
+        ResetGame();
+    }
     public void Start()
     {
         variableManager = Engine.GetService<ICustomVariableManager>();
@@ -198,7 +203,7 @@ public class MinigameGachaManager : MonoBehaviour
     }
     public void RePositionGame()
     {
-        
+        Selected_block = -1;
         UIReset();
         Reposition = true;
         StartGame(N_Round);
@@ -206,6 +211,7 @@ public class MinigameGachaManager : MonoBehaviour
     public void Catch()
     {
         CancelInvoke("CallGetLine");
+        UIReset();
         // 랜덤 11~13 사이 값이 나와야함 그걸로 GetLine(int) 호출
         int randomValue = Random.Range(11, 14);
         BlockImageOn();
@@ -255,6 +261,7 @@ public class MinigameGachaManager : MonoBehaviour
                 PlayFailAnim();
             }
         }
+        Selected_block = -1;
     }
     public void SkipGame()
     {
