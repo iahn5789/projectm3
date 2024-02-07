@@ -148,21 +148,21 @@ namespace Naninovel.UI
                 else if(name == "Mini07")
                     return "믹서";
                 else if(name == "Mini08")
-                    return "Mini8번";
+                    return "공연 티켓";
                 else if(name == "Mini09")
-                    return "Mini9번";
+                    return "대용이의 선물";
                 else if(name == "Mini10")
-                    return "Mini10번";
+                    return "의문의 밴드";
                 else if(name == "Mini11")
-                    return "Mini11번";
+                    return "불량식품";
                 else if(name == "Mini12")
-                    return "Mini12번";
+                    return "뽑기 기계";
                 else if(name == "Mini13")
-                    return "Mini13번";
+                    return "코스튬";
                 else if(name == "Mini14")
-                    return "Mini14번";
+                    return "사이버렉카";
                 else if(name == "Mini15")
-                    return "Mini15번";
+                    return "버스킹";
                 else if(name == "Mini16")
                     return "Mini16번";
                 else if(name == "Mini17")
