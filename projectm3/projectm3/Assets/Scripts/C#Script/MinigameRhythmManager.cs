@@ -8,15 +8,43 @@ public class MinigameRhythmManager : MonoBehaviour
 {
     public GameObject Arrow; // note
     public GameObject ArrowParent;
-    public Sprite[] ArrowImage;
+    public Sprite[] ArrowImage; // Up, Down, Left, Right
     public List<GameObject> arrows = new List<GameObject>(); // 생성된 노트를 추적하는 리스트
-    public GameObject PerfectArea;
-    public GameObject GoodArea;
-    public GameObject BadArea;
     public int Score = 0;
     public Text ScoreText;
     public GameObject[] JudgementTextList;
 
+    public float bpm = 174f;
+    private float spawnInterval;
+    private string notePattern;
+    public TextAsset notePatternText; // 음악!
+
+    void Start()
+    {
+        // 8분음표 간격 계산 (60초 / BPM * 4)
+        spawnInterval = (60f / bpm) / 2f;
+    }
+    public void StartGame()
+    {
+        StartCoroutine(SpawnNotes());
+    }
+    IEnumerator SpawnNotes()
+    {
+        // 텍스트 파일 로드 (Resources 폴더 내 txt 파일)
+        notePattern = notePatternText.text.Replace("\n", "").Replace("\r", "").Replace(" ","");
+        
+        foreach (char note in notePattern)
+        {
+            Debug.Log("ReadNote : " + note);
+            if (note != '0') // '0'이 아닌 경우에만 노트 생성
+            {
+                int noteIndex = note - '0' - 1; // 문자를 숫자로 변환하고, 배열 인덱스에 맞춤
+                Debug.Log("NoteIndex : " + noteIndex);
+                CreateArrow(noteIndex);
+            }
+            yield return new WaitForSeconds(spawnInterval); // 다음 노트 생성까지 대기
+        }
+    }
 
     void OnEnable()
     {
@@ -65,10 +93,10 @@ public class MinigameRhythmManager : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed) // 버튼이 눌렸을 때
         {
-            CreateArrow();
+            CreateArrow(1);
         }
     }
-    void CreateArrow()
+    void CreateArrow(int Pattern)
     {
         if (Arrow != null && ArrowParent != null && ArrowImage.Length > 0)
         {
@@ -79,16 +107,15 @@ public class MinigameRhythmManager : MonoBehaviour
 
             if (arrowImage != null && arrowScript != null)
             {
-                int index = Random.Range(0, ArrowImage.Length);
-                arrowImage.sprite = ArrowImage[index];
+                arrowImage.sprite = ArrowImage[Pattern];
 
                  // NoteDirection 값을 설정하기 위해 열거형의 모든 값을 가져옴
                 NoteDirection[] directions = (NoteDirection[]) System.Enum.GetValues(typeof(NoteDirection));
 
                 // 이미지 인덱스에 해당하는 방향을 설정 (방향 배열의 길이를 넘지 않도록 조건을 체크)
-                if(index < directions.Length)
+                if(Pattern < directions.Length)
                 {
-                    NoteDirection selectedDirection = directions[index];
+                    NoteDirection selectedDirection = directions[Pattern];
                     arrowScript.direction = selectedDirection;
                 }
             }
