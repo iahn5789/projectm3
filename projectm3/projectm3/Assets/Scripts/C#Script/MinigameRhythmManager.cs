@@ -9,20 +9,30 @@ public class MinigameRhythmManager : MonoBehaviour
     public GameObject Arrow; // note
     public GameObject ArrowParent;
     public Sprite[] ArrowImage;
-    private List<GameObject> arrows = new List<GameObject>(); // 생성된 노트를 추적하는 리스트
+    public List<GameObject> arrows = new List<GameObject>(); // 생성된 노트를 추적하는 리스트
     public GameObject PerfectArea;
     public GameObject GoodArea;
     public GameObject BadArea;
     public int Score = 0;
+    public Text ScoreText;
+    public GameObject[] JudgementTextList;
 
-    // Update is called once per frame
-    void Update()
+
+    void OnEnable()
     {
-        
+        MinigameRhythmArrowManager.OnArrowDestroyed += HandleArrowDestroyed;
     }
 
+    void OnDisable()
+    {
+        MinigameRhythmArrowManager.OnArrowDestroyed -= HandleArrowDestroyed;
+    }
 
-
+    private void HandleArrowDestroyed(GameObject arrow)
+    {
+        Debug.Log("Destroy Arrow Handler");
+        arrows.RemoveAt(0);
+    }
     public void UpButton(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Performed)
@@ -91,25 +101,25 @@ public class MinigameRhythmManager : MonoBehaviour
     {
         if (arrows.Count > 0)
         {
-            GameObject lastArrow = arrows[arrows.Count - 1]; // 가장 최근에 생성된 노트 가져오기
+            Debug.Log("arrows.Count : "+arrows.Count);
+            GameObject lastArrow = arrows[0]; // 가장 최근에 생성된 노트 가져오기
             MinigameRhythmArrowManager arrowManager = lastArrow.GetComponent<MinigameRhythmArrowManager>();
-            if (arrowManager != null)
+            string Judgement = "";
+            Judgement = arrowManager.GetJudgement();
+            if (arrowManager != null && Judgement != "" && arrows.Count > 0)
             {
-                string Judgement = "";
-                Debug.Log("arrowManager.direction : " + arrowManager.direction);
-                Debug.Log("direction : " + direction);
+                // Debug.Log("arrowManager.direction : " + arrowManager.direction);
+                // Debug.Log("direction : " + direction);
                 if (arrowManager.direction == direction)
                 {
-                    Judgement = arrowManager.GetJudgement();
                     AddJudgement(Judgement);
                 }
                 else
                 {
-                    Judgement = "Bad";
+                    AddJudgement("Bad");
                 }
-                Debug.Log("JudgeNoteOnKeyPress 판정 : "+ Judgement);
+                // Debug.Log("JudgeNoteOnKeyPress 판정 : "+ Judgement);
                 arrowManager.JudgeAndDestroyNote(); // 노트 판정 및 처리
-                arrows.RemoveAt(arrows.Count - 1); // 처리된 노트는 리스트에서 제거
             }
         }
     }
@@ -132,6 +142,38 @@ public class MinigameRhythmManager : MonoBehaviour
             // Miss
 
         }
+        ScoreUpdate();
+        JudgementUpdate(Judgement);
+    }
+    public void JudgementUpdate(string Judgement)
+    {
+        // 모든 판정 텍스트를 먼저 비활성화
+        foreach (GameObject text in JudgementTextList)
+        {
+            text.SetActive(false);
+        }
+
+        // 판정에 따라 해당하는 텍스트만 활성화
+        switch (Judgement)
+        {
+            case "Perfect":
+                JudgementTextList[0].SetActive(true);
+                break;
+            case "Good":
+                JudgementTextList[1].SetActive(true);
+                break;
+            case "Bad":
+                JudgementTextList[2].SetActive(true);
+                break;
+            default: // "Miss"와 그 외의 경우
+                JudgementTextList[3].SetActive(true);
+                break;
+        }
+    }
+
+    public void ScoreUpdate()
+    {
+        ScoreText.text = Score.ToString();
     }
 
 }

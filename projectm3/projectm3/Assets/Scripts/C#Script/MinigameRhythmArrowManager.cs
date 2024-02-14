@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public enum NoteDirection
 }
 public class MinigameRhythmArrowManager : MonoBehaviour
 {
+    public static event Action<GameObject> OnArrowDestroyed;
     public float noteSpeed = 800;
     public NoteDirection direction;
     private GameObject PerfectArea;
@@ -28,29 +30,56 @@ public class MinigameRhythmArrowManager : MonoBehaviour
     void Update()
     {
         transform.localPosition -= Vector3.right * noteSpeed * Time.deltaTime;
-        if (transform.localPosition.x <= -2220)
-        {
-            Destroy(gameObject);
-            currentJudgement = "Miss";
-        }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
         // 판정 영역에 들어왔을 때 판정 결과 설정
-        if (other.CompareTag("PerfectArea"))
+        // 판정 범위 수정 및 판정 시작 부분도 수정
+        if (other.CompareTag("MissArea"))
         {
-            Debug.Log("OnTriggerEnter2D PerfectArea : Perfect");
-            currentJudgement = "Perfect";
-        }
-        else if (other.CompareTag("GoodArea"))
-        {
-            Debug.Log("OnTriggerEnter2D GoodArea : Good");
-            currentJudgement = "Good";
+            // Debug.Log("OnTriggerEnter2D MissArea : Miss");
+            currentJudgement = "Miss";
         }
         else if (other.CompareTag("BadArea"))
         {
-            Debug.Log("OnTriggerEnter2D BadArea : Bad");
+            // Debug.Log("OnTriggerEnter2D BadArea : Bad");
             currentJudgement = "Bad";
+        }
+        else if (other.CompareTag("GoodArea"))
+        {
+            // Debug.Log("OnTriggerEnter2D GoodArea : Good");
+            currentJudgement = "Good";
+        }
+        else if (other.CompareTag("PerfectArea"))
+        {
+            // Debug.Log("OnTriggerEnter2D PerfectArea : Perfect");
+            currentJudgement = "Perfect";
+        }
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        // 판정 영역에 나갔을 때 판정 결과 설정
+        // 판정 범위 수정 및 판정 시작 부분도 수정
+        if (other.CompareTag("PerfectArea"))
+        {
+            // Debug.Log("OnTriggerExit2D PerfectArea : Good");
+            currentJudgement = "Good";
+        }
+        else if (other.CompareTag("GoodArea"))
+        {
+            // Debug.Log("OnTriggerExit2D GoodArea : Bad");
+            currentJudgement = "Bad";
+        }
+        else if (other.CompareTag("BadArea"))
+        {
+            // Debug.Log("OnTriggerExit2D BadArea : Miss");
+            currentJudgement = "Miss";
+        }
+        else if (other.CompareTag("MissArea"))
+        {
+            // Debug.Log("OnTriggerExit2D MissArea : Miss");
+            Destroy(gameObject);
+            currentJudgement = "Miss";
         }
     }
     // 외부에서 판정 결과를 가져올 수 있는 메서드
@@ -67,6 +96,7 @@ public class MinigameRhythmArrowManager : MonoBehaviour
             Debug.Log(currentJudgement);
             // 여기에 점수 처리나 시각적/음향적 피드백 로직 추가 가능
         }
+        OnArrowDestroyed?.Invoke(gameObject);
         Destroy(gameObject); // 판정 후 노트 파괴
     }
 }
