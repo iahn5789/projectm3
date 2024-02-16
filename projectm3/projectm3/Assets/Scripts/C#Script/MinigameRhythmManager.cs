@@ -12,9 +12,11 @@ public class MinigameRhythmManager : MonoBehaviour
     public List<GameObject> arrows = new List<GameObject>(); // 생성된 노트를 추적하는 리스트
     public int Score = 0;
     public Text ScoreText;
+    public int Combo = 0;
+    public Text ComboText;
     public GameObject[] JudgementTextList;
 
-    public float bpm = 174f;
+    public float bpm = 130f;
     private float spawnInterval;
     private string notePattern;
     public TextAsset notePatternText; // 음악!
@@ -190,19 +192,38 @@ public class MinigameRhythmManager : MonoBehaviour
         {
             case "Perfect":
                 JudgementTextList[0].SetActive(true);
+                ComboPuls();
                 break;
             case "Good":
                 JudgementTextList[1].SetActive(true);
+                ComboPuls();
                 break;
             case "Bad":
                 JudgementTextList[2].SetActive(true);
+                ComboPuls();
                 break;
             default: // "Miss"와 그 외의 경우
                 JudgementTextList[3].SetActive(true);
+                ComboReset();
                 break;
         }
+
+    }
+    public void ComboReset()
+    {
+        Combo = 0;
+        ComboTextUpdate();
+    }
+    public void ComboPuls()
+    {
+        Combo += 1;
+        ComboTextUpdate();
     }
 
+    public void ComboTextUpdate()
+    {
+        ComboText.text = Combo.ToString();
+    }
     public void ScoreUpdate()
     {
         ScoreText.text = Score.ToString();
