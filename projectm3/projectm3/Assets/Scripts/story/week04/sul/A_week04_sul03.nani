@@ -7,6 +7,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Shool_Club_01 volume:70 loop:true fade:1 wait:false
+@bgm BGM_Map_Antics_01 volume:70 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
@@ -22,7 +24,7 @@ jin: 뭐 하다가 늦은 거야!
 jin: 또 앞에서 엿듣고 있었지?!
 describe: (저 오해는 도대체 언제쯤 풀릴까...)
 {Player_name}: 아니 잠깐 친구랑 얘기 좀 하느라.
-@hideChars wait:true time:0
+@hideChars time:0 wait:true
 @char jinbody1.42 pose:l wait:false
 @char kangbody1.11 pose:r wait:false
 describe: 동아리실에는 여진이와 다영이만 보였다.
@@ -67,6 +69,7 @@ jin: 왜 저래...
 kang: 글쎄...
 {Player_name}: 이 선은 믹서에다가 꽂고, 엠프는 여기에 두면...
 @hideChars wait:false
+@sfx Common_Sliding_door_open volume:100 loop:false wait:false
 describe: 드르륵-
 @char sulbody1.11 pose:c wait:false
 kang: 나희 언니!
@@ -159,11 +162,15 @@ sul: 같이... 하자고...
 {Player_name}: ...
 @hideChars wait:false
 @char kangbody1.22 pose:c wait:false
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
 kang: 그래! 둘이 같이 하면 되겠다.
 @char kangbody1.11 pose:c wait:false
 kang: 그럼 나 먼저 가볼게. 내일 봐!
+@sfx Footsteps_Female_Wood_Run_01 volume:80 loop:false wait:false
 @hideChars wait:false
+@sfx Common_Sliding_Door_Open_02 volume:100 wait:false
 describe: 드르륵- 쿵-
+@sfx Amb_Wind_Bird_01 volume:100 loop:true fade:1 wait:false
 {Player_name}: ...
 @char sulbody3.11 pose:c wait:false
 sul: ...
@@ -183,6 +190,7 @@ sul: ...
 {Player_name}: (착각이겠지..?)
 {Player_name}: (일단 정리부터 하자.)
 {Player_name}: (정리부터...)
+@stopSfx Amb_Wind_Bird_01 fade:1 wait:false
 @hideChars wait:false
 
 @goto A_week04_sul04.week04_sul04

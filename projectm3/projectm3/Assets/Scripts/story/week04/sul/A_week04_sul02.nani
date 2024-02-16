@@ -7,6 +7,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Office_01 volume:100 loop:true fade:1 wait:true
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScLobby01 time:0.5 wait:true
 @showUI CP wait:false
@@ -90,7 +92,7 @@ la: 진짜로 무슨 일이 있긴 한가 보네?
 la: 그냥 해 본 말인데 그렇게 반응하는 거 보니.
 {Player_name}: 아... 아니거든!
 {Player_name}: 나 먼저 가볼게!
-@hideChars wait:true time:0.5
+@hideChars time:0.5 wait:true
 describe: 나는 라은을 피해 손잡이를 잡고 동아리실 안으로 들어갔다.
 @hideChars wait:false
 @char labody3.61 pose:bc wait:false
@@ -100,4 +102,6 @@ la: 흐음.
 @char labody3.62 pose:bc wait:false
 la: 콘서트라...
 
+@stopSfx Amb_Office_01 fade:1 wait:false
+@stopSfx Amb_Room_Tone_02 fade:1 wait:false
 @goto A_week04_sul03.week04_sul03

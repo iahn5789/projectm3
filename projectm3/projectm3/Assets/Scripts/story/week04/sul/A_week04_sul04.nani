@@ -7,6 +7,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_Littlesad_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
@@ -36,7 +38,9 @@ sul: 그래? 다행이네.
 {Player_name}: 하하하...
 @char sulbody2.11 pose:c wait:false
 sul: ...
+@sfx Crow_Caw_01 volume:40 loop:false wait:false
 {Player_name}: ...
+@stopSfx Crow_Caw_01 fade:1 wait:false
 describe: 짧은 대화 후. 다시 동아리실에 어색함이 찾아왔다.
 {Player_name}: (으... 이러면 오히려 오해만 쌓이는 거 아니야?)
 {Player_name}: 그... 나희 누나?
@@ -49,6 +53,8 @@ sul: 평소에도 자주 오는 편이야?
 sul: 콘서트. 평소에도 자주 오는 편이냐고.
 {Player_name}: 아...아뇨! 애초에 그날 가게 된 것도 대용...
 
+@sfx Common_Whoosh_Transition_UP_01 volume:100 loop:false wait:false
+@stopSfx Amb_Room_Tone_02 fade:0.5 wait:false
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
@@ -69,6 +75,8 @@ jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Common_Whoosh_Transition_Down_01 volume:100 loop:false wait:false
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
@@ -86,6 +94,7 @@ jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
 sul: 그래? 흐음...
 @char sulbody2.15 pose:c wait:false
 sul: 그런데 무대 뒤편까지는 왜 온 거야?
+@sfx Cartoon_Water_Splash_01 volume:100 loop:false wait:false
 {Player_name}: 뿌왘!!!!!!!!!
 describe: 갑작스러운 질문에 당황해 사레가 들려 버렸다.
 {Player_name}: 푸... 커업... 켁...
@@ -125,11 +134,13 @@ sul: 그런 뻔한 말 말고. 어떤 점이 좋았는지, 왜 좋았는지. 자
 {Player_name}: 저는...
 @char sulbody1.65 pose:c wait:false
 {Player_name}: 그냥 단순히 소리를 듣는 게 아니어서 너무 좋았어요.
+@sfx Common_Beautiful_Bell_Tree_01 volume:70 loop:true fade:1 wait:false
 {Player_name}: 단순히 좋은 소리뿐만 아니라 무대 위에서의 연출과 시각적 즐거움.
 {Player_name}: 그 모든 것들이 하나로 합쳐져서 정말... 정말...
 @char sulbody1.76 pose:c wait:false
 sul: 정말..?
 {Player_name}: 그 공연을 보는 순간만큼은 뭐랄까...
+@stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
 {Player_name}: ...자유로운 느낌이었어요.
 @char sulbody1.11 pose:c wait:false
 sul: ...
@@ -146,6 +157,7 @@ sul: 재밌게 봤으면 다행이네.
 sul: ...
 describe: 나희 누나는 무언가 생각하는 듯한 표정이었다.
 @char sulbody2.11 pose:c wait:false
+@sfx Common_Text_Kick_01 volume:100 loop:false wait:false
 sul: 잠깐만.
 @hideChars wait:false
 describe: 나희 누나는 정리 중이던 선을 내려놓은 뒤 나에게 왔다.
