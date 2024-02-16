@@ -208,27 +208,28 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("21Sul", ("기타는... 배우기 어려워...", 1,1));
         SecretMessageLine.Add("22Sul", ("베이스가 숟가락이면... 그래서...?", 2,2));
         SecretMessageLine.Add("23Sul", ("나는... 목소리 매력 있던데...", 3,3));
-        SecretMessageLine.Add("31Sul", ("3_1_Sul대사", 1,1));
-        SecretMessageLine.Add("32Sul", ("3_2_Sul대사", 2,2));
-        SecretMessageLine.Add("33Sul", ("3_3_Sul대사", 3,3));
-        SecretMessageLine.Add("41Sul", ("4_1_Sul대사", 1,1));
-        SecretMessageLine.Add("42Sul", ("4_2_Sul대사", 2,2));
-        SecretMessageLine.Add("43Sul", ("4_3_Sul대사", 3,3));
-        SecretMessageLine.Add("51Sul", ("5_1_Sul대사", 1,1));
-        SecretMessageLine.Add("52Sul", ("5_2_Sul대사", 2,2));
-        SecretMessageLine.Add("53Sul", ("5_3_Sul대사", 3,3));
-        SecretMessageLine.Add("61Sul", ("6_1_Sul대사", 1,1));
-        SecretMessageLine.Add("62Sul", ("6_2_Sul대사", 2,2));
-        SecretMessageLine.Add("63Sul", ("6_3_Sul대사", 3,3));
-        SecretMessageLine.Add("71Sul", ("7_1_Sul대사", 1,1));
-        SecretMessageLine.Add("72Sul", ("7_2_Sul대사", 2,2));
-        SecretMessageLine.Add("73Sul", ("7_3_Sul대사", 3,3));
-        SecretMessageLine.Add("81Sul", ("8_1_Sul대사", 1,1));
-        SecretMessageLine.Add("82Sul", ("8_2_Sul대사", 2,2));
-        SecretMessageLine.Add("83Sul", ("8_3_Sul대사", 3,3));
-        SecretMessageLine.Add("91Sul", ("9_1_Sul대사", 1,1));
-        SecretMessageLine.Add("92Sul", ("9_2_Sul대사", 2,2));
-        SecretMessageLine.Add("93Sul", ("9_3_Sul대사", 3,3));
+
+        SecretMessageLine.Add("31Sul", ("햄버거..? 별로 안 좋아해...", 1,1));
+        SecretMessageLine.Add("32Sul", ("2인 1조가... 효율적이지...", 2,2));
+        SecretMessageLine.Add("33Sul", ("헬멧이... 생각보다는 편해...", 3,3));
+        SecretMessageLine.Add("41Sul", ("복부에 힘 꽉 줘..!", 1,1));
+        SecretMessageLine.Add("42Sul", ("노래 못 부른다고 놀리면... 알지?", 2,2));
+        SecretMessageLine.Add("43Sul", ("너무 긴장하지 말고... 자유롭게 해...", 3,3));
+        SecretMessageLine.Add("51Sul", ("나 정도면 눈이 맑은 편 아닌가? 아니라고..?", 1,1));
+        SecretMessageLine.Add("52Sul", ("고양이... 귀여워...", 2,2));
+        SecretMessageLine.Add("53Sul", ("트레이닝복..? 그냥 편해서 입은 건데...", 3,3));
+        SecretMessageLine.Add("61Sul", ("내 첫 공연 시간이 8시 30분이었어...", 1,1));
+        SecretMessageLine.Add("62Sul", ("...반항하는 거야?", 2,2));
+        SecretMessageLine.Add("63Sul", ("고양이 발바닥... 따뜻해...", 3,3));
+        SecretMessageLine.Add("71Sul", ("2분이면... 고양이를 쓰다듬을 수 있다고..!", 1,1));
+        SecretMessageLine.Add("72Sul", ("그게 벌써 10년이나 지났구나...", 2,2));
+        SecretMessageLine.Add("73Sul", ("튀김은... 먹어본 적이 있었나..?", 3,3));
+        SecretMessageLine.Add("81Sul", ("2~3주 정도 길게 여행 가고 싶다...", 1,1));
+        SecretMessageLine.Add("82Sul", ("고양이를 왜 좋아하냐고..? 좋아하니까!", 2,2));
+        SecretMessageLine.Add("83Sul", ("교복이... 작아...", 3,3));
+        SecretMessageLine.Add("91Sul", ("시험공부를 3주 전부터 한다고? 공부는 평소에 하는 거 아니었어..?", 1,1));
+        SecretMessageLine.Add("92Sul", ("케이크가 디저트라고? 거...거짓말!", 2,2));
+        SecretMessageLine.Add("93Sul", ("노래방..? 나 감당할 수 있겠어?", 3,3));
     }
 
     // Update is called once per frame

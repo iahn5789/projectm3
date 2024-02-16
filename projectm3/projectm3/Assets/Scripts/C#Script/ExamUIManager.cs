@@ -130,27 +130,27 @@ public class ExamUIManager : MonoBehaviour
         SecretMessageLightList.Add("S111", true);
         SecretMessageLightList.Add("S122", true);
         SecretMessageLightList.Add("S133", true);
-        SecretMessageLightList.Add("S201", true);
-        SecretMessageLightList.Add("S202", true);
-        SecretMessageLightList.Add("S203", true);
-        SecretMessageLightList.Add("S301", true);
-        SecretMessageLightList.Add("S302", true);
-        SecretMessageLightList.Add("S303", true);
-        SecretMessageLightList.Add("S401", true);
-        SecretMessageLightList.Add("S402", true);
-        SecretMessageLightList.Add("S403", true);
-        SecretMessageLightList.Add("S501", true);
-        SecretMessageLightList.Add("S502", true);
-        SecretMessageLightList.Add("S503", true);
-        SecretMessageLightList.Add("S601", true);
-        SecretMessageLightList.Add("S602", true);
-        SecretMessageLightList.Add("S603", true);
-        SecretMessageLightList.Add("S701", true);
-        SecretMessageLightList.Add("S702", true);
-        SecretMessageLightList.Add("S703", true);
-        SecretMessageLightList.Add("S801", true);
-        SecretMessageLightList.Add("S802", true);
-        SecretMessageLightList.Add("S803", true);
+        SecretMessageLightList.Add("S221", true);
+        SecretMessageLightList.Add("S242", true);
+        SecretMessageLightList.Add("S253", true);
+        SecretMessageLightList.Add("S321", true);
+        SecretMessageLightList.Add("S332", true);
+        SecretMessageLightList.Add("S353", true);
+        SecretMessageLightList.Add("S421", true);
+        SecretMessageLightList.Add("S432", true);
+        SecretMessageLightList.Add("S443", true);
+        SecretMessageLightList.Add("S521", true);
+        SecretMessageLightList.Add("S542", true);
+        SecretMessageLightList.Add("S553", true);
+        SecretMessageLightList.Add("S611", true);
+        SecretMessageLightList.Add("S632", true);
+        SecretMessageLightList.Add("S653", true);
+        SecretMessageLightList.Add("S721", true);
+        SecretMessageLightList.Add("S732", true);
+        SecretMessageLightList.Add("S753", true);
+        SecretMessageLightList.Add("S811", true);
+        SecretMessageLightList.Add("S842", true);
+        SecretMessageLightList.Add("S853", true);
 
         // 문제 타이틀 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
