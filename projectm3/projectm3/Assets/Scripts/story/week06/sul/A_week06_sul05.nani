@@ -32,8 +32,10 @@ describe: 이 두 명의 밴드 공연이 딱 그런 느낌이었다.
 describe: 다듬어지지 않았기에 순수하고, 순수하기에 보고 싶은...
 describe: 어쩐지... 정말 어쩐지...
 describe: 노래를 듣고 있으니 나희 누나가 생각이 났다.
+@sfx Phone_Nunbering_01 volume:120 loop:false wait:false
 describe: 핸드폰을 꺼내 나희 누나의 번호를 눌렀다.
 describe: 그러나 막상 전화를 거려고 하니 손이 가지 않았다.
+@stopSfx Phone_Nunbering_01 fade:1 wait:false
 {Player_name}: (지금 전화하는 게 맞는 걸까..?)
 {Player_name}: (내가... 해 줄 수 있는 것도 없는데..?)
 {Player_name}: ...
@@ -41,13 +43,17 @@ describe: 그러나 막상 전화를 거려고 하니 손이 가지 않았다.
 밴드: 그대를 꼭 끌어안고 싶어요
 {Player_name}: ...
 describe: 꾸욱-
+@sfx Common_Phone_Ring_01 volume:100 loop:true wait:false
 describe: 뚜루루--
 describe: 뚜루루루---
+@sfx Phone_Vibration_01 volume:100 loop:true wait:false
 describe: ♪~♪~♪~♪♪~♬
+@stopSfx Common_Phone_Ring_01 fade:1 wait:false
 @char sulbody1.1 pose:c wait:false
 sul: 죄... 죄송합니다..!
 sul: 이게... 왜... 안꺼지...
 @char sulbody1.61 pose:c wait:false
+@stopSfx Phone_Vibration_01 wait:false
 sul: ..?
 {Player_name}: ..!
 @char sulbody1.71 pose:c wait:false
@@ -57,12 +63,16 @@ sul: ...
 밴드: 그대와 손을 잡고 춤을 추고 싶어요
 밴드: 어두운 우주를 밝히며 함께 달려가요
 밴드: 그곳이 어딘지 모를 저 너머일지라도...
+@sfx Amb_Cold_Wind_01 volume:100 loop:true fade:1 wait:false
+@sfx Crowd_Cheer_Clap_01 volume:60 loop:false wait:false
+@bgm BGM_Map_Cool_01 volume:80 loop:true fade:1 wait:false
 describe: 짝짝짝짝-!
 밴드: 감사합니다! 감사합니다!
 밴드: 다들 저희 공연을 즐겨주신 것 같아서 다시 한번 감사의 말씀드립니다.
 밴드: 저희가 준비한 공연은 여기까지입니다.
 밴드: 저희 생각보다 다들 너무 좋아해 주시는 거 같아서...
 밴드: 대신이라긴 뭐 하지만 간단한 질문이라도 받으려고 하는데 어떠신가요?
+@stopSfx Crowd_Cheer_Clap_01 fade:1 wait:false
 관중: 좋아요-!
 밴드: 네. 그럼... 저 뒤에 손 드신 분 말씀해 주시겠어요?
 관중: 처음 들어보는 노랜데 혹시 자작곡인가요?
@@ -76,4 +86,6 @@ sul: ...
 밴드: 언제나 진심은 통하는 법이니까요!
 밴드: 다음 질문 있을까요? 하늘색 셔츠 입으신 분...
 
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
+@stopBgm BGM_Map_Cool_01 fade:1 wait:false
 @goto A_week06_sul06.week06_sul06
