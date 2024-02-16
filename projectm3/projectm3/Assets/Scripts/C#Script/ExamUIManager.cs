@@ -746,25 +746,26 @@ public class ExamUIManager : MonoBehaviour
     {
         string key = (Week - 1).ToString() + round.ToString();
         string question;
+        string player_name = variableManager?.GetVariableValue("Player_name");
         if (name == "Kang")
         {
             if (KQuestionList.TryGetValue(key, out question))
             {
-                return question.Replace("\\n", "\n");
+                return question.Replace("\\n", "\n").Replace("#PlayerName$", player_name);
             }
         }
         if (name == "Jin")
         {
             if (JQuestionList.TryGetValue(key, out question))
             {
-                return question.Replace("\\n", "\n");
+                return question.Replace("\\n", "\n").Replace("#PlayerName$", player_name);
             }
         }
         if (name == "Sul")
         {
             if (SQuestionList.TryGetValue(key, out question))
             {
-                return question.Replace("\\n", "\n");
+                return question.Replace("\\n", "\n").Replace("#PlayerName$", player_name);
             }
         }
         return "Error";
