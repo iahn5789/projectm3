@@ -78,8 +78,8 @@ public class MinigameRhythmArrowManager : MonoBehaviour
         else if (other.CompareTag("MissArea"))
         {
             // Debug.Log("OnTriggerExit2D MissArea : Miss");
-            Destroy(gameObject);
             currentJudgement = "Miss";
+            OnArrowDestroyed?.Invoke(gameObject);
         }
     }
     // 외부에서 판정 결과를 가져올 수 있는 메서드
@@ -91,12 +91,7 @@ public class MinigameRhythmArrowManager : MonoBehaviour
     // 판정 후 노트 처리를 위한 메서드
     public void JudgeAndDestroyNote()
     {
-        if (!string.IsNullOrEmpty(currentJudgement))
-        {
-            Debug.Log(currentJudgement);
-            // 여기에 점수 처리나 시각적/음향적 피드백 로직 추가 가능
-        }
         OnArrowDestroyed?.Invoke(gameObject);
-        Destroy(gameObject); // 판정 후 노트 파괴
+        // Destroy(gameObject); // 판정 후 노트 파괴
     }
 }

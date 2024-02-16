@@ -21,7 +21,7 @@ public class MinigameRhythmManager : MonoBehaviour
 
     void Start()
     {
-        // 8분음표 간격 계산 (60초 / BPM * 4)
+        // 8분음표 간격 계산 (60초 / BPM * 2)
         spawnInterval = (60f / bpm) / 2f;
     }
     public void StartGame()
@@ -35,11 +35,9 @@ public class MinigameRhythmManager : MonoBehaviour
         
         foreach (char note in notePattern)
         {
-            Debug.Log("ReadNote : " + note);
             if (note != '0') // '0'이 아닌 경우에만 노트 생성
             {
                 int noteIndex = note - '0' - 1; // 문자를 숫자로 변환하고, 배열 인덱스에 맞춤
-                Debug.Log("NoteIndex : " + noteIndex);
                 CreateArrow(noteIndex);
             }
             yield return new WaitForSeconds(spawnInterval); // 다음 노트 생성까지 대기
@@ -58,9 +56,17 @@ public class MinigameRhythmManager : MonoBehaviour
 
     private void HandleArrowDestroyed(GameObject arrow)
     {
-        Debug.Log("Destroy Arrow Handler");
-        arrows.RemoveAt(0);
+        if (arrows.Contains(arrow))
+        {
+            arrows.Remove(arrow);
+            Destroy(arrow);
+        }
+        // else
+        // {
+        //     Debug.LogError("Tried to remove an arrow that doesn't exist in the list.");
+        // }
     }
+
     public void UpButton(InputAction.CallbackContext context)
     {
         if (context.phase == InputActionPhase.Performed)
@@ -128,7 +134,7 @@ public class MinigameRhythmManager : MonoBehaviour
     {
         if (arrows.Count > 0)
         {
-            Debug.Log("arrows.Count : "+arrows.Count);
+            // Debug.Log("arrows.Count : "+arrows.Count);
             GameObject lastArrow = arrows[0]; // 가장 최근에 생성된 노트 가져오기
             MinigameRhythmArrowManager arrowManager = lastArrow.GetComponent<MinigameRhythmArrowManager>();
             string Judgement = "";
@@ -143,7 +149,7 @@ public class MinigameRhythmManager : MonoBehaviour
                 }
                 else
                 {
-                    AddJudgement("Bad");
+                    AddJudgement("Miss");
                 }
                 // Debug.Log("JudgeNoteOnKeyPress 판정 : "+ Judgement);
                 arrowManager.JudgeAndDestroyNote(); // 노트 판정 및 처리
@@ -167,10 +173,9 @@ public class MinigameRhythmManager : MonoBehaviour
         else
         {
             // Miss
-
         }
-        ScoreUpdate();
         JudgementUpdate(Judgement);
+        ScoreUpdate();
     }
     public void JudgementUpdate(string Judgement)
     {
