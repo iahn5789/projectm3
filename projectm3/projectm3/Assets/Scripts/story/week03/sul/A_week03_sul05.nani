@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_Blues_01 intro:1 volume:80 loop:true fade:1 wait:true
 @back Black time:0.5 wait:true
 @back Dream time:0.5 wait:true
 @showUI CP wait:false
@@ -26,6 +28,8 @@ describe: 어쨌든 떨리기는 마찬가지였다.
 @char jeonbody4.32 pose:c wait:false
 jeon: 우후후후후...
 {Player_name}: 그렇게 좋냐? 진짜 이해할 수가 없...
+@sfx Footsteps_Ctr_Male_Walker_02 volume:40 loop:false fade:4 wait:false
+@sfx Footsteps_Ctr_Male_Walker_01 volume:50 loop:false fade:3 wait:false
 describe: 그때 멀리서 발걸음 소리가 들려오기 시작했다.
 @char jeonbody4.55 pose:c wait:false
 jeon: 뭐...뭐야? 무슨 소리지?
@@ -34,6 +38,7 @@ jeon: 뭐...뭐야? 무슨 소리지?
 describe: 대용이와 나는 옆에 있는 아무 방 문을 열고는 들어가서 문을 닫았다.
 @char jeonbody4.35 pose:bc wait:false
 jeon: 후욱...후욱...
+@sfx Common_Cartoon_Hit_01 volume:100 loop:false wait:false
 {Player_name}: 조용히 좀 해!
 {Player_name}: 잠깐... 지금 이게 무슨... 윽!!
 {Player_name}: 너 방구 꼈냐?
@@ -50,8 +55,10 @@ describe: 지금 당장 방 문을 열고 살려달라고 소리치고 싶었다
 jeon: 잠깐! 잠깐!
 {Player_name}: 우...우웩...
 @hideChars wait:false
+@sfx Footsteps_Ctr_Male_Walker_01 volume:80 loop:false fade:2 wait:false
 보안요원A: 하... 힘들다. 이번 공연은 특히 사람 많았던 것 같던데?
 보안요원B: 그 마지막에 나온 사람 때문에 그런 거 아니야?
+@stopSfx Footsteps_Ctr_Male_Walker_01 fade:1 wait:false
 보안요원A: 그 헬멧 쓴 사람? 이름이 뭐였지?
 보안요원B: 프리덤이던가...
 보안요원A: 실제로 본 적 있어?
@@ -61,6 +68,7 @@ describe: 대용이의 냄새를 방 문을 넘어서 밖에 있는 보안요원
 보안요원B: 뭐야 이거. 방 안에 쓰레기통이라도 있는 거야?
 보안요원A: 쓰레기통은 이거에 비하면 향수겠다! 안에 동물 사체라도 있는 거 아니야?
 보안요원B: 사체는 무슨. 그런 농담 좀 하지...
+@sfx Common_Whoosh_Horror_01 volume:80 loop:false wait:false
 보안요원B: 그...그런가?
 보안요원A: 아니면 이런 냄새가 날 수가 없잖아!
 describe: 그 냄새를 안에서 맡는 사람은 지금 죽을 맛이었다.
@@ -69,8 +77,10 @@ jeon: 어...어쩌지..?
 {Player_name}: 나도 몰라..!
 jeon: 문 열고 확인할 것 같은데...
 보안요원B: 일단 열어봐! 최소한 확인이라도 해야겠...우웩...
+@sfx Door_Lock_Handle_01 volume:100 loop:false wait:false
 보안요원A: 어..? 이거 잠겨 있는데?
 보안요원B: 뭐? 이거 진짜 안에 뭐 있는 거 아니야?
+@sfx Door_Lock_Handle_02 volume:100 loop:false wait:false
 describe: 손잡이가 덜컥거리고 있었다.
 describe: 방 문이 열리는 건 사실상 시간문제였다.
 describe: 잡히면 뭐라고 해야 될지 감조차 들지 않았다.
@@ -84,24 +94,31 @@ jeon: 나를 믿고 여기까지 와 줘서 고맙다!
 jeon: 이제 뒤는 너에게 맡길게!
 {Player_name}: 야..! 잠깐만!
 @hideChars wait:false
+@sfx Present_Vinyl_Crumble_01 volume:100 loop:false wait:false
 describe: 대용이는 나를 문 뒤로 밀어놓고는 가방에서 선물을 꺼내 나에게 건넸다.
 describe: 그러고는 나를 향해 씌익 웃더니 잠겨있던 방 문을 활짝 열었다.
+@sfx Metal_Door_Open_01 volume:100 loop:false wait:false
 보안요원A: 열렸다..!
 보안요원B: 우욱..! 냄새... 잠깐.. 당신 누구야!
 @char jeonbody4.33 pose:c wait:false
 jeon: 비켜! 비키라고!
+@sfx Footsteps_Male_ctr_run_01 volume:100 loop:false wait:false
 @hideChars wait:false
+@stopSfx Footsteps_Male_ctr_run_01 fade:1 wait:false
 describe: 대용이는 그 큰 덩치로 보안요원 두 명을 순식간에 밀치고 사라졌다.
 보안요원A: 거기 서! 멈...윾...
 보안요원B: 우웩... 우... 우웩...
 jeon: 나 잡아봐라!
 보안요원A: 잡아!
+@sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false wait:false
 describe: 대용이는 보안 요원 두 명을 데리고 사라졌다.
+@stopSfx Footsteps_Female_Ctr_Run_01 fade:1 wait:false
 describe: 얼마나 지났을까.
 describe: 떨리는 가슴이 조금은 진정이 되자 방 문을 열고 밖으로 나왔다.
 describe: 복도는 언제 그랬냐는 듯 너무나도 조용했다.
 {Player_name}: 대용아...
 describe: 걱정되는 마음에 따라왔지만, 어느새 그 큰 일의 한가운데 내가 서있게 되었다.
+@sfx Common_Paper_Crumple_01 volume:80 loop:false wait:false
 describe: 내 손에는 대용이가 정성스럽게 포장한 선물이 있었다.
 describe: 문 뒤에 숨는 과정에서 조금 찌그러진 것 같았다.
 {Player_name}: 이걸... 이제 어떻게 하지..?
@@ -110,6 +127,7 @@ describe: 아무리 그래도... 하나밖에 없는 친구니까.
 describe: 떨리던 가슴이 진정되니 다른 문제가 생겼다.
 {Player_name}: ( 이걸 전해주고 싶어도 어디에 있는지를 알아야 전해주지... )
 {Player_name}: ( 다음부터 어디 가자고 하면 절대 안 가야지. )
+@sfx Footsteps_Ctr_Male_Walker_02 volume:70 fade:2.5 wait:false
 {Player_name}: !!
 {Player_name}: 벌써 돌아온다고..?
 {Player_name}: 그럼 대용이는 잡힌 건가..?
@@ -120,6 +138,7 @@ describe: 다행히 대용이는 잡히지 않은 듯했다.
 {Player_name}: 어쩌지..?
 {Player_name}: 이대로 있다간 들킬 것 같은데...
 {Player_name}: 선물이고 뭐고 일단 숨자!
+@sfx Metal_Door_Open_02 volume:100 loop:false wait:false
 describe: 끼익-!
 
 @goto A_week03_sul06.week03_sul06
