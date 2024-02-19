@@ -10,7 +10,7 @@
 @sfx Amb_Night_Traffic_01 volume:50 loop:true fade:1 wait:false
 @bgm BGM_Map_LovelyEP_01 volume:70 loop:true wait:false
 @back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -37,8 +37,21 @@ jeon: 일단 빨리 들어가자고. 가면 내 말이 무슨 뜻인 지 알게 
 @stopSfx Amb_Night_Wind_01 fade:1 wait:false
 @stopBgm BGM_Map_LovelyEP_01 fade:1 wait:false
 @hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
 @sfx Amb_Cloud_02 volume:90 loop:true fade:1 wait:false
 @bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ConcertOut01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 대용이와 나는 콘서트를 보기 위해 공연장 안으로 들어갔다.
 describe: 들어와 보니 공연은 30분도 채 남지 않은 상황이었다.
 describe: 공연장의 직원은 티켓을 건네는 우리를 보고는 뭐 이런 애들이 다 있냐는 표정을 지었다.
@@ -63,7 +76,6 @@ describe: 방금 열기는 대용이한테서 나온 모양이었다.
 {Player_name}: 그렇게 좋냐..?
 @char jeonbody2.32 pose:c wait:false
 jeon: 후후후후... 이제 시작이라고...
-@stopBgm BGM_Metal_01 fade:2 wait:false
 {Player_name}: 뭐가 시작이야... 이제 마지막 공연인 것 같은...
 @hideChars wait:false
 describe: 그때. 갑작스럽게 무대의 조명이 켜지며 공연이 시작됐다.
@@ -91,11 +103,14 @@ describe: 무대에서 퍼져나간 소리는 공연장의 벽을 맞고 다시 
 describe: 그렇게 튕겨져 나간 소리가 서로 만나 새로운 소리를 만들어냈다.
 describe: 그 새로운 소리는 사람들의 가슴을 뛰게 만들기 충분했다.
 {Player_name}: 멋있다...
+@stopBgm BGM_Metal_imsi fade:2 wait:false
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
 @stopSfx Amb_Crowd_Loop_cutoff_01 fade:1 wait:false
 describe: 정신을 차리고 보니 어느덧 무대는 앵콜공연까지 끝냈고.
 describe: 잠깐의 포토타임이 끝난 뒤 아티스트는 무대 뒤로 들어갔다.
 @sfx Amb_Cloud_02 volume:70 loop:true fade:1 wait:false
+@stopBgm BGM_Metal_imsi fade:2 wait:false
+@bgm BGM_Map_LovelyEP_01 fade:2 volume:70 loop:true wait:false
 {Player_name}: 와... 정말 굉장했다... 그렇지...?
 describe: 고개를 돌려 대용이를 보니...
 describe: 이 녀석도 감명 깊게 본 것 같았다.
@@ -117,22 +132,32 @@ jeon: 여기에 온 이유를 전해줘야겠군...
 {Player_name}: ...?
 @sfx Open_Bag_Zipper_01 volume:90 loop:false wait:false
 describe: 대용이는 공연 내내 발 밑에 두고 있었던 가방을 꺼냈다.
+
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_02 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini09 wait:false
+
 @sfx Present_Vinyl_Crumble_01 volume:100 loop:false wait:false
 describe: 그리고 그 가방 속에서 나름 정성스럽게 포장된 선물을 꺼냈다.
-@char jeonbody4.11 pose:c wait:false
+; @char jeonbody4.11 pose:c wait:false
 {Player_name}: 그건 또 뭐야?
-@char jeonbody4.22 pose:c wait:false
+; @char jeonbody4.22 pose:c wait:false
 jeon: 보면 모르겠나? 신사의 마음을 전달할 선물이지.
 {Player_name}: 그러니까 그걸 왜 주려는 건데...
 jeon: 한 명의 팬으로서...
 jeon: 응원하는 마음을 전달하는 데엔 진심을 담은 선물만 한 게 없지.
 {Player_name}: 아까 포토타임 때 안 주고 뭐 했는데!
-@char jeonbody4.32 pose:c wait:false
+; @char jeonbody4.32 pose:c wait:false
 jeon: 난 그런 시시한 기회 따위에 연연하지 않아.
 describe: 대용이는 목소리를 낮추고 허리를 숙여 조심스럽게 이야기를 꺼냈다.
 describe: 무언가 비밀이라도 말하려는 듯했다.
 {Player_name}: ...?
 @hideChars wait:false
+
+@despawn Blur wait:false
+@back Minicut_sul_02 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+
 @char jeonbody1.11 pose:bc wait:false
 jeon: 진정한 사나이라면...
 @char jeonbody1.22 pose:bc wait:false
