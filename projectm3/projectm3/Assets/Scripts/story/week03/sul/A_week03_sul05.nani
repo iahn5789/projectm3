@@ -7,9 +7,9 @@
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
-@bgm BGM_Map_Blues_01 intro:1 volume:80 loop:true fade:1 wait:true
+@bgm BGM_Map_CunningCity_01 intro:1 volume:80 loop:true fade:1 wait:true
 @back Black time:0.5 wait:true
-@back Dream time:0.5 wait:true
+@back ConcertIn01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -138,6 +138,7 @@ describe: 다행히 대용이는 잡히지 않은 듯했다.
 {Player_name}: 어쩌지..?
 {Player_name}: 이대로 있다간 들킬 것 같은데...
 {Player_name}: 선물이고 뭐고 일단 숨자!
+@stopBgm BGM_Map_CunningCity_01 fade:3 wait:false
 @sfx Metal_Door_Open_02 volume:100 loop:false wait:false
 describe: 끼익-!
 
