@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class MinigameRhythmManager : MonoBehaviour
 {
+    public Animator PatternLainAnim;
     public GameObject Arrow; // note
     public GameObject ArrowParent;
     public Sprite[] ArrowImage; // Up, Down, Left, Right
@@ -23,8 +24,8 @@ public class MinigameRhythmManager : MonoBehaviour
 
     void Start()
     {
-        // 8분음표 간격 계산 (60초 / BPM * 2)
-        spawnInterval = (60f / bpm) / 2f;
+        // 32분음표 간격 계산 (60초 / BPM / 8)
+        spawnInterval = (60f / bpm) / 8f;
     }
     public void StartGame()
     {
@@ -60,8 +61,14 @@ public class MinigameRhythmManager : MonoBehaviour
     {
         if (arrows.Contains(arrow))
         {
-            arrows.Remove(arrow);
-            Destroy(arrow);
+            var arrowManager = arrow.GetComponent<MinigameRhythmArrowManager>();
+            if (arrowManager != null)
+            {
+                JudgementUpdate(arrowManager.GetJudgement());
+                ScoreUpdate();
+                arrows.Remove(arrow);
+                Destroy(arrow);
+            }
         }
         // else
         // {
@@ -134,6 +141,8 @@ public class MinigameRhythmManager : MonoBehaviour
     // 예제를 위해 추가: 사용자 입력에 따른 노트 판정 시뮬레이션
     public void JudgeNoteOnKeyPress(NoteDirection direction)
     {
+        PatternLainAnim.Play("MR_Zone", -1, 0f);
+        // PatternLainAnim.Play("MR_Zone");
         if (arrows.Count > 0)
         {
             // Debug.Log("arrows.Count : "+arrows.Count);
@@ -152,6 +161,7 @@ public class MinigameRhythmManager : MonoBehaviour
                 else
                 {
                     AddJudgement("Miss");
+                    arrowManager.SetJudgement("Miss");
                 }
                 // Debug.Log("JudgeNoteOnKeyPress 판정 : "+ Judgement);
                 arrowManager.JudgeAndDestroyNote(); // 노트 판정 및 처리
@@ -176,8 +186,6 @@ public class MinigameRhythmManager : MonoBehaviour
         {
             // Miss
         }
-        JudgementUpdate(Judgement);
-        ScoreUpdate();
     }
     public void JudgementUpdate(string Judgement)
     {

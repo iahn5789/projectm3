@@ -87,6 +87,10 @@ public class MinigameRhythmArrowManager : MonoBehaviour
     {
         return currentJudgement;
     }
+    public void SetJudgement(string Judgement)
+    {
+        currentJudgement = Judgement;
+    }
 
     // 판정 후 노트 처리를 위한 메서드
     public void JudgeAndDestroyNote()
