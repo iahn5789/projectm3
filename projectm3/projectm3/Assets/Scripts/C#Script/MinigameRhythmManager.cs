@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class MinigameRhythmManager : MonoBehaviour
 {
     public Animator PatternLainAnim;
+    public Animator ScoreAnim;
     public GameObject Arrow; // note
     public GameObject ArrowParent;
     public Sprite[] ArrowImage; // Up, Down, Left, Right
@@ -25,7 +26,8 @@ public class MinigameRhythmManager : MonoBehaviour
     void Start()
     {
         // 32분음표 간격 계산 (60초 / BPM / 8)
-        spawnInterval = (60f / bpm) / 8f;
+        // spawnInterval = (60f / bpm) / 3f;
+        spawnInterval = 0.1538461538461538f;
     }
     public void StartGame()
     {
@@ -33,20 +35,34 @@ public class MinigameRhythmManager : MonoBehaviour
     }
     IEnumerator SpawnNotes()
     {
-        // 텍스트 파일 로드 (Resources 폴더 내 txt 파일)
-        notePattern = notePatternText.text.Replace("\n", "").Replace("\r", "").Replace(" ","");
-        
+        // 코루틴 시작 시간을 기록합니다.
+        float startTime = Time.time;
+
+        // 텍스트 파일 로드
+        notePattern = notePatternText.text.Replace("\n", "").Replace("\r", "").Replace(" ", "");
+
+        int noteCount = 0; // 생성된 노트의 수를 추적합니다.
+
         foreach (char note in notePattern)
         {
+            // 다음 노트를 생성할 예정 시간을 계산합니다.
+            float nextNoteTime = startTime + (noteCount * spawnInterval);
+
+            // 현재 시간이 다음 노트 생성 시간보다 작을 동안 대기합니다.
+            while (Time.time < nextNoteTime)
+            {
+                yield return null; // 다음 프레임까지 대기합니다.
+            }
+
             if (note != '0') // '0'이 아닌 경우에만 노트 생성
             {
                 int noteIndex = note - '0' - 1; // 문자를 숫자로 변환하고, 배열 인덱스에 맞춤
                 CreateArrow(noteIndex);
             }
-            yield return new WaitForSeconds(spawnInterval); // 다음 노트 생성까지 대기
+
+            noteCount++; // 노트 수를 증가시킵니다.
         }
     }
-
     void OnEnable()
     {
         MinigameRhythmArrowManager.OnArrowDestroyed += HandleArrowDestroyed;
@@ -172,14 +188,17 @@ public class MinigameRhythmManager : MonoBehaviour
     {
         if (Judgement == "Perfect")
         {
+            ScoreAnim.Play("MR_Score", -1, 0f);
             Score += 3;
         }
         else if (Judgement == "Good")
         {
+            ScoreAnim.Play("MR_Score", -1, 0f);
             Score += 2;
         }
         else if (Judgement == "Bad")
         {
+            ScoreAnim.Play("MR_Score", -1, 0f);
             Score += 1;
         }
         else
@@ -235,6 +254,11 @@ public class MinigameRhythmManager : MonoBehaviour
     public void ScoreUpdate()
     {
         ScoreText.text = Score.ToString();
+    }
+
+    public void SkipGame()
+    {
+
     }
 
 }
