@@ -9,6 +9,8 @@
 @back Black time:0.5 wait:true
 @sfx Amb_Office_01 volume:100 loop:true fade:1 wait:true
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
+@sfx Amb_Hallway_01 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_Cool_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScLobby01 time:0.5 wait:true
 @showUI CP wait:false
@@ -102,6 +104,8 @@ la: 흐음.
 @char labody3.62 pose:bc wait:false
 la: 콘서트라...
 
+@stopBgm BGM_Map_Cool_01 fade:1 wait:false
+@stopSfx Amb_Hallway_01 fade:1 wait:false
 @stopSfx Amb_Office_01 fade:1 wait:false
 @stopSfx Amb_Room_Tone_02 fade:1 wait:false
 @goto A_week04_sul03.week04_sul03

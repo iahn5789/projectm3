@@ -1,7 +1,6 @@
 # week04_sul05
 
 @sfx Common_Wind_Blow_Bright_01 volume:100 loop:false wait:false
-@sfx Common_Beautiful_Bell_Tree_01 volume:70 loop:true fade:1 wait:false
 @char sulbody3.15 pose:bc wait:false
 sul: 똑바로 서봐.
 {Player_name}: 네..?
@@ -15,6 +14,7 @@ describe: 숨을 들이마시라는 나희 누나는 내 옆에 가까이 다가
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Heart_Beat_Fast_02 volume:60 loop:true wait:false
 @back Black time:0.5 wait:true
 @back CG/Sul03 time:0.5 wait:true
 @unlock CG/Sul03 wait:false
@@ -25,7 +25,6 @@ describe: 숨을 들이마시라는 나희 누나는 내 옆에 가까이 다가
 {Player_name}: 흐... 흐읍...
 sul: 가슴을 내밀고...
 describe: 나희 누나는 손을 내 허리에 올렸다.
-@sfx Heart_Beat_Fast_02 volume:80 loop:true wait:false
 {Player_name}: (뭐... 뭐지..?)
 sul: 복부를 집어넣고...
 sul: 허리를 세우고...
