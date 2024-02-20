@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using Naninovel;
+using Naninovel.Commands;
 
 public class MinigameRhythmManager : MonoBehaviour
 {
@@ -22,16 +24,20 @@ public class MinigameRhythmManager : MonoBehaviour
     private float spawnInterval;
     private string notePattern;
     public TextAsset notePatternText; // 음악!
+    private Coroutine nodeCoroutine;
+    public Text ResultCoinText;
+    private ICustomVariableManager variableManager;
 
     void Start()
     {
+        variableManager = Engine.GetService<ICustomVariableManager>();
         // 32분음표 간격 계산 (60초 / BPM / 8)
         // spawnInterval = (60f / bpm) / 3f;
         spawnInterval = 0.1538461538461538f;
     }
     public void StartGame()
     {
-        StartCoroutine(SpawnNotes());
+        nodeCoroutine = StartCoroutine(SpawnNotes());
     }
     IEnumerator SpawnNotes()
     {
@@ -61,6 +67,7 @@ public class MinigameRhythmManager : MonoBehaviour
             }
 
             noteCount++; // 노트 수를 증가시킵니다.
+
         }
     }
     void OnEnable()
@@ -73,6 +80,10 @@ public class MinigameRhythmManager : MonoBehaviour
         MinigameRhythmArrowManager.OnArrowDestroyed -= HandleArrowDestroyed;
     }
 
+    public void StopNodeMake()
+    {
+        StopCoroutine(nodeCoroutine);
+    }
     private void HandleArrowDestroyed(GameObject arrow)
     {
         if (arrows.Contains(arrow))
@@ -258,7 +269,14 @@ public class MinigameRhythmManager : MonoBehaviour
 
     public void SkipGame()
     {
-
+        AddMoney(1500); // 스킵시 보상 1500
+        ResultCoinText.text = "1500개";
+    }
+    public void AddMoney(int addmoney)
+    {
+        int money = int.Parse(variableManager?.GetVariableValue("money"));
+        money += addmoney;
+        variableManager?.SetVariableValue("money", money.ToString());
     }
 
 }

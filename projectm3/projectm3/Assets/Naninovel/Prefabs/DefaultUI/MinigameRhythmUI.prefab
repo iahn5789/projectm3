@@ -2205,7 +2205,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -10, y: 0}
   m_SizeDelta: {x: 90, y: 150}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &162110253277000002
@@ -3142,7 +3142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: 0}
+  m_AnchoredPosition: {x: -135, y: 0}
   m_SizeDelta: {x: 340, y: 150}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &907366981177594610
@@ -4284,7 +4284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -75, y: 0}
+  m_AnchoredPosition: {x: -65, y: 0}
   m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &603210534722954136
@@ -11997,13 +11997,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7941887887751498158}
-        m_MethodName: Play
-        m_Mode: 1
+        m_MethodName: PlayDelayed
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 0.15384616
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -16882,7 +16882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 0}
+  m_AnchoredPosition: {x: 20, y: 0}
   m_SizeDelta: {x: 30, y: 150}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &3512651876862649915
@@ -17397,6 +17397,7 @@ MonoBehaviour:
   - {fileID: 7194665756750406882}
   bpm: 130
   notePatternText: {fileID: 4900000, guid: 06ceb751ceda22f4aaa04f4874d18eae, type: 3}
+  ResultCoinText: {fileID: 6364866129112971567}
 --- !u!1 &6411626683672263515
 GameObject:
   m_ObjectHideFlags: 0
@@ -21193,16 +21194,38 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 8887385277589939182}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5881671928430759706}
+        m_MethodName: StopNodeMake
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 5881671928430759706}
+        m_MethodName: SkipGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!95 &135384284579494244
 Animator:
