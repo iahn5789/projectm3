@@ -5,13 +5,17 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Exciting_01 volume:70 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
+@sfx Amb_Classroom_Many_Footsteps_01 volume:80 loop:true fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:20 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
+@sfx Shop_Door_Click__01 volume:100 loop:false wait:false
 직원: 어서 오세요! 뭐든지 다 파는 '다있어'입니다!
 describe: 나희 누나와 함께 '다있어'에 도착했다.
 describe: 다있어'가 처음이라는 나희 누나의 말은 거짓말이 아니었다.
@@ -32,7 +36,9 @@ describe: 슬쩍 쳐다보니 입구 쪽에 놓여있는 불량식품을 쳐다�
 sul: ...
 {Player_name}: 나희 누나?
 sul: .....
+@sfx Human_Hungry_01 volume:80 loop:false wait:false
 describe: 꼬르륵-
+@stopSfx Human_Hungry_01 fade:1 wait:false
 @char sulbody3.1 pose:c wait:false
 sul: 핫..!(..!)
 {Player_name}: ...
@@ -56,9 +62,12 @@ sul: 2층으로 가보자...
 {Player_name}: 그런데 뭐 사실 거예요?
 {Player_name}: 일단 점원한테 필요한 게 어디 있는지부터 물어볼...
 @hideChars wait:false
+@sfx Whoosh_Arm_01 volume:100 loop:false wait:false
 describe: 휘이익-!
 {Player_name}: 나희 누나..?
+@sfx Footsteps_Female_Ctr_Run_01 volume:90 loop:false wait:false
 describe: 나희 누나는 무언가 발견이라도 2층에 올라가자마자 안쪽으로 후다닥 달려갔다.
+@stopSfx Footsteps_Female_Ctr_Run_01 fade:1 wait:false
 {Player_name}: ...뭐지?
 describe: 나희 누나를 쳐다보니 안 쪽에 있는 뽑기 기계에서 고개를 들지 못하고 있었다.
 describe: 거의 다이빙이라도 할 기세였다.
@@ -84,6 +93,7 @@ sul: 싫어할 수도 있지...
 {Player_name}: 싫어하는 게 아니...
 @char sulbody1.86 pose:c wait:false
 sul: 그럴 수 있지...
+@sfx Emotion_Sad_01 volume:90 loop:false wait:false
 sul: ...
 describe: 나희 누나의 목소리가 눈에 띄게 침울해졌다.
 {Player_name}: (싫어하는 게 아니라 그냥 관심이 없는 건데...)
@@ -98,6 +108,37 @@ sul: 응..?
 @char sulbody1.67 pose:c wait:false
 sul: 정말?! 진짜야?! 거짓말 아니지?!
 {Player_name}: 그... 그럼요! 저만 믿으세요!
+
+@stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+@stopSfx Amb_Classroom_Many_Footsteps_01 fade:1 wait:false
+@stopBgm BGM_Map_Exciting_01 fade:1 wait:false
+@skip false
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@set LoadingValue=false
+@goto MinigameGachaUI
+
+# week05_sul0502
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Classroom_Many_Footsteps_01 volume:80 loop:true fade:1 wait:false
+@bgm BGM_Map_Exciting_01 volume:80 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+@clearBacklog
+
 {Player_name}: 여기 있습니다! 고양이 키링!
 @char sulbody1.52 pose:c wait:false
 sul: 어떡해... 너무 귀엽지 않아?

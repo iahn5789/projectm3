@@ -20,9 +20,21 @@
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
-@showUI CP
 
-@back ScClub01
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Hallway_01  volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_Cool_01 volume:100 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 여느 때와 다름없는 동아리실 뒷정리.
 describe: 이제는 나희 누나의 도움 없이도 금방 끝날 정도로 익숙해졌다.
 describe: 다만 정리가 일찍 끝나도 집에 일찍 갈 수 있다는 말은 아니었다.
@@ -34,6 +46,7 @@ describe: 물론 밴드부 연습과는 비교가 되지 않을 정도로 힘들
 describe: 죽기 직전까지 밀어붙일 거라는 말 역시... 허언이 아니었다.
 {Player_name}: 허억... 허억...
 @char sulbody2.11 pose:c wait:false
+@sfx Common_Emotion_Question_01 volume:80 loop:false wait:false
 sul: 힘들어?
 {Player_name}: 예..? 아니... 그게... 조금...
 sul: 벌써 힘들면 곤란한데...
@@ -41,14 +54,17 @@ sul: 벌써 힘들면 곤란한데...
 {Player_name}: (이러다 죽는 건 아니겠지?)
 @char sulbody2.81 pose:c wait:false
 sul: 흐음...
+@sfx Human_Swallow_01 volume:100 loop:false wait:false
 {Player_name}: 꿀꺽...
 @char sulbody2.12 pose:c wait:false
 sul: 그래. 조금 쉬자.
 {Player_name}: (다행이다...)
 @hideChars wait:false
 describe: 나는 지친 몸을 이끌고 구석에 있는 의자에 앉았다.
+@sfx Common_Desk_Rattle_01 volume:80 loop:false wait:false
 describe: 노래만 불렀는데도 불구하고 다리에 힘이 쭉 빠져 거의 자빠지다시피 했다.
 describe: 의자에 앉자 창 밖에서 비춰오는 햇살에 눈이 부셨다.
+@sfx Common_Morning_Bird_Twitter_01 volume:80 loop:false wait:false
 describe: 손으로 햇빛을 가리고 창 밖을 잠시 바라봤다.
 {Player_name}: (후...)
 {Player_name}: (나희 누나가 도와준다고는 계시지만...)
@@ -57,6 +73,7 @@ describe: 손으로 햇빛을 가리고 창 밖을 잠시 바라봤다.
 sul: {Player_name}.
 {Player_name}: 네? 부르셨어요?
 sul: 쉬면서 잠깐 이것 좀 봐봐.
+@sfx Common_Paper_Open_02 volume:100 loop:false wait:false
 describe: 나희 누나는 어떤 종이를 내게 건네주었다.
 @hideChars wait:false
 {Player_name}: (이건 뭐지?)
@@ -64,6 +81,7 @@ describe: 나희 누나에게 받아서 보니 종이가 아닌 악보였다.
 describe: 다만 우리가 평소에 연습에 사용하던 악보는 아니었다.
 @char sulbody3.11 pose:c wait:false
 sul: 이제 악보 정도는 볼 줄 알지?
+@sfx Common_Paper_Turn_02 volume:100 loop:false wait:false
 {Player_name}: 어느 정도는요..? 그런데 이건 뭐죠?
 {Player_name}: 처음 보는 악보 같은데...
 sul: 우리가 공연할 노래 악보야.
@@ -82,6 +100,7 @@ describe: 프리덤'이라는 밴드의 제목과 맞는 자유를 노래하는 
 @char sulbody1.14 pose:c wait:false
 sul: 어때? 괜찮아?
 {Player_name}: 흐으음...
+@sfx Common_Door_Noke_01 volume:80 loop:false wait:false
 sul: {Player_name}? 듣고 있어?
 {Player_name}: 흐으으음......
 @hideChars wait:false
@@ -115,17 +134,8 @@ sul: 그런 건 걱정하지 말고 연습 다시 시작하자.
 {Player_name}: 버... 벌써요?
 sul: 쉴 만큼 쉬었잖아? 다시 시작해야지.
 {Player_name}: 알겠습니다..!
+@stopSfx Amb_Hallway_01 fade:1 wait:false
+@stopBgm BGM_Map_Cool_01 fade:1 wait:false
 @hideChars wait:false
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back ScClub01 time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
 
 @goto A_week05_sul02.week05_sul02

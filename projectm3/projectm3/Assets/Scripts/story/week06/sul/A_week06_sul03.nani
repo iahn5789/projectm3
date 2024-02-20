@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Cold_Wind_01 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_LovelyEP_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @showUI CP wait:false
@@ -43,6 +45,7 @@ la: 그러는 너는 왜 도망가는 건데!
 la: 네가 도망가니까 쫓아가지!!
 @char labody2.84 pose:bc wait:false
 la: 거기 안 서?! 기다려!!
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 
 @goto A_week06_sul04.week06_sul04

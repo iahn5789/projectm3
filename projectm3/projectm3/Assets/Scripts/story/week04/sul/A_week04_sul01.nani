@@ -27,12 +27,15 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Shool_Club_01 volume:70 loop:true fade:1 wait:false
+@bgm BGM_Map_Classroom_01 volume:100 loop:true fade:1 wait:true
 @back Black time:0.5 wait:true
 @back ScClassRoom02 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
+@sfx Writing_Chalk_Board_01 volume:100 loop:false wait:false
 선생님: 여기서 화자가 말하고자 하는 것은...
 describe: 대용이와 콘서트를 다녀온 지 벌써 며칠이 지났다.
 describe: 시간이 좀 지났지만, 주말이 끼는 바람에 그날 이후로 처음 학교에 왔다.
@@ -54,11 +57,13 @@ describe: 사과부터 해야 할지, 혹시 변명이라고 생각하진 않을
 {Player_name}: (사실 별 일 아니었어요!)
 {Player_name}: (이렇게 말하면 나 같아도 못 믿겠다.)
 선생님: 후...
+@sfx Footsteps_Male_Wood_Walk_01 volume:70 loop:false fade:1 wait:false
 describe: 저벅-저벅
 {Player_name}: (그러고 보니.)
 {Player_name}: (왜인지 분장을 했었던 것 같기도 하고...)
 {Player_name}: (분명 옷을 갈아입고 있는 것 같아 보였는데.)
 {Player_name}: (단추를 다 잠겄었나..?)
+@sfx Common_Cartoon_Hit_01 volume:100 loop:false wait:false
 describe: 빢!
 선생님: 집중 안 해?
 선생님: 수업시간에 무슨 딴생각을 그렇게 하는 거야!
@@ -69,12 +74,16 @@ describe: 빢!
 선생님: 수업 다시 시작한다.
 선생님: 위의 근거로 미루어 볼 때 정답은...
 
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
+@stopBgm BGM_Map_Classroom_01 fade:1 wait:false
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Classroom_Cutoff_01 volume:50 loop:true fade:1 wait:false
+@bgm BGM_Map_FeelGood_01 volume:70 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClassRoom01 time:0.5 wait:true
 @showUI CP wait:false
@@ -84,6 +93,7 @@ describe: 빢!
 일동: 수고하셨습니다!
 선생님: 그래. 다들 조심히 들어가고.
 describe: 그렇게 안 가던 시간은 순식간에 지나가버렸고 어느덧 하교시간이 되었다.
+@sfx Common_Cloth_movement_02 volume:100 loop:false wait:false
 describe: 평소 같았으면 책가방을 정리하고 동아리실로 향했겠지만...
 describe: 오늘만큼은 어떻게 해야 할지 몰랐다.
 {Player_name}: (동아리실로 가야 되는 건가..?)
@@ -173,7 +183,9 @@ jeon: 어디긴! 당연히 동아리실이지. 동아리 활동 열심히 하고
 jeon: 나도 동아리 활동 하러 가야지. 오늘 신문부 회의가 있거든.
 @hideChars wait:false
 @char jeonbody2.22 pose:c wait:false
+@stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 jeon: 그 말은 즉 부장도 온다는...
+@stopBgm BGM_Map_FeelGood_01 fade:2 wait:false
 {Player_name}: 그래. 나 먼저 가볼게!
 @hideChars wait:false
 

@@ -130,27 +130,27 @@ public class ExamUIManager : MonoBehaviour
         SecretMessageLightList.Add("S111", true);
         SecretMessageLightList.Add("S122", true);
         SecretMessageLightList.Add("S133", true);
-        SecretMessageLightList.Add("S201", true);
-        SecretMessageLightList.Add("S202", true);
-        SecretMessageLightList.Add("S203", true);
-        SecretMessageLightList.Add("S301", true);
-        SecretMessageLightList.Add("S302", true);
-        SecretMessageLightList.Add("S303", true);
-        SecretMessageLightList.Add("S401", true);
-        SecretMessageLightList.Add("S402", true);
-        SecretMessageLightList.Add("S403", true);
-        SecretMessageLightList.Add("S501", true);
-        SecretMessageLightList.Add("S502", true);
-        SecretMessageLightList.Add("S503", true);
-        SecretMessageLightList.Add("S601", true);
-        SecretMessageLightList.Add("S602", true);
-        SecretMessageLightList.Add("S603", true);
-        SecretMessageLightList.Add("S701", true);
-        SecretMessageLightList.Add("S702", true);
-        SecretMessageLightList.Add("S703", true);
-        SecretMessageLightList.Add("S801", true);
-        SecretMessageLightList.Add("S802", true);
-        SecretMessageLightList.Add("S803", true);
+        SecretMessageLightList.Add("S221", true);
+        SecretMessageLightList.Add("S242", true);
+        SecretMessageLightList.Add("S253", true);
+        SecretMessageLightList.Add("S321", true);
+        SecretMessageLightList.Add("S332", true);
+        SecretMessageLightList.Add("S353", true);
+        SecretMessageLightList.Add("S421", true);
+        SecretMessageLightList.Add("S432", true);
+        SecretMessageLightList.Add("S443", true);
+        SecretMessageLightList.Add("S521", true);
+        SecretMessageLightList.Add("S542", true);
+        SecretMessageLightList.Add("S553", true);
+        SecretMessageLightList.Add("S611", true);
+        SecretMessageLightList.Add("S632", true);
+        SecretMessageLightList.Add("S653", true);
+        SecretMessageLightList.Add("S721", true);
+        SecretMessageLightList.Add("S732", true);
+        SecretMessageLightList.Add("S753", true);
+        SecretMessageLightList.Add("S811", true);
+        SecretMessageLightList.Add("S842", true);
+        SecretMessageLightList.Add("S853", true);
 
         // 문제 타이틀 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
@@ -213,6 +213,22 @@ public class ExamUIManager : MonoBehaviour
         SQuestionTitleList.Add("53", "다음 지문을 잘 읽고 설나희의 대화로 올바른 답을 고르시오.");
         SQuestionTitleList.Add("54", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
 
+        SQuestionTitleList.Add("60", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("61", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("62", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("63", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("64", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("70", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("71", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("72", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("73", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("74", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("80", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("81", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("82", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("83", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        SQuestionTitleList.Add("84", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+
         // 문제 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
         KQuestionList = new Dictionary<string, string>();
@@ -272,7 +288,22 @@ public class ExamUIManager : MonoBehaviour
         SQuestionList.Add("52", "설나희의 부모님은 딸이 검사가 되길 원했지만\n정작 그녀는 (   )이/가 되길 원했다.");
         SQuestionList.Add("53", "프리덤은... 그냥 일종의 (   )이야...");
         SQuestionList.Add("54", "발을 떼려고 하는 그 순간. 나희 누나가 손을 내밀었다.\n마치... 악수를 하자는 것 처럼.\n부드럽고 (   )했다.");
-        
+        SQuestionList.Add("60", "아니... 선생님 저 (   ) 전에 도착했...");
+        SQuestionList.Add("61", "설나희가 동아리실 문을 막고 있었던 이유는?");
+        SQuestionList.Add("62", "맛있으세요?\n응... 한 (   )만에 먹으니까 더 맛있는 것 같아...");
+        SQuestionList.Add("63", "설나희가 지난 주말 동안 한 일은?");
+        SQuestionList.Add("64", "축제 거리에서 설나희가 먹지 않은 음식은?");
+        SQuestionList.Add("70", "대용이가 반에 찾아와 대뜸 나에게 화를 냈다.\n그 이유는 바로 이것 때문이었는데...");
+        SQuestionList.Add("71", "몇 주 동안 여진이와 다영이를 보지도 못했다.\n가장 최근에 동아리 활동을 한 기간을 고르시오.");
+        SQuestionList.Add("72", "말씀드릴까요?\n제가 왜 만난 지도 얼마 안 된 사람이랑 몰래 밴드 생활을 했는지?\n제가... 제가... (   ).");
+        SQuestionList.Add("73", "설나희가 교무실에서 나간 후 향한 곳은?");
+        SQuestionList.Add("74", "마지막 공연 시작할 때... (   )차림으로 나가는 거야!");
+        SQuestionList.Add("80", "나희 누나와 함께 무대에 올랐다.\n거의 (   )만에 오른 무대.");
+        SQuestionList.Add("81", "설나희의 아버지가 집에서 함께 기다리고 있겠다고 말한 인물은?");
+        SQuestionList.Add("82", "설나희가 아버지에게 용돈을 받지 않은 이유는?");
+        SQuestionList.Add("83", "이제 (   ) 먹으러 갈까?\n밥 먹었으면 (   ) 먹으러 가야지!");
+        SQuestionList.Add("84", "설나희가 식사 후 한 번도 가본 적이 없다고 말하며\n가보고 싶다고 말한 곳은?");
+
         // 정답 항목 숫자는 : (주차-1, 라운드 - 1, 답 번호 -1)
         // Kang(250개)
         KAnswerList = new Dictionary<string, string>();
@@ -536,7 +567,85 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("542", "다정했다");
         SAnswerList.Add("543", "편안했다");
         SAnswerList.Add("544", "따스했다");
-        
+
+        SAnswerList.Add("600", "2분");
+        SAnswerList.Add("601", "1분");
+        SAnswerList.Add("602", "3분");
+        SAnswerList.Add("603", "4분");
+        SAnswerList.Add("604", "5분");
+        SAnswerList.Add("610", "부끄러워서");
+        SAnswerList.Add("611", "무서워서");
+        SAnswerList.Add("612", "혼자 있고 싶어서");
+        SAnswerList.Add("613", "심심해서");
+        SAnswerList.Add("614", "짜증 나서");
+        SAnswerList.Add("620", "10년");
+        SAnswerList.Add("621", "8년");
+        SAnswerList.Add("622", "6년");
+        SAnswerList.Add("623", "4년");
+        SAnswerList.Add("624", "2년");
+        SAnswerList.Add("630", "집에 누워있기");
+        SAnswerList.Add("631", "오토바이 타기");
+        SAnswerList.Add("632", "공연 준비");
+        SAnswerList.Add("633", "쇼핑하기");
+        SAnswerList.Add("634", "고양이 돌보기");
+        SAnswerList.Add("640", "튀김");
+        SAnswerList.Add("641", "어묵");
+        SAnswerList.Add("642", "커피");
+        SAnswerList.Add("643", "떡볶이");
+        SAnswerList.Add("644", "순대");
+
+        SAnswerList.Add("700", "동영상 때문에");
+        SAnswerList.Add("701", "혼자 과자 먹어서");
+        SAnswerList.Add("702", "배고파서");
+        SAnswerList.Add("703", "연락을 안 받아서");
+        SAnswerList.Add("704", "이유 없이 그냥");
+        SAnswerList.Add("710", "약 2~3주 전");
+        SAnswerList.Add("711", "약 1~2주 전");
+        SAnswerList.Add("712", "약 3~4주 전");
+        SAnswerList.Add("713", "약 4~5주 전");
+        SAnswerList.Add("714", "약 5~6주 전");
+        SAnswerList.Add("720", "좋아하니까요");
+        SAnswerList.Add("721", "답답하니까요");
+        SAnswerList.Add("722", "방황하니까요");
+        SAnswerList.Add("723", "사랑하니까요");
+        SAnswerList.Add("724", "행복하니까요");
+        SAnswerList.Add("730", "옥상");
+        SAnswerList.Add("731", "동아리실");
+        SAnswerList.Add("732", "교실");
+        SAnswerList.Add("733", "집");
+        SAnswerList.Add("734", "축제 거리");
+        SAnswerList.Add("740", "교복");
+        SAnswerList.Add("741", "트레이닝복");
+        SAnswerList.Add("742", "잠옷");
+        SAnswerList.Add("743", "속옷");
+        SAnswerList.Add("744", "사복");
+
+        SAnswerList.Add("800", "3주");
+        SAnswerList.Add("801", "2주");
+        SAnswerList.Add("802", "1주");
+        SAnswerList.Add("803", "4주");
+        SAnswerList.Add("804", "5주");
+        SAnswerList.Add("810", "엄마");
+        SAnswerList.Add("811", "고양이");
+        SAnswerList.Add("812", "오빠");
+        SAnswerList.Add("813", "동생");
+        SAnswerList.Add("814", "언니");
+        SAnswerList.Add("820", "대금이 들어와서");
+        SAnswerList.Add("821", "받고 싶지 않아서");
+        SAnswerList.Add("822", "쓸 일이 없어서");
+        SAnswerList.Add("823", "아직 많이 남아서");
+        SAnswerList.Add("824", "가세가 기울어서");
+        SAnswerList.Add("830", "디저트");
+        SAnswerList.Add("831", "야식");
+        SAnswerList.Add("832", "커피");
+        SAnswerList.Add("833", "간식");
+        SAnswerList.Add("834", "다른 음식");
+        SAnswerList.Add("840", "노래방");
+        SAnswerList.Add("841", "당구장");
+        SAnswerList.Add("842", "영화관");
+        SAnswerList.Add("843", "카페");
+        SAnswerList.Add("844", "PC방");
+
         // 정답 숫자는 : (주차-1, 라운드 - 1)
         // Kang(50개)
         KCorrectAnswerList = new Dictionary<string, string>();
@@ -596,6 +705,21 @@ public class ExamUIManager : MonoBehaviour
         SCorrectAnswerList.Add("52", "수의사");
         SCorrectAnswerList.Add("53", "반항");
         SCorrectAnswerList.Add("54", "따뜻했다");
+        SCorrectAnswerList.Add("60", "2분");
+        SCorrectAnswerList.Add("61", "부끄러워서");
+        SCorrectAnswerList.Add("62", "10년");
+        SCorrectAnswerList.Add("63", "집에 누워있기");
+        SCorrectAnswerList.Add("64", "튀김");
+        SCorrectAnswerList.Add("70", "동영상 때문에");
+        SCorrectAnswerList.Add("71", "약 2~3주 전");
+        SCorrectAnswerList.Add("72", "좋아하니까요");
+        SCorrectAnswerList.Add("73", "옥상");
+        SCorrectAnswerList.Add("74", "교복");
+        SCorrectAnswerList.Add("80", "3주");
+        SCorrectAnswerList.Add("81", "엄마");
+        SCorrectAnswerList.Add("82", "대금이 들어와서");
+        SCorrectAnswerList.Add("83", "디저트");
+        SCorrectAnswerList.Add("84", "노래방");
     }
     void Update()
     {
@@ -746,25 +870,26 @@ public class ExamUIManager : MonoBehaviour
     {
         string key = (Week - 1).ToString() + round.ToString();
         string question;
+        string player_name = variableManager?.GetVariableValue("Player_name");
         if (name == "Kang")
         {
             if (KQuestionList.TryGetValue(key, out question))
             {
-                return question.Replace("\\n", "\n");
+                return question.Replace("\\n", "\n").Replace("#PlayerName$", player_name);
             }
         }
         if (name == "Jin")
         {
             if (JQuestionList.TryGetValue(key, out question))
             {
-                return question.Replace("\\n", "\n");
+                return question.Replace("\\n", "\n").Replace("#PlayerName$", player_name);
             }
         }
         if (name == "Sul")
         {
             if (SQuestionList.TryGetValue(key, out question))
             {
-                return question.Replace("\\n", "\n");
+                return question.Replace("\\n", "\n").Replace("#PlayerName$", player_name);
             }
         }
         return "Error";

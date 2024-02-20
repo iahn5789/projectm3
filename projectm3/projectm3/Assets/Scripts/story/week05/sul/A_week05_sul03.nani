@@ -6,6 +6,7 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Road01 time:0.5 wait:true
 @showUI CP wait:false
@@ -31,6 +32,7 @@ sul: 뭐야... 무슨 생각을 그렇게 하는 거야.
 {Player_name}: 데이...
 {Player_name}: 데이터가 부족해요!
 @char sulbody3.64 pose:c wait:false
+@sfx Common_Emotion_Question_01 volume:90 loop:false wait:false
 sul: 데이터? 뜬금없이 무슨 소리야.
 {Player_name}: 데이...터... 헤헤...
 @hideChars wait:false
@@ -53,6 +55,7 @@ sul: 그렇구나.
 @char sulbody1.81 pose:c wait:false
 sul: 흐음...
 describe: 평소에도 나희 누나의 생각을 알 수 없었지만, 오늘은 유독 나희 누나가 무슨 생각을 하고 있는지 알 수가 없었다,
+@sfx Footsteps_Female_Ctr_Walk_01 volume:70 loop:false wait:false
 {Player_name}: (그나저나 우리 지금 어디로 가고 있는 거지?)
 {Player_name}: (나희 누나랑 같이 있어서 좋긴 한데...)
 {Player_name}: (그래도 어딜 가는지는 알고 싶은데.)
@@ -97,6 +100,7 @@ sul: 백화점까지 가서 사야 되냐는 게 무슨 소리야?
 {Player_name}: 어쩌다가 비싼 옷을 살 일이 생기면 그럴 때나 가죠.
 sul: 그런가?
 sul: 잠깐. 그보다도 '다있어'가 뭐야?
+@sfx Common_Emotion_Question_01 volume:80 loop:false wait:false
 {Player_name}: 예? '다있어'를 모르신다고요?
 @char sulbody1.11 pose:c wait:false
 sul: 처음 들어보는데...
@@ -128,6 +132,7 @@ sul: 말이 나와서 그런데. 넌 어떤 스타일을 좋아해?
 sul: 응. 어떤 스타일을 좋아하냐고.
 @char sulbody4.74 pose:c wait:false
 sul: 너도 취향이 있을 거 아니야.
+@sfx Emotion_Heart_Beat_01 volume:100 loop:false wait:false
 {Player_name}: 취... 취향..!
 {Player_name}: 그런 걸 그렇게 갑작스럽게 여쭤보시면...
 {Player_name}: 전... 전...
@@ -138,6 +143,7 @@ sul: 이게 그렇게 대답하기 어려운 질문인가..?
 {Player_name}: 연상에... 웨이브 헤어스타일에...
 {Player_name}: 키 크고 카리스마 있는 여자가 좋...
 @char sulbody3.64 pose:c wait:false
+@sfx Common_Emotion_Question_01 volume:70 loop:false wait:false
 sul: ..?
 sul: 무슨 소릴 하는 거야.
 @char sulbody3.63 pose:c wait:false
@@ -160,10 +166,22 @@ sul: 거짓말은 아니라고? 되게 애매한 대답이네.
 @char sulbody3.82 pose:c wait:false
 sul: 흐음... 좋아. 그럼 네가 가장 좋아하는 프리덤의 노래 제목이 뭐야?
 {Player_name}: (헉...)
-@choice "사랑과 평화..?" goto:.Sul0501
-@choice "..." goto:UnimportantChoice_Sul.Sul0502
+
+@hidePrinter  wait:false
+@hideChars wait:false
+@hideUI CP wait:false
+@processInput false
+@set InputKeyValue=false
+@skip false
+@choice "사랑과 평화..?" goto:A_Week05_Sul03.Sul0501
+@choice ... goto:A_Week05_Sul03.Sul0502
 @stop
+
 # Sul0501
+@processInput true
+@set InputKeyValue=true
+@showUI CP wait:false
+
 {Player_name}: 사랑과 평화..?
 @char sulbody3.12 pose:c wait:false
 sul: 너무 교회에서 부를 것 같은 노래 제목 아니야?
@@ -171,11 +189,20 @@ sul: 너무 교회에서 부를 것 같은 노래 제목 아니야?
 sul: 난 그런 노래 만든 적 없는데.
 @char sulbody3.62 pose:c wait:false
 sul: 헷갈린 거야 아니면 대충 얼버무린 거야?
-# Sul05origin01
+@goto A_Week05_Sul03.Sul0503
+
+# Sul0502
+@processInput true
+@set InputKeyValue=true
+@showUI CP wait:false
+
 {Player_name}: 그게 사실...
 {Player_name}: 제가 관심을 가지기 시작한 지 얼마 안돼서요...
 {Player_name}: 아직 제목까지는 잘...
 {Player_name}: 헤헤...
+@goto A_Week05_Sul03.Sul0503
+
+# Sul0503
 @hideChars wait:false
 @char sulbody1.13 pose:c wait:false
 sul: ...
@@ -191,6 +218,9 @@ sul: ...
 @char sulbody1.12 pose:c wait:false
 sul: 장난이야 장난. 얼른 가자.
 {Player_name}: (역시 아직도 무서워...)
+@stopSfx Amb_Road_01 fade:1 wait:false
+@stopBgm BGM_Map_Siawase_01 fade:1 wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:80 loop:false wait:false
 @hideChars wait:false
 
-@goto A_week05_sul04.week05_sul04
+@goto A_week05_sul05.week05_sul05

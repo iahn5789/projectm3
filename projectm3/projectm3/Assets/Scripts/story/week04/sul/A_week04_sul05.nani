@@ -1,5 +1,6 @@
 # week04_sul05
 
+@sfx Common_Wind_Blow_Bright_01 volume:100 loop:false wait:false
 @char sulbody3.15 pose:bc wait:false
 sul: 똑바로 서봐.
 {Player_name}: 네..?
@@ -13,6 +14,7 @@ describe: 숨을 들이마시라는 나희 누나는 내 옆에 가까이 다가
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Heart_Beat_Fast_02 volume:60 loop:true wait:false
 @back Black time:0.5 wait:true
 @back CG/Sul03 time:0.5 wait:true
 @unlock CG/Sul03 wait:false
@@ -35,7 +37,7 @@ describe: 당황한 나는 숨을 내쉬는 대신 헛기침을 하고 말았다
 sul: 집중해. 딴생각하지 말고.
 sul: 다시 한번 해 보자.
 sul: 똑바로 서서...
-@back CG/Sul03_01 wait:true time:1 scale:1.4 pos:60,30
+@back CG/Sul03_01 pos:60,30 scale:1.4 time:1 wait:true
 describe: 나희 누나는 내 자세를 잡기 위해 내 가슴에 손을 올리고 있었다.
 describe: 어느샌가 뛰기 시작한 심장 소리를 나희 누나는 알고 있는지 몰랐다.
 sul: 숨 들이마시고...
@@ -46,7 +48,11 @@ describe: 나희 누나의 손이 내 복부를 가볍게 누르고 있었다.
 describe: 가벼운 손이었지만 어째서인지 움직일 수 조차 없었다.
 sul: 다시 내쉬고...
 {Player_name}: 후우...
-@back CG/Sul03 wait:false scale:1 pos:50,50
+@stopSfx Heart_Beat_Fast_02 fade:1 wait:false
+@stopSfx Common_Wind_Blow_Bright_01 fade:1 wait:false
+@stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:60 loop:true fade:1 wait:false
+@back CG/Sul03 pos:50,50 scale:1 wait:false
 sul: 제법인데?
 sul: 그게 호흡의 기본자세야.
 {Player_name}: 가... 감사합니다...
@@ -84,6 +90,7 @@ describe: 가빠진 숨 때문에 얼굴이 빨개진 건지, 아니면...
 sul: 다시 정리 시작하자. 이제 거의 다 끝났어.
 @char sulbody3.81 pose:bc wait:false
 {Player_name}: 네!
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @hideChars wait:false
 
 @goto A_week04_sul06.week04_sul06

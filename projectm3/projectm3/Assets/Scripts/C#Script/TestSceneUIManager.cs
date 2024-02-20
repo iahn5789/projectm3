@@ -100,14 +100,14 @@ public class TestSceneUIManager : MonoBehaviour
         // 설나희 1주차~9주차?
         DictWeekText.Add("Sul1", ("1주차 제목","드디어 시작된 동아리 생활!","밴드 동아리에 가입해 버렸다. 다룰 수 있는 악기도 없고 노래도 못 부르는데 심지어 내가 없으면 동아리가 해체된다고...?", "더미데이터s"));
         DictWeekText.Add("Sul2", ("2주차 제목","좌충우돌 첫 연습","연습이 끝나고 나희 누나와 함께 남아 시작한 동아리방 정리. 무뚝뚝한 줄만 알았던 나희 누나의 색다른 모습도 볼 수 있었다.", "드디어 부원들과 함께하는 첫 연습 시간. 압도적으로 처참한 내 노래 실력을 나희 누나는 오히려 매력 있다고 말한다."));
-        DictWeekText.Add("Sul3", ("3주차 제목","어색한 만남","3주차 Subject(주인공 시점)", "3주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul4", ("4주차 제목","4주차 타이틀","4주차 Subject(주인공 시점)", "4주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul5", ("5주차 제목","5주차 타이틀","5주차 Subject(주인공 시점)", "5주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul6", ("6주차 제목","6주차 타이틀","6주차 Subject(주인공 시점)", "6주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul7", ("7주차 제목","7주차 타이틀","7주차 Subject(주인공 시점)", "7주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul8", ("8주차 제목","8주차 타이틀","8주차 Subject(주인공 시점)", "8주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul9", ("9주차 제목","9주차 타이틀","9주차 Subject(주인공 시점)", "9주차 Subject(설나희시점)"));
-        DictWeekText.Add("Sul10", ("10주차 제목","10주차 타이틀","10주차 Subject(주인공 시점)", "10주차 Subject(설나희시점)"));
+        DictWeekText.Add("Sul3", ("3주차 제목","어색한 만남","막무가내 대용이를 따라 들어간 백스테이지에서 우연히 나희 누나의 비밀을 알아버렸다. 나... 이제 어떡하면 좋지?", "동아리 연습이 끝난 후, 대용이와 함께 간 콘서트장. 그곳에서 생각지도 못한 의외의 인물을 만나게 된다."));
+        DictWeekText.Add("Sul4", ("4주차 제목","시작된 비밀과외","나희 누나와 프리덤을 함께 하기로 한 나는 부원들 몰래 나희 누나에게 비밀과외를 받고 있다. 그런데... 이거 너무 힘든 거 아니야?", "공공연장에서 뜻밖의 만남이 있고 얼마 뒤. 나희 누나와의 어색한 재회에서 나는 생각지도 제안을 듣게 된다."));
+        DictWeekText.Add("Sul5", ("5주차 제목","필요한 게 있어","결국 필요한 걸 사지는 못했지만, 나희 누나의 또 다른 모습을 볼 수 있었다. 그런데... 필기구 사러 백화점 가는 건 좀 심하지 않나..?", "오늘도 나희 누나와 함께 연습하던 나는 연습이 끝난 후 갈 곳이 있다는 나희 누나를 따라 어딘가로 향하게 된다."));
+        DictWeekText.Add("Sul6", ("6주차 제목","조각난 꿈","나와 함께한 첫 공연에서의 처참한 반응에 상처받은 나희 누나. 그렇지만 우리는 다시 한번 일어서서 함께 걸어가기로 했다.", "나희 누나와 함께하는 프리덤의 첫 공연. 하지만 공연은 생각한 대로 흘러가지 않게 되고 결국 막다른 길에 놓이게 되는데..."));
+        DictWeekText.Add("Sul7", ("7주차 제목","일탈과 자유 사이","카페인에 취한 나희 누나와 함께 일탈과 자유 그 사이를 아슬아슬하게 줄타기했다. 이렇게 정체를 공개해도 괜찮은 걸까..?", "자유를 노래하기 위해 자유를 느껴보겠다는 나희 누나. 처음 느껴보는 자유라 그런지 어딘가 불안불안하고 어색해 보인다."));
+        DictWeekText.Add("Sul8", ("8주차 제목","푸른 하늘 아래의 고독","역시 삶은 생각한 대로 흘러가지 않는 모양이다. 그렇지만 나희 누나와 나는 도망치지 않기 위해 모두를 놀라게 할 마지막 선택을 준비했다.", "프리덤의 정체가 공개된 후. 결국 우려했던 일들이 벌어지고 만다. 그 속에서 나희 누나는 또 다른 선택을 하게 되는데..."));
+        DictWeekText.Add("Sul9", ("9주차 제목","무대는 끝나야 밝아진다","이때까지 걸어온 길은 헛되지 않았다. 나희 누나는 진정한 자유를 찾았고, 나는 나희 누나와 함께하기로 약속했다. 언제까지나...", "눈앞으로 다가온 프리덤 마지막 공연. 한 치 앞도 모르는 상황에서 나희 누나와 나는 다시 한번 진정한 자유를 찾게 된다."));
+        DictWeekText.Add("Sul10", ("10주차 제목","에필로그","10주차 Subject(주인공 시점)", "몇 달 후..."));
 
         line = new Dictionary<string, string>();
         // 강여진 대사
@@ -205,30 +205,31 @@ public class TestSceneUIManager : MonoBehaviour
         SecretMessageLine.Add("11Sul", ("다영이 너무 무서워하지 마...", 0,1));
         SecretMessageLine.Add("12Sul", ("동아리방은 4층 과학실 옆에 있어. 혹시 헷갈릴까봐...", 0,0));
         SecretMessageLine.Add("13Sul", ("여진이 손이 좀 거칠어. 연습을 많이 해서 그런 건가..?", 0,2));
-        SecretMessageLine.Add("21Sul", ("기타는... 배우기 어려워...", 1,1));
-        SecretMessageLine.Add("22Sul", ("베이스가 숟가락이면... 그래서...?", 2,2));
-        SecretMessageLine.Add("23Sul", ("나는... 목소리 매력 있던데...", 3,3));
-        SecretMessageLine.Add("31Sul", ("3_1_Sul대사", 1,1));
-        SecretMessageLine.Add("32Sul", ("3_2_Sul대사", 2,2));
-        SecretMessageLine.Add("33Sul", ("3_3_Sul대사", 3,3));
-        SecretMessageLine.Add("41Sul", ("4_1_Sul대사", 1,1));
-        SecretMessageLine.Add("42Sul", ("4_2_Sul대사", 2,2));
-        SecretMessageLine.Add("43Sul", ("4_3_Sul대사", 3,3));
-        SecretMessageLine.Add("51Sul", ("5_1_Sul대사", 1,1));
-        SecretMessageLine.Add("52Sul", ("5_2_Sul대사", 2,2));
-        SecretMessageLine.Add("53Sul", ("5_3_Sul대사", 3,3));
-        SecretMessageLine.Add("61Sul", ("6_1_Sul대사", 1,1));
-        SecretMessageLine.Add("62Sul", ("6_2_Sul대사", 2,2));
-        SecretMessageLine.Add("63Sul", ("6_3_Sul대사", 3,3));
-        SecretMessageLine.Add("71Sul", ("7_1_Sul대사", 1,1));
-        SecretMessageLine.Add("72Sul", ("7_2_Sul대사", 2,2));
-        SecretMessageLine.Add("73Sul", ("7_3_Sul대사", 3,3));
-        SecretMessageLine.Add("81Sul", ("8_1_Sul대사", 1,1));
-        SecretMessageLine.Add("82Sul", ("8_2_Sul대사", 2,2));
-        SecretMessageLine.Add("83Sul", ("8_3_Sul대사", 3,3));
-        SecretMessageLine.Add("91Sul", ("9_1_Sul대사", 1,1));
-        SecretMessageLine.Add("92Sul", ("9_2_Sul대사", 2,2));
-        SecretMessageLine.Add("93Sul", ("9_3_Sul대사", 3,3));
+        SecretMessageLine.Add("21Sul", ("기타는... 배우기 어려워...", 5,0));
+        SecretMessageLine.Add("22Sul", ("베이스가 숟가락이면... 그래서...?", 0,1));
+        SecretMessageLine.Add("23Sul", ("나는... 목소리 매력 있던데...", 1,2));
+
+        SecretMessageLine.Add("31Sul", ("햄버거..? 별로 안 좋아해...", 0,0));
+        SecretMessageLine.Add("32Sul", ("2인 1조가... 효율적이지...", 5,2));
+        SecretMessageLine.Add("33Sul", ("헬멧이... 생각보다는 편해...", 2,1));
+        SecretMessageLine.Add("41Sul", ("복부에 힘 꽉 줘..!", 3,3));
+        SecretMessageLine.Add("42Sul", ("노래 못 부른다고 놀리면... 알지?", 4,1));
+        SecretMessageLine.Add("43Sul", ("너무 긴장하지 말고... 자유롭게 해...", 1,3));
+        SecretMessageLine.Add("51Sul", ("나 정도면 눈이 맑은 편 아닌가? 아니라고..?", 3,0));
+        SecretMessageLine.Add("52Sul", ("고양이... 귀여워...", 2,0));
+        SecretMessageLine.Add("53Sul", ("트레이닝복..? 그냥 편해서 입은 건데...", 0,3));
+        SecretMessageLine.Add("61Sul", ("내 첫 공연 시간이 8시 30분이었어...", 0,1));
+        SecretMessageLine.Add("62Sul", ("...반항하는 거야?", 4,1));
+        SecretMessageLine.Add("63Sul", ("고양이 발바닥... 따뜻해...", 2,0));
+        SecretMessageLine.Add("71Sul", ("2분이면... 고양이를 쓰다듬을 수 있다고..!", 3,0));
+        SecretMessageLine.Add("72Sul", ("그게 벌써 10년이나 지났구나...", 0,2));
+        SecretMessageLine.Add("73Sul", ("튀김은... 먹어본 적이 있었나..?", 5,0));
+        SecretMessageLine.Add("81Sul", ("2~3주 정도 길게 여행 가고 싶다...", 0,2));
+        SecretMessageLine.Add("82Sul", ("고양이를 왜 좋아하냐고..? 좋아하니까!", 1,3));
+        SecretMessageLine.Add("83Sul", ("교복이... 작아...", 2,0));
+        SecretMessageLine.Add("91Sul", ("시험공부를 3주 전부터 한다고? 공부는 평소에 하는 거 아니었어..?", 6,1));
+        SecretMessageLine.Add("92Sul", ("케이크가 디저트라고? 거...거짓말!", 6,2));
+        SecretMessageLine.Add("93Sul", ("노래방..? 나 감당할 수 있겠어?", 3,1));
     }
 
     // Update is called once per frame

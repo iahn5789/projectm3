@@ -8,7 +8,7 @@
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @sfx Amb_Wind_Bird_01 volume:100 loop:true fade:2 wait:false
-@sfx Amb_School_Club_01 volume:20 loop:true fade:2 wait:false
+@sfx Amb_School_Club_01 volume:100 loop:true fade:2 wait:false
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
@@ -68,30 +68,40 @@ jeon: 원래는 홀로 고독하게 음악을 즐기려고 했건만... 어쩔 �
 @char jeonbody3.32 pose:c wait:false
 jeon: 어허. 이상한 콘서트라니. 밴드 콘서트인데?
 {Player_name}: 밴드..? 갑자기..?
+
 @hideChars wait:false
-@char jeonbody4.11 pose:c wait:false
+@spawn Blur wait:false
+@sfx Common_Paper_Open_02 volume:100 loop:false wait:false
+@back Minicut_sul_01 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini08 wait:false
+
+; @char jeonbody4.11 pose:c wait:false
 jeon: 이번에 내가 좋아하는 팀이 공연을 한다더군...
-@char jeonbody4.31 pose:c wait:false
+; @char jeonbody4.31 pose:c wait:false
 jeon: 한 명의 팬으로서 무시할 수 없는 이벤트지...
-@char jeonbody4.11 pose:c wait:false
+; @char jeonbody4.11 pose:c wait:false
 jeon: 저번에 내가 선물로 줬던 포스터 기억나?
 @sfx Common_Robot_Glitch volume:80
 {Player_name}: 혹시 그 이상한 헬멧 쓰고 있던...
 @stopSfx Common_Robot_Glitch wait:false
-@char jeonbody4.33 pose:c wait:false
+; @char jeonbody4.33 pose:c wait:false
 @sfx Common_Lightning_One_Shot_01 volume:100
 jeon: 이상하다니!!
 jeon: 그 헬멧 속 숨겨진 미모를 보고도 그런 말을 한단 말인가!
 {Player_name}: 뭐야... 누군지 알아?
-@char jeonbody4.11 pose:c wait:false
+; @char jeonbody4.11 pose:c wait:false
 @sfx Common_Text_Kick_01 volume:100
 jeon: 아니.
 {Player_name}: 그럼 어떻게 생겼는지 네가 어떻게 아는데.
-@hideChars wait:false
-@char jeonbody2.22 pose:c wait:false
+; @hideChars wait:false
+; @char jeonbody2.22 pose:c wait:false
 jeon: 나 같은 신사는 다 알 수 있는 법.
 describe: 역시 변태다.
-@hideChars wait:false
+; @hideChars wait:false
+
+@despawn Blur wait:false
+@back Minicut_sul_01 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+
 @char jeonbody3.11 pose:c wait:false
 jeon: 아무튼. 꼭 같이 갔으면 좋겠어.
 jeon: 넌 밴드동아리잖아 좋은 공부가 될 거라고?

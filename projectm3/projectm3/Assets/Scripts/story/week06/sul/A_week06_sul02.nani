@@ -6,19 +6,24 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Dark_01 volume:100 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
+@sfx Common_Tinnitus_01 volume:100 loop:true wait:false
 describe: 나희 누나가 사라진 복도는 이명이 들릴 정도로 조용했다.
 describe: 아무도 없는 텅 빈 복도에 나 혼자 어쩌질 못한 채 서 있었다.
 describe: 나희 누나를 따라가 볼까 했지만 그러지 못했다.
 describe: 따라간다 해도... 뭘 어떻게 해야 할지 몰랐다.
 {Player_name}: ......
+@stopSfx Common_Tinnitus_01 fade:1 wait:false
+@sfx Common_Tapping_Phone_01 volume:100 loop:false wait:false
 describe: 휴대폰을 꺼내 나희 누나에게 전화를 걸려고 했다.
 describe: 나희 누나의 번호까지 쳤지만... 차마 통화 버튼은 누르지 못했다.
+@stopSfx Common_Tapping_Phone_01 fade:0.5 wait:false
 {Player_name}: (지금 전화하면 뭐가 달라지지..?)
 {Player_name}: (내가 무슨 말을 할 수 있지..?)
 {Player_name}: (후...)
@@ -32,6 +37,7 @@ describe: 나희 누나를 따라갈 수도, 그렇다고 마냥 기다릴 수�
 {Player_name}: (나희 누나 짐도 아직 대기실에 있으니까...)
 {Player_name}: (그래... 일단 들어가서 잠시 기다리고 있자.)
 {Player_name}: (나희 누나의 말처럼 혼자만의 시간이 필요할 수 있으...)
+@sfx Common_Paper_Crumple_01 volume:50 loop:false wait:false
 describe: 부스럭-!
 describe: 대기실로 돌아가려 몸을 돌린 그때. 코너 너머에서 무슨 소리가 들렸다.
 describe: 아까까지는 이상하리만치 조용한 복도에서 갑자기 소리가 들리자 약간 오한이 들었다.
@@ -50,10 +56,13 @@ describe: 이 상태에서 대용이를 만난다면...
 {Player_name}: (이 상황에서 대용이까지 만나면 안 돼!)
 {Player_name}: (조금만 더...)
 describe: 나는 발소리를 내지 않기 위해 혼신의 힘을 다해 살금살금 걸었다.
+@stopSfx Amb_Dark_01 fade:1 wait:false
 {Player_name}: (거의 다 왔어. 이제 코너만 지나면...)
+@sfx Common_Cartoon_Bodyfall_01 volume:100 loop:false wait:false
 describe: 쿠당-탕-탕-!
 
 @char labody3.36 pose:c wait:false
+@sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
 la: 아으...
 @char labody3.46 pose:c wait:false
 la: 내가 지금 뭐랑 부딪힌...
@@ -129,6 +138,7 @@ describe: 라은의 계속되는 추궁에 일단 뭐라도 되는대로 말해�
 @hideChars time:0.5 wait:false
 @char labody3.61 pose:c wait:false
 la: 흐음...
+@sfx Human_Swallow_01 volume:100 loop:false wait:false
 describe: 꿀꺽-!
 @char labody3.11 pose:c wait:false
 la: 너... 설마...
@@ -160,6 +170,7 @@ la: 도망가는 중이었구나!
 la: 아무리 일이 힘들어도 그렇지 중간에 도망가면 어떡해!
 la: 널 믿고 고용한 사람들은 뭐가 되겠어!
 la: 아무리 우리가 친구여도 이건 용납할 수 없어!
+@sfx Common_Emotion_Question_01 volume:80 loop:false wait:false
 {Player_name}: 그... 그런가..?
 describe: 바보가 틀림없는 모양이다.
 @hideChars time:0.5 wait:false
@@ -183,6 +194,7 @@ la: 무슨 소리지..?
 {Player_name}: 보안요원...
 @char labody1.74 pose:bc wait:false
 la: 보안요원..? 으... 일단 숨어!
+@sfx Body_Fall_01 volume:80 loop:false wait:false
 {Player_name}: 자... 잠깐만..! 같이...
 @hideChars time:0.5 wait:false
 보안요원A: 그래서 그때 그 둘은 잡았나요?
@@ -193,6 +205,7 @@ describe: 보안요원 중 한 명과 눈이 마주쳤다.
 describe: 보안요원은 내 얼굴을 기억하는 모양이었다.
 {Player_name}: 아... 안녕하세요? 하하하...
 보안요원B: 그때 그 두 놈 중 한 명이잖아..! 잡아!!
+@stopSfx Amb_Office_01 fade:1 wait:false
 {Player_name}: 라은! 일단 도망가...
 describe: 주변을 둘러보니 라은은 이미 사라지고 없었다.
 {Player_name}: (어떡하지? 라은이 없으니 그냥 알려줘도 되지 않을까?)
@@ -204,5 +217,6 @@ describe: 달려오는 보안요원을 마주 본 채 나는 숨을 들이마 �
 {Player_name}: 후웁..!
 보안요원A: 가만히 있어!
 {Player_name}: 안녕히 계세요!!
+@stopBgm BGM_Sul_Sad_Bb_01 fade:1 wait:false
 
 @goto A_week06_sul03.week06_sul03
