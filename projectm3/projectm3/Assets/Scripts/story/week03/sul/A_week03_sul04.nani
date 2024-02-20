@@ -6,8 +6,7 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Night_Wind_01 volume:100 loop:true fade:1 wait:false
-@sfx Amb_Night_Traffic_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Night_Traffic_Car_01 volume:100 loop:true fade:1 wait:false
 @bgm BGM_Map_LovelyEP_01 volume:70 loop:true wait:false
 @back Black time:0.5 wait:true
 @back DowntownNight01 time:0.5 wait:true
@@ -33,8 +32,7 @@ jeon: 나는 그 체력을 위해 저녁을 먹은 거지 절대로 먹고 싶�
 jeon: 내가 말했지? 다 계산 범위 안이라고.
 jeon: 일단 빨리 들어가자고. 가면 내 말이 무슨 뜻인 지 알게 될 거야.
 {Player_name}: 후... 그래. 뭐, 티켓 값도 네가 냈으니까...
-@stopSfx Amb_Night_Traffic_01 fade:1 wait:false
-@stopSfx Amb_Night_Wind_01 fade:1 wait:false
+@stopSfx Amb_Night_Traffic_Car_01 fade:1 wait:false
 @stopBgm BGM_Map_LovelyEP_01 fade:1 wait:false
 @hideChars wait:false
 
@@ -44,7 +42,7 @@ jeon: 일단 빨리 들어가자고. 가면 내 말이 무슨 뜻인 지 알게 
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Cloud_02 volume:90 loop:true fade:1 wait:false
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
 @bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ConcertOut01 time:0.5 wait:true
@@ -66,7 +64,6 @@ jeon: 내 루틴은 절대 틀리지 않아.
 @sfx Whoosh_Fire_01 volume:100 wait:false
 describe: 콘서트장 안의 열기는 정말 대단했다.
 describe: 나는 처음 보는 광경에 압도되어 어떻게 해야 할지 모른 채 가만히 앉아 있었다.
-@sfx SFX_Cloud_Yell_01 volume:80 loop:false wait:false
 describe: 주변을 바라보니 모두가 즐기고 있었다.
 describe: 공연과 하나 되어 하나하나의 구분이 없이, 모두가 하나가 되어 어둠 속 빛이 되어 움직이고 있었다.
 describe: 심지어 공연이 끝나고 다음 공연이 준비되고 있을 때에도 열기가 내 몸에 느껴질 정도였다.
@@ -85,12 +82,8 @@ describe: 밴드라고는 했지만 무대 위에 올라선 사람은 한 명뿐
 @char jeonbody2.32 pose:c wait:false
 jeon: 후후후후후후!!
 describe: 고개를 돌려 대용이를 바라봤지만 대답을 할 상태가 아니었다.
-@stopSfx Amb_Cloud_02 fade:0.5 wait:false
 {Player_name}: ...
 @hideChars wait:false
-@sfx Amb_Crowd_Loop_cutoff_01 volume:80 loop:true fade:1 wait:false
-@sfx Common_Bell_Tree_NoHarp_01 volume:80 wait:false
-@sfx Common_Beautiful_Bell_Tree_01 volume:80 loop:true
 describe: 뭐가 뭔지 몰랐지만 일단 다른 사람들처럼 즐기기로 했다.
 describe: 그러나 공연이 시작하고 5초 뒤, 나는 왜 혼자서 무대에 올라왔는지 알게 되었다.
 describe: 굳이 여러 명일 필요가 없었기 때문이다.
@@ -104,13 +97,10 @@ describe: 그렇게 튕겨져 나간 소리가 서로 만나 새로운 소리를
 describe: 그 새로운 소리는 사람들의 가슴을 뛰게 만들기 충분했다.
 {Player_name}: 멋있다...
 @stopBgm BGM_Metal_imsi fade:2 wait:false
-@stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
-@stopSfx Amb_Crowd_Loop_cutoff_01 fade:1 wait:false
+@stopSfx Amb_Stadium_Crowd_01 fade:1 wait:false
 describe: 정신을 차리고 보니 어느덧 무대는 앵콜공연까지 끝냈고.
 describe: 잠깐의 포토타임이 끝난 뒤 아티스트는 무대 뒤로 들어갔다.
-@sfx Amb_Cloud_02 volume:70 loop:true fade:1 wait:false
-@stopBgm BGM_Metal_imsi fade:2 wait:false
-@bgm BGM_Map_LovelyEP_01 fade:2 volume:70 loop:true wait:false
+@bgm BGM_Map_LovelyEP_01 volume:70 loop:true fade:2 wait:false
 {Player_name}: 와... 정말 굉장했다... 그렇지...?
 describe: 고개를 돌려 대용이를 보니...
 describe: 이 녀석도 감명 깊게 본 것 같았다.
@@ -193,7 +183,7 @@ jeon: 다..당연하지!
 @char jeonbody3.35 pose:c wait:false
 jeon: 절대 그럴 일 없어! 나만 따라오라고!
 describe: 그렇게 대용이와 함께 비밀스럽게 무대 뒤편으로 향했다.
-@sfx Footsteps_Male_Ctr_Walk_01 volume:80 loop:false wait:false
+@sfx Footsteps_Male_Ctr_Walk_01 volume:45 loop:false wait:false
 @stopSfx Amb_Cloud_02 fade:1 wait:false
 @stopBgm BGM_Map_LovelyEP_01 fade:1 wait:false
 @hideChars wait:false
