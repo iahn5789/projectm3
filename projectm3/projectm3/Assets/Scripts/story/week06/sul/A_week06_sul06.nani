@@ -22,7 +22,8 @@ describe: 축제 거리의 한가운데.
 describe: 나와 나희 누나만이 남아있었다.
 @sfx Common_Cloth_movement_02 volume:80 loop:false wait:false
 describe: 고개를 살짝 돌려 나희 누나를 쳐다봤다.
-@bgm BGM_Map_Aspera_01 volume:80 loop:true fade:1 wait:false
+@stopSfx Amb_Night_Cricket_01 fade:1 wait:false
+@bgm BGM_Map_Aspera_01 volume:100 loop:true fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
@@ -183,7 +184,6 @@ describe: 시간이 지나고 거리의 가게들도 이젠 절반 넘게 영업
 describe: 거리를 밝게 비추던 네온사인이 점점 밤하늘의 달보다 어두워지고 있었다.
 describe: 점점 어두워지는 거리 속으로 나희누나는 사라져 갔다.
 
-@stopSfx Amb_Night_Cricket_01 fade:1 wait:false
 @stopBgm BGM_Map_Aspera_01 fade:1 wait:false
 ; 변수 초기화(주의)
 @set LoadingValue=true

@@ -13,11 +13,13 @@
 @processInput true
 @set LoadingValue=false
 
+@sfx Common_Tinnitus_01 volume:100 loop:true wait:false
 describe: 나희 누나가 사라진 복도는 이명이 들릴 정도로 조용했다.
 describe: 아무도 없는 텅 빈 복도에 나 혼자 어쩌질 못한 채 서 있었다.
 describe: 나희 누나를 따라가 볼까 했지만 그러지 못했다.
 describe: 따라간다 해도... 뭘 어떻게 해야 할지 몰랐다.
 {Player_name}: ......
+@stopSfx Common_Tinnitus_01 fade:1 wait:false
 @sfx Common_Tapping_Phone_01 volume:100 loop:false wait:false
 describe: 휴대폰을 꺼내 나희 누나에게 전화를 걸려고 했다.
 describe: 나희 누나의 번호까지 쳤지만... 차마 통화 버튼은 누르지 못했다.
@@ -60,7 +62,6 @@ describe: 나는 발소리를 내지 않기 위해 혼신의 힘을 다해 살�
 describe: 쿠당-탕-탕-!
 
 @char labody3.36 pose:c wait:false
-@sfx Common_Tinnitus_01 volume:100 loop:false wait:false
 @sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
 la: 아으...
 @char labody3.46 pose:c wait:false
@@ -216,5 +217,6 @@ describe: 달려오는 보안요원을 마주 본 채 나는 숨을 들이마 �
 {Player_name}: 후웁..!
 보안요원A: 가만히 있어!
 {Player_name}: 안녕히 계세요!!
+@stopBgm BGM_Sul_Sad_Bb_01 fade:1 wait:false
 
 @goto A_week06_sul03.week06_sul03
