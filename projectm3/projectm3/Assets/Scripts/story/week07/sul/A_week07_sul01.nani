@@ -21,6 +21,18 @@
 @set TestCorrectResult=0
 @set Tutorial=End
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Homeroom01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 으... 으음냐...
 {Player_name}: 으음... 누나...
 {Player_name}: 나희... 누나...
@@ -46,32 +58,57 @@ describe: 잠에서 깨어나 고개를 들어보니 엄마가 앞에 서있었�
 엄마: 빨리 학교 안가?!
 {Player_name}: 죄... 죄송합니다!!
 {Player_name}: 으아..! 늦겠다..!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Road01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 빨리 안오고 뭐해?!
+@char jeonbody2.35 pose:c wait:false
 jeon: 후욱... 후욱..!
 jeon: 나같은... 신사는...
+@char jeonbody2.33 pose:c wait:false
 jeon: 달리기가... 익숙하지 않다고..!
+@char jeonbody2.33 pose:c wait:false
 jeon: 후우욱... 후우욱...
 {Player_name}: 그러면 그 말도 안되는 아침 루틴이라도 건너뛰던가!
 {Player_name}: 덕분에 버스 놓치게 생겼잖아!
 jeon: 후욱... 후욱...
+@char jeonbody2.34 pose:c wait:false
 jeon: 급할 때일수록... 후욱... 후욱...
+@char jeonbody2.33 pose:c wait:false
 jeon: 돌아가라... 후욱... 모르나..?
 {Player_name}: (말이라도 못하면...)
 {Player_name}: 어..? 버스 왔다! 뛰어!!
 {Player_name}: 저거마저 놓치면 진짜 지각이야!
+@char jeonbody2.55 pose:c wait:false
 jeon: ...
 {Player_name}: 뭘 그렇게 멍하니 보고 있는거야? 빨리 오라니까!
 jeon: .....
 {Player_name}: 버스 왔다니...
+@hideChars wait:false
 describe: 부왕-!!
 describe: 그 때 도로에서 무언가 엄청난 소리가 들려왔다.
 describe: 고개를 돌려 소리가 난 곳을 바라보니 오토바이가 지나간 모양이었다.
+@char jeonbody4.55 pose:c wait:false
 jeon: ...
 jeon: 멋있어...
+@char jeonbody4.44 pose:c wait:false
 jeon: 잠깐..!
+@char jeonbody4.45 pose:c wait:false
 jeon: 설마 저건... 우리 학교 교복..?
 jeon: 그것도... 여학생..?
+@char jeonbody4.22 pose:c wait:false
 jeon: 우후후후...
+@hideChars wait:false
 {Player_name}: 하여간 여자라면 그냥 정신을 못차리는...
 {Player_name}: ..?!
 {Player_name}: (우리 학교 교복에... 여학생에... 오토바이..?)
@@ -82,17 +119,22 @@ describe: 대용이를 불러봤지만 대답이 없었다.
 describe: 대용이가 서 있던 자리로 고개를 돌렸다.
 describe: 대용이는 온데간데 사라지고 없었다.
 {Player_name}: (뭐야... 그새 어디로 사라진거야?)
+@char jeonbody3.11 pose:c wait:false
 jeon: {Player_name}. 거기서 뭐 하고 있냐구!!
 {Player_name}: 어..? 어!!
 describe: 대용이는 어느새 버스에 올라 탄 채 창문에서 말을 하고 있었다.
 {Player_name}: 뭐야! 너 언제 탄거야!
+@char jeonbody3.22 pose:c wait:false
 jeon: 진정한 신사라면 기회를 놓치지 않는 법!
+@char jeonbody3.12 pose:c wait:false
 jeon: 너도 어서 늦기전에 버스에 타...
 describe: 치익-
 {Player_name}: 어..! 어..!! 잠시만요!!
 {Player_name}: 기사님! 아직 못탔...
+@char jeonbody3.35 pose:c wait:false
 jeon: {Player_name}... 네 희생은 절대 잊지 않겠다...
 {Player_name}: 자... 잠깐 기다려! 같이 가!
+@char jeonbody3.32 pose:c wait:false
 jeon: 미안하다... 친구여...
 {Player_name}: 야!! 전대용!!
 describe: 사라져가는 버스와 함께 내 처절한 외침 소리도 같이 사라졌다.
