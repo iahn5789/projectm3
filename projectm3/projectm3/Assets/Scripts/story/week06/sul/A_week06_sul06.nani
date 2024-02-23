@@ -6,9 +6,9 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Night_Cricket_01 volume:100 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
+@back Festival01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -23,7 +23,8 @@ describe: 나와 나희 누나만이 남아있었다.
 @sfx Common_Cloth_movement_02 volume:80 loop:false wait:false
 describe: 고개를 살짝 돌려 나희 누나를 쳐다봤다.
 @stopSfx Amb_Night_Cricket_01 fade:1 wait:false
-@bgm BGM_Map_Aspera_01 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Sul_Sad_DM_01 volume:100 loop:true fade:1 wait:false
+@stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
@@ -32,20 +33,21 @@ describe: 고개를 살짝 돌려 나희 누나를 쳐다봤다.
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@back CG/Sul04 time:0.5 wait:true
+@back CG/Sul04_01 time:0.5 wait:true
 @unlock CG/Sul04 wait:false
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
 sul: ...
-describe: 나희 누나는 무언가 생각에 잠긴 듯 보였다,
+describe: 나희 누나는 무언가 생각에 잠긴 듯 보였다.
 describe: 인기척을 내기엔 멀고 부르기엔 가까운 거리.
 describe: 그 애매한 거리가 오히려 나희 누나를 멀어보기에 했다.
 sul: ...
 describe: 나희 누나는 고개를 돌려 나를 쳐다봤다.
 sul: ...
 describe: 나희 누나는 말없이 싱긋 웃었다.
+@back CG/Sul04_01 time:0.5 wait:true
 {Player_name}: 안녕...하세요...
 sul: ...안녕?
 {Player_name}: ...
@@ -71,9 +73,11 @@ sul: 그 흔한 게임마저 한 번도 해본 적 없는 완벽한 아이.
 sul: 그나마 오토바이라도 타면서 버텨봤지만...
 sul: 그렇지만...
 sul: ...
+@back CG/Sul04_03 time:0.5 wait:true
 sul: 나는..?
 sul: 19살의 나는... 누가 사랑해 주는 거야..?
 {Player_name}: 나희 누나...
+@back CG/Sul04_01 time:0.5 wait:true
 sul: 있잖아... 내 꿈이 뭐냐고 물어봤었지?
 sul: 사실 내 꿈은 수의사야...
 sul: 프리덤하고는 아무 관계없어.
@@ -86,6 +90,7 @@ sul: 밴드 동아리면 악기를 가지고 있어도 되잖아?
 sul: 너한테 노래를 부탁한 이유도 그래.
 sul: 내가 노래를 못 부르기도 하지만...
 sul: ...난 어쩌면 너한테 내 짐을 덜고 싶은 거였나 봐.
+@back CG/Sul04_03 time:0.5 wait:true
 sul: 스스로 할 용기가 없으니 아무것도 모르는 애한테 떠넘긴 거지...
 sul: 있지... 네가 사준 불량식품도 사실 한 번도 못 먹었다..?
 sul: 난 그냥 겁쟁이야...
@@ -101,7 +106,7 @@ sul: ...
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
+@back Festival01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -184,7 +189,7 @@ describe: 시간이 지나고 거리의 가게들도 이젠 절반 넘게 영업
 describe: 거리를 밝게 비추던 네온사인이 점점 밤하늘의 달보다 어두워지고 있었다.
 describe: 점점 어두워지는 거리 속으로 나희누나는 사라져 갔다.
 
-@stopBgm BGM_Map_Aspera_01 fade:1 wait:false
+@stopBgm BGM_Sul_Sad_DM_01 fade:1 wait:false
 ; 변수 초기화(주의)
 @set LoadingValue=true
 @processInput false

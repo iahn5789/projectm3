@@ -10,7 +10,7 @@
 @sfx Amb_Classroom_Many_Footsteps_01 volume:80 loop:true fade:1 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:20 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
+@back Store01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -18,7 +18,7 @@
 @sfx Shop_Door_Click__01 volume:100 loop:false wait:false
 직원: 어서 오세요! 뭐든지 다 파는 '다있어'입니다!
 describe: 나희 누나와 함께 '다있어'에 도착했다.
-describe: 다있어'가 처음이라는 나희 누나의 말은 거짓말이 아니었다.
+describe: '다있어'가 처음이라는 나희 누나의 말은 거짓말이 아니었다.
 describe: 나희 누나는 마치 놀이공원에 처음 와본 아이처럼 계속해서 고개를 흔들어댔다.
 @char sulbody2.87 pose:c wait:false
 sul: 우와... 여기 진짜로 뭐든지 다 있는 거 아니야?
@@ -30,35 +30,57 @@ sul: ...
 @hideChars wait:false
 {Player_name}: 나희 누나?
 describe: 나희 누나는 고개를 돌린 채 대답을 하지 않고 있었다.
+
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_04 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini11 wait:false
+
 describe: 슬쩍 쳐다보니 입구 쪽에 놓여있는 불량식품을 쳐다보고 있었다.
 {Player_name}: 설마 불량식품 사려고 여기까지 오신 건 아니겠죠..?
-@char sulbody3.82 pose:c wait:false
+; @char sulbody3.82 pose:c wait:false
 sul: ...
 {Player_name}: 나희 누나?
 sul: .....
 @sfx Human_Hungry_01 volume:80 loop:false wait:false
 describe: 꼬르륵-
 @stopSfx Human_Hungry_01 fade:1 wait:false
-@char sulbody3.1 pose:c wait:false
+; @char sulbody3.1 pose:c wait:false
 sul: 핫..!(..!)
 {Player_name}: ...
-@char sulbody3.11 pose:c wait:false
+; @char sulbody3.11 pose:c wait:false
 sul: 크흠... 아니 그냥 불량식품이 보이길래...
 {Player_name}: 불량식품 좋아하세요?
 sul: 응. 근데 부모님이 못 먹게 하셔...
 {Player_name}: 그럼 학교에 있을 때 드시면 되지 않나요?
 {Player_name}: 방금 거의 사흘은 굶은 사람처럼 쳐다보시던데.
-@char sulbody3.13 pose:c wait:false
+; @char sulbody3.13 pose:c wait:false
 sul: 학교에서... 몰래..?
 {Player_name}: 몰래까지는 아니어도 학교에서 드시면 모르시지 않을까 해서요.
-@char sulbody3.23 pose:c wait:false
+; @char sulbody3.23 pose:c wait:false
 sul: ...
-@char sulbody3.11 pose:c wait:false
+; @char sulbody3.11 pose:c wait:false
 sul: 가자...
 {Player_name}: 네? 아 네.
 describe: 어쩐지 나희 누나의 표정이 평소보다는 약간 침울해 보였다.
 sul: 1층에는 없는 것 같아...
 sul: 2층으로 가보자...
+
+@despawn Blur wait:false
+@back Minicut_sul_04 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Store01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 그런데 뭐 사실 거예요?
 {Player_name}: 일단 점원한테 필요한 게 어디 있는지부터 물어볼...
 @hideChars wait:false
@@ -69,40 +91,50 @@ describe: 휘이익-!
 describe: 나희 누나는 무언가 발견이라도 2층에 올라가자마자 안쪽으로 후다닥 달려갔다.
 @stopSfx Footsteps_Female_Ctr_Run_01 fade:1 wait:false
 {Player_name}: ...뭐지?
+
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_05 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini12 wait:false
+
 describe: 나희 누나를 쳐다보니 안 쪽에 있는 뽑기 기계에서 고개를 들지 못하고 있었다.
 describe: 거의 다이빙이라도 할 기세였다.
 {Player_name}: 누나. 이번에는 또 뭘 보고 계시는...
-@char sulbody4.67 pose:bc wait:false
+; @char sulbody4.67 pose:bc wait:false
 sul: 이거 봐!
 describe: 기계 안쪽에는 각종 키링들이 걸려있었다.
 {Player_name}: 키링..?
-@char sulbody4.72 pose:bc wait:false
+; @char sulbody4.72 pose:bc wait:false
 sul: 그거 말고!
 {Player_name}: 다 키링인 거 같은데...
-@char sulbody4.17 pose:bc wait:false
+; @char sulbody4.17 pose:bc wait:false
 sul: 아니거든! '고양이' 키링이거든!
 {Player_name}: 그... 그렇군요.
 @hideChars wait:false
-@char sulbody1.16 pose:c wait:false
+; @char sulbody1.16 pose:c wait:false
 sul: ...
-@char sulbody1.14 pose:c wait:false
-sul: 혹시 고양이 싫어해?
+; @char sulbody1.14 pose:c wait:false
+; sul: 혹시 고양이 싫어해?
 {Player_name}: 싫어하는 게 아니라 그냥 별로 관심이 없...
-@char sulbody1.74 pose:c wait:false
-sul: 싫어할 수도 있지...
+; @char sulbody1.74 pose:c wait:false
+; sul: 싫어할 수도 있지...
 {Player_name}: 싫어하는 게 아니...
-@char sulbody1.86 pose:c wait:false
-sul: 그럴 수 있지...
+; @char sulbody1.86 pose:c wait:false
+; sul: 그럴 수 있지...
 @sfx Emotion_Sad_01 volume:90 loop:false wait:false
 sul: ...
 describe: 나희 누나의 목소리가 눈에 띄게 침울해졌다.
 {Player_name}: (싫어하는 게 아니라 그냥 관심이 없는 건데...)
 {Player_name}: 아뇨아뇨! 저 고양이 좋아해요!
-@char sulbody1.12 pose:c wait:false
+
+@despawn Blur wait:false
+@back Minicut_sul_05 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+
+@char sulbody1.67 pose:c wait:false
 sul: 그래? 그지? 좋아하지?
 {Player_name}: ...
 {Player_name}: 하나 뽑아드릴까요..?
-@char sulbody1.64 pose:c wait:false
+@char sulbody1.65 pose:c wait:false
 sul: 응..?
 {Player_name}: 저 이런 거 잘 뽑거든요. 혹시 원하시면 뽑...
 @char sulbody1.67 pose:c wait:false
@@ -133,7 +165,7 @@ sul: 정말?! 진짜야?! 거짓말 아니지?!
 @sfx Amb_Classroom_Many_Footsteps_01 volume:80 loop:true fade:1 wait:false
 @bgm BGM_Map_Exciting_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
+@back Store01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
