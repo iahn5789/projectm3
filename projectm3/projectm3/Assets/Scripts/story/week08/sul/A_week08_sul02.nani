@@ -1,5 +1,17 @@
 # week08_sul02
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 슬퍼하는 대용이를 뒤로 하고 동아리실로 왔다.
 describe: 대용이에게 있었던 일을 말해주고는 싶었지만...
 describe: 대용이는 도저히 내 말을 들을 수 있는 상태가 아니었다.
@@ -23,6 +35,11 @@ describe: 어쩌면... 훨씬 더 심했을 지도 모른다.
 {Player_name}: (아니야. 아닐거야...)
 {Player_name}: (나희 누나는...)
 한갑수: {Player_name}!
+
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_han id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+
 describe: 한참 고민하던 와중 선생님이 동아리실로 찾아왔다.
 {Player_name}: 한갑수 선생...님? 여기는 갑자기 왜...
 한갑수: 뭐야... 너 밖에 없어? 여진이랑 다영이는?
@@ -97,5 +114,8 @@ describe: 나희 누나와 같이 있어야... 무슨 일이 있어도 함께 �
 한갑수: 아니다. 지금 말해서 뭐하냐...
 한갑수: 가면 너도 알거야.
 한갑수: 너무 걱정하지는 말고... 알았지?
+
+@despawn Blur wait:false
+@back Minicut_han id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
 
 @goto A_week08_sul03.week08_sul03
