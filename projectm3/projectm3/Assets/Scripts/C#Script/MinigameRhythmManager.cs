@@ -67,7 +67,7 @@ public class MinigameRhythmManager : MonoBehaviour
             }
             noteCount++; // 노트 수를 증가시킵니다.
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         
         EndGame();
     }
