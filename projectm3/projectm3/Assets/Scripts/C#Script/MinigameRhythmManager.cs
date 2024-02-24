@@ -19,7 +19,7 @@ public class MinigameRhythmManager : MonoBehaviour
     public int Combo = 0;
     public Text ComboText;
     public GameObject[] JudgementTextList;
-
+    public GameObject endGamePopup;
     public float bpm = 130f;
     private float spawnInterval;
     private string notePattern;
@@ -65,10 +65,38 @@ public class MinigameRhythmManager : MonoBehaviour
                 int noteIndex = note - '0' - 1; // 문자를 숫자로 변환하고, 배열 인덱스에 맞춤
                 CreateArrow(noteIndex);
             }
-
             noteCount++; // 노트 수를 증가시킵니다.
-
         }
+        yield return new WaitForSeconds(3);
+        
+        EndGame();
+    }
+    public void EndGamePopup()
+    {
+        if(endGamePopup != null)
+        {
+            endGamePopup.SetActive(true);
+        }
+    }
+    public void EndGame()
+    {
+        if (Score >= 1000)
+        {
+            SetMoney(3000);
+        }
+        else if (Score >= 500)
+        {
+            SetMoney(2500);
+        }
+        else if (Score >= 100)
+        {
+            SetMoney(2000);
+        }
+        else
+        {
+            SetMoney(1500);
+        }
+        EndGamePopup();
     }
     void OnEnable()
     {
@@ -267,10 +295,11 @@ public class MinigameRhythmManager : MonoBehaviour
         ScoreText.text = Score.ToString();
     }
 
-    public void SkipGame()
+    public void SetMoney(int money)
     {
-        AddMoney(1500); // 스킵시 보상 1500
-        ResultCoinText.text = "1500개";
+        AddMoney(money); // 스킵시 보상 1500
+        ResultCoinText.text = $"{money}개";
+        EndGamePopup();
     }
     public void AddMoney(int addmoney)
     {
