@@ -1,6 +1,18 @@
 # week09_sul02
 
-{Player_name}	...
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ConcertOut01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+{Player_name}: ...
 sul: ...
 describe: 나희 누나와 함께 무대에 올랐다.
 describe: 거의 3주만에 오른 무대.
@@ -16,13 +28,15 @@ describe: 끝까지 함께할거니까.
 describe: 왜냐하면...
 describe: 나는...
 describe: 나희 누나를 좋아하니까.
+@char sulbody1.11 pose:c wait:false
 sul: ......
-{Player_name}	...
+{Player_name}: ...
 describe: 나희 누나는 무대에 올라와 아직까지 아무 말도 없었다.
 describe: 떨리는건지, 준비하는건지, 당황한건지, 두려운건지...
 describe: 나는 확신할 수 없었다.
 describe: 하지만... 나희 누나의 표정에서 느껴지는 건.
 describe: 그 무엇도 아닌 다른 감정이었다.
+@hideChars time:0.5 wait:false
 describe: 관중들이 당황하며 술렁이고 있는게 느껴졌다.
 describe: 무리도 아니었다.
 describe: 평소와는 너무도 다른 시작이었으니까.
@@ -39,29 +53,44 @@ describe: 그래도... 동영상으로 봐서 아는것과 직접 보는건 차�
 관객: 낸들 아냐?
 관객: 그것도 못봤냐? 얼굴 공개했잖아!
 관객: 그거랑 교복입고 올라온거랑은 다르지!
+@char sulbody1.15 pose:c wait:false
 sul: 저...
+@char sulbody1.52 pose:c wait:false
 sul: 안녕하세요..!
 관객: ...
 describe: 나희 누나가 말을 시작하자 술렁이던 관중석은 어느새 조용해졌다.
+@char sulbody1.15 pose:c wait:false
 sul: 이미 아시는 분들은 아시겠지만...
 sul: 모르시는분도 계실 수 있으니 정식으로 자기소개부터 하겠습니다.
+@hideChars time:0.5 wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 저는..! 프리덤의 일원인...
+@char sulbody2.12 pose:c wait:false
 sul: 설나희라고 합니다! 잘 부탁드립니다!
 describe: 관중석은... 여전히 조용했다.
+@hideChars time:0.5 wait:false
+@char sulbody4.15 pose:c wait:false
 sul: 그리고... 제 옆에 있는 이 친구는...
 sul: 저와 같은 프리덤의 일원인...
+@char sulbody4.12 pose:c wait:false
 sul: {Player_name}!
+@char sulbody4.72 pose:c wait:false
 sul: 하하하...
+@char sulbody4.71 pose:c wait:false
 sul: ...
-describe: 관중석은 잔인하리만치 조욯했다.
+describe: 관중석은 잔인하리만치 조용했다.
 describe: 어떠한 반응도 없었다.
 describe: 호응도, 야유도 없었다.
 describe: 그저... 침묵만이 있었다.
 describe: 주춤하는 나희 누나가 보였다.
 describe: 나는 나희 누나의 곁으로 가...
 describe: 손을 잡고 나란히 서 작게 속삭였다.
-{Player_name}	너무 걱정하지 마세요.
-{Player_name}	제가 있잖아요..!
+@hideChars time:0.5 wait:false
+
+; 미니컷
+
+{Player_name}: 너무 걱정하지 마세요.
+{Player_name}: 제가 있잖아요..!
 sul: ...
 sul: 응..!
 describe: 나희 누나가 다시 말을 이어가기 시작했다.
@@ -83,7 +112,11 @@ sul: 모든게 마법처럼 해결될 일은 절대로 없다는걸.
 describe: 나희 누나는 나를 보며 싱긋 웃었다.
 describe: 그런 나희 누나의 표정에서는...
 describe: 이제 슬픔과 외로움은 보이지 않았다.
-{Player_name}	...
+
+; 미니컷
+
+@char sulbody3.71 pose:c wait:false
+{Player_name}: ...
 sul: ...
 describe: 나희 누나는 이제 더 이상 할 말이 없는 듯 싶었다.
 describe: 이제 남은건... 관객들이 어떻게 받아들이냐였다.
@@ -95,12 +128,15 @@ describe: 내 심장 소리일까 나희 누나의 심장 소리일까
 describe: 나희 누나는 아무렇지 않은 척 하고 있었지만...
 describe: 나희 누나와 맞잡은 손에서는 작지만 분명한 떨림이 느껴지고 있었다.
 관객: ...덤...
-{Player_name}	..?
+@char sulbody3.61 pose:c wait:false
+{Player_name}: ..?
 관객: ..프...
 관객: ...리덤...
 관객: 프리덤..
 관객: 프리덤..!
 관객: 프리덤!!
+@hideChars time:0.5 wait:false
+@char sulbody3.65 pose:bc wait:false
 sul: ..!
 describe: 조용했던 무대는 어느덧 함성소리로 가득차 있었고,
 describe: 어두웠던 관객석은 응원의 불빛으로 환하게 빛나고 있었다.
@@ -116,17 +152,26 @@ describe: 이 모든 노력이 단 한명이라도 설득했다면...
 describe: 그리고 그 한명 덕분에 이런 결과가 나올 수 있었다면...
 describe: 나희 누나와 내가 함께 걸어온 길이 헛되지 않았다면...
 describe: 그걸로도 괜찮은게 아닐까?
+@char sulbody3.75 pose:bc wait:false
 sul: ...
 sul: 다행이다...
+@char sulbody3.71 pose:bc wait:false
 describe: 나희 누나의 떨림이 점점 줄어들었다.
-{Player_name}	네... 다행이네요...
+{Player_name}: 네... 다행이네요...
+@char sulbody3.52 pose:bc wait:false
 describe: 나희 누나는 고개를 돌려 싱긋 웃어보였다.
+@hideChars time:0.5 wait:false
+@char sulbody2.62 pose:bc wait:false
 sul: 그럼...
 sul: 이제 시작해볼까?
-{Player_name}	...
-{Player_name}	네..!
+{Player_name}: ...
+{Player_name}: 네..!
+@hideChars time:0.5 wait:false
+@char sulbody4.67 pose:bc wait:false
 sul: 오래 기다리셨습니다 여러분!
 sul: 프리덤 공연..!
+@char sulbody4.57 pose:bc wait:false
 sul: 시작하겠습니다!
+@hideChars time:0.5 wait:false
 
 @goto A_week09_sul03.week09_sul03

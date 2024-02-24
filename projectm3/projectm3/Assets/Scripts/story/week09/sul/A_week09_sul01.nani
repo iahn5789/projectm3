@@ -21,54 +21,95 @@
 @set TestCorrectResult=0
 @set Tutorial=End
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Dream time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 저... 나희 누나?
 {Player_name}: 진짜 하실거에요..?
+@char sulbody2.11 pose:c wait:false
 sul: 응?
 {Player_name}: 진짜 이대로 간다고요? 헬멧도 안쓰고?
+@char sulbody2.62 pose:c wait:false
 sul: 당연하지! 그래서 옷도 교복으로 입었잖아.
 {Player_name}: 아... 아무리 그래도...
 {Player_name}: 다시 한번 생각해 보는게 좋지 않을까요?
+@char sulbody2.52 pose:c wait:false
 sul: 왜? 설마 이제와서 부끄러운거야?
 {Player_name}: 그건 아니지만...
+@hideChars time:0.5 wait:false
 describe: 부끄러운건 아니었다.
 describe: 전혀 떨리지 않는다면 거짓말이겠지만...
 describe: 그렇다고 떨려서 하기 싫은 것도 아니었다.
 describe: 다만...
 describe: 저번에 있었던 일을 생각한다면...
 describe: 과연 옳은 선택일까 싶은 의문이 계속해서 들었다.
+@char sulbody4.65 pose:c wait:false
 sul: 무슨 일 있어..?
+@char sulbody4.85 pose:c wait:false
 sul: 표정이 안좋은데...
+@char sulbody4.61 pose:c wait:false
 describe: 나희 누나는 손을 들어 내 얼굴을 가볍게 쓰다듬었다.
+@hideChars time:0.5 wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 열은 없는 거 같은데...
 {Player_name}: 나희 누나...
 {Player_name}: 전...
+@char sulbody2.11 pose:c wait:false
 describe: 나는 나희 누나의 손을 잡고 잠시 나희 누나를 지긋이 바라봤다.
 {Player_name}: 혹시라도 누나가 힘들어 하실까봐...
 {Player_name}: 그게 걱정이 되서요.
 sul: ...
+@char sulbody2.15 pose:c wait:false
 sul: 지금 내 생각 해주는거야?
+@char sulbody2.27 pose:c wait:false
 sul: 감동적인데..?
 {Player_name}: 자... 장난 아니거든요!
 {Player_name}: 저번에도 그런 일이 있었는데 이번이라고 다르다는 보장이 없...
+@char sulbody2.65 pose:c wait:false
 sul: 없지. 아마 이번에도 그럴껄?
+@char sulbody2.61 pose:c wait:false
 {Player_name}: ...네?
 {Player_name}: 그... 그게 무슨!
+@char sulbody2.65 pose:c wait:false
 sul: 내 걱정 해주는건 고마워.
+@char sulbody2.85 pose:c wait:false
 sul: 그렇지만...
+@char sulbody2.75 pose:c wait:false
 sul: 이제 괜찮아.
+@char sulbody2.71 pose:c wait:false
 {Player_name}: 누나는... 무섭지 않으세요?
+@char sulbody2.75 pose:c wait:false
 sul: 무서웠지…
+@hideChars time:0.5 wait:false
+@char sulbody3.75 pose:c wait:false
 sul: 사람들이 날 어떻게 생각할지 무서웠고…
 sul: 주변에서 날 어떻게 바라보는지 늘 신경썼지…
 sul: 그래서 가면 뒤로 숨었던거고.
+@char sulbody3.72 pose:c wait:false
 sul: …그렇지만.
+@char sulbody3.65 pose:c wait:false
 sul: 이제 그러지 않기로 했잖아?
 sul: 언제까지 가면 뒤에 숨어있을 수는 없으니까.
+@char sulbody3.72 pose:c wait:false
 sul: 무엇보다도…
 {Player_name}: ..?
+@hideChars time:0.5 wait:false
+@char sulbody4.52 pose:bc wait:false
 sul: 네가 곁에 있잖아?
+@char sulbody4.65 pose:bc wait:false
 sul: 무슨 일이 있어도 함께 하기로 했으니까...
+@char sulbody4.77 pose:bc wait:false
 sul: 그러니까...
+@char sulbody4.67 pose:bc wait:false
 sul: 같이 가보자!
 {Player_name}: ...
 describe: 이제는 익숙해진 나희 누나의 얼굴.

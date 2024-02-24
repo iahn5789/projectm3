@@ -99,7 +99,24 @@ sul: 그 때 우리가 말하는거야!
 {Player_name}: 뭐라고요..?
 @char sulbody4.52 pose:bc wait:false
 sul: 그건 바로..!
+@goto A_week08_sul06.week08_sul06_03
 
+
+
+
+# week08_sul06_02
+@processInput true
+@set InputKeyValue=true
+@set WeekTitle=""
+@showUI CP wait:false
+2번째 스토리
+@goto A_week08_sul06.week08_sul06_03
+
+
+
+
+
+# week08_sul06_03
 ; 변수 초기화(주의)
 @set LoadingValue=true
 @processInput false
