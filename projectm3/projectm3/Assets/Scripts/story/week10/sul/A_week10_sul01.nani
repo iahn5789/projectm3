@@ -21,6 +21,18 @@
 @set TestCorrectResult=0
 @set Tutorial=End
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 후우...
 {Player_name}: (이제 어느 정도 마무리 되었겠지..?)
 describe: 숙이고 있던 허리를 펴 가볍게 스트레칭을 했다.
@@ -70,51 +82,84 @@ describe: 드르륵-!
 describe: 나는 정리 중이던 박스를 내려놓은 채 고개를 돌렸다.
 {Player_name}: ...
 {Player_name}: 나희... 누나?
+@char sulbody1.12 pose:bc wait:false
 sul: 안녕?
 describe: 동아리실 문에는 나희 누나가 서있었다.
 {Player_name}: 누나! 연락도 없이 무슨 일이에요?
 {Player_name}: 교복까지 다 챙겨 입으시고...
+@char sulbody1.85 pose:bc wait:false
 sul: 아니... 뭐...
+@char sulbody1.75 pose:bc wait:false
 sul: 남자친구 만나러 오는데 꼭 연락이 필요한가..?
 {Player_name}: 그... 그건 아니긴 한데...
+@char sulbody1.24 pose:bc wait:false
 sul: 흐음... 별로 반가운 눈치가 아닌데..?
 {Player_name}: 아니긴요!
 {Player_name}: 거의 일주일동안 누나 바쁘셔서 통 못 만나봤는데...
+@char sulbody1.11 pose:bc wait:false
 sul: ...
+@char sulbody1.52 pose:bc wait:false
 sul: 후훗... 보고 싶었어.
 {Player_name}: 저도요. 나희 누나..!
+@char sulbody1.84 pose:bc wait:false
 sul: 후우...
+@char sulbody1.65 pose:bc wait:false
 sul: 이걸 다 혼자서 정리하고 있었던 거야?
+@char sulbody1.61 pose:bc wait:false
 {Player_name}: 그렇죠..?
+@char sulbody1.15 pose:bc wait:false
 sul: 그렇구나... 힘들었겠네.
+@char sulbody1.11 pose:bc wait:false
 {Player_name}: 아니 뭐... 조금 힘들긴 했는데.
 {Player_name}: 누구 덕분에 힘이 좀 나네요!
 {Player_name}: 하하하...
+@hideChars time:0.5 wait:false
+@char sulbody2.52 pose:bc wait:false
 sul: 후훗...
+@char sulbody2.65 pose:bc wait:false
 sul: 그나저나 다른 애들은..?
+@char sulbody2.61 pose:bc wait:false
 {Player_name}: ...
+@char sulbody2.75 pose:bc wait:false
 sul: 결국... 안 나온 거야?
+@char sulbody2.71 pose:bc wait:false
 {Player_name}: 안 나온 거는 둘째 치고... 연락도 안돼서요.
 {Player_name}: 선생님한테 여쭤봐도 자세히 알려주시지도 않고...
 {Player_name}: 누나는 혹시 연락되시나요?
+@char sulbody2.75 pose:bc wait:false
 sul: 아니... 나도 안돼...
+@char sulbody2.71 pose:bc wait:false
 sul: ...
+@char sulbody2.65 pose:bc wait:false
 sul: 그럼... 여기도 이제...
+@char sulbody2.61 pose:bc wait:false
 {Player_name}: 네...
+@char sulbody2.75 pose:bc wait:false
 sul: 그렇게 됐구나...
 sul: 그래서 정리하고 있었구나.
 sul: 진짜... 마지막이네...
+@char sulbody2.76 pose:bc wait:false
 {Player_name}: 에이. 그래도 나중에 저희가 찾아오면 되죠!
 {Player_name}: 저도 아직 졸업하려면 일 년 정도 남았고...
+@char sulbody2.11 pose:bc wait:false
 sul: ...
+@char sulbody2.15 pose:bc wait:false
 sul: 그...
 {Player_name}: ..?
 {Player_name}: 무슨 일 있으세요?
+@hideChars time:0.5 wait:false
+@char sulbody3.75 pose:bc wait:false
 sul: 아... 아니야!
+@char sulbody3.15 pose:bc wait:false
 sul: 마저 정리하고 나가자.
 sul: 많이 남았어?
+@char sulbody3.11 pose:bc wait:false
 {Player_name}: 잠시만요...
 {Player_name}: 마이크랑 믹서만 정리하면 끝나요.
+@hideChars time:0.5 wait:false
+
+;미니컷
+
 describe: 나는 허리를 숙여 바닥에 떨어져 있던 마이크를 집었다.
 describe: 마이크는 사용한 지 오래 지난 듯 먼지가 잔뜩 끼어있었다.
 describe: ... 실제로도 사용한 지 오래 지났다.
@@ -131,80 +176,126 @@ sul: 응?
 sul: ...그랬던가?
 {Player_name}: 네..?!
 {Player_name}: 서... 설마... 기억이 안나시...
+
+;미니컷
+@char sulbody2.52 pose:c wait:false
 sul: 후훗! 농담이야.
+@char sulbody2.12 pose:c wait:false
 sul: 당연히 기억나지.
+@char sulbody2.84 pose:c wait:false
 sul: 그때 다영이가 화나서 마이크 집어던지지 않았던가?
 {Player_name}: 집어... 던지지는 않았고요...
+@char sulbody2.14 pose:c wait:false
 sul: 그럼 베이스를 집어던졌던가?
 {Player_name}: 그...럴걸요?
+@char sulbody2.23 pose:c wait:false
 sul: 대단하긴 했어.
+@char sulbody2.12 pose:c wait:false
 {Player_name}: 하하하...
 {Player_name}: 그래도...
 {Player_name}: 누나 덕분에 계속할 수 있었어요.
+@char sulbody2.65 pose:c wait:false
 sul: 나 덕분에?
+@char sulbody2.61 pose:c wait:false
 {Player_name}: 사실... 그때 진지하게 고민하고 있었거든요.
 {Player_name}: 이걸 계속하는 게 맞는 건지...
 {Player_name}: 애초에 잘하지도 못하고 관심도 없었는데...
 {Player_name}: 잘 알지도 못한 채로 얼떨결에 들어와서,
 {Player_name}: 남들한테 피해만 주는 건 아닌지, 그런 생각이 계속 들더라고요.
+@hideChars time:0.5 wait:false
+@char sulbody3.75 pose:c wait:false
 sul: 그러면...
 sul: 만약 그때 그만뒀다면...
+@char sulbody3.15 pose:c wait:false
 sul: 어땠을 것 같아?
+@char sulbody3.11 pose:c wait:false
 {Player_name}: 글쎄요...
 {Player_name}: 그냥... 뭐... 살고 있지 않았을까요?
 sul: ..?
 {Player_name}: 아..!
+@char sulbody3.61 pose:c wait:false
 {Player_name}: 무... 물론..! 그때 그만뒀으면 누나랑 프리덤도 못했을 테니까요..!
 {Player_name}: 하하하...
 {Player_name}: 그러니까... 그만뒀으면 안 됐죠!
+@char sulbody3.71 pose:c wait:false
 {Player_name}: 어우! 상상도 못 하겠네..! 하하...
 {Player_name}: 믹서 정리 해야겠다..!
+@hideChars time:0.5 wait:false
 describe: 나는 어색하게 콧노래를 부르며 믹서로 다가갔다.
+@char sulbody4.71 pose:c wait:false
 sul: 오랜만이네... 이것도...
 sul: 이제 어떻게 쓰는지는 알지?
 {Player_name}: 그럼요. 제가 누구한테 배웠는데요.
+@char sulbody4.15 pose:c wait:false
 sul: 그래..? 누구한테 배웠는데?
 {Player_name}: 음... 글쎄요..?
 {Player_name}: 처음 만나면 도대체 무슨 생각을 하는지 모르겠지만....
+@char sulbody4.61 pose:c wait:false
 {Player_name}: 알고 보면 멋있고, 귀엽고, 사랑스러운...
 {Player_name}: 그런 사람한테 배웠어요!
+@char sulbody4.11 pose:c wait:false
 sul: ..?
+@hideChars time:0.5 wait:false
+@char sulbody2.2 pose:bc wait:false
 sul: ...무슨 생각을 하는지 모른다고?
 sul: 그건 무슨 소리야?
+@char sulbody2.3 pose:bc wait:false
 {Player_name}: 네..?
 {Player_name}: 누나... 예전에 어떠셨는지...
 {Player_name}: 모르세요..?
+@char sulbody2.65 pose:bc wait:false
 sul: 나..? 예전에 내가 왜...
+@char sulbody2.61 pose:bc wait:false
 {Player_name}: 누나가 하시는 모든 말이 3글자로 끝났어요.
 {Player_name}: 응... 아니... 그래...
 {Player_name}: 안녕... 좋아... 싫어...
+@hideChars time:0.5 wait:false
+@char sulbody3.75 pose:bc wait:false
 sul: 아... 아니거든..!
+@char sulbody3.71 pose:bc wait:false
 {Player_name}: 진짠데...
 {Player_name}: 심지어 표정도 없어가지고 도통 무슨 생각을 하시는지 몰...
+@char sulbody3.1 pose:bc wait:false
 sul: 아니거든!
+@char sulbody3.11 pose:bc wait:false
 {Player_name}: ...
 sul: ...
+@char sulbody3.85 pose:bc wait:false
 sul: 내가 진짜 그랬어..?
+@char sulbody3.81 pose:bc wait:false
 {Player_name}: 아... 아무튼 지금은 그러지 않으시잖아요?
 {Player_name}: 그게 중요한 거죠..! 하하...
+@char sulbody3.75 pose:bc wait:false
 sul: 언제부터 그런 거지..?
+@char sulbody3.71 pose:bc wait:false
 {Player_name}: 처...음부터요..?
 {Player_name}: 그런데...
+@char sulbody3.65 pose:bc wait:false
 sul: 그런데..?
+@char sulbody3.61 pose:bc wait:false
 {Player_name}: 처음에는 그랬는데...
 {Player_name}: 이 믹서 설명해 주실 때. 그때는 달랐어요.
 {Player_name}: 뭐랄까... 그전까지는 되게 짧고 간결하게 말씀하셨는데...
 {Player_name}: 이 믹서 설명해 주실 때에는 처음으로 누나의 감정이 느껴졌어요.
+@char sulbody3.85 pose:bc wait:false
 sul: 흐음... 그랬구나...
+@char sulbody3.84 pose:bc wait:false
 sul: 그럼...
+@char sulbody3.65 pose:bc wait:false
 sul: 그때부터 나 좋아한 거야?
 sul: 나 옷 갈아입는 거 훔쳐볼 정도로?
 {Player_name}: 그... 그건 훔쳐본 게 아니라..!
+@hideChars time:0.5 wait:false
+@char sulbody1.85 pose:bc wait:false
 sul: 훔쳐본 건 아니긴 하지. 대놓고 봤으니까.
+@char sulbody1.81 pose:bc wait:false
 {Player_name}: 아... 아무튼 정리 빨리 끝내고 나가죠!
+@char sulbody1.52 pose:bc wait:false
 sul: 뭐 어때? 이제 사귀는 사인데.
+@char sulbody1.85 pose:bc wait:false
 sul: 이제 와서 신고하기도 좀 그렇고...
 {Player_name}: 으... 으윽...
+@char sulbody1.67 pose:bc wait:false
 sul: 포기하는 게 좋을걸? 앞으로도 계속 놀릴 거니까!
 
 @goto A_week10_sul02.week10_sul02
