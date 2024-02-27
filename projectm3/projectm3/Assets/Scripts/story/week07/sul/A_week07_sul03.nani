@@ -1,99 +1,153 @@
 # week07_sul03
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScLobby01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 평소보다 일찍 끝난 연습.
 describe: 동아리 연습을 하지 않았기에 평소보다 일찍 끝날 수 있었다
 describe: 그렇다 해도 학교에 남아 있는 사람은 나희 누나와 나뿐이었다.
 {Player_name}: 크... 크흠..!
 {Player_name}: 그나저나... 저번엔 잘 들어가셨나요..?
+@char sulbody3.64 pose:c wait:false
 sul: 우웅..?
 describe: 우물우물-
 describe: 나희 누나는 아직까지 불량식품을 먹고 있었다.
 describe: 다행히도 나희 누나의 마음에 든 모양이었다.
 {Player_name}: 아... 아니에요! 신경 쓰지 마세요...
+@char sulbody3.62 pose:c wait:false
 sul: 웅...
 describe: 우물우물-
 describe: 꿀꺽-!
+@char sulbody3.11 pose:c wait:false
 sul: ...
+@char sulbody3.52 pose:c wait:false
 sul: 맛있다...
 {Player_name}: ...맛있으세요?
+@char sulbody3.62 pose:c wait:false
 sul: 응... 한 10년만에 먹으니까 더 맛있는거 같아...
 {Player_name}: 그... 그렇군요...
 {Player_name}: 종종 사드릴게요..!
+@char sulbody3.63 pose:c wait:false
 sul: ...진짜?
 {Player_name}: 그럼요! 그거 뭐 얼마나 한다고...
+@char sulbody3.84 pose:c wait:false
 sul: 그럼 있잖아...
+@char sulbody3.12 pose:c wait:false
 sul: 학교에서 안파는 걸로 사줄 수 있어..?
 sul: 다른 것도 먹어보고 싶어서...
 {Player_name}: 그... 그럼요! 얼마든지 사다 드릴게요!
 sul: ...
+@char sulbody3.52 pose:c wait:false
 sul: 고마워..!
 describe: 요즘들어 나희 누나의 웃는 얼굴을 더 자주 보는 것 같았다.
+@hideChars wait:false
+@char sulbody2.62 pose:c wait:false
 sul: 그러고보니... 아까 뭐라고 한거야?
 sul: 주말 어쩌고 하지 않았어?
 {Player_name}: 아... 아니 뭐... 집에 잘 들어가셨나 해서요...
+@char sulbody2.63 pose:c wait:false
 sul: 왜?
 {Player_name}: 네..?
+@char sulbody2.84 pose:c wait:false
 sul: 아니. 뭐...
+@char sulbody2.63 pose:c wait:false
 sul: 그런건 왜 물어보는거야?
 {Player_name}: 그... 그건... 그러니까...
 {Player_name}: 주...주말 동안 잘 지냈나 해서요..!
 {Player_name}: 보통 주말에 쉬기도 하고 놀러도 가는데 저번에 그...
 {Player_name}: 그... 아무튼..!
+@char sulbody2.11 pose:c wait:false
 sul: {Player_name}...
+@char sulbody2.12 pose:c wait:false
 sul: 얼굴이 갑자기 빨개졌어...
 {Player_name}: 네..? 네? 제가요?!
+@char sulbody2.62 pose:c wait:false
 sul: 흐음..?
-{Player_name}: 하하하... 
+{Player_name}: 하하하...
+@hideChars wait:false
+@char sulbody1.83 pose:c wait:false
 sul: 주말에...
+@char sulbody1.62 pose:c wait:false
 sul: 그냥 아무것도 안했어.
 {Player_name}: 아무것도 안하셨다고요?
 sul: 응. 아무것도.
+@char sulbody1.82 pose:c wait:false
 sul: 그냥 집에 누워서 이런 저런 생각만 했어.
 {Player_name}: 그렇군요...
+@char sulbody1.12 pose:c wait:false
 sul: 약간 아쉬워 하는 말툰데..?
 sul: 네 생각은 안했는지 궁금한거야?
 {Player_name}: 커...커헉..!
+@char sulbody1.84 pose:c wait:false
 sul: ...
+@char sulbody1.74 pose:c wait:false
 sul: 네 생각도 했어...
 {Player_name}: 케...케켁...
 {Player_name}: 제... 생각이요..?
+@char sulbody1.12 pose:c wait:false
 sul: 같은 밴드부면 생각 할 수 있는거 아니야?
+@char sulbody1.17 pose:c wait:false
 sul: 무슨 생각을 하는거야?
 {Player_name}: 그... 그렇죠..? 하하...
+@char sulbody1.52 pose:c wait:false
 sul: 후훗...
+@char sulbody1.17 pose:c wait:false
 sul: 아무튼 빨리 가자! 곧 있으면 어두워지겠다.
 {Player_name}: 예..? 예? 어디를요?!
+@char sulbody1.12 pose:c wait:false
 sul: 어디긴. 놀러가야지.
 sul: 빨리 와. 내가 태워줄게.
 {Player_name}: 태워준다니... 설마 오토바이요..?
+@char sulbody1.64 pose:c wait:false
 sul: 당연하지. 설마 걸어가려고?
 {Player_name}: 그...그것보다 제가 타 본 적이 없어서...
+@char sulbody1.12 pose:c wait:false
 sul: 괜찮아. 어차피 운전도 내가 하는데 뭘.
 sul: 넌 그냥 꽉 잡고만 있으면 돼.
 {Player_name}: (꽈... 꽉 잡으라고..?)
+@char sulbody1.62 pose:c wait:false
 sul: 여기 뒤에 앉으면 돼.
 describe: 나희 누나는 어느새 오토바이에 앉아 시동까지 걸었다.
+@char sulbody1.52 pose:c wait:false
 sul: 오늘은 네 헬멧까지 챙겨왔으니 걱정하지 말라고.
 {Player_name}: 감사합니다...
+@hideChars wait:false
 describe: 나는 나희 누나의 오토바이에 앉아 헬멧을 썼다.
 describe: 막상 앉으니 손을 어디에 두어야 할 지 몰랐다.
 describe: 덕분에 자세까지 엉거주춤해져버렸다.
+@char sulbody2.12 pose:c wait:false
 sul: 출발할테니까 꽉 잡아.
 {Player_name}: 알겠습니다..!
 describe: 나는 나희 누나의 교복 자켓 끝을 손가락으로 살짝 잡았다.
+@char sulbody2.13 pose:c wait:false
 sul: ...뭐하고있어?
 {Player_name}: 그... 어딜 잡아야 할 지를...
+@char sulbody2.65 pose:c wait:false
 sul: 어디긴 어디야. 당연히 허리지.
 {Player_name}: (허...허리...)
 {Player_name}: 크...크흠...
 {Player_name}: 시... 실례하겠습니다..!
+@hideChars wait:false
 describe: 나는 손을 들어 나희 누나의 허리춤에 살포시 손을 올렸다.
 describe: 꽉 잡으라는 나희 누나의 말과는 다르게 도저히 손을 쥘 수 없었다.
 describe: 고작해야 손을 올리는 정도밖에는 할 수 없었다.
+@char sulbody3.11 pose:c wait:false
 sul: ...
+@char sulbody3.15 pose:c wait:false
 sul: 가다가 굴러떨어지고싶어?
+@char sulbody3.12 pose:c wait:false
 sul: 허리를 감싸야지.
 {Player_name}: (허... 허리를... 감싸라고..?)
+@hideChars wait:false
 describe: 나는 가슴을 숙여 손을 앞으로 뻗어 나희 누나의 허리를 감쌌다.
 describe: 심장이 미친듯이 뛰기 시작했다.
 describe: 그 심장 소리가 등 너머로 나희 누나에게 전달되는 듯 싶었다.
@@ -105,6 +159,8 @@ describe: 나희 누나의 따스한 등이 볼에 닿았다.
 describe: 나희 누나의 등에 닿은 볼에 어떤 이상한 감촉이 느껴졌다.
 describe: 검지손가락 마디 하나 정도 크기의 살짝 튀어나온 무언가...
 {Player_name}: ......
+@char sulbody2.62 pose:c wait:false
 sul: 꽉 잡았지? 출발한다!
+@hideChars wait:false
 
 @goto A_week07_sul04.week07_sul04

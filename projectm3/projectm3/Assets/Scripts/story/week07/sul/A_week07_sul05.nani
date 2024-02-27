@@ -1,19 +1,74 @@
 # week07_sul05
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Dream time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@char sulbody2.12 pose:c wait:false
 sul: 무슨 생각을 그렇게 해?
 sul: 혹시 긴장한 거야?
 describe: 긴장했냐 묻느냐면 질문에 나는 내 심장 소리를 들려주고 싶었다.
+@char sulbody2.84 pose:c wait:false
 sul: 나도 살짝 긴장되긴 하는데... 연습한 대로만 하면 잘될 거야!
+@char sulbody2.62 pose:c wait:false
 sul: 그러니까 심호흡 한번 하고...
 describe: 나희 누나의 손이 내 등 뒤에 닿았다.
 describe: 부드럽고 따뜻한 손.
 describe: 손바닥이 완전히 등에 닿지는 않았지만, 온기를 느끼기엔 충분한 정도였다.
 sul: 외치는 거야!
 {Player_name}: 어라..?
+@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ConcertIn01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 MC: 오래 기다리셨습니다! 다음 차례는 드디어...
 {Player_name}: 어쩐지... 이 장면...
 sul: 러브...
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Dream time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 MC: 러브크레센도입니다!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ConcertOut01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 일주일만에 선 무대.
 describe: 관객 수는 그때에 비하면 비교도 되지 않을 정도로 적었다.
 describe: 백분의 일..? 아니 어쩌면 천분의 일..?
@@ -25,18 +80,24 @@ describe: 드럼 소리 대신 심장 소리가 더 크게 들려왔다.
 describe: 분명히 아는 노래인데도, 어떻게 부르고 있는지 기억조차 나지 않았다.
 describe: 관객도 보이지 않았고 무대 장치도 보이지 않았다.
 describe: 그저... 나희 누나의 선명한 눈동자만이 내 눈에 보일 뿐이었...
+@char sulbody3.57 pose:c wait:false
 sul: 사랑하니까!!
 sul: 널 사랑하니까 난 그랬어!!
+@hideChars wait:false
 {Player_name}: ...
 {Player_name}: (이... 이건...)
 {Player_name}: (이정도일줄은... 몰랐는데...)
+@char sulbody1.67 pose:c wait:false
 sul: 가슴 속 깊이 새겨진 내 마음을!!
 sul: 어째서 넌 모르는거야!!
+@hideChars wait:false
 {Player_name}: (나희 누나...)
 {Player_name}: (노래 못부른다는 말 진짜였구나...)
 MC: 네..! 잘 들었습니다!
 describe: 무대 위로 다급히 올라온 MC가 1절이 끝나자 노래를 중지시켰다.
+@char sulbody3.15 pose:c wait:false
 sul: 이제 1절 끝났는데...
+@hideChars wait:false
 MC: 두 분이서 보여주신 훌륭한 무대 너무 잘 봤습니다!
 MC: 두 분의 무대 장악력이 너무 멋있었습니다.
 MC: 남성분께서는 굉장히 독특한 음색을 보여주셨고 또...
@@ -44,37 +105,51 @@ MC: 또... 여기 계신 여성분께서는 가사 전달력이 굉장히 뛰어
 MC: 제가 다 슬퍼지려고 하네요... 하하..!
 MC: 교내 밴드부로 활동하고 계시다고 들었는데 무대 경험이 굉장히 많으신가 보죠?
 {Player_name}: 그...정도까지는 아니고 그냥 조금...
+@char sulbody2.12 pose:c wait:false
 sul: 교내 밴드부 말고도 다른 활동도 하고 있어요!
 {Player_name}: 예?!
+@hideChars wait:false
 MC: 그렇습니까? 어쩐지 무대 위에서 보여주신 퍼포먼스가 예사롭지 않아 보였어요!
 MC: 그러면 교내 밴드부 외에 두 분이서 따로 활동하고 계신 건가요?
 {Player_name}: 그... 그건...
+@char sulbody2.12 pose:c wait:false
 describe: 나는 고개를 돌려 나희 누나를 쳐다봤다.
 describe: 나희 누나는 어째서 그런 말을 했을까.
 describe: 이해가 안 되던 찰나, 이해 따위는 필요 없어졌다.
+@char sulbody2.57 pose:c wait:false
 sul: 프리덤이라고 합니다.
 {Player_name}: !!
 MC: !!
 MC: 프리덤이라면... 제가 아는 그...
+@char sulbody2.12 pose:c wait:false
 sul: 맞아요. 그 프리덤 맞습니다.
+@char sulbody2.52 pose:c wait:false
 sul: 안녕하세요. 프리덤의 설나희라고 합니다.
+@char sulbody2.62 pose:c wait:false
 sul: 여기는 얼마 전부터 저와 같이 하게 된 친구에요.
 sul: {Player_name}. 꼭 기억하세요!
 {Player_name}: 나희 누나..! 지금 이래도 괜찮으신...
 sul: 괜찮아. 아까 말했잖아?
+@char sulbody2.52 pose:c wait:false
 sul: 너가 있다고...
 {Player_name}: ...
+@hideChars wait:false
 describe: 몇명 되지도 않는 관중은 벌써부터 술렁이기 시작했다.
 describe: 아무도 예상하지 못한 나희 누나의 말.
 describe: 심지어 나 조차도 예상하지 못했다.
 describe: 이렇게 갑작스렇게... 그것도 이렇게 즉흥적으로...
+@char sulbody3.12 pose:c wait:false
 sul: 그보다도... 선물 주신다고 들었는데...
 MC: 네..? 아..! 선물... 여기 있습니다...
+@char sulbody3.52 pose:c wait:false
 sul: 감사합니다!
 describe: 나희 누나는 선물을 받더니 나에게 살짝 눈짓을 했다.
+@char sulbody3.12 pose:f wait:false
 sul: 그러면 저희는 이만...
+@char sulbody3.57 pose:c wait:false
 sul: {Player_name}! 가자!
 MC: 자... 잠시만요!
+@hideChars wait:false
 describe: 나희 누나는 갑자기 내 손을 잡더니 무대 뒷편으로 달려나가기 시작했다.
 describe: 갑작스러운 무대, 갑작스러운 발표, 갑작스러운 퇴장까지...
 describe: 오늘은 정말 예상할 수 없는 것들 투성이었다.
