@@ -1,39 +1,89 @@
 # week09_sul05
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Dream time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 여기까지...
 {Player_name}: 이 정도로 빠를 줄은 몰랐는데요..?
 describe: 나희 누나와 함께 오토바이를 찾으러 갔지만...
 describe: 공연장 밖 주차장 까지 기자들이 잔뜩 깔려 있었다.
+@char sulbody3.11 pose:c wait:false
 sul: ...
 {Player_name}: 어떡하죠..?
+@char sulbody3.83 pose:c wait:false
 sul: 흐음... 글쎄...
+@char sulbody3.81 pose:c wait:false
 sul: 인터뷰 좀 하는 건 상관 없긴 한데...
+@char sulbody3.75 pose:c wait:false
 sul: 오늘만큼은... 방해받고 싶지 않은데...
+@char sulbody3.85 pose:c wait:false
 sul: 오토바이 타고 가는건 어려울 것 같고...
+@char sulbody3.74 pose:c wait:false
 sul: 그렇다고 놓고 갈 수도 없는데...
+@char sulbody3.15 pose:c wait:false
 sul: 그럼... 일단 주변에서 시간 좀 보낼까?
+@char sulbody3.11 pose:c wait:false
 {Player_name}: 주변에서요?
+@hideChars time:0.5 wait:false
+@char sulbody2.52 pose:c wait:false
 sul: 응... 주변에서 좀 놀다 오면 사라져 있지 않을까?
+@char sulbody2.82 pose:c wait:false
 sul: 어차피 이 시간엔 교복 입은 학생들도 많으니...
 sul: 그 속에 있으면 찾기도 어려울테고...
+@char sulbody2.12 pose:c wait:false
 {Player_name}: 음... 아무래도 그 방법 밖에는 없을 것 같네요.
 {Player_name}: 그럼 일단 가볼까요?
+@hideChars time:0.5 wait:false
+@char sulbody1.67 pose:c wait:false
 sul: 좋아!
+@char sulbody1.61 pose:c wait:false
 sul: ...
+@char sulbody1.75 pose:c wait:false
 sul: ...우리 가서 뭐라도 좀 먹을까?
+@char sulbody1.73 pose:c wait:false
 {Player_name}: 배고프세요?
+@char sulbody1.61 pose:c wait:false
 sul: 아... 아니..! 딱히 고픈건 아니...
+@hideChars time:0.5 wait:false
+@char sulbody3.1 pose:bc wait:false
 describe: 꼬르륵-!
+@char sulbody3.76 pose:bc wait:false
 sul: ...
 {Player_name}: 크...크흠..!
 {Player_name}: 오늘 공연때문에 조금 배고픈가봐요..!
 {Player_name}: 배에서 소리가 다 나네요..! 하하...
 sul: ...
+@char sulbody3.52 pose:bc wait:false
 sul: ...후훗.
+@char sulbody3.57 pose:bc wait:false
 sul: 그러게... 되게 시끄러웠어!
+@char sulbody3.52 pose:bc wait:false
 {Player_name}: 하하하... 죄송해요...
 {Player_name}: 빨리 가죠..!
+@char sulbody3.67 pose:bc wait:false
 sul: 응! 빨리 가자!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 공연장에서 조금 떨어진 도심가.
 describe: 어두운 하늘과 달리 화려한 간판이 밤하늘을 밝히고 있었다.
 describe: 화려한 간판 아래 매장에서 흘러나오는 노래들.
@@ -50,49 +100,81 @@ describe: 나희 누나가 걸을 때 마다 흩날리는 머리칼에서 나는
 describe: 그럴 때 마다 고개를 돌려 싱긋 웃어보이는 나희 누나의 표정.
 describe: 그 모든 것이 내가 느낄 수 있는 감각의 전부였다.
 describe: 도시의 소리 따위는 들어올 공간이 없었다.
+@char sulbody1.15 pose:c wait:false
 sul: 왜그래?
+@char sulbody1.11 pose:c wait:false
 {Player_name}: 네..?
+@char sulbody1.84 pose:c wait:false
 sul: 아니... 뭔가 되게 흐뭇한 표정을 짓고 있어서...
+@char sulbody1.75 pose:c wait:false
 sul: 그렇게 좋아..?
+@char sulbody1.71 pose:c wait:false
 {Player_name}: 네..?!
+@char sulbody1.61 pose:c wait:false
 {Player_name}: 조...좋...
+@char sulbody1.65 pose:c wait:false
 sul: 나도 좋아..!
+@char sulbody1.61 pose:c wait:false
 {Player_name}: ..!
+@hideChars time:0.5 wait:false
+@char sulbody3.1 pose:c wait:false
 sul: 마지막 공연 좋았다고...
 {Player_name}: ..?
+@char sulbody3.52 pose:c wait:false
 sul: 후훗..!
 {Player_name}: 그...그렇죠..! 하하...
 {Player_name}: 마지막 공연 좋았죠...
 {Player_name}: 반응도 좋았고...
 {Player_name}: 괜히 혹시라도... 정말 만에 하나라도...
 {Player_name}: 저번처럼 안좋은 일이 있었으면 정말이지 어떡할...
+@char sulbody3.15 pose:c wait:false
 sul: 괜찮아.
 {Player_name}: 네..?
+@hideChars time:0.5 wait:false
+@char sulbody2.85 pose:c wait:false
 sul: 이젠 괜찮다고. 그런 반응따위.
+@char sulbody2.75 pose:c wait:false
 sul: 반응이 좋다고 해서 나쁜건 아니지만...
+@char sulbody2.15 pose:c wait:false
 sul: 만약 안좋았어도 달라질 건 없으니까.
+@char sulbody2.75 pose:c wait:false
 sul: 사실 너랑 함께 하기 전에도...
 sul: 공연 끝나면 항상 반응부터 확인했거든...
+@char sulbody2.15 pose:c wait:false
 sul: 그렇지만...  이제는 별로 확인하고 싶지가 않아.
 sul: 중요한건... 결국 다른 사람의 반응이나 생각이 아니잖아?
 sul: 내가 나를 어떻게 생각하느냐이니까.
+@char sulbody2.11 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 잘됐네요... 정말로...
+@hideChars time:0.5 wait:false
+@char sulbody3.52 pose:c wait:false
 sul: 후훗... 고마워.
 {Player_name}: 네..?
+@char sulbody3.12 pose:c wait:false
 sul: 고맙다고...
+@char sulbody3.72 pose:c wait:false
 sul: 네가 없었으면... 난 현실을 마주볼 생각도 못하고 있었을 테니까.
+@char sulbody3.65 pose:c wait:false
 sul: 여전히... 주변의 눈치와 기대 속에서 살아가고 있었겠지.
+@char sulbody3.62 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 아니에요.
 {Player_name}: 제가 없었어도 누나는 잘 하실 수 있었을 거에요.
+@char sulbody3.81 pose:c wait:false
 sul: 걱정해주는건 고맙지만... 이건 진심이야.
+@char sulbody3.72 pose:c wait:false
 sul: 네가 없었으면 못했을거야...
+@char sulbody3.57 pose:c wait:false
 sul: {Player_name}... 고마워.
 {Player_name}: ...
 {Player_name}: 네..! 나희 누나!
+@hideChars time:0.5 wait:false
+@char sulbody4.81 pose:bc wait:false
 sul: 그럼... 
+@char sulbody4.57 pose:bc wait:false
 sul: 이제 뭐 좀 먹으러 갈까?
+@hideChars time:0.5 wait:false
 describe: 나희 누나는 싱긋 웃으며 앞서나가기 시작했다.
 {Player_name}: 가... 같이 가요!
 sul: 빨리 와!
@@ -103,6 +185,9 @@ describe: 걱정이 되는건 어쩔 수 없었다.
 describe: 나희 누나는 모르시겠지만...
 describe: 라은이 또 어떤 이상한 짓거리를 했을 지도 모르니까.
 {Player_name}: ...
+
+;미니컷 출력
+
 describe: 나는 잠시 멈춰 주머니에서 핸드폰을 꺼냈다.
 {Player_name}: ...
 describe: 핸드폰을 켜 잠금을 해제했다.
@@ -117,11 +202,15 @@ describe: 나희 누나를 믿는 것도 나니까.
 describe: 나는...
 describe: 나희 누나와 함께 하기로 했으니까.
 {Player_name}: 아니에요..! 같이 가요 누나!
+
+;미니컷 출력
+
 describe: 나는 핸드폰을 주머니에 다시 넣고는 나희 누나를 향해 달려갔다.
 {Player_name}: 아하하... 죄송해요...
 {Player_name}: 잠깐 문자가 와서..?
 {Player_name}: 나희 누나..?
 describe: 나희 누나는 가던 길을 멈춘 채 길에서 가만히 서있었다.
+@char sulbody3.76 pose:c wait:false
 sul: ...
 {Player_name}: 왜그러세요..?
 describe: 나는 나희 누나의 옆에 다가가 물어봤다.
@@ -130,43 +219,64 @@ describe: 나희 누나는 약간 당황한 듯한 표정을 짓고 있었다.
 {Player_name}: ..!
 describe: 나희 누나의 시선을 따라 바라보니...
 describe: 익숙한 얼굴의 중년 남성이 서있었다.
+@char sulbody3.71 pose:c wait:false
 아버지: ...
 아버지: 연락이 한참동안 안되서 걱정했다.
+@char sulbody3.15 pose:c wait:false
 sul: 여긴...
 sul: 여긴 어떻게 오셨죠..?
+@char sulbody3.11 pose:c wait:false
 아버지: 부모가... 자식을 걱정하는건 당연한거다.
 아버지: 너도... 나중에 크면 알게 될거다.
+@hideChars time:0.5 wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 변명하러 오신건가요?
 sul: 아니면 또 강요하러 오신건가요?
+@char sulbody2.11 pose:c wait:false
 sul: ...
+@hideChars time:0.5 wait:false
+@char sulbody3.46 pose:bc wait:false
 sul: 죄송하지만...
+@char sulbody3.45 pose:bc wait:false
 sul: 제가 뭘 할지는 제가 정...
+@char sulbody3.65 pose:bc wait:false
 아버지: 오늘 공연 잘 봤다.
+@char sulbody3.61 pose:bc wait:false
 sul: ..!
 아버지: 사실 공연 전에 연락을 하고 싶었는데...
 아버지: 혹시라도 신경쓸까봐 하지 않았다.
 아버지: 괜히 나 때문에 망치면 안되니까.
 아버지: 그런데... 갑자기 그렇게 사라지니까...
 아버지: 도저히 연락을 하지 않을 수가 없더구나.
+@char sulbody3.75 pose:bc wait:false
 sul: 공연... 보셨어요..?
+@char sulbody3.71 pose:bc wait:false
 아버지: 그래...
 아버지: 자식이 공연을 하는데...
 아버지: 보지 않을 부모가 어디있겟니..?
 sul: ...
+@char sulbody3.75 pose:bc wait:false
 sul: 하실 말씀은...
 sul: 그게 다라면...
+@char sulbody3.61 pose:bc wait:false
 아버지: 멋있더구나.
 sul: ...
 아버지: 그리고... 네가 한 말도 잘 들었다...
 아버지: ...
 아버지: 많은 생각이 들더구나...
+@hideChars time:0.5 wait:false
+@char sulbody1.75 pose:bc wait:false
 sul: 저는...
+@char sulbody1.71 pose:bc wait:false
 아버지: 아빠가... 너무 아빠 생각만 했나보구나.
 아버지: 아빠는 네 생각 한다고 그랬던건데...
 아버지: 그게 너를 그렇게 옥죄고 있을 줄은 몰랐다.
 아버지: 미안하구나...
+@char sulbody1.61 pose:bc wait:false
 sul: ...
+@char sulbody1.65 pose:bc wait:false
 sul: 아버지...
+@char sulbody1.61 pose:bc wait:false
 아버지: ...
 아버지: 뒤에 계신 분은...
 아버지: 저번에 보셨던 분 맞으시죠..?
@@ -174,6 +284,7 @@ sul: 아버지...
 아버지: 네.
 {Player_name}: 마...맞습니다..?
 아버지: 오늘 공연 잘 봤습니다.
+@char sulbody1.71 pose:bc wait:false
 아버지: 정말 멋있더군요.
 {Player_name}: 가...감사합니다...
 {Player_name}: 하하하...
@@ -184,35 +295,51 @@ sul: 아버지...
 {Player_name}: 오히려 제가 많이 도움 받았습니다..!
 {Player_name}: 하하하...
 아버지: ...
+@char sulbody1.61 pose:bc wait:false
 아버지: 그나저나...
 아버지: 만나면 같이 저녁이라도 먹을까 했더니...
+@char sulbody1.71 pose:bc wait:false
 sul: ...
 아버지: 이미 약속이 있는 모양이구나.
 아버지: 너와 하고 싶은 얘기도 많고, 할 얘기도 많지만...
 describe: 나희 아버지께서는 나를 잠시 쳐다보셨다.
 아버지: ...
 아버지: 꼭 오늘만 날은 아니겠지.
+@hideChars time:0.5 wait:false
+@char sulbody3.15 pose:bc wait:false
 sul: 아버지...
+@char sulbody3.11 pose:bc wait:false
 아버지: 천천히 놀다 들어와라.
 아버지: 엄마랑 같이 집에서 기다리고 있을테니.
+@char sulbody3.75 pose:bc wait:false
 sul: 네..! 아버지..!
 아버지: 아..! 그나저나...
 아버지: 용돈은 안부족하니?
+@char sulbody3.65 pose:bc wait:false
 sul: 아... 그...
+@char sulbody3.75 pose:bc wait:false
 sul: 얼마 전에 공연 대금 들어와서...
+@char sulbody3.71 pose:bc wait:false
 아버지: 그렇구나...
+@char sulbody3.11 pose:bc wait:false
 아버지: 알았다. 이만 가보마.
 아버지: 혹시라도 말하고 싶은거 있으면 언제든지 얘기하고...
+@char sulbody3.15 pose:bc wait:false
 sul: 네... 조심히 들어가세요.
+@char sulbody3.11 pose:bc wait:false
 아버지: 그래...
 아버지: 이따 보자꾸나...
 아버지: ...
+@char sulbody3.61 pose:bc wait:false
 아버지: {Player_name}...이라고 하셨던가요?
 {Player_name}: 아..! 네! 맞습니다..!
+@char sulbody3.71 pose:bc wait:false
 아버지: 저희 나희 잘 부탁드리겠습니다.
 {Player_name}: 네...넵! 알겠습니다..!
 아버지: 그럼 이만 가보마.
-sul: 안녕히가세요..!
+@char sulbody3.11 pose:bc wait:false
+sul: 안녕히 가세요..!
+@hideChars time:0.5 wait:false
 describe: 나희 아버지는 가보겠다는 말을 마지막으로 길을 건넜다.
 describe: 나희 누나는... 그 자리에 가만히 서있었다.
 describe: 전혀 예상하지 못한 만남에 약간 충격을 받은걸까?
@@ -230,19 +357,28 @@ describe: 나는 손을 뻗어...
 describe: 나희 누나의 손을 꼭 잡았다.
 describe: 따스한 온기와, 그 너머 느껴지는 작은 떨림.
 describe: 그 떨림이 조금 진정될 때 까지...
+@char sulbody1.71 pose:bc wait:false
 sul: ...
+@char sulbody1.75 pose:bc wait:false
 sul: {Player_name}...
+@char sulbody1.71 pose:bc wait:false
 {Player_name}: ...
 {Player_name}: 나희 누나...
+@char sulbody1.65 pose:bc wait:false
 describe: 꼬르륵-!
+@char sulbody1.1 pose:bc wait:false
 sul: ...
 {Player_name}: ...
+@char sulbody1.52 pose:bc wait:false
 sul: 후훗..!
 {Player_name}: 하하하...
+@char sulbody1.57 pose:bc wait:false
 sul: 하하하하!!
 sul: ...
+@char sulbody1.52 pose:bc wait:false
 sul: 고마워...
 {Player_name}: 하하... 이제 진짜 뭐라도 먹으러 갈까요?
+@char sulbody1.62 pose:bc wait:false
 sul: 응..!
 
 @goto A_week09_sul06.week09_sul06

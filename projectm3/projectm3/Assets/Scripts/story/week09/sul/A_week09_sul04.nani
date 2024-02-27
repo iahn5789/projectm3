@@ -1,5 +1,17 @@
 # week09_sul04
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ConcertOut01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 관객: ...콜! 앵콜..!
 관객: 앵콜! 앵콜!
 describe: 어떻게 지나갔는지도 모르게 공연은 끝이 났다.
@@ -8,6 +20,7 @@ describe: 빛나는 응원봉이 마치 물결처럼 흔들리고 있었다.
 관객: 앵콜! 앵콜!
 관객: 앵콜!! 앵콜!!
 describe: 앵콜 요청이 끊임없이 나오고 있었다.
+@char sulbody3.12 pose:c wait:false
 describe: 나희 누나는 아무 말 없이 관중석을 바라보고 있었다.
 describe: 그런 나희 누나에게 재촉이라도 하듯 관중들의 목소리는 점점 커져갔다.
 describe: 그렇지만 나희 누나는 아무 말 없이 관중석을 바라보고 있을 뿐이었다.
@@ -21,54 +34,94 @@ describe: 처음 나희 누나를 만났을때에는 상상도 하지 못했던 
 describe: 나는 그거면 충분했다.
 describe: 그리고 이제는...
 describe: 그 표정이 내게로 향했다.
+@char sulbody3.15 pose:c wait:false
 sul: {Player_name}...
 sul: 준비됐어..?
+@char sulbody3.11 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 네..!
 describe: 나희 누나는 고개를 돌려 관중석을 바라봤다.
 describe: 여전히 관중석은 앵콜을 원하는 목소리로 가득 차 있었다.
+@hideChars time:0.5 wait:false
+@char sulbody4.11 pose:c wait:false
 describe: 나희 누나가 손을 가볍게 들어올렸다.
 describe: 관중석은 마치 기다렸다는 듯 일순간에 조용해졌다.
 describe: 그 잠깐의 정적 후, 나희 누나가 입을 열었다.
+@char sulbody4.15 pose:c wait:false
 sul: 오늘 공연... 재미있으셨나요?
+@char sulbody4.11 pose:c wait:false
 관객: 네!!
+@char sulbody4.52 pose:c wait:false
 sul: 재밌게 즐기셨다니 다행입니다!
+@char sulbody4.12 pose:c wait:false
 sul: 왜냐하면...
+@char sulbody4.11 pose:c wait:false
 sul: 오늘 공연을 마지막으로...
+@hideChars time:0.5 wait:false
+@char sulbody3.11 pose:bc wait:false
 sul: 프리덤은 영원히 안녕이니까요..!
 {Player_name}: ...
 describe: 나희 누나의 충격적인 말에 관중석은 순식간에 침묵에 휩싸였다.
 관객: 지... 지금 뭐라고 한거야..?
 관객: 내가 잘못 들은건가..?
 관객: 그만둔다고..? 왜?
+@hideChars time:0.5 wait:false
+@char sulbody2.12 pose:bc wait:false
 sul: 사실 오늘 공연에 오르기 전 결심했었습니다...
 sul: 더 이상 가면 뒤에 숨지 않기로.
 sul: 현실을 당당히 마주보기로.
+@char sulbody2.17 pose:bc wait:false
 sul: 프리덤을 해체하고... 제 진정한 꿈을 위해 모든걸 걸기로!
 sul: 그러니 여러분... 이만 인사드리겠습니다..!
+@char sulbody2.84 pose:bc wait:false
 describe: 나희 누나는 고개를 돌려 내게 눈짓을 보냈다.
 {Player_name}: ..!
 describe: 끄덕-!
 describe: 나는 가볍게 고개를 움직여 알았다는 신호를 보냈다,.
+@hideChars time:0.5 wait:false
+@char sulbody4.52 pose:bc wait:false
 sul: 안녕히계세요!
+@hideChars time:0.5 wait:false
 describe: 휘익-!
 describe: 나희 누나는 몸을 돌려 내 손을 잡았다.
+@char sulbody4.67 pose:bc wait:false
 sul: {Player_name}! 가자!
 describe: 고민 따윈 보이지 않는 눈.
 describe: 슬픔 따윈 보이지 않는 입.
 describe: 그리고... 나와 함께 걷고자 하는 표정.
 {Player_name}: 네..! 나희 누나!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ConcertIn01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@char sulbody1.55 pose:c wait:false
 sul: 후우...
+@char sulbody1.17 pose:c wait:false
 sul: 괜찮아..?
 {Player_name}: 하아... 공연 하고 바로 뛰었더니...
 {Player_name}: 조금 숨이 차네요...
 {Player_name}: 누나는 괜찮으세요..?
+@char sulbody1.67 pose:c wait:false
 sul: 나..? 나는 뭐...
+@char sulbody1.62 pose:c wait:false
 sul: 어차피 노래도 네가 다 불렀잖아?
+@char sulbody1.61 pose:c wait:false
 {Player_name}: ...
 sul: ...
+@char sulbody1.62 pose:c wait:false
 sul: 후훗..!
 {Player_name}: ..?
+@hideChars time:0.5 wait:false
+@char sulbody3.57 pose:c wait:false
 sul: 하하하하!
 {Player_name}: 하하...
 {Player_name}: 하하하!
@@ -83,27 +136,41 @@ describe: 나희 누나는 눈가를 손으로 살짝 닦았다.
 {Player_name}: 아... 배아파...
 {Player_name}: 하하하...
 {Player_name}: 후우...
+@char sulbody3.52 pose:c wait:false
 {Player_name}: ...
+@char sulbody3.62 pose:c wait:false
 {Player_name}: 그래서... 이제 어떡하죠..?
+@char sulbody3.81 pose:c wait:false
 sul: 흐음... 글쎄...
 {Player_name}: 공연도 끝났고... 짐도 딱히 없겠다...
 {Player_name}: 바로 나가면 될...
+@char sulbody3.61 pose:c wait:false
 보안요원A: 돌아가세요! 여기 함부로 오시면 안됩니다!
 la: 잠시만요..! 진짜 잠깐이면 된다니까요?
-보안요원B	관계자 외 출입 금지 안보이세요?
+보안요원B: 관계자 외 출입 금지 안보이세요?
 la: 저도 어엿한 기자라고요! 기자가 인터뷰하겠다는데 왜 막아요!
 보안요원A: 아무리 기자여도 이렇게 함부로 들어오시면 안됩니다!
 {Player_name}: 어... 들리세요?
+@char sulbody3.35 pose:c wait:false
 sul: 응...
+@char sulbody3.31 pose:c wait:false
 {Player_name}: 아무래도 해체 발표에 다들 충격을 좀 받았나본데요?
+@char sulbody3.35 pose:c wait:false
 sul: ...그럴 수도 있겠지.
+@char sulbody3.25 pose:c wait:false
 sul: 근데... 쟤 라은 아닌가..?
 sul: 쟤가 여기서 왜...
+@char sulbody3.21 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 설명하자면 조금 길어요... 나중에 말씀드릴게요.
+@hideChars time:0.5 wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 어쨌든... 지금 둘러쌓이면...
 sul: 고생 좀 할꺼 같은데...
+@char sulbody2.11 pose:c wait:false
 {Player_name}: 그럼... 일단 나갈까요?
+@hideChars time:0.5 wait:false
+@char sulbody1.12 pose:bc wait:false
 sul: 응..!
 
 @goto A_week09_sul05.week09_sul05
