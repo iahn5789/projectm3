@@ -13,13 +13,27 @@
 @set LoadingValue=false
 
 {Player_name}: 후우... 이제 진짜 다 끝났네요.
+@char sulbody3.15 pose:bc wait:false
 sul: 아쉬워..?
+@char sulbody3.11 pose:bc wait:false
 {Player_name}: 저요..? 음...
 {Player_name}: 아예 아무렇지도 않은 건 아니지만...
 {Player_name}: 시원섭섭한 느낌이라고 해야 될까요?
 {Player_name}: 되게 많은 일도 있었고...
 {Player_name}: 그중엔 슬프고 힘든 일도 있었지만...
 {Player_name}: 결론적으로는 모두 다 잘 풀렸으니까요!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Sul03 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 sul: ...
 sul: 그렇구나...
 {Player_name}: ...누나는요?
@@ -45,6 +59,19 @@ sul: 응... 온 김에 생각나는 곳은 다 둘러보고 싶어서.
 sul: 괜찮아. 나한테 키 있어.
 {Player_name}: 옥상 키요..? 그걸 어떻게...
 sul: 다 방법이 있지. 아무튼 가자!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Rooftop01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 오랜만에 올라온 학교 옥상.
 describe: 나희 누나와 몇 달 전 올라온 이후로 처음이었다.
 describe: 오랜만에 올라왔지만 달라진 건 아무것도 없었다.
@@ -56,56 +83,92 @@ describe: 나 역시 많은 게 변했다.
 describe: 그리고 무엇보다도...
 describe: 지금 내 옆에는 나희 누나가...
 describe: 같은 밴드원이 아닌, 여자친구로 있으니까.
+@char sulbody3.85 pose:c wait:false
 sul: 오랜만이네... 여기도...
+@char sulbody3.81 pose:c wait:false
 {Player_name}: 그러게요. 그때 누나랑 올라와보고 처음이니까...
 {Player_name}: 몇 달 정도 된 거 같아요.
+@char sulbody3.15 pose:c wait:false
 sul: 나도 그때 이후로는 안 올라왔으니까...
+@char sulbody3.11 pose:c wait:false
 {Player_name}: 누나도 안 올라오셨어요?
+@hideChars time:0.5 wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 응. 사실 뭐...
 sul: 올라올 필요가 없었지.
+@char sulbody2.85 pose:c wait:false
 sul: 보통 답답하거나 힘들면 올라와봤는데...
+@char sulbody2.15 pose:c wait:false
 sul: 그때 이후로는 딱히 그런 일이 없었으니까.
+@char sulbody2.11 pose:c wait:false
 {Player_name}: 그럼 오늘이 처음이네요?
+@char sulbody2.65 pose:c wait:false
 sul: 처음?
+@char sulbody2.61 pose:c wait:false
 {Player_name}: 처음으로 답답하거나 힘들지 않을 때 옥상에 올라온 거잖아요.
+@char sulbody2.71 pose:c wait:false
 sul: ...
+@char sulbody2.75 pose:c wait:false
 sul: 그러네...
+@char sulbody2.71 pose:c wait:false
 {Player_name}: 어떠세요?
+@hideChars time:0.5 wait:false
+@char sulbody3.75 pose:c wait:false
 sul: 그냥... 뭔가...
 sul: 이 위에서 내려다본 풍경은 그대로인데...
 sul: 나는 변했으니...
+@char sulbody3.71 pose:c wait:false
 {Player_name}: 누나는 하나도 변하지 않으셨어요.
+@char sulbody3.61 pose:c wait:false
 sul: ..?
 {Player_name}: 생각해 보면... 늘 그랬어요.
 {Player_name}: 좋아하는 건 좋아하고, 싫어하는 건 싫어하고...
 {Player_name}: 호기심 많고, 새로운 걸 도전하기 좋아하는...
 {Player_name}: 그런 사람이었어요 누나는.
 {Player_name}: 단지 상황이 조금 좋지 않았던 거죠.
+@char sulbody3.71 pose:c wait:false
 sul: ...
+@char sulbody3.72 pose:c wait:false
 sul: 고마워...
+@char sulbody3.52 pose:c wait:false
 sul: ...이만 내려갈까?
+@char sulbody3.12 pose:c wait:false
 sul: 이제... 괜찮은 거 같아.
 {Player_name}: 네. 그만 내려가죠.
 {Player_name}: 그럼 영화 예매를 그럼 지금 미리 해야겠...
-sul: 그전에 잠시 어디 좀 다녀올래?
+@hideChars time:0.5 wait:false
+@char sulbody1.15 pose:bc wait:false
+sul: 그 전에 잠시 어디 좀 다녀올래?
 sul: 가보고 싶은 곳이 있어서...
+@char sulbody1.11 pose:bc wait:false
 {Player_name}: 어디요?
+@char sulbody1.75 pose:bc wait:false
 sul: 공연장...
+@char sulbody1.74 pose:bc wait:false
 {Player_name}: 공연장이요..? 오늘 무슨 공연하나요?
+@char sulbody1.65 pose:bc wait:false
 sul: 그건 아닌데... 그냥 오랜만에 가보고 싶어서...
+@char sulbody1.76 pose:bc wait:false
 {Player_name}: 누나... 진짜 괜찮으세요?
+@char sulbody1.66 pose:bc wait:false
 sul: 응..?
+@char sulbody1.76 pose:bc wait:false
 {Player_name}: 아니... 갑자기 추억의 장소를 한번 쭉 둘러보는 느낌이라...
 {Player_name}: 혹시 무슨 일이 있으신 건 아닌가 해서요.
+@char sulbody1.66 pose:bc wait:false
 {Player_name}: 무슨 일 있으시면 언제든지 말해주세요.
+@char sulbody1.61 pose:bc wait:false
 {Player_name}: 전 누나의...
+@char sulbody1.65 pose:bc wait:false
 {Player_name}: 남자친구잖아요!
+@char sulbody1.12 pose:bc wait:false
 sul: 고마워...
 sul: 그렇지만... 난 괜찮아..!
 sul: 너무 걱정하지 않아도 돼.
 {Player_name}: ... 알겠어요.
 {Player_name}: 혹시라도 무슨 일 있으시면 말씀해 주세요.
 {Player_name}: 약속이에요?
+@char sulbody1.52 pose:bc wait:false
 sul: 응..! 약속!
 
 @goto A_week10_sul03.week10_sul03
