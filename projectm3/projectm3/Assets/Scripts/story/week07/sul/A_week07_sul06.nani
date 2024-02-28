@@ -7,7 +7,7 @@
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@back RoadNigth02 time:0.5 wait:true
+@back Festival01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -42,8 +42,9 @@ sul: 응! 쿵쾅쿵쾅!!
 @hideChars wait:false
 @char sulbody3.64 pose:c wait:false
 sul: 왜? 나 조금 이상해?
+@char sulbody3.65 pose:c wait:false
 sul: 앞으로 커피 마시지 마..?
-@char sulbody3.84 pose:c wait:false
+@char sulbody3.85 pose:c wait:false
 sul: 커피... 맛있던데...
 @char sulbody3.73 pose:c wait:false
 sul: 그래도... 너가 싫으면...
@@ -67,19 +68,22 @@ describe: 나희 누나가 한 말을 생각해보면... 사실 무리도 아니
 행인B: 누구? 저 고등학생들?
 행인A: 아니 내가 방금 너튜브를 봤는데...
 describe: 이제는 지나가는 사람들마저 우리를 알아보기 시작했다.
-@char sulbody4.65 pose:c wait:false
+@char sulbody4.15 pose:c wait:false
 sul: 조금만 더 가면 돼..! 저기만 넘어가면...
+@hideChars wait:false
+@char sulbody4.65 pose:bc wait:false
 sul: 저기 있다. 내 오토바이!
-@char sulbody4.61 pose:c wait:false
+@char sulbody4.85 pose:bc wait:false
 sul: {Player_name}! 준비 됐어?
-@hideChars wait:false
 {Player_name}: 잠시만요... 핼멧이 잘 안들어가서...
-@char sulbody3.610 pose:c wait:false
-sul: 지금 둘러쌓이면 안된다고!
 @hideChars wait:false
+@char sulbody3.610 pose:bc wait:false
+sul: 지금 둘러쌓이면 안된다고!
 {Player_name}: 그러게 왜 거기서 그런 말씀을...
 {Player_name}: 으윽... 됐다! 준비 다 됐습니다!
+@char sulbody3.67 pose:bc wait:false
 sul: 좋아. 꽉 잡아!
+@hideChars wait:false
 행인A: 자... 잠시만요!
 describe: 부와아앙-!
 행인B: 뭐가 저렇게 빨라?
@@ -93,7 +97,7 @@ describe: 부와아앙-!
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@back Road02 time:0.5 wait:true
+@back RoadNigth02 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -107,19 +111,21 @@ sul: 다 왔어. 여기가 네 집 근처 맞지?
 describe: 여전히 나희 누나의 오토바이 운전은 적응이 안됐다.
 @char sulbody3.210 pose:c wait:false
 sul: 이상하다... 분명 천천히 탔는데...
-@char sulbody3.69 pose:c wait:false
+@hideChars wait:false
+@char sulbody3.69 pose:bc wait:false
 sul: 괜찮아? 혹시 어디 다친건 아니지?
 describe: 나희 누나는 내 손을 잡고 말했다.
 describe: 내 손을 바라보고... 이윽고 고개를 들어 내 얼굴을 바라봤다.
-@char sulbody3.65 pose:c wait:false
+@char sulbody3.65 pose:bc wait:false
 sul: 안색이 안좋은 것 같기도 하고...
 describe: 내 뺨에 나희 누나의 손이 닿았다.
-describe: 거짓말처럼, 속이 괜찮아졌다.
+describe: 거짓말처럼 속이 괜찮아졌다.
 {Player_name}: 괘...괜찮아졌어요...
-@char sulbody3.62 pose:c wait:false
+@char sulbody3.62 pose:bc wait:false
 sul: 그래? 다행이...
-@char sulbody3.65 pose:c wait:false
+@char sulbody3.65 pose:bc wait:false
 sul: 아..!
+@hideChars wait:false
 @char sulbody3.1 pose:c wait:false
 sul: 흐...흐흠..!
 describe: 나희 누나는 내 얼굴에서 손을 때 살짝 뒷짐을 졌다.
@@ -128,18 +134,19 @@ describe: 어쩐지 나희 누나의 얼굴이 살짝 붉어진 것 같았다.
 sul: 그래... 괜찮으면 뭐...
 sul: ...
 {Player_name}: ...
-@char sulbody3.12 pose:c wait:false
+@char sulbody3.15 pose:c wait:false
 sul: 드... 들어가볼게! 나중에 보자!
+@char sulbody3.11 pose:c wait:false
 {Player_name}: 조심히 들어가세요...
 sul: ...
 {Player_name}: ...
-describe: 잘 가라는 인사의 말과는 다르게, 둘 다 발걸음이 떨어지지 않았다.
-describe: 어색하게 떠도는 말과, 갈 길을 잃고 방황하는 발.
+describe: 잘 가라는 인사의 말과는 다르게 둘 다 발걸음이 떨어지지 않았다.
+describe: 어색하게 떠도는 말과 갈 길을 잃고 방황하는 발.
 @char sulbody3.81 pose:c wait:false
 describe: 어쩌면... 어쩌면...
 describe: 나희 누나도 나와 함께 있고 싶은걸까.
 describe: 내가 나희 누나와 조금 더 있고 싶은 것 처럼.
-@char sulbody3.17 pose:c wait:false
+@char sulbody3.15 pose:c wait:false
 sul: 그...
 {Player_name}: 아..!
 @char sulbody3.63 pose:c wait:false
@@ -159,35 +166,39 @@ describe: 뜯기 아까울 정도였다.
 @char sulbody1.12 pose:c wait:false
 sul: 그럼... 열어볼까?
 {Player_name}: 이건...
-@char sulbody1.1 pose:c wait:false
-sul: ...
 @hideChars wait:false
 describe: 선물 포장을 뜯고 안을 열어보니...
 describe: 안에 들어있던 건 다름아닌...
-{Player_name}: (비키니??)
+
+;미니컷
+
+{Player_name}: (비키니?)
 {Player_name}: (이게... 커플 선물이라고..?)
 {Player_name}: (심지어 남자 수영복은 들어있지도 않은데..?)
-@char sulbody1.35 pose:c wait:false
+; @char sulbody1.35 pose:c wait:false
 sul: 왜 이런게...
 {Player_name}: 그... 그러게요..?
-@char sulbody1.34 pose:c wait:false
+; @char sulbody1.34 pose:c wait:false
 sul: ...
-@char sulbody1.32 pose:c wait:false
+; @char sulbody1.32 pose:c wait:false
 sul: 이거...
 {Player_name}: ..?
-@char sulbody1.37 pose:c wait:false
+; @char sulbody1.37 pose:c wait:false
 sul: 작아...
 {Player_name}: 네..?
-@char sulbody1.32 pose:c wait:false
+; @char sulbody1.32 pose:c wait:false
 sul: 사이즈가... 안맞아... 너무 작아...
 {Player_name}: 커... 커헉...
-@char sulbody1.71 pose:c wait:false
+; @char sulbody1.71 pose:c wait:false
 sul: 게다가 이런 건 집에 들고 가지도 못하는데...
 {Player_name}: 그.. 그럼 제가 가져갈까요?
-@char sulbody1.63 pose:c wait:false
+; @char sulbody1.63 pose:c wait:false
 sul: 네가..?
 {Player_name}: 제가 챙겨서... 나중에 학교에서 드릴게요..!
 {Player_name}: 그것도 좀 이상한가..?
+
+;미니컷
+
 @char sulbody1.12 pose:c wait:false
 sul: 후훗... 아니야... 부탁할게.
 sul: 오늘... 너무 재밌었어...
@@ -212,20 +223,7 @@ sul: 그래...
 sul: 응..! 약속!
 describe: 나희 누나와 나는 손가락 약속을 했다.
 @hideChars wait:false
-describe: 커플 선물'을 내게 건네준 나희 누나는 오토바이를 타고 골목 사이로 사라졌다.
-
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@back HomeroomNight01 time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
-
+describe: 커플 선물을 내게 건네준 나희 누나는 오토바이를 타고 골목 사이로 사라졌다.
 {Player_name}: 후우...
 {Player_name}: (오늘 정말 많은 일이 있었네.)
 {Player_name}: (나희 누나가 그렇게 정체를 공개할 줄은 몰랐지만...)
