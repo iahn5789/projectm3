@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_FeelGood_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Hallway_01 volume:50 loop:true fade:0 wait:false
 @back Black time:0.5 wait:true
 @back Festival01 time:0.5 wait:true
 @showUI CP wait:false
@@ -74,6 +76,8 @@ sul: 조금만 더 가면 돼..! 저기만 넘어가면...
 @char sulbody4.65 pose:bc wait:false
 sul: 저기 있다. 내 오토바이!
 @char sulbody4.85 pose:bc wait:false
+@sfx Sul_Bike_Turn_On_01 volume:100 loop:false fade:0 wait:false
+@sfx Sul_Bike_Idle_Loop_01 volume:100 loop:true fade:1 wait:false
 sul: {Player_name}! 준비 됐어?
 {Player_name}: 잠시만요... 핼멧이 잘 안들어가서...
 @hideChars wait:false
@@ -82,13 +86,18 @@ sul: 지금 둘러쌓이면 안된다고!
 {Player_name}: 그러게 왜 거기서 그런 말씀을...
 {Player_name}: 으윽... 됐다! 준비 다 됐습니다!
 @char sulbody3.67 pose:bc wait:false
+@sfx Sul_Bike_Hukasi_01 volume:100 loop:false fade:0 wait:false
 sul: 좋아. 꽉 잡아!
 @hideChars wait:false
+@stopSfx Sul_Bike_Idle_Loop_01 fade:1 wait:false
 행인A: 자... 잠시만요!
+@sfx Bike_Passby_01 volume:100 loop:false fade:0 wait:false
 describe: 부와아앙-!
 행인B: 뭐가 저렇게 빨라?
 행인A: 아쉽다...
 행인A: 싸인이라도 받으려고 그랬는데...
+@stopBgm BGM_Map_FeelGood_01 fade:1 wait:false
+@stopSfx Amb_Hallway_01 fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
@@ -96,6 +105,8 @@ describe: 부와아앙-!
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Christmas_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back RoadNigth02 time:0.5 wait:true
 @showUI CP wait:false
@@ -117,6 +128,7 @@ sul: 괜찮아? 혹시 어디 다친건 아니지?
 describe: 나희 누나는 내 손을 잡고 말했다.
 describe: 내 손을 바라보고... 이윽고 고개를 들어 내 얼굴을 바라봤다.
 @char sulbody3.65 pose:bc wait:false
+@sfx Common_Cloth_movement_02 volume:100 loop:false fade:0 wait:false
 sul: 안색이 안좋은 것 같기도 하고...
 describe: 내 뺨에 나희 누나의 손이 닿았다.
 describe: 거짓말처럼 속이 괜찮아졌다.
@@ -160,6 +172,7 @@ sul: 커플 선물 받은거...
 sul: 한번 같이 볼까 해서...
 {Player_name}: 그럴까요..?
 @hideChars wait:false
+@sfx Present_Vinyl_Crumble_01 volume:100 loop:false fade:0 wait:false
 describe: 나희 누나는 오토바이 안장에서 선물을 꺼냈다.
 describe: 선물은 누가 전해주려던 선물과는 다르게 예쁘게 잘 포장되어 있었다.
 describe: 뜯기 아까울 정도였다.
@@ -170,7 +183,7 @@ sul: 그럼... 열어볼까?
 describe: 선물 포장을 뜯고 안을 열어보니...
 describe: 안에 들어있던 건 다름아닌...
 
-;미니컷
+; 미니컷
 
 {Player_name}: (비키니?)
 {Player_name}: (이게... 커플 선물이라고..?)
@@ -184,6 +197,7 @@ sul: ...
 sul: 이거...
 {Player_name}: ..?
 ; @char sulbody1.37 pose:c wait:false
+@sfx Emotion_Sad_01 volume:100 loop:false fade:0 wait:false
 sul: 작아...
 {Player_name}: 네..?
 ; @char sulbody1.32 pose:c wait:false
@@ -197,7 +211,7 @@ sul: 네가..?
 {Player_name}: 제가 챙겨서... 나중에 학교에서 드릴게요..!
 {Player_name}: 그것도 좀 이상한가..?
 
-;미니컷
+; 미니컷
 
 @char sulbody1.12 pose:c wait:false
 sul: 후훗... 아니야... 부탁할게.
@@ -229,6 +243,7 @@ describe: 커플 선물을 내게 건네준 나희 누나는 오토바이를 타
 {Player_name}: (나희 누나가 그렇게 정체를 공개할 줄은 몰랐지만...)
 {Player_name}: (누나가 좋다면...)
 {Player_name}: (나도 좋...)
+@sfx Common_Cartoon_Hit_01 volume:100 loop:false fade:0 wait:false
 describe: 빩-!
 엄마: 야!!
 {Player_name}: 무... 무슨...
@@ -250,6 +265,8 @@ describe: 빩-!!
 엄마: 빨리 집에 들어가!!
 {Player_name}: 진짜 아닌데...
 엄마: 그 흉측한 거적대기 당장 갖다 버리고!!
+@stopBgm BGM_Map_Christmas_01 fade:1 wait:false
+@stopSfx Amb_Night_Cricket_01 fade:1 wait:false
 
 ; 변수 초기화(주의)
 @set LoadingValue=true

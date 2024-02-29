@@ -27,20 +27,26 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Room_Tone_02 volume:80 loop:true fade:1 wait:false
+@sfx Common_Morning_Bird_Twitter_01 volume:80 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Sweethome_01 volume:80 loop:true fade:1 wait:false
 @back Homeroom01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
 {Player_name}: 으... 으음냐...
+@sfx Common_Cloth_Brush_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 으음... 누나...
+@stopSfx Common_Door_Open_Squeak_01 fade:1 wait:false
 {Player_name}: 나희... 누나...
 엄마: ...
 {Player_name}: 아... 아앗..! 잠깐만요..!
 {Player_name}: 거... 거기는..!
 엄마: 어휴...
 {Player_name}: 헤헤... 헤헤헤...
+@sfx Common_Lightning_One_Shot_01 volume:70 loop:false fade:1 wait:false
 엄마: 빨리 안일어나!!
 {Player_name}: 그... 그게 아니라..! 어라..?
 엄마: 지금 시간이 몇신데 아직도 자고있어!?
@@ -57,22 +63,28 @@ describe: 잠에서 깨어나 고개를 들어보니 엄마가 앞에 서있었�
 {Player_name}: .....
 엄마: 빨리 학교 안가?!
 {Player_name}: 죄... 죄송합니다!!
-{Player_name}: 으아..! 늦겠다..!
-
+@sfx Footsteps_Male_Wood_Run_01 volume:70 loop:false fade:1 wait:false
+@stopSfx Common_Morning_Bird_Twitter_01 fade:1 wait:false
+@stopSfx Amb_Room_Tone_02 fade:1 wait:false
+@stopBgm BGM_Map_Sweethome_01 fade:1 wait:false
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Road_01 volume:80 loop:true fade:1 wait:false
+@bgm BGM_Map_Cool_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Road01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
+{Player_name}: 으아..! 늦겠다..!
 {Player_name}: 빨리 안오고 뭐해?!
 @char jeonbody2.35 pose:c wait:false
+@sfx Footsteps_Male_ctr_run_01 volume:60 loop:false fade:1 wait:false
 jeon: 후욱... 후욱..!
 jeon: 나같은... 신사는...
 @char jeonbody2.33 pose:c wait:false
@@ -87,14 +99,17 @@ jeon: 급할 때일수록... 후욱... 후욱...
 @char jeonbody2.33 pose:c wait:false
 jeon: 돌아가라... 후욱... 모르나..?
 {Player_name}: (말이라도 못하면...)
+@sfx Bus_Angine_Stop_Idle_01 volume:100 loop:false fade:1 wait:false
 {Player_name}: 어..? 버스 왔다! 뛰어!!
 {Player_name}: 저거마저 놓치면 진짜 지각이야!
 @char jeonbody2.55 pose:c wait:false
+@stopSfx Bus_Angine_Stop_Idle_01 fade:1 wait:false
 jeon: ...
 {Player_name}: 뭘 그렇게 멍하니 보고 있는거야? 빨리 오라니까!
 jeon: .....
 {Player_name}: 버스 왔다니...
 @hideChars wait:false
+@sfx Bike_Passby_01 volume:80 loop:false fade:1 wait:false
 describe: 부왕-!!
 describe: 그 때 도로에서 무언가 엄청난 소리가 들려왔다.
 describe: 고개를 돌려 소리가 난 곳을 바라보니 오토바이가 지나간 모양이었다.
@@ -129,6 +144,7 @@ describe: 대용이는 어느새 버스에 올라 탄 채 창문에서 말을 �
 jeon: 진정한 신사라면 기회를 놓치지 않는 법!
 @char jeonbody3.12 pose:bc wait:false
 jeon: 너도 어서 늦기전에 버스에 타...
+@sfx Bus_Stop_Steam_01 volume:100 loop:false fade:1 wait:false
 describe: 치익-
 {Player_name}: 어..! 어..!! 잠시만요!!
 {Player_name}: 기사님! 아직 못탔...
@@ -140,5 +156,6 @@ jeon: 미안하다... 친구여...
 {Player_name}: 야!! 전대용!!
 @hideChars wait:false
 describe: 사라져가는 버스와 함께 내 처절한 외침 소리도 같이 사라졌다.
-
+@stopSfx Amb_Road_01 fade:2 wait:false
+@stopBgm BGM_Map_Cool_01 fade:2 wait:false
 @goto A_week07_sul02.week07_sul02
