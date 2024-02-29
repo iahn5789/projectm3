@@ -5,6 +5,8 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Friendly_01 volume:20 loop:true fade:1 wait:false
+@sfx Amb_Road_01 volume:20 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
@@ -28,6 +30,7 @@ sul: 웅...
 @char sulbody3.14 pose:c wait:false
 describe: 우물우물-
 @char sulbody3.59 pose:c wait:false
+@sfx Human_Swallow_01 volume:100 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @char sulbody3.11 pose:c wait:false
 sul: ...
@@ -70,9 +73,11 @@ sul: 아니. 뭐...
 @char sulbody2.15 pose:c wait:false
 sul: 그런건 왜 물어보는거야?
 @char sulbody2.11 pose:c wait:false
+@sfx Emotion_Shame_Kettle_Steam_01 volume:70 loop:false fade:0 wait:false
 {Player_name}: 그... 그건... 그러니까...
 {Player_name}: 주...주말 동안 잘 지냈나 해서요..!
 {Player_name}: 보통 주말에 쉬기도 하고 놀러도 가는데 저번에 그...
+@stopSfx Emotion_Shame_Kettle_Steam_01 fade:1 wait:false
 {Player_name}: 그... 아무튼..!
 @char sulbody2.15 pose:c wait:false
 sul: {Player_name}...
@@ -103,6 +108,7 @@ sul: 네 생각은 안했는지 궁금한거야?
 sul: ...
 @char sulbody1.74 pose:c wait:false
 sul: 네 생각도 했어...
+@sfx Common_Text_Kick_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 케...케켁...
 {Player_name}: 제... 생각이요..?
 @char sulbody1.12 pose:c wait:false
@@ -132,6 +138,8 @@ sul: 넌 그냥 꽉 잡고만 있으면 돼.
 @hideChars wait:false
 @char sulbody3.62 pose:bc wait:false
 sul: 여기 뒤에 앉으면 돼.
+@sfx Sul_Bike_Turn_On_01 volume:100 loop:false fade:0 wait:false
+@sfx Sul_Bike_Idle_Loop_01 volume:100 loop:true fade:1 wait:false
 describe: 나희 누나는 어느새 오토바이에 앉아 시동까지 걸었다.
 @char sulbody3.52 pose:bc wait:false
 sul: 오늘은 네 헬멧까지 챙겨왔으니 걱정하지 말라고.
@@ -141,6 +149,7 @@ describe: 나는 나희 누나의 오토바이에 앉아 헬멧을 썼다.
 describe: 막상 앉으니 손을 어디에 두어야 할 지 몰랐다.
 describe: 덕분에 자세까지 엉거주춤해져버렸다.
 @char sulbody2.12 pose:bc wait:false
+@sfx Sul_Bike_Hukasi_01 volume:100 loop:false fade:0 wait:false
 sul: 출발할테니까 꽉 잡아.
 {Player_name}: 알겠습니다..!
 describe: 나는 나희 누나의 교복 자켓 끝을 손가락으로 살짝 잡았다.
@@ -166,6 +175,8 @@ sul: 가다가 굴러떨어지고싶어?
 sul: 허리를 감싸야지.
 {Player_name}: (허... 허리를... 감싸라고..?)
 @hideChars wait:false
+@stopSfx Sul_Bike_Idle_Loop_01 fade:1 wait:false
+@sfx Heart_Beat_Fast_02 volume:100 loop:true fade:0 wait:false
 describe: 나는 가슴을 숙여 손을 앞으로 뻗어 나희 누나의 허리를 감쌌다.
 describe: 심장이 미친듯이 뛰기 시작했다.
 describe: 그 심장 소리가 등 너머로 나희 누나에게 전달되는 듯 싶었다.
@@ -174,11 +185,52 @@ describe: 나희 누나의 따스한 등이 볼에 닿았다.
 {Player_name}: (따... 따뜻하다...)
 {Player_name}: (부드럽고... 매끈하...)
 {Player_name}: (이건... 뭐지..?)
+@stopSfx Heart_Beat_Fast_02 fade:1 wait:false
 describe: 나희 누나의 등에 닿은 볼에 어떤 이상한 감촉이 느껴졌다.
 describe: 검지손가락 마디 하나 정도 크기의 살짝 튀어나온 무언가...
 {Player_name}: ......
 @char sulbody2.62 pose:bc wait:false
 sul: 꽉 잡았지? 출발한다!
-@hideChars wait:false
 
+@hideChars wait:false
+@stopBgm BGM_Map_Friendly_01 fade:1 wait:false
+@stopSfx Amb_Road_01 fade:1 wait:false
+@sfx Sul_Bike_Hukasi_01 volume:100 loop:false fade:0 wait:true
+
+@bgm BGM_Map_LovelyEP_01 volume:30 loop:true fade:1 wait:false
+@sfx Sul_Bike_Run_01 volume:100 loop:true fade:0 wait:false
+@sfx Sul_Bike_Wind_Gust_01 volume:50 loop:true fade:0 wait:false
+{Player_name}: 우...우웩...
+sul: 왜 그래?
+{Player_name}: 그... 아니에요...
+sul: 조금 빨랐나?
+{Player_name}: 조금이 아닌 것 같은데요...
+{Player_name}: 생명의 위협을 느낄정도?
+sul: 규정 속도 지키면서 안전하게 탄건데...
+sul: 다음에는 천천히 탈게!
+@stopSfx Sul_Bike_Run_01 fade:1 wait:false
+@stopSfx Sul_Bike_Wind_Gust_01 fade:1 wait:false
+@sfx Amb_Night_Traffic_Car_01 volume:100 loop:true fade:0 wait:false
+describe: 나희 누나를 따라 오토바이를 타고 축제가 열리는 곳에 도착했다.
+describe: 도착하고 보니 이미 하늘은 어두워져 있었다.
+{Player_name}: 여기는...
+sul: 아직 축제가 열리고 있는 것 같더라고.
+sul: 저번에는 제대로 즐기지 못했잖아?
+sul: 그래서 오늘 제대로 놀아봐야지!
+{Player_name}: 누나가 좋다면 전 뭐든지 좋아요.
+{Player_name}: 그런데...
+sul: 응?
+{Player_name}: 혹시 계획은 있으시나요?
+sul: 계획? 무슨 계획?
+{Player_name}: 뭐 어디를 돌아다닌다던지, 뭘 먹겠다던지, 그런거 있잖아요?
+sul: 없는데?
+{Player_name}: 없다고요?
+sul: 응. 없어.
+sul: 돌아다녀보면 뭐라도 나오지 않을까?
+{Player_name}: 그...런가?
+sul: 그렇게 고민 할 시간에 조금이라도 더 돌아다니자고.
+sul: 빨리 와! 시간 없다고-
+{Player_name}: 자... 잠시만요! 같이 가요!
+@stopBgm BGM_Map_LovelyEP_01 fade:1 wait:false
+@stopSfx Amb_Night_Traffic_Car_01 fade:1 wait:false
 @goto A_week07_sul04.week07_sul04

@@ -5,6 +5,8 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Antics_01 volume:20 loop:true fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
@@ -18,7 +20,7 @@ describe: 마치 심장이 밖에서 뛰는 기분이었다.
 describe: 침을 삼킬 숨 조차 없어서 입 밖으로 질질 흐르고 있었다.
 {Player_name}: (하아... 하아... 지금 몇시지..?)
 {Player_name}: (8시... 28분..?)
-{Player_name}: (다행이 지각은 안했구나...)
+{Player_name}: (다행히 지각은 안했구나...)
 {Player_name}: (전대용 이 자식... 만나기만 해봐.)
 {Player_name}: (후우... 일단 숨 좀 고르고...)
 {Player_name}: (그래도 여유 있으니까 여기서부턴 걸어가도 될...)
@@ -33,6 +35,7 @@ describe: 교문 안쪽으로 들어가면 들어갈수록 어딘가 익숙한 �
 {Player_name}: 잠시만요... 죄송합니다...
 {Player_name}: 조금 지나갈... 어?!
 @char sulbody2.15 pose:c wait:false
+@sfx Common_Text_Kick_01 volume:80 loop:false fade:0 wait:false
 sul: 뭐가 문제인거죠?
 @char sulbody2.11 pose:c wait:false
 선생님: 뭐가 문제냐고? 지금 몰라서 물어보는거야?
@@ -42,6 +45,7 @@ sul: 네. 진짜 뭐가 문제인지 모르겠어서요.
 describe: 익숙한 목소리는 다름 아닌 나희 누나였다.
 describe: 나희 누나는 교문에서 선생님과 오토바이 관련된 문제로 '대화'중인 것 같았다.
 {Player_name}: (설마... 아까 그 사람이 진짜 나희 누나였다고..?)
+@sfx Common_Lightning_One_Shot_01 volume:100 loop:false fade:0 wait:false
 선생님: 학생이 무슨 오토바이야!
 @char sulbody2.85 pose:c wait:false
 sul: 저 면허 있는데요?
@@ -69,6 +73,7 @@ sul: ...
 @char sulbody2.15 pose:c wait:false
 sul: 들어가보겠습니다...
 @hideChars wait:false
+@sfx Sul_Bike_Move_Slow_01 volume:100 loop:false fade:0 wait:false
 describe: 부아아앙-!
 describe: 나희 누나는 오토바이를 타고 그대로 학교 안으로 들어갔다.
 선생님: 저... 저..! 에휴... 요즘 애들은 어째 다 저 모양이냐...
@@ -86,12 +91,16 @@ describe: 어느샌가 나희 누나를 구경하던 학생들은 사라지고 �
 {Player_name}: 그... 그건 아니긴 한데...
 선생님: 빨리 엎드려 뻗쳐!
 {Player_name}: 아침부터 되는게 없네...
+@stopBgm BGM_Map_Antics_01 fade:1 wait:false
+@stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Classroom_01 volume:60 loop:true fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScLobby01 time:0.5 wait:true
@@ -123,6 +132,7 @@ describe: 심지어 주차해 둔 오토바이 근처에서 잠복할 거라는 
 {Player_name}: (말해줬다간 분명히 나희 누나한테 달려갔을거야...)
 {Player_name}: (그럼 나희 누나는 분명 내가 말해줬다고 생각할테고.)
 {Player_name}: (그랬다가는... 으윽...)
+@sfx Metal_Door_Close_01 volume:100 loop:false fade:0 wait:false
 describe: 덜컥-!
 {Player_name}: (응..? 이게 왜 안열리지?)
 describe: 동아리실에 도착한 나는 문을 열려고 했지만 문은 열리지 않았다.
@@ -130,6 +140,7 @@ describe: 동아리실에 도착한 나는 문을 열려고 했지만 문은 열
 describe: 살짝 살짝씩 움직이는걸 봐서는 잠긴것 같지는 않았다.
 {Player_name}: (어디가 걸렸나..?)
 describe: 문이 움직이는 바닥 부분을 봤지만 딱히 걸린 부분은 없었다.
+@sfx Common_Door_Noke_01 volume:100 loop:false fade:0 wait:false
 describe: 똑똑-
 {Player_name}: 저기요?
 describe: 나는 문을 가볍게 두드리며 혹시 안에 있을 누군가에게 말을 걸었다.
@@ -141,6 +152,7 @@ describe: 그 때. 동아리실 안에서 어떤 소리가 살짝 들려왔다.
 {Player_name}: 안에 계시면 문 좀 열어주시겠어요?
 describe: 문에 달린 유리 너머로 들여다보았지만 아무도 보이지 않았다.
 {Player_name}: (뭐지..? 내가 잘못 들은건가?)
+@sfx Door_Lock_01 volume:100 loop:false fade:0 wait:false
 describe: 덜컥덜컥-
 describe: 나는 다시 한번 문을 열어봤지만 조금씩 움직이기만 할 뿐 열리지는 않았다.
 {Player_name}: (그나저나... 문은 또 갑자기 왜 이모양이지?)
@@ -158,7 +170,7 @@ describe: 나는 열리지 않는 앞문을 가만히 둔 채 뒷문으로 향�
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
+@sfx Common_Sliding_door_open_short volume:100 loop:false fade:0 wait:false
 describe: 드르륵-
 describe: 앞문과 다르게 뒷문은 평소와 다를게 하나도 없이 잘만 열렸다.
 describe: (뭐야? 뭐가 문제였던...)
@@ -182,6 +194,7 @@ sul: ......
 describe: 우물우물-
 {Player_name}: ...
 @char sulbody1.59 pose:bc wait:false
+@sfx Human_Swallow_01 volume:100 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @char sulbody1.11 pose:bc wait:false
 sul: ...
@@ -199,6 +212,7 @@ sul: 부끄...러워서...
 {Player_name}: 예..? 아니 왜...
 @char sulbody3.75 pose:bc wait:false
 sul: 누구 앞에서...
+@sfx Emotion_Sad_01 volume:100 loop:false fade:0 wait:false
 sul: 이런 걸 먹어본 적이 없어서...
 {Player_name}: ...
 {Player_name}: 그... 그럴 수 있죠..!
@@ -227,6 +241,8 @@ sul: 응...
 @char sulbody3.72 pose:bc wait:false
 sul: 바로 시작하자...
 describe: 나희 누나는 이 상황이 조금 부끄러운 모양이었다.
+@stopBgm BGM_Map_Classroom_01 fade:2 wait:false
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @hideChars wait:false
 
 @goto A_week07_sul03.week07_sul03

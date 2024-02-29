@@ -6,6 +6,9 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Dark_01 volume:100 loop:true fade:0 wait:false
+@sfx Amb_Crowd_Loop_cutoff_01 volume:50 loop:true fade:0 wait:false
+@sfx Common_Clock_Tictok_Slow_Highcut_01 volume:80 loop:true fade:0 wait:false
 @back Black time:0.5 wait:true
 @back Dream time:0.5 wait:true
 @showUI CP wait:false
@@ -31,6 +34,10 @@ MC: 오래 기다리셨습니다! 다음 차례는 드디어...
 {Player_name}: 어쩐지... 이 장면...
 sul: 러브...
 MC: 러브크레센도입니다!
+@stopSfx Common_Clock_Tictok_Slow_Highcut_01 fade:1 wait:false
+@stopSfx Amb_Crowd_Loop_cutoff_01 fade:1 wait:false
+@stopSfx Common_Clock_Tictok_Slow_Highcut_01 fade:1 wait:false
+@stopSfx Amb_Dark_01 fade:1 wait:false
 
 @skip false
 @set LoadingValue=true
@@ -50,6 +57,8 @@ MC: 러브크레센도입니다!
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Crowd_Loop_01 volume:80 loop:true fade:1 wait:false
+@bgm BGM_Map_CunningCity_01 volume:40 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Festival01 time:0.5 wait:true
 @showUI CP wait:false
@@ -68,18 +77,26 @@ describe: 분명히 아는 노래인데도, 어떻게 부르고 있는지 기억
 describe: 관객도 보이지 않았고 무대 장치도 보이지 않았다.
 describe: 그저... 나희 누나의 선명한 눈동자만이 내 눈에 보일 뿐이었...
 @char sulbody3.57 pose:c wait:false
+@sfx Sul_Audio_Distorion_03 volume:50 loop:false fade:0 wait:false
 sul: 사랑하니까!!
+@sfx Sul_Audio_Distorion_04 volume:70 loop:false fade:0 wait:false
 sul: 널 사랑하니까 난 그랬어!!
 @char sulbody3.55 pose:c wait:false
 {Player_name}: ...
 {Player_name}: (이... 이건...)
 {Player_name}: (이정도일줄은... 몰랐는데...)
 @char sulbody3.57 pose:c wait:false
+@sfx Sul_Audio_Distorion_02 volume:70 loop:false fade:0 wait:false
 sul: 가슴 속 깊이 새겨진 내 마음을!!
+@sfx Sul_Audio_Distorion_04 volume:70 loop:false fade:0 wait:false
 sul: 어째서 넌 모르는거야!!
 {Player_name}: (나희 누나...)
 {Player_name}: (노래 못부른다는 말 진짜였구나...)
+@stopBgm BGM_Map_CunningCity_01 fade:1 wait:false
+@stopSfx Amb_Crowd_Loop_01 fade:1 wait:false
+@sfx Amb_Cold_Wind_01 volume:100 loop:true fade:1 wait:false
 MC: 네..! 잘 들었습니다!
+@bgm BGM_Map_Siawase_01 volume:40 loop:true fade:1 wait:false
 describe: 무대 위로 다급히 올라온 MC가 1절이 끝나자 노래를 중지시켰다.
 @char sulbody3.15 pose:c wait:false
 sul: 이제 1절 끝났는데...
@@ -138,8 +155,11 @@ sul: 그러면 저희는 이만...
 sul: {Player_name}! 가자!
 MC: 자... 잠시만요!
 @hideChars wait:false
+@sfx Footsteps_Female_Wood_Run_01 volume:70 loop:false fade:0 wait:false
 describe: 나희 누나는 갑자기 내 손을 잡더니 무대 뒷편으로 달려나가기 시작했다.
 describe: 갑작스러운 무대, 갑작스러운 발표, 갑작스러운 퇴장까지...
 describe: 오늘은 정말 예상할 수 없는 것들 투성이었다.
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
+@stopBgm BGM_Map_Siawase_01 fade:1 wait:false
 
 @goto A_week07_sul06.week07_sul06

@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Christmas_01 volume:30 loop:true fade:1 wait:false
+@sfx Amb_Night_Traffic_Car_01 volume:500 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Festival01 time:0.5 wait:true
 @showUI CP wait:false
@@ -13,6 +15,7 @@
 @set LoadingValue=false
 
 @char sulbody1.89 pose:c wait:false
+@sfx Human_Swallow_01 volume:100 loop:false fade:0 wait:false
 describe: 꿀꺽..!
 {Player_name}: 저... 나희 누나?
 @char sulbody1.19 pose:c wait:false
@@ -25,6 +28,7 @@ describe: 나희 누나는 노점상에서 파는 어묵을 거의 5분째 처�
 describe: 노점상 주인이 대놓고 눈치를 주는데도...
 @char sulbody1.87 pose:c wait:false
 sul: 아... 아니야! 나 배 안고...
+@sfx Human_Hungry_01 volume:100 loop:false fade:0 wait:false
 describe: 꼬르륵-!
 @hideChars wait:false
 @char sulbody3.1 pose:bc wait:false
@@ -44,6 +48,7 @@ sul: 후-후-
 describe: 우물우물-
 describe: 우물우물--
 @char sulbody3.59 pose:bc wait:false
+@sfx Human_Swallow_01 volume:100 loop:false fade:0 wait:false
 describe: 꾸울...
 describe: 꺽!
 @char sulbody3.67 pose:bc wait:false
@@ -65,6 +70,7 @@ sul: 후-후- 뜨거워...
 @char sulbody1.83 pose:bc wait:false
 describe: 우물우물--
 @char sulbody1.59 pose:bc wait:false
+@sfx Common_Human_Swallow_02 volume:100 loop:false fade:0 wait:false
 describe: 꾸울-꺽!
 @char sulbody1.77 pose:bc wait:false
 sul: 맛있다...
@@ -100,6 +106,8 @@ sul: 너는 배 안고프겠어?
 @char sulbody2.52 pose:bc wait:false
 sul: 응..!
 @hideChars wait:false
+@sfx Footsteps_Sand_03 volume:40 loop:false fade:0 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:5 wait:false
 describe: 나희 누나와 나는 본격적으로 거리 안쪽으로 들어가 걷기 시작했다.
 describe: 거리에는 저번에 왔을때는 보지 못했던 것들이 많았다.
 describe: 길거리 마술 공연을 하는 사람도 있었고, 분장을 하고 돌아다니는 사람도 있었다.
@@ -128,13 +136,17 @@ sul: 흐음... 그럼 우리도 가보자!
 {Player_name}: 가... 같이 가요!
 @hideChars wait:false
 describe: 가보자는 말과 함께 나희 누나는 앞서 달려나가기 시작했다.
-
+@stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+@stopBgm BGM_Map_Christmas_01 fade:1 wait:false
+@stopSfx Amb_Night_Traffic_Car_01 fade:1 wait:false
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Siawase_01 volume:30 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:40 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Festival01 time:0.5 wait:true
 @showUI CP wait:false
@@ -168,6 +180,8 @@ sul: 축제 왔으면 신나야 되는게 당연한거 아니야?
 {Player_name}: 그... 그렇죠?
 {Player_name}: (괜한 생각이겠지..?)
 @char sulbody2.67 pose:c wait:false
+@sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false fade:0 wait:false
+@sfx Footsteps_Male_ctr_run_01 volume:50 loop:false fade:0 wait:false
 sul: 아무튼 빨리 와-!
 {Player_name}: 자... 잠시만요!
 @hideChars wait:false
@@ -186,9 +200,11 @@ sul: 죄송합니다. 금방 내려갈게요!
 sul: 그나저나 지금 어떤 공연중인건가요..?
 @char sulbody1.61 pose:c wait:false
 스태프: 저희 지금 축제 행사중이라...
+@sfx Phone_Vibration_01 volume:130 loop:false fade:0 wait:false
 스태프: 초대가수 모셔서 공연중인... 잠시만요...
 @char sulbody1.64 pose:c wait:false
 describe: 스태프는 잠시 나희 누나와의 대화를 멈추고 전화를 받았다.
+@stopSfx Phone_Vibration_01 fade:1 wait:false
 {Player_name}: ...이거 이렇게 올라와도 되는거에요?
 @char sulbody1.84 pose:c wait:false
 sul: 뭐... 아직까지 쫓겨나지는 않았잖아?
@@ -202,6 +218,7 @@ sul: 그리고 너가 그런말을 하다니 조금 의외인데?
 스태프: 아뇨... 따지는게 아니라 상식적으로...
 스태프: 네... 네... 알겠습니다...
 스태프: 네... 죄송합니다...
+@sfx Common_Phone_No_Answer_01 volume:100 loop:false fade:0 wait:false
 describe: 뚝-!
 스태프: 후우...
 스태프: 아니 이제와서 이러면 어쩌자는거야...
@@ -216,6 +233,7 @@ sul: 나... 좋은 생각이 났어.
 sul: 헤헤... 재밌겠다!
 {Player_name}: 누나!
 @hideChars wait:false
+@sfx Footsteps_Female_Ctr_Run_01 volume:80 loop:false fade:0 wait:false
 describe: 나희 누나는 채 말릴 시간도 없이 스태프에게 달려갔다.
 @char sulbody3.15 pose:bc wait:false
 sul: 저기요!
@@ -237,6 +255,7 @@ sul: 잠깐 시간정도는 끌어줄 수 있는데...
 @char sulbody3.74 pose:bc wait:false
 sul: 그건...
 @char sulbody3.65 pose:bc wait:false
+@sfx Common_String_Stab_Soft_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 러... 러브크레센도라고해요!
 스태프: 러브크레센도..? 처음 들어보는데...
 {Player_name}: 학교 동아리로 하는 밴드예요..!
@@ -313,6 +332,8 @@ sul: 진짜요? 무슨 선물이에요?
 스태프: 그... 그건... 제가 준비한 건 아니라서...
 스태프: 저희도 급하게 준비한 거라... 하하하...
 스태프: 아무튼 준비해 주세요! 이제 곧 MC가 부를 겁니다.
+@stopBgm BGM_Map_Siawase_01 fade:2 wait:false
+@stopSfx Amb_Night_Cricket_01 fade:1 wait:false
 @hideChars wait:false
 
 @goto A_week07_sul05.week07_sul05
