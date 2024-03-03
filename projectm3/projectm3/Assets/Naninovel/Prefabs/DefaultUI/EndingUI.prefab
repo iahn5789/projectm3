@@ -167,7 +167,6 @@ GameObject:
   - component: {fileID: 6029236399052258146}
   - component: {fileID: 8153917850315471595}
   - component: {fileID: 5868173006593464166}
-  - component: {fileID: 3595906167464554086}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -248,20 +247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: {x: 20, y: 20, z: 20, w: 20}
---- !u!114 &3595906167464554086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720761522864870885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a13ed4d4df45f4d418435e120067d62a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharactorDialog: {fileID: 2851905591589399010}
-  CharactorName: {fileID: 5359371772820832851}
 --- !u!1 &1845869012660661234
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7103766968886509249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -899,6 +884,7 @@ GameObject:
   - component: {fileID: 5731833992646814813}
   - component: {fileID: 6062789638058034578}
   - component: {fileID: 6288127910424194997}
+  - component: {fileID: 2388013473336276373}
   m_Layer: 5
   m_Name: Text_Dialogue
   m_TagString: Untagged
@@ -965,11 +951,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "\uC544\uB2C8 \uC11D\uCC2C\uC544 \uAC70\uAE30\uC11C \uB625\uC744 \uC2F8\uBA74
-    \uC5B4\uB5A1\uD574!!! \uC544\uB2C8 \uC11D\uCC2C\uC544 \uAC70\uAE30\uC11C \uB625\uC744
-    \uC2F8\uBA74 \uC5B4\uB5A1\uD574!!!\n\uC544\uB2C8 \uC11D\uCC2C\uC544 \uAC70\uAE30\uC11C
-    \uB625\uC744 \uC2F8\uBA74 \uC5B4\uB5A1\uD574!!! \uC544\uB2C8 \uC11D\uCC2C\uC544
-    \uAC70\uAE30\uC11C \uB625\uC744 \uC2F8\uBA74 \uC5B4\uB5A1\uD574!!!"
+  m_Text: 
+--- !u!114 &2388013473336276373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851905591589399010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18bf1dd1c681bb4e8a729c0f562ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 6288127910424194997}
+  fullText: "\uBBBB"
+  typingSpeed: 0.1
 --- !u!1 &5306755637768983122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1054,7 @@ GameObject:
   - component: {fileID: 2374267718346212304}
   - component: {fileID: 6920252168208978427}
   - component: {fileID: 2134521760249274778}
+  - component: {fileID: 2697630317468761287}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -1208,6 +1206,20 @@ MonoBehaviour:
   KangBody: {fileID: 1824487099627597291}
   JinBody: {fileID: 9125924959059054186}
   SulBody: {fileID: 355832395390421644}
+--- !u!114 &2697630317468761287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314684403018346417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a13ed4d4df45f4d418435e120067d62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharactorDialog: {fileID: 2851905591589399010}
+  CharactorName: {fileID: 5359371772820832851}
 --- !u!1 &5382285056679048832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,7 +2004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8705607156428028948
 RectTransform:
   m_ObjectHideFlags: 0
