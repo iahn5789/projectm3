@@ -11,7 +11,9 @@
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
+@sfx Common_Clock_Tictok_Slow_Highcut_01 volume:80 loop:true fade:1 wait:false
+@sfx Amb_Room_Tone_02 volume:70 loop:true fade:1 wait:false
+@sfx Amb_Dark_01 volume:70 loop:true fade:1 wait:false
 {Player_name}: ...
 sul: ...
 describe: 나희 누나와 함께 무대에 올랐다.
@@ -27,6 +29,8 @@ describe: 무슨 일이 있었든 간에 나는 나희 누나와 무대에 올�
 describe: 끝까지 함께할 거니까.
 describe: 왜냐하면...
 describe: 나는...
+@stopSfx Common_Clock_Tictok_Slow_Highcut_01 fade:1 wait:false
+@bgm BGM_Map_Christmas_01 volume:40 loop:true fade:1 wait:false
 describe: 나희 누나를 좋아하니까.
 @char sulbody1.11 pose:c wait:false
 sul: ......
@@ -48,12 +52,14 @@ describe: 라은이 올린 동영상을 봤다면 말이다.
 describe: 그래도... 동영상으로 봐서 아는 것과 직접 보는 건 차이가 큰 모양이었다.
 관객: 뭐야..? 시작한 거야?
 관객: 나도 몰라...
+@sfx Crowd_Laugh_01 volume:90 loop:false fade:0 wait:false
 관객: 사고 난 거 아니야?
 관객: 그런데 교복은 왜 입고 올라온 거야?
 관객: 낸들 아냐?
 관객: 그것도 못 봤냐? 얼굴 공개했잖아!
 관객: 그거랑 교복 입고 올라온 거랑은 다르지!
 @char sulbody1.15 pose:c wait:false
+@sfx Common_Mic_Feedback_01 volume:90 loop:false fade:0 wait:false
 sul: 저...
 @char sulbody1.52 pose:c wait:false
 sul: 안녕하세요..!
@@ -122,18 +128,23 @@ describe: 나희 누나는 이제 더 이상 할 말이 없는 듯싶었다.
 describe: 이제 남은 건... 관객들이 어떻게 받아들이냐였다.
 관객: ...
 관객: ......
+@sfx Heart_Beat_Fast_02 volume:70 loop:true fade:1 wait:false
 describe: 두근-두근-
 describe: 심장 소리가 들릴 정도로 무대 위는 조용했다.
 describe: 내 심장 소리일까 나희 누나의 심장 소리일까
 describe: 나희 누나는 아무렇지 않은 척하고 있었지만...
 describe: 나희 누나와 맞잡은 손에서는 작지만 분명한 떨림이 느껴지고 있었다.
+@stopsfx Heart_Beat_Fast_02 fade:1 wait:false
 관객: ...덤...
 @char sulbody3.61 pose:c wait:false
 {Player_name}: ..?
 관객: ..프...
 관객: ...리덤...
 관객: 프리덤..
+@sfx Common_Applause_No_Whistle_03 volume:30 loop:true fade:1 wait:false
 관객: 프리덤..!
+@sfx Crowd_Cheer_Clap_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Stadium_Crowd_01 volume:70 loop:true fade:1 wait:false
 관객: 프리덤!!
 @hideChars time:0.5 wait:false
 @char sulbody3.65 pose:bc wait:false
@@ -156,6 +167,7 @@ describe: 그걸로도 괜찮은 게 아닐까?
 sul: ...
 sul: 다행이다...
 @char sulbody3.71 pose:bc wait:false
+@stopsfx Crowd_Cheer_Clap_01 fade:1 wait:false
 describe: 나희 누나의 떨림이 점점 줄어들었다.
 {Player_name}: 네... 다행이네요...
 @char sulbody3.52 pose:bc wait:false
@@ -173,5 +185,8 @@ sul: 프리덤 공연..!
 @char sulbody4.57 pose:bc wait:false
 sul: 시작하겠습니다!
 @hideChars time:0.5 wait:false
-
+@stopsfx Amb_Stadium_Crowd_01 fade:1 wait:false
+@stopsfx Amb_Room_Tone_02 fade:1 wait:false
+@stopsfx Amb_Dark_01 fade:1 wait:false
+@stopbgm BGM_Map_Christmas_01 fade:1 wait:false
 @goto A_week09_sul03.week09_sul03

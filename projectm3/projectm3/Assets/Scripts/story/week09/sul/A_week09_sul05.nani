@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_LovelyEP_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Dream time:0.5 wait:true
 @showUI CP wait:false
@@ -55,6 +57,7 @@ sul: ...우리 가서 뭐라도 좀 먹을까?
 sul: 아... 아니..! 딱히 고픈 건 아니...
 @hideChars time:0.5 wait:false
 @char sulbody3.1 pose:bc wait:false
+@sfx Human_Hungry_01 volume:100 loop:false fade:0 wait:false
 describe: 꼬르륵-!
 @char sulbody3.76 pose:bc wait:false
 sul: ...
@@ -71,6 +74,8 @@ sul: 그러게... 되게 시끄러웠어!
 {Player_name}: 빨리 가죠..!
 @char sulbody3.67 pose:bc wait:false
 sul: 응! 빨리 가자!
+@stopbgm BGM_Map_LovelyEP_01 fade:1 wait:false
+@stopsfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
@@ -78,6 +83,8 @@ sul: 응! 빨리 가자!
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Siawase_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Hallway_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back DowntownNight01 time:0.5 wait:true
 @showUI CP wait:false
@@ -87,6 +94,7 @@ sul: 응! 빨리 가자!
 describe: 공연장에서 조금 떨어진 도심가.
 describe: 어두운 하늘과 달리 화려한 간판이 밤하늘을 밝히고 있었다.
 describe: 화려한 간판 아래 매장에서 흘러나오는 노래들.
+@sfx Footsteps_Ctr_Male_Walker_02 volume:40 loop:false fade:0 wait:false
 describe: 도시 속 곁을 지나가는 수많은 사람들.
 describe: 그 사람들이 내는 소리들.
 describe: 도로에 지나다니는 차와 오토바이들.
@@ -190,6 +198,7 @@ describe: 라은이 또 어떤 이상한 짓거리를 했을지도 모르니까.
 
 describe: 나는 잠시 멈춰 주머니에서 핸드폰을 꺼냈다.
 {Player_name}: ...
+@sfx Common_Tapping_Phone_01 volume:100 loop:false fade:0 wait:false
 describe: 핸드폰을 켜 잠금을 해제했다.
 sul: {Player_name}..? 뭐 하고 있어?
 {Player_name}: ...
@@ -202,13 +211,18 @@ describe: 나희 누나를 믿는 것도 나니까.
 describe: 나는...
 describe: 나희 누나와 함께하기로 했으니까.
 {Player_name}: 아니에요..! 같이 가요 누나!
+@stopbgm BGM_Map_Siawase_01 fade:1 wait:false
+@stopsfx Amb_Hallway_01 fade:1 wait:false
 
 ;미니컷 출력
 
+@sfx Footsteps_Male_ctr_run_01 volume:40 loop:false fade:0 wait:false
+@sfx Amb_Road_01 volume:50 loop:true fade:1 wait:false
 describe: 나는 핸드폰을 주머니에 다시 넣고는 나희 누나를 향해 달려갔다.
 {Player_name}: 아하하... 죄송해요...
 {Player_name}: 잠깐 문자가 와서..?
 {Player_name}: 나희 누나..?
+@bgm BGM_Map_SuperSad_01 volume:60 loop:true fade:1 wait:false
 describe: 나희 누나는 가던 길을 멈춘 채 길에서 가만히 서있었다.
 @char sulbody3.76 pose:c wait:false
 sul: ...
@@ -340,6 +354,7 @@ sul: 네... 조심히 들어가세요.
 @char sulbody3.11 pose:bc wait:false
 sul: 안녕히 가세요..!
 @hideChars time:0.5 wait:false
+@sfx Footsteps_Ctr_Male_Walker_02 volume:40 loop:false fade:0 wait:false
 describe: 나희 아버지는 가보겠다는 말을 마지막으로 길을 건넜다.
 describe: 나희 누나는... 그 자리에 가만히 서있었다.
 describe: 전혀 예상하지 못한 만남에 약간 충격을 받은 걸까?
@@ -365,6 +380,7 @@ sul: {Player_name}...
 {Player_name}: ...
 {Player_name}: 나희 누나...
 @char sulbody1.65 pose:bc wait:false
+@sfx Human_Hungry_01 volume:100 loop:false fade:0 wait:false
 describe: 꼬르륵-!
 @char sulbody1.1 pose:bc wait:false
 sul: ...
@@ -380,5 +396,7 @@ sul: 고마워...
 {Player_name}: 하하... 이제 진짜 뭐라도 먹으러 갈까요?
 @char sulbody1.62 pose:bc wait:false
 sul: 응..!
+@stopbgm BGM_Map_SuperSad_01 fade:1 wait:false
+@stopsfx Amb_Road_01 fade:1 wait:false
 
 @goto A_week09_sul06.week09_sul06

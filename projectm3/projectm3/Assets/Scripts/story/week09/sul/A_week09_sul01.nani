@@ -27,6 +27,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Friendly_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Hallway_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Dream time:0.5 wait:true
 @showUI CP wait:false
@@ -57,6 +59,7 @@ sul: 무슨 일 있어..?
 @char sulbody4.85 pose:c wait:false
 sul: 표정이 안좋은데...
 @char sulbody4.61 pose:c wait:false
+@sfx Common_Cloth_Brush_01 volume:90 loop:false fade:0 wait:false
 describe: 나희 누나는 손을 들어 내 얼굴을 가볍게 쓰다듬었다.
 @hideChars time:0.5 wait:false
 @char sulbody2.15 pose:c wait:false
@@ -122,5 +125,7 @@ describe: 슬픔, 외로움, 고독...
 describe: 희망, 기쁨, 신남...
 describe: 그리고...
 {Player_name}: 네! 올라가죠!
+@stopSfx BGM_Map_Friendly_01 fade:1 wait:false
+@stopSfx Amb_Hallway_01 fade:1 wait:false
 
 @goto A_week09_sul02.week09_sul02
