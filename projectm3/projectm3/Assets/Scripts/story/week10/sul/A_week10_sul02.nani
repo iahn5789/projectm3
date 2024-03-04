@@ -6,6 +6,7 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Littlesad_01 volume:40 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
@@ -59,12 +60,16 @@ sul: 응... 온 김에 생각나는 곳은 다 둘러보고 싶어서.
 sul: 괜찮아. 나한테 키 있어.
 {Player_name}: 옥상 키요..? 그걸 어떻게...
 sul: 다 방법이 있지. 아무튼 가자!
+@sfx Footsteps_Ctr_Male_Walker_01 volume:60 loop:false fade:0 wait:false
+@stopBgm BGM_Map_Littlesad_01 fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@sfx Amb_Cold_Wind_01 volume:50 loop:true fade:0 wait:false
+@bgm BGM_Sul_Sad_Bb_01 volume:40 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Rooftop01 time:0.5 wait:true
@@ -170,5 +175,7 @@ sul: 너무 걱정하지 않아도 돼.
 {Player_name}: 약속이에요?
 @char sulbody1.52 pose:bc wait:false
 sul: 응..! 약속!
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
+@stopBgm BGM_Sul_Sad_Bb_01 fade:1 wait:false
 
 @goto A_week10_sul03.week10_sul03

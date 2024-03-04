@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_LovelyEP_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Dark_01 volume:70 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ConcertIn01 time:0.5 wait:true
 @showUI CP wait:false
@@ -53,7 +55,9 @@ sul: 너와 나의 소중한...
 {Player_name}: 그럼... 오랜만에 한번 가볼까요?
 @hideChars time:0.5 wait:false
 describe: 나희 누나와 나는 우리가 썼던 대기실 앞으로 갔다.
+@sfx Door_Lock_Handle_01 volume:60 loop:false fade:0 wait:false
 describe: 손잡이를 살짝 잡고 돌려봤다.
+@sfx Door_Lock_Handle_02 volume:60 loop:false fade:0 wait:false
 describe: 그렇지만 문은 굳게 닫혀있었다.
 {Player_name}: 잠겨있네요...
 {Player_name}: 도어락 비밀번호도 바뀐 것 같아요.
@@ -67,6 +71,7 @@ sul: 아쉽네...
 sul: 그런 건 없는데... 그냥...
 describe: 그때.
 @char sulbody3.61 pose:bc wait:false
+@sfx Common_Whistle_01 volume:80 loop:false fade:0 wait:false
 보안요원: 잠시만요!
 보안요원: 어떻게 들어오신 거죠?
 보안요원: 여기 계시면 안 됩니다. 당장 나가주세요.
@@ -79,6 +84,7 @@ describe: 그때.
 sul: 나 신발이 조금 그래서 뛰기 힘든데...
 @char sulbody3.32 pose:bc wait:false
 {Player_name}: 그럼... 일단 제가 뭐라도 말해볼...
+@sfx Common_Emotion_Question_01 volume:80 loop:false fade:0 wait:false
 보안요원: 어..?
 @hideChars time:0.5 wait:false
 @char sulbody1.65 pose:bc wait:false
@@ -89,6 +95,7 @@ sul: 네..?
 @char sulbody1.75 pose:bc wait:false
 sul: 맞긴 한데...
 @char sulbody1.71 pose:bc wait:false
+@sfx Common_Bell_Tree_NoHarp_01 volume:80 loop:false fade:0 wait:false
 보안요원: 저도 진짜 팬이었어요!
 보안요원: 근무만 아니었으면 공연 봤을 텐데...
 보안요원: 하필 그때 근무하고 있었어 가지고...
@@ -135,7 +142,9 @@ sul: ..?
 보안요원: 이렇게 기회가 되네요.
 보안요원: 아무튼... 이제 진짜 가보겠습니다.
 보안요원: 안녕히 계세요!
+@sfx Footsteps_Ctr_Male_Walker_02 volume:80 loop:false fade:0 wait:false
 describe: 보안요원은 몸을 돌려 다시 사라졌다.
+@stopSfx Footsteps_Ctr_Male_Walker_02 fade:1 wait:false
 sul: ...
 {Player_name}: 큰일나는 줄 알았네요...
 @hideChars time:0.5 wait:false
@@ -163,5 +172,6 @@ sul: 영화 보러 가자! 늦겠다...
 {Player_name}: 그럼 놓고 오신 건 없죠?
 @char sulbody3.62 pose:bc wait:false
 sul: 응..! 챙길 건 모두 챙겼어..!
-
+@stopSfx Amb_Dark_01 fade:1 wait:false
+@stopBgm BGM_Map_LovelyEP_01 fade:1 wait:false
 @goto A_week10_sul05.week10_sul05

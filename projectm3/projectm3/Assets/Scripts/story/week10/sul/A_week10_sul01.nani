@@ -26,6 +26,8 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Sweethome_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
@@ -36,6 +38,7 @@
 {Player_name}: 후우...
 {Player_name}: (이제 어느 정도 마무리 되었겠지..?)
 describe: 숙이고 있던 허리를 펴 가볍게 스트레칭했다.
+@sfx Common_Bone_Break_01 volume:80 loop:false fade:0 wait:false
 describe: 두두둑-!
 {Player_name}: 으... 으윽..!
 describe: 허리를 펴자 소리가 났다.
@@ -74,11 +77,13 @@ describe: 어쩌면 그 모든 건 핑계였을지도 모른다.
 describe: 난... 그저...
 describe: 누군가가 날 필요로 했다는 사실이...
 describe: 좋았을지도 몰랐다.
+@sfx Common_Sliding_Door_Open_Short_02 volume:80 loop:false fade:0 wait:false
 describe: 드르륵-!
 {Player_name}: ..?
 {Player_name}: (올 사람이 없는데..?)
 {Player_name}: (한갑수 선생님인가?)
 {Player_name}: (아직 정리 다 못했...)
+@sfx Common_Desk_Rattle_01 volume:80 loop:false fade:0 wait:false
 describe: 나는 정리 중이던 박스를 내려놓은 채 고개를 돌렸다.
 {Player_name}: ...
 {Player_name}: 나희... 누나?
@@ -161,7 +166,9 @@ sul: 많이 남았어?
 ;미니컷
 
 describe: 나는 허리를 숙여 바닥에 떨어져 있던 마이크를 집었다.
+@sfx Amb_Cold_Wind_01 volume:70 loop:true fade:0 wait:false
 describe: 마이크는 사용한 지 오래 지난 듯 먼지가 잔뜩 끼어있었다.
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
 describe: ... 실제로도 사용한 지 오래 지났다.
 describe: 다 같이 밴드 연습을 한 지 벌써 몇 달은 지났으니.
 sul: 벌써 먼지가 이렇게 꼈구나...
@@ -186,6 +193,7 @@ sul: 당연히 기억나지.
 sul: 그때 다영이가 화나서 마이크 집어던지지 않았던가?
 {Player_name}: 집어... 던지지는 않았고요...
 @char sulbody2.14 pose:c wait:false
+@sfx Whoosh_Arm_01 volume:100 loop:false fade:0 wait:false
 sul: 그럼 베이스를 집어던졌던가?
 {Player_name}: 그...럴걸요?
 @char sulbody2.23 pose:c wait:false
@@ -212,6 +220,7 @@ sul: 어땠을 것 같아?
 {Player_name}: 글쎄요...
 {Player_name}: 그냥... 뭐... 살고 있지 않았을까요?
 sul: ..?
+@sfx Common_Text_Kick_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 아..!
 @char sulbody3.61 pose:c wait:false
 {Player_name}: 무... 물론..! 그때 그만뒀으면 누나랑 프리덤도 못 했을 테니까요..!
@@ -221,6 +230,7 @@ sul: ..?
 {Player_name}: 어우! 상상도 못 하겠네..! 하하...
 {Player_name}: 믹서 정리 해야겠다..!
 @hideChars time:0.5 wait:false
+@sfx Footsteps_Female_Wood_Walk_01 volume:80 loop:false fade:0 wait:false
 describe: 나는 어색하게 콧노래를 부르며 믹서로 다가갔다.
 @char sulbody4.71 pose:c wait:false
 sul: 오랜만이네... 이것도...
@@ -297,5 +307,6 @@ sul: 이제 와서 신고하기도 좀 그렇고...
 {Player_name}: 으... 으윽...
 @char sulbody1.67 pose:bc wait:false
 sul: 포기하는 게 좋을걸? 앞으로도 계속 놀릴 거니까!
-
+@stopSfx Amb_Shool_Club_01 fade:1 wait:false
+@stopBgm BGM_Map_Sweethome_01 fade:1 wait:false
 @goto A_week10_sul02.week10_sul02

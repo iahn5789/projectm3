@@ -5,6 +5,8 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Siawase_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Room_Tone_02 volume:70 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ConcertOut01 time:0.5 wait:true
@@ -52,6 +54,7 @@ sul: 네가 봤던 내 무대는 어땠어?
 @char sulbody1.11 pose:bc wait:false
 {Player_name}: 음... 뭐랄까.
 @char sulbody1.61 pose:bc wait:false
+@sfx Amb_Stadium_Crowd_01 volume:30 loop:true fade:1 wait:false
 {Player_name}: 굉장히 화려했어요.
 {Player_name}: 곡 진행에 맞춰 조명이 변하다 보니, 노래를 눈으로 보는 느낌이었고...
 {Player_name}: 그 소리를 보고 있으면 저도 모르게 가슴이 뛰고 있더라고요.
@@ -63,6 +66,7 @@ sul: ...
 @char sulbody3.75 pose:bc wait:false
 sul: 멋있었어?
 @char sulbody3.71 pose:bc wait:false
+@stopSfx Amb_Stadium_Crowd_01 fade:1 wait:false
 {Player_name}: 그럼요. 얼마나 멋있었는데요.
 @char sulbody3.75 pose:bc wait:false
 sul: 그렇구나...
@@ -79,6 +83,7 @@ sul: 우리... 오랜만에 일탈 한번 해볼까?
 {Player_name}: 일...탈이요?
 {Player_name}: 뭘 하시려고...
 @char sulbody2.67 pose:bc wait:false
+@sfx Common_String_Stab_Soft_01 volume:60 loop:false fade:0 wait:false
 sul: 백스테이지 가보자!
 @char sulbody2.62 pose:bc wait:false
 {Player_name}: 네?! 백스테이지를요? 지금요?
@@ -100,7 +105,9 @@ sul: 한 번 해봤잖아? 두 번은 못하겠어?
 sul: 가보자! 오랜만에 보고 싶어졌어.
 {Player_name}: 자... 잠시만요..!
 @hideChars time:0.5 wait:false
+@sfx Footsteps_Female_Wood_Run_01 volume:60 loop:false fade:0 wait:false
 describe: 나희 누나는 어느새 자리에서 일어나 백스테이지 쪽으로 뛰어가고 있었다.
 sul: 빨리 와!
-
+@stopSfx Amb_Room_Tone_02 fade:1 wait:false
+@stopBgm BGM_Map_Siawase_01 fade:1 wait:false
 @goto A_week10_sul04.week10_sul04

@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Friendly_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Road_01 volume:40 loop:true fade:0 wait:false
 @back Black time:0.5 wait:true
 @back Festival01 time:0.5 wait:true
 @showUI CP wait:false
@@ -13,6 +15,7 @@
 @set LoadingValue=false
 
 describe: 공연장에서 나와 영화를 보고 나니 어느새 하늘은 어두워져 있었다.
+@sfx Amb_Cold_Wind_01 volume:30 loop:true fade:1 wait:false
 describe: 이제는 제법 밤공기가 쌀쌀해졌다.
 describe: 나희 누나는 손이 차가운지 입김으로 손을 녹이고 있었다.
 {Player_name}: ...
@@ -24,6 +27,7 @@ sul: ...
 @char sulbody3.75 pose:c wait:false
 sul: 고마워...
 @char sulbody3.71 pose:c wait:false
+@stopSfx Amb_Cold_Wind_01 fade:1 wait:false
 {Player_name}: 이제 좀 괜찮으세요?
 @char sulbody3.76 pose:c wait:false
 sul: 응...
@@ -49,6 +53,7 @@ sul: 괜찮아..!
 @char sulbody3.75 pose:c wait:false
 sul: 이 정도는...
 @hideChars time:0.5 wait:false
+@sfx Footsteps_Sand_03 volume:80 loop:false fade:0 wait:false
 describe: 나는 나희 누나와 함께 걷기 시작했다.
 describe: 추워진 날씨에도 불구하고 여전히 사람들은 많았다.
 describe: 적당히 사람들을 지나쳐 가면서 목적 없이 걷고 있었다.
@@ -62,6 +67,7 @@ sul: 어..?
 sul: 저거...
 {Player_name}: 저거요..?
 sul: 응...
+@sfx Whoosh_Arm_01 volume:80 loop:false fade:0 wait:false
 describe: 나희 누나가 손을 들어 길거리를 가리켰다.
 describe: 그곳에는 어떤 사람이 길가에 앉아 그림을 그려주고 있었다.
 @char sulbody2.65 pose:bc wait:false
@@ -75,6 +81,7 @@ sul: 해보고 싶어...
 @char sulbody2.71 pose:bc wait:false
 {Player_name}: ...
 describe: 오늘따라 어딘가 슬퍼 보이는 나희 누나.
+@sfx Common_Cloth_movement_02 volume:80 loop:false fade:0 wait:false
 describe: 나는 나희 누나의 손을 잡았다.
 {Player_name}: 그럼 못 할 거 없죠!
 {Player_name}: 나희 누나랑 같이 있으면... 저는 뭐든지 좋아요!
@@ -100,6 +107,7 @@ sul: 아... 그게...
 sul: 저는... 이번에 졸업...
 @char sulbody3.61 pose:bc wait:false
 화가: 오늘 졸업식이었어요? 교복을 입고 계시네.
+@sfx Writing_Chalk_Board_01 volume:80 loop:false fade:0 wait:false
 describe: 화가는 본격적으로 그림을 그리기 시작했다.
 @char sulbody3.75 pose:bc wait:false
 sul: 그...건 아닌데...
@@ -136,6 +144,7 @@ sul: 왜..? 사실이잖아?
 @char sulbody4.62 pose:bc wait:false
 sul: 아... 감사합니다..!
 @char sulbody4.61 pose:bc wait:false
+@sfx Common_Paper_Turn_02 volume:80 loop:false fade:0 wait:false
 describe: 화가는 내 그림과 나희 누나의 그림을 각각 건네주었다.
 describe: 나는 나희 누나의 그림을, 나희 누나는 내 그림을 건네받았다.
 describe: 그림을 받고 주머니에서 지갑을 꺼내자, 나희 누나가 내 손을 막았다.
@@ -148,5 +157,7 @@ sul: 그냥... 선물이야..! 주고 싶어서...
 @char sulbody4.71 pose:bc wait:false
 {Player_name}: 감사합니다!
 {Player_name}: 안녕히 계세요..!
+@stopBgm BGM_Map_Friendly_01 fade:1 wait:false
+@stopSfx Amb_Road_01 fade:1 wait:false
 
 @goto A_week10_sul06.week10_sul06
