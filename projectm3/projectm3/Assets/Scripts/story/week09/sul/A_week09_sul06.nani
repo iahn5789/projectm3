@@ -6,6 +6,7 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Friendly_01 volume:40 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Festival01 time:0.5 wait:true
 @showUI CP wait:false
@@ -21,6 +22,7 @@ describe: 나희 누나가 먹는 양은...
 describe: 정말 언제 봐도 경이롭다.
 @hideChars time:0.5 wait:false
 @char sulbody4.15 pose:c wait:false
+@sfx Common_Bell_Tree_NoHarp_01 volume:40 loop:false fade:0 wait:false
 sul: 이제 디저트 먹으러 갈까?
 @char sulbody4.11 pose:c wait:false
 {Player_name}: 디... 디저트요..?
@@ -110,7 +112,9 @@ sul: {Player_name}...
 sul: 미안..!
 {Player_name}: 네..? 뭐가 미안...
 @hideChars time:0.5 wait:false
-
+@stopbgm BGM_Map_Friendly_01 fade:1 wait:false
+@sfx Common_Clock_Tictok_Slow_Highcut_01 volume:60 loop:true fade:1 wait:false
+@sfx Common_Beautiful_Bell_Tree_01 volume:30 loop:true fade:1 wait:false
 ;cg출력
 
 describe: 순간적으로 몸이 기울었다.
@@ -128,6 +132,10 @@ describe: 이내 세상은 자연스럽게 어두워졌고...
 describe: 나는 부드러운 숨결 속으로 빠져들었다.
 describe: 시간이 멈춘 걸까, 내가 멈춘 걸까.
 describe: 아니면... 모두가 우리를 위해서 멈춘 걸까..?
+@stopsfx Common_Clock_Tictok_Slow_Highcut_01 fade:1 wait:false
+@stopsfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
+@bgm BGM_Map_Cool_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
 기자A: 분명히 본 것 같은데...
 기자B: 잘못 본 거 아니야?
 기자A: 확실히 봤다니까!
@@ -154,6 +162,7 @@ sul: 라은은..?
 @char sulbody3.71 pose:bc wait:false
 {Player_name}: 라은도 안 보이는 것 같아요...
 describe: 갑작스러운 키스 후...
+@sfx Emotion_Sad_01 volume:100 loop:false fade:0 wait:false
 describe: 나희 누나와 나는 서로 어색하게 고개를 돌리고 있었다.
 sul: ...
 {Player_name}: ......
@@ -191,6 +200,8 @@ describe: 더 많은 곳에서 느껴지기 시작했다.
 describe: 하늘이, 바닥이 기울어졌다.
 describe: 시간이...
 describe: 다시 한번 멈췄다.
+@stopbgm BGM_Map_Cool_01 fade:1 wait:false
+@stopsfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 
 ; 변수 초기화(주의)
 @set LoadingValue=true

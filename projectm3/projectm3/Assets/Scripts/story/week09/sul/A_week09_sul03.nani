@@ -5,6 +5,8 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@sfx Amb_Room_Tone_02 volume:70 loop:true fade:1 wait:false
+@bgm BGM_Map_SuperSad_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Rooftop01 time:0.5 wait:true
@@ -83,5 +85,6 @@ sul: 그냥... 내 곁에만 있어 줘.
 @char sulbody4.67 pose:bc wait:false
 sul: 나도 네 곁에 있을 테니까.
 {Player_name}: ...네!
-
+@stopsfx Amb_Room_Tone_02 fade:1 wait:false
+@stopbgm BGM_Map_SuperSad_01 fade:1 wait:false
 @goto A_week09_sul04.week09_sul04
