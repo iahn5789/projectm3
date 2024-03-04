@@ -45,6 +45,11 @@ describe: 무슨 말을 해야 할지, 그리고 무슨 말을 해도 이상한 
 sul: ...
 {Player_name}: 저 진짜 이상한 상황인 건 알겠는데... 제가 나중에 설명...
 sul: ...기다려봐.
+{Player_name}: ...
+sul: 눈 좀 감고 있을래..?
+{Player_name}: 네..?
+sul: 옷 좀... 마저 갈아입게...
+{Player_name}: 아..! 네..! 네!
 
 @set LoadingValue=true
 @processInput false
@@ -58,12 +63,20 @@ sul: ...기다려봐.
 @processInput true
 @set LoadingValue=false
 
-@sfx Metal_Door_Close_01 volume:70 loop:false wait:false
-describe: 나희 누나는 헬맷을 챙겨서 쓰고는 방 밖으로 나가며 문을 닫았다.
-describe: 방에는 나 혼자와 나희 누나의 흔적만 남아 있었다.
+@sfx Common_Cloth_Brush_01 volume:100 loop:false fade:0 wait:false
+describe: 부스럭-부스럭-!
+sul: ...
+describe: 나는 나희 누나가 옷을 마저 갈아입을 동안 눈을 감고 서있었다.
+describe: 스윽-!
+@sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
+describe: 쾅-!
+describe: 방문이 열리는 소리가 들리며 동시에 닫히는 소리도 들렸다.
+describe: 나희 누나가 방문을 열고 나간 걸까?
+describe: 눈을 떠 보고 싶었지만...
+describe: 차마 뜰 용기가 들지 않았다.
+describe: 그때. 밖에서 나희 누나와 어떤 남자의 목소리가 들려왔다.
 보안요원A: 혹시 괜찮으신가요?
 sul: 네?
-describe: 문 밖에서 나희 누나가 헬맷을 쓴 채 보안요원들과 대화하고 있었다.
 보안요원B: 신원 미상의 인물이 돌아다니고 있어서 보안팀에서 순찰 중입니다.
 보안요원B: 혹시 수상한 사람 못 보셨나요?
 sul: 아뇨. 이 근처에서는 못 본 것 같아요.
@@ -73,13 +86,29 @@ sul: 잠깐 화장실 가려고 나왔는데 이상한 소리가 들렸어요.
 sul: 제대로 보진 못했는데 아마 저 끝으로 갔을 거예요.
 보안요원B: 몇 분 정도 지났는지 알 수 있을까요?
 sul: 한 3분에서 5분 정도 지났어요.
-보안요원A: 심려 끼쳐드려 죄송합니다. 신속히 해결하도록 하겠습니다.
+보안요원A: 심려 끼쳐 죄송합니다. 신속히 해결하도록 하겠습니다.
 sul: 아니에요. 괜찮습니다.
 sul: 그럼 이만.
 describe: 보안요원들의 발소리가 멀어지는 게 들렸다.
-describe: 잠시 후 문이 열리고 나희 누나가 헬맷을 벗으며 들어왔다.
+describe: 잠시 후 문이 열리는 소리가 들렸다.
+sul: ...
+sul: 밖으로 나와.
+{Player_name}: 넵...
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ConcertIn01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 @char sulbody2.11 pose:c wait:false
+describe: 나희 누나는 복도에서 나를 보고 서있었다.
 sul: ...
 {Player_name}: ...
 {Player_name}: 그...감사...합...
@@ -107,17 +136,23 @@ sul: ...혼자서 갈 수 있지...?
 {Player_name}: 네...
 sul: ...그래
 {Player_name}: 아... 넵...
-{Player_name}: 나중에 학교에서 뵙...뵙겠습니다...
+{Player_name}: 나중에 학교에서 뵙...뵙겠습니...
 @hideChars wait:false
-@sfx Footsteps_Male_ctr_run_01 volume:70 loop:false wait:false
-describe: 나는 도망치듯 방에서 나왔다.
-@stopSfx Footsteps_Male_ctr_run_01 fade:0.5 wait:false
+describe: 끼익-
+{Player_name}: ...
+@sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
+describe: 쾅-!
+describe: 나희 누나는 문을 닫고 대기실로 들어갔다.
 describe: 다행히 복도에는 아무도 보이지 않았다.
-describe: 대용이의 체취만 옅게 날 뿐...
+describe: 무슨 일이라도 있었냐는 듯 어떤 소리도 들리지 않았다.
+describe: 정수기 돌아가는 소리만 작게 날 뿐이었다.
+describe: 그저 대용이의 체취만 옅게 날 뿐...
+{Player_name}: ...
+{Player_name}: (대용이..?!)
 describe: 방을 나오고 나서야... 내가 아직 선물을 들고 있다는 걸 깨달았다.
 {Player_name}: ( 그 난리를 치고 결국 전해주지는 못했네. )
 describe: 그나저나...
-describe: 앞으로 나희누나 얼굴을 어떻게 보지...?
+describe: 앞으로 나희 누나 얼굴을 어떻게 보지...?
 describe: 나...
 describe: 동아리 그만두어야 되는 걸까?
 

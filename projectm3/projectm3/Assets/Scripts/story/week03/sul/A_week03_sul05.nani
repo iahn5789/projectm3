@@ -118,6 +118,11 @@ describe: 떨리는 가슴이 조금은 진정이 되자 방 문을 열고 밖�
 describe: 복도는 언제 그랬냐는 듯 너무나도 조용했다.
 {Player_name}: 대용아...
 describe: 걱정되는 마음에 따라왔지만, 어느새 그 큰 일의 한가운데 내가 서있게 되었다.
+
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_02 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+
 @sfx Common_Paper_Crumple_01 volume:80 loop:false wait:false
 describe: 내 손에는 대용이가 정성스럽게 포장한 선물이 있었다.
 describe: 문 뒤에 숨는 과정에서 조금 찌그러진 것 같았다.
@@ -127,6 +132,10 @@ describe: 아무리 그래도... 하나밖에 없는 친구니까.
 describe: 떨리던 가슴이 진정되니 다른 문제가 생겼다.
 {Player_name}: ( 이걸 전해주고 싶어도 어디에 있는지를 알아야 전해주지... )
 {Player_name}: ( 다음부터 어디 가자고 하면 절대 안 가야지. )
+
+@despawn Blur wait:false
+@back Minicut_sul_02 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+
 @sfx Footsteps_Ctr_Male_Walker_02 volume:70 fade:2.5 wait:false
 {Player_name}: !!
 {Player_name}: 벌써 돌아온다고..?
