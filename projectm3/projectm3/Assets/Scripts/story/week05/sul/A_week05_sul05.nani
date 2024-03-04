@@ -85,10 +85,10 @@ sul: 2층으로 가보자...
 {Player_name}: 그런데 뭐 사실 거예요?
 {Player_name}: 일단 점원한테 필요한 게 어디 있는지부터 물어볼...
 @hideChars wait:false
-@sfx Whoosh_Arm_01 volume:100 loop:false wait:false
+@sfx Whoosh_Arm_01 volume:100 loop:false wait:false fade:0
 describe: 휘이익-!
 {Player_name}: 나희 누나..?
-@sfx Footsteps_Female_Ctr_Run_01 volume:90 loop:false wait:false
+@sfx Footsteps_Female_Ctr_Run_01 volume:90 loop:false wait:false fade:0
 describe: 나희 누나는 무언가 발견이라도 2층에 올라가자마자 안쪽으로 후다닥 달려갔다.
 @stopSfx Footsteps_Female_Ctr_Run_01 fade:1 wait:false
 {Player_name}: ...뭐지?
@@ -122,7 +122,7 @@ sul: ...
 {Player_name}: 싫어하는 게 아니...
 ; @char sulbody1.86 pose:c wait:false
 ; sul: 그럴 수 있지...
-@sfx Emotion_Sad_01 volume:90 loop:false wait:false
+@sfx Emotion_Sad_01 volume:90 loop:false wait:false fade:0
 sul: ...
 describe: 나희 누나의 목소리가 눈에 띄게 침울해졌다.
 {Player_name}: (싫어하는 게 아니라 그냥 관심이 없는 건데...)
@@ -150,7 +150,7 @@ sul: 정말?! 진짜야?! 거짓말 아니지?!
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
-@hidePrinter time:0.5 wait:true
+@hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @set LoadingValue=false

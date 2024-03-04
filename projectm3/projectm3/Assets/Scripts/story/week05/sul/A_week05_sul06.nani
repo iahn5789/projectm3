@@ -74,7 +74,7 @@ sul: 혹시 생각해 둔 거 있어?
 @hideChars wait:false
 @char sulbody4.83 pose:c wait:false
 sul: 흐음... 그럼 이건 어때?
-@sfx Common_Cloth_movement_02 volume:100 wait:false
+@sfx Common_Cloth_movement_02 volume:100 wait:false loop:false fade:0
 
 @hideChars wait:false
 @spawn Blur wait:false
@@ -98,7 +98,7 @@ sul: 이건 어때? 내가 되게 좋아하는 캐릭터야!
 {Player_name}: 이 옷 입고 공연했다가는 저작권법 위반으로 고소당해요...
 ; @char sulbody2.64 pose:c wait:false
 sul: 은근히 까다롭네... 아! 저거는 진짜 괜찮다.
-@sfx Common_Cloth_Brush_01 volume:100 loop:false wait:false
+@sfx Common_Cloth_Brush_01 volume:100 loop:false wait:false fade:0
 describe: 나희 누나는 벽에 걸려있는 코스튬 하나를 집어 나에게 건네주었다.
 @stopSfx Common_Cloth_Brush_01 fade:1 wait:false
 {Player_name}: (이거는 뭐지?)
@@ -204,7 +204,7 @@ sul: 응...
 {Player_name}: 크흠흠... 아무튼 감사합니다.
 {Player_name}: 그럼 여기서 사야 될 건 없는 건가요?
 @char sulbody3.12 pose:bc wait:false
-@stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+@stopSfx Amb_Classroom_Many_Footsteps_01 fade:1 wait:false
 @stopBgm BGM_Map_Exciting_01 fade:1 wait:false
 sul: 응. 이제 그만 집에 가자.
 
@@ -329,13 +329,13 @@ describe: 어두운 종이에 물감이 번지듯 네온사인은 밤하늘을 �
 describe: 나는 떨리는 가슴을 진정시키며 주먹을 쥐었다.
 {Player_name}: (그런데...)
 {Player_name}: (여긴 어디지..?)
-@stopSfx Amb_Road_01 fade:1 wait:false
-@stopBgm BGM_Map_Littlesad_01 fade:1 wait:false
-@stopSfx Amb_Night_Cricket_01 fade:1 wait:false
 @goto A_Week05_Sul06.Sul0503
 
 # Sul0503
 ; 변수 초기화(주의)
+@stopSfx Amb_Road_01 fade:1 wait:false
+@stopBgm BGM_Map_Littlesad_01 fade:1 wait:false
+@stopSfx Amb_Night_Cricket_01 fade:1 wait:false
 @set LoadingValue=true
 @processInput false
 @skip false
