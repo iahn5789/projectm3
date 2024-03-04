@@ -641,11 +641,11 @@ RectTransform:
   m_Father: {fileID: 7994216985425341721}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 560, y: 0.012207}
-  m_SizeDelta: {x: 800, y: 1080.0242}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 560, y: 0}
+  m_SizeDelta: {x: 800, y: 5283.294}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7281215001803406236
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -686,7 +686,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.7
-  m_Text: "\n\uC774\uACF3\uC5D0 \uC774\uB984 \uD06C\uB808\uB527 \uCD94\uAC00\n\n[\uC81C\uC791\uC9C4]\n\uC774\uC815\uBBFC\n\uAC15\uC11D\uCC2C\n\uAE40\uBBFC\uAD6C\n\uC7A5\uBC94\uC900\n\uBC15\uBBFC\uD601\n\n[\uC870\uB825\uC790]\n\uC7A5\uD558\uB098\n\uC774\uD61C\uC6D0\n\uC720\uC218\uD3C9\n\uC774\uC815\uD45C\n\uAE40\uC815\uC6B0\n\n[\uD6C4\uC6D0\uC790]\n"
+  m_Text: "\n\uC774\uACF3\uC5D0 \uC774\uB984 \uD06C\uB808\uB527 \uCD94\uAC00\n\n[\uC81C\uC791\uC9C4]\n-\uCD1D\uAD04-\n\uC774\uC815\uBBFC\n\n-\uD504\uB85C\uADF8\uB798\uBA38-\n\uAC15\uC11D\uCC2C\n\n-\uAE30\uD68D,
+    \uC2A4\uD1A0\uB9AC-\n\uAE40\uBBFC\uAD6C\n\uBC15\uBBFC\uD601\n\n-\uC0AC\uC6B4\uB4DC-\n\uC7A5\uBC94\uC900\n\n[\uC870\uB825\uC790]\n\uC7A5\uD558\uB098\n\uC774\uD61C\uC6D0\n\uC720\uC218\uD3C9\n\uC774\uC815\uD45C\n\uAE40\uC815\uC6B0\n\n[\uD6C4\uC6D0\uC790]\n"
 --- !u!1 &2389203057263378331
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7103766968886509249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -883,6 +884,7 @@ GameObject:
   - component: {fileID: 5731833992646814813}
   - component: {fileID: 6062789638058034578}
   - component: {fileID: 6288127910424194997}
+  - component: {fileID: 2388013473336276373}
   m_Layer: 5
   m_Name: Text_Dialogue
   m_TagString: Untagged
@@ -949,11 +951,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "\uC544\uB2C8 \uC11D\uCC2C\uC544 \uAC70\uAE30\uC11C \uB625\uC744 \uC2F8\uBA74
-    \uC5B4\uB5A1\uD574!!! \uC544\uB2C8 \uC11D\uCC2C\uC544 \uAC70\uAE30\uC11C \uB625\uC744
-    \uC2F8\uBA74 \uC5B4\uB5A1\uD574!!!\n\uC544\uB2C8 \uC11D\uCC2C\uC544 \uAC70\uAE30\uC11C
-    \uB625\uC744 \uC2F8\uBA74 \uC5B4\uB5A1\uD574!!! \uC544\uB2C8 \uC11D\uCC2C\uC544
-    \uAC70\uAE30\uC11C \uB625\uC744 \uC2F8\uBA74 \uC5B4\uB5A1\uD574!!!"
+  m_Text: 
+--- !u!114 &2388013473336276373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2851905591589399010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18bf1dd1c681bb4e8a729c0f562ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 6288127910424194997}
+  fullText: "\uBBBB"
+  typingSpeed: 0.1
 --- !u!1 &5306755637768983122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,6 +1052,9 @@ GameObject:
   - component: {fileID: 2576859777904705233}
   - component: {fileID: 8605884256214211929}
   - component: {fileID: 2374267718346212304}
+  - component: {fileID: 6920252168208978427}
+  - component: {fileID: 2134521760249274778}
+  - component: {fileID: 2697630317468761287}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -1103,6 +1119,107 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!95 &6920252168208978427
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314684403018346417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9896c59ac37858458ed18030878a88d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2134521760249274778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314684403018346417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21e0ccd9eb852040a2a346196c1e451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KangFaceList:
+  - {fileID: 21300000, guid: f5ea615e74274914291a803b44aa271b, type: 3}
+  - {fileID: 21300000, guid: aab6044f2d527194e9e996eac516d272, type: 3}
+  - {fileID: 21300000, guid: 8afcfbfe3c7266940ae73f2dc4357fbc, type: 3}
+  - {fileID: 21300000, guid: 7dc8c1c5b46028649a904a69a2a4816a, type: 3}
+  - {fileID: 21300000, guid: 0f5f2c9fcbb493e418aa85f426b776ac, type: 3}
+  - {fileID: 21300000, guid: aa7472d9ad85d1e4e8a915fcb50efcaa, type: 3}
+  - {fileID: 21300000, guid: 698263a879401ee488ac876eacb76981, type: 3}
+  - {fileID: 21300000, guid: 9367fa19775764048b1bbfba70803016, type: 3}
+  JinFaceList:
+  - {fileID: 21300000, guid: cbef3d01c339c224aa05217c75441eec, type: 3}
+  - {fileID: 21300000, guid: 9a7603c6cad8dd94c84beb14dbd97f9c, type: 3}
+  - {fileID: 21300000, guid: a8ee920e9c2fa024d9595e8e3d78bd3f, type: 3}
+  - {fileID: 21300000, guid: bd08ef0de3b187d4782eaf59ac3779a1, type: 3}
+  - {fileID: 21300000, guid: 476788f7ada86e343923dd2a4cbc9b28, type: 3}
+  - {fileID: 21300000, guid: 4d78b625ea76c754caf92faf761fb8ad, type: 3}
+  SulFaceList:
+  - {fileID: 21300000, guid: c8a5764c7d90465498c13b6951d2d748, type: 3}
+  - {fileID: 21300000, guid: a7dc25124f4ba7841a0bce571f9ff512, type: 3}
+  - {fileID: 21300000, guid: 1d09c39af4d2c7e47bc8f13618ded08d, type: 3}
+  - {fileID: 21300000, guid: 3f85265885a561c48b0a9bf956f98e0f, type: 3}
+  - {fileID: 21300000, guid: 688843e47f6f0da4fbee4775238e7220, type: 3}
+  - {fileID: 21300000, guid: 8a40c9e44e6dfb24db65d8119d28e2d2, type: 3}
+  - {fileID: 21300000, guid: 56b7bca0110b87446958ddaf79d18488, type: 3}
+  - {fileID: 21300000, guid: 26bd1398cd7d0104bb67665d6033e5a4, type: 3}
+  KangBodyList:
+  - {fileID: 21300000, guid: 1f07aa59353381440ad1bda01729ddc8, type: 3}
+  - {fileID: 21300000, guid: 2c980282104e5a04aa59e083cb95068e, type: 3}
+  - {fileID: 21300000, guid: a9201a61364ce244ba199479c1bf4f60, type: 3}
+  - {fileID: 21300000, guid: d162910ca14ee8e4d8c642b689c900c9, type: 3}
+  - {fileID: 21300000, guid: d88dd67758f673f478dd7cbbceb68b13, type: 3}
+  - {fileID: 21300000, guid: 22ddc16e3f908dd40b7faff380ee1411, type: 3}
+  - {fileID: 21300000, guid: 81e67b275350da64aa310b4b2e51e26b, type: 3}
+  JinBodyList:
+  - {fileID: 21300000, guid: ee886159fa549c947a663bee567bd2cf, type: 3}
+  - {fileID: 21300000, guid: 42f60d5b9bf08ae4eac48b87e5e6ad92, type: 3}
+  - {fileID: 21300000, guid: 358d6df315e64a64a8c2bb67dd3a3b89, type: 3}
+  - {fileID: 21300000, guid: c0976c2f46432c84f9c4e1d856115a00, type: 3}
+  - {fileID: 21300000, guid: 9b17f524c33a9d948bd0535df8856359, type: 3}
+  - {fileID: 21300000, guid: 493a9976f34e2df4a86be3de4fec851b, type: 3}
+  - {fileID: 21300000, guid: c1d2e336fb758d74a8bd1b541b005bbd, type: 3}
+  SulBodyList:
+  - {fileID: 21300000, guid: 1854a09a564c6d64c964be9bbff248f4, type: 3}
+  - {fileID: 21300000, guid: 36e4e3e11ad1d2549b8e3c0dad84aeb0, type: 3}
+  - {fileID: 21300000, guid: 2ecd0658721124645a8fe718050d629a, type: 3}
+  - {fileID: 21300000, guid: a3c7bee2e1102b947914ac166f438c09, type: 3}
+  - {fileID: 21300000, guid: 79cecba3a0515944cb1ca3a5d3ff2f23, type: 3}
+  - {fileID: 21300000, guid: 5d7cf45b51688c54ba988663a1f4cec1, type: 3}
+  - {fileID: 21300000, guid: 3e9a2fc77f4a9d6429ba95554891e359, type: 3}
+  - {fileID: 21300000, guid: b11377479f32260489e522ce5f356b8e, type: 3}
+  KangFace: {fileID: 4831661341280457141}
+  JinFace: {fileID: 7125409520871434882}
+  SulFace: {fileID: 6012308502582329802}
+  KangBody: {fileID: 1824487099627597291}
+  JinBody: {fileID: 9125924959059054186}
+  SulBody: {fileID: 355832395390421644}
+--- !u!114 &2697630317468761287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314684403018346417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a13ed4d4df45f4d418435e120067d62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharactorDialog: {fileID: 2851905591589399010}
+  CharactorName: {fileID: 5359371772820832851}
 --- !u!1 &5382285056679048832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1457,18 @@ MonoBehaviour:
   focusMode: 0
   onShow:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6341068374365379713}
+        m_MethodName: StartScroll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onHide:
     m_PersistentCalls:
       m_Calls: []
@@ -1349,7 +1477,7 @@ MonoBehaviour:
   saveVisibilityState: 1
   blockInputWhenVisible: 0
   allowedSamplers: []
-  modalUI: 0
+  modalUI: 1
   fontChangeConfiguration: []
 --- !u!225 &6306036015961478118
 CanvasGroup:
@@ -1782,6 +1910,7 @@ GameObject:
   - component: {fileID: 7994216985425341721}
   - component: {fileID: 4312456318570275108}
   - component: {fileID: 440308482461772996}
+  - component: {fileID: 6341068374365379713}
   m_Layer: 5
   m_Name: Credit
   m_TagString: Untagged
@@ -1846,6 +1975,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6341068374365379713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110507904331443566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b781dfe6b485f70439da5a340a909360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creditText: {fileID: 5739386866476232968}
+  scrollSpeed: 20
 --- !u!1 &8480742290542179729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,7 +2004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8705607156428028948
 RectTransform:
   m_ObjectHideFlags: 0
