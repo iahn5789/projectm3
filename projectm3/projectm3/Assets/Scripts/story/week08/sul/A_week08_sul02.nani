@@ -6,6 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_Cool_01 volume:40 loop:true fade:1 wait:false
+@sfx Amb_Hallway_01 volume:30 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
@@ -18,6 +20,7 @@ describe: 대용이는 도저히 내 말을 들을 수 있는 상태가 아니�
 describe: 물론 대용이의 말도 맞고 내가 잘한 것도 없지만...
 describe: 그렇다고 나 역시 함부로 나희 누나의 일을 말을 할 수는 없었으니까.
 {Player_name}: (그나저나... 왜 아무도 없지?)
+@sfx Amb_Cold_Wind_01 volume:100 loop:false fade:4 wait:false
 describe: 동아리실에는 아무도 없었다.
 describe: 여진이도, 다영이도, 그리고 나희 누나도...
 describe: 내가 들어오기 전에도 이런 일이 자주 있었을까?
@@ -30,10 +33,12 @@ describe: 무엇보다도 나희 누나가 중요했다.
 describe: 그러고 보니 나희 누나는 지금 어떨까?
 describe: 분명 나희 누나 역시 내가 받은 시선들을 받았을지도 모른다.
 describe: 어쩌면... 훨씬 더 심했을지도 모른다.
+@stopsfx Amb_Cold_Wind_01 fade:1 wait:false
 {Player_name}: (나희 누나가 올 때까지 동아리실에서 기다려야되나..?)
 {Player_name}: (혹시 무슨 일이 있으신 건...)
 {Player_name}: (아니야. 아닐 거야...)
 {Player_name}: (나희 누나는...)
+@sfx Common_Text_Kick_01 volume:100 loop:false fade:0 wait:false
 한갑수: {Player_name}!
 
 @hideChars wait:false
@@ -57,6 +62,7 @@ describe: 한참 고민하던 와중 선생님이 동아리실로 찾아왔다.
 한갑수: 그래. 뭐 부원들끼리 싸웠다던지 아니면...
 {Player_name}: 아니면..?
 한갑수: ...네가 여진이나 다영이한테 고백한 건 아니야?
+@sfx Common_Emotion_Question_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 예?!
 한갑수: 아니. 뭐. 그럴 수도 있잖아?
 한갑수: 한창 팔팔할 나이에 그럴 수도 있긴 한데...
@@ -75,9 +81,11 @@ describe: 한참 고민하던 와중 선생님이 동아리실로 찾아왔다.
 한갑수: 최소 인원만 채운다고 되는 게 아니지.
 한갑수: 활동을 안 하면 없는 동아리랑 다를 게 없잖아?
 한갑수: 아무튼 동아리 없어지고 싶지 않으면 뭐라도 하는 게 좋을...
+@sfx Common_Phone_Bell_Ring_01 volume:60 loop:true fade:0 wait:false
 describe: ♪~♪~♪~♪♪~♬
 describe: 그때. 선생님의 주머니에서 핸드폰 벨소리가 울렸다.
 한갑수: 잠깐만. 전화 좀 받을게.
+@stopsfx Common_Phone_Bell_Ring_01 fade:0 wait:false
 한갑수: 네. 네네...
 한갑수: 네? 지금요?
 한갑수: 아뇨. 그런 건 아닌데...
@@ -114,6 +122,8 @@ describe: 나희 누나와 같이 있어야... 무슨 일이 있어도 함께 �
 한갑수: 아니다. 지금 말해서 뭐 하냐...
 한갑수: 가면 너도 알 거야.
 한갑수: 너무 걱정하지는 말고... 알았지?
+@stopbgm BGM_Map_Cool_01 fade:1 wait:false
+@stopsfx Amb_Hallway_01 fade:1 wait:false
 
 @despawn Blur wait:false
 @back Minicut_han id:Minicut visible:false position:0,1.5 scale:0.7 wait:false

@@ -6,12 +6,14 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_SuperSad_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
+@sfx Footsteps_Male_ctr_run_01 volume:60 loop:false fade:0 wait:false
 {Player_name}: 허억... 허억...
 describe: 교무실에서 나와 나희 누나를 찾기 위해 교문 앞까지 달려왔다.
 {Player_name}: (벌써... 학교 밖으로 나가신 건가..?)
@@ -132,6 +134,7 @@ la: 둘이 무슨 일이 있었는지, 어디서부터 시작했는지 자세히
 @char labody1.62 pose:bc wait:false
 la: 후훗. 날 너무 쉽게 생각하는 거 아니야?
 la: 조금만 있으면 술술 불게 될...
+@sfx Common_Whistle_01 volume:80 loop:false fade:0 wait:false
 ???: 잠까아안-!!
 @char labody1.74 pose:bc wait:false
 la: 엥? 저건 무슨...
@@ -230,6 +233,7 @@ jeon: 사...
 @char labody2.51 pose:l wait:false
 la: 사..?
 @char jeonbody2.22 pose:r wait:false
+@sfx Common_TestFinsh_Stamp_01 volume:80 loop:false fade:0 wait:false
 jeon: 사랑합니다..!
 {Player_name}: ..?
 @char labody2.11 pose:l wait:false
@@ -257,5 +261,8 @@ la: 꺄악-!!
 @hideChars time:0.5 wait:false
 {Player_name}: (대용아... 고마워..!)
 describe: 나는 대용이와 라은을 뒤로한 채 학교의 옥상으로 달려갔다.
+@sfx Footsteps_Male_ctr_run_01 volume:80 loop:false fade:0 wait:false
+@stopsfx Amb_Room_Tone_02 fade:1 wait:false
+@stopbgm BGM_Map_SuperSad_01 fade:1 wait:false
 
 @goto A_week08_sul05.week08_sul05
