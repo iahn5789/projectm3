@@ -27,6 +27,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
+@bgm BGM_Map_Classroom_01 volume:20 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClassRoom01 time:0.5 wait:true
 @showUI CP wait:false
@@ -41,8 +43,10 @@
 선생님: 반장!
 반장: 차렷! 선생님께 인사!
 일동: 수고하셨습니다-
+@sfx Common_Breaktime_Belltower_01 volume:60 loop:false fade:0 wait:false
 {Player_name}: (후우... 오늘 하루도 드디어 끝났네.)
 {Player_name}: (그럼 슬슬 동아리실로 가볼...)
+@stopsfx Common_Breaktime_Belltower_01 fade:1 wait:false
 학생A: 쟤가 그러니까...
 학생B: 그렇다니까!
 학생A: 너 알고 있었어?
@@ -59,6 +63,7 @@ describe: 괜히 또 내가 오지랖 부리는 건가 싶어 물어보고 있�
 학생B: 그래서 나보고 어쩌라는 거야!
 학생A: 뭘 어쩌긴 어째..!
 {Player_name}: (어째 내 얘기를 하는 것 같기도 하고...)
+@sfx Common_Sliding_Door_Open_02 volume:100 loop:false fade:0 wait:false
 describe: 드르륵- 쾅-!
 @char jeonbody4.35 pose:c wait:false
 jeon: ...
@@ -85,6 +90,7 @@ jeon: 그런데... 그런데...
 @char jeonbody1.33 pose:bc wait:false
 jeon: 넌 이 몸과의 우정을 헌신짝처럼 저버렸다!
 {Player_name}: 갑자기 찾아와서 무슨 헛소리야.
+@sfx Common_Plastic_Hit_Oneshot_01 volume:100 loop:false fade:0 wait:false
 describe: 툭-!
 describe: 대용이는 핸드폰을 책상 위로 던졌다.
 @hideChars time:0.5 wait:false
@@ -138,11 +144,14 @@ jeon: 흥..! 보나 마나 또 간사한 변명일 뿐이겠지!
 jeon: 듣고 싶지 않아!
 {Player_name}: 대용아!
 @hideChars time:0.5 wait:false
+@sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
 describe: 쾅-!
 describe: 대용이는 듣고 싶지 않다는 말과 함께 교실 문을 닫고 사라졌다.
 describe: 그 우람한 풍채의 뒷모습에서는... 어쩐지 쓸쓸함이 느껴졌다.
 {Player_name}: (대용아...)
 {Player_name}: (너...)
 {Player_name}: (똥꼬가 바지 먹었어...)
+@stopsfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+@stopbgm BGM_Map_Classroom_01 fade:1 wait:false
 
 @goto A_week08_sul02.week08_sul02
