@@ -93,7 +93,10 @@ describe: 나는 나희 누나의 곁으로 가...
 describe: 손을 잡고 나란히 서 작게 속삭였다.
 @hideChars time:0.5 wait:false
 
-; 미니컷
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_11 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini18 wait:false
 
 {Player_name}: 너무 걱정하지 마세요.
 {Player_name}: 제가 있잖아요..!
@@ -119,7 +122,8 @@ describe: 나희 누나는 나를 보며 싱긋 웃었다.
 describe: 그런 나희 누나의 표정에서는...
 describe: 이제 슬픔과 외로움은 보이지 않았다.
 
-; 미니컷
+@spawn Blur wait:false
+@back Minicut_sul_11 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 
 @char sulbody3.71 pose:c wait:false
 {Player_name}: ...

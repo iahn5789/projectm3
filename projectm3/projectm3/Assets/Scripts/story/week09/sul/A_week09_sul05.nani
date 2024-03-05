@@ -194,7 +194,10 @@ describe: 나희 누나는 모르시겠지만...
 describe: 라은이 또 어떤 이상한 짓거리를 했을지도 모르니까.
 {Player_name}: ...
 
-;미니컷 출력
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_12 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini19 wait:false
 
 describe: 나는 잠시 멈춰 주머니에서 핸드폰을 꺼냈다.
 {Player_name}: ...
@@ -214,7 +217,8 @@ describe: 나희 누나와 함께하기로 했으니까.
 @stopbgm BGM_Map_Siawase_01 fade:1 wait:false
 @stopsfx Amb_Hallway_01 fade:1 wait:false
 
-;미니컷 출력
+@spawn Blur wait:false
+@back Minicut_sul_12 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 
 @sfx Footsteps_Male_ctr_run_01 volume:40 loop:false fade:0 wait:false
 @sfx Amb_Road_01 volume:50 loop:true fade:1 wait:false

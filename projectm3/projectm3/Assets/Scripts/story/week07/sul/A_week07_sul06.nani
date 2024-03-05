@@ -183,7 +183,10 @@ sul: 그럼... 열어볼까?
 describe: 선물 포장을 뜯고 안을 열어보니...
 describe: 안에 들어있던 건 다름 아닌...
 
-; 미니컷
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_09 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini16 wait:false
 
 {Player_name}: (비키니?)
 {Player_name}: (이게... 커플선물이라고..?)
@@ -211,7 +214,8 @@ sul: 네가..?
 {Player_name}: 제가 챙겨서... 나중에 학교에서 드릴게요..!
 {Player_name}: 그것도 좀 이상한가..?
 
-; 미니컷
+@spawn Blur wait:false
+@back Minicut_sul_09 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 
 @char sulbody1.12 pose:c wait:false
 sul: 후훗... 아니야... 부탁할게.

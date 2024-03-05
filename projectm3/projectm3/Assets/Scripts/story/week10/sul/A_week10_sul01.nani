@@ -163,7 +163,10 @@ sul: 많이 남았어?
 {Player_name}: 마이크랑 믹서만 정리하면 끝나요.
 @hideChars time:0.5 wait:false
 
-;미니컷
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_13 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini20 wait:false
 
 describe: 나는 허리를 숙여 바닥에 떨어져 있던 마이크를 집었다.
 @sfx Amb_Cold_Wind_01 volume:70 loop:true fade:0 wait:false
@@ -184,7 +187,9 @@ sul: ...그랬던가?
 {Player_name}: 네..?!
 {Player_name}: 서... 설마... 기억이 안 나시...
 
-;미니컷
+@spawn Blur wait:false
+@back Minicut_sul_13 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+
 @char sulbody2.52 pose:c wait:false
 sul: 후훗! 농담이야.
 @char sulbody2.12 pose:c wait:false

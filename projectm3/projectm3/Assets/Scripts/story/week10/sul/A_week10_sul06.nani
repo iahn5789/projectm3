@@ -109,7 +109,10 @@ describe: 부웅-!
 describe: 끼익-!
 @hideChars time:0.5 wait:false
 
-; 미니컷
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_14 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
+@unlock CG/Mini21 wait:false
 
 describe: 인도 옆에 검은색 세단 차량이 멈춰 섰다.
 describe: 정장 차림의 남자가 차에서 내려 나희 누나 쪽으로 걸어왔다.
@@ -139,7 +142,8 @@ sul: 또 도망쳐버렸어...
 @sfx Common_Cloth_movement_02 volume:80 loop:false fade:0 wait:false
 describe: 나는 나희 누나의 두 손을 꼭 잡았다.
 
-; 미니컷
+@spawn Blur wait:false
+@back Minicut_sul_14 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 
 @hideChars time:0.5 wait:false
 @char sulbody1.71 pose:bc wait:false
@@ -217,7 +221,18 @@ sul: 이번에도 날 위해주는 거야..?
 @sfx Common_Beautiful_Bell_Tree_01 volume:30 loop:true fade:2 wait:false
 @hideChars time:0.5 wait:false
 
-; cg출력
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Sul06 time:0.5 wait:true
+@unlock CG/Sul06 wait:false
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
 sul: 왜 가지 말라고 하지 않는 거야?
 sul: 왜... 말리지 않는 거야..?
@@ -249,8 +264,19 @@ sul: {Player_name}...
 {Player_name}: 누나와 함께 걸어갈 거예요.
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
 
-; cg출력
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 
+@char sulbody3.71 pose:c wait:false
 sul: ...
 @sfx Common_Door_Noke_01 volume:80 loop:false fade:0 wait:false
 운전기사: 나희 아가씨?
