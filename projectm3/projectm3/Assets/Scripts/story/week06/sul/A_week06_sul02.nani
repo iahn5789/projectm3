@@ -60,7 +60,7 @@ describe: 나는 발소리를 내지 않기 위해 혼신의 힘을 다해 살�
 {Player_name}: (거의 다 왔어. 이제 코너만 지나면...)
 @sfx Common_Cartoon_Bodyfall_01 volume:100 loop:false wait:false
 @bgm BGM_Map_CunningCity_01 volume:80 loop:true fade:1 wait:false
-
+@spawn ShakeBackground wait:false params:,5
 describe: 쿠당-탕-탕-!
 @char labody3.36 pose:c wait:false
 @sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
@@ -78,9 +78,9 @@ la: 아직 정신 못 차린 거 같은데 차라리 이 틈에 빨리 도망...
 {Player_name}: 지금 이게 무슨...
 @hideChars time:0.5 wait:false
 @char labody2.54 pose:bc wait:false
-la: {Player_name}..?
+la: <size=50>{Player_name}..?</size>
 la: 네가 왜 여기에..?
-{Player_name}: 라... 라은?!
+{Player_name}: <size=50>라... 라은?!</size>
 {Player_name}: 여기서 지금 뭐 하는 거야!
 {Player_name}: 설마 몰래 들어온...
 @hideChars time:0.5 wait:false
@@ -105,7 +105,7 @@ la: 나는 당연히 신문부 활동을 위해 들어와 있지.
 {Player_name}: 신문부..? 그게 지금 이거랑 무슨 상관...
 @hideChars time:0.5 wait:false
 @char labody1.77 pose:bc wait:false
-la: 상관있거든!
+la: <size=50>상관있거든!</size>
 @char labody1.44 pose:bc wait:false
 la: 기자란 무릇 정의를 위해서 무엇이든 할 준비가 되어 있는...
 {Player_name}: 그니까 정의를 왜 여기서 찾는 건데...
@@ -122,6 +122,7 @@ la: 당연히 진상규명에 나서야지!
 
 @hideChars time:0.5 wait:false
 @char labody4.33 pose:c wait:false
+@spawn ShakeCharacter wait:false
 la: 그... 그게 중요한 게 아니야!
 @char labody4.44 pose:c wait:false
 la: 내 말은 왜 네가 여기서 이러고 있냐는 거지!
@@ -131,7 +132,8 @@ la: 나한테 말 못 할 일이라도 있는 거야?
 {Player_name}: 나는..!!
 @char labody4.54 pose:c wait:false
 la: 그런 거야..? 아니면 설마 너...
-{Player_name}: 나는 여기서 일하고 있거든!!
+@spawn ShakeBackground wait:false
+{Player_name}: <size=50>나는 여기서 일하고 있거든!!</size>
 describe: 라은의 계속되는 추궁에 일단 뭐라도 되는대로 말해버렸다.
 {Player_name}: (마... 망했다...)
 {Player_name}: (나 진짜 뭐 하는 놈이지..? 여기서 일한다고??)
@@ -165,7 +167,8 @@ la: 너 설마...
 {Player_name}: (그럼 그렇지! 그걸 믿을 리가 없...)
 @hideChars time:0.5 wait:false
 @char labody4.42 pose:bc wait:false
-la: 도망가는 중이었구나!
+@spawn ShakeCharacter wait:false
+la: <size=50>도망가는 중이었구나!</size>
 {Player_name}: ...
 @char labody4.44 pose:bc wait:false
 la: 아무리 일이 힘들어도 그렇지 중간에 도망가면 어떡해!
@@ -185,7 +188,8 @@ describe: 그때.
 describe: 복도 코너 너머에서 보완요원 둘의 말소리가 조금씩 들렸다.
 {Player_name}: (보안요원인가..?)
 {Player_name}: (다행이다... 보안요원이 오면 라은도 어쩌지 못하겠...)
-{Player_name}: ..!!
+@spawn ShakePrinter wait:false
+{Player_name}: <size=50>..!!</size>
 describe: 보안요원은 내 얼굴을 모른다.
 describe: 평소대로라면 신분을 증명하면 그만이겠지만...
 describe: 라은이 옆에 있는 상황에서 신분을 증명하면 나희 누나의 정체까지 들통날 수도 있었다.
@@ -205,7 +209,7 @@ la: 보안요원..? 으... 일단 숨어!
 describe: 보안요원 중 한 명과 눈이 마주쳤다.
 describe: 보안요원은 내 얼굴을 기억하는 모양이었다.
 {Player_name}: 아... 안녕하세요? 하하하...
-보안요원B: 그때 그 두 놈 중 한 명이잖아..! 잡아!!
+보안요원B: 그때 그 두 놈 중 한 명이잖아..! <size=50>잡아!!</size>
 @stopSfx Amb_Office_01 fade:1 wait:false
 {Player_name}: 라은! 일단 도망가...
 describe: 주변을 둘러보니 라은은 이미 사라지고 없었다.
@@ -217,6 +221,8 @@ describe: 주변을 둘러보니 라은은 이미 사라지고 없었다.
 describe: 달려오는 보안요원을 마주 본 채 나는 숨을 들이마 쉬었다.
 {Player_name}: 후웁..!
 보안요원A: 가만히 있어!
+@spawn ShakeBackground wait:false params:,3
+@spawn ShakePrinter wait:false
 {Player_name}: 안녕히 계세요!!
 @stopBgm BGM_Map_CunningCity_01 fade:1 wait:false
 

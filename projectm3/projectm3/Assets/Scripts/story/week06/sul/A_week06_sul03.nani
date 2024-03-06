@@ -28,7 +28,8 @@ describe: 다만 차이점이 있다면, 오늘은 평소보다 유달리 사람
 describe: 그때 어딘가 익숙한 목소리가 들려왔다.
 {Player_name}: 뭐지..?
 @char labody4.44 pose:c wait:false
-la: {Player_name}! 날 버려놓고 혼자서 도망가?!
+@spawn ShakeCharacter wait:false
+la: <size=50>{Player_name}! 날 버려놓고 혼자서 도망가?!</size>
 {Player_name}: 라은..?
 @hideChars time:0.5 wait:false
 describe: 멀리서 라은이 내 이름을 부르며 달려오고 있었다.
