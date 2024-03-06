@@ -13,7 +13,6 @@
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
 {Player_name}: 수... 수...
 {Player_name}: 수고하셨습니다!
 @char sulbody2.15 pose:c wait:false
@@ -23,8 +22,18 @@ sul: 고생 많았어. 확실히 실력이 빨리 오르는데?
 describe: 이렇게까지 하는데 안 오르는 게 이상할 것이다.
 {Player_name}: 그럼 동아리실 문 잠그고 가보겠습니다..!
 sul: 응.
-@hideChars wait:false
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
 @sfx Door_Lock_Handle_02 volume:90 loop:false wait:false
+@back Black time:0.5 wait:true
+@back ScLobby01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 describe: 나는 나희누나와 함께 동아리실에서 나와 문을 잠갔다.
 describe: 그렇지만 어째서인지 등 너머로 따가운 시선이 느껴지고 있었다.
 describe: 문을 잠그고 고개를 돌렸다.
@@ -52,16 +61,16 @@ sul: 이제 어디 가냐고.
 {Player_name}: 저 이제 집에 가야죠..?
 @char sulbody2.81 pose:bc wait:false
 sul: 흐음...
-@char sulbody2.65 pose:bc wait:false
+@char sulbody2.12 pose:bc wait:false
 sul: 그래. 가자!
-@char sulbody2.61 pose:bc wait:false
 {Player_name}: 네! 수고하셨...
-@char sulbody2.67 pose:bc wait:false
+@char sulbody2.17 pose:bc wait:false
 sul: 같이 가자!
 {Player_name}: 네... 네?
-@char sulbody2.62 pose:bc wait:false
+@char sulbody2.14 pose:bc wait:false
 sul: 같이 가자고.
 {Player_name}: 같이요? 갑자기요? 아니 어딜...
+@char sulbody2.12 pose:bc wait:false
 sul: ...
 describe: 나희 누나는 대답 대신 살짝 웃기만 할 뿐이었다.
 {Player_name}: (나... 정말 무슨 일이 생긴 걸까..?)

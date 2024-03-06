@@ -50,7 +50,7 @@ sul: 교복 차림으로 무대에 올라갈 수는 없잖아?
 @char sulbody1.61 pose:c wait:false
 {Player_name}: 그건 그렇긴 한데... 그냥 적당히 집에 있는 옷 입으면 안 되나요?
 @char sulbody1.14 pose:c wait:false
-sul: 안돼. 너도 나처럼 얼굴까지 가려야 된다고.
+sul: <size=50>안돼. 너도 나처럼 얼굴까지 가려야 된다고.</size>
 {Player_name}: 뭐 굳이 가릴 필요 있나요? 전 딱히 상관없는...
 @char sulbody1.110 pose:c wait:false
 sul: 안돼! 너도 가려야 돼.
@@ -87,7 +87,7 @@ describe: 나희 누나는 선반에 걸려있는 파티용 코스튬을 하나 
 sul: 그럼 저거는?
 {Player_name}: 그래도 밴드 이름이 프리덤인데 죄수복은 좀...
 ; @char sulbody4.19 pose:c wait:false
-sul: 그럼 저 뒤에 있는 거는?
+sul: 그럼 저 밑에 있는 거는?
 {Player_name}: 메이드복이요? 절대 안돼요...
 ; @char sulbody4.64 pose:c wait:false
 sul: 왜? 어차피 얼굴 가리고 올라갈 건데.
@@ -106,34 +106,33 @@ describe: 나희 누나는 벽에 걸려있는 코스튬 하나를 집어 나에
 {Player_name}: ...
 @hideChars wait:false
 ; @char sulbody4.63 pose:c wait:false
+@despawn Blur wait:false
+@back Minicut_sul_06 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+@char sulbody2.84 pose:c wait:false
 sul: 이것도 별로야?
 {Player_name}: 그... 그냥 저도 누나처럼 헬멧에 트레이닝복으로 할게요!
 @hideChars wait:false
-; @char sulbody3.11 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 sul: 싫어.
 {Player_name}: 네?
 sul: 싫다구.
 {Player_name}: 아니 왜...
-; @char sulbody3.81 pose:c wait:false
+@char sulbody3.81 pose:c wait:false
 sul: 일단 겹치기도 하고 또...
-; @char sulbody3.74 pose:c wait:false
+@char sulbody3.74 pose:c wait:false
 sul: ...
-; @char sulbody3.1 pose:c wait:false
-sul: 너무 커플 같잖아...
+@char sulbody3.1 pose:c wait:false
+sul: <size=30>너무 커플 같잖아...</size>
 {Player_name}: 그... 그런가요?
-; @char sulbody3.12 pose:c wait:false
+@char sulbody3.12 pose:c wait:false
 sul: 다른 걸로 골라봐. 여기 아까 봤던 것 말고도 많으니까.
 {Player_name}: (기왕 한다면... 나희 누나와 맞춰서 하고 싶은데...)
 {Player_name}: 그래도 맞추는 게 좋지 않을까요?
 {Player_name}: 전에 보여줬던 동영상에서도 밴드 인원끼리 복장을 통일했잖아요!
-; @char sulbody3.83 pose:c wait:false
+@char sulbody3.83 pose:c wait:false
 sul: 그...런가?
 {Player_name}: 그럼요! 복장을 통일해야 같은 밴드 사람이라고 사람들이 생각하지 않겠어요?
 sul: 흐음...
-
-@despawn Blur wait:false
-@back Minicut_sul_06 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
-
 describe: 나희 누나는 말없이 고민하고 있었다.
 @char sulbody3.12 pose:c wait:false
 sul: 좋아. 그럼 그렇게 하자.
@@ -142,30 +141,33 @@ sul: 트레이닝복이랑 오토바이 헬멧은 여기서 안 파는 거 같�
 @char sulbody3.84 pose:c wait:false
 sul: 집에 남는 게 많이 있어. 사이즈 알려주면 혹시 맞나 한번 볼게.
 {Player_name}: 공연용 스페어가 좀 있나요?
-@char sulbody3.15 pose:c wait:false
+@hideChars wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 아니? 내가 평소에 쓰고 다니는 거 봐야지.
-@char sulbody3.11 pose:c wait:false
+@char sulbody2.11 pose:c wait:false
 {Player_name}: 오토바이 헬멧을 평소에도 쓰고 다니신다고요?
-@char sulbody3.15 pose:c wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 오토바이 타려면 당연히 써야지.
 @sfx Bike_Passby_01 volume:90 loop:false wait:false
-@char sulbody3.11 pose:c wait:false
-{Player_name}: 오토바이를 타신다고요??
-@char sulbody3.85 pose:c wait:false
+@char sulbody2.11 pose:c wait:false
+@spawn ShakeBackground wait:false
+{Player_name}: <size=50>오토바이를 타신다고요??</size>
+@char sulbody2.85 pose:c wait:false
 sul: 응. 내가 말 안 했나?
-@char sulbody3.81 pose:c wait:false
+@char sulbody2.81 pose:c wait:false
 {Player_name}: 오토바이면... 스쿠터 같은 거요?
-@char sulbody3.84 pose:c wait:false
+@char sulbody2.84 pose:c wait:false
 sul: 스쿠터도 있고...
 {Player_name}: 하나가 아니에요?
-@char sulbody3.15 pose:c wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 여러 개 있어.
-@char sulbody3.11 pose:c wait:false
+@char sulbody2.11 pose:c wait:false
 {Player_name}: 여러 개요?
-@char sulbody3.15 pose:c wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 응. 할아비데이비슨도 있고... 이스키도 있고...
-@char sulbody3.11 pose:c wait:false
+@char sulbody2.11 pose:c wait:false
 {Player_name}: 그럼 등교할 때도 타고 다니시는 거예요?
+@hideChars wait:false
 @char sulbody3.22 pose:c wait:false
 sul: 타고 다니기는 하는데...
 @char sulbody3.15 pose:c wait:false
@@ -181,15 +183,19 @@ sul: 그럼 헬멧은 내가 준비하는 거로 하고...
 sul: ...
 @char sulbody3.12 pose:c wait:false
 sul: 아니야. 기왕 맞춰서 입을 거 아예 같은 거로 준비하자.
+@hideChars wait:false
+@char sulbody4.12 pose:c wait:false
 sul: 사이즈 말해주면 내가 준비할게.
 {Player_name}: 그럼 돈은 나중에 제가...
-@char sulbody3.65 pose:c wait:false
+@char sulbody4.82 pose:c wait:false
 sul: 괜찮아. 같이 하는 기념으로 내가 주는 선물이야.
-@char sulbody3.52 pose:c wait:false
+@char sulbody4.52 pose:c wait:false
 sul: 너도 아까 나한테 고양이 키링 선물로 줬잖아?
-{Player_name}: (서.. 선물..?)
+@spawn ShakeBackground wait:false
+{Player_name}: <size=60>(서.. 선물..?)</size>
 {Player_name}: (나희 누나가 주는 선물...)
 {Player_name}: (헤헤헤...)
+@hideChars wait:false
 @char sulbody3.15 pose:c wait:false
 sul: ..?
 sul: 너...
