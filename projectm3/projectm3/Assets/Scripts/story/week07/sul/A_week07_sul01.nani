@@ -47,7 +47,8 @@
 엄마: 어휴...
 {Player_name}: 헤헤... 헤헤헤...
 @sfx Common_Lightning_One_Shot_01 volume:70 loop:false fade:1 wait:false
-엄마: 빨리 안 일어나!!
+@spawn ShakePrinter wait:false
+엄마: <size=50>빨</size><size=50>리</size> <size=50>안</size> <size=50>일</size><size=50>어</size><size=50>나</size><size=50>!</size><size=50>!</size>
 {Player_name}: 그... 그게 아니라..! 어라..?
 엄마: 지금 시간이 몇 신데 아직도 자고 있어!?
 엄마: 학교 안 갈거야?!
@@ -61,7 +62,7 @@ describe: 잠에서 깨어나 고개를 들어보니 엄마가 앞에 서있었�
 {Player_name}: 하하하...
 엄마: ...
 {Player_name}: .....
-엄마: 빨리 학교 안 가?!
+엄마: <size=50>빨</size><size=50>리</size> <size=50>학</size><size=50>교</size> <size=50>안</size> <size=50>가</size><size=50>?</size><size=50>!</size>
 {Player_name}: 죄... 죄송합니다!!
 @sfx Footsteps_Male_Wood_Run_01 volume:70 loop:false fade:1 wait:false
 @stopSfx Common_Morning_Bird_Twitter_01 fade:1 wait:false
@@ -72,11 +73,11 @@ describe: 잠에서 깨어나 고개를 들어보니 엄마가 앞에 서있었�
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
+@back Black time:1 wait:true
 @sfx Amb_Road_01 volume:80 loop:true fade:1 wait:false
+@back Black time:1 wait:true
+@back Road01 time:1 wait:true
 @bgm BGM_Map_Cool_01 volume:60 loop:true fade:1 wait:false
-@back Black time:0.5 wait:true
-@back Road01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
@@ -111,7 +112,7 @@ jeon: .....
 @hideChars wait:false
 @sfx Bike_Passby_01 volume:80 loop:false fade:1 wait:false
 describe: 부왕-!!
-describe: 그 때 도로에서 무언가 엄청난 소리가 들려왔다.
+describe: 도로에서 무언가 엄청난 소리가 들려왔다.
 describe: 고개를 돌려 소리가 난 곳을 바라보니 오토바이가 지나간 모양이었다.
 @char jeonbody4.55 pose:bc wait:false
 jeon: ...

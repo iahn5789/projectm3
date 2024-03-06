@@ -50,6 +50,7 @@ describe: 우물우물--
 @char sulbody3.59 pose:bc wait:false
 @sfx Human_Swallow_01 volume:100 loop:false fade:0 wait:false
 describe: 꾸울...
+@spawn ShakeCharacter wait:false
 describe: 꺽!
 @char sulbody3.67 pose:bc wait:false
 sul: 마... 맛있어!
@@ -71,6 +72,7 @@ sul: 후-후- 뜨거워...
 describe: 우물우물--
 @char sulbody1.59 pose:bc wait:false
 @sfx Common_Human_Swallow_02 volume:100 loop:false fade:0 wait:false
+@spawn ShakeCharacter wait:false
 describe: 꾸울-꺽!
 @char sulbody1.77 pose:bc wait:false
 sul: 맛있다...
@@ -105,7 +107,7 @@ sul: 너는 배 안 고프겠어?
 {Player_name}: 이제 본격적으로 돌아다녀 볼까요?
 @char sulbody2.52 pose:bc wait:false
 sul: 응..!
-@hideChars wait:false
+@hideChars time:0.5 wait:false
 @sfx Footsteps_Sand_03 volume:100 loop:false fade:0 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:5 wait:false
 describe: 나희 누나와 나는 본격적으로 거리 안쪽으로 들어가 걷기 시작했다.
@@ -124,7 +126,7 @@ sul: 저기서 뭐 하는 것 같지 않아?
 @char sulbody4.61 pose:c wait:false
 {Player_name}: 저기요..?
 @char sulbody4.52 pose:c wait:false
-sul: 응! 저기!
+sul: <size=50>응</size><size=50>!</size> <size=50>저</size><size=50>기</size><size=50>!</size>
 @hideChars wait:false
 describe: 나희 누나가 손으로 가리킨 곳을 보니 사람들이 확실히 많이 모여 있었다.
 describe: 야외 공연장까지 있는 걸 보니 아마도 무언가 공연이 진행되고 있는 모양이었다.
@@ -152,7 +154,6 @@ describe: 가보자는 말과 함께 나희 누나는 앞서 달려 나가기 �
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
 @char sulbody2.85 pose:c wait:false
 sul: 너무 느린 거 아니야?
 @char sulbody2.81 pose:c wait:false
@@ -181,6 +182,7 @@ sul: 축제 왔으면 신나야 되는게 당연한거 아니야?
 {Player_name}: (괜한 생각이겠지..?)
 @char sulbody2.67 pose:c wait:false
 @sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false fade:0 wait:false
+@spawn ShakeCharacter wait:false
 sul: 아무튼 빨리 와-!
 @sfx Footsteps_Male_ctr_run_01 volume:50 loop:false fade:0 wait:false
 {Player_name}: 자... 잠시만요!
@@ -210,6 +212,7 @@ describe: 스태프는 잠시 나희 누나와의 대화를 멈추고 전화를 
 sul: 뭐... 아직까지 쫓겨나지는 않았잖아?
 @char sulbody1.12 pose:c wait:false
 sul: 그리고 네가 그런말을 하다니 조금 의외인데?
+@spawn ShakePrinter wait:false
 {Player_name}: 크... 크흠..!
 @hideChars wait:false
 스태프: 네... 네...
@@ -219,7 +222,7 @@ sul: 그리고 네가 그런말을 하다니 조금 의외인데?
 스태프: 네... 네... 알겠습니다...
 스태프: 네... 죄송합니다...
 @sfx Common_Phone_No_Answer_01 volume:100 loop:false fade:0 wait:false
-describe: 뚝-!
+describe: <size=50>뚝</size><size=50>-</size> <size=50>!</size>
 스태프: 후우...
 스태프: 아니 이제 와서 이러면 어쩌자는 거야...
 @char sulbody2.15 pose:bc wait:false
@@ -295,14 +298,14 @@ sul: 저희 노래 부를게요!
 @char sulbody1.82 pose:c wait:false
 sul: 음... 이걸로 틀어주세요!
 @char sulbody1.12 pose:c wait:false
-스태프: 남녀 듀엣곡이라... 알겠습니다!
-스태프: 무대 위 MC가 부를 때 저쪽 통로를 통해 올라가시면 됩니다!
+스태프: 알겠습니다!
+스태프: 무대 위 MC가 부를 때 저쪽 통로를 통해 올라가시면 됩니다.
 {Player_name}: 누나 노래 못 부르신다고 하지 않으셨어요?
 {Player_name}: 도대체 뭘 어쩌시려고...
 @char sulbody1.85 pose:c wait:false
 sul: 괜찮아. 네가 있잖아.
 @char sulbody1.81 pose:c wait:false
-{Player_name}: 남녀 듀엣곡을 저 혼자 부르라고요?
+{Player_name}: 이렇게 높은 노래를 저 혼자 부르라고요?
 @char sulbody1.84 pose:c wait:false
 sul: 그게 아니라...
 sul: 내 말은... 지금의 나는...

@@ -5,9 +5,9 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
 @bgm BGM_Map_Antics_01 volume:20 loop:true fade:1 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
-@back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
@@ -67,7 +67,7 @@ sul: 교칙도 문제없고, 면허도 있고, 안전 장비도 착용했습니�
 sul: 도대체 뭐가 문제인지 모르겠네요.
 @char sulbody2.11 pose:c wait:false
 선생님: 너 오늘따라 왜 이리 또박또박 말대꾸야!
-선생님: '죄송합니다' 한마디 하기가 그렇게 어려워?!
+선생님: <size=50>'</size><size=50>죄</size><size=50>송</size><size=50>합</size><size=50>니</size><size=50>다</size><size=50>'</size> 한마디 하기가 그렇게 어려워?!
 @char sulbody2.81 pose:c wait:false
 sul: ...
 @char sulbody2.15 pose:c wait:false
@@ -85,7 +85,7 @@ describe: 나희 누나는 오토바이를 타고 그대로 학교 안으로 들
 {Player_name}: 네..? 저요?!
 선생님: 거기 너밖에 더 있어?
 describe: 어느샌가 나희 누나를 구경하던 학생들은 사라지고 없었다.
-선생님: 이리 와서 엎드려 뻗쳐!
+선생님: <size=50>이</size><size=50>리 </size><size=50>와</size><size=50>서</size> <size=50>엎</size><size=50>드</size><size=50>려</size> <size=50>뻗</size><size=50>쳐</size><size=50>!</size>
 {Player_name}: 아니... 선생님 저 2분 전에 도착했...
 선생님: 시끄러워! 그래서 지금 학교 안에 들어왔어?
 {Player_name}: 그... 그건 아니긴 한데...
@@ -99,20 +99,20 @@ describe: 어느샌가 나희 누나를 구경하던 학생들은 사라지고 �
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
 @bgm BGM_Map_Classroom_01 volume:30 loop:true fade:1 wait:false
 @sfx Amb_Shool_Club_01 volume:60 loop:true fade:1 wait:false
-@back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScLobby01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
 {Player_name}: (으으... 전대용 그 녀석...)
 {Player_name}: (덕분에 동아리 활동까지 늦어버렸네...)
 describe: 아침에 있었던 일 덕분인지 대용이는 하루 종일 기분이 좋아 보였다.
 describe: 너무 좋아 보여서 문제이긴 했지만...
-@char jeonbody1.11 pose:c wait:false
+@spawn Blur wait:false
+@char jeonbody1.11 pose:c wait:true
 jeon: {Player_name}! 아침에 본 아리따운 여성분이 누군지 혹시 아는가?
 @char jeonbody1.22 pose:c wait:false
 jeon: {Player_name}... 어쩌면 이 몸이 진정한 사랑을 찾았을 지도 모르겠군...
@@ -121,6 +121,7 @@ jeon: {Player_name}! 너는 그분이 누군지 궁금하지도 않은가?
 jeon: {Player_name}! {Player_name}! {Player_name}!
 describe: 대용이는 학교 정문에서 나희 누나를 보지 못한 모양이다.
 describe: 운이 좋은 건지 나쁜 건지...
+@despawn Blur wait:false
 @hideChars wait:false
 describe: 어쨌든 학교가 끝나고도 그 이야기를 해대는 덕분에 나까지 동아리 활동에 늦어버렸다.
 describe: 심지어 주차해 둔 오토바이 근처에서 잠복할 거라는 대용이를 겨우 말린 건 덤이었다.
@@ -128,7 +129,7 @@ describe: 심지어 주차해 둔 오토바이 근처에서 잠복할 거라는 
 {Player_name}: (어차피 프리덤이랑 딱히 관계도 없는데.)
 {Player_name}: (내가 너무 심했던 것 같기도 하고...)
 {Player_name}: ...
-{Player_name}: (아니... 아니야...)
+{Player_name}: <size=50>(</size><size=50>아</size><size=50>니</size><size=50>.</size><size=50>.</size><size=50>.</size> <size=50>아</size><size=50>니</size><size=50>야</size><size=50>.</size><size=50>.</size><size=50>.</size><size=50>)</size>
 {Player_name}: (말해줬다간 분명히 나희 누나한테 달려갔을 거야...)
 {Player_name}: (그럼 나희 누나는 분명 내가 말해줬다고 생각할 테고.)
 {Player_name}: (그랬다가는... 으윽...)
@@ -174,23 +175,27 @@ describe: 나는 열리지 않는 앞문을 가만히 둔 채 뒷문으로 향�
 describe: 드르륵-
 describe: 앞문과 다르게 뒷문은 평소와 다를 게 하나도 없이 잘만 열렸다.
 describe: (뭐야? 뭐가 문제였던...)
-@char sulbody1.36 pose:bc wait:false
+@char sulbody1.36 pose:c wait:false
 {Player_name}: ..?
 {Player_name}: 나희... 누나?
 describe: 뒷문을 열고 교실로 들어오니 앞쪽 문 앞에 나희 누나가 서 있었다.
 describe: 정확히는... 문을 막고 서 있는 나희 누나가 보였다.
-@char sulbody1.31 pose:bc wait:false
+@char sulbody1.31 pose:c wait:false
 sul: ..!
 {Player_name}: 뭐야... 누나가 막고 계셨던 거예요?
-@char sulbody1.1 pose:bc wait:false
+@char sulbody1.61 pose:c wait:false
 sul: ...
+@char sulbody1.66 pose:bc wait:false
 describe: 나희 누나는 대답 대신 무언가를 우물거리고 있을 뿐이었다.
 describe: 주변을 둘러보니 여진이와 다영이는 어디로 갔는지 보이지 않았다.
 describe: 대신, 책상 위에 각종 불량식품이 올려져 있었다.
+@char sulbody1.63 pose:bc wait:false
 sul: ...
 describe: 우물우물-
 {Player_name}: 이거... 드시고 계셨던거에요..?
+@char sulbody1.66 pose:bc wait:false
 sul: ......
+@char sulbody1.64 pose:bc wait:false
 describe: 우물우물-
 {Player_name}: ...
 @char sulbody1.59 pose:bc wait:false
@@ -202,12 +207,14 @@ sul: ...
 sul: .......
 {Player_name}: 크... 크흠...
 {Player_name}: 다 드셨어요..?
+@hideChars wait:false
+@char sulbody3.62 wait:false pose:c
 sul: 응...
 {Player_name}: 아니 근데 문은 왜...
-@char sulbody1.71 pose:bc wait:false
+@char sulbody3.71 pose:cc wait:false
 sul: ...
 @hideChars wait:false
-@char sulbody3.1 pose:bc wait:false
+@char sulbody3.72 pose:bc wait:false
 sul: 부끄...러워서...
 {Player_name}: 예..? 아니 왜...
 @char sulbody3.75 pose:bc wait:false
@@ -220,25 +227,28 @@ sul: 이런 걸 먹어본 적이 없어서...
 @char sulbody3.73 pose:bc wait:false
 sul: ...
 {Player_name}: 그... 그나저나 여진이랑 다영이는요?
-@char sulbody3.14 pose:bc wait:false
+@hideChars wait:false
+@char sulbody2.14 pose:c wait:false
 sul: 못 온다고 했어...
 {Player_name}: 못 온다고요?
-@char sulbody3.11 pose:bc wait:false
+@char sulbody2.11 pose:c wait:false
 sul: 응...
 {Player_name}: 그래요? 무슨 일 있나..?
-@char sulbody3.85 pose:bc wait:false
+@hideChars wait:false
+@char sulbody3.85 pose:c wait:false
 sul: 그건 나도 잘 모르겠어...
 sul: 그냥... 못 온다고 하더라...
-@char sulbody3.81 pose:bc wait:false
+@char sulbody3.81 pose:c wait:false
 {Player_name}: 그렇군요..! 하하...
-@char sulbody3.11 pose:bc wait:false
+@char sulbody3.11 pose:c wait:false
 sul: ...
 {Player_name}: ...
 {Player_name}: 그럼 바로 연습 시작할까요?
 {Player_name}: 하하하...
-@char sulbody3.12 pose:bc wait:false
+@hideChars wait:false
+@char sulbody4.12 pose:bc wait:false
 sul: 응...
-@char sulbody3.72 pose:bc wait:false
+@char sulbody4.72 pose:bc wait:false
 sul: 바로 시작하자...
 describe: 나희 누나는 이 상황이 조금 부끄러운 모양이었다.
 @stopBgm BGM_Map_Classroom_01 fade:2 wait:false

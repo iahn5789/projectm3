@@ -78,18 +78,30 @@ describe: 관객도 보이지 않았고 무대 장치도 보이지 않았다.
 describe: 그저... 나희 누나의 선명한 눈동자만이 내 눈에 보일 뿐이었...
 @char sulbody3.57 pose:c wait:false
 @sfx Sul_Audio_Distorion_03 volume:50 loop:false fade:0 wait:false
-sul: 사랑하니까!!
+@spawn ShakeCharacter wait:false
+@spawn ShakePrinter wait:false
+@spawn ShakeBackground wait:false
+sul: <size=50>사</size><size=50>랑</size><size=50>하</size><size=50>니</size><size=50>까</size><size=50>!</size><size=50>!</size>
 @sfx Sul_Audio_Distorion_04 volume:70 loop:false fade:0 wait:false
-sul: 널 사랑하니까 난 그랬어!!
+@spawn ShakeCharacter wait:false
+@spawn ShakePrinter wait:false
+@spawn ShakeBackground wait:false
+sul: <size=60>널</size>  <size=60>사</size><size=60>랑</size><size=60>하</size><size=60>니</size><size=60>까</size>  <size=60>난</size>  <size=60>그</size><size=60>랬</size><size=60>어</size><size=60>!</size><size=60>!</size>
 @char sulbody3.55 pose:c wait:false
 {Player_name}: ...
 {Player_name}: (이... 이건...)
 {Player_name}: (이 정도일 줄은... 몰랐는데...)
 @char sulbody3.57 pose:c wait:false
 @sfx Sul_Audio_Distorion_02 volume:70 loop:false fade:0 wait:false
-sul: 가슴속 깊이 새겨진 내 마음을!!
+@spawn ShakeCharacter wait:false
+@spawn ShakePrinter wait:false
+@spawn ShakeBackground wait:false
+sul: <size=60>가</size><size=60>슴</size><size=60>속</size>  <size=60>깊</size><size=60>이</size>  <size=60>새</size><size=60>겨</size><size=60>진</size>  <size=60>내</size>  <size=60>마</size><size=60>음</size><size=60>을</size><size=60>!</size><size=60>!</size>
 @sfx Sul_Audio_Distorion_04 volume:70 loop:false fade:0 wait:false
-sul: 어째서 넌 모르는 거야!!
+@spawn ShakeCharacter wait:false
+@spawn ShakePrinter wait:false
+@spawn ShakeBackground wait:false
+sul: <size=70>어</size><size=70>째</size><size=70>서</size>   <size=70>넌</size>   <size=70>모</size><size=70>르</size><size=70>는</size>   <size=70>거</size><size=70>야</size><size=70>!</size><size=70>!</size>
 {Player_name}: (나희 누나...)
 {Player_name}: (노래 못 부른다는 말 진짜였구나...)
 @stopBgm BGM_Map_CunningCity_01 fade:1 wait:false
@@ -120,6 +132,7 @@ describe: 나희 누나는 어째서 그런 말을 했을까.
 describe: 이해가 안 되던 찰나, 이해 따위는 필요 없어졌다.
 @hideChars wait:false
 @char sulbody2.57 pose:bc wait:false
+@spawn ShakeCharacter wait:false
 sul: 프리덤이라고 합니다.
 {Player_name}: !!
 MC: !!

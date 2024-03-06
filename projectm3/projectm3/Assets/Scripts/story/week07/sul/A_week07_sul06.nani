@@ -21,7 +21,9 @@ sul: 빨리 와!
 sul: 나도 말할 줄 몰랐는걸?
 {Player_name}: 예?! 아니 그러면 왜...
 @char sulbody2.52 pose:c wait:false
-sul: 헤헤... 몰라!
+@spawn ShakeCharacter wait:false
+@spawn ShakePrinter wait:false
+sul: <size=50>헤</size><size=50>헤</size><size=50>.</size><size=50>.</size><size=50>.</size><size=50>.</size> <size=50>몰</size><size=50>라</size><size=50>!</size>
 {Player_name}: 네?!
 @char sulbody2.12 pose:c wait:false
 sul: 그냥... 이상하게 기분이 너무 좋아.
@@ -35,9 +37,11 @@ sul: 응?
 {Player_name}: 아까... 커피 드셨잖아요?
 {Player_name}: 처음 드셔보신 거라고 하셨죠?
 @char sulbody2.12 pose:c wait:false
+@spawn ShakeCharacter wait:false
 sul: 응! 처음 먹어봤어!
 {Player_name}: 지금 심장도 계속 뛰고요?
 @char sulbody2.52 pose:c wait:false
+@spawn ShakeCharacter wait:false
 sul: 응! 쿵쾅쿵쾅!!
 {Player_name}: ...
 {Player_name}: 카페인 드시면 안 되겠다...
@@ -74,6 +78,7 @@ describe: 이제는 지나가는 사람들마저 우리를 알아보기 시작�
 sul: 조금만 더 가면 돼..! 저기만 넘어가면...
 @hideChars wait:false
 @char sulbody4.65 pose:bc wait:false
+@spawn ShakePrinter wait:false
 sul: 저기 있다. 내 오토바이!
 @char sulbody4.85 pose:bc wait:false
 @sfx Sul_Bike_Turn_On_01 volume:100 loop:false fade:0 wait:false
@@ -117,6 +122,7 @@ describe: 부와아앙-!
 sul: 후우...
 @char sulbody1.12 pose:c wait:false
 sul: 다 왔어. 여기가 네 집 근처 맞지?
+@spawn ShakePrinter wait:false
 {Player_name}: 맞긴한... 우욱...
 @hideChars wait:false
 describe: 여전히 나희 누나의 오토바이 운전은 적응이 안 됐다.
@@ -139,7 +145,8 @@ sul: 그래? 다행이...
 sul: 아..!
 @hideChars wait:false
 @char sulbody3.1 pose:c wait:false
-sul: 흐...흐흠..!
+@spawn ShakeCharacter wait:false
+sul: <size=50>흐</size><size=50>.</size><size=50>.</size><size=50>.</size><size=50>흐</size><size=50>흠</size><size=50>.</size><size=50>.</size><size=50>!</size>
 describe: 나희 누나는 내 얼굴에서 손을 때 살짝 뒷짐을 졌다.
 describe: 어쩐지 나희 누나의 얼굴이 살짝 붉어진 것 같았다.
 @char sulbody3.72 pose:c wait:false
@@ -188,7 +195,7 @@ describe: 안에 들어있던 건 다름 아닌...
 @back Minicut_sul_09 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 @unlock CG/Mini16 wait:false
 
-{Player_name}: (비키니?)
+{Player_name}: <size=50>(</size><size=50>비</size><size=50>키</size><size=50>니</size><size=50>?</size><size=50>)</size>
 {Player_name}: (이게... 커플선물이라고..?)
 {Player_name}: (심지어 남자 수영복은 들어있지도 않은데..?)
 ; @char sulbody1.35 pose:c wait:false
@@ -216,7 +223,7 @@ sul: 네가..?
 
 @spawn Blur wait:false
 @back Minicut_sul_09 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
-
+@despawn Blur wait:false
 @char sulbody1.12 pose:c wait:false
 sul: 후훗... 아니야... 부탁할게.
 sul: 오늘... 너무 재밌었어...
@@ -238,6 +245,7 @@ sul: 응?
 sul: 그래...
 {Player_name}: 약속이에요!
 @char sulbody3.52 pose:c wait:false
+@spawn ShakeCharacter wait:false
 sul: 응..! 약속!
 describe: 나희 누나와 나는 손가락 약속을 했다.
 @hideChars wait:false
@@ -248,7 +256,8 @@ describe: 커플 선물을 내게 건네준 나희 누나는 오토바이를 타
 {Player_name}: (누나가 좋다면...)
 {Player_name}: (나도 좋...)
 @sfx Common_Cartoon_Hit_01 volume:100 loop:false fade:0 wait:false
-describe: 빩-!
+@spawn ShakeBackground wait:false
+describe: <size=70>빩</size><size=70>-</size><size=70>!</size>
 엄마: 야!!
 {Player_name}: 무... 무슨...
 엄마: 이 시간까지 싸돌아다니면서 도대체 뭘 하고 다니는 거야!
@@ -256,6 +265,8 @@ describe: 빩-!
 엄마: 엄마가 오늘 약속 때문에 늦으니 집 잘 보고 있으라고 했어! 안 했어!
 엄마: 그런데 집 보고 있기는커녕 이 시간까지 싸돌아다녀?!
 {Player_name}: 아니 아무리 그래도 아들 뒤통수를...
+@spawn ShakePrinter wait:false
+@spawn ShakeBackground wait:false
 엄마: 게다가 도대체 뭘 하고 다니길래 손에 그런 걸 들고 다니는 거냐고!!
 엄마: 어휴!! 내가 못 살아 정말!
 {Player_name}: 손..?
@@ -264,11 +275,13 @@ describe: 손에 있는...
 엄마: 오해? 무슨 놈의 오해!!
 엄마: 도대체 뭘 오해하면 이 야밤에 비키니를 들고 다니는 건데!!
 {Player_name}: 이건 진짜 사정이 있는...
-describe: 빩-!!
+@sfx Common_Cartoon_Hit_01 volume:100 loop:false fade:0 wait:false
+@spawn ShakeBackground wait:false
+describe: <size=70>빩</size><size=70>-</size><size=70>!</size>
 엄마: 시끄러워!
 엄마: 빨리 집에 들어가!!
 {Player_name}: 진짜 아닌데...
-엄마: 그 흉측한 거적때기 당장 갖다 버리고!!
+엄마: <size=50>그</size> <size=50>흉</size><size=50>측</size><size=50>한</size> <size=50>거</size><size=50>적</size><size=50>때</size><size=50>기</size> <size=50>당</size><size=50>장</size> <size=50>갖</size><size=50>다</size> <size=50>버</size><size=50>리</size><size=50>고</size><size=50>!</size><size=50>!</size>
 @stopBgm BGM_Map_Christmas_01 fade:1 wait:false
 @stopSfx Amb_Night_Cricket_01 fade:1 wait:false
 

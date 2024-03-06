@@ -5,9 +5,9 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
 @bgm BGM_Map_Friendly_01 volume:15 loop:true fade:1 wait:false
 @sfx Amb_Road_01 volume:20 loop:true fade:1 wait:false
-@back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
 @showUI CP wait:false
@@ -19,13 +19,14 @@ describe: 동아리 연습을 하지 않았기에 평소보다 일찍 끝날 수
 describe: 그렇다 해도 학교에 남아 있는 사람은 나희 누나와 나뿐이었다.
 {Player_name}: 크... 크흠..!
 {Player_name}: 그나저나... 저번엔 잘 들어가셨나요..?
-@char sulbody3.14 pose:c wait:false
+@char sulbody3.63 pose:c wait:false
 sul: 우웅..?
 describe: 우물우물-
+@char sulbody3.61 pose:c wait:false
 describe: 나희 누나는 아직 불량식품을 먹고 있었다.
 describe: 다행히도 나희 누나의 마음에 든 모양이었다.
 {Player_name}: 아... 아니에요! 신경 쓰지 마세요...
-@char sulbody3.63 pose:c wait:false
+@char sulbody3.62 pose:c wait:false
 sul: 웅...
 @char sulbody3.14 pose:c wait:false
 describe: 우물우물-
@@ -34,22 +35,24 @@ describe: 우물우물-
 describe: 꿀꺽-!
 @char sulbody3.11 pose:c wait:false
 sul: ...
-@char sulbody3.52 pose:c wait:false
+@hideChars wait:false
+@char sulbody1.52 pose:bc wait:false
 sul: 맛있다...
 {Player_name}: ...맛있으세요?
-@char sulbody3.62 pose:c wait:false
+@hideChars wait:false
+@char sulbody3.12 pose:c wait:false
 sul: 응... 한 10년 만에 먹으니까 더 맛있는 거 같아...
 {Player_name}: 그... 그렇군요...
 {Player_name}: 종종 사드릴게요..!
 @char sulbody3.65 pose:c wait:false
 sul: ...진짜?
-@char sulbody3.61 pose:c wait:false
 {Player_name}: 그럼요! 그거 뭐 얼마나 한다고...
 @char sulbody3.85 pose:c wait:false
 sul: 그럼 있잖아...
-@char sulbody3.12 pose:c wait:false
+@hideChars wait:false
+@char sulbody2.12 pose:c wait:false
 sul: 학교에서 안파는 걸로 사줄 수 있어..?
-@char sulbody3.75 pose:c wait:false
+@char sulbody2.72 pose:bc wait:false
 sul: 다른 것도 먹어보고 싶어서...
 @char sulbody3.71 pose:c wait:false
 {Player_name}: 그... 그럼요! 얼마든지 사다 드릴게요!
@@ -65,15 +68,15 @@ sul: 그러고보니... 아까 뭐라고 한 거야?
 sul: 주말 어쩌고 하지 않았어?
 @char sulbody2.11 pose:c wait:false
 {Player_name}: 아... 아니 뭐... 집에 잘 들어가셨나 해서요...
-@char sulbody2.64 pose:c wait:false
+@hideChars wait:false
+@char sulbody4.12 pose:c wait:false
 sul: 왜?
 {Player_name}: 네..?
-@char sulbody2.85 pose:c wait:false
+@hideChars wait:false
+@char sulbody3.12 pose:c wait:false
 sul: 아니. 뭐...
-@char sulbody2.15 pose:c wait:false
+@char sulbody3.82 pose:c wait:false
 sul: 그런건 왜 물어보는 거야?
-@char sulbody2.11 pose:c wait:false
-@sfx Emotion_Shame_Kettle_Steam_01 volume:70 loop:false fade:0 wait:false
 {Player_name}: 그... 그건... 그러니까...
 {Player_name}: 주...주말 동안 잘 지냈나 해서요..!
 {Player_name}: 보통 주말에 쉬기도 하고 놀러도 가는데 저번에 그...
@@ -84,7 +87,8 @@ sul: {Player_name}...
 @char sulbody2.12 pose:c wait:false
 sul: 얼굴이 갑자기 빨개졌어...
 {Player_name}: 네..? 네? 제가요?!
-@char sulbody2.62 pose:c wait:false
+@hideChars wait:false
+@char sulbody2.14 pose:c wait:false
 sul: 흐음..?
 {Player_name}: 하하하...
 @hideChars wait:false
@@ -157,7 +161,7 @@ describe: 나는 나희 누나의 교복 재킷 끝을 손가락으로 살짝 �
 sul: ...뭐하고 있어?
 @char sulbody2.11 pose:bc wait:false
 {Player_name}: 그... 어딜 잡아야 할지를...
-@char sulbody2.65 pose:bc wait:false
+@char sulbody2.110 pose:bc wait:false
 sul: 어디긴 어디야. 당연히 허리지.
 @char sulbody2.11 pose:bc wait:false
 {Player_name}: (허...허리...)
@@ -177,6 +181,7 @@ sul: 허리를 감싸야지.
 @hideChars wait:false
 @stopSfx Sul_Bike_Idle_Loop_01 fade:1 wait:false
 @sfx Heart_Beat_Fast_02 volume:100 loop:true fade:0 wait:false
+@spawn Blur wait:false
 describe: 나는 가슴을 숙여 손을 앞으로 뻗어 나희 누나의 허리를 감쌌다.
 describe: 심장이 미친 듯이 뛰기 시작했다.
 describe: 그 심장 소리가 등 너머로 나희 누나에게 전달되는 듯 싶었다.
@@ -189,24 +194,39 @@ describe: 나희 누나의 따스한 등이 볼에 닿았다.
 describe: 나희 누나의 등에 닿은 볼에 어떤 이상한 감촉이 느껴졌다.
 describe: 검지손가락 마디 하나 정도 크기의 살짝 튀어나온 무언가...
 {Player_name}: ......
+@despawn Blur wait:false
 @char sulbody2.62 pose:bc wait:false
 sul: 꽉 잡았지? 출발한다!
-
-@hideChars wait:false
 @stopBgm BGM_Map_Friendly_01 fade:1 wait:false
 @stopSfx Amb_Road_01 fade:1 wait:false
 @sfx Sul_Bike_Hukasi_01 volume:100 loop:false fade:0 wait:true
-
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
 @bgm BGM_Map_LovelyEP_01 volume:30 loop:true fade:1 wait:false
 @sfx Sul_Bike_Run_01 volume:100 loop:true fade:0 wait:false
 @sfx Sul_Bike_Wind_Gust_01 volume:50 loop:true fade:0 wait:false
+@back Black time:0.5 wait:true
+@back Black time:1 wait:true
+@back Festival01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+@spawn ShakeBackground wait:false
 {Player_name}: 우...우웩...
+@char sulbody1.13 wait:false pose:c
 sul: 왜 그래?
 {Player_name}: 그... 아니에요...
+@char sulbody1.23 wait:false pose:c
 sul: 조금 빨랐나?
 {Player_name}: 조금이 아닌 것 같은데요...
 {Player_name}: 생명의 위협을 느낄 정도?
+@char sulbody1.83 wait:false pose:c
 sul: 규정 속도 지키면서 안전하게 탄건데...
+@hideChars wait:false
+@char sulbody4.82 wait:false pose:c
 sul: 다음에는 천천히 탈게!
 @stopSfx Sul_Bike_Run_01 fade:1 wait:false
 @stopSfx Sul_Bike_Wind_Gust_01 fade:1 wait:false
@@ -214,6 +234,7 @@ sul: 다음에는 천천히 탈게!
 describe: 나희 누나를 따라 오토바이를 타고 축제가 열리는 곳에 도착했다.
 describe: 도착하고 보니 이미 하늘은 어두워져 있었다.
 {Player_name}: 여기는...
+@hideChars wait:false
 @char sulbody3.62 pose:c wait:false
 sul: 아직 축제가 열리고 있는 것 같더라고.
 sul: 저번에는 제대로 즐기지 못했잖아?
@@ -228,6 +249,7 @@ sul: 응?
 sul: 계획? 무슨 계획?
 {Player_name}: 뭐 어디를 돌아다닌다든지 뭘 먹겠다든지 그런 거 있잖아요?
 @char sulbody3.23 pose:c wait:false
+@spawn ShakeCharacter wait:false
 sul: 없는데?
 {Player_name}: 없다고요?
 @char sulbody3.12 pose:C wait:false
@@ -236,6 +258,7 @@ sul: 돌아다녀 보면 뭐라도 나오지 않을까?
 {Player_name}: 그...런가?
 @char sulbody3.52 pose:c wait:false
 sul: 그렇게 고민 할 시간에 조금이라도 더 돌아다니자고.
+@spawn ShakeCharacter wait:false
 sul: 빨리 와! 시간 없다고-
 {Player_name}: 자... 잠시만요! 같이 가요!
 @hideChars wait:false
