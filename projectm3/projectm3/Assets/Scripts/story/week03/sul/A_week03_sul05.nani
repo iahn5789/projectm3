@@ -37,6 +37,7 @@ jeon: 뭐...뭐야? 무슨 소리지?
 @hideChars wait:false
 describe: 대용이와 나는 옆에 있는 아무 방 문을 열고는 들어가서 문을 닫았다.
 @char jeonbody4.35 pose:bc wait:false
+@spawn Past01
 jeon: 후욱...후욱...
 @sfx Common_Cartoon_Hit_01 volume:100 loop:false wait:false
 {Player_name}: 조용히 좀 해!
@@ -47,7 +48,7 @@ jeon: 긴장하면 나오는 습관이랄까...
 {Player_name}: 도대체 뭘 먹은...우웩...
 describe: 코는 뇌랑 연결되어 있다는 글을 어디선가 읽은 적이 있었다.
 describe: 창문도 없고 환기도 되지 않는 방에서 대용이의 냄새는 코를 넘어 뇌까지 침투하고 있었다.
-{Player_name}: ( 하필 이렇게 확인하게 되다니... )
+{Player_name}: (하필 이렇게 확인하게 되다니...)
 describe: 지금 당장 방 문을 열고 살려달라고 소리치고 싶었다.
 {Player_name}: 너...진짜...
 {Player_name}: 진지하게... 대장내시경 한번 받...윾...
@@ -80,6 +81,8 @@ jeon: 문 열고 확인할 것 같은데...
 @sfx Door_Lock_Handle_01 volume:100 loop:false wait:false
 보안요원A: 어..? 이거 잠겨 있는데?
 보안요원B: 뭐? 이거 진짜 안에 뭐 있는 거 아니야?
+@spawn ShakeCamera wait:false
+@spawn ShakePrinter wait:false
 @sfx Door_Lock_Handle_02 volume:100 loop:false wait:false
 describe: 손잡이가 덜컥거리고 있었다.
 describe: 방 문이 열리는 건 사실상 시간문제였다.
@@ -113,6 +116,19 @@ jeon: 나 잡아봐라!
 @sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false wait:false
 describe: 대용이는 보안 요원 두 명을 데리고 사라졌다.
 @stopSfx Footsteps_Female_Ctr_Run_01 fade:1 wait:false
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@despawn Past01 wait:false
+@back ConcertIn01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 얼마나 지났을까.
 describe: 떨리는 가슴이 조금은 진정이 되자 방 문을 열고 밖으로 나왔다.
 describe: 복도는 언제 그랬냐는 듯 너무나도 조용했다.
@@ -130,8 +146,8 @@ describe: 문 뒤에 숨는 과정에서 조금 찌그러진 것 같았다.
 describe: 마음 같아선 선물이고 나발이고 지금 당장이라도 여기서 나가고 싶었지만...
 describe: 아무리 그래도... 하나밖에 없는 친구니까.
 describe: 떨리던 가슴이 진정되니 다른 문제가 생겼다.
-{Player_name}: ( 이걸 전해주고 싶어도 어디에 있는지를 알아야 전해주지... )
-{Player_name}: ( 다음부터 어디 가자고 하면 절대 안 가야지. )
+{Player_name}: (이걸 전해주고 싶어도 어디에 있는지를 알아야 전해주지...)
+{Player_name}: (다음부터 어디 가자고 하면 절대 안 가야지.)
 
 @despawn Blur wait:false
 @back Minicut_sul_02 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false

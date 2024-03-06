@@ -36,7 +36,9 @@ describe: 저 너머로 보인 실루엣은 다름 아닌 대용이었다.
 @char jeonbody1.11 pose:c wait:false
 @stopSfx Footsteps_Sand_02 wait:false
 @sfx Common_Text_Kick_01 volume:100 loop:false wait:false
+@style size=50
 jeon: {Player_name}!
+@style default
 describe: 대용이는 신기하게도 내가 있다는 걸 바로 알아차리고는 인사를 했다.
 @char jeonbody1.21 pose:c wait:false
 jeon: 동아리 활동 너무 열심히 하는 거 아니야?
@@ -115,14 +117,15 @@ jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
 @char jeonbody1.11 pose:c wait:false
 jeon: 동아리 활동을 위해 평소에 관심이 없던 콘서트까지 간다.
 @char jeonbody1.32 pose:c wait:false
+@spawn ShakeCharacter wait:false
 @sfx Common_Bell_Tree_NoHarp_01 volume:80
 jeon: 내 눈엔 네가 정말 예뻐 보일 거 같은데!
 @stopSfx Common_Bell_Tree_NoHarp_01 fade:1 wait:false
 describe: 오늘따라 의외로 논리적인 말만 골라서 하는 대용이었다.
 @hideChars wait:false
-{Player_name}: ( 혹시... )
-{Player_name}: ( 나희 누나가 콘서트를 보기 위해 먼저 간 건가..? )
-{Player_name}: ( 그렇다면... )
+{Player_name}: (혹시...)
+{Player_name}: (나희 누나가 콘서트를 보기 위해 먼저 간 건가..?)
+{Player_name}: (그렇다면...)
 @char jeonbody3.11 pose:c wait:false
 jeon: 더 고민하지 말고 지금 나와 같이 공부를 하러 가보는 건 어떻겠나?
 {Player_name}: 좋아. 같이 가자.
@@ -135,6 +138,8 @@ jeon: 걱정 말라고. 나한테 한 장 더 있으니까.
 @char jeonbody4.32 pose:c wait:false
 jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
 @char jeonbody4.33 pose:c wait:false
+@spawn ShakeBackground wait:false
+@spawn ShakeCharacter wait:false
 jeon: 더는 묻지 마라...!
 {Player_name}: 그..그래...
 describe: 여자랑 같이 가려다 실패한 모양이다.
@@ -145,6 +150,6 @@ jeon: 걱정하지 마! 그 근처 맛집은 내가 다 꿰고 있으니까.
 @stopSfx Amb_School_Club_01 fade:1 wait:false
 @stopSfx Amb_Wind_Bird_01 fade:1 wait:false
 @stopBgm BGM_Map_Blues_01 fade:1 wait:false
-@hideChars wait:false
+
 
 @goto A_week03_sul04.week03_sul04

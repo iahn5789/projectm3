@@ -63,6 +63,7 @@ jeon: 후아! 드디어 도착했구먼!
 @char jeonbody4.32 pose:c wait:false
 jeon: 어허. 믿음이 부족한 친구군. 콘서트는 이제부터 시작이라고.
 @char jeonbody4.22 pose:c wait:false
+@spawn ShakeCharacter wait:false
 jeon: 내 루틴은 절대 틀리지 않아.
 @hideChars wait:false
 @sfx Whoosh_Fire_01 volume:100 wait:false
@@ -76,6 +77,7 @@ jeon: 후후..후후후후...
 describe: 방금 열기는 대용이한테서 나온 모양이었다.
 {Player_name}: 그렇게 좋냐..?
 @char jeonbody2.32 pose:c wait:false
+@spawn ShakeCharacter wait:false
 jeon: 후후후후... 이제 시작이라고...
 {Player_name}: 뭐가 시작이야... 이제 마지막 공연인 것 같은...
 @hideChars wait:false
@@ -83,7 +85,7 @@ describe: 그때. 갑작스럽게 무대의 조명이 켜지며 공연이 시작
 describe: 무대에 선 사람은 포스터에서 봤던 헬맷을 쓰고 있던 사람이었다.
 describe: 밴드라고는 했지만 무대 위에 올라선 사람은 한 명뿐이었다.
 {Player_name}: 뭐야. 밴드라며. 왜 한 명밖에 없어?
-@char jeonbody2.32 pose:c wait:false
+@char jeonbody2.32 pose:bc wait:false
 jeon: 후후후후후후!!
 describe: 고개를 돌려 대용이를 바라봤지만 대답을 할 상태가 아니었다.
 {Player_name}: ...
@@ -161,6 +163,7 @@ jeon: 진심을 전하기 위해서는 어쩔 수 없는 선택이지.
 {Player_name}: 그래. 난 먼저 갈게.
 @hideChars wait:false
 @char jeonbody2.55 pose:c wait:false
+@spawn ShakeCharacter wait:false
 @sfx Common_Text_Kick_01 volume:100 loop:false wait:false
 jeon: 잠깐! 여기까지 와서 그냥 갈 거야?
 {Player_name}: 나는 공연 보러 온 거지 경찰서 가려고 온 게 아니야!
@@ -174,14 +177,15 @@ jeon: 제발!
 describe: 대용이는 거의 울 지경에 이르렀다.
 describe: 마음 같아서는 그냥 버리고 집으로 가고 싶었지만...
 describe: 그랬다가는 정말 큰 사고라도 칠 것 같아서 진심으로 불안했다.
-{Player_name}: ( 이거 버리고 갔다가 내일 얘 뉴스에 나오는 거 아니야..? )
-{Player_name}: ( 그렇다고 같이 갈 수도 없고... 어떡하지? )
+{Player_name}: (이거 버리고 갔다가 내일 얘 뉴스에 나오는 거 아니야..?)
+{Player_name}: (그렇다고 같이 갈 수도 없고... 어떡하지?)
 @hideChars wait:false
 @char jeonbody3.22 pose:c wait:false
 jeon: 아무 짓도 안 할게! 그냥 문 앞에 선물만 두고 나올게! 약속해!
 {Player_name}: 하...
 {Player_name}: 진짜 잠깐만 있다 나오는 거다?
 @char jeonbody3.52 pose:c wait:false
+@spawn ShakeCharacter wait:false
 jeon: 다..당연하지!
 {Player_name}: 중간에 이상한 짓 하면 그땐 진짜 버리고 갈 거다!
 @char jeonbody3.35 pose:c wait:false

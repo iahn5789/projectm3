@@ -57,11 +57,11 @@ describe: 나희 누나의 드럼을 마지막으로 연습이 끝났다.
 @char sulbody2.11 pose:r wait:false
 kang: 다들 수고했어!
 sul: 응...
-@hideChars wait:false
-@char kangbody1.11 pose:l wait:false
+@hide sulbody2 wait:false
 @char jinbody1.44 pose:r wait:false
 jin: 수고했으면 뭐 해. 잘해야지!
 describe: 나만 그렇게 생각하는 모양이었다.
+@hide kangbody2 wait:false
 @char kangbody1.44 pose:l wait:false
 kang: 또 시작이야?
 @char jinbody1.33 pose:r wait:false
@@ -79,7 +79,7 @@ jin: 달리기 선수한테 걸음마 뗐다고 칭찬할 거야?
 @sfx Common_Cartoon_Hit_01 volume:100 loop:false fade:0 wait:false
 jin: {Player_name}! 너 어제 뭐 했어?!
 {Player_name}: 응...? 나?
-@hideChars wait:false
+@hide jinbody3 wait:false
 @char kangbody3.17 pose:l wait:false
 @char jinbody1.45 pose:r wait:false
 jin: 또 연습 안 하고 놀았지!
@@ -89,7 +89,7 @@ jin: 연습이 중요한 게 아니라 실력이 늘어야 할 거 아니야!
 {Player_name}: (언제는 연습 안 했냐고 물어봤으면서...)
 @char jinbody1.43 pose:r wait:false
 jin: 진짜 연습 제대로 한 거 맞아?
-@hideChars wait:false
+@hide kangbody3 wait:false
 @char jinbody1.43 pose:r wait:false
 @char kangbody2.11 pose:l wait:false
 kang: 그럼! 내가 옆에서 봤어!

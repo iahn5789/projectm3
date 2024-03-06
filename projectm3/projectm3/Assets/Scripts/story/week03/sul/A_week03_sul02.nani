@@ -47,7 +47,7 @@ sul: ...
 kang: 이제 뒷정리 시작할까?
 kang: 난 악기 정리하러 가볼게!
 @hideChars wait:false
-@char jinbody1.11 pose:c wait:false
+@char jinbody1.42 pose:c wait:false
 jin: 교무실 간다!
 @sfx Footsteps_Female_Wood_Run_01 volume:100 loop:false wait:false
 @stopSfx Footsteps_Female_Wood_Run_01 fade:3 wait:false
@@ -57,8 +57,9 @@ sul: ...나도...시작할게...
 {Player_name}: 어..? 그럼...
 @hideChars wait:false
 @char kangbody1.11 pose:l wait:false
-@char jinbody1.11 pose:r wait:false
+@char jinbody1.42 pose:r wait:false
 kang: 나희 언니 도와줄래? 오늘 뒷정리할 게 좀 많아 보여서 그래!
+@char jinbody1.22 wait:false
 jin: 그래. 나도 어차피 혼자가 더 편해.
 @hideChars wait:false
 @char sulbody3.11 pose:c wait:false
@@ -68,6 +69,17 @@ sul: ...
 sul: ...
 @hideChars wait:false
 describe: 여진이와 다영이가 나가자, 동아리방은 늘 그렇듯 한순간에 조용해졌다.
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 describe: 처음 동아리방 정리를 했을 땐 어떻게 하는 줄 모르기도 했지만,
 describe: 몇 번 해보니 이제는 서로 말없이 할 일을 하게 되었다.
 describe: 가끔은 나희 누나와 조금은 친하지 않았나 싶은 순간들이 있었다.
