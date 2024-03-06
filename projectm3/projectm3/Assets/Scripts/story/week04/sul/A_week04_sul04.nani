@@ -20,23 +20,24 @@ describe: 정리가 끝나기 전에 뭐라고 말이라도 걸어보려고 했�
 describe: 그러나 뒷모습만 보이는 나희 누나에게 도저히 말을 걸 수가 없었다,
 {Player_name}: (그냥 이대로 아무 일도 없었던 듯 집에 가는 건가?)
 {Player_name}: (그래도 최소한 오해라도 풀어야 되는...)
-@char sulbody2.11 pose:c wait:false
+@char sulbody4.11 pose:c wait:false
 sul: {Player_name}.
 {Player_name}: 예..? 부르셨어요?
 sul: ...
-@char sulbody2.81 pose:c wait:false
+@char sulbody4.81 pose:c wait:false
 sul: 집에는 잘 들어갔어?
 {Player_name}: 예..? 집...이요?
-@char sulbody2.61 pose:c wait:false
+@char sulbody4.2 pose:c wait:false
 sul: 잘 들어갔냐고.
 {Player_name}: 아..!
 {Player_name}: 아... 하... 하...
 {Player_name}: 잘 들어갔...죠?
-@char sulbody2.75 pose:c wait:false
+@hideChars wait:false
+@char sulbody3.11 pose:c wait:false
 sul: 그래? 다행이네.
 {Player_name}: 네. 덕분에...
 {Player_name}: 하하하...
-@char sulbody2.11 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 sul: ...
 @sfx Crow_Caw_01 volume:40 loop:false wait:false
 {Player_name}: ...
@@ -46,10 +47,10 @@ describe: 짧은 대화 후. 다시 동아리실에 어색함이 찾아왔다.
 {Player_name}: 그... 나희 누나?
 {Player_name}: 저번에 콘서트장에서 그런 상황에서 뵙게 된 건 순전히...
 @hideChars wait:false
-@char sulbody1.15 pose:c wait:false
+@char sulbody2.15 pose:c wait:false
 sul: 평소에도 자주 오는 편이야?
 {Player_name}: 예..?
-@char sulbody1.71 pose:c wait:false
+@char sulbody2.13 pose:c wait:false
 sul: 콘서트. 평소에도 자주 오는 편이냐고.
 {Player_name}: 아...아뇨! 애초에 그날 가게 된 것도 대용...
 
@@ -65,8 +66,10 @@ sul: 콘서트. 평소에도 자주 오는 편이냐고.
 @processInput true
 @set LoadingValue=false
 
+@char jeonbody3.11 pose:c wait:false
 jeon: 넌 밴드동아리잖아. 좋은 공부가 될 거라고?
 jeon: 혹시 알아? 밴드 콘서트에 갔다가 동아리 부원들이라도 만날지.
+@char jeonbody3.21 pose:c wait:false
 jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
 
 @set LoadingValue=true
@@ -83,7 +86,7 @@ jeon: 그러면 부원들이 지금보다 널 더 좋아하지 않겠어?
 @processInput true
 @set LoadingValue=false
 
-@char sulbody1.71 pose:c wait:false
+@char sulbody2.13 pose:c wait:false
 {Player_name}: 자... 자...
 {Player_name}: 자주 가려고 하는 편이에요!
 {Player_name}: 원래는 딱히 관심이 없었는데, 동아리 가입하고 가봤더니 너무 좋았거든요.
@@ -112,7 +115,7 @@ sul: 네 친구?
 {Player_name}: 대용이도 프리덤의 팬이더라고요.
 {Player_name}: 그래서 꼭 대용이가 선물을 전해주고 싶다고 해서...
 @hideChars wait:false
-@char sulbody2.65 pose:c wait:false
+@char sulbody2.110 pose:c wait:false
 sul: 포토타임 있었잖아? 그때는 뭐 하고?
 {Player_name}: 그런 시시한 기회 따위에 연연하지 않는다고 하네요...
 @char sulbody2.25 pose:c wait:false
@@ -128,16 +131,18 @@ sul: 그래서 넌 어땠어?
 @char sulbody1.85 pose:c wait:false
 sul: 네 친구는 선물 주러 왔다고 치고, 넌 어땠냐고.
 {Player_name}: 너... 너무 좋았죠!
-@char sulbody1.75 pose:c wait:false
+@hideChars wait:false
+@char sulbody2.3 pose:c wait:false
 sul: 그런 뻔한 말 말고. 어떤 점이 좋았는지, 왜 좋았는지. 자세하게.
 {Player_name}: ...
 {Player_name}: 저는...
-@char sulbody1.65 pose:c wait:false
+@hideChars wait:false
+@char sulbody1.13 pose:c wait:false
 {Player_name}: 그냥 단순히 소리를 듣는 게 아니어서 너무 좋았어요.
 @sfx Common_Beautiful_Bell_Tree_01 volume:70 loop:true fade:1 wait:false
 {Player_name}: 단순히 좋은 소리뿐만 아니라 무대 위에서의 연출과 시각적 즐거움.
 {Player_name}: 그 모든 것들이 하나로 합쳐져서 정말... 정말...
-@char sulbody1.76 pose:c wait:false
+@char sulbody1.65 pose:c wait:false
 sul: 정말..?
 {Player_name}: 그 공연을 보는 순간만큼은 뭐랄까...
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false

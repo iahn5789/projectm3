@@ -51,10 +51,12 @@ kang: 연습을 하자고?
 {Player_name}: 우리... 공연 연습 해야지!
 @hideChars wait:false
 @char jinbody1.43 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,3
 jin: 뭐야. 왜 갑자기 열심히 하는 척인데.
 jin: 평소에는 가만히 있다가 하필 나희 언니 없을...
 @hideChars wait:false
 @char jinbody3.42 pose:bc wait:false
+@spawn ShakeBackground wait:false params:,3
 jin: 뭐야. 너 혹시 사고 쳤냐?
 {Player_name}: 내...내가 뭘...
 @char jinbody3.44 pose:bc wait:false
@@ -116,6 +118,7 @@ sul: ...
 kang: 다들 수고 많았어!
 @hideChars wait:false
 @char jinbody3.44 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,3
 jin: {Player_name}! 연습하자고 난리 쳐놓고는 너무 실수가 많았던 거 아니야?
 @hideChars wait:false
 @char sulbody2.11 pose:c wait:false
@@ -157,7 +160,7 @@ kang: 나희 언니 도와주면 되겠다!
 sul: 같이 해...
 {Player_name}: ...네?
 @hideChars wait:false
-@char sulbody2.71 pose:bc wait:false
+@char sulbody2.3 pose:bc wait:false
 sul: 같이... 하자고...
 {Player_name}: ...
 @hideChars wait:false
@@ -168,11 +171,11 @@ kang: 그래! 둘이 같이 하면 되겠다.
 kang: 그럼 나 먼저 가볼게. 내일 봐!
 @sfx Footsteps_Female_Wood_Run_01 volume:80 loop:false wait:false
 @hideChars wait:false
+@spawn ShakeBackground wait:false
 @sfx Common_Sliding_Door_Open_02 volume:100 wait:false
 describe: 드르륵- 쿵-
 @sfx Amb_Wind_Bird_01 volume:100 loop:true fade:1 wait:false
 {Player_name}: ...
-@char sulbody3.11 pose:c wait:false
 sul: ...
 @hideChars wait:false
 describe: 여진이마저 동아리실에서 나가자, 늘 그렇듯 동아리실은 순식간에 조용해졌다.
@@ -181,9 +184,10 @@ sul: ...
 {Player_name}: (어색해 죽을 것 같아...)
 {Player_name}: (아니 그보다도 뭐라 말이라도 해야 되는데.)
 describe: 닫힌 문을 한동안 바라보고 있던 나는 고개를 살짝 돌렸다.
+@char sulbody3.11 pose:c wait:false
 describe: 나희 누나는 아무 일도 없었다는 듯 정리를 시작하고 있었다.
 {Player_name}: 그...
-@char sulbody3.71 pose:c wait:false
+@char sulbody3.3 pose:c wait:false
 sul: ...
 {Player_name}: ...
 {Player_name}: 어쩐지 나희 누나의 눈에서 빛이 나는 것 같았다.

@@ -37,6 +37,7 @@
 
 @sfx Writing_Chalk_Board_01 volume:100 loop:false wait:false
 선생님: 여기서 화자가 말하고자 하는 것은...
+@spawn Blur wait:false
 describe: 대용이와 콘서트를 다녀온 지 벌써 며칠이 지났다.
 describe: 시간이 좀 지났지만, 주말이 끼는 바람에 그날 이후로 처음 학교에 왔다.
 describe: 덕분에 아직 대용이는 물론이고 나희누나도 보지 못했다.
@@ -49,7 +50,9 @@ describe: 사과부터 해야 할지, 혹시 변명이라고 생각하진 않을
 선생님: ...억압된 시대상황에 좌절하지 않고 극복하고자 하는 의지를...
 {Player_name}: (사과부터 한다면 뭐라고 말을 꺼내야 되는 거지?)
 {Player_name}: (살금살금 몰래 기어들어가서 죄송합니다..?)
+@style size=50
 선생님: ...{Player_name}! 집중 안 해?
+@style default
 {Player_name}: (아니 애초에 난 대용이한테 들어가지 말자고 했는데...)
 {Player_name}: (그게 사실이라고 해도 믿을 리가 없잖아!)
 {Player_name}: (보안요원한테 쫓기는 상황에서 만났는데...)
@@ -58,18 +61,25 @@ describe: 사과부터 해야 할지, 혹시 변명이라고 생각하진 않을
 {Player_name}: (이렇게 말하면 나 같아도 못 믿겠다.)
 선생님: 후...
 @sfx Footsteps_Male_Wood_Walk_01 volume:70 loop:false fade:1 wait:false
-describe: 저벅-저벅
+describe: 저벅-저벅-
 {Player_name}: (그러고 보니.)
 {Player_name}: (왜인지 분장을 했었던 것 같기도 하고...)
 {Player_name}: (분명 옷을 갈아입고 있는 것 같아 보였는데.)
 {Player_name}: (단추를 다 잠겄었나..?)
 @sfx Common_Cartoon_Hit_01 volume:100 loop:false wait:false
-describe: 빢!
+@despawn Blur wait:false
+@spawn ShakeBackground wait:false
+@spawn ShakePrinter wait:false
+describe: <size=50>빢!</size>
 선생님: 집중 안 해?
 선생님: 수업시간에 무슨 딴생각을 그렇게 하는 거야!
 {Player_name}: 아... 으...
 {Player_name}: 죄송합니다...
+@spawn ShakeBackground wait:false
+@spawn ShakePrinter wait:false
+@style size=60 wait:false
 선생님: 뒤로 나가서 서 있어!
+@style default
 {Player_name}: 네...
 선생님: 수업 다시 시작한다.
 선생님: 위의 근거로 미루어 볼 때 정답은...
@@ -131,6 +141,7 @@ jeon: 아니. 너 말고.
 jeon: 그건 어떻게 됐지..?
 {Player_name}: 그거?
 @char jeonbody2.33 pose:bc wait:false
+@spawn ShakeCharacter wait:false
 jeon: 내가 전해주려던 선물! 너한테 대신 건네줬잖아.
 @hideChars wait:false
 @char jeonbody4.35 pose:bc wait:false
@@ -145,7 +156,11 @@ describe: 그날 있었던 일을 대용이에게 말할 수는 없었다.
 jeon: 전해줬다고? 직접 만난 거야?
 @hideChars wait:false
 @char jeonbody2.42 pose:bc wait:false
+@spawn ShakeBackground wait:false params:,0
+@spawn ShakeCharacter wait:false params:,0
 jeon: 프리덤의실제얼굴을직접본거야?어떻게생겼지?피부는어때?얼굴은어때?연예인닮은사람있어?나이는어느정도될것같아?우리랑또래야?.....
+@despawn ShakeCharacter wait:false
+@despawn ShakeBackground wait:false
 describe: 대용이는 내가 직접 만났다고 생각했는지 갑자기 흥분하며 말을 멈추지 않았다.
 describe: 물론 직접 만난 건 맞지만...
 @char jeonbody2.45 pose:bc wait:false
@@ -183,6 +198,7 @@ jeon: 어디긴! 당연히 동아리실이지. 동아리 활동 열심히 하고
 jeon: 나도 동아리 활동 하러 가야지. 오늘 신문부 회의가 있거든.
 @hideChars wait:false
 @char jeonbody2.22 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,5
 @stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 jeon: 그 말은 즉 부장도 온다는...
 @stopBgm BGM_Map_FeelGood_01 fade:2 wait:false
