@@ -17,7 +17,7 @@
 {Player_name}: 여기까지...
 {Player_name}: 이 정도로 빠를 줄은 몰랐는데요..?
 describe: 나희 누나와 함께 오토바이를 찾으러 갔지만...
-describe: 공연장 밖 주차장까지 기자들이 잔뜩 깔려 있었다.
+describe: 공연장 뒷편에까지 기자들이 잔뜩 깔려 있었다.
 @char sulbody3.11 pose:c wait:false
 sul: ...
 {Player_name}: 어떡하죠..?
@@ -29,6 +29,8 @@ sul: 인터뷰 좀 하는 건 상관 없긴 한데...
 sul: 오늘만큼은... 방해받고 싶지 않은데...
 @char sulbody3.85 pose:c wait:false
 sul: 오토바이 타고 가는 건 어려울 것 같고...
+{Player_name}: 아무래도...
+{Player_name}: 여기까지 있는거 보면 주차장에도 분명 있을 거에요.
 @char sulbody3.74 pose:c wait:false
 sul: 그렇다고 놓고 갈 수도 없는데...
 @char sulbody3.15 pose:c wait:false
@@ -58,6 +60,8 @@ sul: 아... 아니..! 딱히 고픈 건 아니...
 @hideChars time:0.5 wait:false
 @char sulbody3.1 pose:bc wait:false
 @sfx Human_Hungry_01 volume:100 loop:false fade:0 wait:false
+@spawn ShakeBackground wait:false params:,3
+@spawn ShakeCharacter wait:false params:,3
 describe: 꼬르륵-!
 @char sulbody3.76 pose:bc wait:false
 sul: ...
@@ -99,6 +103,7 @@ describe: 도시 속 곁을 지나가는 수많은 사람들.
 describe: 그 사람들이 내는 소리들.
 describe: 도로에 지나다니는 차와 오토바이들.
 describe: 수 많은 소리가 도심을 채웠지만...
+@spawn Blur wait:false
 describe: 내 귀에는 잘 들어오지 않았다.
 describe: 나희 누나와 나란히 걸으며 맞잡은 손.
 describe: 이제는 조금 익숙해진 나희 누나의 손.
@@ -108,6 +113,7 @@ describe: 나희 누나가 걸을 때 마다 흩날리는 머리칼에서 나는
 describe: 그럴 때 마다 고개를 돌려 싱긋 웃어 보이는 나희 누나의 표정.
 describe: 그 모든 것이 내가 느낄 수 있는 감각의 전부였다.
 describe: 도시의 소리 따위는 들어올 공간이 없었다.
+@despawn Blur wait:false
 @char sulbody1.15 pose:c wait:false
 sul: 왜 그래?
 @char sulbody1.11 pose:c wait:false
@@ -148,11 +154,11 @@ sul: 만약 안 좋았어도 달라질 건 없으니까.
 @char sulbody2.75 pose:c wait:false
 sul: 사실 너랑 함께하기 전에도...
 sul: 공연 끝나면 항상 반응부터 확인했거든...
-@char sulbody2.15 pose:c wait:false
+@char sulbody2.62 pose:c wait:false
 sul: 그렇지만...  이제는 별로 확인하고 싶지 않아.
 sul: 중요한 건... 결국 다른 사람의 반응이나 생각이 아니잖아?
+@char sulbody2.67 pose:C wait:false
 sul: 내가 나를 어떻게 생각하느냐이니까.
-@char sulbody2.11 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 잘됐네요... 정말로...
 @hideChars time:0.5 wait:false
@@ -163,24 +169,25 @@ sul: 후훗... 고마워.
 sul: 고맙다고...
 @char sulbody3.72 pose:c wait:false
 sul: 네가 없었으면... 난 현실을 마주 볼 생각도 못 하고 있었을 테니까.
-@char sulbody3.65 pose:c wait:false
+@char sulbody3.75 pose:c wait:false
 sul: 여전히... 주변의 눈치와 기대 속에서 살아가고 있었겠지.
-@char sulbody3.62 pose:c wait:false
 {Player_name}: ...
+@char sulbody3.65 pose:c wait:false
 {Player_name}: 아니에요.
 {Player_name}: 제가 없었어도 누나는 잘하실 수 있었을 거예요.
-@char sulbody3.81 pose:c wait:false
+@hideChars wait:false
+@char sulbody2.81 pose:c wait:false
 sul: 걱정해 주는 건 고맙지만... 이건 진심이야.
-@char sulbody3.72 pose:c wait:false
+@char sulbody2.71 pose:c wait:false
 sul: 네가 없었으면 못 했을 거야...
-@char sulbody3.57 pose:c wait:false
+@char sulbody2.72 pose:c wait:false
 sul: {Player_name}... 고마워.
 {Player_name}: ...
 {Player_name}: 네..! 나희 누나!
 @hideChars time:0.5 wait:false
-@char sulbody4.81 pose:bc wait:false
+@char sulbody4.77 pose:bc wait:false
 sul: 그럼... 
-@char sulbody4.57 pose:bc wait:false
+@char sulbody4.67 pose:bc wait:false
 sul: 이제 뭐 좀 먹으러 갈까?
 @hideChars time:0.5 wait:false
 describe: 나희 누나는 싱긋 웃으며 앞서나가기 시작했다.
@@ -217,14 +224,14 @@ describe: 나희 누나와 함께하기로 했으니까.
 @stopbgm BGM_Map_Siawase_01 fade:1 wait:false
 @stopsfx Amb_Hallway_01 fade:1 wait:false
 
-@spawn Blur wait:false
+@despawn Blur wait:false
 @back Minicut_sul_12 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
 
 @sfx Footsteps_Male_ctr_run_01 volume:40 loop:false fade:0 wait:false
 @sfx Amb_Road_01 volume:50 loop:true fade:1 wait:false
 describe: 나는 핸드폰을 주머니에 다시 넣고는 나희 누나를 향해 달려갔다.
 {Player_name}: 아하하... 죄송해요...
-{Player_name}: 잠깐 문자가 와서..?
+{Player_name}: 잠깐 문자가 와서...
 {Player_name}: 나희 누나..?
 @bgm BGM_Map_SuperSad_01 volume:70 loop:true fade:1 wait:false
 describe: 나희 누나는 가던 길을 멈춘 채 길에서 가만히 서있었다.
@@ -237,7 +244,7 @@ describe: 나희 누나는 약간 당황한 듯한 표정을 짓고 있었다.
 {Player_name}: ..!
 describe: 나희 누나의 시선을 따라 바라보니...
 describe: 익숙한 얼굴의 중년 남성이 서있었다.
-@char sulbody3.71 pose:c wait:false
+@char sulbody3.75 pose:c wait:false
 아버지: ...
 아버지: 연락이 한참 동안 안돼서 걱정했다.
 @char sulbody3.15 pose:c wait:false
@@ -250,12 +257,11 @@ sul: 여긴 어떻게 오셨죠..?
 @char sulbody2.15 pose:c wait:false
 sul: 변명하러 오신 건가요?
 sul: 아니면 또 강요하러 오신 건가요?
-@char sulbody2.11 pose:c wait:false
 sul: ...
 @hideChars time:0.5 wait:false
-@char sulbody3.46 pose:bc wait:false
+@char sulbody3.11 pose:bc wait:false
 sul: 죄송하지만...
-@char sulbody3.45 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
 sul: 제가 뭘 할지는 제가 정...
 @char sulbody3.65 pose:bc wait:false
 아버지: 오늘 공연 잘 봤다.
@@ -298,7 +304,7 @@ sul: 아버지...
 아버지: ...
 아버지: 뒤에 계신 분은...
 아버지: 저번에 보셨던 분 맞으시죠..?
-{Player_name}: 네..?! 네? 저요..?
+{Player_name}: <size=50>네..?! 네? 저요..?</size>
 아버지: 네.
 {Player_name}: 마...맞습니다..?
 아버지: 오늘 공연 잘 봤습니다.
@@ -342,9 +348,8 @@ sul: 얼마 전에 공연 대금 들어와서...
 @char sulbody3.11 pose:bc wait:false
 아버지: 알았다. 이만 가보마.
 아버지: 혹시라도 말하고 싶은 거 있으면 언제든지 얘기하고...
-@char sulbody3.15 pose:bc wait:false
+@char sulbody3.71 pose:bc wait:false
 sul: 네... 조심히 들어가세요.
-@char sulbody3.11 pose:bc wait:false
 아버지: 그래...
 아버지: 이따 보자꾸나...
 아버지: ...
@@ -355,7 +360,7 @@ sul: 네... 조심히 들어가세요.
 아버지: 저희 나희 잘 부탁드리겠습니다.
 {Player_name}: 네...넵! 알겠습니다..!
 아버지: 그럼 이만 가보마.
-@char sulbody3.11 pose:bc wait:false
+@char sulbody3.72 pose:bc wait:false
 sul: 안녕히 가세요..!
 @hideChars time:0.5 wait:false
 @sfx Footsteps_Ctr_Male_Walker_02 volume:40 loop:false fade:0 wait:false
@@ -385,6 +390,8 @@ sul: {Player_name}...
 {Player_name}: 나희 누나...
 @char sulbody1.65 pose:bc wait:false
 @sfx Human_Hungry_01 volume:100 loop:false fade:0 wait:false
+@spawn ShakeCharacter wait:false params:,3
+@spawn ShakeBackground wait:false params:,3
 describe: 꼬르륵-!
 @char sulbody1.1 pose:bc wait:false
 sul: ...
@@ -393,10 +400,9 @@ sul: ...
 sul: 후훗..!
 {Player_name}: 하하하...
 @char sulbody1.57 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
 sul: 하하하하!!
 sul: ...
-@char sulbody1.52 pose:bc wait:false
-sul: 고마워...
 {Player_name}: 하하... 이제 진짜 뭐라도 먹으러 갈까요?
 @char sulbody1.62 pose:bc wait:false
 sul: 응..!

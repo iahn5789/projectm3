@@ -50,6 +50,7 @@ describe: 그것도 교복을 입은 고등학생 2명과 함께.
 describe: 물론 대부분의 관객들은 우리가 프리덤인줄 알고 있을 거다.
 describe: 라은이 올린 동영상을 봤다면 말이다.
 describe: 그래도... 동영상으로 봐서 아는 것과 직접 보는 건 차이가 큰 모양이었다.
+@spawn Blur wait:false
 관객: 뭐야..? 시작한 거야?
 관객: 나도 몰라...
 @sfx Crowd_Laugh_01 volume:90 loop:false fade:0 wait:false
@@ -58,6 +59,7 @@ describe: 그래도... 동영상으로 봐서 아는 것과 직접 보는 건 �
 관객: 낸들 아냐?
 관객: 그것도 못 봤냐? 얼굴 공개했잖아!
 관객: 그거랑 교복 입고 올라온 거랑은 다르지!
+@despawn Blur wait:false
 @char sulbody1.15 pose:c wait:false
 @sfx Common_Mic_Feedback_01 volume:90 loop:false fade:0 wait:false
 sul: 저...
@@ -69,9 +71,9 @@ describe: 나희 누나가 말을 시작하자 술렁이던 관중석은 어느�
 sul: 이미 아시는 분들은 아시겠지만...
 sul: 모르시는 분도 계실 수 있으니 정식으로 자기소개부터 하겠습니다.
 @hideChars time:0.5 wait:false
-@char sulbody2.15 pose:c wait:false
-sul: 저는..! 프리덤의 일원인...
 @char sulbody2.12 pose:c wait:false
+sul: 저는..! 프리덤의 일원인...
+@char sulbody2.52 pose:c wait:false
 sul: 설나희라고 합니다! 잘 부탁드립니다!
 describe: 관중석은... 여전히 조용했다.
 @hideChars time:0.5 wait:false
@@ -122,10 +124,10 @@ describe: 나희 누나는 나를 보며 싱긋 웃었다.
 describe: 그런 나희 누나의 표정에서는...
 describe: 이제 슬픔과 외로움은 보이지 않았다.
 
-@spawn Blur wait:false
+@despawn Blur wait:false
 @back Minicut_sul_11 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
 
-@char sulbody3.71 pose:c wait:false
+@char sulbody3.11 pose:c wait:false
 {Player_name}: ...
 sul: ...
 describe: 나희 누나는 이제 더 이상 할 말이 없는 듯싶었다.

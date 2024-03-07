@@ -15,6 +15,7 @@
 @processInput true
 @set LoadingValue=false
 
+@despawn Past01 wait:false
 관객: ...콜! 앵콜..!
 관객: 앵콜! 앵콜!
 describe: 어떻게 지나갔는지도 모르게 공연은 끝이 났다.
@@ -23,7 +24,7 @@ describe: 빛나는 응원봉이 마치 물결처럼 흔들리고 있었다.
 관객: 앵콜! 앵콜!
 관객: 앵콜!! 앵콜!!
 describe: 앵콜 요청이 끊임없이 나오고 있었다.
-@char sulbody3.12 pose:c wait:false
+@char sulbody3.61 pose:c wait:false
 describe: 나희 누나는 아무 말 없이 관중석을 바라보고 있었다.
 describe: 그런 나희 누나에게 재촉이라도 하듯 관중들의 목소리는 점점 커져갔다.
 describe: 그렇지만 나희 누나는 아무 말 없이 관중석을 바라보고 있을 뿐이었다.
@@ -31,21 +32,21 @@ describe: 무슨 생각을 하고 계신 걸까.
 describe: 만족감? 해방감? 성취감?
 describe: 그것도 아니라면 다른 무언가?
 describe: 무엇이 되었든...
+@char sulbody3.62 pose:c wait:false
 describe: 나희 누나의 표정은 밝아 보였다.
 describe: 슬픔도, 외로움도, 고민도 느껴지지 않는 표정.
 describe: 처음 나희 누나를 만났을 때는 상상도 하지 못했던 표정.
 describe: 나는 그거면 충분했다.
 describe: 그리고 이제는...
 describe: 그 표정이 내게로 향했다.
-@char sulbody3.15 pose:c wait:false
 sul: {Player_name}...
+@char sulbody3.67 pose:c wait:false
 sul: 준비됐어..?
-@char sulbody3.11 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 네..!
+@hideChars wait:false
 describe: 나희 누나는 고개를 돌려 관중석을 바라봤다.
 describe: 여전히 관중석은 앵콜을 원하는 목소리로 가득 차 있었다.
-@hideChars time:0.5 wait:false
 @char sulbody4.11 pose:c wait:false
 describe: 나희 누나가 손을 가볍게 들어 올렸다.
 describe: 관중석은 마치 기다렸다는 듯 일순간에 조용해졌다.
@@ -61,7 +62,7 @@ sul: 왜냐하면...
 @char sulbody4.11 pose:c wait:false
 sul: 오늘 공연을 마지막으로...
 @hideChars time:0.5 wait:false
-@char sulbody3.11 pose:bc wait:false
+@char sulbody3.17 pose:bc wait:false
 sul: 프리덤은 영원히 안녕이니까요..!
 @stopsfx Amb_Stadium_Crowd_01 fade:1 wait:false
 @stopsfx Crowd_Cheer_Clap_01 fade:1 wait:false
@@ -88,10 +89,11 @@ describe: 나는 가볍게 고개를 움직여 알았다는 신호를 보냈다,
 sul: 안녕히 계세요!
 @hideChars time:0.5 wait:false
 @sfx Whoosh_TestFinish_Text_02 volume:100 loop:false fade:0 wait:false
+@spawn ShakeBackground wait:false params:,3
 describe: 휘익-!
 describe: 나희 누나는 몸을 돌려 내 손을 잡았다.
 @char sulbody4.67 pose:bc wait:false
-sul: {Player_name}! 가자!
+sul: <size=50>{Player_name}! 가자!</size>
 describe: 고민 따윈 보이지 않는 눈.
 describe: 슬픔 따윈 보이지 않는 입.
 describe: 그리고... 나와 함께 걷고자 하는 표정.
@@ -112,14 +114,14 @@ describe: 그리고... 나와 함께 걷고자 하는 표정.
 @processInput true
 @set LoadingValue=false
 
-@char sulbody1.55 pose:c wait:false
+@char sulbody1.85 pose:c wait:false
 sul: 후우...
-@char sulbody1.17 pose:c wait:false
+@char sulbody1.65 pose:c wait:false
 sul: 괜찮아..?
 {Player_name}: 하아... 공연하고 바로 뛰었더니...
 {Player_name}: 조금 숨이 차네요...
 {Player_name}: 누나는 괜찮으세요..?
-@char sulbody1.67 pose:c wait:false
+@char sulbody1.64 pose:c wait:false
 sul: 나..? 나는 뭐...
 @char sulbody1.62 pose:c wait:false
 sul: 어차피 노래도 네가 다 불렀잖아?
@@ -131,6 +133,7 @@ sul: 후훗..!
 {Player_name}: ..?
 @hideChars time:0.5 wait:false
 @char sulbody3.57 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,5
 sul: 하하하하!
 {Player_name}: 하하...
 {Player_name}: 하하하!
@@ -140,6 +143,7 @@ describe: 한번 터져 나온 웃음은 멈출 줄을 몰랐다.
 describe: 가볍게 시작한 웃음이었지만, 이제는 서있지 못할 정도로 웃고 있었다.
 describe: 아무도 없는 복도에서 우리 둘은 한동안 미친 듯이 웃었다.
 sul: 하하하... 하하...
+@char sulbody3.77 pose:c wait:false
 sul: 너무 웃었더니 눈물이 다 나오네.
 describe: 나희 누나는 눈가를 손으로 살짝 닦았다.
 {Player_name}: 아... 배 아파...
@@ -156,7 +160,8 @@ sul: 흐음... 글쎄...
 @char sulbody3.61 pose:c wait:false
 @sfx Common_Whistle_01 volume:100 loop:false fade:0 wait:false
 보안요원A: 돌아가세요! 여기 함부로 오시면 안 됩니다!
-la: 잠시만요..! 진짜 잠깐이면 된다니까요?
+@spawn ShakeBackground wait:false
+la: <size=50>잠시만요..! 진짜 잠깐이면 된다니까요?</size>
 보안요원B: 관계자 외 출입 금지 안보이세요?
 la: 저도 어엿한 기자라고요! 기자가 인터뷰하겠다는데 왜 막아요!
 보안요원A: 아무리 기자여도 이렇게 함부로 들어오시면 안됩니다!
@@ -180,7 +185,7 @@ sul: 고생 좀 할 거 같은데...
 @char sulbody2.11 pose:c wait:false
 {Player_name}: 그럼... 일단 나갈까요?
 @hideChars time:0.5 wait:false
-@char sulbody1.12 pose:bc wait:false
+@char sulbody2.52 pose:bc wait:false
 sul: 응..!
 @stopbgm BGM_Map_Cool_01 fade:1 wait:false
 @stopsfx Amb_Room_Tone_02 fade:1 wait:false

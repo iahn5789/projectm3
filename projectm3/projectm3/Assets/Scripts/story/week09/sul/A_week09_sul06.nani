@@ -21,12 +21,11 @@ sul: 이제 좀 살 것 같네...
 describe: 나희 누나가 먹는 양은...
 describe: 정말 언제 봐도 경이롭다.
 @hideChars time:0.5 wait:false
-@char sulbody4.15 pose:c wait:false
+@char sulbody4.82 pose:c wait:false
 @sfx Common_Bell_Tree_NoHarp_01 volume:40 loop:false fade:0 wait:false
 sul: 이제 디저트 먹으러 갈까?
-@char sulbody4.11 pose:c wait:false
 {Player_name}: 디... 디저트요..?
-@char sulbody4.65 pose:c wait:false
+@char sulbody4.67 pose:c wait:false
 sul: 밥 먹었으면 디저트 먹으러 가야지!
 sul: 뭐 먹고 싶은 거 있어?
 @char sulbody4.61 pose:c wait:false
@@ -45,15 +44,15 @@ sul: 아니면... 노래방이라도 가볼래?
 @char sulbody3.81 pose:c wait:false
 {Player_name}: 노래방이요..?
 @hideChars time:0.5 wait:false
-@char sulbody2.15 pose:c wait:false
+@char sulbody2.75 pose:c wait:false
 sul: 나 노래방을 한번도 안 가봤어가지고...
+@char sulbody2.77 pose:c wait:false
 sul: 너랑 한번 가보고 싶어...
-@char sulbody2.11 pose:c wait:false
+@char sulbody2.67 pose:c wait:false
 {Player_name}: 그럼 노래방 가보실래요?
 {Player_name}: 저도 가본 지 좀 되긴 했는데...
-@char sulbody2.15 pose:c wait:false
+@char sulbody2.87 pose:c wait:false
 sul: 언제 마지막으로 가봤는데?
-@char sulbody2.11 pose:c wait:false
 {Player_name}: 전학 오기 전에 마지막으로 가보고 안 가봤으니까...
 {Player_name}: 한 두, 세달 정도 된 것 같...
 {Player_name}: ..!
@@ -106,9 +105,9 @@ describe: 이대로 가다간 들키는 건 시간문제였다.
 sul: ...
 {Player_name}: 나희 누나...
 @hideChars time:0.5 wait:false
-@char sulbody4.15 pose:bc wait:false
-sul: {Player_name}...
 @char sulbody4.75 pose:bc wait:false
+sul: {Player_name}...
+@char sulbody4.74 pose:bc wait:false
 sul: 미안..!
 {Player_name}: 네..? 뭐가 미안...
 @hideChars time:0.5 wait:false
@@ -148,13 +147,13 @@ describe: 아니면... 모두가 우리를 위해서 멈춘 걸까..?
 @stopsfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
 @bgm BGM_Map_Cool_01 volume:40 loop:true fade:1 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
-기자A: 분명히 본 것 같은데...
-기자B: 잘못 본 거 아니야?
-기자A: 확실히 봤다니까!
-기자B: 교복 입은 사람이 한, 둘도 아닌데 어떻게 확신하는데?
-기자A: 그...
-기자A: 그런가..?
-기자B: 어휴! 믿은 내가 바보지...
+la: 분명히 본 것 같은데...
+la: 잘못 본 건가?
+la: 아닌데... 분명히 봤는데!
+la: 아휴! 교복 입은 사람이 왜 이렇게 많아!!
+la: ...
+la: 벌써 도망간건가..?
+la: 으으..!!
 
 @set LoadingValue=true
 @processInput false
@@ -168,7 +167,7 @@ describe: 아니면... 모두가 우리를 위해서 멈춘 걸까..?
 @processInput true
 @set LoadingValue=false
 
-describe: 기자들은 다행히 우리를 못 본 듯했다.
+describe: 라은은 다행히 우리를 못 본 듯했다.
 describe: 아마 고개를 돌리고 있어서 그랬나 보다.
 describe: 더군다나 키스까지 하고 있었으니...
 describe: 민망한 마음에 보지 않았을지도 몰랐다.
@@ -212,13 +211,15 @@ describe: 살며시 올려다보는 나희 누나의 시선이 내 눈에 가득
 describe: 반짝이며 비치는 나희 누나의 눈동자에는...
 describe: 내 얼굴이 가득 찼다.
 describe: 나희 누나의 입술이 조금씩 움직이기 시작했다.
-@char sulbody1.65 pose:bc wait:false
-sul: 우리...
 @char sulbody1.75 pose:bc wait:false
+sul: 우리...
+@char sulbody1.74 pose:bc wait:false
 sul: 이대로... 조금만 더 있을까..?
+@spawn Blur wait:false
 describe: 나희 누나의 향기가 더 가까워졌다.
 describe: 손에서만 느껴지던 나희 누나의 따스함이...
 describe: 더 많은 곳에서 느껴지기 시작했다.
+@char sulbody1.72 pose:bc wait:false
 describe: 하늘이, 바닥이 기울어졌다.
 describe: 시간이...
 describe: 다시 한번 멈췄다.
