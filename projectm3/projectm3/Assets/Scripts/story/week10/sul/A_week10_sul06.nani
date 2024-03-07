@@ -28,16 +28,17 @@ sul: 이상한가..?
 sul: 그래도 내 눈에는 잘 생겼는데..?
 {Player_name}: 크... 크흠...
 @hideChars time:0.5 wait:false
-@char sulbody3.75 pose:c wait:false
+@char sulbody3.57 pose:c wait:false
 sul: 나는..? 닮았어?
-@char sulbody3.71 pose:c wait:false
 {Player_name}: 누나는...
 @sfx Common_Paper_Crumple_01 volume:80 loop:false fade:0 wait:false
 describe: 나는 그림을 꺼내 누나에게 보여줬다.
 {Player_name}: 닮긴 닮았는데...
-@char sulbody3.3 pose:bc wait:false
+@hideChars wait:false
+@char sulbody2.3 pose:bc wait:false
 sul: 닮았는데..?
 {Player_name}: 실물이 훨씬 예쁘세요.
+@hideChars wait:false
 @char sulbody3.23 pose:c wait:false
 sul: 그래..? 립서비스 아니야?
 {Player_name}: 진짜예요..!
@@ -53,12 +54,14 @@ sul: 난... 너한테 예쁘다는 말을 듣고 싶은걸?
 sul: 뭐라고..? 안 들려-
 @char sulbody3.65 pose:c wait:false
 @sfx Common_Whistle_01 volume:80 loop:false fade:0 wait:false
-{Player_name}: 예뻐요!!
+@spawn ShakeBackground wait:false params:,3
+{Player_name}: <size=50>예뻐요!!</size>
 describe: 주변에 지나가는 사람들이 길을 멈추고 나를 쳐다봤다.
 @char sulbody3.61 pose:c wait:false
 {Player_name}: ...
 @hideChars time:0.5 wait:false
 @char sulbody1.52 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
 sul: 푸훗..!
 {Player_name}: 빠... 빨리 가죠..!
 @char sulbody1.12 pose:bc wait:false
@@ -73,7 +76,7 @@ sul: 나...
 sul: ...
 {Player_name}: ..?
 {Player_name}: 누나..?
-@char sulbody1.16 pose:bc wait:false
+@char sulbody1.63 pose:bc wait:false
 sul: 응..?
 {Player_name}: 진짜... 괜찮으신 거 맞으세요..?
 @char sulbody1.71 pose:bc wait:false
@@ -89,19 +92,18 @@ sul: ...
 {Player_name}: 설령... 제가 도와드릴 수 없는 일이라 해도...
 {Player_name}: 그래도... 꼭 같이 있어드릴게요!
 @hideChars time:0.5 wait:false
-@char sulbody3.11 pose:bc wait:false
+@char sulbody3.71 pose:bc wait:false
 sul: ...
-@char sulbody3.15 pose:bc wait:false
+@char sulbody3.74 pose:bc wait:false
 sul: 진짜야?
 @char sulbody3.75 pose:bc wait:false
 sul: 진짜로... 나랑 같이 있어줄거야..?
-@char sulbody3.75 pose:bc wait:false
+@char sulbody3.710 pose:bc wait:false
 sul: 무슨 일이 있어도?
 @char sulbody3.71 pose:bc wait:false
 {Player_name}: 당연하죠!
 @char sulbody3.61 pose:bc wait:false
 {Player_name}: 전... 누나 남자친구잖아요!
-@char sulbody3.61 pose:bc wait:false
 sul: ...
 @char sulbody3.65 pose:bc wait:false
 sul: 나...
@@ -142,7 +144,7 @@ sul: 또 도망쳐버렸어...
 @sfx Common_Cloth_movement_02 volume:80 loop:false fade:0 wait:false
 describe: 나는 나희 누나의 두 손을 꼭 잡았다.
 
-@spawn Blur wait:false
+@despawn Blur wait:false
 @back Minicut_sul_14 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
 
 @hideChars time:0.5 wait:false
@@ -174,12 +176,12 @@ sul: ...
 sul: 아니야...
 sul: 나... 해외로 가기로 했어...
 sul: 부모님 때문에 가는 건 아니야...
-@char sulbody3.15 pose:bc wait:false
+@char sulbody3.710 pose:bc wait:false
 sul: 그렇지만...
 sul: 내가 진정으로 원하는 걸 하기 위해선...
 sul: 그게 맞는 길이라 생각했어...
 sul: 가지 않고 남아 있으면...
-@char sulbody3.65 pose:bc wait:false
+@char sulbody3.72 pose:bc wait:false
 sul: 너와 같이 있을 수 있겠지만...
 sul: 그렇게 타협하면...
 @char sulbody3.75 pose:bc wait:false
@@ -191,6 +193,7 @@ sul: ...
 sul: 미안해...
 sul: 너한테... 꼭... 말해 줬어야 하는데...
 sul: 너무... 무서워서...
+@char sulbody3.75 pose:bc wait:false
 sul: 네가 날... 떠나버릴까 봐...
 sul: 다시... 내 곁에...
 sul: 아무도 남지 않을까 봐...
@@ -199,6 +202,7 @@ sul: 아무도 남지 않을까 봐...
 {Player_name}: 누나... 진심이세요..?
 {Player_name}: 해외로 간다는 그 말씀... 진심이 신 건가요..?
 sul: ...
+@spawn ShakeBackground wait:false params:,3
 describe: 나희 누나는 말없이 고개를 살짝 끄덕이기만 할 뿐이었다.
 {Player_name}: ...
 {Player_name}: 나희 누나.
@@ -206,15 +210,14 @@ sul: ...
 {Player_name}: 나희 누나..!
 describe: 나는 나희 누나의 어깨를 잡고 말했다.
 @hideChars time:0.5 wait:false
-@char sulbody1.11 pose:bc wait:false
+@char sulbody1.65 pose:bc wait:false
 sul: 응..?
 {Player_name}: ...
 @char sulbody1.61 pose:bc wait:false
 {Player_name}: 잘 다녀오세요.
 {Player_name}: 언제까지고... 기다릴게요..!
-@hideChars time:0.5 wait:false
-@char sulbody3.11 pose:bc wait:false
 sul: ...
+@hideChars wait:false
 @char sulbody3.75 pose:bc wait:false
 sul: 너는...
 sul: 이번에도 날 위해주는 거야..?
@@ -283,12 +286,13 @@ sul: ...
 운전기사: 비행기 시간 얼마 안 남았습니다.
 운전기사: 이제 정말 가보셔야 합니다.
 sul: ...
+@char sulbody3.75 pose:c wait:false
 sul: 네...
+@hideChars wait:false
 describe: 나희 누나는 차량 쪽으로 몸을 돌렸다.
 describe: 문에 타려던 나희 누나는 잠시 멈춘 채 나를 바라봤다.
-@char sulbody3.15 pose:c wait:false
+@char sulbody3.72 pose:c wait:false
 sul: 나... 끝까지 이기적인가..?
-@char sulbody3.11 pose:c wait:false
 {Player_name}: ...
 {Player_name}: 아뇨...
 @char sulbody3.71 pose:c wait:false
@@ -312,6 +316,7 @@ describe: 문이 닫히고... 차가 출발했다.
 describe: 나희 누나가 찬 타는... 점점 멀어져 갔고...
 describe: 이내 내 시야에서 완전히 사라져 버렸다.
 describe: ...
+@spawn Blur wait:false
 describe: 이 넓은 도시에서...
 describe: 또다시 혼자가 되었다.
 describe: 처음 전학을 왔을 때처럼...

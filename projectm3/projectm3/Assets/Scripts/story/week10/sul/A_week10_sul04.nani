@@ -76,26 +76,29 @@ describe: 그때.
 보안요원: 어떻게 들어오신 거죠?
 보안요원: 여기 계시면 안 됩니다. 당장 나가주세요.
 {Player_name}: 어..? 어?
+@style size=30
 {Player_name}: 보안요원인데요..?
 {Player_name}: 어떻게 올 때마다 만나냐...
 {Player_name}: 제가 대충 말하고 있을 테니...
 {Player_name}: 도망칠까요?
 @char sulbody3.37 pose:bc wait:false
-sul: 나 신발이 조금 그래서 뛰기 힘든데...
+sul: <size=30>나 신발이 조금 그래서 뛰기 힘든데...</size>
 @char sulbody3.32 pose:bc wait:false
 {Player_name}: 그럼... 일단 제가 뭐라도 말해볼...
 @sfx Common_Emotion_Question_01 volume:80 loop:false fade:0 wait:false
+@style default
 보안요원: 어..?
 @hideChars time:0.5 wait:false
 @char sulbody1.65 pose:bc wait:false
 보안요원: 혹시... 프리덤 맞으신가요?
+@spawn ShakeCharacter wait:false params:,3
 sul: 네..?
 @char sulbody1.61 pose:bc wait:false
-보안요원: 프리덤 맞으시죠? 여기서 공연하셨잖아요!
+보안요원: <size=50>프리덤 맞으시죠?</size>  여기서 공연하셨잖아요!
 @char sulbody1.75 pose:bc wait:false
 sul: 맞긴 한데...
-@char sulbody1.71 pose:bc wait:false
 @sfx Common_Bell_Tree_NoHarp_01 volume:80 loop:false fade:0 wait:false
+@char sulbody1.65 pose:bc wait:false
 보안요원: 저도 진짜 팬이었어요!
 보안요원: 근무만 아니었으면 공연 봤을 텐데...
 보안요원: 하필 그때 근무하고 있었어 가지고...
@@ -164,7 +167,7 @@ sul: 나는 현실을 외면하고 숨은 거라고 생각하고 있었는데...
 sul: 그래도... 마냥 헛된 시간은 아니었다는 생각이 들어서
 @char sulbody3.76 pose:bc wait:false
 sul: ...
-@char sulbody3.75 pose:bc wait:false
+@char sulbody3.72 pose:bc wait:false
 sul: 이제... 정말 괜찮아.
 @char sulbody3.52 pose:bc wait:false
 sul: 영화 보러 가자! 늦겠다...

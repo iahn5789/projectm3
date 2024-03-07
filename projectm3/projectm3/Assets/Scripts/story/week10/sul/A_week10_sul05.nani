@@ -24,9 +24,8 @@ describe: 따스하고 부드러운 손.
 describe: 그 위로 느껴지는 차가운 감촉.
 @char sulbody3.71 pose:c wait:false
 sul: ...
-@char sulbody3.75 pose:c wait:false
+@char sulbody3.72 pose:c wait:false
 sul: 고마워...
-@char sulbody3.71 pose:c wait:false
 @stopSfx Amb_Cold_Wind_01 fade:1 wait:false
 {Player_name}: 이제 좀 괜찮으세요?
 @char sulbody3.76 pose:c wait:false
@@ -54,12 +53,14 @@ sul: 괜찮아..!
 sul: 이 정도는...
 @hideChars time:0.5 wait:false
 @sfx Footsteps_Sand_03 volume:80 loop:false fade:0 wait:false
+@spawn Blur wait:false
 describe: 나는 나희 누나와 함께 걷기 시작했다.
 describe: 추워진 날씨에도 불구하고 여전히 사람들은 많았다.
 describe: 적당히 사람들을 지나쳐 가면서 목적 없이 걷고 있었다.
 describe: 나희 누나는... 어딘가 불편해 보였다.
 describe: 무슨 일이 있으신 걸까..?
 describe: 그래도... 나는 나희 누나와 함께하기로 했으니까...
+@despawn Blur wait:false
 @char sulbody2.61 pose:bc wait:false
 sul: 어..?
 {Player_name}: ..?
@@ -87,7 +88,7 @@ describe: 나는 나희 누나의 손을 잡았다.
 {Player_name}: 나희 누나랑 같이 있으면... 저는 뭐든지 좋아요!
 @char sulbody2.61 pose:bc wait:false
 sul: ...
-@char sulbody2.65 pose:bc wait:false
+@char sulbody2.72 pose:bc wait:false
 sul: 고마워...
 @hideChars time:0.5 wait:false
 describe: 나희 누나와 나는 다가가 그림을 그려줄 수 있냐고 물어봤다.
@@ -112,15 +113,15 @@ describe: 화가는 본격적으로 그림을 그리기 시작했다.
 @char sulbody3.75 pose:bc wait:false
 sul: 그...건 아닌데...
 sul: 그냥...
+@char sulbody3.72 pose:bc wait:false
 sul: 추억이 조금 있어서요...
-@char sulbody3.71 pose:bc wait:false
 화가: 무슨 추억이 있으시길래 졸업 후에도 교복을 입어요?
 sul: ...
 @hideChars time:0.5 wait:false
 @char sulbody2.75 pose:bc wait:false
 sul: 교복으로 갈아입고 있을 때...
 sul: 남자친구가 아직 사귀기 전에...
-@char sulbody2.65 pose:bc wait:false
+@char sulbody2.85 pose:bc wait:false
 sul: 방문을 벌컥 열더라고요..!
 화가: 네?! 허허...
 화가: 요즘 친구들은 다르긴 하네...
@@ -130,6 +131,7 @@ sul: 방문을 벌컥 열더라고요..!
 @char sulbody2.62 pose:bc wait:false
 화가: 사고 쳤다고요?
 @char sulbody2.52 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
 sul: 후훗..!
 {Player_name}: 그... 그게 아니라..!
 {Player_name}: 나희 누나..! 뭐라고 말 좀 해주세요..!
