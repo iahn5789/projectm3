@@ -18,7 +18,7 @@
 describe: 교무실에서 나와 나희 누나를 찾기 위해 교문 앞까지 달려왔다.
 {Player_name}: (벌써... 학교 밖으로 나가신 건가..?)
 {Player_name}: (그렇다고 보기엔...)
-describe: 나희 오토바이는 아직 학교 안에 있었다.
+describe: 나희 누나의 오토바이가 아직 학교 안에 있었다.
 describe: 하지만 나희 누나의 모습은 보이지 않았다.
 {Player_name}: 후우...
 describe: 어째서...
@@ -82,10 +82,12 @@ la: 생각도 없고, 주관도 없이 인터넷에서 돌이나 던질 것 같�
 la: 나야.
 {Player_name}: ..?
 @char labody1.64 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
 la: 나라고. 그 영상 만든 사람.
 @char labody1.61 pose:bc wait:false
 {Player_name}: 뭐..?
 @char labody1.44 pose:bc wait:false
+@spawn ShakeBackground wait:false params:,3
 la: 네가 말한 쓰레기 같은 렉카 영상 만든 사람이 나라고.
 la: 축제 때 동영상은 누가 올렸을 것 같아?
 la: 왜 공연장까지 몰래 들어갔을 것 같은데?
@@ -97,7 +99,7 @@ la: 내가 분명히 말했지. 난 '정의'를 위해서 일한다고.
 @char labody4.44 pose:bc wait:false
 la: 그런 쓰레기들이랑 비교하지 말아 줄래? 기분 나쁘니까.
 @char labody4.41 pose:bc wait:false
-{Player_name}: 지금 뭐 하자는 거야!
+{Player_name}: <size=50>지금 뭐 하자는 거야!</size>
 {Player_name}: 너 때문에 나희 누나가 얼마나 힘들어했는지 알기나 해?
 @hideChars time:0.5 wait:false
 @char labody3.62 pose:bc wait:false
@@ -107,6 +109,8 @@ la: 왜? 자업자득 아닌가?
 la: 뭘 했냐고? 진짜 몰라서 그러는 거야?
 @hideChars time:0.5 wait:false
 @char labody1.44 pose:bc wait:false
+@spawn ShakeBackground wait:false params:,3
+@spawn ShakeCharacter wait:false params:,3
 la: 사람들을 속였잖아!
 @char labody1.41 pose:bc wait:false
 {Player_name}: 공연하는게 사람들을 속이는 거라고?
@@ -120,26 +124,34 @@ la: 나는 진실을 밝히는 사람이고!
 {Player_name}: 믿고 싶은 것만 믿으면서 생각하고 싶은 대로 생각하잖아!
 {Player_name}: 너야말로 사람들을 속이고 있으면서 왜 그건 모르는데?
 @hideChars time:0.5 wait:false
-@char labody3.64 pose:bc wait:false
+@char labody3.12 pose:bc wait:false
 la: 정의의 가혹한 대가야. 너 같은 사람은 모르겠지.
+@char labody3.22 pose:bc wait:false
 la: 때론 무지한 대중들을 이끌어 줄 사람들이 필요하거든.
-@char labody3.81 pose:bc wait:false
+@hideChars wait:false
+@char labody2.82 pose:bc wait:false
 la: 아무튼. 이렇게 된 이상 사실대로 얘기해줘야겠어.
+@char labody2.62 pose:bc wait:false
 la: 나희 언니가 있었다면 제일 좋았겠지만...
+@char labody2.63 pose:bc wait:false
 la: 그건 천천히 하도록 하고...
+@char labody2.23 pose:bc wait:false
 la: 일단은 아쉬운 대로 너라도 쥐어짜야지.
+@char labody2.22 pose:bc wait:false
 la: 둘이 무슨 일이 있었는지, 어디서부터 시작했는지 자세히 말해줘야겠어.
 {Player_name}: 내가 너한테 얘기해줄 것 같아?
 @hideChars time:0.5 wait:false
 @char labody1.62 pose:bc wait:false
 la: 후훗. 날 너무 쉽게 생각하는 거 아니야?
+@char labody1.82 pose:bc wait:false
 la: 조금만 있으면 술술 불게 될...
 @sfx Common_Whistle_01 volume:80 loop:false fade:0 wait:false
 ???: 잠까아안-!!
-@char labody1.74 pose:bc wait:false
+@char labody1.57 pose:bc wait:false
 la: 엥? 저건 무슨...
 {Player_name}: 설마...
 @hideChars time:0.5 wait:false
+@spawn ShakeBackground wait:false params:,3
 describe: 쿠웅-!
 @char jeonbody4.35 pose:c wait:false
 jeon: {Player_name}!!
@@ -149,7 +161,7 @@ la: 으윽...
 @hideChars time:0.5 wait:false
 @char jeonbody1.13 pose:c wait:false
 jeon: 나! 사나이 전대용!!
-jeon: 너를 진정한 신사로 인정한다!!
+jeon: <size=50>너를 진정한 신사로 인정한다!!</size>
 {Player_name}: 엥..?
 @hideChars time:0.5 wait:false
 @char jeonbody4.35 pose:c wait:false
@@ -170,6 +182,7 @@ describe: 어쨌든 대용이가 갑자기 등장할 줄은 몰랐다.
 @char jeonbody3.15 pose:c wait:false
 jeon: 지금 그게 중요한 게 아니야!
 @char jeonbody3.11 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,3
 jeon: {Player_name}! 여긴 내가 맡을 테니 어서 가보라고!
 {Player_name}: 가보라니... 그게 무슨...
 @hideChars time:0.5 wait:false
@@ -183,22 +196,39 @@ jeon: 같은 프리덤을 내버려둘 건가?
 @char jeonbody4.43 pose:c wait:false
 jeon: 어허! 그렇게 여자의 마음을 몰라서야!
 @char jeonbody4.44 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,3
 jeon: 내가 장담하는데 나희 누나는 널 기다리고 있을 거라고?
 {Player_name}: 날... 기다린다고?
+@set LoadingValue=true
+@processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 @char sulbody3.76 pose:bc wait:false
-sul: 제가... 제가...
-@char sulbody3.75 pose:bc wait:false
-sul: 제가 좋아하니까요!!
+sul: <size=25>제가...</size> <size=30>제가...</size>
+@char sulbody3.77 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
+sul: <size=50>좋아하니까요!!</size>
+@set LoadingValue=true
+@processInput false
 @hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back ScMaingate01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
 {Player_name}: ...
 {Player_name}: 그래도 어디 계신지도 모르는데...
 @char jeonbody4.44 pose:c wait:false
-jeon: 그건 내가 잘 알지!
+jeon: <size=50>그건 내가 잘 알지!</size>
 @char jeonbody4.11 pose:c wait:false
 jeon: 나희 누나는 지금 학교 옥상에 계신다!
 {Player_name}: 옥상..?
@@ -207,6 +237,7 @@ jeon: 나희 누나는 지금 학교 옥상에 계신다!
 @char jeonbody2.35 pose:bc wait:false
 jeon: ...가끔 남자에게는 말 못 할 비밀들이 있지...
 @char jeonbody2.33 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
 jeon: 더는 묻지 마라...!
 @char jeonbody2.35 pose:bc wait:false
 la: 가긴 어딜 가! 내가 가만둘 것 같아?
@@ -218,13 +249,14 @@ la: 저리 비켜! 야! 거기 안 서?
 {Player_name}: (믿어도 되겠지..?)
 @hideChars time:0.5 wait:false
 @char labody2.84 pose:bc wait:false
-la: {Player_name}!!
+la: <size=50>{Player_name}!!</size>
 @char labody2.54 pose:bc wait:false
 la: 거기 딱 기다...
 @hideChars time:0.5 wait:false
 @char labody2.54 pose:l wait:false
 @char jeonbody2.33 pose:r wait:false
-jeon: 잠깐!
+@spawn ShakeCharacter wait:false params:,3
+jeon: <size=50>잠깐!</size>
 @char labody2.54 pose:l wait:false
 @char jeonbody2.35 pose:r wait:false
 la: 뭐...뭐야..!
@@ -239,15 +271,15 @@ jeon: 사랑합니다..!
 @char labody2.11 pose:l wait:false
 la: ...
 @char labody2.71 pose:l wait:false
-la: !!!!
+la: <size=50>!!!!</size>
 @char jeonbody2.23 pose:r wait:false
 jeon: 사랑합니다 라은씨!!
 @char labody2.74 pose:l wait:false
-la: 하... 하지마..!
+la: <size=60>하... 하지마..!</size>
 jeon: 제 마음을... 부디 받아주세요!
-@char labody2.75 pose:l wait:false
+@char labody2.44 pose:l wait:false
 la: 저리가..! 저리 가란 말이..!!
-@char labody2.83 pose:l wait:false
+@char labody2.84 pose:l wait:false
 la: 우웩...
 @hideChars time:0.5 wait:false
 {Player_name}: (막는다는 게 저런 거였어..?)
@@ -257,7 +289,8 @@ describe: 라은은 날 쫓아올 생각은 하지 못하고 바닥에 주저앉
 la: 그... 그만..!
 @char jeonbody1.24 pose:bc wait:false
 jeon: 라은씨...
-la: 꺄악-!!
+@spawn ShakeBackground wait:false params:,3
+la: <size=70>꺄악-!!</size>
 @hideChars time:0.5 wait:false
 {Player_name}: (대용아... 고마워..!)
 describe: 나는 대용이와 라은을 뒤로한 채 학교의 옥상으로 달려갔다.

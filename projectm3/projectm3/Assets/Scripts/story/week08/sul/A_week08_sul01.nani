@@ -47,23 +47,30 @@
 {Player_name}: (후우... 오늘 하루도 드디어 끝났네.)
 {Player_name}: (그럼 슬슬 동아리실로 가볼...)
 @stopsfx Common_Breaktime_Belltower_01 fade:1 wait:false
+@spawn Blur wait:false
+@style size=30
 학생A: 쟤가 그러니까...
 학생B: 그렇다니까!
 학생A: 너 알고 있었어?
 학생B: 그걸 내가 어떻게 아냐!
 학생A: 아니 그럼 맨날 혼자 다니던 게...
+@style size=40
 {Player_name}: ..?
 describe: 어쩐지 요즘 들어 내 주변에서 쑥덕거리는 일이 늘어났다.
 describe: 무슨 일이냐고 물어보고는 싶지만...
 describe: 괜히 또 내가 오지랖 부리는 건가 싶어 물어보고 있지는 않았다.
 {Player_name}: (설마 내 얘기 하는 건 아니겠지..?)
+@style size=30
 학생A: 가서 물어봐!
 학생B: 내가 왜..! 난 쟤랑 친하지도 않단 말이야!
 학생A: 누군 친한 줄 아냐?
 학생B: 그래서 나보고 어쩌라는 거야!
 학생A: 뭘 어쩌긴 어째..!
+@style size=40
 {Player_name}: (어째 내 얘기를 하는 것 같기도 하고...)
+@despawn Blur wait:false
 @sfx Common_Sliding_Door_Open_02 volume:100 loop:false fade:0 wait:false
+@spawn ShakeBackground wait:false params:,3
 describe: 드르륵- 쾅-!
 @char jeonbody4.35 pose:c wait:false
 jeon: ...
@@ -78,7 +85,10 @@ jeon: ...
 jeon: {Player_name}...
 {Player_name}: 응?
 @char jeonbody4.35 pose:c wait:false
+@spawn ShakeCharacter wait:false params:,3
+@style size=50
 jeon: 넌... 진정한 신사가 아니다!
+@style size=40
 {Player_name}: ..?
 {Player_name}: 뜬금없이 무슨 신사...
 @hideChars time:0.5 wait:false
@@ -88,16 +98,22 @@ jeon: 너를 믿고, 또 친구로 생각했다!
 @char jeonbody1.35 pose:bc wait:false
 jeon: 그런데... 그런데...
 @char jeonbody1.33 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
+@style size=50
 jeon: 넌 이 몸과의 우정을 헌신짝처럼 저버렸다!
+@style size=40
 {Player_name}: 갑자기 찾아와서 무슨 헛소리야.
 @sfx Common_Plastic_Hit_Oneshot_01 volume:100 loop:false fade:0 wait:false
+@spawn Shakebackground params:,3 wait:false
 describe: 툭-!
 describe: 대용이는 핸드폰을 책상 위로 던졌다.
 @hideChars time:0.5 wait:false
 @char jeonbody4.15 pose:bc wait:false
 jeon: 이걸 보고도 그런 말이 나오나?
 {Player_name}: 이건 또 뭔...
+@style size=50
 {Player_name}: !!
+@style size=40
 describe: 대용이가 보여준 건 다름 아닌...
 describe: 나희 누나와 내가 저번 주에 무대 위에 있는 모습이 담긴 동영상이었다.
 describe: 그 자리에 있던 누군가가 찍어 너튜브에 올린 모양이었다.
@@ -119,7 +135,7 @@ jeon: 나는 네게 내 루틴까지도 알려줬는데!
 {Player_name}: 그...건 솔직히 별로 알고 싶지 않...
 @hideChars time:0.5 wait:false
 @char jeonbody1.15 pose:bc wait:false
-jeon: 그만!! 그만...
+jeon: <size=50>그만!!</size> 그만...
 @char jeonbody1.14 pose:bc wait:false
 jeon: 그 더러운 입에서 나오는 변명 따위는 듣고 싶지 않다...
 {Player_name}: (변명이 아니고 진짠데...)
@@ -141,11 +157,14 @@ jeon: 다시는..! 다시는 너를 보고 싶지 않다...
 @char jeonbody4.35 pose:bc wait:false
 jeon: 흥..! 보나 마나 또 간사한 변명일 뿐이겠지!
 @char jeonbody4.33 pose:bc wait:false
+@style size=50
 jeon: 듣고 싶지 않아!
+@style size=40
 {Player_name}: 대용아!
 @hideChars time:0.5 wait:false
 @sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
-describe: 쾅-!
+@spawn ShakeBackground wait:false params:,3
+describe: <size=50>쾅-!</size>
 describe: 대용이는 듣고 싶지 않다는 말과 함께 교실 문을 닫고 사라졌다.
 describe: 그 우람한 풍채의 뒷모습에서는... 어쩐지 쓸쓸함이 느껴졌다.
 {Player_name}: (대용아...)

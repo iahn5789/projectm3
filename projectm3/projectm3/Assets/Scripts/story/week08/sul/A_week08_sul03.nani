@@ -30,7 +30,7 @@
 describe: 한갑수 선생님과 함께 교무실에 들어왔다.
 describe: 교무실에는 다른 선생님이 누군가에게 진땀을 흘리며 해명하고 있었다.
 describe: 그리고...
-@char sulbody3.81 pose:bc wait:false
+@char sulbody3.11 pose:bc wait:false
 sul: ...
 describe: 그 학부모라는 사람의 옆에는 나희 누나가 있었다.
 describe: 나희 누나는 아무런 표정도 짓고 있지 않았다.
@@ -59,7 +59,7 @@ describe: 어떠한 것에도 관심이 없어 보이는... 그런 표정이었�
 아버지: ...
 아버지: 거기 학생분도 계속 서 있지 마시고 와서 앉으시지요.
 describe: 선생님과 줄곧 '대화' 중이던 나희 누나의 아버지께서 내 쪽으로 시선을 돌리며 말씀하셨다.
-{Player_name}: 네? 저...저요?
+{Player_name}: <size=50>네? 저...저요?</size>
 아버지: {Player_name}. 맞으시죠?
 {Player_name}: 네... 제가 맞긴 한 데...
 아버지: 저희 딸이 신세를 조금 졌다고 들었습니다.
@@ -87,10 +87,17 @@ describe: 아마 원하던 대답이 아닌 모양이었다.
 {Player_name}: 그리고 같은 밴드를 하기도 했고...
 아버지: 그 밴드라는 거. 언제부터 하신 거죠?
 {Player_name}: 저는...
+@despawn Blur wait:false
+@back Minicut_sul_10 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
 describe: 나는 나희 누나의 아버지에게 대답하기 전, 나희 누나를 쳐다봤다.
+@char sulbody3.11 pose:bc wait:false
 describe: 나희 누나는 여전히 아무런 표정도 짓고 있지 않았다.
+@char sulbody3.71 pose:bc wait:false
 describe: 아니... 오히려 어딘가 억눌리고 불편한 표정을 짓고 있었다.
 {Player_name}: ...
+@hideChars wait:false
+@spawn Blur wait:false
+@back Minicut_sul_10 id:Minicut visible:true position:0,1.5 scale:0.7 wait:false
 아버지: ...대답하기 싫으신 건가요?
 {Player_name}: 싫은 건 아닌데...
 {Player_name}: 나희 누나 아버지 맞으시죠?
@@ -103,10 +110,8 @@ sul: ...
 sul: ......
 {Player_name}: 아니 아무리 그래도...
 아버지: 그만하시죠. 묻는 말에 대답해 주시면 감사하겠...
-
-@spawn Blur wait:false
+@despawn Blur wait:false
 @back Minicut_sul_10 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
-
 @char sulbody3.85 pose:bc wait:false
 sul: 한 달 정도 됐어요.
 describe: 조용히 있던 나희 누나가 대신 대답했다.
@@ -125,7 +130,7 @@ sul: 그건 여쭤보신 게 아니라 통보한 거죠!
 @char sulbody3.85 pose:bc wait:false
 sul: 정말 여쭤보실 생각이셨으면...
 @char sulbody3.15 pose:bc wait:false
-sul: 언제'가 아니라 '왜'를 궁금해하셨겠죠.
+sul: <b>언제</b>가 아니라 <b>왜</b>를 궁금해하셨겠죠.
 @char sulbody3.11 pose:bc wait:false
 아버지: 지금 중요한 건 그게 아니잖니.
 아버지: 왜 그랬는지는 집에 가서 들어도 충분하지만...
@@ -133,37 +138,44 @@ sul: 언제'가 아니라 '왜'를 궁금해하셨겠죠.
 @hideChars time:0.5 wait:false
 @char sulbody2.15 pose:bc wait:false
 sul: 저를... 위해서요?
+@spawn ShakeBackground wait:false params:,3
+@spawn ShakeCharacter wait:false params:,3
 sul: 그렇게 생각하지 않으시잖아요!
-@char sulbody2.85 pose:bc wait:false
+@char sulbody2.75 pose:bc wait:false
 sul: 제 생각 따위는 중요하지도 않은 건가요?
-@char sulbody2.15 pose:bc wait:false
+@char sulbody2.72 pose:bc wait:false
 sul: 왜 그랬는지, 왜 같이했는지는 중요하지도 않죠?
-sul: 그저 언제부터 언제부터 언제부터...
+@char sulbody2.77 pose:bc wait:false
+sul: <size=35>그저 언제부터 언제부터 언제부터...</size>
 아버지: ...
 @hideChars time:0.5 wait:false
-@char sulbody1.85 pose:bc wait:false
+@char sulbody1.710 pose:bc wait:false
 sul: 방금도 그러셨잖아요.
-@char sulbody1.15 pose:bc wait:false
+@char sulbody1.810 pose:bc wait:false
 sul: 사람 불러놓고는 한다는 소리가 고작 누군지, 언제부터 함께한 건지...
+@char sulbody1.85 pose:bc wait:false
 sul: 이번에도 역시 의견 따위는 신경 쓰지 않으셨잖아요.
 @char sulbody1.81 pose:bc wait:false
 sul: ...
 @char sulbody1.85 pose:bc wait:false
 sul: 말씀드릴까요?
-@char sulbody1.15 pose:bc wait:false
+@char sulbody1.87 pose:bc wait:false
 sul: 제가 왜 만난 지도 얼마 안 된 사람이랑 몰래 밴드 생활을 했는지?
 아버지: 그런 건 나중에 집에 가서...
 @hideChars time:0.5 wait:false
 @char sulbody3.76 pose:bc wait:false
-sul: 제가... 제가...
-@char sulbody3.75 pose:bc wait:false
-sul: 좋아하니까요!!
+sul: <size=25>제가...</size> <size=30>제가...</size>
+@char sulbody3.77 pose:bc wait:false
+@spawn ShakeCharacter wait:false params:,3
+sul: <size=50>좋아하니까요!!</size>
 @char sulbody3.76 pose:bc wait:false
-{Player_name}: 예..? 예?!
-아버지: 뭐..?! 뭐?!
+@spawn ShakeBackground wait:false params:,3
+{Player_name}: <size=60>예..? 예?!</size>
+@spawn ShakeBackground wait:false params:,4
+아버지: <size=70>뭐..?! 뭐?!</size>
 @hideChars time:0.5 wait:false
 @sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
-describe: 쾅-!
+describe: <size=50>쾅-!</size>
 describe: 나희 누나는 충격적인 말과 함께 교무실에서 나가버렸다.
 describe: 그리고 교무실에는 그 말을 듣고 충격에 쌓인 사람 두 명이 앉아있었다.
 아버지: ...
@@ -175,8 +187,8 @@ describe: 미친 듯한 어색함이 교무실을 순식간에 감쌌다.
 describe: 한갑수 선생님은 어느새 사라지고 없었다.
 describe: 나희 아버지 맞은편에 계신 선생님은 어색함에 헛기침만 하고 계셨다.
 선생님:	저... 저도 업무를 보러 가봐야 될 것 같...
-아버지: 가보시죠.
-선생님:	네...
+아버지: <size=55>가보시죠.</size>
+선생님:	<size=30>네...</size>
 describe: 선생님은 나를 흘끗 쳐다보시고는 교무실 밖으로 나가셨다.
 describe: 분명 교무실인데, 어느새 나희 누나 아버지와 함께 단둘만 남았다.
 describe: 아무 소리도 나지 않는 교무실.
@@ -198,9 +210,12 @@ describe: 기침을 하며 순간적으로 나도 모르게 고개를 들게되�
 {Player_name}: (아버지... 닮으신거였구나...)
 describe: 그때.
 @sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
-describe: 쾅!
+@spawn ShakeBackground wait:false params:,3
+describe: <size=50>쾅!</size>
 @char jeonbody3.33 pose:c wait:false
-jeon: {Player_name}! 이 배신자!
+@spawn ShakeCharacter wait:false params:,3
+@spawn ShakeBackground wait:false params:,3
+jeon: <size=50>{Player_name}! 이 배신자!</size>
 {Player_name}: ..?
 @hideChars time:0.5 wait:false
 @char jeonbody4.35 pose:c wait:false
@@ -210,33 +225,40 @@ describe: 대용이가 교무실 문을 박차고 들어왔다.
 {Player_name}: 전대용..? 교무실은 갑자기 왜...
 jeon: 이유가 궁금한가?
 @hideChars time:0.5 wait:false
-@char jeonbody1.13 pose:c wait:false
+@char jeonbody1.41 pose:c wait:false
 jeon: 바로 네놈에게 정의의 심판을 내리기 위해서지!
-@char jeonbody1.15 pose:c wait:false
+@char jeonbody1.42 pose:c wait:false
 jeon: 거기서 딱 기달려라!
 {Player_name}: 자... 잠깐만!
 @hideChars time:0.5 wait:false
 describe: 대용이는 그 육중한 몸을 이끌고 내가 앉아있는 곳까지 달리기 시작했다.
-@char jeonbody4.35 pose:bc wait:false
+@char jeonbody4.42 pose:bc wait:false
 jeon: 잠깐은 무슨 잠깐! 네놈에게 줄 자비따위는 없...
 @hideChars time:0.5 wait:false
 @sfx Common_Cartoon_Bodyfall_01 volume:100 loop:false fade:0 wait:false
 @sfx Body_Fall_01 volume:80 loop:false fade:0 wait:false
+@spawn ShakeBackground wait:false params:,5
 describe: 쿠당-탕!
 describe: 대용이는 얼마 가지도 못하고 자기 발에 걸려 넘어졌다.
 {Player_name}: 야! 너 괜찮...
+@char jeonbody1.51 pose:c wait:false
 jeon: 크... 크윽... 진정한 신사는... 이런 시련에 굴복하지 않는다..!
 {Player_name}: 대용아..! 미안하다...
 describe: 대용이 덕분에 이 오도 가도 못하는 상황이 겨우 해결된 듯싶었다.
+@hideChars wait:false
 describe: 지금 나가지 않으면...
 describe: 지금 나가서 나희 누나를 만나러 가지 않으면...
 {Player_name}: 저... 안녕히계세요!
 @sfx Common_Door_Slam_01 volume:100 loop:false fade:0 wait:false
-describe: 쾅-!
+@spawn ShakeBackground wait:false params:,3
+describe: <size=50>쾅-!</size>
+@char jeonbody4.33 pose:bc wait:false
 jeon: {Player_name}! 거기 서라!
+@char jeonbody4.35 pose:bc wait:false
 jeon: 크흑... 놓쳐버리다니...
 아버지: ...
 jeon: ...
+@char jeonbody4.45 pose:bc wait:false
 jeon: 누구세요?
 아버지: ......
 @stopsfx Amb_Dark_01 fade:1 wait:false
