@@ -516,7 +516,7 @@ public class ExamUIManager : MonoBehaviour
         SAnswerList.Add("343", "시간이 멈춘 듯한");
         SAnswerList.Add("344", "처음 경험한");
 
-        SAnswerList.Add("400", "다있어");
+        SAnswerList.Add("400", "다있소");
         SAnswerList.Add("401", "백화점");
         SAnswerList.Add("402", "노래방");
         SAnswerList.Add("403", "볼링장");
@@ -695,7 +695,7 @@ public class ExamUIManager : MonoBehaviour
         SCorrectAnswerList.Add("32", "실력 부족");
         SCorrectAnswerList.Add("33", "재능");
         SCorrectAnswerList.Add("34", "자유로운");
-        SCorrectAnswerList.Add("40", "다있어");
+        SCorrectAnswerList.Add("40", "다있소");
         SCorrectAnswerList.Add("41", "맑은 눈");
         SCorrectAnswerList.Add("42", "고양이");
         SCorrectAnswerList.Add("43", "트레이닝복");

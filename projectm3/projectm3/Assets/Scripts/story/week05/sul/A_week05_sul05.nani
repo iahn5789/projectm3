@@ -14,18 +14,19 @@
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"어서 오세요. 다있소입니다!\""
 
 @sfx Shop_Door_Click__01 volume:100 loop:false wait:false
-직원: 어서 오세요! 뭐든지 다 파는 '다있어'입니다!
-describe: 나희 누나와 함께 '다있어'에 도착했다.
-describe: '다있어'가 처음이라는 나희 누나의 말은 거짓말이 아니었다.
+직원: 어서 오세요! 뭐든지 다 파는 <b>다있소</b>입니다!
+describe: 나희 누나와 함께 <b>다있소</b>에 도착했다.
+describe: <b>다있소</b>가 처음이라는 나희 누나의 말은 거짓말이 아니었다.
 describe: 나희 누나는 마치 놀이공원에 처음 와본 아이처럼 계속해서 고개를 흔들어댔다.
 @char sulbody2.67 pose:c wait:false
 sul: 우와... 여기 진짜로 뭐든지 다 있는 거 아니야?
 {Player_name}: 진짜 처음이신가 보네요...
 @char sulbody2.12 pose:c wait:false
 sul: 설마 못 믿은 거야? 실망이야...
-{Player_name}: 못 믿었다기보다는 '다있어' 처음 보는 사람을 처음 봐서요.
+{Player_name}: 못 믿었다기보다는 '다있소' 처음 보는 사람을 처음 봐서요.
 @char sulbody2.64 pose:c wait:false
 sul: ...
 @hideChars wait:false
@@ -81,6 +82,7 @@ sul: 2층으로 가보자...
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"고양이 키링이거든!\""
 
 {Player_name}: 그런데 뭐 사실 거예요?
 {Player_name}: 일단 점원한테 필요한 게 어디 있는지부터 물어볼...
@@ -171,6 +173,7 @@ sul: 정말?! 진짜야?! 거짓말 아니지?!
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"누나의 꿈?\""
 @clearBacklog
 
 {Player_name}: 여기 있습니다! 고양이 키링!
