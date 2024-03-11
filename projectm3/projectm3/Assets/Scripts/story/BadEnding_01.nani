@@ -1,0 +1,23 @@
+# badending_01
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Night_Traffic_Car_01 volume:100 loop:true fade:1 wait:false
+@bgm BGM_Map_LovelyEP_01 volume:70 loop:true wait:false
+@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@char jeonbody2.11 pose:c wait:false
+jeon: 배드엔딩 시발!!!!!!!!!
+
+@hideChars wait:false
+
+@goto A_week03_sul05.week03_sul05
+@stop
