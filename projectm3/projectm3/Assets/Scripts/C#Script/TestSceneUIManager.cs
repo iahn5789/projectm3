@@ -69,6 +69,9 @@ public class TestSceneUIManager : MonoBehaviour
     public GameObject KangRootDisable;
     public GameObject JinRootDisable;
     public GameObject SulRootDisable;
+    public PlayScript TestStartScript;
+    public PlayScript BadendingScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -792,6 +795,17 @@ public class TestSceneUIManager : MonoBehaviour
     public void StartButtonClick() // 시험 시작 버튼 클릭시
     {
         SetVariable();
+        string badending = variableManager?.GetVariableValue("BadEnding");
+        if (badending == "true" || badending == "True")
+        {
+            Debug.Log("Badending");
+            BadendingScript.Play();
+        } 
+        else
+        {
+            Debug.Log("NextTest");
+            TestStartScript.Play();
+        }
     }
     private void SetVariable()
     {
