@@ -38,6 +38,7 @@ describe: 고개를 살짝 돌려 나희 누나를 쳐다봤다.
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"꾸었던 꿈, 갚아야 할 꿈\""
 
 sul: ...
 describe: 나희 누나는 무언가 생각에 잠긴 듯 보였다.
@@ -110,6 +111,7 @@ sul: ...
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"우리는 프리덤이니까...\""
 
 {Player_name}: 지금부터라도 해보시는 건 어떠세요?
 @char sulbody3.65 pose:c wait:false
@@ -146,7 +148,7 @@ sul: 푸훗..! 하하하!
 @char sulbody1.77 pose:bc wait:false
 sul: 맞아... 맞지...
 @char sulbody1.75 pose:bc wait:false
-sul: 우리는 '프리덤'이니까... 그렇지?
+sul: 우리는 <b>프리덤</b>이니까... 그렇지?
 {Player_name}: 그... 그렇죠!
 @hideChars wait:false
 @char sulbody2.85 pose:c wait:false

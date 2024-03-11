@@ -1,6 +1,6 @@
 # week06_sul01
 ; 변수 초기화
-@set "WeekTitle=\"6주차 주제\""
+@set "WeekTitle=\"현실은 잔인했다.\""
 @set KangWeek=6
 @set JinWeek=6
 @set SulWeek=6
@@ -28,7 +28,7 @@
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
-@spawn DigitalGlitch params:60,0.2 wait:false
+@spawn Past01
 @bgm BGM_Sul_Sad_Bb_01 volume:80 loop:true fade:1 wait:false
 @sfx Amb_Hallway_01 volume:80 loop:true fade:1 wait:false
 @back ConcertIn01 time:0.5 wait:true
@@ -58,7 +58,7 @@ sul: 그만해...
 sul: 오늘은... 혼자 있고 싶어...
 describe: 돌아오는 대답은 차가운 거절뿐이었다.
 {Player_name}: ...
-@despawn DigitalGlitch
+@despawn Past01
 
 @hideChars wait:false
 @spawn Blur wait:false
