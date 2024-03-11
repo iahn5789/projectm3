@@ -12,6 +12,8 @@
 @processInput true
 @set LoadingValue=false
 @unlock CG/Sul02 wait:false
+@set "WeekTitle=\"누나가 왜 거기서 나와..?\""
+
 
 {Player_name}: 어?
 {Player_name}: 내가 잘못 보고 있는 건가?
@@ -106,6 +108,8 @@ sul: 밖으로 나와.
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"동아리 그만두어야 되는 걸까?\""
+
 
 @char sulbody2.11 pose:c wait:false
 describe: 나희 누나는 복도에서 나를 보고 서있었다.
