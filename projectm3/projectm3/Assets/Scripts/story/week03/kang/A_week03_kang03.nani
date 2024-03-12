@@ -24,17 +24,38 @@ describe: 악기를 미리 가져간다면, 연습을 조금 더 빨리 시작�
 describe: 언제 올지 모르는 여진이를 남겨둔 채 창고 문을 활짝 열어둬야 했다.
 {Player_name}: (흐음...)
 {Player_name}: (어떡하지..?)
-	
-choicehandlerbutton	여진이를 기다린다.
-choicehandlerbutton	악기를 가져간다.
-	
+
+@hidePrinter  wait:false
+@hideChars wait:false
+@hideUI CP wait:false
+@processInput false
+@set InputKeyValue=false
+@skip false
+@choice "여진이를 기다린다." goto:A_week03_kang03.week03_kang03_01
+@choice "악기를 가져간다." goto:A_week03_kang03.week03_kang03_02
+@stop
+
+# week03_kang03_01
+@processInput true
+@set InputKeyValue=true
+@set WeekTitle=""
+@showUI CP wait:false
+
 {Player_name}: ...
 {Player_name}: (아무래도...)
 {Player_name}: (말도 없이 가져가면 아무래도 여진이가 헷갈리겠지..?)
 {Player_name}: (창고 문도 열어놓고 나가야 하고...)
 {Player_name}: (조금 늦더라도 기다렸다가 같이 가자.)
 {Player_name}: (창고 문 열어놓고 혼자 왔다고 다영이가 뭐라고 할 수도 있으니까...)
-	
+
+@goto A_week03_kang04.week03_kang04
+
+# week03_kang03_02
+@processInput true
+@set InputKeyValue=true
+@set WeekTitle=""
+@showUI CP wait:false
+
 {Player_name}: (그래. 악기 먼저 가져가자.)
 {Player_name}: (언제 올지도 모르는데 언제까지 기다리고 있을 수도 없고...)
 {Player_name}: (설마 별일이야 있겠어?)

@@ -45,10 +45,24 @@ describe: 한 가지는 확실했다.
 describe: 나는 안전하다는 것.
 {Player_name}: ......
 {Player_name}: (나는...)
-	
-choicehandlerbutton	돌아간다
-choicehandlerbutton	나간다
-	
+
+@hidePrinter  wait:false
+@hideChars wait:false
+@hideUI CP wait:false
+@processInput false
+@set InputKeyValue=false
+@skip false
+@choice "돌아간다." goto:A_week06_kang06.week06_kang06
+@choice "나간다." goto:A_week06_kang05.week06_kang05_hidden
+@stop
+
+#week06_kang05_hidden
+
+@processInput true
+@set InputKeyValue=true
+@set WeekTitle=""
+@showUI CP wait:false
+
 {Player_name}: (하하하..! 나도 참. 그런 쓸데없는 걱정을...)
 {Player_name}: (빨리 나가서 기다리자!)
 {Player_name}: (괜히 엇갈리면 안 되잖아?)
@@ -105,101 +119,5 @@ describe: 부우웅-!
 경찰: ...
 경찰: ......
 경찰: 기타는 어떻게 했어요?
-	
-describe: 저벅-
-{Player_name}: (움직여라...)
-describe: 저벅-저벅-
-{Player_name}: (제발 좀 똑바로 움직여라..!)
-describe: 저벅-저벅-저벅-
-{Player_name}: (왜 네 멋대로 움직이는 건데!!)
-describe: 몸이 뜻대로 움직이지 않았다.
-describe: 왜... 왜...
-describe: 반대편으로 움직이는 걸까..?
-describe: 왜 다시 돌아가는 걸까?
-describe: 그것도 지금 와서...
-describe: 여진이 때문에..? 아니면 동영상 때문에?
-describe: 아니면...
-describe: 몸이 내 멋대로 움직이는 것처럼...
-describe: 나도 모르는 이유라도 있는 걸까..?
-describe: 계속해서 걷다 보니 어느새 제법 안까지 들어오게 되었다.
-describe: 이제는 뒤를 돌아봐도 더 이상 입구 따위는 보이지 않았다.
-{Player_name}: ...
-{Player_name}: (나도 몰라 이제...)
-{Player_name}: (어떻게든 되겠지..!)
-describe: 라고 생각했지만, 정작 어떻게 해야 할지 몰랐다.
-describe: 다시 돌아왔으면 어찌 되었든 간에 여진이와 만나야 할 텐데.
-describe: 정작 여진이가 어디에 있는지 알 길이 없었다.
-{Player_name}: ...
-{Player_name}: (전화라도 해볼까..?)
-describe: 나는 주머니에서 핸드폰을 꺼내 여진이에게 전화를 걸었다.
-describe: ---
-describe: 고객님의 전화기가 꺼져있어 삐 소리 후---
-{Player_name}: (그럼 그렇지...)
-describe: 여진이의 핸드폰이 꺼져있었다.
-describe: 아까 상황을 생각해보면, 일부러 껐을 수도 있었다.
-describe: 그게 아니라면...
-{Player_name}: ...
-{Player_name}: (으으..! 아니야!)
-{Player_name}: (이상한 생각 하지 말자.)
-{Player_name}: (괜찮을 거야...)
-describe: 나는 괜히 머리를 과하게 흔들었다.
-describe: 그렇지만 의문을 밀어내려 할수록 다른 의문들이 삐져나왔다.
-describe: 마치 쓰레기를 억지로 봉지 않에 쑤셔 넣을 때처럼.
-describe: 안에 들어있는 날카로운 조각들이 봉지를 뚫고 나왔다.
-describe: 탁탁탁탁-!
-describe: 의문을 밀어내는 건 결국 자극이었다.
-describe: 어딘가에서 들려오는 다급한 발소리가 내 머릿속을 가득 채웠다.
-{Player_name}: (누구지..?)
-describe: 사실 의문 따위는 필요 없었다.
-describe: 이 시간에, 그것도 이런 곳에서.
-describe: 저렇게 다급하게 뛸 사람은 딱 두 부류밖에 없었다.
-describe: 쫓거나, 쫓기거나.
-{Player_name}: ...
-describe: 저곳에 여진이가 있다.
-kang: ...
-kang: 잘 도망갔으려나..?
-???: #$%@#$@%!!
-kang: 후...
-kang: 남 말 할 처지가 아닌...
-kang: ..?
-???: ..다!
-???: ...기다!
-kang: ...내가 잘못 들었나?
-{Player_name}: 여기다! 이 멍청이들아!!
-kang: ..?
-{Player_name}: 허억... 허억...
-{Player_name}: 내가... 내가..!
-{Player_name}: 내가 미쳤지!!
-???: 어..! 어! 야 멈춰봐!
-???: 저기 쟤 잡아!!
-???: 무슨 헛소리...
-???: 쟤가 기타 들고 있다고! 쟤 잡아!!
-???: 그럼 저 여자애는?
-???: 쟨 반대쪽으로 도망가는데?
-???: 으으... 일단 기타 든 놈부터 잡아!
-describe: 낯선 남자들은 여진이 대신 나를 쫓아오기 시작했다.
-describe: 왜 그랬을까?
-describe: 이번에도 몸이 마음처럼 움직이지 않았다.
-describe: 마치 꿈이라도 꾸는 것처럼.
-describe: 아무리 비현실적이어도 꿈에서는 모든 게 용납되는 것처럼.
-describe: 머리로 그 어떤 의문점도 제시하지 않는 것처럼.
-describe: 몸이 멋대로 움직이는데도...
-describe: 나는 아무런 것도 할 수가 없었다.
-describe: 숨이 바로 턱 밑까지 차올랐다.
-describe: 다리가 움직이는 것도 기적이었다.
-describe: 다리가 움직이는 건지, 땅이 움직이는 건지도 잘 모르겠다.
-describe: 조금씩 출구가 보이기 시작했다.
-{Player_name}: (저기까지만 가면..!)
-describe: ．．．
-describe: 오아시스라도 근본증걸까?
-describe: 아무리 달리고 달려도 출구는 가까워지지 않았다.
-describe: 손에 들고 있는 기타를 집어 던지고 싶은 마음이 매 순간 들었다.
-{Player_name}: (어..?)
-{Player_name}: (내가 언제부터 기타를 들고 있었지..?)
-describe: 의식해버렸다.
-describe: 비교적 가볍게 느껴지던 손이 한순간에 무거워졌다.
-{Player_name}: (그래도...)
-{Player_name}: (조금만 더 가면...)
-{Player_name}: (저기까지만 가면...)
 
-@goto A_week06_kang06.week06_kang06
+@goto TitleUI_New
