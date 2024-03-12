@@ -13,6 +13,7 @@
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"여기에도 있다고?\""
 
 {Player_name}: 여기까지...
 {Player_name}: 이 정도로 빠를 줄은 몰랐는데요..?
@@ -94,6 +95,7 @@ sul: 응! 빨리 가자!
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
+@set "WeekTitle=\"공연의 결과\""
 
 describe: 공연장에서 조금 떨어진 도심가.
 describe: 어두운 하늘과 달리 화려한 간판이 밤하늘을 밝히고 있었다.
@@ -226,6 +228,7 @@ describe: 나희 누나와 함께하기로 했으니까.
 
 @despawn Blur wait:false
 @back Minicut_sul_12 id:Minicut visible:false position:0,1.5 scale:0.7 wait:false
+@set "WeekTitle=\"아버지와 딸\""
 
 @sfx Footsteps_Male_ctr_run_01 volume:40 loop:false fade:0 wait:false
 @sfx Amb_Road_01 volume:50 loop:true fade:1 wait:false
