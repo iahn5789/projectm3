@@ -1,4 +1,6 @@
 # week01_05
+
+@set LoadingValue=true
 @set WeekTitle="동아리에 가입하기 위한 조건은?"
 @processInput false
 @stopBgm BGM_Map_Antics_01 fade:1 wait:false
@@ -12,6 +14,8 @@
 @back ScOffice01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @char kangbody2.44 wait:false pose:c
 kang: 그러니까 너도 직접 봤잖아! 왜 계속 반대를 하는 거야!
 @char kangbody2.44 wait:false pose:r

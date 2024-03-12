@@ -43,6 +43,8 @@ jin: 너! 연습 열심히 하는지 지켜볼 거야!
 {Player_name}: 하하하... 열심히 할게.
 @stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @stopBgm BGM_Map_Classroom_01 fade:1 wait:false
+
+@set LoadingValue=true
 @processInput false
 @showUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -55,6 +57,8 @@ jin: 너! 연습 열심히 하는지 지켜볼 거야!
 @hideUI CP wait:false
 @set "WeekTitle=\"연습이 끝나고 난 뒤\""
 @processInput true
+@set LoadingValue=false
+
 {Player_name}: 후...
 describe: 동아리에 들어온 후 처음으로 완곡에 성공했다.
 describe: 긴장한 탓인지 목은 갈라질 듯 아파져 오고 있었고 마이크를 잡은 손은 땀으로 범벅이 되어 있었다.

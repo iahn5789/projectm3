@@ -18,6 +18,8 @@ jin: 아무튼 난 교무실 가볼게! 내일 봐!
 @hideChars wait:false
 @char sulbody1.11 wait:false pose:c
 sul: ...나도 정리할게...
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -27,6 +29,8 @@ sul: ...나도 정리할게...
 @back ScLobby01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @sfx Common_Sliding_door_open volume:100 loop:false wait:0
 describe: 드르륵-
 describe: 여진이와 나는 각각 기타와 베이스를 매고 동아리실에서 나왔다.

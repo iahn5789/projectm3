@@ -30,6 +30,8 @@ describe: 스러져 가는 동아리 팻말을 흔들어 놓는 드럼의 진동
 describe: 뼛속까지 퍼지는 강렬한 베이스의 울림.
 describe: 나도 모르게 리듬을 타게 되는 화려한 기타 연주.
 describe: 그리고...
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
@@ -41,6 +43,8 @@ describe: 그리고...
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @processInput true
+@set LoadingValue=false
+
 {Player_name}: ...
 {Player_name}: ......
 @char kangbody4.88 pose:c wait:false

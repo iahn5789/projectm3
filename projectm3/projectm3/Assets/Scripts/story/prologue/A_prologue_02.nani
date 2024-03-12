@@ -1,5 +1,7 @@
 # prologue_02
 @set "WeekTitle=\"교무실에서의 면담\""
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -12,6 +14,8 @@
 @back ScOffice01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @sfx Common_Door_Noke_01 volume:100 loop:false fade:0 wait:false
 describe: 똑똑-
 @stopSfx Common_Door_Noke_01 fade:0 wait:false

@@ -28,6 +28,8 @@ jin: 으으... 혼자서 하는 게 편한데...
 @char jinbody3.34 wait:false pose:c
 jin: 따라와!
 {Player_name}: 응?...응!
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -39,6 +41,8 @@ jin: 따라와!
 @back ScLobby01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @sfx Common_Sliding_door_open volume:100 loop:false fade:0 wait:0
 describe: 드르륵-
 @stopSfx _Sliding_door_open fade:1 wait:0

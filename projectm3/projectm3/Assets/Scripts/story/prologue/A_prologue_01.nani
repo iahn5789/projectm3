@@ -57,6 +57,8 @@ MC: 오래 기다리셨습니다! 다음 차례는 드디어...
 {Player_name}: 러브...
 MC: 러브크레센도입니다!
 @stopSfx Amb_Crowd_Loop_01 fade:0 wait:false
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:false
@@ -66,6 +68,8 @@ MC: 러브크레센도입니다!
 @showUI CP wait:false
 @despawn Blur wait:false
 @processInput true
+@set LoadingValue=false
+
 @spawn ShakePrinter wait:false
 @spawn ShakeCamera wait:false
 @sfx Body_Fall_01 volume:80 loop:false wait:false

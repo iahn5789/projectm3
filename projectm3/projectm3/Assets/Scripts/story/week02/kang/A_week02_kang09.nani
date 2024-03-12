@@ -21,6 +21,8 @@ kang: 고맙다는 말을 정말 오랜만에 들어보네...
 kang: 아. 아니야! 신경 안 써도 돼!
 @char kangbody1.12 pose:c wait:false pose:c
 kang: 다 왔다. 여기야!
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -35,6 +37,8 @@ kang: 다 왔다. 여기야!
 @showUI CP wait:false
 @set WeekTitle="유리관 속 기타"
 @processInput true
+@set LoadingValue=false
+
 describe: 여진이와 함께 도착한 곳은 2층 복도 끝에 있는 어느 쓰지 않는 창고였다.
 describe: 창고가 좁다는 여진이의 말과는 달리 안은 생각보다 넓었고 깨끗했다.
 {Player_name}: 생각보다 넓다. 악기도 되게 많고.

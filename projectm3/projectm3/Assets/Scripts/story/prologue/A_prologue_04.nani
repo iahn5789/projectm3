@@ -1,5 +1,7 @@
 # prologue_04
 @set WeekTitle="대용이와 포스터"
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -11,6 +13,8 @@
 @back Road01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @char jeonbody4.32 wait:false pose:c
 jeon: 후후후...
 {Player_name}: 뭐야...

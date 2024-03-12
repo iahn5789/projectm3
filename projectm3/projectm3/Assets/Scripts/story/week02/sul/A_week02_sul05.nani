@@ -1,5 +1,7 @@
 # week02_sul05
+
 @set "WeekTitle=\"너는 어떻게 하고 싶어?\""
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -9,6 +11,8 @@
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @spawn ShakeCamera wait:false
 @spawn ShakePrinter wait:false
 @stopSfx Amb_Shool_Club_01 fade:0 wait:0

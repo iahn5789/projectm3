@@ -1,4 +1,6 @@
 # week02_sul04
+
+@set LoadingValue=true
 @set WeekTitle="보컬과 기타 혹은 자존심"
 @processInput false
 @hideUI CP wait:false
@@ -9,7 +11,9 @@
 @back CG/Sul01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
 @unlock CG/Kang03
+
 @sfx Common_Emotion_Question_01 volume:100 loop:false fade:0 wait:0
 kang: 잠깐! 갑자기 그게 무슨 소리야!
 @stopSfx Common_Emotion_Question_01 fade:0 wait:0

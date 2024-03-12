@@ -59,6 +59,8 @@ describe: 다영이는 더 이상 교무실에 있기 싫다는 듯 문을 박�
 describe: 나는 재빨리 다영이를 따라 교무실에서 나갔다.
 @stopSfx Footsteps_Male_Wood_Run_01 fade:2 wait:0
 한갑수:	허... 무슨 일이 있나...?
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -72,6 +74,8 @@ describe: 나는 재빨리 다영이를 따라 교무실에서 나갔다.
 @showUI CP wait:false
 @set WeekTitle="내가 계속 지켜볼 거야!"
 @processInput true
+@set LoadingValue=false
+
 describe: 교무실을 나와 집으로 가는 길.
 describe: 집에 가는 방향이 같은 건지, 헤어질 타이밍을 놓친 건지.
 describe: 다영이와 나는 같은 방향으로 걷고 있었다.

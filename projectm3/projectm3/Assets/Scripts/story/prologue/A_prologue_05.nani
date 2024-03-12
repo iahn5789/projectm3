@@ -1,5 +1,7 @@
 # prologue_05
 @set "WeekTitle=\"처음 보는 골목길\""
+
+@set LoadingValue=true
 @processInput false
 @stopSfx Amb_Road_01 fade:1 wait:false
 @stopSfx Footsteps_Male_Ctr_Walk_01 fade:1 wait:false
@@ -14,6 +16,8 @@
 @back Road02 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 조금은 낯선 골목길
 describe: 전화도 받지 않는 대용이를 이곳에서 어떻게 찾아야 하나 고민하고 있을 때.
 @char jeonbody1.24 pose:c wait:false

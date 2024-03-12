@@ -6,6 +6,8 @@ sul: 그래.
 @hideChars wait:false
 @char sulbody1.15 pose:c wait:false
 sul: 나머지 정리하자...
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -16,6 +18,8 @@ sul: 나머지 정리하자...
 @showUI CP wait:false
 @set "WeekTitle=\"먼저 가볼게\""
 @processInput true
+@set LoadingValue=false
+
 @char sulbody1.15 pose:c wait:false
 sul: ...수고했어...
 {Player_name}: 고생하셨어요!
@@ -64,6 +68,8 @@ jeon: 혹시 마이크 남는 거 있어?
 {Player_name}: 하...
 @stopSfx Amb_Office_01 fade:2 wait:0
 @stopBgm BGM_Map_Littlesad_01 fade:2 wait:0
+
+@set LoadingValue=true
 @processInput false
 @skip false
 @hideChars time:0.5 wait:false
@@ -71,6 +77,8 @@ jeon: 혹시 마이크 남는 거 있어?
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@set LoadingValue=false
+
 @set KangWeek=2
 @set JinWeek=2
 @set SulWeek=2
@@ -91,6 +99,7 @@ jeon: 혹시 마이크 남는 거 있어?
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
+@set BadEnding=false
 @set WeekTitle="쪽지 시험"
 @goto TestSceneUI
 @stop

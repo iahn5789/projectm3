@@ -1,5 +1,7 @@
 # week01_06
 @set WeekTitle="그냥 없어"
+
+@set LoadingValue=true
 @processInput false
 @stopBgm BGM_Map_FeelGood_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
@@ -12,6 +14,8 @@
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 5분 정도 긴 침묵이 이어졌다.
 describe: 어색한 분위기가 이어지자, 침 삼키는 소리까지 들리는 듯 했다.
 describe: 이대로 가다간 동아리고 뭐고 그 전에 분위기에 깔려 죽을 것만 같았다.

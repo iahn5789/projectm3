@@ -1,4 +1,6 @@
 # prologue_08
+
+@set LoadingValue=true
 @processInput false
 @stopBgm BGM_Map_Classroom_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
@@ -12,6 +14,8 @@
 @unlock CG/Kang01 wait:false
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 고개를 돌리자, 한 여학생이 나를 보며 서 있었다.
 describe: 문을 어찌나 세게 열었는지 쾅 하는 소리가 들렸다.
 describe: 그 소리와 함께 약간의 바람을 타고 좋은 향기가 날라왔다.
@@ -21,6 +25,8 @@ describe: 그 자리에는 처음 보는 여자애를 마주한 부끄러움만�
 describe: 처음 보는 예쁜 여자애가 반까지 찾아와 나에게 말을 걸었다.
 describe: 어떤 말을 해야 할지 모른 채 이러지도 저러지도 못하고 있는 상황.
 describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다.
+
+@set LoadingValue=true
 @processInput false
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:3 wait:false
 @hideChars time:0.5 wait:false
@@ -31,6 +37,8 @@ describe: 눈앞의 여학생이 기다리지 못한 채 다시 말을 걸었다
 @back ScClassRoom01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @char kangbody1.81 pose:c wait:false
 @bgm BGM_Map_Classroom_01 volume:80 loop:true wait:false
 ???: 저기... 듣고 있는 거야?
@@ -135,6 +143,8 @@ describe: 대용이가 교실에서 나가고 잠시 후 선생님이 교실로 
 describe: (밴드부라... 너무나 갑작스럽게 초대받았는데...)
 describe: (원래 이렇게 불쑥 찾아와서 초대하고 그러는건가..?)
 @stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -146,6 +156,8 @@ describe: (원래 이렇게 불쑥 찾아와서 초대하고 그러는건가..?)
 @showUI CP wait:false
 @set "WeekTitle=\"신문부 부장 라은\"" wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 지루한 수업이 지나가고 어느덧 종례 시간이 다가왔다.
 선생님: 자 다들 오늘 하루 수고했고 내일 보자! 이상!
 일동: 수고하셨습니다!
@@ -161,6 +173,8 @@ describe: 말도 없고 딱히 재미도 없는 전학생.
 describe: 그것도 수업 시간에 졸다가 소리를 지른 전학생.
 {Player_name}:  (에휴. 그냥 빨리 집이나 가야지.)
 describe: 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문득 생각이 들었다.
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -169,8 +183,12 @@ describe: 축 처진 몸을 이끌고 교실 밖으로 나가려는 그때, 문�
 @back Black time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @char kangbody3.12 wait:false
 kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -180,6 +198,8 @@ kang: 그럼 오늘 수업이 끝나고 동아리실에서 보는 거로 하자!
 @back ScClassRoom01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 {Player_name}: 잠깐만.
 {Player_name}: (생각해 보니 나도 학교 끝나고 보자는 사람이 있었잖아?)
 describe: 강여진...

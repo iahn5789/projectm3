@@ -1,8 +1,10 @@
 # week01_10
 @processInput true
+@set LoadingValue=false
 @set InputKeyValue=true
 @set WeekTitle="내가 알려줄게!"
 @showUI CP wait:false
+
 {Player_name}: 쪽지시험이고 뭐고 아무것도 모르겠어.
 @char kangbody3.63 wait:false pose:c
 kang: 우리학교가 조금 특이하긴 해서...
@@ -34,12 +36,16 @@ kang: 아무도 없어..?
 kang: 괜찮아! 내가 알려주면 되니까!
 @stopSfx Amb_Shool_Club_01 fade:1 pose:c
 @stopBgm BGM_Map_Antics_01 fade:1 pose:c
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@set LoadingValue=false
+
 @set KangWeek=1
 @set JinWeek=1
 @set SulWeek=1
@@ -59,6 +65,7 @@ kang: 괜찮아! 내가 알려주면 되니까!
 @set TestScore=100
 @set TestCorrect=0
 @set Tutorial="First"
+@set BadEnding=false
 @set WeekTitle="쪽지 시험"
 @skip false
 @goto TestSceneUI

@@ -1,4 +1,6 @@
 # week01_03
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -10,6 +12,8 @@
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @char kangbody3.22 pose:c wait:false
 kang: 아! 와줬구나. 어서 와!
 @hideChars wait:false

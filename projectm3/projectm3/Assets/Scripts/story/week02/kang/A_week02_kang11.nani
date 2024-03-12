@@ -1,4 +1,6 @@
 # week02_kang11
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -9,6 +11,8 @@
 @showUI CP wait:false
 @set WeekTitle="목걸이?"
 @processInput true
+@set LoadingValue=false
+
 describe: 정리를 끝내고 창고를 나오니 어느덧 시간이 제법 흘러있었다.
 describe: 여진이와 나는 학교 건물에서 나와 운동장을 향해 걸어가고 있었다.
 {Player_name}: 생각보다 시간이 많이 지났나보네...
@@ -52,6 +56,8 @@ jeon: {Player_name}! 아직 집에 안 가고 있었냐고!
 {Player_name}: 그런데...방금...목걸이 차고 있지 않았었나?
 @stopSfx Amb_Room_Tone_02 fade:2 wait:0
 @stopBgm Common_BGM_02 fade:2 wait:0
+
+@set LoadingValue=true
 @processInput false
 @skip false
 @hideChars time:0.5 wait:false
@@ -59,6 +65,8 @@ jeon: {Player_name}! 아직 집에 안 가고 있었냐고!
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
 @back Black time:1 wait:true
+@set LoadingValue=false
+
 @set KangWeek=2
 @set JinWeek=2
 @set SulWeek=2
@@ -78,6 +86,7 @@ jeon: {Player_name}! 아직 집에 안 가고 있었냐고!
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
+@set BadEnding=false
 @set WeekTitle="쪽지 시험"
 @goto TestSceneUI
 @stop

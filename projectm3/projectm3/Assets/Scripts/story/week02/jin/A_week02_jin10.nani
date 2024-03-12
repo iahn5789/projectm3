@@ -10,6 +10,8 @@ jin: 아니거든! 난 그냥 열심히 하는거라고...
 jin: 당연하지! 내가 계속 지켜볼 거야!
 @sfx Footsteps_Male_Wood_Walk_01 volume:100 loop:false wait:0
 @stopSfx Amb_Hallway_01 fade:2 wait:0
+
+@set LoadingValue=true
 @processInput false
 @hideUI CP wait:false
 @hideChars time:0.5 wait:false
@@ -21,6 +23,8 @@ jin: 당연하지! 내가 계속 지켜볼 거야!
 @showUI CP wait:false
 @set WeekTitle="조용히 좀 해!"
 @processInput true
+@set LoadingValue=false
+
 describe: 다영이와 얘기하다 보니 어느새 교무실에 도착했다.
 {Player_name}: 실례하겠습니다.
 한갑수:	어 연습 끝났어? 고생했다. 근데 왜 오늘은 둘이 온 거야?

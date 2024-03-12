@@ -1,5 +1,6 @@
 #week01_badending
 @processInput true
+@set LoadingValue=false
 @set InputKeyValue=true
 @set WeekTitle="신문부에 가입하자!" wait:false
 @showUI CP wait:false
@@ -59,6 +60,8 @@ la: 그럼. 그렇고말고.
 @hideChars wait:false
 @char labody2.62 wait:false pose:c
 la: 가자! 다들 기다리고 있을 거야!
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -68,6 +71,8 @@ la: 가자! 다들 기다리고 있을 거야!
 @back ScClub01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 @char jinbody1.32 wait:false pose:c
 ???: 언제까지 기다리고만 있어야 하는 건데!
 @char jinbody1.34 wait:false pose:c
@@ -102,6 +107,8 @@ kang: 선생님... 잠시만...
 선생님: 그만.
 선생님: 안되는 건 안되는 거야.
 kang: ...
+
+@set LoadingValue=true
 @processInput false
 @back Minicut_han id:Minicut visible:false scale:0.7 wait:false position:0,1.5
 @despawn Blur wait:false
@@ -113,6 +120,8 @@ kang: ...
 @back ScLobby01 time:1 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 {Player_name}: 그런데...
 @char labody1.11 wait:false pose:c
 la: 응?
@@ -145,6 +154,8 @@ la: ...
 @hideChars wait:false
 @char labody1.82 pose:bc wait:false
 la: <size=50>내</size><size=50>가</size><size=50> </size><size=50>그</size><size=50>렇</size><size=50>게</size><size=50> </size><size=50>만</size><size=50>들</size><size=50> </size><size=50>거</size><size=50>니</size><size=50>까</size><size=50>.</size><size=50>.</size><size=50>.</size>
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:1 wait:false
 @hideUI CP wait:false
@@ -153,6 +164,8 @@ la: <size=50>내</size><size=50>가</size><size=50> </size><size=50>그</size><s
 @back Black time:2 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 히든엔딩 : N (예시)
 describe: '신문부에 가입하다' (예시)
 @hideUI CP wait:false

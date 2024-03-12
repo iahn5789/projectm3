@@ -1,4 +1,6 @@
 # week01_01
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -10,6 +12,8 @@
 @back ScLobby02 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 수업이 끝난 학교에서 학생들은 모두 집으로 가고 없었다.
 describe: 밴드부가 있다는 4층까지 가는 도중 단 한 명의 학생도 만날 수 없었다.
 {Player_name}: 생각보다 높네...

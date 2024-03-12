@@ -1,4 +1,6 @@
 # week01_04
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -13,6 +15,8 @@
 @unlock CG/Kang02 wait:false
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 describe: 그 순간.
 @sfx Heart_Beat_Fast_02 volume:50 loop:true fade:0.5 wait:false
 describe: 너무나 갑작스럽게도 여진이는 내게 다가왔다.
@@ -33,6 +37,8 @@ kang: 할거지?
 @stopSfx Common_Beautiful_Bell_Tree_01 fade:1 wait:false
 {Player_name}: (…거칠어?)
 describe: 무엇 하나 알지도 못한 채 이렇게 결정해도 되는 건가 싶었지만...
+
+@set LoadingValue=true
 @processInput false
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
@@ -44,6 +50,8 @@ describe: 무엇 하나 알지도 못한 채 이렇게 결정해도 되는 건�
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
+@set LoadingValue=false
+
 {Player_name}: 자... 잘 부탁... 드립니다..!!
 @char kangbody2.22 wait:false wait:false pose:c
 kang: 좋아! 결정된 거다!
