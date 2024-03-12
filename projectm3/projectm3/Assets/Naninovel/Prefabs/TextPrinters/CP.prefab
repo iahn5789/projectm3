@@ -1036,6 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &1249798176258854499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,19 +1497,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8498591293370566223}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: setIsMenuVisible
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: FirstShow
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2487976383280537864}
-        m_MethodName: asdf
+        m_MethodName: SetActiveAutoAnim
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1683,6 +1684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &2159664425387811590
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,6 +2537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &2717558306190511498
 GameObject:
   m_ObjectHideFlags: 0
@@ -4705,6 +4708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &4871842391384419684
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,6 +5352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &5937270027004309702
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,7 +5783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9390d81d6f4d63a41949d1368e2794c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1482058920341933584}
+  MenuAnimator: {fileID: 1482058920341933584}
+  AutoAnimator: {fileID: 8498591293370566223}
   isMenuVisible: 0
 --- !u!114 &9080284543636983553
 MonoBehaviour:
@@ -7020,6 +7026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &6977717967245542622
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,6 +7558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 642514199565608661}
+  audiolist: []
 --- !u!1 &7148438701877045289
 GameObject:
   m_ObjectHideFlags: 0
@@ -8270,9 +8278,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8498591293370566223}
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetActiveAutoAnim
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8301,17 +8309,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8498591293370566223}
-        m_MethodName: ResetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: FirstShow
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &4441039892676315847
@@ -8511,6 +8508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio: {fileID: 7029078020942921464}
+  audiolist: []
 --- !u!1 &8738762897872110056
 GameObject:
   m_ObjectHideFlags: 0

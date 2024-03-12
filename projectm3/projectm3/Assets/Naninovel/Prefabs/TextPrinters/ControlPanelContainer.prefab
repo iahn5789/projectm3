@@ -208,7 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9390d81d6f4d63a41949d1368e2794c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 3861408081895864653}
+  MenuAnimator: {fileID: 3861408081895864653}
+  AutoAnimator: {fileID: 0}
   isMenuVisible: 0
 --- !u!114 &7097250921929554114
 MonoBehaviour:
@@ -267,19 +268,12 @@ MonoBehaviour:
     m_ActionId: 0ba6c631-a7f5-46cb-b416-abdf0e72c78b
     m_ActionName: Naninovel/Load[/Keyboard/w]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5996329104071250230}
-        m_MethodName: OnSkip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 7254f119-c987-4976-8456-6ad71e734607
+      m_Calls: []
+    m_ActionId: c1525b93-3f93-43cf-b831-a2759e884eac
+    m_ActionName: Naninovel/HideUI[/Keyboard/u]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4adb666f-f865-44f0-a1d1-4604c20ff8bf
     m_ActionName: Naninovel/Skip[/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
@@ -1335,6 +1329,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   activeColorMultiplier: {r: 1, g: 0, b: 0, a: 1}
+  autoButtonAnim: {fileID: 0}
 --- !u!114 &4256355396812943430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1542,6 +1537,7 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
+  autoButtonAnim: {fileID: 0}
 --- !u!95 &5009802192581005758
 Animator:
   serializedVersion: 3
@@ -4084,6 +4080,7 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
+  autoButtonAnim: {fileID: 0}
 --- !u!95 &4117294794176211340
 Animator:
   serializedVersion: 3
@@ -4547,6 +4544,7 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
+  NowScene: {fileID: 0}
 --- !u!95 &8132586234211622481
 Animator:
   serializedVersion: 3
@@ -4728,6 +4726,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   activeColorMultiplier: {r: 1, g: 0, b: 0, a: 1}
+  autoButtonAnim2: {fileID: 0}
 --- !u!95 &6678647094872122340
 Animator:
   serializedVersion: 3
