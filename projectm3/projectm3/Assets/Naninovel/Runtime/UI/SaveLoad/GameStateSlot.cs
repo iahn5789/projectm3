@@ -77,7 +77,14 @@ namespace Naninovel.UI
             {
                 DeleteButton.gameObject.SetActive(true);
                 var date = state.SaveDateTime.ToString(dateFormat);
-                SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),state.Week,"주차",state.WeekTitle);
+                if (state.Week != "10")
+                {
+                    SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),state.Week,"주차",state.WeekTitle);
+                }
+                else
+                {
+                    SetTitleText(titleTemplate.Replace("{N}", SlotNumber.ToString()).Replace("{D}", date),"에필로그","",state.WeekTitle);
+                }
                 if (WeekNameText.text == "쪽지 시험")
                 {
                     ThumbnailTextWeek.SetActive(true);
