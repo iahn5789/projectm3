@@ -170,6 +170,7 @@ describe: 히든엔딩 : N (예시)
 describe: '신문부에 가입하다' (예시)
 @hideUI CP wait:false
 @hidePrinter wait:true time:3
+@stopbgm BGM_Map_Cool_01 fade:1 wait:false
 @back Black time:4 wait:true
 @showUI TitleUI time:3
 @goto TitleUI_New
