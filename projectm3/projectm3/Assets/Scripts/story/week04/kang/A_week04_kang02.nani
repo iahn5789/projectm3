@@ -1,84 +1,144 @@
 # week04_kang02
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScClassRoom02 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@char jeonbody4.33 pose:c wait:false
 jeon: {Player_name}!!
+@char jeonbody4.12 pose:c wait:false
 jeon: 무슨 생각을 하고 있는 건가!
 {Player_name}: 어..? 어?!
+@char jeonbody4.34 pose:c wait:false
 jeon: 이렇게 중요한 순간에 딴생각이라니.
+@char jeonbody4.33 pose:c wait:false
 jeon: 나는 너에게 실망했다!
+@char jeonbody4.35 pose:c wait:false
 {Player_name}: 내... 내가 지금...
 {Player_name}: 아...
+@char jeonbody4.31 pose:c wait:false
 jeon: 아무튼! 그래서 어떻게 할 생각인 거지?
 {Player_name}: 응..? 생각이라니?
+@char jeonbody4.35 pose:c wait:false
 jeon: ...
+@char jeonbody4.34 pose:c wait:false
 jeon: 내 말을 전혀 듣지 않은 건가?!
 {Player_name}: 어... 우리가 무슨 얘기 중이었지..?
+@char jeonbody4.54 pose:c wait:false
 jeon: {Player_name}..!
 {Player_name}: 응..?
+@char jeonbody4.52 pose:c wait:false
 jeon: 혹시 무슨 일이 있는 건 아니겠지?
 {Player_name}: 응?! 일? 무... 무슨 일?
+@hideChars wait:false
+@char jeonbody2.55 pose:c wait:false
 jeon: 최근 들어 조금 수상한 것 같단 말이지...
 {Player_name}: 수...수...수상하다니..!!
 {Player_name}: 내... 내가 뭘 어쨌다고...
+@char jeonbody2.54 pose:c wait:false
 jeon: 혹시 동아리에서 무슨 일이라도 있는 건 아니겠지?
 {Player_name}: !!
 {Player_name}: 이... 일이라는 게...
+@char jeonbody2.55 pose:c wait:false
 jeon: {Player_name}... 너...
 jeon: 그렇게 보지 않았는데...
 describe: 꿀꺽-!
+@hideChars wait:false
+@char jeonbody2.55 pose:bc wait:false
 {Player_name}: (설마..?)
 {Player_name}: (대용이가 눈치를..?)
 {Player_name}: (그럴 일이 없을 텐데... 그렇지만...)
 {Player_name}: (별 이상한 그것까지 다 알고 있는 놈이기는 한데...)
+@hideChars wait:false
+@char jeonbody1.22 pose:c wait:false
 jeon: 아무리 밴드부 부원들과 함께한다 해도 그렇게까지 넋을 놓다니!
+@char jeonbody1.24 pose:c wait:false
 jeon: 그건 진정한 신사가 아니야!
+@char jeonbody1.32 pose:c wait:false
 jeon: 진정한 신사라면... 먼발치에서 지긋이 관조할 줄 알아야 하는 법!
 {Player_name}: 엥..? 그게 무슨...
+@char jeonbody1.31 pose:c wait:false
 jeon: 아름다움에 취해 가야 할 길을 잃지 말아라...
+@char jeonbody1.12 pose:c wait:false
 jeon: 이건... 내 경험에서 나오는 진심 어린 조언이니까.
 {Player_name}: (뭐라는 거야...)
+@hideChars wait:false
 describe: 대용이가 하는 말은 여전히 알아들을 수 없는 말뿐이었다.
 {Player_name}: (그래도...)
 {Player_name}: (뭘 알고 하는 말 같지는 않은데.)
 {Player_name}: (다행...이겠지?)
+@char jeonbody3.11 pose:c wait:false
 jeon: 크흠..! 아무튼 하던 말을 다시 해보자면.
+@char jeonbody3.12 pose:c wait:false
 jeon: 저번에 말했던 콘서트 혹시 갈 생각이 있는가?
 {Player_name}: 콘서...트?
 {Player_name}: 갑자기 뜬금없이 무슨 콘서트야.
+@char jeonbody3.45 pose:c wait:false
 jeon: 저번 주에 분명히 말했을 텐데!
+@char jeonbody3.21 pose:c wait:false
 jeon: 내가 가장 좋아하는 밴드가 오는 콘서트라고!
 {Player_name}: 나한테... 그런 말을 했었다고?
+@char jeonbody3.22 pose:c wait:false
 jeon: 물론이고말고! 그때 분명히 생각해보겠다고 대답했었지.
+@hideChars wait:false
 {Player_name}: (대용이가 저번 주에 그런 말을 했었던가..?)
 {Player_name}: (왜 들은 기억이 없지..?)
 {Player_name}: (헛소리를 자주 하긴 해도 거짓말을 할 녀석은 아니긴 한데...)
 {Player_name}: (내가 진짜 요즘 제정신이 아닌 건가?)
+@char jeonbody4.11 pose:c wait:false
 {Player_name}: 그... 그럼! 당연히 기억나지!
 {Player_name}: 네가 좋아하는 밴드가 콘서트에 온다며!
 {Player_name}: 네가 포스터도 선물로 줬..던가?
 {Player_name}: 그... 이상한 헬멧 쓰고 있는...
+@char jeonbody4.45 pose:c wait:false
 jeon: ...
 {Player_name}: ..?
+@hideChars wait:false
+@char jeonbody4.33 pose:bc wait:false
 jeon: 그 말 당장 취소해!
 {Player_name}: 응..? 아. 미... 미안.
+@hideChars wait:false
+@char jeonbody4.35 pose:c wait:false
 jeon: 후우...
+@char jeonbody4.34 pose:c wait:false
 jeon: 요즘 상태가 별로 좋지 않아 보이니 한 번만 특별히 용서해주지.
+@char jeonbody4.33 pose:c wait:false
 jeon: 다음부터는 조심하도록!
+@char jeonbody4.35 pose:c wait:false
 {Player_name}: 어... 고마워.
 {Player_name}: 그런데 네가 밴드를 좋아했었나?
 {Player_name}: 되게 안 어울리는데...
+@char jeonbody4.34 pose:c wait:false
 jeon: 어울리지 않는다니. 그게 무슨 소리지?
+@char jeonbody4.35 pose:c wait:false
 {Player_name}: 아니... 뭐. 그냥...
 {Player_name}: 너는 좀 뭐랄까...
 {Player_name}: 조금 더... 그...
 {Player_name}: 정적인 걸 좋아할 거 같아서..!
+@char jeonbody4.11 pose:c wait:false
 jeon: 정적이라니! 내가 얼마나 열정이 넘치는 사람인데!
+@char jeonbody4.21 pose:c wait:false
 jeon: 아무튼... 이번 주에는 같이 가는 건가?
 {Player_name}: 콘서트를?
+@char jeonbody4.12 pose:c wait:false
 jeon: 내가 티켓까지 다 준비해놨다고!
 {Player_name}: 음... 아무래도 잘 알지도 못하는 콘서트를 가기는 조금...
+@char jeonbody4.11 pose:c wait:false
 jeon: 넌 밴드동아리잖아 좋은 공부가 될 거라고?
+@char jeonbody4.22 pose:c wait:false
 jeon: 혹시 알아? 밴드 콘서트에 갔다가 동아리 부원들이라도 만날지.
 {Player_name}: ...
+@hideChars wait:false
 describe: 의외로 틀린 말은 아니었다.
 describe: 밴드에 대해 잘 알지도 못하면서 밴드부에 들어와 있는 이상한 상황.
 describe: 어차피 티켓도 대용이가 가지고 있으니, 한 번 정도 가 보는 것도 나쁘지 않았다.
@@ -87,38 +147,60 @@ describe: 가뜩이나 눈앞의 문제를 어떻게 해결해야 할지 모르�
 describe: 괜히 정신없이 콘서트장에 다녀오고 싶지는 않았다.
 {Player_name}: 아냐... 난 괜찮아.
 {Player_name}: 꼭 콘서트를 가야지 공부를 할 수 있는 것도 아니긴 하고...
+@char jeonbody4.35 pose:c wait:false
 jeon: 그렇군... 알겠네.
+@char jeonbody4.31 pose:c wait:false
 jeon: 그게 내 친구의 의견이라면, 존중해 줄 수밖에!
+@char jeonbody4.12 pose:c wait:false
 jeon: 그렇지만 공부할 마음이 있긴 하는가 보군?
 {Player_name}: 응..? 아. 그거야 뭐...
+@char jeonbody4.11 pose:c wait:false
 jeon: 공부까지는 아니어도, 이것저것 알아둬서 나쁠 건 없으니까.
+@char jeonbody4.21 pose:c wait:false
 jeon: 그럼 강준영의 음악부터 시작해 보는 건 어떤가?
 {Player_name}: 강준영..?
 {Player_name}: 그 가수?
+@char jeonbody4.33 pose:c wait:false
 jeon: 그 가수라니!
+@hideChars wait:false
+@char jeonbody2.34 pose:c wait:false
 jeon: 우리나라최고의싱어송라이터이자올해로데뷔한지30년이나된최고의가수중년의나이임에도불구하고실력이떨어지기는커녕오히려압도적인발성으로신인들에게는절망을팬들에게는환희를선물해주는...
 {Player_name}: 그만! 그만!
 {Player_name}: 강준영 모르는 사람이 어딨어?
 {Player_name}: 근데 갑자기 강준영은 왜..?
+@char jeonbody2.45 pose:c wait:false
 jeon: ..?
+@char jeonbody2.54 pose:c wait:false
 jeon: 정말 몰라서 물어보는 건가?
 {Player_name}: 또 무슨 소리를 하려고...
+@hideChars wait:false
+@char jeonbody3.34 pose:c wait:false
 jeon: 아무리 전학 온 지 한 달밖에 되지 않았어도 그렇지 강준영을 모를 수가 있다니!
+@char jeonbody3.33 pose:c wait:false
 jeon: 그것도 자랑스러운 밴드부의 일원이!
 {Player_name}: 강준영이 누군지는 안다니까..?
 {Player_name}: 그리고 그게 밴드부랑 무슨 상관이야...
+@char jeonbody3.35 pose:c wait:false
 jeon: 강준영은... 강준영은..!
+@char jeonbody3.33 pose:c wait:false
 jeon: 우리 학교 출신이다!
 {Player_name}: ...뭐?
+@char jeonbody3.11 pose:c wait:false
 jeon: 우리 학교 출신이라고.
 {Player_name}: 강준영이... 우리 학교 출신이라고?
+@char jeonbody3.15 pose:c wait:false
 jeon: 어떻게 이걸 모를 수가 있지..?
 {Player_name}: 아니... 그런 말은 처음 듣는데...
+@char jeonbody3.44 pose:c wait:false
 jeon: 그럼 강준영의 기타가 우리 학교에 있다는 것도 모르는 건가?
 {Player_name}: ...
 {Player_name}: 뭐?!
+@hideChars wait:false
+@char jeonbody2.31 pose:c wait:false
 jeon: 강준영이 고등학생 시절.
+@char jeonbody2.32 pose:c wait:false
 jeon: 우리 학교에 다니면서 연예계 활동했을 때 사용했던 기타가...
+@hideChars wait:false
 {Player_name}: ...
 {Player_name}: (잠깐만...)
 {Player_name}: (내가 아는 그 강준영 맞지..?)
@@ -127,8 +209,11 @@ jeon: 우리 학교에 다니면서 연예계 활동했을 때 사용했던 기�
 {Player_name}: (그럼... 설마...)
 {Player_name}: (그 기타가...)
 {Player_name}: (강준영의  기타?!)
+@char jeonbody2.32 pose:c wait:false
 jeon: ...고도 못 사는 기타가 우리 학교에 있다는 말씀!
+@char jeonbody2.22 pose:c wait:false
 jeon: 그리고 그 기타를 관리하는 사람들은 다름 아닌...
+@hideChars wait:false
 {Player_name}: (그럼 내가 부숴 먹은 기타가...)
 {Player_name}: ...
 {Player_name}: (큰일났다!!)
@@ -140,32 +225,53 @@ jeon: 그리고 그 기타를 관리하는 사람들은 다름 아닌...
 {Player_name}: (10억..? 20억..? 그 이상..?)
 {Player_name}: (우리 집을 팔아도 안 될 거 같은데...)
 {Player_name}: (나 진짜 어떡해야 되는 거지?)
+@char jeonbody4.33 pose:c wait:false
 jeon: {Player_name}!!
 {Player_name}: 응?! 부... 불렀어?
+@char jeonbody4.44 pose:c wait:false
 jeon: 또 정신을 놓고 있는 건가?
 {Player_name}: 아... 아니야..! 그냥 생각할 게 좀 있어서...
+@char jeonbody4.11 pose:c wait:false
 jeon: 하긴... 나도 처음 들었을 땐 믿지 못했으니까.
+@char jeonbody4.12 pose:c wait:false
 jeon: 아무튼 그 기타를 관리하는 게 바로 우리 학교 밴드부란 말씀!
 {Player_name}: 그... 그렇구나..! 하하...
+@char jeonbody4.21 pose:c wait:false
 jeon: 그래서 말인데...
 {Player_name}: ..?
+@hideChars wait:false
+@char jeonbody4.21 pose:bc wait:false
 describe: 대용이는 갑자기 그 커다란 몸을 이끌고 가까이 다가왔다.
 {Player_name}: 뭐... 뭐야. 무슨 말을 하려고.
+@char jeonbody4.22 pose:bc wait:false
 jeon: 그 기타... 보여줄 수 있겠나..?
 {Player_name}: 기타..?
+@hideChars wait:false
+@char jeonbody1.22 pose:c wait:false
 jeon: 강준영의 기타! 보여줄 수 있겠나?
+@char jeonbody1.11 pose:c wait:false
 jeon: 밴드부가 관리하는 바람에 강준영의 기타를 볼 기회가 없었지만...
+@char jeonbody1.32 pose:c wait:false
 jeon: {Player_name}. 넌 누가 뭐래도 자랑스러운 밴드부의 일원이지 않나!
+@char jeonbody1.22 pose:c wait:false
 jeon: 이제라도 있다는 사실을 알았으니 어떻게 한번 보여줄 수 있겠나..?
 {Player_name}: 그... 그거는... 조금...
+@char jeonbody1.44 pose:c wait:false
 jeon: 조금? 조금 이따가 보여준다고?
 {Player_name}: 그게 아니라...
+@char jeonbody1.32 pose:c wait:false
 jeon: 역시! 난 너를 믿고 있었다고!
+@hideChars wait:false
+@char jeonbody3.22 pose:c wait:false
 jeon: 진정한 신사끼리는 통하는 게 있는 법!
+@char jeonbody3.11 pose:c wait:false
 jeon: 어떻게, 오늘 동아리 활동은 언제 가는 거지?
 {Player_name}: 동아리...가 오늘은 조금...
+@char jeonbody3.12 pose:c wait:false
 jeon: 조금 이따가? 그럼 지금 바로 출발하지!
+@char jeonbody3.22 pose:c wait:false
 jeon: 길게 끌 거 없이 바로 가자고!
+@hideChars wait:false
 {Player_name}: 대... 대용아!
 {Player_name}: 대용아!!
 describe: 대용이는 내 말이 들리지 않는지 먼저 교실 밖으로 나가버렸다.
