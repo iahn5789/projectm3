@@ -46,7 +46,7 @@ jin: 너! 연습 열심히 하는지 지켜볼 거야!
 
 @set LoadingValue=true
 @processInput false
-@showUI CP wait:false
+@hideUI CP wait:false
 @hideChars time:0.5 wait:false
 @hidePrinter  time:0.5 wait:true
 @bgm BGM_Map_Friendly_01 volume:80 loop:true fade:1 wait:false
@@ -54,8 +54,8 @@ jin: 너! 연습 열심히 하는지 지켜볼 거야!
 @back Black time:1 wait:true
 @sfx Amb_Office_01 volume:100 loop:true fade:1 time:0
 @back ScClub01 time:1 wait:true
-@hideUI CP wait:false
 @set "WeekTitle=\"연습이 끝나고 난 뒤\""
+@showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
