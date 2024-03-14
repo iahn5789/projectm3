@@ -1,5 +1,19 @@
 # week03_kang03
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 끼익-- 쿵-!
 describe: 문을 열고 들어간 창고 안에는 아무도 없었다.
 describe: 햇빛에 비친 먼지만 둥둥 떠다니고 있을 뿐이었다.
@@ -60,17 +74,53 @@ describe: 언제 올지 모르는 여진이를 남겨둔 채 창고 문을 활�
 {Player_name}: (언제 올지도 모르는데 언제까지 기다리고 있을 수도 없고...)
 {Player_name}: (설마 별일이야 있겠어?)
 describe: 나는 악기를 챙기기 위해 기타와 베이스 쪽으로 걸음을 옮겼다.
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: ...
+@char jinbody1.13 pose:c wait:false
 jin: 여진이는 어디 가고 혼자 왔어?
 {Player_name}: 여진이? 창고에 없던데?
+@char jinbody1.33 pose:c wait:false
 jin: 뭐?! 그럼 창고 문은 어떻게 열고?
 {Player_name}: 열려있길래 악기 먼저 챙겨 왔어!
+@char jinbody1.23 pose:c wait:false
 jin: 그래..? 그럼 뭐...
+@char jinbody1.11 pose:c wait:false
 jin: 문은 잘 닫고 온 거지?
 {Player_name}: 어...
 {Player_name}: 열어놓고... 왔지..?
+@char jinbody1.23 pose:c wait:false
 jin: ...
+@char jinbody1.45 pose:c wait:false
 jin: 지금 장난해?!?!
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: ...
 {Player_name}: (라고 할 게 뻔하겠지..?)
 {Player_name}: (조금 늦더라도 기다렸다가 같이 가자...)

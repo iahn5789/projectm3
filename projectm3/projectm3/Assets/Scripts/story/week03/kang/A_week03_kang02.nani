@@ -1,37 +1,86 @@
 # week03_kang02
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+
 describe: 드르륵-! 쾅--!
 {Player_name}: 허억... 허억...
+@char jinbody1.23 pose:c wait:false
 jin: ..?
 {Player_name}: 느... 늦어서 미안..!
+@char jinbody1.13 pose:c wait:false
 jin: 생각보다 빨리 왔네?
+@char jinbody1.22 pose:c wait:false
 jin: 그래도 한 10분은 더 걸릴 줄 알았더니.
 jin: {Player_name}. 근데 악기는?
 {Player_name}: 응..? 악기..?
+@char jinbody1.33 pose:c wait:false
 jin: ...
+@char jinbody1.44 pose:c wait:false
 jin: 악기 가지고 온다며!
 {Player_name}: 여진이가 가지고 온 거 아니었어..?
+@char jinbody1.43 pose:c wait:false
 jin: 아직 안 왔거든!
+@char jinbody1.44 pose:c wait:false
 jin: 뭐하고 돌아다니는 거야?!
 {Player_name}: 어..?
 {Player_name}: 한갑수 선생님이 분명...
 {Player_name}: 키 가지고 나간 지 30분 정도 지났다고 했는데...
+@char jinbody1.67 pose:c wait:false
 jin: 믿은 내가 바보지!
+@hideChars wait:false
 describe: 여진이가 교무실에서 나간 지 30분 정도 지났다고 한갑수 선생님은 말씀하셨다.
 describe: 하지만 어째서인지 여진이는 지금까지도 동아리실에 오지 않았다.
 describe: 악기 2개를 혼자서 들고 오기에는 분명 힘들 테지만...
 describe: 그렇다고 30분씩이나 걸리지는 않을 텐데..?
+@char sulbody1.11 pose:c wait:false
 sul: ...
 sul: 그냥...
 sul: 기다리자...
 sul: 또 괜히...
 {Player_name}: 다... 다녀올게요!
+@hideChars wait:false
+@char jinbody3.43 pose:c wait:false
 jin: 인제 와서 가긴 어딜 가!
+@char jinbody3.44 pose:c wait:false
 jin: 그냥 나희 언니 말처럼 기다...
+@hideChars wait:false
 describe: 드르륵-! 쾅--!
+@char jinbody2.55 pose:c wait:false
 jin: 야! 야!!
+@char jinbody2.23 pose:c wait:false
 jin: 아오..! 진짜 왜 저러는 거야?!
+@hideChars wait:false
+@char sulbody1.11 pose:c wait:false
 sul: ...
+@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScLobby01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 여진이는 지금까지 동아리실에 오지 않았다.
 describe: 아무리 혼자서 두 개의 악기를 옮겨야 한다고는 하지만...
 describe: 그렇다고 해도 30분은 너무 길었다.
