@@ -113,6 +113,7 @@ public class TestStartPopupManager : MonoBehaviour
     }
     private void BadEnding()
     {
+        Debug.Log("BadEnding");
         variableManager?.SetVariableValue("BadEnding", "true");
         TestStartButton.SetActive(true);
     }
@@ -121,6 +122,41 @@ public class TestStartPopupManager : MonoBehaviour
         if (RemainingLikeAbility <= 0)
         {
             return true;
+        }
+        else if (RemainingLikeAbility == 15)
+        {
+            if (_moeny >= 6000)
+            {
+                return true;
+            }
+        }
+        else if (RemainingLikeAbility == 14)
+        {
+            if (_moeny >= 5600)
+            {
+                return true;
+            }
+        }
+        else if (RemainingLikeAbility == 13)
+        {
+            if (_moeny >= 5200)
+            {
+                return true;
+            }
+        }
+        else if (RemainingLikeAbility == 12)
+        {
+            if (_moeny >= 4800)
+            {
+                return true;
+            }
+        }
+        else if (RemainingLikeAbility == 11)
+        {
+            if (_moeny >= 4400)
+            {
+                return true;
+            }
         }
         else if (RemainingLikeAbility == 10)
         {
