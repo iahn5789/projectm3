@@ -1,4 +1,6 @@
 # week04_sulhidden
+@processInput true
+@set InputKeyValue=true
 @showUI CP wait:false
 @set "WeekTitle=\"제가 그걸 왜 해야되죠?\""
 {Player_name}: 제가 그걸 왜 해야 되죠?
@@ -22,7 +24,7 @@ sul: 하지 말라고.
 @char sulbody2.85 pose:bc wait:false
 sul: 아니긴 뭐가 아니야. 사기 칠까 봐 못 믿겠다며.
 @char sulbody2.810 pose:bc wait:false
-sul: 미안해. '사기꾼'이 시간 뺏어서.
+sul: 미안해. <b>사기꾼</b>이 시간 뺏어서.
 sul: 앞으로 동아리실에서도 보지 않았으면 좋겠어.
 @char sulbody2.2 pose:bc wait:false
 sul: 혹시라도 보이면... 알지?
@@ -30,10 +32,24 @@ sul: 혹시라도 보이면... 알지?
 {Player_name}: 나희 누나!!
 @hideChars wait:false
 @spawn ShakeBackground wait:false params:,5
+@sfx Common_Door_Slam_01 volume:100 loop:false wait:0
 describe: 쾅!!
 describe: 나희 누나는 내 말을 들은 채도 않은 채 동아리실 밖으로 나가버렸다.
 {Player_name}: 어... 어?
 {Player_name}: 이게... 아닌데...
 @stopSfx Amb_Shool_Club_01 fade:1 wait:false
 @stopBgm BGM_Map_Littlesad_01 fade:1 wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@processInput true
+@set LoadingValue=false
+
+@showUI TitleUI time:3
+@goto TitleUI_New
 @stop
