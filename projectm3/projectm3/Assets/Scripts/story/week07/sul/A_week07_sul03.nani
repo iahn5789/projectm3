@@ -52,9 +52,10 @@ sul: ...진짜?
 sul: 그럼 있잖아...
 @hideChars wait:false
 @char sulbody2.12 pose:c wait:false
-sul: 학교에서 안파는 걸로 사줄 수 있어..?
+sul: 학교에서 안 파는 걸로 사줄 수 있어..?
 @char sulbody2.72 pose:bc wait:false
 sul: 다른 것도 먹어보고 싶어서...
+@hideChars time:0.5 wait:false
 @char sulbody3.71 pose:c wait:false
 {Player_name}: 그... 그럼요! 얼마든지 사다 드릴게요!
 @char sulbody3.61 pose:c wait:false
@@ -83,6 +84,7 @@ sul: 그런건 왜 물어보는 거야?
 {Player_name}: 보통 주말에 쉬기도 하고 놀러도 가는데 저번에 그...
 @stopSfx Emotion_Shame_Kettle_Steam_01 fade:1 wait:false
 {Player_name}: 그... 아무튼..!
+@hideChars time:0.5 wait:false
 @char sulbody2.15 pose:c wait:false
 sul: {Player_name}...
 @char sulbody2.12 pose:c wait:false
@@ -183,6 +185,7 @@ sul: 허리를 감싸야지.
 @stopSfx Sul_Bike_Idle_Loop_01 fade:1 wait:false
 @sfx Heart_Beat_Fast_02 volume:100 loop:true fade:0 wait:false
 @spawn Blur wait:false
+@spawn Past01 wait:false
 describe: 나는 가슴을 숙여 손을 앞으로 뻗어 나희 누나의 허리를 감쌌다.
 describe: 심장이 미친 듯이 뛰기 시작했다.
 describe: 그 심장 소리가 등 너머로 나희 누나에게 전달되는 듯 싶었다.
@@ -196,6 +199,7 @@ describe: 나희 누나의 등에 닿은 볼에 어떤 이상한 감촉이 느�
 describe: 검지손가락 마디 하나 정도 크기의 살짝 튀어나온 무언가...
 {Player_name}: ......
 @despawn Blur wait:false
+@despawn Past01 wait:false
 @char sulbody2.62 pose:bc wait:false
 sul: 꽉 잡았지? 출발한다!
 @stopBgm BGM_Map_Friendly_01 fade:1 wait:false
