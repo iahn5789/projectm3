@@ -1,116 +1,223 @@
 # week04_kang03
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScLobby01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 후우... 후우...
 {Player_name}: 같이 가자니까!
+@char jeonbody4.21 pose:c wait:false
 jeon: 강준영의 기타를 실제로 볼 수 있다는 생각에...
+@char jeonbody4.22 pose:c wait:false
 jeon: 너무 몸이 앞선 거 같군.
+@char jeonbody4.12 pose:c wait:false
 jeon: 내 사과를 받아주겠나?
 {Player_name}: 사과고 뭐고 애초에 내가 그걸 관리하는 게 아닌데...
 {Player_name}: 후우...
+@hideChars wait:false
 {Player_name}: (어째 오긴 왔는데...)
 {Player_name}: ...
 {Player_name}: (진짜 들어가기 싫다...)
 {Player_name}: (내가 그때 그걸 왜 꺼냈을까.)
 {Player_name}: (내가 미쳤지! 내가 미쳤어! 어휴...)
+@char jeonbody4.44 pose:c wait:false
 jeon: {Player_name}..?
 {Player_name}: 응..?
+@char jeonbody4.45 pose:c wait:false
 jeon: 문 앞에서 기도라도 하고 있는 건가?
 {Player_name}: 아..! 아니. 아니야... 그게 아니라... 그...
 {Player_name}: 무... 문이 잘 안 열리네! 하하하...
+@char jeonbody4.15 pose:c wait:false
 jeon: ..?
+@char jeonbody4.14 pose:c wait:false
 jeon: 무슨 소릴 하고 있는 거지..?
 {Player_name}: 아니 이게 오래돼서 그런가 문이 잘 안 열리...
+@hideChars wait:false
+@char kangbody1.11 pose:c wait:false
 kang: 거기서 뭐 해..?
 {Player_name}: 우악!!
 {Player_name}: 여... 여... 여...진아?
 {Player_name}: 아... 안녕? 하하...
+@char kangbody1.67 pose:c wait:false
 kang: 여기서 뭐 하고 있어..?
+@char kangbody1.17 pose:c wait:false
 kang: 문 앞에서 이상한 소리가 들려서 열어봤는데...
+@char kangbody1.11 pose:c wait:false
 kang: 밖에서 뭐 하고 있는 거야?
 {Player_name}: 아... 하하하... 뭘 하고 있는 건 아니고...
 {Player_name}: 그냥 친구랑 잠시 대화...
 {Player_name}: !!
+@hideChars wait:false
 describe: 문제는 그 대화가 내가 부숴 먹은 바로 그 기타에 관한 대화였다.
 describe: 괜히 여진이 앞에서 꺼내고 싶지는 않았지만,
 describe: 문제는 이 눈치 없는 전대용이 말을 꺼내...
+@char jeonbody2.25 pose:c wait:false
 {Player_name}: ..?
 {Player_name}: 대용아..?
+@char jeonbody2.51 pose:c wait:false
 jeon: 어..? 어..! 부... 불렀나..?
 {Player_name}: 뭐야... 갑자기.
+@char jeonbody2.45 pose:c wait:false
 jeon: 크... 크흠..!
+@hideChars wait:false
+@char jeonbody3.22 pose:c wait:false
 jeon: 바... 바... 반... 반가...
+@hideChars wait:false
+@char kangbody1.61 pose:l wait:false
+@char jeonbody3.22 pose:r wait:false
 kang: ..?
 jeon: 반가...워...
+@char kangbody1.88 pose:l wait:false
 kang: 미안한데 뭐라고 말하는지 잘 안 들리...
+@char jeonbody3.25 pose:r wait:false
 jeon: 지... 지... 지...
+@char kangbody1.82 pose:l wait:false
 kang: 지..?
+@char jeonbody3.24 pose:r wait:false
 jeon: 지... 진...준...
+@hideChars wait:false
+@char kangbody2.21 pose:c wait:false
 kang: {Player_name}! 빨리 들어와! 연습 시작해야지.
+@char kangbody2.11 pose:c wait:false
 kang: 다른 부원들도 기다리고 있어!
+@hideChars wait:false
+@char jeonbody3.25 pose:c wait:false
 jeon: 기... 기타... 한번...
 {Player_name}: 어..? 어! 그... 그래야 하긴 하는데...
+@char jeonbody3.21 pose:c wait:false
 {Player_name}: (얘는 도대체 뭐 하는 거지..?)
 describe: 대용이는 어째서인지 말을 제대로 못 하고 있었다.
+@hideChars wait:false
+@char kangbody2.21 pose:c wait:false
 kang: 대용이 맞지? 만나서 반가웠어!
+@char kangbody2.11 pose:c wait:false
 kang: 우리 먼저 가볼게! 나중에 또 보자!
+@hideChars wait:false
+@char jeonbody3.41 pose:c wait:false
 jeon: 그... 그... 반가웠...
 describe: 쾅-!
+@char jeonbody3.51 pose:c wait:false
 jeon: ...
+@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
+@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back ScClub01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 대용이를 밖에 두고 여진이에게 이끌려 동아리실 안으로 들어왔다.
 describe: 동아리실 안에는 여진이 말고도 다영이와 나희 누나도 있었다.
+@char jinbody3.43 pose:c wait:false
 jin: 또 늦었어? 준비도 안 하면서 왜 맨날 늦는 거야?!
 {Player_name}: 그... 그게...
+@char jinbody3.23 pose:c wait:false
 jin: 보나 마나 또 밖에서 몰래 엿듣고 있었겠지!
+@hideChars wait:false
+@char sulbody1.11 pose:c wait:false
 sul: ...
 sul: 안녕..?
 {Player_name}: 아... 안녕하세요..? 하하...
+@hideChars wait:false
+@char kangbody2.22 pose:c wait:false
 kang: 그럼 다 모였으니 슬슬 시작할까?
+@char kangbody2.11 pose:c wait:false
 {Player_name}: 시작한다고..?
 {Player_name}: 바로 연습 시작하는 거야?
+@char kangbody2.44 pose:c wait:false
 kang: 아니! 왜 저번에 말한 거 있잖아.
 {Player_name}: 저번에... 말했던 거?
+@char kangbody2.21 pose:c wait:false
 kang: 악기 관리! 오늘은 그거부터 하려고.
 {Player_name}: 악기... 관리..?
 {Player_name}: 관리라면... 설마...
+@char kangbody2.67 pose:c wait:false
 kang: 저번에 물어봤던 기타 있잖아. 혹시 기억 안 나?
 {Player_name}: 서... 설마! 그런데 갑자기 왜...
+@char kangbody2.88 pose:c wait:false
 kang: 갑자기라니! 조만간 할 거라고 했잖아.
+@char kangbody2.41 pose:c wait:false
 kang: 너도 우리 밴드부의 일원인데 하는 법도 배워둬야지.
 {Player_name}: 그... 그... 그...
+@hideChars wait:false
+@char kangbody1.11 pose:c wait:false
 kang: 너무 겁먹지 마! 내가 천천히 잘 알려줄 테니까!
+@char kangbody1.41 pose:c wait:false
 kang: 하라는 대로만 하면 <b>고장</b>날 일은 없어.
 describe: 어쩐지 <b>고장</b>이라는 단어가 조금 더 귀에 꽂히는 기분이었다.
 {Player_name}: 그... 그래도 혹시라도, 정말 만에 하나라도 부서지기라도 하면...
+@hideChars wait:false
+@char jinbody1.43 pose:c wait:false
 jin: 재수 없는 소리 좀 그만하지?
+@char jinbody1.44 pose:c wait:false
 jin: 부서지긴 뭐가 부서져! 저게 어떤 기타인 줄 알고!
+@char jinbody1.43 pose:c wait:false
 {Player_name}: 그... 그렇지..? 하하하...
 {Player_name}: 부숴 먹을...순 없으니까..!
+@char jinbody1.23 pose:c wait:false
 jin: 으휴... 하여간...
+@char jinbody1.13 pose:c wait:false
 jin: 아무튼 빨리 끝내고 빨리 연습
+@hideChars wait:false
+@char kangbody1.44 pose:c wait:false
 kang: 잠깐! 아까 내가 한 말 못 들었어?
+@char kangbody1.45 pose:c wait:false
 kang: 처음인 사람도 있는데 천천히 알려줘야지!
+@hideChars wait:false
+@char kangbody1.44 pose:l wait:false
+@char jinbody2.33 pose:r wait:false
 jin: 뭘 천천히 알려줘! 시간도 없는데 연습 안 할 거야?
+@char kangbody1.45 pose:l wait:false
 kang: 연습도 중요하지만 알 건 알아야지!
+@char kangbody1.41 pose:l wait:false
 kang: 얘도 어엿한 밴드부의 일원이라고!
+@char jinbody2.43 pose:r wait:false
 jin: 으... 알겠으니까 빨리 알려주기나 해!
 {Player_name}: 자... 잠깐만..!
+@hideChars wait:false
+@char kangbody1.61 pose:c wait:false
 kang: 응? 무슨 일 있어?
 {Player_name}: 아... 아니! 그게 아니라... 그...
 {Player_name}: 그럼... 그 기타가 지금 여기 있는 거야..?
+@char kangbody1.12 pose:c wait:false
 kang: 그럼! 관리해야 되니까 가져왔지!
 {Player_name}: 가... 가져왔다고? 유리관에서 꺼내서?
+@hideChars wait:false
+@char jinbody3.43 pose:c wait:false
 jin: 무슨 소리를 하는 거야 쟤는...
+@char jinbody3.44 pose:c wait:false
 jin: 헛소리 그만하고 빨리 와!
+@hideChars wait:false
 {Player_name}: (기타를 꺼내서 가지고 왔다고?)
 {Player_name}: (잠시만... 그럼 상태가 이상하다는걸 알고 있어야 하는 거 아닌가..?)
 {Player_name}: (왜 아무 말이 없지..?)
 {Player_name}: 아...알았어!
 {Player_name}: (아무리 생각해도 뭔가 이상한데..?)
 {Player_name}: (내가 생각한 그 기타가 아닌가?)
+@char kangbody1.11 pose:c wait:false
 kang: {Player_name}. 가까이 와서 한번 봐봐!
 describe: 고민하던 사이 어느새 여진이는 기타를 책상 위에 올려놨다.
 {Player_name}: 어..? 어! 그래...
 describe: 발걸음 소리보다 어쩐지 심장 소리가 더 크게 들려왔다.
+@hideChars wait:false
 {Player_name}: ...
 {Player_name}: ......
 {Player_name}: ..?
@@ -121,33 +228,54 @@ describe: 오히려 그렇게 오래된 기타라는 생각이 들지 않을 정
 describe: 설명을 듣지 않았다면 10만 원도 하지 않는 싸구려 기타라고 생각할 정도로...
 {Player_name}: 이... 이게...
 {Player_name}: 그 기타야..?
+@char kangbody1.22 pose:c wait:false
 kang: 응! 저번에 창고 정리하면서 봤었지?
+@char kangbody1.12 pose:c wait:false
 kang: 짜잔! 이게 바로 그 유명한 강준영의 기타야!
+@char kangbody1.41 pose:c wait:false
 kang: 우리 학교의 자랑이자 밴드부의 보물!
+@char kangbody1.12 pose:c wait:false
 kang: 영광으로 생각해! 아무나 못 보는 기타라고!
+@hideChars wait:false
+@char jinbody1.43 pose:c wait:false
 jin: ...
+@hideChars wait:false
 {Player_name}: 어...
 {Player_name}: 멀쩡하네..?
+@char kangbody1.67 pose:c wait:false
 kang: 멀쩡하다고?
 {Player_name}: 아..! 그... 아니 내 말은...
+@char kangbody1.64 pose:c wait:false
 {Player_name}: 되게 오래됐을 텐데 멀쩡하다고..!
 {Player_name}: 하하하...
+@char kangbody1.43 pose:c wait:false
 describe: 어쩐지 여진이는 대답 없이 내 얼굴을 가만히 보고 있었다.
 kang: ...
+@char kangbody1.41 pose:c wait:false
 kang: {Player_name}! 농담이 너무 짓궂은 거 아니야?
+@char kangbody1.22 pose:c wait:false
 kang: 당연히 멀쩡하지! 우리가 얼마나 공들여서 관리하는데!
+@char kangbody1.41 pose:c wait:false
 kang: 보관도 이중으로 철저하게 해놓아서 혹시라도 있을 사고도 방지하고 있다고.
 {Player_name}: 그... 그렇지..! 철저하게 관리해야지!
 {Player_name}: 혹시라도 무슨 일이 생기면 안 되잖아..?
+@hideChars wait:false
+@char jinbody3.43 pose:c wait:false
 jin: 헛소리 말고 빨리 시작하기나 해!
+@char jinbody3.23 pose:c wait:false
 jin: 연습 안 할 거야?
 {Player_name}: 아... 알겠어! 빨리 시작하자..!
 {Player_name}: 근데 어떻게 해야 하는 거지..?
+@hideChars wait:false
+@char kangbody3.41 pose:c wait:false
 kang: 내가 알려주는 대로만 하면 돼!
+@char kangbody3.11 pose:c wait:false
 kang: 일단 가볍게 줄을 풀어주고...
 describe: 여진이는 내 손을 잡고 기타의 끝에 달린 손잡이를 돌렸다.
+@char kangbody3.12 pose:c wait:false
 kang: 너무 강하게 돌리지 않아도 되니까 힘 빼고...
 {Player_name}: ...
+@hideChars wait:false
 describe: 여진이는 단순히 손만 잡지 않았다.
 describe: 한 손으로는 내 손을.
 describe: 다른 한 손으로는... 내 어깨를 감쌌다.
@@ -172,34 +300,61 @@ describe: 여진이의 가벼운 웃음소리가 들렸다.
 describe: 가볍지만... 너무나도 무거웠다.
 describe: 서 있기 힘들 정도로...
 describe: 끼익-!
+@char jinbody3.45 pose:c wait:false
 jin: 야!!
+@char jinbody3.44 pose:c wait:false
 jin: 똑바로 안 해! 기타 고장 나면 네가 책임질 거야?!
 describe: 순간적으로 집중을 못 한 사이. 나도 모르게 힘이 들어간 듯했다.
+@char jinbody3.43 pose:c wait:false
 describe: 누가 들어도 불길해 보이는 소리가 기타에서 났다.
 {Player_name}: 미...미안...
+@hideChars wait:false
+@char kangbody1.45 pose:l wait:false
+@char jinbody3.43 pose:r wait:false
 kang: 진다영! 처음 하면 그럴 수도 있지 너무 뭐라고 하는 거 아니야?
+@char jinbody3.44 pose:r wait:false
 jin: 다 부숴 먹게 생겼는데 뭐가 그럴 수도 있어!
 {Player_name}: 크...크흠..!
+@char kangbody1.44 pose:l wait:false
 kang: 부숴 먹다니! 이 정도로 기타가 부서질 거 같아?
 {Player_name}: 자... 잠깐만..!
+@char jinbody3.45 pose:r wait:false
 jin: 오래된 기타니까 조심하라는 말이잖아!
+@char kangbody1.45 pose:l wait:false
 kang: 그걸 몰라서 그러겠어? 실수할 수도 있는 거잖아!
+@char jinbody3.23 pose:r wait:false
 jin: 그럴 거면 애초에 왜 시키질 말았어야지!
+@char kangbody1.86 pose:l wait:false
+@char jinbody3.63 pose:r wait:false
 describe: 쾅-!
+@hideChars wait:false
+@char sulbody2.2 pose:c wait:false
 sul: ...
 sul: 그만하지?
+@hideChars wait:false
+@char kangbody1.81 pose:l wait:false
+@char jinbody1.61 pose:r wait:false
 jin: ...
 kang: ...
+@hideChars wait:false
+@char sulbody3.11 pose:c wait:false
 sul: {Player_name}?
 {Player_name}: 네..? 네?!
 sul: 여진이 말처럼 처음이니까 실수할 수도 있어.
+@char sulbody3.81 pose:c wait:false
 sul: 하지만 다영이 말대로 그냥 기타는 아니니까.
+@char sulbody3.11 pose:c wait:false
 sul: 이번에는 여기까지 하고 여진이가 어떻게 관리하는지 보는 거로 하자.
 sul: 괜찮지?
 {Player_name}: 아... 네! 그럼요!
 {Player_name}: 그럼 이거는...
+@hideChars wait:false
+@char kangbody1.11 pose:c wait:false
 kang: 내려놓으면 돼! 나머지는 내가 할 테니까.
+@hideChars wait:false
+@char jinbody1.43 pose:c wait:false
 jin: 살살 내려놔! 부숴 먹지 말고!
+@hideChars wait:false
 describe: 다시 한번 봐도 기타는 멀쩡해 보였다.
 describe: 마치 새로 산 것처럼.
 describe: 악몽은 마치 현실처럼 생생하다고 했는데...
