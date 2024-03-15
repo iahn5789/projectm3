@@ -34,7 +34,10 @@ namespace Naninovel.UI
         protected override void OnButtonClick ()
         {
             player.SetSkipEnabled(!player.SkipActive);
-            autoButtonAnim2.SetTrigger("UIHide");
+
+            autoButtonAnim2.ResetTrigger("FirstShow"); // MenuUI 애니메이션 재생
+            autoButtonAnim2.SetTrigger("Hide");
+            Debug.Log("OnButtonClick");
         }
 
         private void HandleSkipModeChange (bool enabled)
@@ -42,7 +45,9 @@ namespace Naninovel.UI
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;
             if (autoButtonAnim2 != null)
             {
-                autoButtonAnim2.SetTrigger("UIHide");
+                autoButtonAnim2.ResetTrigger("FirstShow"); // MenuUI 애니메이션 재생
+                autoButtonAnim2.SetTrigger("Hide");
+                Debug.Log("HandleSkipModeChange");
             }
         }
         private void HandleAutoModeChange (bool enabled)

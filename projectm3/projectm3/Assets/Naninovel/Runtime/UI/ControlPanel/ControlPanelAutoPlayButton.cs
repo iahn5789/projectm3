@@ -53,7 +53,8 @@ namespace Naninovel.UI
         {
             if (!player.AutoPlayActive)
             {
-                autoButtonAnim.SetTrigger("UIHide");
+                autoButtonAnim.ResetTrigger("FirstShow"); // MenuUI 애니메이션 재생
+                autoButtonAnim.SetTrigger("Hide");
             }
         }
     } 
