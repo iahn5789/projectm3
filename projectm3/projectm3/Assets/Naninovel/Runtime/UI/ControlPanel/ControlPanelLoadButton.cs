@@ -42,7 +42,8 @@ namespace Naninovel.UI
 
             variableManager = Engine.GetService<ICustomVariableManager>();
             variableManager?.SetVariableValue($"InputKeyValue", InputKey);
-            autoButtonAnim.SetTrigger("UIHide");
+            autoButtonAnim.ResetTrigger("FirstShow"); // MenuUI 애니메이션 재생
+            autoButtonAnim.SetTrigger("Hide");
             
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Load;
             saveLoadUI.Show();
