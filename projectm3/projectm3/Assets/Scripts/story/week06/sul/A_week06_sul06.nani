@@ -43,7 +43,7 @@ describe: 고개를 살짝 돌려 나희 누나를 쳐다봤다.
 sul: ...
 describe: 나희 누나는 무언가 생각에 잠긴 듯 보였다.
 describe: 인기척을 내기엔 멀고 부르기엔 가까운 거리.
-describe: 그 애매한 거리가 오히려 나희 누나를 멀어보기에 했다.
+describe: 그 애매한 거리가 오히려 나희 누나를 멀어보이게 했다.
 sul: ...
 describe: 나희 누나는 고개를 돌려 나를 쳐다봤다.
 sul: ...
@@ -183,10 +183,11 @@ sul: 사실 다른 누군가에게 이런 말을 할 수 있을 거라 생각을
 @char sulbody4.65 pose:bc wait:false
 sul: ...막상 하고 나니 마음이 좀 후련해졌어.
 {Player_name}: 도... 도움이 되었다니 다행이네요...
-@char sulbody4.1 pose:bc wait:false
+@char sulbody4.62 pose:bc wait:false
 sul: 후후... 그럼 나 먼저 갈게... 내일 보자.
 {Player_name}: 누나도 조심히 들어가세요!
 @hideChars wait:false
+@spawn Past01
 describe: 시간이 지나고 거리의 가게들도 이젠 절반 넘게 영업을 끝냈다.
 describe: 거리를 밝게 비추던 네온사인이 점점 밤하늘의 달보다 어두워지고 있었다.
 describe: 점점 어두워지는 거리 속으로 나희누나는 사라져 갔다.
@@ -200,6 +201,7 @@ describe: 점점 어두워지는 거리 속으로 나희누나는 사라져 갔�
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
+@despawn Past01
 @back Black time:1 wait:true
 @set LoadingValue=false
 
