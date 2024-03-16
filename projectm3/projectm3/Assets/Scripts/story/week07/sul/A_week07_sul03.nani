@@ -222,6 +222,8 @@ sul: 꽉 잡았지? 출발한다!
 @set "WeekTitle=\"그녀가 있는 거리\""
 
 @spawn ShakeBackground wait:false
+@stopSfx Sul_Bike_Run_01 fade:1 wait:false
+@stopSfx Sul_Bike_Wind_Gust_01 fade:1 wait:false
 {Player_name}: 우...우웩...
 @char sulbody1.13 wait:false pose:c
 sul: 왜 그래?
@@ -235,8 +237,6 @@ sul: 규정 속도 지키면서 안전하게 탄건데...
 @hideChars wait:false
 @char sulbody4.82 wait:false pose:c
 sul: 다음에는 천천히 탈게!
-@stopSfx Sul_Bike_Run_01 fade:1 wait:false
-@stopSfx Sul_Bike_Wind_Gust_01 fade:1 wait:false
 @sfx Amb_Night_Traffic_Car_01 volume:100 loop:true fade:0 wait:false
 describe: 나희 누나를 따라 오토바이를 타고 축제가 열리는 곳에 도착했다.
 describe: 도착하고 보니 이미 하늘은 어두워져 있었다.
