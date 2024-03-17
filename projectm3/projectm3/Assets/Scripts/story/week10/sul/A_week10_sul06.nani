@@ -337,8 +337,8 @@ describe: 이 넓은 도시에서 홀로 서있더라도.
 describe: 나에게는 언제나 나희 누나가 있으니까.
 describe: 나는...
 describe: 나희 누나를 사랑하니까.
-@stopSfx Amb_Road_01 fade:1 wait:false
-@stopBgm BGM_Map_SuperSad_01 fade:1 wait:false
+@stopSfx Amb_Road_01 fade:4 wait:false
+@stopBgm BGM_Map_SuperSad_01 fade:4 wait:false
 
 ; 변수 초기화(주의)
 @set LoadingValue=true
@@ -376,5 +376,6 @@ describe: 나희 누나를 사랑하니까.
 @set Tutorial=End
 @set "WeekTitle=\"쪽지 시험\""
 @set BadEnding=false
-@goto TestSceneUI
+
+@goto EndingUI
 @stop
