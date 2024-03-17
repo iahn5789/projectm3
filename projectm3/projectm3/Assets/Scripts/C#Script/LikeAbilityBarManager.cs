@@ -45,6 +45,10 @@ public class LikeAbilityBarManager : MonoBehaviour
 
             if (int.TryParse(likeAbilityText.text, out int parsedValue))
             {
+                if (parsedValue > 100)
+                {
+                    parsedValue = 100;
+                }
                 likeAbilityBarRect.sizeDelta = new Vector2(parsedValue * 1.7f, likeAbilityBarRect.sizeDelta.y);  // Use cached RectTransform
             }
         }
