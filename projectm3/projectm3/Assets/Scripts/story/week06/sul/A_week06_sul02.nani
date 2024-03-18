@@ -60,9 +60,10 @@ describe: 이 상태에서 대용이를 만난다면...
 describe: 나는 발소리를 내지 않기 위해 혼신의 힘을 다해 살금살금 걸었다.
 @stopSfx Amb_Dark_01 fade:1 wait:false
 {Player_name}: (거의 다 왔어. 이제 코너만 지나면...)
+@stopBgm BGM_Sul_Sad_Bb_01 fade:1
 @sfx Common_Cartoon_Bodyfall_01 volume:100 loop:false wait:false
 @bgm BGM_Map_CunningCity_01 volume:80 loop:true fade:1 wait:false
-@spawn ShakeBackground wait:false params:,5
+@spawn ShakeBackground params:,5 wait:false
 describe: 쿠당-탕-탕-!
 @char labody3.36 pose:c wait:false
 @sfx Amb_Office_01 volume:100 loop:true fade:1 wait:false
@@ -223,7 +224,7 @@ describe: 주변을 둘러보니 라은은 이미 사라지고 없었다.
 describe: 달려오는 보안요원을 마주 본 채 나는 숨을 들이마 쉬었다.
 {Player_name}: 후웁..!
 보안요원C: 가만히 있어!
-@spawn ShakeBackground wait:false params:,3
+@spawn ShakeBackground params:,3 wait:false
 @spawn ShakePrinter wait:false
 {Player_name}: 안녕히 계세요!!
 @stopBgm BGM_Map_CunningCity_01 fade:1 wait:false
