@@ -152,8 +152,10 @@ la: 조금만 있으면 술술 불게 될...
 @char labody1.57 pose:bc wait:false
 la: 엥? 저건 무슨...
 {Player_name}: 설마...
+@stopbgm BGM_Map_SuperSad_01 fade:1 wait:false
 @hideChars time:0.5 wait:false
 @spawn ShakeBackground wait:false params:,3
+@bgm BGM_Map_Blues_01 volume:50 loop:true fade:1 wait:false
 describe: 쿠웅-!
 @char jeonbody4.35 pose:c wait:false
 jeon: {Player_name}!!
@@ -298,6 +300,6 @@ la: <size=70>꺄악-!!</size>
 describe: 나는 대용이와 라은을 뒤로한 채 학교의 옥상으로 달려갔다.
 @sfx Footsteps_Male_ctr_run_01 volume:80 loop:false fade:0 wait:false
 @stopsfx Amb_Room_Tone_02 fade:1 wait:false
-@stopbgm BGM_Map_SuperSad_01 fade:1 wait:false
+@stopbgm BGM_Map_Blues_01 fade:1 wait:false
 
 @goto A_week08_sul05.week08_sul05
