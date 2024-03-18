@@ -15,6 +15,7 @@
 @set "WeekTitle=\"누나가 왜 거기서 나와..?\""
 
 
+@bgm BGM_Map_LovelyEP_01 intro:1 volume:50 loop:true fade:1 wait:false
 {Player_name}: 어?
 {Player_name}: 내가 잘못 보고 있는 건가?
 describe: 방 문을 열자 보인건 다름 아닌 나희 누나였다.
@@ -161,7 +162,7 @@ describe: 나...
 describe: 동아리 그만두어야 되는 걸까?
 
 @stopSfx Amb_Room_Tone_02 fade:1 wait:false
-@stopBgm BGM_Map_Blues_01 fade:1 wait:false
+@stopBgm BGM_Map_LovelyEP_01 fade:1 wait:false
 ; 변수 초기화(주의)
 @set LoadingValue=true
 @processInput false
