@@ -74,6 +74,9 @@ MC: 러브크레센도입니다!
 @spawn ShakeCamera wait:false
 @sfx Body_Fall_01 volume:80 loop:false wait:false
 {Player_name}: <size=50>러</size><size=50>브</size><size=50>크</size><size=50>레</size><size=50>센</size><size=50>도</size><size=50>!</size>
+@char kangbody1.83 pose:c wait:false
+???: ...
+일동: ...
 {Player_name}: ...
 describe: 어딘가 익숙한 풍경.
 describe: 조용하고 나른한 분위기.
@@ -81,6 +84,7 @@ describe: 그 속에서 현실을 파악하기까지 걸리는 시간 3초.
 @sfx Common_Girl_Laugh_01 volume:100 loop:false wait:false
 @bgm BGM_Map_Classroom_01 volume:70 loop:true wait:false
 describe: 3초 동안의 정적은 뒷자리에서 터진 누군가의 웃음과 함께 끝이 났다.
+@hideChars wait:false
 @stopSfx Common_Girl_Laugh_01 fade:1 wait:false
 일동: 쟤... 지금 뭐라고 한거야...?
 일동: 러브... 어쩌고 하지 않았나?
@@ -127,4 +131,11 @@ describe: 조금 사그라들었던 주변의 웃음소리가 다시 커졌다.
 @stopSfx Common_Crowd_Laugh_01 fade:1 wait:false
 @stopSfx Amb_Classroom_Cutoff_01 fade:0.5 wait:false
 선생님: 모두 조용! 집중해!
+@char kangbody1.82 pose:c wait:false
+???: 계속 말해도 될까요..?
+선생님: 어. 계속해.
+@char kangbody1.62 pose:c wait:false
+???: 네! 계속하겠습니다!
+@char kangbody1.12 pose:c wait:false
+???: 저희 러브크레센도는 교내 유일한 밴드 동아리로 주기적으로 공연...
 @goto A_prologue_02.prologue_02
