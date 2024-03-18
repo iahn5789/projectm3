@@ -22,8 +22,9 @@
 @showUI CP wait:false
 @sfx Common_Backstage_01 volume:75 loop:true fade:1 wait:false
 @sfx Amb_Crowd_Loop_01 volume:90 loop:true fade:1 wait:false
-@back Dream
 @spawn Blur wait:false
+@spawn Past01 wait:false
+@back FestivalConcert02
 @sfx Heart_Beat_Fast_02 volume:70 loop:true fade:10 wait:false
 describe: 두근거리는 심장
 describe: 떨리는 손을 들어 가슴에 올려보았다.
@@ -64,9 +65,10 @@ MC: 러브크레센도입니다!
 @hidePrinter  time:0.5 wait:false
 @hideUI CP wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:40 loop:true fade:1 wait:false
-@back ScClassRoom01 wait:false
-@showUI CP wait:false
+@back ScClassRoom02 wait:false
 @despawn Blur wait:false
+@despawn Past01 wait:false
+@showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
@@ -108,6 +110,7 @@ describe: 등 뒤에는 무서울 정도로 온화한 얼굴의 선생님이 계
 {Player_name}: ...?
 선생님: 뒤로 나가서 손 들고 서 있어!!
 {Player_name}: 아...으...어...네...
+@back ScClassRoom01 wait:false
 @sfx Footsteps_Male_Wood_Walk_01 volume:70 loop:false wait:false
 describe: 화끈거리는 뒤통수를 잡고 뒤로 걸어 나갔다.
 describe: 시선 사이사이로 반 친구들의 비웃는 얼굴이 보였다.

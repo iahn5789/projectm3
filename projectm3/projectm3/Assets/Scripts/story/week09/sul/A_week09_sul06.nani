@@ -87,7 +87,7 @@ sul: 응... 봤어...
 sul: 잠깐만..!
 describe: 뒤를 돌려는 나희 누나는 잠시 내 손을 잡은 채 멈춰 섰다.
 @char sulbody4.11 pose:bc wait:false
-{Player_name}: 왜그래요..?
+{Player_name}: 왜 그래요..?
 @hideChars time:0.5 wait:false
 @char sulbody3.37 pose:bc wait:false
 sul: 뒤에서도... 오고있어...
@@ -219,6 +219,7 @@ sul: 우리...
 @char sulbody1.74 pose:bc wait:false
 sul: 이대로... 조금만 더 있을까..?
 @spawn Blur wait:false
+@spawn Past01 wait:false
 describe: 나희 누나의 향기가 더 가까워졌다.
 describe: 손에서만 느껴지던 나희 누나의 따스함이...
 describe: 더 많은 곳에서 느껴지기 시작했다.
@@ -237,6 +238,8 @@ describe: 다시 한번 멈췄다.
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:1 wait:true
+@despawn Blur wait:false
+@despawn Past01 wait:false
 @back Black time:1 wait:true
 @set LoadingValue=false
 

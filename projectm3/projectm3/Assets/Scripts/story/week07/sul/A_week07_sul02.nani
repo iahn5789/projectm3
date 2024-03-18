@@ -44,7 +44,7 @@ sul: 뭐가 문제인 거죠?
 sul: 네. 진짜 뭐가 문제인지 모르겠어서요.
 @char sulbody2.11 pose:c wait:false
 describe: 익숙한 목소리는 다름 아닌 나희 누나였다.
-describe: 나희 누나는 교문에서 선생님과 오토바이 관련된 문제로 <b>대화</b>중인 것 같았다.
+describe: 나희 누나는 교문에서 선생님과 오토바이 관련된 문제로 대화중인 것 같았다.
 {Player_name}: (설마... 아까 그 사람이 진짜 나희 누나였다고..?)
 @sfx Common_Lightning_One_Shot_01 volume:100 loop:false fade:0 wait:false
 선생님: 학생이 무슨 오토바이야!
@@ -60,7 +60,7 @@ sul: 면허 있다고요. 보여드려요?
 sul: 장난은 선생님이 하고 계시는 거 아닌가요?
 선생님: 지금... 뭐라고 했어!
 @char sulbody2.84 pose:c wait:false
-sul: 학생이 오토바이 타고 등교하면 안된다는 교칙이 있던가요?
+sul: 학생이 오토바이 타고 등교하면 안 된다는 교칙이 있던가요?
 @char sulbody2.11 pose:c wait:false
 sul: 제가 알기론 없는데...
 @char sulbody2.15 pose:c wait:false
@@ -68,7 +68,7 @@ sul: 교칙도 문제없고, 면허도 있고, 안전 장비도 착용했습니�
 sul: 도대체 뭐가 문제인지 모르겠네요.
 @char sulbody2.11 pose:c wait:false
 선생님: 너 오늘따라 왜 이리 또박또박 말대꾸야!
-선생님: <b>죄송합니다</b> 한마디 하기가 그렇게 어려워?!
+선생님: 죄송합니다 한마디 하기가 그렇게 어려워?!
 @char sulbody2.81 pose:c wait:false
 sul: ...
 @char sulbody2.15 pose:c wait:false
@@ -84,14 +84,14 @@ describe: 나희 누나는 오토바이를 타고 그대로 학교 안으로 들
 {Player_name}: (멋있다...)
 선생님: 야! 거기 너! 지각한 주제에 어딜 살금살금 들어가?!
 {Player_name}: 네..? 저요?!
-선생님: 거기 너밖에 더 있어?
+선생님: 거기 너 밖에 더 있어?
 describe: 어느샌가 나희 누나를 구경하던 학생들은 사라지고 없었다.
 선생님: <size=50>이</size><size=50>리 </size><size=50>와</size><size=50>서</size> <size=50>엎</size><size=50>드</size><size=50>려</size> <size=50>뻗</size><size=50>쳐</size><size=50>!</size>
 {Player_name}: 아니... 선생님 저 2분 전에 도착했...
 선생님: 시끄러워! 그래서 지금 학교 안에 들어왔어?
 {Player_name}: 그... 그건 아니긴 한데...
-선생님: 빨리 엎드려뻗쳐!
-{Player_name}: 아침부터 되는게 없네...
+선생님: 빨리 엎드려 뻗쳐!
+{Player_name}: 아침부터 되는 게 없네...
 @stopBgm BGM_Map_Antics_01 fade:1 wait:false
 @stopSfx Amb_Classroom_Cutoff_01 fade:1 wait:false
 
@@ -115,6 +115,7 @@ describe: 어느샌가 나희 누나를 구경하던 학생들은 사라지고 �
 describe: 아침에 있었던 일 덕분인지 대용이는 하루 종일 기분이 좋아 보였다.
 describe: 너무 좋아 보여서 문제이긴 했지만...
 @spawn Blur wait:false
+@spawn Past01 wait:false
 @char jeonbody1.11 pose:c wait:true
 jeon: {Player_name}! 아침에 본 아리따운 여성분이 누군지 혹시 아는가?
 @char jeonbody1.22 pose:c wait:false
@@ -124,8 +125,9 @@ jeon: {Player_name}! 너는 그분이 누군지 궁금하지도 않은가?
 jeon: {Player_name}! {Player_name}! {Player_name}!
 describe: 대용이는 학교 정문에서 나희 누나를 보지 못한 모양이다.
 describe: 운이 좋은 건지 나쁜 건지...
-@despawn Blur wait:false
 @hideChars wait:false
+@despawn Blur wait:false
+@despawn Past01 wait:false
 describe: 어쨌든 학교가 끝나고도 그 이야기를 해대는 덕분에 나까지 동아리 활동에 늦어버렸다.
 describe: 심지어 주차해 둔 오토바이 근처에서 잠복할 거라는 대용이를 겨우 말린 건 덤이었다.
 {Player_name}: (생각해 보니 그 정도는 말해줘도 괜찮았으려나..?)
@@ -140,7 +142,7 @@ describe: 심지어 주차해 둔 오토바이 근처에서 잠복할 거라는 
 describe: 덜컥-!
 {Player_name}: (응..? 이게 왜 안 열리지?)
 describe: 동아리실에 도착한 나는 문을 열려고 했지만, 문은 열리지 않았다.
-{Player_name}: (아예 안움직이는건 아닌데...)
+{Player_name}: (아예 안 움직이는건 아닌데...)
 describe: 살짝 살짝씩 움직이는 걸 봐서는 잠긴 것 같지는 않았다.
 {Player_name}: (어디가 걸렸나..?)
 describe: 문이 움직이는 바닥 부분을 봤지만 딱히 걸린 부분은 없었다.
@@ -159,7 +161,7 @@ describe: 문에 달린 유리 너머로 들여다보았지만 아무도 보이�
 @sfx Door_Lock_01 volume:100 loop:false fade:0 wait:false
 describe: 덜컥덜컥-
 describe: 나는 다시 한번 문을 열어봤지만 조금씩 움직이기만 할 뿐 열리지는 않았다.
-{Player_name}: (그나저나... 문은 또 갑자기 왜 이모양이지?)
+{Player_name}: (그나저나... 문은 또 갑자기 왜 이 모양이지?)
 {Player_name}: (일단 뒷문이라도 열어봐야겠다.)
 describe: 나는 열리지 않는 앞문을 가만히 둔 채 뒷문으로 향했다.
 

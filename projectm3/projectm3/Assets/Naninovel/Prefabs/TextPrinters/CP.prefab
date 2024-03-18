@@ -816,6 +816,17 @@ MonoBehaviour:
           m_StringArgument: FirstShow
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   labelText: {fileID: 3933834112302642263}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2348,6 +2359,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: FirstShow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5888371544132261122}
@@ -4521,6 +4543,17 @@ MonoBehaviour:
           m_StringArgument: FirstShow
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2036562675885177080}
         m_MethodName: SetValueInputKeyManager
         m_Mode: 5
@@ -5155,14 +5188,14 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8498591293370566223}
-        m_MethodName: SetTrigger
+        m_MethodName: ResetTrigger
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: UIHide
+          m_StringArgument: FirstShow
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8213350316577052680}
@@ -5177,14 +5210,25 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8498591293370566223}
-        m_MethodName: ResetTrigger
+        m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: FirstShow
+          m_StringArgument: UIHide
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   labelText: {fileID: 81803573362847294}
@@ -5786,6 +5830,7 @@ MonoBehaviour:
   MenuAnimator: {fileID: 1482058920341933584}
   AutoAnimator: {fileID: 8498591293370566223}
   isMenuVisible: 0
+  isFirstShowActive: 0
 --- !u!114 &9080284543636983553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,6 +5870,17 @@ MonoBehaviour:
           m_StringArgument: true
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: deb78fb6-3427-4a4d-9287-743ac57f4332
     m_ActionName: Naninovel/Save[/Keyboard/q]
   - m_PersistentCalls:
@@ -5838,6 +5894,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: true
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 0ba6c631-a7f5-46cb-b416-abdf0e72c78b
@@ -5855,6 +5922,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c1525b93-3f93-43cf-b831-a2759e884eac
     m_ActionName: Naninovel/HideUI[/Keyboard/u]
   - m_PersistentCalls:
@@ -5862,6 +5940,17 @@ MonoBehaviour:
       - m_Target: {fileID: 8691429454991861332}
         m_MethodName: HideUI
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6840,6 +6929,17 @@ MonoBehaviour:
           m_StringArgument: FirstShow
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 8992318190387224515}
         m_MethodName: SetValueInputKeyManager
         m_Mode: 5
@@ -7369,6 +7469,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: FirstShow
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2487976383280537864}
+        m_MethodName: SetFirstShowActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 7250005067345081653}

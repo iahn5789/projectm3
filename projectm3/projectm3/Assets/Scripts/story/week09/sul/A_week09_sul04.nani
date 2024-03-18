@@ -50,6 +50,8 @@ describe: 나희 누나는 고개를 돌려 관중석을 바라봤다.
 describe: 여전히 관중석은 앵콜을 원하는 목소리로 가득 차 있었다.
 @char sulbody4.11 pose:c wait:false
 describe: 나희 누나가 손을 가볍게 들어 올렸다.
+@stopsfx Amb_Stadium_Crowd_01 fade:3 wait:false
+@stopsfx Crowd_Cheer_Clap_01 fade:3 wait:false
 describe: 관중석은 마치 기다렸다는 듯 일순간에 조용해졌다.
 describe: 그 잠깐의 정적 후, 나희 누나가 입을 열었다.
 @char sulbody4.15 pose:c wait:false
@@ -65,8 +67,6 @@ sul: 오늘 공연을 마지막으로...
 @hideChars time:0.5 wait:false
 @char sulbody3.17 pose:bc wait:false
 sul: 프리덤은 영원히 안녕이니까요..!
-@stopsfx Amb_Stadium_Crowd_01 fade:1 wait:false
-@stopsfx Crowd_Cheer_Clap_01 fade:1 wait:false
 {Player_name}: ...
 describe: 나희 누나의 충격적인 말에 관중석은 순식간에 침묵에 휩싸였다.
 관객: 지... 지금 뭐라고 한 거야..?
@@ -164,9 +164,9 @@ sul: 흐음... 글쎄...
 보안요원A: 돌아가세요! 여기 함부로 오시면 안 됩니다!
 @spawn ShakeBackground wait:false
 la: <size=50>잠시만요..! 진짜 잠깐이면 된다니까요?</size>
-보안요원B: 관계자 외 출입 금지 안보이세요?
+보안요원B: 관계자 외 출입 금지 안 보이세요?
 la: 저도 어엿한 기자라고요! 기자가 인터뷰하겠다는데 왜 막아요!
-보안요원A: 아무리 기자여도 이렇게 함부로 들어오시면 안됩니다!
+보안요원A: 아무리 기자여도 이렇게 함부로 들어오시면 안 됩니다!
 {Player_name}: 어... 들리세요?
 @char sulbody3.35 pose:c wait:false
 sul: 응...

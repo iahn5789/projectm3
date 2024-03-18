@@ -9,7 +9,6 @@ namespace Naninovel.UI
         public Animator autoButtonAnim;
         private ICustomVariableManager variableManager;
         private IUIManager uiManager;
-
         protected override void Awake ()
         {
             base.Awake();
@@ -40,7 +39,8 @@ namespace Naninovel.UI
 
             
             variableManager?.SetVariableValue($"InputKeyValue", InputKey);
-            autoButtonAnim.SetTrigger("UIHide");
+            autoButtonAnim.ResetTrigger("FirstShow"); // MenuUI 애니메이션 재생
+            autoButtonAnim.SetTrigger("Hide");
 
             saveLoadUI.PresentationMode = SaveLoadUIPresentationMode.Save;
             saveLoadUI.Show();

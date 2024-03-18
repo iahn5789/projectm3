@@ -1,5 +1,6 @@
 # week08_sul01
 ; 변수 초기화
+@clearBacklog
 @set "WeekTitle=\"어쩌다가 이런 일이\""
 @set KangWeek=8
 @set JinWeek=8
@@ -48,6 +49,7 @@
 {Player_name}: (그럼 슬슬 동아리실로 가볼...)
 @stopsfx Common_Breaktime_Belltower_01 fade:1 wait:false
 @spawn Blur wait:false
+@spawn Past01 wait:false
 @style size=30
 학생A: 쟤가 그러니까...
 학생B: 그렇다니까!
@@ -69,6 +71,7 @@ describe: 괜히 또 내가 오지랖 부리는 건가 싶어 물어보고 있�
 @style size=40
 {Player_name}: (어째 내 얘기를 하는 것 같기도 하고...)
 @despawn Blur wait:false
+@despawn Past01 wait:false
 @sfx Common_Sliding_Door_Open_02 volume:100 loop:false fade:0 wait:false
 @spawn ShakeBackground wait:false params:,3
 describe: 드르륵- 쾅-!
@@ -141,7 +144,7 @@ jeon: 그 더러운 입에서 나오는 변명 따위는 듣고 싶지 않다...
 {Player_name}: 대용아... 너한테 말 못 한 건 진짜 미안한데 그럴 만한 사정이...
 @hideChars time:0.5 wait:false
 @char jeonbody4.33 pose:bc wait:false
-jeon: 나는 너를 믿었고! 그만큼 나 역시 너를 믿었기에!
+jeon: 나는 너를 믿었고! 그만큼 너 역시 나를 믿었기에!
 jeon: 난 아무런 부담 없이 프리덤을 네게 소개시켜 줬고...
 {Player_name}: (머... 멈춰..!)
 jeon: 아무튼..! 이 몸은 너에게 실망했다...
