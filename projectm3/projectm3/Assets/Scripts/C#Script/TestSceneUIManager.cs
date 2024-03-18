@@ -123,7 +123,7 @@ public class TestSceneUIManager : MonoBehaviour
         line.Add("Kang7", "오늘... 연습 끝나면 둘이 놀러 갈까?");
         line.Add("Kang8", "우리 처음으로 손잡았던 날 생각나네.");
         line.Add("Kang9", "동아리 끝나면 둘이 데이트하러 가자!");
-        line.Add("Kang10", "오늘 우리 집에 올래...? 동생들 수학여행 갔는데...");
+        line.Add("Kang10", "오늘 잘 곳이 없는데... 혹시 너희 집 방음 좋아..?");
         // 진다영 대사
         line.Add("Jin1", "뭘 봐! 이 변태야!");
         line.Add("Jin2", "흥! 잘하나 못하나 지켜볼 거야!");
