@@ -28,7 +28,7 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@bgm BGM_Map_Friendly_01 volume:40 loop:true fade:1 wait:false
+@bgm BGM_Map_LovelyEP_01 volume:40 loop:true fade:1 wait:false
 @sfx Amb_Hallway_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Dream time:0.5 wait:true
@@ -79,8 +79,8 @@ sul: 감동적인데..?
 {Player_name}: 자... 장난 아니거든요!
 {Player_name}: 저번에도 그런 일이 있었는데 이번이라고 다르다는 보장이 없...
 @char sulbody2.57 pose:c wait:false
-@spawn ShakeBackground wait:false params:,3
-@spawn ShakeCharacter wait:false params:,3
+@spawn ShakeBackground params:,3 wait:false
+@spawn ShakeCharacter params:,3 wait:false
 sul: <size=50>없지. 아마 이번에도 그럴껄?</size>
 {Player_name}: ...네?
 {Player_name}: 그... 그게 무슨!
@@ -110,7 +110,7 @@ sul: 무엇보다도…
 {Player_name}: ..?
 @hideChars time:0.5 wait:false
 @char sulbody4.52 pose:bc wait:false
-@spawn ShakeCharacter wait:false params:,3
+@spawn ShakeCharacter params:,3 wait:false
 sul: 네가 곁에 있잖아?
 @char sulbody4.62 pose:bc wait:false
 sul: 무슨 일이 있어도 함께 하기로 했으니까...
@@ -129,7 +129,7 @@ describe: 슬픔, 외로움, 고독...
 describe: 희망, 기쁨, 신남...
 describe: 그리고...
 {Player_name}: 네! 올라가죠!
-@stopSfx BGM_Map_Friendly_01 fade:1 wait:false
+@stopSfx BGM_Map_LovelyEP_01 fade:1 wait:false
 @stopSfx Amb_Hallway_01 fade:1 wait:false
 
 @goto A_week09_sul02.week09_sul02
