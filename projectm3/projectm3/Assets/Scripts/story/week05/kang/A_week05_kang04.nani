@@ -1,5 +1,18 @@
 # week05_kang04
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back RoadNigth02 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 허억... 허억...
 {Player_name}: (가...갔나..?)
 describe: 걸음을 멈추고 잠시 주변을 둘러봤다.
@@ -35,9 +48,13 @@ describe: 나는 점점 커지는 소리를 피해 어둠 속으로 몸을 숨�
 {Player_name}: (일단... 숨자!)
 {Player_name}: (어딘지도 모르는 곳에서 언제까지 도망 다닐 수도 없고...)
 {Player_name}: (적당히 숨어 있으면 포기하겠지 뭐...)
+@char labody2.11 pose:c wait:false
 la: 후우...
+@char labody2.83 pose:c wait:false
 la: 분명히 본 것 같았는데...
+@char labody2.88 pose:c wait:false
 la: 설마 눈치채고 도망친 건가?
+@char labody2.44 pose:c wait:false
 la: 아오! 그걸 놓치네!
 {Player_name}: (라...은?)
 {Player_name}: (쟤가 여길 어떻게...)
@@ -45,13 +62,17 @@ la: 아오! 그걸 놓치네!
 {Player_name}: (눈치를 채..? 놓쳐..?)
 {Player_name}: (날 따라오던 그 이상한 게...)
 {Player_name}: (라은이었어?)
+@char labody2.83 pose:c wait:false
 la: 하... 분명 여기로 왔는데...
+@char labody2.31 pose:c wait:false
 la: 어디 숨어있는 건가?
 {Player_name}: !!
 {Player_name}: (눈치챈 건가..?)
 describe: 흐읍-!
 describe: 나는 손으로 입을 틀어막았다.
+@char labody2.44 pose:c wait:false
 la: 빨리 나와!
+@char labody2.48 pose:c wait:false
 la: 거기 숨어 있는 거 다 알아!!
 {Player_name}: (아니지..?)
 {Player_name}: (상식적으로 숨어있는 걸 알고 있으면.)
@@ -60,20 +81,30 @@ la: 거기 숨어 있는 거 다 알아!!
 describe: 허풍이라고 믿고 싶었지만,
 describe: 손으로 틀어막은 입 사이로 숨은 계속해서 빠져나왔다.
 describe: 그럴수록 더욱 필사적으로 입을 막았다.
+@char labody2.81 pose:c wait:false
 la: {Player_name}..? 맞지?
+@char labody2.83 pose:c wait:false
 la: 네가 왜 여기서 이러고 있는지 대충 짐작이 가는데...
+@char labody2.82 pose:c wait:false
 la: 내가 도와줄게.
 describe: 라은은 정말 내가 있는 걸 아는지 모르는지 계속해서 말을 걸어왔다.
+@hideChars wait:false
+@char labody3.83 pose:c wait:false
 la: 네가 여기 있는 거...
+@char labody3.42 pose:c wait:false
 la: 강여진 때문이잖아. 맞지?
 {Player_name}: ..!
 {Player_name}: (누...눈치챈 건가..?)
+@char labody3.61 pose:c wait:false
 la: 난 너한테는 관심 없어. 강여진한테 관심이 있는 거지.
+@char labody3.63 pose:c wait:false
 la: 너도 딱히 좋아서 같이 다니는 거 같아 보이지는 않고...
+@char labody3.42 pose:c wait:false
 la: 어때? 날 도와주면 나도 널 도와줄게.
 describe: 왜 내가 여기 있는지, 여진이가 여기서 무얼 하고 있는지.
 describe: 그것까지는 모르는 눈치였다.
 describe: 물론 나도 모르긴 하지만...
+@hideChars wait:false
 {Player_name}: ...
 describe: 확실히 라은의 제안은 매력적이었다.
 describe: 구체적으로 무얼, 어떻게 돕는다는 말은 없었지만...
@@ -98,48 +129,75 @@ describe: 나는...
 
 {Player_name}: 아...안녕..?
 {Player_name}: 하하하...
+@char labody2.51 pose:c wait:false
 la: {Player_name}!!
+@char labody2.82 pose:c wait:false
 la: 역시 거기 있었구나!
+@char labody2.22 pose:c wait:false
 la: 그럴 줄 알았어!
 {Player_name}: ..?
+@char labody2.11 pose:c wait:false
 la: 무슨 일이라도 있어?
+@char labody2.66 pose:c wait:false
 la: 안색이 안 좋아 보이는데...
 {Player_name}: 아... 그냥 조금 피곤해서..!
+@char labody2.22 pose:c wait:false
 la: 하하하...
+@char labody2.66 pose:c wait:false
 la: 흐음... 그렇구나..!
+@char labody2.82 pose:c wait:false
 la: 아무튼 빨리 가자!
 {Player_name}: 그... 그런데...
+@char labody2.51 pose:c wait:false
 la: 응..?
 {Player_name}: 여진이 만나기로 했는데...
+@hideChars wait:false
+@char labody3.61 pose:c wait:false
 la: 아... 강여진...
+@char labody3.22 pose:c wait:false
 la: 괜찮아! 애초에 지금 혼자 있는 거 아니야?
+@char labody3.62 pose:c wait:false
 la: 그럼 혼자서 알아서 잘하겠지!
 {Player_name}: 그렇긴 한데...
+@char labody3.12 pose:c wait:false
 la: 아무튼 빨리 가자!
+@char labody3.62 pose:c wait:false
 la: 듣고 싶은 얘기도 많고 묻고 싶은 얘기도 많으니까...
 {Player_name}: 그...그래!
+@hideChars wait:false
 {Player_name}: ...
 {Player_name}: (설마 별일이야 있겠어?)
 {Player_name}: 이...이...이...
 {Player_name}: 이게 지금 무슨..!
 신문기사: 충격 실화! 학교의 명물 기타가 사라지다!
 신문기사: 그 주동자는 다름 아닌 밴드부의 강모씨와...
+@char labody1.22 pose:c wait:false
 la: {Player_name}! 왔어?
 {Player_name}: 지금 뭐 하자는 거야!
+@char labody1.51 pose:c wait:false
 la: ..?
+@char labody1.66 pose:c wait:false
 la: 아... 신문 봤구나?
 {Player_name}: 이걸 신문으로 써버리면..!
 {Player_name}: 도와준다고 했잖아! 그런데 지금 이건 도대체 뭔데!
 {Player_name}: 나한테 거짓말한 거야?
+@char labody1.51 pose:c wait:false
 la: 거짓말..?
+@char labody1.82 pose:c wait:false
 la: 난 거짓말한 적 없는데?
+@char labody2.81 pose:c wait:false
 la: 내가 신문 쓰지 않겠다고 한 적이 있던가?
+@char labody1.42 pose:c wait:false
 la: 도와주겠다는 약속은 지켰잖아?
 {Player_name}: 이게 어딜 봐서 도와주는 건데!
+@char labody1.26 pose:c wait:false
 la: 당연히 도와주는 거지.
+@char labody1.83 pose:c wait:false
 la: 잘못된 길로 들어간 사람을 올바르게 이끌어주는 것.
+@char labody1.82 pose:c wait:false
 la: 그게 진정한 저널리스트의 역할 아니겠어?
 {Player_name}: 너..!
+@hideChars wait:false
 ???: {Player_name}..?
 describe: 누군가가 등 뒤에서 내 이름을 불렀다.
 ???: {Player_name}. 맞으시죠?
@@ -148,6 +206,7 @@ describe: 누군가가 등 뒤에서 내 이름을 불렀다.
 경찰: ...지방경찰청에서 나왔습니다.
 경찰: 좀 여쭤보고 싶은 게 있는데요.
 {Player_name}: ...
+@char labody3.66 pose:c wait:false
 la: 후훗...
 la: 다음은 너야 강여진.
 
