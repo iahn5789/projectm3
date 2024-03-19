@@ -99,15 +99,15 @@ public class ProfileUIManager : MonoBehaviour
         line = new Dictionary<string, (string, int, int)>();
         // 강여진 대사 몸 얼굴
         line.Add("Kang1", ("밝고 명량한 소녀", 0, 0));
-        line.Add("Kang2", ("위험한 가시를 숨긴 소녀", 1, 3));
-        line.Add("Kang3", ("슬픈(위태로운) 가시를 숨긴 소녀", 1, 4));
-        line.Add("Kang4", ("아름다운 가시를 숨긴 소녀", 2, 2));
-        // 설나희 대사
-        line.Add("Jin1", ("겉은 차갑지만, 속은 따뜻(?)한 소녀", 0, 0));
-        line.Add("Jin2", ("사랑할 줄 모르는 소녀", 2, 0));
-        line.Add("Jin3", ("사랑받고 싶은 소녀", 2, 1));
-        line.Add("Jin4", ("사랑을 알게 된 소녀", 1, 2));
+        line.Add("Kang2", ("사랑할 줄 모르는 소녀", 1, 3));
+        line.Add("Kang3", ("사랑받고 싶은 소녀", 1, 4));
+        line.Add("Kang4", ("사랑을 알게 된 소녀", 2, 2));
         // 진다영 대사
+        line.Add("Jin1", ("겉은 차갑지만, 속은 따뜻(?)한 소녀", 0, 0));
+        line.Add("Jin2", ("위험한 가시를 숨긴 소녀", 2, 0));
+        line.Add("Jin3", ("슬픈(위태로운) 가시를 숨긴 소녀", 2, 1));
+        line.Add("Jin4", ("아름다운 가시를 숨긴 소녀", 1, 2));
+        // 설나희 대사
         line.Add("Sul1", ("조용하지만 카리스마 있는 소녀", 0, 0));
         line.Add("Sul2", ("꿈을 꾸고 싶은 소녀", 0, 3));
         line.Add("Sul3", ("꿈을 꾸고 있는 소녀", 2, 1));
