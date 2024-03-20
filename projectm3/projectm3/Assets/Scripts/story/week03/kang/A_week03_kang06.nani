@@ -3,6 +3,7 @@
 {Player_name}: (이... 일단...)
 {Player_name}: (일단 넣어두자...)
 {Player_name}: (일단 넣어두고... 그러고 나서 생각하자...)
+@sfx Body_Fall_01 volume:80 loop:false fade:0 wait:false
 describe: 일어서려고 했으나 다리에 힘이 풀려 다시 주저앉아버렸다.
 describe: 손으로 무릎을 밀어 일어서려 했으나 팔도 후들거렸다.
 {Player_name}: (진정하자... 진정하자...)
@@ -58,11 +59,13 @@ kang: 확실해..?
 @char kangbody1.41 pose:bc wait:false
 kang: 흐음...
 describe: 여진이는 가슴을 살짝 내밀어 내 얼굴을 뚫어져라 쳐다봤다.
+@sfx Heart_Beat_Fast_02 volume:80 loop:true fade:0 wait:false
 describe: 쿵쾅-쿵쾅-!
 describe: 심장이 미친 듯이 뛰기 시작했다.
 @char kangbody1.43 pose:bc wait:false
 kang: ...
 {Player_name}: ...
+@sfx Human_Swallow_01 volume:80 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @char kangbody1.45 pose:bc wait:false
 kang: 너...
@@ -77,6 +80,7 @@ kang: 농담이야 농담!
 kang: 빨리 가자! 애들 기다리겠다.
 {Player_name}: 아... 하하하...!
 {Player_name}: 농담..! 농담...
+@stopsfx Heart_Beat_Fast_02 fade:1 wait:false
 {Player_name}: (다...다행이다...)
 @hideChars wait:false
 describe: 여진이는 아무래도 눈치를 못 챈 것 같았다.
@@ -205,12 +209,15 @@ kang: 이게... 뭐지?
 kang: 아니... 조금 이상한 게...
 {Player_name}: ...
 {Player_name}: 이상하다고..?
+@sfx Human_Swallow_01 volume:80 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @char kangbody1.47 pose:c wait:false
 kang: ...
+@sfx Common_Cloth_Brush_01 volume:80 loop:false fade:0 wait:false
 describe: 스윽-!
 @char kangbody1.21 pose:c wait:false
 kang: 먼지가 묻어 있었네!
+@stopsfx Common_Cloth_Brush_01 fade:1 wait:false
 {Player_name}: 머... 먼지..?
 @char kangbody1.11 pose:c wait:false
 kang: 응! 먼지 묻어 있으면 보기 안 좋잖아!
@@ -221,6 +228,7 @@ kang: 깨끗하게 관리해야지!
 {Player_name}: 그... 그렇지!
 {Player_name}: 하하하...
 @hideChars wait:false
+@sfx Door_Lock_01 volume:80 loop:false fade:0 wait:false
 describe: 철컥-!
 describe: 여진이는 먼지를 닦고는 유리관 문을 잠갔다.
 @char kangbody1.41 pose:c wait:false
@@ -238,8 +246,6 @@ describe: 순간적으로 미끈거려 보니 어느새 손바닥은 땀으로 �
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back HomeroomNight01 time:0.5 wait:true
 @showUI CP wait:false
@@ -251,6 +257,10 @@ describe: 순간적으로 미끈거려 보니 어느새 손바닥은 땀으로 �
 {Player_name}: (그나저나... 저 기타가 그렇게까지 비싼 기타면...)
 {Player_name}: (난... 어떻게 되는 거지..?)
 {Player_name}: (어떻게... 해야 하는 거지..?)
+
+@stopbgm BGM_Map_CunningCity_01 fade:1 wait:false
+@bgm BGM_Map_Sweethome_01 volume:100 loop:true fade:1 wait:false
+@sfx Amb_Kitchen_01 volume:20 loop:true fade:1 wait:false
 엄마: {Player_name}!!
 {Player_name}: 네... 네?
 {Player_name}: 부르셨어요?
@@ -269,6 +279,8 @@ describe: 순간적으로 미끈거려 보니 어느새 손바닥은 땀으로 �
 {Player_name}: (후우...)
 {Player_name}: (나...)
 {Player_name}: (정말 어떡하면 좋지..?)
+@stopsfx Amb_Kitchen_01 fade:1 wait:false
+@stopbgm BGM_Map_Sweethome_01 fade:1 wait:false
 
 ; 변수 초기화(주의)
 @set LoadingValue=true

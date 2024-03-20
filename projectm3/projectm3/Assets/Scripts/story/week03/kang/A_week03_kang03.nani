@@ -6,14 +6,14 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_CunningCity_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Cold_Wind_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
-
+@sfx Metal_Door_Open_02 volume:80 loop:false fade:0 wait:false
 describe: 끼익-- 쿵-!
 describe: 문을 열고 들어간 창고 안에는 아무도 없었다.
 describe: 햇빛에 비친 먼지만 둥둥 떠다니고 있을 뿐이었다.
@@ -75,20 +75,6 @@ describe: 언제 올지 모르는 여진이를 남겨둔 채 창고 문을 활�
 {Player_name}: (설마 별일이야 있겠어?)
 describe: 나는 악기를 챙기기 위해 기타와 베이스 쪽으로 걸음을 옮겼다.
 
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
-@back Black time:0.5 wait:true
-@back ScClub01 time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
-
 {Player_name}: ...
 @char jinbody1.13 pose:c wait:false
 jin: 여진이는 어디 가고 혼자 왔어?
@@ -106,20 +92,6 @@ jin: 문은 잘 닫고 온 거지?
 jin: ...
 @char jinbody1.45 pose:c wait:false
 jin: 지금 장난해?!?!
-
-@set LoadingValue=true
-@processInput false
-@hideChars time:0.5 wait:false
-@hideUI CP wait:false
-@hidePrinter  time:0.5 wait:true
-@back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
-@back Black time:0.5 wait:true
-@back Black time:0.5 wait:true
-@showUI CP wait:false
-@processInput true
-@set LoadingValue=false
 
 {Player_name}: ...
 {Player_name}: (라고 할 게 뻔하겠지..?)

@@ -28,8 +28,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_Friendly_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:40 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
@@ -94,6 +94,7 @@ sul: 악기...
 {Player_name}: 네..?
 @hideChars wait:false
 @char jinbody3.44 pose:c wait:false
+@sfx Common_Whistle_01 volume:80 loop:false fade:0 wait:false
 jin: 악기가 없는데 어떻게 연습해!
 {Player_name}: 악기..?
 {Player_name}: 아니 그럼 평소에는 어떻게 했길래...
@@ -116,12 +117,15 @@ jin: 그냥 가만히 있지?
 @char jinbody2.33 pose:c wait:false
 jin: 괜히 또 나갔다가 엇갈리기라도 하면...
 {Player_name}: 다녀올게!
+@sfx Common_Sliding_Door_Open_02 volume:80 loop:false fade:0 wait:false
 describe: 드르륵-! 쾅--!
 @hideChars wait:false
 @char sulbody2.11 pose:l wait:false
 @char jinbody1.23 pose:r wait:false
 sul: ...
 jin: 어휴...
+@stopsfx Amb_Shool_Club_01 fade:1 wait:false
+@stopbgm BGM_Map_Friendly_01 fade:1 wait:false
 @hideChars wait:false
 
 @set LoadingValue=true
@@ -130,8 +134,8 @@ jin: 어휴...
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@sfx Amb_Office_01 volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_Cool_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScOffice01 time:0.5 wait:true
 @showUI CP wait:false
@@ -142,8 +146,10 @@ jin: 어휴...
 describe: 창고 키를 챙기기 위해 교무실에 들어왔다.
 describe: 수업이 끝났음에도 불구하고 교무실에는 선생님이 많이 남아 계셨다.
 describe: 그리고 그 중에게는 한갑수 선생님 또한 계셨다.
+@sfx keyboard_Typing volume:50 loop:false fade:0 wait:false
 describe: 타닥-탁-
 {Player_name}: 저... 선생님..?
+@stopsfx keyboard_Typing fade:0 wait:false
 한갑수: 어... 왔냐..?
 {Player_name}: 키 좀 가지러 왔는데요...
 한갑수: 어... 그래...
@@ -151,7 +157,9 @@ describe: 타닥-탁-
 describe: 한갑수 선생님은 굉장히 바빠 보이셨다.
 {Player_name}: (기다려야 하나..?)
 {Player_name}: (근데 언제 끝날지도 모르는데...)
+@sfx keyboard_Typing_02 volume:50 loop:false fade:0 wait:false
 describe: 타다닥-탁-
+@stopsfx keyboard_Typing_02 fade:0 wait:false
 {Player_name}: 저... 혹시 조금 바쁘신가요..?
 한갑수: 어... 어..? 뭐야?
 한갑수: {Player_name}! 언제 왔어?
@@ -173,9 +181,12 @@ describe: 타다닥-탁-
 {Player_name}: 하하하...
 한갑수: 그래. 아무튼 열심히 하고.
 한갑수: 나는 이것 좀 마저 해야 되서...
+@sfx keyboard_Typing volume:30 loop:false fade:0 wait:false
 describe: 한갑수 선생님은 다시 모니터로 시선을 돌리셨다.
+@stopsfx keyboard_Typing fade:1 wait:false
 {Player_name}: 아... 넵!
 {Player_name}: 안녕히 계세요!
+@sfx Door_Lock_Handle_01 volume:80 loop:false fade:0 wait:false
 describe: 나는 교무실에서 나가기 위해 문고리를 잡고 돌렸다.
 {Player_name}: ...
 {Player_name}: (그러고 보니...)
@@ -193,5 +204,6 @@ describe: 나는 살짝 열린 문을 다시 닫고 교무실 안으로 돌아�
 {Player_name}: 저 가보겠습니다! 안녕히 계세요!
 {Player_name}: (으... 30분이나 지났으면 여진이는 이미 동아리실에 왔겠는데?)
 {Player_name}: (이거 또 다영이한테 한 소리 듣는 거 아니야..?)
-
+@stopsfx Amb_Office_01 fade:1 wait:false
+@stopbgm BGM_Map_Cool_01 fade:1 wait:false
 @goto A_week03_kang02.week03_kang02
