@@ -10,7 +10,7 @@ public class MinigameTemplerunPopUpManager : MonoBehaviour
     public MinigameTemplerunManager MTM;
     public void SetRoundText()
     {
-        RoundText.text = MTM.N_Round.ToString();
+        RoundText.text = MTM.numberOfRounds.ToString();
     }
     public void SetActiveFalseUI()
     {
