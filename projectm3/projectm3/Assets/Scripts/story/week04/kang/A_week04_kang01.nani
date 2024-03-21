@@ -28,6 +28,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
+@bgm BGM_Map_SuperSad_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Classroom volume:30 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Black time:0.5 wait:true
 @showUI CP wait:false
@@ -40,7 +42,9 @@
 한갑수: 도대체 어떻게 책임질 건데!!
 학생A: 쟤가... 그랬다는데..?
 학생B: 진짜야..? 설마...
+@sfx Crowd_Laugh_01 volume:70 loop:false fade:0 wait:false
 학생A: 진짜라니까..! 그래 놓고는 뻔뻔하게...
+@stopsfx Crowd_Laugh_01 fade:1 wait:false
 학생B: 내가 그럴 줄 알았다 알았어..!
 학생C: 어쩐지 생긴 것도 음흉하게 생겨서는...
 @char labody3.11 pose:c wait:false
@@ -125,5 +129,6 @@ jeon: ．．．．．．．．．
 @char jeonbody4.33 pose:c wait:false
 jeon: {Player_name}..!
 @hideChars wait:false
-
+@stopbgm BGM_Map_SuperSad_01 fade:1 wait:false
+@stopsfx Amb_Classroom fade:1 wait:false
 @goto A_week04_kang02.week04_kang02

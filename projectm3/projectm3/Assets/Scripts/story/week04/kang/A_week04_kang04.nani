@@ -1,5 +1,9 @@
 # week04_kang04
 
+
+
+@bgm BGM_Map_FeelGood_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:30 loop:true fade:1 wait:false
 @char sulbody2.11 pose:c wait:false
 sul: ...
 sul: 그만할까..?
@@ -38,6 +42,7 @@ jin: 아니 진짜 다들 이러기야!
 kang: {Player_name}? 네 생각은 어때?
 {Player_name}: 나..? 나는 뭐... 계속해도 될 것 같...
 @char kangbody1.61 pose:c wait:false
+@sfx Common_Text_Kick_01 volume:80 loop:false fade:0 wait:false
 kang: 너도 많이 피곤해 보이는데 오늘은 그만둘까?
 {Player_name}: 아니 나는 진짜 계속해도 괜찮...
 @char kangbody1.41 pose:c wait:false
@@ -96,7 +101,13 @@ kang: 나희 언니! 내일 봐-!
 sul: 잘 가...
 {Player_name}: 어... 어...
 {Player_name}: 내... 내일 뵙겠습니다...
+@stopsfx Amb_Shool_Club_01 fade:1 wait:false
+@stopbgm BGM_Map_FeelGood_01 fade:1 wait:false
 @hideChars wait:false
+
+
+
+@bgm BGM_Map_CunningCity_01 volume:50 loop:true fade:1 wait:false
 {Player_name}: 후우...
 describe: 대용이가 알려준 충격적인 사실.
 describe: 내가 부숴 먹었던 기타가 어떤 기타였는지...
@@ -121,6 +132,7 @@ kang: 그나저나 오늘 어땠어?
 @char kangbody2.77 pose:c wait:false
 kang: 그... 왜 있잖아..!
 {Player_name}: ...
+@sfx Human_Swallow_01 volume:80 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @char kangbody2.71 pose:c wait:false
 kang: ...

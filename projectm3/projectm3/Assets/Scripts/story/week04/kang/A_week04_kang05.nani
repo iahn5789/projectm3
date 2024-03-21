@@ -61,12 +61,16 @@ describe: 나는 여진이가 내민 핸드폰을 받았다.
 describe: 핸드폰에는 동영상이 틀어져 있었다.
 describe: 그것도 저번 주의 내가 찍힌...
 동영상: ．．．．．．．．．
+@sfx Guitar_Play_01 volume:80 loop:false fade:0 wait:false
 동영상: ♬~♬~♪~♪~♪♪
 동영상: ．．．．．．．．．
+@stopsfx Guitar_Play_01 fade:1 wait:false
 동영상: ．．．．．．
+@sfx Henna_Guitar_02 volume:60 loop:false fade:0 wait:false
 동영상: 팅-!
 동영상: ．．．．．．
 동영상: ．．．
+@sfx Guitar_Neck_break_01 volume:60 loop:false fade:0 wait:false
 동영상: 빠각-!!
 @char kangbody1.21 pose:c wait:false
 kang: 어때? 이제 좀 기억이 나?
@@ -78,11 +82,15 @@ kang: 아까는 더듬기라도 하더니...
 @char kangbody1.14 pose:c wait:false
 kang: 이제 아예 말이 없어진 거야?
 @char kangbody1.11 pose:c wait:false
+@sfx digital_Noise_01 volume:30 loop:false fade:0 wait:false
 {Player_name}: (이...이...걸 어떻게 찍은 거지..?)
 {Player_name}: (여기 몰래카메라라도 있는 건가..?)
+@stopsfx digital_Noise_01 fade:1 wait:false
+@sfx digital_Noise_02 volume:30 loop:false fade:0 wait:false
 {Player_name}: (그렇다고 하기에는 화면이 너무 흔들리는데.)
 {Player_name}: (설마...)
 {Player_name}: (숨어있었던 거야?!)
+@stopsfx digital_Noise_02 fade:1 wait:false
 @hideChars wait:false
 describe: 이제야 상황이 조금씩 보이기 시작했다.
 describe: 왜 여진이가 키를 가져간 지 30분이 지나도록 동아리실로 오지 않았는지.
