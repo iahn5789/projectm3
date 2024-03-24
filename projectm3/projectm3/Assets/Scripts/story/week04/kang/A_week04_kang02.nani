@@ -5,15 +5,16 @@
 @hideChars time:0.5 wait:false
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
+@bgm BGM_Map_Antics_01 volume:60 loop:true fade:1 wait:false
+@sfx Amb_Classroom volume:30 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClassRoom02 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
+@sfx Common_Whistle_01 volume:70 loop:false fade:0 wait:false
 @char jeonbody4.33 pose:c wait:false
 jeon: {Player_name}!!
 @char jeonbody4.12 pose:c wait:false
@@ -52,6 +53,7 @@ jeon: 혹시 동아리에서 무슨 일이라도 있는 건 아니겠지?
 @char jeonbody2.55 pose:c wait:false
 jeon: {Player_name}... 너...
 jeon: 그렇게 보지 않았는데...
+@sfx Human_Swallow_01 volume:70 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @hideChars wait:false
 @char jeonbody2.55 pose:bc wait:false
@@ -142,6 +144,7 @@ jeon: 혹시 알아? 밴드 콘서트에 갔다가 동아리 부원들이라도 
 describe: 의외로 틀린 말은 아니었다.
 describe: 밴드에 대해 잘 알지도 못하면서 밴드부에 들어와 있는 이상한 상황.
 describe: 어차피 티켓도 대용이가 가지고 있으니, 한 번 정도 가 보는 것도 나쁘지 않았다.
+@sfx Emotion_Sad_01 volume:100 loop:false fade:0 wait:false
 describe: ...기타만 부숴 먹지 않았다면 말이다.
 describe: 가뜩이나 눈앞의 문제를 어떻게 해결해야 할지 모르는 상태에서...
 describe: 괜히 정신없이 콘서트장에 다녀오고 싶지는 않았다.
@@ -163,8 +166,10 @@ jeon: 그럼 강준영의 음악부터 시작해 보는 건 어떤가?
 @char jeonbody4.33 pose:c wait:false
 jeon: 그 가수라니!
 @hideChars wait:false
+@sfx Sul_Audio_Distorion_04 volume:30 loop:false fade:0 wait:false
 @char jeonbody2.34 pose:c wait:false
 jeon: 우리나라최고의싱어송라이터이자올해로데뷔한지30년이나된최고의가수중년의나이임에도불구하고실력이떨어지기는커녕오히려압도적인발성으로신인들에게는절망을팬들에게는환희를선물해주는...
+@stopsfx Sul_Audio_Distorion_04 fade:1 wait:false
 {Player_name}: 그만! 그만!
 {Player_name}: 강준영 모르는 사람이 어딨어?
 {Player_name}: 근데 갑자기 강준영은 왜..?
@@ -283,4 +288,6 @@ describe: 대용이는 내 말이 들리지 않는지 먼저 교실 밖으로 �
 {Player_name}: (으으..! 전대용..!!)
 {Player_name}: 야! 같이 가!
 
+@stopsfx Amb_Classroom fade:1 wait:false
+@stopbgm BGM_Map_Antics_01 fade:1 wait:false
 @goto A_week04_kang03.week04_kang03

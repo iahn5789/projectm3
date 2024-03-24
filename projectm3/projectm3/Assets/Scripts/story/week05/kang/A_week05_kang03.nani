@@ -1,10 +1,25 @@
 # week05_kang03
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back RoadNigth02 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 선물 받은 향수를 들고 다있어에서 나왔다.
 describe: 여진이는 조금 떨어진 곳에서 웃으며 나를 쳐다보고 있었다.
+@char kangbody1.22 pose:c wait:false
 kang: {Player_name}! 뭐 하고 있어?
 describe: 살짝 웃으면서 부르는 내 이름이...
 describe: 너무나도 달콤하게 들렸다.
+@char kangbody1.11 pose:c wait:false
 describe: 거짓말인 걸 아는데도...
 describe: 웃음이 새어 나오는 걸 멈출 수 없었다.
 describe: 기분이 좋아지는 내가 싫었다.
@@ -15,64 +30,101 @@ describe: 나도 여진이의 이름을 부르고 싶었다.
 describe: 말없이 여진이를 향해 걸어갔다.
 describe: 무서울 정도로 웃고 있는 그 표정을 보...
 {Player_name}: ..?
+@hideChars wait:false
+@char kangbody3.77 pose:c wait:false
 kang: 흐음...
+@char kangbody3.74 pose:c wait:false
 kang: 이만하면 되려나..?
 describe: 웃음은 사라지고 그 자리에 순간 날카로운 표정이 스쳐 갔다.
+@hideChars wait:false
+@char kangbody1.11 pose:c wait:false
 kang: {Player_name}!
 {Player_name}: 응?
+@char kangbody1.77 pose:c wait:false
 kang: 그럼 이제...
 describe: 꿀꺽-!
+@char kangbody1.41 pose:c wait:false
 kang: 노래방 갈래?
 {Player_name}: 응..?
+@char kangbody1.21 pose:c wait:false
 kang: 노래방 가자!
+@char kangbody1.41 pose:c wait:false
 kang: 나 너랑은 아직 한 번도 안 가봤잖아!
+@char kangbody1.22 pose:c wait:false
 kang: 네가 부르는 노래 들어보고 싶어.
+@char kangbody1.77 pose:c wait:false
 kang: 그리고...
+@char kangbody1.33 pose:c wait:false
 kang: 노래방은 우리 둘만 있기도 하고...
 {Player_name}: (두...둘이..?)
 {Player_name}: ...
+@hideChars wait:false
 describe: 너무나도 달콤했다...
 describe: 거짓말이라는 걸 누구보다도 잘 알았지만.
 describe: 거절하기 어려울 정도로.
 describe: 그러자 오히려 강한 역함이 느껴졌다.
 {Player_name}: 지금 도대체 뭐 하자는 거야?
+@char kangbody1.81 pose:c wait:false
 kang: 응?
+@char kangbody1.88 pose:c wait:false
 kang: 무슨 소리야! 빨리 가...
 {Player_name}: 도대체 뭐라고 말이라도 해줘야지!
+@char kangbody1.78 pose:c wait:false
 {Player_name}: 지금 무슨 연인 놀이라도 하자는 거...
 {Player_name}: !!
+@hideChars wait:false
 describe: 그때.
 describe: 여진이가 내 손을 낚아챘다.
 describe: 그리고...
 describe: 어딘가로 끌고 가기 시작했다.
 {Player_name}: 강여진!
 {Player_name}: 지금 대체 뭐 하자는...
+@char kangbody1.13 pose:c wait:false
 kang: 너 미쳤어?
 {Player_name}: 무...뭐?
+@char kangbody1.45 pose:c wait:false
 kang: 그냥 조용히 있으면 될 것이지 뭐 하자는 거야!
+@char kangbody1.77 pose:c wait:false
 kang: 괜히 시끄럽게 굴어서는...
 {Player_name}: 그러는 너야말로 장난해?
 {Player_name}: 갑자기 사랑한다는 건 또 무슨 소리고 도대체가...
+@char kangbody1.65 pose:c wait:false
 kang: 네가 지금 그런걸 신경 쓸 때야?
+@char kangbody1.45 pose:c wait:false
 kang: 내가 저번에 분명히 말했지.
+@char kangbody1.43 pose:c wait:false
 kang: 조용히 넘어가 주는 조건으로 하라는 대로만 하라고.
 {Player_name}: 뭘 설명을 해줘야 하든 말든...
+@hideChars wait:false
+@char kangbody3.67 pose:c wait:false
 kang: 내가 그걸 왜 너한테 설명해줘야 하는데?
 {Player_name}: ..?
+@hideChars wait:false
+@char kangbody1.43 pose:c wait:false
 kang: 내가 뭘 하든, 그게 너랑 무슨 상관이냐고!
+@char kangbody1.45 pose:c wait:false
 kang: 넌 그냥 입 닫고, 내가 시키는 대로만 하면 되는 거였어.
+@char kangbody1.65 pose:c wait:false
 kang: 밥 먹으러 가자면 가고, 카페 가자면 가고.
+@char kangbody1.73 pose:c wait:false
 kang: 선물 주면 감사합니다 하고 받으면 되는 거였다고!
+@char kangbody1.43 pose:c wait:false
 kang: 그런데 왜 거기서 갑자기 시끄럽게...
+@char kangbody1.45 pose:c wait:false
 kang: 이제 돌아가지도 못하게 생겼잖아!
 {Player_name}: 돌아가지 못한다니 그게 무슨...
 {Player_name}: 아니... 그보다도 여긴 도대체 뭐 하는 곳이야?
+@char kangbody1.74 pose:c wait:false
 kang: 후우...
+@char kangbody1.43 pose:c wait:false
 kang: 네가 알 필요 없어.
 {Player_name}: 아니 뭐라고 말이라도 좀 해줘!
 {Player_name}: 그래야 내가 뭘 하든 말든 하지.
+@char kangbody1.46 pose:c wait:false
 kang: 그건 네가 신경 쓸 일이 아니라고!
+@char kangbody1.44 pose:c wait:false
 kang: 그냥... 그냥...
+@char kangbody1.43 pose:c wait:false
 kang: 가만히만 있으면 되는 건데...
 kang: 후...
 describe: 여진이는 잠시 말없이 나를 쳐다보고 있었다.
@@ -81,19 +133,30 @@ describe: 그것도 한 치 앞도 잘 보이지 않는 어두운 골목길.
 describe: 그 골목길에서 여진이와 나 단둘이 서 있었다.
 {Player_name}: ...
 {Player_name}: 최소한 여기가 어딘지는 알려...
+@char kangbody1.75 pose:c wait:false
 kang: 넌 대역이야.
 {Player_name}: ..?
 {Player_name}: 뭐라고..?
+@char kangbody1.15 pose:c wait:false
 kang: 대역이라고.
+@char kangbody1.13 pose:c wait:false
 kang: 아무것도 알 필요 없어.
+@char kangbody1.15 pose:c wait:false
 kang: 알려고 하지도 말고.
+@char kangbody1.16 pose:c wait:false
 kang: 넌 그냥 내 <b>남자친구</b> 역할만 하면 되는 거야.
+@char kangbody1.77 pose:c wait:false
 kang: 나랑 같이 밥도 먹고, 카페도 가고.
+@char kangbody1.71 pose:c wait:false
 kang: 다른 평범한 커플들처럼 데이트하는 <b>척</b>만 하면 되는 거라고.
+@char kangbody1.13 pose:c wait:false
 kang: 넌 그냥 나랑 같이 노래방 갔다가...
 kang: 조용히 혼자 있으면 되는 거였어.
+@char kangbody1.17 pose:c wait:false
 kang: 그러면 나는 거기서 나와서 혼자 볼일 보고 들어가면 되는 거였고.
+@char kangbody1.73 pose:c wait:false
 kang: 혼자 밤에 돌아다니는 것보다는 남자친구랑 같이 있는 게...
+@char kangbody1.13 pose:c wait:false
 kang: 알리바이를 확실히 할 수 있잖아..?
 {Player_name}: ...
 {Player_name}: 그러려고 부른 거였어..?
@@ -104,38 +167,57 @@ describe: 사람들이 많은 곳으로 갔던 것도, 가게 안에서 굳이 �
 describe: 전부 정성스럽게 목격자를 만들고 있었던 과정이었다.
 describe: 그런데...
 {Player_name}: 그럼, 여기는 도대체 무슨...
+@char kangbody1.63 pose:c wait:false
 kang: 내가...
+@char kangbody1.65 pose:c wait:false
 kang: 넌 아무것도 알 필요 없다고 하지 않았어?
+@char kangbody1.67 pose:c wait:false
 kang: 그새 까먹은 거야?
 {Player_name}: ...
+@char kangbody1.75 pose:c wait:false
 kang: 됐다... 이미 왔는데 뭐...
+@char kangbody1.15 pose:c wait:false
 kang: 아무튼. 난 볼일 보고 있을 테니까 기다리고 있어.
 {Player_name}: ..?
 {Player_name}: 뭐?
 {Player_name}: 기다리고 있으라고? 여기서..?
+@char kangbody1.13 pose:c wait:false
 kang: 그래. 기다리고 있어.
+@char kangbody1.17 pose:c wait:false
 kang: 꼭 두 번씩 말해야겠어?
 {Player_name}: 그...건 아닌데...
 {Player_name}: 나 여기 어딘지도 모르고 또...
 {Player_name}: 너무 어두운데...
 {Player_name}: 여기서 혼자서 기다리고 있기에는...
 {Player_name}: 그냥 나 먼저 나가서...
+@char kangbody1.47 pose:c wait:false
 kang: 기껏 설명해줬더니 내 말을 뭐로 들은 거야!
+@char kangbody1.45 pose:c wait:false
 kang: 너 혼자 나가면 난 뭐가 되냐고!
 {Player_name}: 응..?
+@char kangbody1.15 pose:c wait:false
 kang: 내가 너 좋으라고 같이 돌아다닌 거야?
+@char kangbody1.46 pose:c wait:false
 kang: 이제 와서 너 혼자 돌아다니는 모습 보이면 사람들이 이상하게 생각하겠지!
+@char kangbody1.77 pose:c wait:false
 kang: 그나마 여기는 CCTV가 없으니까 상관없지만.
+@char kangbody1.45 pose:c wait:false
 kang: 밖에서 너 혼자 돌아다니는 게 찍히면 안 된다고!
+@char kangbody1.43 pose:c wait:false
 kang: 돌아올 때까지 얌전히 기다리고 있어. 알았어?
 {Player_name}: 그...
+@char kangbody1.45 pose:c wait:false
 kang: 알았어?
 {Player_name}: ...
 {Player_name}: 응...
+@char kangbody1.13 pose:c wait:false
 kang: 후우...
+@char kangbody1.15 pose:c wait:false
 kang: 사고 치지 말고 얌전히 기다리고 있어.
+@char kangbody1.17 pose:c wait:false
 kang: 괜히 또 꼬이면 곤란하니까.
 {Player_name}: ...
+@hideChars wait:false
 describe: 여진이는 그렇게 어두운 골목 속으로 사라졌다.
 describe: 의문들이 조금은 풀렸지만...
 describe: 그 사이로 더 많은 의문이 생겨났다.

@@ -74,7 +74,12 @@ describe: 라고 속으로 말하며 나는 문고리를 잡고 돌렸다.
 kang: ..?
 @char kangbody1.11 pose:c wait:false
 kang: 그래! 내일 봐!
+@stopbgm BGM_Map_CunningCity_01 fade:1 wait:false:1
+@sfx Common_Wood_Squeak_01 volume:60 loop:false fade:0 wait:true
+@sfx Metal_Door_Close_01 volume:70 loop:false fade:0 wait:false
 describe: 끼익-- 쿵-!
+@bgm BGM_Map_LovelyEP_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Hallway_01 volume:70 loop:true fade:1 wait:false
 describe: 묻고 싶은 것도, 궁금한 것도, 이해되지 않는 것도...
 describe: 너무나도 많았다.
 {Player_name}: (그러니까 정리하자면...)
@@ -93,6 +98,8 @@ describe: 나는 큰일 났다는 것이었다.
 describe: 그것도 아주 제대로...
 {Player_name}: (나...)
 {Player_name}: (이제 어떻게 되는 거지..?)
+@stopsfx Amb_Hallway_01 fade:1 wait:false
+@stopbgm BGM_Map_LovelyEP_01 fade:1 wait:false
 
 ; 변수 초기화(주의)
 @set LoadingValue=true

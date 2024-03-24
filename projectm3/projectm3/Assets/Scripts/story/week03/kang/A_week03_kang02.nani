@@ -6,15 +6,15 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_Antics_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Shool_Club_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScClub01 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
-
+@sfx Common_Sliding_Door_Open_02 volume:80 loop:false fade:0 wait:false
 describe: 드르륵-! 쾅--!
 {Player_name}: 허억... 허억...
 @char jinbody1.23 pose:c wait:false
@@ -57,7 +57,9 @@ jin: 인제 와서 가긴 어딜 가!
 @char jinbody3.44 pose:c wait:false
 jin: 그냥 나희 언니 말처럼 기다...
 @hideChars wait:false
+@sfx Common_Sliding_Door_Open_02 volume:80 loop:false fade:0 wait:false
 describe: 드르륵-! 쾅--!
+@stopsfx Common_Sliding_Door_Open_02 fade:1 wait:false
 @char jinbody2.55 pose:c wait:false
 jin: 야! 야!!
 @char jinbody2.23 pose:c wait:false
@@ -65,6 +67,8 @@ jin: 아오..! 진짜 왜 저러는 거야?!
 @hideChars wait:false
 @char sulbody1.11 pose:c wait:false
 sul: ...
+@stopsfx Amb_Shool_Club_01 fade:1 wait:false
+@stopbgm BGM_Map_Antics_01 fade:1 wait:false
 @hideChars wait:false
 
 @set LoadingValue=true
@@ -73,8 +77,7 @@ sul: ...
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Stadium_Crowd_01 volume:80 loop:false wait:false
-@bgm BGM_Metal_imsi volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_Siawase_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back ScLobby01 time:0.5 wait:true
 @showUI CP wait:false
@@ -108,6 +111,7 @@ describe: 그 생각들을 정리하다 보니 어느새 창고 앞에 도착했
 {Player_name}: ..?
 describe: 창고 앞에 도착해서 보니 문이 살짝 열려있었다.
 describe: 여진이가 창고 키를 가져갔으니, 최소한 여진이가 창고 문을 열었을 것이다.
+@sfx Common_Paper_Crumple_01 volume:80 loop:false fade:0 wait:false
 describe: 부스럭-!
 describe: 그때. 창고 안에서 어떤 소리가 들려왔다.
 {Player_name}: ..?
@@ -119,5 +123,5 @@ describe: 창고 안에서는 그 어떤 대답도 들려오지 않았다.
 {Player_name}: (여진이는 안에 없는 건가?)
 {Player_name}: (흐음...)
 describe: 잠시 고민하던 나는 살짝 열린 창고의 문을 활짝 열고 안으로 들어갔다.
-
+@stopbgm BGM_Map_Siawase_01 fade:1 wait:false
 @goto A_week03_kang03.week03_kang03

@@ -22,6 +22,19 @@
 @set TestCorrectResult=0
 @set Tutorial=End
 
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@back Black time:0.5 wait:true
+@back RoadNigth02 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: ...
 {Player_name}: (얘는 도대체 언제 오는 거야?)
 describe: 여진이를 기다리고 있은 지 약 20분.
@@ -54,44 +67,64 @@ describe: 문제는... 그게 뭔지 전혀 모른다는 것이었다.
 describe: 왜 모른척해 주는 건지, 왜 나를 필요로 하는 건지...
 {Player_name}: (나는... 어떻게 해야 하는 거지?)
 {Player_name}: (진짜 이러다가 쥐도 새도 모르게 어떻게 되는 건...)
+@char kangbody2.22 pose:c wait:false
 kang: {Player_name}!
 describe: 고민하던 사이 어느새 여진이가 다가왔다.
 describe: 여진이는 처음 만났을 때처럼 다정하게 내 이름을 부르고 있었다.
 describe: 도대체 어느 모습이 진짜 모습일까.
+@char kangbody2.31 pose:c wait:false
 kang: 미안! 내가 조금 늦었지?
+@char kangbody2.21 pose:c wait:false
 kang: 헤헤... 많이 기다렸어?
 {Player_name}: 좀 기다리긴 했...
+@char kangbody2.11 pose:c wait:false
 kang: 밖에서 기다리느라 힘들었겠다!
+@char kangbody2.71 pose:c wait:false
 kang: 우리 이렇게 만난 건 되게 오랜만이다... 그치..?
 {Player_name}: ..?
 {Player_name}: (며칠 전에 만나놓고는 무슨...)
 {Player_name}: (놀리는 건가..?)
+@char kangbody2.33 pose:c wait:false
 kang: 고마워...
 {Player_name}: 응..?
 describe: 여진이는 갑자기 나에게 고맙다고 말했다.
+@char kangbody2.37 pose:c wait:false
 kang: 너와 함께하고 싶어도 그러지 못할 때가 많은데...
+@char kangbody2.31 pose:c wait:false
 kang: 넌 그런 나를 항상 옆에서 기다리잖아...
 {Player_name}: (뭐라고..?)
+@char kangbody2.22 pose:c wait:false
 kang: 아무튼 빨리 가자!
 {Player_name}: 가자고..? 어디를...
+@char kangbody2.41 pose:c wait:false
 kang: 어디긴! 우리 전에 얘기했던 거 기억 안 나?
 {Player_name}: 아니 도대체 무슨 말을 해줘야 기억하던...
+@char kangbody2.22 pose:c wait:false
 kang: 빨리 가자!
+@char kangbody2.11 pose:c wait:false
 kang: 배고프진 않아? 저녁은 먹었어?
 {Player_name}: 안 먹었지. 덕분에.
+@hideChars wait:false
+@char kangbody1.17 pose:c wait:false
 kang: ...
+@char kangbody1.14 pose:c wait:false
 kang: 무슨 일 있어?
 {Player_name}: 뭐?
+@char kangbody1.13 pose:c wait:false
 kang: 내가 미안... 요즘 조금 바빠서...
 {Player_name}: 무... 무슨...
+@char kangbody1.21 pose:c wait:false
 kang: 그래도... 이해해줘서 고마워!
 {Player_name}: 아니 지금 무슨...
+@char kangbody1.11 pose:c wait:false
 kang: 내가 잘 아는 맛집 있으니까 거기부터 갈까?
 describe: 여진이는 내 말을 계속해서 끊고 있었다.
 {Player_name}: 아니 별로 배 안고프...
+@char kangbody1.13 pose:c wait:false
 kang: 가자고.
 {Player_name}: ...
 {Player_name}: 으...응...
 describe: 도대체 어느 모습이 진짜 모습일까.
+@hideChars wait:false
 
 @goto A_week05_kang02.week05_kang02
