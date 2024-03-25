@@ -16,6 +16,7 @@ la: 어휴! 절호의 기회였는데...
 {Player_name}: (하... 하하하...)
 {Player_name}: (그럼 그렇지.)
 {Player_name}: (역시 허풍이었...)
+@sfx Common_Plastic_Hit_Oneshot_01 volume:100 loop:false fade:0 wait:false
 describe: 투욱-!
 describe: 긴장이 풀려버린 걸까?
 describe: 나도 모르게 그만 발밑에 있는 쓰레기를 건드려버렸다.
@@ -24,26 +25,33 @@ la: ..?
 la: 무슨 소리가..?
 @char labody3.83 pose:c wait:false
 la: 아닌가?
+@sfx Human_Swallow_01 volume:80 loop:false fade:0 wait:false
 describe: 꿀꺽-!
 @hideChars wait:false
 {Player_name}: (다...다행이...)
+@sfx Can_Drop_01 volume:90 loop:false fade:0 wait:false
 describe: 탕-! 타탕-! 탕-!
 {Player_name}: ...
 {Player_name}: (망했다...)
 @char labody2.81 pose:c wait:false
 la: ...
+@sfx Footsteps_Sand_03 volume:90 loop:false fade:0 wait:false
 describe: 저벅-저벅-저벅-
 @hideChars wait:false
 {Player_name}: (망했다!!)
+@sfx Cat_Meow_03 volume:90 loop:false fade:0 wait:false
 describe: 냐옹-!
 {Player_name}: ..?
 {Player_name}: (냐...옹?)
 @char labody1.22 pose:c wait:false
 la: 어머..! 여기서 뭐 하고 있어?
+@sfx Cat_Meow_02 volume:90 loop:false fade:0 wait:false
 describe: 냐옹-!!
 @char labody1.12 pose:c wait:false
 la: 어머... 귀여워라...
 la: 자- 착하지. 언니가 조금만 쓰다듬...
+@sfx SFX_angry_Cat_01 volume:100 loop:false fade:0 wait:false
+@sfx Emotion_Angry_Cat_01 volume:60 loop:false fade:0 wait:false
 describe: 니야아아옹-!!!
 @char labody1.88 pose:c wait:false
 la: 아야!!
@@ -65,6 +73,7 @@ describe: 어쩐지 주변이 점점 어두워지는 느낌이었다.
 {Player_name}: (오늘... 너무 피곤하다...)
 {Player_name}: (난... 여기서 무얼 하고 있는 거지..?)
 {Player_name}: ...
+@sfx Common_Text_Kick_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 툭-!
 {Player_name}: 우왘!!
 {Player_name}: 누군가가 내 어깨를 건들였다.
@@ -79,6 +88,7 @@ kang: 내가 기다리고 있으라고 했잖아!
 @char kangbody1.47 pose:c wait:false
 kang: 한참을 찾았네...
 {Player_name}: 여진아!!
+@sfx Body_Fall_01 volume:100 loop:false fade:0 wait:false
 describe: 와락-!
 @char kangbody1.85 pose:c wait:false
 kang: 뭐...뭐야! 저리 가!
@@ -219,5 +229,6 @@ kang: 잘 따라와! 괜히 또 사라지지 말고.
 @hideChars wait:false
 {Player_name}: (앞으로도 잘 부탁한다니...)
 {Player_name}: (이게 끝이 아닌 거야..?)
-
+@stopsfx Amb_Dark_01 fade:1 wait:false
+@stopbgm BGM_Map_Dark_02 fade:1 wait:false
 @goto A_week05_kang06.week05_kang06

@@ -6,7 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@bgm BGM_Map_Siawase_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:60 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back RoadNigth02 time:0.5 wait:true
 @showUI CP wait:false
@@ -81,11 +82,14 @@ kang: 후후..! 비밀이야!
 kang: 조금 이따가 알려줄게!
 @char kangbody1.12 pose:c wait:false
 kang: 빨리 와!
+@sfx Footsteps_Female_Ctr_Run_01 volume:70 loop:false fade:0 wait:false
 @hideChars wait:false
 describe: 여진이는 내 말에 대답해주지 않은 채 먼저 앞질러 나갔다.
 {Player_name}: 여진아!
 {Player_name}: 강여진!!
 {Player_name}: (후우... 도대체 무슨 생각인 거야?)
+@stopbgm BGM_Map_Siawase_01 fade:1 wait:false
+@stopsfx Amb_Night_Cricket_01 fade:1 wait:false
 
 @set LoadingValue=true
 @processInput false
@@ -93,7 +97,8 @@ describe: 여진이는 내 말에 대답해주지 않은 채 먼저 앞질러 �
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@sfx Amb_Classroom_01 volume:40 loop:true fade:1 wait:false
+@bgm BGM_Map_Exciting_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back Store01 time:0.5 wait:true
 @showUI CP wait:false
@@ -112,13 +117,16 @@ describe: 나는 여진이에게 다가가 말했다.
 @char kangbody1.13 pose:c wait:false
 kang: ...
 describe: 하지만 여진이는 여전히 내 물음에 대답해주지 않았다.
+@sfx Footsteps_Female_Ctr_Walk_01 volume:70 loop:false fade:0 wait:false
 @hideChars wait:false
 describe: 여진이는 다시 몸을 돌려 다른 코너로 갔다.
 @char kangbody3.73 pose:c wait:false
 kang: 흐음...
+@sfx Common_Paper_Crumple_01 volume:70 loop:false fade:0 wait:false
 @char kangbody3.73 pose:c wait:false
 kang: 이건 조금 그렇고... 이것도 아니고...
 @char kangbody3.87 pose:c wait:false
+@sfx Common_Paper_Gravel_Debris_01 volume:70 loop:false fade:0 wait:false
 kang: 이건 조금 비싸고... 그렇다고 이건 너무 싸고...
 {Player_name}: (도대체가...)
 @hideChars wait:false
@@ -180,5 +188,6 @@ describe: 그런 나와는 다르게, 여진이는 몸을 돌려 밖으로 나�
 {Player_name}: ...
 kang: {Player_name}! 빨리 와!
 {Player_name}: 자...잠깐만!
-
+@stopsfx Amb_Classroom_01 fade:1 wait:false
+@stopbgm BGM_Map_Exciting_01 fade:1 wait:false
 @goto A_week05_kang03.week05_kang03

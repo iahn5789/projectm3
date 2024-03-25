@@ -1,5 +1,6 @@
 # week05_kang06
-
+@bgm BGM_Map_LovelyEP_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:70 loop:true fade:1 wait:false
 {Player_name}: (후우...)
 {Player_name}: (진짜 큰일 나는 줄 알았네...)
 describe: 여진이와 함께 거리로 나왔다.
@@ -44,6 +45,7 @@ kang: 다음에 또 만나자!
 kang: 먼저 들어가 볼게!
 {Player_name}: 으...응..!
 @hideChars wait:false
+@sfx Footsteps_Female_Ctr_Walk_01 volume:50 loop:false fade:0 wait:false
 describe: 여진이는 인파 속으로 사라져버렸다.
 describe: 홀로 남은 나는 그제야 현실감을 느낄 수 있었다.
 describe: 뺨을 스치는 밤공기, 주변에서 흘러나오는 음악 소리.
@@ -69,7 +71,8 @@ describe: 손톱자국이 파여있었다.
 {Player_name}: (어떻게 되는 거지..?)
 {Player_name}: (어떻게 해야 하는 거지..?)
 describe: 채워진 물음들 사이로 답할 수 없는 물음들이 비집고 들어왔다.
-
+@stopbgm BGM_Map_LovelyEP_01 fade:1 wait:false
+@stopsfx Amb_Night_Cricket_01 fade:1 wait:false
 ; 변수 초기화(주의)
 @set LoadingValue=true
 @processInput false

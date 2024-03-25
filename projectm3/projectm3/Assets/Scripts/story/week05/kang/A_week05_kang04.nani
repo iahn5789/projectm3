@@ -6,7 +6,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@sfx Amb_Dark_01 volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_Dark_02 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back RoadNigth02 time:0.5 wait:true
 @showUI CP wait:false
@@ -34,11 +35,13 @@ describe: 부스럭-!
 {Player_name}: (또 고양이인가?)
 {Player_name}: ...
 {Player_name}: (아니면...)
+@sfx Footsteps_Sand_02 volume:60 loop:false fade:0 wait:false
 describe: 저벅-저벅-
 describe: !!
 describe: 고양이 치곤 너무 큰 소리.
 describe: 사람의 소리다.
 {Player_name}: (설마 아직도 따라오는 건가..?)
+@sfx Footsteps_Sand_01 volume:60 loop:false fade:0 wait:false
 describe: 저벅-저벅-저벅-
 {Player_name}: (으으...!)
 {Player_name}: (강여진..!)
@@ -209,5 +212,6 @@ describe: 누군가가 등 뒤에서 내 이름을 불렀다.
 @char labody3.66 pose:c wait:false
 la: 후훗...
 la: 다음은 너야 강여진.
-
+@stopsfx Amb_Dark_01 fade:1 wait:false
+@stopbgm BGM_Map_Dark_02 fade:1 wait:false
 @goto TitleUI_New

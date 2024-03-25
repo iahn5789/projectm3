@@ -28,7 +28,8 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:60 loop:true fade:1 wait:false
+@bgm BGM_Map_Littlesad_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back RoadNigth02 time:0.5 wait:true
 @showUI CP wait:false
@@ -41,9 +42,11 @@ describe: 여진이를 기다리고 있은 지 약 20분.
 describe: 슬슬 다리가 아파져 오기 시작했다.
 {Player_name}: ...
 {Player_name}: (됐다. 올 때 되면 오겠지 뭐...)
+@sfx Common_Cloth_Brush_01 volume:70 loop:false fade:0 wait:false
 describe: 굳이 전화를 걸고 싶지 않아서일까.
 describe: 핸드폰을 꺼냈다가 다시 주머니에 집어넣었다.
 describe: 허리를 펴고 자세를 고쳐잡았다.
+@sfx Common_Bone_Break_01 volume:70 loop:false fade:0 wait:false
 describe: 두두둑 하는 소리가 허리에서 났다.
 describe: 삐딱하게 서 있던 다리를 일자로 곧게 뻗었다.
 describe: 다시 핸드폰을 꺼내 시간을 봤다.
@@ -125,6 +128,7 @@ kang: 가자고.
 {Player_name}: ...
 {Player_name}: 으...응...
 describe: 도대체 어느 모습이 진짜 모습일까.
+@stopsfx Amb_Night_Cricket_01 fade:1 wait:false
 @hideChars wait:false
-
+@stopbgm BGM_Map_Littlesad_01 fade:1 wait:false
 @goto A_week05_kang02.week05_kang02

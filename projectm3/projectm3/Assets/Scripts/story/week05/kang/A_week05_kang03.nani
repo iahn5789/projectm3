@@ -6,13 +6,15 @@
 @hideUI CP wait:false
 @hidePrinter  time:0.5 wait:true
 @back Black time:0.5 wait:true
-@sfx Amb_Road_01 volume:90 loop:true fade:1 wait:false
+@bgm BGM_Map_LovelyEP_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:50 loop:true fade:1 wait:false
 @back Black time:0.5 wait:true
 @back RoadNigth02 time:0.5 wait:true
 @showUI CP wait:false
 @processInput true
 @set LoadingValue=false
 
+@sfx Shop_Door_Click__01 volume:70 loop:false fade:0 wait:false
 describe: 선물 받은 향수를 들고 다있어에서 나왔다.
 describe: 여진이는 조금 떨어진 곳에서 웃으며 나를 쳐다보고 있었다.
 @char kangbody1.22 pose:c wait:false
@@ -77,9 +79,15 @@ describe: 그때.
 describe: 여진이가 내 손을 낚아챘다.
 describe: 그리고...
 describe: 어딘가로 끌고 가기 시작했다.
+@stopsfx Amb_Night_Cricket_01 fade:1 wait:false
+@stopbgm BGM_Map_LovelyEP_01 fade:1 wait:false
+
+@sfx Amb_Road_01 volume:40 loop:true fade:1 wait:false
+@bgm BGM_Map_CunningCity_01 volume:50 loop:true fade:1 wait:false
 {Player_name}: 강여진!
 {Player_name}: 지금 대체 뭐 하자는...
 @char kangbody1.13 pose:c wait:false
+@sfx Common_Lightning_One_Shot_01 volume:70 loop:false fade:0 wait:false
 kang: 너 미쳤어?
 {Player_name}: 무...뭐?
 @char kangbody1.45 pose:c wait:false
@@ -224,17 +232,21 @@ describe: 그 사이로 더 많은 의문이 생겨났다.
 describe: 도대체 왜...
 describe: 그것도 이 시간에...
 describe: CCTV조차 없는 어두운 골목길에 무슨 볼일이 있다고...
+@sfx Amb_Cold_Wind_01 volume:100 loop:true fade:1 wait:false
 describe: 춥다.
 describe: 밤이 되니까 추운 걸까?
 describe: 혹은 기분 탓일까?
 describe: 그것도 아니라면...
 describe: 주변에 온기를 느낄 만한 사람이 없어서 그런 걸까?
 describe: 이유야 어찌 되었든 싸늘한 냉기가 발끝을 타고 올라왔다.
+@sfx Present_Vinyl_Crumble_01 volume:70 loop:false fade:0 wait:false
 describe: 부스럭-!
 {Player_name}: ..?
 {Player_name}: (뭐...뭐야!)
 describe: 어두운 골목 저 사이에서 무언가가 움직이는 소리가 났다.
 describe: 보이지 않는 어둠 속에서 살짝 움직이는...
+@stopsfx Amb_Cold_Wind_01 fade:1 wait:false
+@sfx Cat_Meow_01 volume:60 loop:false fade:0 wait:false
 describe: 야옹-
 describe: 길고양이였다.
 {Player_name}: (고...고양이..?)
@@ -244,6 +256,7 @@ describe: 드라마 속 주인공의 낭만 넘치는 방황 따위가 아니었
 describe: 정말이지 어디로 가야 할지 모르는, 그런 상태였다.
 describe: 그것도 한 번도 와본 적도 없는 곳에서...
 {Player_name}: ...
+@sfx Footsteps_Sand_02 volume:60 loop:false fade:0 wait:false
 describe: 저벅-저벅-
 {Player_name}: ..?
 describe: 또다시 들리는 소리에 나는 주변을 둘러봤다.
@@ -259,6 +272,7 @@ describe: 형태를 정확하게 볼 수는 없었지만 무언가가 움직이�
 {Player_name}: (그리고 무엇보다도...)
 {Player_name}: (저건 또 뭔데!!)
 describe: 흐릿하게 보이던 검은 형체는...
+@sfx Footsteps_Sand_01 volume:60 loop:false fade:0 wait:false
 describe: 조금씩 움직이며... 천천히 다가왔다.
 describe: 그것도 나를 향해.
 {Player_name}: (어... 저거...)
@@ -271,5 +285,6 @@ describe: 그렇지만 모든 상황이 맞다고 외치고 있었다.
 describe: 머리가 깨닫기 전에, 몸이 먼저 명령을 내렸다.
 describe: 움직이라고.
 describe: 지금 당장.
-
+@stopsfx Amb_Road_01 fade:1 wait:false
+@stopbgm BGM_Map_CunningCity_01 fade:1 wait:false
 @goto A_week05_kang04.week05_kang04
