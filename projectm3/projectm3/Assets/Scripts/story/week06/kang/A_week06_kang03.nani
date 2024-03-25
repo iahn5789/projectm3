@@ -16,6 +16,7 @@ describe: 방향감각을 알 수 없을 정도로 복잡한 길.
 describe: 하늘이 보이지 않는 실내에서는 시간 감각마저도 사라졌다.
 describe: 여기가 어디인지, 지금이 몇 시인지조차 헷갈리기 시작할 때.
 describe: 익숙하지만 귀에 거슬리는 소리가 들려왔다.
+@sfx Footsteps_Sand_01 volume:100 loop:false fade:0 wait:false
 describe: 저벅-저벅-
 {Player_name}: ..?
 describe: 소름 돋을 정도로 조용한 길가에서 내가 아닌 누군가의 발소리가 들려왔다.
@@ -24,6 +25,7 @@ describe: 순간적으로 걸음을 멈추고 뒤를 돌아봤다.
 {Player_name}: ...
 {Player_name}: (기분 탓인가..?)
 describe: 애써 무시하며 발걸음을 다시 옮겼다.
+@sfx Footsteps_Sand_02 volume:100 loop:false fade:0 wait:false
 describe: 저벅-저벅-
 describe: 저벅-저벅-저벅-
 {Player_name}: (어... 어..?)
@@ -40,6 +42,10 @@ describe: 여진이의 말 따위는 머릿속에서 사라진 지 오래였다.
 {Player_name}: (으...으아..!)
 {Player_name}: (여기서... 여기서...)
 {Player_name}: (나가야 해!)
+@stopbgm BGM_Map_Blues_01 fade:1 wait:false
+@stopsfx Amb_Dark_01 fade:1 wait:false
+@bgm BGM_Map_FeelGood_01 volume:50 loop:true fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
 {Player_name}: 허억... 허억...
 describe: 뒤도 돌아보지 않고 그 소름 돋는 곳에서 뛰쳐나왔다.
 describe: 발소리가 어쩐지 머릿속에서 계속해서 울리는 기분이었다.
@@ -55,6 +61,7 @@ kang: 설마... 벌써 팔린 거야?
 kang: {Player_name}! 뭐라 말 좀 해...
 {Player_name}: 너..!
 kang: 무...뭐야! 갑자기 무슨...
+@sfx Common_Lightning_One_Shot_01 volume:60 loop:false fade:0 wait:false
 {Player_name}: 장난해?!
 {Player_name}: 이상한 사람이 쫓아오지를 않나!!
 {Player_name}: 미로같이 복잡해서 길을 잃어버리질 않나!!
@@ -79,6 +86,7 @@ kang: 그럼 돈은?
 kang: 돈 줬잖아! 설마 잃어버린 거야?
 kang: 너 진짜 그랬다가는...
 {Player_name}: 돈은 가지고 있지!
+@sfx Common_Paper_Crumple_01 volume:70 loop:false fade:0 wait:false
 describe: 나는 주머니에서 여진이가 준 돈 봉투를 꺼냈다.
 describe: 돈 봉투를 보자 여진이의 표정이 조금은 나아진 듯 보였다.
 kang: ...
@@ -148,6 +156,7 @@ kang: ..!
 {Player_name}: 라은 때문에 들킬까 봐 다시 사려고 하는 거지?
 {Player_name}: 내 말 맞지?
 kang: ...
+@sfx Amb_Cold_Wind_01 volume:100 loop:false fade:0 wait:false
 describe: 여진이는 말이 없어졌다.
 {Player_name}: 할 말이 없나 봐?
 {Player_name}: 그럼... 가볼까?
@@ -159,5 +168,6 @@ kang: 저번처럼 숨겨놓은 옷도 없고...
 kang: 싫어! 못가!!
 {Player_name}: 후후후후..!
 kang: 꺄악-!
-
+@stopbgm BGM_Map_FeelGood_01 fade:1 wait:false
+@sfx Amb_Classroom_Cutoff_01 volume:70 loop:true fade:1 wait:false
 @goto A_week06_kang04.week06_kang04

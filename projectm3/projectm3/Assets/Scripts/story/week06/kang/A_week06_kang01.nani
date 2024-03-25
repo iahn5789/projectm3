@@ -21,10 +21,12 @@
 @set TestCorrect=0
 @set TestCorrectResult=0
 @set Tutorial=End
-
+@sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
+@bgm BGM_Map_Cool_01 volume:50 loop:true fade:1 wait:false
 선생님: 오늘 하루도 수고 많았다.
 반장: 차렷! 경례!
 일동: 수고하셨습니다!
+@sfx Common_Sliding_Door_Open_Short_02 volume:100 loop:false fade:0 wait:false
 describe: 드르륵-
 학생A: 하... 진짜 학원 가기 싫다...
 학생B: 피시방 고? 형이 오늘 특별히 캐리해준다.
@@ -46,10 +48,12 @@ describe: 의자를 밀고, 문을 여닫는 소리가 어쩐지 카운트다운
 describe: 하나... 둘... 드르륵-
 describe: 셋... 넷...
 {Player_name}: ..?
+@sfx Common_Tinnitus_01 volume:70 loop:false fade:0 wait:false
 describe: 문이 닫히지 않고 있었다.
 describe: 문을 열어두고 나간 걸까?
 describe: 사실 열려있나 닫혀있나 아무 차이도 없었지만...
 describe: 어쩐지 찝찝한 마음이 조금 들었다.
+@stopsfx Common_Tinnitus_01 fade:1 wait:false
 kang: {Player_name}!
 describe: 요즘 정말 피곤한 걸까?
 describe: 환청이 들리는 것만 같았다.
@@ -95,6 +99,7 @@ kang: 그리고 다른 부원들한테도 미리 말해뒀어!
 kang: 어차피 다영이랑 나희 언니도 오늘은 못 온다고 하더라!
 {Player_name}: 그...래?
 kang: 그래! 그러니까 빨리 가자!
+@sfx Common_Plastic_Hit_Oneshot_01 volume:100 loop:false fade:0 wait:false
 describe: 툭-!
 describe: 여진이는 내 책가방을 책상 위에 내려놓으며 말했다.
 {Player_name}: ...
@@ -104,6 +109,10 @@ describe: 빨리 일어나라는 무언의 압박이 느껴졌다.
 {Player_name}: 가야지... 하하...
 describe: 나는 책가방을 메며 다시 한번 창밖을 바라봤다.
 describe: 무책임할 정도로 맑고 푸른 하늘이었다.
+@stopbgm BGM_Map_Cool_01 fade:1 wait:false
+@stopsfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+@sfx Amb_Night_Cricket_01 volume:30 loop:true fade:1 wait:false
+@bgm BGM_Map_Friendly_01 volume:50 loop:true fade:1 wait:false
 kang: ...래서 내가 어쨌냐면...
 describe: 오늘도 어김없이 여진이와 함께 <b>데이트</b>중이었다.
 describe: 데이트의 목적은 조금 달랐지만...
@@ -130,6 +139,7 @@ describe: 그런 내 손짓에 여진이는 어색하게 웃으며 몸을 빼고
 {Player_name}: (어라..? 이것 봐라?)
 {Player_name}: (반응이 조금 있는 거 같은데..?)
 kang: 아하하..! 너도 참!
+@sfx Common_Cartoon_Hit_01 volume:70 loop:false fade:0 wait:false
 describe: 퍼억-!
 {Player_name}: 으...윾!
 describe: 순간적으로 옆구리에 감각이 느껴졌다.
@@ -144,6 +154,7 @@ kang: 나 열받게 하려고?
 {Player_name}: 아니? 난 그냥 내 역할에 충실한 건데?
 kang: 그럼 충실하지 말고 적당히만 해!
 {Player_name}: 연애를 해본 적이 없어서 <b>적당히</b>를 모르겠는...
+@sfx Common_Cartoon_Hit_01 volume:90 loop:false fade:0 wait:false
 describe: 퍽-!
 {Player_name}: 커...커헉...
 kang: 어머..!
@@ -166,5 +177,6 @@ describe: 계속한다면 원래 모습을 볼 수도 있었겠지만...
 describe: 그랬다가는 큰일이 날 것만 같았다.
 describe: 정말이지...
 describe: 봐도 봐도 적응이 안 되는 모습이었다.
-
+@stopbgm BGM_Map_Friendly_01 fade:1 wait:false
+@stopsfx Amb_Night_Cricket_01 fade:1 wait:false
 @goto A_week06_kang02.week06_kang02

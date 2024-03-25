@@ -1,5 +1,7 @@
 # week06_kang05
-
+@bgm BGM_Map_Dark_02 volume:60 loop:true fade:1 wait:false
+@sfx Common_Clock_Tictok_Slow_Highcut_01 volume:70 loop:true fade:1 wait:false
+@sfx Amb_Room_Tone_02 volume:70 loop:true fade:1 wait:false
 describe: 얼마 동안 걸었을까.
 describe: 시간 감각이 사라지고, 공간 감각도 사라졌다.
 describe: 어디로 가야 할지 모른 채 무작정 걷고 있었다.
@@ -21,6 +23,7 @@ describe: 기쁘지 않았다.
 describe: 누군가가 손에 든 기타를 끌어당기는 느낌이었다.
 describe: 밖이 어두워서 그런 걸까?
 describe: 저 멀리 보이는 출구가 오히려 또 다른 터널로 들어가는 입구처럼 보였다.
+@stopsfx Common_Clock_Tictok_Slow_Highcut_01 fade:1 wait:false
 {Player_name}: ...
 describe: 여진이는 괜찮은 걸까?
 describe: 다시는 보지 못하게 되는 건 아닐까?
@@ -119,5 +122,6 @@ describe: 부우웅-!
 경찰: ...
 경찰: ......
 경찰: 기타는 어떻게 했어요?
-
+@stopbgm BGM_Map_Dark_02 fade:1 wait:false
+@stopsfx Amb_Room_Tone_02 fade:1 wait:false
 @goto TitleUI_New
