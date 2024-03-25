@@ -1704,9 +1704,9 @@ RectTransform:
   m_Father: {fileID: 7133300121805573697}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -400}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1871853009289596061
@@ -3952,7 +3952,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: 0
 --- !u!1 &2195160275083801729
 GameObject:
   m_ObjectHideFlags: 0
@@ -5505,17 +5505,6 @@ MonoBehaviour:
       - m_Target: {fileID: 4938703079890503590}
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SkipGame
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11153,9 +11142,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 890, y: 50}
+  m_AnchoredPosition: {x: 890, y: 450}
   m_SizeDelta: {x: 20, y: 800}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1865307553317064780
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11391,17 +11380,6 @@ MonoBehaviour:
       - m_Target: {fileID: 2414742861186384364}
         m_MethodName: SetActive
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 4866934839738362164}
-        m_MethodName: GameStart
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16863,39 +16841,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62755896965746d4bb25ae5ec6c5127e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RemainingDistance01: 0
-  RemainingDistance02: 0
-  RemainingDistance03: 0
-  InitialDifferenceDistance01: 0
-  InitialDifferenceDistance02: 0
-  InitialDifferenceDistance03: 0
-  RaeunSPS01: 0
-  RaeunSPS02: 0
-  RaeunSPS03: 0
-  Probability01_Styrofoam_Box: 0
-  Probability01_Delivery_Box: 0
+  RemainingDistanceText: {fileID: 5057473773807016632}
+  RoundText: {fileID: 6324313960377894840}
+  Player: {fileID: 6415134909419997293}
+  Unknown: {fileID: 388098193839408603}
+  SuccessResult: {fileID: 8887385277589939182}
+  FailResult: {fileID: 4938703079890503590}
+  NextGameResult: {fileID: 2414742861186384364}
+  RemainingDistance01: 400
+  RemainingDistance02: 400
+  RemainingDistance03: 400
+  InitialDifferenceDistance01: 100
+  InitialDifferenceDistance02: 100
+  InitialDifferenceDistance03: 100
+  RaeunSPS01: 2
+  RaeunSPS02: 4
+  RaeunSPS03: 6
+  Styrofoam_Box_SPS: 10
+  Delivery_Box_SPS: 12
+  Gift_Box_SPS: 14
+  Probability01_Styrofoam_Box: 80
+  Probability01_Delivery_Box: 20
   Probability01_Gift_Box: 0
-  Probability02_Styrofoam_Box: 0
-  Probability02_Delivery_Box: 0
-  Probability02_Gift_Box: 0
-  Probability03_Styrofoam_Box: 0
-  Probability03_Delivery_Box: 0
-  Probability03_Gift_Box: 0
-  Probability01_Garbage_Bag: 0
+  Probability02_Styrofoam_Box: 60
+  Probability02_Delivery_Box: 30
+  Probability02_Gift_Box: 10
+  Probability03_Styrofoam_Box: 60
+  Probability03_Delivery_Box: 30
+  Probability03_Gift_Box: 10
+  Probability01_Garbage_Bag: 100
   Probability01_Barricade: 0
   Probability01_Tack: 0
-  Probability02_Garbage_Bag: 0
-  Probability02_Barricade: 0
+  Probability02_Garbage_Bag: 80
+  Probability02_Barricade: 20
   Probability02_Tack: 0
-  Probability03_Garbage_Bag: 0
-  Probability03_Barricade: 0
-  Probability03_Tack: 0
+  Probability03_Garbage_Bag: 60
+  Probability03_Barricade: 30
+  Probability03_Tack: 10
+  failStopTime01: 1
+  failStopTime02: 1.5
+  failStopTime03: 2
   nodeParentContainer: {fileID: 2453873234150574606}
   nodePrefab: {fileID: 343001898117865050, guid: b91f462242268fc4e8008fd94c6734b1,
     type: 3}
-  numberOfRounds: 0
-  successSprite: {fileID: 21300000, guid: ecb2da91ed4c1e44c945ec7034c77450, type: 3}
-  failSprite: {fileID: 21300000, guid: beae0399f1cb5f4488c807bbae5ed3df, type: 3}
+  numberOfRounds: 1
+  successSprite01: {fileID: 21300000, guid: ecb2da91ed4c1e44c945ec7034c77450, type: 3}
+  successSprite02: {fileID: 21300000, guid: af42d2c3bb60a514bb3a384014158829, type: 3}
+  successSprite03: {fileID: 21300000, guid: b851dbe90b9e6c342a55e7874a5f0a16, type: 3}
+  failSprite01: {fileID: 21300000, guid: beae0399f1cb5f4488c807bbae5ed3df, type: 3}
+  failSprite02: {fileID: 21300000, guid: 86c1553be6e6e2641a99d6af965720d6, type: 3}
+  failSprite03: {fileID: 21300000, guid: 16ec06959ae2c4442ad92d23b1b4c981, type: 3}
 --- !u!1 &6319987062386082827
 GameObject:
   m_ObjectHideFlags: 0
@@ -17004,9 +16999,9 @@ RectTransform:
   m_Father: {fileID: 7133300121805573697}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 200}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7198059161138000922

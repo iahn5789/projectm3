@@ -15,6 +15,13 @@ public class MinigameTemplerunPopUpManager : MonoBehaviour
     public void SetActiveFalseUI()
     {
         UI.SetActive(false);
-        // MTM.ResetGame();
+    }
+    public void _GameStart()
+    {
+        MTM.GameStart();
+    }
+    public void _NextGameStart()
+    {
+        MTM.NextGameStart();
     }
 }
