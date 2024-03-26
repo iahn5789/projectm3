@@ -4516,7 +4516,7 @@ GameObject:
   - component: {fileID: 4455318153004669828}
   - component: {fileID: 2043480953338425965}
   - component: {fileID: 1703994419765774050}
-  - component: {fileID: 2068522737695224752}
+  - component: {fileID: 2185732855788316443}
   m_Layer: 0
   m_Name: Button_Title
   m_TagString: Untagged
@@ -4598,17 +4598,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3281249386303108172}
         m_MethodName: Stop
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2068522737695224752}
-        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4792,7 +4781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio: {fileID: 2043480953338425965}
   audiolist: []
---- !u!114 &2068522737695224752
+--- !u!114 &2185732855788316443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4801,17 +4790,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6817033325680352861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
+  m_Script: {fileID: 11500000, guid: ce1df12d839e2a64d9bca0f4ccfdde61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptName: 
-  scriptText: '@hideUI EndingUI
-
-    @showUI TitleUI_New2
-
-    @goto TitleUI_New'
-  playOnAwake: 0
-  disableWaitInput: 0
+  disableInteraction: 0
+  visibleOnAwake: 1
+  controlOpacity: 1
+  fadeTime: 0.3
+  ignoreTimeScale: 1
+  focusObject: {fileID: 0}
+  focusMode: 0
+  onShow:
+    m_PersistentCalls:
+      m_Calls: []
+  onHide:
+    m_PersistentCalls:
+      m_Calls: []
+  NowScene: {fileID: 0}
 --- !u!1 &7128371442685412505
 GameObject:
   m_ObjectHideFlags: 0
