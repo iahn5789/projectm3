@@ -107,7 +107,7 @@ public class AccomplishmentManager : MonoBehaviour
         Color newColor;
         if (count < totalCount)
         {
-            ColorUtility.TryParseHtmlString("#FF0000", out newColor); // 빨간색
+            ColorUtility.TryParseHtmlString("#444444", out newColor); // 빨간색
         }
         else
         {
