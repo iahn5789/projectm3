@@ -187,6 +187,26 @@ public class ExamUIManager : MonoBehaviour
         KQuestionTitleList.Add("52", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
         KQuestionTitleList.Add("53", "다음 보기에 공통점이 있는 인물을 고르시오.");
         KQuestionTitleList.Add("54", "다음 지문에서 쪽지에 적혀있는 단어로 올바른 것을 고르시오.");
+
+        KQuestionTitleList.Add("60", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("61", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("62", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("63", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("64", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+
+        KQuestionTitleList.Add("70", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("71", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("72", "다음 지문을 잘 읽고 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("73", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("74", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+
+        KQuestionTitleList.Add("80", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("81", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("82", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("83", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+        KQuestionTitleList.Add("84", "다음 지문을 잘 읽고 빈칸에 들어갈 올바른 답을 고르시오.");
+
+
         // Jin(50개)
         JQuestionTitleList = new Dictionary<string, string>();
         JQuestionTitleList.Add("00", "다음 보기에 공통점이 있는 인물을 고르시오.");
@@ -285,6 +305,25 @@ public class ExamUIManager : MonoBehaviour
         KQuestionList.Add("52", "무시무시한 협박 앞에서...\n여진이는 내 얼굴을 바라보고 있었다,\n그리고... 소리 내지 않은 채 입으로 무언가를 말했다.");
         KQuestionList.Add("53", "주황색 머리카락\n갈색 눈동자\n불그스름한 뺨");
         KQuestionList.Add("54", "여진이는 주머니에서 꺼낸 쪽지를 내게 건네주었다.\n축제 열리고 있는 장소랑 시간 적혀있는 것 같은데...");
+
+        KQuestionList.Add("60", "자. 저번에 교환한 정보에 따르면\n오늘 열리는 (   )에 우리가 찾는\n기타가 있을 확률이 매우 높아.");
+        KQuestionList.Add("61", "강여진이 좋아하는 초콜릿은\n코코아 고형분 함량이 (   )% 함유되어 있다.");
+        KQuestionList.Add("62", "강여진은 어렸을 때 보육원에서 자랐다.\n가수가 되는 꿈을 꾸게 해주고 밤마다 끌어안고\n부모님을 기다렸던 물건은?");
+        KQuestionList.Add("63", "공연이 끝난 후 스태프가 건넨 선물은?");
+        KQuestionList.Add("64", "기타를 도둑맞아 화가 난 최 사장에게 나타난\n꼬맹이의 이름은?");
+
+        KQuestionList.Add("70", "가난한 대학생이 전당포 노파와 그녀의 여동생을\n도끼로 살해하지만, 양심의 가책을 느끼고 자수하게 되는\n소설 죄와 벌의 저자 이름은?");
+        KQuestionList.Add("71", "강여진이 제일 좋아하는 음료는?");
+        KQuestionList.Add("72", "라은은 강여진의 비밀을 밝혀낼 기사를 내려 한다.\n그것을 막을 방법은 전대용뿐.\n전대용을 설득하기 위해 꺼낸 방법은?");
+        KQuestionList.Add("73", "강준영... 내 (   )야.");
+        KQuestionList.Add("74", "성공할 수 있다는 보장도 없고...\n실패했을 때는 모든 걸 잃어버리기 딱 좋은 생각.\n그렇지만 나는... 너에게 (   )로 했으니까.");
+
+        KQuestionList.Add("80", "어! 나희 누나! 안녕하세요!\n(   )에서 대용이를 기다리고 있다고요?!\n다영이도 옆에서 같이 기다리고 있다고요?!");
+        KQuestionList.Add("81", "최 사장은 기타를 거의 몽둥이처럼 들어 올렸다.\n기타의 넥 부분을 잡고 몸통 부분을 하늘 위로 올렸다.\n마치 (   ) 같은 자세를 취하고 있었다.");
+        KQuestionList.Add("82", "여진이는 모르는 사람에게 받았던 (   )를 선반 위에 올려놨다.\n최 사장은 손에 침을 바른 채 (   )를 열어 확인했다.");
+        KQuestionList.Add("83", "내가 말했어. 돈 좀 달라고.\n진작 그랬으면 모든 게 해결될 일이었어.\n그런데... 내 (   ) 때문에 그러지 못했던 거야.");
+        KQuestionList.Add("84", "거친 손과는 다른 부드러운 입술.\n그 입술 너머로 느껴지는 달콤한 (   ) 향기.\n어릴 적 영화에서 봤던, (   ) 파도가 느껴졌다.");
+
         // Jin(50개)
         JQuestionList = new Dictionary<string, string>();
         JQuestionList.Add("00", "분홍색\n단발머리\n베이스기타");
@@ -501,6 +540,84 @@ public class ExamUIManager : MonoBehaviour
         KAnswerList.Add("542", "일진파");
         KAnswerList.Add("543", "일진배달");
         KAnswerList.Add("544", "일진사랑");
+
+        KAnswerList.Add("600", "공연장");
+        KAnswerList.Add("601", "노래방");
+        KAnswerList.Add("602", "동아리실");
+        KAnswerList.Add("603", "뒷골목");
+        KAnswerList.Add("604", "창고");
+        KAnswerList.Add("610", "45%");
+        KAnswerList.Add("611", "82%");
+        KAnswerList.Add("612", "56%");
+        KAnswerList.Add("613", "72%");
+        KAnswerList.Add("614", "99%");
+        KAnswerList.Add("620", "LP");
+        KAnswerList.Add("621", "CD");
+        KAnswerList.Add("622", "테이프");
+        KAnswerList.Add("623", "인형");
+        KAnswerList.Add("624", "기타");
+        KAnswerList.Add("630", "레스토랑 상품권");
+        KAnswerList.Add("631", "제주도 항공권");
+        KAnswerList.Add("632", "치킨 기프티콘");
+        KAnswerList.Add("633", "커피 교환권");
+        KAnswerList.Add("634", "문구 세트");
+        KAnswerList.Add("640", "라은");
+        KAnswerList.Add("641", "설나희");
+        KAnswerList.Add("642", "진다영");
+        KAnswerList.Add("643", "강여진");
+        KAnswerList.Add("644", "전대용");
+
+        KAnswerList.Add("700", "도스토예프스키");
+        KAnswerList.Add("701", "이노므갸스키");
+        KAnswerList.Add("702", "무라카미 하루키");
+        KAnswerList.Add("703", "기욤 뮈소");
+        KAnswerList.Add("704", "댄 브라운");
+        KAnswerList.Add("710", "민트초코라떼");
+        KAnswerList.Add("711", "카라멜마끼아또");
+        KAnswerList.Add("712", "타로 밀크티");
+        KAnswerList.Add("713", "복숭아 아이스티");
+        KAnswerList.Add("714", "아메리카노");
+        KAnswerList.Add("720", "여자 소개");
+        KAnswerList.Add("721", "햄버거 쏘기");
+        KAnswerList.Add("722", "콘서트 티켓팅");
+        KAnswerList.Add("723", "루틴 칭찬");
+        KAnswerList.Add("724", "마이크 선물");
+        KAnswerList.Add("730", "아빠");
+        KAnswerList.Add("731", "남자 친구");
+        KAnswerList.Add("732", "고모부");
+        KAnswerList.Add("733", "친구");
+        KAnswerList.Add("734", "오빠");
+        KAnswerList.Add("740", "의지하기");
+        KAnswerList.Add("741", "사랑을 주기");
+        KAnswerList.Add("742", "맡기기");
+        KAnswerList.Add("743", "따라가기");
+        KAnswerList.Add("744", "모든 걸 걸기");
+
+        KAnswerList.Add("800", "축제 거리");
+        KAnswerList.Add("801", "공연장");
+        KAnswerList.Add("802", "뒷골목");
+        KAnswerList.Add("803", "창고");
+        KAnswerList.Add("804", "교무실");
+        KAnswerList.Add("810", "야구선수");
+        KAnswerList.Add("811", "검도선수");
+        KAnswerList.Add("812", "테니스선수");
+        KAnswerList.Add("813", "탁구선수");
+        KAnswerList.Add("814", "하키선수");
+        KAnswerList.Add("820", "봉투");
+        KAnswerList.Add("821", "상자");
+        KAnswerList.Add("822", "가방");
+        KAnswerList.Add("823", "핸드폰");
+        KAnswerList.Add("824", "보자기");
+        KAnswerList.Add("830", "자존심");
+        KAnswerList.Add("831", "버릇");
+        KAnswerList.Add("832", "습관");
+        KAnswerList.Add("833", "능력");
+        KAnswerList.Add("834", "성격");
+        KAnswerList.Add("840", "초콜릿");
+        KAnswerList.Add("841", "바닐라");
+        KAnswerList.Add("842", "과일");
+        KAnswerList.Add("843", "커피");
+        KAnswerList.Add("844", "민트");
 
         // Jin(250개)
         JAnswerList = new Dictionary<string, string>();
@@ -823,6 +940,24 @@ public class ExamUIManager : MonoBehaviour
         KCorrectAnswerList.Add("52", "튀어!");
         KCorrectAnswerList.Add("53", "강여진");
         KCorrectAnswerList.Add("54", "일진택배");
+
+        KCorrectAnswerList.Add("60", "공연장");
+        KCorrectAnswerList.Add("61", "45%");
+        KCorrectAnswerList.Add("62", "LP");
+        KCorrectAnswerList.Add("63", "레스토랑 상품권");
+        KCorrectAnswerList.Add("64", "라은");
+
+        KCorrectAnswerList.Add("70", "도스토예프스키");
+        KCorrectAnswerList.Add("71", "민트초코라떼");
+        KCorrectAnswerList.Add("72", "여자 소개");
+        KCorrectAnswerList.Add("73", "아빠");
+        KCorrectAnswerList.Add("74", "의지하기");
+
+        KCorrectAnswerList.Add("80", "축제 거리");
+        KCorrectAnswerList.Add("81", "야구선수");
+        KCorrectAnswerList.Add("82", "봉투");
+        KCorrectAnswerList.Add("83", "자존심");
+        KCorrectAnswerList.Add("84", "초콜릿");
 
         // Jin(50개)
         JCorrectAnswerList = new Dictionary<string, string>();
