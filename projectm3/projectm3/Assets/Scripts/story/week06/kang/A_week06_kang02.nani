@@ -1,89 +1,146 @@
 # week06_kang02
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @bgm BGM_Map_CunningCity_01 volume:50 loop:true fade:1 wait:false
 @sfx Amb_Room_Tone_02 volume:100 loop:true fade:1 wait:false
+@char kangbody1.45 pose:c wait:false
 kang: 야! 지금 뭐 하자는 거야!
 describe: 주변에 사람이 없어지자 여진이는 대뜸 화부터 냈다.
 {Player_name}: 뭐가?
+@char kangbody1.44 pose:c wait:false
 kang: 몰라서 물어? 갑자기 왜 오바하는건데!
 {Player_name}: 아니 오바가 아니라 난 그냥 열심히 한 건...
+@char kangbody1.45 pose:c wait:false
 kang: 그냥 시키는 대로만 하면 된다고!
 {Player_name}: 알겠어. 나만의 작은...
 @sfx Common_Whoosh_Horror_01 volume:70 loop:false fade:0 wait:false
+@char kangbody1.43 pose:c wait:false
 kang: ...
 describe: 진짜 하면 안 될 것 같았다.
 {Player_name}: 아...하하하... 농담 농담...
 kang: 후우...
+@char kangbody1.13 pose:c wait:false
 kang: 암튼 가져오라는 건 가져왔어?
 {Player_name}: 어..? 옷 말하는 거야?
 {Player_name}: 가져오긴 했는데 이건 어디다 쓰려고...
+@char kangbody1.73 pose:c wait:false
 kang: 뭘 어디다 써. 갈아입어야지.
 {Player_name}: 옷을? 여기서?
+@char kangbody1.63 pose:c wait:false
 kang: 그럼, 여기서 갈아입지 어디서 갈아입어.
 describe: 여진이는 당연한 소리라는 듯한 표정을 짓고 있었다.
 {Player_name}: 아니... 여기는 탈의실도 없고...
+@char kangbody1.11 pose:c wait:false
 kang: 이렇게 어두운데 누가 본다고 그래.
+@char kangbody1.77 pose:c wait:false
 kang: 사람도 없는데 대충 적당히 안 보이는데, 가서 갈아입어.
 {Player_name}: 아니 그래도 조금 부끄...
+@char kangbody1.13 pose:c wait:false
 kang: 뒤돌아있을게. 됐지?
 {Player_name}: ...
+@char kangbody1.43 pose:c wait:false
 kang: 빨리 가서 갈아입어! 시간 없으니까.
 {Player_name}: (시간 없으면 빨리 왔으면 되는 거 아닌가..?)
+@char kangbody1.45 pose:c wait:false
 kang: 빨리 가!
 {Player_name}: 아... 알았어..!
+@hideChars wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @stopbgm BGM_Map_CunningCity_01 fade:1 wait:false
 @stopsfx Amb_Room_Tone_02 fade:1 wait:false
 @bgm BGM_Map_FeelGood_01 volume:50 loop:true fade:1 wait:false
 describe: 나는 여진이의 말대로 사복으로 옷을 갈아입고 나왔다.
 describe: 그런데...
+@char kangbody1.11 pose:c wait:false
 kang: 다 갈아입었어?
 describe: 어째서인지 여진이는 교복 차림 그대로였다.
 {Player_name}: (뭐야... 나만 옷 갈아입고 온 거야..?)
 {Player_name}: (도대체 뭘 시키려고...)
 {Player_name}: 넌 안 갈아입어?
+@char kangbody1.61 pose:c wait:false
 kang: 나? 내가 왜 갈아입어?
 {Player_name}: 그...건 나도 모르지?
 {Player_name}: 애초에 내가 왜 갈아입어야 하는지도 모르는데...
+@char kangbody1.13 pose:c wait:false
 kang: 너만 갈아입어도 되니까 그렇게 한 거야.
+@char kangbody1.11 pose:c wait:false
 kang: 아무튼 따라와. 갈 곳 있으니까.
 describe: 여진이는 여전히 무엇 하나 속 시원하게 말해주지 않고 있었다.
 {Player_name}: (어휴... 물어보질 말아야지...)
+@hideChars wait:false
 @sfx Footsteps_Sand_02 volume:70 loop:false fade:0 wait:false
 describe: 저벅-저벅-
 describe: 여진이를 따라 골목길 안쪽으로 들어갔다.
 describe: 주변 풍경은 별로 달라진 것이 없었지만...
 describe: 안쪽으로 들어왔다는 심리적 압박감이 나를 짓누르고 있었다.
 describe: 조금 더 안쪽으로 들어가자 여진이는 걸음을 멈췄다.
+@char kangbody1.11 pose:c wait:false
 kang: 자. 저 앞에 보여?
 {Player_name}: 저... 앞에?
 describe: 여진이가 손가락으로 방향을 가리켰지만, 어두워서 그런지 무엇 하나 제대로 보이지 않았다.
 {Player_name}: 뭐가 하나도 안 보이는데...
+@char kangbody1.77 pose:c wait:false
 kang: 그냥 대충 앞으로 가. 그러면 무슨 입구 같은 게 하나 보일 거야.
 {Player_name}: 무슨 입구..?
+@char kangbody1.63 pose:c wait:false
 kang: 입구가 입구지 뭐. 그럼 출구야?
 {Player_name}: (무슨 말도 안 되는...)
+@char kangbody1.77 pose:c wait:false
 kang: 아무튼 어차피 쭉 가면 보이는 건 입구 하나밖에 없어.
 kang: 딱히 헷갈릴 일은 없을 것이고...
+@char kangbody1.13 pose:c wait:false
 kang: 입구 안으로 들어가면 시장 같은 게 하나 나올 거야.
 kang: 네가 할 일은 내가 말하는 가게에 가서 물건 하나만 사 오면 되는 거야.
+@char kangbody1.11 pose:c wait:false
 kang: 어때? 쉽지?
 kang: 돈은 내가 줄 거니까 걱정하지 말고.
+@char kangbody1.71 pose:c wait:false
 kang: 가게 위치는 들어가서 쭉 가다가 왼쪽으로 꺾고 또 쭉 가다가 오른쪽으로...
 @sfx Common_Whistle_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: 자...잠깐만!
 {Player_name}: 너무 복잡하잖아..! 거기가 어딘지도 모르는데...
+@char kangbody1.13 pose:c wait:false
 kang: 후우...
 kang: {Player_name}?
 {Player_name}: 으...응?
 describe: 여진이는 사뭇 진지한 표정으로 내 이름을 말했다.
 kang: 이번에 내가 시키는 거 잘하면...
+@char kangbody1.77 pose:c wait:false
 kang: 기타 일은 없던 걸로 해줄게.
 {Player_name}: 무...뭐?
 kang: 없던 일로 해준다고. 아예.
 {Player_name}: 그말은...
+@char kangbody1.11 pose:c wait:false
 kang: 더 이상 귀찮게 안 할게.
 kang: 불러낼 일도 없을 것이고, 나 따라다닐 일도 없을 거야.
+@char kangbody1.73 pose:c wait:false
 kang: 동아리 그만두어도 신경 안 쓸게.
+@char kangbody1.13 pose:c wait:false
 kang: 그러니까...
+@char kangbody1.43 pose:c wait:false
 kang: 그만 좀 앞으로 나오지?
 describe: 나도 모르게 어느새 여진이의 등 뒤에 숨어있었다.
 {Player_name}: 어..? 어어... 미안...
@@ -92,6 +149,7 @@ describe: 나도 모르게 어느새 여진이의 등 뒤에 숨어있었다.
 {Player_name}: 안에 들어가서 가게를 하나 찾고...
 {Player_name}: 그 가게에서 네가 준 돈으로 물건 하나를 사서 나오면...
 {Player_name}: 이제 끝이다? 완전히?
+@char kangbody1.11 pose:c wait:false
 kang: 응. 잘 이해했네!
 kang: 물건은 이 돈으로 사면 돼!
 @sfx Common_Paper_Crumple_01 volume:80 loop:false fade:0 wait:false
@@ -101,15 +159,22 @@ describe: 여진이가 건네준 봉투는 제법 두꺼웠다.
 describe: 아니. 제법 두꺼운 수준이 아니었다.
 describe: 거의 봉투가 터질 만큼 두꺼웠다.
 {Player_name}: 도대체 뭘 사야 하는데 이렇게 두꺼워..?
+@hideChars wait:false
+@char kangbody3.73 pose:c wait:false
 kang: 별거 아니야. 그냥 가서 기타 하나만 사 오면 돼.
 {Player_name}: 기타..? 도대체 무슨 기타길래...
+@hideChars wait:false
+@char kangbody1.44 pose:c wait:false
 kang: 아! 진짜! 그게 무슨 상관인데!
+@char kangbody1.45 pose:c wait:false
 kang: 그냥 그 돈으로 사 오라는 기타나 사 와!
 describe: 여진이는 짜증이 폭발했는지 상당히 민감하게 반응했다.
 {Player_name}: 무슨 기타인지를 알아야 사 오지!
+@char kangbody1.43 pose:c wait:false
 kang: 그 정도 가격대의 기타는 어차피 하나밖에 없을 테니까 헷갈릴 일 없어.
 kang: 그러니까 그냥 좀 가서 사와!
 {Player_name}: 아...알았어!
+@hideChars wait:false
 describe: 나는 화내는 여진이를 뒤로한 채 어둠 속으로 홀로 걸어갔다.
 {Player_name}: (후우...)
 {Player_name}: (좋게... 좋게 생각하자...)
@@ -120,6 +185,19 @@ describe: 나는 화내는 여진이를 뒤로한 채 어둠 속으로 홀로 �
 @bgm BGM_Map_Blues_01 volume:50 loop:true fade:1 wait:false
 @sfx Amb_Dark_01 volume:70 loop:true fade:1 wait:false
 {Player_name}: (이게 무슨...)
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 describe: 여진이의 말을 따라 안에 들어가자 보인 건...
 describe: 시장 같은 게 아니었다.
 describe: 아니.  물건을 사고파는 장소였으니 시장은 맞았다.

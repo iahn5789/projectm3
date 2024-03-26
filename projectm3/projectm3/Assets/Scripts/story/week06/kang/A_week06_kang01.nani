@@ -60,6 +60,19 @@ describe: 환청이 들리는 것만 같았다.
 kang: {Player_name}!!
 describe: 그것도 정말 선명하게...
 {Player_name}: (하긴... 그런 일을 겪었는데 멀쩡한 게 이상한...)
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back CG/Kang01 tint:white time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 kang: {Player_name}!! 뭐 하고 있어?
 {Player_name}: 어..? 어?!
 describe: 환청이 아니었다.
@@ -75,44 +88,85 @@ describe: 밝고 활기찬 모습?
 describe: 단둘이 있을 때만 보여주는 모습?
 describe: 그것도 아니라면...
 describe: 진짜 모습이 있기는 한 걸까..?
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScClassRoom01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@char kangbody1.67 pose:c wait:false
 kang: 뭐야..! 왜 혼자서 그렇게 멍때리고 있어?
+@char kangbody1.11 pose:c wait:false
 kang: 무슨 일 있는 거야?
 describe: 문을 열고 들어온 여진이는 어느새 내 자리 앞까지 다가왔다.
+@char kangbody1.22 pose:c wait:false
 kang: 오늘 학교 끝나고 만나기로 했잖아.
+@char kangbody1.41 pose:c wait:false
 kang: 왜 여기서 혼자 이러고 있어?
 {Player_name}: 어..? 그... 그런 약속을 했던가..?
+@char kangbody1.67 pose:c wait:false
 kang: 설마 약속 잊어버린 거야?
 describe: 학교 끝나고 만나자고 한 적 따위는 없었지만...
 describe: 사실 그런 약속이 중요하지는 않았다.
 describe: 여진이가 만나고 싶으면 만나야 했으니...
 {Player_name}: 아..! 하하..! 깜빡했나 봐. 미안 미안!
 describe: 나는 한 적도 없는 약속을 잊어버린 걸 사과했다.
+@char kangbody1.41 pose:c wait:false
 kang: 괜찮아! 그럴 수도 있지.
 {Player_name}: 하하... 고마워..!
 {Player_name}: 그럼 동아리 활동하러 가볼까..?
+@char kangbody1.67 pose:c wait:false
 kang: {Player_name}! 오늘 학교 끝나고 같이 갈 곳 있다고 했잖아.
+@char kangbody1.11 pose:c wait:false
 kang: 그러면 동아리는 못 가지!
 {Player_name}: 응..? 동아리를 못 간다고..?
 {Player_name}: 그럼 연습은 어떻게...
+@char kangbody1.21 pose:c wait:false
 kang: 괜찮아! 오늘 하루 정도야 뭐...
+@char kangbody1.77 pose:c wait:false
 kang: 그리고 다른 부원들한테도 미리 말해뒀어!
+@char kangbody1.11 pose:c wait:false
 kang: 어차피 다영이랑 나희 언니도 오늘은 못 온다고 하더라!
 {Player_name}: 그...래?
+@char kangbody1.22 pose:c wait:false
 kang: 그래! 그러니까 빨리 가자!
 @sfx Common_Plastic_Hit_Oneshot_01 volume:100 loop:false fade:0 wait:false
 describe: 툭-!
+@char kangbody1.11 pose:c wait:false
 describe: 여진이는 내 책가방을 책상 위에 내려놓으며 말했다.
 {Player_name}: ...
 describe: 주변에 다른 학생들이 있어 대놓고 말은 안 했지만...
 describe: 빨리 일어나라는 무언의 압박이 느껴졌다.
 {Player_name}: 그... 그래! 가자!
 {Player_name}: 가야지... 하하...
+@hideChars wait:false
 describe: 나는 책가방을 메며 다시 한번 창밖을 바라봤다.
 describe: 무책임할 정도로 맑고 푸른 하늘이었다.
 @stopbgm BGM_Map_Cool_01 fade:1 wait:false
 @stopsfx Amb_Classroom_Cutoff_01 fade:1 wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back DowntownNight01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @sfx Amb_Night_Cricket_01 volume:30 loop:true fade:1 wait:false
 @bgm BGM_Map_Friendly_01 volume:50 loop:true fade:1 wait:false
+@char kangbody3.71 pose:c wait:false
 kang: ...래서 내가 어쨌냐면...
 describe: 오늘도 어김없이 여진이와 함께 <b>데이트</b>중이었다.
 describe: 데이트의 목적은 조금 달랐지만...
@@ -125,58 +179,82 @@ describe: 함께 밥도 먹고, 함께 카페도 가고, 손도 잡고...
 {Player_name}: (그래도 내가 하자고 한 것도 아니기도 하고.)
 {Player_name}: (눈속임이긴 해도 여진이가 하자고 한 거니까.)
 {Player_name}: (흐음...)
+@hideChars wait:false
+@char kangbody2.61 pose:c wait:false
 kang: ...러다 보니까 걔가 나한테...
 {Player_name}: 여진아...
+@char kangbody2.67 pose:c wait:false
 kang: 어..?
 {Player_name}: 그런 일이 있었구나.
+@char kangbody2.81 pose:c wait:false
 kang: 응..?!
 {Player_name}: 나의 작은 아기 새... 이젠 걱정하지 마.
 {Player_name}: 네 곁에는 내가 있잖아..?
+@char kangbody2.82 pose:c wait:false
 kang: 무...뭐..?
 describe: 당황한 여진이의 표정이 보였다.
 describe: 나는 그 표정을 보며 여진이의 머리칼을 가볍게 쓸어 넘겼다.
 describe: 그런 내 손짓에 여진이는 어색하게 웃으며 몸을 빼고 있었다.
 {Player_name}: (어라..? 이것 봐라?)
 {Player_name}: (반응이 조금 있는 거 같은데..?)
+@char kangbody2.88 pose:C wait:false
 kang: 아하하..! 너도 참!
 @sfx Common_Cartoon_Hit_01 volume:70 loop:false fade:0 wait:false
 describe: 퍼억-!
+@hideChars wait:false
 {Player_name}: 으...윾!
 describe: 순간적으로 옆구리에 감각이 느껴졌다.
 describe: 시큰하고 짜릿한 감각이...
+@char kangbody3.82 pose:c wait:false
 kang: 내... 내 걱정해 줘서 고마워!
+@hideChars wait:false
+@char kangbody1.45 pose:bc wait:false
 kang: 장난해? 지금 뭐 하자는 거야?
 {Player_name}: 기왕 할 거면 제대로 해야지!
+@char kangbody1.44 pose:bc wait:false
 kang: 내가 언제 그렇게까지 하라고 했어!
 {Player_name}: 설명을 제대로 안 해주니 내가 뭘 아나?
+@char kangbody1.43 pose:bc wait:false
 kang: 너 지금 일부러 이러는 거지?
+@char kangbody1.45 pose:bc wait:false
 kang: 나 열받게 하려고?
 {Player_name}: 아니? 난 그냥 내 역할에 충실한 건데?
+@char kangbody1.44 pose:bc wait:false
 kang: 그럼 충실하지 말고 적당히만 해!
 {Player_name}: 연애를 해본 적이 없어서 <b>적당히</b>를 모르겠는...
+@hideChars wait:false
 @sfx Common_Cartoon_Hit_01 volume:90 loop:false fade:0 wait:false
 describe: 퍽-!
 {Player_name}: 커...커헉...
+@char kangbody2.65 pose:c wait:false
 kang: 어머..!
+@char kangbody2.66 pose:c wait:false
 kang: 괜찮아? 어디 안 좋아?
 describe: 여진이는 태연하게 내 안부를 묻고 있었다.
 describe: 나는 그런 여진이를 지긋이 바라보고 있었다.
+@char kangbody2.61 pose:c wait:false
 kang: ..?
+@char kangbody2.63 pose:c wait:false
 kang: 설마...
 {Player_name}: 저런 저런. 나의 작은 아기 새를 걱정시켜버렸군.
 {Player_name}: 그렇지만 난 괜찮아. 나의 곁에는 아기 새가 있...
+@char kangbody2.43 pose:c wait:false
 kang: 그만하지?
 {Player_name}: ...
 {Player_name}: 있으니...
+@char kangbody2.13 pose:c wait:false
 kang: 그만.
 {Player_name}: ...
+@char kangbody2.11 pose:c wait:false
 kang: 우리 이러지 말고 어디 카페라도 갈까?
+@char kangbody2.31 pose:c wait:false
 kang: 밖에 계속 있으니까 조금 추운 거 같아...
 describe: 여진이는 어느새 밝고 활기찬 모습으로 돌아가 버렸다.
 describe: 계속한다면 원래 모습을 볼 수도 있었겠지만...
 describe: 그랬다가는 큰일이 날 것만 같았다.
 describe: 정말이지...
 describe: 봐도 봐도 적응이 안 되는 모습이었다.
+@hideChars wait:false
 @stopbgm BGM_Map_Friendly_01 fade:1 wait:false
 @stopsfx Amb_Night_Cricket_01 fade:1 wait:false
 @goto A_week06_kang02.week06_kang02
