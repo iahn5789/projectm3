@@ -1,6 +1,20 @@
 # week06_kang04
 @bgm BGM_Map_Antics_01 volume:50 loop:true fade:1 wait:false
 @sfx Amb_Dark_01 volume:70 loop:true fade:1 wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
+@char kangbody1.33 pose:c wait:false
 kang: 으으..!
 kang: 너 진짜 변태 같은 거 알지?
 {Player_name}: 내가? 무슨 섭섭한 소리를...
@@ -13,6 +27,7 @@ describe: 여진이에게는 큰소리를 쳤지만.
 describe: 어떤 일이 있었는지 밝혀지면... 나 역시 곤란해지는 건 마찬가지였으니까.
 describe: 조금이라도 빨리 이 모든 걸 마무리 짓고 싶었다.
 {Player_name}: 그래서 어디로 가야 하는 거야?
+@char kangbody1.44 pose:c wait:false
 kang: 따라와!
 describe: 여진이는 나와 말도 섞기 싫다는 듯 먼저 앞질러 가버렸다.
 {Player_name}: 자... 잠깐만! 같이 가자니까?!
@@ -20,37 +35,58 @@ describe: 여진이는 나와 말도 섞기 싫다는 듯 먼저 앞질러 가�
 @stopbgm BGM_Map_Antics_01 fade:1 wait:false
 @bgm BGM_Map_LovelyEP_01 volume:50 loop:true fade:1 wait:false
 @sfx Amb_Classroom_Many_Footsteps_01 volume:70 loop:true fade:1 wait:false
+@hideChars wait:false
 describe: 여진이를 따라 안쪽 깊숙한 곳까지 따라 들어갔다.
 describe: 신기하게도 안으로 들어가면 들어갈수록 사람들이 많아졌다.
 describe: 번화가처럼 북적거리지는 않았지만...
 describe: 마치 개미굴처럼 없는 듯싶다가도 사람들이 튀어나왔다.
 {Player_name}: ...
 describe: 툭-!
+@char kangbody1.47 pose:c wait:false
 describe: 여진이는 가던 길을 멈춰서고 나를 바라봤다.
 describe: 갑작스럽게 멈춘 탓에 여진이의 등에 가볍게 얼굴이 부딪쳤다.
 {Player_name}: ..?
+@char kangbody1.45 pose:c wait:false
 kang: 뭐야..!
 {Player_name}: 어... 어..?
 describe: 여진이의 날카로운 표정이 보였다.
 {Player_name}: 왜..?
+@char kangbody1.36 pose:c wait:false
 kang: 왜냐니..!
 describe: 나는 나도 모르게...
 describe: 여진이의 손을 잡고 있었다.
 describe: 어쩐지 손이 조금 따뜻해져 있었다 싶었다.
+@char kangbody1.47 pose:c wait:false
 kang: 그렇게 무서워?
 {Player_name}: 무... 무섭다니..!
+@char kangbody1.73 pose:c wait:false
 kang: 에휴... 길 잃어버리는 것보다는 낫겠지.
+@char kangbody1.45 pose:c wait:false
 kang: 바짝 붙어서 똑바로 따라와.
 @sfx Footsteps_Sand_02 volume:100 loop:false fade:0 wait:false
 describe: 여진이는 내 손을 잡고 걸어가기 시작했다.
 {Player_name}: (따뜻하다...)
 {Player_name}: (그리고... 거칠다...)
+@hideChars wait:false
 describe: 처음 여진이의 손을 잡았을 때.
 describe: 여진이의 거친 손이 그 무엇보다도 먼저 느껴졌다.
 describe: 그저 기타를 많이 쳐서 그런 걸까 했지만...
 describe: 어쩐지 다른 이유가 있을 수도 있겠다는 생각이 들었다.
 {Player_name}: ...
 describe: 그렇다고 이 모든 게 정당화되지는 않겠지만.
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 @stopsfx Amb_Classroom_Many_Footsteps_01 fade:1 wait:false
 @stopbgm BGM_Map_LovelyEP_01 fade:1 wait:false
 @sfx Common_Door_Open_Squeak_01 volume:100 loop:false fade:0 wait:false
@@ -62,21 +98,27 @@ describe: 앞질러 가던 여진이는 어느 가게 앞에서 멈추어 섰다
 ???: 뭐야! 또 오셨네요?
 describe: 가게 주인처럼 보이는 사람은 여진이의 얼굴을 보고 아는 척을 했다.
 ???: 옆에는... 설마 남자친구?!
+@char kangbody2.62 pose:c wait:false
 kang: 네..? 아하하... 네... 뭐...
 describe: 여진이는 딱히 긍정도, 부정도 하지 않았다.
+@hideChars wait:false
 @sfx Footsteps_Ctr_Male_Walker_02 volume:100 loop:false fade:0 wait:false
 ???: 반갑습니다! 작은 구멍가게 하는 최사장이라고 합니다!
 @stopsfx Footsteps_Ctr_Male_Walker_02 fade:1 wait:false
 최사장: 뭐 필요한 거 있으시면 언제든지 말씀드리세요!
 {Player_name}: 아... 반갑습니다..! 하하...
 최사장: 그나저나... 무슨 일 때문에 일주일 만에 다시 오신 걸까?
+@char kangbody3.72 pose:c wait:false
 kang: 아..! 그냥 뭐 좀 찾는 게 있어서...
 최사장: 찾는 거? 어떤 거? 핵폭탄 빼고는 다 찾아드릴게!
+@char kangbody3.82 pose:c wait:false
 kang: 하하하...
 describe: 더럽게 재미없는 농담이라는 걸 아는지 모르는지...
 describe: 최사장이라는 사람은 자기 혼자 신나게 웃으며 우리에게 말했다.
+@char kangbody3.11 pose:c wait:false
 kang: 아뇨! 그냥 일단 좀 둘러보고...
 최사장: 천천히 보세요! 물건은 많으니까...
+@hideChars wait:false
 최사장: 여기 남자친구분은?
 {Player_name}: 저는 그냥 따라 왔...
 @sfx Common_String_Stab_Soft_01 volume:100 loop:false fade:0 wait:false
@@ -104,38 +146,49 @@ describe: 물건을 고르지만, 관심이 없는...
 describe: 다른 걸 생각하고 있는 표정.
 @sfx Emotion_Sad_01 volume:100 loop:false fade:0 wait:false
 {Player_name}: (또 무슨 짓을 하려고...)
+@char kangbody1.77 pose:c wait:false
 kang: 흐음... 찾는 건 없네.
 kang: 아! 그러고 보니...
+@char kangbody1.11 pose:c wait:false
 kang: 저 악기는 아직 그대로 있나 봐요?
 최사장: 저런 건 한참은 묵혀둬야죠!
 최사장: 겸사겸사 홍보도 좀 하고...
+@char kangbody1.41 pose:c wait:false
 kang: 그래요..?
 최사장: 왜? 다시 사려고?
+@char kangbody1.82 pose:c wait:false
 kang: 아니... 뭐... 꼭 그렇다기보다는...
 최사장: ...
 최사장: 그냥 솔직히 말하시지?
 최사장: 찾는 게 있다는 것도 거짓말이잖아.
+@char kangbody1.83 pose:c wait:false
 최사장: 얼굴 보면 딱 티가 나는구먼.
 최사장: ...
 최사장: 에이! 내가 인심 썼다!
 최사장: ...만 줘! 내가 그럼 눈 딱 감고 드릴게!
 최사장: 학생이 마음에 들어서 내가 싸게 드리는 거야!
+@char kangbody1.88 pose:c wait:false
 kang: 네?! 그게 무슨...
 최사장: 그 정도는 받아야지! 이게 얼마짜리인데.
+@char kangbody1.86 pose:c wait:false
 kang: 아니 저번이랑 가격 차이가 너무...
 최사장: 그동안 관리비랑 보관비는 생각 안 하나 봐?
 최사장: 너무 날로 먹으려는 거 아니야?
+@char kangbody1.82 pose:c wait:false
 kang: 그... 그 정도 돈은 없...
 최사장: 없으면?
+@char kangbody1.83 pose:c wait:false
 kang: ...
 describe: 최사장의 눈빛이 날카롭게 변했다.
 최사장: 학생. 내가 학생 생각해서 특별히 서비스 하나 해줄게.
+@char kangbody1.65 pose:c wait:false
 kang: 서비스요..?
 최사장: 그래. 서비스.
 최사장: 잘 들어.
 describe: 최사장은 자세를 낮추고 얼굴을 들이밀었다.
 @sfx Sul_Audio_Distorion_01 volume:70 loop:false fade:0 wait:false
 최사장: 꺼져.
+@char kangbody1.13 pose:c wait:false
 kang: ...
 최사장: 좋은 말로 할 때 꺼져. 뒤지기 싫으면.
 최사장: 여기 어딘지 알지? 헛짓거리하다가는 쥐도 새도 모르게 죽는...
@@ -147,9 +200,11 @@ describe: 그리고... 소리 내지 않은 채 입으로 무언가를 말했다
 {Player_name}: (..어?)
 {Player_name}: (튀어..?!)
 @sfx Common_Whistle_01 volume:100 loop:false fade:0 wait:false
+@char kangbody1.45 pose:c wait:false
 kang: 튀어!!
 @sfx Footsteps_Female_Ctr_Run_01 volume:100 loop:false fade:0 wait:false
 describe: 미처 반응하지도 못한 채, 여진이는 기타를 들고 달리기 시작했다.
+@hideChars wait:false
 {Player_name}: 어..! 어! 어!!
 최사장: 야..! 야!! 너 지금 어디...
 {Player_name}: 가... 같이 가!!
@@ -157,16 +212,33 @@ describe: 미처 반응하지도 못한 채, 여진이는 기타를 들고 달�
 @stopsfx Amb_Room_Tone_02 fade:1 wait:false
 @bgm BGM_Map_Blues_01 volume:50 loop:true fade:1 wait:false
 @sfx Amb_Classroom_Cutoff_01 volume:30 loop:true fade:1 wait:false
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 {Player_name}: 허억... 허억...
 {Player_name}: 야... 너... 진짜...
+@char kangbody1.75 pose:c wait:false
 kang: 후우... 이쯤 왔으면 괜찮겠지?
 describe: 여진이는 기타를 내려놓고 잠시 숨을 고르고 있었다.
 {Player_name}: 미리 말이라도 해주던가!
+@char kangbody1.45 pose:c wait:false
 kang: 말했잖아!!
 {Player_name}: 그렇게 말하면 내가 어떻게 알...
+@char kangbody1.43 pose:c wait:false
 kang: 잠깐!
 describe: 여진이는 내 입을 급하게 막았다.
 {Player_name}: 웁...웁웁-!
+@char kangbody1.73 pose:c wait:false
 kang: 조용히 좀 해봐!
 @sfx Footsteps_Sand_03 volume:100 loop:false fade:0 wait:false
 describe: 저벅-저벅-
@@ -174,38 +246,52 @@ describe: 발소리가 들려왔다.
 describe: 조금 멀었지만...
 describe: 천천히, 그리고 확실하게.
 describe: 점점 우리를 향해 다가오고 있었다.
+@char kangbody1.43 pose:c wait:false
 kang: 으으..! 이러다가는 둘 다 잡힐 거 같은데...
+@char kangbody1.44 pose:c wait:false
 kang: 하필 길도 모르는 애랑 들어와서는...
 @stopsfx Footsteps_Sand_03 fade:1 wait:false
 {Player_name}: 오자고 한 건 너였잖아!
+@char kangbody1.43 pose:c wait:false
 kang: ...
 {Player_name}: 왜..! 내가 틀린 말 했...
+@char kangbody1.45 pose:c wait:false
 kang: {Player_name}..!
 describe: 여진이는 사뭇 진지하게 내 이름을 불렀다.
 {Player_name}: ..?
+@char kangbody1.47 pose:c wait:false
 kang: 이대로 가다간... 우리 둘 다 붙잡히고 말 거야.
 {Player_name}: 그... 그게 무슨..!
 kang: 그러니까.
+@char kangbody1.41 pose:c wait:false
 kang: 따로 도망치자.
 {Player_name}: 뭐라고?!
 {Player_name}: 아니 난 길도 모르는데 여기서 어떻게 혼자...
+@char kangbody1.45 pose:c wait:false
 kang: 시끄러워! 그럼 다 같이 사이좋게 붙잡힐래?
 {Player_name}: ...
+@char kangbody1.43 pose:c wait:false
 kang: 이 기타. 네가 가져가.
 {Player_name}: 어..?
+@char kangbody1.45 pose:c wait:false
 kang: 자꾸 두 번 말하게 할래?! 넌 어차피 길도 모르잖아?
+@char kangbody1.75 pose:c wait:false
 kang: 내가 최대한 유인해볼 테니까 그사이에 빠져나가. 알았어?
 {Player_name}: 그... 그럼 너는...
+@char kangbody1.45 pose:c wait:false
 kang: 내 걱정은 말고 일단 나가라고!
+@char kangbody1.43 pose:c wait:false
 kang: 난 어떻게든 빠져나갈 테니까...
 @sfx Footsteps_Sand_02 volume:100 loop:false fade:0 wait:false
 describe: 저벅-저벅-저벅-
 describe: 발소리가 점점 커져 왔다.
+@char kangbody1.45 pose:c wait:false
 kang: 시간 없어! 빨리 가!
 kang: 나가서 내가 먼저 연락할 때까지 기달려. 알겠어?
 {Player_name}: ...
 kang: 알겠어 모르겠어!
 {Player_name}: 아...알겠어!
+@hideChars wait:false
 describe: 여진이는 내 대답을 듣고는 뒤도 돌아보지 않은 채 사라졌다.
 {Player_name}: ...
 {Player_name}: ......

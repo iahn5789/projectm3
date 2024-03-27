@@ -74,6 +74,19 @@ describe: 나는 안전하다는 것.
 {Player_name}: (내가 나쁜 게 아니라고...)
 {Player_name}: (누구든 그랬을 거야..! 누구든...)
 {Player_name}: (여진이었어도 그랬을 거야...)
+
+@set LoadingValue=true
+@processInput false
+@hideChars time:0.5 wait:false
+@hideUI CP wait:false
+@hidePrinter  time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back Black time:0.5 wait:true
+@back ScOffice01 time:0.5 wait:true
+@showUI CP wait:false
+@processInput true
+@set LoadingValue=false
+
 ???: ...
 ???: 그래서.
 ???: 어떻게 됐다고요?
